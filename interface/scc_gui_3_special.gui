@@ -1,0 +1,670 @@
+guiTypes = {
+	
+	containerWindowType = {
+		
+		name = "scc_special"
+		position = { x = -925 y = 40 }
+		orientation = UPPER_RIGHT
+		
+		size = { width = 300 height = 340 }
+		
+		#show_position = { x = -925 y = 40 }
+		#show_animation_type = decelerated
+		#hide_animation_type = accelerated
+		#animation_time = 300
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		show_sound = menu_open_window
+		click_to_front = yes
+        
+		background = {
+			name = "Background"		
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+        
+		instantTextboxType = {
+			name = "type_title_4"
+			position = { x = 15 y = 8 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "title_colors_6"
+			maxWidth = 240
+			maxHeight = 20
+			format = left	
+		}
+		
+		containerWindowType = {
+		
+			name = "color_grid_container"
+			position = { x = 10 y = 30 }
+			
+			size = { width = 280 height = 300 } 
+			
+            margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+			verticalScrollbar = "right_vertical_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_1b_thin_border"
+			}
+		
+			buttonType = {
+				name = "SPECIAL1_button"
+				position = {x = 10 y = 0}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL1_desc"
+				position = { x = 72 y = 0 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL1_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "SPECIAL2_button"
+				position = {x = 10 y = 25}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL2_desc"
+				position = { x = 72 y = 25 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL2_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL3_button"
+				position = {x = 10 y = 50}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL3_desc"
+				position = { x = 72 y = 50 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL3_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL4_button"
+				position = {x = 10 y = 75}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL4_desc"
+				position = { x = 72 y = 75 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL4_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL5_button"
+				position = {x = 10 y = 100}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL5_desc"
+				position = { x = 72 y = 100 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL5_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL6_button"
+				position = {x = 10 y = 125}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL6_desc"
+				position = { x = 72 y = 125 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL6_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL7_button"
+				position = {x = 10 y = 150}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL7_desc"
+				position = { x = 72 y = 150 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL7_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL8_button"
+				position = {x = 10 y = 175}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL8_desc"
+				position = { x = 72 y = 175 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL8_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL9_button"
+				position = {x = 10 y = 200}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL9_desc"
+				position = { x = 72 y = 200 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL9_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL10_button"
+				position = {x = 10 y = 225}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL10_desc"
+				position = { x = 72 y = 225 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL10_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL11_button"
+				position = {x = 10 y = 250}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL11_desc"
+				position = { x = 72 y = 250 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL11_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL12_button"
+				position = {x = 10 y = 275}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL12_desc"
+				position = { x = 72 y = 275 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL12_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL13_button"
+				position = {x = 10 y = 300}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL13_desc"
+				position = { x = 72 y = 300 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL13_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL14_button"
+				position = {x = 10 y = 325}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL14_desc"
+				position = { x = 72 y = 325 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL14_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL15_button"
+				position = {x = 10 y = 350}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL15_desc"
+				position = { x = 72 y = 350 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL15_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL16_button"
+				position = {x = 10 y = 375}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL16_desc"
+				position = { x = 72 y = 375 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL16_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL17_button"
+				position = { x = 10 y = 400 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL17_desc"
+				position = { x = 72 y = 400 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL17_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL18_button"
+				position = { x = 10 y = 425 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL18_desc"
+				position = { x = 72 y = 425 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL18_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL19_button"
+				position = { x = 10 y = 450 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL19_desc"
+				position = { x = 72 y = 450 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL19_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL20_button"
+				position = { x = 10 y = 475 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL20_desc"
+				position = { x = 72 y = 475 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL20_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL21_button"
+				position = { x = 10 y = 500 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL21_desc"
+				position = { x = 72 y = 500 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL21_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL22_button"
+				position = { x = 10 y = 525 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL22_desc"
+				position = { x = 72 y = 525 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL22_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL23_button"
+				position = { x = 10 y = 550 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL23_desc"
+				position = { x = 72 y = 550 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL23_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL24_button"
+				position = { x = 10 y = 575 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL24_desc"
+				position = { x = 72 y = 575 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL24_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL25_button"
+				position = { x = 10 y = 600 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL25_desc"
+				position = { x = 72 y = 600 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL25_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL26_button"
+				position = { x = 10 y = 625 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL26_desc"
+				position = { x = 72 y = 625 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL26_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL27_button"
+				position = { x = 10 y = 650 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL27_desc"
+				position = { x = 72 y = 650 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL27_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "SPECIAL28_button"
+				position = { x = 10 y = 675 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "SPECIAL28_desc"
+				position = { x = 72 y = 675 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "SPECIAL28_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+		}
+		
+		#Info
+		
+		instantTextboxType = {
+			name = "SPECIAL_info1"
+			position = { x = 10 y = 330 }
+			font = "hoi_18mbs"
+			borderSize = {x = 2 y = 2}
+			text = "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+			maxWidth = 280
+			maxHeight = 20
+			format = center	
+		}
+		
+		instantTextboxType = {
+			name = "SPECIAL_info2"
+			position = { x = 10 y = 350 }
+			font = "hoi_18mbs"
+			borderSize = {x = 2 y = 2}
+			text = "The exact name of your country depends on your ideology"
+			maxWidth = 280
+			maxHeight = 20
+			format = center	
+		}
+		
+	}
+	
+}

@@ -1,0 +1,1444 @@
+guiTypes = {
+
+	containerWindowType = {
+		
+		name = "scc_better_colors"
+		position = { x = -925 y = 40 }
+		orientation = UPPER_RIGHT
+		
+		size = { width = 300 height = 340 }
+		
+		#show_position = { x = -925 y = 40 }
+		#show_animation_type = decelerated
+		#hide_animation_type = accelerated
+		#animation_time = 300
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		show_sound = menu_open_window
+		click_to_front = yes
+        
+		background = {
+			name = "Background"		
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+        
+		instantTextboxType = {
+			name = "type_title_2"
+			position = { x = 15 y = 8 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "title_colors_1"
+			maxWidth = 240
+			maxHeight = 20
+			format = left	
+		}
+		
+		containerWindowType = {
+		
+			name = "color_grid_container"
+			position = { x = 10 y = 30 }
+			
+			size = { width = 280 height = 300 } 
+			
+            margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+			verticalScrollbar = "right_vertical_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_1b_thin_border"
+			}
+			
+			buttonType = {
+				name = "BC1_button"
+				position = { x = 10 y = 0 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC1_desc"
+				position = { x = 72 y = 0 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC1_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC2_button"
+				position = { x = 10 y = 25 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC2_desc"
+				position = { x = 72 y = 25 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC2_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC3_button"
+				position = { x = 10 y = 50 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC3_desc"
+				position = { x = 72 y = 50 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC3_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC4_button"
+				position = { x = 10 y = 75 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC4_desc"
+				position = { x = 72 y = 75 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC4_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC5_button"
+				position = { x = 10 y = 100 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC5_desc"
+				position = { x = 72 y = 100 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC5_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC6_button"
+				position = { x = 10 y = 125 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC6_desc"
+				position = { x = 72 y = 125 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC6_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC7_button"
+				position = { x = 10 y = 150 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC7_desc"
+				position = { x = 72 y = 150 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC7_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC8_button"
+				position = { x = 10 y = 175 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC8_desc"
+				position = { x = 72 y = 175 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC8_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "BC9_button"
+				position = { x = 10 y = 200 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC9_desc"
+				position = { x = 72 y = 200 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC9_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "BC10_button"
+				position = { x = 10 y = 225 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC10_desc"
+				position = { x = 72 y = 225 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC10_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "BC11_button"
+				position = { x = 10 y = 250 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC11_desc"
+				position = { x = 72 y = 250 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC11_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "BC12_button"
+				position = { x = 10 y = 275 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC12_desc"
+				position = { x = 72 y = 275 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC12_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "BC13_button"
+				position = { x = 10 y = 300 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC13_desc"
+				position = { x = 72 y = 300 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC13_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "BC14_button"
+				position = { x = 10 y = 325 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC14_desc"
+				position = { x = 72 y = 325 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC14_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "BC15_button"
+				position = { x = 10 y = 350 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC15_desc"
+				position = { x = 72 y = 350 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "BC15_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "SPECIAL16_button"
+				position = {x = 10 y = 375}
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC16_desc"
+				position = { x = 72 y = 375 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC16_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC17_button"
+				position = { x = 10 y = 400 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC17_desc"
+				position = { x = 72 y = 400 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC17_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC18_button"
+				position = { x = 10 y = 425 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC18_desc"
+				position = { x = 72 y = 425 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC18_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC19_button"
+				position = { x = 10 y = 450 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC19_desc"
+				position = { x = 72 y = 450 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC19_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC20_button"
+				position = { x = 10 y = 475 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC20_desc"
+				position = { x = 72 y = 475 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC20_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC21_button"
+				position = { x = 10 y = 500 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC21_desc"
+				position = { x = 72 y = 500 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC21_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC22_button"
+				position = { x = 10 y = 525 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC22_desc"
+				position = { x = 72 y = 525 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC22_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC23_button"
+				position = { x = 10 y = 550 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC23_desc"
+				position = { x = 72 y = 550 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC23_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC24_button"
+				position = { x = 10 y = 575 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC24_desc"
+				position = { x = 72 y = 575 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC24_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC25_button"
+				position = { x = 10 y = 600 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC25_desc"
+				position = { x = 72 y = 600 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC25_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC26_button"
+				position = { x = 10 y = 1625 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC26_desc"
+				position = { x = 72 y = 1625 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC26_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC27_button"
+				position = { x = 10 y = 625 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC27_desc"
+				position = { x = 72 y = 625 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC27_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC28_button"
+				position = { x = 10 y = 650 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC28_desc"
+				position = { x = 72 y = 650 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC28_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC29_button"
+				position = { x = 10 y = 675 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC29_desc"
+				position = { x = 72 y = 675 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC29_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC30_button"
+				position = { x = 10 y = 700 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC30_desc"
+				position = { x = 72 y = 700 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC30_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC31_button"
+				position = { x = 10 y = 725 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC31_desc"
+				position = { x = 72 y = 725 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC31_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC32_button"
+				position = { x = 10 y = 750 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC32_desc"
+				position = { x = 72 y = 750 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC32_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC33_button"
+				position = { x = 10 y = 775 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC33_desc"
+				position = { x = 72 y = 775 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC33_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC34_button"
+				position = { x = 10 y = 800 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC34_desc"
+				position = { x = 72 y = 800 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC34_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC35_button"
+				position = { x = 10 y = 825 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC35_desc"
+				position = { x = 72 y = 825 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC35_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC36_button"
+				position = { x = 10 y = 850 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC36_desc"
+				position = { x = 72 y = 850 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC36_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC37_button"
+				position = { x = 10 y = 875 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC37_desc"
+				position = { x = 72 y = 875 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC37_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC38_button"
+				position = { x = 10 y = 900 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC38_desc"
+				position = { x = 72 y = 900 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC38_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC39_button"
+				position = { x = 10 y = 925 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC39_desc"
+				position = { x = 72 y = 925 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC39_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC40_button"
+				position = { x = 10 y = 950 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC40_desc"
+				position = { x = 72 y = 950 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC40_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+		
+			buttonType = {
+				name = "BC41_button"
+				position = { x = 10 y = 975 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC41_desc"
+				position = { x = 72 y = 975 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC41_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC42_button"
+				position = { x = 10 y = 1000 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC42_desc"
+				position = { x = 72 y = 1000 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC42_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC43_button"
+				position = { x = 10 y = 1025 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC43_desc"
+				position = { x = 72 y = 1025 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC43_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC44_button"
+				position = { x = 10 y = 1050 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC44_desc"
+				position = { x = 72 y = 1050 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC44_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC45_button"
+				position = { x = 10 y = 1075 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC45_desc"
+				position = { x = 72 y = 1075 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC45_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC46_button"
+				position = { x = 10 y = 1100 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC46_desc"
+				position = { x = 72 y = 1100 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC46_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC47_button"
+				position = { x = 10 y = 1125 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC47_desc"
+				position = { x = 72 y = 1125 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC47_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC48_button"
+				position = { x = 10 y = 1150 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC48_desc"
+				position = { x = 72 y = 1150 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC48_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC49_button"
+				position = { x = 10 y = 1175 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC49_desc"
+				position = { x = 72 y = 1175 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC49_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC50_button"
+				position = { x = 10 y = 1200 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC50_desc"
+				position = { x = 72 y = 1200 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC50_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC51_button"
+				position = { x = 10 y = 1225 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC51_desc"
+				position = { x = 72 y = 1225 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC51_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC52_button"
+				position = { x = 10 y = 1250 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC52_desc"
+				position = { x = 72 y = 1250 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC52_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC53_button"
+				position = { x = 10 y = 1275 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC53_desc"
+				position = { x = 72 y = 1275 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC53_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC54_button"
+				position = { x = 10 y = 1300 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC54_desc"
+				position = { x = 72 y = 1300 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC54_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC55_button"
+				position = { x = 10 y = 1325 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC55_desc"
+				position = { x = 72 y = 1325 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC55_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC56_button"
+				position = { x = 10 y = 1350 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC56_desc"
+				position = { x = 72 y = 1350 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC56_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC57_button"
+				position = { x = 10 y = 1375 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC57_desc"
+				position = { x = 72 y = 1375 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC57_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC58_button"
+				position = { x = 10 y = 1400 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC58_desc"
+				position = { x = 72 y = 1400 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC58_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC59_button"
+				position = { x = 10 y = 1425 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC59_desc"
+				position = { x = 72 y = 1425 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC59_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC60_button"
+				position = { x = 10 y = 1450 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC60_desc"
+				position = { x = 72 y = 1450 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC60_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC61_button"
+				position = { x = 10 y = 1475 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC61_desc"
+				position = { x = 72 y = 1475 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC61_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC62_button"
+				position = { x = 10 y = 1500 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC62_desc"
+				position = { x = 72 y = 1500 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC62_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC63_button"
+				position = { x = 10 y = 1525 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC63_desc"
+				position = { x = 72 y = 1525 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC63_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC64_button"
+				position = { x = 10 y = 1550 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC64_desc"
+				position = { x = 72 y = 1550 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC64_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC65_button"
+				position = { x = 10 y = 1575 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC65_desc"
+				position = { x = 72 y = 1575 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC65_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "BC66_button"
+				position = { x = 10 y = 1600 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "BC66_desc"
+				position = { x = 72 y = 1600 }
+				font = "hoi_18mbs"
+				borderSize = {x = 0 y = 0}
+				text = "BC66_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			#1625 ist zuletzt geused durch Australia
+			#als nächstes 1650 verwenden
+		}
+	}
+}

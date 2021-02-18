@@ -1,0 +1,68 @@
+
+add_namespace = hgoantarctica
+
+country_event = { #Unclaimed(1914) Antarctica
+	id = hgoantarctica.1914
+	title = "Set Antarctica to 1914?"
+	desc = "Do it"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = "sure"
+		ai_chance = {
+			factor = 0
+		}
+			hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = ATC
+					}
+				UNC = {
+					transfer_state = PREV
+						}
+					}
+		}
+	}
+	
+	option = { #reject
+		name = "nah"
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}
+
+country_event = { #Independent(2020) Antarctica
+	id = hgoantarctica.2020
+	title = "Set Antarctica to 2020?"
+	desc = "Do it"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = "sure"
+		ai_chance = {
+			factor = 0
+		}
+			hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = ATC
+					}
+				ATC = {
+					transfer_state = PREV
+						}
+					}
+		}
+	}
+	
+	option = { #reject
+		name = "nah"
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}

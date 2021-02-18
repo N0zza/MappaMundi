@@ -1,0 +1,370 @@
+guiTypes = {
+
+	containerWindowType = {
+		
+		name = "scc_green"
+		position = { x = -925 y = 40 }
+		orientation = UPPER_RIGHT
+		
+		size = { width = 300 height = 340 }
+		
+		#show_position = { x = -925 y = 40 }
+		#show_animation_type = decelerated
+		#hide_animation_type = accelerated
+		#animation_time = 300
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		show_sound = menu_open_window
+		click_to_front = yes
+        
+		background = {
+			name = "Background"		
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+        
+		instantTextboxType = {
+			name = "type_title_2"
+			position = { x = 15 y = 8 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "title_colors_3"
+			maxWidth = 240
+			maxHeight = 20
+			format = left	
+		}
+		
+		containerWindowType = {
+		
+			name = "color_grid_container_green"
+			position = { x = 10 y = 30 }
+			
+			size = { width = 280 height = 300 } 
+			
+            margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+			verticalScrollbar = "right_vertical_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_1b_thin_border"
+			}
+			
+			buttonType = {
+				name = "GREEN1_button"
+				position = { x = 10 y = 0 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN1_desc"
+				position = { x = 72 y = 0 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN1_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "GREEN2_button"
+				position = { x = 10 y = 25 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN2_desc"
+				position = { x = 72 y = 25 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN2_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "GREEN3_button"
+				position = { x = 10 y = 50 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN3_desc"
+				position = { x = 72 y = 50 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN3_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "GREEN4_button"
+				position = { x = 10 y = 75 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN4_desc"
+				position = { x = 72 y = 75 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN4_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "GREEN5_button"
+				position = { x = 10 y = 100 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN5_desc"
+				position = { x = 72 y = 100 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN5_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "GREEN6_button"
+				position = { x = 10 y = 125 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN6_desc"
+				position = { x = 72 y = 125 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN6_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "GREEN7_button"
+				position = { x = 10 y = 150 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN7_desc"
+				position = { x = 72 y = 150 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN7_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "GREEN8_button"
+				position = { x = 10 y = 175 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN8_desc"
+				position = { x = 72 y = 175 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN8_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "GREEN9_button"
+				position = { x = 10 y = 200 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN9_desc"
+				position = { x = 72 y = 200 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN9_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "GREEN10_button"
+				position = { x = 10 y = 225 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN10_desc"
+				position = { x = 72 y = 225 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN10_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "GREEN11_button"
+				position = { x = 10 y = 250 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN11_desc"
+				position = { x = 72 y = 250 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN11_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "GREEN12_button"
+				position = { x = 10 y = 275 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN12_desc"
+				position = { x = 72 y = 275 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN12_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "GREEN13_button"
+				position = { x = 10 y = 300 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN13_desc"
+				position = { x = 72 y = 300 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN13_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "GREEN14_button"
+				position = { x = 10 y = 325 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN14_desc"
+				position = { x = 72 y = 325 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN14_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+						
+			buttonType = {
+				name = "GREEN15_button"
+				position = { x = 10 y = 350 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "GREEN15_desc"
+				position = { x = 72 y = 350 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "GREEN15_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+		}
+	}
+}

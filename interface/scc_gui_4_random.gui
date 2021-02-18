@@ -1,0 +1,46 @@
+guiTypes = {
+
+	containerWindowType = {
+	
+		name = "scc_random_warning"
+		position = { x = 0 y = -700 }
+		orientation = center
+		
+		size = { width = 180 height = 100 }
+
+		show_position = { x = 0 y = 0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 600
+		moveable = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+		}
+        
+		instantTextboxType = {
+			name = "title"
+			position = { x = 60 y = 10 }
+			
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "warning_random_1"
+			maxWidth = 240
+			maxHeight = 20
+			format = left	
+		}
+		
+		instantTextboxType = {
+			name = "title_desc"
+			position = { x = 10 y = 35 }
+			
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "warning_random_1_desc"
+			maxWidth = 165
+			maxHeight = 20
+			format = center	
+		}
+	}
+}

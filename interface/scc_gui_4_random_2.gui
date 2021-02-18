@@ -1,0 +1,54 @@
+guiTypes = {
+
+	containerWindowType = {
+	
+		name = "scc_random_warning_2"
+		position = { x = 0 y = 700 }
+		orientation = center
+		
+		size = { width = 180 height = 120 }
+
+		show_position = { x = 0 y = 100 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 600
+		moveable = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+		}
+		
+		buttonType = {
+			name = "yes_random_button"
+			quadTextureSprite = "GFX_button_typeA_1"
+			position = { x = 12 y = 30 }
+			clicksound = click_ok
+			oversound = ui_menu_over
+			
+			buttonFont = "hoi_16mbs"
+			buttonText = "yes_random"
+		}
+		buttonType = {
+			name = "no_random_button"
+			quadTextureSprite = "GFX_button_typeA_1"
+			position = { x = 110 y = 30 }
+			clicksound = click_ok
+			oversound = ui_menu_over
+			
+			buttonFont = "hoi_16mbs"
+			buttonText = "no_random"
+		}
+		instantTextboxType = {
+			name = "whyy"
+			position = { x = 10 y = 65 }
+			
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "whyy"
+			maxWidth = 165
+			maxHeight = 20
+			format = center	
+		}
+	}
+}

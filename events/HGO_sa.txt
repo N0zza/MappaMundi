@@ -1,0 +1,152 @@
+
+add_namespace = hgosa
+
+country_event = { #1914 South America
+	id = hgosa.1914
+	title = "Set South America to 1914?"
+	desc = "Do it"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = "sure"
+		ai_chance = {
+			factor = 0
+		}
+			hidden_effect = {
+		CHL = {
+			transfer_state = 1673
+			}
+		PRU = {
+			transfer_state = 2109
+			transfer_state = 1689
+			transfer_state = 9130
+			transfer_state = 9348
+			transfer_state = 1688
+			transfer_state = 2110
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}
+		BOL = {
+			transfer_state = 10595
+			transfer_state = 10611
+			transfer_state = 10610
+			transfer_state = 6123
+			transfer_state = 10609
+			transfer_state = 10612
+			transfer_state = 10597
+			}
+		ARG = {
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}	
+		}
+	}
+	
+	option = { #reject
+		name = "nah"
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}
+
+
+country_event = { #2020 South America
+	id = hgosa.2020
+	title = "Set South America to 2020?"
+	desc = "Do it"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = "sure"
+		ai_chance = {
+			factor = 0
+		}
+			hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = PRU
+					OR = {
+						is_core_of = ECU
+						}
+					}
+					PRU = {
+						transfer_state = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					is_core_of = VEN
+					OR = {
+						is_core_of = YMM
+						}
+					}
+					VEN = {
+						transfer_state = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					is_core_of = BRA
+					OR = {
+						is_core_of = YMM
+						is_core_of = CNL
+						}
+					}
+					BRA = {
+						transfer_state = PREV
+						}
+					}
+		PRU = {
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}
+		ARG = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		VEN = {
+			set_politics = {
+				ruling_party = socialism_ideology
+				}
+			}
+		GYA = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = socialism_ideology
+				}
+			}
+		SUR = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}
+		BRA = {
+			set_cosmetic_tag = BRA_2020
+			set_capital = 1646
+			}
+		TRI = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		}
+	}
+	
+	option = { #reject
+		name = "nah"
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}

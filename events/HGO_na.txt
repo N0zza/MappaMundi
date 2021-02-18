@@ -1,0 +1,230 @@
+
+add_namespace = hgona
+
+country_event = { #1914 North America
+	id = hgona.1914
+	title = "Set North America 1914?"
+	desc = "Do it"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = "sure"
+		ai_chance = {
+			factor = 0
+		}
+			hidden_effect = {
+		DOM = {
+			set_cosmetic_tag = USA_BLUE
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		PAN = {
+			set_cosmetic_tag = USA_BLUE
+			}
+		HON = {
+			set_cosmetic_tag = USA_BLUE
+			}
+		every_state = {
+			limit = {
+				is_core_of = CUU
+				}
+			CUU = {
+				transfer_state = PREV
+					}
+				}
+		every_state = {
+			limit = {
+				is_core_of = RGA
+				NOT = {
+					is_core_of = TEX
+					}
+				}
+				set_demilitarized_zone = yes
+				}
+		every_state = {
+			limit = {
+				is_core_of = SON
+				}
+				set_demilitarized_zone = yes
+				}
+		3676 = { set_demilitarized_zone = yes }
+		9453 = { set_demilitarized_zone = yes }
+		9462 = { set_demilitarized_zone = yes }
+		6181 = { set_demilitarized_zone = no }
+		3680 = { set_demilitarized_zone = no }
+		}
+	}
+	
+	option = { #reject
+		name = "nah"
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}
+
+country_event = { #2020 North America
+	id = hgona.2020
+	title = "Set North America 2020?"
+	desc = "Do it"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = "sure"
+		ai_chance = {
+			factor = 0
+		}
+			hidden_effect = {
+		GRL = {
+			annex_country = { target = SG1 }
+			annex_country = { target = NG1 }
+			}
+		USA = {
+			annex_country = { target = ALA }
+			set_cosmetic_tag = USA_50
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}
+		CAN = {
+			set_cosmetic_tag = CAN_2020
+			annex_country = { target = NFL }
+			}
+		CUB = {
+			set_politics = {
+				ruling_party = vanguardism
+				}
+			}
+		BAH = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = democratic_monarchism
+				}
+			}
+		JAM = {
+			release = TAC
+			release = CYM
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = democratic_monarchism
+				}
+			}
+		TAC = {
+			set_cosmetic_tag = TAC_ENG
+			}
+		CYM = {
+			set_cosmetic_tag = CYM_ENG
+			}
+		DOM = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		BLZ = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = democratic_monarchism
+				}
+			}
+		HON = {
+			transfer_state = 2511
+			}
+		ELS = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		NIC = {
+			transfer_state = 2452
+			}
+		PAN = {
+			annex_country = { target = PCZ }
+			}
+		BAR = {	
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = democratic_monarchism
+				}
+			}
+		DMC = {
+			transfer_state = 2042
+			}
+		STL = {
+			transfer_state = 2039
+			}
+		EVI = {
+			set_cosmetic_tag = EVI_ENG
+			}
+		SKT = {
+			transfer_state = 2315
+			transfer_state = 2316
+			}
+		MSR = {
+			transfer_state = 308
+			set_cosmetic_tag = MSR_ENG
+			}
+		AGL = {
+			transfer_state = 2392
+			set_cosmetic_tag = AGL_ENG
+			}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = ANB
+					is_claimed_by = ANB
+					}
+				}
+			ANB = {
+				transfer_state = PREV
+					}
+				}
+		every_state = {
+			limit = {
+				is_core_of = SVC
+				}
+			SVC = {
+				transfer_state = PREV
+					}
+				}
+		every_state = {
+			limit = {
+				is_core_of = GDA
+				}
+			GDA = {
+				transfer_state = PREV
+					}
+				}
+		every_state = {
+			limit = {
+				is_core_of = EVI
+				}
+			EVI = {
+				transfer_state = PREV
+					}
+				}
+		every_state = {
+			limit = {
+				is_core_of = COS
+				OR = {
+					is_core_of = PAN
+					}
+				}
+			COS = {
+				transfer_state = PREV
+					}
+				}
+		}
+	}
+	
+	option = { #reject
+		name = "nah"
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}

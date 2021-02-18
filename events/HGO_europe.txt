@@ -1,0 +1,674 @@
+
+add_namespace = hgoeurope
+
+country_event = { #1914 Europe
+	id = hgoeurope.1914
+	title = "Set Europe to 1914?"
+	desc = "Do it"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = "sure"
+		ai_chance = {
+			factor = 0
+			}
+				hidden_effect = {
+		set_province_name = { id = 3151 name = "Sankt-Peterburg"}
+		195 = { set_state_name = Sankt-Peterburg }
+		1082 = { set_state_name = "Yuzhny Sankt-Peterburg" }
+		set_province_name = { id = 3529 name = "Tsaritsyn"}
+		217 = { set_state_name = Tsaritsyn }
+		set_province_name = { id = 9833 name = "Kostantiniyye"}
+		341 = { set_state_name = Kostantiniyye }
+			every_state = {
+				limit = {
+					OR = {
+					is_core_of = PRE
+					is_core_of = ALC
+					is_core_of = LOR
+					is_claimed_by = CZC
+						}
+					NOT = {
+					is_core_of = CHI
+						}
+					}
+				GER = {
+					transfer_state = PREV
+					add_state_core = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					OR = {
+					is_core_of = AUS
+					is_owned_by = CZE
+					is_core_of = SLO
+					is_core_of = HUN
+					is_core_of = GAL
+					is_core_of = TRA
+					is_core_of = SLV
+					is_core_of = CRO
+					is_core_of = BOS
+					is_core_of = IST
+					is_core_of = VJD
+						}
+					NOT = {
+					is_owned_by = LIE
+					is_core_of = CHI
+					is_owned_by = TEU
+						}
+					}
+				AUS = {
+					transfer_state = PREV
+					add_state_core = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					OR = {
+					is_core_of = RUS
+					is_core_of = MOL
+					is_owned_by = UKR
+					is_owned_by = BLR
+					is_owned_by = POL
+					is_owned_by = FIN
+					is_owned_by = ALN
+					is_owned_by = LIT
+					is_owned_by = LAT
+					is_owned_by = EST
+						}
+					NOT = {
+					is_core_of = CHI
+						}
+					}
+				RUS = {
+					transfer_state = PREV
+					add_state_core = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					OR = {
+					is_core_of = IRE
+						}
+					NOT = {
+					is_core_of = CHI
+						}
+					}
+				ENG = {
+					add_state_core = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					OR = {
+					is_owned_by = GER
+					is_owned_by = GRE
+					is_owned_by = TUR
+					is_owned_by = RUS
+					is_owned_by = ALN
+						}
+					}
+					set_demilitarized_zone = no
+					}
+		GER = {
+			set_politics = {
+				ruling_party = authoritarian_monarchism
+				}
+			}
+		AUS = {
+			transfer_state = 7342
+			transfer_state = 7627
+			transfer_state = 932
+			transfer_state = 7341
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		RUS = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = monarchism
+				}
+			set_capital = 195
+			}
+		ROM = {
+			annex_country = { target = YUG }
+			release = MNT
+			release = SER
+			release = ALB
+			transfer_state = 2174
+			transfer_state = 2173
+			transfer_state = 2172
+			transfer_state = 7312
+			transfer_state = 1488
+			transfer_state = 7301
+			transfer_state = 1489
+			transfer_state = 7307
+			transfer_state = 7308
+			transfer_state = 5537
+			transfer_state = 5538
+			transfer_state = 2250
+			transfer_state = 11004
+			}
+		BUL = {
+			transfer_state = 2338
+			transfer_state = 7331
+			transfer_state = 1202
+			transfer_state = 2210
+			transfer_state = 184
+			transfer_state = 7233
+			transfer_state = 2046
+			}
+		TUR = {
+			transfer_state = 2202
+			transfer_state = 2203
+			transfer_state = 2204
+			transfer_state = 5911
+			set_capital = 341
+			set_politics = {
+				ruling_party = monarchism
+				}
+			}
+		MNT = {
+			transfer_state = 5921
+			transfer_state = 5922
+			transfer_state = 3640
+			set_capital = 2791
+			}
+		ENG = {
+			annex_country = { target = IRE }
+			set_cosmetic_tag = BRIT_democratic
+			}
+		SPR = {
+			annex_country = { target = CAT }
+			set_politics = {
+				ruling_party = authoritarian_monarchism
+				}
+			}
+		ITA = {
+			set_politics = {
+				ruling_party = authoritarian_monarchism
+				}
+			}
+		FRA = {
+			transfer_state = 4495
+			transfer_state = 4496
+			transfer_state = 4497
+			}
+		MRN = {
+			transfer_state = 3212
+			}
+		GRE = {
+			transfer_state = 3403
+			}
+		WTR = {
+			transfer_state = 3186
+			}
+		}
+	}	
+	option = { #reject
+		name = "nah"
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}
+
+country_event = { #2020 Europe
+	id = hgoeurope.2020
+	title = "Set Europe to 2020?"
+	desc = "Do it"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = "sure"
+		ai_chance = {
+			factor = 0
+		}
+				hidden_effect = {
+		set_province_name = { id = 3151 name = "Saint Petersburg"}
+		195 = { set_state_name = "Saint Petersburg" }
+		1082 = { set_state_name = "South Saint Petersburg" }
+		set_province_name = { id = 3529 name = "Volgograd"}
+		217 = { set_state_name = Volgograd }
+		RUS = {
+			annex_country = { target = SOV }
+			release = UKR
+			release = BLR
+			transfer_state = 2414
+			transfer_state = 1081
+			transfer_state = 1080
+			transfer_state = 1878
+			transfer_state = 12028
+			transfer_state = 146
+			transfer_state = 4870
+			transfer_state = 4880
+			transfer_state = 147
+			transfer_state = 9270
+			transfer_state = 10589
+			transfer_state = 2118
+			transfer_state = 722
+			transfer_state = 2777
+			transfer_state = 2086
+			transfer_state = 7411
+			transfer_state = 7412
+			transfer_state = 7413
+			transfer_state = 7414
+			transfer_state = 3552
+			transfer_state = 4092
+			transfer_state = 5979
+			transfer_state = 4072
+			transfer_state = 4094
+			transfer_state = 5
+			transfer_state = 4071
+			transfer_state = 4758
+			transfer_state = 12303
+			transfer_state = 12304
+			transfer_state = 12305
+			transfer_state = 12306
+			transfer_state = 12307
+			transfer_state = 12308
+			set_politics = {
+				ruling_party = centrist_republic
+				}
+			drop_cosmetic_tag = yes
+			}
+					every_state = {
+						limit = {
+							OR = {
+							is_core_of = RUS
+							is_owned_by = RUS
+								}
+							}
+						RUS = {
+							transfer_state = PREV
+							add_state_core = PREV
+								}
+							}
+					every_state = {
+						limit = {
+							OR = {
+							is_core_of = KON
+							is_core_of = SIL
+							is_core_of = PWP
+							is_core_of = POM
+							is_core_of = NKO
+							is_core_of = DAN
+								}
+							NOT = {
+							is_core_of = LIT
+							is_owned_by = RUS
+								}
+							}
+						POL = {
+							transfer_state = PREV
+								}
+							}
+					every_state = {
+						limit = {
+							OR = {
+							is_core_of = BLR
+								}
+							NOT = {
+							is_core_of = NKO
+								}
+							}
+						BLR = {
+							transfer_state = PREV
+								}
+							}
+					every_state = {
+						limit = {
+							is_core_of = CRP
+							}
+						UKR = {
+							transfer_state = PREV
+								}
+							}
+					every_state = {
+						limit = {
+							OR = {
+							is_owned_by = GER
+							is_owned_by = NOR
+							is_owned_by = SWE
+							is_owned_by = TUR
+								}
+							}
+						set_demilitarized_zone = no
+						}
+		WGR = {
+			annex_country = { target = GER }
+			transfer_state = 5079
+			transfer_state = 8412
+			transfer_state = 2300
+			transfer_state = 62
+			transfer_state = 5078
+			transfer_state = 3210
+			transfer_state = 7463
+			transfer_state = 4829
+			transfer_state = 7462
+			transfer_state = 7461
+			transfer_state = 7460
+			transfer_state = 1384
+			set_capital = 64 
+			}
+		POL = {
+			release = UKR
+			release = CZC
+			transfer_state = 7444
+			transfer_state = 8046
+			transfer_state = 5372
+			transfer_state = 2752
+			transfer_state = 3541
+			transfer_state = 8047
+			transfer_state = 1332
+			transfer_state = 1782
+			transfer_state = 4028
+			transfer_state = 3189
+			transfer_state = 7458
+			transfer_state = 3527
+			transfer_state = 7457
+			transfer_state = 5077
+			transfer_state = 7456
+			transfer_state = 5076
+			transfer_state = 2773
+			transfer_state = 68
+			transfer_state = 8222
+			transfer_state = 10954
+			}
+		UKR = {
+			transfer_state = 2506
+			transfer_state = 7484
+			transfer_state = 791
+			transfer_state = 3458
+			transfer_state = 5913
+			transfer_state = 5915
+			transfer_state = 7486
+			transfer_state = 3188
+			transfer_state = 799
+			transfer_state = 8032
+			transfer_state = 3325
+			transfer_state = 11004
+			transfer_state = 80
+			transfer_state = 5376
+			set_politics = {
+				ruling_party = democratic
+				}
+			drop_cosmetic_tag = yes
+			}
+		NOV = {
+			transfer_state = 5379
+			transfer_state = 3227
+			transfer_state = 3777
+			transfer_state = 3226
+			set_politics = {
+				ruling_party = centrist_republic
+				}
+			}
+		BLR = {
+			release = LIT
+			transfer_state = 4766
+			transfer_state = 4767
+			transfer_state = 8036
+			set_politics = {
+				ruling_party = neutrality
+				}
+			drop_cosmetic_tag = yes
+			}
+		LIT = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		LAT = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		EST = {
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}
+		SLO = {
+			annex_country = { target = CZE }
+			release = CZC
+			release = GER
+			transfer_state = 901
+			transfer_state = 2472
+			transfer_state = 3773
+			transfer_state = 10534
+			}
+		WGR = {
+			annex_country = { target = GER }
+			}
+		ROM = {
+			release = MOL
+			release = BUL
+			release = ALB
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}
+		BUL = {
+			set_politics = {
+				ruling_party = centrist_republic
+				}
+			}
+		MOL = {
+			drop_cosmetic_tag = yes
+			set_capital = 78
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		TRN = {
+			transfer_state = 790
+			transfer_state = 7325
+			}
+		AUS = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		HUN = {
+			set_politics = {
+				ruling_party = liberal_republic
+					}
+			}
+		LIE = {
+			release = CZC
+			}
+		ITA = {
+			annex_country = { target = YUG }
+			release = MAC
+			release = KOS
+			release = BOS
+			release = SLV
+			release = CRO
+			release = SER
+			release = MNT
+			release = ALB
+			release = GRE
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		SER = {
+			transfer_state = 5924
+			transfer_state = 9091
+			transfer_state = 7351
+			transfer_state = 3645
+			transfer_state = 3646
+			transfer_state = 814
+			transfer_state = 7620
+			transfer_state = 7378
+			transfer_state = 7377
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		CRO = {
+			transfer_state = 818
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		SLV = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		BOS = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		MNT = {
+			transfer_state = 2289
+			transfer_state = 7343
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}
+		MAC = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		ALB = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		GRE = {
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}
+		SPR = {
+			annex_country = { target = CAT }
+			set_politics = {
+				ruling_party = democratic_monarchism
+				}
+			}
+		SMR = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		POR = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		MLT = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		ICE = {
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			drop_cosmetic_tag = yes
+			}
+		HOL = {
+			transfer_state = 9816
+			transfer_state = 9817
+			}
+		KOS = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		WTR = {
+			release = SLD
+			}
+		IRE = {
+			transfer_state = 3205
+			set_politics = {
+				ruling_party = neutrality
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = IRE
+					NOT = {
+						is_core_of = NIR
+						}
+					}
+				IRE = {
+					transfer_state = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					is_claimed_by = FRA
+					OR = {
+						is_owned_by = ITA
+						}
+					}
+				FRA = {
+					transfer_state = PREV
+					add_state_core = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					is_owned_by = POL
+					}
+				POL = {
+					add_state_core = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					OR = {
+					is_owned_by = UKR
+					is_core_of = CRM
+						}
+					}
+				UKR = {
+					add_state_core = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					is_owned_by = SER
+					}
+				SER = {
+					add_state_core = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					is_owned_by = WGR
+					}
+				WGR = {
+					add_state_core = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					is_owned_by = HOL
+					}
+				HOL = {
+					add_state_core = PREV
+						}
+					}
+		}
+	}	
+	option = { #reject
+		name = "nah"
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}

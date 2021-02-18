@@ -1,0 +1,61 @@
+guiTypes = {
+
+	containerWindowType = {
+	
+		name = "scc_open_container"
+		position = { x = -450 y = 8 }
+		orientation = UPPER_RIGHT
+
+		buttonType = {
+			name = "main_open"
+			quadTextureSprite = "GFX_empty_button"
+                        buttonText = "SCC"
+                        buttonFont = "hoi_36header"
+			position = { x = 85 y = -10 }
+			clicksound = click_ok
+			oversound = ui_menu_over
+			pdx_tooltip = "title_1"
+		}
+		
+		#instantTextboxType = {
+		#	name = "title_1"
+		#	position = { x = 20 y = 5 }
+		#	
+		#	font = "hoi_18mbs"
+		#	borderSize = {x = 0 y = 0}
+		#	text = "title_1"
+		#	maxWidth = 240
+		#	maxHeight = 20
+		#	format = left	
+		#}
+	}
+	containerWindowType = {
+	
+		name = "scc_close_container"
+		position = { x = -450 y = 8 }
+		orientation = UPPER_RIGHT
+
+		buttonType = {
+			name = "main_close"
+			quadTextureSprite = "GFX_empty_button"
+                        buttonText = "SCC"
+                        buttonFont = "hoi_36header"
+			position = { x = 85 y = -10 }
+			clicksound = click_ok
+			oversound = ui_menu_over
+			pdx_tooltip = "title_1"
+		}
+		
+		#instantTextboxType = {
+		#	name = "title_2"
+		#	position = { x = 20 y = 5 }
+		#	
+		#	font = "hoi_18mbs"
+		#	borderSize = {x = 0 y = 0}
+		#	text = "title_1"
+		#	maxWidth = 240
+		#	maxHeight = 20
+		#	format = left	
+		#}
+	}
+}

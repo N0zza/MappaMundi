@@ -1,0 +1,314 @@
+﻿
+add_namespace = bs_ger
+
+country_event = { #Alpes to Italy Event
+	id = bs_ger.1
+	title = bs_ger.1.t
+	desc = bs_ger.1.d
+	fire_only_once = yes
+	mean_time_to_happen = { days = 3 }
+	picture = GFX_report_event_german_troops
+	
+	trigger = {
+		TAG = GER
+		GER = { NOT = { has_government = democratic } }
+	    735 = { is_owned_by = GER }
+		837 = { is_owned_by = GER }
+		838 = { is_owned_by = GER }
+		country_exists = ITA
+		NOT = {
+		    has_global_flag = germany_ceded_alpes
+		}
+	}	
+	
+	option = { #give alpes to Italy
+		name = bs_ger.1.a
+		ai_chance = {
+			factor = 50
+		}
+        
+		ITA = {
+		    country_event = { id = bs_ger.2 days = 0 }
+			effect_tooltip = {
+				transfer_state = 735
+				transfer_state = 837
+				transfer_state = 838
+			}
+		}
+	}
+	option = { #alpes is mine
+		name = bs_ger.1.b
+		ai_chance = {
+			factor = 5
+		}
+
+		hidden_effect = {
+		    set_global_flag = germany_ceded_alpes
+		}
+	}
+}
+
+country_event = { #Italy Accept
+	id = bs_ger.2
+	title = bs_ger.2.t
+	desc = bs_ger.2.d
+	fire_only_once = yes
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes	
+	
+	option = { #give alpes to Italy
+		name = bs_ger.2.a
+        
+		ITA = {
+		    transfer_state = 735
+			transfer_state = 837
+			transfer_state = 838
+		}
+
+		hidden_effect = {
+		    set_global_flag = germany_ceded_alpes
+			735 = { add_core_of = ITA }
+			837 = { add_core_of = ITA }
+			838 = { add_core_of = ITA }
+		}
+	}
+}
+
+country_event = { #West Karelia to Finland
+	id = bs_ger.3
+	title = bs_ger.3.t
+	desc = bs_ger.3.d
+	fire_only_once = yes
+	mean_time_to_happen = { days = 3 }
+	picture = GFX_report_event_german_troops
+	
+	trigger = {
+		TAG = GER
+		GER = { NOT = { has_government = democratic } }
+	    146 = { is_owned_by = GER }
+		147 = { is_owned_by = GER }
+		722 = { is_owned_by = GER }
+		country_exists = FIN
+		NOT = {
+		    has_global_flag = germany_ceded_west_karelia
+		}
+	}	
+	
+	option = { #give West Karelia to Finland
+		name = bs_ger.3.a
+		ai_chance = {
+			factor = 50
+		}
+        
+		FIN = {
+		    country_event = { id = bs_ger.4 days = 0 }
+			effect_tooltip = {
+				transfer_state = 146
+				transfer_state = 147
+				transfer_state = 722
+			}
+		}
+	}
+	option = { #West Karelia is mine
+		name = bs_ger.3.b
+		ai_chance = {
+			factor = 5
+		}
+
+		hidden_effect = {
+		    set_global_flag = germany_ceded_west_karelia
+		}
+	}
+}
+
+country_event = { #Finland Accept
+	id = bs_ger.4
+	title = bs_ger.4.t
+	desc = bs_ger.4.d
+	fire_only_once = yes
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes	
+	
+	option = { #give West Karelia to Italy
+		name = bs_ger.4.a
+        
+		FIN = {
+		    transfer_state = 146
+			transfer_state = 147
+			transfer_state = 722
+		}
+
+		hidden_effect = {
+		    set_global_flag = germany_ceded_west_karelia
+		}
+	}
+}
+
+country_event = { #East Karelia to Finland
+	id = bs_ger.5
+	title = bs_ger.5.t
+	desc = bs_ger.5.d
+	fire_only_once = yes
+	mean_time_to_happen = { days = 3 }
+	picture = GFX_report_event_german_troops
+	
+	trigger = {
+		TAG = GER
+		GER = { NOT = { has_government = democratic } }
+	    215 = { is_owned_by = GER }
+		216 = { is_owned_by = GER }
+		country_exists = FIN
+		NOT = {
+		    has_global_flag = germany_ceded_east_karelia
+		}
+	}	
+	
+	option = { #give West Karelia to Finland
+		name = bs_ger.5.a
+		ai_chance = {
+			factor = 50
+		}
+        
+		FIN = {
+		    country_event = { id = bs_ger.6 days = 0 }
+			effect_tooltip = {
+				transfer_state = 215
+				transfer_state = 216
+			}
+		}
+	}
+	option = { #West Karelia is mine
+		name = bs_ger.5.b
+		ai_chance = {
+			factor = 5
+		}
+
+		hidden_effect = {
+		    set_global_flag = germany_ceded_east_karelia
+		}
+	}
+}
+
+country_event = { #Finland Accept
+	id = bs_ger.6
+	title = bs_ger.6.t
+	desc = bs_ger.6.d
+	fire_only_once = yes
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes	
+	
+	option = { #give east karelia to Finland
+		name = bs_ger.6.a
+        
+		FIN = {
+		    transfer_state = 215
+			transfer_state = 216
+			215 = { add_core_of = FIN }
+			216 = { add_core_of = FIN }
+		}
+
+		hidden_effect = {
+		    set_global_flag = germany_ceded_east_karelia
+		}
+	}
+}
+
+country_event = { #Transnistria to Romania
+	id = bs_ger.7
+	title = bs_ger.7.t
+	desc = bs_ger.7.d
+	fire_only_once = yes
+	mean_time_to_happen = { days = 3 }
+	picture = GFX_report_event_german_troops
+	
+	trigger = {
+		TAG = GER
+		GER = { NOT = { has_government = democratic } }
+	    192 = { is_owned_by = GER }
+		198 = { is_owned_by = GER }
+		790 = { is_owned_by = GER }
+		country_exists = ROM
+		NOT = {
+		    has_global_flag = germany_ceded_transnistria
+		}
+	}	
+	
+	option = { #give transnistria to Romania
+		name = bs_ger.7.a
+		ai_chance = {
+			factor = 50
+		}
+        
+		ROM = {
+		    country_event = { id = bs_ger.8 days = 0 }
+			effect_tooltip = {
+				transfer_state = 192
+				transfer_state = 198
+				transfer_state = 790
+			}
+		}
+	}
+	option = { #Transnistria is mine
+		name = bs_ger.7.b
+		ai_chance = {
+			factor = 5
+		}
+
+		hidden_effect = {
+		    set_global_flag = germany_ceded_transnistria
+		}
+	}
+}
+
+country_event = { #Romania Accept
+	id = bs_ger.8
+	title = bs_ger.8.t
+	desc = bs_ger.8.d
+	fire_only_once = yes
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes	
+	
+	option = { #give transnistria to Romania
+		name = bs_ger.8.a
+        
+		ROM = {
+		    transfer_state = 192
+			transfer_state = 198
+			transfer_state = 790
+			192 = { add_core_of = ROM }
+			198 = { add_core_of = ROM }
+			790 = { add_core_of = ROM }
+		}
+
+		hidden_effect = {
+		    set_global_flag = germany_ceded_transnistria
+		}
+	}
+}
+
+country_event = { #Annex Danzig
+	id = bs_ger.DAN
+	title = "The Annexation of Danzig"
+	desc = "Now that we are at war with Poland, it would be a good idea to annex the Free City of Danzig. The German citizens in the city are joyful to hear they will finally be reunited with their fellow Volksdeutsche."
+	fire_only_once = yes
+	mean_time_to_happen = { days = 7 }
+	picture = GFX_report_event_german_troops
+	
+	trigger = {
+		TAG = GER
+		GER = { has_war_with = POL }
+		country_exists = DAN
+	}	
+	
+	option = {
+		name = "What great news!"
+		ai_chance = {
+			factor = 1
+		}
+        GER = {annex_country = {target = DAN transfer_troops = yes}}
+	}
+}

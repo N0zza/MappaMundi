@@ -1,0 +1,455 @@
+guiTypes = {
+
+	containerWindowType = {
+		
+		name = "scc_yellow"
+		position = { x = -925 y = 40 }
+		orientation = UPPER_RIGHT
+		
+		size = { width = 300 height = 340 }
+		
+		#show_position = { x = -925 y = 40 }
+		#show_animation_type = decelerated
+		#hide_animation_type = accelerated
+		#animation_time = 300
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		show_sound = menu_open_window
+		click_to_front = yes
+        
+		background = {
+			name = "Background"		
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+        
+		instantTextboxType = {
+			name = "type_title_2"
+			position = { x = 15 y = 8 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "title_colors_7"
+			maxWidth = 240
+			maxHeight = 20
+			format = left	
+		}
+		
+		containerWindowType = {
+		
+			name = "color_grid_container"
+			position = { x = 10 y = 30 }
+			
+			size = { width = 280 height = 300 } 
+			
+            margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+
+			verticalScrollbar = "right_vertical_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_1b_thin_border"
+			}
+			
+			buttonType = {
+				name = "YELLOW1_button"
+				position = { x = 10 y = 0 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW1_desc"
+				position = { x = 72 y = 0 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW1_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "YELLOW2_button"
+				position = { x = 10 y = 25 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW2_desc"
+				position = { x = 72 y = 25 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW2_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "YELLOW3_button"
+				position = { x = 10 y = 50 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW3_desc"
+				position = { x = 72 y = 50 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW3_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "YELLOW4_button"
+				position = { x = 10 y = 75 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW4_desc"
+				position = { x = 72 y = 75 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW4_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "YELLOW5_button"
+				position = { x = 10 y = 100 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW5_desc"
+				position = { x = 72 y = 100 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW5_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "YELLOW6_button"
+				position = { x = 10 y = 125 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW6_desc"
+				position = { x = 72 y = 125 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW6_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "YELLOW7_button"
+				position = { x = 10 y = 150 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW7_desc"
+				position = { x = 72 y = 150 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW7_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+			
+			buttonType = {
+				name = "YELLOW8_button"
+				position = { x = 10 y = 175 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW8_desc"
+				position = { x = 72 y = 175 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW8_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "YELLOW9_button"
+				position = { x = 10 y = 200 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW9_desc"
+				position = { x = 72 y = 200 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW9_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "YELLOW10_button"
+				position = { x = 10 y = 225 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW10_desc"
+				position = { x = 72 y = 225 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW10_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "YELLOW11_button"
+				position = { x = 10 y = 250 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW11_desc"
+				position = { x = 72 y = 250 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW11_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "YELLOW12_button"
+				position = { x = 10 y = 275 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW12_desc"
+				position = { x = 72 y = 275 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW12_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "YELLOW13_button"
+				position = { x = 10 y = 300 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW13_desc"
+				position = { x = 72 y = 300 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW13_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "YELLOW14_button"
+				position = { x = 10 y = 325 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW14_desc"
+				position = { x = 72 y = 325 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW14_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "YELLOW15_button"
+				position = { x = 10 y = 350 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW15_desc"
+				position = { x = 72 y = 350 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW15_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "YELLOW16_button"
+				position = { x = 10 y = 375 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW16_desc"
+				position = { x = 72 y = 375 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW16_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "YELLOW17_button"
+				position = { x = 10 y = 400 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW17_desc"
+				position = { x = 72 y = 400 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW17_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+			
+			buttonType = {
+				name = "YELLOW18_button"
+				position = { x = 10 y = 425 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW18_desc"
+				position = { x = 72 y = 425 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW18_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+				
+			}
+			
+			buttonType = {
+				name = "YELLOW19_button"
+				position = { x = 10 y = 450 }
+				spriteType = "GFX_button_typeA_1"
+				frame = 1
+				
+				buttonFont = "hoi_16mbs"
+				buttonText = "apply_apply"
+			}
+			
+			instantTextboxType = {
+				name = "YELLOW19_desc"
+				position = { x = 72 y = 450 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "YELLOW19_desc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+			}
+		}
+	}
+}

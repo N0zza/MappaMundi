@@ -1,0 +1,268 @@
+guiTypes = {
+
+	containerWindowType = {
+	
+		name = "scc_gui_colorgroups"
+		position = { x = -625 y = -400 }
+		orientation = UPPER_RIGHT
+		
+		size = { width = 300 height = 350 }
+
+		show_position = { x = -625 y = 40 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		moveable = no
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_window_bg"
+		}
+		
+		buttonType = {
+			name = "scc_close"
+			quadTextureSprite = "GFX_drop_down_button_up"
+			position = { x = 5 y = 325 }
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "scc_close_2"
+			quadTextureSprite = "GFX_drop_down_button_up"
+			position = { x = 227 y = 325 }
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+        
+		instantTextboxType = {
+			name = "title"
+			position = { x = 68 y = 12 }
+			
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "title_colorgroups"
+			maxWidth = 240
+			maxHeight = 20
+			format = left	
+		}
+		
+		containerWindowType = {
+			
+			name = "colorgoup_grid_container"
+			position = { x = 8 y = 30 }
+			
+			size = { width = 235 height = 215 }
+			
+			margin = { top = 10 bottom = 10 }
+			Orientation = upper_left
+			
+			verticalScrollbar = "right_vertical_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_1b_thin_border"
+			}
+
+			buttonType = {
+				name = "grey_button"
+				position = { x = 10 y = 0 }
+				spriteType = "GFX_button_typeB_140x29"
+				frame = 1
+					
+				buttonFont = "hoi_16mbs"
+				buttonText = "colorgoup_selection"
+			}
+				
+			instantTextboxType = {
+				name = "grey_desc"
+				position = { x = 152 y = 0 }
+					
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "cg_grey"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+				
+			buttonType = {
+				name = "red_button"
+				position = { x = 10 y = 29 }
+				spriteType = "GFX_button_typeB_140x29"
+					frame = 1
+					
+				buttonFont = "hoi_16mbs"
+				buttonText = "colorgoup_selection"
+			}
+				
+			instantTextboxType = {
+				name = "red_desc"
+				position = { x = 152 y = 29 }
+					
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "cg_red"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+				
+			buttonType = {
+				name = "blue_button"
+				position = { x = 10 y = 58 }
+				spriteType = "GFX_button_typeB_140x29"
+				frame = 1
+					
+				buttonFont = "hoi_16mbs"
+				buttonText = "colorgoup_selection"
+			}
+				
+			instantTextboxType = {
+				name = "blue_desc"
+				position = { x = 152 y = 58 }
+					
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "cg_blue"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+				
+			buttonType = {
+				name = "green_button"
+				position = { x = 10 y = 87 }
+				spriteType = "GFX_button_typeB_140x29"
+				frame = 1
+					
+				buttonFont = "hoi_16mbs"
+				buttonText = "colorgoup_selection"
+			}
+				
+			instantTextboxType = {
+				name = "green_desc"
+				position = { x = 152 y = 87 }
+					
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "cg_green"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+				
+			buttonType = {
+				name = "yellow_button"
+				position = { x = 10 y = 116 }
+				spriteType = "GFX_button_typeB_140x29"
+				frame = 1
+					
+				buttonFont = "hoi_16mbs"
+				buttonText = "colorgoup_selection"
+			}
+				
+			instantTextboxType = {
+				name = "yellow_desc"
+				position = { x = 152 y = 116 }
+					
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "cg_yellow"
+				maxWidth = 240
+				maxHeight = 20
+				format = left	
+			}
+				
+			buttonType = {
+				name = "better_colors_button"
+				position = { x = 10 y = 145 }
+				spriteType = "GFX_button_typeB_140x29"
+				frame = 1
+					
+				buttonFont = "hoi_16mbs"
+				buttonText = "colorgoup_selection"
+			}
+				
+			instantTextboxType = {
+				name = "better_colors_desc"
+				position = { x = 152 y = 145 }
+					
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "cg_bc"
+				maxWidth = 240
+				maxHeight = 20
+				format = left
+					
+			}
+		}
+		
+		buttonType = {
+			name = "special_button"
+			position = { x = 20 y = 250 }
+			spriteType = "GFX_button_typeA_1"
+			frame = 2
+			
+			buttonFont = "hoi_16mbs"
+			buttonText = "colorgoup_special"
+		}
+		
+		instantTextboxType = {
+			name = "special_desc"
+			position = { x = 82 y = 250 }
+			
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "cg_special"
+			maxWidth = 240
+			maxHeight = 20
+			format = left	
+		}
+		
+		buttonType = {
+			name = "random_button"
+			position = { x = 20 y = 275 }
+			spriteType = "GFX_button_typeA_1"
+			frame = 1
+			
+			buttonFont = "hoi_16mbs"
+			buttonText = "colorgoup_random"
+		}
+		
+		instantTextboxType = {
+			name = "random_desc"
+			position = { x = 82 y = 275 }
+			
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "cg_random"
+			maxWidth = 240
+			maxHeight = 20
+			format = left	
+		}
+		
+		buttonType = {
+			name = "default_color_button"
+			position = { x = 35 y = 305 }
+			spriteType = "GFX_button_typeB_83x29"
+			frame = 2
+			
+			buttonFont = "hoi_16mbs"
+			buttonText = "cg_default"
+		}
+		
+		buttonType = {
+			name = "default_color_button_all"
+			position = { x = 135 y = 305 }
+			spriteType = "GFX_button_typeB_83x29"
+			frame = 2
+			
+			buttonFont = "hoi_16mbs"
+			buttonText = "cg_reset"
+		}
+		
+		
+
+    }
+	
+}

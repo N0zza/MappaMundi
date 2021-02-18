@@ -1,0 +1,177 @@
+
+add_namespace = hgooceania
+
+country_event = { #1914 Oceania
+	id = hgooceania.1914
+	title = "Set Oceania to 1914?"
+	desc = "uhh"
+	is_triggered_only = yes
+
+	option = { #Yes
+		name = "sure" 
+		ai_chance = {
+			factor = 0
+		}
+				hidden_effect = {
+		NGU = {
+			annex_country = { target = PAC }
+			annex_country = { target = NAU }
+			set_cosmetic_tag = NGU_GER
+			}
+		SAM = {
+			set_cosmetic_tag = SAM_GER
+			}
+		NFI = {
+			set_cosmetic_tag = NFI_ENG
+			}
+		}
+	}
+	option = { #reject
+		name = "nah"
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}
+
+country_event = { #2020 Oceania
+	id = hgooceania.2020
+	title = "Set Oceania to 2020?"
+	desc = "uhh"
+	is_triggered_only = yes
+
+	option = { #Yes
+		name = "sure" 
+		ai_chance = {
+			factor = 0
+		}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						}
+					release = CKI
+					release = NIU
+					}
+		NIU = {
+			set_cosmetic_tag = NZL_PURPLE
+			}
+		CKI = {
+			set_cosmetic_tag = NZL_PURPLE
+				}
+		ENG = {
+			release = PTC
+			}
+		USA = {
+			annex_country = { target = HAW }
+			}
+		PNG = {
+			annex_country = { target = NGU }
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		SAM = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		NAU = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		SOL = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		VAN = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		FIJ = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		NMI = {
+			set_cosmetic_tag = USA_BLUE
+			}
+		KIR = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		TON = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		FSM = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}			
+		PLU = {
+			transfer_state = 647
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		AST = {
+			transfer_state = 711
+			transfer_state = 712
+			transfer_state = 2692
+			annex_country = { target = NFI }
+			}
+			every_state = {
+				limit = {
+					is_core_of = FSM
+					}
+				FSM = {
+					transfer_state = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					is_core_of = NMI
+					}
+				NMI = {
+					transfer_state = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					is_core_of = MAR
+					}
+				MAR = {
+					transfer_state = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					is_core_of = TUV
+					}
+				TUV = {
+					transfer_state = PREV
+						}
+					}
+		}
+	}
+	option = { #reject
+		name = "nah"
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}

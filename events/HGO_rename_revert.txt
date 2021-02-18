@@ -1,0 +1,536 @@
+﻿
+add_namespace = bsr
+
+country_event = {   #Polish Ostprussia
+	id = bsr.1
+	title = bsr.1.t
+	desc = bsr.1.d
+
+	hidden = yes
+
+	trigger = {
+	    OR = {
+		    GER = {
+			    owns_state = 778
+		    }
+		    WGR = {
+			    owns_state = 778
+		    }
+		    DDR = {
+			    owns_state = 778
+			}
+		}
+		has_global_flag = ostrussia_renamed_polish
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.1.a
+		ai_chance = {
+			base = 100
+		}
+		reset_province_name = 6375
+		778 = { reset_state_name = yes }
+		clr_global_flag = ostrussia_renamed_polish
+		778 = { remove_core_of = POL }
+	}
+}
+
+country_event = {   #Polish Danzig
+	id = bsr.2
+	title = bsr.2.t
+	desc = bsr.2.d
+
+	hidden = yes
+
+	trigger = {
+	    OR = {
+		    GER = {
+			    owns_state = 85
+		    }
+		    WGR = {
+			    owns_state = 85
+		    }
+		    DDR = {
+			    owns_state = 85
+			}
+			DAN = {
+			    owns_state = 85
+			}
+		}
+		has_global_flag = danzig_renamed_polish
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.2.a
+		ai_chance = {
+			base = 100
+		}
+		reset_province_name = 362
+		85 = { reset_state_name = yes }
+		clr_global_flag = danzig_renamed_polish
+		85 = { remove_core_of = POL }
+	}
+}
+
+country_event = {
+	id = bsr.3
+	title = bsr.3.t
+	desc = bsr.3.d
+
+	hidden = yes
+
+	trigger = {
+	    OR = {
+		    GER = {
+			    owns_state = 63
+		    }
+		    WGR = {
+			    owns_state = 63
+		    }
+		    DDR = {
+			    owns_state = 63
+			}
+		}
+		has_global_flag = hinterpommern_renamed_polish
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.3.a
+		ai_chance = {
+			base = 100
+		}
+		reset_province_name = 6282
+		63 = { reset_state_name = yes }
+		clr_global_flag = hinterpommern_renamed_polish
+		63 = { remove_core_of = POL }
+	}
+}
+
+country_event = {
+	id = bsr.4
+	title = bsr.4.t
+	desc = bsr.4.d
+
+	hidden = yes
+
+	trigger = {
+	    OR = {
+		    GER = {
+			    owns_state = 68
+		    }
+		    WGR = {
+			    owns_state = 68
+		    }
+		    DDR = {
+			    owns_state = 68
+			}
+		}
+		has_global_flag = ostmark_renamed_polish
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.4.a
+		ai_chance = {
+			base = 100
+		}
+		68 = { reset_state_name = yes }
+		clr_global_flag = ostmark_renamed_polish
+		68 = { remove_core_of = POL }
+	}
+}
+
+country_event = {
+	id = bsr.5
+	title = bsr.5.t
+	desc = bsr.5.d
+
+	hidden = yes
+
+	trigger = {
+	    OR = {
+		    GER = {
+			    owns_state = 66
+		    }
+		    WGR = {
+			    owns_state = 66
+		    }
+		    DDR = {
+			    owns_state = 66
+			}
+		}
+		has_global_flag = niderschlesien_renamed_polish
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.5.a
+		ai_chance = {
+			base = 100
+		}
+		reset_province_name = 9570
+		66 = { reset_state_name = yes }
+		clr_global_flag = niderschlesien_renamed_polish
+		66 = { remove_core_of = POL }
+	}
+}
+
+country_event = {
+	id = bsr.6
+	title = bsr.6.t
+	desc = bsr.6.d
+
+	hidden = yes
+
+	trigger = {
+	    OR = {
+		    GER = {
+			    owns_state = 1019
+		    }
+		    WGR = {
+			    owns_state = 1019
+		    }
+		    DDR = {
+			    owns_state = 1019
+			}
+		}
+		has_global_flag = ostschlesien_renamed_polish
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.5.a
+		ai_chance = {
+			base = 100
+		}
+		1019 = { reset_state_name = yes }
+		clr_global_flag = ostschlesien_renamed_polish
+		1019 = { remove_core_of = POL }
+	}
+}
+
+country_event = {
+	id = bsr.7
+	title = bsr.7.t
+	desc = bsr.7.d
+
+	hidden = yes
+
+	trigger = {
+	    OR = {
+		    GER = {
+			    owns_state = 1017
+		    }
+		    WGR = {
+			    owns_state = 1017
+		    }
+		    DDR = {
+			    owns_state = 1017
+			}
+		}
+		has_global_flag = glatz_renamed_polish
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.7.a
+		ai_chance = {
+			base = 100
+		}
+		reset_province_name = 3485
+		1017 = { reset_state_name = yes }
+		clr_global_flag = glatz_renamed_polish
+		1017 = { remove_core_of = POL }
+	}
+}
+
+country_event = {
+	id = bsr.8
+	title = bsr.8.t
+	desc = bsr.8.d
+
+	hidden = yes
+
+	trigger = {
+	    OR = {
+		    GER = {
+			    owns_state = 67
+		    }
+		    WGR = {
+			    owns_state = 67
+		    }
+		    DDR = {
+			    owns_state = 67
+			}
+		}
+		has_global_flag = oberschlesien_renamed_polish
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.8.a
+		ai_chance = {
+			base = 100
+		}
+		67 = { reset_state_name = yes }
+		clr_global_flag = oberschlesien_renamed_polish
+		67 = { remove_core_of = POL }
+	}
+}
+
+country_event = {
+	id = bsr.9
+	title = bsr.9.t
+	desc = bsr.9.d
+
+	hidden = yes
+
+	trigger = {
+	    OR = {
+		    GER = {
+			    owns_state = 1018
+		    }
+		    WGR = {
+			    owns_state = 1018
+		    }
+		    DDR = {
+			    owns_state = 1018
+			}
+		}
+		has_global_flag = neisse_renamed_polish
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.9.a
+		ai_chance = {
+			base = 100
+		}
+		1018 = { reset_state_name = yes }
+		clr_global_flag = neisse_renamed_polish
+		1018 = { remove_core_of = POL }
+	}
+}
+
+country_event = {            #Dobrogea
+	id = bsr.10
+	title = bsr.10.t
+	desc = bsr.10.d
+
+	hidden = yes
+
+	trigger = {
+		ROM = {
+			owns_state = 77
+		}
+		OR = {
+		    has_global_flag = dobrogea_renamed_bulgarian
+			has_global_flag = dobrogea_ceded_bulgaria
+		}
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.10.a
+		ai_chance = {
+			base = 100
+		}
+		77 = { reset_state_name = yes }
+		clr_global_flag = dobrogea_renamed_bulgarian
+		77 = {
+		    remove_core_of = BUL
+		    remove_claim_by = ROM
+		    add_core_of = ROM
+		}
+	}
+}
+
+country_event = {            #Sydjylland
+	id = bsr.11
+	title = bsr.11.t
+	desc = bsr.11.d
+
+	hidden = yes
+
+	trigger = {
+		POL = {
+			owns_state = 777
+		}
+		has_global_flag = sydjylland_renamed_german
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.11.a
+		ai_chance = {
+			base = 100
+		}
+		777 = { reset_state_name = yes }
+		clr_global_flag = sydjylland_renamed_german
+		777 = { remove_core_of = GER }
+	}
+}
+
+country_event = {            #Poznan
+	id = bsr.12
+	title = bsr.12.t
+	desc = bsr.12.d
+
+	hidden = yes
+
+	trigger = {
+		POL = {
+			owns_state = 86
+		}
+		has_global_flag = poznan_renamed_german
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.12.a
+		ai_chance = {
+			base = 100
+		}
+		reset_province_name = 6558
+		86 = { reset_state_name = yes }
+		clr_global_flag = poznan_renamed_german
+		86 = { remove_core_of = GER }
+	}
+}
+
+country_event = {            #Gdynia
+	id = bsr.13
+	title = bsr.13.t
+	desc = bsr.13.d
+
+	hidden = yes
+
+	trigger = {
+		POL = {
+			owns_state = 1009
+		}
+		has_global_flag = gdynia_renamed_german
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.13.a
+		ai_chance = {
+			base = 100
+		}
+		reset_province_name = 9263
+		1009 = { reset_state_name = yes }
+		clr_global_flag = gdynia_renamed_german
+		1009 = { remove_core_of = GER }
+	}
+}
+
+country_event = {            #Katowice
+	id = bsr.14
+	title = bsr.14.t
+	desc = bsr.14.d
+
+	hidden = yes
+
+	trigger = {
+		POL = {
+			owns_state = 762
+		}
+		has_global_flag = katowice_renamed_german
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.14.a
+		ai_chance = {
+			base = 100
+		}
+		reset_province_name = 6464
+		762 = { reset_state_name = yes }
+		clr_global_flag = katowice_renamed_german
+		762 = { remove_core_of = GER }
+	}
+}
+
+country_event = {            #Hlucin
+	id = bsr.15
+	title = bsr.15.t
+	desc = bsr.15.d
+
+	hidden = yes
+
+	trigger = {
+	    OR = {
+		    CZE = {
+			    owns_state = 900
+		    }
+		    MRV = {
+			    owns_state = 900
+		    }
+		}
+		has_global_flag = hlucin_renamed_german
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.15.a
+		ai_chance = {
+			base = 100
+		}
+	    900 = { reset_state_name = yes }
+		clr_global_flag = hlucin_renamed_german
+		900 = { remove_core_of = GER }
+	}
+}
+
+country_event = {            #Eupen Malmedy
+	id = bsr.16
+	title = bsr.16.t
+	desc = bsr.16.d
+
+	hidden = yes
+
+	trigger = {
+	    OR = {
+		    BEL = {
+			    owns_state = 779
+		    }
+			FLA = {
+			    owns_state = 779
+		    }
+		    WLL = {
+			    owns_state = 779
+		    }
+		}
+		has_global_flag = eupen_renamed_german
+	}
+
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = bsr.16.a
+		ai_chance = {
+			base = 100
+		}
+		clr_global_flag = eupen_renamed_german
+		779 = { remove_core_of = GER }
+	}
+}

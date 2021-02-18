@@ -1,0 +1,1507 @@
+guiTypes = {
+
+
+	containerWindowType = {
+		name = "tpt_main_container"
+		position = {x = -250 y = 0 }
+		size = { width = 494 height = 295 }
+		orientation = CENTER_RIGHT
+		origo = center_right
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_dst_bg"
+		}
+		iconType ={
+			name ="tpt_actor_bg"
+			spriteType = "GFX_generic_text_bg_154"
+			position = { x = 15 y = 15 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_actor_name"
+			position = { x = 20 y = 20 }
+			font = "hoi_18mbs"
+			text = "TPT_ACTOR_NAME"
+			maxWidth = 150
+			maxHeight = 23
+			format = left
+		}
+		buttonType = {
+			name = "tpt_marker"
+			position = { x = 15 y = 93 }
+			shortcut = "shift+r"
+			frame = 1
+			spriteType = "GFX_cont_focus_check_icon"
+			pdx_tooltip = "CAT_MARKER"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_unmarker"
+			position = { x = 15 y = 93 }
+			shortcut = "shift+r"		
+			frame = 2
+			spriteType = "GFX_cont_focus_check_icon"
+			pdx_tooltip = "CAT_UNMARKER"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_mark_ideology"
+			position = { x = 12 y = 129 }
+			shortcut = "shift+ctrl+e"			
+			spriteType = "GFX_tpt_mark_ideology_button_0.9"
+			pdx_tooltip = "TPT_MARK_IDEOLOGY_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_unmark_all"
+			position = { x = 17 y = 165 }
+			shortcut = "shift+ctrl+r"			
+			spriteType = "GFX_close_button_small"
+			pdx_tooltip = "CAT_UNMARK_ALL"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_tab_button_frame_1a"
+			position = { x = 6 y = 245 }
+			spriteType = "GFX_tpt_tab_frame_2"
+			scale = 1
+			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
+		}
+		buttonType = {
+			name = "tpt_tab_button_frame_2a"
+			position = { x = 5 y = 245 }
+			spriteType = "GFX_tpt_tab_frame_1"
+			scale = 1
+			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
+		}
+		instantTextboxType = {
+			name = "tpt_ideology_tab"
+			position = { x = -79 y = 252 }
+			font = "hoi_20b"
+			text = "TPT_IDEOLOGY_TEXT"
+			maxWidth = 281
+			maxHeight = 1
+			format = center
+			orientation = left
+		}
+		buttonType = {
+			name = "tpt_tab_button_frame_1b"
+			position = { x = 114 y = 245 }
+			spriteType = "GFX_tpt_tab_frame_2"
+			scale = 1
+			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
+		}
+		buttonType = {
+			name = "tpt_tab_button_frame_2b"
+			position = { x = 112 y = 245 }
+			spriteType = "GFX_tpt_tab_frame_1"
+			scale = 1
+			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
+		}
+		instantTextboxType = {
+			name = "tpt_diplomacy_tab"
+			position = { x = 30 y = 252 }
+			font = "hoi_20b"
+			text = "TPT_DIPLOMACY_TEXT"
+			maxWidth = 281
+			maxHeight = 1
+			format = center
+			orientation = left
+		}
+		buttonType = {
+			name = "tpt_tab_button_frame_1c"
+			position = { x = 222 y = 245 }
+			spriteType = "GFX_tpt_tab_frame_2"
+			scale = 1
+			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
+		}
+		buttonType = {
+			name = "tpt_tab_button_frame_2c"
+			position = { x = 220 y = 245 }
+			spriteType = "GFX_tpt_tab_frame_1"
+			scale = 1
+			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
+		}
+		instantTextboxType = {
+			name = "tpt_stance_tab"
+			position = { x = 138 y = 252 }
+			font = "hoi_20b"
+			text = "TPT_STANCE_TEXT"
+			maxWidth = 281
+			maxHeight = 1
+			format = center
+			orientation = left
+		}
+		buttonType = {
+			name = "tpt_tab_button_frame_1d"
+			position = { x = 330 y = 245 }
+			spriteType = "GFX_tpt_tab_frame_2"
+			scale = 1
+			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
+		}
+		buttonType = {
+			name = "tpt_tab_button_frame_2d"
+			position = { x = 328 y = 245 }
+			spriteType = "GFX_tpt_tab_frame_1"
+			scale = 1
+			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
+		}
+		instantTextboxType = {
+			name = "tpt_country_tab"
+			position = { x = 246 y = 252 }
+			font = "hoi_20b"
+			text = "TPT_COUNTRY_TEXT"
+			maxWidth = 281
+			maxHeight = 1
+			format = center
+			orientation = left
+		}
+		buttonType = {
+			name = "tpt_tab_button_frame_1e"
+			position = { x = 441 y = 251 }
+			spriteType = "GFX_tpt_tab_frame_2_short"
+			scale = 1
+			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
+		}
+		buttonType = {
+			name = "tpt_tab_button_frame_2e"
+			position = { x = 441 y = 251 }
+			spriteType = "GFX_tpt_tab_frame_1_short"
+			scale = 1
+			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
+		}
+		iconType ={
+			name ="tpt_research_tab_icon"
+			spriteType = "GFX_tpt_research_tab_icon"
+			position = { x = 455 y = 254 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+			scale = 0.6
+		}
+		buttonType = {
+			name = "tpt_tab_switch_button"
+			position = { x = 10000 y = 24500 }
+			shortcut = "shift+x"
+			spriteType = "GFX_tpt_tab_frame_2"
+			scale = 1
+		}
+### IDEOLOGY ###
+		buttonType = {
+			name = "tpt_add_fascism"
+			position = { x = 392 y = 5200 }	
+			spriteType = "GFX_tpt_fascism_idea"
+			pdx_tooltip = "TPT_ADD_FASCIST_IDEA_TT"
+		}
+		buttonType = {
+			name = "tpt_ban_fascism"
+			position = { x = 437 y = 5200 }	
+			spriteType = "GFX_tpt_fascism_banned"
+			pdx_tooltip = "TPT_BAN_FASCIST_IDEA_TT"
+		}
+		buttonType = {
+			name = "tpt_add_communism"
+			position = { x = 392 y = 9600 }	
+			spriteType = "GFX_tpt_communism_idea"
+			pdx_tooltip = "TPT_ADD_COMMUNIST_IDEA_TT"
+		}
+		buttonType = {
+			name = "tpt_ban_communism"
+			position = { x = 437 y = 9600 }	
+			spriteType = "GFX_tpt_communism_banned"
+			pdx_tooltip = "TPT_BAN_COMMUNIST_IDEA_TT"
+		}
+		buttonType = {
+			name = "tpt_add_democratic"
+			position = { x = 392 y = 14100 }
+			spriteType = "GFX_tpt_democratic_idea"
+			pdx_tooltip = "TPT_ADD_DEMOCRATIC_IDEA_TT"
+		}
+		buttonType = {
+			name = "tpt_ban_democratic"
+			position = { x = 437 y = 14100 }	
+			spriteType = "GFX_tpt_democratic_banned"
+			pdx_tooltip = "TPT_BAN_DEMOCRATIC_IDEA_TT"
+		}
+		buttonType = {
+			name = "tpt_add_neutrality"
+			position = { x = 392 y = 18500 }	
+			spriteType = "GFX_tpt_neutrality_idea"
+			pdx_tooltip = "TPT_ADD_NEUTRAL_IDEA_TT"
+		}
+		buttonType = {
+			name = "tpt_ban_neutrality"
+			position = { x = 437 y = 18500 }	
+			spriteType = "GFX_tpt_neutrality_banned"
+			pdx_tooltip = "TPT_BAN_NEUTRAL_IDEA_TT"
+		}
+		buttonType = {
+			name = "tpt_fascist_on"
+			position = { x = 175 y = 20 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_FASCIST"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_fascist_off" 
+			position = { x = 175 y = 20 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_FASCIST"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_fascist_text"
+			position = { x = 205 y = 21 }
+			font = "hoi_16mbs"
+			text = "TPT_FASCIST"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_fascist_number"
+			position = { x = 330 y = 5900 }
+			font = "hoi_18mbs"
+			text = "[TPT_POP_FASCIST]%"
+			maxWidth = 200
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_communist_on"
+			position = { x = 175 y = 45 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_COMMUNIST"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_communist_off" 
+			position = { x = 175 y = 45 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_COMMUNIST"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_communist_text"
+			position = { x = 205 y = 46 }
+			font = "hoi_16mbs"
+			text = "TPT_COMMUNIST"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_communist_number"
+			position = { x = 330 y = 10400 }
+			font = "hoi_18mbs"
+			text = "[TPT_POP_COMMUNIST]%"
+			maxWidth = 200
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_democratic_on"
+			position = { x = 175 y = 70 }			
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_DEMOCRATIC"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_democratic_off" 
+			position = { x = 175 y = 70 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_DEMOCRATIC"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_democratic_text"
+			position = { x = 205 y = 71 }
+			font = "hoi_16mbs"
+			text = "TPT_DEMOCRATIC"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_democratic_number"
+			position = { x = 330 y = 14900 }
+			font = "hoi_18mbs"
+			text = "[TPT_POP_DEMOCRATIC]%"
+			maxWidth = 200
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_neutral_on"
+			position = { x = 175 y = 95 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_NEUTRAL"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_neutral_off" 
+			position = { x = 175 y = 95 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_NEUTRAL"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_neutral_text"
+			position = { x = 205 y = 96 }
+			font = "hoi_16mbs"
+			text = "TPT_NEUTRAL"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "tpt_neutral_number"
+			position = { x = 330 y = 19400 }
+			font = "hoi_18mbs"
+			text = "[TPT_POP_NEUTRAL]%"
+			maxWidth = 200
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_monarchism_on"
+			position = { x = 175 y = 120 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_MONARCHISM"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_monarchism_off" 
+			position = { x = 175 y = 120 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_MONARCHISM"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_monarchism_text"
+			position = { x = 205 y = 121 }
+			font = "hoi_16mbs"
+			text = "TPT_MONARCHISM"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "tpt_librep_on"
+			position = { x = 175 y = 145 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_LIBREP"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_librep_off" 
+			position = { x = 175 y = 145 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_LIBREP"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_librep_text"
+			position = { x = 205 y = 146 }
+			font = "hoi_16mbs"
+			text = "TPT_LIBREP"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_vanguard_on"
+			position = { x = 175 y = 170 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_VANGUARD"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_vanguard_off" 
+			position = { x = 175 y = 170 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_VANGUARD"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_vanguard_text"
+			position = { x = 205 y = 171 }
+			font = "hoi_16mbs"
+			text = "TPT_VANGUARD"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_totanc_on"
+			position = { x = 175 y = 195 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_TOTANC"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_totanc_off" 
+			position = { x = 175 y = 195 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_TOTANC"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_totanc_text"
+			position = { x = 205 y = 196 }
+			font = "hoi_16mbs"
+			text = "TPT_TOTANC"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_ancom_on"
+			position = { x = 175 y = 220 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_ANCOM"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_ancom_off" 
+			position = { x = 175 y = 220 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_ANCOM"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_ancom_text"
+			position = { x = 205 y = 221 }
+			font = "hoi_16mbs"
+			text = "TPT_ANCOM"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_soc_on"
+			position = { x = 270 y = 20 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_SOC"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_soc_off" 
+			position = { x = 270 y = 20 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_SOC"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_soc_text"
+			position = { x = 300 y = 21 }
+			font = "hoi_16mbs"
+			text = "TPT_SOC"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_socmon_on"
+			position = { x = 270 y = 45 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_SOCMON"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_socmon_off" 
+			position = { x = 270 y = 45 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_SOCMON"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_socmon_text"
+			position = { x = 300 y = 46 }
+			font = "hoi_16mbs"
+			text = "TPT_SOCMON"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_demmon_on"
+			position = { x = 270 y = 70 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_DEMMON"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_demmon_off" 
+			position = { x = 270 y = 70 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_DEMMON"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_demmon_text"
+			position = { x = 300 y = 71 }
+			font = "hoi_16mbs"
+			text = "TPT_DEMMON"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_conmon_on"
+			position = { x = 270 y = 95 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_CONMON"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_conmon_off" 
+			position = { x = 270 y = 95 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_CONMON"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_conmon_text"
+			position = { x = 300 y = 96 }
+			font = "hoi_16mbs"
+			text = "TPT_CONMON"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_cenrep_on"
+			position = { x = 270 y = 120 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_CENREP"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_cenrep_off" 
+			position = { x = 270 y = 120 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_CENREP"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_cenrep_text"
+			position = { x = 300 y = 121 }
+			font = "hoi_16mbs"
+			text = "TPT_CENREP"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_cenmon_on"
+			position = { x = 270 y = 145 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_CENMON"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_cenmon_off" 
+			position = { x = 270 y = 145 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_CENMON"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_cenmon_text"
+			position = { x = 300 y = 146 }
+			font = "hoi_16mbs"
+			text = "TPT_CENMON"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_strat_on"
+			position = { x = 270 y = 170 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_STRAT"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_strat_off" 
+			position = { x = 270 y = 170 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_STRAT"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_strat_text"
+			position = { x = 300 y = 171 }
+			font = "hoi_16mbs"
+			text = "TPT_STRAT"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_stratmon_on"
+			position = { x = 270 y = 195 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_STRATMON"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_stratmon_off" 
+			position = { x = 270 y = 195 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_STRATMON"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_stratmon_text"
+			position = { x = 300 y = 196 }
+			font = "hoi_16mbs"
+			text = "TPT_STRATMON"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_authmon_on"
+			position = { x = 270 y = 220 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_AUTHMON"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_authmon_off" 
+			position = { x = 270 y = 220 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_AUTHMON"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_authmon_text"
+			position = { x = 300 y = 221 }
+			font = "hoi_16mbs"
+			text = "TPT_AUTHMON"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_repfash_on"
+			position = { x = 365 y = 20 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_REPFASH"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_repfash_off" 
+			position = { x = 365 y = 20 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_REPFASH"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_repfash_text"
+			position = { x = 395 y = 21 }
+			font = "hoi_16mbs"
+			text = "TPT_REPFASH"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_natsoc_on"
+			position = { x = 365 y = 45 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_NATSOC"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_natsoc_off" 
+			position = { x = 365 y = 45 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_NATSOC"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_natsoc_text"
+			position = { x = 395 y = 46 }
+			font = "hoi_16mbs"
+			text = "TPT_NATSOC"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_theoc_on"
+			position = { x = 365 y = 70 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_THEOC"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_theoc_off" 
+			position = { x = 365 y = 70 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_THEOC"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_theoc_text"
+			position = { x = 395 y = 71 }
+			font = "hoi_16mbs"
+			text = "TPT_THEOC"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_ancap_on"
+			position = { x = 365 y = 95 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_ANCAP"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_ancap_off" 
+			position = { x = 365 y = 95 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_ANCAP"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_ancap_text"
+			position = { x = 395 y = 96 }
+			font = "hoi_16mbs"
+			text = "TPT_ANCAP"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_monarchism_number"
+			position = { x = 330 y = 25000 }
+			font = "hoi_18mbs"
+			text = "[TPT_POP_MONARCHISM]%"
+			maxWidth = 200
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_add_5"
+			position = { x = 70 y = 95 }
+			spriteType = "GFX_tp_add_5"
+			pdx_tooltip = "TPT_ADD_5"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_subtract_5"
+			position = { x = 115 y = 95 }
+			spriteType = "GFX_tp_sub_5"
+			pdx_tooltip = "TPT_SUBTRACT_5"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_add_10"
+			position = { x = 70 y = 130 }
+			spriteType = "GFX_tp_add_10"
+			pdx_tooltip = "TPT_ADD_10"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_subtract_10"
+			position = { x = 115 y = 130 }
+			spriteType = "GFX_tp_sub_10"
+			pdx_tooltip = "TPT_SUBTRACT_10"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_add_50"
+			position = { x = 70 y = 165 }
+			spriteType = "GFX_tp_add_50"
+			pdx_tooltip = "TPT_ADD_50"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_subtract_50"
+			position = { x = 115 y = 165 }
+			spriteType = "GFX_tp_sub_50"
+			pdx_tooltip = "TPT_SUBTRACT_50"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_change"
+			position = { x = 88 y = 198 }
+			spriteType = "GFX_goal_generic_territory_or_war"
+			pdx_tooltip = "TPT_CHANGE"
+			scale = 0.45
+		}
+		buttonType = {
+			name = "tpt_enable_elections"
+			position = { x = 137 y = 20200 }	
+			spriteType = "GFX_decision_category_generic_democracy"
+			pdx_tooltip = "TPT_ENABLE_ELECTIONS"
+			scale = 0.65
+		}
+		buttonType = {
+			name = "tpt_disable_elections"
+			position = { x = 44 y = 20200 }	
+			spriteType = "GFX_decision_category_eng_move_to_secure_the_dominions"
+			pdx_tooltip = "TPT_DISABLE_ELECTIONS"
+			scale = 0.65
+		}
+### DIPLOMACY ###
+		buttonType = {
+			name = "tpt_guarantee" 
+			position = { x = 50 y = 90 }
+			spriteType = "GFX_tpt_guarantee_green"
+			pdx_tooltip = "TPT_GUARANTEE_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_drop_cosmetic_tag" 
+			position = { x = 243 y = 40 }
+			spriteType = "GFX_remove_cosmetic_tag"
+			pdx_tooltip = "TPT_DROP_COSMETIC_TAG"
+			scale = 1
+		}
+		instantTextboxType = {
+			name = "drop_cosmetic_tag"
+			position = { x = 280 y = 43 }
+			font = "hoi_18mbs"
+			text = "Drop Cosmetic Tag"
+			maxWidth = 130
+			maxHeight = 23
+			format = left
+		}
+		buttonType = {
+			name = "tpt_no_guarantee" 
+			position = { x = 105 y = 90 }
+			spriteType = "GFX_tpt_guarantee_orange"
+			pdx_tooltip = "TPT_UNGUARANTEE_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_remove_all_guarantees" 
+			position = { x = 160 y = 90 }
+			spriteType = "GFX_tpt_guarantee_red"
+			pdx_tooltip = "TPT_REMOVE_ALL_GUARANTEES_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_access" 
+			position = { x = 50 y = 140 }
+			spriteType = "GFX_tpt_access_green"
+			pdx_tooltip = "TPT_ACCESS_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_no_access" 
+			position = { x = 105 y = 140 }
+			spriteType = "GFX_tpt_access_orange"
+			pdx_tooltip = "TPT_UNACCESS_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_remove_all_access" 
+			position = { x = 160 y = 140 }
+			spriteType = "GFX_tpt_access_red"
+			pdx_tooltip = "TPT_REMOVE_ALL_ACCESS_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_nap" 
+			position = { x = 50 y = 190 }
+			spriteType = "GFX_tpt_nap_green"
+			pdx_tooltip = "TPT_NAP_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_no_nap" 
+			position = { x = 105 y = 190 }
+			spriteType = "GFX_tpt_nap_orange"
+			pdx_tooltip = "TPT_UNNAP_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_remove_all_naps" 
+			position = { x = 160 y = 190 }
+			spriteType = "GFX_tpt_nap_red"
+			pdx_tooltip = "TPT_REMOVE_ALL_NAPS_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_decrease_opinion"
+			position = { x = 284 y = 100 }
+			spriteType = "GFX_subtract_one"
+			pdx_tooltip = "TPT_DEC_OP"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_increase_opinion"
+			position = { x = 358 y = 100 }
+			spriteType = "GFX_add_one"
+			pdx_tooltip = "TPT_INC_OP"
+			scale = 1
+		}
+		instantTextboxType = {
+			name = "tpt_opinion_value"
+			position = { x = 313 y = 102 }
+			font = "hoi_18mbs"
+			text = "[?global.tpt_op_value]"
+			maxWidth = 38
+			maxHeight = 23
+			format = center
+		}
+		instantTextboxType = {
+			name = "tpt_opinion_text"
+			position = { x = 405 y = 102 }
+			font = "hoi_18mbs"
+			text = "[tpt_op_or_trade]"
+			maxWidth = 106
+			maxHeight = 23
+			format = left
+		}
+		buttonType = {
+			name = "tpt_op_on"
+			position = { x = 245 y = 102 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_OPINON_ON"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_op_off" 
+			position = { x = 245 y = 102 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_OPINON_OFF"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_decrease_trade"
+			position = { x = 284 y = 135 }
+			spriteType = "GFX_subtract_one"
+			pdx_tooltip = "TPT_DEC_OP"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_increase_trade"
+			position = { x = 358 y = 135 }
+			spriteType = "GFX_add_one"
+			pdx_tooltip = "TPT_INC_OP"
+			scale = 1
+		}
+		instantTextboxType = {
+			name = "tpt_trade_value"
+			position = { x = 313 y = 137 }
+			font = "hoi_18mbs"
+			text = "[?global.tpt_trade_value]"
+			maxWidth = 38
+			maxHeight = 23
+			format = center
+		}
+		instantTextboxType = {
+			name = "tpt_trade_text"
+			position = { x = 405 y = 134 }
+			font = "hoi_18mbs"
+			text = "TPT_TRADE_TEXT"
+			maxWidth = 106
+			maxHeight = 23
+			format = left
+		}
+		buttonType = {
+			name = "tpt_trade_on"
+			position = { x = 245 y = 135 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_TRADE_ON"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_trade_off" 
+			position = { x = 245 y = 135 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_TRADE_OFF"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_add_opinion_button" 
+			position = { x = 261 y = 177 }
+			spriteType = "GFX_tpt_opinion_green"
+			pdx_tooltip = "TPT_ADD_OPINION_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_remove_opinion_button" 
+			position = { x = 316 y = 177 }
+			spriteType = "GFX_tpt_opinion_orange"
+			pdx_tooltip = "TPT_REMOVE_OPINION_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_remove_all_opinions_button" 
+			position = { x = 371 y = 177 }
+			spriteType = "GFX_tpt_opinion_red"
+			pdx_tooltip = "TPT_REMOVE_ALL_OPINIONS"
+			scale = 1
+		}
+### STANCE ###
+
+		buttonType = {
+			name = "tpt_war_button" 
+			position = { x = 240 y = 110 }
+			spriteType = "GFX_tpt_war_orange"
+			pdx_tooltip = "TPT_WAR_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_peace_button" 
+			position = { x = 295 y = 110 }
+			spriteType = "GFX_tpt_major_green"
+			pdx_tooltip = "TPT_PEACE_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_truce_button" 
+			position = { x = 295 y = 170 }
+			spriteType = "GFX_tpt_major_blue"
+			pdx_tooltip = "TPT_TRUCE_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_cw_button" 
+			position = { x = 240 y = 170 }
+			spriteType = "GFX_tpt_war_red"
+			pdx_tooltip = "TPT_CW_TT"
+			shortcut = "shift+c"
+		}
+		instantTextboxType = {
+			name = "tpt_threat_text"
+			position = { x = 322 y = 75 }
+			font = "hoi_18mbs"
+			text = "TPT_WORLD_TENSION_TEXT"
+			maxWidth = 201
+			maxHeight = 23
+			format = center
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_add_threat_1" 
+			position = { x = 390 y = 105 }
+			spriteType = "GFX_tp_add_1"
+			pdx_tooltip = "TPT_THREAT_1"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_add_threat_5" 
+			position = { x = 390 y = 140 }
+			spriteType = "GFX_tp_add_5"
+			pdx_tooltip = "TPT_THREAT_5"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_add_threat_20" 
+			position = { x = 390 y = 175 }
+			spriteType = "GFX_tp_add_20"
+			pdx_tooltip = "TPT_THREAT_20"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_sub_threat_1" 
+			position = { x = 430 y = 105 }
+			spriteType = "GFX_tp_sub_1"
+			pdx_tooltip = "TPT_THREAT_SUB_1"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_sub_threat_5" 
+			position = { x = 430 y = 140 }
+			spriteType = "GFX_tp_sub_5"
+			pdx_tooltip = "TPT_THREAT_SUB_5"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_sub_threat_20" 
+			position = { x = 430 y = 175 }
+			spriteType = "GFX_tp_sub_20"
+			pdx_tooltip = "TPT_THREAT_SUB_20"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_create_faction" 
+			position = { x = 75 y = 110 }
+			spriteType = "GFX_tpt_create_faction_green"
+			pdx_tooltip = "TPT_CREATE_FACTION_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_dismantle_faction" 
+			position = { x = 130 y = 110 }
+			spriteType = "GFX_tpt_create_faction_orange"
+			pdx_tooltip = "TPT_DISMANTLE_FACTION_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_add_to_faction" 
+			position = { x = 75 y = 170 }
+			spriteType = "GFX_tpt_join_faction_green"
+			pdx_tooltip = "TPT_ADD_TO_FACTION_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_leave_faction" 
+			position = { x = 130 y = 170 }
+			spriteType = "GFX_tpt_join_faction_orange"
+			pdx_tooltip = "TPT_LEAVE_FACTION_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_dismantle_all_factions" 
+			position = { x = 185 y = 110 }
+			spriteType = "GFX_tpt_create_faction_red"
+			pdx_tooltip = "TPT_DISMANTLE_ALL_FACTIONS_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_make_faction_leader" 
+			position = { x = 185 y = 170 }
+			spriteType = "GFX_tpt_create_faction_green"
+			pdx_tooltip = "TPT_MAKE_FACTION_LEADER_TT"
+			scale = 1
+		}
+### COUNTRY ###
+		instantTextboxType = {
+			name = "tpt_stability_text"
+			position = { x = 238 y = 65 }
+			font = "hoi_18mbs"
+			text = "TPT_STABILITY_TEXT"
+			maxWidth = 103
+			maxHeight = 23
+			format = center
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_add_stability_1" 
+			position = { x = 255 y = 105 }
+			spriteType = "GFX_tp_add_1"
+			pdx_tooltip = "TPT_ADD_ST_1"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_add_stability_5" 
+			position = { x = 255 y = 140 }
+			spriteType = "GFX_tp_add_5"
+			pdx_tooltip = "TPT_ADD_ST_5"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_add_stability_20" 
+			position = { x = 255 y = 175 }
+			spriteType = "GFX_tp_add_20"
+			pdx_tooltip = "TPT_ADD_ST_20"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_sub_stability_1" 
+			position = { x = 295 y = 105 }
+			spriteType = "GFX_tp_sub_1"
+			pdx_tooltip = "TPT_SUB_ST_1"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_sub_stability_5" 
+			position = { x = 295 y = 140 }
+			spriteType = "GFX_tp_sub_5"
+			pdx_tooltip = "TPT_SUB_ST_5"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_sub_stability_20" 
+			position = { x = 295 y = 175 }
+			spriteType = "GFX_tp_sub_20"
+			pdx_tooltip = "TPT_SUB_ST_20"
+			scale = 1
+		}
+		instantTextboxType = {
+			name = "tpt_war_support_text"
+			position = { x = 324 y = 65 }
+			font = "hoi_18mbs"
+			text = "TPT_WAR_SUPPORT_TEXT"
+			maxWidth = 147
+			maxHeight = 23
+			format = center
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_add_war_support_1" 
+			position = { x = 360 y = 105 }
+			spriteType = "GFX_tp_add_1"
+			pdx_tooltip = "TPT_ADD_WS_1"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_add_war_support_5" 
+			position = { x = 360 y = 140 }
+			spriteType = "GFX_tp_add_5"
+			pdx_tooltip = "TPT_ADD_WS_5"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_add_war_support_20" 
+			position = { x = 360 y = 175 }
+			spriteType = "GFX_tp_add_20"
+			pdx_tooltip = "TPT_ADD_WS_20"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_sub_war_support_1" 
+			position = { x = 400 y = 105 }
+			spriteType = "GFX_tp_sub_1"
+			pdx_tooltip = "TPT_SUB_WS_1"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_sub_war_support_5" 
+			position = { x = 400 y = 140 }
+			spriteType = "GFX_tp_sub_5"
+			pdx_tooltip = "TPT_SUB_WS_5"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_sub_war_support_20" 
+			position = { x = 400 y = 175 }
+			spriteType = "GFX_tp_sub_20"
+			pdx_tooltip = "TPT_SUB_WS_20"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_set_major_button" 
+			position = { x = 90 y = 140 }
+			spriteType = "GFX_tpt_major_green"
+			pdx_tooltip = "TPT_SET_MAJOR_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_unmajor_button" 
+			position = { x = 145 y = 140 }
+			spriteType = "GFX_tpt_major_orange"
+			pdx_tooltip = "TPT_SET_UNMAJOR_TT"
+			scale = 1
+		}
+		instantTextboxType = {
+			name = "tpt_major_text"
+			position = { x = 38 y = 105 }
+			font = "hoi_18mbs"
+			text = "[tpt_major_text]"
+			maxWidth = 200
+			maxHeight = 23
+			format = center
+		}
+### RESEARCH ###
+		buttonType = {
+			name = "tpt_remove_rs_slot"
+			position = { x = 58 y = 100 }
+			spriteType = "GFX_subtract_one"
+			pdx_tooltip = "TPT_REMOVE_RS_SLOT"
+			scale = 1
+		}
+		buttonType = {
+			name = "tpt_add_rs_slot"
+			position = { x = 132 y = 100 }
+			spriteType = "GFX_add_one"
+			pdx_tooltip = "TPT_ADD_RS_SLOT"
+			scale = 1
+		}
+		instantTextboxType = {
+			name = "tpt_rs_slot_value"
+			position = { x = 87 y = 102 }
+			font = "hoi_18mbs"
+			text = "[?this.amount_research_slots]"
+			maxWidth = 38
+			maxHeight = 23
+			format = center
+		}
+		instantTextboxType = {
+			name = "tpt_rs_slot_text"
+			position = { x = 179 y = 102 }
+			font = "hoi_18mbs"
+			text = "TPT_RS_SLOT"
+			maxWidth = 106
+			maxHeight = 23
+			format = left
+		}
+		buttonType = {
+			name = "tpt_set_0_rs_slots"
+			position = { x = 46 y = 145 }
+			shortcut = "shift+ctrl+r"			
+			spriteType = "GFX_tpt_0_rs_slots_icon"
+			pdx_tooltip = "TPT_SET_0_RS_SLOTS"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_set_100_rs_slots"
+			position = { x = 98 y = 149 }
+			shortcut = "shift+ctrl+r"			
+			spriteType = "GFX_tpt_100_rs_slots_icon"
+			pdx_tooltip = "TPT_SET_100_RS_SLOTS"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_reset_rs_slots"
+			position = { x = 134 y = 149 }
+			shortcut = "shift+ctrl+r"			
+			spriteType = "GFX_tpt_reset_slot_amount_icon"
+			pdx_tooltip = "TPT_RESET_RS_SLOTS"
+			scale = 0.7
+		}
+	}
+
+	containerWindowType = {
+		name = "tpt_cw_window"
+		position = { x = -380 y = 473 }
+		size = { width = 494 height = 255 }
+		orientation = UPPER_RIGHT
+		origo = upper_right
+
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_sst_convoy_bg"
+		}
+		buttonType = {
+			name = "tpt_cw_close_window"
+			position = { x = 109 y = 2 }
+			shortcut = "shift+ctrl+r"			
+			spriteType = "GFX_closebutton"
+			pdx_tooltip = "TPT_CLOSE_WINDOW"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_cw_fascist_on"
+			position = { x = 18 y = 25 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_CW_EN_FASCIST"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_cw_fascist_off" 
+			position = { x = 18 y = 25 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_CW_EN_FASCIST"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_cw_fascist_text"
+			position = { x = 45 y = 26 }
+			font = "hoi_16mbs"
+			text = "TPT_FASCIST"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_cw_communist_on"
+			position = { x = 18 y = 60 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_CW_EN_COMMUNIST"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_cw_communist_off" 
+			position = { x = 18 y = 60 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_CW_EN_COMMUNIST"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_cw_communist_text"
+			position = { x = 45 y = 61 }
+			font = "hoi_16mbs"
+			text = "TPT_COMMUNIST"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_cw_democratic_on"
+			position = { x = 18 y = 95 }			
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_CW_EN_DEMOCRATIC"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_cw_democratic_off" 
+			position = { x = 18 y = 95 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_CW_EN_DEMOCRATIC"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_cw_democratic_text"
+			position = { x = 45 y = 96 }
+			font = "hoi_16mbs"
+			text = "TPT_DEMOCRATIC"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_cw_neutral_on"
+			position = { x = 18 y = 130 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_CW_EN_NEUTRAL"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_cw_neutral_off" 
+			position = { x = 18 y = 130 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_CW_EN_NEUTRAL"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_cw_neutral_text"
+			position = { x = 45 y = 131 }
+			font = "hoi_16mbs"
+			text = "TPT_NEUTRAL"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+	}
+}

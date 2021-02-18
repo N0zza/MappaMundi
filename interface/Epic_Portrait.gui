@@ -1,0 +1,34 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "HGO_Epic_Window"
+		size = { width = 100% height = 100% }
+		scale = 0.6
+		position = { x=-10 y=-305 }
+		Orientation = center
+
+		iconType = {
+			name = "Background"	
+			scale = 1
+			position = { x=0 y=0 }
+			spriteType ="GFX_pol_leader_frame"
+		}
+
+		iconType = {
+			name ="Default_Epic_Portrait"
+			spriteType = "GFX_Default_Epic_Portrait"
+			position = { x = 8 y = 10 }
+		}
+		
+		instantTextboxType = {
+			name = "Epic_Leader_Name"
+			position = { x = 10 y = 220 }
+			font = "hoi_18mbs"
+			text = "[Epic_Leader_Name]"
+			maxWidth = 155	
+			maxHeight = 30
+			format = center
+			vertical_alignment = center
+		}
+	}
+}

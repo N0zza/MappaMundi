@@ -1,0 +1,655 @@
+﻿
+#Random country colors
+
+add_namespace = sccrandom
+
+country_event = {
+	id = sccrandom.0001
+	title = sccrandom.0001.t
+	desc = sccrandom.0001.d
+
+	is_triggered_only = yes	
+	
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.1
+		#
+		set_variable = { global.scc_random_loading = 1 }
+		#
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = WHITE
+		#
+		set_variable = { global.scc_random_loading = 0 }
+		#
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.2
+		#
+		set_variable = { global.scc_random_loading = 1 }
+		#
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = AUSTRIA_WHITE
+		#
+		set_variable = { global.scc_random_loading = 0 }
+		#
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.3
+		#
+		set_variable = { global.scc_random_loading = 1 }
+		#
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = JAPAN_WHITE
+		#
+		set_variable = { global.scc_random_loading = 0 }
+		#
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.4
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SILVER
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.5
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = GREY_GER1
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.6
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = GREY_GER2
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.7
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = GREY_GER3
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.8
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = TUR_GREY
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.9
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = IRN_GREY
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.10
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = PRU_GREY
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.11
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = INS_GREY
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.12
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SILVER_2
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.13
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = BLACK
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.14
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = RED
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.15
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SWI_RED
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.16
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = UK_RED
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.17
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SOV_RED
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.18
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SPQR_RED
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.19
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = PRC_RED
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.20
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = RAJ_RED
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.21
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = CAN_RED
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.22
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = ALB_PURPLE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.23
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = NZL_PURPLE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.24
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = CYAN
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.25
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SKY_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.26
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SWE_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.27
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = USA_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.28
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = FRA_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.29
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = EUROPEAN_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.30
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = PRUSSIAN_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.31
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = CZE_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.32
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = EST_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.33
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = LAT_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.34
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = YUG_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.35
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = GRE_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.36
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = UKR_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.37
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = TEAL_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.38
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SAPPHIRE_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.39
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = ATLANTA_MIDNIGHT_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.40
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = ICE_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.41
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = MON_GREEN
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.42
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = ITA_GREEN
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.43
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = BUL_GREEN
+	} 
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.44
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = POR_GREEN
+	} 
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.45
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = BRA_GREEN
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.46
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = IRE_GREEN
+	} 
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.47
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = IRN_GREEN
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.48
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = TIB_GREEN
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.49
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = AUT_GREEN
+	} 
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.50
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = MEX_GREEN
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.51
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = YUN_GREEN
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.52
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = RUS_GREEN
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.53
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = MEN_GREEN
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.54
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = INS_GREEN
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.55
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = PERSIA_YELLOW
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.56
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = ROM_YELLOW
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.57
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = LIT_YELLOW
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.58
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SPR_YELLOW
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.59
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = BEL_YELLOW
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.60
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = HOL_ORANGE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.61
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = HUN_ORANGE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.62
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = RAJ_ORANGE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.63
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = CHI_YELLOW
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.64
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = COL_YELLOW
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.65
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = BOL_YELLOW
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.66
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = MAN_ORANGE
+	} 
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.67
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = DEN_BROWN
+	} 
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.68
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = SANJOSE_ORANGE
+	} 
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.69
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = METALLIC_GOLD
+	} 
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.70
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = PEACHTREE_GOLD
+	} 
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.71
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = GEORGIA_BRONZE
+	} 
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.72
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = CAPITOL_COPPER
+	} 
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.73
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = CATALONIA_YELLOW
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.74
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = RUS_RED
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.75
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = CHI_BLUE
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = sccrandom.0002.76
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = HUN_GREEN
+	}
+}
+
+country_event = { #Drop
+	id = sccrandom.9001
+	title = sccrandom.9001.t
+	desc = sccrandom.9001.d
+
+	is_triggered_only = yes	
+	
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = sccrandom.9002.1
+		drop_cosmetic_tag = yes
+	}
+}
