@@ -1,17 +1,17 @@
-How to install this trainwreck - presented by the HGO team
+How to install this trainwreck - presented by the Mappa Mundi team
 1) Download the mod, check your download directory (usually ThisPC/Downloads)
-2) Unzip the modfile. Make sure the folder name is still ahgoverhaul, and if isn't rename it.
-3) Enter the folder, Take out the .MOD file (the file called ahgoverhaul.mod) and put it outside the folder into whatever directory you downloaded the mod into.
+2) Unzip the modfile. Make sure the folder name is still MappaMundi, and if isn't rename it.
+3) Enter the folder, Take out the .MOD file (the file called mappamundi.mod) and put it outside the folder into whatever directory you downloaded the mod into.
 4) Hold control, and click the folder and the .MOD file and press copy
 5) Go to documents/Paradox Interactive/Hearts of Iron 4/mod and paste it into the mod folder.
 6) Boot up HOI4, click "Manage Playset, then click "Add More Mods" 
-7) Select Historic Geographical Overhaul - Github Version and click "Add to Playset"
-8) Search for Historic Geographical Overhaul - Github Version and activate the mod.
+7) Select Mappa Mundi - Github Version and click "Add to Playset"
+8) Search for Mappa Mundi - Github Version and activate the mod.
 9) Play the mod and enjoy.
 ---------------
 Extra notes:
 
-- the reason why you have to rename the folder to ahgoverhaul is because the game won't read the mod folder if it isn't the same name as the .MOD file.
+- the reason why you have to rename the folder to MappaMundi is because the game won't read the mod folder if it isn't the same name as the .MOD file.
 - don't expect every version to not be a buggy mess. as OCD-pleasing the mod may be, it's not bug-pleasing.
 ---------------
 Credits:
