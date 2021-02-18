@@ -1,0 +1,75 @@
+defined_text = {
+    name = RENAME_VP_DISPLAY_SL
+    text = {
+        trigger = {
+            check_variable = { rename_vp_open = 1 }
+            check_variable = { current_char = 0 }
+            check_variable = { chars^0 = 0 }
+        }
+        localization_key = "RENAME_VP_START"
+    }
+    text = {
+        trigger = {
+            check_variable = { rename_vp_open = 3 }
+            check_variable = { current_char = 0 }
+            check_variable = { chars^0 = 0 }
+        }
+        localization_key = "RENAME_VP_START_VP_VALUE"
+    }
+    text = {
+        trigger = {
+            check_variable = { current_char = 0 }
+            check_variable = { chars^0 = 0 }
+        }
+        localization_key = "RENAME_VP_START_ID"
+    }
+    text = {
+        localization_key = "RENAME_IN_PROGRESS"
+    }
+}
+
+defined_text = {
+    name = RENAME_VP_TOPBAR_SL
+    text = {
+        trigger = {
+            OR = {
+                check_variable = {
+                    rename_vp_get_provid_open = 1
+                }
+                check_variable = {
+                    rename_vp_open = 1
+                }
+            }
+        }
+        localization_key = "RENAME_VP_TOPBAR_ID"
+    }
+    text = {
+        trigger = {
+            OR = {
+                check_variable = {
+                    rename_vp_get_provid_open = 3
+                }
+                check_variable = {
+                    rename_vp_open = 3
+                }
+            }
+        }
+        localization_key = "SET_VP_TOPBAR_ID"
+    }
+    text = {
+        trigger = {
+            OR = {
+                check_variable = {
+                    rename_vp_get_provid_open = 2
+                }
+                check_variable = {
+                    rename_vp_open = 2
+                }
+            }
+        }
+        localization_key = "RESET_VP_TOPBAR_ID"
+    }
+    text = {
+        localization_key = "RENAME_VP_TOPBAR_NOID"
+    }
+}

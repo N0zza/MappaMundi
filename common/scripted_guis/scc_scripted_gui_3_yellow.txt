@@ -1,0 +1,95 @@
+scripted_gui = {
+	
+	scc_yellow  = {
+        window_name = "scc_yellow"
+        context_type = selected_country_context
+         
+        visible = {
+            check_variable = { global.scc_color = 5 }
+			check_variable = { global.open_main_gui = 1 }
+        }
+		
+		effects = {
+			YELLOW1_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = PERSIA_YELLOW
+			}
+			YELLOW2_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = ROM_YELLOW
+			}
+			YELLOW3_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = LIT_YELLOW
+			}
+			YELLOW4_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SPR_YELLOW
+			}
+			YELLOW5_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = BEL_YELLOW
+			}
+			YELLOW6_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = HOL_ORANGE
+			}
+			YELLOW7_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = HUN_ORANGE
+			}
+			YELLOW8_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = RAJ_ORANGE
+			}
+			YELLOW9_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = CHI_YELLOW
+			}
+			YELLOW10_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = COL_YELLOW
+			}
+			YELLOW11_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = BOL_YELLOW
+			}
+			YELLOW12_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = MAN_ORANGE
+			}
+			YELLOW13_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = DEN_BROWN
+			}
+			YELLOW14_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SANJOSE_ORANGE
+			}
+			YELLOW15_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = METALLIC_GOLD
+			}
+			YELLOW16_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = PEACHTREE_GOLD
+			}
+			YELLOW17_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = GEORGIA_BRONZE
+			}
+			YELLOW18_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = CAPITOL_COPPER
+			}
+			YELLOW19_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = CATALONIA_YELLOW
+			}
+		}
+		
+		triggers = {
+		}
+	}
+	
+}

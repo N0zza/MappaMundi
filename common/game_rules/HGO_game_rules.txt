@@ -1,0 +1,164 @@
+#
+# List of options showing in the Game Rules screen
+#
+# format is:
+# rule_token = {
+#	name = "TEXT_KEY_FOR_NAME"
+#	required_dlc = "Name of the Required DLC"
+#	desc = "TEXT_KEY_FOR_LONG_DESC"
+#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups 
+#	icon = gfx_option_token							# Optional icon
+#	option = {										# Unless other specified, the first option is the default option
+#		name = option_token
+#		text = "TEXT_KEY_FOR_OPTION_NAME"
+#		allow_achievements = no						# Achievements cannot be earned if one or more game rules are set to an option that has this property set to no.
+#													# If not specified, this is set to yes for default options and no for all other options.
+#	}
+#	default = {										# Specify an option with the "default" token to override the behavior of treating the first option as the default.
+#		name = option_token
+#		text = "TEXT_KEY_FOR_OPTION_NAME"
+#		...
+#	}
+# }
+
+HGO_world_state = {
+	name = "The World"
+	group = "RULE_GROUP_HGO_SETTINGS"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "The world will be as it was in 1936."
+	}
+	option = {
+		name = BLANK_SLATE
+		text = "Unclaimed World"
+		desc = "With this option enabled, the entire world will be owned by Unclaimed Land (UNC)."
+		allow_achievements = yes
+	}
+}
+HGO_unite_raj = {
+	name = "India Settings"
+	group = "RULE_GROUP_HGO_SETTINGS"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "The Indian Subcontinent will be as it was in 1936."
+	}
+	option = {
+		name = NO_PRINCELY
+		text = "Yeet the Princely States"
+		desc = "The Princely States will be absorbed into the Raj."
+		allow_achievements = yes
+	}
+}
+HGO_unite_ussr = {
+	name = "USSR Settings"
+	group = "RULE_GROUP_HGO_SETTINGS"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "The USSR will be divided into SSRs and ASSRs as it is by default."
+	}
+		option = {
+		name = DIVIDED_USSR
+		text = "Divide it Further"
+		desc = "The USSR will be divided into SSRs, ASSRs, Okrugs, and Autonomous Oblasts."
+		allow_achievements = yes
+	}
+	option = {
+		name = UNITED_USSR
+		text = "Unite The USSR"
+		desc = "The USSR will be showed as a single country."
+		allow_achievements = yes
+	}
+}
+HGO_unite_china = {
+	name = "China Settings"
+	group = "RULE_GROUP_HGO_SETTINGS"
+	default = {
+		name = DEFAULT
+		text = "Warlord China (Default)"
+		desc = "China will be full of Warlord States as it is by default."
+	}
+	option = {
+		name = KMT_CHINA
+		text = "KMT China"
+		desc = "The Republic of China will Unite China."
+		allow_achievements = yes
+	}
+		option = {
+		name = KMT_CHINA_MAX
+		text = "KMT China - Maximum Claims"
+		desc = "The Republic of China will Unite China Including Tibet, Mongolia, and Tuva."
+		allow_achievements = yes
+	}
+		option = {
+		name = KMT_TAIWAN
+		text = "KMT Taiwan, CCP Mainland"
+		desc = "The People's Republic of China will Unite Mainlandnd China, and the Republic of China will go into exile in Taiwan."
+		allow_achievements = yes
+	}
+		option = {
+		name = CCP_CHINA
+		text = "CCP China"
+		desc = "The People's Republic of China will Unite China."
+		allow_achievements = yes
+	}
+		option = {
+		name = CCP_CHINA_MAX
+		text = "CCP China - Maximum Claims"
+		desc = "The People's Republic of China will Unite China Including Tibet, Mongolia, and Tuva."
+		allow_achievements = yes
+	}
+		option = {
+		name = CCP_TAIWAN
+		text = "CCP Taiwan, KMT Mainland"
+		desc = "The Republic of China will Unite Mainlandnd China, and the People's Republic of China will go into exile in Taiwan."
+		allow_achievements = yes
+	}
+}
+HGO_set_scenario = {
+	name = "Set Scenario"
+	group = "RULE_GROUP_HGO_SETTINGS"
+	default = {
+		name = DEFAULT
+		text = "The Gathering Storm (Default)"
+		desc = "1 January 1936."
+	}
+	option = {
+		name = GREAT_WAR
+		text = "The Great War"
+		desc = "28 July 1914 - (Insert WW1 Desc Here.)"
+		allow_achievements = yes
+	}
+	option = {
+		name = SECOND_WORLD_WAR
+		text = "The Second World War - COMING SOON"
+		desc = "1 September 1939 - COMING SOON"
+		allow_achievements = yes
+	}
+	option = {
+		name = MID_WAR
+		text = "The Winter Counter-Offensive - COMING SOON"
+		desc = "1 January 1942 - COMING SOON"
+		allow_achievements = yes
+	}
+	option = {
+		name = COLD_WAR
+		text = "The Cold War - COMING SOON"
+		desc = "1 January 1950 - COMING SOON"
+		allow_achievements = yes
+	}
+	option = {
+		name = USSR_COLLAPSE
+		text = "The Collapse of Communism - W.I.P"
+		desc = "1 January 1990 - W.I.P - Only Including Europe. (Insert 1990 Desc Here.)"
+		allow_achievements = yes
+	}
+	option = {
+		name = MODERN_DAY
+		text = "Modern Day"
+		desc = "1  January 2021 - (Insert Modern Day Desc Here.)"
+		allow_achievements = yes
+	}
+}

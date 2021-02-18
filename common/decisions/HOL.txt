@@ -1,0 +1,112 @@
+
+political_actions = {
+	HOL_relocate_government_to_batavia = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = HOL
+		}
+
+		available = {
+			has_capitulated = yes
+			has_completed_focus = HOL_continue_the_war_in_batavia
+			OR = {
+				has_government = democratic
+				has_government = fascism
+			}
+			OR = {
+				INS = {
+					is_subject_of = HOL
+					has_autonomy_state = autonomy_integrated_puppet
+					compare_autonomy_progress_ratio < 0.6
+					has_full_control_of_state = 335
+				}
+				has_full_control_of_state = 335
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = HOL
+		}
+
+		complete_effect = {
+			remove_ideas = HOL_curtail_colonial_autonomy_overlord
+			INS = {
+				hidden_effect = {
+					country_event = { id = mtg_netherlands.22 }
+				}
+			}
+			INS = {
+				every_unit_leader = {
+					set_nationality = HOL
+				}
+			}
+			annex_country = {
+			    target = INS
+			    transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = INS
+				}
+				add_compliance = 70
+			}
+			set_capital = 335
+			hidden_effect = { news_event = { id = mtg_news.46 days = 1 } }
+		}
+	}
+
+	HOL_propose_benelux_unification = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = HOL
+		}
+
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = HOL
+		}
+
+		complete_effect = {
+			effect_tooltip = {
+				set_cosmetic_tag = HOL_benelux_unified
+				BEL = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
+				}
+				LUX = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
+				}
+				annex_country = {
+				    target = BEL
+				}
+				annex_country = {
+				    target = LUX
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = BEL
+							is_core_of = LUX
+						}
+					}
+					add_core_of = ROOT
+				}
+			}
+		}
+	}
+
+}
+

@@ -1,0 +1,86 @@
+USA_congress = {
+	USA_statehood_for_alaska = {
+		icon = infiltrate_state
+		available = {
+			463 = {
+				is_fully_controlled_by = ALA
+			}
+		}
+		visible = {
+			463 = {
+				is_fully_controlled_by = ALA
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		fire_only_once = yes
+		remove_effect = {
+			USA_congress_add_state = yes
+			USA_calc_stars = yes
+			annex_country = {
+				    target = ALA
+				}
+		}
+	}
+	USA_statehood_for_hawaii = {
+		icon = infiltrate_state
+		available = {
+			629 = {
+				is_fully_controlled_by = HAW
+			}
+		}
+		visible = {
+			629 = {
+				is_fully_controlled_by = HAW
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		fire_only_once = yes
+		remove_effect = {
+			USA_congress_add_state = yes
+			USA_calc_stars = yes
+			annex_country = {
+				    target = HAW
+				}
+		}
+	}
+	USA_statehood_for_puerto_rico = {
+		icon = infiltrate_state
+		available = {
+			686 = {
+				is_fully_controlled_by = PUE
+			}
+		}
+		visible = {
+			686 = {
+				is_fully_controlled_by = PUE
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		fire_only_once = yes
+		remove_effect = {
+			USA_congress_add_state = yes
+			USA_calc_stars = yes
+			annex_country = {
+				    target = PUE
+				}
+		}
+	}
+}

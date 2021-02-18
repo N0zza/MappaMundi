@@ -1,0 +1,71 @@
+scripted_gui = {
+	
+	scc_red = {
+        window_name = "scc_red"
+        context_type = selected_country_context
+         
+        visible = {
+            check_variable = { global.scc_color = 2 }
+			check_variable = { global.open_main_gui = 1 }
+        }
+        
+        effects = {
+            RED1_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = RED
+            }
+			RED2_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SWI_RED
+            }
+			RED3_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = UK_RED
+            }
+			RED4_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SOV_RED
+            }
+			RED5_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SPQR_RED
+            }
+			RED6_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = PRC_RED
+            }
+			RED7_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = RAJ_RED
+            }
+			RED8_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = CAN_RED
+            }
+			RED9_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = ALB_PURPLE
+            }
+			RED10_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = NZL_PURPLE
+            }
+			RED11_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = BYZ_PURPLE
+            }
+			RED12_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = RUS_RED
+            }
+			RED13_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = IRN_GREEN
+			}			
+        }
+        
+        triggers = {
+        }
+    }
+	
+}

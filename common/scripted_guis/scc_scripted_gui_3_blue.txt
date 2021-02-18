@@ -1,0 +1,95 @@
+scripted_gui = {
+	
+	scc_blue = {
+        window_name = "scc_blue"
+        context_type = selected_country_context
+         
+        visible = {
+            check_variable = { global.scc_color = 3 }
+			check_variable = { global.open_main_gui = 1 }
+        }
+		
+		effects = {
+			BLUE1_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = CYAN
+            }
+			BLUE2_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SKY_BLUE
+            }
+			BLUE3_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SWE_BLUE
+            }
+			BLUE4_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = USA_BLUE
+            }
+			BLUE5_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = FRA_BLUE
+            }
+			BLUE6_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = EUROPEAN_BLUE
+            }
+			BLUE7_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = PRUSSIAN_BLUE
+            }
+			BLUE8_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = CZE_BLUE
+            }
+			BLUE9_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = EST_BLUE
+            }
+			BLUE10_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = LAT_BLUE
+            }
+			BLUE11_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = YUG_BLUE
+            }
+			BLUE12_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = GRE_BLUE
+            }
+			BLUE13_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = UKR_BLUE
+            }
+			BLUE14_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = TEAL_BLUE
+			}
+			BLUE15_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SAPPHIRE_BLUE
+			}
+			BLUE16_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = ATLANTA_MIDNIGHT_BLUE
+			}
+			BLUE17_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = ICE_BLUE
+			}
+			BLUE18_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = TEX_BLUE
+			}
+			BLUE19_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = CHI_BLUE
+			}
+		}
+		
+		triggers = {
+		}
+	}
+	
+}

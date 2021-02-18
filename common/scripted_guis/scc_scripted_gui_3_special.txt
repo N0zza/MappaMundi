@@ -1,0 +1,130 @@
+scripted_gui = {
+	
+	scc_special = {
+        window_name = "scc_special"
+        context_type = selected_country_context
+         
+        visible = {
+            check_variable = { global.scc_color = 999 }
+			check_variable = { global.open_main_gui = 1 }
+        }
+		
+		effects = {
+			SPECIAL1_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = ENG_imperial_federation
+            }
+			SPECIAL2_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = HUN_EMPIRE
+            }
+			SPECIAL3_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SCAN
+            }
+			SPECIAL4_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = NORD
+            }
+			SPECIAL5_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = GCOL
+            }
+			SPECIAL6_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = PLCW
+            }
+			SPECIAL7_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = UNDL
+            }
+			SPECIAL8_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = USCA
+            }
+			SPECIAL9_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = BALT
+            }
+			SPECIAL10_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = OTTO
+            }
+			SPECIAL11_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = EURO
+            }
+			SPECIAL12_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = HLRE
+            }
+			SPECIAL13_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SPQR
+            }
+			SPECIAL14_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = PERS
+            }
+			SPECIAL15_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = BYZA
+            }
+			SPECIAL16_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = ARAB
+            }
+			SPECIAL17_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = MAJA
+            }
+			SPECIAL18_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = RATT
+            }
+			SPECIAL19_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = CEL_GREEN #formable nations
+            }
+			SPECIAL20_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = MUTA
+            }
+			SPECIAL21_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SCCwNrk
+            }
+			SPECIAL22_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SCCwoNrk
+            }
+			SPECIAL23_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = MAN_restored
+            }
+			SPECIAL24_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = JAP_showa_restoration
+            }
+			SPECIAL25_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = CHI_warlord_PRC
+            }
+			SPECIAL26_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = CHI_power_struggle_defeated
+            }
+			SPECIAL27_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = MEX_cristero
+            }
+			SPECIAL28_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = USA_CSA
+            }
+		}
+		
+		triggers = {
+		}
+	}
+}

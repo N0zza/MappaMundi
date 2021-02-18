@@ -1,0 +1,89 @@
+scripted_gui = {
+    scc_gui_1 = {
+        window_name = "scc_gui_colorgroups"
+        context_type = selected_country_context
+         
+        visible = {
+            check_variable = { global.open_main_gui = 1 }
+        }
+        
+        effects = {
+		
+			#close it
+			scc_close_click = {
+				set_variable = { global.open_main_gui = 0 }
+				set_variable = { global.show_hide_var = 1 }
+				set_variable = { global.scc_random = 0 }
+			}
+			scc_close_2_click = {
+				set_variable = { global.open_main_gui = 0 }
+				set_variable = { global.show_hide_var = 1 }
+				set_variable = { global.scc_random = 0 }
+			}
+		
+			#colors
+            grey_button_click = {
+				set_variable = { global.scc_color = 1 }
+				set_variable = { global.scc_random = 0 }
+            }
+			red_button_click = {
+				set_variable = { global.scc_color = 2 }
+				set_variable = { global.scc_random = 0 }
+            }
+			blue_button_click = {
+				set_variable = { global.scc_color = 3 }
+				set_variable = { global.scc_random = 0 }
+            }
+			green_button_click = {
+				set_variable = { global.scc_color = 4 }
+				set_variable = { global.scc_random = 0 }
+            }
+			yellow_button_click = {
+				set_variable = { global.scc_color = 5 }
+				set_variable = { global.scc_random = 0 }
+            }
+			
+			#Other mod colors
+			better_colors_button_click = {
+				set_variable = { global.scc_color = 21 }
+				set_variable = { global.scc_random = 0 }
+			}
+			
+			##
+			###Button wich are not in grid
+			##
+			
+			special_button_click = {
+				set_variable = { global.scc_color = 999 }
+				set_variable = { global.scc_random = 0 }
+            }
+			
+			random_button_click = {
+				set_variable = { global.scc_random = 1 }
+				set_variable = { global.scc_color = 0 }
+            }
+			
+			default_color_button_click = {
+				drop_cosmetic_tag = yes
+				set_variable = { global.scc_random = 0 }
+			}
+			
+			default_color_button_all_click = {
+				#
+				set_variable = { global.scc_random_loading = 1 }
+				#				
+				every_country = { 
+					limit = {
+						is_ai = yes
+					}
+					country_event = { 
+						id = sccrandom.9001
+					} 
+				}
+			}
+        }
+        
+        triggers = {
+        }
+    }
+}

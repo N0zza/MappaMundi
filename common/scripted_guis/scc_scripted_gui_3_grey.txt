@@ -1,0 +1,68 @@
+scripted_gui = {
+
+    scc_grey = {
+        window_name = "scc_grey"
+        context_type = selected_country_context
+         
+        visible = {
+            check_variable = { global.scc_color = 1 }
+			check_variable = { global.open_main_gui = 1 }
+        }
+        
+        effects = {
+            GREY1_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = WHITE
+				set_variable = { global.test_test = 1 }
+				set_variable = { global.white_name = "Working" }
+            }
+			GREY2_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = AUSTRIA_WHITE
+            }
+			GREY3_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = JAPAN_WHITE
+            }
+			GREY4_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = SILVER
+            }
+			GREY5_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = GREY_GER1
+			}
+			GREY6_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = GREY_GER2
+			}
+			GREY7_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = GREY_GER3
+			}
+			GREY8_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = TUR_GREY
+			}
+			GREY9_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = IRN_GREY
+			}
+			GREY10_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = PRU_GREY
+			}
+			GREY11_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = INS_GREY
+			}
+			GREY12_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = BLACK
+			}
+        }
+        
+        triggers = {
+        }
+    }
+}

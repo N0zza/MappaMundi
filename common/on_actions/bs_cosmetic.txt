@@ -1,0 +1,223 @@
+on_actions = {
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = BRM
+						is_subject_of = ENG
+					}
+				}
+				set_cosmetic_tag = BRM_UK
+			}
+			if = {
+				limit = { 
+					AND = { 
+						TAG = SAR
+						is_subject_of = FRA
+					}
+				}
+				set_cosmetic_tag = SAR_FRA
+			}
+			if = {
+				limit = { 
+					AND = { 
+						TAG = BRM
+						is_subject_of = JAP
+					}
+				}
+				set_cosmetic_tag = BRM_JAP
+			}
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = USA
+					}
+				}
+				set_cosmetic_tag = KOR_USA
+			}
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = JAP
+					}
+				}
+				set_cosmetic_tag = KOR_JAP
+			}
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = SOV
+					}
+				}
+				set_cosmetic_tag = KOR_SOV
+			}
+			if = {
+				limit = {
+				    AND = {
+					    ROOT = {
+						    original_tag = ENG
+					    }
+						SCO = { exists = yes }
+						WLS = { exists = yes }
+					}
+				}
+				ENG = { set_cosmetic_tag = ENG_ONLY }
+			}
+			if = {
+				limit = {
+					AND = {
+					    ROOT = {
+						    original_tag = CZE
+					    }
+						CZE = { exists = yes }
+						MRV = { exists = yes }
+					}
+				}
+				CZE = { set_cosmetic_tag = BOHEMIA } #cosmetic tag for CZE if Moravia exists
+			}
+		}
+	}
+
+	#used when puppeting through the occupied territories menu during peace time (or when releasing from non-core but owned territory, f.e. Britain releasing Egypt)
+	#ROOT = nation being released, FROM = overlord
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = BRM
+						is_subject_of = ENG
+					}
+				}
+				set_cosmetic_tag = BRM_UK
+			}
+			if = {
+				limit = { 
+					AND = { 
+						TAG = SAR
+						is_subject_of = FRA
+					}
+				}
+				set_cosmetic_tag = SAR_FRA
+			}
+			if = {
+				limit = { 
+					AND = { 
+						TAG = BRM
+						is_subject_of = JAP
+					}
+				}
+				set_cosmetic_tag = BRM_JAP
+			}
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = USA
+					}
+				}
+				set_cosmetic_tag = KOR_USA
+			}
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = JAP
+					}
+				}
+				set_cosmetic_tag = KOR_JAP
+			}
+			if = {
+				limit = { 
+					AND = { 
+						TAG = KOR
+						is_subject_of = SOV
+					}
+				}
+				set_cosmetic_tag = KOR_SOV
+			}
+			if = {
+				limit = {
+				    AND = {
+					    ROOT = {
+						    original_tag = ENG
+					    }
+						SCO = { exists = yes }
+						WLS = { exists = yes }
+					}
+				}
+				ENG = { set_cosmetic_tag = ENG_ONLY }
+			}
+			if = {
+				limit = {
+					AND = {
+					    ROOT = {
+						    original_tag = CZE
+					    }
+						CZE = { exists = yes }
+						MRV = { exists = yes }
+					}
+				}
+				CZE = { set_cosmetic_tag = BOHEMIA } #cosmetic tag for CZE if Moravia exists
+			}
+		}
+	}
+	
+	on_subject_free = {
+		effect = {
+			if = {
+				limit = {
+					TAG = BRM
+				}
+				drop_cosmetic_tag = yes
+				retire_country_leader = yes
+			}
+			if = {
+				limit = {
+					TAG = INS
+				}
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					TAG = RAJ
+				}
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+					TAG = MAL
+				}
+				drop_cosmetic_tag = yes
+			}
+			if = {
+				limit = {
+				    AND = {
+					    ROOT = {
+						    original_tag = ENG
+					    }
+						SCO = { exists = yes }
+						WLS = { exists = yes }
+					}
+				}
+				ENG = { set_cosmetic_tag = ENG_ONLY }
+			}
+			if = {
+				limit = {
+					AND = {
+					    ROOT = {
+						    original_tag = CZE
+					    }
+						CZE = { exists = yes }
+						MRV = { exists = yes }
+					}
+				}
+				CZE = { set_cosmetic_tag = BOHEMIA } #cosmetic tag for CZE if Moravia exists
+			}
+		}
+	}
+}

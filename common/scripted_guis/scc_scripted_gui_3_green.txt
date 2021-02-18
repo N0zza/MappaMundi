@@ -1,0 +1,77 @@
+scripted_gui = {
+	
+	scc_green  = {
+        window_name = "scc_green"
+        context_type = selected_country_context
+         
+        visible = {
+            check_variable = { global.scc_color = 4 }
+			check_variable = { global.open_main_gui = 1 }
+        }
+		
+		effects = {
+			GREEN1_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = RUS_GREEN
+			}
+			GREEN2_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = MON_GREEN
+			}
+			GREEN3_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = ITA_GREEN
+			}
+			GREEN4_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = BUL_GREEN
+			}
+			GREEN5_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = POR_GREEN
+			}
+			GREEN6_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = BRA_GREEN
+			}
+			GREEN7_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = IRE_GREEN
+			}
+			GREEN8_button_click = {
+			}
+			GREEN9_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = TIB_GREEN
+			}
+			GREEN10_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = AUT_GREEN
+			}
+			GREEN11_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = MEX_GREEN
+			}
+			GREEN12_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = YUN_GREEN
+			}
+			GREEN13_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = MEN_GREEN
+			}
+			GREEN14_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = INS_GREEN
+			}
+			GREEN15_button_click = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = HUN_GREEN
+			}
+		}
+		
+		triggers = {
+		}
+	}
+	
+}

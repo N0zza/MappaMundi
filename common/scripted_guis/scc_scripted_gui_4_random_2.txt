@@ -1,0 +1,35 @@
+scripted_gui = {
+    scc_random_warning_2 = {
+        window_name = "scc_random_warning_2"
+        context_type = selected_country_context
+         
+        visible = {
+            check_variable = { global.scc_random = 1 }
+        }
+        
+        effects = {
+			yes_random_button_click = {
+				#
+				set_variable = { global.scc_random_loading = 1 }
+				#				
+				every_country = { 
+					limit = {
+						is_ai = yes
+					}
+					country_event = { 
+						id = sccrandom.0001
+					} 
+				}
+				#
+				set_variable = { global.scc_random = 0 }
+				#
+			}
+			no_random_button_click = {
+				set_variable = { global.scc_random = 0 }
+			}
+		}
+		
+		triggers = {
+        }
+    }
+}
