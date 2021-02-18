@@ -1,0 +1,67 @@
+﻿capital = 85
+
+oob = "DAN_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons1 = 1
+}
+
+
+
+
+set_convoys = 10
+
+
+
+	set_popularities = {
+		democratic 
+			 = 19
+		national_socialism
+			 = 44
+		communism
+			 = 1
+		neutrality 
+			 = 36
+		}
+	set_politics = { 
+ ruling_party = national_socialism
+	last_election = "1935.9.8"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Arthur Karl Greiser"
+	desc = "POLITICS_ARTHUR_KARL_GREISER_DESC"
+	picture = "Portrait_Danzig_Arthur_Greiser.dds"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Carl Jacob Burckhardt"
+	desc = "POLITICS_CARL_BURCKHARDT_DESC"
+	picture = "gfx/leaders/GER/Portrait_Germany_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology =stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Arthur Brill"
+	desc = "POLITICS_ARTHUR_BRILL_DESC"
+	picture = "gfx/leaders/GER/Portrait_Germany_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}

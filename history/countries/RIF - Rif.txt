@@ -1,0 +1,57 @@
+﻿capital = 290
+
+oob = "SPR_gen"
+
+set_cosmetic_tag = RIF_SPR
+
+
+
+	set_popularities = {
+		democratic 
+			 = 5
+		fascism
+			 = 20
+		communism
+			 = 5
+		authoritarian_monarchism
+			 = 70
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Abd el-Krim"
+	desc = ""
+	picture = "gfx/leaders/Middle East/Abd_el-Krim.dds"
+	expire = "1963.2.6"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+	create_country_leader = {
+		name = "Hajj Hatmi"
+		desc = ""
+		picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_navy_2.dds"
+		expire = "1982.11.11"
+		ideology = liberalism
+		traits = {
+			#
+		}
+	}
+
+	create_country_leader = {
+	name = "Manuel Rico Avelló"
+	desc = ""
+	picture = "Portrait_Manuel_Rico_Avello.dds"
+	expire = "1936.8.23"
+	ideology = authmon
+	traits = {
+		#
+	}
+}

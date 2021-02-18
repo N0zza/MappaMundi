@@ -1,0 +1,58 @@
+﻿capital = 375 #LA
+
+oob = "TEX_1936"
+
+
+	set_popularities = {
+		democratic 
+			 = 20
+		fascism
+			 = 0
+		communism
+			 = 0
+		neutrality = 80
+		}
+	set_politics = { 
+ ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+	disarmed_nation
+	free_trade
+}
+
+
+create_country_leader = {
+	name = "James V. Allred"
+	desc = ""
+	picture = "Portrait_Texas_James.dds"
+	expire = "1950.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Arthur Harvey"
+	desc = ""
+	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Rex O'donnell"
+	desc = ""
+	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}

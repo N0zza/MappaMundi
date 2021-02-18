@@ -1,0 +1,69 @@
+﻿capital = 660
+
+oob = "FRA_gen"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+}
+
+set_convoys = 20
+
+
+
+	set_popularities = {
+		communism
+			 = 10
+			
+		
+		
+		fascism
+			 = 20
+		
+		
+		democratic 
+			 = 20
+		neutrality 
+			 = 50
+		}
+	set_politics = { 
+ ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+
+create_country_leader = {
+	name = "Bokassa I"
+	desc = ""
+	picture = "Bokassa.tga"
+	ideology = stratmon
+	expire = "1996.11.3"
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Barthélemy Boganda"
+	desc = ""
+	picture = "gfx/leaders/Africa/Barthelemy_Boganda.dds"
+	ideology = liberalism
+	expire = "1959.3.29"
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Abel Goumba"
+	desc = ""
+	picture = "gfx/leaders/Africa/Abel_Goumba.dds"
+	ideology = moderatism
+	expire = "2009.5.11"
+	traits = {
+		#
+	}
+}

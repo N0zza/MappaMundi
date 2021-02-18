@@ -1,0 +1,280 @@
+﻿capital = 107
+
+oob = "YUG_1936"
+
+set_research_slots = 3
+
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+	add_ideas = {
+		YUG_idea_croatian_opposition
+		YUG_idea_macedonian_opposition
+		YUG_idea_slovene_nationalism
+		YUG_idea_serbian_general_staff
+	}
+}
+add_ideas = {
+	anti_german_military
+}
+
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	early_fighter = 1
+	gwtank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	interwar_antitank = 1
+	gw_artillery = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_submarine = 1
+	superior_firepower = 1
+}
+
+
+set_convoys = 10
+
+
+	set_popularities = {
+		democratic 
+			 = 15
+		fascism
+			 = 10
+		communism
+			 = 15
+			
+		authoritarian_monarchism 
+			 = 60
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
+	last_election = "1935.5.3"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_stability = 0.6
+
+create_country_leader = {
+	name = "Nikola Uzunović"
+	desc = ""
+	picture = "yug_uzunovic.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Milan Gorkić"
+	desc = ""
+	picture = "yug_gorkic.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Milan Gorkić"
+	desc = ""
+	picture = "yug_gorkic.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Josip Broz Tito"
+	desc = ""
+	picture = "yug_tito.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Josip Broz Tito"
+	desc = ""
+	picture = "yug_tito.tga"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Svetozar Pribićević"
+	desc = ""
+	picture = "yug_pribicevic.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Petar II Karađorđevića"
+	desc = ""
+	picture = "Portrait_Peter_II.dds"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Petar II Karađorđevića"
+	desc = ""
+	picture = "Portrait_Peter_II.dds"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Anton Korošec"
+	desc = ""
+	picture = "yug_korosec.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Pavel Karađorđevića"
+	desc = ""
+	picture = "yug_paulkaradord.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Milan Stojadinović"
+	desc = ""
+	picture = "yug_stojadinovic.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Ljubomir Marić"
+	desc = ""
+	picture = "yug_maric.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Dragoljub Mihailović"
+	desc = ""
+	picture = "yug_mihailovic.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Petar II Karađorđevića"
+	desc = ""
+	picture = "Portrait_Peter_II.dds"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Aleksandar I Obrenovića"
+	desc = ""
+	picture = "Portrait_Alexander_Obrenovic.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Varnava Rosić"
+	desc = ""
+	picture = "yug_rosic.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Aleksandar I Karađorđevića"
+	desc = ""
+	picture = "yug_alexkaradord.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Dimitrije Ljotić"
+	desc = ""
+	picture = "yug_ljotic.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Ante Pavelić"
+	desc = ""
+	picture = "yug_pavelic.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
+}

@@ -1,0 +1,72 @@
+﻿capital = 5219
+
+oob = "NMB_1936"
+set_cosmetic_tag = NMB_ENG
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+
+
+
+
+	set_popularities = {
+		conservative_monarchism 
+			 = 80
+		fascism
+			 = 0
+		communism
+			 = 20
+			
+		neutrality 
+			 = 0
+		}
+	set_politics = { 
+ ruling_party = conservative_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Ricus Swart"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "David Gideon Conradie"
+	picture = "gfx/leaders/NMB/Portrait_David_Gideon_Conradie.dds"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Renier Marais"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Adolf Hitler Uunona"
+	desc = ""
+	picture = "Namibian_Hitler.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+

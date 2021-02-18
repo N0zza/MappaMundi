@@ -1,0 +1,72 @@
+﻿capital = 11726
+
+oob = "SIK_1936"
+
+
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+set_cosmetic_tag = SIK_1936
+add_ideas = {
+	#Chinese_Warlord
+	limited_conscription
+}
+
+
+
+
+	set_politics = { 
+ ruling_party = vanguardism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+	set_popularities = {
+		democratic 
+			 = 5
+			
+		fascism
+			 = 5
+			
+		vanguardism
+			 = 45
+			
+		neutrality 
+			 = 45
+	}
+	
+
+create_country_leader = {
+	name = "Sheng Shihtsai"
+	desc = "POLITICS_SHENG_SHICAI_DESC"
+	picture = "gfx/leaders/SIK/Portrait_Sinkiang_Sheng_Shicai.dds"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Sheng Shihtsai"
+	desc = "POLITICS_SHENG_SHICAI_DESC"
+	picture = "gfx/leaders/SIK/Portrait_Sinkiang_Sheng_Shicai.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Muhammad Amin Bughra"
+	desc = "POLITICS_SHENG_SHICAI_DESC"
+	picture = "Portrait_Sinkiang_Amin.dds"
+	expire = "1970.13.7"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,291 @@
+﻿capital = 1866 # Nanjing
+
+oob = "CHI_1936"
+set_stability = 0.2
+set_war_support = 0.5
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+}
+
+add_ideas = {
+	german_advisors
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	add_ideas = {
+		CHI_communist_uprisings
+	}
+}
+
+
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}		
+	add_ideas = {
+		CHI_nine_power_treaty
+		CHI_army_corruption_1
+		CHI_ineffective_bureaucracy
+		CHI_incompetent_officers
+		free_trade
+		CHI_hyper_inflation_1
+	}
+}
+save_global_event_target_as = WTT_current_china_leader
+
+set_convoys = 40
+
+
+
+
+	set_popularities = {
+		democratic 
+			 = 40
+		fascism
+			 = 0
+		communism
+			 = 0
+			
+		neutrality 
+			 = 60
+		}
+	set_politics = { 
+ ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Lin Sen"
+	desc = ""
+	picture = "Portrait_Lin_Sen.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wang Chao-ming"
+	desc = ""
+	picture = "Portrait_Wang_Chao-ming.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Hsuant'ung Emperor"
+	desc = ""
+	picture = "Portrait_China_Puyi.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Li Huang"
+	desc = ""
+	picture = "Portrait_Li_Huang.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Mao Tse-tung"
+	desc = ""
+	picture = "Portrait_China_Mao.dds"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+		cornered_fox
+	}
+}
+
+create_country_leader = {
+	name = "Ch'en Tu-hsiu"
+	desc = ""
+	picture = "Portrait_Chen_Tu-hsiu.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chang Chun-mai"
+	desc = ""
+	picture = "Portrait_Chang_Chun-mai.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Puyi"
+	desc = ""
+	picture = "Portrait_China_Puyi.dds"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wang Chao-ming"
+	desc = ""
+	picture = "Portrait_Wang_Chao-ming.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Aihsin Chuehlo de Puyi"
+	desc = ""
+	picture = "Portrait_China_Puyi.dds"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Puyi"
+	desc = ""
+	picture = "Portrait_China_Puyi.dds"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chiang Chung-cheng"
+	desc = ""
+	picture = "Portrait_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chiang Chung-cheng"
+	desc = ""
+	picture = "Portrait_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chiang Chung-cheng"
+	desc = ""
+	picture = "Portrait_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Yuan K'eiting"
+	desc = ""
+	picture = "Portrait_Yuan_Keiting.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Puyi"
+	desc = ""
+	picture = "Portrait_China_Puyi.dds"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "K'ung Te-ch'eng"
+	desc = ""
+	picture = "Portrait_Kung_Te-cheng.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Puyi"
+	desc = ""
+	picture = "Portrait_China_Puyi.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wang Chao-ming"
+	desc = ""
+	picture = "Portrait_Wang_Chao-ming.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Norman Lockhart Smith "
+	desc = ""
+	picture = "Portrait_Norman_Smith.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
+}

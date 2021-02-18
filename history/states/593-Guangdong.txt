@@ -1,0 +1,50 @@
+
+state={
+	id=593
+	name="STATE_593"
+	resources={
+		tungsten=15.000
+		steel=15.000
+		chromium=3.000
+	}
+
+	history={
+		owner = GND
+		add_core_of = GXC
+		add_core_of = GND
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			9938 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+
+			}
+
+		}
+		1938.10.25 = {
+			remove_core_of = GXC
+			owner = CHI
+			JAP = {
+				set_province_controller = 1202
+				set_province_controller = 4050
+				set_province_controller = 7108
+				set_province_controller = 9938
+				set_province_controller = 12095
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1078 
+	}
+	manpower=12700000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

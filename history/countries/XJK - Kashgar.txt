@@ -1,0 +1,44 @@
+﻿capital = 3058
+
+oob = "XJKs_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+set_stability = 0.6
+set_war_support = 0.7
+
+	set_popularities = {
+		neutrality 
+			 = 30
+		stratocratic
+			 = 40
+		vanguardism
+			 = 30
+			
+		}
+	set_politics = { 
+ ruling_party = stratocratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+add_ideas = {
+	closed_economy
+	service_by_requirement
+	partial_economic_mobilisation
+}
+
+create_country_leader = {
+	name = "Liu Pin"
+	desc = ""
+	picture = "Portrait_Liu_Bin.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}

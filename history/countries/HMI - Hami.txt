@@ -1,0 +1,53 @@
+﻿capital = 3294
+
+oob = "HMI_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+
+
+
+	set_popularities = {
+		democratic
+			 = 0
+		fascism
+			 = 0
+		communism
+			 = 0
+		authoritarian_monarchism
+			 = 45
+		stratocratic
+			 = 55
+		
+	}
+	set_politics = { 
+ ruling_party = stratocratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+#create_country_leader = {
+#	name = "Ma Bufang"
+#	desc = ""
+#	picture = "Portrait_Xibei_San_Ma_Ma_Bufang.dds"
+#	expire = "1975.7.1"
+#	ideology = despotism
+#	traits = {
+#		#
+#	} 
+#}
+create_country_leader = {
+	name = "Yulbars Khan"
+	desc = ""
+	picture = "Portrait_Yulbars_Khan.dds"
+	expire = "1975.7.1"
+	ideology = militarism
+	traits = {
+		#
+	}
+}
+

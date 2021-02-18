@@ -1,0 +1,80 @@
+﻿capital = 2709
+
+set_cosmetic_tag = BAH_ENG
+
+oob = "ENG_gen"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	trench_warfare = 1
+	
+}
+
+
+
+	set_popularities = {
+		democratic 
+			 = 10
+		fascism
+			 = 5
+		communism
+			 = 5
+		authoritarian_monarchism
+			 = 80
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+	
+	create_country_leader = {
+		name = "Axel Wenner-Gren"
+		desc = ""
+		picture = "gfx/leaders/Central America/Axel_Wenner-Gren.dds"
+		expire = "1961.11.24"
+		ideology = fascism_ideology
+		traits = {
+			#
+		}
+	}
+	
+	create_country_leader = {
+	name = "Roland Theodore Symonette"
+	desc = ""
+	picture = "gfx/leaders/Central America/Roland_Symonette.dds"
+	expire = "1980.3.13"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+
+create_country_leader = {
+	name = "Sir Charles Cecil Dundas"
+	desc = ""
+	picture = "Portrait_Charles_Dundas.dds"
+	expire = "1956.4.26"
+	ideology = authmon
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Prince David of Windsor"
+	desc = ""
+	picture = "Portrait_Edward_VIII.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}

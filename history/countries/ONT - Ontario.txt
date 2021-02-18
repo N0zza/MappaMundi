@@ -1,0 +1,39 @@
+﻿capital = 276
+
+oob = "ONT_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+
+set_convoys = 10
+
+set_popularities = {
+	liberal_republic
+		= 73
+	democratic
+		= 19
+	socialism_ideology
+		= 8
+}
+
+set_politics = { 
+	ruling_party = liberal_republic
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Mitchell Hepburn"
+	desc = ""
+	picture = "ONT_Hepburn.tga"
+	expire = "1950.1.1"
+	ideology = socdem
+	traits = {
+	}
+}

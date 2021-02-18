@@ -1,0 +1,66 @@
+﻿capital = 446
+
+set_cosmetic_tag = EGY_ENG
+set_convoys = 20
+
+
+
+
+
+	set_popularities = {
+		conservative_monarchism 
+			 = 25
+		fascism
+			 = 20
+		communism
+			 = 5
+			
+		authoritarian_monarchism 
+			 = 50
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Muhammad Naguib"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_democratic1.dds"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ahmed Husayn"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fuad I of Muhammad Ali"
+	desc = ""
+	picture = "Portrait_Fuad_I.dds"
+	ideology = authmon
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hosni al-Arabi"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+	ideology = leninism
+	traits = {
+		#
+	}
+}

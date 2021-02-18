@@ -1,0 +1,51 @@
+﻿capital = 301
+
+oob = "PAR_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+set_country_flag = monroe_doctrine
+
+
+	set_popularities = {
+		liberal_republic 
+			 = 60
+		fascism
+			 = 0
+		communism
+			 = 40
+			
+		}
+	set_politics = { 
+ ruling_party = liberal_republic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Eusebio Ayala"
+	desc = "POLITICS_EUSEBIO_AYALA_DESC"
+	picture = "Portrait_Eusebio_Ayala.dds"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+		#
+	}
+}
+
+# Rafael Franco technically comes to and loses power slightly after/before the bookmarks, but is the go-to choice for a socialist leader
+create_country_leader = {
+	name = "Rafael Franco"
+	desc = "POLITICS_RAFAEL_FRANCO_DESC"
+	picture = "Portrait_Rafael_Franco.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}

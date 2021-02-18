@@ -1,0 +1,54 @@
+﻿capital = 3389
+
+oob = "ABD_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+set_cosmetic_tag = ABD_RAJ
+
+
+set_convoys = 10
+
+set_popularities = {
+	        democratic = 25
+        communism = 0
+        fascism = 5
+        monarchism = 70
+
+}
+
+#if = {
+#	limit = {
+#		has_dlc = "Together for Victory"
+#	}
+#	set_autonomy = {
+#		target = FUJ
+#		autonomous_state = autonomy_dominion
+#	}
+#	
+#	else = {
+#		puppet = FUJ
+#	}
+#}
+set_politics = {
+	
+	ruling_party = monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Shakhbut II bin Sultan Al Nahyan"
+	desc = ""
+	picture = "gfx/leaders/Trucial/abudhabi.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+		#
+	}
+}

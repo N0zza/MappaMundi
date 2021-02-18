@@ -1,0 +1,69 @@
+﻿capital = 2267
+
+set_research_slots = 3
+
+oob = "BOS_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1
+	tech_recon = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	transport = 1
+}
+
+
+
+	set_popularities = {
+		democratic 
+			 = 15
+		neutrality
+			 = 60
+		communism
+			 = 25
+		}
+	set_politics = { 
+ ruling_party = neutrality
+	last_election = "1960.1.1"
+	election_frequency = 20
+	elections_allowed = no # none after offset 1
+}
+
+create_country_leader = {
+	name = "Berislav Rončević"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	expire = "1960.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Habib Esfahani"
+	desc = ""
+	picture = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+	expire = "1960.1.1"
+	ideology = stalinism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Demir Demirev"
+	desc = ""
+	picture = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+	expire = "1960.1.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}

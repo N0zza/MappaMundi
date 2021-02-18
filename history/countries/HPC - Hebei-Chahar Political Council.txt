@@ -1,0 +1,37 @@
+﻿capital = 608
+
+oob = "HPC_1936"
+
+set_research_slots = 2
+set_stability = 0.8
+set_technology = {
+	infantry_weapons = 1
+
+}
+	set_popularities = {
+		democratic 
+			 = 0
+			
+		fascism
+			 = 0
+		communism
+			 = 0
+			
+		neutrality
+			 = 100
+		}
+	set_politics = { 
+ ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+create_country_leader = {
+	name = "Sung Zheyuan"
+	desc = "POLITICS_SONG_ZHEYUAN_DESC"
+	picture = "Portrait_Song_Zheyuan.dds"
+	expire = "1945.1.20"
+	ideology = despotism
+}

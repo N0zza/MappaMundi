@@ -1,0 +1,108 @@
+﻿capital = 7794
+
+oob = "SAF_1936"
+
+
+
+#if = {
+#	limit = {
+#		has_dlc = "Together for Victory"
+#	}
+#	set_autonomy = {
+#		target = NMB
+#		autonomous_state = autonomy_integrated_puppet
+#	}
+#	else = {
+#		puppet = NMB
+#	}
+#}
+
+
+set_convoys = 25
+
+
+	set_popularities = {
+        neutrality = 10
+        vanguardism = 10
+        socialism_ideology = 10
+        democratic_monarchism = 20
+        centrist_republic = 10
+        republican_fascism = 10
+        centrist_monarchism = 30
+		}
+	set_politics = { 
+ ruling_party = centrist_monarchism
+	last_election = "1933.5.17"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Prince Albert of Windsor"
+	desc = ""
+	picture = "Portrait_Prince_Albert.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "James Barry Munnik Hertzog"
+	desc = ""
+	picture = "SAF_james_hertzog.dds"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "James Barry Munnik Hertzog"
+	desc = ""
+	picture = "SAF_james_hertzog.dds"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "George Villiers"
+	desc = ""
+	picture = "Portrait_George_Villiers.dds"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Edward I van Sakse-Koburg en Gotha"
+	desc = ""
+	picture = "Portrait_Prince_David.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}

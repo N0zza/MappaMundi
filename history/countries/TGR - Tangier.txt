@@ -1,0 +1,59 @@
+﻿capital = 1775
+
+#oob = "ALA_1936"
+
+
+	set_popularities = {
+		democratic 
+			 = 30
+		fascism
+			 = 5
+		communism
+			 = 5
+		neutrality
+			 = 60
+		}
+	set_politics = { 
+ ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+	disarmed_nation
+	free_trade
+}
+
+
+create_country_leader = {
+	name = "Arthur Chéreau"
+	desc = ""
+	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	expire = "1950.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Émile Bechard"
+	desc = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Joseph Le Fur"
+	desc = ""
+	picture = "Portrait_Joseph_Le_Fur.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}

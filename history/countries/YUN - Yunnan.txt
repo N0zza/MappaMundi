@@ -1,0 +1,48 @@
+﻿capital = 325
+oob = "YUN_1936"
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+	}
+}
+
+
+
+
+	set_popularities = {
+		democratic 
+			 = 0
+		fascism
+			 = 20
+		communism
+			 = 0
+			
+		stratocratic
+			 = 80
+		}
+	set_politics = { 
+ ruling_party = stratocratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Lung Yun"
+	desc = "POLITICS_LONG_YUN_DESC"
+	picture = "Portrait_Yunnan_Long_Yun.dds"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+		#
+	}
+}

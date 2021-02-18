@@ -1,0 +1,66 @@
+﻿capital = 328
+
+oob = "MAN_1936"
+
+set_cosmetic_tag = MAN_JAP
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	
+}
+
+if = {
+	limit = { has_dlc = "Waking the Tiger" }
+	set_country_flag = MAN_northern_bandits
+	set_country_flag = MAN_eastern_bandits
+	set_country_flag = MAN_western_bandits
+	add_ideas = MAN_banditry
+	add_ideas = MAN_kwantung_veto
+	add_ideas = MAN_low_legitimacy_5
+}
+
+set_convoys = 5
+
+
+
+
+	set_popularities = {
+		democratic 
+			 = 0
+			
+		fascism
+			 = 20
+		communism
+			 = 0
+			
+		stratocratic_monarchism
+			 = 80
+		}
+	set_politics = { 
+ ruling_party = stratocratic_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Pu Yi"
+	
+	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+	expire = "1960.1.1"
+	ideology = rexism
+	traits = {
+		warrior_code
+	}
+}
+
+create_country_leader = {
+	name = "Pu Yi"
+	
+	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+	expire = "1960.1.1"
+	ideology = stratmon
+	traits = {
+		warrior_code
+	}
+}

@@ -1,0 +1,453 @@
+﻿capital = 439
+
+oob = "RAJ_1936"
+
+
+set_stability = 0.6
+set_war_support = 0.1
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	transport = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	CAS1 = 1
+	
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_ideas = {
+		RAJ_princely_states
+		RAJ_marginalized_muslim_community
+		RAJ_agrarian_society
+		RAJ_risk_of_famine
+	}
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+set_convoys = 20
+
+#set_cosmetic_tag = RAJ_UK #British Raj
+
+#if = {
+#	limit = {
+#		has_dlc = "Together for Victory"
+#	}
+#	set_autonomy = {
+#		target = CTL
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = MNP
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = CHB
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = JAF
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = JJA
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = TPA
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = RPL
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = PBD
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = PLP
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = JHL
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = JRA
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = DGH
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = ADN
+#		autonomous_state = autonomy_integrated_puppet
+#	}
+#	set_autonomy = {
+#		target = OMA
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = AJM
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = ABD
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = UAQ
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = SHJ
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = RAK
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = DUB
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = QAT
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = BHR
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = KUW
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = KAS
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = DTA
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = BDA
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = KHG
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = TNK
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = UDP
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = SRH
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = KOT
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = JND
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = JDP
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = HYD
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = BKN
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = BHW
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = PTI
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = NBH
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = MYS
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = KPT
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = JSM
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = NVN
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = KUT
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = JGH
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = IDR
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = COC
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = BHV
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = BDA
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = TVC
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = ORC
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = INR
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = GWA
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = DWS
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = BNR
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = BHO
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = RMP
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = RLM
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = REW
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = DGP
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = BNS
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = BHP
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = AWR
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = PRG
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = KUL
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = JIP
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = DWJ
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = DLP
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = DHA
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = KHP
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = PUD
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = BLO
+#		autonomous_state = autonomy_dominion
+#	}
+#	set_autonomy = {
+#		target = SND
+#		autonomous_state = autonomy_dominion
+#	}
+#	else = {
+#		puppet = ADN
+#		puppet = OMA
+#		puppet = AJM
+#		puppet = ABD
+#		puppet = UAQ
+#		puppet = SHJ
+#		puppet = RAK
+#		puppet = DUB
+#		puppet = QAT
+#		puppet = BHR
+#		puppet = KUW
+#		puppet = KAS
+#		puppet = DTA
+#		puppet = BDA
+#		puppet = KHG
+#		puppet = TNK
+#		puppet = UDP
+#		puppet = SRH
+#		puppet = KOT
+#		puppet = JND
+#		puppet = JDP
+#		puppet = HYD
+#		puppet = BKN
+#		puppet = BHW
+#		puppet = PTI
+#		puppet = NBH
+#		puppet = MYS
+#		puppet = KPT
+#		puppet = JSM
+#		puppet = NVN
+#		puppet = KUT
+#		puppet = JGH
+#		puppet = IDR
+#		puppet = COC
+#		puppet = BHV
+#		puppet = BDA
+#		puppet = TVC
+#		puppet = ORC
+#		puppet = INR
+#		puppet = GWA
+#		puppet = DWS
+#		puppet = BNR
+#		puppet = BHO
+#		puppet = RMP
+#		puppet = RLM
+#		puppet = REW
+#		puppet = DGP
+#		puppet = BNS
+#		puppet = BHP
+#		puppet = AWR
+#		puppet = PRG
+#		puppet = KUL
+#		puppet = JIP
+#		puppet = DWJ
+#		puppet = DLP
+#		puppet = DHA
+#		puppet = KHP
+#		puppet = PUD
+#		puppet = BLO
+#		puppet = SND
+#
+#	}
+#}
+
+
+	set_popularities = {
+		democratic = 17
+		fascism = 2
+		communism = 1
+		authoritarian_monarchism = 80
+		}
+	set_politics = { 
+		ruling_party = authoritarian_monarchism
+		last_election = "1935.11.14"
+		election_frequency = 48
+		elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Freeman Freeman-Thomas"
+	desc = ""
+	picture = "gfx/leaders/RAJ/Portrait_Freeman_Freeman-Thomas.dds"
+	expire = "1937.1.1"
+	ideology = authmon
+	traits = {
+		
+	}
+}
+
+# REVISIT Unclear if appropriate for this ideology
+create_country_leader = {
+	name = "V. D. Savarkar"
+	desc = "POLITICS_VD_SAVARKAR_DESC"
+	picture = "GFX_RAJ_veer_savarkar"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "P. Krishna Pillai"
+	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
+	picture = "GFX_RAJ_krishna_pillai"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "B. P. Sitaramayya"
+	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
+	picture = "GFX_RAJ_pattabhi_sitaramayya"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}

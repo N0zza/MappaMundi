@@ -1,0 +1,66 @@
+﻿capital = 430
+
+oob = "ENG_gen"
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	trench_warfare = 1
+	
+}
+	set_popularities = {
+		democratic 
+			 = 60
+		fascism
+			 = 5
+		communism
+			 = 30
+		neutrality
+			 = 5
+		}
+	set_politics = { 
+ ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+	
+	create_country_leader = {
+	name = "Syed Mohammad Ahsan"
+	desc = ""
+	picture = "gfx/leaders/South Asia/Syed_Ahsan.dds"
+	expire = "1989.12.12"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Haji Mohammad Danesh" 
+	desc = ""
+	picture = "gfx/leaders/South Asia/Haji_Danesh.dds"
+	expire = "1986.6.28"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Sheikh Mujibur Rahman" 
+	desc = ""
+	picture = "gfx/leaders/South Asia/Sheikh_Rahma.dds"
+	expire = "1975.8.15"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+set_cosmetic_tag = BAN_RAJ

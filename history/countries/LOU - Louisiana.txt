@@ -1,0 +1,67 @@
+﻿capital = 3001 #LA
+
+oob = "LOU_1936"
+
+	set_popularities = {
+		democratic 
+			 = 20
+		fascism
+			 = 0
+		communism
+			 = 0
+		neutrality = 80
+		}
+	set_politics = { 
+ ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+	disarmed_nation
+	free_trade
+}
+
+
+create_country_leader = {
+	name = "Oscar K. Allen"
+	desc = ""
+	picture = "gfx/leaders/LOU/Portrait_Louisiana_Oscar_Allen.dds"
+	expire = "1950.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Stanley Hamilton"
+	desc = ""
+	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Louvell Gibson"
+	desc = ""
+	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Huey Long"
+	desc = ""
+	picture = "Portrait_Huey_Long.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}

@@ -1,0 +1,70 @@
+﻿capital = 701
+
+oob = "ENG_gen"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+}
+
+set_cosmetic_tag = GAM_ENG
+
+set_convoys = 20
+
+	
+	create_country_leader = {
+	name = "Thomas Southorn"
+	desc = ""
+	picture = "gfx/leaders/British Colonial/Thomas_Southorn.dds"
+	ideology = authmon
+	expire = "1957.3.15"
+	traits = {
+		#
+	}
+}
+
+	set_popularities = {
+		communism
+			 = 10
+			
+		
+		
+		fascism
+			 = 10
+		
+		
+		democratic 
+			 = 25
+		authoritarian_monarchism 
+			 = 55
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+create_country_leader = {
+	name = "Dawda Jawara"
+	desc = ""
+	picture = "gfx/leaders/Africa/Dawda_Jawara.dds"
+	ideology = liberalism
+	expire = "2020.5.16"
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Arthur Richards"
+	desc = ""
+	picture = "Portrait_Arthur_Richards.dds"
+	ideology = moderatism
+	expire = "1978.10.27"
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,41 @@
+﻿capital = 966
+
+oob = "STR_1936"
+set_cosmetic_tag = STR_ENG
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+
+set_convoys = 10
+
+
+
+	set_popularities = {
+        authoritarian_monarchism =  80
+        communism =  15
+        fascism =  5
+        
+
+	}
+	
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Shenton Thomas"
+	desc = ""
+	picture = "Portrait_Shenton_Thomas.dds"
+	expire = "1953.3.1"
+	ideology = authmon
+	traits = {
+		
+	}
+}

@@ -1,0 +1,54 @@
+﻿capital = 726
+
+oob = "USA_gen"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+set_cosmetic_tag = SAM_NZL
+set_convoys = 5
+
+
+
+	set_popularities = {
+		democratic 
+			 = 5
+		fascism
+			 = 5
+		communism
+			 = 5
+		authoritarian_monarchism 
+			 = 85
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+create_country_leader = {
+	
+	name = "Herbert Ernest Hart"
+	picture = "Portrait_Herbert_Ernest_Hart.dds"
+	expire = "1959.10.18"
+	ideology = authmon
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	
+	name = "Samuel Sailele Ripley"
+	picture = "gfx/leaders/USA/Portrait_USA_Generic_1.dds"
+	expire = "1947.1.24"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+

@@ -1,0 +1,55 @@
+﻿capital = 2705
+
+oob = "ENG_gen"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+
+set_cosmetic_tag = SOL_ENG
+
+set_convoys = 5
+
+
+
+	set_popularities = {
+		democratic 
+			 = 10
+		fascism
+			 = 10
+		communism
+			 = 20
+		authoritarian_monarchism 
+			 = 60
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	
+	name = "Francis Noel Ashley"
+	picture = "Portrait_Francis_Noel_Ashley.dds"
+	expire = "1976.9.8"
+	ideology = authmon
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mariano Kelesi"
+	desc = ""
+	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_1.dds"
+	ideology = liberalism
+	expire = "1988.8.1"
+	traits = {
+		#
+	}
+}
+

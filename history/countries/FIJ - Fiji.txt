@@ -1,0 +1,66 @@
+﻿capital = 636
+
+set_cosmetic_tag = FIJ_ENG
+
+oob = "FIJ_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+
+set_convoys = 5
+
+
+
+	set_popularities = {
+		democratic 
+			 = 5
+		fascism
+			 = 5
+		communism
+			 = 5
+		authoritarian_monarchism 
+			 = 85
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	
+	name = "Ratu Tevita Naulivou"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+	expire = "1948.11.12"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	
+	name = "Sir Arthur Murchison Fletcher"
+	picture = "Portrait_Sir_Arthur_Murchison_Fletcher.dds"
+	expire = "1954.7.28"
+	ideology = authmon
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	
+	name = "Edward Cakobau"
+	picture = "gfx/leaders/Pacific/Edward_Cakobau.dds"
+	expire = "1973.6.26"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+

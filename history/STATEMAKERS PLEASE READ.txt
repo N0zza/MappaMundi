@@ -1,0 +1,44 @@
+#When you use nudge, make sure to replace
+manpower = 0
+
+history = {
+	owner = TAG
+	add_core_of = TAG
+}
+manpower = 1000
+state_category = pastoral
+
+#your final product should be
+
+state={
+	id=XXXX
+	name="STATE_XXXX"
+	
+	history = {
+		owner = TAG
+		add_core_of = TAG
+	}
+	manpower = 1000
+	state_category = pastoral
+	provinces={
+		XXXXX
+	}
+	buildings_max_level_factor=1.000
+}
+
+#I swear to god if I see states that are like this
+
+state={
+	id=XXXX
+	name="STATE_XXXX"
+	history={
+		owner = TAG
+	}
+	provinces={
+		XXXXX
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}
+
+#I will literally have an aneurysm. Seriously, don't be lazy.

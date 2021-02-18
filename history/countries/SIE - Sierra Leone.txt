@@ -1,0 +1,81 @@
+﻿capital = 700
+
+oob = "SIE_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+}
+
+set_cosmetic_tag = SIE_ENG
+
+set_convoys = 20
+
+
+
+
+
+	
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+	set_popularities = {
+		communism
+			 = 25
+			
+		
+		fascism
+			 = 15
+		
+		democratic 
+			 = 5
+		authoritarian_monarchism 
+			 = 55
+	}
+create_country_leader = {
+	name = "Siaka Stevens"
+	desc = ""
+	picture = "gfx/leaders/Africa/Siaka_Stevens.dds" 
+	ideology = marxism
+	expire = "1988.5.29"
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "David Lansana"
+	desc = ""
+	picture = "gfx/leaders/Africa/David_Lansana.dds"
+	ideology = fascism_ideology
+	expire = "1975.8.6"
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Henry Monck-Mason Moore"
+	desc = ""
+	picture = "gfx/leaders/SIE/Portrait_Henry_Monck_Mason_Moore.dds"
+	ideology = authmon
+	expire = "1964.2.4"
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Milton Margai"
+	desc = ""
+	picture = "gfx/leaders/Africa/Milton_Margai.dds"
+	ideology = liberalism
+	expire = "1964.4.28"
+	traits = {
+		#
+	}
+}

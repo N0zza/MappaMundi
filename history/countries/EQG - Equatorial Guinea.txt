@@ -1,0 +1,73 @@
+﻿capital = 2363
+
+oob = "SPR_gen"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+}
+
+set_cosmetic_tag = EQG_SPR
+
+set_convoys = 20
+
+
+
+
+
+	set_popularities = {
+		communism
+			 = 10
+			
+		
+		
+		fascism
+			 = 20
+		
+		
+		democratic 
+			 = 20
+		neutrality 
+			 = 50
+		}
+	set_politics = { 
+ ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+create_country_leader = {
+	name = "Francisco Macías Nguema"
+	desc = ""
+	picture = "gfx/leaders/Africa/Francisco_Nguema.dds"
+	ideology = fascism_ideology
+	expire = "1979.9.29"
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Atanasio Ndongo Miyone"
+	desc = ""
+	picture = "gfx/leaders/Africa/Atanasio_Miyone.dds"
+	ideology = liberalism
+	expire = "1969.3.5"
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Luis Sánchez Guerra Sáez"
+	desc = ""
+	picture = "Portrait_Luis_Saez.dds"
+	ideology = moderatism
+	expire = "1963.6.16"
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,268 @@
+﻿capital = 2377
+
+oob = "ITA_1936"
+
+#if = {
+#	limit = {
+#		has_dlc = "Together for Victory"
+#	}
+#	set_autonomy = {
+#		target = SOM
+#		autonomous_state = autonomy_reichskommissariat
+#	}
+#	set_autonomy = {
+#		target = ERI
+#		autonomous_state = autonomy_reichskommissariat
+#	}
+#	set_autonomy = {
+#		target = LBA
+#		autonomous_state = autonomy_reichskommissariat
+#	}
+#	else = {
+#		puppet = SOM
+#		puppet = ERI
+#		puppet = LBA
+#	}
+#}
+
+
+
+
+	set_popularities = {
+		democratic 
+			 = 22
+		fascism
+			 = 76
+		communism
+			 = 2
+		}
+	set_politics = { 
+ ruling_party = fascism
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+
+
+
+create_country_leader = {
+	name = "Re Vittorio Emanuele III di Savoia"
+	desc = "POLITICS_ITA_FASCISM_DESC"
+	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Benito Amilcare Andrea Mussolini, Duce del Fascismo"
+	desc = "POLITICS_ITA_NATSOC_DESC"
+	picture = "gfx/leaders/ITA/Italy_Mussolini.dds"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Imperatore Vittorio Emanuele III di Savoia"
+	desc = "POLITICS_ITA_ABSMONS_DESC"
+	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Eugenio Chiesa"
+	desc = "POLITICS_ITA_CONREP_DESC"
+	picture = "Portrait_Eugenio_Chiesa.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Segretario Generale Palmiro Togliatti"
+	desc = "POLITICS_ITA_VAN_DESC"
+	picture = "Portrait_Palmiro_Togliatti.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Ruggero Grieco"
+	desc = "POLITICS_ITA_COM_DESC"
+	picture = "Portrait_Ruggero_Grieco.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Pietro Sandro Nenni"
+	desc = "POLITICS_ITA_SOC_DESC"
+	picture = "Portrait_Pietro_Nenni.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Regina Mafalda I di Savoia"
+	desc = "POLITICS_ITA_MONSOC_DESC"
+	picture = "Portrait_Mafalda_Savoy.tga"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Francesco Saverio Nitti"
+	desc = "POLITICS_ITA_LIBREP_DESC"
+	picture = "Portrait_Francesco_Nitti.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Re Vittorio Emanuele III di Savoia"
+	desc = "POLITICS_ITA_LIBMON_DESC"
+	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Re Vittorio Emanuele III di Savoia"
+	desc = "POLITICS_ITA_CONMON_DESC"
+	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Cancelliere Alcide Amedeo Francesco De Gasperi"
+	desc = "POLITICS_ITA_CENREP_DESC"
+	picture = "Portrait_Alcide_De_Gasperi.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Re Umberto II di Savoia"
+	desc = "POLITICS_ITA_CENMON_DESC"
+	picture = "Portrait_Umberto_II.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Gaetano Salvemini"
+	desc = "POLITICS_ITA_AUTHREP_DESC"
+	picture = "gfx/leaders/ITA/Salvemini.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Comandante in Capo Federico Baistrocchi"
+	desc = "POLITICS_ITA_STRAT_DESC"
+	picture = "Portrait_Federico_Baistrocchi.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Re Aimone I di Savoia-Aosta"
+	desc = "POLITICS_ITA_STRATMON_DESC"
+	picture = "Portrait_Aimone_Aosta.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Re Amedeo I di Savoia-Aosta"
+	desc = "POLITICS_ITA_AUTHMON_DESC"
+	picture = "Portrait_Amadeo_Aosta.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Segretario Alfredo Ildefonso Schuster"
+	desc = "POLITICS_ITA_THEOC_DESC"
+	picture = "Portrait_Alfredo_Schuster.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Gian Galeazzo Ciano, Duce del Fascismo, Conte di Cortellazzo e Buccari"
+	desc = "POLITICS_ITA_REPFASH_DESC"
+	picture = "Portrait_Galeazzo_Cianno.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
+}

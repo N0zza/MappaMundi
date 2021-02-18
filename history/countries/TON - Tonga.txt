@@ -1,0 +1,39 @@
+﻿capital = 2544
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+set_cosmetic_tag = TON_ENG
+
+
+
+	set_popularities = {
+		democratic 
+			 = 0
+		fascism
+			 = 0
+		communism
+			 = 0
+		authoritarian_monarchism 
+			 = 100
+		
+	}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	
+	name = "Salote Tupou III"
+	picture = "Portrait_Salote_Tupou_III.dds"
+	expire = "1966.9.8"
+	ideology = authmon
+	traits = {
+		#
+	}
+}

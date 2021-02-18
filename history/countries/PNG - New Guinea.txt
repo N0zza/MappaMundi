@@ -1,0 +1,65 @@
+﻿capital = 523
+
+oob = "ENG_gen"
+
+set_cosmetic_tag = PNG_AST
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+
+set_convoys = 5
+
+
+
+	set_popularities = {
+		democratic 
+			 = 10
+		fascism
+			 = 10
+		communism
+			 = 20
+		authoritarian_monarchism 
+			 = 60
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	
+	name = "Sir John Hubert Plunkett Murray"
+	picture = "Portrait_Sir_Hubert_Murray.tga"
+	expire = "1947.12.24"
+	ideology = authmon
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Eduard Haber"
+	desc = ""
+	picture = "gfx/leaders/Germany/Eduard_Haber.dds"
+	ideology = fascism_ideology
+	expire = "1947.1.14"
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "John Guise"
+	desc = ""
+	picture = "gfx/leaders/Pacific/John_Guise.dds"
+	ideology = liberalism
+	expire = "1991.2.7"
+	traits = {
+		#
+	}
+}

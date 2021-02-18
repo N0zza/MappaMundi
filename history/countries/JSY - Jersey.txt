@@ -1,0 +1,50 @@
+﻿capital = 3147
+
+oob = "JSY_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+set_cosmetic_tag = JSY_ENG
+set_convoys = 10
+
+
+
+	set_popularities = {
+        conservative_monarchism =  90
+        communism =  5
+        fascism =  1
+        neutrality =  4
+
+	}
+	
+	set_politics = { 
+ ruling_party = conservative_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Alexander Coutanche"
+	desc = ""
+	picture = "Coutanche.dds"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rudolf Graf von Schmettow"
+	desc = ""
+	picture = "JSY_Rudolf_Schmettow.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}

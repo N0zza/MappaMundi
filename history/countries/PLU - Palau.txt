@@ -1,0 +1,51 @@
+﻿capital = 647
+
+oob = "USA_gen"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+}
+
+
+
+
+	set_popularities = {
+		democratic 
+			 = 20
+		fascism
+			 = 0
+		communism
+			 = 0
+		neutrality 
+			 = 80
+		}
+	set_politics = { 
+ ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Alfonso Oiterong"
+	desc = ""
+	picture = "gfx/leaders/Pacific/Alfonso_Oiterong.dds"
+	ideology = liberalism
+	expire = "2019.2.28"
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "William C. Ball"
+	desc = ""
+	picture = "gfx/leaders/USA/Portrait_USA_Generic_land_5.dds"
+	ideology = moderatism
+	expire = "1998.7.2"
+	traits = {
+		#
+	}
+}

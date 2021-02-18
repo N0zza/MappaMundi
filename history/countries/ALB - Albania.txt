@@ -1,0 +1,35 @@
+﻿capital = 44
+
+OOB = "ALB_1936"
+
+
+	set_popularities = {
+		democratic 
+			 = 0
+		fascism
+			 = 0
+		communism
+			 = 0
+		authoritarian_monarchism 
+			 = 100
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 5
+
+#Victor Emmanuel III of Italy after 39
+create_country_leader = {
+	name = "Zogu I i Zogut"
+	desc = "POLITICS_ALB_AUTHMON_DESC"
+	picture = "Portrait_Albania_King_Zog.dds"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+		#
+	}
+}

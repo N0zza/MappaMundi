@@ -1,0 +1,39 @@
+﻿capital = 3645
+
+oob = "SDJ_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+
+set_convoys = 10
+
+set_popularities = {
+	        democratic = 20
+        communism = 5
+        fascism = 15
+        authoritarian_monarchism = 60
+
+}
+
+set_politics = {
+	
+	ruling_party = authoritarian_monarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Aleksandar I Obrenovića"
+	desc = "POLITICS_GER_ABSMON_DESC"
+	picture = "Portrait_Alexander_Obrenovic.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
