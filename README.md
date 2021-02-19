@@ -17,14 +17,14 @@ Extra notes:
 Credits:
 The Mappa Mundi team: Nozza, Faaz Noushad, Gaffate, Jingo Spunk, Mr Confused, Bonkey Donk, schloky, scrylveon, Der Hauptmann, birdirdirbirb, Gavin, Marblistic, Limfjorden, Exocamp, egg138, Zooptyx, Octavius, & Foxite
 
-Special thanks to gerrade for letting us build off of his mod, Beautiful States.
-Special thanks to ThePinkPanzer and the The New Order: Last Days of Europe team for their Atlantropa heightmap and provinces.
-Special thanks to Cifotis and MrLukeNL for their work on Oceania.
-Special thanks to ChaosRobie for his work on Antarctica.
-Special thanks to Chupachu for his Country Generator Tool, which has helped us greatly.
-Special thanks to the Toolpack team for allowing us to include it directly in our mod!
-Special thanks to Kai for allowing us to include a modified Country Colour and Skin Changer Tool!
-Special thanks to Supermob1 for his extensive work on both the map and the scripted GUI.
-Special thanks to Natt and the EYWOR team for their work on Asia.
-Special thanks to Yan Xishan, ainsley, and the Gigamap team for their resources in China.
-Special thanks to the Kaiserreich team for allowing us to use the code for their States and Victory Point Renaming System.
+ - Special thanks to gerrade for letting us build off of his mod, Beautiful States.
+ - Special thanks to ThePinkPanzer and the The New Order: Last Days of Europe team for their Atlantropa heightmap and provinces.
+ - Special thanks to Cifotis and MrLukeNL for their work on Oceania.
+ - Special thanks to ChaosRobie for his work on Antarctica.
+ - Special thanks to Chupachu for his Country Generator Tool, which has helped us greatly.
+ - Special thanks to the Toolpack team for allowing us to include it directly in our mod!
+ - Special thanks to Kai for allowing us to include a modified Country Colour and Skin Changer Tool!
+ - Special thanks to Supermob1 for his extensive work on both the map and the scripted GUI.
+ - Special thanks to Natt and the EYWOR team for their work on Asia.
+ - Special thanks to Yan Xishan, ainsley, and the Gigamap team for their resources in China.
+ - Special thanks to the Kaiserreich team for allowing us to use the code for their States and Victory Point Renaming System.
