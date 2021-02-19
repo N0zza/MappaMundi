@@ -15,7 +15,7 @@ Extra notes:
 - don't expect every version to not be a buggy mess. as OCD-pleasing the mod may be, it's not bug-pleasing.
 ---------------
 Credits:
-The Mappa Mundi team: Nozza, Faaz Noushad, Gaffate, Jingo Spunk, Mr Confused, Bonkey Donk, schloky, scrylveon, Der Hauptmann, birdirdirbirb, Gavin, Marblistic, Limfjorden, Exocamp, egg138, Zooptyx, Octavius, & Foxite
+ - The Mappa Mundi team: Nozza, Faaz Noushad, Gaffate, Jingo Spunk, Mr Confused, Bonkey Donk, schloky, scrylveon, Der Hauptmann, birdirdirbirb, Gavin, Marblistic, Limfjorden, Exocamp, egg138, Zooptyx, Octavius, & Foxite
 
  - Special thanks to gerrade for letting us build off of his mod, Beautiful States.
  - Special thanks to ThePinkPanzer and the The New Order: Last Days of Europe team for their Atlantropa heightmap and provinces.
