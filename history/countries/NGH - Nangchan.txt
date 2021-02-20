@@ -2,21 +2,19 @@
 
 oob = "NGH_1936"
 
-set_popularities = {
-        democratic = 25
-        communism = 25
-        fascism = 0
-        monarchism = 50
 
+set_popularities = {
+		theocratic = 100
 }
 
 set_politics = {
 	
-	ruling_party = monarchism
+	ruling_party = theocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+
 
 create_country_leader = {
 	name = "To Be Added"
@@ -61,5 +59,15 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
+	}
+}
+create_country_leader = {
+	name = "Trashi Tsewang Dorje"
+	desc = ""
+	picture = "NGH_Trashi_Tsewang_Dorje.tga"
+	expire = "1939.2.11"
+	ideology = christian
+	traits = {
+		#
 	}
 }
