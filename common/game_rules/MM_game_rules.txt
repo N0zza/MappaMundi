@@ -21,9 +21,9 @@
 #	}
 # }
 
-HGO_world_state = {
+MM_world_state = {
 	name = "The World"
-	group = "RULE_GROUP_HGO_SETTINGS"
+	group = "RULE_GROUP_MM_SETTINGS"
 	default = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
@@ -36,9 +36,9 @@ HGO_world_state = {
 		allow_achievements = yes
 	}
 }
-HGO_unite_raj = {
+MM_unite_raj = {
 	name = "India Settings"
-	group = "RULE_GROUP_HGO_SETTINGS"
+	group = "RULE_GROUP_MM_SETTINGS"
 	default = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
@@ -51,9 +51,9 @@ HGO_unite_raj = {
 		allow_achievements = yes
 	}
 }
-HGO_unite_ussr = {
+MM_unite_ussr = {
 	name = "USSR Settings"
-	group = "RULE_GROUP_HGO_SETTINGS"
+	group = "RULE_GROUP_MM_SETTINGS"
 	default = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
@@ -72,9 +72,9 @@ HGO_unite_ussr = {
 		allow_achievements = yes
 	}
 }
-HGO_unite_china = {
+MM_unite_china = {
 	name = "China Settings"
-	group = "RULE_GROUP_HGO_SETTINGS"
+	group = "RULE_GROUP_MM_SETTINGS"
 	default = {
 		name = DEFAULT
 		text = "Warlord China (Default)"
@@ -117,9 +117,30 @@ HGO_unite_china = {
 		allow_achievements = yes
 	}
 }
-HGO_set_scenario = {
+MM_unite_indonesia = {
+	name = "Indonesia Settings"
+	group = "RULE_GROUP_MM_SETTINGS"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "Indonesia will be full of Princely States as it is by default."
+	}
+	option = {
+		name = UNITED_INDONESIA_COLONY
+		text = "United Indonesia - Colony"
+		desc = "Indonesia will be united under the Dutch East Indies."
+		allow_achievements = yes
+	}
+		option = {
+		name = UNITED_INDONESIA
+		text = "United Indonesia - Independent"
+		desc = "Indonesia will be united under the United States of Indonesia."
+		allow_achievements = yes
+	}
+}
+MM_set_scenario = {
 	name = "Set Scenario"
-	group = "RULE_GROUP_HGO_SETTINGS"
+	group = "RULE_GROUP_MM_SETTINGS"
 	default = {
 		name = DEFAULT
 		text = "The Gathering Storm (Default)"

@@ -5,7 +5,7 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = HGO_world_state
+						rule = MM_world_state
 						option = BLANK_SLATE
 					}
 				}
@@ -26,12 +26,62 @@ on_actions = {
 		}
 	}
 	on_startup = {
+		#Unite Indonesia As East Indies
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_unite_indonesia
+						option = UNITED_INDONESIA_COLONY
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_Of = INS
+					NOT = {
+						is_core_of = MAL
+						is_owned_by = PHI
+						}
+					}
+					INS = {
+					transfer_state = PREV
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		#Unite Indonesia As Indonesia
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_unite_indonesia
+						option = UNITED_INDONESIA
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_Of = INS
+					NOT = {
+						is_core_of = MAL
+						is_owned_by = PHI
+						}
+					}
+					IDS = {
+					transfer_state = PREV
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
 		#Raj Game Rule
 		effect = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = HGO_unite_raj
+						rule = MM_unite_raj
 						option = NO_PRINCELY
 					}
 				}
@@ -95,7 +145,7 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = HGO_unite_ussr
+						rule = MM_unite_ussr
 						option = DIVIDED_USSR
 					}
 				}
@@ -198,7 +248,7 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = HGO_unite_ussr
+						rule = MM_unite_ussr
 						option = UNITED_USSR
 					}
 				}
@@ -229,7 +279,7 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = HGO_unite_china
+						rule = MM_unite_china
 						option = KMT_CHINA
 					}
 				}
@@ -273,7 +323,7 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = HGO_unite_china
+						rule = MM_unite_china
 						option = KMT_CHINA_MAX
 					}
 				}
@@ -321,7 +371,7 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = HGO_unite_china
+						rule = MM_unite_china
 						option = KMT_TAIWAN
 					}
 				}
@@ -371,7 +421,7 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = HGO_unite_china
+						rule = MM_unite_china
 						option = CCP_CHINA
 					}
 				}
@@ -417,7 +467,7 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = HGO_unite_china
+						rule = MM_unite_china
 						option = CCP_CHINA_MAX
 					}
 				}
@@ -467,7 +517,7 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = HGO_unite_china
+						rule = MM_unite_china
 						option = CCP_TAIWAN
 					}
 				}
@@ -517,7 +567,7 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = HGO_set_scenario
+						rule = MM_set_scenario
 						option = GREAT_WAR
 					}
 				}
@@ -1350,7 +1400,7 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = HGO_set_scenario
+						rule = MM_set_scenario
 						option = MODERN_DAY
 					}
 				}
@@ -1950,8 +2000,19 @@ on_actions = {
 				add_core_of = PRC
 				add_core_of = CHI				
 			}
+			every_state = {
+			limit = {
+				is_core_Of = IDS
+				NOT = {
+					is_core_of = MAL
+					is_owned_by = PHI
+					}
+				}
+			IDS = {
+				transfer_state = PREV
+				}
+			}
 		IDS = {
-			annex_country { target = INS }
 			set_politics = {
 				ruling_party = neutrality
 				}
@@ -3406,7 +3467,7 @@ on_actions = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = HGO_set_scenario
+						rule = MM_set_scenario
 						option = USSR_COLLAPSE
 					}
 				}

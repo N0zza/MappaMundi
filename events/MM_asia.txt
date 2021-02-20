@@ -529,8 +529,19 @@ country_event = { #2020 Asia
 				add_core_of = PRC
 				add_core_of = CHI				
 			}
+			every_state = {
+			limit = {
+				is_core_Of = INS
+				NOT = {
+					is_core_of = MAL
+					is_owned_by = PHI
+					}
+				}
+			IDS = {
+				transfer_state = PREV
+				}
+			}
 		IDS = {
-			annex_country { target = INS }
 			set_politics = {
 				ruling_party = neutrality
 				}
