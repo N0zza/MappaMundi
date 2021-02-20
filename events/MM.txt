@@ -1710,16 +1710,17 @@ country_event = { #Decolonize Southeast Asia
 			factor = 0
 		}
 				hidden_effect = {
-		IDS = {
-			annex_country { target = INS }
-			set_politics = {
-				ruling_party = neutrality
+		every_state = {
+			limit = {
+				is_core_Of = IDS
+				NOT = {
+					is_core_of = MAL
+					is_owned_by = PHI
+					}
 				}
-			}
-			335 = {
-				owner = {
-					release = IDS
-			   }
+			IDS = {
+				transfer_state = PREV
+				}
 			}
 		MAL = {
 			annex_country = { target = FMS }
@@ -3075,6 +3076,43 @@ country_event = { #1962-1990 USSR
 		ai_chance = {
 			factor = 100
 		}
+	}
+}
+
+country_event = { #Yeet the princely states 2 electric boogaloo
+	id = mm.14
+	title = "Unite Indonesia?"
+	desc = "End It's Suffering, Do it."
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = "Yes Please"
+		ai_chance = {
+			factor = 0
+		}
+
+		hidden_effect = {
+			every_state = {
+			limit = {
+				is_core_Of = INS
+				NOT = {
+					is_core_of = MAL
+					is_owned_by = PHI
+					}
+				}
+			INS = {
+				transfer_state = PREV
+				}
+			}
+		}
+	}
+	option = { #reject
+		name = "No Thanks"
+		ai_chance = {
+			factor = 100
+		}
+
 	}
 }
 
