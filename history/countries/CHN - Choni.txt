@@ -3,13 +3,12 @@
 oob = "CHN_1936"
 
 set_popularities = {
-        authoritarian_monarchism = 100
-
+		theocratic = 100
 }
 
 set_politics = {
 	
-	ruling_party = authoritarian_monarchism
+	ruling_party = theocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -58,5 +57,15 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
+	}
+}
+create_country_leader = {
+	name = "Yang T'usu"
+	desc = ""
+	picture = "CHN_Yang_Tusu.tga"
+	expire = "1939.2.11"
+	ideology = christian
+	traits = {
+		#
 	}
 }

@@ -17,15 +17,25 @@ set_popularities = {
 	        democratic = 10
         communism = 5
         fascism = 25
-        neutrality = 60
+        authoritarian_monarchism = 60
 
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Daudi Cwa II"
+	desc = ""
+	picture = "Daudi_Cwa_II.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+		
+	}
+}
