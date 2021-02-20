@@ -2,7 +2,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "countrydiplomacyview"
-		position = { x=-1060 y=98}	
+		position = { x=-16 y=98}	
 		show_position = { x=-6 y =98 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
@@ -50,13 +50,13 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "country_name"
-				position = { x = 160 y = -5 }
-				font = "hoi_24header"
+				position = { x = 160 y = 0 }
+				font = "hoi_20bs"
 				text = "Germanian"
 				maxWidth = 360
 				fixedsize = yes
 				maxHeight = 80
-				format = left
+				format = center
 			}
 
 			containerWindowType = {
@@ -241,7 +241,7 @@ guiTypes = {
 					instantTextboxType = {
 						name = "party_name"
 						position = { x = 5 y = -5 }
-						font = "hoi_24header"
+						font = "hoi_18mbs"
 						text = "party"
 						maxWidth = 245
 						maxHeight = 20
@@ -251,7 +251,7 @@ guiTypes = {
 					instantTextboxType = {
 						name = "ideology_name"
 						position = { x = 5 y = 10 }
-						font = "hoi_24header"
+						font = "hoi_18mbs"
 						text = "ideology"
 						maxWidth = 345
 						maxHeight = 20
@@ -325,7 +325,7 @@ guiTypes = {
 				instantTextboxType = {
 					name = "faction_name"
 					position = { x = 0 y = 0 }
-					font = "hoi_24header"
+					font = "hoi_18mbs"
 					text = "faction"
 					maxWidth = 330
 					maxHeight = 24
@@ -717,13 +717,13 @@ guiTypes = {
 			iconType ={
 				name ="diplomacy_bottom"
 				spriteType = "GFX_main_screens_bottom"
-				position = { x = 30000 y = -55 }
+				position = { x = 3 y = -8 }
 				Orientation = "LOWER_LEFT"
 			}	
 			
 			buttonType = {
 				name = "back_button"
-				position = { x = 275 y = -420 }
+				position = { x = 150 y = -1 }
 				clicksound = click_close
 				quadTextureSprite ="GFX_button_221x34"
 				buttonFont = "hoi_16mbs"
@@ -783,13 +783,13 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = "Country Diplomacy View"
 			maxWidth = 500
-			maxHeight = 200
+			maxHeight = 20
 			format = left
 		}
 		
 		containerWindowType = {
 			name = "country_list"
-			position = { x = 0 y = 50}	
+			position = { x = 90 y = 56}	
 			size = { width = 530 height = 100%% }
 			
 			containerWindowType = {
@@ -866,8 +866,8 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "countries"
-				position = { x = 0 y = -90 }	
-				size = { width = 545 height = -5 }
+				position = { x = -80 y = -50 }	
+				size = { width = 530 height = 100%% }
 				margin = { top = 8 bottom = 8 }
 				verticalScrollbar = "right_vertical_slider"
 		
@@ -897,7 +897,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "close_button"
-			position = { x = 0 y = 8 }
+			position = { x = -43 y = 8 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "hoi_16mbs"
 			shortcut = "ESCAPE"
@@ -2661,7 +2661,7 @@ guiTypes = {
 			editBoxType = {
 				position = {x=162 y=163}
 				name = "faction_name"
-				font = "hoi_18mbs"
+				font = "hoi_16mbs"
 				borderSize = {x=10 y=10}	
 				size = {x=200 y=45}
 				text = "Your Faction Name Here"
