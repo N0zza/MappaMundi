@@ -1082,15 +1082,47 @@ on_actions = {
 		BEL = {
 			transfer_state = 1478
 			}
+			BLN = {
+			transfer_state = 13011
+			transfer_state = 13012
+			transfer_state = 13013
+			transfer_state = 13014
+			}
+		SRW = {
+			transfer_state = 13053
+			transfer_state = 13045
+			transfer_state = 13039
+			transfer_state = 13037
+			transfer_state = 13030
+			transfer_state = 13033
+			}
+		LDK = {
+			drop_cosmetic_tag = yes
+			}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = TYN
+					is_core_of = AGG
+					is_core_of = EMP
+					is_core_of = BGL
+					is_core_of = SBW
+					is_core_of = SLM
+					}
+				}
+			SRW = {
+				transfer_state = PREV
+				}
+			}
 			every_state = {
 				limit = {
 					OR = {
 					is_core_of = SAU
 					is_owned_by = TUR
-						}
 					}
-				set_demilitarized_zone = no
-					}
+				}
+			set_demilitarized_zone = no
+			}
 		1775 = {
 			set_demilitarized_zone = no
 			}
@@ -1292,7 +1324,45 @@ on_actions = {
 			transfer_state = 8131
 			transfer_state = 6381
 			transfer_state = 6382
-			transfer_state = 13070
+			transfer_state = 13070BLN = {
+			transfer_state = 13011
+			transfer_state = 13012
+			transfer_state = 13013
+			transfer_state = 13014
+			}
+		SRW = {
+			transfer_state = 13053
+			transfer_state = 13045
+			transfer_state = 13039
+			transfer_state = 13037
+			transfer_state = 13040
+			transfer_state = 13030
+			transfer_state = 13033
+			}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = TYN
+					is_core_of = AGG
+					is_core_of = EMP
+					is_core_of = BGL
+					is_core_of = SBW
+					is_core_of = SLM
+					}
+				}
+			SRW = {
+				transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					OR = {
+					is_core_of = SAU
+					is_owned_by = TUR
+					}
+				}
+			set_demilitarized_zone = no
+			}
 			set_capital = 856
 			set_politics = {
 				ruling_party = authoritarian_monarchism
