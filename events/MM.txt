@@ -1712,7 +1712,7 @@ country_event = { #Decolonize Southeast Asia
 				hidden_effect = {
 		every_state = {
 			limit = {
-				is_core_Of = IDS
+				is_core_of = IDS
 				NOT = {
 					is_core_of = MAL
 					is_owned_by = PHI
@@ -1916,7 +1916,7 @@ country_event = { #Release African Lakes
 						is_core_of = LKB
 						is_core_of = LSA
 						is_core_of = CED
-						is_core_Of = QTT
+						is_core_of = QTT
 							}
 						}
 					WTR = {
@@ -2823,8 +2823,11 @@ country_event = { #1962-1990 USSR
 					}
 				every_state = {
 					limit = {
+						OR = {
 						is_core_of = CHE
+						is_core_of = ING
 						}
+					}
 					CHE = {
 						transfer_state = PREV
 						}
@@ -3027,6 +3030,15 @@ country_event = { #1962-1990 USSR
 			transfer_state = 12238
 			transfer_state = 12233
 			transfer_state = 12234
+			transfer_state = 12416
+			transfer_state = 12417
+			transfer_state = 1372
+			transfer_state = 12410
+			transfer_state = 12414
+			transfer_state = 12466
+			transfer_state = 12595
+			transfer_state = 12224
+			transfer_state = 12411
 			}
 		KAR = {
 			transfer_state = 146
@@ -3037,6 +3049,22 @@ country_event = { #1962-1990 USSR
 			}
 		TAN = {
 			set_cosmetic_tag = TAN_SOV
+			}
+		KYR = {
+			transfer_state = 1364
+			}
+		KAZ = {
+			transfer_state = 12438
+			transfer_state = 3320
+			transfer_state = 12835
+			transfer_state = 12238
+			transfer_state = 12225
+			transfer_state = 12233
+			transfer_state = 12234
+			transfer_state = 12237
+			}
+		MOL = {
+			set_capital = 78
 			}
 			every_state = {
 				limit = {
@@ -3100,7 +3128,7 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		hidden_effect = {
 			every_state = {
 			limit = {
-				is_core_Of = INS
+				is_core_of = INS
 				NOT = {
 					is_core_of = MAL
 					is_owned_by = PHI
