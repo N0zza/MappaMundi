@@ -1,20 +1,8 @@
-﻿capital = 1584
+﻿capital = 10024
 
 oob = "FRA_gen"
 
-set_cosmetic_tag = RCG_FED
-
-set_country_flag = FED
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	tech_mountaineers = 1
-}
-
-set_convoys = 5
-
-
+set_cosmetic_tag = FRA_COLONY
 
 	set_popularities = {
 		democratic 
@@ -39,7 +27,7 @@ create_country_leader = {
 	name = "Marcel Marchessou"
 	picture = "gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
 	expire = "1964.4.6"
-	ideology = despotism
+	ideology = cenrep
 	traits = {
 	}
 }
@@ -74,4 +62,13 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Le Frenchman"
+	desc = ""
+	picture = "gfx/leaders/France/Frenchman.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
 
