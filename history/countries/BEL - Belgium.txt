@@ -2,58 +2,6 @@
 
 oob = "BEL_1936"
 
-set_research_slots = 3
-set_stability = 0.65
-set_war_support = 0.3 #we see what you are doing there Adolf
-
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_support = 1		
-	tech_recon = 1
-	tech_engineers = 1
-	motorised_infantry = 1
-	early_fighter = 1
-	trench_warfare = 1
-
-}
-
-
-#if = {
-#	limit = {
-#		has_dlc = "Together for Victory"
-#	}
-#	set_autonomy = {
-#		target = RUU
-#		autonomous_state = autonomy_puppet
-#	}
-#	set_autonomy = {
-#		target = COG
-#		autonomous_state = autonomy_colony
-#	}
-#	else = {
-#		puppet = RUU
-#		puppet = COG
-#	}
-#}
-
-#set_popularities = {
-#	socialism 
-#		= 32
-#	conservative_monarchism
-#		= 30
-#	democratic_monarchism
-#		= 12
-#	fascism
-#		= 11
-#	republican_fascism
-#		= 7
-#	vanguardism
-#		= 4
-#	communism
-#		= 4
-#}
-
 set_popularities = {
 	conservative_monarchism
 		= 42
@@ -75,16 +23,227 @@ set_politics = {
 	elections_allowed = yes
 }
 
-set_convoys = 80
-set_stability = 0.75
-
 create_country_leader = {
 	name = "Koning Leopold III van Belgie"
-	desc = "POLITICS_HUBERT_PIERLOT_DESC"
-	picture = "Portrait_Belgium_Leopold_iii.dds"
+	desc = ""
+	picture = "BEL_Leopold.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
+	}
+}
+
+
+create_country_leader = {
+	name = "Koning Leopold III van Saksen-Coburg en Gotha"
+	desc = ""
+	picture = "BEL_Leopold.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Koning Adalbert von Hohenzollern"
+	desc = ""
+	picture = "BEL_Adalbert.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kanselier Joris Van Severen"
+	desc = ""
+	picture = "BEL_Severen.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Secrétaire Général Julien Lahaut"
+	desc = ""
+	picture = "BEL_Lahaut.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Voorzitter Bert Van Hoorick"
+	desc = ""
+	picture = "BEL_Hoorick.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Paul-Henri Charles Spaak"
+	desc = ""
+	picture = "BEL_Spaak.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Roi Leopold III de Belgique"
+	desc = ""
+	picture = "BEL_Leopold.tga"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Minister-President Paul Guillaumet van Zeeland"
+	desc = ""
+	picture = "BEL_Zeeland.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Roi Leopold III de Belgique"
+	desc = ""
+	picture = "BEL_Leopold.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chancelier Hubert Marie Eugène Pierlot"	
+	desc = ""
+	picture = "BEL_Pierlot.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prins Karel van Belgie"	
+	desc = ""
+	picture = "BEL_Karel.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Commandant en Chef Jean-Baptiste Piron"
+	desc = ""
+	picture = "HOL_Winkelman.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Koning Adalbert von Hohenzollern"
+	desc = ""
+	picture = "BEL_Adalbert.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prins-Aartsbisschop Jozef-Ernest van Roey"
+	desc = ""
+	picture = "BEL_Roey.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Keizer Leopold III van Saksen-Coburg en Gotha"
+	desc = ""
+	picture = "BEL_Leopold.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Réalisateur Paul Hoornaert"
+	desc = ""
+	picture = "BEL_Hoornaert.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Capitaine-Régent Léon Joseph Ignace Degrelle"
+	desc = ""
+	picture = "BEL_Degrelle.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Maréchal Louis Mercier-Vega"
+	desc = ""
+	picture = "BEL_Vega.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Paul-Émile Janson"
+	desc = ""
+	picture = "BEL_Janson.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
 	}
 }
