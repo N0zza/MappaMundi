@@ -75,6 +75,14 @@ on_actions = {
 						do_korean_renames = yes
 					}
 
+					### SER ###
+					if = {
+						limit = {
+							ROOT = {OR = {tag = SER tag = CRO tag = BOS tag = MNT}}
+						}
+						do_serbocroat_renames = yes
+					}
+
 					### PRC ###
 					if = {
 						limit = {
@@ -171,7 +179,7 @@ on_actions = {
 					### YUG ###
 					if = {
 						limit = {
-							ROOT = {OR = { tag = YUG tag = SER tag = CRO tag = SLV tag = BOS tag = KOS tag = MNT tag = MAC }}
+							ROOT = {OR = { tag = YUG = SLV tag = KOS tag = MAC }}
 						}
 						do_yugoslavian_renames = yes
 					}
