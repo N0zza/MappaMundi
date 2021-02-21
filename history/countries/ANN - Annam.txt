@@ -1,20 +1,28 @@
-﻿capital = 1071
+﻿capital = 12875
 
 oob = "ANN_1936"
 
+set_cosmetic_tag = FRA_COLONY
+
 set_popularities = {
-        democratic = 25
-        communism = 5
-        fascism = 5
-        neutrality = 65
+        authoritarian_monarchism = 100
 
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Huángdì Nguyễn Bảo Đại"
+	desc = ""
+	picture = "ANN_BaoDai.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
