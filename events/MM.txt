@@ -1709,7 +1709,7 @@ country_event = { #Decolonize Southeast Asia
 		ai_chance = {
 			factor = 0
 		}
-				hidden_effect = {
+			hidden_effect = {
 		every_state = {
 			limit = {
 				is_core_of = IDS
@@ -1758,6 +1758,9 @@ country_event = { #Decolonize Southeast Asia
 			}
 		FRA = {
 			annex_country = { target = INC }
+			annex_country = { target = TKI }
+			annex_country = { target = ANN }
+			annex_country = { target = CCH }
 			release = NVI
 			release = SVI
 			release = LAO
@@ -1767,11 +1770,13 @@ country_event = { #Decolonize Southeast Asia
 			annex_country = { target = SVI }
 			}
 		LAO = {
+			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = communism
 				}
 			}
 		CAM = {
+			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = monarchism
 				}
@@ -1801,8 +1806,8 @@ country_event = { #Decolonize Southeast Asia
 		set_province_name = { id = 4608 name = "Surabaya"}
 		set_province_name = { id = 7381 name = "Jakarta"}
 		335 = { set_state_name = Jakarta }		
-	}		
-		}
+		}		
+	}
 	option = { #Reject
 		name = "Nah"
 		ai_chance = {
