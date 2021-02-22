@@ -23,9 +23,19 @@ set_convoys = 10
 	}
 	
 	set_politics = { 
- ruling_party = monarchism
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Sayyid Mir Muhammad Alim Khan"
+	desc = ""
+	picture = "Portrait_Alim_Khan.dds"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+		#
+	}
+}
