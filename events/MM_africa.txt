@@ -146,7 +146,7 @@ country_event = { 1914 Africa
 		RIF = {
 			transfer_state = 1775
 			}
-		CHA = {
+		CAR = {
 			transfer_state = 7830
 			transfer_state = 7831
 			}
@@ -175,6 +175,7 @@ country_event = { 1914 Africa
 			transfer_state = 451
 			transfer_state = 7271
 			transfer_state = 9847
+			set_cosmetic_tag = CYR_ITA
 			}
 		CYR = {
 			transfer_state = 6953
@@ -216,6 +217,12 @@ country_event = { 1914 Africa
 			transfer_state = 6381
 			transfer_state = 6382
 			transfer_state = 13070
+			transfer_state = 12115
+			transfer_state = 552
+			transfer_state = 12683
+			transfer_state = 861
+			transfer_state = 9940
+			transfer_state = 6389
 			set_capital = 856
 			set_politics = {
 				ruling_party = authoritarian_monarchism
@@ -225,9 +232,106 @@ country_event = { 1914 Africa
 			transfer_state = 6049
 			transfer_state = 7255
 			transfer_state = 6391
-			transfer_state = 861
-			transfer_state = 9940
-			}	
+			}
+			every_state = {
+				limit = {
+					is_core_of = SD0
+					OR = {
+						is_core_of = CHA
+						}
+					NOT = {
+						is_owned_by = CYR
+						}
+					}
+				NGR = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = CHA
+						is_core_of = CAR
+						}
+					NOT = {
+						is_owned_by = NGR
+						is_owned_by = CMR
+						is_owned_by = CYR
+						}
+					}
+				CAR = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = VOL
+						NOT = {
+						is_core_of = NGR
+						}
+					}
+				MLI = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = RCG
+						NOT = {
+						is_owned_by = CMR
+						}
+					}
+				RCG = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = GAB
+						NOT = {
+						is_owned_by = CMR
+						}
+					}
+				GAB = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_owned_by = LBA
+						NOT = {
+						is_owned_by = CYR
+						is_core_of = CYR
+						}
+					}
+				TRP = {
+					transfer_state = PREV
+				}
+			}
+		CAR = {
+		transfer_state = 7842
+		transfer_state = 9934
+		transfer_state = 5296
+		transfer_state = 7833
+		transfer_state = 6434
+		transfer_state = 6435
+		transfer_state = 881
+		transfer_state = 9989
+			}
+		NGR = {
+		transfer_state = 6405
+		transfer_state = 6401
+			}
+		GAB = {
+		transfer_state = 5262
+		transfer_state = 5294
+			}
+		TRP = {
+			set_politics = {
+				ruling_party = fascism
+			}
+		set_cosmetic_tag = TRP_ITA
+			}
 		}
 	}
 	
