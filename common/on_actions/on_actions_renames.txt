@@ -35,20 +35,20 @@ on_actions = {
 						do_azerbaijani_renames = yes
 					}
 
-					### NVI ###
-					if = {
-						limit = {
-							ROOT = {tag = NVI}
-						}
-						do_northvietnamese_renames = yes
-					}
-
 					### VIN ###
 					if = {
 						limit = {
 							ROOT = {OR = {tag = NVI tag = SVI tag = VIN}}
 						}
 						do_vietnamese_renames = yes
+					}
+
+					### NVI ###
+					if = {
+						limit = {
+							ROOT = {tag = NVI}
+						}
+						do_northvietnamese_renames = yes
 					}
 
 					### KUR ###
@@ -104,6 +104,10 @@ on_actions = {
 						limit = {
 							ROOT = {OR = {tag = GER
 								  		  is_subject_of = GER
+										  tag = WGR
+								  		  is_subject_of = WGR
+										  tag = DDR
+								  		  is_subject_of = DDR
 										  tag = AUS
 										  is_subject_of = AUS
 										  tag = DAN}}										
@@ -385,7 +389,8 @@ on_actions = {
 					### TUR ###
 						if = {
 							limit = {
-								ROOT = { tag = TUR }
+								ROOT = {OR = { tag = TUR 
+											   is_subject_of = TUR}}
 							}
 							do_ottoman_renames = yes
 							do_turkish_renames = yes
