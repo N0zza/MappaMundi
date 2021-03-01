@@ -35,10 +35,18 @@ on_actions = {
 						do_azerbaijani_renames = yes
 					}
 
+					### NVI ###
+					if = {
+						limit = {
+							ROOT = {tag = NVI}
+						}
+						do_northvietnamese_renames = yes
+					}
+
 					### VIN ###
 					if = {
 						limit = {
-							ROOT = {tag = VIN}
+							ROOT = {OR = {tag = NVI tag = SVI tag = VIN}
 						}
 						do_vietnamese_renames = yes
 					}
