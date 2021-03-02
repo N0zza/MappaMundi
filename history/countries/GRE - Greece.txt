@@ -2,33 +2,6 @@
 
 oob = "GRE_1936"
 
-set_research_slots = 3
-
-add_ideas = {
-	limited_conscription
-}
-
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_mountaineers = 1
-	tech_support = 1		
-	tech_recon = 1
-	early_submarine = 1
-	early_destroyer = 1
-	early_light_cruiser = 1
-	early_heavy_cruiser = 1
-	early_battleship = 1
-	transport = 1
-}
-
-set_convoys = 10
-
-
-
-
-
-
 	set_popularities = {
 		fascism 
 			 = 30
@@ -41,50 +14,227 @@ set_convoys = 10
  ruling_party = conservative_monarchism
 	last_election = "1935.6.9"
 	election_frequency = 12
-	elections_allowed = yes # none after offset 1
+	elections_allowed = yes
 }
 set_stability = 0.75
 
 create_country_leader = {
-	name = "Geórgios II tou Glücksburg"
+	name = "Vasiliás Geórgios II tou Nklýxmpournk"
 	desc = ""
 	picture = "Portrait_George_II.dds"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Markos Vafiadis"
-	desc = "POLITICS_MARKOS_VAFIADIS_DESC"
-	picture = "Portrait_Greece_Markos_Vafiadis.dds"
+	name = "Igétis Geórgios Mercouris"
+	desc = ""
+	picture = "GRE_Mercouris.tga"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = natsoc
 	traits = {
-		#
+		
 	}
 }
 
 create_country_leader = {
-	name = "Konstantinos Tsaldaris"
-	desc = "POLITICS_KONSTANTINOS_TSALDARIS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	name = "Aftokrátoras Geórgios tou Nklýxmpournk"
+	desc = ""
+	picture = "GRE_GeorgiosI.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kankelários Andreas Michalakopoulos"
+	desc = ""
+	picture = "GRE_Michalakopoulos.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Geórgios II tou Glücksburg"
+	name = "Genikós Grammatéas Pantelis Pouliopoulos"
+	desc = ""
+	picture = "GRE_Poupliopoulos.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Proti Provoli Pantelis Pouliopoulos"
+	desc = ""
+	picture = "GRE_Poupliopoulos.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Próedros Geórgios Papandreou"
+	desc = ""
+	picture = "GRE_Papandreou.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Vasílissa Aikateríni tou Nklýxmpournk"
+	desc = ""
+	picture = "GRE_Aikaterinil.tga"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Próedros Themistoklis Sofoulis"
+	desc = ""
+	picture = "GRE_Sofoulis.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Vasiliás Pávlos tou Nklýxmpournk"
+	desc = ""
+	picture = "GRE_Pavlos.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Próedros Eleftherios Kyriakou Venizelos"
+	desc = ""
+	picture = "GRE_Venizelos.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prínkipas Geórgios III tou Nklýxmpournk"
+	desc = ""
+	picture = "GRE_GeorgiosIII.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Diefthyntís Georgios Kondylis"
+	desc = ""
+	picture = "GRE_Kondylis.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Archistrátigos Aristeidis Chasapidis"
+	desc = ""
+	picture = "GRE_Chasapidis.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Antivasiléas Ioannis Metaxas"
+	desc = ""
+	picture = "GRE_Metaxas.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Vasiliás Pávlos tou Nklýxmpournk"
+	desc = ""
+	picture = "GRE_Pavlos.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Archiepískopos Chrysóstomos I tis Kýprou"
+	desc = ""
+	picture = "GRE_Chyrsostomos.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Aftokrátoras Geórgios II tou Glücksburg"
 	desc = ""
 	picture = "Portrait_George_II.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		#
+	}
+}
+
+create_country_leader = {
+	name = "Prothypourgós Geórgios Tsolákoglou"
+	desc = ""
+	picture = "GRE_Tsolakoglou.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
 	}
 }
