@@ -3664,6 +3664,15 @@ on_actions = {
 			}
 			every_state = {
 				limit = {
+					is_core_of = CAY
+					}
+				FRA = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+			every_state = {
+				limit = {
 					is_core_of = ATC
 					}
 				ATC = {

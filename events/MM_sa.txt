@@ -41,7 +41,7 @@ country_event = { #1914 South America
 			set_politics = {
 				ruling_party = liberal_republic
 				}
-			}	
+			}
 		}
 	}
 	
@@ -137,6 +137,15 @@ country_event = { #2020 South America
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = CAY
+					}
+				FRA = {
+					transfer_state = PREV
+					add_state_core = PREV
 				}
 			}
 		}
