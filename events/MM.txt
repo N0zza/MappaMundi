@@ -3154,6 +3154,145 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 	}
 }
 
+country_event = { #1936 May Japan
+	id = mm.15
+	title = "Set Japan to May 1936?"
+	desc = "Yes."
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = "Why Not"
+		ai_chance = {
+			factor = 0
+		}
+
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = EHC
+				}
+				set_demilitarized_zone = no
+			}
+			
+			every_state = {
+				limit = {
+					is_core_of = PIL
+					}
+				NOT = {
+					is_core_of = SUI
+					is_owned_by = MON
+					}
+				}
+				MEN = {
+				transfer_state = PREV
+				}
+				
+			every_state = {
+				limit = {
+					is_core_of = SCA
+					}
+			SCA = {
+			transfer_state = PREV
+				}
+			}
+			
+			MEN = {
+			transfer_state = 11312
+			transfer_state = 11261
+			}
+		}
+	}
+	option = { #reject
+		name = "No."
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}
+
+country_event = { #1938 Japan
+	id = mm.16
+	title = "Set Japan to 1938?"
+	desc = "Yes."
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = "Why Not"
+		ai_chance = {
+			factor = 0
+		}
+
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = EHC
+				}
+				set_demilitarized_zone = no
+			}
+			
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = PIL
+						is_core_of = SUI
+						}
+					NOT = {
+						is_owned_by = MON
+						}
+					}
+				MEN = {
+				transfer_state = PREV
+				}
+			}
+				
+			every_state = {
+				limit = {
+					is_core_of = SCA
+					}
+			SCA = {
+			transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = PSC
+					NOT = {
+						is_core_of = SCA
+						}
+					}
+			PSC = {
+			transfer_state = PREV
+				}
+			}
+			
+			every_state = {
+				limit = {
+					is_core_of = NSX
+					}
+			NSX = {
+			transfer_state = PREV
+				}
+			}
+			
+			MEN = {
+			set_cosmetic_tag = MEN_JAP
+			transfer_state = 11312
+			transfer_state = 11261
+			}
+		}
+	}
+	option = { #reject
+		name = "No."
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+}
+
 country_event = { #Yeet the princely states
 	id = mm.1
 	title = mm.1.t
