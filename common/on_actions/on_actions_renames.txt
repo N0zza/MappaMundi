@@ -688,6 +688,21 @@ on_actions = {
 						}
 						do_french_renames = yes
 					}
+					
+					### IRE ###
+					if = {
+						limit = {
+							ROOT = {OR = {	tag = IRE
+											tag = MUN
+											tag = LEI
+											tag = CNG
+											tag = NIR}}
+						}
+						do_irish_renames = yes
+					}				
+								
+							
+										
 			}
 		}
 	}
