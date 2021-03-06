@@ -3198,6 +3198,7 @@ country_event = { #1936 May Japan
 			}
 			
 			MEN = {
+			drop_cosmetic_tag = yes
 			transfer_state = 11312
 			transfer_state = 11261
 			}
@@ -3278,7 +3279,10 @@ country_event = { #1938 Japan
 			}
 			
 			MEN = {
-			set_cosmetic_tag = MEN_JAP
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = fascism
+				}
 			transfer_state = 11312
 			transfer_state = 11261
 			}
