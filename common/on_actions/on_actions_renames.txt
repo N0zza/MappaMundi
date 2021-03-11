@@ -309,7 +309,8 @@ on_actions = {
 					### JAP ###
 					if = {
 						limit = {
-							ROOT = {OR = {tag = JAP tag = MEN tag = PSC tag = RGC tag = EHC}}
+							ROOT = {OR = {tag = JAP tag = MEN tag = PSC tag = RGC tag = EHC	  
+								  		  is_subject_of = JAP}}
 						}
 						do_japanese_renames = yes
 					}
@@ -602,6 +603,20 @@ on_actions = {
 							              has_cosmetic_tag = ITA_GREEN}}
 						}
 						do_italian_renames = yes
+					}
+
+					### SPR ###
+					if = {
+						limit = {
+							ROOT = {OR = {has_cosmetic_tag = WES_SPR
+						                  has_cosmetic_tag = RIF_SPR
+						                  has_cosmetic_tag = IFN_SPR
+						                  has_cosmetic_tag = EQG_SPR
+						                  has_cosmetic_tag = NAP_SPR
+						                  has_cosmetic_tag = RDO_SPR
+						                  has_cosmetic_tag = SEH_SPR}}
+						}
+						do_spanish_renames = yes
 					}
 
 					### JAP ###
