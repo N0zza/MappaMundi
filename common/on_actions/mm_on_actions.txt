@@ -3016,17 +3016,18 @@ on_actions = {
 			annex_country = { target = RDO }
 			annex_country = { target = SEH }
 			annex_country = { target = TGR }
+			annex_country = { target = WES }
 			transfer_state = 6739
 			drop_cosmetic_tag = yes
 			}
 		WES = {
+			drop_cosmetic_tag = yes
 			transfer_state = 1844
 			transfer_state = 6786
 			transfer_state = 1633
 			transfer_state = 6759
 			transfer_state = 5489
 			transfer_state = 5488
-			transfer_state = 6782
 			}
 		ERI = {
 			release = ETH
@@ -3175,7 +3176,8 @@ on_actions = {
 				}
 			}
 		MRT = {
-			drop_cosmetic_tag
+			transfer_state = 6782
+			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
 				}
