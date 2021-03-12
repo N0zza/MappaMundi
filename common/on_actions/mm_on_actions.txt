@@ -1775,12 +1775,6 @@ on_actions = {
 						transfer_state = PREV
 						}
 					}
-					every_state = {
-						limit = {
-							is_core_of = EHC
-						}
-					set_demilitarized_zone = no
-					}
 					BRM = {
 						set_politics = {
 							ruling_party = authoritarian_monarchism
@@ -1902,6 +1896,10 @@ on_actions = {
 					SHC = {
 						set_cosmetic_tag = CHI_BLUE
 					}
+					PRC = {
+						transfer_state = 11192
+						transfer_state = 11285
+						}
 					every_state = {
 						limit = {
 							OR = {
@@ -1919,7 +1917,7 @@ on_actions = {
 						limit = {
 							OR = {
 							is_owned_by = JAP
-							is_owned_by = EHC
+							is_core_of = EHC
 							}
 						}
 					set_demilitarized_zone = no
