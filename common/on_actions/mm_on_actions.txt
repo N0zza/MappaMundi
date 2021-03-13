@@ -1697,7 +1697,6 @@ on_actions = {
 						transfer_state = 7405
 						transfer_state = 7394
 						transfer_state = 7395
-						transfer_state = 7396
 						transfer_state = 7397
 					}
 					CZE = {
@@ -1718,8 +1717,10 @@ on_actions = {
 					}
 					every_state = {
 						limit = {
-							is_core_of = CZC
-							is_core_of = SLO
+							OR = {
+								is_core_of = CZC
+								is_core_of = SLO
+							}
 						}
 						CZE = {
 							add_core_of = PREV
@@ -1831,25 +1832,23 @@ on_actions = {
 						}
 					RFC = {
 						transfer_state = 3137
-						transfer_state = 9773
-						transfer_state = 11353
+						transfer_state = 1472
+						transfer_state = 11376
 						transfer_state = 11354
 						transfer_state = 11356
-						transfer_state = 11395
-						transfer_state = 11397
+						transfer_state = 11355
+						transfer_state = 2647
 						transfer_state = 11398
-						transfer_state = 11406
+						transfer_state = 1867
 						transfer_state = 1471
 						transfer_state = 11400
-						transfer_state = 11525
+						transfer_state = 11367
 						transfer_state = 11524
 						transfer_state = 11526
 						transfer_state = 11523
 						transfer_state = 592
 						transfer_state = 11521
 						transfer_state = 11541
-						transfer_state = 11546
-						transfer_state = 3290
 						transfer_state = 10617
 						transfer_state = 11548
 						transfer_state = 11550
@@ -1861,14 +1860,33 @@ on_actions = {
 						transfer_state = 11373
 						transfer_state = 11374
 						transfer_state = 11375
+						transfer_state = 11441
+						transfer_state = 11442
+						transfer_state = 11442
+						transfer_state = 11443
+						transfer_state = 1868
 					}
+					PSC = {
+						transfer_state = 615
+						transfer_state = 11417
+						transfer_state = 11418
+						transfer_state = 11266
+						transfer_state = 11267
+						transfer_state = 11268
+						transfer_state = 11269
+						transfer_state = 11270
+						transfer_state = 11271
+						transfer_state = 11272
+						transfer_state = 11273
+						transfer_state = 11274
+						transfer_state = 11275
+						}
 					XIG = {
 						transfer_state = 11601
 						transfer_state = 11598
 						transfer_state = 3287
 						transfer_state = 11600
 						transfer_state = 11599
-						transfer_state = 11602
 					}
 					CZC = {
 						set_cosmetic_tag = GREY_GER3
@@ -1877,7 +1895,6 @@ on_actions = {
 						limit = {
 							is_core_of = SHC
 							NOT = {
-								is_core_of = KGN
 								is_core_of = CTU
 								is_core_of = ZHJ
 								is_core_of = SUI
@@ -1933,6 +1950,52 @@ on_actions = {
 						set_politics = {
 							ruling_party = stratocratic_monarchism
 							}
+						}
+					CTU = {
+						transfer_state = 751
+						}
+					RUS = {
+						release = KMI
+						release = MRE
+						release = NOS
+						release = KBK
+						}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = CHE
+								is_core_of = ING
+								}
+							}
+						CHE = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = KMI
+								is_core_of = MRE
+								is_core_of = NOS
+								is_core_of = KBK
+								}
+							}
+						RUS = {
+							add_core_of = PREV
+							}
+						}
+					every_country = {
+						limit = {
+							OR = {
+								tag = KAZ
+								tag = KYR
+								tag = KMI
+								tag = MRE
+								tag = NOS
+								tag = KBK
+								}
+							}
+						set_cosmetic_tag = RUS_RED
 						}
 					every_state = {
 						limit = {
