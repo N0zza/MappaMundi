@@ -726,10 +726,15 @@ on_actions = {
 											tag = NIR}}
 						}
 						do_irish_renames = yes
-					}				
-								
-							
-										
+					}											
+
+					### BSQ ###
+					if = {
+						limit = {
+							ROOT = {tag = BSQ}
+						}
+						do_basque_renames = yes
+					}
 			}
 		}
 	}
