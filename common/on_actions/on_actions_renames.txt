@@ -262,7 +262,8 @@ on_actions = {
 					### SPR ###
 					if = {
 						limit = {
-							ROOT = {tag = SPR}
+							ROOT = {OR = {tag = SPR
+								  		  is_subject_of = SPR}}
 						}
 						do_spanish_renames = yes
 					}
