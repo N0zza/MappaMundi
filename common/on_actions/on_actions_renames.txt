@@ -243,12 +243,21 @@ on_actions = {
 						}
 						do_greek_renames = yes
 					}
+					
 					### ALB ###
 					if = {
 						limit = {
 							ROOT = {tag = ALB}
 						}
 						do_albanian_renames = yes
+					}
+					
+					### ISR ###
+					if = {
+						limit = {
+							ROOT = {tag = ISR}
+						}
+						do_israeli_renames = yes
 					}
 
 					### CAT ###
