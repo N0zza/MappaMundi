@@ -445,6 +445,165 @@ country_event = { #1914 Asia
 	}
 }
 
+
+country_event = { #1950 Asia
+	id = mmasia.1950
+	title = "Set Asia to 1950?"
+	desc = "Arg"
+	is_triggered_only = yes
+
+	option = { #Yes
+		name = "sure" 
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = MAN
+						is_core_of = MEN
+						is_core_of = SHX
+						is_core_of = EHC
+						is_core_of = SUI
+						is_core_of = SIK
+						is_core_of = NIX
+						is_core_of = HPC
+						is_core_of = SHG
+						is_core_of = KNM
+						is_core_of = NWR
+						is_core_of = NEA
+						is_core_of = YLN
+						is_core_of = TNT
+						is_core_of = CHN
+						is_core_of = LBG
+						is_core_of = TLG
+						is_core_of = LMU
+						is_core_of = GND
+						is_core_of = KT2
+						is_core_of = HNN
+						is_core_of = SHH
+						is_core_of = NWA
+						is_core_of = XSM
+						is_owned_by = CHI
+						is_owned_by = TGN
+						is_owned_by = JAP
+						}
+					NOT = {
+						is_core_of = SOV
+						is_core_of = NMN
+						is_core_of = KRE
+						is_core_of = DLN
+						is_core_of = JAP
+						is_owned_by = MON
+						}
+					}
+				set_demilitarized_zone = no
+				PRC = {
+					transfer_state = PREV
+					}
+				}
+			every_country = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = FRA
+						}
+					}
+				release = PRC
+			}
+			every_state = {
+				limit = {
+					is_core_of = TWN
+					NOT = {
+					is_core_of = JAP
+					}
+				}
+			CHI = {
+				transfer_state = PREV
+				}
+			}
+			PRC = {
+				set_cosmetic_tag = PRC_proclaimed
+				set_capital = 608
+				annex_country = { target = 2RA }
+				}
+			CHI = {
+				annex_country = { target =  TWN }
+				transfer_state = 591
+				transfer_state = 2647
+				transfer_state = 11548
+				transfer_state = 11549
+				transfer_state = 11550
+				transfer_state = 11551
+				transfer_state = 10616
+				transfer_state = 10617
+				}
+			XSM = {
+				transfer_state = 283
+				transfer_state = 604
+				transfer_state = 11611
+				transfer_state = 11666
+				transfer_state = 11669
+				transfer_state = 11691
+				transfer_state = 11696
+				transfer_state = 11697
+				transfer_state = 11698
+				transfer_state = 11701
+				transfer_state = 11702
+				transfer_state = 11703
+				transfer_state = 13086
+				}
+			SHC = {
+				annex_country = { target = CCG }
+				annex_country = { target = KGN }
+				annex_country = { target = STI }
+				annex_country = { target = CTU }
+				release = XIG
+				}
+			every_country = {
+				limit = {
+					OR = {
+						tag = GXC
+						tag = YUN
+						tag = XIG
+						tag = SHC
+						}
+					}
+				set_politics = {
+					ruling_party = neutrality
+					}
+				set_cosmetic_tag = CHI_BLUE
+			}
+			JAP = {
+				set_politics = {
+					ruling_party = neutrality
+					}
+				annex_country = { target = KOR }
+				release = ROK
+				release = DPK
+				release = SKH
+				set_cosmetic_tag = USA_BLUE
+			}
+			RUS = {
+				annex_country = { target = SKH }
+				annex_country = { target = DLN }
+				annex_country = { target = TAN }
+			}
+			PHI = {
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	option = { #Reject
+		name = "nah"
+		ai_chance = {
+			factor = 100
+		}
+
+	}		
+}
+
 country_event = { #2020 Asia
 	id = mmasia.2020
 	title = "Set Asia to 2021?"
@@ -456,7 +615,7 @@ country_event = { #2020 Asia
 		ai_chance = {
 			factor = 0
 		}
-				hidden_effect = {
+			hidden_effect = {
 					every_state = {
 						limit = {
 								OR = {
