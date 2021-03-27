@@ -13,67 +13,239 @@ set_convoys = 5
 
 
 	set_popularities = {
-		democratic 
-			 = 80
-		fascism
-			 = 0
-		communism
-			 = 20
+		socialism_ideology 
+			 = 51
+		centrist_republic
+			 = 9
+		democratic
+			 = 37
+		vanguardism
+			 = 3
 			
 		}
 	set_politics = { 
- ruling_party = democratic
+ ruling_party = socialism_ideology 
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "David Ben-Gurion"
+	name = "Nasi Nathan Yellin-Mor"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Itzhak Gaster"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Rudolf Szabó"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "Nathan_Yellin-Mor.tga"
+	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Shmuel Mikunis"
+	name = "Rosh HaMemshala Ze'ev Jabotinsky"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	ideology = leninism
+	picture = "Ze'ev_Jabotinsky.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Bonkey Donk House"
+	name = "Rosh HaMedina Shmuel Minukis"
 	desc = ""
-	picture = "gfx/leaders/Anarchy/Shack.tga"
+	picture = "Shmuel_Mikunis.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rosh HaMo'atza Meir Ya'ari"
+	desc = ""
+	picture = "Meir_Ya'ari.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rosh HaMemshala David Ben-Gurion"
+	desc = ""
+	picture = "David Ben-Gurion.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Melekh Jacques I shel Aumale"
+	desc = ""
+	picture = "Jacques_I.tga"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rosh HaMemshala Menakhem Begin"
+	desc = ""
+	picture = "Menakhem_Begin.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Melekh Jaime I shel Segovia ve-Anjou"
+	desc = ""
+	picture = "Jaime_I.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Melekh Benzion Netanyahu I"
+	desc = ""
+	picture = "Benzion_Netanyahu_I.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rosh HaMemshala Pinkhas Rosen"
+	desc = ""
+	picture = "Pinchas_Rosen.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Amha Selassie I shel Solomon"
+	desc = ""
+	picture = "Amha_Selassie_I.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rosh HaMate HaRashi Yosef Hekht"
+	desc = ""
+	picture = "Yosef_Hekht.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Mefaked Yitzkhak Sadeh"
+	desc = ""
+	picture = "Yitzkhak_Sadeh.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Viceroy William Denis Battershill"
+	desc = ""
+	picture = "William_Denis_Battershill.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Melekh Nikolas I shel Gunzburg"
+	desc = ""
+	picture = "Nikolas_I.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "HaRishon LeTzion Yaakov Meir"
+	desc = ""
+	picture = "Yaakov_Meir.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Melekh Alfonso I shel Kalabria"
+	desc = ""
+	picture = "Alfonso_I.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Leitzan Rashi Avraham Stern"
+	desc = ""
+	picture = "Avraham_Stern.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichskommisariat Emil Maurice"
+	desc = ""
+	picture = "Emil_Maurice.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Shte-Mesre HaShoftim"
+	desc = ""
+	picture = "Judges.tga"
 	expire = "1965.1.1"
 	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Abba Lvovich Gordin"
+	desc = ""
+	picture = "Abba_Lvovich_Gordin.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Nigud HaBank Lionel Nathan Rothschild"
+	desc = ""
+	picture = "Lionel_Nathan_Rothschild.tga"
+	expire = "1965.1.1"
+	ideology = ancap
 	traits = {
 	}
 }
