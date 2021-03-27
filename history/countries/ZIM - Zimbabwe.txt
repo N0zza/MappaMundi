@@ -2,55 +2,42 @@
 
 oob = "ZIM_1936"
 set_cosmetic_tag = ZIM_ENG
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	tech_mountaineers = 1
-}
-
-set_convoys = 5
-
-
 
 	set_popularities = {
-		democratic 
-			 = 0
-		fascism
-			 = 0
-		communism
-			 = 0
-			
-		authoritarian_monarchism 
-			 = 100
+		socialist_monarchy
+			 = 25
+		centrist_monarchism 
+			 = 60
+		democratic_monarchism
+			 = 10
+		conservative_monarchism
+			 = 5
 		}
 	set_politics = { 
- ruling_party = authoritarian_monarchism
+ ruling_party = centrist_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	
-	name = " Marcus James Hugins"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	name = "President Godfrey Huggins"
+	picture = "Portrait_Godfrey_Huggins.dds"
 	expire = "1965.1.1"
-	ideology = nazism
-	traits = { 
-		prince_of_terror
-		
-			}
+	ideology = cenrep
+	traits = {
+	}
 }
 
 create_country_leader = {
-	name = "Godfrey Huggins"
-	picture = "Portrait_Godfrey_Huggins.dds"
+	name = "Governor Sir Herbert James Stanley"
+	picture = "ZIM_Stanley.tga"
 	expire = "1965.1.1"
-	ideology = authmon
+	ideology = cenmon
 	traits = {
-		#
 	}
 }
+
 
 
 
