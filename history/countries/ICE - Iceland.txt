@@ -3,41 +3,14 @@
 oob = "ICE_1936"
 set_cosmetic_tag = ICE_DEN
 
-set_research_slots = 3
-
-add_ideas = {
-	disarmed_nation
-}
-
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_support = 1		
-	tech_engineers = 1
-	early_fighter = 1
-	early_bomber = 1
-	early_destroyer = 1
-	early_submarine = 1
-	early_heavy_cruiser = 1
-	tech_recon = 1
-}
-
-
-set_convoys = 30
-set_stability = 0.75
-
-
-
 	set_popularities = {
-		democratic_monarchism 
-			 = 79
-		fascism
-			 = 1
-		monarchism
+		centrist_monarchism 
+			 = 80
+		democratic
 			 = 20
 		}
 	set_politics = { 
- ruling_party = democratic_monarchism
+ ruling_party = centrist_monarchism
 	last_election = "1933.10.16"
 	election_frequency = 36
 	elections_allowed = yes
@@ -49,7 +22,7 @@ create_country_leader = {
 	desc = ""
 	picture = "ICE_Jonasson.tga"
 	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
+	ideology = cenrep
 	traits = {
 		#
 	}
@@ -71,7 +44,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Sveinn_Bjornsson.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = conservatism
 	traits = {
 		#
 	}
@@ -89,23 +62,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kristján X af Glücksburg"
+	name = "Kóngur Kristján X af Glücksburg"
 	desc = ""
 	picture = "Portrait_Christian_X.dds"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Helgi af Pjeturss"
-	desc = ""
-	picture = "ICE_Helgi.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
 	}
 }
-
