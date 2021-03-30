@@ -1688,11 +1688,14 @@ on_actions = {
 					}
 					every_state = {
 						limit = {
-						is_core_of = POL
+							is_core_of = POL
+							NOT = { 
+								is_core_Of = DAN
+								}
 							}
 					POL = {
 						transfer_state = PREV
-							}
+						}
 					}
 					every_state = {
 						limit = {
