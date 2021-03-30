@@ -539,12 +539,13 @@ country_event = { #1950 Asia
 				annex_country = { target =  TWN }
 				transfer_state = 591
 				transfer_state = 2647
+				transfer_state = 10616
+				transfer_state = 10617
 				transfer_state = 11548
 				transfer_state = 11549
 				transfer_state = 11550
 				transfer_state = 11551
-				transfer_state = 10616
-				transfer_state = 10617
+				transfer_state = 11702
 				}
 			XSM = {
 				transfer_state = 283
@@ -704,6 +705,15 @@ country_event = { #1950 Asia
 					transfer_state = PREV
 				}
 			}
+			NVI = {
+				transfer_state = 12888
+				transfer_state = 12892
+			}
+			SIA = {
+				set_politics = {
+					ruling_party = monarchism
+				}
+			}
 			TIB = {
 				transfer_state = 10778
 			}
@@ -850,13 +860,31 @@ country_event = { #1950 Asia
 						tag = AQR
 						tag = SHA
 						tag = DHB
+						tag = OMN
+						tag = KBA
+						tag = FUJ
+						tag = SHJ
+						tag = RAK
+						tag = AJM
+						tag = UAQ
+						tag = DUB
+						tag = ABD
+						tag = QAT
+						tag = BHR
+						tag = KUW
 					}
 				}
 				set_cosmetic_tag = UK_RED
 			}
 			GEO = {
 				annex_country = { target = TSC }
+			}
+			every_state = {
+				limit = {
+					is_core_of = TUR
 				}
+				set_demilitarized_zone = yes
+			}
 		}
 	}
 	option = { #Reject
