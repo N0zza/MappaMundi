@@ -507,6 +507,17 @@ country_event = { #1950 Europe
 				release = WAS
 				release = EAS
 				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = WAS
+						is_core_of = EAS
+						}
+					}
+				AUS = {
+					add_core_of = PREV
+					}
+				}
 		 	WAS = {
 		 		set_cosmetic_tag = AUS_WHITE
 		 		}
