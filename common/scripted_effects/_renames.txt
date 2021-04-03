@@ -19960,7 +19960,7 @@ do_english_renames = {
 		}		
 		set_province_name = {
 			id = 7394
-			name = "Corcaigh"
+			name = "Cork"
 		}
 	}
 
@@ -19971,6 +19971,26 @@ do_english_renames = {
 		set_province_name = {
 			id = 11293
 			name = "Dublin"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 8430
+		}
+		set_province_name = {
+			id = 6289
+			name = "Tralee"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 8431
+		}
+		set_province_name = {
+			id = 9310
+			name = "Tipperary"
 		}
 	}
 
@@ -54939,14 +54959,24 @@ do_irish_renames = {
 			name = "Corcaigh"
 		}
 	}
-
+	
+	if = {
+		limit = {
+			state = 8431
+		}
+		set_province_name = {
+			id = 9310
+			name = "Tiobraid Árann"
+		}
+	}
+	
 	if = {
 		limit = {
 			state = 1831
 		}		
 		set_province_name = {
 			id = 11293
-			name = "Baile Átha Cliath"
+			name = "Duibhlinn"
 		}
 	}
 
@@ -54980,6 +55010,15 @@ do_irish_renames = {
 		}
 	}
 
+	if = {
+		limit = {
+			state = 8430
+		}
+		set_province_name = {
+			id = 6289
+			name = "Trá Lí"
+		}
+	}
 }	
 
 do_basque_renames ={
