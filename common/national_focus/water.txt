@@ -1,0 +1,459 @@
+﻿focus_tree = {
+	id = startdate_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = WTR
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+	
+	focus = {
+		id = WTR_1939_start
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			every_state = {
+						limit = {
+						is_owned_by = GER
+							}
+						set_demilitarized_zone = no
+					}
+					every_state = {
+						limit = {
+						is_owned_by = AUS
+							}
+					GER = {
+						transfer_state = PREV
+						add_state_core = PREV
+						}
+					}
+					every_state = {
+						limit = {
+						is_core_of = MML
+					}
+					GER = {
+						transfer_state = PREV
+						add_state_core = PREV
+						}
+					}
+					every_state = {
+						limit = {
+						is_core_of = SDT
+					}
+					GER = {
+						transfer_state = PREV
+						add_state_core = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_claimed_by = HUN
+						}
+						HUN = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = POL
+							NOT = { 
+								is_core_Of = DAN
+								}
+							}
+					POL = {
+						transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+						is_core_of = HTY
+							}
+					TUR = {
+						transfer_state = PREV
+							}
+					}
+					HUN = {
+						transfer_state = 2492
+						transfer_state = 7391
+						transfer_state = 7393
+						transfer_state = 7392
+						transfer_state = 7974
+						transfer_state = 7975
+						transfer_state = 6014
+						transfer_state = 7403
+						transfer_state = 7404
+						transfer_state = 7405
+						transfer_state = 7394
+						transfer_state = 7395
+						transfer_state = 7397
+					}
+					CZE = {
+						release = CZC
+						release = SLO
+						release = GER
+						}
+					CZC = {
+						set_cosmetic_tag = GER_GREY_3
+						set_politics = {
+						ruling_party = national_socialism
+							}
+					}
+					SLO = {
+						set_politics = {
+						ruling_party = neutrality
+							}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = CZC
+								is_core_of = SLO
+							}
+						}
+						CZE = {
+							add_core_of = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = PIL
+								is_core_of = SCA
+								is_core_Of = NSX
+								}
+							NOT = {
+								is_owned_by = MON
+							}
+						}
+					MEN = {
+						transfer_state = PREV
+							}
+					}
+					MEN = {
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+							}
+						set_cosmetic_tag = JAPAN_WHITE
+						transfer_state = 11312
+						transfer_state = 11261
+					}
+					SIK = {
+						annex_country = { target = TUG }
+					}
+					every_state = {
+						limit = {
+							is_core_of = PSC
+						}
+					PSC = {
+						transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = RFC
+						}
+					RFC = {
+						transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = BRM
+							NOT = {
+								is_core_of = SHA
+								}
+						}
+					BRM = {
+						transfer_state = PREV
+						}
+					}
+					BRM = {
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+							}
+						set_cosmetic_tag = BRM_ENG
+						}
+					LHJ = {
+						transfer_state = 3875
+						}
+					ADN = {
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+							}
+						transfer_state = 4208
+						transfer_state = 4209
+						transfer_state = 4210
+						transfer_state = 4211
+						}
+					every_country = {
+						limit = {
+							OR = {
+								tag = MHA
+								tag = KTR
+								tag = QTI
+								tag = TRM
+								tag = WBA
+								tag = WBL
+								tag = AWH
+								tag = WBH
+								tag = ASH
+								tag = LAQ
+								tag = ASL
+								tag = BHN
+								tag = DTH
+								tag = AHL
+								tag = FDH
+								tag = LYF
+								tag = UYF
+								tag = SHB
+								tag = MFL
+								tag = ADH
+								tag = AWI
+								tag = HSH
+								tag = LHJ
+								tag = AQR
+								tag = SHA
+								tag = DHB
+								tag = KTW
+								tag = BWL
+								tag = KYY
+								tag = NMM
+								tag = NPP
+								}
+							}
+						set_cosmetic_tag = UK_RED
+						}
+					RFC = {
+						transfer_state = 600
+						transfer_state = 1871
+						transfer_state = 3137
+						transfer_state = 1472
+						transfer_state = 11376
+						transfer_state = 11349
+						transfer_state = 11350
+						transfer_state = 11351
+						transfer_state = 11365
+						transfer_state = 11369
+						transfer_state = 11370
+						transfer_state = 11372
+						transfer_state = 11377
+						transfer_state = 11468
+						transfer_state = 11469
+						transfer_state = 11485
+						transfer_state = 11489
+						transfer_state = 2647
+						transfer_state = 11398
+						transfer_state = 1867
+						transfer_state = 1471
+						transfer_state = 11400
+						transfer_state = 11367
+						transfer_state = 11524
+						transfer_state = 11523
+						transfer_state = 592
+						transfer_state = 11521
+						transfer_state = 11541
+						transfer_state = 10617
+						transfer_state = 11548
+						transfer_state = 11550
+						transfer_state = 10616
+						transfer_state = 11551
+						transfer_state = 591
+						transfer_state = 11549
+						transfer_state = 11371
+						transfer_state = 11373
+						transfer_state = 11374
+						transfer_state = 11375
+						transfer_state = 11441
+						transfer_state = 11442
+						transfer_state = 11442
+						transfer_state = 1868
+					}
+					PSC = {
+						transfer_state = 615
+						transfer_state = 11417
+						transfer_state = 11418
+						transfer_state = 11266
+						transfer_state = 11267
+						transfer_state = 11268
+						transfer_state = 11269
+						transfer_state = 11270
+						transfer_state = 11271
+						transfer_state = 11272
+						transfer_state = 11273
+						transfer_state = 11274
+						transfer_state = 11275
+						}
+					XIG = {
+						transfer_state = 11601
+						transfer_state = 11598
+						transfer_state = 3287
+						transfer_state = 11600
+						transfer_state = 11599
+					}
+					CZC = {
+						set_cosmetic_tag = GREY_GER3
+						}
+					every_state = {
+						limit = {
+							is_core_of = SHC
+							NOT = {
+								is_core_of = CTU
+								is_core_of = ZHJ
+								is_core_of = SUI
+								is_core_of = SGG
+								is_core_of = DGB
+								is_core_of = NGW
+								is_core_of = NWA
+								is_core_of = SUO
+								is_core_of = SMD
+								is_core_of = NEA
+								is_core_of = NWR
+								is_owned_by = XIG
+							}
+						}
+						SHC = {
+							transfer_state = PREV
+							}
+					}
+					SHC = {
+						set_cosmetic_tag = CHI_BLUE
+					}
+					PRC = {
+						transfer_state = 11192
+						transfer_state = 11285
+						}
+					every_state = {
+						limit = {
+							OR = {
+							is_owned_by = ASS
+							is_owned_by = ERI
+							is_owned_by = SOM
+							}
+						}
+					ETH = {
+						transfer_state = PREV
+						}
+					}
+					ETH = {
+						set_politics = {
+							ruling_party = fascism
+							}
+						set_cosmetic_tag = ETH_ITA
+						}
+					ALB = {
+						set_politics = {
+							ruling_party = fascism
+							}
+						set_cosmetic_tag = ALB_ITA
+						transfer_state = 4139
+						}
+					SPR = {
+						annex_country = { target = CAT }
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+							}
+						}
+					CTU = {
+						transfer_state = 751
+						}
+					SYR = {
+						annex_country = { target = ALW }
+						annex_country = { target = JEB }
+						}
+					IRE = {
+						set_politics = {
+							ruling_party = centrist_republic
+							}
+						}
+					SAF = {
+						release = STH
+						}
+					SIA = {
+						set_politics = {
+							ruling_party = monarchism
+							}
+						}
+					RUS = {
+						release = KMI
+						release = MRE
+						release = NOS
+						release = KBK
+						}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = CHE
+								is_core_of = ING
+								}
+							}
+						CHE = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = KMI
+								is_core_of = MRE
+								is_core_of = NOS
+								is_core_of = KBK
+								}
+							}
+						RUS = {
+							add_core_of = PREV
+							}
+						}
+					every_country = {
+						limit = {
+							OR = {
+								tag = KAZ
+								tag = KYR
+								tag = KMI
+								tag = MRE
+								tag = NOS
+								tag = KBK
+								tag = CHE
+								}
+							}
+						set_cosmetic_tag = RUS_RED
+						}
+					every_state = {
+						limit = {
+							OR = {
+							is_owned_by = JAP
+							is_core_of = EHC
+							}
+						}
+					set_demilitarized_zone = no
+					}
+		}
+	}
+}		
