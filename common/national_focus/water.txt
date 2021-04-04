@@ -54,37 +54,20 @@
 					limit = { UCL = { exists = no } }
 					every_state = {
 						limit = {
-						is_owned_by = GER
+							OR = {
+								is_owned_by = GER
+								is_owned_by = AUS
+								is_core_of = MML
+								is_core_of = SDT
+								}
 							}
+					GER = {
+						transfer_state = PREV
+						add_state_core = PREV
+						}
 						set_demilitarized_zone = no
 					}
-					every_state = {
-						limit = {
-						is_owned_by = AUS
-							}
-					GER = {
-						transfer_state = PREV
-						add_state_core = PREV
-						}
-					}
-					every_state = {
-						limit = {
-						is_core_of = MML
-					}
-					GER = {
-						transfer_state = PREV
-						add_state_core = PREV
-						}
-					}
-					every_state = {
-						limit = {
-						is_core_of = SDT
-					}
-					GER = {
-						transfer_state = PREV
-						add_state_core = PREV
-						}
-					}
+					limit = { UCL = { exists = no } }
 					every_state = {
 						limit = {
 							is_claimed_by = HUN
@@ -106,11 +89,11 @@
 					}
 					every_state = {
 						limit = {
-						is_core_of = HTY
+							is_core_of = HTY
 							}
 					TUR = {
 						transfer_state = PREV
-							}
+						}
 					}
 					HUN = {
 						transfer_state = 2492
@@ -133,15 +116,15 @@
 						release = GER
 						}
 					CZC = {
-						set_cosmetic_tag = GER_GREY_3
+						set_cosmetic_tag = GREY_GER3
 						set_politics = {
-						ruling_party = national_socialism
+							ruling_party = national_socialism
 							}
 					}
 					SLO = {
 						set_politics = {
 						ruling_party = neutrality
-							}
+						}
 					}
 					every_state = {
 						limit = {
@@ -177,8 +160,13 @@
 						transfer_state = 11312
 						transfer_state = 11261
 					}
+					every_state = {
+						limit = {
+							is_owned_by = TUG
+							}
 					SIK = {
-						annex_country = { target = TUG }
+						transfer_state = PREV
+						}
 					}
 					every_state = {
 						limit = {
@@ -387,8 +375,15 @@
 						set_cosmetic_tag = ALB_ITA
 						transfer_state = 4139
 						}
+					every_state = {
+						limit = {
+							is_core_of = CAT
+							}
+						SPR = {
+							transfer_state = PREV
+							}
+						}
 					SPR = {
-						annex_country = { target = CAT }
 						set_politics = {
 							ruling_party = stratocratic_monarchism
 							}
@@ -396,9 +391,16 @@
 					CTU = {
 						transfer_state = 751
 						}
-					SYR = {
-						annex_country = { target = ALW }
-						annex_country = { target = JEB }
+					every_state = {
+						limit = {
+							is_core_of = SYR
+							NOT = {
+								is_core_of = TUR
+								}
+							}
+						SYR = {
+							transfer_state = PREV
+							}
 						}
 					IRE = {
 						set_politics = {
