@@ -1938,6 +1938,9 @@
 		every_state = {
 			limit = {
 				is_core_of = MOR
+					NOT = {
+						is_owned_by = SPR
+					}
 				}
 			MOR = {
 				transfer_state = PREV
