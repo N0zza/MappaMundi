@@ -2107,12 +2107,25 @@
 			}
 		every_state = {
 			limit = {
-				OR = {
-					is_core_of = ZAN
-					is_core_of = RUU
-					}
+				is_core_of = ZAN
 				}
 			TZN = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = RWA
+				}
+			RWA = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+					is_core_of = BRD
+				}
+			BRD = {
 				transfer_state = PREV
 				}
 			}
