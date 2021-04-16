@@ -2979,4 +2979,58 @@
 			}
 		}
 	}
+	
+	focus = {
+		id = WTR_2050_start ##Unclaimed
+		icon = GFX_goal_anschluss
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			
+			#tooltip
+			effect_tooltip ={
+				release_puppet = SLV
+				SLV = {
+					custom_effect_tooltip = create_two_units_tt
+				}
+			}
+			
+			hidden_effect = {
+			if = {
+				limit = { UCL = { exists = no } }
+				every_state {
+					limit = {
+						NOT = {
+							is_owned_by = WTR
+							is_owned_by = ICE
+							}
+						}
+					set_demilitarized_zone = no
+					UCL = {
+					transfer_state = PREV
+					}
+				}
+			}
+		}
+	}
 }		
