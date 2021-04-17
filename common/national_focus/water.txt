@@ -2185,7 +2185,15 @@
 			limit = {
 				is_core_of = MYT
 				}
-			MYT = {
+			FRA = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = MRS
+				}
+			MRS = {
 				transfer_state = PREV
 				}
 			}
@@ -2501,7 +2509,7 @@
 		LES = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = monarchism
 				}
 			}
 		SWZ = {
@@ -2521,9 +2529,6 @@
 			set_politics = {
 				ruling_party = democratic
 				}
-			}
-		MYT = {
-			set_cosmetic_tag = FRA_BLUE
 			}
 		WTO = {
 			drop_cosmetic_tag = yes
