@@ -337,6 +337,8 @@
 								is_core_of = SMD
 								is_core_of = NEA
 								is_core_of = NWR
+								is_core_of = NGW
+								is_core_of = LPO
 								is_owned_by = XIG
 							}
 						}
@@ -2185,7 +2187,15 @@
 			limit = {
 				is_core_of = MYT
 				}
-			MYT = {
+			FRA = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = MRS
+				}
+			MRS = {
 				transfer_state = PREV
 				}
 			}
@@ -2501,7 +2511,7 @@
 		LES = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = monarchism
 				}
 			}
 		SWZ = {
@@ -2522,8 +2532,11 @@
 				ruling_party = democratic
 				}
 			}
-		MYT = {
-			set_cosmetic_tag = FRA_BLUE
+		MRS = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = democratic
+				}
 			}
 		WTO = {
 			drop_cosmetic_tag = yes
@@ -3017,7 +3030,7 @@
 			
 			hidden_effect = {
 			if = {
-				limit = { UCL = { exists = no } }
+				limit = { SAR = { exists = no } }
 				every_state {
 					limit = {
 						NOT = {

@@ -244,6 +244,129 @@ on_actions = {
 				}
 			}
 		}
+	}
+	on_startup = {
+		#Simplify China Gamerule
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_unite_china
+						option = SIMPLE_CHINA
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = SHC
+							is_owned_by = CCG
+							}
+						NOT = {
+							is_owned_by = KWC
+							is_owned_by = CHI
+							}
+						}
+					SHC = {
+						transfer_state = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = YUN
+							is_core_of = MUL
+							is_core_of = MOS
+							is_core_of = ZSO
+							}
+						NOT = {
+							is_core_of = BRM
+							}
+						}
+					YUN = {
+						transfer_state = PREV
+					}
+				}
+				every_state = {
+					limit = {
+							is_core_of = XIG
+						NOT = {
+							is_core_of = LNT
+							is_owned_by = SHC
+							is_owned_by = YUN
+							}
+						}
+					XIG = {
+						transfer_state = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = GKS
+							is_core_of = LNT
+							is_core_of = SKK
+							is_core_of = YSH
+							}
+						}
+					XSM = {
+						transfer_state = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = CHN
+							is_core_of = LBG
+							is_core_of = TRR
+							is_core_of = TGN
+							is_core_of = TLG
+							is_core_of = LMU
+							is_core_of = NWA
+							}
+						}
+					NWR = {
+						transfer_state = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = NMN
+							is_core_of = KRE
+							}
+						}
+					SIK = {
+						transfer_state = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = SGY
+							is_core_of = CHG
+							is_core_of = HOR
+							is_core_of = NGH
+							}
+						}
+					TIB = {
+						transfer_state = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = YLN
+						}
+					SUI = {
+						transfer_state = PREV
+					}
+				}
+				SHC = {
+					set_politics = {
+						ruling_party = stratocratic
+					}
+				}
+			}
+		}
 	}	
 	on_startup = {
 		#Unite China Gamerule (KMT)
