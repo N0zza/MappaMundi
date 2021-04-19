@@ -562,12 +562,6 @@
 			transfer_state = 1285
 			transfer_state = 7610
 			transfer_state = 2357
-			set_politics = {
-				ruling_party = centrist_republic
-				}
-			drop_cosmetic_tag = yes
-			}
-		KAR = {
 			transfer_state = 146
 			transfer_state = 147
 			transfer_state = 4870
@@ -575,18 +569,17 @@
 			transfer_state = 12305
 			transfer_state = 12306
 			transfer_state = 12307
-			}
-		YKT = {
-			transfer_state = 11995
+			set_politics = {
+				ruling_party = centrist_republic
+				}
+			drop_cosmetic_tag = yes
 			}
 					every_state = {
 						limit = {
 							OR = {
-							is_core_of = UBM
-							is_core_of = ABM
-							is_core_of = VGR
-							is_owned_by = SOV
+							is_core_of = RUS
 							is_owned_by = RUS
+							is_owned_by = TAN
 								}
 							}
 						RUS = {
@@ -594,89 +587,6 @@
 							add_state_core = PREV
 								}
 							}
-					every_state = {
-						limit = {
-							is_core_of = CHE
-							}
-						CHE = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = ING
-							}
-						ING = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = NOS
-							}
-						NOS = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = KBK
-							}
-						KBK = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = KRC
-								is_core_of = CHR
-								}
-							}
-						KRC = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = ADY
-							}
-						ADY = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = MRE
-							}
-						MRE = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = ALI
-							}
-						ALI = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = KKS
-							}
-						KKS = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = TAN
-							}
-						TAN = {
-							transfer_state = PREV
-							}
-						}
 					every_state = {
 						limit = {
 							OR = {
@@ -874,38 +784,6 @@
 							transfer_state = PREV
 							}
 						}
-					every_country = {
-						limit = {
-							OR ={
-								TAG = CRM
-								TAG = ADY
-								TAG = KRC
-								TAG = KBK
-								TAG = NOS
-								TAG = ING
-								TAG = CHE
-								TAG = DAG
-								TAG = KMK
-								TAG = MRD
-								TAG = CVS
-								TAG = MRE
-								TAG = TTR
-								TAG = UDM
-								TAG = BSH
-								TAG = KMI
-								TAG = KAR
-								TAG = ALI
-								TAG = KKS
-								TAG = BML
-								TAG = TAN
-								TAG = YKT
-								}
-							}
-						set_cosmetic_tag = RUS_GREEN
-						set_politics = {
-							ruling_party = centrist_republic
-						}
-					}
 		WGR = {
 			transfer_state = 5079
 			transfer_state = 8412
