@@ -2205,6 +2205,7 @@
 				}
 			FRA = {
 				transfer_state = PREV
+				add_state_core = PREV
 				}
 			}
 		every_state = {
@@ -2848,6 +2849,14 @@
 				}
 		every_state = {
 			limit = {
+				is_core_of = PCZ
+				}
+			PAN = {
+				transfer_state = PREV
+					}
+				}
+		every_state = {
+			limit = {
 				is_core_of = PRU
 				OR = {
 					is_core_of = ECU
@@ -2902,7 +2911,7 @@
 		CUB = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = vanguardism
+				ruling_party = liberal_republic
 				}
 			}
 		TAC = {
@@ -2990,13 +2999,13 @@
 		GYA = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = democratic
 				}
 			}
 		SUR = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = democratic
 				}
 			}
 		BRA = {
