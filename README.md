@@ -17,7 +17,7 @@ Extra notes:
 Credits:
  - Nozza, Faaz Noushad, Jingo Spunk, Mr Confused, Gaffate, Bonkey Donk, schloky, Der Hauptmann, birdirdirbirb, Marblistic, Exocamp, egg138, Esotericist, Crepe, & RicardoPetro
  
- - Special thanks to some of those who have worked with us in the past, including: snoekbaars, Sikyk, Limfjorden, Zooptyx, scrylveon, MaiNai, Lum, twotle, Volksmarine, MihalRacovita, TrueSoviet, Holy Doggo, JoshyFlip, SamFan2, blue69982, Gindisi, Kels, and K0rhan.
+ - Special thanks to some of those who have worked with us in the past, including: snoekbaars, Limfjorden, Zooptyx, scrylveon, Foxite, MaiNai, Lum, Sikyk, twotle, Volksmarine, MihalRacovita, TrueSoviet, Holy Doggo, JoshyFlip, SamFan2, blue69982, Gindisi, Kels, and K0rhan.
  - Special thanks to gerrade for letting us build off of his mod, Beautiful States.
  - Special thanks to ThePinkPanzer and the The New Order: Last Days of Europe team for their Atlantropa heightmap and provinces.
  - Special thanks to Cifotis and MrLukeNL for their work on Oceania.
