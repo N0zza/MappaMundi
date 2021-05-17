@@ -21,21 +21,21 @@
 #	}
 # }
 
-MM_world_state = {
-	name = "The World"
-	group = "RULE_GROUP_MM_SETTINGS"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "The world will be as it was in 1936."
-	}
-	option = {
-		name = BLANK_SLATE
-		text = "Unclaimed World"
-		desc = "With this option enabled, the entire world will be owned by Unclaimed Land (UNC)."
-		allow_achievements = yes
-	}
-}
+#MM_world_state = {
+#	name = "The World"
+#	group = "RULE_GROUP_MM_SETTINGS"
+#	default = {
+#		name = DEFAULT
+#		text = "RULE_OPTION_DEFAULT"
+#		desc = "The world will be as it was in 1936."
+#	}
+#	option = {
+#		text = "Unclaimed World"
+#		desc = "With this option enabled, the entire world will be owned by Unclaimed Land (UNC)."
+#		allow_achievements = yes
+#	}
+#}
+
 MM_unite_raj = {
 	name = "India Settings"
 	group = "RULE_GROUP_MM_SETTINGS"
@@ -79,6 +79,12 @@ MM_unite_china = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "China will be full of Warlord States as it is by default."
+	}
+	option = {
+		name = SIMPLE_CHINA
+		text = "Simplified China"
+		desc = "Small states and Tribes will be removed and China will be simplified."
+		allow_achievements = yes
 	}
 	option = {
 		name = KMT_CHINA
@@ -150,12 +156,6 @@ MM_set_scenario = {
 		name = GREAT_WAR
 		text = "The Great War"
 		desc = "28 July 1914 - (Insert WW1 Desc Here.)"
-		allow_achievements = yes
-	}
-	option = {
-		name = WORLD_WAR_TWO
-		text = "Blitzkrieg"
-		desc = "1 September 1939 - After the partitioning of Czechoslovaka, Poland now sits outgunned in Eastern Europe. Further east, Japan pushes onward into china, but with the outlook on supply isn't very promising."
 		allow_achievements = yes
 	}
 	option = {

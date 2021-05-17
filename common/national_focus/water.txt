@@ -1697,6 +1697,8 @@
 								is_core_of = SMD
 								is_core_of = NEA
 								is_core_of = NWR
+								is_core_of = NGW
+								is_core_of = LPO
 								is_owned_by = XIG
 							}
 						}
@@ -1709,6 +1711,7 @@
 					}
 					PRC = {
 						transfer_state = 11192
+						transfer_state = 11282
 						transfer_state = 11285
 						}
 					CHI = {
@@ -1754,9 +1757,6 @@
 						set_politics = {
 							ruling_party = stratocratic_monarchism
 							}
-						}
-					CTU = {
-						transfer_state = 751
 						}
 					every_state = {
 						limit = {
@@ -1896,10 +1896,6 @@
 			transfer_state = 1080
 			transfer_state = 1878
 			transfer_state = 12028
-			transfer_state = 146
-			transfer_state = 4870
-			transfer_state = 4880
-			transfer_state = 147
 			transfer_state = 9270
 			transfer_state = 10589
 			transfer_state = 2118
@@ -1920,10 +1916,17 @@
 			transfer_state = 4758
 			transfer_state = 12303
 			transfer_state = 12304
+			transfer_state = 12308
+			transfer_state = 1285
+			transfer_state = 7610
+			transfer_state = 2357
+			transfer_state = 146
+			transfer_state = 147
+			transfer_state = 4870
+			transfer_state = 4880
 			transfer_state = 12305
 			transfer_state = 12306
 			transfer_state = 12307
-			transfer_state = 12308
 			set_politics = {
 				ruling_party = centrist_republic
 				}
@@ -1934,6 +1937,7 @@
 							OR = {
 							is_core_of = RUS
 							is_owned_by = RUS
+							is_owned_by = TAN
 								}
 							}
 						RUS = {
@@ -2209,13 +2213,13 @@
 			transfer_state = 4767
 			transfer_state = 8036
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = centrist_republic
 				}
 			drop_cosmetic_tag = yes
 			}
 		LIT = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = republican_fascism
 				}
 			}
 		LAT = {
@@ -2225,7 +2229,7 @@
 			}
 		EST = {
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = neutrality
 				}
 			}
 		SLO = {
@@ -2249,12 +2253,17 @@
 			}
 		ROM = {
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = democratic
 				}
 			}
 		BUL = {
 			set_politics = {
 				ruling_party = centrist_republic
+				}
+			}
+		GRE = {
+			set_politics = {
+				ruling_party = liberal_republic
 				}
 			}
 		MOL = {
@@ -2300,7 +2309,7 @@
 		CRO = {
 			transfer_state = 818
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
 				}
 			}
 		SLV = {
@@ -2322,7 +2331,7 @@
 			}
 		MAC = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
 				}
 			}
 		ALB = {
@@ -2368,7 +2377,7 @@
 		IRE = {
 			transfer_state = 3205
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = centrist_republic
 				}
 			}
 			every_state = {
@@ -2586,7 +2595,7 @@
 			transfer_state = 11830
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
 				}
 			}
 			IND = {
@@ -2644,7 +2653,7 @@
 		PHI = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-	       		ruling_party = democratic
+	       		ruling_party = liberal_republic
            		}
 			}
 		ETM = {
@@ -2834,6 +2843,7 @@
 			}
 		KYR = {
 			transfer_state = 1364
+			transfer_state = 13324
 			drop_cosmetic_tag = yes	
 			set_politics = {
 	       		ruling_party = democratic
@@ -2858,7 +2868,7 @@
 				}
 		AFG = {
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = theocratic
 				}
 			}
 			every_state = {
@@ -2968,16 +2978,25 @@
 				}
 			}			
 		UAE = {
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
 			drop_cosmetic_tag = yes
 			transfer_state = 3390
 		   }  
 		SYR = {
+			set_politics = {
+				ruling_party = neutrality
+				}
 			drop_cosmetic_tag = yes
 		   }  
 		LEB = {
 			drop_cosmetic_tag = yes
 		}
 		JOR = {
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
 		    transfer_state = 1175
 		    transfer_state = 1177
 		    transfer_state = 3352
@@ -2991,6 +3010,9 @@
 			drop_cosmetic_tag = yes
            }
         KUW = {
+			set_politics = {
+				ruling_party = conservative_monarchism
+					}
 			drop_cosmetic_tag = yes
            }
 		every_state = {
@@ -3022,7 +3044,7 @@
 		    transfer_state = 4210
 		    transfer_state = 9412
 			set_politics = {
-	        ruling_party = democratic
+	        ruling_party = authoritarian_monarchism
               }
 	    } 
 		IRQ = {
@@ -3034,7 +3056,7 @@
 			}
 		PAL = {
 			set_politics = {
-	        ruling_party = democratic
+	        ruling_party = neutrality
               }
 			drop_cosmetic_tag = yes
 			set_capital = 3377			
@@ -3080,6 +3102,9 @@
 			transfer_state = 3377
 		}
 		NOC = {
+			set_politics = {
+				ruling_party = democratic
+				}
 			transfer_state = 1168
 			transfer_state = 2657
 			transfer_state = 7597
@@ -3088,14 +3113,6 @@
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
-				}
-			}
-		every_state = {
-			limit = {
-				is_owned_by = TAN
-				}
-			RUS = {
-				transfer_state = PREV
 				}
 			}
 			every_state = {
@@ -3212,7 +3229,7 @@
 			}
 		PER = {
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = theocratic
 				}
 			}
        	 KUW = {
@@ -3545,7 +3562,16 @@
 			limit = {
 				is_core_of = MYT
 				}
-			MYT = {
+			FRA = {
+				transfer_state = PREV
+				add_state_core = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = MRS
+				}
+			MRS = {
 				transfer_state = PREV
 				}
 			}
@@ -3592,13 +3618,18 @@
 			transfer_state = 10162
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = democratic
+				}
+			}
+		SSU = {
+			set_politics = {
+				ruling_party = democratic
 				}
 			}
 		LBA = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = neutrality
 				}
 			}
 		TUN = {
@@ -3615,8 +3646,14 @@
 		MOR = {
 			transfer_state = 6739
 			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
 			}
 		WES = {
+			set_politics = {
+				ruling_party = democratic
+				}
 			drop_cosmetic_tag = yes
 			transfer_state = 1844
 			transfer_state = 6786
@@ -3628,7 +3665,7 @@
 		ERI = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = neutrality
 				}
 			}
 		ETH = {
@@ -3691,13 +3728,13 @@
 			drop_cosmetic_tag = yes
 			transfer_state = 2618
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = democratic
 				}
 			}
 		IVO = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = democratic
 				}
 			}
 		CAR = {
@@ -3709,24 +3746,24 @@
 		CHA = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = democratic
 				}
 			}
 		VOL = {
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = democratic
 				}
 			}
 		RCG = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = democratic
 				}
 			}
 		GNA = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = democratic
 				}
 			}
 		GAB = {
@@ -3737,6 +3774,9 @@
 			}
 		CMR = {
 			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = democratic
+				}
 			}
 		MLI = {
 			drop_cosmetic_tag = yes
@@ -3750,14 +3790,14 @@
 		SEN = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = democratic
 				}
 			}
 		MRT = {
 			transfer_state = 6782
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = theocratic
 				}
 			}
 		CVD = {
@@ -3769,19 +3809,19 @@
 		GAM = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = democratic
 				}
 			}
 		GNB = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = democratic
 				}
 			}
 		SIE = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = democratic
 				}
 			}
 		GHA = {
@@ -3796,24 +3836,27 @@
 				}
 			}
 		EQG = {
+			set_politics = {
+				ruling_party = democratic
+				}
 			drop_cosmetic_tag = yes
 			}
 		SAO = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = democratic
 				}
 			}
 		COG = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = democratic
 				}
 			}
 		ANG = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = democratic
 				}
 			}
 		ZAM = {
@@ -3849,7 +3892,7 @@
 		NMB = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = democratic
 				}
 			}
 		SAF = {
@@ -3861,13 +3904,13 @@
 		LES = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = monarchism
 				}
 			}
 		SWZ = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = monarchism
 				}
 			}
 		SEY = {
@@ -3882,8 +3925,16 @@
 				ruling_party = democratic
 				}
 			}
-		MYT = {
-			set_cosmetic_tag = FRA_BLUE
+		MRS = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		COM = {
+			set_politics = {
+				ruling_party = democratic
+				}
 			}
 		WTO = {
 			drop_cosmetic_tag = yes
@@ -4157,6 +4208,14 @@
 				}
 		every_state = {
 			limit = {
+				is_core_of = PCZ
+				}
+			PAN = {
+				transfer_state = PREV
+					}
+				}
+		every_state = {
+			limit = {
 				is_core_of = PRU
 				OR = {
 					is_core_of = ECU
@@ -4299,13 +4358,13 @@
 		GYA = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = democratic
 				}
 			}
 		SUR = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = democratic
 				}
 			}
 		BRA = {
@@ -4334,6 +4393,60 @@
 			WTR = {
 				transfer_state = PREV
 				add_state_core = PREV
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = WTR_2050_start ##Unclaimed
+		icon = GFX_goal_anschluss
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			
+			#tooltip
+			effect_tooltip ={
+				release_puppet = SLV
+				SLV = {
+					custom_effect_tooltip = create_two_units_tt
+				}
+			}
+			
+			hidden_effect = {
+			if = {
+				limit = { SAR = { exists = no } }
+				every_state {
+					limit = {
+						NOT = {
+							is_owned_by = WTR
+							is_owned_by = ICE
+							}
+						}
+					set_demilitarized_zone = no
+					UCL = {
+					transfer_state = PREV
 					}
 				}
 			}
