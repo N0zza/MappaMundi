@@ -61,10 +61,20 @@
 		341 = { set_state_name = Kostantiniyye }
 			every_state = {
 				limit = {
+					is_core_of = KON
+					}
+				KON = {
+					transfer_state = PREV
+						}
+					}
+			every_state = {
+				limit = {
 					OR = {
 					is_core_of = PRE
 					is_core_of = ALC
 					is_core_of = LOR
+					is_core_of = GER
+					is_core_of = KON
 					is_claimed_by = CZC
 						}
 					NOT = {
@@ -90,6 +100,7 @@
 					is_core_of = BOS
 					is_core_of = IST
 					is_core_of = VJD
+					is_core_of = CZC
 					is_claimed_by = CRO
 						}
 					NOT = {
@@ -108,6 +119,7 @@
 					OR = {
 					is_core_of = RUS
 					is_core_of = MOL
+					is_owned_by = NOV
 					is_owned_by = UKR
 					is_owned_by = BLR
 					is_owned_by = POL
@@ -172,9 +184,16 @@
 				}
 			set_capital = 195
 			}
-		YUG = {
-			release = MNT
-			release = SER
+		every_state = {
+			limit = {
+				is_core_of = MNT
+					NOT = {
+					is_core_of = AUS
+					}
+				}
+			MNT = {
+				transfer_state = PREV
+				}
 			}
 		every_state = {
 			limit = {
@@ -187,8 +206,30 @@
 				add_state_core = PREV
 				}
 			}
+		every_state = {
+			limit = {
+				OR = {
+					is_owned_by = MAC
+					is_owned_by = KOS
+					}
+				}
+			SER = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+					is_core_of = DDO
+				}
+			DDO = {
+				transfer_state = PREV
+				}
+			}
 		ROM = {
 			release = ALB
+			transfer_state = 77
+			transfer_state = 7296
+			transfer_state = 3188
 			transfer_state = 2174
 			transfer_state = 2173
 			transfer_state = 2172
@@ -202,6 +243,9 @@
 			transfer_state = 5538
 			transfer_state = 2250
 			transfer_state = 11004
+			set_politics = {
+				ruling_party = authoritarian_monarchism
+				}
 			}
 		BUL = {
 			transfer_state = 2338
@@ -212,6 +256,9 @@
 			transfer_state = 7233
 			transfer_state = 2046
 			transfer_state = 1156
+			set_politics = {
+				ruling_party = authoritarian_monarchism
+				}
 			}
 		TUR = {
 			transfer_state = 2202
@@ -227,7 +274,49 @@
 			transfer_state = 5921
 			transfer_state = 5922
 			transfer_state = 3640
+			set_politics = {
+				ruling_party = monarchism
+				}
 			set_capital = 2791
+			}
+		SER = {
+			set_politics = {
+				ruling_party = authoritarian_monarchism
+				}
+			}
+		LIE = {
+			transfer_state = 11056
+			}
+		MLT = {
+			set_cosmetic_tag = MLT_ENG
+			set_politics = {
+				ruling_party = authoritarian_monarchism
+				}
+			}
+		CYP = {
+			set_cosmetic_tag = CYP_ENG
+			set_politics = {
+				ruling_party = authoritarian_monarchism
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = WTR
+				OR = {
+					is_owned_by = HOL
+					}
+				}
+			WTR = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = CYP
+				}
+			CYP = {
+				transfer_state = PREV
+				}
 			}
 		every_state = {
 			limit = {
@@ -241,10 +330,10 @@
 		every_state = {
 			limit = {
 				is_core_of = CAT
-					NOT = {
-						is_core_of = FRA
-						}
+				NOT = {
+					is_core_of = FRA
 					}
+				}
 			SPR = {
 				transfer_state = PREV
 				}
@@ -258,6 +347,13 @@
 				}
 			}
 		ITA = {
+			transfer_state = 2501
+			transfer_state = 2504
+			transfer_state = 12082
+			transfer_state = 12083
+			transfer_state = 12084
+			transfer_state = 12085
+			transfer_state = 12086
 			set_politics = {
 				ruling_party = authoritarian_monarchism
 				}
@@ -271,7 +367,11 @@
 			transfer_state = 3212
 			}
 		GRE = {
+			drop_cosmetic_tag = yes
 			transfer_state = 3403
+			set_politics = {
+				ruling_party = conservative_monarchism
+				
 			}
 		WTR = {
 			transfer_state = 3186
@@ -452,15 +552,6 @@
 					is_core_of = KRE
 					is_core_of = DLN
 					is_core_of = NGH
-					is_core_of = DER
-					is_core_of = GNY
-					is_core_of = ZHF
-					is_core_of = MAG
-					is_core_of = MBN
-					is_core_of = GNG
-					is_core_of = MGJ
-					is_core_of = MNI
-					is_core_of = MNH
 						}
 					}
 				CHI = {
@@ -1108,6 +1199,9 @@
 				ruling_party = liberal_republic
 				}
 			}
+		BRA = {
+			drop_cosmetic_tag = yes
+			}
 		BOL = {
 			transfer_state = 10595
 			transfer_state = 10611
@@ -1154,6 +1248,7 @@
 			}
 		}
 	}
+}
 	
 	focus = {
 		id = WTR_1936_start
