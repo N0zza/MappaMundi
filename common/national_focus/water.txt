@@ -575,6 +575,26 @@
 					is_core_of = KRE
 					is_core_of = DLN
 					is_core_of = NGH
+					is_core_of = LNT
+					is_core_of = DER
+					is_core_of = CBR
+					is_core_of = MAZ
+					is_core_of = KNS
+					is_core_of = TRH
+					is_core_of = DNG
+					is_core_of = CKL
+					is_core_of = MOS
+					is_core_of = ZSO
+					is_core_of = LPO
+					is_core_of = GNY
+					is_core_of = ZHF
+					is_core_of = MAG
+					is_core_of = MBN
+					is_core_of = GNG
+					is_core_of = MJG
+					is_core_of = MNI
+					is_core_of = MNH
+					is_core_of = CIH
 						}
 					}
 				CHI = {
@@ -1272,226 +1292,6 @@
 		}
 	}
 }
-	
-	focus = {
-		id = WTR_1936_start
-		icon = GFX_goal_anschluss
-		x = 10
-		y = 1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 40
-		}
-
-		available = {
-			has_global_flag = 1936_select
-		}
-
-		bypass = {
-			NOT = { has_global_flag = 1936_select }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
-		
-		completion_reward = {
-			
-			#tooltip
-			effect_tooltip = {
-				release_puppet = SLV
-				SLV = {
-					custom_effect_tooltip = create_two_units_tt
-				}
-			}
-			
-			hidden_effect = {
-				if = {
-					limit = { UCL = { exists = no } }
-					##EUROPE 1936
-					every_state = {
-						limit = {
-							is_core_of = POL
-								NOT = {
-									is_core_of = DAN
-									is_core_of = CZE
-									}
-								}
-						POL = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = LIT
-								NOT = {
-									is_core_of = POL
-									}
-								}
-						LIT = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = LAT
-								}
-						LAT = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = EST
-								}
-						EST = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = DAN
-								}
-						DAN = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = FIN
-								NOT = {
-									is_core_of = ALN
-									is_core_of = NOR
-									}
-								}
-						FIN = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = ALN
-								}
-						ALN = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = UKR
-								NOT = {
-									is_core_of = POL
-									is_core_of = MOL
-									}
-								}
-						UKR = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = BLR
-								NOT = {
-									is_core_of = POL
-									}
-								}
-						BLR = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = MOL
-								NOT = {
-									is_core_of = ROM
-									}
-								}
-						MOL = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = CRM
-								}
-						CRM = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = CZE
-								NOT = {
-									is_core_of = LIE
-									}
-								}
-						CZE = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = HUN
-								}
-						HUN = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = ROM
-								}
-						ROM = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = YUG
-								NOT = {
-									is_core_of = ITA
-									is_core_of = ALB
-									}
-								}
-						YUG = {
-							transfer_state = PREV
-							}
-						}
-					every_state = {
-						limit = {
-							is_core_of = ITA
-								}
-						ITA = {
-							transfer_state = PREV
-							}
-						}
-					POL = {
-						transfer_state = 3194
-						transfer_state = 1788
-						}
-					GER = {
-						set_politics = {
-							ruling_party = national_socialism
-							}
-						}
-					AUS = {
-						set_politics = {
-							ruling_party = republican_fascism
-						}
-					}
-					ITA = {
-						set_politics = {
-							ruling_party = fascism
-						}
-						transfer_state = 163
-					}
-				}
-			}
-		}
-	}
 	
 	focus = {
 		id = WTR_1939_start
