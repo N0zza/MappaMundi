@@ -8,21 +8,29 @@ history = {
 manpower = 1000
 state_category = pastoral
 
+#also remember to add
+
+	1936.1.1 = {
+			owner = TAG
+		}
+		
 #your final product should be
 
 state={
-	id=XXXX
-	name="STATE_XXXX"
-	
-	history = {
+	id=13XXX
+	name="STATE_13XXX"
+	history={
 		owner = TAG
 		add_core_of = TAG
+		add_core_of = TAG
+		1936.1.1 = {
+			owner = TAG
+		}
 	}
-	manpower = 1000
-	state_category = pastoral
 	provinces={
-		XXXXX
+		XXXXX, XXXXX
 	}
+	manpower=1000
 	buildings_max_level_factor=1.000
 }
 
