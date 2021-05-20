@@ -54,7 +54,12 @@
 					##EUROPE 1836
 					every_state = {
 						limit = {
-							is_core_of = GER
+							OR = {
+								is_core_of = GER
+								is_core_of = FIN
+								is_core_of = SWE
+								is_core_of = NOR
+								}
 							}
 						set_demilitarized_zone = no
 					}
@@ -349,8 +354,247 @@
 							transfer_state = PREV
 						}
 					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = HOL
+								is_core_of = BEL
+								}
+							NOT = {
+								is_core_of = PRE
+								}
+							}
+						HOL = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = WLX
+							}
+						LUX = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = IRE
+							}
+						ENG = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = AUS
+								is_owned_by = CZE
+								is_core_of = SLO
+								is_core_of = HUN
+								is_core_of = GAL
+								is_core_of = TRA
+								is_core_of = SLV
+								is_core_of = CRO
+								is_claimed_by = CRO
+								is_core_of = IST
+								is_core_of = VJD
+								is_core_of = CZC
+								is_core_of = VNC
+							}
+							NOT = {
+								is_owned_by = LIE
+								is_core_of = CHI
+								is_owned_by = TEU
+								is_core_of = BOS
+								is_core_of = PRE
+							}
+						}
+						AUS = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = RUS
+								is_owned_by = POL
+								is_owned_by = UKR
+								is_core_of = BLR
+								is_core_of = LAT
+								is_core_of = EST
+								is_owned_by = LIT
+								is_core_of = ALN
+								is_owned_by = FIN
+								is_core_of = GEO
+								is_core_of = ARM
+								is_core_of = AZR
+								is_core_of = MOL
+							}
+						}
+						RUS = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = PIE
+								is_core_of = SRD
+								is_core_of = SAV
+								}
+							}
+						PIE = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = PRM
+							NOT = {
+								is_core_of = PIE
+								}
+							}
+						PRM = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = MDN
+							NOT = {
+								is_core_of = LCC
+								}
+							}
+						MDN = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = LCC
+							}
+						LCC = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = TUS
+							NOT = {
+								is_core_of = MDN
+								is_core_of = LCC
+								}
+							}
+						TUS = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = VCT
+								is_claimed_by = VCT
+								}
+							NOT = {
+								is_core_of = OML
+								is_core_of = SMR
+								}
+							}
+						VCT = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = NAP
+								is_core_of = SIC
+								}
+							}
+						NAP = {
+							transfer_state = PREV
+						}
+					}
 				HLS = {
 					transfer_state = 3928
+					}
+				WTR = {
+					transfer_state = 3186
+					}
+				LUX = {
+					set_cosmetic_tag = HOL_ORANGE
+					}
+				KRW = {
+					transfer_state = 88
+					transfer_state = 1738
+					transfer_state = 2862
+					transfer_state = 5763
+					transfer_state = 8059
+					}
+				FRA = {
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+					}
+				ENG = {
+					set_cosmetic_tag = BRIT
+					}
+				AUS = {
+					set_politics = {
+						ruling_party = monarchism
+						}
+					}
+				RUS = {
+					drop_cosmetic_tag = yes
+					set_politics = {
+						ruling_party = monarchism
+						}
+					}
+				TUS = {
+					transfer_state = 7515
+					}
+				PRM = {
+					transfer_state = 7513
+					}
+				LCC = {
+					transfer_state = 7511
+					}
+				PIE = {
+					set_politics = {
+						ruling_party = monarchism
+						}
+					transfer_state = 838
+					transfer_state = 2503
+					}
+				ROM = {
+					transfer_state = 77
+					transfer_state = 7296
+					transfer_state = 3188
+					transfer_state = 2174
+					transfer_state = 2173
+					transfer_state = 2172
+					transfer_state = 7312
+					transfer_state = 1488
+					transfer_state = 7301
+					transfer_state = 1489
+					transfer_state = 7307
+					transfer_state = 7308
+					transfer_state = 5537
+					transfer_state = 5538
+					transfer_state = 2250
+					}
+				SPR = {
+					set_politics = {
+						ruling_party = democratic_monarchism
+						}
+					}
+				POR = {
+					set_politics = {
+						ruling_party = conservative_monarchism
+						}
 					}
 				}
 			}
