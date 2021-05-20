@@ -1,9 +1,9 @@
 bookmarks = {
 	bookmark = {
-		name = "Blitzkrieg"
-		desc = "After the partitioning of Czechoslovaka, Poland now sits outgunned in Eastern Europe. Further east, Japan pushes onward into china, but with the outlook on supply isn't very promising."
-		date = 1939.9.1.12
-		picture = "GFX_select_date_1939"
+		name = "Victorian Era"
+		desc = "desc"
+		date = 1836.1.1.12
+		picture = "GFX_select_date_1936"
 		default_country = "ICE"
 		
 		"ICE"={
@@ -62,16 +62,6 @@ bookmarks = {
 			minor = yes
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = neutrality
-		}
-		"PRC"={
-			minor = yes
-			history = "PRC_GATHERING_STORM_DESC"
-			ideology = vanguardism
-		}
-		"MAN"={
-			minor = yes
-			history = "MAN_GATHERING_STORM_DESC"
-			ideology = stratocratic_monarchism
 		}
 		"SOV"={
 			minor = yes
@@ -152,13 +142,14 @@ bookmarks = {
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
-			set_global_flag = 1939_select
-			
-			clr_global_flag = 1836_select
-			clr_global_flag = 1936_select
+			set_global_flag = 1836_select
+
 			clr_global_flag = 1914_select
+			clr_global_flag = 1936_select
+			clr_global_flag = 1939_select
 			clr_global_flag = modern_day_select
 			clr_global_flag = blank_select
+			WTR =  { complete_national_focus = WTR_1836_start }
 		}
 	}
 }

@@ -15,6 +15,341 @@
 	continuous_focus_position = { x = 50 y = 1000 }
 	
 	focus = {
+		id = WTR_1836_start ##Victorian Era
+		icon = GFX_goal_anschluss
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		available = {
+			has_global_flag = 1836_select
+		}
+
+		bypass = {
+			NOT = { has_global_flag = 1836_select }
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			#tooltip
+			effect_tooltip = {
+				release_puppet = SLV
+				SLV = {
+					custom_effect_tooltip = create_two_units_tt
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = { SAR = { exists = no } }
+					##EUROPE 1836
+					every_state = {
+						limit = {
+							is_core_of = GER
+							}
+						set_demilitarized_zone = no
+					}
+					every_state = {
+						limit = {
+							is_core_of = PRE
+							}
+						PRE = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = HAN
+							}
+						HAN = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = HKA
+							}
+						HKA = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = HHO
+							}
+						HHO = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = NSU
+							}
+						NSU = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = FRN
+							}
+						FRN = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SCH
+							}
+						SCH = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = HLS
+							}
+						HLS = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+							is_core_of = HES
+							is_claimed_by = HES
+								}
+							NOT = {
+								is_core_of = HHO
+								is_core_of = HKA
+								}
+							}
+						HES = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = OLD
+							}
+						OLD = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = BRE
+							}
+						BRE = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = HAM
+							}
+						HAM = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = LUB
+							}
+						LUB = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SLA
+							}
+						SLA = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = MEK
+							}
+						MEK = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = MST
+							}
+						MST = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = ANH
+							}
+						ANH = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = BRU
+							}
+						BRU = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = LIP
+							}
+						LIP = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SLI
+							}
+						SLI = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = WAP
+							}
+						WAP = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SAX
+							}
+						SAX = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = BAD
+							}
+						BAD = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = WUR
+							}
+						WUR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = BAY
+								is_claimed_by = BAY
+								}
+							}
+						BAY = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SAL
+							}
+						SAL = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = RGR
+							}
+						RGR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = RGE
+							}
+						RGE = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SWM
+							NOT = {
+								is_claimed_by = BAY
+								}
+							}
+						SWM = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SME
+							}
+						SME = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SRU
+							}
+						SRU = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SSO
+								NOT = {
+									is_core_of = SME
+								}
+							}
+						SSO = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SCG
+								NOT = {
+									is_core_of = BAY
+								}
+							}
+						SCG = {
+							transfer_state = PREV
+						}
+					}
+				HLS = {
+					transfer_state = 3928
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
 		id = WTR_1914_start
 		icon = GFX_goal_anschluss
 		x = 10
