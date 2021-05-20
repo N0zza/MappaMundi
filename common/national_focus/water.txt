@@ -195,9 +195,17 @@
 					}
 					every_state = {
 						limit = {
-							is_core_of = ANH
+							is_core_of = AHB
 							}
-						ANH = {
+						AHB = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = AHK
+							}
+						AHK = {
 							transfer_state = PREV
 						}
 					}
