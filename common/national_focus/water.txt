@@ -518,6 +518,30 @@
 							transfer_state = PREV
 						}
 					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = SWE
+								is_owned_by = NOR
+								}
+							}
+						SWE = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = BUL
+								is_core_of = DOB
+								is_owned_by = YUG
+								is_owned_by = ALB
+								}
+							}
+						TUR = {
+							transfer_state = PREV
+						}
+					}
 				HLS = {
 					transfer_state = 3928
 					}
@@ -594,6 +618,20 @@
 				POR = {
 					set_politics = {
 						ruling_party = conservative_monarchism
+						}
+					}
+				SWE = {
+					set_politics = {
+						ruling_party = conservative_monarchism
+						}
+					}
+				ICE = {
+					set_cosmetic_tag = DEN_COLONY
+					}
+				TUR = {
+					set_cosmetic_tag = OTTO
+					set_politics = {
+						ruling_party = monarchism
 						}
 					}
 				}
