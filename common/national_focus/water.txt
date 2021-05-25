@@ -72,6 +72,7 @@
 						PRE = {
 							transfer_state = PREV
 						}
+						do_german_renames = yes
 					}
 					every_state = {
 						limit = {
@@ -120,6 +121,7 @@
 						SCH = {
 							transfer_state = PREV
 						}
+						do_danish_renames = yes
 					}
 					every_state = {
 						limit = {
@@ -128,6 +130,7 @@
 						HLS = {
 							transfer_state = PREV
 						}
+						do_danish_renames = yes
 					}
 					every_state = {
 						limit = {
@@ -213,6 +216,14 @@
 							is_core_of = AHK
 							}
 						AHK = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = AHD
+							}
+						AHD = {
 							transfer_state = PREV
 						}
 					}
@@ -358,23 +369,23 @@
 					}
 					every_state = {
 						limit = {
-							OR = {
-								is_core_of = HOL
-								is_core_of = BEL
-								}
-							NOT = {
-								is_core_of = PRE
-								}
+							is_core_of = HHH
 							}
-						HOL = {
+						HHH = {
 							transfer_state = PREV
 						}
 					}
 					every_state = {
 						limit = {
-							is_core_of = WLX
+							OR = {
+								is_core_of = LIM
+								is_core_of = LUX
+								}
+							NOT = {
+								is_core_of = PRE
+								}
 							}
-						LUX = {
+						BEL = {
 							transfer_state = PREV
 						}
 					}
@@ -417,6 +428,7 @@
 							transfer_state = PREV
 							add_state_core = PREV
 						}
+						do_german_renames = yes
 					}
 					every_state = {
 						limit = {
@@ -435,11 +447,15 @@
 								is_core_of = AZR
 								is_core_of = MOL
 							}
+							NOT = {
+								is_core_of = KUB
+							}
 						}
 						RUS = {
 							transfer_state = PREV
 							add_state_core = PREV
 						}
+						do_russian_renames = yes
 					}
 					every_state = {
 						limit = {
@@ -544,6 +560,7 @@
 								is_core_of = THS
 								is_core_of = ALB
 								is_core_of = CRE
+								is_core_of = CYP
 								is_owned_by = YUG
 								is_claimed_by = TUR
 								}
@@ -608,14 +625,33 @@
 							transfer_state = PREV
 						}
 					}
+					every_state = {
+						limit = {
+							is_core_of = KUB
+							}
+						CSS = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = ABK
+							}
+						ABK = {
+							transfer_state = PREV
+						}
+					}
 				HLS = {
 					transfer_state = 3928
+					}
+				HAN = {
+					set_cosmetic_tag = UK_RED
 					}
 				WTR = {
 					transfer_state = 3186
 					}
-				LUX = {
-					set_cosmetic_tag = HOL_ORANGE
+				BEL = {
+					transfer_state = 1257
 					}
 				KRW = {
 					transfer_state = 88
@@ -645,7 +681,11 @@
 					}
 				RUS = {
 					transfer_state = 796
+					transfer_state = 3506
 					transfer_state = 3188
+					transfer_state = 4977
+					transfer_state = 4978
+					transfer_state = 11106
 					drop_cosmetic_tag = yes
 					set_politics = {
 						ruling_party = monarchism
@@ -665,7 +705,23 @@
 						ruling_party = monarchism
 						}
 					transfer_state = 838
+					transfer_state = 2463
 					transfer_state = 2503
+					}
+				VCT = {
+					set_politics = {
+						ruling_party = fascism
+						}
+					}
+				MDN = {
+					set_politics = {
+						ruling_party = monarchism
+						}
+					}
+				NAP = {
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
 					}
 				ROM = {
 					transfer_state = 2174
@@ -751,7 +807,21 @@
 					transfer_state = 7621
 					transfer_state = 5490
 					transfer_state = 4383
+					set_politics = {
+						ruling_party = conservative_monarchism
+						}
 					set_cosmetic_tag = OTTO_COLONY
+					}
+				CSS = {
+					set_politics = {
+						ruling_party = anarchism_ideology
+						}
+					}
+				ABK = {
+					set_cosmetic_tag = RUS_GREEN
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
 					}
 				}
 			}
