@@ -561,6 +561,8 @@
 								is_core_of = ALB
 								is_core_of = CRE
 								is_core_of = CYP
+								is_core_of = ADJ
+								is_owned_by = CYP
 								is_owned_by = YUG
 								is_claimed_by = TUR
 								}
@@ -571,6 +573,7 @@
 						TUR = {
 							transfer_state = PREV
 						}
+						do_turkish_renames = yes
 					}
 					every_state = {
 						limit = {
@@ -641,6 +644,17 @@
 							transfer_state = PREV
 						}
 					}
+					every_state = {
+						limit = {
+							is_core_of = CHE
+							NOT = {
+								is_core_of = DAG
+								}
+							}
+						CHE = {
+							transfer_state = PREV
+						}
+					}
 				HLS = {
 					transfer_state = 3928
 					}
@@ -680,12 +694,18 @@
 						}
 					}
 				RUS = {
+					transfer_state = 232
 					transfer_state = 796
 					transfer_state = 3506
 					transfer_state = 3188
+					transfer_state = 4018
+					transfer_state = 4019
 					transfer_state = 4977
 					transfer_state = 4978
+					transfer_state = 7115
 					transfer_state = 11106
+					transfer_state = 12359
+					transfer_state = 12850
 					drop_cosmetic_tag = yes
 					set_politics = {
 						ruling_party = monarchism
@@ -766,6 +786,8 @@
 					transfer_state = 816
 					transfer_state = 108
 					transfer_state = 3649
+					transfer_state = 12853
+					transfer_state = 4142
 					set_cosmetic_tag = OTTO
 					set_politics = {
 						ruling_party = monarchism
@@ -826,6 +848,30 @@
 					set_cosmetic_tag = RUS_GREEN
 					set_politics = {
 						ruling_party = authoritarian_monarchism
+						}
+					}
+				CHE = {
+					transfer_state = 947
+					transfer_state = 1860
+					transfer_state = 2484
+					transfer_state = 3554
+					transfer_state = 4017
+					transfer_state = 4020
+					transfer_state = 4768
+					transfer_state = 4981
+					transfer_state = 7005
+					transfer_state = 7007
+					transfer_state = 7010
+					transfer_state = 7011
+					transfer_state = 7031
+					transfer_state = 12340
+					transfer_state = 12338
+					transfer_state = 12339
+					transfer_state = 12344
+					transfer_state = 12362
+					drop_cosmetic_tag = yes
+					set_politics = {
+						ruling_party = centrist_monarchism
 						}
 					}
 				}
