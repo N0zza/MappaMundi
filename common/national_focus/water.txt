@@ -832,6 +832,7 @@
 							transfer_state = PREV
 							add_state_core = PREV
 						}
+						do_german_renames = yes
 					}
 					
 					every_state = {
@@ -924,9 +925,11 @@
 					}
 					AUS = {
 						transfer_state = 932
+						transfer_state = 5928
 						transfer_state = 5944
 						transfer_state = 7341
 						transfer_state = 7342
+						transfer_state = 7626
 						transfer_state = 7627
 						set_politics = {
 							ruling_party = conservative_monarchism
@@ -1351,10 +1354,6 @@
 						is_core_of = BKH
 						is_claimed_by = BKH
 						}
-					NOT = {
-						is_core_of = KYR
-						is_core_of = KAZ
-						}
 					}
 				BKH = {
 					transfer_state = PREV
@@ -1364,10 +1363,6 @@
 				limit = {
 					OR = {
 						is_core_of = KHI
-						}
-					NOT = {
-						is_core_of = KYR
-						is_core_of = KAZ
 						}
 					}
 				KHI = {
@@ -1420,8 +1415,6 @@
 					is_core_of = YKT
 					is_core_of = BML
 					is_owned_by = RUS
-					is_owned_by = BKH
-					is_owned_by = KHI
 						}
 					NOT = {
 					is_core_of = CHI
