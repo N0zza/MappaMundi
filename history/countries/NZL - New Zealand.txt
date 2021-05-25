@@ -2,27 +2,19 @@
 
 oob = "NZL_1936"
 
-#if = {
-#	limit = {
-#		has_dlc = "Together for Victory"
-#	}
-#	set_autonomy = {
-#		target = SAM
-#		autonomous_state = autonomy_integrated_puppet
-#	}
-#	else = {
-#		puppet = SAM
-#	}
-#}
-
 	set_popularities = {
 		democratic_monarchism 
-			 = 100
-		fascism
-			 = 0
-		communism
-			 = 0
-			
+			 = 45
+		conservative_monarchism
+			 = 40
+		neutrality
+			 = 3
+		centrist_monarchism
+			 = 5
+		vanguardism
+			 = 2
+		socialist_monarchism
+			 = 5
 		}
 	set_politics = { 
  ruling_party = democratic_monarchism
