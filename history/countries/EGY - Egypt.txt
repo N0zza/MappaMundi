@@ -11,12 +11,12 @@ set_convoys = 20
 		conservative_monarchism 
 			 = 25
 		fascism
-			 = 0
+			 = 20
 		communism
-			 = 0
+			 = 5
 			
 		authoritarian_monarchism 
-			 = 75
+			 = 50
 		}
 	set_politics = { 
  ruling_party = authoritarian_monarchism
@@ -26,7 +26,27 @@ set_convoys = 20
 }
 
 create_country_leader = {
-	name = "King Fuad I of Muhammad Ali"
+	name = "Muhammad Naguib"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_democratic1.dds"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ahmed Husayn"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fuad I of Muhammad Ali"
 	desc = ""
 	picture = "Portrait_Fuad_I.dds"
 	ideology = authmon
@@ -36,211 +56,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Rais al-Wazra Mustafa el-Nahhas Pasha"
+	name = "Hosni al-Arabi"
 	desc = ""
-	picture = "EGY_Mustafa_el-Nahhas_Pasha_condem.tga"
-	expire = "1965.1.1"
-	ideology = conservatism
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+	ideology = leninism
 	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Komsar Henri Curiel"
-	desc = ""
-	picture = "EGY_Henri_Curiel_communist.tga"
-	expire = "1965.1.1"
-	ideology = totsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Komsar Henri Curiel"
-	desc = ""
-	picture = "EGY_Henri_Curiel_communist.tga"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Rais Gamal Abdel Nasser Hussein"
-	desc = ""
-	picture = "EGY_Nasser.tga"
-	expire = "1965.1.1"
-	ideology = demsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "King Farouk I of Muhammad Ali"
-	desc = ""
-	picture = "Portrait_Farouk_I.dds"
-	expire = "1965.1.1"
-	ideology = monsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Zuaim Gamal Abdel Nasser Hussein"
-	desc = ""
-	picture = "EGY_Nasser.tga"
-	expire = "1965.1.1"
-	ideology = repfash
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Wāli Fuad I of Muhammad Ali"
-	desc = ""
-	picture = "Portrait_Fuad_I.dds"
-	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Rais al-Wazra Muhammad Mahmoud Pasha"
-	desc = ""
-	picture = "EGY_Muhammad_Mahmoud_Pasha_libdem.tga"
-	expire = "1965.1.1"
-	ideology = socdem
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Khedive Tewfik I of Muhammad Ali"
-	desc = ""
-	picture = "EGY_Mohammed_Ali_Tewfik_conmon.tga"
-	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Hegemon Makram Ebeid Pasha"
-	desc = ""
-	picture = "EGY_Makram_Ebeid_Pasha_cendem.tga"
-	expire = "1965.1.1"
-	ideology = cenrep
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Archon Taha Hussain"
-	desc = ""
-	picture = "EGY_Taha_Hussain.tga"
-	expire = "1965.1.1"
-	ideology = cenmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Rais Ali Mahir Pasha"
-	desc = ""
-	picture = "Portrait_Turkey_Mustafa_Kemal_Ataturk.tga"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Mushir Mohamed Bey Naguib Youssef Qutb El-Qashlan"
-	desc = ""
-	picture = "EGY_Mohamed_Naguib_strat.tga"
-	expire = "1965.1.1"
-	ideology = militarism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Governor Sir Ronald Henry Amherst Storrs"
-	desc = ""
-	picture = "EGY_Ronald_Henry_Amherst_Storrs_stratmon.tga"
-	expire = "1965.1.1"
-	ideology = stratmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Sultan Farouk I of Muhammad Ali"
-	desc = ""
-	picture = "Portrait_Farouk_I.dds"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Sheikh Hassan Ahmed Abdel Rahman Muhammed al-Banna"
-	desc = ""
-	picture = "EGY_Hassan_Ahmed_Muhammed_al-Banna_theoc.tga"
-	expire = "1965.1.1"
-	ideology = christian
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Governatore Ettore Bastico"
-	desc = ""
-	picture = "EGY_Ettore_Bastico_fash.tga"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Gouverneur Johannes Erwin Eugen Rommel"
-	desc = ""
-	picture = "EGY_Rommel.tga"
-	expire = "1965.1.1"
-	ideology = natsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Tribal Leadership"
-	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = total_anarchist
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Collective Leadership"
-	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = ancom
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Company Leadership"
-	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = ancap
-	traits = {
+		#
 	}
 }

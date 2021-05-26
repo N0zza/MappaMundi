@@ -3,10 +3,38 @@
 oob = "MAN_1936"
 
 set_cosmetic_tag = MAN_JAP
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	
+}
+
+if = {
+	limit = { has_dlc = "Waking the Tiger" }
+	set_country_flag = MAN_northern_bandits
+	set_country_flag = MAN_eastern_bandits
+	set_country_flag = MAN_western_bandits
+	add_ideas = MAN_banditry
+	add_ideas = MAN_kwantung_veto
+	add_ideas = MAN_low_legitimacy_5
+}
+
+set_convoys = 5
+
+
+
 
 	set_popularities = {
+		democratic 
+			 = 0
+			
+		fascism
+			 = 20
+		communism
+			 = 0
+			
 		stratocratic_monarchism
-			 = 100
+			 = 80
 		}
 	set_politics = { 
  ruling_party = stratocratic_monarchism
@@ -16,199 +44,23 @@ set_cosmetic_tag = MAN_JAP
 }
 
 create_country_leader = {
-	name = "Huángdì Puyi"
-	desc = ""
+	name = "Pu Yi"
+	
+	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+	expire = "1960.1.1"
+	ideology = rexism
+	traits = {
+		warrior_code
+	}
+}
+
+create_country_leader = {
+	name = "Pu Yi"
+	
 	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 	expire = "1960.1.1"
 	ideology = stratmon
 	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Huángdì Aisin Gioro Puyi"
-	desc = ""
-	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
-	expire = "1960.1.1"
-	ideology = absolutism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Huángdì Puyi"
-	desc = ""
-	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
-	expire = "1960.1.1"
-	ideology = christian
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Kāngdé Huángdì"
-	desc = ""
-	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
-	expire = "1960.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Shwouxi Zhixing Kuan Aisin Gioro Puyi"
-	desc = ""
-	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
-	expire = "1960.1.1"
-	ideology = cenmon
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Shengch'ang Chang Hsueh-liang"
-	desc = ""
-	picture = "gfx/leaders/MAN/Portrait_Zhang_Xueliang.dds"
-	expire = "1960.1.1"
-	ideology = cenrep
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Shengch'ang Chang Hsueh-liang"
-	desc = ""
-	picture = "gfx/leaders/MAN/Portrait_Zhang_Xueliang.dds"
-	expire = "1960.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Tribal Leadership"
-	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = total_anarchist
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Collective Leadership"
-	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = ancom
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Company Leadership"
-	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = ancap
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Reichsprotektor Johannes Friedrich Leopold von Seeckt"
-	desc = ""
-	picture = "MAN_Seeckt.tga"
-	expire = "1965.1.1"
-	ideology = natsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Gekai Ippan Shirō Ishii"
-	desc = ""
-	picture = "MAN_Ishii.tga"
-	expire = "1965.1.1"
-	ideology = repfash
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Huángtaì Aisin Gioro Yunying"
-	desc = ""
-	picture = "MAN_Yunying.tga"
-	expire = "1965.1.1"
-	ideology = monsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Kuowang Aisin Gioro Zaifeng"
-	desc = ""
-	picture = "MAN_Zaifeng.tga"
-	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Saikō Shirei-kan Hideki Tojo"
-	desc = ""
-	picture = "MAN_Tojo.tga"
-	expire = "1965.1.1"
-	ideology = militarism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Chiji Nobusuke Kishi"
-	desc = ""
-	picture = "MAN_Kishi.tga"
-	expire = "1965.1.1"
-	ideology = authmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Huángdì Aisin Gioro Pujie"
-	desc = ""
-	picture = "MAN_Pujie.tga"
-	expire = "1938.1.1"
-	ideology = conservative_constitutionalism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Tsungt'ung Cheng Hsiao-hsu"
-	desc = ""
-	picture = "MAN_Hsu.tga"
-	expire = "1965.1.1"
-	ideology = socdem
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Tsungt'ung Chang Ching-hui"
-	desc = ""
-	picture = "MAN_Hui.tga"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
+		warrior_code
 	}
 }

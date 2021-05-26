@@ -188,17 +188,6 @@ country_event = { #1914 Asia
 					is_core_of = NWA
 					is_core_of = NMN
 					is_core_of = KRE
-					is_core_of = DLN
-					is_core_of = NGH
-					is_core_of = DER
-					is_core_of = GNY
-					is_core_of = ZHF
-					is_core_of = MAG
-					is_core_of = MBN
-					is_core_of = GNG
-					is_core_of = MGJ
-					is_core_of = MNI
-					is_core_of = MNH
 						}
 					}
 				CHI = {
@@ -254,10 +243,9 @@ country_event = { #1914 Asia
 			transfer_state = 11308
 			transfer_state = 11309
 			transfer_state = 11304
-			transfer_state = 11826
-			drop_cosmetic_tag = yes
+			set_cosmetic_tag = MON_bogd_khanate
 			set_politics = {
-				ruling_party = theocratic
+				ruling_party = monarchism
 				}
 			}
 		TAN = {
@@ -292,9 +280,28 @@ country_event = { #1914 Asia
 						}
 					}
 		SAU = {
-			set_politics = {
-				ruling_party = authoritarian_monarchism
-				}
+			transfer_state = 2214
+			transfer_state = 3537
+			transfer_state = 3302
+			transfer_state = 6632
+			transfer_state = 6633
+			transfer_state = 6635
+			transfer_state = 6640
+			transfer_state = 6642
+			transfer_state = 5635
+			transfer_state = 5636
+			transfer_state = 5637
+			transfer_state = 5639
+			transfer_state = 9412
+			transfer_state = 5613
+			transfer_state = 5615
+			transfer_state = 5795
+			transfer_state = 3391
+			transfer_state = 2134
+			transfer_state = 6652
+			transfer_state = 2874
+			transfer_state = 9376
+			set_cosmetic_tag = NJD_neutrality
 			}
 		GER = {
 			transfer_state = 1481
@@ -328,6 +335,9 @@ country_event = { #1914 Asia
 		KUW = {
 			transfer_state = 1174
 			transfer_state = 5167
+			}
+		BHN = {
+			transfer_state = 9390
 			}
 		WTR = {
 			transfer_state = 9606
@@ -399,12 +409,6 @@ country_event = { #1914 Asia
 		1260 = {
 			set_demilitarized_zone = yes
 		}
-		13107 = {
-			set_demilitarized_zone = yes
-		}
-		5841 = {
-			set_demilitarized_zone = yes
-		}
 		GKS = {
 			transfer_state = 3286
 			transfer_state = 11611
@@ -432,457 +436,6 @@ country_event = { #1914 Asia
 	}
 }
 
-
-country_event = { #1950 Asia
-	id = mmasia.1950
-	title = "Set Asia to 1950?"
-	desc = "Arg"
-	is_triggered_only = yes
-
-	option = { #Yes
-		name = "sure" 
-		ai_chance = {
-			factor = 0
-		}
-		hidden_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = MAN
-						is_core_of = MEN
-						is_core_of = SHX
-						is_core_of = EHC
-						is_core_of = SUI
-						is_core_of = SIK
-						is_core_of = NIX
-						is_core_of = HPC
-						is_core_of = SHG
-						is_core_of = KNM
-						is_core_of = NWR
-						is_core_of = NEA
-						is_core_of = YLN
-						is_core_of = TNT
-						is_core_of = CHN
-						is_core_of = LBG
-						is_core_of = TLG
-						is_core_of = LMU
-						is_core_of = GND
-						is_core_of = KT2
-						is_core_of = HNN
-						is_core_of = SHH
-						is_core_of = NWA
-						is_core_of = XSM
-						is_core_of = STI
-						is_core_of = KGN
-						is_core_of = CCG
-						is_core_of = KWC
-						is_core_of = GXC
-						is_owned_by = CHI
-						is_owned_by = TGN
-						is_owned_by = JAP
-						}
-					NOT = {
-						is_core_of = SOV
-						is_core_of = DLN
-						is_core_of = JAP
-						is_core_of = XIG
-						is_owned_by = MON
-						}
-					}
-				set_demilitarized_zone = no
-				PRC = {
-					transfer_state = PREV
-					}
-				}
-			every_country = {
-				limit = {
-					OR = {
-						tag = ENG
-						tag = FRA
-						}
-					}
-				release = PRC
-			}
-			every_state = {
-				limit = {
-					is_core_of = TWN
-					NOT = {
-					is_core_of = JAP
-					}
-				}
-			CHI = {
-				transfer_state = PREV
-				}
-			}
-			PRC = {
-				set_cosmetic_tag = PRC_proclaimed
-				set_capital = 608
-				annex_country = { target = 2RA }
-				release = ROK
-				transfer_state = 11585
-				transfer_state = 11586
-				}
-			CHI = {
-				annex_country = { target =  TWN }
-				transfer_state = 591
-				transfer_state = 2647
-				transfer_state = 10616
-				transfer_state = 10617
-				transfer_state = 11548
-				transfer_state = 11549
-				transfer_state = 11550
-				transfer_state = 11551
-				transfer_state = 11702
-				}
-			XSM = {
-				transfer_state = 283
-				transfer_state = 604
-				transfer_state = 3286
-				transfer_state = 11611
-				transfer_state = 11666
-				transfer_state = 11669
-				transfer_state = 11691
-				transfer_state = 11697
-				transfer_state = 11698
-				transfer_state = 11701
-				transfer_state = 11702
-				transfer_state = 11703
-				transfer_state = 13089
-				}
-			SHC = {
-				annex_country = { target = CCG }
-				annex_country = { target = CTU }
-				release = XIG
-				transfer_state = 3283
-				transfer_state = 11601
-				transfer_state = 11602
-				transfer_state = 11630
-				}
-			KWC = { 
-				transfer_state = 11613
-				}
-			GXC = {
-				transfer_state = 2130
-				transfer_state = 3290
-				transfer_state = 11570
-				transfer_state = 11573
-				transfer_state = 11574
-				transfer_state = 11575
-				transfer_state = 11576
-				transfer_state = 11577
-				}
-			TIB = {
-				annex_country = { target = HOR }
-				}
-			CHG = {
-				transfer_state = 10780
-				transfer_state = 10781
-				}
-			every_country = {
-				limit = {
-					OR = {
-						tag = GXC
-						tag = YUN
-						tag = XIG
-						tag = SHC
-						}
-					}
-				set_politics = {
-					ruling_party = neutrality
-					}
-				set_cosmetic_tag = CHI_BLUE
-			}
-			JAP = {
-				set_politics = {
-					ruling_party = neutrality
-					}
-				annex_country = { target = KOR }
-				release = ROK
-				release = DPK
-				release = SKH
-				set_cosmetic_tag = USA_BLUE
-			}
-			RUS = {
-				annex_country = { target = SKH }
-				annex_country = { target = DLN }
-				annex_country = { target = TAN }
-				transfer_state = 555
-				transfer_state = 3144
-				transfer_state = 3145
-			}
-			PHI = {
-				drop_cosmetic_tag = yes
-			}
-			FMS = {
-				set_politics = {
-					ruling_party = democratic_monarchism
-					}
-				annex_country = { target = KED }
-				annex_country = { target = PLS }
-				annex_country = { target = KEL }
-				annex_country = { target = TGA }
-				annex_country = { target = JOH }
-				annex_country = { target = STR }
-			}
-			NBO = {
-				transfer_state = 3885
-			}
-			WPP = {
-				annex_country = { target = INS }
-				annex_country = { target = TD2 }
-				set_cosmetic_tag = WPP_HOL
-				set_politics = {
-					ruling_party = authoritarian_monarchism
-					}
-				}
-			every_state = {
-				limit = {
-					is_core_of = IDS
-					NOT = {
-						is_core_of = MAL
-						is_core_of = WPP
-						}
-					}
-				IDS = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					is_core_of = BRM
-					}
-				BRM = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					is_core_of = IND
-					NOT = {
-						is_core_of = FND
-						is_core_of = GOA
-						is_claimed_by = TUG
-						}
-					}
-				IND = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					is_core_of = PAK
-					NOT = {
-						is_core_of = FND
-						is_core_of = GOA
-						is_owned_by = TIB
-						}
-					}
-				PAK = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					is_core_of = NVI
-					NOT = {
-						is_owned_by = INC
-						}
-					}
-				NVI = {
-					transfer_state = PREV
-				}
-			}
-			NVI = {
-				transfer_state = 12888
-				transfer_state = 12892
-			}
-			SIA = {
-				set_politics = {
-					ruling_party = monarchism
-				}
-			}
-			TIB = {
-				transfer_state = 10778
-			}
-			TKI = {
-				transfer_state = 671
-				transfer_state = 1069
-				transfer_state = 12857
-				transfer_state = 12858
-				transfer_state = 12859
-				transfer_state = 12860
-				transfer_state = 12861
-				}
-			BHU = {
-				drop_cosmetic_tag = yes
-			}
-			SKM = {
-				drop_cosmetic_tag = yes
-			}
-			BRM = {
-				drop_cosmetic_tag = yes
-			}
-			SRL = {
-				drop_cosmetic_tag = yes
-				}
-			UZB = {
-				transfer_state = 585
-				transfer_state = 3083
-				transfer_state = 12265
-				transfer_state = 3320
-				transfer_state = 12238
-				transfer_state = 12233
-				transfer_state = 12234
-				transfer_state = 12416
-				transfer_state = 12417
-				transfer_state = 1372
-				transfer_state = 12410
-				transfer_state = 12466
-				transfer_state = 12595
-				transfer_state = 12224
-				transfer_state = 12411
-				transfer_state = 11148
-			}
-			KYR = {
-				transfer_state = 1364
-				set_cosmetic_tag = RUS_RED
-			}
-			KAZ = {
-				transfer_state = 12438
-				transfer_state = 3320
-				transfer_state = 12835
-				transfer_state = 12238
-				transfer_state = 12225
-				transfer_state = 12233
-				transfer_state = 12234
-				transfer_state = 12237
-				set_cosmetic_tag = RUS_RED
-			}
-			KPK = {
-				transfer_state = 12414
-			}
-			every_state = {
-				limit = {
-					is_core_of = ISR
-					}
-			ISR = {
-				transfer_state = PREV
-				}
-			}
-			ISR = {
-				annex_country = { target = PAL }
-				}
-			JOR = {
-				drop_cosmetic_tag = yes
-				transfer_state = 1207
-				transfer_state = 3405
-				transfer_state = 3377
-				transfer_state = 3378
-				transfer_state = 3379
-				transfer_state = 3380
-			}
-			EGY = {
-				transfer_state = 3376
-			}
-			LEB = {
-				drop_cosmetic_tag = yes
-			}
-			SYR = {
-				drop_cosmetic_tag = yes
-				release = HTY
-				annex_country = { target = JEB }
-				annex_country = { target = ALW }
-			}
-			TUR = {
-				annex_country = { target = HTY }
-			}
-			LHJ = {
-				transfer_state = 3875
-			}
-			ADN = {
-				set_politics = {
-				ruling_party = authoritarian_monarchism
-				}
-				transfer_state = 4208
-				transfer_state = 4209
-				transfer_state = 4210
-				transfer_state = 4211
-			}
-			YEM = {
-				transfer_state = 2873
-				transfer_state = 2869
-				transfer_state = 5327
-				transfer_state = 5328
-				transfer_state = 5612
-				transfer_state = 5648
-				transfer_state = 9388
-				transfer_state = 9389
-			}
-			every_country = {
-				limit = {
-					OR = {
-						tag = MHA
-						tag = KTR
-						tag = QTI
-						tag = TRM
-						tag = WBA
-						tag = WBL
-						tag = AWH
-						tag = WBH
-						tag = ASH
-						tag = LAQ
-						tag = ASL
-						tag = BHN
-						tag = DTH
-						tag = AHL
-						tag = FDH
-						tag = LYF
-						tag = UYF
-						tag = SHB
-						tag = MFL
-						tag = ADH
-						tag = AWI
-						tag = HSH
-						tag = LHJ
-						tag = AQR
-						tag = SHA
-						tag = DHB
-						tag = OMN
-						tag = KBA
-						tag = FUJ
-						tag = SHJ
-						tag = RAK
-						tag = AJM
-						tag = UAQ
-						tag = DUB
-						tag = ABD
-						tag = QAT
-						tag = BHR
-						tag = KUW
-					}
-				}
-				set_cosmetic_tag = UK_RED
-			}
-			GEO = {
-				annex_country = { target = TSC }
-			}
-			every_state = {
-				limit = {
-					is_core_of = TUR
-				}
-				set_demilitarized_zone = no
-			}
-		}
-	}
-	option = { #Reject
-		name = "nah"
-		ai_chance = {
-			factor = 100
-		}
-
-	}		
-}
-
 country_event = { #2020 Asia
 	id = mmasia.2020
 	title = "Set Asia to 2021?"
@@ -894,7 +447,7 @@ country_event = { #2020 Asia
 		ai_chance = {
 			factor = 0
 		}
-			hidden_effect = {
+				hidden_effect = {
 					every_state = {
 						limit = {
 								OR = {
@@ -1121,9 +674,6 @@ country_event = { #2020 Asia
 			release = CAM
 			}
 		NVI = {
-			set_politics = {
-				ruling_party = communism
-				}
 			annex_country = { target = SVI }
 			}
 		LAO = {
@@ -1400,8 +950,8 @@ country_event = { #2020 Asia
 				}
 		SRL = {
 			drop_cosmetic_tag = yes
-                set_politics = {
-                    ruling_party = socialism_ideology
+                        set_politics = {
+                        ruling_party = socialism_ideology
 				}
 			}
 		MLD = {
@@ -1411,9 +961,6 @@ country_event = { #2020 Asia
 				}
 			} 
 		PAK = {
-			set_politics = {
-	       		ruling_party = theocratic
-            	}
 			set_capital = 11038
 			release = BAN
 			}
@@ -1421,7 +968,7 @@ country_event = { #2020 Asia
 			drop_cosmetic_tag = yes
 			set_politics = {
 	       		ruling_party = democratic
-            	}	
+            		  }	
 			}
 		BAN = {
 			drop_cosmetic_tag = yes

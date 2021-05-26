@@ -2,6 +2,29 @@
 
 oob = "INS_1936"
 
+set_research_slots = 2
+
+# Starting tech
+# clone of Holland
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_recon = 1
+	early_fighter = 1
+	early_bomber = 1
+	early_submarine = 1
+	basic_destroyer = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+
+set_convoys = 25
+
+
+
 	set_popularities = {
 		authoritarian_monarchism 
 			 = 50
@@ -23,140 +46,9 @@ oob = "INS_1936"
 }
 
 create_country_leader = {
-	name = "Secretaris-Generaal Hendricus Josephus Sneevliet"
+	name = "Bonifacius Cornelis de Jonge"
 	desc = ""
-	picture = "gfx/leaders/Indonesia/Sneed.tga"
-	expire = "1965.1.1"
-	ideology = totsoc
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Voorzitter Hendricus Josephus Sneevliet"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/Sneed.tga"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Gouverneur Karel Willem Frederik Doorman"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/INS_Doorman.tga"
-	expire = "1989.1.1"
-	ideology = stratmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Governador Fernando de Quintanilha e Mendonça Dias"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/INS_Dias.tga"
-	expire = "1965.1.1"
-	ideology = oligarchism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Presiden Amir Sjarifuddin Harahap"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/IDS_Harahap.tga"
-	expire = "1965.1.1"
-	ideology = demsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Maharaja Hamengkubuwono VIII"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/IDS_Hamengkubuwono.tga"
-	expire = "1965.1.1"
-	ideology = monsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Presiden Soekiman Wirjosandjojo"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/INS_Wirjosandjojo.tga"
-	expire = "1965.1.1"
-	ideology = socdem
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Gouverneur Jean Louis Xavier François Darlan"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/INS_Darlan.tga"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Sultan Hamengkubuwono VIII"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/IDS_Hamengkubuwono.tga"
-	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Governor Sir Alexander Robert Maule Ramsay"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/INS_Ramsay.tga"
-	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Kanselir Kyai Hajj Abdul Wahab Hasbullah"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/INS_Hasbullah.tga"
-	expire = "1965.1.1"
-	ideology = cenrep
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Gobernador Luis Carrero Blanco"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/INS_Blanco.tga"
-	expire = "1965.1.1"
-	ideology = cenmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Opperbevelhebber Hein ter Poorten"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/INS_Poorten.tga"
-	expire = "1965.1.1"
-	ideology = militarism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Gouverneur Jonkheer Bonifacius Cornelis de Jonge"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/Bonifacius_Cornelis_de_Jonge.tga"
+	picture = "Bonifacius_Cornelis_de_Jonge.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -164,51 +56,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Koningin Juliana van Oranje-Nassau"
+	name = "Presiden Soekarno"
 	desc = ""
-	picture = "gfx/leaders/Indonesia/INS_Juliana.tga"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Presiden Johannes Leimena"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/INS_Leimena.tga"
-	expire = "1965.1.1"
-	ideology = christian
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Chiji Hitoshi Imamura"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/INS_Imamura.tga"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Presiden Sukarno"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/Sukarno.tga"
+	picture = "Sukarno.tga"
 	expire = "1965.1.1"
 	ideology = repfash
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Gouverneur Wilhelm Marschall"
-	desc = ""
-	picture = "gfx/leaders/Indonesia/INS_Marschall.tga"
-	expire = "1965.1.1"
-	ideology = natsoc
 	traits = {
 	}
 }
@@ -234,9 +86,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gouverneur Jonkheer Bonifacius Cornelis de Jonge"
+	name = "Bonifacius Cornelis de Jonge"
 	desc = ""
-	picture = "gfx/leaders/Indonesia/Bonifacius_Cornelis_de_Jonge.tga"
+	picture = "Bonifacius_Cornelis_de_Jonge.tga"
 	expire = "1965.1.1"
 	ideology = ancap
 	traits = {

@@ -55,37 +55,6 @@ country_event = { #1914 South America
 }
 
 
-country_event = { #1950 South America
-	id = mmsa.1950
-	title = "Set South America to 1950?"
-	desc = "Do it"
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = { #Agree
-		name = "sure"
-		ai_chance = {
-			factor = 0
-		}
-			hidden_effect = {
-		PRU = {
-			transfer_state = 2420
-			transfer_state = 2421
-			transfer_state = 2423
-			transfer_state = 9540
-			}
-		}
-	}
-	
-	option = { #reject
-		name = "nah"
-		ai_chance = {
-			factor = 100
-		}
-
-	}
-}
-
 country_event = { #2020 South America
 	id = mmsa.2021
 	title = "Set South America to 2020?"

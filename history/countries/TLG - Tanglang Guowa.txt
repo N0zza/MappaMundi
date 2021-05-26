@@ -3,8 +3,8 @@
 oob = "TLG_1936"
 
 set_popularities = {
-        anarchism_ideology = 100
-        monarchism = 0
+        anarchism_ideology = 0
+        monarchism = 100
         neutrality = 0
         democratic = 0
         liberal_republic = 0
@@ -30,7 +30,7 @@ set_popularities = {
 
 set_politics = {
 	
-	ruling_party = anarchism_ideology
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -78,16 +78,6 @@ create_country_leader = {
 	picture = "To_be_added.dds"
 	expire = "1965.1.1"
 	ideology = despotism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Tribal Leadership"
-	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = total_anarchist
 	traits = {
 	}
 }

@@ -66,35 +66,6 @@ country_event = { #1914 North America
 	}
 }
 
-
-country_event = { #1950 North America
-	id = mmna.1950
-	title = "Set North America 1950?"
-	desc = "Do it"
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = { #Agree
-		name = "sure"
-		ai_chance = {
-			factor = 0
-		}
-			hidden_effect = {
-			CAN = {
-				annex_country = { target = NFL }
-			}
-		}
-	}
-	
-	option = { #reject
-		name = "nah"
-		ai_chance = {
-			factor = 100
-		}
-
-	}
-}
-
 country_event = { #2020 North America
 	id = mmna.2020
 	title = "Set North America 2021?"
