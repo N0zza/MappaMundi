@@ -446,6 +446,7 @@
 								is_core_of = ARM
 								is_core_of = AZR
 								is_core_of = MOL
+								is_core_of = ATY
 							}
 							NOT = {
 								is_core_of = KUB
@@ -572,6 +573,7 @@
 							}
 						TUR = {
 							transfer_state = PREV
+							add_state_core = PREV
 						}
 						do_turkish_renames = yes
 					}
@@ -646,9 +648,89 @@
 					}
 					every_state = {
 						limit = {
+							is_core_of = MNG
+							}
+						MNG = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = USV
+							}
+						USV = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = LSV
+							}
+						LSV = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = DJB
+							}
+						DJB = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = KYI
+							}
+						KYI = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = ABK
+							}
+						ABK = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = BSR
+							}
+						BSR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = AVR
+							}
+						AVR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = RTK
+							}
+						RTK = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = TAR
+							}
+						TAR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
 							is_core_of = CHE
 							NOT = {
-								is_core_of = DAG
+								is_core_of = AVR
 								}
 							}
 						CHE = {
@@ -850,25 +932,28 @@
 						ruling_party = authoritarian_monarchism
 						}
 					}
+				MNG = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				USV = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				LSV = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				DJB = {
+					set_cosmetic_tag = RUS_GREEN
+					}
 				CHE = {
-					transfer_state = 947
 					transfer_state = 1860
 					transfer_state = 2484
-					transfer_state = 3554
-					transfer_state = 4017
-					transfer_state = 4020
 					transfer_state = 4768
-					transfer_state = 4981
 					transfer_state = 7005
 					transfer_state = 7007
 					transfer_state = 7010
 					transfer_state = 7011
-					transfer_state = 7031
 					transfer_state = 12340
-					transfer_state = 12338
-					transfer_state = 12339
 					transfer_state = 12344
-					transfer_state = 12362
 					drop_cosmetic_tag = yes
 					set_politics = {
 						ruling_party = centrist_monarchism
