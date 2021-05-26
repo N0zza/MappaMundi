@@ -2,31 +2,6 @@
 
 oob = "PAK_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_recon = 1
-	transport = 1
-	trench_warfare = 1
-	fleet_in_being = 1
-	CAS1 = 1
-	
-}
-
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_to_tech_sharing_group = commonwealth_research
-}
-
-set_convoys = 20
-
-
-
-
 	set_popularities = {
         authoritarian_monarchism = 55
         theocratic = 45
@@ -38,36 +13,222 @@ set_convoys = 20
 	elections_allowed = no
 }
 
-
 create_country_leader = {
-	name = "Qazi Muhammad Essa"
-	
-	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
-	expire = "1960.1.1"
-	ideology = centrism
+	name = "President Fatima Ali Jinnah"
+	desc = ""
+	picture = "PAK_Fatima.tga"
+	expire = "1965.1.1"
+	ideology = despotism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Muhammad Ali Jinnah"
-	
-	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
-	expire = "1960.1.1"
-	ideology = authmon
+	name = "President Nawabzada Liaquat Ali Khan"
+	desc = ""
+	picture = "PAK_Khan.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Haji Mohammad Danesh"
-	
-	picture = "gfx/leaders/RAJ/Portrait_The_Raj_Political_Leader_Generic_2.dds"
-	expire = "1960.1.1"
+	name = "General Secretary Syed Sajjad Zaheer"
+	desc = ""
+	picture = "PAK_Zaheer.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Premier Syed Sajjad Zaheer"
+	desc = ""
+	picture = "PAK_Zaheer.tga"
+	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
-		
+	}
+}
+
+create_country_leader = {
+	name = "President Shah Nawaz Bhutto"
+	desc = ""
+	picture = "PAK_Bhutto.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prime Minister Sir Shah Nawaz Bhutto"
+	desc = ""
+	picture = "PAK_Bhutto.tga"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Inayatullah Khan Mashriqi"
+	desc = ""
+	picture = "PAK_Mashriqi.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "First Minister Inayatullah Khan Mashriqi"
+	desc = ""
+	picture = "PAK_Mashriqi.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir Sikandar Hayat Khan"
+	desc = ""
+	picture = "PAK_Hayat.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chancellor Master Tara Singh"
+	desc = ""
+	picture = "PAK_Singh.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor-General Muhammad Ali Jinnah"
+	desc = ""
+	picture = "PAK_Jinnah.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Commander in Chief Sahibzada Iskander Ali Mirza"
+	desc = ""
+	picture = "PAK_Mirza.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir Frank Walter Messervy"
+	desc = ""
+	picture = "PAK_Messervy.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor-General Muhammad Ali Jinnah"
+	desc = ""
+	picture = "PAK_Jinnah.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Khalīfatul Masīh al-thāni Mirza Basheer-ud-Din Mahmood Ahmad"
+	desc = ""
+	picture = "PAK_Mahmood.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Syed Abul A'la Maududi"
+	desc = ""
+	picture = "PAK_Maududi.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Maharani Bamba Sofia Jindan Duleep Singh"
+	desc = ""
+	picture = "PAK_Sofia.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Director Mohammad Iqbal Shedai"
+	desc = ""
+	picture = "PAK_Shedai.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Overseer Shah Nawaz Khan"
+	desc = ""
+	picture = "PAK_Nawaz.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
 	}
 }

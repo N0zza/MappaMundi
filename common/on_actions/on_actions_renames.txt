@@ -243,12 +243,21 @@ on_actions = {
 						}
 						do_greek_renames = yes
 					}
+					
 					### ALB ###
 					if = {
 						limit = {
 							ROOT = {tag = ALB}
 						}
 						do_albanian_renames = yes
+					}
+					
+					### ISR ###
+					if = {
+						limit = {
+							ROOT = {tag = ISR}
+						}
+						do_israeli_renames = yes
 					}
 
 					### CAT ###
@@ -262,7 +271,8 @@ on_actions = {
 					### SPR ###
 					if = {
 						limit = {
-							ROOT = {tag = SPR}
+							ROOT = {OR = {tag = SPR
+								  		  is_subject_of = SPR}}
 						}
 						do_spanish_renames = yes
 					}
@@ -734,6 +744,14 @@ on_actions = {
 							ROOT = {tag = BSQ}
 						}
 						do_basque_renames = yes
+					}
+					
+					### GEO ###
+					if = {
+						limit = {
+							ROOT = {tag = GEO}
+						}
+						do_georgian_renames = yes
 					}
 			}
 		}

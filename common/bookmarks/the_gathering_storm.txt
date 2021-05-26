@@ -9,7 +9,7 @@ bookmarks = {
 		
 		"ICE"={
 			history = "ICE_MM_BOOKMARK_DESC"
-			ideology = democratic
+			ideology = centrist_monarchism
 		}
 		"---"={
 			history = "OTHER_MM_BOOKMARK_DESC"
@@ -17,37 +17,37 @@ bookmarks = {
 		"ENG"={
 			minor = yes
 			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservative_monarchism
 		}
 		"AST"={
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservative_monarchism
 		}
 		"CAN"={
 			minor = yes
 			history = "CAN_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = democratic_monarchism
 		}
 		"NZL"={
 			minor = yes
 			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = democratic_monarchism
 		}
 		"SAF"={
 			minor = yes
 			history = "SAF_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = centrist_monarchism
 		}
 		"RAJ"={
 			minor = yes
 			history = "RAJ_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = authoritarian_monarchism
 		}
 		"GER"={
 			minor = yes
 			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = national_socialism
 		}
 		"ITA"={
 			minor = yes
@@ -57,7 +57,7 @@ bookmarks = {
 		"JAP"={
 			minor = yes
 			history = "JAP_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = stratocratic_monarchism
 		}
 		"CHI"={
 			minor = yes
@@ -67,22 +67,22 @@ bookmarks = {
 		"PRC"={
 			minor = yes
 			history = "PRC_GATHERING_STORM_DESC"
-			ideology = communism
+			ideology = vanguardism
 		}
 		"MAN"={
 			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
-			ideology = fascism
+			ideology = stratocratic_monarchism
 		}
 		"SOV"={
 			minor = yes
 			history = "SOV_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = vanguardism
 		}
 		"USA"={
 			minor = yes
 			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = liberal_republic
 		}
 		"FRA"={
 			minor = yes
@@ -97,42 +97,42 @@ bookmarks = {
 		"YUG"={
 			minor = yes
 			history = "YUG_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = authoritarian_monarchism
 		}
 		"GRE"={
 			minor = yes
 			history = "GRE_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = conservative_monarchism
 		}
 		"MEX"={
 			minor = yes
 			history = "MEXICO_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = socialism_ideology
 		}
 		"HOL"={
 			minor = yes
 			history = "NETHERLANDS_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = conservative_monarchism
 		}
 		"HUN"={
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = authoritarian_monarchism
 		}
 		"ROM"={
 			minor = yes
 			history = "ROM_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = authoritarian_monarchism
 		}
 		"BUL"={
 			minor = yes
 			history = "BUL_GATHERING_STORM_DESC"
-			ideology = neutrality
+			ideology = authoritarian_monarchism
 		}
 		"CZE"={
 			minor = yes
 			history = "CZE_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = centrist_republic
 		}
 		"SPR"={
 			minor = yes
@@ -142,7 +142,7 @@ bookmarks = {
 		"POR"={
 			minor = yes
 			history = "PORTUGAL_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = neutrality
 		}
 		"TUR"={
 			minor = yes
@@ -153,6 +153,12 @@ bookmarks = {
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
+			set_global_flag = 1936_select
+
+			clr_global_flag = 1939_select
+			clr_global_flag = 1914_select
+			clr_global_flag = modern_day_select
+			clr_global_flag = blank_select
 		}
 	}
 }

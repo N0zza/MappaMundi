@@ -1,0 +1,149 @@
+bookmarks = {
+	bookmark = {
+		name = "Modern Day"
+		desc = "Test"
+		date = 2021.1.1.12
+		picture = "gfx/interface/GFX_select_date_2021"
+		picture = "GFX_select_date_1939"
+		default_country = "ICE"
+		
+		"ICE"={
+			history = "ICE_MM_BOOKMARK_DESC"
+			ideology = centrist_monarchism
+		}
+		"---"={
+			history = "OTHER_MM_BOOKMARK_DESC"
+		}
+		"ENG"={
+			minor = yes
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = conservative_monarchism
+		}
+		"AST"={
+			minor = yes
+			history = "AST_GATHERING_STORM_DESC"
+			ideology = conservative_monarchism
+		}
+		"CAN"={
+			minor = yes
+			history = "CAN_GATHERING_STORM_DESC"
+			ideology = democratic_monarchism
+		}
+		"NZL"={
+			minor = yes
+			history = "NZL_GATHERING_STORM_DESC"
+			ideology = democratic_monarchism
+		}
+		"SAF"={
+			minor = yes
+			history = "SAF_GATHERING_STORM_DESC"
+			ideology = centrist_monarchism
+		}
+		"IND"={
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = authoritarian_monarchism
+		}
+		"WGR"={
+			minor = yes
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = national_socialism
+		}
+		"ITA"={
+			minor = yes
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+		}
+		"JAP"={
+			minor = yes
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = stratocratic_monarchism
+		}
+		"PRC"={
+			minor = yes
+			history = "PRC_GATHERING_STORM_DESC"
+			ideology = vanguardism
+		}
+		"USA"={
+			minor = yes
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = liberal_republic
+		}
+		"FRA"={
+			minor = yes
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+		"POL"={
+			minor = yes
+			history = "POL_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"SER"={
+			minor = yes
+			history = "YUG_GATHERING_STORM_DESC"
+			ideology = authoritarian_monarchism
+		}
+		"GRE"={
+			minor = yes
+			history = "GRE_GATHERING_STORM_DESC"
+			ideology = conservative_monarchism
+		}
+		"MEX"={
+			minor = yes
+			history = "MEXICO_GATHERING_STORM_DESC"
+			ideology = socialism_ideology
+		}
+		"HOL"={
+			minor = yes
+			history = "NETHERLANDS_GATHERING_STORM_DESC"
+			ideology = conservative_monarchism
+		}
+		"HUN"={
+			minor = yes
+			history = "HUN_GATHERING_STORM_DESC"
+			ideology = authoritarian_monarchism
+		}
+		"ROM"={
+			minor = yes
+			history = "ROM_GATHERING_STORM_DESC"
+			ideology = authoritarian_monarchism
+		}
+		"BUL"={
+			minor = yes
+			history = "BUL_GATHERING_STORM_DESC"
+			ideology = authoritarian_monarchism
+		}
+		"CZE"={
+			minor = yes
+			history = "CZE_GATHERING_STORM_DESC"
+			ideology = centrist_republic
+		}
+		"SPR"={
+			minor = yes
+			history = "SPAIN_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+		"POR"={
+			minor = yes
+			history = "PORTUGAL_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"TUR"={
+			minor = yes
+			history = "TUR_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+			set_global_flag = modern_day_select
+
+			clr_global_flag = 1936_select
+			clr_global_flag = 1914_select
+			clr_global_flag = 1939_select
+			clr_global_flag = blank_select
+		}
+	}
+}
