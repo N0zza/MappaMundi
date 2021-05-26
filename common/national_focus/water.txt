@@ -15,6 +15,956 @@
 	continuous_focus_position = { x = 50 y = 1000 }
 	
 	focus = {
+		id = WTR_1836_start ##Victorian Era
+		icon = GFX_goal_anschluss
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		available = {
+			has_global_flag = 1836_select
+		}
+
+		bypass = {
+			NOT = { has_global_flag = 1836_select }
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+		
+		completion_reward = {
+			#tooltip
+			effect_tooltip = {
+				release_puppet = SLV
+				SLV = {
+					custom_effect_tooltip = create_two_units_tt
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = { SAR = { exists = no } }
+					##EUROPE 1836
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = GER
+								is_core_of = FIN
+								is_core_of = SWE
+								is_core_of = NOR
+								is_core_of = GRE
+								is_core_of = TUR
+								}
+							}
+						set_demilitarized_zone = no
+					}
+					every_state = {
+						limit = {
+							is_core_of = PRE
+							}
+						PRE = {
+							transfer_state = PREV
+						}
+						do_german_renames = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = HAN
+							}
+						HAN = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = HKA
+							}
+						HKA = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = HHO
+							}
+						HHO = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = NSU
+							}
+						NSU = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = FRN
+							}
+						FRN = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SCH
+							}
+						SCH = {
+							transfer_state = PREV
+						}
+						do_danish_renames = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = HLS
+							}
+						HLS = {
+							transfer_state = PREV
+						}
+						do_danish_renames = yes
+					}
+					every_state = {
+						limit = {
+							OR = {
+							is_core_of = HES
+							is_claimed_by = HES
+								}
+							NOT = {
+								is_core_of = HHO
+								is_core_of = HKA
+								}
+							}
+						HES = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = OLD
+							}
+						OLD = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = BRE
+							}
+						BRE = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = HAM
+							}
+						HAM = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = LUB
+							}
+						LUB = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SLA
+							}
+						SLA = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = MEK
+							}
+						MEK = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = MST
+							}
+						MST = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = AHB
+							}
+						AHB = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = AHK
+							}
+						AHK = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = AHD
+							}
+						AHD = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = BRU
+							}
+						BRU = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = LIP
+							}
+						LIP = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SLI
+							}
+						SLI = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = WAP
+							}
+						WAP = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SAX
+							}
+						SAX = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = BAD
+							}
+						BAD = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = WUR
+							}
+						WUR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = BAY
+								is_claimed_by = BAY
+								}
+							}
+						BAY = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SAL
+							}
+						SAL = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = RGR
+							}
+						RGR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = RGE
+							}
+						RGE = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SWM
+							NOT = {
+								is_claimed_by = BAY
+								}
+							}
+						SWM = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SME
+							}
+						SME = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SRU
+							}
+						SRU = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SSO
+								NOT = {
+									is_core_of = SME
+								}
+							}
+						SSO = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SCG
+								NOT = {
+									is_core_of = BAY
+								}
+							}
+						SCG = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = HHH
+							}
+						HHH = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = LIM
+								is_core_of = LUX
+								}
+							NOT = {
+								is_core_of = PRE
+								}
+							}
+						BEL = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = IRE
+							}
+						ENG = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = AUS
+								is_owned_by = CZE
+								is_core_of = SLO
+								is_core_of = HUN
+								is_core_of = GAL
+								is_core_of = TRA
+								is_core_of = SLV
+								is_core_of = CRO
+								is_claimed_by = CRO
+								is_core_of = IST
+								is_core_of = VJD
+								is_core_of = CZC
+								is_core_of = VNC
+							}
+							NOT = {
+								is_owned_by = LIE
+								is_core_of = CHI
+								is_owned_by = TEU
+								is_core_of = BOS
+								is_core_of = PRE
+								is_claimed_by = TUR
+							}
+						}
+						AUS = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
+						do_german_renames = yes
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = RUS
+								is_owned_by = POL
+								is_owned_by = UKR
+								is_core_of = BLR
+								is_core_of = LAT
+								is_core_of = EST
+								is_owned_by = LIT
+								is_core_of = ALN
+								is_owned_by = FIN
+								is_core_of = GEO
+								is_core_of = ARM
+								is_core_of = AZR
+								is_core_of = MOL
+								is_core_of = ATY
+							}
+							NOT = {
+								is_core_of = KUB
+							}
+						}
+						RUS = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
+						do_russian_renames = yes
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = PIE
+								is_core_of = SRD
+								is_core_of = SAV
+								}
+							}
+						PIE = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = PRM
+							NOT = {
+								is_core_of = PIE
+								}
+							}
+						PRM = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = MDN
+							NOT = {
+								is_core_of = LCC
+								}
+							}
+						MDN = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = LCC
+							}
+						LCC = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = TUS
+							NOT = {
+								is_core_of = MDN
+								is_core_of = LCC
+								}
+							}
+						TUS = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = VCT
+								is_claimed_by = VCT
+								}
+							NOT = {
+								is_core_of = OML
+								is_core_of = SMR
+								}
+							}
+						VCT = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = NAP
+								is_core_of = SIC
+								}
+							}
+						NAP = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = SWE
+								is_owned_by = NOR
+								}
+							}
+						SWE = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = BUL
+								is_core_of = DOB
+								is_core_of = CMC
+								is_core_of = DDO
+								is_core_of = EPR
+								is_core_of = NAN
+								is_core_of = THS
+								is_core_of = ALB
+								is_core_of = CRE
+								is_core_of = CYP
+								is_core_of = ADJ
+								is_owned_by = CYP
+								is_owned_by = YUG
+								is_claimed_by = TUR
+								}
+							NOT = {
+								is_core_of = SMS
+								}
+							}
+						TUR = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
+						do_turkish_renames = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = ION
+							}
+						ION = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SMS
+							}
+						SMS = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = MLV
+								OR = {
+									is_owned_by = ROM
+								}
+							}
+						MLV = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = WLC
+								OR = {
+									is_owned_by = ROM
+								}
+							}
+						WLC = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SER
+								NOT = {
+									is_core_of = KOS
+									is_core_of = MAC
+									is_core_of = BUL
+									is_core_of = SDJ
+									is_owned_by = AUS
+								}
+							}
+						SER = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = KUB
+							}
+						ADY = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = ABK
+							}
+						ABK = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = MNG
+							}
+						MNG = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = USV
+							}
+						USV = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = LSV
+							}
+						LSV = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = DJB
+							}
+						DJB = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = KYI
+							}
+						KYI = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = ABK
+							}
+						ABK = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = BSR
+							}
+						BSR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = AVR
+							}
+						AVR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = RTK
+							}
+						RTK = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = TAR
+							}
+						TAR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = CHE
+							NOT = {
+								is_core_of = AVR
+								}
+							}
+						CHE = {
+							transfer_state = PREV
+						}
+					}
+				HLS = {
+					transfer_state = 3928
+					}
+				HAN = {
+					set_cosmetic_tag = UK_RED
+					}
+				WTR = {
+					transfer_state = 3186
+					}
+				BEL = {
+					transfer_state = 1257
+					}
+				KRW = {
+					transfer_state = 88
+					transfer_state = 1738
+					transfer_state = 2862
+					transfer_state = 5763
+					transfer_state = 8059
+					}
+				FRA = {
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+					}
+				ENG = {
+					set_cosmetic_tag = BRIT
+					}
+				AUS = {
+					transfer_state = 932
+					transfer_state = 5928
+					transfer_state = 7341
+					transfer_state = 7342
+					transfer_state = 7626
+					transfer_state = 7627
+					set_politics = {
+						ruling_party = monarchism
+						}
+					}
+				RUS = {
+					transfer_state = 232
+					transfer_state = 796
+					transfer_state = 3506
+					transfer_state = 3188
+					transfer_state = 4018
+					transfer_state = 4019
+					transfer_state = 4977
+					transfer_state = 4978
+					transfer_state = 7115
+					transfer_state = 11106
+					transfer_state = 12359
+					transfer_state = 12850
+					drop_cosmetic_tag = yes
+					set_politics = {
+						ruling_party = monarchism
+						}
+					}
+				TUS = {
+					transfer_state = 7515
+					}
+				PRM = {
+					transfer_state = 7513
+					}
+				LCC = {
+					transfer_state = 7511
+					}
+				PIE = {
+					set_politics = {
+						ruling_party = monarchism
+						}
+					transfer_state = 838
+					transfer_state = 2463
+					transfer_state = 2503
+					}
+				VCT = {
+					set_politics = {
+						ruling_party = fascism
+						}
+					}
+				MDN = {
+					set_politics = {
+						ruling_party = monarchism
+						}
+					}
+				NAP = {
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+					}
+				ROM = {
+					transfer_state = 2174
+					transfer_state = 2173
+					transfer_state = 2172
+					transfer_state = 7312
+					transfer_state = 1488
+					transfer_state = 7301
+					transfer_state = 1489
+					transfer_state = 7307
+					transfer_state = 7308
+					transfer_state = 5537
+					transfer_state = 5538
+					transfer_state = 2250
+					}
+				SPR = {
+					set_politics = {
+						ruling_party = democratic_monarchism
+						}
+					}
+				POR = {
+					set_politics = {
+						ruling_party = conservative_monarchism
+						}
+					}
+				SWE = {
+					set_politics = {
+						ruling_party = conservative_monarchism
+						}
+					}
+				ICE = {
+					set_cosmetic_tag = DEN_COLONY
+					}
+				TUR = {
+					transfer_state = 3314
+					transfer_state = 7635
+					transfer_state = 815
+					transfer_state = 1234
+					transfer_state = 1237
+					transfer_state = 1732
+					transfer_state = 7332
+					transfer_state = 816
+					transfer_state = 108
+					transfer_state = 3649
+					transfer_state = 12853
+					transfer_state = 4142
+					set_cosmetic_tag = OTTO
+					set_politics = {
+						ruling_party = monarchism
+						}
+					}
+				ION = {
+					set_cosmetic_tag = UK_RED
+					}
+				GRE = {
+					transfer_state = 185
+					transfer_state = 3331
+					transfer_state = 7250
+					}
+				WLC = {
+					transfer_state = 1488
+					transfer_state = 1489
+					transfer_state = 2173
+					transfer_state = 2174
+					transfer_state = 7301
+					transfer_state = 7312
+					set_cosmetic_tag = OTTO_COLONY
+					}
+				MLV = {
+					transfer_state = 2172
+					transfer_state = 2250
+					transfer_state = 5537
+					transfer_state = 5538
+					transfer_state = 7307
+					transfer_state = 7308
+					set_cosmetic_tag = OTTO_COLONY
+					}
+				MNT = {
+					transfer_state = 2791
+					transfer_state = 105
+					set_capital = 2791
+					set_politics = {
+						ruling_party = theocratic
+						}
+					}
+				SER = {
+					transfer_state = 4980
+					transfer_state = 3651
+					transfer_state = 7621
+					transfer_state = 5490
+					transfer_state = 4383
+					set_politics = {
+						ruling_party = conservative_monarchism
+						}
+					set_cosmetic_tag = OTTO_COLONY
+					}
+				ADY = {
+					drop_cosmetic_tag = yes
+					set_politics = {
+						ruling_party = anarchism_ideology
+						}
+					}
+				ABK = {
+					set_cosmetic_tag = RUS_GREEN
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+					}
+				MNG = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				USV = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				LSV = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				DJB = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				CHE = {
+					transfer_state = 1860
+					transfer_state = 2484
+					transfer_state = 4768
+					transfer_state = 7005
+					transfer_state = 7007
+					transfer_state = 7010
+					transfer_state = 7011
+					transfer_state = 12340
+					transfer_state = 12344
+					drop_cosmetic_tag = yes
+					set_politics = {
+						ruling_party = centrist_monarchism
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
 		id = WTR_1914_start
 		icon = GFX_goal_anschluss
 		x = 10
