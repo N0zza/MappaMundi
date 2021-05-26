@@ -2859,6 +2859,7 @@
 							is_owned_by = NOR
 							is_owned_by = SWE
 							is_owned_by = TUR
+							is_owned_by = GRE
 								}
 							}
 						set_demilitarized_zone = no
@@ -3334,6 +3335,7 @@
 					transfer_state = PREV
 					add_state_core = PREV
 						}
+					do_pinyin_renames = yes
 					}
 				every_state = {
 					limit = {
@@ -3367,6 +3369,7 @@
 					ROK = {
 						transfer_state = PREV
 						}
+					do_korean_renames = yes
 					}
 				every_state = {
 					limit = {
@@ -3375,6 +3378,7 @@
 					DPK = {
 						transfer_state = PREV
 						}
+					do_korean_renames = yes
 					}
 		RUS = {
 			transfer_state = 537
@@ -3438,6 +3442,7 @@
 			CHI = {
 				transfer_state = PREV
 				}
+			do_chinese_renames = yes
 			}
 		CHI = {
 			transfer_state = 2647
