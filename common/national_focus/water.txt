@@ -728,9 +728,34 @@
 					}
 					every_state = {
 						limit = {
+							is_core_of = TSD
+							}
+						TSD = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = MKH
+							}
+						MKH = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = GHB
+							}
+						GHB = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
 							is_core_of = CHE
 							NOT = {
 								is_core_of = AVR
+								is_core_of = DAG
 								}
 							}
 						CHE = {
@@ -779,6 +804,7 @@
 					transfer_state = 232
 					transfer_state = 796
 					transfer_state = 3506
+					transfer_state = 3549
 					transfer_state = 3188
 					transfer_state = 4018
 					transfer_state = 4019
@@ -786,6 +812,7 @@
 					transfer_state = 4978
 					transfer_state = 7115
 					transfer_state = 11106
+					transfer_state = 12341
 					transfer_state = 12359
 					transfer_state = 12850
 					drop_cosmetic_tag = yes
@@ -945,15 +972,11 @@
 					set_cosmetic_tag = RUS_GREEN
 					}
 				CHE = {
-					transfer_state = 1860
 					transfer_state = 2484
-					transfer_state = 4768
-					transfer_state = 7005
 					transfer_state = 7007
-					transfer_state = 7010
-					transfer_state = 7011
-					transfer_state = 12340
 					transfer_state = 12344
+					transfer_state = 13427
+					transfer_state = 13428
 					drop_cosmetic_tag = yes
 					set_politics = {
 						ruling_party = centrist_monarchism
