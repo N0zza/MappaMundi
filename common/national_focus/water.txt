@@ -825,6 +825,27 @@
 							transfer_state = PREV
 						}
 					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = TSC
+								is_core_of = KSR
+								is_core_of = GEO
+								}
+							NOT = {
+								is_core_of = ABK
+								is_core_of = USV
+								is_core_of = LSV
+								is_core_of = MNG
+								is_core_of = ESU
+								is_core_of = DJB
+								is_owned_by = TUR
+								}
+							}
+						TSC = {
+							transfer_state = PREV
+						}
+					}
 				HLS = {
 					transfer_state = 3928
 					}
@@ -912,22 +933,26 @@
 					transfer_state = 2118
 					transfer_state = 2777
 					transfer_state = 3506
-					transfer_state = 3549
 					transfer_state = 3188
-					transfer_state = 4018
-					transfer_state = 4019
 					transfer_state = 4977
 					transfer_state = 4978
-					transfer_state = 7115
 					transfer_state = 10589
 					transfer_state = 11106
-					transfer_state = 12341
-					transfer_state = 12359
-					transfer_state = 12850
-					transfer_state = 13444
 					drop_cosmetic_tag = yes
 					set_politics = {
 						ruling_party = monarchism
+						}
+					}
+				TSC = {
+					transfer_state = 4018
+					transfer_state = 4019
+					transfer_state = 7115
+					transfer_state = 12359
+					transfer_state = 12850
+					transfer_state = 13444
+					set_cosmetic_tag = RUS_GREEN
+					set_politics = {
+						ruling_party = authoritarian_monarchism
 						}
 					}
 				TUS = {
