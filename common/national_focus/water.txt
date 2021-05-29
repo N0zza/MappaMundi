@@ -438,7 +438,6 @@
 								is_owned_by = UKR
 								is_core_of = BLR
 								is_core_of = LAT
-								is_core_of = EST
 								is_owned_by = LIT
 								is_core_of = ALN
 								is_owned_by = FIN
@@ -457,6 +456,30 @@
 							add_state_core = PREV
 						}
 						do_russian_renames = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = LIV
+							}
+						LIV = {
+							transfer_state = PREV
+						}
+						do_german_renames = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = COU
+							}
+						COU = {
+							transfer_state = PREV
+						}
+						do_german_renames = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = EST
+							}
+						do_german_renames = yes
 					}
 					every_state = {
 						limit = {
@@ -767,6 +790,15 @@
 					}
 				HAN = {
 					set_cosmetic_tag = UK_RED
+					}
+				EST = {
+					set_cosmetic_tag = EST_RUS
+					}
+				LIV = {
+					set_cosmetic_tag = LIV_RUS
+					}
+				COU = {
+					set_cosmetic_tag = COU_RUS
 					}
 				WTR = {
 					transfer_state = 3186
