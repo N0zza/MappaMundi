@@ -439,8 +439,6 @@
 								is_core_of = BLR
 								is_core_of = LAT
 								is_owned_by = LIT
-								is_core_of = ALN
-								is_owned_by = FIN
 								is_core_of = GEO
 								is_core_of = ARM
 								is_core_of = AZR
@@ -459,7 +457,33 @@
 					}
 					every_state = {
 						limit = {
+							is_core_of = ALN
+							}
+						FIN = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = POL
+							NOT = {
+								is_core_of = BLR
+								is_core_of = UKR
+								is_core_of = PRE
+								is_core_of = GAL
+								is_core_of = CZE
+								}
+							}
+						POL = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
 							is_core_of = LIV
+							NOT = {
+								is_core_of = LTG
+								}
 							}
 						LIV = {
 							transfer_state = PREV
@@ -775,6 +799,22 @@
 					}
 					every_state = {
 						limit = {
+							is_core_of = GZH
+							}
+						GZH = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = ESU
+							}
+						ESU = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
 							is_core_of = CHE
 							NOT = {
 								is_core_of = AVR
@@ -799,6 +839,37 @@
 					}
 				COU = {
 					set_cosmetic_tag = COU_RUS
+					}
+				FIN = {
+					set_cosmetic_tag = FIN_RUS
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+					}
+				POL = {
+					set_cosmetic_tag = POL_RUS
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+					transfer_state = 789
+					transfer_state = 830
+					transfer_state = 1729
+					transfer_state = 1737
+					transfer_state = 3491
+					transfer_state = 4096
+					transfer_state = 4740
+					transfer_state = 4765
+					transfer_state = 5542
+					transfer_state = 5739
+					transfer_state = 5740
+					transfer_state = 5741
+					transfer_state = 5742
+					transfer_state = 5743
+					transfer_state = 7410
+					transfer_state = 7418
+					transfer_state = 7752
+					transfer_state = 7753
+					transfer_state = 8035
 					}
 				WTR = {
 					transfer_state = 3186
@@ -834,7 +905,12 @@
 					}
 				RUS = {
 					transfer_state = 232
+					transfer_state = 722
 					transfer_state = 796
+					transfer_state = 1080
+					transfer_state = 1081
+					transfer_state = 2118
+					transfer_state = 2777
 					transfer_state = 3506
 					transfer_state = 3549
 					transfer_state = 3188
@@ -843,10 +919,12 @@
 					transfer_state = 4977
 					transfer_state = 4978
 					transfer_state = 7115
+					transfer_state = 10589
 					transfer_state = 11106
 					transfer_state = 12341
 					transfer_state = 12359
 					transfer_state = 12850
+					transfer_state = 13444
 					drop_cosmetic_tag = yes
 					set_politics = {
 						ruling_party = monarchism
@@ -1009,6 +1087,10 @@
 					transfer_state = 12344
 					transfer_state = 13427
 					transfer_state = 13428
+					transfer_state = 13432
+					transfer_state = 13433
+					transfer_state = 13437
+					transfer_state = 13442
 					drop_cosmetic_tag = yes
 					set_politics = {
 						ruling_party = centrist_monarchism
