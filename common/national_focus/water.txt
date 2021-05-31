@@ -1003,9 +1003,17 @@
 						ruling_party = conservative_monarchism
 						}
 					}
-				SWE = {
+				KNE = {
 					set_politics = {
 						ruling_party = conservative_monarchism
+						}
+					set_cosmetic_tag = PRU_SCC
+					every_state = {
+						limit = {
+							is_core_of = KNE
+							}
+						KNE = {
+							transfer_state = PREV
 						}
 					}
 				ICE = {
@@ -1112,6 +1120,15 @@
 					set_politics = {
 						ruling_party = centrist_monarchism
 						}
+					}
+				ENG = {
+					kill_country_leader = yes
+					create_country_leader = {
+            			name = "By the Grace of God, of the United Kingdom of Great Britain and Ireland King, Defender of the Faith, King of Hanover, Duke of Brunswick-Luneburg William IV"
+            			desc = ""
+            			picture = 1836_ENG_William_IV.tga
+            			expire = "1965.1.1"
+            			ideology = conservative_constitutionalism
 					}
 				}
 			}
