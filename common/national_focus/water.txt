@@ -585,16 +585,8 @@
 							transfer_state = PREV
 						}
 					}
-					every_state = {
-						limit = {
-							OR = {
-								is_owned_by = SWE
-								is_owned_by = NOR
-								}
-							}
-						SWE = {
-							transfer_state = PREV
-						}
+					NOR = {
+					set_cosmetic_tag = SWE_BLUE
 					}
 					every_state = {
 						limit = {
@@ -1127,7 +1119,7 @@
 	}
 	
 	focus = {
-		id = WTR_1914_start
+		id = WTR_1914_start #1914 start date
 		icon = GFX_goal_anschluss
 		x = 10
 		y = 1
