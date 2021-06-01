@@ -585,8 +585,13 @@
 							transfer_state = PREV
 						}
 					}
-					NOR = {
-					set_cosmetic_tag = SWE_BLUE
+					every_state = {
+						limit = {
+							is_core_of = KNE
+							}
+						KNE = {
+							transfer_state = PREV
+						}
 					}
 					every_state = {
 						limit = {
@@ -935,6 +940,9 @@
 						ruling_party = monarchism
 						}
 					}
+				NOR = {
+					set_cosmetic_tag = SWE_BLUE
+					}
 				TSC = {
 					transfer_state = 4018
 					transfer_state = 4019
@@ -999,6 +1007,7 @@
 						}
 					}
 				POR = {
+					set_cosmetic_tag = POR_MONARCHISM
 					set_politics = {
 						ruling_party = conservative_monarchism
 						}
@@ -1008,13 +1017,6 @@
 						ruling_party = conservative_monarchism
 						}
 					set_cosmetic_tag = PRU_SCC
-					every_state = {
-						limit = {
-							is_core_of = KNE
-							}
-						KNE = {
-							transfer_state = PREV
-						}
 					}
 				ICE = {
 					set_cosmetic_tag = DEN_COLONY
@@ -1103,9 +1105,6 @@
 				LSV = {
 					set_cosmetic_tag = RUS_GREEN
 					}
-				POR = {
-					set_cosmetic_tag = POR_MONARCHISM
-					}
 				DJB = {
 					set_cosmetic_tag = RUS_GREEN
 					}
@@ -1132,6 +1131,7 @@
             			picture = 1836_ENG_William_IV.tga
             			expire = "1965.1.1"
             			ideology = conservative_constitutionalism
+						}
 					}
 				}
 			}
@@ -1487,7 +1487,7 @@
 				}
 			}
 		ENG = {
-			set_cosmetic_tag = BRIT_democratic
+			set_cosmetic_tag = BRIT
 			}
 		SPR = {
 			set_politics = {
