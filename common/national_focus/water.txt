@@ -1144,7 +1144,7 @@
 							is_core_of = NMX
 							is_core_of = TEX
 							is_claimed_by = TEX
-								}
+							}
 						NOT = {
 							is_core_of = KCA
 							is_core_of = CYA
@@ -1173,6 +1173,101 @@
 					transfer_state = 1410
 					transfer_state = 4107
 					transfer_state = 1166
+					}
+				every_state = {
+					limit = {
+						is_core_of = CAS
+						}
+					ORG = {
+						transfer_state = PREV
+						set_cosmetic_tag = ENG_USA_CONDOMINIUM
+						set_politics = {
+						ruling_party = neutrality
+							}
+						}
+					}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = MNA
+							is_core_of = WYO
+							is_core_of = CLR
+							is_core_of = KAN
+							is_core_of = OKH
+							is_core_of = SDA
+							is_core_of = NEB
+							}
+						NOT = {
+							is_owned_by = MEX
+							is_owned_by = ORG
+							}
+						}
+						LOU = {
+							transfer_state = PREV
+						}
+					}
+				LOU = {
+					transfer_state = 4443
+					transfer_state = 9617
+					transfer_state = 9611
+					transfer_state = 4619
+					transfer_state = 1977
+					set_cosmetic_tag = USA_BLUE
+					set_politics = {
+						ruling_party = anarchism_ideology
+						}
+					}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = NDA
+							is_core_of = MNS
+							is_core_of = IOW
+							is_core_of = WSC
+							is_core_of = MCH
+							}
+						NOT = {
+							is_owned_by = LOU
+							}
+						}
+						MCH = {
+							transfer_state = PREV
+						}
+					}
+				MCH = {
+					transfer_state = 1404
+					transfer_state = 11051
+					transfer_state = 1992
+					transfer_state = 390
+					transfer_state = 4618
+					set_cosmetic_tag = USA_BLUE
+					set_politics = {
+						ruling_party = neutrality
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = AKS
+					}
+					AKS = {
+						transfer_state = PREV
+						set_cosmetic_tag = USA_BLUE
+						set_politics = {
+						ruling_party = neutrality
+							}
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = FLO
+					}
+					FLO = {
+						transfer_state = PREV
+						set_cosmetic_tag = USA_BLUE
+						set_politics = {
+						ruling_party = neutrality
+							}
+						}
 					}
 				}
 			}
