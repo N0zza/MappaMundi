@@ -18,12 +18,12 @@ set_convoys = 10
 		liberal_republic 
 			 = 70
 		fascism
-			 = 5
+			 = 0
 		communism
 			 = 10
 			
 		neutrality
-			 = 15
+			 = 20
 		}
 	set_politics = { 
  ruling_party = liberal_republic
@@ -33,7 +33,7 @@ set_convoys = 10
 }
 
 create_country_leader = {
-	name = "Juan Bautista Sacasa"
+	name = "Presidente Juan Bautista Sacasa"
 	desc = "POLITICS_JUAN_BAUTISTA_SACASA_DESC"
 	picture = "Portrait_Juan_Bautista_Sacasa.dds"
 	expire = "1965.1.1"
@@ -43,13 +43,75 @@ create_country_leader = {
 	}
 }
 
-	create_country_leader = {
-		name = "Anastasio Somoza García"
-		desc = "POLITICS_ANASTASIO_SOMOZA_GARCIA_DESC"
-		picture = "GFX_portrait_nicaragua_portrait_anastasio_somoza_garcia"
-		expire = "1965.1.1"
-		ideology = despotism
-		traits = {
-			#
-		}
+create_country_leader = {
+	name = "Caudillo Anastasio "Tacho" Somoza García"
+	desc = ""
+	picture = "NIC_Anastasio_authdem.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
 	}
+}
+
+create_country_leader = {
+	name = "Secretario General Augusto César Sandino"
+	desc = ""
+	picture = "NIC_Sandino_commie.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Augusto César Sandino"
+	desc = ""
+	picture = "NIC_Sandino_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Emiliano Chamorro Vargas"
+	desc = ""
+	picture = "NIC_Vargas_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Ross Erastus Rowell"
+	desc = ""
+	picture = "NIC_Rowell_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gobernador José María de Albert Despujol, Peralta y Pujol de Senillosa"
+	desc = ""
+	picture = "NIC_Jose_stratmon.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Arzobispo José Antonio Lezcano y Ortega"
+	desc = ""
+	picture = "NIC_Leczano_theoc.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
