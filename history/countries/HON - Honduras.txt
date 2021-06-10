@@ -14,27 +14,112 @@ set_convoys = 10
 
 	set_popularities = {
 		democratic 
-			 = 100
-		fascism
-			 = 0
+			 = 10
+		neutrality
+			 = 90
 		communism
 			 = 0
 			
-		}
-	set_politics = { 
- ruling_party = democratic
+}
+
+set_politics = { 
+
+        ruling_party = neutrality
 	last_election = "1932.10.28"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Tiburcio Carías Andino"
+	name = "Presidente Tiburcio Carías Andino"
 	desc = "POLITICS_TIBURCIO_CARIAS_ANDINO_DESC"
 	picture = "Portrait_honduras_portrait_tiburcio_carias_andino.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = oligarchism
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Secretario General Froylan Turcios"
+	desc = ""
+	picture = "HON_Froylan_commie.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Froylan Turcios"
+	desc = ""
+	picture = "HON_Froylan_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Vicente Mejía Colindres"
+	desc = "HON_Vicent_libdem"
+	picture = "Portrait_Bolivia_Jose_Luis_Tejada_Sorzano.tga"
+	expire = "1965.1.1"
+	ideology = socdem 
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Juan Manuel Gálvez Durón"
+	desc = ""
+	picture = "HON_Duron_condemi.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Walden Lee "Pug" Ainsworth"
+	desc = ""
+	picture = "HON_Pug_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gobernador Miguel Mateu y Pla"
+	desc = ""
+	picture = "HON_Miguel_stratmon.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Karl Franz Gebhardt"
+	desc = ""
+	picture = "HON_Karl_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Council Chair Salvador D'Antoni"
+	desc = ""
+	picture = "HON_Salvador_ancap.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
 	}
 }
