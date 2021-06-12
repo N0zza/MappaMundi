@@ -788,9 +788,9 @@
 					}
 					every_state = {
 						limit = {
-							is_core_of = GHB
+							is_core_of = KSB
 							}
-						GHB = {
+						KSB = {
 							transfer_state = PREV
 						}
 					}
@@ -807,6 +807,38 @@
 							is_core_of = ESU
 							}
 						ESU = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = RUT
+							}
+						RUT = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = AKH
+							}
+						AKH = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = DOK
+							}
+						DOK = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = ATP
+							}
+						ATP = {
 							transfer_state = PREV
 						}
 					}
@@ -949,7 +981,6 @@
 					transfer_state = 7115
 					transfer_state = 12359
 					transfer_state = 12850
-					transfer_state = 13444
 					set_cosmetic_tag = RUS_GREEN
 					set_politics = {
 						ruling_party = authoritarian_monarchism
@@ -1108,12 +1139,48 @@
 				DJB = {
 					set_cosmetic_tag = RUS_GREEN
 					}
+				TAR = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				RTK = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				BSR = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				GZH = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				KYI = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				ESU = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				MKH = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				AVR = {
+					set_cosmetic_tag = CHE_GREEN
+					}
+				RUT = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				AKH = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				DOK = {
+					set_cosmetic_tag = RUS_GREEN
+					}
+				ATP = {
+					set_cosmetic_tag = RUS_GREEN
+					}
 				CHE = {
 					transfer_state = 2484
 					transfer_state = 7007
 					transfer_state = 12344
 					transfer_state = 13427
-					transfer_state = 13428
+					transfer_state = 13431
 					transfer_state = 13432
 					transfer_state = 13433
 					transfer_state = 13437
