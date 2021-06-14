@@ -1405,8 +1405,12 @@
 				every_state = {
 					limit = {
 						OR = {
-						is_owned_by = CAN
+						is_core_of = MET
 						is_core_of = LBD
+						is_core_of = NUN
+						}
+						NOT = {
+							is_core_of = USA
 						}
 					}
 					MET = {
@@ -1423,30 +1427,12 @@
 							is_core_of = NWT
 							is_core_of = BRC
 							is_core_of = YUK
+							is_owned_by = CAN
 						}
 						NOT = {
 							is_owned_by = ORG
 							is_core_of = NUN
-						}
-					}
-					NWT = {
-						transfer_state = PREV
-						set_cosmetic_tag = UK_RED
-						set_politics = {
-						ruling_party = authoritarian_monarchism
-							}
-						}
-					}
-					every_state = {
-					limit = {
-						OR = {
-							is_core_of = NWT
-							is_core_of = BRC
-							is_core_of = YUK
-						}
-						NOT = {
-							is_owned_by = ORG
-							is_core_of = NUN
+							is_core_of = MET
 						}
 					}
 					NWT = {
@@ -1602,13 +1588,16 @@
 					transfer_state = 7609
 					}
 				NWT = {
+					transfer_state = 1255
+					transfer_state = 9331
 					transfer_state = 10864
 					transfer_state = 10934
 					transfer_state = 10935
 					transfer_state = 10937
 					transfer_state = 12688
-					transfer_state = 12702
-					transfer_state = 12704
+					transfer_state = 13553
+					transfer_state = 13554
+					transfer_state = 13565
 					}
 				NFL = {
 					transfer_state = 1247
