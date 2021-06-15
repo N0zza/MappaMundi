@@ -1408,17 +1408,15 @@
 						is_core_of = MET
 						is_core_of = LBD
 						is_core_of = NUN
+						is_core_of = OT2
 						}
 						NOT = {
 							is_core_of = USA
 						}
 					}
-					MET = {
+					OT2 = {
 						transfer_state = PREV
 						set_cosmetic_tag = UK_RED
-						set_politics = {
-						ruling_party = right_anarchism
-							}
 						}
 					}
 				every_state = {
@@ -1502,7 +1500,7 @@
 						transfer_state = PREV
 						}
 					}
-				MET = {
+				OT2 = {
 					set_capital = 9344
 					transfer_state = 4410
 					transfer_state = 4411
@@ -1605,6 +1603,9 @@
 					transfer_state = 4563
 					transfer_state = 12025
 					transfer_state = 12027
+					set_politics = {
+						ruling_party = centrist_monarchism
+						}
 					}
 				CUB = {
 					transfer_state = 933
@@ -2560,6 +2561,17 @@
 				}
 			TZN = {
 				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_owned_by = KEN
+				}
+			MMB = {
+				transfer_state = PREV
+				set_politics = {
+					ruling_party = conservative_monarchism
+					}
 				}
 			}
 		TOG = {
@@ -5255,13 +5267,6 @@
 			}
 		UGA = {
 			drop_cosmetic_tag = yes
-			set_politics = {
-				ruling_party = democratic
-				}
-			}
-		TZN = {
-			drop_cosmetic_tag = yes
-			set_capital = 1523
 			set_politics = {
 				ruling_party = democratic
 				}
