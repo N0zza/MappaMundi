@@ -1050,6 +1050,9 @@
 					set_cosmetic_tag = PRU_SCC
 					}
 				ICE = {
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
 					set_cosmetic_tag = DEN_COLONY
 					}
 				TUR = {
@@ -1408,7 +1411,6 @@
 						is_core_of = MET
 						is_core_of = LBD
 						is_core_of = NUN
-						is_core_of = OT2
 						}
 						NOT = {
 							is_core_of = USA
@@ -1584,6 +1586,10 @@
 					transfer_state = 7607
 					transfer_state = 7608
 					transfer_state = 7609
+					transfer_state = 10948
+					transfer_state = 4665
+					transfer_state = 4667
+					transfer_state = 13556
 					}
 				NWT = {
 					transfer_state = 1255
@@ -1644,7 +1650,7 @@
 	}
 	
 	focus = {
-		id = WTR_1914_start #1914 start date
+		id = WTR_1914_start #1914 Startdate
 		icon = GFX_goal_anschluss
 		x = 10
 		y = 1
@@ -2026,6 +2032,12 @@
 			set_politics = {
 				ruling_party = conservative_monarchism
 				
+			}
+		ICE ={
+			set_politics = {
+				ruling_party = authoritarian_monarchism
+				}
+			set_cosmetic_tag = DEN_COLONY
 			}
 		WTR = {
 			transfer_state = 3186
