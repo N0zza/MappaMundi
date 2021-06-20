@@ -5,53 +5,19 @@ set_cosmetic_tag = FRA_COLONY
 oob = "LAO_1936"
 
 	set_popularities = {
-		democratic 
-			 = 25
-	
-		communism
-			 = 35
+		authoritarian_monarchism 
+			 = 99
+	        communism
+			 = 1
 		neutrality
-			 = 40
+			 = 0
 
-}
+               }
 	set_politics = {
  ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
-}
-
-create_country_leader = {
-	name = "Souphanouvong"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
-	expire = "1953.3.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Sisavang Vong"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
-	expire = "1953.3.1"
-	ideology = despotism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Kou Voragong" 
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
 }
 
 create_country_leader = {
@@ -65,4 +31,54 @@ create_country_leader = {
 	}
 }
 
-#couldnt find historical fascists
+create_country_leader = {
+	name = "Commissar Souphanouvong"
+	desc = ""
+	picture = "LAO_Souphanouvong_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kasad Boun Oum Na Champassak"
+	desc = ""
+	picture = "LAO_Boun_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kasad Sisavang Phoulivong"
+	desc = ""
+	picture = "LAO_Vong.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Kou Voravong"
+	desc = ""
+	picture = "LAO_Voravong_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Phetsarath Ratanavongsa"
+	desc = ""
+	picture = "LAO_Ratanavongsa_authdem.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
