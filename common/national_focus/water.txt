@@ -6,7 +6,13 @@
 		
 		modifier = {
 			add = 10
-			tag = WTR
+			OR = {
+				tag = WTR
+				tag = WGR
+				tag = PRE
+				tag = RUS
+				tag = PIE
+			}
 		}
 	}
 	
@@ -1460,6 +1466,7 @@
 					}
 					GUA = {
 						transfer_state = PREV
+						add_state_core = PREV
 						set_cosmetic_tag = USCA
 						set_politics = {
 						ruling_party = neutrality
@@ -1499,36 +1506,11 @@
 						is_core_of = PAN
 						NOT = {
 							is_core_of = COS
+							}
 						}
-					}
 					COL = {
 						transfer_state = PREV
-                        transfer_state = 13578
-                        transfer_state = 13579
-                        transfer_state = 13580
-                        transfer_state = 3725
-                        transfer_state = 9139
-                        transfer_state = 9185
-                        transfer_state = 1709
-                        transfer_state = 9188
-                        transfer_state = 9189
-                        transfer_state = 9190
-                        transfer_state = 10523
-                        transfer_state = 3733
-                        transfer_state = 6569
-                        transfer_state = 7571
-                        transfer_state = 1664
-                        transfer_state = 1690
-                        transfer_state = 7572
-                        transfer_state = 9186
-                        transfer_state = 9187
-                        transfer_state = 1710
-                        transfer_state = 9191
-                        transfer_state = 9192
-                        transfer_state = 9194
-                        transfer_state = 3768
-                        transfer_state = 9195
-						set_cosmetic_tag = COL_VIC
+						add_state_core = PREV
 						}
 					}
 				OT2 = {
@@ -1672,6 +1654,56 @@
 					}
 				SPM = {
 					transfer_state = 2325
+					}
+				GUA = {
+					transfer_state = 6155
+					transfer_state = 13523
+					transfer_state = 13524
+					transfer_state = 13525
+					transfer_state = 3661
+					transfer_state = 5485
+					}
+					
+				##SOUTH AMERICA 1836
+				every_state = {
+					limit = {
+						OR ={
+							is_core_of = BOL
+							is_core_of = ACR
+							}
+						}
+					BOL = {
+						transfer_state = PREV
+						}
+					}
+				COL = {
+					transfer_state = PREV
+                    transfer_state = 13578
+                    transfer_state = 13579
+                    transfer_state = 13580
+                    transfer_state = 3725
+                    transfer_state = 9139
+                    transfer_state = 9185
+                    transfer_state = 1709
+                    transfer_state = 9188
+                    transfer_state = 9189
+                    transfer_state = 9190
+                    transfer_state = 10523
+                    transfer_state = 3733
+                    transfer_state = 6569
+                    transfer_state = 7571
+                    transfer_state = 1664
+                    transfer_state = 1690
+                    transfer_state = 7572
+                    transfer_state = 9186
+                    transfer_state = 9187
+                    transfer_state = 1710
+                    transfer_state = 9191
+                    transfer_state = 9192
+                    transfer_state = 9194
+                    transfer_state = 3768
+                    transfer_state = 9195
+					set_cosmetic_tag = COL_VIC
 					}
 				}
 			}
