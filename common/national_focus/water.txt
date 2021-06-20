@@ -1741,6 +1741,39 @@
                     transfer_state = 6585
                     transfer_state = 6578
                     }
+                    
+				every_state = {
+					limit = {
+						OR ={
+							is_core_of = PAT
+							}
+						}
+					TRB = {
+						transfer_state = PREV
+                        add_state_core = PREV
+                        transfer_state = 3751
+                        transfer_state = 9573
+                        transfer_state = 2114
+                        transfer_state = 3750
+                        transfer_state = 3749
+                        transfer_state = 6105
+                        transfer_state = 3748
+                        transfer_state = 9356
+                        transfer_state = 6108
+                        transfer_state = 6111
+                        transfer_state = 509
+                        transfer_state = 6121
+                        transfer_state = 6115
+                        transfer_state = 1681
+                        transfer_state = 2106
+                        transfer_state = 1641
+                        transfer_state = 278
+                        transfer_state = 13582
+                        transfer_state = 13583
+                        transfer_state = 13584
+                        transfer_state = 13585
+						}
+					}
 				}
 			}
 		}
