@@ -12,7 +12,17 @@
 				tag = PRE
 				tag = RUS
 				tag = PIE
+				tag = AUS
 			}
+		}
+		modifier = {
+			add = 10
+			OR = {
+				tag = SER
+				tag = WLC
+				tag = CZC
+			}
+			has_dlc = "Death or Dishonor"
 		}
 	}
 	
@@ -899,7 +909,7 @@
 				FIN = {
 					set_cosmetic_tag = FIN_RUS
 					set_politics = {
-						ruling_party = authoritarian_monarchism
+						ruling_party = monarchism
 						}
 					}
 				POL = {
@@ -1907,8 +1917,6 @@
 								is_owned_by = UKR
 								is_owned_by = BLR
 								is_owned_by = POL
-								is_owned_by = FIN
-								is_owned_by = ALN
 								is_owned_by = LIT
 								is_owned_by = LAT
 								is_owned_by = EST
@@ -1923,6 +1931,18 @@
 							add_state_core = PREV
 						}
 					}
+					every_state = {
+						limit = {
+							is_core_of = ALN
+							}
+						FIN = {
+							transfer_state = PREV
+							set_cosmetic_tag = FIN_RUS
+							set_politics = {
+								ruling_party = monarchism
+								}
+							}
+						}
 			
 					every_state = {
 						limit = {
@@ -1945,7 +1965,7 @@
 								is_owned_by = GRE
 								is_owned_by = TUR
 								is_owned_by = RUS
-								is_owned_by = ALN
+								is_core_of = ALN
 							}
 						}
 						set_demilitarized_zone = no
@@ -1969,6 +1989,10 @@
 						}
 					}
 					RUS = {
+						transfer_state = 10589
+						transfer_state = 2118
+						transfer_state = 722
+						transfer_state = 2777
 						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = monarchism
@@ -2387,6 +2411,44 @@
 					add_state_core = PREV
 						}
 					}
+			every_country = {
+				limit = {
+					OR = {
+						tag = SUO
+						tag = ZHJ
+						tag = SGG
+						tag = DGB
+						tag = NGW
+						tag = CHS
+						tag = CHN
+						tag = LBG
+						tag = SKK
+						tag = LMU
+						tag = LNT
+						tag = DER
+						tag = CBR
+						tag = MAZ
+						tag = KNS
+						tag = TRH
+						tag = DNG
+						tag = CKL
+						tag = LPO
+						tag = MUL
+						tag = MOS
+						tag = ZSO
+						tag = NGG
+						tag = GNY
+						tag = ZHF
+						tag = MAG
+						tag = MBN
+						tag = GNG
+						tag = MNI
+						tag = MNH
+						tag = CIH
+						}
+					}
+				set_cosmetic_tag = CHI_YELLOW
+				}
 			every_state = {
 				limit = {
 					OR = {
