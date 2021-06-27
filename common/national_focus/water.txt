@@ -1801,7 +1801,8 @@
                         transfer_state = 1641
                         add_state_core = 509
                         set_cosmetic_tag = TRIBAL_BROWN
-                    }
+						}
+					}
                     
                     ###################
                     #1836 North Africa#
@@ -1813,6 +1814,207 @@
                             ruling_party = conservative_monarchism
                         }
                     }
+					
+					##1836 ASIA##
+			every_state = {
+				limit = {
+					OR = {
+					is_core_of = CHI
+					is_core_of = PRC
+					is_owned_by = TAJ
+					is_core_of = ZHE
+					is_core_of = KYR
+					is_core_of = SMY
+					is_core_of = KHA
+					is_core_of = SKH
+						}
+					NOT = {
+					is_core_of = SEM
+					is_core_of = BKH
+					is_core_of = TIB
+					is_core_of = BRM
+					is_core_of = KOK
+					is_owned_by = KAS
+					is_owned_by = INC
+					is_owned_by = MON
+					is_owned_by = YSH
+					is_owned_by = GKS
+					is_owned_by = SMD
+					is_core_of = CHS
+					is_core_of = NGW
+					is_core_of = SUO
+					is_core_of = DGB
+					is_core_of = SGG
+					is_core_of = ZHJ
+					is_core_of = SKK
+					is_core_of = TLG
+					is_core_of = TGN
+					is_core_of = LMU
+					is_core_of = TRR
+					is_core_of = LBG
+					is_core_of = CHN
+					is_core_of = MUL
+					is_core_of = NGG
+					is_core_of = CIH
+					is_core_of = NWA
+					is_core_of = NMN
+					is_core_of = KRE
+					is_core_of = NGH
+					is_core_of = LNT
+					is_core_of = DER
+					is_core_of = CBR
+					is_core_of = MAZ
+					is_core_of = KNS
+					is_core_of = TRH
+					is_core_of = DNG
+					is_core_of = CKL
+					is_core_of = MOS
+					is_core_of = ZSO
+					is_core_of = LPO
+					is_core_of = GNY
+					is_core_of = ZHF
+					is_core_of = MAG
+					is_core_of = MBN
+					is_core_of = GNG
+					is_core_of = MJG
+					is_core_of = MNI
+					is_core_of = MNH
+					is_core_of = CIH
+						}
+					}
+				set_demilitarized_zone = no
+				CHI = {
+					transfer_state = PREV
+					add_state_core = PREV
+					set_cosmetic_tag = CHI_YELLOW
+					set_politics = {
+						ruling_party = conservative_monarchism
+						}
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ALI
+						is_core_of = TAN
+						}
+					}
+				MON = {
+					transfer_state = PREV
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = KOK
+					}
+				KOK = {
+					transfer_state = PREV
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = PMR
+					NOT = {
+						is_core_of = BKH
+						}
+					}
+				CHI = {
+					transfer_state = PREV
+					}
+				}
+			eevery_state = {
+				limit = {
+					is_core_of = SGY
+					}
+				TIB = {
+					transfer_state = PREV
+					}
+				}
+			every_country = {
+				limit = {
+					OR = {
+						tag = SUO
+						tag = ZHJ
+						tag = SGG
+						tag = DGB
+						tag = NGW
+						tag = CHS
+						tag = CHN
+						tag = LBG
+						tag = SKK
+						tag = LMU
+						tag = LNT
+						tag = DER
+						tag = CBR
+						tag = MAZ
+						tag = KNS
+						tag = TRH
+						tag = DNG
+						tag = CKL
+						tag = LPO
+						tag = MUL
+						tag = MOS
+						tag = ZSO
+						tag = NGG
+						tag = GNY
+						tag = ZHF
+						tag = MAG
+						tag = MBN
+						tag = GNG
+						tag = MNI
+						tag = MNH
+						tag = CIH
+						tag = MON
+						tag = TIB
+						tag = NGH
+						}
+					}
+				set_cosmetic_tag = CHI_YELLOW
+				}
+			every_country = {
+				limit = {
+					OR = {
+						tag = CHG
+						tag = HOR
+						}
+					}
+				set_cosmetic_tag = TRIBAL_BROWN
+					}
+				CHI = {
+					transfer_state = 1393
+					transfer_state = 11877
+					transfer_state = 12597
+					transfer_state = 12598
+					transfer_state = 12599
+					transfer_state = 4126
+					transfer_state = 11154
+					transfer_state = 3626
+					transfer_state = 11153
+					transfer_state = 10442
+					transfer_state = 11138
+					}
+				MON = {
+					transfer_state = 11160
+					transfer_state = 11159
+					transfer_state = 11963
+					transfer_state = 11156
+					}
+				KAZ = {
+					transfer_state = 11155
+					transfer_state = 12664
+					transfer_state = 12621
+					transfer_state = 1395
+					transfer_state = 588
+					transfer_state = 12471
+					transfer_state = 12615
+					transfer_state = 12616
+					transfer_state = 3076
+					}
+				RUS = {
+					transfer_state = 12014
+					transfer_state = 10445
+					transfer_state = 11137
+					transfer_state = 11144
 					}
 				}
 			}
