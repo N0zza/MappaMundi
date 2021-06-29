@@ -1923,9 +1923,11 @@
 					transfer_state = PREV
 					add_state_core = PREV
 					set_cosmetic_tag = CHI_YELLOW
+					set_capital = 608
 					set_politics = {
 						ruling_party = conservative_monarchism
 						}
+					
 					}
 				}
 			every_state = {
@@ -2900,9 +2902,6 @@
 		CHI = {
 			set_capital = 608
 			set_cosmetic_tag = CHI_YELLOW
-			set_politics = {
-				ruling_party = democratic
-				}
 			}
 		MON = {
 			transfer_state = 11823
@@ -4362,6 +4361,9 @@
 			transfer_state = 68
 			transfer_state = 8222
 			transfer_state = 10954
+			set_politics = {
+				ruling_party = liberal_republic
+				}
 			}
 		UKR = {
 			transfer_state = 2506
@@ -4881,7 +4883,7 @@
 		CAM = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = monarchism
+				ruling_party = conservative_monarchism
 				}
 			}
 		DST = {
@@ -5062,7 +5064,7 @@
 				}
 		AFG = {
 			set_politics = {
-				ruling_party = theocratic
+				ruling_party = democratic
 				}
 			}
 			every_state = {
@@ -5108,6 +5110,11 @@
 					transfer_state = PREV
 						}
 					}
+		NEP = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
 		SRL = {
 			drop_cosmetic_tag = yes
                 set_politics = {
@@ -5801,7 +5808,7 @@
 			transfer_state = 891
 			transfer_state = 12109
 			set_politics = {
-	        		ruling_party = democratic
+	        	ruling_party = liberal_republic
 				}
 			}
 		SUD = {
@@ -6244,16 +6251,21 @@
 		CKI = {
 			set_cosmetic_tag = NZL_PURPLE
 			}
+		NZL = {
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}
 		PNG = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = neutrality
 				}
 			}
 		SAM = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = conservative_monarchism
+				ruling_party = neutrality
 				}
 			}
 		NAU = {
@@ -6291,7 +6303,7 @@
 		TON = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = conservative_monarchism
+				ruling_party = monarchism
 				}
 			}
 		FSM = {
@@ -6301,6 +6313,11 @@
 			}			
 		PLU = {
 			transfer_state = 647
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		MAR = {
 			set_politics = {
 				ruling_party = democratic
 				}
@@ -6457,7 +6474,7 @@
 		CUB = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = vanguardism
+				ruling_party = democratic
 				}
 			}
 		TAC = {
@@ -6465,11 +6482,6 @@
 			}
 		CYM = {
 			set_cosmetic_tag = CYM_ENG
-			}
-		DOM = {
-			set_politics = {
-				ruling_party = democratic
-				}
 			}
 		BLZ = {
 			drop_cosmetic_tag = yes
@@ -6508,6 +6520,9 @@
 			}
 		DMC = {
 			transfer_state = 2042
+			set_politics = {
+				ruling_party = democratic
+				}
 			}
 		STL = {
 			transfer_state = 2039
@@ -6518,6 +6533,9 @@
 		SKT = {
 			transfer_state = 2315
 			transfer_state = 2316
+			set_politics = {
+				ruling_party = liberal_republic
+				}
 			}
 		MSR = {
 			transfer_state = 308
@@ -6550,7 +6568,9 @@
 				}
 			}
 		BRA = {
-			set_cosmetic_tag = BRA_2020
+			set_politics = {
+				ruling_party = centrist_republic
+				}
 			set_capital = 1646
 			}
 		TRI = {
