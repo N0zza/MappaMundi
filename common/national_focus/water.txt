@@ -1857,10 +1857,6 @@
 					OR = {
 					is_core_of = CHI
 					is_core_of = PRC
-					is_owned_by = TAJ
-					is_core_of = ZHE
-					is_core_of = KYR
-					is_core_of = SMY
 					is_core_of = KHA
 					is_core_of = SKH
 						}
@@ -1949,16 +1945,18 @@
 				}
 			every_state = {
 				limit = {
-					is_core_of = PMR
+					OR = {
+						is_core_of = PMR
+						}
 					NOT = {
 						is_core_of = BKH
 						}
 					}
-				CHI = {
+				SIK = {
 					transfer_state = PREV
 					}
 				}
-			eevery_state = {
+			every_state = {
 				limit = {
 					is_core_of = SGY
 					}
@@ -1966,6 +1964,88 @@
 					transfer_state = PREV
 					}
 				}
+			every_state = {
+				limit = {
+					is_core_of = MON
+					NOT = {
+						is_core_of = MAN
+						}
+					}
+				MON = {
+					transfer_state = PREV
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = GKS
+					}
+				GKS = {
+					transfer_state = PREV
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = INM
+					NOT = {
+						is_core_of = MAN
+						}
+					}
+				INM = {
+					transfer_state = PREV
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = JEH
+					}
+				INM = {
+					transfer_state = PREV
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = SIK
+						is_core_of = ZHE
+						is_core_of = KYR
+						is_core_of = SMY
+						is_core_of = UYG
+						}
+					NOT = {
+						is_owned_by = MON
+						is_core_of = KRE
+						is_core_of = NMN
+						is_core_of = KOK
+						}
+					}
+				SIK = {
+					transfer_state = PREV
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = HMI
+					}
+				HMI = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+					}
+				}
+				XSM = {
+					transfer_state = 11183
+					transfer_state = 11698
+					transfer_state = 11702
+					transfer_state = 11703
+					transfer_state = 11704
+					transfer_state = 11184
+					transfer_state = 755
+					transfer_state = 11693
+					transfer_state = 11694
+					transfer_state = 11695
+					transfer_state = 11696
+					}
 			every_country = {
 				limit = {
 					OR = {
@@ -2003,6 +2083,12 @@
 						tag = MON
 						tag = TIB
 						tag = NGH
+						tag = INM
+						tag = XSM
+						tag = UYG
+						tag = ZGH
+						tag = SIK
+						tag = HMI
 						}
 					}
 				set_cosmetic_tag = CHI_YELLOW
@@ -2016,24 +2102,46 @@
 					}
 				set_cosmetic_tag = TRIBAL_BROWN
 					}
+			every_country = {
+				limit = {
+					OR = {
+						tag = INM
+						tag = MON
+						tag = XSM
+						tag = SIK
+						}
+					}
+				set_politics = {
+					ruling_party = conservative_monarchism
+					}
+				}
 				CHI = {
-					transfer_state = 1393
-					transfer_state = 11877
-					transfer_state = 12597
-					transfer_state = 12598
-					transfer_state = 12599
-					transfer_state = 4126
-					transfer_state = 11154
-					transfer_state = 3626
-					transfer_state = 11153
 					transfer_state = 10442
 					transfer_state = 11138
+					transfer_state = 11297
+					transfer_state = 11298
+					transfer_state = 11299
+					transfer_state = 11302
+					transfer_state = 11270
+					transfer_state = 9777
+					transfer_state = 2253
+					transfer_state = 3168
+					transfer_state = 11260
 					}
 				MON = {
 					transfer_state = 11160
 					transfer_state = 11159
 					transfer_state = 11963
 					transfer_state = 11156
+					transfer_state = 11175
+					transfer_state = 3064
+					transfer_state = 3075
+					transfer_state = 12617
+					transfer_state = 12618
+					transfer_state = 12619
+					transfer_state = 11158
+					transfer_state = 3313
+					transfer_state = 11157
 					}
 				KAZ = {
 					transfer_state = 11155
@@ -2051,6 +2159,65 @@
 					transfer_state = 10445
 					transfer_state = 11137
 					transfer_state = 11144
+					}
+				INM = {
+					transfer_state = 11312
+					transfer_state = 11140
+					transfer_state = 7092
+					transfer_state = 13113
+					transfer_state = 11125
+					transfer_state = 11133
+					transfer_state = 11134
+					transfer_state = 11139
+					transfer_state = 715
+					transfer_state = 2256
+					transfer_state = 11126
+					transfer_state = 13115
+					transfer_state = 13134
+					transfer_state = 11145
+					}
+				SIK = {
+					transfer_state = 1393
+					transfer_state = 11877
+					transfer_state = 12597
+					transfer_state = 12598
+					transfer_state = 12599
+					transfer_state = 4126
+					transfer_state = 11154
+					transfer_state = 3626
+					transfer_state = 11153
+					transfer_state = 11815
+					transfer_state = 11816
+					transfer_state = 1007
+					transfer_state = 12381
+					transfer_state = 12382
+					transfer_state = 12383
+					}
+				TIB = {
+					transfer_state = 10742
+					transfer_state = 10743
+					transfer_state = 10744
+					transfer_state = 12384
+					transfer_state = 1318
+					transfer_state = 1319
+					transfer_state = 2343
+					transfer_state = 1188
+					transfer_state = 1006
+					transfer_state = 1322
+					}
+				HMI = {
+					transfer_state = 11813
+					transfer_state = 11814
+					}
+				CHG = {
+					transfer_state = 10780
+					transfer_state = 10781
+					}
+				KOR = {
+					drop_cosmetic_tag = yes
+					set_politics = {
+						ruling_party = democratic_monarchism
+						}
 					}
 				}
 			}
