@@ -2168,23 +2168,6 @@
 					transfer_state = 3313
 					transfer_state = 11157
 					}
-				KAZ = {
-					transfer_state = 11155
-					transfer_state = 12664
-					transfer_state = 12621
-					transfer_state = 1395
-					transfer_state = 588
-					transfer_state = 12471
-					transfer_state = 12615
-					transfer_state = 12616
-					transfer_state = 3076
-					}
-				RUS = {
-					transfer_state = 12014
-					transfer_state = 10445
-					transfer_state = 11137
-					transfer_state = 11144
-					}
 				INM = {
 					transfer_state = 11312
 					transfer_state = 11140
@@ -2243,6 +2226,155 @@
 					set_politics = {
 						ruling_party = democratic_monarchism
 						}
+					}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = ALS
+							}
+						NOT = {
+							is_core_of = KOK
+							is_owned_by = CHI
+							is_owned_by = SIK
+							is_owned_by = MON
+							}
+						}
+					KAZ = {
+						transfer_state = PREV
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = fascism
+							}
+						}
+					}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = KHI
+							is_core_of = TCP
+							is_core_of = KPK
+							}
+						}
+					KHI = {
+						transfer_state = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = BKH
+							is_core_of = UZB
+							is_claimed_by = UZB
+							is_owned_by = TAJ
+							}
+						NOT = {
+							is_core_of = KPK
+							is_core_of = KOK
+							is_owned_by = CHI
+							}
+						}
+					BKH = {
+						transfer_state = PREV
+						}
+					}
+				WTR = {
+					transfer_state = 9606
+					transfer_state = 9607
+					transfer_state = 9608
+					transfer_state = 9610
+					transfer_state = 10132
+					transfer_state = 12375
+					transfer_state = 12377
+					transfer_state = 12791
+					}
+				KHI = {
+					transfer_state = 12265
+					transfer_state = 3083
+					transfer_state = 12230
+					transfer_state = 12832
+					transfer_state = 1392
+					transfer_state = 12459
+					transfer_state = 12458
+					transfer_state = 12420
+					}
+				BKH = {
+					transfer_state = 12238
+					transfer_state = 12416
+					transfer_state = 12466
+					transfer_state = 585
+					transfer_state = 12224
+					transfer_state = 12595
+					transfer_state = 12408
+					transfer_state = 11874
+					transfer_state = 12457
+					transfer_state = 12474
+					}
+				KOK = {
+					transfer_state = 12426
+					transfer_state = 12454
+					transfer_state = 3627
+					transfer_state = 11149
+					transfer_state = 12600
+					transfer_state = 12601
+					transfer_state = 12602
+					transfer_state = 12603
+					transfer_state = 12604
+					transfer_state = 11147
+					transfer_state = 3082
+					transfer_state = 12456
+					transfer_state = 12447
+					transfer_state = 12605
+					transfer_state = 12668
+					transfer_state = 12450
+					}
+				KAZ = {
+					transfer_state = 11155
+					transfer_state = 12664
+					transfer_state = 12621
+					transfer_state = 1395
+					transfer_state = 588
+					transfer_state = 12226
+					transfer_state = 12421
+					transfer_state = 12611
+					transfer_state = 12612
+					transfer_state = 12228
+					transfer_state = 12229
+					transfer_state = 12623
+					transfer_state = 12422
+					transfer_state = 10133
+					transfer_state = 12423
+					transfer_state = 12386
+					transfer_state = 12594
+					transfer_state = 12593
+					}
+				RUS = {
+					transfer_state = 12471
+					transfer_state = 12615
+					transfer_state = 12616
+					transfer_state = 3076
+					transfer_state = 12614
+					transfer_state = 12256
+					transfer_state = 3077
+					transfer_state = 3078
+					transfer_state = 12609
+					transfer_state = 11888
+					transfer_state = 12253
+					transfer_state = 12639
+					transfer_state = 12608
+					transfer_state = 12607
+					transfer_state = 12631
+					transfer_state = 12632
+					transfer_state = 12661
+					transfer_state = 12659
+					transfer_state = 12658
+					transfer_state = 3306
+					transfer_state = 12648
+					transfer_state = 12667
+					transfer_state = 406
+					transfer_state = 12014
+					transfer_state = 10445
+					transfer_state = 11137
+					transfer_state = 11144
 					}
 				}
 			}
