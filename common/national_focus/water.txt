@@ -4377,6 +4377,11 @@
 						}
 					set_demilitarized_zone = no
 					}
+				BRA = {
+					set_politics = {
+						ruling_party = neutrality
+						}
+					}
 				}
 			}
 		}
@@ -4537,6 +4542,7 @@
 				DPK = {
 					transfer_state = PREV
 					}
+				do_korean_renames = yes
 				}
 			every_state = {
 				limit = {
@@ -4545,6 +4551,7 @@
 				ROK = {
 					transfer_state = PREV
 					}
+				do_korean_renames = yes
 				}
 			every_state = {
 				limit = {
@@ -4613,6 +4620,28 @@
 					transfer_state = PREV
 					}
 				}
+			ROK = {
+				transfer_state = 1792
+				transfer_state = 13380
+				transfer_state = 13381
+				transfer_state = 13384
+				set_politics = {
+					ruling_party = democratic
+					}
+				}
+			DPK = {
+				transfer_state = 13421
+				transfer_state = 1783
+				transfer_state = 1789
+				transfer_state = 1785
+				transfer_state = 10125
+				transfer_state = 9714
+				transfer_state = 1787
+				transfer_state = 13418
+				set_politics = {
+					ruling_party = vanguardism
+					}
+				}
 			PRC = {
 				set_cosmetic_tag = PRC_proclaimed
 				set_capital = 608
@@ -4653,7 +4682,6 @@
 				transfer_state = 11630
 				transfer_state = 11602
 				transfer_state = 3283
-				transfer_state = 751
 				}
 			XIG = {
 				transfer_state = 11601
@@ -5394,7 +5422,7 @@
 			HOL = {
 				transfer_state = 8090
 				transfer_state = 8328
-				transfer_state = 8367
+				transfer_state = 8067
 				}
 			every_state = {
 				limit = {
@@ -5632,6 +5660,21 @@
 					}
 				EGY = {
 					drop_cosmetic_tag = yes
+					}
+					
+				##1950 SOUTH AMERICA##
+				PRU = {
+					transfer_state = 2421
+					transfer_state = 2423
+					transfer_state = 9540
+					}
+				BRA = {
+					transfer_state = 10524
+					transfer_state = 10526
+					transfer_state = 10527
+					transfer_state = 1715
+					set_politics = {
+						ruling_party = neutrality
 					}
 				}
 			}
