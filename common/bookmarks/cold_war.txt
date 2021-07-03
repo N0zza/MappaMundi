@@ -1,10 +1,11 @@
 bookmarks = {
 	bookmark = {
-		name = "Blitzkrieg"
-		desc = "MM_1939_DESC"
-		date = 1939.9.1.12
+		name = "The Cold War"
+		desc = "MM_1950_DESC"
+		date = 1950.1.1.12
 		picture = "GFX_select_date_1939"
 		default_country = "ICE"
+		default = yes
 		
 		"ICE"={
 			history = "ICE_MM_BOOKMARK_DESC"
@@ -43,7 +44,7 @@ bookmarks = {
 			history = "RAJ_GATHERING_STORM_DESC"
 			ideology = authoritarian_monarchism
 		}
-		"GER"={
+		"WGR"={
 			minor = yes
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = national_socialism
@@ -152,15 +153,15 @@ bookmarks = {
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
-			set_global_flag = 1939_select
-			
+			set_global_flag = 1950_select
+
 			clr_global_flag = 1836_select
 			clr_global_flag = 1936_select
+			clr_global_flag = 1939_select
 			clr_global_flag = 1914_select
 			clr_global_flag = modern_day_select
 			clr_global_flag = blank_select
-			clr_global_flag = 1950_select
-			WTR =  { complete_national_focus = WTR_1939_start }
+			WTR =  { complete_national_focus = WTR_1950_start }
 		}
 	}
 }
