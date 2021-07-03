@@ -5493,7 +5493,146 @@
 							}
 						}
 					set_cosmetic_tag = RUS_RED
+					}
+			
+			##1950 AFRICA##
+			every_state = {
+				limit = {
+					is_core_of = FZN
+					}
+				FZN = {
+					transfer_state = PREV
+					set_cosmetic_tag = FRA_BLUE
+					set_politics = {
+						ruling_party = stratocratic_monarchism
+						}
+					}
 				}
+			every_state = {
+				limit = {
+					is_core_of = TRP
+					}
+				TRP = {
+					transfer_state = PREV
+					set_cosmetic_tag = UK_RED
+					set_politics = {
+						ruling_party = stratocratic_monarchism
+						}
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = CYR
+					}
+				CYR = {
+					transfer_state = PREV
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = VOL
+					}
+				VOL = {
+					transfer_state = PREV
+					set_cosmetic_tag = FRA_BLUE
+					set_politics = {
+						ruling_party = neutrality
+						}
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = CHA
+					}
+				CHA = {
+					transfer_state = PREV
+					set_cosmetic_tag = FRA_BLUE
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = CAR
+					}
+				CAR = {
+					transfer_state = PREV
+					set_cosmetic_tag = FRA_BLUE
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = GAB
+					}
+				GAB = {
+					transfer_state = PREV
+					set_cosmetic_tag = FRA_BLUE
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = RCG
+					NOT = {
+						is_core_of = FEA
+						}
+					}
+				RCG = {
+					transfer_state = PREV
+					set_cosmetic_tag = FRA_BLUE
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = NGR
+					}
+				NGR = {
+					transfer_state = PREV
+					set_cosmetic_tag = FRA_BLUE
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = MRT
+					OR = {
+						is_core_of = MLI
+						}
+					}
+				CHA = {
+					transfer_state = PREV
+					set_cosmetic_tag = FRA_BLUE
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ETH
+						is_core_of = SMI
+						}
+					}
+				ETH = {
+					transfer_state = PREV
+					}
+				}
+				ERI = {
+					set_cosmetic_tag = UK_RED
+					set_politics = {
+						ruling_party = stratocratic_monarchism
+						}
+					}
+				SOM = {
+					set_cosmetic_tag = UK_RED
+					set_politics = {
+						ruling_party = stratocratic_monarchism
+						}
+					}
+				DJI = {
+					transfer_state = 7939
+					}
+				KEN = {
+					transfer_state = 5254
+					transfer_state = 9797
+					}
+				EGY = {
+					drop_cosmetic_tag = yes
+					}
 				}
 			}
 		}
