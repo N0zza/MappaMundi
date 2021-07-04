@@ -5074,6 +5074,14 @@
 							}
 					every_state = {
 						limit = {
+							is_core_of = WGR
+							}
+						WGR = {
+							transfer_state = PREV
+								}
+							}
+					every_state = {
+						limit = {
 							is_core_of = LIT
 							}
 						LIT = {
@@ -5122,7 +5130,6 @@
 			transfer_state = 3541
 			transfer_state = 8047
 			transfer_state = 1332
-			transfer_state = 10954
 			transfer_state = 4027
 			transfer_state = 3189
 			transfer_state = 7458
@@ -5183,17 +5190,6 @@
 			transfer_state = 72
 			transfer_state = 3933
 			}
-		every_state = {
-			limit = {
-				is_core_of = CZE
-				OR = {
-					is_core_of = GER
-					}
-				}
-			WGR = {
-				transfer_state = PREV
-					}
-				}
 		every_state = {
 			limit = {
 				is_core_of = DDR
