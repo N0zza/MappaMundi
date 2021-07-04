@@ -3191,6 +3191,7 @@
 					is_core_of = MNI
 					is_core_of = MNH
 					is_core_of = CIH
+					is_core_of = WGS
 						}
 					}
 				CHI = {
@@ -3198,6 +3199,190 @@
 					add_state_core = PREV
 						}
 					}
+				every_state = {
+				limit = {
+					is_core_of = ZKK
+					}
+				ZKK = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = LGQ
+					}
+				LGQ = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = CGB
+					}
+				CGB = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = LGB
+					}
+				LGB = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = BA2
+					}
+				BA2 = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = BWG
+					}
+				BWG = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = DGN
+					}
+				DGN = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = WRI
+					}
+				WRI = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = BTH
+					}
+				BTH = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = LTH
+					}
+				LTH = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = RON
+					}
+				RON = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = KBM
+					}
+				KBM = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = AXX
+					}
+				AXX = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = DSM
+					}
+				DSM = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = CKL
+					}
+				CKL = {
+					transfer_state = PREV
+					set_politics = {
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = DER
+					}
+				DER = {
+					transfer_state = PREV
+					set_politics = {
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = SUO
+					}
+				SUO = {
+					transfer_state = PREV
+					set_politics = {
+					}
+				}
+			}
 			every_country = {
 				limit = {
 					OR = {
@@ -3232,9 +3417,35 @@
 						tag = MNI
 						tag = MNH
 						tag = CIH
+						tag = ZKK
+						tag = LGQ
+						tag = LGB
+						tag = CGB
+						tag = BA2
+						tag = BWG
+						tag = DGN
+						tag = WRI
+						tag = BTH
+						tag = LTH
+						tag = RON
+						tag = KBM
+						tag = AXX
+						tag = DSM
+						tag = MGJ
+						tag = NGH
 						}
 					}
 				set_cosmetic_tag = CHI_YELLOW
+				}
+			every_country = {
+				limit = {
+					OR = {
+						tag = TGN
+						tag = TLG
+						tag = TRR
+						}
+					}
+				set_cosmetic_tag = TRIBAL_BROWN
 				}
 			every_state = {
 				limit = {
@@ -3638,11 +3849,9 @@
 			transfer_state = 6057
 			transfer_state = 6058
 			transfer_state = 2745
-			transfer_state = 10183
-			transfer_state = 10184
-			transfer_state = 10185
-			transfer_state = 10186
-			transfer_state = 10187
+			transfer_state = 12118
+			transfer_state = 12103
+			transfer_state = 12104
 			transfer_state = 862
 			transfer_state = 6388
 			transfer_state = 858
@@ -3655,20 +3864,12 @@
 			transfer_state = 6385
 			transfer_state = 10191
 			transfer_state = 7657
-			transfer_state = 10190
 			transfer_state = 859
-			transfer_state = 10189
 			transfer_state = 8126
-			transfer_state = 10192
 			transfer_state = 6383
-			transfer_state = 10193
-			transfer_state = 2369
-			transfer_state = 10188
 			transfer_state = 273
 			transfer_state = 3562
 			transfer_state = 8131
-			transfer_state = 6381
-			transfer_state = 6382
 			transfer_state = 13070
 			transfer_state = 12115
 			transfer_state = 552
@@ -3756,12 +3957,15 @@
 			every_state = {
 				limit = {
 					is_core_of = VOL
-						NOT = {
-						is_core_of = NGR
-						}
 					}
 				MLI = {
 					transfer_state = PREV
+					transfer_state = 4736
+					transfer_state = 7873
+					transfer_state = 7874
+					set_politics = {
+						ruling_party = centrist_republic
+					}
 				}
 			}
 			every_state = {
@@ -3800,17 +4004,18 @@
 			}
 		CAR = {
 		transfer_state = 7842
-		transfer_state = 9934
 		transfer_state = 5296
 		transfer_state = 7833
 		transfer_state = 6434
-		transfer_state = 6435
 		transfer_state = 881
 		transfer_state = 9989
 			}
 		NGR = {
 		transfer_state = 6405
 		transfer_state = 6401
+		set_politics = {
+			ruling_party = stratocratic
+				}
 			}
 		GAB = {
 		transfer_state = 5262
