@@ -4588,6 +4588,12 @@
 						ruling_party = neutrality
 						}
 					}
+				KBA = {
+					set_cosmetic_tag = KBA_ENG
+					}
+				SHJ = {
+					transfer_state = 13882
+					}
 				}
 			}
 		}
@@ -5162,6 +5168,10 @@
 				transfer_state = 9388
 				transfer_state = 9389
 				}
+			SHJ = {
+				transfer_state = 13881
+				transfer_state = 13882
+				}
 			every_country = {
 				limit = {
 					OR = {
@@ -5193,7 +5203,6 @@
 						tag = DHB
 						tag = OMN
 						tag = KBA
-						tag = FUJ
 						tag = SHJ
 						tag = RAK
 						tag = AJM
@@ -7066,20 +7075,23 @@
 		    transfer_state = 1177
 		    transfer_state = 3352
 			drop_cosmetic_tag = yes
-		   } 
+		    } 
         BHR = {
 			drop_cosmetic_tag = yes
 		    transfer_state = 3276
-           }
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+            }
         QAT = {
 			drop_cosmetic_tag = yes
-           }
+            }
         KUW = {
 			set_politics = {
 				ruling_party = conservative_monarchism
-					}
+				}
 			drop_cosmetic_tag = yes
-           }
+            }
 		every_state = {
 			limit = {
 				is_core_of = YEM
