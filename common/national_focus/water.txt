@@ -1883,8 +1883,6 @@
 					OR = {
 					is_core_of = CHI
 					is_core_of = PRC
-					is_core_of = KHA
-					is_core_of = SKH
 						}
 					NOT = {
 					is_core_of = SEM
@@ -1983,6 +1981,9 @@
 					}
 				SIK = {
 					transfer_state = PREV
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
 					}
 				}
 			every_state = {
@@ -2027,9 +2028,7 @@
 				limit = {
 					OR = {
 						is_core_of = SIK
-						is_core_of = ZHE
 						is_core_of = KYR
-						is_core_of = SMY
 						is_core_of = UYG
 						}
 					NOT = {
@@ -2049,6 +2048,49 @@
 					}
 				HMI = {
 					transfer_state = PREV
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = MAN
+						is_core_of = KHA
+						is_core_of = SKH
+						}
+					NOT = {
+						is_owned_by = INM
+						is_core_of = JEH
+						}
+					}
+				MAN = {
+					transfer_state = PREV
+					set_cosmetic_tag = CHI_YELLOW
+					set_politics = {
+						ruling_party = centrist_republic
+						}
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ZGH
+						is_core_of = SMY
+						is_core_of = ZHE
+						is_claimed_by = ZGH
+						}
+					NOT = {
+						is_core_of = HMI
+						is_core_of = NMN
+						is_core_of = KRE
+						is_owned_by = MON
+						}
+					}
+				ZGH = {
+					transfer_state = PREV
+					set_cosmetic_tag = CHI_YELLOW
 					set_politics = {
 						ruling_party = authoritarian_monarchism
 						}
@@ -2338,8 +2380,6 @@
 					}
 				}
 				CHI = {
-					transfer_state = 10442
-					transfer_state = 11138
 					transfer_state = 11297
 					transfer_state = 11298
 					transfer_state = 11299
@@ -2387,17 +2427,10 @@
 					transfer_state = 11145
 					}
 				SIK = {
-					transfer_state = 1393
-					transfer_state = 11877
-					transfer_state = 12597
-					transfer_state = 12598
-					transfer_state = 12599
-					transfer_state = 4126
-					transfer_state = 11154
-					transfer_state = 3626
-					transfer_state = 11153
-					transfer_state = 11815
-					transfer_state = 11816
+					transfer_state = 10216
+					transfer_state = 13228
+					transfer_state = 10345
+					transfer_state = 10224
 					transfer_state = 1007
 					transfer_state = 12381
 					transfer_state = 12382
@@ -2416,13 +2449,27 @@
 					transfer_state = 1322
 					transfer_state = 11605
 					}
-				HMI = {
-					transfer_state = 11813
-					transfer_state = 11814
+				MAN = {
+					transfer_state = 10442
+					transfer_state = 11138
 					}
 				CHG = {
 					transfer_state = 10780
 					transfer_state = 10781
+					}
+				ZGH = {
+					transfer_state = 1393
+					transfer_state = 11876
+					transfer_state = 11877
+					transfer_state = 12597
+					transfer_state = 12598
+					transfer_state = 12599
+					transfer_state = 4126
+					transfer_state = 11154
+					transfer_state = 3626
+					transfer_state = 11153
+					transfer_state = 11815
+					transfer_state = 11816
 					}
 				KOR = {
 					drop_cosmetic_tag = yes
@@ -2440,6 +2487,7 @@
 							is_owned_by = CHI
 							is_owned_by = SIK
 							is_owned_by = MON
+							is_owned_by = ZGH
 							}
 						}
 					KAZ = {
@@ -2473,7 +2521,7 @@
 						NOT = {
 							is_core_of = KPK
 							is_core_of = KOK
-							is_owned_by = CHI
+							is_owned_by = SIK
 							}
 						}
 					BKH = {
