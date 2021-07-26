@@ -6514,6 +6514,22 @@
 							transfer_state = PREV
 							}
 						}
+					every_state = {
+						limit = {
+							is_core_of = DPR
+							}
+						DPR = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							is_core_of = LPR
+							}
+						LPR = {
+							transfer_state = PREV
+							}
+						}
 		WGR = {
 			transfer_state = 5079
 			transfer_state = 8412
@@ -6573,15 +6589,6 @@
 				ruling_party = democratic
 				}
 			drop_cosmetic_tag = yes
-			}
-		NOV = {
-			transfer_state = 5379
-			transfer_state = 3227
-			transfer_state = 3777
-			transfer_state = 3226
-			set_politics = {
-				ruling_party = centrist_republic
-				}
 			}
 		BLR = {
 			transfer_state = 4766
