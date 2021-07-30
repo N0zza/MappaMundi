@@ -8038,7 +8038,10 @@
 			}
 		every_state = {
 			limit = {
-				is_core_of = ETH
+				OR = {
+					is_core_of = ETH
+					is_core_of = SMI
+					}
 				}
 			ETH = {
 				transfer_state = PREV
