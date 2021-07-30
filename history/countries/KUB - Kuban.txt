@@ -13,18 +13,51 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-        democratic = 25
-        communism = 25
-        fascism = 25
-        neutrality = 25
+        neutrality = 80
+        monarchism = 0
+        democratic = 0
+        liberal_republic = 0
+        communism = 0
+        vanguardism = 0
+        fascism = 0
+        anarchism_ideology = 0
+        socialism_ideology = 0
+        democratic_monarchism = 0
+        conservative_monarchism = 0
+        stratocratic = 10
+        authoritarian_monarchism = 10
+        republican_fascism = 0
+        national_socialism = 0
+        theocratic = 0
 
 }
 
 set_politics = {
 	
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Ataman Aleksandr Petrovich Filimonov"
+	desc = ""
+	picture = "KUB_Filimonov.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ataman Aleksandr Petrovich Filimonov"
+	desc = ""
+	picture = "KUB_Filimonov.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+		#
+	}
+}

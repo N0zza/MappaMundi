@@ -17,13 +17,13 @@ set_convoys = 10
 	set_popularities = {
         neutrality = 0
         monarchism = 0
-        democratic = 0
+        democratic = 10
         liberal_republic = 0
-        communism = 15
-        vanguardism = 80
+        communism = 0
+        vanguardism = 90
         fascism = 0
         anarchism_ideology = 0
-        socialism_ideology = 5
+        socialism_ideology = 0
         democratic_monarchism = 0
         conservative_monarchism = 0
         stratocratic = 0
@@ -43,12 +43,22 @@ set_cosmetic_tag = DAG_SOV
 }
 
 create_country_leader = {
-	name = "Nazhmutdin Panakhovich Samurskiy"
+	name = "Predsedatel Nazhmutdin Panakhovich Samurskiy"
 	desc = ""
 	picture = "Nazhmutdin_Panakhovich_Samurskiy.tga"
 	expire = "1960.1.1"
 	ideology = totsoc
 	traits = {
 		
+	}
+}
+
+create_country_leader = {
+	name = "Predsedatel Rashid Khan Zavid oglu Gaplanov"
+	desc = ""
+	picture = "DAG_Gaplanov_dem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
 	}
 }

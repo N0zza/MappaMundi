@@ -19,11 +19,11 @@ set_convoys = 10
         monarchism = 0
         democratic = 0
         liberal_republic = 0
-        communism = 15
-        vanguardism = 80
+        communism = 0
+        vanguardism = 90
         fascism = 0
         anarchism_ideology = 0
-        socialism_ideology = 5
+        socialism_ideology = 10
         democratic_monarchism = 0
         conservative_monarchism = 0
         stratocratic = 0
@@ -44,12 +44,22 @@ set_cosmetic_tag = KMK_SOV
 }
 
 create_country_leader = {
-	name = "Ivan Nikolayevich Karpov"
+	name = "Predsedatel Ivan Nikolayevich Karpov"
 	desc = ""
 	picture = "Ivan_Nikolayevich_Karpov.tga"
 	expire = "1960.1.1"
 	ideology = totsoc
 	traits = {
 		
+	}
+}
+
+create_country_leader = {
+	name = "Predsedatel Sаndzhi Bayanov"
+	desc = ""
+	picture = "KMK_Bayanov_soc.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
 	}
 }
