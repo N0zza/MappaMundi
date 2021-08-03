@@ -6454,6 +6454,14 @@
 					transfer_state = PREV
 					}
 				}
+			every_state = {
+				limit = {
+					is_owned_by = DGI
+				}
+				SUD = {
+					transfer_state = PREV
+					}
+				}
 				ERI = {
 					set_cosmetic_tag = UK_RED
 					set_politics = {
@@ -7984,8 +7992,10 @@
 		##AFRICA 2021
 		every_state = {
 			limit = {
-				is_owned_by = TNA
-				is_owned_by = DGI
+				OR = {
+					is_owned_by = TNA
+					is_owned_by = DGI
+					}
 				}
 			SUD = {
 				transfer_state = PREV
