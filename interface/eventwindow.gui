@@ -9,7 +9,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "EventWindow"
 		position = { x=-282 y=-310 }	
-		size = { width = 581 height =427 }
+		size = { width = 700 height =427 }
 		moveable = yes
 		Orientation = CENTER		
 		
@@ -24,7 +24,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "top_Window"
 			position = { x=0 y=0 }	
-			size = { width = 581 height =121 }
+			size = { width = 700 height =121 }
 			moveable = yes
 			Orientation = UPPER_LEFT
 
@@ -56,7 +56,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "midsection"
 			position = { x=0 y=121 }	
-			size = { width = 580 height = 100 }
+			size = { width = 580 height = 100 } #580
 			moveable = yes
 			clipping = no
 			Orientation = UPPER_LEFT
@@ -81,7 +81,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "bottom_Window"
 			position = { x=0 y=221 }	
-			size = { width = 581 height = 206 }
+			size = { width = 700 height = 206 }
 			moveable = yes
 			clipping = no
 			Orientation = UPPER_LEFT
@@ -114,11 +114,11 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "options_grid"
-				position = { x = -15 y = -1 } #x = 215
-				size = { width = 300 height = 30 }
-				slotsize = { width = 300 height = 47 }
+				position = { x = -165 y = -1 } #x = 215
+				size = { width = 700 height = 30 }
+				slotsize = { width = 350 height = 47 }
 				max_slots = { x = 2 y = 4 }
-				format = "UPPER_LEFT"
+				format = "CENTER"
 			}
 		}
 
