@@ -3044,37 +3044,35 @@
 					set_capital = 341
 						}
 					}
-				SAU = {
-					transfer_state = 1176
-					transfer_state = 6802
-					transfer_state = 2213
-					transfer_state = 9031
-					transfer_state = 5676
-					transfer_state = 1846
-					transfer_state = 5681
-					transfer_state = 3349
-					transfer_state = 3350
-					transfer_state = 9032
-					transfer_state = 9033
-					transfer_state = 6963
-					transfer_state = 6964
-					transfer_state = 6966
-					transfer_state = 2031
-					transfer_state = 14417
+				every_state = {
+					limit = {
+						is_core_of = JBL
+						}
+					JBL = {
+						transfer_state = PREV
+						}
+					}
+				JBL = {
+					transfer_state = 5884
 					transfer_state = 14392
 					transfer_state = 14393
 					transfer_state = 14394
-					transfer_state = 14397
-					transfer_state = 14398
-					transfer_state = 14401
-					transfer_state = 14402
-					transfer_state = 14403
+					transfer_state = 6802
+					transfer_state = 1176
 					transfer_state = 14432
 					transfer_state = 14433
-					transfer_state = 14434
 					transfer_state = 3358
-					transfer_state = 5884
-					transfer_state = 12818
+	
+					}
+				every_state = {
+					limit = {
+						is_core_of = ANZ
+						}
+					ANZ = {
+						transfer_state = PREV
+						}
+					}
+				SAU = {
 					}
 				every_state = {
 					limit = {
