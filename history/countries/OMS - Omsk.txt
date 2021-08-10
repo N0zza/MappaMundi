@@ -15,16 +15,16 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	        democratic = 10
-        communism = 20
-        fascism = 15
-        neutrality = 55
+        republican_fascism = 80
+        communism = 0
+        fascism = 0
+        neutrality = 0
 
 }
 
 set_politics = {
 	
-	ruling_party = democratic
+	ruling_party = republican_fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -64,9 +64,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Dmitry Mikhaylovich Karbyshev"
+	name = "Vozhd Dmitry Mikhaylovich Karbyshev"
 	desc = ""
-	picture = "OMS_Karbyshev.tga"
+	picture = "gfx/leaders/TNOWarlords/OMS_Karbyshev.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
