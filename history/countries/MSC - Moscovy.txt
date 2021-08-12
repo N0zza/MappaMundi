@@ -6,10 +6,8 @@ oob = "AZR_1936"
 	set_popularities = {
 		democratic 
 			 = 0
-		communism
-			 = 0
-		neutrality
-			 = 100
+        republican_fascism = 40
+		neutrality = 60
 		
 	}
 	
@@ -54,12 +52,22 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Siegfried Kasche"
+	name = "Reichsprotektor Siegfried Kasche"
 	desc = ""
 	picture = "MSC_Siegfried_Kasche.tga"
 	expire = "1953.3.1"
 	ideology = natsoc
 	traits = {
 		
+	}
+}
+
+create_country_leader = {
+	name = "Komissar Bronislav Vladislavovich Kaminski"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/MSC_Kaminski.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
 	}
 }
