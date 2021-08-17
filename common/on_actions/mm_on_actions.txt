@@ -2293,10 +2293,10 @@ on_actions = {
                         transfer_state = 1008
                         transfer_state = 13830
                     }
-                    }
-                    }
-                    }                    
-                    
+                }
+            }
+        }                    
+    }             
     on_startup = {
         #USSR before the west russian war
         effect = {
@@ -3031,7 +3031,8 @@ on_actions = {
 					
 				}
 			}
-		}	
+		}
+	}
 	on_startup = {
 		#Unite Indonesia As East Indies
 		effect = {
@@ -5179,80 +5180,6 @@ on_actions = {
 						ruling_party = vanguardism
 							}
 						}
-			}
-		}
-	}
-	#Hyperborea color change
-	on_ruling_party_change = {
-		effect = {
-			HYP = {
-				drop_cosmetic_tag = yes
-				if = {
-					limit = {
-						has_government = republican_fascism
-					}
-					set_cosmetic_tag = HYP_YAZOV
-				}
-				if = {
-					limit = {
-						has_government = democratic
-					}
-					set_cosmetic_tag = HYP_SHOTAKOVICH
-				}
-				if = {
-					limit = {
-						has_government = centrist_republic
-					}
-					set_cosmetic_tag = HYP_YELTSIN
-				}
-				if = {
-					limit = {
-						has_government = neutrality
-					}
-					set_cosmetic_tag = HYP_ZHUKOV
-				}
-				if = {
-					limit = {
-						has_government = liberal_republic
-					}
-					set_cosmetic_tag = HYP_LIKHACHEV
-				}
-				if = {
-					limit = {
-						has_government = fascism
-					}
-					set_cosmetic_tag = HYP_RODZAEVSKY
-				}
-				if = {
-					limit = {
-						has_government = monarchism
-					}
-					set_cosmetic_tag = HYP_TABORITSKY
-				}
-				if = {
-					limit = {
-						has_government = left_anarchism
-					}
-					set_cosmetic_tag = HYP_ANARCHY
-				}
-				if = {
-					limit = {
-						has_government = right_anarchism
-					}
-					set_cosmetic_tag = HYP_GUMILNOV
-				}
-				if = {
-					limit = {
-						has_government = vanguardism
-					}
-					set_cosmetic_tag = HYP_ZHDANOV
-				}
-                if = {
-					limit = {
-						has_government = theocratic
-					}
-					set_cosmetic_tag = HYP_HYP
-				}
 			}
 		}
 	}
