@@ -3132,6 +3132,72 @@
 					transfer_state = 14195
 					set_cosmetic_tag = IRN_GREY
 					}
+				every_state = {
+					limit = {
+						is_core_of = ACH
+						}
+					ACH = {
+						transfer_state = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = BKK
+						}
+					BKK = {
+						transfer_state = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = PDR
+						}
+					PDR = {
+						transfer_state = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = BS3
+						}
+					BS3 = {
+						transfer_state = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = MTW
+						}
+					MTW = {
+						transfer_state = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = JMB
+						}
+					JMB = {
+						transfer_state = PREV
+						set_cosmetic_tag = HOL_ORANGE
+						}
+					}
+				every_country = {
+					limit = {
+						OR = {
+							tag = SAK
+							tag = IDG
+							tag = ASN
+							tag = SDG
+							tag = DLI
+							tag = LGK
+							}
+						}
+					set_cosmetic_tag = SAK_COLONY
+					}
+				LMP = {
+					transfer_state = 3793
+					transfer_state = 14465
+					}
 				}
 			}
 		}
