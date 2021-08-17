@@ -22,48 +22,85 @@ set_technology = {
 
 	set_popularities = {
 		democratic 
-			 = 15
-		neutrality
 			 = 60
-		communism
-			 = 25
+		republican_fascism
+			 = 10
+		vanguardism
+			 = 30
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = democratic
 	last_election = "1960.1.1"
 	election_frequency = 20
 	elections_allowed = no # none after offset 1
 }
 
 create_country_leader = {
-	name = "Berislav Rončević"
+	name = "Premijer Rodoljub Colakovic"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1960.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Habib Esfahani"
-	desc = ""
-	picture = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
-	expire = "1960.1.1"
-	ideology = stalinism
+	picture = "BOS_Colakovic_commie.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
 	traits = {
 		
 	}
 }
 
 create_country_leader = {
-	name = "Demir Demirev"
+	name = "Predsjednice Ivo Andrić"
 	desc = ""
-	picture = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
-	expire = "1960.1.1"
+	picture = "BOS_Andric_condem.tga"
+	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		
 	}
 }
+
+create_country_leader = {
+	name = "Gouverneur Stjepan Freiherr Sarkotić von Lovćen"
+	desc = ""
+	picture = "BOS_Lovcen_stratmon.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Vali Mehmed Spaho"
+	desc = ""
+	picture = "BOS_Spaho_authmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Predsjedavajući Halim Malkoc"
+	desc = ""
+	picture = "BOS_Malkoc_repfashh.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Vittorio Ambrosio"
+	desc = ""
+	picture = "BOS_Ambrosio_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Joachim Peiper"
+	desc = ""
+	picture = "BOS_Peiper_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
