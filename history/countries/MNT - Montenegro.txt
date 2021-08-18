@@ -23,13 +23,12 @@ set_technology = {
 
 
 	set_popularities = {
-		fascism 
-			 = 33
+		democratic 
+			 = 20
 		neutrality 
-			 = 33
-		
-		communism
-			 = 34
+			 = 60
+	        stratocratic_monarchism 
+                         = 20
 		}
 
 
@@ -41,36 +40,92 @@ set_technology = {
 }
 
 create_country_leader = {
-	name = "Sekula Drljević"
+	name = "Premijer Blazo Jovanović"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	picture = "MNT_Jovanovic_commie.tga"
 	expire = "1953.3.1"
-	ideology = fascism_ideology
+	ideology = totsoc
 	traits = {
 		
 	}
 }
 
 create_country_leader = {
-	name = "Novica Radović"
+	name = "Kralj Michael I Petrović-Njegoši"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1953.3.1"
+	picture = "MNT_Michael.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Premijer Sekula Drljević"
+	desc = ""
+	picture = "MNT_Drljevic_authrep.tga"
+	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Blažo Jovanović"
+	name = "Prvi Sekretar Blazo Jovanović"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1953.3.1"
-	ideology = leninism
+	picture = "MNT_Jovanovic_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
 	traits = {
-		
 	}
 }
 
+create_country_leader = {
+	name = "Predsednik Jovan Simonov Plamenac"
+	desc = ""
+	picture = "MNT_Plamenac_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Knez Michael I Petrović-Njegoši"
+	desc = ""
+	picture = "MNT_Michael.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Knez-Episkop Gavrilo V Dozic"
+	desc = ""
+	picture = "MNT_Dozic_theoc.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Alessandro Pirzio Biroli"
+	desc = ""
+	picture = "MNT_Biroli_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Premijer Blazo Dukanović"
+	desc = ""
+	picture = "MNT_Blazoi_repfash.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
