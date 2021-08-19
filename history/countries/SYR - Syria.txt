@@ -12,14 +12,14 @@ set_convoys = 5
 
 	set_popularities = {
 		democratic 
-			 = 50
+			 = 80
 		fascism
-			 = 10
+			 = 0
 		communism
-			 = 10
+			 = 0
 			
 		neutrality 
-			 = 30
+			 = 20
 		}
 	set_politics = { 
  ruling_party = democratic
@@ -29,7 +29,7 @@ set_convoys = 5
 }
 
 create_country_leader = {
-	name = "Mohammed Ali Bey al-Abed"
+	name = "Rayiys Mohammed Ali Bey al-Abed"
 	desc = ""
 	picture = "Portrait_Mohammed_Ali_Bey_al_Abed.dds"
 	ideology = liberalism
@@ -39,31 +39,93 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Antun Saadeh"
+	name = "Rayiys Zaki al-Arsuzi"
 	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_land_3.dds"
+	picture = "SYR_Zaki_authrep.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alsikrtir Alawl Khalid Bakdash"
+	desc = ""
+	picture = "SYR_Bakdash_commie.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Eahil Talal I bin Abdullah"
+	desc = ""
+	picture = "SYR_Talal_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Orlando Lorenzini"
+	desc = ""
+	picture = "SYR_Lorenzini_fash.tga"
+	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Ghazi bin Faisal"
+	name = "Haut-Commissaire Auguste Henri Ponsot"
 	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_2.dds"
-	ideology = despotism
+	picture = "SYR_Ponsot_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Khalid Bakdash"
+	name = "Governor-General Sir Edward Pellew Quinan"
 	desc = ""
-	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_1.dds"
-	ideology = leninism
+	picture = "SYR_Quinan.tga"
+	expire = "1965.1.1"
+	ideology = authmon
 	traits = {
-		#
+	}
+}
+
+create_country_leader = {
+	name = "Rayiys Antoun Saadeh"
+	desc = ""
+	picture = "SYR_Saadeh_repfash.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Alois Brunner"
+	desc = ""
+	picture = "SYR_Brunner_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
 	}
 }
