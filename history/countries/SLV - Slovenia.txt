@@ -22,48 +22,75 @@ set_technology = {
 
 	set_popularities = {
 		democratic 
-			 = 15
+			 = 70
 		neutrality
-			 = 65
+			 = 0
 		communism
-			 = 20
+			 = 30
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = democratic
 	last_election = "1960.1.1"
 	election_frequency = 20
 	elections_allowed = no # none after offset 1
 }
 
 create_country_leader = {
-	name = "Radislav Levstek"
+	name = "Predsednik Marko Natlacen"
 	desc = ""
-	picture = "gfx/leaders/Europe/portrait_europe_generic_6.dds"
-	expire = "1960.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Dobrivoje Drofenik"
-	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
-	expire = "1960.1.1"
-	ideology = stalinism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Hajrudin Jagodiè"
-	desc = ""
-	picture = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
-	expire = "1960.1.1"
+	picture = "SLV_Natlacen_condem.tga"
+	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		
+	}
+}
+
+create_country_leader = {
+	name = "Prvi Sekretar Boris Kidric"
+	desc = ""
+	picture = "SLV_Kidric_commie.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prvi Sekretar Boris Kidric"
+	desc = ""
+	picture = "SLV_Kidric_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Herzog Robert I von Habsburg"
+	desc = ""
+	picture = "SLV_Robert_conmon.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Mario Roatta"
+	desc = ""
+	picture = "SLV_Roatta_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Vodja Leon Rupnik"
+	desc = ""
+	picture = "SLV_Rupnik_repfash.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
 	}
 }

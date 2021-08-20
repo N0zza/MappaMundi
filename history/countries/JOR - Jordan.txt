@@ -9,12 +9,12 @@ set_cosmetic_tag = JOR_ENG
 		democratic 
 			 = 25
 		fascism
-			 = 20
+			 = 0
 		communism
-			 = 5
+			 = 0
 			
 		authoritarian_monarchism 
-			 = 50
+			 = 75
 		}
 	set_politics = { 
  ruling_party = authoritarian_monarchism
@@ -24,9 +24,9 @@ set_cosmetic_tag = JOR_ENG
 }
 
 create_country_leader = {
-	name = "Hashim Kheir"
+	name = "Rayiys Samir Al-Rifai"
 	desc = ""
-	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_2.dds"
+	picture = "JOR_Samiri_condem.tga"
 	ideology = conservatism
 	traits = {
 		#
@@ -34,17 +34,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Saeed Ahmadi"
+	name = "Sultan Abdullah I of Hashim"
 	desc = ""
-	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds"
-	ideology = fascism_ideology
+	picture = "Portrait_Abdullah_I.dds"
+	ideology = absolutism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Abdullah I of Hashim"
+	name = "Emir Abdullah I of Hashim"
 	desc = ""
 	picture = "Portrait_Abdullah_I.dds"
 	ideology = authmon
@@ -54,11 +54,41 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Fu'ad Nassar"
+	name = "Milk Abdullah I of Hashim"
 	desc = ""
-	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_navy_2.dds"
-	ideology = leninism
+	picture = "Portrait_Abdullah_I.dds"
+	ideology = conservative_constitutionalism
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Emir Abdullah I of Hashim"
+	desc = ""
+	picture = "Portrait_Abdullah_I.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rayiys Suleiman Nabulsi"
+	desc = ""
+	picture = "JOR_Nabulsi_demsoc.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor-General Sir John Winthrop Hackett"
+	desc = ""
+	picture = "JOR_Hacketti_stratmon.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
 	}
 }

@@ -21,12 +21,9 @@ set_technology = {
 
 
 	set_popularities = {
-		democratic 
-			 = 25
-		neutrality
-			 = 40
-		communism
-			 = 35
+                theocratic = 10
+		neutrality = 60
+                vanguardism = 30
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -36,45 +33,51 @@ set_technology = {
 }
 
 create_country_leader = {
-	name = "Nedelko Vasilevski"
+	name = "Prv Sekretar Svetozar Vukmanovic"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1960.1.1"
-	ideology = fascism_ideology
+	picture = "MAC_Vukmanovic_commie.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Habib Esfahani"
+	name = "Pretsedatel Hristo Tatarchev"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1960.1.1"
-	ideology = stalinism
+	picture = "MAC_Tatarchev_authrep.tga"
+	expire = "1965.1.1"
+	ideology = despotism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Vlastimir Kazepov"
+	name = "Arhiepiskop Josif Cvijović"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1960.1.1"
-	ideology = conservatism
+	picture = "MAC_Cvijovic_theoc.tga"
+	expire = "1965.1.1"
+	ideology = christian
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Mirko Crvenkovski"
+	name = "Pretsedavac Ivan Mihailov"
 	desc = ""
-	picture = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
-	expire = "1960.1.1"
-	ideology = moderatism
+	picture = "MAC_Mihailov_repfash.tga"
+	expire = "1965.1.1"
+	ideology = repfash
 	traits = {
-		
+	}
+}
+
+create_country_leader = {
+	name = "Aftokrátoras Petar I Argead"
+	desc = ""
+	picture = "MAC_Petar.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
 	}
 }
