@@ -5,16 +5,12 @@ oob = "RSI_1936"
 set_convoys = 20
 
 set_popularities = {
-	democratic 
-		= 20
-	fascism
-		= 60
-	communism
-		= 20
+	national_socialism
+		= 100
 	}
 
 set_politics = { 
-	ruling_party = fascism
+	ruling_party = national_socialism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -25,7 +21,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Benito_Mussolini.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = natsoc
 	traits = {
 		#
 	}
