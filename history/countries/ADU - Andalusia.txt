@@ -4,31 +4,53 @@ oob = "SPR_gen"
 
 
 	set_popularities = {
-		democratic 
-			 = 30
-		fascism
-			 = 30
-		communism
-			 = 30
-		neutrality
-			 = 10
+        left_anarchism = 20
+        liberal_republic = 80
+
 		}
 	set_politics = { 
- ruling_party = democratic
+ ruling_party = liberal_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
-
-	create_country_leader = {
-		name = "Blas Infante"
-		desc = ""
-		picture = "gfx/leaders/Europe/Blas_Infante.dds"
-		expire = "1936.8.11"
-		ideology = liberalism
-		traits = {
-			#
-		}
+create_country_leader = {
+	name = "Presidente Blas Infante Pérez de Vargas"
+	desc = ""
+	picture = "ADU_Vargas_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
 	}
-	
+}
+
+create_country_leader = {
+	name = "Amir Muhammad XIII al-Munsif"
+	desc = ""
+	picture = "ADU_Moncef.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Khalifa Muhammad XIII al-Munsif"
+	desc = ""
+	picture = "ADU_Moncef.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}

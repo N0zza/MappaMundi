@@ -4,41 +4,87 @@ oob = "SPR_gen"
 
 
 	set_popularities = {
-		democratic 
-			 = 30
-		fascism
-			 = 30
-		communism
-			 = 30
-		neutrality
-			 = 10
+        centrist_republic = 40
+        liberal_republic = 20
+        vanguardism = 10
+        monarchism = 5
+        socialism_ideology = 15
+        stratocratic = 10
 		}
 	set_politics = { 
- ruling_party = democratic
+ ruling_party = centrist_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Jesús Larrañaga"
+	name = "Lehendakaris Jesús Larranaga"
 	desc = ""
-	picture = "gfx/leaders/Europe/Jesus_Larranaga.dds"
-	expire = "1942.1.21"
-	ideology = marxism
+	picture = "BSQ_Larranaga_commie.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
 	traits = {
-		#
+		
 	}
 }
 
-	create_country_leader = {
-		name = "José Antonio Aguirre"
-		desc = ""
-		picture = "gfx/leaders/Europe/Jose_Aguirre.dds"
-		expire = "1960.3.22"
-		ideology = liberalism
-		traits = {
-			#
-		}
+create_country_leader = {
+	name = "Lehendakaris Tomás Bilbao"
+	desc = ""
+	picture = "BSQ_Bilbao_demsoc.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
 	}
-	
+}
+
+create_country_leader = {
+	name = "Lehendakaris José Antonio Aguirre"
+	desc = ""
+	picture = "BSQ_Aguirre_cendem.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Lehendakaris José Antonio Aguirre"
+	desc = ""
+	picture = "BSQ_Aguirre_cendem.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Estatu Nagusiko Burua Alberto de Montaud Noguerol"
+	desc = ""
+	picture = "BSQ_Noguerol_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Dukea Alfonso Carlos I de Borboiko"
+	desc = ""
+	picture = "BSQ_Alfonso.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rey Alfonso Carlos I de Borbón-Parma"
+	desc = ""
+	picture = "BSQ_Alfonso.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
