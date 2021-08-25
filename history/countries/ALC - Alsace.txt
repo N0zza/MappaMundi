@@ -21,61 +21,43 @@ set_technology = {
 
 
 	set_popularities = {
-		democratic 
-			 = 2
-		fascism
-			 = 6
-		communism
-			 = 2
-		neutrality
-			 = 90
+        centrist_republic = 80
+        communism = 20
+
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = centrist_republic
 	last_election = "1960.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Paul Giesler"
+	name = "Premierminister Camille Dahlet"
 	desc = ""
-	picture = "Portrait_Bavaria_Paul Giesler.dds"
-	expire = "1960.1.1"
-	ideology = nazism
+	picture = "ALC_Dahlet_cendem.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Ernst Toller"
+	name = "Landgraf Alice I von Sachsen-Coburg und Gotha"
 	desc = ""
-	picture = "Portrait_Bavaria_Ernst.dds"
-	expire = "1960.1.1"
-	ideology = stalinism
+	picture = "ALC_Alice.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Fritz Schäffer"
+	name = "Vorsitzende Jean-Pierre Mourer"
 	desc = ""
-	picture = "Portrait_Bavaria_Fritz.dds"
-	expire = "1960.1.1"
-	ideology = socialism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Ernest Louis"
-	desc = ""
-	picture = "Portrait_Bavaria_Rupprecht.dds"
-	expire = "1951.1.1"
-	ideology = despotism
+	picture = "ALC_Mourer_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
 	traits = {
 	}
 }

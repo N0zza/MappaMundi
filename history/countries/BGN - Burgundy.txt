@@ -3,15 +3,13 @@
 oob = "BGN_1936"
 
 	set_popularities = {
-		democratic 
-			 = 15
-		neutrality
-			 = 80
-		communism
-			 = 5
+        monarchism = 80
+        stratocratic_monarchism = 10
+        national_socialism = 10
+
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -22,11 +20,31 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Heinrich Luitpold Himmler"
+	name = "Reichsführer Heinrich Luitpold Himmler"
 	desc = ""
-	picture = "Portrait_Heinrich_Himmler.dds"
+	picture = "BGN_Himmler_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Duc Otto II de Bismarck"
+	desc = ""
+	picture = "BGN_Bismarck_stratmon.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Roi Alexandre I de Cambridge"
+	desc = ""
+	picture = "BGN_Cambridge_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
 	traits = {
 	}
 }
