@@ -13,18 +13,66 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	        democratic = 25
-        communism = 25
-        fascism = 25
-        neutrality = 25
-
+        liberal_republic = 80
+        vanguardism = 20
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = liberal_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Karl Koller"
+	desc = ""
+	picture = "OCC_Koller_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Dino Grandi"
+	desc = ""
+	picture = "OCC_Grandi_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rei Jean I de Broglie"
+	desc = ""
+	picture = "OCC_Jean_mon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Premier Ministre Edgar Jean Faure"
+	desc = ""
+	picture = "OCC_Faure_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Premier Secrétaire Jean Pierre Moulin"
+	desc = ""
+	picture = "OCC_Moulin_commie.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
+	traits = {
+		
+	}
 }
 
