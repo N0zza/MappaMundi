@@ -1951,6 +1951,9 @@
 					is_core_of = CIH
 					is_core_of = MGJ
 					is_core_of = WGS
+					is_core_of = SUI
+					is_core_of = SB1
+					is_core_of = SB4
 						}
 					}
 				set_demilitarized_zone = no
@@ -2005,6 +2008,9 @@
 					is_core_of = MON
 					NOT = {
 						is_core_of = MAN
+						is_core_of = SUI
+						is_core_of = SB1
+						is_core_of = SB4
 						}
 					}
 				MON = {
@@ -2024,11 +2030,41 @@
 					is_core_of = INM
 					NOT = {
 						is_core_of = MAN
+						is_core_of = SUI
+						is_core_of = SB1
+						is_core_of = SB4
 						}
 					}
 				INM = {
 					transfer_state = PREV
 					}
+				}
+			every_country = {
+				limit = {
+					OR = {
+						tag = UB1
+						tag = UB2
+						tag = UB3
+						tag = UB4
+						tag = UB5
+						tag = DB1
+						tag = DB2
+						tag = DB3
+						tag = KB1
+						tag = KB2
+						tag = KB3
+						tag = KB4
+						tag = SB1
+						tag = SB2
+						tag = SB3
+						tag = SB4
+						tag = TB1
+						tag = OB1
+						tag = VB1
+						tag = ZB1
+						}
+					}
+					set_cosmetic_tag = CHI_YELLOW
 				}
 			every_state = {
 				limit = {
@@ -2396,10 +2432,7 @@
 					}
 				}
 				CHI = {
-					transfer_state = 11297
 					transfer_state = 11298
-					transfer_state = 11299
-					transfer_state = 11302
 					transfer_state = 11270
 					transfer_state = 9777
 					transfer_state = 2253
@@ -2427,7 +2460,6 @@
 					transfer_state = 11157
 					}
 				INM = {
-					transfer_state = 11312
 					transfer_state = 11140
 					transfer_state = 7092
 					transfer_state = 13113
@@ -4093,10 +4125,14 @@
 			set_cosmetic_tag = CHI_YELLOW
 			}
 		MON = {
+			transfer_state = 14777
 			transfer_state = 11823
 			transfer_state = 11824
-			transfer_state = 11825
+			transfer_state = 14774
+			transfer_state = 14779
 			transfer_state = 11306
+			transfer_state = 11825
+			transfer_state = 11826
 			transfer_state = 7905
 			transfer_state = 11300
 			transfer_state = 11301
@@ -4104,7 +4140,10 @@
 			transfer_state = 11308
 			transfer_state = 11309
 			transfer_state = 11304
-			transfer_state = 11826
+			transfer_state = 14775
+			transfer_state = 11297
+			transfer_state = 14773
+			transfer_state = 11299
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = theocratic

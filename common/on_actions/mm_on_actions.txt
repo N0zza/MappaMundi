@@ -3342,6 +3342,7 @@ on_actions = {
 							is_core_of = SKK
 							is_core_of = YSH
 							is_core_of = NGH
+							is_core_of = WGS
 							}
 						}
 					XSM = {
@@ -3389,9 +3390,31 @@ on_actions = {
 				}
 				every_state = {
 					limit = {
-						is_core_of = YLN
+						OR = {
+							is_core_of = YLN
+							is_core_of = SUI
+							}
+						NOT = {
+							is_owned_by = MEN
+							}
 						}
 					SUI = {
+						transfer_state = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = SB4
+						}
+					CH3 = {
+						transfer_state = PREV
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = SB1
+						}
+					MEN = {
 						transfer_state = PREV
 					}
 				}
