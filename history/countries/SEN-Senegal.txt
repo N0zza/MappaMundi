@@ -10,17 +10,17 @@ set_convoys = 20
 
 
 	set_popularities = {
-		communism
-			 = 12
+		socialism_ideology
+			 = 10
 			
 		
-		fascism
-			 = 13
+		liberal_republic
+			 = 10
 		
 		democratic 
-			 = 20
+			 = 10
 		neutrality 
-			 = 55
+			 = 70
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -35,6 +35,56 @@ create_country_leader = {
 	picture = "SEN_Beurnier.tga"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor-General Douglas Povah Dickinson"
+	desc = ""
+	picture = "SEN_Dickinson_authmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gouverneur Adrianus Antonius van Nijnatten"
+	desc = ""
+	picture = "SEN_Nijnatten_conmon.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Léopold Sédar Senghor"
+	desc = ""
+	picture = "SEN_Senghor_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Ngalandou Diouf"
+	desc = ""
+	picture = "SEN_Diouf_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Premier Ministre Amadou Lamine-Guèye"
+	desc = ""
+	picture = "SEN_Gueye_demsoc.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
 	traits = {
 	}
 }
