@@ -10,15 +10,15 @@ set_convoys = 5
 
 
 	set_popularities = {
-		democratic 
-			 = 0
-		fascism
-			 = 0
+		monarchism 
+			 = 10
+		socialism_ideology
+			 = 10
 		communism
 			 = 0
 			
 		neutrality 
-			 = 100
+			 = 80
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -27,35 +27,6 @@ set_convoys = 5
 	elections_allowed = yes
 }
 
-create_country_leader = {
-	name = "Jaquan Van Ryneveld"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Leeto Marx"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Lethabo Rossouw"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
 
 create_country_leader = {
 	name = "Gouverneur Jules Marcel de Coppet"
@@ -63,6 +34,36 @@ create_country_leader = {
 	picture = "MRT_Coppet.tga"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rayiys Moktar Ould Daddah"
+	desc = ""
+	picture = "MRT_Daddah_demsoc.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Sultan Ibrahim I ibn 'Umaru"
+	desc = ""
+	picture = "MRT_Umaru_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Bruno Malaguti"
+	desc = ""
+	picture = "MRT_Malaguti_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
 	traits = {
 	}
 }
