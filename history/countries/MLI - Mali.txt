@@ -8,13 +8,13 @@ set_cosmetic_tag = FRA_COLONY
 	set_popularities = {
 		democratic 
 			 = 0
-		fascism
-			 = 0
-		communism
-			 = 0
+		socialism_ideology
+			 = 10
+		liberal_republic
+			 = 10
 			
 		neutrality 
-			 = 100
+			 = 80
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -33,5 +33,52 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Président Modibo Keïta"
+	desc = ""
+	picture = "MLI_Keita.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Premier Ministre Mamadou Konaté"
+	desc = ""
+	picture = "MLI_Konate_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Governor Sir James Syme Drew"
+	desc = ""
+	picture = "MLI_Drew_authmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Empereur Modibo I Keïta"
+	desc = ""
+	picture = "MLI_Keita.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Mario Balotta"
+	desc = ""
+	picture = "MLI_Balotta_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
