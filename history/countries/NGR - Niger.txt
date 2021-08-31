@@ -9,10 +9,10 @@ set_cosmetic_tag = FRA_COLONY
 			 = 0
 		fascism
 			 = 0
-		communism
-			 = 0
+		liberal_republic
+			 = 20
 		neutrality 
-			 = 100
+			 = 80
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -27,6 +27,36 @@ create_country_leader = {
 	picture = "NGR_Chazelas.tga"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Arthur Liebehenschel"
+	desc = ""
+	picture = "NGR_Liebehenschel_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Rino Corso Fougier"
+	desc = ""
+	picture = "NGR_Fougier_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Premier Ministre Hamani Diori"
+	desc = ""
+	picture = "NGR_Diori_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
 	traits = {
 	}
 }
