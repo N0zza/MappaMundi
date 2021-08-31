@@ -3231,6 +3231,198 @@
 					transfer_state = 3793
 					transfer_state = 14465
 					}
+				every_country = {
+					limit = {
+						OR = {
+							tag = SBS
+							tag = STG
+							tag = SLM
+							tag = KTK
+							tag = PSR
+							tag = BLN
+							}
+						}
+					drop_cosmetic_tag = yes
+					}
+				every_state = {
+					limit = {
+						is_core_of = SRW
+						NOT ={
+						is_core_of = SUU
+						is_core_of = TDG
+							}
+						}
+					BEI = {
+						transfer_state = PREV
+						drop_cosmetic_tag = yes
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = SRB
+						}
+					SRB = {
+						transfer_state = PREV
+						set_cosmetic_tag = BEI_COLONY
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = SKU
+						}
+					SKU = {
+						transfer_state = PREV
+						set_cosmetic_tag = HOL_ORANGE
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = KLK
+						}
+					KLK = {
+						transfer_state = PREV
+						set_cosmetic_tag = BEI_COLONY
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = TKN
+						}
+					TKN = {
+						transfer_state = PREV
+						set_cosmetic_tag = SBS_COLONY
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = KAA
+						}
+					SMP = {
+						transfer_state = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = BJR
+						}
+					BJR = {
+						transfer_state = PREV
+						set_cosmetic_tag = HOL_ORANGE
+						}
+					}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = KUU
+							is_core_of = MLS
+							is_core_of = TYN
+							is_core_of = AGG
+							is_core_of = SKD
+							}
+						}
+					PTK = {
+						transfer_state = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = PNH
+						}
+					PNH = {
+						transfer_state = PREV
+						set_cosmetic_tag = HOL_ORANGE
+						}
+					}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = SLM
+							is_core_of = BGL
+							is_core_of = EMP
+							is_core_of = SBW
+							is_core_of = SHD
+							}
+						}
+					SLM = {
+						transfer_state = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = PIA
+						}
+					PIA = {
+						transfer_state = PREV
+						set_cosmetic_tag = SLM_COLONY
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = JKG
+						}
+					JKG = {
+						transfer_state = PREV
+						set_cosmetic_tag = SLM_COLONY
+						}
+					
+				every_state = {
+					limit = {
+						is_core_of = BJM
+						}
+					BJM = {
+						transfer_state = PREV
+						set_cosmetic_tag = HOL_ORANGE
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = MLU
+						}
+					MLU = {
+						transfer_state = PREV
+						set_cosmetic_tag = HOL_ORANGE
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = TDG
+						}
+					TDG = {
+						transfer_state = PREV
+						set_cosmetic_tag = BLN_COLONY
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = SUU
+						}
+					SUU = {
+						transfer_state = PREV
+						set_cosmetic_tag = BLN_COLONY
+						}
+					}
+				KWG = {
+					transfer_state = 2158
+					transfer_state = 14503
+					}
+				BJR = {
+					transfer_state = 14499
+					transfer_state = 2159
+					}
+				SLM = {
+					transfer_state = 13053
+					transfer_state = 13057
+					transfer_state = 14519
+					}
+				SLT = {
+					set_cosmetic_tag = SLM_COLONY
+					}
+				BNU = {
+					set_cosmetic_tag = SLM_COLONY
+					}
+				BEI = {
+					transfer_state = 3885
+					}
 				}
 			}
 		}
