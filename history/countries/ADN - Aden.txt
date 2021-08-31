@@ -14,16 +14,16 @@ set_cosmetic_tag = ADN_ENG
 
 	set_popularities = {
 		democratic 
-			 = 20
+			 = 0
 		fascism
 			 = 0
 		communism
 			 = 0
-		neutrality 
-			 = 80
+		authoritarian_monarchism 
+			 = 100
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -54,10 +54,10 @@ create_country_leader = {
 
 
 create_country_leader = {
-	name = "Ernest Leslie Gossage"
+	name = "Governor Ernest Leslie Gossage"
 	desc = ""
 	picture = "Portrait_Ernest_Leslie_Gossage.dds"
-	ideology = despotism
+	ideology = authmon
 	expire = "1966.3.25"
 	traits = {
 		#
