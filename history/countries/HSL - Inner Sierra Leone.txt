@@ -6,10 +6,10 @@ set_convoys = 10
 
 set_popularities = {
         monarchism = 0
-        authoritarian_monarchism = 70
-        democratic = 20
-        communism = 5
-        fascism = 5
+        authoritarian_monarchism = 80
+        liberal_republic = 10
+        centrist_monarchism = 10
+        fascism = 0
 
 }
 
@@ -23,12 +23,42 @@ set_politics = {
 
 
 create_country_leader = {
-	name = "Henry Monck-Mason Moore"
+	name = "Governor Sir Henry Monck-Mason Moore"
 	desc = ""
-	picture = "gfx/leaders/SIE/Portrait_Henry_Monck_Mason_Moore.dds"
+	picture = "Portrait_Henry_Monck_Mason_Moore.dds"
 	ideology = authmon
 	expire = "1964.2.4"
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "President Milton Augustus Strieby Margai"
+	desc = ""
+	picture = "SIE_Margai_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Paramount Chief Ella Koblo I of Gulama"
+	desc = ""
+	picture = "SIE_Ella_cenmon.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President David Lansana"
+	desc = ""
+	picture = "SIE_Lansana_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
 	}
 }
