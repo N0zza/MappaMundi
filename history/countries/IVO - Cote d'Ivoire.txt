@@ -8,10 +8,10 @@ set_cosmetic_tag = FRA_COLONY
 			 = 0
 		fascism
 			 = 0
-		communism
-			 = 0
+		liberal_republic
+			 = 10
 		neutrality 
-			 = 100
+			 = 90
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -26,6 +26,26 @@ create_country_leader = {
 	picture = "IVO_Deitte.tga"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir Robert Lindsay Burnett"
+	desc = ""
+	picture = "IVO_Burnett_authmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Félix Houphouët-Boigny"
+	desc = ""
+	picture = "IVO_Boigny_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
 	}
 }
