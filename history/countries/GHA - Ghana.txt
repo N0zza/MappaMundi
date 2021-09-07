@@ -14,14 +14,14 @@ set_convoys = 5
 
 	set_popularities = {
 		democratic 
-			 = 0
+			 = 10
 		fascism
 			 = 0
-		communism
-			 = 0
+		socialism_ideology
+			 = 10
 			
 		authoritarian_monarchism 
-			 = 100
+			 = 80
 		}
 	set_politics = { 
  ruling_party = authoritarian_monarchism
@@ -31,7 +31,7 @@ set_convoys = 5
 }
 
 create_country_leader = {
-	name = "Arnold Hodson"
+	name = "Governor Sir Arnold Wienholt Hodson"
 	desc = ""
 	picture = "Portrait_Arnold_Hodson.dds"
 	expire = "1965.1.1"
@@ -42,13 +42,81 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kifle Kylington"
+	name = "Gouverneur Eugen Ritter von Schobert"
 	desc = ""
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = socialism
+	picture = "GHA_Schobert.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
 	traits = {
-		#
 	}
 }
 
+create_country_leader = {
+	name = "President Kwame Nkrumah"
+	desc = ""
+	picture = "GHA_Nkrumah_demsoc.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Guvernor Erik Julius Christian Scavenius"
+	desc = ""
+	picture = "GHA_Scavenius_monsoc.tga"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prime Minister George Alfred Grant"
+	desc = ""
+	picture = "GHA_Grant_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Guvernör Claës Olof Lindsström"
+	desc = ""
+	picture = "GHA_Lindsstrom_libmon.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Asantehene Osei Tutu Agyeman Prempeh II"
+	desc = ""
+	picture = "GHA_Prempeh_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Eugen Ritter von Schobert"
+	desc = ""
+	picture = "GHA_Schobert.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
