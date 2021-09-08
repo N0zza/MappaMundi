@@ -13,14 +13,14 @@ set_cosmetic_tag = CMR_FRA
 
 	set_popularities = {
 		democratic 
-			 = 40
-		fascism
-			 = 0
+			 = 10
+		communism
+			 = 10
 		communism
 			 = 0
 			
 		neutrality 
-			 = 60
+			 = 80
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -30,33 +30,71 @@ set_cosmetic_tag = CMR_FRA
 }
 
 create_country_leader = {
-	name = "Jules Vincent Repiquet"
+	name = "Gouverneur Jules Vincent Repiquet"
 	picture = "gfx/leaders/CMR/Portrait_Jules_Vincent_Repiquet.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = oligarchism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Ruben Zietsman"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+	name = "Gouverneur Karl Ebermaier"
+	desc = ""
+	picture = "CMR_Ebermaier.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Premier Secrétaire Ruben Um Nyobè"
+	desc = ""
+	picture = "CMR_Ruben_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Salomon Tandeng Muna"
+	desc = ""
+	picture = "CMR_Muna_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Belay Van Schoor"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+	name = "Kaiser Alexander I von Bell"
+	desc = ""
+	picture = "CMR_Bell_conmon.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = conservative_constitutionalism
 	traits = {
-		#
 	}
 }
 
+create_country_leader = {
+	name = "Governor Sir Thomas Jacomb Hutton"
+	desc = ""
+	picture = "CMR_Hutton_authmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Reichsprotektor Karl Ebermaier"
+	desc = ""
+	picture = "CMR_Ebermaier.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
