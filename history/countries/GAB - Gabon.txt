@@ -6,13 +6,13 @@ set_cosmetic_tag = FRA_COLONY
 
 	set_popularities = {
 		democratic 
-			 = 0
+			 = 20
 		fascism
 			 = 0
-		communism
-			 = 0
+		stratocratic
+			 = 10
 		neutrality 
-			 = 100
+			 = 70
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -22,11 +22,31 @@ set_cosmetic_tag = FRA_COLONY
 }
 
 create_country_leader = {
-	name = "Le Frenchman"
+	name = "Administrateur-Supérieur Louis Alexis Étienne Bonvin"
 	desc = ""
-	picture = "gfx/leaders/France/Frenchman.tga"
+	picture = "GAB_Bonvin.tga"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Gabriel Leon M'ba"
+	desc = ""
+	picture = "GAB_Mba_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Commandant en Chef Nazaire Boulingui"
+	desc = ""
+	picture = "GAB_Boulingui_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
 	traits = {
 	}
 }
