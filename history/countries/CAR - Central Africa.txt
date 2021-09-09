@@ -9,19 +9,19 @@ set_convoys = 20
 
 
 	set_popularities = {
-		communism
+		stratocratic
 			 = 10
 			
 		
 		
-		fascism
-			 = 20
+		liberal_republic
+			 = 10
 		
 		
 		democratic 
-			 = 20
+			 = 0
 		neutrality 
-			 = 50
+			 = 80
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -32,9 +32,9 @@ set_convoys = 20
 
 
 create_country_leader = {
-	name = "Bokassa I"
+	name = "Empereur Bokassa I"
 	desc = ""
-	picture = "Bokassa.tga"
+	picture = "CAR_Bokassa.tga"
 	ideology = stratmon
 	expire = "1996.11.3"
 	traits = {
@@ -43,33 +43,31 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Barthélemy Boganda"
+	name = "Gouverneur-Délégué Max Masson de Saint-Félix"
 	desc = ""
-	picture = "gfx/leaders/Africa/Barthelemy_Boganda.dds"
-	ideology = liberalism
-	expire = "1959.3.29"
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Abel Goumba"
-	desc = ""
-	picture = "gfx/leaders/Africa/Abel_Goumba.dds"
-	ideology = moderatism
-	expire = "2009.5.11"
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Le Frenchman"
-	desc = ""
-	picture = "gfx/leaders/France/Frenchman.tga"
+	picture = "CAR_Felix.tga"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Barthélemy Boganda"
+	desc = ""
+	picture = "CAR_Boganda_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Jean-Bédel Bokassa"
+	desc = ""
+	picture = "CAR_Bokassa.tga"
+	expire = "1965.1.1"
+	ideology = militarism
 	traits = {
 	}
 }
