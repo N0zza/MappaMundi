@@ -13,14 +13,14 @@ set_technology = {
 
 	set_popularities = {
 		democratic 
-			 = 0
-		fascism
-			 = 0
+			 = 10
+		centrist_republic
+			 = 10
 		communism
 			 = 0
 			
 		authoritarian_monarchism 
-			 = 100
+			 = 80
 		}
 	set_politics = { 
  ruling_party = authoritarian_monarchism
@@ -30,7 +30,7 @@ set_technology = {
 }
 
 create_country_leader = {
-	name = "Sir George Stewart Symes"
+	name = "Governor-General Sir George Stewart Symes"
 	picture = "gfx/leaders/SUD/Sir_George_Stewart_Symes.dds"
 	expire = "1965.1.1"
 	ideology = authmon
@@ -40,25 +40,52 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ageng"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
+	name = "Governor-General Sir George Stewart Symes"
+	desc = ""
+	picture = "gfx/leaders/SUD/Sir_George_Stewart_Symes.dds"
+	expire = "1989.1.1"
+	ideology = stratmon
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Marsudi"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+	name = "Rayiys Ismail al-Azhari"
+	desc = ""
+	picture = "SUD_Azhari_condem.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = conservatism
 	traits = {
-		#
 	}
 }
 
+create_country_leader = {
+	name = "Rayiys Abd al-Rahman al-Mahdi"
+	desc = ""
+	picture = "SUD_Mahdi.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Khalifa Abd al-Rahman al-Mahdi"
+	desc = ""
+	picture = "SUD_Mahdi.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Governatore Carlo Scorza"
+	desc = ""
+	picture = "SUD_Scorza_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
 
