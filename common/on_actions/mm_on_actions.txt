@@ -5207,3 +5207,30 @@ on_actions = {
 		}
 	}
 }
+# I will destroy Gaffate
+on_ruling_party_change = {
+        effect = {
+            TOG = {
+                drop_cosmetic_tag = yes
+                if = {
+                    limit = {
+                        has_government = centrist_republic
+                    }
+                    set_cosmetic_tag = CZE_BLUE
+                }
+            }
+        }
+    }
+on_ruling_party_change = {
+        effect = {
+            WTO = {
+                drop_cosmetic_tag = yes
+                if = {
+                    limit = {
+                        has_government = centrist_republic
+                    }
+                    set_cosmetic_tag = CZE_BLUE
+                }
+            }
+        }
+    }
