@@ -5227,15 +5227,6 @@ on_actions = {
 					set_cosmetic_tag = GREY_GER3
 				}
 			}
-            TOG = {
-				drop_cosmetic_tag = yes
-				if = {
-					limit = {
-						has_government = national_socialism 
-					}
-					set_cosmetic_tag = GREY_GER3
-				}
-			}
 			WTO = {
 				drop_cosmetic_tag = yes
 				if = {
@@ -5254,24 +5245,31 @@ on_actions = {
 					set_cosmetic_tag = GREY_GER3
 				}
 			}
-            WTO = {
-				drop_cosmetic_tag = yes
-				if = {
-					limit = {
-						has_government = national_socialism 
-					}
-					set_cosmetic_tag = GREY_GER3
-				}
-			}
 			POR = {
 				drop_cosmetic_tag = yes
 				if = {
 					limit = {
+						OR = {
 						has_government = monarchism
+						has_government = stratocratic_monarchism
+						}
 					}
 					set_cosmetic_tag = POR_MONARCHISM
 				}
 			}
+			every_country = {
+				limit = {
+					OR = { 
+						tag = POL
+						tag = UKR
+						tag = WTO
+						tag = TOG
+					}
+					has_government = national_socialism
+				}
+				set_cosmetic_tag = GREY_GER3
+			}
 		}
 	}
 }
+				
