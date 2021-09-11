@@ -5257,6 +5257,21 @@ on_actions = {
 					set_cosmetic_tag = POR_MONARCHISM
 				}
 			}
+			BGN = {
+				drop_cosmetic_tag = yes
+				if = {
+					limit = {
+						has_government = national_socialism
+					}
+					set_cosmetic_tag = BRG_TNO
+					#every_state = {
+					#	limit = {
+					#		owner = BGN
+					#	}
+					#	do_german_renames = yes
+					#}
+				}
+			}
 			every_country = {
 				limit = {
 					OR = { 
