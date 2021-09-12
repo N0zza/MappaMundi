@@ -16,18 +16,18 @@ set_convoys = 20
 
 	set_popularities = {
 		communism
-			 = 10
+			 = 0
 			
 		
 		
 		fascism
-			 = 20
+			 = 0
 		
 		
-		democratic 
-			 = 20
+		liberal_republic 
+			 = 10
 		neutrality 
-			 = 50
+			 = 90
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -36,36 +36,23 @@ set_convoys = 20
 	elections_allowed = no
 }
 
-
 create_country_leader = {
-	name = "Hummad bin Arbahim"
-	desc = ""
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
-	ideology = fascism_ideology
-	expire = "1962.4.21"
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Hassan Aptidon"
-	desc = ""
-	picture = "gfx/leaders/Africa/Hassan_Aptidon.dds"
-	ideology = liberalism
-	expire = "2006.11.21"
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Armand Leon Annet"
+	name = "Gouverneur Armand Léon Annet"
 	desc = ""
 	picture = "Portrait_Annet_Leon_Armand.dds"
 	ideology = moderatism
 	expire = "1973.4.25"
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Président Ahmed Goumane-Roble"
+	desc = ""
+	picture = "DJI_Roble.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
 	}
 }
