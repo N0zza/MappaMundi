@@ -5,32 +5,96 @@ set_cosmetic_tag = MMB_ENG
 
 set_convoys = 10
 
-set_popularities = {
-        monarchism = 0
-        authoritarian_monarchism = 70
-        democratic = 20
-        communism = 5
-        fascism = 5
-
-}
-
-set_politics = {
-	
-	ruling_party = authoritarian_monarchism
+	set_popularities = {
+		democratic 
+			 = 10
+		liberal_republic
+			 = 5
+		republican_fascism
+			 = 5
+		stratocratic
+			 = 5
+			
+		authoritarian_monarchism 
+			 = 75
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
-
 
 create_country_leader = {
 	
 	
-	name = "Sir Joseph Aloysius Byrne"
+	name = "Governor Sir Joseph Aloysius Byrne"
 	picture = "Portrait_Sir_Joseph_Aloysius_Byrne.dds"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "First Secretary Hussein Onyango Obama"
+	desc = ""
+	picture = "KEN_Obama_commie.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Prime Minister Ramogi Achieng Oneko"
+	desc = ""
+	picture = "KEN_Oneko_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Jomo Kenyatta"
+	desc = ""
+	picture = "KEN_Kenyatta_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+
+create_country_leader = {
+	name = "Prime Minister John Malcolm Churchill"
+	desc = ""
+	picture = "KEN_Churchill_conmon.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Commander Dedan Kimathi Waciuri"
+	desc = ""
+	picture = "KEN_Waciuri_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Leader Stanley Mathenge wa Mirugi"
+	desc = ""
+	picture = "KEN_Mirugi_repfash.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
 	}
 }
