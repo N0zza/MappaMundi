@@ -15,8 +15,9 @@ set_cosmetic_tag = RUU_BEL
 
 	set_popularities = {
         
-        communism =  15
-        fascism =  5
+        democratic = 5
+        republican_fascism =  5
+        monarchism = 10
         authoritarian_monarchism =  80
 
 	}
@@ -30,10 +31,40 @@ set_cosmetic_tag = RUU_BEL
 
 create_country_leader = {
 	
-	name = "Eugène Jungers"
+	name = "Gouverneur Eugène Jungers"
 	picture = "Portrait_Eugene_Jungers.dds"
 	expire = "1965.1.1"
 	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président André Muhirwa"
+	desc = ""
+	picture = "BRD_Muhirwa_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Roi Mutara III Rudahigwa"
+	desc = ""
+	picture = "RWA_Mutara_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chef Suprême Dominique Mbonyumutwa"
+	desc = ""
+	picture = "RWA_Mbonyumutwa_repfash.tga"
+	expire = "1965.1.1"
+	ideology = repfash
 	traits = {
 	}
 }
