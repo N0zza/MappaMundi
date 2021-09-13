@@ -5209,41 +5209,25 @@ on_actions = {
 # I will destroy Gaffate
 	on_ruling_party_change = {
 		effect = {
-			TOG = {
-				drop_cosmetic_tag = yes
-				if = {
-					limit = {
-						has_government = centrist_republic
+			every_country = {
+				limit = {
+					OR = { 
+						tag = WTO
+						tag = TOG
 					}
-					set_cosmetic_tag = CZE_BLUE
+					has_government = centrist_republic
 				}
+				set_cosmetic_tag = CZE_BLUE
 			}
-			TOG = {
-				drop_cosmetic_tag = yes
-				if = {
-					limit = {
-						has_government = stratocratic_monarchism 
+			every_country = {
+				limit = {
+					OR = { 
+						tag = WTO
+						tag = TOG
 					}
-					set_cosmetic_tag = GREY_GER3
+					has_government = stratocratic_monarchism 
 				}
-			}
-			WTO = {
-				drop_cosmetic_tag = yes
-				if = {
-					limit = {
-						has_government = centrist_republic
-					}
-					set_cosmetic_tag = CZE_BLUE
-				}
-			}
-			WTO = {
-				drop_cosmetic_tag = yes
-				if = {
-					limit = {
-						has_government = stratocratic_monarchism 
-					}
-					set_cosmetic_tag = GREY_GER3
-				}
+				set_cosmetic_tag = GREY_GER3
 			}
 			POR = {
 				drop_cosmetic_tag = yes
@@ -5257,7 +5241,7 @@ on_actions = {
 					set_cosmetic_tag = POR_MONARCHISM
 				}
 			}
-			BGN = {
+			BGN = { #please motherfucker don't put your stupid renames here
 				drop_cosmetic_tag = yes
 				every_state = {
 					limit = {
