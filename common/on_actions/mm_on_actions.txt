@@ -5265,7 +5265,13 @@ on_actions = {
 					set_cosmetic_tag = POR_MONARCHISM
 				}
 			}
-			RUS = {
+			every_country = {
+				limit = {
+					OR = { 
+						tag = RUS
+						tag = SOV
+					}
+				}
 				drop_cosmetic_tag = yes
 				if = {
 					limit = {
