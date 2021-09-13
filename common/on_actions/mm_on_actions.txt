@@ -5252,8 +5252,14 @@ on_actions = {
 				if = {
 					limit = {
 						OR = {
+						has_government = fascism
 						has_government = monarchism
+						has_government = socialist_monarchy
+						has_government = democratic_monarchism
+						has_government = conservative_monarchism
+						has_government = centrist_monarchism
 						has_government = stratocratic_monarchism
+						has_government = authoritarian_monarchism
 						}
 					}
 					set_cosmetic_tag = POR_MONARCHISM
