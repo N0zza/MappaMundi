@@ -5229,6 +5229,24 @@ on_actions = {
 				}
 				set_cosmetic_tag = GREY_GER3
 			}
+			every_country = {
+				limit = {
+					OR = { 
+						tag = TOG
+					}
+					has_government = neutrality
+				}
+				set_cosmetic_tag = FRA_COLONY
+			}
+			every_country = {
+				limit = {
+					OR = { 
+						tag = WTO
+					}
+					has_government = authoritarian_monarchism
+				}
+				set_cosmetic_tag = UK_RED
+			}
 			POR = {
 				drop_cosmetic_tag = yes
 				if = {
