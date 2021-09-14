@@ -10,15 +10,15 @@ set_technology = {
 
 
 	set_popularities = {
-		democratic 
-			 = 0
-		fascism
-			 = 0
+		neutrality
+			 = 10
+		liberal_republic
+			 = 10
 		communism
 			 = 0
 			
 		authoritarian_monarchism 
-			 = 100
+			 = 80
 		}
 	set_politics = { 
  ruling_party = authoritarian_monarchism
@@ -29,7 +29,7 @@ set_technology = {
 
 
 create_country_leader = {
-	name = "Harold Baxter Kittermaster"
+	name = "Governor Sir Harold Baxter Kittermaster"
 	picture = "Portrait_Harold_Baxter_Kittermaster.dds"
 	expire = "1965.1.1"
 	ideology = authmon
@@ -39,24 +39,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Tinus Van Zyl"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+	name = "Prime Minister James Frederick Sangala"
+	desc = ""
+	picture = "MLW_Sangala_libdem.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = socdem
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Johan Goodman"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+	name = "President Hastings Kamuzu Banda"
+	desc = ""
+	picture = "MLW_Banda_authrep.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = oligarchism
 	traits = {
-		#
 	}
 }
-
-
-
