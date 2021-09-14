@@ -5247,48 +5247,6 @@ on_actions = {
 				}
 				set_cosmetic_tag = UK_RED
 			}
-			POR = {
-				drop_cosmetic_tag = yes
-				if = {
-					limit = {
-						OR = {
-						has_government = fascism
-						has_government = monarchism
-						has_government = socialist_monarchy
-						has_government = democratic_monarchism
-						has_government = conservative_monarchism
-						has_government = centrist_monarchism
-						has_government = stratocratic_monarchism
-						has_government = authoritarian_monarchism
-						}
-					}
-					set_cosmetic_tag = POR_MONARCHISM
-				}
-			}
-			every_country = {
-				limit = {
-					OR = { 
-						tag = RUS
-						tag = SOV
-					}
-				}
-				drop_cosmetic_tag = yes
-				if = {
-					limit = {
-						OR = {
-						has_government = fascism
-						has_government = monarchism
-						has_government = socialist_monarchy
-						has_government = democratic_monarchism
-						has_government = conservative_monarchism
-						has_government = centrist_monarchism
-						has_government = stratocratic_monarchism
-						has_government = authoritarian_monarchism
-						}
-					}
-					set_cosmetic_tag = RUS_GREEN
-				}
-			}
 			BGN = { #please motherfucker don't put your stupid renames here
 				drop_cosmetic_tag = yes
 				every_state = {
