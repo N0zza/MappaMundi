@@ -16,15 +16,15 @@ set_convoys = 20
 
 
 	set_popularities = {
-		democratic 
-			 = 20
-		fascism
-			 = 15
-		communism
+		liberal_republic
+			 = 10
+		monarchism
+			 = 5
+		vanguardism
 			 = 5
 			
 		neutrality 
-			 = 60
+			 = 80
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -35,10 +35,10 @@ set_convoys = 20
 	
 }
 create_country_leader = {
-	name = "Jules Marcel de Coppet"
+	name = "Gouverneur Léon Henri Charles Cayla"
 	desc = ""
-	picture = "gfx/leaders/French Colonial/Jules_de_Coppet.dds"
-	ideology = despotism
+	picture = "Portrait_Leon_Cayla.dds"
+	ideology = oligarchism
 	expire = "1968.8.31"
 	traits = {
 		#
@@ -46,44 +46,93 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Joel Rakotomalala"
+	name = "Président René Anselme Randrianja"
 	desc = ""
-	picture = "gfx/leaders/Africa/Joel_Rakotomalala.dds"
-	ideology = marxism
-	expire = "1976.7.30"
+	picture = "MAD_Randrianja_commie.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
 	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Marie-Louise Ranavalo"
-	desc = ""
-	picture = "gfx/leaders/Africa/Marie-Louise_Ranavalo.dds"
-	ideology = fascism_ideology
-	expire = "2008.9.15"
-	traits = {
-		#
+		
 	}
 }
 
 create_country_leader = {
-	name = "Philibert Tsiranana"
+	name = "Gouverneur Walter Karl von Reichenau"
 	desc = ""
-	picture = "gfx/leaders/Africa/Philibert_Tsiranana.dds"
-	ideology = liberalism
-	expire = "1978.4.16"
+	picture = "MAD_Reichenau.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Léon Cayla"
+	name = "Reichsprotektor Walter Karl von Reichenau"
 	desc = ""
-	picture = "gfx/leaders/MAD/Portrait_Leon_Cayla.dds"
-	ideology = despotism
-	expire = "1965.4.25"
+	picture = "MAD_Reichenau.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
 	traits = {
-		#
+	}
+}
+
+
+create_country_leader = {
+	name = "Commandant en Chef Gabriel Ramanantsoa"
+	desc = ""
+	picture = "MAD_Ramanantsoa_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reine Marie-Louise I Ranavalo"
+	desc = ""
+	picture = "MAD_Louise.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reine Marie-Louise I Ranavalo"
+	desc = ""
+	picture = "MAD_Louise.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir Tom Spencer Phillips"
+	desc = ""
+	picture = "MAD_Phillips_conmon.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gubernator Marian Wlodzimierz Kukiel"
+	desc = ""
+	picture = "MAD_Kukiel_cendem.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Philibert Tsiranana"
+	desc = ""
+	picture = "MAD_Tsiranana_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
 	}
 }
