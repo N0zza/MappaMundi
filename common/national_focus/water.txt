@@ -3212,6 +3212,9 @@
 					JMB = {
 						transfer_state = PREV
 						set_cosmetic_tag = HOL_ORANGE
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+							}
 						}
 					}
 				every_country = {
@@ -3255,6 +3258,9 @@
 					BEI = {
 						transfer_state = PREV
 						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = fascism
+							}
 						}
 					}
 				every_state = {
@@ -3426,8 +3432,85 @@
 				every_country = {
 					limit = {
 						capital_scope = { is_core_of = SLW }
+						NOT = {
+							capital_scope = { is_core_of = NSI }
+							tag = BGG
+							tag = TJO
+							tag = BNK
+							tag = GRT
+							tag = BLM
+							tag = BUO
+							}
 						}
 					drop_cosmetic_tag = yes
+					}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = SSN
+							is_core_of = SPP
+							is_core_of = AAA
+							is_core_of = LTA
+							}
+						}
+					WJO = {
+						transfer_state = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = AGN
+						}
+					AGN = {
+						transfer_state = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = GOW
+						}
+					GOW = {
+						transfer_state = PREV
+						set_cosmetic_tag = HOL_ORANGE
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = BNE
+						}
+					BNE = {
+						transfer_state = PREV
+						set_cosmetic_tag = HOL_ORANGE
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = UNA
+						}
+					UNA = {
+						transfer_state = PREV
+						set_cosmetic_tag = HOL_ORANGE
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = BLI
+						}
+					BLI = {
+						transfer_state = PREV
+						set_politics = {
+							ruling_party = democratic_monarchism
+							}
+						}
+					}
+				ETM = {
+					transfer_state = 8196
+					transfer_state = 14606
+					}
+				TN2 = {
+					transfer_state = 3123
+					transfer_state = 3119
+					transfer_state = 14547
 					}
 				}
 			}
