@@ -3494,6 +3494,51 @@
 					}
 				every_state = {
 					limit = {
+						is_core_of = RMB
+						}
+					RMB = {
+						transfer_state = PREV
+						set_cosmetic_tag = HOL_ORANGE
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = FTG
+						}
+					FTG = {
+						transfer_state = PREV
+						set_cosmetic_tag = HOL_ORANGE
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = ATI
+						}
+					ATI = {
+						transfer_state = PREV
+						set_cosmetic_tag = HOL_ORANGE
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = AID
+						}
+					AID = {
+						transfer_state = PREV
+						set_cosmetic_tag = HOL_ORANGE
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = KW2
+						}
+					KW2 = {
+						transfer_state = PREV
+						set_cosmetic_tag = HOL_ORANGE
+						}
+					}
+				every_state = {
+					limit = {
 						is_core_of = BLI
 						}
 					BLI = {
@@ -3502,6 +3547,26 @@
 							ruling_party = democratic_monarchism
 							}
 						}
+					}
+				PHI = {
+					set_politics = {
+						ruling_party = stratocratic_monarchism
+						}
+					set_cosmetic_tag = SPR_YELLOW
+					}
+				PAP = {
+					transfer_state = 14557
+					transfer_state = 14570
+					transfer_state = 14556
+					transfer_state = 3824
+					transfer_state = 14569
+					transfer_state = 3820
+					transfer_state = 14554
+					transfer_state = 13060
+					transfer_state = 3819
+					transfer_state = 3823
+					transfer_state = 14573
+					set_cosmetic_tag = TRIBAL_BROWN
 					}
 				ETM = {
 					transfer_state = 8196
@@ -7713,6 +7778,7 @@
 			}
 		PHI = {
 			drop_cosmetic_tag = yes
+			
 			set_politics = {
 	       		ruling_party = liberal_republic
            		}
