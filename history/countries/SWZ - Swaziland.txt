@@ -6,12 +6,12 @@ set_cosmetic_tag = SWZ_ENG
 	set_popularities = {
 		democratic 
 			 = 0
-		fascism
-			 = 0
-		communism
-			 = 0
+		monarchism
+			 = 10
+		conservative_monarchism
+			 = 10
 		authoritarian_monarchism 
-			 = 100
+			 = 80
 		
 	}
 	set_politics = { 
@@ -28,5 +28,25 @@ create_country_leader = {
 	expire = "1978.10.27"
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "King Sobhuza II of Dlamini"
+	desc = ""
+	picture = "SWZ_Sobhuza_mon.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Ngwenyama Sobhuza II of Dlamini"
+	desc = ""
+	picture = "SWZ_Sobhuza_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
 	}
 }

@@ -15,16 +15,25 @@ set_convoys = 10
 set_popularities = {
 	        democratic = 10
         communism = 5
-        fascism = 25
-        neutrality = 60
+        fascism = 5
+        monarchism = 80
 
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Mbumu wa Litunga Yeta III of Barotse"
+	desc = ""
+	picture = "BSL_Yeta_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
