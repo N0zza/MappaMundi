@@ -5380,6 +5380,70 @@ on_actions = {
 						set_cosmetic_tag = POR_MONARCHISM
 					}
 				}
+				if = {
+					limit = {tag = INS}
+					drop_cosmetic_tag = yes
+					if = {
+						limit = {
+							has_government = fascism
+						}
+						set_cosmetic_tag = JAP_COLONY
+					}
+					if = {
+						limit = {
+							has_government = democratic
+						}
+						set_cosmetic_tag = FRA_BLUE
+					}
+					if = {
+						limit = {
+							has_government = centrist_monarchism
+						}
+						set_cosmetic_tag = SPR_YELLOW
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = POR_COLONY
+					}
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = GREY_GER3
+					}
+					if = {
+						limit = {
+							has_government = anarchism_ideology
+						}
+						set_cosmetic_tag = TRIBAL_BROWN
+					}
+					if = {
+						limit = {
+							OR = {
+							has_government = socialist_monarchy
+							has_government = liberal_republic
+							has_government = democratic_monarchism
+							has_government = centrist_republic
+							has_government = theocratic
+							has_government = republican_fascism
+							}
+						}
+						set_cosmetic_tag = INS_GREY
+					}
+					if = {
+						limit = {
+							OR = {
+							has_government = vanguardism
+							has_government = communism
+							has_government = left_anarchism
+							has_government = socialism_ideology
+							}
+						}
+						set_cosmetic_tag = INS_SOCIALIST
+					}
+				}
 			}
 		}
 	}
