@@ -13,18 +13,37 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	        democratic = 10
-        communism = 5
-        fascism = 25
-        neutrality = 60
+	        democratic = 0
+        communism = 0
+        monarchism = 60
+        neutrality = 40
 
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Sultan Akhemuk ag Ihemma"
+	desc = ""
+	picture = "AGD_Akhemuk.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Sultan Akhemuk ag Ihemma"
+	desc = ""
+	picture = "AGD_Akhemuk.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
