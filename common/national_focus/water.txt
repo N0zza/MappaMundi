@@ -7063,6 +7063,7 @@
 						POL = {
 							transfer_state = PREV
 								}
+							do_polish_renames = yes
 							}
 						every_state = {
 						limit = {
@@ -7329,6 +7330,11 @@
 				}
 			drop_cosmetic_tag = yes
 			}
+		ALN = {
+			set_politics = {
+				ruling_party = centrist_republic
+				}
+			}
 		LIT = {
 			set_politics = {
 				ruling_party = republican_fascism
@@ -7582,6 +7588,12 @@
 					add_state_core = PREV
 						}
 					do_pinyin_renames = yes
+					}
+				every_state = {
+					limit = {
+						is_owned_by = KAZ
+					}
+					do_kazakh_renames = yes
 					}
 				every_state = {
 					limit = {
@@ -7919,25 +7931,31 @@
 					transfer_state = PREV
 						}
 					}
-			every_state = {
-				limit = {
-					is_core_of = KPK
-					}
-				UZB = {
-					transfer_state = PREV
-					}
-				}
-		UZB = {
+		KPK = {
 			transfer_state = 8996
 			transfer_state = 8997
 			transfer_state = 8998
 			transfer_state = 8999
 			transfer_state = 9000
 			transfer_state = 9001
+			set_cosmetic_tag = UZB_BLUE
+			set_politics = {
+	       		ruling_party = democratic
+            	}	
+			}
+		UZB = {
+			transfer_state = 585
+			transfer_state = 1372
+			transfer_state = 12238
+			transfer_state = 12411
+			transfer_state = 12416
+			transfer_state = 12417
+			transfer_state = 12466
+			transfer_state = 12595
 			drop_cosmetic_tag = yes
 			set_politics = {
 	       		ruling_party = democratic
-            			}	
+            	}	
 			}
 		TAJ = {
 			drop_cosmetic_tag = yes
@@ -7964,10 +7982,12 @@
 			transfer_state = 12224
 			transfer_state = 12250
 			transfer_state = 10132
+			transfer_state = 12224
 			transfer_state = 12375
 			transfer_state = 12376
 			transfer_state = 12377
 			drop_cosmetic_tag = yes
+			set_capital = 590
 			set_politics = {
 	       		ruling_party = democratic
            		}	
@@ -8148,11 +8168,11 @@
             }
         QAT = {
 			drop_cosmetic_tag = yes
-            }
-        KUW = {
 			set_politics = {
 				ruling_party = conservative_monarchism
 				}
+            }
+        KUW = {
 			drop_cosmetic_tag = yes
             }
 		every_state = {
@@ -8351,7 +8371,7 @@
 		GEO = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
 				}
 			}
 		SOS = {
@@ -8798,6 +8818,9 @@
 			transfer_state = 8139
 			transfer_state = 12367
 			transfer_state = 12368
+			set_politics = {
+				ruling_party = democratic
+				}
 		}
 		MOR = {
 			transfer_state = 6739
@@ -8863,6 +8886,16 @@
 		TZN = {
 			drop_cosmetic_tag = yes
 			set_capital = 1523
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		RWA = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		BRD = {
 			set_politics = {
 				ruling_party = democratic
 				}
@@ -9054,7 +9087,7 @@
 		LES = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = monarchism
+				ruling_party = centrist_monarchism
 				}
 			}
 		SWZ = {
@@ -9421,6 +9454,7 @@
 			set_politics = {
 				ruling_party = liberal_republic
 				}
+			set_cosmetic_tag = USA_50
 			}
 		CAN = {
 			set_politics = {

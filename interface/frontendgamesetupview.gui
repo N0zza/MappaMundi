@@ -512,7 +512,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 200 y = 15 }
+			position = { x = 0 y = 15 }
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
@@ -601,7 +601,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name ="gamesetup_interesting_countries_window"
-		size = { width=1225 height=717 }
+		size = { width=1375 height=717 }
 		Orientation = center
 		origo = center
 		clipping = no
@@ -614,7 +614,7 @@ guiTypes = {
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
 			text = "FE_SELECT_COUNTRY"
-			maxWidth = 340
+			maxWidth = 490
 			maxHeight = 30	
 			format = centre
 		}
@@ -715,12 +715,12 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "info_title"
-			position = { x = 10 y = 450 }
-			font = "hoi4_typewriter22"
+			position = { x = 35 y = 440 }
+			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = "FE_COUNTRY_INFO_TITLE"
-			maxWidth = 340
-			maxHeight = 30	
+			maxWidth = 250
+			maxHeight = 36	
 			format = centre
 		}
 		
@@ -730,8 +730,8 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "leader_label"
-				position = { x = 0 y = -5 }
-				font = "hoi4_typewriter16"
+				position = { x = 0 y = -2 }
+				font = "hoi4_typewriter22"
 				borderSize = {x = 0 y = 0}
 				text = "LEADER"
 				maxWidth = 340
@@ -740,20 +740,21 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "leader"
-				position = { x = 0 y = 12 }
+				position = { x = 0 y = 32 }
 				textureFile = ""
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				text = ""
-				maxWidth = 340
+				maxWidth = 240
+				maxHeight = 36
 				format = left
 			}
 			
 			instantTextBoxType = {
 				name = "ideology_label"
-				position = { x = 0 y = 35 }
+				position = { x = 0 y = 80 }
 				textureFile = ""
-				font = "hoi4_typewriter16"
+				font = "hoi4_typewriter22"
 				borderSize = {x = 0 y = 0}
 				text = "IDEOLOGY"
 				maxWidth = 340
@@ -762,7 +763,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "ideology"
-				position = { x = 0 y = 52 }
+				position = { x = 0 y = 123 }
 				font = "hoi4_typewriter16"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 340
@@ -833,7 +834,7 @@ guiTypes = {
 			position = { x = 437 y = 429 }
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 340
+			maxWidth = 490
 			maxHeight = 30	
 			format = centre
 		}
@@ -884,7 +885,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "history_title"
-			position = { x = 830 y = 450 }
+			position = { x = 980 y = 450 }
 			font = "hoi4_typewriter22"
 			borderSize = {x = 0 y = 0}
 			text = "FE_COUNTRY_HISTORY_TITLE"
@@ -895,7 +896,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "history"
-			position = { x = 810 y = 490 }
+			position = { x = 960 y = 490 }
 			font = "hoi4_typewriter16"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 380
