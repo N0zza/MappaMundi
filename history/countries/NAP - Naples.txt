@@ -22,60 +22,87 @@ set_technology = {
 
 	set_popularities = {
 		democratic 
-			 = 2
-		fascism
-			 = 6
-		communism
-			 = 2
-		neutrality
-			 = 90
+			 = 40
+		authoritarian_monarchism
+			 = 50
+		conservative_monarchism
+			 = 5
+		monarchism
+			 = 5
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = authoritarian_monarchism
 	last_election = "1960.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Paul Giesler"
+	name = "Re Gioacchino IV di Napoleone-Murat"
 	desc = ""
-	picture = "Portrait_Bavaria_Paul Giesler.dds"
-	expire = "1960.1.1"
-	ideology = nazism
+	picture = "NAP_Murat_stratmon.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Prince Ferdinand Pius"
+	name = "Presidente Giovanni Porzio"
 	desc = ""
-	picture = "Portrait_Kingdom of Two Sicilies_Prince Ferdinand Pius.dds"
-	expire = "1960.1.1"
-	ideology = fascism_ideology
+	picture = "NAP_Porzio_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Fritz Schäffer"
+	name = "Imperatore Ferdinando III di Borbone-Due Sicilie"
 	desc = ""
-	picture = "Portrait_Bavaria_Fritz.dds"
-	expire = "1960.1.1"
-	ideology = socialism
+	picture = "NAP_Ferdinando.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Ernest Louis"
+	name = "Re Ferdinando III di Borbone-Due Sicilie"
 	desc = ""
-	picture = "Portrait_Bavaria_Rupprecht.dds"
-	expire = "1951.1.1"
-	ideology = despotism
+	picture = "NAP_Ferdinando.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Re Ferdinando III di Borbone-Due Sicilie"
+	desc = ""
+	picture = "NAP_Ferdinando.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Capo dei Capi Enrico Alfano"
+	desc = ""
+	picture = "NAP_Alfano_ancap.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Friedrich Kirchner"
+	desc = ""
+	picture = "NAP_Kirchner_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
 	traits = {
 	}
 }
