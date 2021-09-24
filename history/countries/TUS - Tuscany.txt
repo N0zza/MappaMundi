@@ -3,58 +3,55 @@
 oob = "TUS_1936"
 
 set_popularities = {
-	democratic = 3
-	fascism = 4
-	neutrality = 93
+	democratic = 30
+	monarchism = 70
+	neutrality = 0
 }
 
 set_politics = { 
-	ruling_party = neutrality
+	ruling_party = monarchism
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Federal Council"
-	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
-	picture = "Portrait_Switzerland_Federal_council.dds"
+	name = "Presidente Cesare Angelini"
+	desc = ""
+	picture = "TUS_Angelini_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Ernest Béuin"
-	desc = "POLITICS_ERNST_BEGUIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	name = "Re Ferdinando V di Asburgo-Lorena"
+	desc = ""
+	picture = "TUS_Ferdinando.tga"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = conservative_constitutionalism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Dr. Max Leo Keller"
-	desc = "POLITICS_MAX_LEO_KELLER_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
+	name = "Granduca Ferdinando V di Asburgo-Lorena"
+	desc = ""
+	picture = "TUS_Ferdinando.tga"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = absolutism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Fritz Platten"
-	desc = "POLITICS_FRITZ_PLATTEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	name = "Granduca Ferdinando V di Asburgo-Lorena"
+	desc = ""
+	picture = "TUS_Ferdinando.tga"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = authmon
 	traits = {
-		#
 	}
 }
+
