@@ -2735,10 +2735,6 @@
 				every_state = {
 					limit = {
 						OR = {
-							is_core_of = PLS
-							is_core_of = KED
-							is_core_of = KEL
-							is_core_of = TGA
 							is_owned_by = LAO
 							}
 						}
@@ -2871,6 +2867,102 @@
 					SIP = {
 						transfer_state = PREV
 						set_cosmetic_tag = SIA_COLONY
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = PTN
+						}
+					PTN = {
+						transfer_state = PREV
+						set_cosmetic_tag = SIA_COLONY
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = KED
+						}
+					KED = {
+						transfer_state = PREV
+						set_cosmetic_tag = SIA_COLONY
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = KEL
+						}
+					KEL = {
+						transfer_state = PREV
+						set_cosmetic_tag = SIA_COLONY
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = TGA
+						}
+					TGA = {
+						transfer_state = PREV
+						set_cosmetic_tag = SIA_COLONY
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = PLS
+						}
+					PLS = {
+						transfer_state = PREV
+						set_cosmetic_tag = SIA_COLONY
+						}
+					}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = PRK
+							}
+						NOT = {
+							is_core_of = PTN
+							}
+						}
+					PRK = {
+						transfer_state = PREV
+						set_cosmetic_tag = UK_RED
+						}
+					}
+					
+					JOH = {
+					set_cosmetic_tag = nothing
+					}
+					
+				every_state = {
+					limit = {
+						is_core_of = NGS
+						}
+					NGS = {
+						transfer_state = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = SLG
+						}
+					SLG = {
+						transfer_state = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = PHG
+						}
+					PHG = {
+						transfer_state = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						is_core_of = PTN
+						}
+					PTN = {
+						transfer_state = PREV
 						}
 					}
 				CAM = {
