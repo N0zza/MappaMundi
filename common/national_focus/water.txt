@@ -1954,6 +1954,7 @@
 					is_core_of = SUI
 					is_core_of = SB1
 					is_core_of = SB4
+					is_core_of = MCU
 						}
 					}
 				set_demilitarized_zone = no
@@ -2497,6 +2498,8 @@
 					transfer_state = 1322
 					transfer_state = 11605
 					transfer_state = 14078
+					transfer_state = 14657
+					transfer_state = 14656
 					}
 				MAN = {
 					transfer_state = 10442
@@ -2598,6 +2601,8 @@
 					transfer_state = 12458
 					transfer_state = 12420
 					transfer_state = 12400
+					transfer_state = 14370
+					transfer_state = 14371
 					}
 				BKH = {
 					transfer_state = 12238
@@ -3185,7 +3190,10 @@
 					transfer_state = 14432
 					transfer_state = 14433
 					transfer_state = 3358
-	
+					set_cosmetic_tag = TRIBAL_BROWN
+					set_politics = {
+						ruling_party = anarchism_ideology
+						}
 					}
 				every_state = {
 					limit = {
@@ -3193,9 +3201,16 @@
 						}
 					ANZ = {
 						transfer_state = PREV
+						set_cosmetic_tag = TRIBAL_BROWN
+						set_politics = {
+							ruling_party = anarchism_ideology
+							}
 						}
 					}
 				SAU = {
+					set_politics = {
+						ruling_party = conservative_monarchism
+						}
 					}
 				every_state = {
 					limit = {
@@ -4581,6 +4596,7 @@
 			transfer_state = 11297
 			transfer_state = 14773
 			transfer_state = 11299
+			transfer_state = 14780
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = theocratic
@@ -5622,9 +5638,6 @@
 						set_politics = {
 							ruling_party = centrist_republic
 							}
-						}
-					ITA = {
-						ruling_party = democratic
 						}
 					SAF = {
 						release = STH
@@ -6782,6 +6795,20 @@
 				transfer_state = PREV
 				}
 			}
+			every_state = {
+				limit = {
+				is_core_of = TRS
+				}
+			TRS = {
+				transfer_state = PREV
+				}
+			}
+		ITA = {
+			transfer_state = 5940
+			set_politics = {
+				ruling_party = liberal_republic
+			}
+		}
 		RUS = {
 			transfer_state = 2414
 			transfer_state = 1081
@@ -7529,7 +7556,7 @@
 			}
 		ITA = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
 				}
 			}
 		SER = {
@@ -7707,6 +7734,7 @@
 						}
 				PRC = {
 					transfer_state = PREV
+					transfer_state = 1270
 					add_state_core = PREV
 						}
 					do_pinyin_renames = yes
@@ -9366,7 +9394,7 @@
 		WTO = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = liberal_republic
 				}
 			}
 		SCM = {
