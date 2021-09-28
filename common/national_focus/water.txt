@@ -8420,23 +8420,31 @@
                 ruling_party = democratic
 				}
 			}
+		add_victory_points = {
+			province = 2621
+			value = 25
+			}
+		set_province_name = {
+			id = 2621
+			name = Islamabad
+			}						
 		PAK = {
 			set_politics = {
 	       		ruling_party = theocratic
             	}
-			set_capital = 11038
+			set_capital = 14847
 			release = BAN
 			}
-				PAK = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "President Arif-ur-Rehman Alvi"
-            			desc = ""
-            			picture = PAK_Alvi.tga
-            			expire = "1965.1.1"
-            			ideology = christian
-						}
-					}
+		PAK = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "President Arif-ur-Rehman Alvi"
+           		desc = ""
+           		picture = PAK_Alvi.tga
+           		expire = "1965.1.1"
+           		ideology = christian
+				}
+			}
 		BRM = {
 			drop_cosmetic_tag = yes
 			set_politics = {
