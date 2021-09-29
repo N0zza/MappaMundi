@@ -83,10 +83,18 @@ on_actions = {
 						do_modern_armenian_renames = yes
 					}
 
+					### DPK ###
+					if = {
+						limit = {
+							ROOT = {tag = DPK}
+						}
+						do_north_korean_renames = yes
+					}
+
 					### KOR ###
 					if = {
 						limit = {
-							ROOT = {OR = {tag = DPK tag = ROK tag = KOR}}
+							ROOT = {OR = {tag = ROK tag = KOR}}
 						}
 						do_korean_renames = yes
 					}
