@@ -8595,33 +8595,42 @@
 		    transfer_state = 3352
 			transfer_state = 14409
 			drop_cosmetic_tag = yes
-		    } 
-				JOR = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Milk Abdullah II bin Al-Hussein"
-            			desc = ""
-            			picture = JOR_Abdullah.tga
-            			expire = "1965.1.1"
-            			ideology = conservative_constitutionalism
-						}
-					}
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Milk Abdullah II bin Al-Hussein"
+           		desc = ""
+           		picture = JOR_Abdullah.tga
+           		expire = "1965.1.1"
+           		ideology = conservative_constitutionalism
+			}
+		} 
         BHR = {
 			drop_cosmetic_tag = yes
 		    transfer_state = 3276
 			set_politics = {
 				ruling_party = conservative_monarchism
-				}
-            }
+			}
+        }
         QAT = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = conservative_monarchism
-				}
-            }
+			}
+        }
         KUW = {
 			drop_cosmetic_tag = yes
-            }
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Amir Nawaf Al-Ahmad Al-Jaber Al-Sabah"
+           		desc = ""
+           		picture = KUW_Nawaf.tga
+           		expire = "1965.1.1"
+           		ideology = absolutism
+			}
+        }
 		every_state = {
 			limit = {
 				is_core_of = YEM
@@ -8641,16 +8650,6 @@
 				transfer_state = PREV
 				}
 			}
-				KUW = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Amir Nawaf Al-Ahmad Al-Jaber Al-Sabah"
-            			desc = ""
-            			picture = KUW_Nawaf.tga
-            			expire = "1965.1.1"
-            			ideology = absolutism
-						}
-					}
 		YEM = {
 			set_politics = {
 	        ruling_party = democratic
@@ -8673,52 +8672,46 @@
 			set_politics = {
 	        ruling_party = authoritarian_monarchism
               }
-	    } 
-				OMA = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Sultan Haitham bin Tariq Al Said"
-            			desc = ""
-            			picture = OMA_Haitham.tga
-            			expire = "1965.1.1"
-            			ideology = authmon
-						}
-					}
+			kill_country_leader = yes
+			create_country_leader = {
+            	name = "Sultan Haitham bin Tariq Al Said"
+            	desc = ""
+            	picture = OMA_Haitham.tga
+            	expire = "1965.1.1"
+            	ideology = authmon
+			}
+		}
 		IRQ = {
 			transfer_state = 3349
 			transfer_state = 12035
 			transfer_state = 14418
 			set_politics = {
-	        	ruling_party = democratic
-        		}
+	        ruling_party = democratic
+        	}
+			kill_country_leader = yes
+			create_country_leader = {
+            	name = "Rayiys Barham Salih"
+            	desc = ""
+            	picture = IRQ_Salih.tga
+            	expire = "1965.1.1"
+            	ideology = conservatism
 			}
-				IRQ = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Rayiys Barham Salih"
-            			desc = ""
-            			picture = IRQ_Salih.tga
-            			expire = "1965.1.1"
-            			ideology = conservatism
-						}
-					}
+		}
 		PAL = {
 			set_politics = {
 	        ruling_party = neutrality
               }
 			drop_cosmetic_tag = yes
-			set_capital = 3377			
+			set_capital = 3377		
+			kill_country_leader = yes
+			create_country_leader = {
+            	name = "Rayiys Mahmoud Abbas"
+            	desc = ""
+            	picture = PAL_Abbas.tga
+            	expire = "1965.1.1"
+            	ideology = oligarchism
+			}	
 		}
-				PAL = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Rayiys Mahmoud Abbas"
-            			desc = ""
-            			picture = PAL_Abbas.tga
-            			expire = "1965.1.1"
-            			ideology = oligarchism
-						}
-					}
 		SAU = {
 		    transfer_state = 6650
 		    transfer_state = 8070
@@ -8730,17 +8723,15 @@
 		    transfer_state = 4794
 		    transfer_state = 3358
 			transfer_state = 14392
+			kill_country_leader = yes
+			create_country_leader = {
+            	name = "Khadim al-Haramayn aa-Sarifayn Salman bin Abdulaziz Al Saud"
+            	desc = ""
+            	picture = SAU_Salman.tga
+            	expire = "1965.1.1"
+            	ideology = absolutism
+			}
 		}
-				SAU = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Khadim al-Haramayn aa-Sarifayn Salman bin Abdulaziz Al Saud"
-            			desc = ""
-            			picture = SAU_Salman.tga
-            			expire = "1965.1.1"
-            			ideology = absolutism
-						}
-					}
 		TUR = {
 		    transfer_state = 5699
 		    transfer_state = 5689
@@ -8750,9 +8741,34 @@
 		}
 		every_state = { 
             limit = { 
+				OR = {
+				is_owned_by = OMA
+				is_owned_by = YEM
+				is_owned_by = SAU
+				is_owned_by = UAE
+				is_owned_by = QAT
+				is_owned_by = BHR
+				is_owned_by = KUW
+				is_owned_by = IRQ
+				is_owned_by = JOR
+				is_owned_by = PAL
+				is_owned_by = SYR
+				is_owned_by = EGY
+				is_owned_by = SUD
+				is_owned_by = LIB
+				is_owned_by = TUN
+				is_owned_by = ALG
+				is_owned_by = MOR
+				}
+			}
+			do_standard_arabic_renames = yes
+        }
+		every_state = { 
+            limit = { 
 				is_core_of = ISR
 			}
             ISR = { transfer_state = PREV }
+			do_hebrew_renames = yes
         }
 		ISR = {
 		    transfer_state = 1204
@@ -8769,30 +8785,28 @@
 			transfer_state = 931
 			transfer_state = 3406	
 			transfer_state = 3377
+			kill_country_leader = yes
+			create_country_leader = {
+            	name = "Nesi Isaac Herzog"
+            	desc = ""
+            	picture = ISR_Rivlin.tga
+            	expire = "1965.1.1"
+            	ideology = despotism
+			}
 		}
-				ISR = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Nesi Isaac Herzog"
-            			desc = ""
-            			picture = ISR_Rivlin.tga
-            			expire = "1965.1.1"
-            			ideology = despotism
-						}
-					}
 		NOC = {
 			set_politics = {
 				ruling_party = democratic
-				}
+			}
 			transfer_state = 1168
 			transfer_state = 7597
-			}
+		}
 		CYP = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
-				}
 			}
+		}
 			every_state = {
 				limit = {
 					OR = {
