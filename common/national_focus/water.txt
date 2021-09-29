@@ -6408,6 +6408,7 @@
 						UKR = {
 							transfer_state = PREV
 								}
+						do_ukrainian_renames = yes
 							}
 					every_state = {
 						limit = {
@@ -7478,6 +7479,12 @@
 				}
 			drop_cosmetic_tag = yes
 			}
+		every_state = {
+			limit = {
+				is_owned_by BLR
+				}
+			do_belarusian_renames = yes
+		}
 		ALN = {
 			set_politics = {
 				ruling_party = centrist_republic
@@ -7610,6 +7617,13 @@
 		SPR = {
 			set_politics = {
 				ruling_party = democratic_monarchism
+				}
+			set_cosmetic_tag = SPR_KINGDOM
+			}
+		GIB = {
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = socialist_monarchy
 				}
 			}
 		SMR = {
