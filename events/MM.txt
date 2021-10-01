@@ -3300,6 +3300,205 @@ country_event = { #1938 Japan
 	}
 }
 
+country_event = { #India part 2
+	id = mm.17
+	title = "India Colonial Options"
+	desc = "This page is to colour all of Indian Princely states with a colour all at once, so that you don't have to do it manually or simplify it."
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Raj
+		name = "Raj Colour (Red)"
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { is_core_of = RAJ }
+					}
+				set_cosmetic_tag = RAJ_RED
+				}
+		}
+	}
+	option = { #Britain UK
+		name = "UK Colour (Dark Red)"
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { is_core_of = RAJ }
+					}
+				set_cosmetic_tag = UK_RED
+				}
+		}
+	}
+	option = { #France
+		name = "France Colour (Blue)"
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { is_core_of = RAJ }
+					}
+				set_cosmetic_tag = FRA_BLUE
+				}
+		}
+	}
+	option = { #Pakistan
+		name = "Pakistan Colour (Dark Green)"
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { is_core_of = RAJ }
+					}
+				set_cosmetic_tag = PAK_COLONY
+				}
+		}
+	}
+	option = { #reject
+		name = "Nevermind"
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = { #India part 3
+	id = mm.18
+	title = "India Colonial Options 2"
+	desc = "This page is to colour all of Indian Princely states with a colour all at once, so that you don't have to do it manually or simplify it."
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Nazi German
+		name = "German Colour (Black)"
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { is_core_of = RAJ }
+					}
+				set_cosmetic_tag = GREY_GER3
+				}
+		}
+	}
+	option = { #Monarchist German
+		name = "Monarchist German (Light Grey)"
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { is_core_of = RAJ }
+					}
+				set_cosmetic_tag = GREY_GER2
+				}
+		}
+	}
+	option = { #Portugal
+		name = "Portuguese Colour (Dark Green)"
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { is_core_of = RAJ }
+					}
+				set_cosmetic_tag = POR_GREEN
+				}
+		}
+	}
+	option = { #Monarchist Portugal
+		name = "Monarchist Portuguese Colour (Cyan)"
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { is_core_of = RAJ }
+					}
+				set_cosmetic_tag = POR_MONARCHISM
+				}
+		}
+	}
+	option = { #reject
+		name = "Nevermind"
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = { #India part 4
+	id = mm.19
+	title = "India Colonial Options 3"
+	desc = "This page is to colour all of Indian Princely states with a colour all at once, so that you don't have to do it manually or simplify it."
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #Netherlands
+		name = "Dutch Colour (Orange)"
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { is_core_of = RAJ }
+					}
+				set_cosmetic_tag = DUTCH_ORANGE
+				}
+		}
+	}
+	option = { #Japan
+		name = "Japanese Colour (Purple)"
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { is_core_of = RAJ }
+					}
+				set_cosmetic_tag = JAPAN_WHITE
+				}
+		}
+	}
+	option = { #Soviet
+		name = "Soviet Colourr (Red)"
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { is_core_of = RAJ }
+					}
+				set_cosmetic_tag = RUS_RED
+				}
+		}
+	}
+	option = { 
+		name = "Nevermind"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
 country_event = { #Yeet the princely states
 	id = mm.1
 	title = mm.1.t
@@ -3391,7 +3590,7 @@ country_event = { #Yeet the princely states
 		}
 	}
 	option = { #Modern South Asia
-		name = "Just Decolonize South Asia" 
+		name = "Decolonize South Asia" 
 		ai_chance = {
 			factor = 0
 		}
@@ -3597,6 +3796,48 @@ country_event = { #Yeet the princely states
 		IND = {
 			transfer_state = 320
 			}			
+		}		
+	}
+	option = { #India Princely Colour
+		name = "Decentralized India" 
+		ai_chance = {
+			factor = 0
+			}
+			hidden_effect = {	
+				every_country = {
+					limit = {
+						capital_scope = { is_core_of = IND }
+						}
+					set_cosmetic_tag = RAJ_ORANGE
+					}
+				every_country = {
+					limit = {
+						capital_scope = { is_core_of = PAK }
+						}
+					set_cosmetic_tag = PAK_COLONY
+					}
+			every_state = {
+				limit = {
+					is_core_of = IND
+				OR = {	
+					is_owned_by = RAJ
+					}
+				}
+			IND = {
+				transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = PAK
+				OR = {	
+					is_owned_by = RAJ
+					}
+				}
+			PAK = {
+				transfer_state = PREV
+				}
+			}	
 		}		
 	}
 	option = { #reject
