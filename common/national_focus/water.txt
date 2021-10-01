@@ -6410,7 +6410,6 @@
 						UKR = {
 							transfer_state = PREV
 								}
-						do_ukrainian_renames = yes
 							}
 					every_state = {
 						limit = {
@@ -7207,7 +7206,6 @@
 			POL = {
 				transfer_state = PREV
 					}
-				do_polish_renames = yes
 			}
 			every_state = {
 			limit = {
@@ -7222,12 +7220,6 @@
 			BLR = {
 				transfer_state = PREV
 					}
-				}
-		every_state = {
-			limit = {
-				is_owned_by = BLR
-				}
-			do_belarussian_renames = yes
 				}
 		every_state = {
 			limit = {
@@ -7487,6 +7479,12 @@
 				}
 			do_belarussian_renames = yes
 		}
+		every_state = {
+			limit = {
+				is_owned_by = POL
+			}
+			do_polish_renames = yes
+			}
 		ALN = {
 			set_politics = {
 				ruling_party = centrist_republic
