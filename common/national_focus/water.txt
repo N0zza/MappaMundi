@@ -8505,6 +8505,16 @@
                 ruling_party = democratic
 				}
 			}
+		MLD = {
+			kill_country_leader = yes
+			create_country_leader = {
+            	name = "President Ibrahim Mohamed Solih"
+            	desc = ""
+            	picture = MLD_Ibrahim_Solih.tga
+            	expire = "1965.1.1"
+            	ideology = conservatism
+				}
+			}
 		add_victory_points = {
 			province = 2621
 			value = 25
@@ -10732,16 +10742,25 @@
 				}
 			set_capital = 1646
 			}
-				BRA = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Presidente Jair Messias Bolsonaro"
-            			desc = ""
-            			picture = BRA_fela.tga
-            			expire = "1965.1.1"
-            			ideology = cenrep
-						}
-					}
+		BRA = {
+			create_country_leader = {
+           		name = "Presidente Jair Messias Bolsonaro"
+           		desc = ""
+           		picture = BRA_fela.tga
+           		expire = "1965.1.1"
+           		ideology = cenrep
+				}
+			}
+		PAR = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Presidente Mario Abdo Benítez"
+           		desc = ""
+           		picture = PAR_Mario_Abdo_Benitez.tga
+           		expire = "1965.1.1"
+           		ideology = conservatism
+				}
+			}
 		TRI = {
 			drop_cosmetic_tag = yes
 			set_politics = {
