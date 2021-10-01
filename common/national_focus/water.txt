@@ -7901,26 +7901,46 @@
 		CHI = {
 			transfer_state = 2647
 			}
-				PRC = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Zongtong Xi Jinping"
-            			desc = ""
-            			picture = PRC_pooh.tga
-            			expire = "1965.1.1"
-            			ideology = demsoc
-						}
-					}
+		PRC = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Zongtong Xi Jinping"
+           		desc = ""
+           		picture = PRC_pooh.tga
+           		expire = "1965.1.1"
+           		ideology = demsoc
+				}
+			}
 		HKG = {
 			set_cosmetic_tag = HKG_PRC
 			set_politics = {
                     ruling_party = socialism_ideology
 				}
 			}
+		HKG = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Chief Executive Ho Iat-seng"
+           		desc = ""
+           		picture = MCU_Ho_Iat-seng.tga
+           		expire = "1965.1.1"
+           		ideology = demsoc
+				}
+			}
 		MCU = {
 			set_cosmetic_tag = MCU_PRC
 			set_politics = {
                     ruling_party = socialism_ideology
+				}
+			}
+		HKG = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Chief Executive Carrie Lam Cheng Yuet-ngor"
+           		desc = ""
+           		picture = HKG_Carrie_Lam.tga
+           		expire = "1965.1.1"
+           		ideology = demsoc
 				}
 			}
 		MON = {
