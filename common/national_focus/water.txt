@@ -8615,20 +8615,30 @@
 				ruling_party = theocratic
 				}
 			}
-				BRM = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Nuing Ngam Tau Samma Ta Win Myint"
-            			desc = ""
-            			picture = BRM_Myint.tga
-            			expire = "1965.1.1"
-            			ideology = conservatism
-						}
-					}
+		BRM = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Nuing Ngam Tau Samma Ta Win Myint"
+           		desc = ""
+           		picture = BRM_Myint.tga
+           		expire = "1965.1.1"
+           		ideology = conservatism
+				}
+			}
 	    ENG = {
 		transfer_state = 1170
 		transfer_state = 1169
-		}
+			}
+		ENG = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Queen Elizabeth II"
+           		desc = ""
+           		picture = ENG_Queen_Elizabeth_II.tga
+           		expire = "1965.1.1"
+           		ideology = conservative_constitutionalism
+				}
+			}
 		every_state = {
 			limit = {
 				is_core_of = UAE
@@ -9431,6 +9441,16 @@
 				transfer_state = PREV
 				}
 			}
+		DGC = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Queen Elizabeth II"
+           		desc = ""
+           		picture = ENG_Queen_Elizabeth_II.tga
+           		expire = "1965.1.1"
+           		ideology = conservative_constitutionalism
+				}
+			}
 		every_state = {
 			limit = {
 				is_owned_by = SUD
@@ -9458,16 +9478,16 @@
 	        	ruling_party = liberal_republic
 				}
 			}
-				EGY = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Rayiys Abdel Fattah Saeed Hussein Khalil el-Sisi"
-            			desc = ""
-            			picture = EGY_Sisi.tga
-            			expire = "1965.1.1"
-            			ideology = socdem
-						}
-					}
+		EGY = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Rayiys Abdel Fattah Saeed Hussein Khalil el-Sisi"
+           		desc = ""
+           		picture = EGY_Sisi.tga
+           		expire = "1965.1.1"
+           		ideology = socdem
+				}
+			}
 		SUD = {
 			transfer_state = 10307
 			transfer_state = 10308
