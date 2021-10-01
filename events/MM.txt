@@ -3491,6 +3491,20 @@ country_event = { #India part 4
 				}
 		}
 	}
+	option = { #None
+		name = "Drop Colours for every Princely state"
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					capital_scope = { is_core_of = RAJ }
+					}
+				drop_cosmetic_tag = yes
+				}
+		}
+	}
 	option = { 
 		name = "Nevermind"
 		ai_chance = {
