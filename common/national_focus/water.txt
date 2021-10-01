@@ -6509,12 +6509,6 @@
 			transfer_state = 80
 			transfer_state = 5376
 			}
-		every_state = {
-			limit = {
-				is_owned_by = UKR
-				}
-			do_ukrainian_renames = yes
-			}
 		BLR = {
 			transfer_state = 4766
 			transfer_state = 4767
@@ -7484,6 +7478,12 @@
 				is_owned_by = POL
 			}
 			do_polish_renames = yes
+			}
+		every_state = {
+			limit = {
+				is_owned_by = UKR
+			}
+			do_ukrainian_renames = yes
 			}
 		ALN = {
 			set_politics = {
