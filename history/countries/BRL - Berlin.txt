@@ -19,12 +19,12 @@ set_technology = {
 }
 
 set_popularities = {
-	fascism
+	republican_fascism
 		= 100
 }
 
 set_politics = { 
-	ruling_party = fascism
+	ruling_party = republican_fascism
 	last_election = "1960.1.1"
 	election_frequency = 50
 	elections_allowed = no
@@ -37,6 +37,16 @@ create_country_leader = {
 	expire = "1960.1.1"
 	ideology = natsoc
 	traits = {
-		#
+		
+	}
+}
+create_country_leader = {
+	name = "Reykhskommissar Baldur Goltz"
+	desc = ""
+	picture = "gfx/leaders/HYP/HYP_Goltz.tga"
+	expire = "1960.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
 	}
 }
