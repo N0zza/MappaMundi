@@ -5162,32 +5162,16 @@
 			}
 		every_state = {
 			limit = {
-				is_core_of = CUU
+				is_core_of = MRL
 				}
-			CUU = {
+			MRL = {
 				transfer_state = PREV
+				set_cosmetic_tag = SOV_RED
+				set_politics = {
+					ruling_party = socialism_ideology
+						}
 					}
 				}
-		every_state = {
-			limit = {
-				is_core_of = RGA
-				NOT = {
-					is_core_of = TEX
-					}
-				}
-				set_demilitarized_zone = yes
-				}
-		every_state = {
-			limit = {
-				is_core_of = SON
-				}
-				set_demilitarized_zone = yes
-				}
-		3676 = { set_demilitarized_zone = yes }
-		9453 = { set_demilitarized_zone = yes }
-		9462 = { set_demilitarized_zone = yes }
-		6181 = { set_demilitarized_zone = no }
-		3680 = { set_demilitarized_zone = no }
 		CHL = {
 			transfer_state = 1673
 			}
