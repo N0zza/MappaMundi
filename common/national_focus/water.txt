@@ -7084,6 +7084,17 @@
 			hidden_effect = {
 				if = {
 					limit = { UCL = { exists = no } }
+		##Water
+		WTR = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Wilem Powerfish"
+				desc = ""
+				picture = WTR_Wilem_Powerfish.tga
+				expire = "1965.1.1"
+				ideology = total_anarchist
+				}
+			}
 		##EUROPE 2021
 		GER = {
 			release = CZC
@@ -7135,9 +7146,6 @@
 				ruling_party = centrist_republic
 				}
 			drop_cosmetic_tag = yes
-			}
-		SLB = {
-			transfer_state = 13075
 			}
 		every_state = {
 			limit = {
