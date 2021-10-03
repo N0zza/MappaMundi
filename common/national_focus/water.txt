@@ -1533,7 +1533,7 @@
 						add_state_core = PREV
 						set_cosmetic_tag = USCA
 						set_politics = {
-						ruling_party = neutrality
+							ruling_party = neutrality
 							}
 						}
 					}
@@ -10638,7 +10638,12 @@
            		desc = ""
            		picture = COS_Carlos_Alvarado_Quesada.tga
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = socialism
+				}
+			}
+		PAN = {
+			set_politics = {
+				ruling_party = liberal_republic
 				}
 			}
 		PAN = {
@@ -10648,11 +10653,14 @@
            		desc = ""
            		picture = PAN_Laurentino_Cortizo.tga
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = socdem
 				}
 			}
 		HON = {
 			transfer_state = 2511
+			set_politics = {
+				ruling_party = democratic
+				}
 			}
 		HON = {
 			kill_country_leader = yes
@@ -10661,12 +10669,12 @@
            		desc = ""
            		picture = HON_Juan_Orlando_Hernandez.tga
            		expire = "1965.1.1"
-           		ideology = neutrality
+           		ideology = conservatism
 				}
 			}
 		ELS = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
 				}
 			}
 		ELS = {
@@ -10676,7 +10684,12 @@
            		desc = ""
            		picture = ELS_Nayib_Bukele.tga
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = cenrep
+				}
+			}
+		GUA = {
+			set_politics = {
+				ruling_party = neutrality
 				}
 			}
 		GUA = {
@@ -10686,11 +10699,14 @@
            		desc = ""
            		picture = GUA_Alejandro_Giammattei.tga
            		expire = "1965.1.1"
-           		ideology = stratocratic
+           		ideology = centrism
 				}
 			}
 		NIC = {
 			transfer_state = 2452
+			set_politics = {
+				ruling_party = socialism_ideology
+				}
 			}
 		NIC = {
 			kill_country_leader = yes
@@ -10699,7 +10715,7 @@
            		desc = ""
            		picture = NIC_Daniel_Ortega.tga
            		expire = "1965.1.1"
-           		ideology = liberal_republic
+           		ideology = demsoc
 				}
 			}
 		BAH = {
