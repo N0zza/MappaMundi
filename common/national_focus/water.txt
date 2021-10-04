@@ -8957,6 +8957,12 @@
             	ideology = despotism
 			}
 		}
+		every_state = { 
+            limit = { 
+				is_owned_by = ISR
+			}
+			do_hebrew_renames = yes
+        }
 		NOC = {
 			set_politics = {
 				ruling_party = democratic
@@ -9472,7 +9478,7 @@
 			create_country_leader = {
            		name = "Queen Elizabeth II of Windsor"
            		desc = ""
-           		picture = ENG_Queen_Elizabeth_II.tga
+           		picture = DGC_Queen_Elizabeth_II.tga
            		expire = "1965.1.1"
            		ideology = authmon
 				}
@@ -9643,7 +9649,7 @@
 		ERI = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = socialism_ideology
 				}
 			}
 		ERI = {
@@ -9796,7 +9802,7 @@
         		desc = ""
         		picture = BRD_Evariste_Ndayishimiye.tga
         		expire = "1965.1.1"
-        		ideology = centrism
+        		ideology = liberalism
 				}
 			}
 		NGR = {
@@ -10028,7 +10034,17 @@
 		CVD = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
+				}
+			}
+		CVD = {
+			kill_country_leader = yes
+			create_country_leader = {
+            	name = "Presidente Jorge Carlos de Almeida Fonseca"
+            	desc = ""
+            	picture = CVD_Jorge_Carlos_Fonseca.tga
+            	expire = "1965.1.1"
+            	ideology = cenrep
 				}
 			}
 		GAM = {
@@ -10044,14 +10060,14 @@
             	desc = ""
             	picture = GAM_Adama_Barrow.tga
             	expire = "1965.1.1"
-            	ideology = centrism
+            	ideology = liberalism
 				}
 			}
 		GNB = {
 			transfer_state = 2813
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = socialism_ideology
 				}
 			}
 		GNB = {
@@ -10067,7 +10083,17 @@
 		SIE = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
+				}
+			}
+		SIE = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "President Julius Maada Bio"
+           		desc = ""
+           		picture = SIE_Julius_Maada.tga
+           		expire = "1965.1.1"
+           		ideology = socdem
 				}
 			}
 		GHA = {
@@ -10092,7 +10118,7 @@
            		desc = ""
            		picture = LIB_George_Weah.tga
            		expire = "1965.1.1"
-           		ideology = centrism
+           		ideology = liberalism
 				}
 			}
 		NGA = {
@@ -10113,7 +10139,7 @@
 			}
 		EQG = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = neutrality
 				}
 			drop_cosmetic_tag = yes
 			}
@@ -10140,7 +10166,7 @@
            		desc = ""
            		picture = SAO_Carlos_Vila_Nova.tga
            		expire = "1965.1.1"
-           		ideology = centrism
+           		ideology = liberalism
 				}
 			}
 		COG = {
@@ -10325,6 +10351,16 @@
 				ruling_party = democratic
 				}
 			}
+		SEY = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Président Wavel Ramkalawan"
+        		desc = ""
+        		picture = SEY_Wavel_Ramkalawan.png
+        		expire = "1965.1.1"
+        		ideology = liberalism
+				}
+			}
 		MAD = {
 			drop_cosmetic_tag = yes
 			set_politics = {
@@ -10344,12 +10380,47 @@
 		MRS = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
+				}
+			}
+		MRS = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Président Prithvirajsing Roopun"
+        		desc = ""
+        		picture = MRS_Prithvirajsing_Roopun.tga
+        		expire = "1965.1.1"
+        		ideology = socdem
 				}
 			}
 		COM = {
 			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}
+		COM = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Président Azali Assoumani"
+        		desc = ""
+        		picture = COM_Azali_Assoumani.tga
+        		expire = "1965.1.1"
+        		ideology = socdem
+				}
+			}
+		REU = {
+			set_politics = {
 				ruling_party = democratic
+				}
+			}
+		REU = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Président Emmanuel Jean-Michel Frédéric Macron"
+        		desc = ""
+        		picture = FRA_Emmanuel_Macron.tga
+        		expire = "1965.1.1"
+        		ideology = liberalism
 				}
 			}
 		WTO = {
@@ -10377,7 +10448,7 @@
 				ruling_party = neutrality
 				}	
 			}
-		WTO = {
+		SCM = {
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "President Samuel Ikome Sako"
@@ -10733,6 +10804,16 @@
 				add_state_core = PREV
 			}
 		}
+		FRA = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Président Emmanuel Jean-Michel Frédéric Macron"
+        		desc = ""
+        		picture = FRA_Emmanuel_Macron.tga
+        		expire = "1965.1.1"
+        		ideology = liberalism
+				}
+			}
 		USA = {
 			set_politics = {
 				ruling_party = liberal_republic
