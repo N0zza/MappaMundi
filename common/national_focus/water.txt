@@ -7482,6 +7482,15 @@
 				ruling_party = liberal_republic
 				}
 			}
+		POL = {
+			create_country_leader = {
+        		name = "Prezydent  Andrzej Sebastian Duda"
+        		desc = ""
+        		picture = POL_Andrzej_Duda.tga
+        		expire = "1965.1.1"
+        		ideology = socdem
+				}
+			}
 		UKR = {
 			transfer_state = 2506
 			transfer_state = 7484
@@ -7498,12 +7507,21 @@
 			transfer_state = 80
 			transfer_state = 5376
 			drop_cosmetic_tag = yes
-			set_politics = {
-				ruling_party = socialist_monarchy
-				}
-			}
 			set_province_name = { id = 15825 name = "Donetsk"}
 			set_province_name = { id = 9461 name = "Luhansk"}
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		UKR = {
+			create_country_leader = {
+        		name = "Prezydent Volodymyr Oleksandrovych Zelenskyy"
+        		desc = ""
+        		picture = UKR_Zelensky.tga
+        		expire = "1965.1.1"
+        		ideology = liberalism
+				}
+			}
 		BLR = {
 			transfer_state = 4766
 			transfer_state = 4767
@@ -7513,12 +7531,21 @@
 				}
 			drop_cosmetic_tag = yes
 			}
+		BLR = {
+			create_country_leader = {
+        		name = "Prezident Alaksándr Rygóravič Lukašénka"
+        		desc = ""
+        		picture = BLR_Lukashenko.tga
+        		expire = "1965.1.1"
+        		ideology = cenrep
+				}
+			}
 		every_state = {
 			limit = {
 				is_owned_by = BLR
 				}
 			do_belarussian_renames = yes
-		}
+			}
 		every_state = {
 			limit = {
 				is_owned_by = POL
@@ -7536,20 +7563,60 @@
 				ruling_party = centrist_republic
 				}
 			}
+		ALN = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Guvernör Rolf Peter Lindbäck"
+        		desc = ""
+        		picture = ALN_Peter_Lindback.tga
+        		expire = "1965.1.1"
+        		ideology = cenrep
+				}
+			}
 		LIT = {
 			set_politics = {
 				ruling_party = republican_fascism
 				}
 			set_capital = 96
 			}
+		LIT = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Pirmininkas Gitanas Nausėda"
+        		desc = ""
+        		picture = LIT_Nauseda.tga
+        		expire = "1965.1.1"
+        		ideology = fascism_ideology
+				}
+			}
 		LAT = {
 			set_politics = {
 				ruling_party = democratic
 				}
 			}
+		LAT = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Priekšsēdētājs Egils Levits"
+        		desc = ""
+        		picture = LAT_Egils.tga
+        		expire = "1965.1.1"
+        		ideology = liberalism
+				}
+			}
 		EST = {
 			set_politics = {
 				ruling_party = neutrality
+				}
+			}
+		EST = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "President Kersti Kaljulaid"
+        		desc = ""
+        		picture = EST_Kalijukaid.tga
+        		expire = "1965.1.1"
+        		ideology = centrism
 				}
 			}
 		SLO = {
@@ -7596,6 +7663,16 @@
 				ruling_party = democratic
 				}
 			}
+		ROM = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Președinte Klaus Werner Iohannis"
+           		desc = ""
+           		picture = ROM_Iohannis.tga
+           		expire = "1965.1.1"
+           		ideology = conservatism
+				}
+			}
 		BUL = {
 			set_politics = {
 				ruling_party = centrist_republic
@@ -7619,11 +7696,21 @@
 		GRE = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Próedros Katerina Sakellaropoulou"
+        		name = "Próedros Katerína Sakellaropoúlou"
         		desc = ""
         		picture = GRE_Sakellaropoulou.tga
         		expire = "1965.1.1"
         		ideology = socdem
+				}
+			}
+		MAT = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Politikós Dioikitís Thanásis Martínos"
+        		desc = ""
+        		picture = MAT_Thanassis_Martinos.tga
+        		expire = "1965.1.1"
+        		ideology = christian
 				}
 			}
 		MOL = {
@@ -7633,9 +7720,29 @@
 				ruling_party = democratic
 				}
 			}
+		MOL = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Președinte Maia Sandu"
+           		desc = ""
+           		picture = MOL_Maia_Sandu.tga
+           		expire = "1965.1.1"
+           		ideology = liberalism
+				}
+			}
 		TRN = {
 			transfer_state = 790
 			transfer_state = 7325
+			}
+		TRN = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Prezident Vadim Nikolaevich Krasnoselsky"
+           		desc = ""
+           		picture = TRN_Vadim_Krasnoselsky.tga
+           		expire = "1965.1.1"
+           		ideology = oligarchism
+				}
 			}
 		AUS = {
 			set_politics = {
@@ -7697,7 +7804,6 @@
 				}
 			}
 		HUN = {
-			kill_country_leader = yes
 			create_country_leader = {
            		name = "Miniszterelnök Viktor Mihály Orbán"
            		desc = ""
@@ -7948,7 +8054,6 @@
 				}
 			}
 		HOL = {
-			kill_country_leader = yes
 			create_country_leader = {
         		name = "Minister-President Mark Rutte"
         		desc = ""
