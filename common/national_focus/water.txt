@@ -6118,6 +6118,14 @@
 					transfer_state = PREV
 				}
 			}
+			LAO = {
+				transfer_state = 10180
+			}
+			NVI = {
+				transfer_state = 9919
+				transfer_state = 12888
+				transfer_state = 12892
+			}
 			every_state = {
 				limit = {
 					is_core_of = NVI
@@ -6131,13 +6139,12 @@
 				do_vietnamese_renames = yes
 				do_northvietnamese_renames = yes
 			}
-			LAO = {
-				transfer_state = 10180
-			}
-			NVI = {
-				transfer_state = 9919
-				transfer_state = 12888
-				transfer_state = 12892
+			every_state = {
+				limit = {
+					is_owned_by = NVI
+					}
+				do_vietnamese_renames = yes
+				do_northvietnamese_renames = yes
 			}
 			SIA = {
 				set_politics = {
@@ -7509,8 +7516,9 @@
 			drop_cosmetic_tag = yes
 			set_province_name = { id = 15825 name = "Donetsk"}
 			set_province_name = { id = 9461 name = "Luhansk"}
+			set_politics = UKR_2021
 			set_politics = {
-				ruling_party = socialist_monarchy
+				ruling_party = democratic
 				}
 			}
 		UKR = {
@@ -7519,7 +7527,7 @@
         		desc = ""
         		picture = UKR_Zelensky.tga
         		expire = "1965.1.1"
-        		ideology = monsoc
+        		ideology = liberalism
 				}
 			}
 		BLR = {
@@ -7827,6 +7835,16 @@
            		ideology = socdem
 				}
 			}
+		OML = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Luogotenente di Gran Maestro Marco Luzzago"
+           		desc = ""
+           		picture = OML_Marco_Luzzago.tga
+           		expire = "1965.1.1"
+           		ideology = christian
+				}
+			}
 		SER = {
 			transfer_state = 5924
 			transfer_state = 9091
@@ -7974,6 +7992,36 @@
         		ideology = demsoc
 				}
 			}
+		FAR = {
+			set_politics = {
+				ruling_party = socialist_monarchy
+				}
+			}
+		FAR = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Rigsombudsmand Lene Moyell Johansen"
+        		desc = ""
+        		picture = FAR_Lene_Moyell_Johansen.tga
+        		expire = "1965.1.1"
+        		ideology = monsoc
+				}
+			}
+		GRL = {
+			set_politics = {
+				ruling_party = socialist_monarchy
+				}
+			}
+		GRL = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Rigsombudsmand Mikaela Engell"
+        		desc = ""
+        		picture = GRL_Mikaela_Engell.tga
+        		expire = "1965.1.1"
+        		ideology = monsoc
+				}
+			}
 		NOR = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -7982,6 +8030,16 @@
         		picture = NOR_King.tga
         		expire = "1965.1.1"
         		ideology = monsoc
+				}
+			}
+		SLB = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Sysselmeann SLKjerstin Askholt"
+        		desc = ""
+        		picture = SLB_Kjerstin_Askholt.tga
+        		expire = "1965.1.1"
+        		ideology = authmon
 				}
 			}
 		SWE = {
@@ -8114,6 +8172,16 @@
 				ruling_party = socialist_monarchy
 				}
 			}
+		GIB = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor Sir David George Steel"
+        		desc = ""
+        		picture = GIB_David_Steel.tga
+        		expire = "1965.1.1"
+        		ideology = monsoc
+				}
+			}
 		SMR = {
 			set_politics = {
 				ruling_party = democratic
@@ -8192,6 +8260,16 @@
 			}
 		WTR = {
 			release = SLD
+			}
+		SLD = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Prince Michael of Sealand"
+           		desc = ""
+           		picture = SLD_Michael_Bates.tga
+           		expire = "1965.1.1"
+           		ideology = absolutism
+				}
 			}
 		IRE = {
 			transfer_state = 3205
@@ -8450,7 +8528,7 @@
 		PRC = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Zongtong Xi Jinping"
+           		name = "Zŏngtŏng Xí Jìnpíng"
            		desc = ""
            		picture = PRC_pooh.tga
            		expire = "1965.1.1"
@@ -8679,7 +8757,7 @@
 				NVI = {
 					kill_country_leader = yes
 					create_country_leader = {
-            			name = "Chu Tich Nguyen Phú Trong"
+            			name = "Chủ tịch Nguyễn Xuân Phúc"
             			desc = ""
             			picture = NVI_Trong.tga
             			expire = "1965.1.1"
@@ -9172,7 +9250,7 @@
               	}	
 				kill_country_leader = yes
 				create_country_leader = {
-            		name = "Rastrapati Ram Nath Kovind"
+            		name = "Rāṣṭrapati Rām Nāth Kovind"
             		desc = ""
             		picture = IND_Kovind.tga
             		expire = "1965.1.1"
@@ -9222,9 +9300,19 @@
 			create_country_leader = {
            		name = "Queen Elizabeth II of Windsor"
            		desc = ""
-           		picture = ENG_Queen_Elizabeth_II.tga
+           		picture = GSY_Queen_Elizabeth_II.tga
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
+				}
+			}
+		MNX = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Lieutenant Governor Sir Richard Hugh Turton Gozney"
+           		desc = ""
+           		picture = MNX_Richard_Gozney.tga
+           		expire = "1965.1.1"
+           		ideology = authmon
 				}
 			}
 		JSY = {
@@ -9232,7 +9320,7 @@
 			create_country_leader = {
            		name = "Queen Elizabeth II of Windsor"
            		desc = ""
-           		picture = ENG_Queen_Elizabeth_II.tga
+           		picture =JSY_Queen_Elizabeth_II.tga
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -9242,7 +9330,7 @@
 			create_country_leader = {
            		name = "Queen Elizabeth II of Windsor"
            		desc = ""
-           		picture = ENG_Queen_Elizabeth_II.tga
+           		picture = SK2_Queen_Elizabeth_II.tga
            		expire = "1965.1.1"
            		ideology = absolutism
 				}
@@ -9380,7 +9468,7 @@
            		desc = ""
            		picture = KUW_Nawaf.tga
            		expire = "1965.1.1"
-           		ideology = absolutism
+           		ideology = cons
 			}
         }
 		every_state = {
@@ -11136,7 +11224,7 @@
 			create_country_leader = {
         		name = "President Samuel Ikome Sako"
         		desc = ""
-        		picture = SCM_Sameul_Sako.tga
+        		picture = SCM_Samuel_Sako.tga
         		expire = "1965.1.1"
         		ideology = moderatism
 				}
@@ -11252,32 +11340,32 @@
 				ruling_party = liberal_republic
 				}
 			}
-				NZL = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Governor-General Dame Patricia Lee Reddy"
-            			desc = ""
-            			picture = NZL_Reddy.tga
-            			expire = "1965.1.1"
-            			ideology = conservative_constitutionalism
-						}
-					}
+		NZL = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Governor-General Dame Patricia Lee Reddy"
+           		desc = ""
+           		picture = NZL_Reddy.tga
+           		expire = "1965.1.1"
+           		ideology = socdem
+				}
+			}
 		PNG = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = neutrality
 				}
 			}
-				PNG = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Governor-General Sir Bob Dadae"
-            			desc = ""
-            			picture = PNG_Dadae.tga
-            			expire = "1965.1.1"
-            			ideology = oligarchism
-						}
-					}
+		PNG = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor-General Sir Bob Dadae"
+        		desc = ""
+        		picture = PNG_Dadae.tga
+        		expire = "1965.1.1"
+        		ideology = oligarchism
+				}
+			}
 		SAM = {
 			drop_cosmetic_tag = yes
 			set_politics = {
@@ -11354,6 +11442,52 @@
 						}
 					}
 		##AMERICAS 2021
+		STH = {
+			transfer_state = 2688
+			transfer_state = 2689
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		STH = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor Philip Edward Rushbrook"
+        		desc = ""
+        		picture = STH_Philip_Rushbrook.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
+			}
+		FAL = {
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		FAL = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor Nigel James Phillips"
+        		desc = ""
+        		picture = FAL_Nigel_Phillips.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
+			}
+		SGE = {
+			transfer_state = 720
+			transfer_state = 2686
+			}
+		SGE = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor Nigel James Phillips"
+        		desc = ""
+        		picture = SGE_Nigel_Phillips.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
+			}
 		every_state = {
 			limit = {
 				is_core_of = NFL
@@ -11481,6 +11615,15 @@
 		every_state = {
 			limit = {
 				is_core_of = CAY
+				}
+			FRA = {
+				transfer_state = PREV
+				add_state_core = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = FAT
 				}
 			FRA = {
 				transfer_state = PREV
