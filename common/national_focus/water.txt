@@ -11491,12 +11491,21 @@
 		every_state = {
 			limit = {
 				is_core_of = NFL
+				NOT = { is_core_of = SPM }
 				}	
 			CAN = {
 				transfer_state = PREV
 				}
 			}
-		
+		every_state = {
+			limit = {
+				is_core_of = SPM
+				}
+			FRA = {
+				transfer_state = PREV
+				add_core_of = PREV
+				}
+			}
 		every_state = {
 			limit = {
 				OR = {
@@ -11646,62 +11655,119 @@
 				}
 			set_cosmetic_tag = USA_50
 			}
-				USA = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "President Joseph Robinette Biden Jr."
-            			desc = ""
-            			picture = USA_Biden.tga
-            			expire = "1965.1.1"
-            			ideology = socdem
-						}
-					}
+		USA = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "President Joseph Robinette Biden Junior"
+        		desc = ""
+        		picture = USA_Biden.tga
+        		expire = "1965.1.1"
+        		ideology = socdem
+				}
+			}
 		CAN = {
 			set_politics = {
 				ruling_party = democratic
 				}
 			}
-				CAN = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Governor General Julie Payette"
-            			desc = ""
-            			picture = CAN_Payette.tga
-            			expire = "1965.1.1"
-            			ideology = conservatism
-						}
-					}
-				MEX = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Presidente Andrés Manuel López Obrador"
-            			desc = ""
-            			picture = MEX_Obrador.tga
-            			expire = "1965.1.1"
-            			ideology = demsoc
-						}
-					}
+		CAN = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor General Julie Payette"
+        		desc = ""
+        		picture = CAN_Payette.tga
+        		expire = "1965.1.1"
+        		ideology = conservatism
+				}
+			}
+		MEX = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Presidente Andrés Manuel López Obrador"
+        		desc = ""
+        		picture = MEX_Obrador.tga
+        		expire = "1965.1.1"
+        		ideology = demsoc
+				}
+			}
 		CUB = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
 				}
 			}
-				CUB = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Presidente Miguel Mario Díaz-Canel Bermúdez"
-            			desc = ""
-            			picture = CUB_Canel.tga
-            			expire = "1965.1.1"
-            			ideology = conservatism
-						}
-					}
+		CUB = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Presidente Miguel Mario Díaz-Canel Bermúdez"
+        		desc = ""
+        		picture = CUB_Canel.tga
+        		expire = "1965.1.1"
+        		ideology = conservatism
+				}
+			}
+		HAI = {
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		HAI = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Président Jovenel Moïse"
+        		desc = ""
+        		picture = HAI_Jovenel_Moise.tga
+        		expire = "1965.1.1"
+        		ideology = liberalism
+				}
+			}
+		DOM = {
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}
+		DOM = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Presidente Luis Rodolfo Abinader Corona"
+        		desc = ""
+        		picture = DOM_Luis_Abinader.tga
+        		expire = "1965.1.1"
+        		ideology = socdem
+				}
+			}
+		set_province_name = { id = 13826 name = "Sankt-Peterburg" }
 		TAC = {
 			set_cosmetic_tag = TAC_ENG
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		TAC = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Governor-General Nigel John Dakin"
+           		desc = ""
+           		picture = TAC_Nigel_Dakin.tga
+           		expire = "1965.1.1"
+           		ideology = conservative_constitutionalism
+				}
 			}
 		CYM = {
 			set_cosmetic_tag = CYM_ENG
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		CYM = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Governor-General Martyn John Roper"
+           		desc = ""
+           		picture = CYM_Martyn_Roper.tga
+           		expire = "1965.1.1"
+           		ideology = conservative_constitutionalism
+				}
 			}
 		BLZ = {
 			drop_cosmetic_tag = yes
@@ -11809,13 +11875,60 @@
 		BAH = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic_monarchism
+				ruling_party = conservative_monarchism
+				}
+			}
+		BAH = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Governor-General Sir Cornelius Alvin Smith"
+           		desc = ""
+           		picture = BAH_Cornelius_Smith.tga
+           		expire = "1965.1.1"
+           		ideology = conservative_constitutionalism
 				}
 			}
 		JAM = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic_monarchism
+				ruling_party = conservative_monarchism
+				}
+			}
+		JAM = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Governor-General Sir Patrick Linton Allen"
+           		desc = ""
+           		picture = JAM_Patrick_Allen.tga
+           		expire = "1965.1.1"
+           		ideology = conservative_constitutionalism
+				}
+			}
+		PUE = {
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = PUE_USA
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}
+		PUE = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "President Joseph Robinette Biden Junior"
+        		desc = ""
+        		picture = PUE_Joe_Biden.tga
+           		expire = "1965.1.1"
+           		ideology = socdem
+				}
+			}
+		WVI = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "President Joseph Robinette Biden Junior"
+        		desc = ""
+        		picture = WVI_Joe_Biden.tga
+           		expire = "1965.1.1"
+           		ideology = socdem
 				}
 			}
 		SOL = {
@@ -11827,45 +11940,249 @@
 		DMC = {
 			transfer_state = 2042
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
+				}
+			}
+		DMC = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "President Charles Angelo Savarin"
+        		desc = ""
+        		picture = DMC_Charles_Savarin.tga
+           		expire = "1965.1.1"
+           		ideology = socdem
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = MTQ
+				}
+			FRA = {
+				transfer_state = PREV
+				add_state_core = PREV
+			}
+		}
+		STL = {
+			transfer_state = 2039
+			set_politics = {
+				ruling_party = conservative_monarchism
 				}
 			}
 		STL = {
-			transfer_state = 2039
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor-General Sir Emmanuel Neville Cenac"
+        		desc = ""
+        		picture = STL_Neville_Cenac.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
 			}
 		EVI = {
 			set_cosmetic_tag = EVI_ENG
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		EVI = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor John James Rankin"
+        		desc = ""
+        		picture = EVI_John_Rankin.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
+			}
+		BAR = {
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		BAR = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor-General Dame Sandra Prunella Mason"
+        		desc = ""
+        		picture = BAR_Sandra_Mason.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
+			}
+		SVC = {
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			set_cosmetic_tag = SVC_ENG
+			}
+		SVC = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor-General Dame Susan Dilys Dougan"
+        		desc = ""
+        		picture = SVC_Susan_Dougan.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
+			}
+		GDA = {
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			set_cosmetic_tag = GDA_ENG
+			}
+		GDA = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor-General Dame Cécile Ellen Fleurette La Grenade"
+        		desc = ""
+        		picture = GDA_Cecile_La_Grenade.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
 			}
 		SKT = {
 			transfer_state = 2315
 			transfer_state = 2316
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = conservative_monarchism
+				}
+			}
+		SKT = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor-General Sir Samuel Weymouth Tapley Seaton"
+        		desc = ""
+        		picture = SKT_Tapley_Seaton.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
+			}
+		ANB = {
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		ANB = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor-General Sir Rodney Errey Lawrence Williams"
+        		desc = ""
+        		picture = ANB_Rodney_Williams.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
 				}
 			}
 		MSR = {
 			transfer_state = 308
 			set_cosmetic_tag = MSR_ENG
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		MSR = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor Andrew John Pearce"
+        		desc = ""
+        		picture = MSR_Andrew_Pearce.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
+			}
+		SSM = {
+			transfer_state = 2314
+			set_cosmetic_tag = HOL_ORANGE
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		SSM = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Gouverneur Eugene Bernard Holiday"
+        		desc = ""
+        		picture = SSM_Eugene_Holiday.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
+			}
+		CRC = {
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = HOL_ORANGE
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		CRC = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Gouverneur Lucille Andrea George-Wout"
+        		desc = ""
+        		picture = CRC_Lucille_George-Wout.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
+			}
+		ARU = {
+			transfer_state = 695
+			set_cosmetic_tag = HOL_ORANGE
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		ARU = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Gouverneur Juan Alfonso Boekhoudt"
+        		desc = ""
+        		picture = ARU_Alfonso_Boekhoudt.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
+			}
+		HOL = {
+			transfer_state = 2313
+			transfer_state = 2394
+			transfer_state = 2395
 			}
 		AGL = {
 			transfer_state = 2392
-			set_cosmetic_tag = AGL_ENG
+			}
+		AGL = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor Dileeni Daniel-Selvaratnam"
+        		desc = ""
+        		picture = AGL_Dileeni_Daniel-Selvaratnam.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = GDL
+				}
+			GDL = {
+				transfer_state = PREV
+				add_state_core = PREV
+				}
 			}
 		ARG = {
 			set_politics = {
 				ruling_party = liberal_republic
 				}
 			}
-				ARG = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Presidente Alberto Ángel Fernández"
-            			desc = ""
-            			picture = ARG_Fernandez.tga
-            			expire = "1965.1.1"
-            			ideology = socdem
-						}
-					}
+		ARG = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Presidente Alberto Ángel Fernández"
+        		desc = ""
+        		picture = ARG_Fernandez.tga
+        		expire = "1965.1.1"
+        		ideology = socdem
+				}
+			}
 		BOL = {
 			set_politics = {
 				ruling_party = socialism_ideology
@@ -11939,13 +12256,45 @@
 		GYA = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
+				}
+			}
+		GYA = {
+			create_country_leader = {
+           		name = "President Mohamed Irfaan Ali"
+           		desc = ""
+           		picture = GYA_Irfaan_Ali.tga
+           		expire = "1965.1.1"
+           		ideology = socdem
 				}
 			}
 		SUR = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
+				}
+			}
+		SUR = {
+			create_country_leader = {
+           		name = "President Chandrikapersad Santokhi"
+           		desc = ""
+           		picture = SUR_Chan_Santokhi.tga
+           		expire = "1965.1.1"
+           		ideology = socdem
+				}
+			}
+		BER = {
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		BER = {
+			create_country_leader = {
+           		name = "Governor Rena Lalgie"
+           		desc = ""
+           		picture = BER_Rena_Lalgie.tga
+           		expire = "1965.1.1"
+           		ideology = conservative_constitutionalism
 				}
 			}
 		BRA = {
@@ -11975,13 +12324,23 @@
            		desc = ""
            		picture = PAR_Mario_Abdo_Benitez.tga
            		expire = "1965.1.1"
-           		ideology = 
+           		ideology = liberalism
 				}
 			}
 		TRI = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
+				}
+			}
+		TRI = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "President Paula-Mae Weekes"
+           		desc = ""
+           		picture = TRI_Paula-Mae_Weekes.tga
+           		expire = "1965.1.1"
+           		ideology = liberalism
 				}
 			}
 		##MISC 2021
