@@ -19,11 +19,13 @@ set_technology = {
 
 	set_popularities = {
 		democratic 
-			 = 100
-		fascism
-			 = 0
-		communism
-			 = 0
+			 = 40
+		liberal_republic
+			 = 30
+		centrist_republic
+			 = 25
+		authoritarian_monarchism
+			 = 5
 		}
 	set_politics = { 
  ruling_party = democratic
@@ -44,41 +46,48 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Venice_City_Council.dds"
 	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Giovanni Battista Gianquinto"
+	desc = ""
+	picture = "VNC_Gianquinto_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Doge Giuseppe Volpi"
+	desc = ""
+	picture = "VNC_Volpi_condem.tga"
+	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Ernest Béuin"
-	desc = "POLITICS_ERNST_BEGUIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	name = "Presidente Umberto Merlin"
+	desc = ""
+	picture = "VNC_Merlin_cenrep.tga"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = cenrep
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Dr. Max Leo Keller"
-	desc = "POLITICS_MAX_LEO_KELLER_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
+	name = "Viceré Pietro Ferdinando d'Asburgo-Lorena"
+	desc = ""
+	picture = "VNC_Ferdinando.tga"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = authmon
 	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Fritz Platten"
-	desc = "POLITICS_FRITZ_PLATTEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
 	}
 }
