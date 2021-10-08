@@ -11323,10 +11323,29 @@
 				}
 		every_state = {
 			limit = {
-				is_core_of = TUV
+				is_core_of = TAH
 				}
-			TUV = {
+			FRA = {
 				transfer_state = PREV
+				add_core_of = PREV
+					}
+				}
+		every_state = {
+			limit = {
+				is_core_of = WAF
+				}
+			FRA = {
+				transfer_state = PREV
+				add_core_of = PREV
+					}
+				}
+		every_state = {
+			limit = {
+				is_core_of = NCL
+				}
+			FRA = {
+				transfer_state = PREV
+				add_core_of = PREV
 					}
 				}
 		NIU = {
@@ -11334,6 +11353,9 @@
 			}
 		CKI = {
 			set_cosmetic_tag = NZL_PURPLE
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
 			}
 		NZL = {
 			set_politics = {
@@ -11369,13 +11391,18 @@
 		SAM = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = liberal_republic
+				}
+			}
+		TUV = {
+			set_politics = {
+				ruling_party = conservative_monarchism
 				}
 			}
 		NAU = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
 				}
 			}
 		SOL = {
@@ -11386,7 +11413,7 @@
 			}
 		VAN = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
 				}
 			}
 		FIJ = {
@@ -11397,11 +11424,26 @@
 			}
 		NMI = {
 			set_cosmetic_tag = USA_BLUE
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}
+		GUM = {
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = USA_BLUE
+			set_politics = {
+				ruling_party = liberal_republic
+				}
 			}
 		KIR = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
+				}
+			}
+		PTC = {
+			set_politics = {
+				ruling_party = conservative_monarchism
 				}
 			}
 		TON = {
@@ -11412,18 +11454,18 @@
 			}
 		FSM = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
 				}
 			}			
 		PLU = {
 			transfer_state = 647
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
 				}
 			}
 		MAR = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
 				}
 			}
 		AST = {
@@ -11431,16 +11473,16 @@
 			transfer_state = 712
 			transfer_state = 2692
 			}
-				AST = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Governor-General David John Hurley"
-            			desc = ""
-            			picture = AST_Hurley.tga
-            			expire = "1965.1.1"
-            			ideology = conservative_constitutionalism
-						}
-					}
+		AST = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Governor-General David John Hurley"
+        		desc = ""
+        		picture = AST_Hurley.tga
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+				}
+			}
 		##AMERICAS 2021
 		STH = {
 			transfer_state = 2688
