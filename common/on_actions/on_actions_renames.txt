@@ -341,6 +341,16 @@ on_actions = {
 						do_ukrainian_renames = yes
 					}
 					
+					### UKR ###
+					if = {
+						limit = {
+							ROOT = {tag = UKR}
+							OR = { has_government = communism
+								has_government = vanguardism}
+						}
+						do_sovietukrainian_renames = yes
+					}
+					
 					### JAP ###
 					if = {
 						limit = {
@@ -350,13 +360,13 @@ on_actions = {
 						do_japanese_renames = yes
 					}
 					
-					### CHI ###
-					if = {
-						limit = {
-							ROOT = {OR = {tag = CHI tag = TWN}}
-						}
-						do_chinese_renames = yes
-					}
+					#### CHI ###
+					#if = {
+					#	limit = {
+					#		ROOT = {OR = {tag = CHI tag = TWN}}
+					#	}
+					#	do_chinese_renames = yes
+					#}
 
 					### RUS ###
 					if = {
@@ -364,6 +374,16 @@ on_actions = {
 							ROOT = {OR = { tag = SOV tag = RUS tag = ADJ tag = ABK tag = TSC tag = SOS}}
 						}
 						do_russian_renames = yes
+					}
+
+					### SOV ###
+					if = {
+						limit = {
+							ROOT = {OR = { tag = SOV tag = RUS tag = ADJ tag = ABK tag = TSC tag = SOS}
+									OR = { has_government = communism
+										   has_government = vanguardism}}
+						}
+						do_soviet_renames = yes
 					}
 					
 					### SAU ###
