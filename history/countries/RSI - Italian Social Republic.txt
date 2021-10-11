@@ -5,24 +5,101 @@ oob = "RSI_1936"
 set_convoys = 20
 
 set_popularities = {
+	republican_fascism
+		= 80
 	national_socialism
-		= 100
+		= 10
+	communism
+		= 5
+	conservative_monarchism
+		= 5
 	}
 
 set_politics = { 
-	ruling_party = national_socialism
+	ruling_party = republican_fascism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Benito Mussolini"
+	name = "Duce Benito Amilcare Andrea Mussolini"
 	desc = ""
 	picture = "Benito_Mussolini.dds"
 	expire = "1965.1.1"
-	ideology = natsoc
+	ideology = repfash
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Viceré Sergio Giorgio d'Beauharnais"
+	desc = ""
+	picture = "RSI_Sergio_stratmon.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Commissario Palmiro Michele Nicola Togliatti"
+	desc = ""
+	picture = "Portrait_Alcide_De_Gasperi.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Ferruccio Parri"
+	desc = ""
+	picture = "RSI_Parri_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+
+create_country_leader = {
+	name = "Comandante Pietro Badoglio"
+	desc = ""
+	picture = "RSI_Badoglio_conmon.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Direttore Adone Zoli"
+	desc = ""
+	picture = "RSI_Zoli_cenrep.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Re Umberto II di Savoia"
+	desc = ""
+	picture = "Portrait_Umberto_II.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Joachim Lemelsen"
+	desc = ""
+	picture = "RSI_Lemelsen_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
 	}
 }
