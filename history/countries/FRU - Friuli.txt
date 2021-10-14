@@ -13,18 +13,27 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	        democratic = 20
-        communism = 5
-        fascism = 15
-        neutrality = 60
+	        democratic = 0
+        socialism_ideology = 100
+        fascism = 0
+        neutrality = 0
 
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = socialism_ideology
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Presidente Pier Paolo Pasolini"
+	desc = ""
+	picture = "FRU_Pasolini_demsoc.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
