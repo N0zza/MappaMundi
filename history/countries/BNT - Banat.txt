@@ -23,59 +23,66 @@ set_technology = {
 	set_popularities = {
 		democratic 
 			 = 10
-		fascism
-			 = 30
+		liberal_republic
+			 = 70
 		communism
-			 = 10
+			 = 0
 		neutrality
-			 = 50
+			 = 20
 		}
 	set_politics = { 
- ruling_party = democratic
+ ruling_party = liberal_republic
 	last_election = "1960.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Paul Giesler"
+	name = "Präsident Josef Janko"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1960.1.1"
-	ideology = nazism
+	picture = "BNT_Janko.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Ernst Toller"
+	name = "Presedinte Stan Vidrighin"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1960.1.1"
-	ideology = stalinism
+	picture = "BNT_Vidrighin_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Fritz Snhider"
+	name = "President Rodney Smith"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1960.1.1"
-	ideology = socialism
+	picture = "BNT_Smith_conrep.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Prince Rupprecht"
+	name = "King of the Gypsies Janos I of Kwiek"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1951.1.1"
-	ideology = despotism
+	picture = "BNT_Kwiek.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Josef Janko"
+	desc = ""
+	picture = "BNT_Janko.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
 	traits = {
 	}
 }
