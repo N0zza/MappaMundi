@@ -7541,7 +7541,7 @@
 			}
 		BLR = {
 			create_country_leader = {
-        		name = "Prezident Alaksándr Rygóravič Lukašénka"
+        		name = "Prezident Alaksándr Ryhóravič Lukašénka"
         		desc = ""
         		picture = BLR_Lukashenko.tga
         		expire = "1965.1.1"
@@ -9732,6 +9732,12 @@
 					transfer_state = PREV
 						}
 				do_azerbaijani_renames = yes
+					}
+			every_state = {
+				limit = {
+					is_owned_by = NGK
+					}
+				do_armenian_renames = yes
 					}
 		AZR = {
 			transfer_state = 4143
