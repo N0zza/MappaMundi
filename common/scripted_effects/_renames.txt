@@ -14712,6 +14712,16 @@ do_russian_renames = {
 
 	if = {
 		limit = {
+			state = 12529
+		}		
+		set_province_name = {
+			id = 3977
+			name = "Ussuriysk"
+		}
+	}
+
+	if = {
+		limit = {
 			state = 3544
 		}		
 		set_province_name = {
@@ -18832,7 +18842,7 @@ do_russian_renames = {
 		}		
 		set_province_name = {
 			id = 3529
-			name = "Volgagrad"
+			name = "Volgograd"
 		}
 	}
 
@@ -18842,7 +18852,7 @@ do_russian_renames = {
 		}		
 		set_province_name = {
 			id = 9417
-			name = "Rostov"
+			name = "Rostov-na-Donu"
 		}
 	}
 
@@ -19058,6 +19068,16 @@ do_russian_renames = {
 }
 
 do_soviet_renames = {
+
+	if = {
+		limit = {
+			state = 12529
+		}		
+		set_province_name = {
+			id = 3977
+			name = "Voroshilov"
+		}
+	}
 
 	if = {
 		limit = {
@@ -26297,6 +26317,10 @@ do_belarussian_renames = {
 			id = 11241
 			name = "Vitebsk"
 		}
+		set_province_name = {
+			id = 11220
+			name = "Orša"
+		}
 	}
 }
 
@@ -26328,7 +26352,7 @@ do_ukrainian_renames = {
 		}		
 		set_province_name = {
 			id = 9417
-			name = "Rostiv"
+			name = "Rostiv-na-Donu"
 		}
 	}
 
