@@ -5,11 +5,11 @@ set_cosmetic_tag = OMN_RAJ
 set_convoys = 10
 
 set_popularities = {
-        monarchism = 80
+        monarchism = 85
         neutrality = 10
-        democratic = 5
+        conservative_monarchism = 5
         communism = 0
-        fascism = 5
+        fascism = 0
 
 }
 
@@ -23,12 +23,64 @@ set_politics = {
 
 
 create_country_leader = {
-	name = "Sultan Said III of al-Said"
+	name = "Sultan Said III bin Taimur al-Said"
 	desc = "POLITICS_SAID_BIN_TAIMUR_DESC"
 	picture = "Portrait_Said_III_bin_Taimur.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Sultan Said III bin Taimur al-Said"
+	desc = "POLITICS_SAID_BIN_TAIMUR_DESC"
+	picture = "Portrait_Said_III_bin_Taimur.dds"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sultan Said III bin Taimur al-Said"
+	desc = "POLITICS_SAID_BIN_TAIMUR_DESC"
+	picture = "Portrait_Said_III_bin_Taimur.dds"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir Henry Colville Barclay Wemyss"
+	desc = ""
+	picture = "OMA_Wemyss_stratmon.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rayiys Suleiman bin Himayer Al Ryami"
+	desc = ""
+	picture = "OMA_Ryami_authrep.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Renato Ricci"
+	desc = ""
+	picture = "OMA_Ricci_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
 	}
 }
