@@ -5275,6 +5275,22 @@ on_actions = {
 					}
 				}
 				if = {
+					limit = {tag = ALB}
+					drop_cosmetic_tag = yes
+					if = {
+						limit = {
+							has_government = fascism
+						}
+						set_cosmetic_tag = ITA_GREEN
+						every_state = {
+							limit = {
+								is_owned_by = ROOT
+							}
+						do_italian_renames = yes
+						}
+					}
+				}
+				if = {
 					limit = {tag = WTO}
 					drop_cosmetic_tag = yes
 					if = {
@@ -5337,7 +5353,39 @@ on_actions = {
 					}
 				}
 				if = {
-					limit = {OR = {tag = URL tag = UR2 tag = ORN tag = ARH tag = CHY tag = SBR tag = YKT tag = TYU tag = TOM tag = IRK tag = DEN tag = NOR tag = FLA tag = WLL tag = URL tag = CRM tag = PL2 tag = LV2 tag = UA2 tag = SLO tag = BLR tag = POL tag = UKR tag = WTO tag = TOG tag = PL2 tag = CZC tag = CZE tag = LIT tag = TSC tag = MSC tag = NOR tag = UTR}}
+					limit = {OR = {tag = URL 
+								   tag = UR2 
+								   tag = ORN 
+								   tag = ARH 
+								   tag = CHY 
+								   tag = SBR 
+								   tag = YKT 
+								   tag = TYU 
+								   tag = TOM 
+								   tag = IRK 
+								   tag = DEN 
+								   tag = NOR 
+								   tag = FLA 
+								   tag = WLL 
+								   tag = URL 
+								   tag = CRM 
+								   tag = PL2 
+								   tag = LV2 
+								   tag = UA2 
+								   tag = SLO 
+								   tag = BLR 
+								   tag = POL 
+								   tag = UKR 
+								   tag = WTO 
+								   tag = TOG 
+								   tag = PL2 
+								   tag = CZC 
+								   tag = CZE 
+								   tag = LIT
+								   tag = TSC 
+								   tag = MSC 
+								   tag = NOR
+								   tag = UTR}}
 					drop_cosmetic_tag = yes
 					if = {
 						limit = {
