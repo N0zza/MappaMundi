@@ -14,18 +14,39 @@ set_convoys = 10
 
 
 
-	set_popularities = {
-        democratic =  25
-        communism =  25
-        fascism =  25
-        neutrality =  25
 
-	}
+set_popularities = {
+        democratic = 70
+        anarchism_ideology = 30
+        fascism = 0
+        neutrality = 0
+
+}
+
+set_politics = {
 	
-	set_politics = { 
- ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Presidentti Anders Larsen"
+	desc = ""
+	picture = "SAP_Larsen.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
