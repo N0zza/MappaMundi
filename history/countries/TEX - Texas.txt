@@ -4,24 +4,13 @@ oob = "TEX_1936"
 
 
 	set_popularities = {
-		democratic 
-			 = 20
-		fascism
-			 = 0
-		communism
-			 = 0
-		neutrality = 80
+		liberal_republic = 100
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = liberal_republic
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
-}
-
-add_ideas = {
-	disarmed_nation
-	free_trade
 }
 
 create_country_leader = {
@@ -85,7 +74,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "President James Burr V Allred"
+	name = "Governor James Burr V Allred"
 	desc = ""
 	picture = "TEX_Allred.tga"
 	expire = "1975.1.1"
