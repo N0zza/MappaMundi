@@ -3620,6 +3620,16 @@ do_lower_german_renames = {
     }
 }
 do_german_renames = {
+	
+	if = {
+		limit = {
+			state = 3226 
+		}		
+		set_province_name = {
+			state = 15825
+			name = "Jusowka"
+		}
+	}
 
 	if = {
 		limit = {
