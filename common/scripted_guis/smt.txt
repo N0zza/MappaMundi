@@ -136,6 +136,81 @@ scripted_gui = {
 					}
 				}
 			}
+			smt_marker_click = {
+				FROM.OWNER = {
+					set_country_flag = smt_actor
+				}
+			}
+			smt_unmarker_click = {
+				FROM.OWNER = {
+					clr_country_flag = smt_actor
+				}
+			}
+			smt_unmarker_all_click = {
+				every_country = {
+					limit = { has_country_flag = smt_actor }
+					clr_country_flag = smt_actor
+				}
+			}
+			smt_take_claims_button_click = {
+				FROM.OWNER = {
+					every_state = {
+						limit = {OR = {is_claimed_by = PREV 
+									   is_core_of = PREV}
+								 owner = {has_country_flag = smt_actor}}
+						FROM.OWNER = {transfer_state = PREV}
+						every_country = {
+							limit = { has_country_flag = smt_actor }
+							clr_country_flag = smt_actor
+						}
+					}
+				}
+			}
+			smt_take_cores_button_click = {
+				FROM.OWNER = {
+					every_state = {
+						limit = {is_core_of = PREV
+								 owner = {has_country_flag = smt_actor}}
+						FROM.OWNER = {transfer_state = PREV}
+						every_country = {
+							limit = { has_country_flag = smt_actor }
+							clr_country_flag = smt_actor
+						}
+					}
+				}
+			}
+			smt_mark_ideology_click = {
+				FROM.OWNER = {
+					if = {
+						limit = { has_government = fascism }
+						every_country = {
+							limit = { has_government = fascism }
+							set_country_flag = smt_actor
+						}
+					}
+					if = {
+						limit = { has_government = communism }
+						every_country = {
+							limit = { has_government = communism }
+							set_country_flag = smt_actor
+						}
+					}
+					if = {
+						limit = { has_government = democratic }
+						every_country = {
+							limit = { has_government = democratic }
+							set_country_flag = smt_actor
+						}
+					}
+					if = {
+						limit = { has_government = neutrality }
+						every_country = {
+							limit = { has_government = neutrality }
+							set_country_flag = smt_actor
+						}
+					}
+				}
+			}
 		}
 		
 		triggers = {
@@ -206,6 +281,57 @@ scripted_gui = {
 			}
 			smt_remilitarize_click_enabled = {
 				any_state = { has_state_flag = smt_marked }
+			}
+			smt_marker_visible = {
+				FROM.OWNER = {
+					NOT = {
+						has_country_flag = smt_actor
+					}
+				}
+			}
+			smt_marker_enabled = {
+				FROM.OWNER = {
+					NOT = {
+						has_country_flag = smt_actor
+					}
+				}
+			}
+			smt_unmarker_visible = {
+				FROM.OWNER = {
+					has_country_flag = smt_actor
+				}
+			}
+			smt_unmarker_click_enabled = {
+				FROM.OWNER = {
+					has_country_flag = smt_actor
+				}
+			}
+			smt_unmarker_all_visible = {
+			}
+			smt_unmarker_all_click_enabled = {
+				FROM.OWNER = {
+					any_country = {
+						has_country_flag = smt_actor
+					}
+				}
+			}
+			smt_take_claims_button_visible = {
+			}
+			smt_take_claims_button_enabled = {
+				FROM.OWNER = {
+					any_country = {
+						has_country_flag = smt_actor
+					}
+				}
+			}
+			smt_take_cores_button_visible = {
+			}
+			smt_take_cores_button_enabled = {
+				FROM.OWNER = {
+					any_country = {
+						has_country_flag = smt_actor
+					}
+				}
 			}
 		}
 	}

@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "smt_main_container"
 		position = { x = -250 y = 0 }
-		size = { width = 398 height = 225 }
+		size = { width = 494 height = 295 }
 		orientation = CENTER_RIGHT
 		origo = center_right
 
@@ -166,6 +166,55 @@ guiTypes = {
 			spriteType = "GFX_tpt_join_faction_red"
 			pdx_tooltip = "SMT_REMILIT"
 			scale = 0.9
+		}
+#####
+		buttonType = {
+			name = "smt_marker"
+			position = { x = 395 y = 93 }
+			shortcut = "shift+r"
+			frame = 1
+			spriteType = "GFX_cont_focus_check_icon"
+			pdx_tooltip = "CAT_MARKER"
+			scale = 1
+		}
+		buttonType = {
+			name = "smt_unmarker"
+			position = { x = 395 y = 93 }
+			shortcut = "shift+r"		
+			frame = 2
+			spriteType = "GFX_cont_focus_check_icon"
+			pdx_tooltip = "CAT_UNMARKER"
+			scale = 1
+		}
+		buttonType = {
+			name = "smt_mark_ideology"
+			position = { x = 392 y = 129 }
+			shortcut = "shift+ctrl+e"			
+			spriteType = "GFX_tpt_mark_ideology_button_0.9"
+			pdx_tooltip = "TPT_MARK_IDEOLOGY_TT"
+			scale = 1
+		}
+		buttonType = {
+			name = "smt_unmarker_all"
+			position = { x = 397 y = 165 }
+			shortcut = "shift+ctrl+r"			
+			spriteType = "GFX_close_button_small"
+			pdx_tooltip = "CAT_UNMARK_ALL"
+			scale = 1
+		}
+		buttonType = {
+			name = "smt_take_claims_button" 
+			position = { x = 387 y = 45 }
+			shortcut = "ctrl+j"
+			spriteType = "GFX_smt_mark_colonies"
+			pdx_tooltip = "SMT_TAKE_CLAIMS"
+		}
+		buttonType = {
+			name = "smt_take_cores_button" 
+			position = { x = 390 y = 200 }
+			shortcut = "ctrl+k"
+			spriteType = "GFX_smt_mark_cores"
+			pdx_tooltip = "SMT_TAKE_CORES"
 		}
 	}
 }
