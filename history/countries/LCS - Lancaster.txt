@@ -3,19 +3,28 @@
 oob = "LCS_1936"
 
 set_popularities = {
-        neutrality = 10
-        democratic = 80
+        neutrality = 0
+        liberal_republic = 100
         communism = 0
-        fascism = 5
-        monarchism = 5
+        fascism = 0
+        monarchism = 0
 
 }
 
 set_politics = {
 	
-	ruling_party = democratic
+	ruling_party = liberal_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "President Charles Sydney Jones"
+	desc = ""
+	picture = "LCS_Sydney.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
