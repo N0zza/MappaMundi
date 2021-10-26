@@ -5291,11 +5291,58 @@ on_actions = {
 					}
 				}
 				if = {
-					limit = {tag = WTO}
+					limit = {OR = {tag = WTO
+								   tag = CMR
+								   tag = ALG
+								   tag = TUN
+								   tag = MOR
+								   tag = MRT
+								   tag = NGR
+								   tag = MLI
+								   tag = IVO
+								   tag = VOL
+								   tag = SEN
+								   tag = DAH
+								   tag = GNA
+								   tag = TOG
+								   tag = CHD
+								   tag = CAR
+								   tag = RCG
+								   tag = GAB}}
+								   tag = LIB}}
 					drop_cosmetic_tag = yes
 					if = {
 						limit = {
 							has_government = authoritarian_monarchism
+						}
+						set_cosmetic_tag = UK_RED
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = FRA_COLONY
+					}
+				}
+				if = {
+					limit = {OR = {tag = ALG
+								   tag = TUN
+								   tag = MOR
+								   tag = SNW}}
+					drop_cosmetic_tag = yes
+					if = {
+						limit = {
+							has_government = stratocratic_monarchism
+						}
+						set_cosmetic_tag = UK_RED
+					}
+				}
+				if = {
+					limit = {tag = MAD}
+					drop_cosmetic_tag = yes
+					if = {
+						limit = {
+							has_government = conservative_monarchism
 						}
 						set_cosmetic_tag = UK_RED
 					}
