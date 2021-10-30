@@ -3626,7 +3626,7 @@ do_german_renames = {
 			state = 3226 
 		}		
 		set_province_name = {
-			state = 15825
+			id = 15825
 			name = "Jusowka"
 		}
 	}
@@ -6537,7 +6537,7 @@ do_german_renames = {
 			state = 3226
 		}		
 		set_province_name = {
-			state = 15825
+			id = 15825
 			name = "Jusowka"
 		}
 	}
@@ -10901,7 +10901,7 @@ do_pinyin_renames = {
 
 	if = {
 		limit = {
-			state = 3089
+			state = 13305
 		}		
 		set_province_name = {
 			id = 10737
@@ -12674,7 +12674,7 @@ do_japanese_renames = {
 
 	if = {
 		limit = {
-			state = 3089
+			state = 13305
 		}		
 		set_province_name = {
 			id = 10737
@@ -16091,7 +16091,7 @@ do_russian_renames = {
 			state = 3226 
 		}		
 		set_province_name = {
-			state = 15825
+			id = 15825
 			name = "Donetsk"
 		}
 	}
@@ -17436,7 +17436,7 @@ do_russian_renames = {
 
 	if = {
 		limit = {
-			state = 3089
+			state = 13305
 		}		
 		set_province_name = {
 			id = 10737
@@ -19368,7 +19368,7 @@ do_russian_renames = {
 			state = 3226 
 		}		
 		set_province_name = {
-			state = 15825
+			id = 15825
 			name = "Donetsk"
 		}
 	}
@@ -20126,7 +20126,7 @@ do_soviet_renames = {
 			state = 3226 
 		}		
 		set_province_name = {
-			state = 15825
+			id = 15825
 			name = "Stalino"
 		}
 	}
@@ -21527,15 +21527,45 @@ do_standard_arabic_renames = {
 
 }
 
-do_persian_renames = {
+do_dari_renames = {
 
 	if = {
 		limit = {
-			state = 4015
+			state = 13319
 		}		
 		set_province_name = {
-			id = 4473
-			name = "Lankaran"
+			id = 2017
+			name = "Farah"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1932
+		}		
+		set_province_name = {
+			id = 12314
+			name = "Kunduz"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1053
+		}		
+		set_province_name = {
+			id = 7584
+			name = "Mazar-i-Sharif"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1056
+		}		
+		set_province_name = {
+			id = 5064
+			name = "Kandahar"
 		}
 	}
 
@@ -21551,21 +21581,104 @@ do_persian_renames = {
 
 	if = {
 		limit = {
-			state = 4006
+			state = 13305
 		}		
 		set_province_name = {
-			id = 4893
-			name = "Hirat"
+			id = 10737
+			name = "Kabul"
+		}
+	}
+}
+
+do_persian_renames = {
+
+	if = {
+		limit = {
+			state = 442
+		}		
+		set_province_name = {
+			id = 4998
+			name = "Pišâvar"
 		}
 	}
 
 	if = {
 		limit = {
-			state = 3089
+			state = 445
+		}		
+		set_province_name = {
+			id = 8044
+			name = "Kovittah"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1914
+		}		
+		set_province_name = {
+			id = 13633
+			name = "Gvâdar"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 13305
 		}		
 		set_province_name = {
 			id = 10737
-			name = "Kabul"
+			name = "Kâbol"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1932
+		}		
+		set_province_name = {
+			id = 12314
+			name = "Qondoz"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1053
+		}		
+		set_province_name = {
+			id = 7584
+			name = "Mazâr-e Šarif"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1056
+		}		
+		set_province_name = {
+			id = 5064
+			name = "Qandahâr"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 4006
+		}		
+		set_province_name = {
+			id = 4893
+			name = "Harât"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 13319
+		}		
+		set_province_name = {
+			id = 2017
+			name = "Farâh"
 		}
 	}
 
@@ -21575,7 +21688,7 @@ do_persian_renames = {
 		}		
 		set_province_name = {
 			id = 5029
-			name = "Mešhed"
+			name = "Mašhad"
 		}
 	}
 
@@ -21586,7 +21699,7 @@ do_persian_renames = {
 		}		
 		set_province_name = {
 			id = 10913
-			name = "Kerman"
+			name = "Kermân"
 		}
 	}
 
@@ -21596,7 +21709,7 @@ do_persian_renames = {
 		}		
 		set_province_name = {
 			id = 7982
-			name = "Bandar e'Abbas"
+			name = "Bandar-e 'Abbâs"
 		}
 	}
 
@@ -21606,7 +21719,7 @@ do_persian_renames = {
 		}		
 		set_province_name = {
 			id = 8117
-			name = "Širaz"
+			name = "Širâz"
 		}
 	}
 
@@ -21616,7 +21729,7 @@ do_persian_renames = {
 		}		
 		set_province_name = {
 			id = 2026
-			name = "Esfahan"
+			name = "Esfahân"
 		}
 	}
 
@@ -21626,7 +21739,7 @@ do_persian_renames = {
 		}		
 		set_province_name = {
 			id = 10837
-			name = "Tehran"
+			name = "Tehrân"
 		}
 	}
 
@@ -21636,7 +21749,7 @@ do_persian_renames = {
 		}		
 		set_province_name = {
 			id = 17196
-			name = "Rešt"
+			name = "Rašt"
 		}
 	}
 
@@ -21646,7 +21759,7 @@ do_persian_renames = {
 		}		
 		set_province_name = {
 			id = 7953
-			name = "Ahvaz"
+			name = "Ahvâz"
 		}
 	}
 
@@ -27893,7 +28006,7 @@ do_ukrainian_renames = {
 		}		
 		set_province_name = {
 			id = 9288
-			name = "Homiel"
+			name = "Homel"
 		}
 	}
 
@@ -28070,7 +28183,7 @@ do_ukrainian_renames = {
 			state = 3226 
 		}		
 		set_province_name = {
-			state = 15825
+			id = 15825
 			name = "Donetsk"
 		}
 	}
@@ -28111,7 +28224,7 @@ do_sovietukrainian_renames = {
 			state = 3226 
 		}		
 		set_province_name = {
-			state = 15825
+			id = 15825
 			name = "Stalino"
 		}
 	}
@@ -30506,7 +30619,7 @@ do_polish_renames = {
 			state = 3226 
 	}		
 		set_province_name = {
-			state = 15825
+			id = 15825
 			name = "Donieck"
 		}
 	}
@@ -31278,7 +31391,7 @@ do_lithuanian_renames = {
 			state = 3226 
 	}		
 		set_province_name = {
-			state = 15825
+			id = 15825
 			name = "Doneckas"
 		}
 	}
@@ -37537,7 +37650,7 @@ do_romanian_renames = {
 			state = 3226 
 	}		
 		set_province_name = {
-			state = 15825
+			id = 15825
 			name = "Doneţk"
 		}
 	}
@@ -42423,7 +42536,7 @@ do_turkish_renames = {
 
 	if = {
 		limit = {
-			state = 3089
+			state = 13305
 		}		
 		set_province_name = {
 			id = 10737
@@ -43997,7 +44110,7 @@ do_turkish_renames = {
 			state = 3226 
 	}		
 		set_province_name = {
-			state = 15825
+			id = 15825
 			name = "Küçük"
 		}
 	}
