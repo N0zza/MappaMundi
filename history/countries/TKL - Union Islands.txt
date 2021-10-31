@@ -2,20 +2,26 @@
 
 oob = "TKL_1936"
 
-set_popularities = {
-        neutrality = 70
-        monarchism = 5
-        democratic = 15
-        communism = 5
-        fascism = 5
+set_cosmetic_tag = NZL_COLONY
 
+set_popularities = {
+        authoritarian_monarchism = 100
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	
+	name = "Administrator Alfred Clarke Turnbull"
+	picture = "TKL_Turnbull.tga"
+	expire = "1959.10.18"
+	ideology = authmon
+	traits = {
+	}
+}
