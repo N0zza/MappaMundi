@@ -1897,6 +1897,9 @@ on_actions = {
 						release = PAV
 						release = ATU
 					}
+					KYZ = {
+						annex_country = {target = KAZ}
+					}
 					every_state = {
 						limit = {
 							OR = {
@@ -1908,11 +1911,10 @@ on_actions = {
 								is_core_of = ATU
 								}
 						}
-					KAZ = {
-						add_state_core = PREV
-						set_capital = 12450
-						set_cosmetic_tag = KAZ_TNO
-					}
+						KYZ = {
+							add_state_core = PREV
+							set_cosmetic_tag = KAZ_TNO
+						}
 					}
 					ATU = {
 						set_politics = {
