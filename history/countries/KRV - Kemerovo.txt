@@ -11,19 +11,16 @@ set_technology = {
 	early_fighter = 1
 }
 
-
 set_convoys = 10
 
 set_popularities = {
 	democratic = 0
-        communism = 0
-        fascism = 0
-        authoritarian_monarchism = 100
-
+    communism = 0
+    fascism = 0
+    authoritarian_monarchism = 100
 }
 
 set_politics = {
-	
 	ruling_party = authoritarian_monarchism 
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -36,6 +33,26 @@ create_country_leader = {
 	picture = "gfx/leaders/TNOWarlords/KRV_Rurik.tga"
 	expire = "1965.1.1"
 	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tsar Rurik III Krylov"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/KRV_Yuriy.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tsarina Lydia Krylova"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/KRV_Lydia.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
 	traits = {
 	}
 }
