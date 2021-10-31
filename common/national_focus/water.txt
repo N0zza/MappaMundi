@@ -7094,6 +7094,12 @@
 						ruling_party = neutrality
 						}
 					}
+				##1950 OCEANIA##
+				TKL = {
+					set_politics = {
+						ruling_party = centrist_monarchism
+						}
+					}
 				}
 			}
 		}
@@ -11386,6 +11392,22 @@
 				transfer_state = PREV
 					}
 				}
+		every_state = {
+			limit = {
+				is_core_of = FIJ
+				}
+			FIJ = {
+				transfer_state = PREV
+					}
+				}
+		every_state = {
+			limit = {
+				is_core_of = KIR
+				}
+			KIR = {
+				transfer_state = PREV
+					}
+				}
 		NIU = {
 			set_cosmetic_tag = NZL_PURPLE
 			set_politics = {
@@ -11400,6 +11422,11 @@
            		picture = NIU_Reddy.tga
            		expire = "1965.1.1"
            		ideology = socdem
+				}
+			}
+		TKL = {
+			set_politics = {
+				ruling_party = conservative_monarchism
 				}
 			}
 		CKI = {
