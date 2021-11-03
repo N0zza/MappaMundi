@@ -21,61 +21,47 @@ set_technology = {
 
 
 	set_popularities = {
-		democratic 
-			 = 10
+		monarchism
+			 = 85
 		fascism
-			 = 30
-		communism
+			 = 5
+		theocratic
 			 = 10
-		neutrality
-			 = 50
+
 		}
 	set_politics = { 
- ruling_party = democratic
+ ruling_party = monarchism
 	last_election = "1960.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Paul Giesler"
+	name = "Roi Alphonse de Bourbon"
 	desc = ""
-	picture = "Portrait_Bavaria_Paul Giesler.dds"
-	expire = "1960.1.1"
-	ideology = nazism
+	picture = "PVC_Alfonso.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Ernst Toller"
+	name = "Governatore Quirino Armellini"
 	desc = ""
-	picture = "Portrait_Bavaria_Ernst.dds"
-	expire = "1960.1.1"
-	ideology = stalinism
+	picture = "PVC_Armellini.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Fritz Schäffer"
+	name = "Papa Pius XI"
 	desc = ""
-	picture = "Portrait_Bavaria_Fritz.dds"
-	expire = "1960.1.1"
-	ideology = socialism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Prince Rupprecht"
-	desc = ""
-	picture = "Portrait_Bavaria_Rupprecht.dds"
-	expire = "1951.1.1"
-	ideology = despotism
+	picture = "PVC_Pope.dds"
+	expire = "1965.1.1"
+	ideology = christian
 	traits = {
 	}
 }
