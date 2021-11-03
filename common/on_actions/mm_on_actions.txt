@@ -5274,7 +5274,24 @@ on_actions = {
 					}
 				}
 				if = {
-					limit = {tag = ALB}
+					limit = {OR = {tag = ALB
+								   tag = MNT
+								   tag = EGY
+								   tag = SUD
+								   tag = KEN
+								   tag = UGA
+								   tag = CHA
+								   tag = ETH
+								   tag = OMN
+								   tag = UAE
+								   tag = SAU
+								   tag = YEM
+								   tag = ALG
+								   tag = SYR
+								   tag = PAL
+								   tag = ISR
+								   tag = SYR
+								   tag = IRQ}}
 					drop_cosmetic_tag = yes
 					if = {
 						limit = {
