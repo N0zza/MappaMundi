@@ -5313,7 +5313,14 @@
 					limit = { UCL = { exists = no } }
 					every_state = {
 						limit = {
-							is_claimed_by = HUN
+							OR = {
+								is_core_of = HUN
+								is_claimed_by = HUN
+							}
+							NOT = {
+								is_owned_by = ROM
+								is_owned_by = YUG
+							}
 						}
 						HUN = {
 							transfer_state = PREV
