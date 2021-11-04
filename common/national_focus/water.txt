@@ -3273,6 +3273,17 @@
 					}
 				every_state = {
 					limit = {
+						is_owned_by = HJZ
+						NOT = {
+						is_owned_by = TUR
+							}
+						}
+					SAU = {
+						transfer_state = PREV
+							}
+						}
+				every_state = {
+					limit = {
 						is_core_of = ACH
 						}
 					ACH = {
@@ -4636,6 +4647,17 @@
 				RUS = {
 					transfer_state = PREV
 					add_state_core = PREV
+						}
+					}
+			every_state = {
+				limit = {
+					is_owned_by = HJZ
+					NOT = {
+					is_owned_by = TUR
+						}
+					}
+				SAU = {
+					transfer_state = PREV
 						}
 					}
 		SAU = {
@@ -9961,7 +9983,13 @@
 			}
 			every_state = {
 				limit = {
-					is_owned_by = SAU
+					OR = {
+						is_owned_by = SAU
+						is_owned_by = HJZ
+					}
+				}
+				SAU = {
+					transfer_state = PREV
 				}
 				add_core_of = SAU
                 remove_core_of = EGY
@@ -10007,6 +10035,7 @@
 				OR = {
 					is_owned_by = TNA
 					is_owned_by = DGI
+					is_owned_by = TAQ
 					}
 				}
 			SUD = {
