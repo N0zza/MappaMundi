@@ -3685,6 +3685,9 @@
 					transfer_state = 3823
 					transfer_state = 14573
 					set_cosmetic_tag = TRIBAL_BROWN
+					set_politics = {
+						ruling_party = anarchism_ideology
+						}
 					}
 				ETM = {
 					transfer_state = 8196
@@ -8737,6 +8740,33 @@
 			}
 		every_state = {
 			limit = {
+				OR = {
+					is_core_of = YGY
+					is_core_of = PKL
+					}
+				}
+			YGY = {
+				transfer_state = PREV
+				set_cosmetic_tag = IDS_COLONY
+				set_politics = {
+					ruling_party = conservative_monarchism
+					}
+				}
+			}
+		every_state = {
+			limit = {
+					is_core_of = ACH
+				}
+			ACH = {
+				transfer_state = PREV
+				set_cosmetic_tag = IDS_COLONY
+				set_politics = {
+					ruling_party = liberal_republic
+					}
+				}
+			}
+		every_state = {
+			limit = {
 				is_core_of = MAL
 				}
 			MAL = {
@@ -8773,6 +8803,9 @@
 			}
 		BEI = {
 			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
 			}
 		BEI = {
 			kill_country_leader = yes
@@ -8781,7 +8814,7 @@
         		desc = ""
         		picture = BEI_Bolkiah.tga
         		expire = "1965.1.1"
-        		ideology = absolutism
+        		ideology = conservative_constitutionalism
 				}
 			}
 		PHI = {
