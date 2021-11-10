@@ -485,6 +485,7 @@
 							is_core_of = POL
 							NOT = {
 								is_core_of = BLR
+								is_claimed_by = BLR
 								is_core_of = UKR
 								is_core_of = PRE
 								is_core_of = GAL
@@ -1253,12 +1254,12 @@
             			ideology = absolutism
 						}
 					}
-				AUS = {
+				RUS = {
 					kill_country_leader = yes
 					create_country_leader = {
             			name = "Imperator Nicholas Romanovskiy"
             			desc = ""
-            			picture = 1836_RUS_Nicholas_I.tga
+            			picture = gfx/leaders/Russia/1836_RUS_Nicholas_I.tga
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1268,7 +1269,7 @@
 					create_country_leader = {
             			name = "König Friedrich Wilhelm III von Hohenzollern"
             			desc = ""
-            			picture = 1836_PRE_Friedrich_Wilhelm_III
+            			picture = 1836_PRE_Friedrich_Wilhelm_III.tga
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1313,6 +1314,12 @@
 					transfer_state = 1410
 					transfer_state = 4107
 					transfer_state = 1166
+					transfer_state = 4477
+					transfer_state = 15156
+					transfer_state = 15157
+					transfer_state = 15158
+					transfer_state = 15159
+					transfer_state = 14967
                     set_politics = {
 						ruling_party = liberal_republic
 						}
@@ -1358,6 +1365,10 @@
 					transfer_state = 4619
 					transfer_state = 1977
 					transfer_state = 4677
+					transfer_state = 11054
+					transfer_state = 11055
+					transfer_state = 14913
+					transfer_state = 14914
 					set_cosmetic_tag = USA_BLUE
 					set_politics = {
 						ruling_party = anarchism_ideology
@@ -1387,6 +1398,10 @@
 					transfer_state = 390
 					transfer_state = 4618
 					transfer_state = 4619
+					transfer_state = 14978
+					transfer_state = 14979
+					transfer_state = 14980
+					transfer_state = 14981
 					set_cosmetic_tag = USA_BLUE
 					set_politics = {
 						ruling_party = neutrality
@@ -7182,8 +7197,10 @@
 				if = {
 					limit = { UCL = { exists = no } }
 		##Water
-		WTR = {
+		WTR ={
 			transfer_state = 8867
+			}
+		WTR = {
 			kill_country_leader = yes
 			create_country_leader = {
 				name = "Wilem Powerfish"
