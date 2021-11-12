@@ -11969,8 +11969,11 @@
 		every_state = {
 			limit = {
 				OR = {
-				is_core_of = NFI
-				is_core_of = AST
+					is_core_of = NFI
+					is_core_of = AST
+					}
+				NOT = {
+					is_owned_by = WTR
 					}
 				}
 			AST = {
