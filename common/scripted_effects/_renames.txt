@@ -15201,6 +15201,16 @@ do_chinese_renames = {
 }
 
 do_russian_renames = {
+	
+	if = {
+		limit = {
+			state = 96
+		}		
+		set_province_name = {
+			id = 3320
+			name = "Vilna"
+		}
+	}
 
 	if = {
 		limit = {
@@ -33768,6 +33778,16 @@ do_latvian_renames = {
 
 	if = {
 		limit = {
+			state = 3552
+		}		
+		set_province_name = {
+			id = 3384
+			name = "Įsrutis"
+		}
+	}
+
+	if = {
+		limit = {
 			state = 3544
 		}		
 		set_province_name = {
@@ -33967,6 +33987,16 @@ do_latvian_renames = {
 	}
 }
 do_estonian_renames = {
+
+	if = {
+		limit = {
+			state = 3552
+		}		
+		set_province_name = {
+			id = 3384
+			name = "Insterburg"
+		}
+	}
 
 	if = {
 		limit = {
