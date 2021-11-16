@@ -13,55 +13,28 @@ set_cosmetic_tag = SIE_ENG
 set_convoys = 20
 
 
+set_popularities = {
+        monarchism = 0
+        authoritarian_monarchism = 80
+        liberal_republic = 10
+        centrist_monarchism = 10
+        fascism = 0
 
+}
 
-
+set_politics = {
 	
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-	set_popularities = {
-		communism
-			 = 25
-			
-		
-		fascism
-			 = 15
-		
-		democratic 
-			 = 5
-		authoritarian_monarchism 
-			 = 55
-	}
-create_country_leader = {
-	name = "Siaka Stevens"
-	desc = ""
-	picture = "gfx/leaders/Africa/Siaka_Stevens.dds" 
-	ideology = marxism
-	expire = "1988.5.29"
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "David Lansana"
-	desc = ""
-	picture = "gfx/leaders/Africa/David_Lansana.dds"
-	ideology = fascism_ideology
-	expire = "1975.8.6"
-	traits = {
-		#
-	}
-}
 
 create_country_leader = {
-	name = "Henry Monck-Mason Moore"
+	name = "Governor Sir Henry Monck-Mason Moore"
 	desc = ""
-	picture = "gfx/leaders/SIE/Portrait_Henry_Monck_Mason_Moore.dds"
+	picture = "Portrait_Henry_Monck_Mason_Moore.dds"
 	ideology = authmon
 	expire = "1964.2.4"
 	traits = {
@@ -70,12 +43,31 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Milton Margai"
+	name = "President Milton Augustus Strieby Margai"
 	desc = ""
-	picture = "gfx/leaders/Africa/Milton_Margai.dds"
-	ideology = liberalism
-	expire = "1964.4.28"
+	picture = "SIE_Margai_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
 	traits = {
-		#
+	}
+}
+
+create_country_leader = {
+	name = "Paramount Chief Ella Koblo I of Gulama"
+	desc = ""
+	picture = "SIE_Ella_cenmon.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President David Lansana"
+	desc = ""
+	picture = "SIE_Lansana_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
 	}
 }

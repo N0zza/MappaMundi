@@ -4,18 +4,27 @@ oob = "LKT_1936"
 
 set_popularities = {
         neutrality = 20
-        monarchism = 20
-        democratic = 20
-        communism = 20
-        fascism = 20
+        monarchism = 0
+        democratic = 0
+        communism = 0
+        national_socialism = 80
 
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = republican_fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Komissar Bronislav Vladislavovich Kaminski"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/MSC_Kaminski.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}

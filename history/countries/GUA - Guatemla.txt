@@ -17,14 +17,14 @@ set_convoys = 5
 
 	set_popularities = {
 		democratic 
-			 = 30
+			 = 0
 		fascism
 			 = 0
 		communism
 			 = 0
 			
 		stratocratic
-			 = 70
+			 = 100
 		}
 	set_politics = { 
  ruling_party = stratocratic
@@ -34,12 +34,83 @@ set_convoys = 5
 }
 
 create_country_leader = {
-	name = "Jorge Ubico"
+	name = "Presidente Jorge Ubico Castañeda"
 	desc = "POLITICS_JORGE_UBICO_DESC"
 	picture = "Portrait_jorge_ubico.dds"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Presidente María Chinchilla Recinos"
+	desc = ""
+	picture = "GUA_Recinos_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Juan José Arévalo"
+	desc = ""
+	picture = "GUA_Juan_socialist.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Emperador Jorge I Ubico"
+	desc = ""
+	picture = "Portrait_jorge_ubico.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Adrián Recinos"
+	desc = ""
+	picture = "GUA_Adrian_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gobernador Carlos Asensio Cabanillas"
+	desc = ""
+	picture = "GUA_Cabanillas_stratmon.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
 	}
 }

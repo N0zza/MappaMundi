@@ -3,23 +3,25 @@
 oob = "AZR_1936"
 set_cosmetic_tag = CRM_SOV
 
-	set_popularities = {
-		democratic 
-			 = 0
-		communism
-			 = 0
-		vanguardism
-			 = 100
-		}
-	set_politics = { 
- ruling_party = vanguardism
+set_popularities = {
+	democratic = 0
+	communism = 0
+	vanguardism = 100
+}
+	
+set_politics = { 
+	ruling_party = vanguardism
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
+<<<<<<< HEAD
 	name = "Zach Vaughn"
+=======
+	name = "Predsedatel Boris Aleksandrovich Semyonov"
+>>>>>>> master
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1953.3.1"
@@ -30,26 +32,22 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Mammad Amin Rasulzade"
+	name = "Reichskommissar Herbert Friedrich Wilhelm Backe"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conservatism
+	picture = "CRM_Backe_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
 	traits = {
 		
 	}
 }
 
 create_country_leader = {
-	name = "Zach Vaughn"
+	name = "Sultan Klıç-Girey"
 	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
-	expire = "1953.3.1"
-	ideology = moderatism
+	picture = "CRM_Klych_Giray.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
 	traits = {
-		
 	}
 }
-
-
-

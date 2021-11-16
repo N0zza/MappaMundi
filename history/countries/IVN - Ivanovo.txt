@@ -15,10 +15,11 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	        democratic = 10
-        communism = 20
-        fascism = 15
-        neutrality = 55
+	democratic = 0
+        communism = 0
+        fascism = 0
+        neutrality = 60
+        theocratic = 40
 
 }
 
@@ -63,5 +64,12 @@ create_country_leader = {
 	}
 }
 
-
-
+create_country_leader = {
+	name = "Antikhrist Andrei Romanovich Chikatilo"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/IVN_Antikhrist.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}

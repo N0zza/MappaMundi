@@ -18,67 +18,46 @@ set_technology = {
 
 
 	set_popularities = {
-		democratic 
-			 = 0
-		fascism
-			 = 0
-		neutrality
-			 = 100
+		monarchism
+			 = 30
+		centrist_republic
+			 = 50
+		republican_fascism
+			 = 20
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = centrist_republic
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
-add_ideas = {
-	neutrality_idea	
-	limited_conscription
-}
-
-set_stability = 0.85
-
 create_country_leader = {
-	name = "Federal Council"
-	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
-	picture = "Portrait_Switzerland_Federal_council.dds"
+	name = "Re Adriano I di Lampugnano"
+	desc = ""
+	picture = "LOM_Adriano_mon.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = absolutism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Ernest Béuin"
-	desc = "POLITICS_ERNST_BEGUIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	name = "Duce Giacomo Acerbo"
+	desc = ""
+	picture = "LOM_Acerbo_repfash.tga"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = repfash
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Dr. Max Leo Keller"
-	desc = "POLITICS_MAX_LEO_KELLER_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
+	name = "Presidente Luigi Einaudi"
+	desc = ""
+	picture = "LOM_Bonomi_cenrep.tga"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = cenrep
 	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Fritz Platten"
-	desc = "POLITICS_FRITZ_PLATTEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
 	}
 }

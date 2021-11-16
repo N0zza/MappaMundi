@@ -15,10 +15,10 @@ set_convoys = 10
 
 
 	set_popularities = {
-        democratic =  0
-        communism =  0
+        neutrality =  10
+        monarchism =  20
         fascism =  0
-        neutrality =  100
+        centrist_monarchism =  70
 
 	}
 	
@@ -51,3 +51,14 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Duke Henry II of Percy"
+	desc = ""
+	picture = "Portrait_Henry_Percy.dds.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+

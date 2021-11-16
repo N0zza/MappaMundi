@@ -17,19 +17,19 @@ set_convoys = 20
 
 
 	set_popularities = {
-		communism
+		liberal_republic
 			 = 10
 			
 		
 		
-		fascism
-			 = 20
+		vanguardism
+			 = 10
 		
 		
 		democratic 
-			 = 20
+			 = 0
 		neutrality 
-			 = 50
+			 = 80
 		}
 	set_politics = { 
 	ruling_party = neutrality
@@ -38,31 +38,29 @@ set_convoys = 20
 	elections_allowed = no
 }
 
-
 create_country_leader = {
-	name = "Francisco Macías Nguema"
+	name = "Presidente Francisco Macías Nguema"
 	desc = ""
-	picture = "gfx/leaders/Africa/Francisco_Nguema.dds"
-	ideology = fascism_ideology
-	expire = "1979.9.29"
+	picture = "EQG_Nguema_commie.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
 	traits = {
-		#
+		
 	}
 }
 
 create_country_leader = {
-	name = "Atanasio Ndongo Miyone"
+	name = "Presidente Abilio Balboa Arkins"
 	desc = ""
-	picture = "gfx/leaders/Africa/Atanasio_Miyone.dds"
-	ideology = liberalism
-	expire = "1969.3.5"
+	picture = "EQG_Arkins_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Luis Sánchez Guerra Sáez"
+	name = "Gobernador Luis Sánchez Guerra Sáez"
 	desc = ""
 	picture = "Portrait_Luis_Saez.dds"
 	ideology = moderatism

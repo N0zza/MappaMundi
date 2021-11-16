@@ -108,7 +108,6 @@ if = {
 	}
 }
 
-# There were many Kurdish uprisings in Iraq, Iran, and Turkey in the 20th century, it's difficult to define a "ruling party". Democratic has been chosen since the Dersim Rebellion is the closest uprising to HoI's start date.
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.2.8"
@@ -118,79 +117,69 @@ set_politics = {
 
 set_popularities = {
 	democratic = 40
-	communism = 25
-	fascism = 30
-	neutrality = 5
+        vanguardism = 20
+	neutrality = 20
+        monarchism = 10
+        theocratic = 10
 }
 
-# Qazi Muhammad was leader of the short-lived Marxist uprising in Iranian Kurdistan
 create_country_leader = {
-	name = "Qazi Muhammad"
-	desc = "POLITICS_QAZI_MUHAMMAD_DESC"
-	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = marxism
+	name = "Serok Qazi Muhammad"
+	desc = ""
+	picture = "KUR_Qazi_commie.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
 	traits = {
-		#
+		
 	}
 }
 
-# Sheikh Mahmud Barzanji was King of Kurdistan from 1922-1924 and Sheikh of a Sufi family the "Barzanjis"
 create_country_leader = {
-	name = "Sheikh Mahmud Barzanji"
-	desc = "POLITICS_SHEIKH_BARZANJI_DESC"
-	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_land_1.dds"
+	name = "Serok Ihsan Nuri"
+	desc = ""
+	picture = "KUR_Nuri_authrep.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = oligarchism
 	traits = {
-		#
 	}
 }
 
-# Ihsan Nuri was the generalissimo who led the Ararat Rebellion and was pivotal in forming the Xoybûn with his experience as one of the Young Turks
 create_country_leader = {
-	name = "Îhsan Nûrî"
-	desc = "POLITICS_IHSAN_NURI_DESC"
-	picture = "GFX_portrait_kur_ihsan_nuri"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		experienced_insurgent
-	}
-}
-
-# Seyid Riza was a religious leader in Turkish Kurdistan and was the leader of the Dersim Rebellion in 1937
-create_country_leader = {
-	name = "Seyid Riza"
-	desc = "POLITICS_SEYID_RIZA_DESC"
-	picture = "GFX_portrait_kur_seyid_riza"
+	name = "Serok Mustafa Barzani"
+	desc = ""
+	picture = "KUR_Barzani_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		freedom_fighter
 	}
 }
 
-create_field_marshal = {
-	name = "Îhsan Nûrî Paşa"
-	portrait_path = "gfx/leaders/KUR/portrait_kur_ihsan_nuri.dds"
-	traits = { war_hero inflexible_strategist unyielding_defender desert_fox commando }
-	skill = 3
-
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
+create_country_leader = {
+	name = "Governor-General Sir Desmond Francis Anderson"
+	desc = ""
+	picture = "KUR_Anderson_authmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
 }
 
-create_corps_commander = {
-	name = "Ferzende Begê Hesenî"
-	portrait_path = "gfx/leaders/SYR/Portrait_Arabia_Generic_land_1.dds"
-	traits = { war_hero commando desert_fox }
-	skill = 2 #13
+create_country_leader = {
+	name = "Qiral Mahmud I Barzanji"
+	desc = ""
+	picture = "KUR_Mahmud_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
 
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
+create_country_leader = {
+	name = "Xelife Seyid Riza"
+	desc = ""
+	picture = "KUR_Riza_theoc.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
 }

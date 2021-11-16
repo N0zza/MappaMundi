@@ -5,13 +5,13 @@ set_cosmetic_tag = FRA_COLONY
 
 	set_popularities = {
 		democratic 
-			 = 0
-		fascism
-			 = 0
+			 = 10
+		socialism_ideology
+			 = 10
 		communism
 			 = 0
 		neutrality 
-			 = 100
+			 = 80
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -21,11 +21,71 @@ set_cosmetic_tag = FRA_COLONY
 }
 
 create_country_leader = {
-	name = "Le Frenchman"
+	name = "Gouverneur Joseph Zébédée Olivier Vadier"
 	desc = ""
-	picture = "gfx/leaders/France/Frenchman.tga"
+	picture = "GNA_Vadier.tga"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gouverneur Paul Ludwig Ewald von Kleist"
+	desc = ""
+	picture = "GNA_Kleist.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Paul Ludwig Ewald von Kleist"
+	desc = ""
+	picture = "GNA_Kleist.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir Frederick Hew George Dalrymple-Hamilton"
+	desc = ""
+	picture = "GNA_Hamilton_authmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "'Iimbiraturia Ahmed I Touré"
+	desc = ""
+	picture = "GNA_Toure.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Yacine Diallo"
+	desc = ""
+	picture = "GNA_Diallo_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Ahmed Sékou Touré"
+	desc = ""
+	picture = "GNA_Toure.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
 	traits = {
 	}
 }

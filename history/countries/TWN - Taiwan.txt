@@ -14,11 +14,11 @@ set_cosmetic_tag = TWN_JAP
 
 	set_popularities = {
 		democratic 
-			 = 10
+			 = 20
 		fascism
-			 = 30
-		communism
-			 = 5
+			 = 10
+		liberal_republic
+			 = 15
 		authoritarian_monarchism
 			 = 55
 	}
@@ -29,23 +29,10 @@ set_cosmetic_tag = TWN_JAP
 		elections_allowed = no
 }
 
-
-
 create_country_leader = {
-	name = "Xie Xuehong"
+	name = "Sotoku Kenzo Nakagawa"
 	desc = ""
-	picture = "gfx/leaders/East Asia/Xie_Xuehong.dds" 
-	expire = "1970.11.5"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Kenzo Nakagawa"
-	desc = ""
-	picture = "Nakagawa_Kenzo.dds"
+	picture = "Nakagawa_Kenzo.tga"
 	expire = "1944.6.26"
 	ideology = fascism_ideology
 	traits = {
@@ -54,9 +41,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kenzo Nakagawa"
+	name = "Sotoku Kenzo Nakagawa"
 	desc = ""
-	picture = "Nakagawa_Kenzo.dds"
+	picture = "Nakagawa_Kenzo.tga"
 	expire = "1944.6.26"
 	ideology = authmon
 	traits = {
@@ -65,18 +52,72 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Lee Teng-hui"
+	name = "Zhèngwei Xie Xuehong"
 	desc = ""
-	picture = "gfx/leaders/East Asia/Lee_Teng-hui.dds"
-	expire = "2019.1.15"
-	ideology = conservatism
+	picture = "TWN_Xuehong_commie.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
 	traits = {
 		
 	}
 }
 
+create_country_leader = {
+	name = "Zhèngwei Xie Xuehong"
+	desc = ""
+	picture = "TWN_Xuehong_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Gobernador Emilio Barrera"
+	desc = ""
+	picture = "TWN_Barrera_stratmon.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Zongtong Lin Hsien-tang"
+	desc = ""
+	picture = "TWN_Lin_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Zongtong Koo Hsien-jung"
+	desc = ""
+	picture = "TWN_Koo_conrep.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Gouverneur Maarten van Dulm"
+	desc = ""
+	picture = "TWN_Dulm_conmon.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Wáng Zheng Ze"
+	desc = ""
+	picture = "TWN_Zheng_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}

@@ -32,13 +32,6 @@ save_global_event_target_as = WTT_communist_china
 	elections_allowed = no
 }
 
-
-add_ideas = {
-	closed_economy
-	service_by_requirement
-	partial_economic_mobilisation
-}
-
 if = {
 	limit = {
 		has_dlc = "Waking the Tiger"
@@ -54,12 +47,11 @@ if = {
 add_opinion_modifier = { target = CHI modifier = hostile_status }
 
 create_country_leader = {
-	name = "Mao Tse-tung"
+	name = "Chuhsi  Mao Tse-tung"
 	desc = "POLITICS_MAO_ZEDONG_DESC"
 	picture = "Portrait_Mao_Zedong.dds"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
-		cornered_fox
 	}
 }

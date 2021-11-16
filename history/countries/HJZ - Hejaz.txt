@@ -1,15 +1,8 @@
-﻿capital = 12786
+﻿capital = 962
+
 oob = "HJZ_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gwtank = 1
-}
-
-set_convoys = 5
-
-
+set_cosmetic_tag = SAU_COLONY
 
 	set_popularities = {
 		democratic 
@@ -19,13 +12,34 @@ set_convoys = 5
 		communism
 			 = 0
 			
-		neutrality 
+		authoritarian_monarchism 
 			 = 100
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Khadim al-Haramayn as-Sarifayn Abd al-Ilah of Hejaz"
+	desc = ""
+	picture = "SAU_Ilah_socmon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Nayib Almalik wal'Amir Faisal bin Abdulaziz Al Saud"
+	desc = ""
+	picture = "HJZ_Faisal.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+		#
+	}
+}

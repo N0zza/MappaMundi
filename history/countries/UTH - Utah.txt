@@ -2,57 +2,53 @@
 
 oob = "UTH_1936"
 
-
 	set_popularities = {
-		democratic 
-			 = 20
-		fascism
-			 = 0
-		communism
-			 = 0
-		neutrality = 80
+                centrist_republic = 80
+                theocratic = 20
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = centrist_republic
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-add_ideas = {
-	disarmed_nation
-	free_trade
-}
-
-
 create_country_leader = {
-	name = "Henry H. Blood"
+	name = "Governor Henry Hooper Blood"
 	desc = ""
 	picture = "Portrait_Utah_Henry_Blood.dds"
 	expire = "1950.1.1"
-	ideology = liberalism
+	ideology = cenrep
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Stanley Hamilton"
-	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = total_anarchist
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Louvell Gibson"
+	name = "Prophet–President Frederick Madison Smith"
 	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	picture = "UTH_Smith.tga"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = christian
 	traits = {
-		
+	}
+}
+
+create_country_leader = {
+	name = "Emperor Frederick I Smith"
+	desc = ""
+	picture = "UTH_Smith.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
 	}
 }

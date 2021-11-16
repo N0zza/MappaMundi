@@ -14,9 +14,9 @@ set_cosmetic_tag = ALA_USA
 			 = 80
 		fascism
 			 = 0
-		communism
-			 = 0
-		neutrality = 20
+		democratic 
+			 = 20
+		neutrality = 0
 		}
 	set_politics = { 
  ruling_party = liberal_republic
@@ -25,14 +25,28 @@ set_cosmetic_tag = ALA_USA
 	elections_allowed = no
 }
 
-add_ideas = {
-	disarmed_nation
-	free_trade
+create_country_leader = {
+	name = "Chairman Harris Laning"
+	desc = ""
+	picture = "ALA_Laning.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
 }
 
+create_country_leader = {
+	name = "Fleet Admiral Harris Laning"
+	desc = ""
+	picture = "ALA_Laning.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
 
 create_country_leader = {
-	name = "John Weir Troy"
+	name = "Governor John Weir Troy"
 	desc = "POLITICS_ALA_LIBREP_DESC"
 	picture = "Portrait_Alaska_John_Weir_Troy.dds"
 	expire = "1950.1.1"
@@ -42,23 +56,62 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Stanley Hamilton"
+	name = "Predsedatel Andrey Yanuaryevich Vyshinsky"
 	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	picture = "ALA_Vyshinsky_vanguard.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = totsoc
 	traits = {
-		
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Louvell Gibson"
+	name = "Gubernator Sergei Platonovich Obolensky Neledinsky-Meletzky"
 	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	picture = "ALA_Sergei.tga"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = absolutism
 	traits = {
-		
+	}
+}
+
+create_country_leader = {
+	name = "President George Alexander Parks"
+	desc = ""
+	picture = "ALA_Parks_dem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chiji Tsunejiro Ishii"
+	desc = ""
+	picture = "ALA_Ishii_stratmon.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gubernator Sergei Platonovich Obolensky Neledinsky-Meletzky"
+	desc = ""
+	picture = "ALA_Sergei.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
 	}
 }

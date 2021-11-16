@@ -1,4 +1,4 @@
-﻿capital = 214
+﻿capital = 4884
 
 oob = "AZR_1936"
 
@@ -15,10 +15,12 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	        democratic = 10
+	democratic = 0
         communism = 20
-        fascism = 15
-        neutrality = 55
+        fascism = 0
+        neutrality = 0
+        stratocratic = 20
+        vanguardism = 60
 
 }
 
@@ -30,46 +32,55 @@ set_politics = {
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Zach Vaughn"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1953.3.1"
-	ideology = stalinism
-	traits = {
-		
-	}
-}
 
 create_country_leader = {
-	name = "Mammad Amin Rasulzade"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Peter Haciv"
-	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
-	expire = "1953.3.1"
-	ideology = moderatism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Ernst Kaltenbrunner"
+	name = "Reichsprotektor Ernst Kaltenbrunner"
 	desc = ""
 	picture = "ARH_Kaltenbrunner.tga"
 	expire = "1953.3.1"
 	ideology = natsoc
 	traits = {
 		
+	}
+}
+
+create_country_leader = {
+	name = "Marsall Kliment Yefremovich Voroshilov"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/ARH_Voroshilov.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Marsall Georgy Konstantinovich Zhukov"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/UKH_Zhukov.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Marsall Mikhail Nikolayevich Tukhachevsky"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/PSS_Tukhachevsky.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Marsall Aleksandr Terentyevich Altunin"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/ARH_Altunin.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
 	}
 }

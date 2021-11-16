@@ -14,15 +14,15 @@ set_convoys = 5
 
 
 	set_popularities = {
-		democratic 
-			 = 0
+		stratocratic 
+			 = 5
 		fascism
-			 = 100
-		communism
-			 = 0
+			 = 80
+		liberal_republic
+			 = 5
 			
 		neutrality 
-			 = 0
+			 = 10
 		}
 	set_politics = { 
  ruling_party = fascism
@@ -31,30 +31,9 @@ set_convoys = 5
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Merhawi Faytinga"
-	desc = ""
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
 
 create_country_leader = {
-	name = "Kifle Kylington"
-	desc = ""
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Pietro Badoglio"
+	name = "Governatore Pietro Badoglio"
 	picture = "Portrait_Pietro_Badoglio.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
@@ -63,4 +42,42 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Military Administrator Sir William Platt"
+	desc = ""
+	picture = "ERI_Platt_authmon.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Presidente Tedla Bairu"
+	desc = ""
+	picture = "ERI_Bairu_authrep.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Woldeab Woldemariam"
+	desc = ""
+	picture = "ERI_Woldemariam_librep.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Comandante Domenico Mondelli"
+	desc = ""
+	picture = "ERI_Mondelli_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}

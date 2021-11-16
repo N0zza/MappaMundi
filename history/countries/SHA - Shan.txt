@@ -14,10 +14,11 @@ set_convoys = 10
 
 
 	set_popularities = {
-        democratic =  15
-        communism =  5
-        fascism =  5
-        authoritarian_monarchism =  75
+        democratic =  0
+        communism =  0
+        fascism =  0
+        authoritarian_monarchism =  60
+        monarchism = 40
 
 	}
 	
@@ -30,7 +31,7 @@ set_convoys = 10
 
 
 create_country_leader = {
-	name = "John Clague"
+	name = "Governor-General John Clague"
 	desc = ""
 	picture = "John_Clague.dds"
 	expire = "1965.1.1"
@@ -40,11 +41,32 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Otto Skorzeny"
+	name = "Gouverneur Otto Skorzeny"
 	desc = ""
 	picture = "Otto_Skorzeny.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Saopha Kawng Kiao Intaleng"
+	desc = ""
+	picture = "Sao_Kawng_Kiao_Intaleng.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Sōtoku Teiichi Suzuki"
+	desc = ""
+	picture = "Teiichi_Suzuki.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
 	traits = {
 	}
 }

@@ -1,37 +1,31 @@
-﻿capital = 3055 #LA
+﻿capital = 3055
 
-oob = "CAL_1936"
+oob = "ORG_1936"
 
 
 
 	set_popularities = {
 		democratic 
-			 = 20
+			 = 80
 		fascism
 			 = 0
 		communism
 			 = 0
-		neutrality = 80
+		neutrality = 20
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = democratic
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-add_ideas = {
-	disarmed_nation
-	free_trade
-}
-
-
 create_country_leader = {
-	name = "Charles Henry Martin"
+	name = "Governor Charles Henry Martin"
 	desc = ""
-	picture = "gfx/leaders/ORG/Portrait_Oregon_Charles_Martin.dds"
-	expire = "1950.1.1"
-	ideology = liberalism
+	picture = "ORG_Martin.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
 	}
 }

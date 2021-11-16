@@ -1,23 +1,45 @@
 bookmarks = {
 	bookmark = {
 		name = "Blitzkrieg"
-		desc = "After the partitioning of Czechoslovaka, Poland now sits outgunned in Eastern Europe. Further east, Japan pushes onward into china, but with the outlook on supply isn't very promising."
+		desc = "MM_1939_DESC"
 		date = 1939.9.1.12
-		picture = "GFX_select_date_1939"
+		picture = "GFX_select_date_1936"
 		default_country = "ICE"
-		default = no
 		
 		"ICE"={
 			history = "ICE_MM_BOOKMARK_DESC"
 			ideology = centrist_monarchism
 		}
-		"---"={
-			history = "OTHER_MM_BOOKMARK_DESC"
-		}
 		"ENG"={
-			minor = yes
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = conservative_monarchism
+		}
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = liberal_republic
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = national_socialism
+		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+		}
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = stratocratic_monarchism
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = vanguardism
+		}
+		"---"={
+			history = "OTHER_MM_BOOKMARK_DESC"
 		}
 		"AST"={
 			minor = yes
@@ -44,21 +66,6 @@ bookmarks = {
 			history = "RAJ_GATHERING_STORM_DESC"
 			ideology = authoritarian_monarchism
 		}
-		"GER"={
-			minor = yes
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = national_socialism
-		}
-		"ITA"={
-			minor = yes
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
-		}
-		"JAP"={
-			minor = yes
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = stratocratic_monarchism
-		}
 		"CHI"={
 			minor = yes
 			history = "CHI_GATHERING_STORM_DESC"
@@ -73,21 +80,6 @@ bookmarks = {
 			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
 			ideology = stratocratic_monarchism
-		}
-		"SOV"={
-			minor = yes
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = vanguardism
-		}
-		"USA"={
-			minor = yes
-			history = "USA_GATHERING_STORM_DESC"
-			ideology = liberal_republic
-		}
-		"FRA"={
-			minor = yes
-			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
 		}
 		"POL"={
 			minor = yes
@@ -129,10 +121,15 @@ bookmarks = {
 			history = "BUL_GATHERING_STORM_DESC"
 			ideology = authoritarian_monarchism
 		}
-		"CZE"={
+		"CZC"={
 			minor = yes
 			history = "CZE_GATHERING_STORM_DESC"
-			ideology = centrist_republic
+			ideology = national_socialism
+		}
+		"SLO"={
+			minor = yes
+			history = "CZE_GATHERING_STORM_DESC"
+			ideology = national_socialism
 		}
 		"SPR"={
 			minor = yes
@@ -153,6 +150,15 @@ bookmarks = {
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
+			set_global_flag = startdate_11939_select
+			
+			clr_global_flag = startdate_1836_select
+			clr_global_flag = startdate_1936_select
+			clr_global_flag = startdate_1914_select
+			clr_global_flag = startdate_modern_day_select
+			clr_global_flag = startdate_blank_select
+			clr_global_flag = startdate_1950_select
+			WTR =  { complete_national_focus = WTR_1939_start }
 		}
 	}
 }

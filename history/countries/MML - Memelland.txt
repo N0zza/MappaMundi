@@ -2,29 +2,28 @@
 
 oob = "MML_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-	early_fighter = 1
-}
-
-
-set_convoys = 10
+set_cosmetic_tag = LIT_COLONY
 
 set_popularities = {
-	        democratic = 10
-        communism = 5
-        fascism = 30
-        neutrality = 55
+        republican_fascism = 55
+        national_socialism = 45
 
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = republican_fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Direktorius Augustas Baldžius"
+	desc = ""
+	picture = "MML_Bald.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}

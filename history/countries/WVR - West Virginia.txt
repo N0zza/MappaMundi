@@ -2,29 +2,115 @@
 
 oob = "WVR_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-	early_fighter = 1
-}
-
-
-set_convoys = 10
-
 set_popularities = {
-	        democratic = 23
-        communism = 1
-        fascism = 1
-        neutrality = 75
-
+        centrist_republic = 97
+        democratic = 2
+        liberal_republic = 1
 }
 
 set_politics = {
-	
-	ruling_party = neutrality
+	ruling_party =  centrist_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Governor Herman Guy Kump"
+	picture = "WVR_Kump.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "People's President Alfred Wagenknecht"
+	desc = ""
+	picture = "WVR_Wagenknecht_commie.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "King Hubertus I of Saxe-Coburg and Gotha"
+	desc = ""
+	picture = "WVR_Hubertus_king.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Hubertus von Sachsen-Coburg und Gotha"
+	desc = ""
+	picture = "WVR_Hubertus_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chairman Harry Flood Byrd"
+	desc = ""
+	picture = "WVR_Byrd_authrep.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Minister-President Rush Dew Holt"
+	desc = ""
+	picture = "WVR_Holt_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Henry Drury Hatfield"
+	desc = ""
+	picture = "WVR_Hatfield_conrep.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Courtney Hicks Hodges"
+	desc = ""
+	picture = "WVR_Hodges_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor William Mabane"
+	desc = ""
+	picture = "WVR_Mabane.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chairman William Mabane"
+	desc = ""
+	picture = "WVR_Mabane.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
+}

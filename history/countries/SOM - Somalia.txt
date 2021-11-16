@@ -11,15 +11,15 @@ set_technology = {
 
 
 	set_popularities = {
-		democratic 
-			 = 0
+		liberal_republic 
+			 = 5
 		fascism
-			 = 100
-		communism
-			 = 0
+			 = 80
+		republican_fascism
+			 = 5
 			
-		neutrality 
-			 = 0
+		monarchism 
+			 = 10
 		}
 	set_politics = { 
  ruling_party = fascism
@@ -28,28 +28,9 @@ set_technology = {
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Diblawe Samakab"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
 
 create_country_leader = {
-	name = "Ayaanle Diriye"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Rodolfo Graziani"
+	name = "Governatore Rodolfo Graziani"
 	picture = "Portrait_Rodolfo_Graziani.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
@@ -58,6 +39,53 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Taliye Haaji Mahammad Husseen"
+	desc = ""
+	picture = "SOM_Husseen_repfash.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Suldaan Mohamoud Ali Shire"
+	desc = ""
+	picture = "SOM_Shire_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Madaxweyne Aden Abdulle Osman Daar"
+	desc = ""
+	picture = "SOM_Daar_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Xoghayaha Koowaad Mohamed Siad Barre"
+	desc = ""
+	picture = "SOM_Barre_commie.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Chief Administrator Sir James Andrew Harcourt Gammell"
+	desc = ""
+	picture = "SOM_Gammell_stratmon.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}

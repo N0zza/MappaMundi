@@ -13,10 +13,10 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-        democratic = 15
-        communism = 25
+        democratic = 75
+        communism = 0
         fascism = 25
-        neutrality = 35
+        neutrality = 0
 
 }
 
@@ -28,3 +28,42 @@ set_politics = {
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Governor Richard Nugent O'Connor"
+	desc = ""
+	picture = "gfx/leaders/LBA/LBA_Richard_authmon.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Italo Balbo"
+	desc = ""
+	picture = "gfx/leaders/LBA/Portrait_Italo_Balbo.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Raisa Hussein Yousef Maziq"
+	desc = ""
+	picture = "gfx/leaders/LBA/LBA_Maziq_demsoc.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Al-Rais Sulayman al-Baruni"
+	desc = ""
+	picture = "gfx/leaders/LBA/LBA_Baruni_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}

@@ -7,11 +7,11 @@ set_popularities = {
         monarchism = 0
         democratic = 0
         liberal_republic = 0
-        communism = 15
-        vanguardism = 80
+        communism = 0
+        vanguardism = 50
         fascism = 0
         anarchism_ideology = 0
-        socialism_ideology = 5
+        socialism_ideology = 0
         democratic_monarchism = 0
         conservative_monarchism = 0
         stratocratic = 0
@@ -19,6 +19,7 @@ set_popularities = {
         republican_fascism = 0
         national_socialism = 0
         theocratic = 0
+        left_anarchism = 50
 
 }
 	
@@ -33,47 +34,21 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "To_be_added.dds"
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = ancom
 	traits = {
 	}
 }
+
 create_country_leader = {
-	name = "To Be Added"
+	name = "Obshchee Ivan Georgievich Stepanov"
 	desc = ""
-	picture = "To_be_added.dds"
+	picture = "KKS_Stepunov.tga"
 	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = despotism
+	ideology = militarism
 	traits = {
 	}
 }

@@ -26,6 +26,14 @@ on_actions = {
 						}
 						do_sovietturkestan_renames = yes
 					}
+					
+					### KAZ ###
+					if = {
+						limit = {
+							ROOT = {tag = KAZ}
+						}
+						do_kazakh_renames = yes
+					}
 
 					### AZR ###
 					if = {
@@ -75,10 +83,18 @@ on_actions = {
 						do_modern_armenian_renames = yes
 					}
 
+					### DPK ###
+					if = {
+						limit = {
+							ROOT = {tag = DPK}
+						}
+						do_north_korean_renames = yes
+					}
+
 					### KOR ###
 					if = {
 						limit = {
-							ROOT = {OR = {tag = DPK tag = ROK tag = KOR}}
+							ROOT = {OR = {tag = ROK tag = KOR}}
 						}
 						do_korean_renames = yes
 					}
@@ -110,7 +126,12 @@ on_actions = {
 								  		  is_subject_of = DDR
 										  tag = AUS
 										  is_subject_of = AUS
-										  tag = DAN}}										
+										  tag = PRE
+										  tag = BAY
+										  tag = PL2
+										  tag = UA2
+										  tag = LV2
+										  tag = BL2}}										
 						}
 						do_german_renames = yes
 					}
@@ -145,6 +166,14 @@ on_actions = {
 							ROOT = {OR = { tag = CZE tag = CZC }}
 						}
 						do_czech_renames = yes
+					}
+
+					### SLO ###
+					if = {
+						limit = {
+							ROOT = { tag = SLO}
+						}
+						do_slovak_renames = yes
 					}
 
 					### LIT ###
@@ -316,6 +345,16 @@ on_actions = {
 						do_ukrainian_renames = yes
 					}
 					
+					### UKR ###
+					if = {
+						limit = {
+							ROOT = {tag = UKR}
+							OR = { has_government = communism
+								has_government = vanguardism}
+						}
+						do_sovietukrainian_renames = yes
+					}
+					
 					### JAP ###
 					if = {
 						limit = {
@@ -325,13 +364,13 @@ on_actions = {
 						do_japanese_renames = yes
 					}
 					
-					### CHI ###
-					if = {
-						limit = {
-							ROOT = {OR = {tag = CHI tag = TWN}}
-						}
-						do_chinese_renames = yes
-					}
+					#### CHI ###
+					#if = {
+					#	limit = {
+					#		ROOT = {OR = {tag = CHI tag = TWN}}
+					#	}
+					#	do_chinese_renames = yes
+					#}
 
 					### RUS ###
 					if = {
@@ -339,6 +378,16 @@ on_actions = {
 							ROOT = {OR = { tag = SOV tag = RUS tag = ADJ tag = ABK tag = TSC tag = SOS}}
 						}
 						do_russian_renames = yes
+					}
+
+					### SOV ###
+					if = {
+						limit = {
+							ROOT = {OR = { tag = SOV tag = RUS tag = ADJ tag = ABK tag = TSC tag = SOS}
+									OR = { has_government = communism
+										   has_government = vanguardism}}
+						}
+						do_soviet_renames = yes
 					}
 					
 					### SAU ###
@@ -422,6 +471,14 @@ on_actions = {
 							ROOT = {tag = PER}
 						}
 						do_persian_renames = yes
+					}
+
+					### AFG ###
+					if = {
+						limit = {
+							ROOT = {tag = AFG}
+						}
+						do_dari_renames = yes
 					}
 					
 					### FIN ###
@@ -745,6 +802,21 @@ on_actions = {
 							ROOT = {tag = BSQ}
 						}
 						do_basque_renames = yes
+					}
+					
+					### GEO ###
+					if = {
+						limit = {
+							ROOT = {tag = GEO}
+						}
+						do_georgian_renames = yes
+					}
+					### INDONESIA ###
+					if = {
+						limit = {
+							ROOT = {tag = IDS}
+						}
+						do_indonesian_renames = yes
 					}
 			}
 		}

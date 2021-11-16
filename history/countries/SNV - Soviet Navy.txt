@@ -9,10 +9,10 @@ set_convoys = 10
 
 	set_popularities = {
         democratic =  0
-        vanguardism =  100
+        vanguardism =  50
         fascism =  0
         neutrality =  0
-
+        centrist_republic = 50
 	}
 	
 	set_politics = { 
@@ -24,7 +24,7 @@ set_convoys = 10
 
 
 create_country_leader = {
-	name = "Nikolai Kuznetsov"
+	name = "Admiral Nikolai Guerassimovitch Kuznetsov"
 	desc = ""
 	picture = "Portrait_Admiral_Nikolai_Kuznetsov.tga"
 	expire = "1965.1.1"
@@ -35,12 +35,22 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Nikolai Kuznetsov"
+	name = "Admiral Nikolai Guerassimovitch Kuznetsov"
 	desc = ""
 	picture = "Portrait_Admiral_Nikolai_Kuznetsov.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Admiral Ivan Stepanovich Yumashev"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/SNV_Yumashev.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
 	}
 }

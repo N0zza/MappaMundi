@@ -15,17 +15,25 @@ set_convoys = 10
 
 
 	set_popularities = {
-        democratic =  25
-        communism =  25
-        fascism =  25
-        neutrality =  25
+ 		authoritarian_monarchism
+			 = 100
 
 	}
 	
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Governor Sir Clement Moody"
+	desc = ""
+	picture = "MSQ_Moody.tga"
+	expire = "1956.4.26"
+	ideology = authmon
+	traits = {
+		#
+	}
+}

@@ -17,12 +17,12 @@ set_convoys = 5
 	set_popularities = {
 		democratic 
 			 = 10
-		fascism
+		neutrality
 			 = 10
 		communism
-			 = 20
+			 = 0
 		authoritarian_monarchism 
-			 = 60
+			 = 80
 		}
 	set_politics = { 
  ruling_party = authoritarian_monarchism
@@ -33,7 +33,7 @@ set_convoys = 5
 
 create_country_leader = {
 	
-	name = "Sir John Hubert Plunkett Murray"
+	name = "Governor Sir John Hubert Plunkett Murray"
 	picture = "Portrait_Sir_Hubert_Murray.tga"
 	expire = "1947.12.24"
 	ideology = authmon
@@ -43,23 +43,31 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Eduard Haber"
+	name = "President Koriam Michael Urekit"
 	desc = ""
-	picture = "gfx/leaders/Germany/Eduard_Haber.dds"
-	ideology = fascism_ideology
-	expire = "1947.1.14"
+	picture = "NGU_Urekit_authrep.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "John Guise"
+	name = "President Pita Simogun"
 	desc = ""
-	picture = "gfx/leaders/Pacific/John_Guise.dds"
-	ideology = liberalism
-	expire = "1991.2.7"
+	picture = "NGU_Simogun_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
-		#
+	}
+}
+
+create_country_leader = {
+	name = "Chiji Tomitaro Horii"
+	desc = ""
+	picture = "NGU_Horii_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
 	}
 }

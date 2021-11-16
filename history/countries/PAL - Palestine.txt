@@ -7,14 +7,14 @@ set_cosmetic_tag = PAL_UK
 
 	set_popularities = {
 		democratic 
-			 = 20
-		fascism
 			 = 10
-		communism
-			 = 5
+		fascism
+			 = 0
+	        neutrality
+		         = 20
 			
 		authoritarian_monarchism
-			 = 65
+			 = 70
 		}
 	set_politics = { 
  ruling_party = authoritarian_monarchism
@@ -24,27 +24,7 @@ set_cosmetic_tag = PAL_UK
 }
 
 create_country_leader = {
-	name = "Ahmed Hilmi Pasha"
-	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_navy_1.dds"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Amin al-Husseini"
-	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_land_2.dds"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Arthur Grenfell Wauchope"
+	name = "High Commissioner Arthur Grenfell Wauchope"
 	desc = ""
 	picture = "Portrait_Arthur_Grenfell_Wauchope.dds"
 	ideology = authmon
@@ -54,11 +34,114 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Bulus Farah"
+	name = "Rayiys Hassan Sidqi al-Dajani"
 	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_2.dds"
-	ideology = leninism
+	picture = "PAL_Dajani_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem 
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Rayiys Abd al-Rahim al-Hajj Muhammad"
+	desc = ""
+	picture = "PAL_Muhammad_authrep.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Al-Mufawad Muhammad Najati Sidqi"
+	desc = ""
+	picture = "PAL_Sidqi_commie.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Melek Zeid I bin Hussein"
+	desc = ""
+	picture = "PAL_Zeid_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Roberto Farinacci"
+	desc = ""
+	picture = "PAL_Farinacci_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rayiys Raghib al-Nashashibi"
+	desc = ""
+	picture = "PAL_Nashashibi_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor-General Edmund Henry Hynman Allenby"
+	desc = ""
+	picture = "PAL_Allenby.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Mufti Mohammed Amin Al-Husseini"
+	desc = ""
+	picture = "PAL_Husseini_theoc.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Ludwig Crüwell"
+	desc = ""
+	picture = "PAL_Cruwell_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gubernator Anatoly Ivanov Skuratov"
+	desc = ""
+	picture = "PAL_Skuratov"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
 	}
 }

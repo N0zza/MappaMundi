@@ -2,40 +2,64 @@
 
 oob = "TSR_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	gw_artillery = 1
-	tech_support = 1		
-	tech_engineers = 1
-	early_fighter = 1
+set_popularities = {
+        neutrality = 0
+        monarchism = 0
+        democratic = 0
+        liberal_republic = 0
+        communism = 0
+        vanguardism = 0
+        fascism = 0
+        anarchism_ideology = 0
+        socialism_ideology = 0
+        democratic_monarchism = 0
+        conservative_monarchism = 0
+        stratocratic = 80
+        authoritarian_monarchism = 0
+        republican_fascism = 10
+        national_socialism = 0
+        theocratic = 0
+        left_anarchism = 0
+        right_anarchism = 0
+        socialist_monarchy = 0
+        centrist_republic = 0
+        centrist_monarchism = 0
+        stratocratic_monarchism = 10
 }
-set_war_support = 0.1
-set_stability = 0.8
 
-
-	set_popularities = {
-		democratic 
-			 = 92
-		fascism
-			 = 3
-		communism
-			 = 5
-		}
-	set_politics = { 
- ruling_party = democratic
+set_politics = { 
+	ruling_party = stratocratic
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Julian"
+	name = "Chiji Oi Shigemoto"
 	desc = ""
-	picture = "To_be_added.dds"
-	expire = ""
-	ideology = liberalism
+	picture = "TSR_Oi_stratmon.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Verkhovnyy pravitel' Alexander Vasilyevich Kolchak"
+	desc = ""
+	picture = "TSR_Kolchak.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Verkhovnyy Vozhd Alexander Vasilyevich Kolchak"
+	desc = ""
+	picture = "TSR_Kolchak.tga"
+	expire = "1965.1.1"
+	ideology = repfash
 	traits = {
 	}
 }

@@ -10,9 +10,7 @@ oob = "FRA_gen"
 		fascism
 			 = 20
 		communism
-			 = 10
-		neutrality
-			 = 10
+			 = 20
 		}
 	set_politics = { 
  ruling_party = democratic
@@ -21,15 +19,42 @@ oob = "FRA_gen"
 	elections_allowed = yes
 }
 
-
-	create_country_leader = {
-		name = "Pietro Rocca"
-		desc = ""
-		picture = "gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
-		expire = "1966.6.7"
-		ideology = liberalism
-		traits = {
-			#
-		}
+create_country_leader = {
+	name = "Imperatrice Marie I di Buonaparte"
+	desc = ""
+	picture = "COR_Bonaparte_stratmon.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
 	}
-	
+}
+
+create_country_leader = {
+	name = "Presidente Danielle Casanova"
+	desc = ""
+	picture = "COR_Casanova_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Presidente François Piétri"
+	desc = ""
+	picture = "COR_Pietri_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Guvernatore Petru Giovacchini"
+	desc = ""
+	picture = "COR_Giovacchini_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}

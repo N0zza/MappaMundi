@@ -16,14 +16,14 @@ set_convoys = 5
 
 	set_popularities = {
 		democratic 
-			 = 0
-		fascism
-			 = 0
-		communism
-			 = 0
+			 = 10
+		socialism_ideology
+			 = 5
+		stratocratic
+			 = 5
 			
 		authoritarian_monarchism 
-			 = 100
+			 = 80
 		}
 	set_politics = { 
  ruling_party = authoritarian_monarchism
@@ -32,32 +32,91 @@ set_convoys = 5
 	elections_allowed = no
 }
 
-
 create_country_leader = {
 	
-	name = "Ali Hassan Mwinyi"
-	picture = "gfx/leaders/Africa/Ali_Mwinyi.dds"
-	expire = "2018.5.8"
-	ideology = moderatism
-	traits = { }
-}
-
-create_country_leader = {
-	
-	name = "Julius Nyerere"
-	picture = "gfx/leaders/Africa/Julius_Nyerere.dds"
-	expire = "1999.10.14"
-	ideology = conservatism
-	traits = { }
-}
-
-create_country_leader = {
-	
-	name = "Harold MacMichael"
+	name = "Governor Sir Harold Alfred MacMichael"
 	picture = "gfx/leaders/TZN/Portrait_Harold_MacMichael.dds"
 	expire = "1969.2.19"
 	ideology = authmon
 	traits = { }
 }
 
+create_country_leader = {
+	name = "Gouverneur Paul Emil von Lettow-Vorbeck"
+	desc = ""
+	picture = "TZN_Lettow.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Gouverneur Louis Félix Franchet d'Espèrey"
+	desc = ""
+	picture = "TZN_Esperey_authrep.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Julius Kambarage Nyerere"
+	desc = ""
+	picture = "TZN_Nyerere_demsoc.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prime Minister Shaaban bin Robert"
+	desc = ""
+	picture = "TZN_Robert_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Commander-in-Chief David Bugozi Musuguri"
+	desc = ""
+	picture = "TZN_Musuguri_srtat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Mangi Mkuu Thomas Marealle II"
+	desc = ""
+	picture = "TZN_Marealle_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Paul Emil von Lettow-Vorbeck"
+	desc = ""
+	picture = "TZN_Lettow.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gouverneur Paul Emil von Lettow-Vorbeck"
+	desc = ""
+	picture = "TZN_Lettow.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
+}

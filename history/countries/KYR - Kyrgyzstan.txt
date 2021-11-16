@@ -5,14 +5,20 @@ oob = "KYR_1936"
 set_cosmetic_tag = KYR_SOV
 
 	set_popularities = {
+<<<<<<< HEAD
 		democratic 
 			 = 20
 		communism
+=======
+		communism 
+			 = 40
+		vanguardism
+>>>>>>> master
 			 = 60
 
 		
         neutrality 
-			 = 20
+			 = 0
 			
 	}
 
@@ -24,7 +30,11 @@ set_cosmetic_tag = KYR_SOV
 }
 
 create_country_leader = {
+<<<<<<< HEAD
 	name = "Yermek Erkinev"
+=======
+	name = "Baski Katçi Moris L'vovich Belotskiy"
+>>>>>>> master
 	desc = ""
 	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
 	expire = "1960.1.1"
@@ -56,6 +66,12 @@ create_country_leader = {
 	}
 }
 
-
-
-
+create_country_leader = {
+	name = "Baski Katçi Kaliynur Usenbekov"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/KYR_Usenbekov.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}

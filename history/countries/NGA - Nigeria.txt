@@ -15,19 +15,19 @@ set_convoys = 20
 
 
 	set_popularities = {
-		communism
-			 = 5
+		democratic
+			 = 10
 			
 		
 		
-		fascism
+		liberal_republic
 			 = 10
 		
 		
-		democratic 
-			 = 20
+		neutrality
+			 = 10
 		authoritarian_monarchism 
-			 = 65
+			 = 70
 		}
 	set_politics = { 
  ruling_party = authoritarian_monarchism
@@ -37,44 +37,93 @@ set_convoys = 20
 }
 
 create_country_leader = {
-	name = "Samuel Alamu"
-	desc = ""
-	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_1.dds"
-	ideology = marxism
-	expire = "1951.2.18"
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Umar III"
-	desc = ""
-	picture = "gfx/leaders/Africa/Umar_III.dds" 
-	ideology = fascism_ideology
-	expire = "1968.7.9"
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Nnamdi Azikiwe"
-	desc = ""
-	picture = "gfx/leaders/Africa/Nnamdi_Azikiwe.dds"
-	ideology = liberalism
-	expire = "1996.5.11"
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Bernard Henry Bourdillon"
+	name = "Governor Sir Bernard Henry Bourdillon"
 	desc = ""
 	picture = "Portrait_Bernard_Henry_Bourdillon.dds" 
 	ideology = authmon
 	expire = "1948.2.6"
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Otto Maximilian Hitzfeld"
+	desc = ""
+	picture = "NGA_Hitzfeld.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "King Siddiq Abubakar III"
+	desc = ""
+	picture = "NGA_Abubakar.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Khalifa Siddiq Abubakar III"
+	desc = ""
+	picture = "NGA_Abubakar.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prime Minister Obafemi Jeremiah Oyeniyi Awolowo"
+	desc = ""
+	picture = "NGA_Awolowo_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Nnamdi Benjamin Azikiwe"
+	desc = ""
+	picture = "NGA_Azikiwe_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chairman Samuel Akisanya"
+	desc = ""
+	picture = "NGA_Akisanya_demsoc.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Gouverneur Otto Maximilian Hitzfeld"
+	desc = ""
+	picture = "NGA_Hitzfeld.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Olayinka Herbert Macaulay"
+	desc = ""
+	picture = "NGA_Macaulay.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
 	}
 }

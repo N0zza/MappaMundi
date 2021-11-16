@@ -1,57 +1,105 @@
-﻿capital = 3533 #LA
+﻿capital = 3533
 
-oob = "CAL_1936"
+oob = "FLO_1936"
 
-	set_popularities = {
-		democratic 
-			 = 20
-		fascism
-			 = 0
-		communism
-			 = 0
-		neutrality = 80
-		}
-	set_politics = { 
- ruling_party = neutrality
-	last_election = "1932.11.8"
+set_popularities = {
+        liberal_republic = 98
+        democratic = 2
+}
+
+set_politics = {
+	
+	ruling_party = liberal_republic
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-add_ideas = {
-	disarmed_nation
-	free_trade
-}
-
-
 create_country_leader = {
-	name = "David Sholtz"
-	desc = ""
+	name = "Governor David Sholtz"
 	picture = "Portrait_Florida_David_Sholtz.dds"
-	expire = "1950.1.1"
-	ideology = liberalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Stanley Hamilton"
-	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = socdem
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Louvell Gibson"
+	name = "Gobernador José María Fernández-Ladreda"
 	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	picture = "FLO_Ladreda_stratmon.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chairman James Weldon Johnson"
+	desc = ""
+	picture = "FLO_Johnson_demsoc.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "First Secretary Luisa Moreno"
+	desc = ""
+	picture = "FLO_Moreno_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
-		
+	}
+}
+
+create_country_leader = {
+	name = "President George Couper Gibbs"
+	desc = ""
+	picture = "FLO_Gibbs_conrep.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "General Vivian Collins"
+	desc = ""
+	picture = "FLO_Collins_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir George Elvey Creasy"
+	desc = ""
+	picture = "FLO_Creasy_authmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Emperor Stonewall IV of Jackson"
+	desc = ""
+	picture = "FLO_Stonewall_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gouverneur Otto Förschner"
+	desc = ""
+	picture = "FLO_Forschner_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
 	}
 }

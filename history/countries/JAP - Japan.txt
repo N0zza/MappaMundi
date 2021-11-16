@@ -2,66 +2,6 @@
 
 oob = "JAP_1936"
 
-
-#if = {
-#	limit = {
-#		has_dlc = "Together for Victory"
-#	}
-#	set_autonomy = {
-#		target = MAN
-#		autonomous_state = autonomy_integrated_puppet
-#	}
-#	set_autonomy = {
-#		target = EHC
-#		autonomous_state = autonomy_integrated_puppet
-#	}
-#	set_autonomy = {
-#		target = PAC
-#		autonomous_state = autonomy_integrated_puppet
-#	}
-#	set_autonomy = {
-#		target = MEN
-#		autonomous_state = autonomy_integrated_puppet
-#	}
-#	set_autonomy = {
-#		target = KOR
-#		autonomous_state = autonomy_integrated_puppet
-#	}
-#	set_autonomy = {
-#		target = TWN
-#		autonomous_state = autonomy_integrated_puppet
-#	}
-#	else = {
-#		set_autonomy = {
-#			target = MAN
-#			autonomous_state = autonomy_puppet
-#		}
-#		set_autonomy = {
-#			target = EHC
-#			autonomous_state = autonomy_puppet
-#		}
-#		set_autonomy = {
-#			target = PAC
-#			autonomous_state = autonomy_puppet
-#		}
-#		set_autonomy = {
-#			target = MEN
-#			autonomous_state = autonomy_puppet
-#		}
-#		set_autonomy = {
-#			target = KOR
-#			autonomous_state = autonomy_puppet
-#		}
-#		set_autonomy = {
-#			target = JAP
-#			autonomous_state = autonomy_puppet
-#		}
-#	}
-#}
-
-
-
-
 	set_popularities = {
 		stratocratic_monarchism
 			 = 100	
@@ -74,21 +14,17 @@ oob = "JAP_1936"
 }
 
 create_country_leader = {
-	name = "Hirohito"
+	name = "Ten'nō Hirohito"
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {
-		warrior_code
-		emperor_showa
-		imperial_sanction
 	}
-	id = 700 #Hirohito
 }
 
 create_country_leader = {
-	name = "Douglas MacArthur"
+	name = "Supreme Commander Douglas MacArthur"
 	desc = ""
 	picture = "Portrait_Douglas_Macarthur.tga"
 	expire = "1965.1.1"
@@ -98,7 +34,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Tokuda Kyūichi"
+	name = "Kaichō Kyūichi Tokuda"
 	desc = ""
 	picture = "Portrait_Tokuda_Kyuichi.tga"
 	expire = "1965.1.1"
@@ -109,7 +45,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Arahata Katsuzō"
+	name = "Shokichō Kanson Arahata"
 	desc = ""
 	picture = "Portrait_Arahata_Katsuzo.tga"
 	expire = "1965.1.1"
@@ -119,7 +55,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Abe Isoo"
+	name = "Daitōryō Isoo Abe"
 	desc = ""
 	picture = "Portrait_Abe_Isoo.tga"
 	expire = "1965.1.1"
@@ -129,7 +65,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Nobuhito"
+	name = "Ō Nobuhito"
 	desc = ""
 	picture = "Portrait_Nobuhito.tga"
 	expire = "1965.1.1"
@@ -139,7 +75,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Machida Chūji"
+	name = "Daitōryō Chūji Machida"
 	desc = ""
 	picture = "Portrait_Machida_Chuji.tga"
 	expire = "1965.1.1"
@@ -149,7 +85,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Suzuki Kisaburō"
+	name = "Daitōryō Kisaburō Suzuki"
 	desc = ""
 	picture = "Portrait_Suzuki_kisaburo.tga"
 	expire = "1965.1.1"
@@ -159,7 +95,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Hirohito no Yamato"
+	name = "Ten'nō Hirohito no Yamato"
 	desc = ""
 	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1965.1.1"
@@ -169,7 +105,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Hirohito II no Yamato"
+	name = "Ten'nō Hirohito II"
 	desc = ""
 	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1965.1.1"
@@ -179,7 +115,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Shinya Uchida"
+	name = "Daitōryō Shinya Uchida"
 	desc = ""
 	picture = "Portrait_Shinya_Uchida.tga"
 	expire = "1965.1.1"
@@ -189,7 +125,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Iemasa Tokugawa"
+	name = "Shōgun Iemasa Tokugawa"
 	desc = ""
 	picture = "Portrait_Iemasa_Tokugawa.tga"
 	expire = "1965.1.1"
@@ -199,7 +135,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kan'in Kotohito"
+	name = "Saikō Shirei-kan Ōji Kan'in Kotohito"
 	desc = ""
 	picture = "Portrait_Kotohito.tga"
 	expire = "1965.1.1"
@@ -209,7 +145,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Yasuhito"
+	name = "Ten'nō Yasuhito"
 	desc = ""
 	picture = "Portrait_Yasuhito.tga"
 	expire = "1965.1.1"
@@ -219,7 +155,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Hirohito"
+	name = "Ten'nō Hirohito"
 	desc = ""
 	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1965.1.1"

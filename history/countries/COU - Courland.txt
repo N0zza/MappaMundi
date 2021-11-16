@@ -21,60 +21,28 @@ set_convoys = 10
 
 	set_popularities = {
 		democratic 
-			 = 30
+			 = 0
 		fascism
-			 = 15
+			 = 0
 		communism
-			 = 5
-		neutrality 
-			 = 50
+			 = 0
+		authoritarian_monarchism 
+			 = 100
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = authoritarian_monarchism
 	last_election = "1931.10.3"
 	election_frequency = 108
 	elections_allowed = no
 }
 
-
 create_country_leader = {
-	name = "Armīns Znotinš"
-	desc = "POLITICS_KARLIS_ULMANIS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	name = "Herzog Rüdiger I von der Goltz"
+	desc = ""
+	picture = "COU_Goltz.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authmon
 	traits = {
-		#
 	}
 }
 
-create_country_leader = {
-	name = "Haralds Sietnieks"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Daigonis Belavskis"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Ingomars Pencis"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}

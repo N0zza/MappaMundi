@@ -7,13 +7,13 @@ set_cosmetic_tag = FRA_COLONY
 	set_popularities = {
 		democratic 
 			 = 0
-		fascism
-			 = 0
-		communism
-			 = 0
+		liberal_republic
+			 = 10
+		socialism_ideology
+			 = 10
 			
 		neutrality 
-			 = 100
+			 = 80
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -23,52 +23,52 @@ set_cosmetic_tag = FRA_COLONY
 }
 
 create_country_leader = {
-	
-	name = "Marcel Marchessou"
-	picture = "gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
-	expire = "1964.4.6"
-	ideology = cenrep
-	traits = {
-	}
-}
-create_country_leader = {
-	
-	name = "Marien Ngouabi"
-	picture = "gfx/leaders/Africa/Marien_Ngouabi.dds"
-	expire = "1977.3.18"
-	ideology = marxism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	
-	name = "Pedro VIII Afonso"
-	picture = "gfx/leaders/Africa/Pedro_VIII.dds"
-	expire = "1955.4.17"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	
-	name = "Jean-Félix Tchicaya"
-	picture = "gfx/leaders/Africa/Jean-Felix_Tchicaya.dds"
-	expire = "1961.1.15"
-	ideology = liberalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Le Frenchman"
+	name = "Gouverneur Joseph-François Reste de Roca"
 	desc = ""
-	picture = "gfx/leaders/France/Frenchman.tga"
-	expire = "1965.1.1"
+	picture = "Portrait_Dieudonne_Reste.dds"
 	ideology = despotism
+	expire = "1978.10.27"
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Président Jacques Opangault"
+	desc = ""
+	picture = "RCG_Opangault_demsoc.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
 	traits = {
 	}
 }
 
+create_country_leader = {
+	name = "Premier Ministre Abbé Fulbert Youlou"
+	desc = ""
+	picture = "RCG_Youlou_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reine Ngalifarou I de Makoko"
+	desc = ""
+	picture = "RCG_Ngalifarou_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Hugh Montague Trenchard"
+	desc = ""
+	picture = "RCG_Hugh_Trenchard.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}

@@ -2,57 +2,31 @@
 
 oob = "ARZ_1936"
 
+set_popularities = {
+        centrist_republic = 100
+}
 
-	set_popularities = {
-		democratic 
-			 = 20
-		fascism
-			 = 0
-		communism
-			 = 0
-		neutrality = 80
-		}
-	set_politics = { 
- ruling_party = neutrality
-	last_election = "1932.11.8"
+set_politics = {
+	ruling_party =  centrist_republic
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-add_ideas = {
-	disarmed_nation
-	free_trade
-}
-
-
 create_country_leader = {
-	name = "Benjamin Baker Moeur"
-	desc = ""
-	picture = "gfx/leaders/ARZ/Portrait_Benjamin_Baker_Moeur.dds"
-	expire = "1950.1.1"
-	ideology = liberalism
+	name = "Governor Benjamin Baker Moeur"
+	picture = "ARZ_Moeur.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Stanley Hamilton"
-	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	name = "Military Governor George Catlett Marshall Jr."
+	picture = "ARZ_Marshall.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = militarism
 	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Louvell Gibson"
-	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		
 	}
 }

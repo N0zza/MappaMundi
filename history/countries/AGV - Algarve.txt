@@ -13,18 +13,35 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	        democratic = 10
-        communism = 20
-        fascism = 15
-        neutrality = 55
+        monarchism = 90
+        fascism = 10
 
 }
 
 set_politics = {
 	
-	ruling_party = democratic
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Rei Pedro VI de Bragança"
+	desc = ""
+	picture = "AGV_Pedro.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Giuseppe Cobolli Gigli"
+	desc = ""
+	picture = "AGV_Gigli.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}

@@ -4,31 +4,19 @@ oob = "TEX_1936"
 
 
 	set_popularities = {
-		democratic 
-			 = 20
-		fascism
-			 = 0
-		communism
-			 = 0
-		neutrality = 80
+		liberal_republic = 100
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = liberal_republic
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-add_ideas = {
-	disarmed_nation
-	free_trade
-}
-
-
 create_country_leader = {
-	name = "James V. Allred"
+	name = "President Coke Robert Stevenson"
 	desc = ""
-	picture = "Portrait_Texas_James.dds"
+	picture = "TEX_Stevenson.tga"
 	expire = "1950.1.1"
 	ideology = liberalism
 	traits = {
@@ -36,23 +24,161 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Arthur Harvey"
+	name = "President William Knight"
 	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	picture = "TEX_Knight.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Rex O'donnell"
+	name = "General Secretary Homer Brooks"
 	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
-	expire = "1965.1.1"
+	picture = "TEX_Brooks.tga"
+	expire = "1975.1.1"
+	ideology = totsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "King Agustin I De Iturbide"
+	desc = ""
+	picture = "TEX_Agustin.tga"
+	expire = "1975.1.1"
+	ideology = absolutism
+	traits = {	
+	}
+}
+
+create_country_leader = {
+	name = "Chairman Homer Brooks"
+	desc = ""
+	picture = "TEX_Brooks.tga"
+	expire = "1975.1.1"
 	ideology = marxism
 	traits = {
-		
+	}
+}
+
+create_country_leader = {
+	name = "President Upton Sinclair"
+	desc = ""
+	picture = "CAL_Sinclair.tga"
+	expire = "1975.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor James Burr V Allred"
+	desc = ""
+	picture = "TEX_Allred.tga"
+	expire = "1975.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gobernador Agustín Muñoz Grandes"
+	desc = ""
+	picture = "TEX_Grandes.tga"
+	expire = "1975.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President John William Wright Patman"
+	desc = ""
+	picture = "TEX_Patman.tga"
+	expire = "1975.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Commander-in-Chief Claire Lee Chennault"
+	desc = ""
+	picture = "TEX.Chennault.tga"
+	expire = "1975.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichskommissar Robert Ritter Von Greim"
+	desc = ""
+	picture = "TEX_Greim.tga"
+	expire = "1975.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "State President William Dudley Pelley"
+	desc = ""
+	picture = "TEX_Pelley.tga"
+	expire = "1975.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Philip Henry Sheridan"
+	desc = ""
+	picture = "TEX_Sheridan.tga"
+	expire = "1975.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Norman Mattoon Thomas"
+	desc = ""
+	picture = "TEX_Thomas.tga"
+	expire = "1975.1.1"
+	ideology = demsoc
+	traits = {
 	}
 }

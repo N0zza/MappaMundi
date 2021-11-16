@@ -24,55 +24,102 @@ set_cosmetic_tag = BRM_RAJ
 
 
 	set_popularities = {
-		democratic 
-			 = 10
+		authoritarian_monarchism
+			 = 90
 		
 		communism
-			 = 20
+			 = 0
 		neutrality
-			 = 70
+			 = 10
 		
 	}
 
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Ne win" 
+	name = "Queen Myat Phaya Lat"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
-	expire = "1953.3.1"
-	ideology = marxism #insanity
+	picture = "BRM_Myat_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
 	traits = {
-		
-	}
-}
-
-#non standard english alphabet character
-create_country_leader = {
-	name = "Archibald Cochrane"
-	desc = ""
-	picture = "Portrait_Burma_Archibald.dds"
-	expire = "1932.10.20"
-	ideology = despotism
-	traits = {
-		
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Ba Maw" 
+	name = "Governor-General Sir Archibald Douglas Cochrane"
 	desc = ""
-	picture = "Portrait_Burma_Bamaw.dds"
-	expire = "1932.10.20"
+	picture = "BRM_Cochrane_authmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "President Galon U Saw"
+	desc = ""
+	picture = "BRM_Saw_authdem.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Chairman Bogyoke Aung San"
+	desc = ""
+	picture = "BRM_Bogyoke_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Thakin Kodaw Hmaing"
+	desc = ""
+	picture = "BRM_Hmaing_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chiji Hajime Sugiyama"
+	desc = ""
+	picture = "BRM_Sugiyama_fash.tga"
+	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		
 	}
 }
 
+create_country_leader = {
+	name = "Head of State Ba Maw"
+	desc = ""
+	picture = "BRM_Maw_repfash.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "President Chit Hlaing"
+	desc = ""
+	picture = "BRM_Hlaing_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}

@@ -16,13 +16,13 @@ set_country_flag = monroe_doctrine
 
 	set_popularities = {
 		democratic 
-			 = 0
+			 = 40
 		fascism
 			 = 0
 		communism
 			 = 0
 		liberal_republic 
-			 = 100
+			 = 60
 		}
 	set_politics = { 
  ruling_party = liberal_republic
@@ -32,7 +32,7 @@ set_country_flag = monroe_doctrine
 }
 
 create_country_leader = {
-	name = "José Luis Tejada Sorzano"
+	name = "Presidente José Luis Tejada Sorzano"
 	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
 	picture = "Portrait_Bolivia_Jose_Luis_Tejada_Sorzano.dds"
 	expire = "1965.1.1"
@@ -43,12 +43,214 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Óscar Únzaga de la Vega"
-	desc = "POLITICS_OSCAR_UNZAGA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	name = "Presidente Germán Busch Becerra"
+	desc = ""
+	picture = "BOL_Busch_authdem.tga"
 	expire = "1965.1.1"
-	ideology = falangism
+	ideology = oligarchism
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Secretario General Jesús Lara Lara"
+	desc = ""
+	picture = "BOL_Lara_commie.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Jesús Lara Lara"
+	desc = ""
+	picture = "BOL_Lara_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Bautista Saavedra Mallea"
+	desc = ""
+	picture = "BOL_Saavedra_demsoc.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rey Bonifacio I de Pinedo"
+	desc = ""
+	picture = "BOL_Pinedo_socmon.tga"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Infante Maria Cristina de Borbón y Battenberg"
+	desc = ""
+	picture = "BOL_Cristina.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reina Maria Cristina I de Borbón y Battenberg"
+	desc = ""
+	picture = "BOL_Cristina.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Duquesa Maria Cristina I de Borbón y Battenberg"
+	desc = ""
+	picture = "BOL_Cristina.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Emperadora Maria Cristina I de Borbón y Battenberg"
+	desc = ""
+	picture = "BOL_Cristina.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Regente Gualberto Villarroel López"
+	desc = ""
+	picture = "BOL_Gualberto_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Enrique Peñaranda del Castillo"
+	desc = ""
+	picture = "BOL_Penaranda_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Canciller Tomás Monje Gutierréz"
+	desc = ""
+	picture = "BOL_Monje_cendem.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Comandante en Jefe Carlos Quintanilla Quiroga"
+	desc = ""
+	picture = "BOL_Quintanilla_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gobernador Manuel Goded Llopis"
+	desc = ""
+	picture = "BOL_Llopis.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor-General Sir Henry Daniel Pridham-Wippell"
+	desc = ""
+	picture = "BOL_Pridham-Wippel_authmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Santa Nazaria Ignacia March Mesa"
+	desc = ""
+	picture = "BOL_Nazaria_theoc.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Dictador Óscar Únzaga de la Vega"
+	desc = ""
+	picture = "BOL_Unzaga_repfash.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Nikolaus Barbie"
+	desc = ""
+	picture = "BOL_Barbie.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
 	}
 }

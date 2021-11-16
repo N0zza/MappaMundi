@@ -12,32 +12,20 @@ set_cosmetic_tag = GAM_ENG
 
 set_convoys = 20
 
-	
-	create_country_leader = {
-	name = "Thomas Southorn"
-	desc = ""
-	picture = "gfx/leaders/British Colonial/Thomas_Southorn.dds"
-	ideology = authmon
-	expire = "1957.3.15"
-	traits = {
-		#
-	}
-}
-
 	set_popularities = {
 		communism
-			 = 10
+			 = 0
 			
 		
 		
 		fascism
-			 = 10
+			 = 0
 		
 		
 		democratic 
-			 = 25
+			 = 20
 		authoritarian_monarchism 
-			 = 55
+			 = 80
 		}
 	set_politics = { 
  ruling_party = authoritarian_monarchism
@@ -46,25 +34,23 @@ set_convoys = 20
 	elections_allowed = no
 }
 
-
 create_country_leader = {
-	name = "Dawda Jawara"
+	name = "Governor Arthur Frederick Richards"
 	desc = ""
-	picture = "gfx/leaders/Africa/Dawda_Jawara.dds"
-	ideology = liberalism
-	expire = "2020.5.16"
+	picture = "Portrait_Arthur_Richards.dds"
+	ideology = authmon
+	expire = "1957.3.15"
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Arthur Richards"
+	name = "Président Pierre Sarr N'Jie"
 	desc = ""
-	picture = "Portrait_Arthur_Richards.dds"
-	ideology = moderatism
-	expire = "1978.10.27"
+	picture = "GAM_Njie_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
-		#
 	}
 }

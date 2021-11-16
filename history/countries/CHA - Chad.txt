@@ -13,11 +13,11 @@ set_convoys = 5
 			 = 0
 		fascism
 			 = 0
-		communism
-			 = 0
+		socialism_ideology
+			 = 10
 			
 		neutrality 
-			 = 100
+			 = 90
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -27,33 +27,41 @@ set_convoys = 5
 }
 
 create_country_leader = {
-	name = "Merhawi Faytinga"
+	name = "Gouverneur-Délégué Pierre Simon Antonin Bonnefont"
 	desc = ""
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+	picture = "CHA_Bonnefont.tga"
 	expire = "1965.1.1"
-	ideology = cenrep
+	ideology = oligarchism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Kifle Kylington"
+	name = "Président Gabriel Francisco Lisette"
 	desc = ""
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
+	picture = "CHA_Lisette_demsoc.tga"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = demsoc
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Le Frenchman"
+	name = "Governatore-Delegato Pietro Gazzera"
 	desc = ""
-	picture = "gfx/leaders/France/Frenchman.tga"
+	picture = "CHA_Gazzera_fash.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor John Maynard Keynes"
+	desc = ""
+	picture = "CHA_John_Keynes.tga"
+	expire = "1965.1.1"
+	ideology = authmon
 	traits = {
 	}
 }

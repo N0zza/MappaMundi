@@ -5,46 +5,241 @@ oob = "WLS_1936"
 
 	set_popularities = {
 		democratic 
-			 = 90
-		fascism
-			 = 10
+			 = 5
+		liberal_republic
+			 = 20
+		neutrality
+			 = 30
+		centrist_monarchism
+			 = 5
+		conservative_monarchism
+			 = 40
 		}
 	set_politics = { 
- ruling_party = democratic
+ ruling_party = conservative_monarchism
 	last_election = "1933.1.24"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+
 create_country_leader = {
-	name = "Jaylen Donaldson"
+	name = "Prif Ysgrifennydd Arthur Lewis Horner"
 	desc = ""
-	picture = "gfx/leaders/ENG/Portrait_Britain_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
+	picture = "WLS_Horner.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
 	traits = {
-		#
+		
 	}
 }
 
 create_country_leader = {
-	name = "Harvey King"
+	name = "Prince George of Windsor"
 	desc = ""
-	picture = "gfx/leaders/ENG/Portrait_Britain_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
+	picture = "Portrait_Prince_George.dds"
+	expire = "1989.1.1"
+	ideology = stratmon
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Frankie Butler"
+	name = "Llywydd Saunders Lewis"
 	desc = ""
-	picture = "gfx/leaders/ENG/Portrait_Britain_Generic_1.dds"
+	picture = "WLS_Lewis_authdem.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Llywydd Gwynfor Richard Evans"
+	desc = ""
+	picture = "WLS_Evans_socdem.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Llywydd Arthur James Cook"
+	desc = ""
+	picture = "WLS_Cook.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
-		#
+	}
+}
+
+create_country_leader = {
+	name = "Prince Albert of Windsor"
+	desc = ""
+	picture = "Portrait_Prince_Albert.tga"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Llywydd Aneurin Bevan"
+	desc = ""
+	picture = "WLS_Bevan.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Sir Reginald George Clarry"
+	desc = ""
+	picture = "WLS_Clarry_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Duke George I of Mountbatten"
+	desc = ""
+	picture = "WLS_George_libmon.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prince Edward of Windsor"
+	desc = ""
+	picture = "Portrait_Prince_David.dds"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prif Weinidog Megan Arvon Lloyd George"
+	desc = ""
+	picture = "WLS_Megan_cendem.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prime Minister David Lloyd George"
+	desc = ""
+	picture = "WLS_George_cenmon.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prif Weithredwr Sir Kenneth Arthur Noel Anderson"
+	desc = ""
+	picture = "WLS_Anderson_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Brenin George V o Windsor"
+	desc = ""
+	picture = "ENG_GeorgeV.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Brenin Evan IX of Anwyl o Tywyn"
+	desc = ""
+	picture = "WLS_Evan.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Archbishop Charles Alfred Howell Green"
+	desc = ""
+	picture = "WLS_Green.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Brenin Evan IX of Anwyl o Tywyn"
+	desc = ""
+	picture = "WLS_Evan.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Arweinydd Edward Jeffrey Hamm"
+	desc = ""
+	picture = "WLS_Hamm.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gouverneur Wilhelm von Hohenzollern"
+	desc = ""
+	picture = "WLS_Wilhelm_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
 	}
 }

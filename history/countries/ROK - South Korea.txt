@@ -1,60 +1,237 @@
 ﻿capital = 525
 
-set_research_slots = 4
-set_stability = 0.65
-
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_mountaineers = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_recon = 1
-	early_fighter = 1
-	CAS1 = 1
-}
-
-
-
 	set_popularities = {
-		democratic 
-			 = 85
-		neutrality
-			 = 15
+		liberal_republic
+			 = 55
+		democratic
+			 = 35
 		}
 	set_politics = { 
- ruling_party = democratic
+ ruling_party = liberal_republic
 	last_election = "1936.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
 
-add_ideas = {
-	extensive_conscription
-}
-
-
-
 create_country_leader = {
-	name = "Syngman Rhee"
+	name = "Purotekuta Hong Sa-ik"
 	desc = ""
-	picture = "gfx/leaders/KOR/Portrait_Korea_syngman.dds"
+	picture = "ROK_Hong_Sa-ik.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = stratmon
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Kim Gu"
+	name = "Samu Chongjang Lyuh Woon-hyung"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = despotism
+	picture = "KOR_Lyuh_Woon-hyung.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
 	traits = {
-		#
+		
+	}
+}
+
+create_country_leader = {
+	name = "Daetonglyeong Lyuh Woon-hyung"
+	desc = ""
+	picture = "KOR_Lyuh_Woon-hyung.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Daetonglyeong Cho Man-sik"
+	desc = ""
+	picture = "KOR_Cho_Man-Sik.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kwin Yi Bangja"
+	desc = ""
+	picture = "ROK_Yi_Bangja.tga"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Daetonglyeong Ahn Changho"
+	desc = ""
+	picture = "ROK_Changho.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Daetonglyeong Syngman Rhee"
+	desc = ""
+	picture = "KOR_Syngman_Rhee.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wang Yi Kang"
+	desc = ""
+	picture = "KOR_Kang.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Seobjeong Yi Kang"
+	desc = ""
+	picture = "KOR_Kang.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Jang-gwan Sin Ik-hui"
+	desc = ""
+	picture = "ROK_Sin_Ik-hui.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chiji Nobuyuki Abe"
+	desc = ""
+	picture = "ROK_Nobuyuki_Abe.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Daetongnyeong Syngman Rhee"
+	desc = ""
+	picture = "KOR_Syngman_Rhee.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chongsalyeong-gwan Park Chung-hee"
+	desc = ""
+	picture = "ROK_Park_Chung-hee.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wang Yi U"
+	desc = ""
+	picture = "ROK_Yi_U.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wang Yi Un"
+	desc = ""
+	picture = "KOR_Yi_Un.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+
+create_country_leader = {
+	name = "Shujin Baek Yongseong Jinjong"
+	desc = ""
+	picture = "ROK_Baek_Yongseong_Jinjong.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Hwangje Yi Un"
+	desc = ""
+	picture = "KOR_Yi_Un.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Jidoja Yeom Dong-jin"
+	desc = ""
+	picture = "KOR_Yeom Dong-jin.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Eugen Ott"
+	desc = ""
+	picture = "ROK_Eugen_Ott.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
 	}
 }

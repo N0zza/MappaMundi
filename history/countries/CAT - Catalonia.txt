@@ -2,14 +2,23 @@
 
 oob = "CAT_1936"
 set_popularities = {
-	liberal_republic 
-		= 67
-	conservative_monarchism
-		= 20
-	socialism_ideology
-		= 7
-	democratic
-		= 6
+        neutrality = 5
+        monarchism = 0
+        democratic = 10
+        liberal_republic = 50
+        communism = 0
+        vanguardism = 0
+        fascism = 0
+        anarchism_ideology = 0
+        socialism_ideology = 0
+        democratic_monarchism = 0
+        conservative_monarchism = 0
+        stratocratic = 0
+        authoritarian_monarchism = 5
+        republican_fascism = 0
+        national_socialism = 0
+        theocratic = 0
+        left_anarchism = 30
 }
 
 set_politics = { 
@@ -19,13 +28,8 @@ set_politics = {
 	elections_allowed = yes
 }
 
-set_convoys = 150
-set_stability = 0.5
-set_cosmetic_tag = CAT_SPR
-
-
 create_country_leader = {
-	name = "Lluis Companys"
+	name = "President Lluís Companys i Jover"
 	desc = "POLITICS_LLUIS_COMPANYS_DESC"
 	picture = "Portrait_Catalonia_Lluis_Companys.dds"
 	expire = "1965.1.1"
@@ -36,34 +40,52 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Buenaventura Durruti"
-	desc = "POLITICS_BUENAVENTURA_DURRUTI_DESC"
-	picture = "Portrait_Catalonia_Buenaventura_Durruti.dds"
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
 	expire = "1965.1.1"
-	ideology = anarchist_communism
+	ideology = ancom
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Cambo Francecs"
-	desc = "POLITICS_CAMBO_FRANCECCS_DESC"
-	picture = "Portrait_Catalonia_Cambo_Francecs.dds"
+	name = "Rei Carlos IV"
+	desc = ""
+	picture = "CAT_Carlos.tga"
 	expire = "1965.1.1"
-	ideology = falangism
+	ideology = authmon
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Salvador Dali"
-	desc = "POLITICS_SALVADOR_DALI_DESC"
-	picture = "Portrait_Catalonia_Salvador_Dali"
+	name = "Rey Carlos VIII"
+	desc = ""
+	picture = "CAT_Carlos.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = absolutism
 	traits = {
-		#
+	}
+}
+
+
+create_country_leader = {
+	name = "President Francesc Cambó i Batlle"
+	desc = ""
+	picture = "CAT_Batlle_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Salvador Dalí i Domènech"
+	desc = ""
+	picture = "CAT_Dali_authrep.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
 	}
 }

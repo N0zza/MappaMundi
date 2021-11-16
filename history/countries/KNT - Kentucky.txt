@@ -2,29 +2,94 @@
 
 oob = "KNT_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-	early_fighter = 1
-}
-
-
-set_convoys = 10
-
 set_popularities = {
-	        democratic = 23
-        communism = 1
-        fascism = 1
-        neutrality = 75
-
+	        democratic = 98
+                centrist_republic = 2
 }
 
 set_politics = {
-	
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Governor Albert Benjamin Chandler"
+	desc = ""
+	picture = "KNT_Chandler.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Provisional President Charles Gates Dawes"
+	desc = ""
+	picture = "KNT_Dawes_authrep.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chairman Louis William Rogers"
+	desc = ""
+	picture = "KNT_Rogers_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Flemon Davis Sampson"
+	desc = ""
+	picture = "KNT_Sampson_cenrep.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Edward William Macleay Grigg"
+	desc = ""
+	picture = "KNT_Grigg.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chairman Edward William Macleay Grigg"
+	desc = ""
+	picture = "KNT_Grigg.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Colonel Harland David Sanders"
+	desc = ""
+	picture = "KNT_Sanders.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chief William Dudley Pelley"
+	desc = ""
+	picture = "USA_Pelley.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}

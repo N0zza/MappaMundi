@@ -2,29 +2,128 @@
 
 oob = "OHI_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-	early_fighter = 1
-}
-
-
-set_convoys = 10
-
 set_popularities = {
-	        democratic = 23
-        communism = 1
-        fascism = 1
-        neutrality = 75
+	democratic = 2
+        communism = 0
+        fascism = 0
+        centrist_republic = 98
 
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = centrist_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Governor Martin Luther Davey"
+	desc = ""
+	picture = "OHI_Davey.tga"
+	expire = "1947.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichskommissar Wilhelm Schepmann"
+	desc = ""
+	picture = "OHI_Schepmann.tga"
+	expire = "1947.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Military Governor George Smith Patton Jr."
+	desc = ""
+	picture = "OHI_Patton.tga"
+	expire = "1947.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "National Commander George Smith Patton Jr."
+	desc = ""
+	picture = "OHI_Patton.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Emperor George I of Patton"
+	desc = ""
+	picture = "OHI_Patton.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President James Hudson Maurer"
+	desc = ""
+	picture = "OHI_Maurer.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President John William Bricker"
+	desc = ""
+	picture = "OHI_Bricker.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Grand Liberator Charles Birger"
+	desc = ""
+	picture = "OHI_Birger.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor James Arthur Salter"
+	desc = ""
+	picture = "OHI_Salter.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chairman James Arthur Salter"
+	desc = ""
+	picture = "OHI_Salter.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}

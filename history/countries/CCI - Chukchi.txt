@@ -7,11 +7,12 @@ set_popularities = {
         monarchism = 0
         democratic = 0
         liberal_republic = 0
-        communism = 15
-        vanguardism = 80
+        communism = 0
+        vanguardism = 50
+        left_anarchism = 50
         fascism = 0
         anarchism_ideology = 0
-        socialism_ideology = 5
+        socialism_ideology = 0
         democratic_monarchism = 0
         conservative_monarchism = 0
         stratocratic = 0
@@ -30,6 +31,16 @@ set_politics = {
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Unorganized Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Shack.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
 }
 
 create_country_leader = {

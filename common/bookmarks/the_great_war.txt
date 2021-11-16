@@ -1,0 +1,139 @@
+bookmarks = {
+	bookmark = {
+		name = "The Great War"
+		desc = "MM_1914_DESC"
+		date = 1914.7.28.12
+		picture = "GFX_select_date_1936"
+		default_country = "ICE"
+		
+		"ICE"={
+			history = "ICE_MM_BOOKMARK_DESC"
+			ideology = centrist_monarchism
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = conservative_monarchism
+		}
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+		"RUS"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = monarchism
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = authoritarian_monarchism
+		}
+		"AUS"={
+			history = "HUN_GATHERING_STORM_DESC"
+			ideology = authoritarian_monarchism
+		}
+		"TUR"={
+			history = "TUR_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = authoritarian_monarchism
+		}
+		"---"={
+			history = "OTHER_MM_BOOKMARK_DESC"
+		}
+		"AST"={
+			minor = yes
+			history = "AST_GATHERING_STORM_DESC"
+			ideology = conservative_monarchism
+		}
+		"CAN"={
+			minor = yes
+			history = "CAN_GATHERING_STORM_DESC"
+			ideology = democratic_monarchism
+		}
+		"NZL"={
+			minor = yes
+			history = "NZL_GATHERING_STORM_DESC"
+			ideology = democratic_monarchism
+		}
+		"SAF"={
+			minor = yes
+			history = "SAF_GATHERING_STORM_DESC"
+			ideology = centrist_monarchism
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = authoritarian_monarchism
+		}
+		"JAP"={
+			minor = yes
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = stratocratic_monarchism
+		}
+		"CHI"={
+			minor = yes
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+		"USA"={
+			minor = yes
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = liberal_republic
+		}
+		"SER"={
+			minor = yes
+			history = "YUG_GATHERING_STORM_DESC"
+			ideology = authoritarian_monarchism
+		}
+		"GRE"={
+			minor = yes
+			history = "GRE_GATHERING_STORM_DESC"
+			ideology = conservative_monarchism
+		}
+		"MEX"={
+			minor = yes
+			history = "MEXICO_GATHERING_STORM_DESC"
+			ideology = socialism_ideology
+		}
+		"HOL"={
+			minor = yes
+			history = "NETHERLANDS_GATHERING_STORM_DESC"
+			ideology = conservative_monarchism
+		}
+		"ROM"={
+			minor = yes
+			history = "ROM_GATHERING_STORM_DESC"
+			ideology = authoritarian_monarchism
+		}
+		"BUL"={
+			minor = yes
+			history = "BUL_GATHERING_STORM_DESC"
+			ideology = authoritarian_monarchism
+		}
+		"SPR"={
+			minor = yes
+			history = "SPAIN_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+		"POR"={
+			minor = yes
+			history = "PORTUGAL_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+			set_global_flag = startdate_1914_select
+
+			clr_global_flag = startdate_1836_select
+			clr_global_flag = startdate_1936_select
+			clr_global_flag = startdate_1939_select
+			clr_global_flag = startdate_modern_day_select
+			clr_global_flag = startdate_blank_select
+			clr_global_flag = startdate_1950_select
+			WTR =  { complete_national_focus = WTR_1914_start }
+		}
+	}
+}

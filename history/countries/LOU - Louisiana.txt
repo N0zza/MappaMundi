@@ -2,66 +2,103 @@
 
 oob = "LOU_1936"
 
-	set_popularities = {
-		democratic 
-			 = 20
-		fascism
-			 = 0
-		communism
-			 = 0
-		neutrality = 80
-		}
-	set_politics = { 
- ruling_party = neutrality
-	last_election = "1932.11.8"
+set_popularities = {
+        centrist_republic = 98
+        socialism_ideology = 2
+}
+
+set_politics = {
+	ruling_party =  centrist_republic
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-add_ideas = {
-	disarmed_nation
-	free_trade
-}
-
-
 create_country_leader = {
-	name = "Oscar K. Allen"
-	desc = ""
-	picture = "gfx/leaders/LOU/Portrait_Louisiana_Oscar_Allen.dds"
-	expire = "1950.1.1"
-	ideology = liberalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Stanley Hamilton"
-	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	name = "Governor Oscar Kelly Allen"
+	picture = "Portrait_Louisiana_Oscar_Allen.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = cenrep
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Louvell Gibson"
+	name = "Governor Omar Nelson Bradley"
 	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
+	picture = "LOU_Bradley.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Huey Pierce Long"
+	desc = ""
+	picture = "CSA_Long.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Huey Pierce Long"
+	desc = ""
+	picture = "CSA_Long.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "People's Commisar Oliver Law"
+	desc = ""
+	picture = "LOU_Law_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Huey Long"
+	name = "Gouverneur Général Aubert Frère"
 	desc = ""
-	picture = "Portrait_Huey_Long.dds"
+	picture = "LOU_Frere.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gouverneur Général Aubert Frère"
+	desc = ""
+	picture = "LOU_Frere.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir Martin Eric Dunbar-Nasmith"
+	desc = ""
+	picture = "LOU_Nasmith_authmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Roi Jean III de Orléans"
+	desc = ""
+	picture = "FRA_JeanIII.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
 	traits = {
 	}
 }

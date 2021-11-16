@@ -5,11 +5,11 @@ set_cosmetic_tag = GB2_ENG
 set_convoys = 10
 
 set_popularities = {
-        monarchism = 10
+        monarchism = 0
         authoritarian_monarchism = 80
-        democratic = 5
-        communism = 2
-        fascism = 3
+        democratic = 20
+        communism = 0
+        fascism = 0
 
 }
 
@@ -21,14 +21,23 @@ set_politics = {
 	elections_allowed = no
 }
 
-
 create_country_leader = {
-	name = "Arthur Richards"
+	name = "Governor Arthur Frederick Richards"
 	desc = ""
 	picture = "Portrait_Arthur_Richards.dds"
 	ideology = authmon
-	expire = "1978.10.27"
+	expire = "1957.3.15"
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Président Pierre Sarr N'Jie"
+	desc = ""
+	picture = "GAM_Njie_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
 	}
 }

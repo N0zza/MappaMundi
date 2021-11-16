@@ -2,29 +2,84 @@
 
 oob = "AKS_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-	early_fighter = 1
-}
-
-
-set_convoys = 10
-
 set_popularities = {
-	        democratic = 23
-        communism = 1
-        fascism = 1
-        neutrality = 75
-
+	        democratic = 98
+                liberal_republic = 2
 }
 
 set_politics = {
-	
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Governor Junius Marion Futrell"
+	desc = ""
+	picture = "AKS_Futrell.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Joseph Andrew Green"
+	desc = ""
+	picture = "AKS_Green.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Minister-President Harvey Parnell"
+	desc = ""
+	picture = "AKS_Parnell_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Duke Richard I of Sykes"
+	desc = ""
+	picture = "AKS_Sykes_cenmon.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Patriarch William Bell Riley"
+	desc = ""
+	picture = "AKS_Riley_theoc.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Supreme President Douglas Chandler"
+	desc = ""
+	picture = "AKS_Chandler.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Supreme President Douglas Chandler"
+	desc = ""
+	picture = "AKS_Chandler.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}

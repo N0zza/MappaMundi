@@ -1,56 +1,85 @@
-﻿capital = 12491
+﻿capital = 12573
 oob = "ORN_1936"
 
 
 	set_popularities = {
-		democratic 
-			 = 0
-		communism
-			 = 0
-		neutrality
-			 = 100
-			
+        neutrality = 30
+        monarchism = 0
+        democratic = 0
+        liberal_republic = 0
+        communism = 30
+        vanguardism = 30
+        fascism = 0
+        anarchism_ideology = 0
+        socialism_ideology = 0
+        democratic_monarchism = 0
+        conservative_monarchism = 0
+        stratocratic = 0
+        authoritarian_monarchism = 0
+        republican_fascism = 0
+        national_socialism = 0
+        theocratic = 0
+        left_anarchism = 10
+        right_anarchism = 0
+        socialist_monarchy = 0
+        centrist_republic = 0
+        centrist_monarchism = 0
+        stratocratic_monarchism = 0
 	}
 	
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = communism
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Zach Vaughn"
+	name = "Predsedatel Georgy Maximilianovich Malenkov"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	picture = "gfx/leaders/TNOWarlords/ORN_Malenkov.tga"
 	expire = "1953.3.1"
-	ideology = stalinism
-	traits = {
-		
+	ideology = totsoc
+	traits = {	
 	}
 }
 
 create_country_leader = {
-	name = "Mammad Amin Rasulzade"
+	name = "Predsedatel Aleksander Adolfovich Burba"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conservatism
+	picture = "gfx/leaders/TNOWarlords/ORN_Burba.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Zach Vaughn"
-	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
-	expire = "1953.3.1"
-	ideology = moderatism
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
 	traits = {
-		
 	}
 }
 
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = ""
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
 
-
+create_country_leader = {
+	name = "Predsedatel Mikhail Grigoriyevich Pervukhin"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/ORN_Pervukhin.tga"
+	expire = "1953.3.1"
+	ideology = demsoc
+	traits = {	
+	}
+}

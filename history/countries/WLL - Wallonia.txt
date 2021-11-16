@@ -18,21 +18,13 @@ set_technology = {
 
 }
 
-add_ideas = {
-	BEL_king_leopold_iii
-}
-
-
-
-
-
 	set_popularities = {
-		democratic 
-			 = 83
-		fascism
-			 = 11
+		liberal_republic
+			 = 65
+		republican_fascism
+			 = 10
 		communism
-			 = 6
+			 = 25
 		}
 	set_politics = { 
  ruling_party = democratic
@@ -41,61 +33,64 @@ add_ideas = {
 	elections_allowed = yes
 }
 
-
-set_convoys = 80
-set_stability = 0.75
-
 create_country_leader = {
-	name = "Hubert Pierlot"
-	desc = "POLITICS_HUBERT_PIERLOT_DESC"
-	picture = "gfx/leaders/BEL/Portrait_Belgium_Hubert_Pierlot.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Julien Lahaut"
-	desc = "POLITICS_JULIEN_LAHAUT_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = anarchist_communism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Léon Degrelle"
-	desc = "POLITICS_LEON_DEGRELLE_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = rexism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Leopold III"
-	desc = "POLITICS_LEOPOLD_III_DESC"
-	picture = "gfx/leaders/BEL/Portrait_Belgium_Leopold_iii.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		popular_figurehead
-	}
-}
-
-create_country_leader = {
-	name = "Josef Grohé"
+	name = "Gauleiter Josef Grohé"
 	desc = ""
 	picture = "WLL_Josef_Grohe.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Grand Chef Léon Joseph Degrelle"
+	desc = ""
+	picture = "WLL_Degrelle_repfash.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Secrétaire du Peuple Joseph Jacquemotte"
+	desc = ""
+	picture = "WLL_Jacquemotte_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Duc Joachim I de Hohenzollern"
+	desc = ""
+	picture = "WLL_Joachim_authmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Roi Leopold III de Saxe-Cobourg et Gotha"
+	desc = ""
+	picture = "BEL_Leopold.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Président François Louis Bovesse"
+	desc = ""
+	picture = "WLL_Bovesse_librep.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
 	}
 }

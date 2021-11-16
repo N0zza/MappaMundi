@@ -7,18 +7,27 @@ oob = "ALC_1936"
 
 	set_popularities = {
 		democratic 
-			 = 2
+			 = 100
 		fascism
-			 = 6
+			 = 0
 		communism
-			 = 2
+			 = 0
 		neutrality
-			 = 90
+			 = 0
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = democratic
 	last_election = "1960.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Doge Vittorio Pertusio"
+	desc = ""
+	picture = "GEN_Pertusio_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}

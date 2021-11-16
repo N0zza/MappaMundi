@@ -13,13 +13,13 @@ set_convoys = 5
 
 	set_popularities = {
 		democratic 
-			 = 5
-		republican_fascism
-			 = 20
+			 = 10
+		vanguardism
+			 = 10
 		communism
-			 = 5
+			 = 0
 		neutrality 
-			 = 70
+			 = 80
 		}
 	set_politics = { 
  ruling_party = neutrality
@@ -31,7 +31,7 @@ set_convoys = 5
 
 create_country_leader = {
 	
-	name = "José Ricardo Pereira Cabral"
+	name = "Governador-Geral José Ricardo Pereira Cabral"
 	picture = "cabral.dds"
 	expire = "1975.11.22"
 	ideology = despotism
@@ -40,4 +40,74 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Primeiro Secretário Eduardo Chivambo Mondlane"
+	desc = ""
+	picture = "MZB_Mondlane_commie.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Eduardo Chivambo Mondlane"
+	desc = ""
+	picture = "MZB_Mondlane_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Lázaro Kavandame"
+	desc = ""
+	picture = "MZB_Kavandame_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir Alfred Dudley Pound"
+	desc = ""
+	picture = "MZB_Pound_conmon.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gouverneur César Campinchi"
+	desc = ""
+	picture = "MZB_Campinchi_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governador-Geral José Ricardo Pereira Cabral"
+	desc = ""
+	picture = "cabral.dds"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
 

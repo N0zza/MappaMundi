@@ -2,41 +2,244 @@
 
 oob = "SAU_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gwtank = 1
-}
-
 set_convoys = 5
 
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	monarchism = 100
+}
 
-
-	set_popularities = {
-		democratic 
-			 = 0
-		fascism
-			 = 0
-		communism
-			 = 0
-			
-		monarchism 
-			 = 100
-		}
-	set_politics = { 
- ruling_party = monarchism
+set_politics = {
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Abdulaziz of Saud"
+	name = "Melek Abdulaziz bin Abdul Rahman Al Saud"
 	desc = "POLITICS_ABDULAZIZ_DESC"
 	picture = "Portrait_Saudi_Arabia_Abdulazis_Ibn_Saud.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Rais Jabra Nicola"
+	desc = "POLITICS_FEDERICO_PAEZ_DESC"
+	picture = "SAU_Nicola_commie.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Wazir Rashad Pharaon"
+	desc = ""
+	picture = "SAU_Pharaon_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem 
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gouverneur Joseph Vuillemin"
+	desc = ""
+	picture = "SAU_Joseph_authdem.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Skrter al-Awal Jabra Nicola"
+	desc = ""
+	picture = "SAU_Nicola_commie.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rais Jabra Nicola"
+	desc = ""
+	picture = "SAU_Nicola_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Khādim al-Ḥaramayn aš-Šarīfayn Abd al-Ilah of Hejaz"
+	desc = ""
+	picture = "SAU_Ilah_socmon.tga"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Melek Faisal bin Abdulaziz Al Saud"
+	desc = ""
+	picture = "SAU_Faisal_libmon.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Khādim al-Ḥaramayn aš-Šarīfayn Muhammad bin Abdul Rahman Al Saud"
+	desc = ""
+	picture = "SAU_Abdul_conmon.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Melek Muhammad bin Talal Al Rashid"
+	desc = ""
+	picture = "SAU_Rashidi_cenmon.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Khalifeh Mohammed bin Awad bin Laden"
+	desc = ""
+	picture = "SAU_Laden_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rais Abdullah bin Suleiman Al Hamdan"
+	desc = ""
+	picture = "SAU_Hamdan_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rais Fuad Bey Hamza"
+	desc = ""
+	picture = "SAU_Hamza_cendem.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Mashir Mohammad Tarek Abdelkader"
+	desc = ""
+	picture = "SAU_Tarek_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Pasha Cevat Cobanlı"
+	desc = ""
+	picture = "SAU_Cobanlı_stratmon.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor-General Sir Clarence August Bird"
+	desc = ""
+	picture = "SAU_Bird_authmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Khalifeh Muhammad ibn Ibrahim Al ash-Sheikh"
+	desc = ""
+	picture = "SAU_Ibrahim_theoc.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Giacomo Appiotti"
+	desc = ""
+	picture = "SAU_Appiotti_repfash.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Heinrich von Vietinghoff"
+	desc = ""
+	picture = "SAU_Vietinghoff_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Arabian-American Board of Directors"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
 	}
 }

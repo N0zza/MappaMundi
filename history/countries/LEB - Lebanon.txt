@@ -13,11 +13,10 @@ set_convoys = 5
 
 	set_popularities = {
 		liberal_republic 
-			 = 50
+			 = 60
 		fascism
-			 = 10
-		communism
-			 = 10
+			 = 0
+        republican_fascism = 10
 			
 		neutrality 
 			 = 30
@@ -30,7 +29,7 @@ set_convoys = 5
 }
 
 create_country_leader = {
-	name = "Emile Eddie"
+	name = "Président Émile Ibrahim Eddé"
 	desc = ""
 	picture = "Portrait_Emile_Eddie.dds"
 	ideology = socdem
@@ -50,9 +49,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Melick Yarad"
+	name = "Premier Ministre Bechara Khalil El Khoury"
 	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
+	picture = "LEB_Khalil_authrep.tga"
 	ideology = despotism
 	traits = {
 		#
@@ -66,5 +65,25 @@ create_country_leader = {
 	ideology = leninism
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Milk Ahmad I El-Assaad"
+	desc = ""
+	picture = "LEB_Asaad_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Zaeim Pierre Gemayel"
+	desc = ""
+	picture = "LEB_Pierre_repfash.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
 	}
 }

@@ -6,60 +6,55 @@ oob = "AZR_1936"
 	set_popularities = {
 		democratic 
 			 = 0
-		communism
-			 = 0
-		neutrality
-			 = 100
+        republican_fascism = 40
+		monarchism = 60
 		
 	}
 	
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = monarchism
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Zach Vaughn"
+	name = "Velikiy Knyaz Vladimir IV Romanovskiy"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1953.3.1"
-	ideology = stalinism
+	picture = "Portrait_Vladimir_Romanov.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Mammad Amin Rasulzade"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Vladimir"
-	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = moderatism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Siegfried Kasche"
+	name = "Reichskommissar Siegfried Kasche"
 	desc = ""
 	picture = "MSC_Siegfried_Kasche.tga"
 	expire = "1953.3.1"
 	ideology = natsoc
 	traits = {
 		
+	}
+}
+
+create_country_leader = {
+	name = "Komissar Bronislav Vladislavovich Kaminski"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/MSC_Kaminski.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Obshchiy Yuri Evtukovich"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/BSH_Evtukovich.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
 	}
 }

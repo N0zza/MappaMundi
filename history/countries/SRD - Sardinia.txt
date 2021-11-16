@@ -18,67 +18,58 @@ set_technology = {
 
 
 	set_popularities = {
-		democratic 
+		authoritarian_monarchism
 			 = 20
-		fascism
-			 = 10
-		neutrality
-			 = 70
+		monarchism
+			 = 20
+		liberal_republic
+			 = 40
+		republican_fascism
+			 = 20
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = liberal_republic
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
-add_ideas = {
-	neutrality_idea	
-	limited_conscription
-}
-
-set_stability = 0.85
-
 create_country_leader = {
-	name = "Federal Council"
-	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
-	picture = "Portrait_Switzerland_Federal_council.dds"
+	name = "Presidente Emilio Lussu"
+	desc = ""
+	picture = "SRD_Lussu_libdem.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = socdem
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Ernest Béuin"
-	desc = "POLITICS_ERNST_BEGUIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	name = "Re Umberto II di Savoia"
+	desc = ""
+	picture = "Portrait_Umberto_II.tga"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = authmon
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Dr. Max Leo Keller"
-	desc = "POLITICS_MAX_LEO_KELLER_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
+	name = "Re Umberto II di Savoia"
+	desc = ""
+	picture = "Portrait_Umberto_II.tga"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = absolutism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Fritz Platten"
-	desc = "POLITICS_FRITZ_PLATTEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	name = "Duce Paolo Orano"
+	desc = ""
+	picture = "SRD_Orano_repfash.tga"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = repfash
 	traits = {
-		#
 	}
 }

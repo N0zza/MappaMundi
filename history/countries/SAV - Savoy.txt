@@ -20,66 +20,57 @@ set_technology = {
 
 	set_popularities = {
 		democratic 
-			 = 40
-		fascism
-			 = 3
-		neutrality
-			 = 57
+			 = 30
+		authoritarian_monarchism
+			 = 15
+		communism
+			 = 10
+		monarchism
+			 = 45
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = monarchism
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
-add_ideas = {
-	neutrality_idea	
-	limited_conscription
-}
-
-set_stability = 0.85
-
 create_country_leader = {
-	name = "Victor Emmanuel III"
+	name = "Primo Segretario Celeste Negarville"
 	desc = ""
-	picture = "Portrait_Italy_Victor_Emmanuel_III"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Ernest Béuin"
-	desc = "POLITICS_ERNST_BEGUIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Dr. Max Leo Keller"
-	desc = "POLITICS_MAX_LEO_KELLER_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Fritz Platten"
-	desc = "POLITICS_FRITZ_PLATTEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	picture = "SAV_Celeste_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
-		#
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Giovanni Carlo Anselmetti"
+	desc = ""
+	picture = "SAV_Anselmetti_conrep.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Re Vittorio Emanuele III di Savoia"
+	desc = ""
+	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Duca Vittorio Emanuele III di Savoia"
+	desc = ""
+	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
 	}
 }

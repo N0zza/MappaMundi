@@ -13,10 +13,10 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	        democratic = 10
-        communism = 5
-        fascism = 25
-        neutrality = 60
+	        democratic = 0
+        communism = 10
+        monarchism = 40
+        neutrality = 50
 
 }
 
@@ -29,12 +29,32 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Konstantin Konstantinovich Rokossovsky"
+	name = "Predsedatel Konstantin Konstantinovich Rokossovsky"
 	desc = ""
 	picture = "KTG_Rokossovsky.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Président Moïse Kapenda Tshombe"
+	desc = ""
+	picture = "KTG_Tshombe_authrep.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Mwami Mwenda Mwenda III de Garanganze"
+	desc = ""
+	picture = "KTG_Mwenda_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
 	}
 }

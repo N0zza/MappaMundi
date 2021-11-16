@@ -1,4 +1,4 @@
-﻿capital = 2215
+﻿capital = 964
 
 oob = "JBL_1936"
 
@@ -20,13 +20,34 @@ set_convoys = 5
 		communism
 			 = 0
 			
-		neutrality 
+		monarchism 
 			 = 100
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Emir Muhammad bin Talal Al Rashid"
+	desc = ""
+	picture = "SAU_Rashidi_cenmon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Emir Muhammad bin Talal Al Rashid"
+	desc = ""
+	picture = "SAU_Rashidi_cenmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+		#
+	}
+}

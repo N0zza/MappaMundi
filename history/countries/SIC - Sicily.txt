@@ -17,67 +17,83 @@ set_technology = {
 	early_battleship = 1
 	transport = 1
 }
-
-
-
 	
+	set_popularities = {
+		monarchism 
+			 = 10 
+		democratic
+			 = 40
+		communism
+			 = 20
+                republican_fascism                
+                         = 30
+
+		}
 	set_politics = { 
- ruling_party = neutrality
-	last_election = "1960.1.1"
-	election_frequency = 50
+ ruling_party = democratic
+	last_election = "1933.7.1"
+	election_frequency = 48
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Paul Giesler"
-	desc = ""
-	picture = "Portrait_Bavaria_Paul Giesler.dds"
-	expire = "1960.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
 
-	set_popularities = {
-		democratic 
-			 = 2
-		fascism
-			 = 6
-		communism
-			 = 2
-		neutrality
-			 = 90
-		
-	}
 create_country_leader = {
-	name = "Ernst Toller"
+	name = "Primo Segretario Onorato Damen"
 	desc = ""
-	picture = "Portrait_Bavaria_Ernst.dds"
-	expire = "1960.1.1"
-	ideology = stalinism
+	picture = "SIC_Damen_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Fritz Schäffer"
+	name = "Presidente Gennaro Patricolo"
 	desc = ""
-	picture = "Portrait_Bavaria_Fritz.dds"
-	expire = "1960.1.1"
-	ideology = socialism
+	picture = "SIC_Patricolo_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Ernest Louis"
+	name = "Governor Harold George Alexander"
 	desc = ""
-	picture = "Portrait_Bavaria_Rupprecht.dds"
-	expire = "1951.1.1"
-	ideology = despotism
+	picture = "SIC_Alexander_strat.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Re Alfonso I di Borbone-Sicilie"
+	desc = ""
+	picture = "SIC_Alfonso_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Duce Cesare Mori"
+	desc = ""
+	picture = "SIC_Mori_repfash.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+
+create_country_leader = {
+	name = "Capo dei Capi Calogero "Don Calò" Vizzini"
+	desc = ""
+	picture = "SIC_Vizzini_ancap.tga"
+	expire = "1965.1.1"
+	ideology = ancap
 	traits = {
 	}
 }

@@ -12,14 +12,14 @@ set_convoys = 20
 
 	set_popularities = {
 		democratic 
-			 = 25
+			 = 0
 		fascism
-			 = 60
+			 = 100
 		communism
-			 = 5
+			 = 0
 			
 		neutrality 
-			 = 10
+			 = 0
 		}
 	set_politics = { 
  ruling_party = fascism
@@ -29,17 +29,7 @@ set_convoys = 20
 }
 
 create_country_leader = {
-	name = "Bashir es Sadawi"
-	desc = ""
-	picture = "Portrait_Arabia_Generic_democratic1.dds"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Italo Balbo"
+	name = "Governatore Italo Balbo"
 	desc = ""
 	picture = "Portrait_Italo_Balbo.dds"
 	ideology = fascism_ideology
@@ -49,21 +39,94 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Idris Senussi"
+	name = "Gouverneur Raymond Delange"
 	desc = ""
-	picture = "Portrait_Arabia_Generic_land_3.dds"
-	ideology = despotism
+	picture = "LBA_Delange_authdem.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Hassan as-Senussi"
+	name = "Raisa Khalifa Mohammed Tillisi"
 	desc = ""
-	picture = "Portrait_Arabia_Generic_communism1.dds"
-	ideology = leninism
+	picture = "LBA_Tillisi_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Raisa Hussein Yousef Maziq"
+	desc = ""
+	picture = "LBA_Maziq_demsoc.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Malak Idris I bin Muhammad al-Mahdi as-Senussi"
+	desc = ""
+	picture = "LBA_Idris_mon.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Al-Rais Sulayman al-Baruni"
+	desc = ""
+	picture = "LBA_Baruni_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Wali Osman Fuad"
+	desc = ""
+	picture = "LBA_Osman_stratmon.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Richard Nugent O'Connor"
+	desc = ""
+	picture = "LBA_Richard_authmon.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+
+create_country_leader = {
+	name = "Governatore Italo Balbo"
+	desc = ""
+	picture = "Portrait_Italo_Balbo.dds"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Walter Nehring"
+	desc = ""
+	picture = "LBA_Nehring_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
 	}
 }
