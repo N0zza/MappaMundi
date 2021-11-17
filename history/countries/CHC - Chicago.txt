@@ -13,10 +13,10 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	        democratic = 23
-        communism = 1
-        fascism = 1
-        liberal_republic = 75
+	neutrality = 30
+        communism = 5
+        right_anarchism = 5
+        liberal_republic = 60
 
 }
 
@@ -34,6 +34,36 @@ create_country_leader = {
 	picture = "CHC_Kelly.tga"
 	expire = "1947.1.1"
 	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chicago City Council"
+	desc = ""
+	picture = "CHC_Council.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "First Secretary Max Bedacht"
+	desc = ""
+	picture = "CHC_Bedacht_commie.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Boss Alphonse Capone"
+	desc = ""
+	picture = "CHC_Capone.tga"
+	expire = "1965.1.1"
+	ideology = ancap
 	traits = {
 	}
 }
