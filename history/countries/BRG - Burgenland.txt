@@ -14,10 +14,10 @@ set_convoys = 10
 
 
 	set_popularities = {
-        democratic =  25
-        communism =  25
-        fascism =  25
-        neutrality =  25
+        democratic =  0
+        communism =  0
+        fascism =  30
+        neutrality =  70
 
 	}
 	
@@ -28,3 +28,12 @@ set_convoys = 10
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Governatore Guglielmo Ciro Nasi"
+	desc = ""
+	picture = "BRG_Nasi.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
