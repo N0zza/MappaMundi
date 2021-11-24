@@ -3,7 +3,9 @@
 oob = "OT2_1936"
 
 set_popularities = {
-    authoritarian_monarchism = 100
+    authoritarian_monarchism = 80
+                  neutrality = 20
+
 }
 
 set_politics = {
@@ -12,4 +14,44 @@ set_politics = {
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "President John Richard Rarick"
+	desc = ""
+	picture = "OT2_Rarick.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Eedson Louis Millard Burns"
+	desc = ""
+	picture = "MNS_Burns.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chairman Eedson Louis Millard Burns"
+	desc = ""
+	picture = "MNS_Burns.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Eedson Louis Millard Burns"
+	desc = ""
+	picture = "MNS_Burns.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
 }
