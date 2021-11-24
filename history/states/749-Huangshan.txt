@@ -3,14 +3,17 @@ state={
 	id=749
 	name="STATE_749"
 
+	provinces={
+		12019 
+	}
+
 	history={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = PRC
 		add_core_of = ANW
-		buildings = {
-			infrastructure = 4
-
+		victory_points = {
+			12019 5
 		}
 		1938.10.25 = {
 			controller = JAP
@@ -20,19 +23,9 @@ state={
 				set_province_controller = 12019
 
 			}
-			buildings = {
-				infrastructure = 6
-				air_base = 1
-
-			}
-
 		}
-
 	}
-
-	provinces={
-		12019 
-	}
+	
 	manpower=5000000
 	buildings_max_level_factor=1.000
 	state_category=town

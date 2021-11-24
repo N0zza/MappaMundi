@@ -1,9 +1,11 @@
 state={
 	id=11654
 	name="STATE_11654"
+	
 	provinces={
 		12043 
 	}
+	
 	history = {
 		owner = EHC
 		add_core_of = CHI
@@ -11,11 +13,13 @@ state={
 		add_core_of = EHC
 		add_core_of = RGC
 		add_core_of = CIL
-		add_core_of = PSC
-			
-	set_demilitarized_zone = yes
-	
+		add_core_of = PSC		
+		set_demilitarized_zone = yes
+		victory_points = {
+			12043 5
+		}
 	}
+	
 	manpower = 1000
 	state_category = pastoral
 	buildings_max_level_factor=1.000
