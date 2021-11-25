@@ -3142,6 +3142,315 @@ on_actions = {
 		}
 	}
 	on_startup = {
+		#Simplify Raj Game Rule
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_unite_raj
+						option = SIMPLE_INDIA
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RJS
+						is_core_of = TNK
+						is_core_of = PLP
+						is_core_of = DNT
+						}
+					NOT = {
+						is_owned_by = RAJ
+						is_owned_by = INR
+						}
+					}
+				RJS = {
+				 	transfer_state = PREV
+					set_cosmetic_tag = RAJ_COLONY
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+						}
+					}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = MDY
+						is_core_of = INR
+						is_core_of = UTP
+						}
+					NOT = {
+						is_owned_by = RAJ
+						is_owned_by = RJS
+						is_core_of = GWA
+						is_owned_by = BNR
+						is_owned_by = RMP
+						}
+					}
+				MDY = {
+				 	transfer_state = PREV
+					set_cosmetic_tag = RAJ_COLONY
+					set_politics = {
+						ruling_party = stratocratic_monarchism
+						}
+						}
+					}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = TPA
+						is_core_of = ODI
+						is_core_of = JHR
+						is_core_of = CTS
+						is_core_of = CHB
+						}
+					NOT = {
+						is_owned_by = RAJ
+						}
+					}
+				ASA = {
+				 	transfer_state = PREV
+					set_cosmetic_tag = RAJ_COLONY
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+						}
+					}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = MEG
+						}
+					NOT = {
+						is_owned_by = RAJ
+						}
+					}
+				MEG = {
+				 	transfer_state = PREV
+					set_cosmetic_tag = RAJ_COLONY
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+						}
+					}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = MHS
+						is_core_of = SGT
+						is_core_of = SVN
+						}
+					NOT = {
+						is_owned_by = RAJ
+						is_owned_by = HYD
+						is_owned_by = JWH
+						}
+					}
+				MHS = {
+				 	transfer_state = PREV
+					set_cosmetic_tag = RAJ_COLONY
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = PUD
+						is_core_of = TVC
+						is_core_of = COC
+						is_core_of = SDR
+						is_core_of = BNP
+						}
+					NOT = {
+						is_owned_by = RAJ
+						}
+					}
+				TLN = {
+				 	transfer_state = PREV
+					set_cosmetic_tag = RAJ_COLONY
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = BLO
+						}
+					NOT = {
+						is_owned_by = RAJ
+						is_owned_by = OMA
+						}
+					}
+				BLO = {
+				 	transfer_state = PREV
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = EPU
+						is_core_of = HRY
+						is_core_of = BHW
+						is_core_of = KPU
+						is_core_of = HIA
+						is_core_of = URK
+						is_core_of = RMP
+						}
+					NOT = {
+						is_owned_by = RAJ
+						is_owned_by = NEP
+						}
+					}
+				EPU = {
+				 	transfer_state = PREV
+					set_cosmetic_tag = RAJ_COLONY
+					set_politics = {
+						ruling_party = stratocratic_monarchism
+						}
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = NAG
+						is_core_of = HZA
+						is_owned_by = CHM
+						}
+					NOT = {
+						is_owned_by = RAJ
+						}
+					}
+				KAS = {
+				 	transfer_state = PREV
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = WAA
+						is_core_of = TCH
+						is_core_of = KRR
+						is_core_of = KYB
+						}
+					NOT = {
+						is_owned_by = RAJ
+						}
+					}
+				PSH = {
+				 	transfer_state = PREV
+					set_politics = {
+						ruling_party = stratocratic_monarchism
+						}
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = KUT
+						is_core_of = RHP
+						is_core_of = RJK
+						is_core_of = MOV
+						is_core_of = WKR
+						is_core_of = DRL
+						is_core_of = NVN
+						is_core_of = PBD
+						is_core_of = GNL
+						is_core_of = JGH
+						is_core_of = BHV
+						}
+					NOT = {
+						is_owned_by = RAJ
+						}
+					}
+				THD = {
+				 	transfer_state = PREV
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = GUJ
+						is_core_of = JWH
+						}
+					NOT = {
+						is_owned_by = RAJ
+						is_owned_by = THD
+						is_owned_by = GOA
+						is_owned_by = RJS
+						}
+					}
+				BDA = {
+				 	transfer_state = PREV
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = BNR
+						}
+					NOT = {
+						is_owned_by = RAJ
+						}
+					}
+				GWA = {
+				 	transfer_state = PREV
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = KHS
+						is_core_of = DIR
+						is_core_of = HZR
+						is_core_of = SWT
+						is_core_of = AMB
+						}
+					NOT = {
+						is_owned_by = RAJ
+						}
+					}
+				CTL = {
+				 	transfer_state = PREV
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+					}
+				}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = BWL
+						is_core_of = KYY
+						is_core_of = NMM
+						is_core_of = NNP
+						is_core_of = KTW
+						}
+					NOT = {
+						is_owned_by = RAJ
+						is_owned_by = SHA
+						}
+					}
+				KTW = {
+				 	transfer_state = PREV
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+						}
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
 		#Smash USSR Gamerule
 		effect = {
 			if = {
