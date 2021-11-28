@@ -3513,30 +3513,6 @@ country_event = { #India part 4
 	}
 }
 
-country_event = { #Kill Leader
-	id = mm.kill
-	title = "Kill Leader"
-	desc = "Say goodbye to your leader lmao. (Helps replace a leader with a successor. Be careful using it.)"
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = { #Kill Leader
-		name = "Rest in Peace"
-		ai_chance = {
-			factor = 0
-		}
-		hidden_effect = {
-			ROOT = {kill_country_leader = yes}
-		}
-	}
-	option = { 
-		name = "No, my leader won't die."
-		ai_chance = {
-			factor = 0
-		}
-	}
-}
-
 country_event = { #New Leader
 	id = mm.newleader
 	title = "New Leader"
@@ -3550,18 +3526,16 @@ country_event = { #New Leader
 			factor = 0
 		}
 		hidden_effect = {
-			ROOT = {
-				kill_country_leader = yes
-				create_country_leader = {
-					name = "Predsedatel Andrey Andreyevich Vlasov"
-					desc = ""
-					picture = "gfx/leaders/TNOWarlords/SMM_Vlasov.tga"
-					expire = "1965.1.1"
-					ideology = oligarchism
-					traits = {
+					KMI = {
+						kill_country_leader = yes
+						create_country_leader = {
+							name = "Predsedatel Ivan Dmitriyevich Ryazanov"
+							desc = ""
+							picture = KMI_Ryazanov.tga
+							expire = "1965.1.1"
+							ideology = totsoc
+						}
 					}
-				}
-			}
 		}
 	}
 	option = { 
