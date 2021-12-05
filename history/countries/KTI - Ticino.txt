@@ -12,10 +12,10 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	democratic =  25
-	communism =  25
-	fascism =  25
-	neutrality =  25
+	democratic =  0
+	communism =  0
+	fascism =  60
+	neutrality =  40
 }
 	
 set_politics = { 
@@ -25,3 +25,12 @@ set_politics = {
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Governatore Giuseppe Bottai"
+	desc = ""
+	picture = "KTI_Bottai.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
