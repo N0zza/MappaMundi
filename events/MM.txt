@@ -3526,17 +3526,14 @@ country_event = { #New Leader
 			factor = 0
 		}
 		hidden_effect = {
-					TAN = {
-						kill_country_leader = yes
-						create_country_leader = {
-							name = "Yerönkhii Nariin Bichig Salchak Kalbakkhorekovich Toka"
-							desc = "POLITICS_SALCHAK_TOKA_DESC"
-							picture = "TAN_Toka.tga"
-							expire = "1965.1.1"
-							ideology = totsoc
-							traits = {
-								#
-							}
+				USA = {
+					kill_country_leader = yes
+					create_country_leader = {
+            			name = "President Andrew Jackson"
+            			desc = ""
+            			picture = 1836_USA_Andrew_Jackson.tga
+            			expire = "1965.1.1"
+            			ideology = socdem
 						}
 					}
 		}
