@@ -3526,14 +3526,17 @@ country_event = { #New Leader
 			factor = 0
 		}
 		hidden_effect = {
-				GIB = {
+				MDN = {
+					set_politics = {
+						ruling_party = monarchism
+						}
 					kill_country_leader = yes
 					create_country_leader = {
-            			name = "King William IV of Brunswick-Lüneburg"
+            			name = "Duca Francesco IV d'Asburgo-Este"
             			desc = ""
-            			picture = gfx/leaders/ENG/1836_ENG_William_IV.tga
+            			picture = 1836_MDN_Francesco_IV.tga
             			expire = "1965.1.1"
-            			ideology = stratmon
+            			ideology = absolutism
 						}
 					}
 		}
