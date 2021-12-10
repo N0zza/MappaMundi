@@ -1038,9 +1038,16 @@
 					set_politics = {
 						ruling_party = authoritarian_monarchism
 						}
+					puppet = MCO
 					transfer_state = 838
 					transfer_state = 2463
 					transfer_state = 2503
+					}
+				MCO = {
+					set_politics = {
+						ruling_party = monarchism
+						}
+					transfer_state = 2463
 					}
 				VCT = {
 					set_politics = {
@@ -1256,6 +1263,16 @@
 				LCC = {
 					set_politics = {
 						ruling_party = monarchism
+						}
+					}
+				KNE = {
+					set_politics = {
+						ruling_party = stratocratic_monarchism
+						}
+					}
+				KNE = {
+					set_politics = {
+						ruling_party = authoritarian_monarchism
 						}
 					}
 				ENG = {
@@ -1534,6 +1551,106 @@
             			name = "Duca Francesco IV d'Asburgo-Este"
             			desc = ""
             			picture = 1836_MDN_Francesco_IV.tga
+            			expire = "1965.1.1"
+            			ideology = absolutism
+						}
+					}
+				MCO = {
+					kill_country_leader = yes
+					create_country_leader = {
+            			name = "Prince Honoré V de Grimaldi"
+            			desc = ""
+            			picture = 1836_MCO_Honore_V.tga
+            			expire = "1965.1.1"
+            			ideology = absolutism
+						}
+					}
+				SWI = {
+					kill_country_leader = yes
+					create_country_leader = {
+            			name = "Präsident Karl Friedrich Tscharner"
+            			desc = ""
+            			picture = 1836_SWI_Friedrich_Tscharner.tga
+            			expire = "1965.1.1"
+            			ideology = cenrep
+						}
+					}
+				KNE = {
+					kill_country_leader = yes
+					create_country_leader = {
+            			name = "Gouverneur und Generalleutnant Adolf Heinrich Ernst Pfuehl"
+            			desc = ""
+            			picture = 1836_KNE_Adolf_Pfuehl.tga
+            			expire = "1965.1.1"
+            			ideology = stratmon
+						}
+					}
+				LIE = {
+					kill_country_leader = yes
+					create_country_leader = {
+            			name = "Fürstliche Landvogt Johann Michael Menzinger"
+            			desc = ""
+            			picture = 1836_LIE_Johann_Menzinger.tga
+            			expire = "1965.1.1"
+            			ideology = authmon
+						}
+					}
+				HOL = {
+					kill_country_leader = yes
+					create_country_leader = {
+            			name = "Koning Willem I van Oranje-Nassau"
+            			desc = ""
+            			picture = 1836_HOL_Willem_I.tga
+            			expire = "1965.1.1"
+            			ideology = conservative_constitutionalism
+						}
+					}
+				BEL = {
+					kill_country_leader = yes
+					create_country_leader = {
+            			name = "Roi Léopold I de Saxe-Cobourg et Gotha"
+            			desc = ""
+            			picture = 1836_BEL_Leopold_I.tga
+            			expire = "1965.1.1"
+            			ideology = conservative_constitutionalism
+						}
+					}
+				BAY = {
+					kill_country_leader = yes
+					create_country_leader = {
+            			name = "König Ludwig I von Wittelsbach"
+            			desc = ""
+            			picture = 1836_BAY_Ludwig_I.tga
+            			expire = "1965.1.1"
+            			ideology = absolutism
+						}
+					}
+				BAD = {
+					kill_country_leader = yes
+					create_country_leader = {
+            			name = "Großherzog Leopold I von Zähringen"
+            			desc = ""
+            			picture = 1836_BAD_Leopold_I.tga
+            			expire = "1965.1.1"
+            			ideology = absolutism
+						}
+					}
+				WUR = {
+					kill_country_leader = yes
+					create_country_leader = {
+            			name = "König Wilhelm I von Württemberg"
+            			desc = ""
+            			picture = 1836_WUR_Wilhelm_I.tga
+            			expire = "1965.1.1"
+            			ideology = absolutism
+						}
+					}
+				HHH = {
+					kill_country_leader = yes
+					create_country_leader = {
+            			name = "Prinz Friedrich Hermann Otto von Hohenzollern-Hechingen"
+            			desc = ""
+            			picture = 1936_HHH_Friedrich.tga
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
