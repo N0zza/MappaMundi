@@ -10750,10 +10750,6 @@
            		ideology = conservatism
 				}
 			}
-	    ENG = {
-			transfer_state = 1170
-			transfer_state = 1169
-			}
 		ENG = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -11110,12 +11106,29 @@
 			}
 			do_hebrew_renames = yes
         }
+		every_state = {
+			limit = {
+				is_core_of = NOC
+				}
+			NOC = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = CYP
+				OR = {
+					is_claimed_by = ENG
+					}
+				}
+			ENG = {
+				transfer_state = PREV
+				}
+			}
 		NOC = {
 			set_politics = {
 				ruling_party = democratic
 			}
-			transfer_state = 1168
-			transfer_state = 7597
 		}
 		NOC = {
 			kill_country_leader = yes
