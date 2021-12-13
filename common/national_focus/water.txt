@@ -11113,6 +11113,7 @@
 			NOC = {
 				transfer_state = PREV
 				}
+			do_turkish_renames = yes
 			}
 		every_state = {
 			limit = {
@@ -11124,6 +11125,16 @@
 			ENG = {
 				transfer_state = PREV
 				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = CYP
+				NOT = {
+					is_owned_by = NOC
+					is_owned_by = ENG
+					}
+				}
+			do_greek_renames = yes
 			}
 		NOC = {
 			set_politics = {
