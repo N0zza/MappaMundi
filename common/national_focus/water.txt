@@ -6069,6 +6069,16 @@
 							transfer_state = PREV
 						}
 					}
+					ENG = {
+						kill_country_leader = yes
+						create_country_leader = {
+							name = "King George VI of Windsor"
+							desc = ""
+							picture = ENG_George_VI.tga
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+							}
+					}
 					every_state = {
 						limit = {
 							is_core_of = POL
@@ -7722,8 +7732,86 @@
 				set_cosmetic_tag = RUS_RED
 			}
 		SOV = {
-			set_politics = {
-				ruling_party = communism
+			set_cosmetic_tag = SOV_1950
+			}
+		RUS = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Generalyy Sekretar Iosif Vissarionovich Stalin"
+				desc = ""
+				picture = gfx/leaders/Russia/Portrait_Iosif_Stalin.tga
+				expire = "1965.1.1"
+				ideology = totsoc
+				}
+			}
+		SOV = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Generalyy Sekretar Iosif Vissarionovich Stalin"
+				desc = ""
+				picture = gfx/leaders/Russia/Portrait_Iosif_Stalin.tga
+				expire = "1965.1.1"
+				ideology = totsoc
+				}
+			}
+		WGR = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Bundespräsident Theodor Heuss"
+				desc = ""
+				picture = WGR_Heuss.tga
+				expire = "1965.1.1"
+				ideology = liberalism
+				}
+			}
+		ENG = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "King George VI of Windsor"
+				desc = ""
+				picture = ENG_George_VI_2.tga
+				expire = "1965.1.1"
+				ideology = conservative_constitutionalism
+				}
+			}
+		FRA = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Président Vincent Jules Auriol"
+				desc = ""
+				picture = FRA_Auriol.tga
+				expire = "1965.1.1"
+				ideology = socialism
+				}
+			}
+		ITA = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Presidente Luigi Numa Lorenzo Einaudi"
+				desc = ""
+				picture = Portrait_Luigi_Einaudi.tga
+				expire = "1965.1.1"
+				ideology = socdem
+				}
+			}
+		USA = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "President Harry S Truman"
+				desc = ""
+				picture = USA_Truman.tga
+				expire = "1965.1.1"
+				ideology = socdem
+				}
+			}
+		PRC = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Chuhsi Mao Tse-tung"
+				desc = ""
+				picture = PRC_Mao.tga
+				expire = "1965.1.1"
+				ideology = totsoc
 				}
 			}
 		CZE = {
