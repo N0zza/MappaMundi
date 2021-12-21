@@ -1392,7 +1392,7 @@
             			desc = ""
             			picture = 1836_POR_Maria_II.tga
             			expire = "1965.1.1"
-            			ideology = conservative_constitutionalism
+            			ideology = repfash
 						}
 					}
 				SPR = {
@@ -9103,18 +9103,13 @@
 				}
 			}
 		EST = {
-			set_politics = {
-				ruling_party = neutrality
-				}
-			}
-		EST = {
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "President Kersti Kaljulaid"
         		desc = ""
         		picture = EST_Kalijukaid.tga
         		expire = "1965.1.1"
-        		ideology = centrism
+        		ideology = repfash
 				}
 			}
 		SLO = {
@@ -11699,8 +11694,22 @@
 		every_state = {
 			limit = {
 				is_core_of = MLI
+				NOT = {
+					is_core_of = VOL 
+					}
 				}
 			MLI = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = AZW
+				NOT = {
+					is_core_of = VOL 
+					}
+				}
+			AZW = {
 				transfer_state = PREV
 				}
 			}
@@ -11806,9 +11815,6 @@
 		every_state = {
 			limit = {
 				is_core_of = GHA
-					NOT = {
-						is_core_of = WTO
-					}
 				}
 			GHA = {
 				transfer_state = PREV
@@ -12356,6 +12362,12 @@
 				}
 			}
 		MLI = {
+			transfer_state = 864
+			transfer_state = 1598
+			transfer_state = 4997
+			transfer_state = 6668
+			transfer_state = 6669
+			transfer_state = 7677
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
@@ -12833,9 +12845,6 @@
 			}
 		SCM = {
 			drop_cosmetic_tag = yes
-			transfer_state = 5220
-			transfer_state = 5277
-			transfer_state = 5276
 			set_politics = {
 				ruling_party = neutrality
 				}	
