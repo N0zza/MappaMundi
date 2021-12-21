@@ -21,11 +21,11 @@ set_convoys = 10
 			 = 0
 		communism
 			 = 0
-		conservative_monarchism 
+		authoritarian_monarchism 
 			 = 100
 		}
 	set_politics = { 
- ruling_party = conservative_monarchism
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -36,7 +36,7 @@ create_country_leader = {
 	desc = "POLITICS_REZA_SHAH_PAHLAVI_DESC"
 	picture = "Portrait_Reza_Pahlavi.dds"
 	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
+	ideology = authmon
 	traits = {
 		#
 	}
@@ -131,7 +131,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Chairman John Cadman, 1st Baron Cadman"
+	name = "Chairman Sir John Cadman"
 	desc = ""
 	picture = "PER_John_Cadman_ancap.tga"
 	expire = "1965.1.1"
@@ -232,7 +232,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Mohammmad Reza Shah of Pahlavi"
+	name = "Mohammmad Reza Shah Pahlavi"
 	desc = "POLITICS_REZA_SHAH_PAHLAVI_DESC"
 	picture = "PER_Mohammad_Reza_Pahlavi.dds"
 	expire = "1965.1.1"
@@ -243,7 +243,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Reza Shah of Pahlavi"
+	name = "Reza Shah Pahlavi"
 	desc = "POLITICS_REZA_SHAH_PAHLAVI_DESC"
 	picture = "Portrait_Reza_Pahlavi.dds"
 	expire = "1965.1.1"
@@ -254,11 +254,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Governor William Joseph Slim, 1st Viscount Slim"	
+	name = "Governor William Joseph Slim"	
 	desc = ""
 	picture = "PER_William_Slim_authmon.tga"
 	expire = "1965.1.1"
-	ideology = authmon
+	ideology = conservative_constitutionalism
 	traits = {
 	}
 }

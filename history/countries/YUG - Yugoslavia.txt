@@ -6,15 +6,14 @@ oob = "YUG_1936"
 		democratic 
 			 = 15
 		fascism
-			 = 10
+			 = 60
 		communism
 			 = 15
-			
 		authoritarian_monarchism 
-			 = 60
+			 = 10
 		}
 	set_politics = { 
- ruling_party = authoritarian_monarchism
+ ruling_party = fascism
 	last_election = "1935.5.3"
 	election_frequency = 36
 	elections_allowed = yes
@@ -117,7 +116,7 @@ create_country_leader = {
 	desc = ""
 	picture = "yug_paulkaradord.tga"
 	expire = "1965.1.1"
-	ideology = authmon
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -187,7 +186,7 @@ create_country_leader = {
 	desc = ""
 	picture = "yug_alexkaradord.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = authmon
 	traits = {
 	}
 }

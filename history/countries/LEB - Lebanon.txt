@@ -13,19 +13,25 @@ set_convoys = 5
 
 	set_popularities = {
 		liberal_republic 
+			 = 40
+		centrist_republic
 			 = 60
-		fascism
-			 = 0
-        republican_fascism = 10
-			
-		neutrality 
-			 = 30
 		}
 	set_politics = { 
- ruling_party = liberal_republic
+ ruling_party = centrist_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Rayiys Habib Pacha El-Saad"
+	desc = ""
+	picture = "LEB_Habib_cenrep.tga"
+	ideology = cenrep
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
