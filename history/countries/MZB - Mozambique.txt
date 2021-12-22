@@ -2,14 +2,7 @@
 
 oob = "MZB_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	tech_mountaineers = 1
-}
 set_cosmetic_tag = MZB_POR
-set_convoys = 5
-
 
 	set_popularities = {
 		democratic 
@@ -18,11 +11,11 @@ set_convoys = 5
 			 = 10
 		communism
 			 = 0
-		neutrality 
+		republican_fascism 
 			 = 80
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = republican_fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -34,7 +27,7 @@ create_country_leader = {
 	name = "Governador-Geral José Ricardo Pereira Cabral"
 	picture = "cabral.dds"
 	expire = "1975.11.22"
-	ideology = despotism
+	ideology = repfash
 	traits = {
 		#
 	}

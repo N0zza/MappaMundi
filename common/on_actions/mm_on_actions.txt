@@ -5594,7 +5594,6 @@ on_actions = {
 								   tag = ETH
 								   tag = OMN
 								   tag = UAE
-								   tag = SAU
 								   tag = YEM
 								   tag = ALG
 								   tag = KMN
@@ -5609,7 +5608,10 @@ on_actions = {
 								   tag = AGV
 								   tag = CST
 								   tag = PVC
-								   tag = SER}}
+								   tag = SER
+								   tag = TYR
+								   tag = KTI
+								   tag = ILY}}
 					drop_cosmetic_tag = yes
 					if = {
 						limit = {
@@ -5626,7 +5628,8 @@ on_actions = {
 				}
 				if = {
 					limit = {OR = {tag = SAU
-								   tag = GRE}}
+								   tag = GRE
+								   tag = MOR}}
 					drop_cosmetic_tag = yes
 					if = {
 						limit = {
@@ -6058,19 +6061,6 @@ on_actions = {
 							}
 						}
 						set_cosmetic_tag = POR_MONARCHISM
-					}
-					if = {
-						limit = {
-							OR = {
-							has_government = centrist_republic
-							has_government = neutrality
-							has_government = theocratic
-							has_government = republican_fascism
-							has_government = national_socialism
-							has_government = right_anarchism
-							}
-						}
-						set_cosmetic_tag = POR_AUTH
 					}
 					if = {
 						limit = {

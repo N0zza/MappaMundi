@@ -27,6 +27,39 @@ on_actions = {
 						do_sovietturkestan_renames = yes
 					}
 					
+					### MON ###
+					if = {
+						limit = {
+							ROOT = {tag = MON}
+						}
+						do_mongolian_renames = yes
+					}
+					
+					### UYG ###
+					if = {
+						limit = {
+							ROOT = {tag = UYG}
+						}
+						do_uyghur_renames = yes
+					}
+					
+					### TIB ###
+					if = {
+						limit = {
+							ROOT = {tag = TIB}
+						}
+						do_tibetian_renames = yes
+					}
+					
+					### TIB ###
+					if = {
+						limit = {
+							ROOT = {tag = TIB}
+							has_government = socialism_ideology
+						}
+						do_tibetian_pinyin_renames = yes
+					}
+					
 					### KAZ ###
 					if = {
 						limit = {
@@ -310,15 +343,7 @@ on_actions = {
 							limit = {
 								ROOT = { tag = ITA }
 							}
-							do_latin_renames = yes
-							if = {
-								limit = {
-									ROOT = {
-										NOT = { has_cosmetic_tag = SPQR }
-									}
-								}
-								do_italian_renames = yes
-							}
+							do_italian_renames = yes
 						}
 
 					### POR ###
@@ -332,7 +357,10 @@ on_actions = {
 					### VCT ###
 					if = {
 						limit = {
-							ROOT = {tag = VCT}
+							OR = {
+								ROOT = {tag = VCT}
+								ROOT = {tag = ITA has_cosmetic_tag = SPQR}
+							}
 						}
 						do_latin_renames = yes
 					}

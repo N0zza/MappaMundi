@@ -2,47 +2,30 @@
 
 oob = "EST_1936"
 
-set_research_slots = 3
-
-add_ideas = {
-	limited_conscription
-}
-
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	early_fighter = 1
-	early_submarine = 1
-}
-
-set_convoys = 5
-
-
-
 	set_popularities = {
 		democratic 
 			 = 20
-		fascism
-			 = 15
+		republican_fascism
+			 = 60
 		communism
 			 = 5
 			
 		neutrality 
-			 = 60
+			 = 15
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = republican_fascism
 	last_election = "1932.5.21"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Konstantin Päts"
+	name = "President Konstantin Päts"
 	desc = ""
 	picture = "GFX_Portrait_estonia_konstantin_pats.dds"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = repfash
 	traits = {
 		#
 	}
@@ -214,7 +197,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Artur_Sirk.tga"
 	expire = "1965.1.1"
-	ideology = repfash
+	ideology = despotism
 	traits = {
 	}
 }

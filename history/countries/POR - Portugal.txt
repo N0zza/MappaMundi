@@ -6,16 +6,14 @@ oob = "POR_1936"
 		democratic
 			 = 0
 		fascism
-			 = 5
+			 = 10
 		communism
 			 = 5
-		neutrality
-			 = 85
 		republican_fascism
-			 = 5
+			 = 85
 		}
 set_politics = { 
-	ruling_party = neutrality
+	ruling_party = republican_fascism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = yes
@@ -126,7 +124,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Oscar_Carmona.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = repfash
 	traits = {
 	}
 }
@@ -196,7 +194,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Francisco_Preto.tga"
 	expire = "1965.1.1"
-	ideology = repfash
+	ideology = despotism
 	traits = {
 	}
 }

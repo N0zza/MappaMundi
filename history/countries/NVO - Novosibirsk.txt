@@ -15,15 +15,13 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	        democratic = 10
-        communism = 0
-        fascism = 0
-        neutrality = 90
-
+	democratic = 10
+	communism = 0
+	fascism = 0
+	neutrality = 90
 }
 
 set_politics = {
-	
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -46,6 +44,16 @@ create_country_leader = {
 	picture = "gfx/leaders/TNOWarlords/NVO_Shuksin.tga"
 	expire = "1965.1.1"
 	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prezident Mikhail Petrovich Baganov"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/NVO_Baganov.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
 	traits = {
 	}
 }
