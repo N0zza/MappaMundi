@@ -10197,6 +10197,14 @@
 			}
 		every_state = {
 			limit = {
+				is_core_of = RMM
+				}
+			RMM = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
 				is_core_of = MAL
 				}
 			MAL = {
