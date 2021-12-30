@@ -440,14 +440,6 @@ on_actions = {
 								ROOT = {OR = {tag = IRE tag = SCO tag = WLS tag = CRN tag = BRI tag = MNX}}
 							}
 							do_celtic_renames = yes
-							if = {
-								limit = {
-									ROOT = {
-										NOT = { has_cosmetic_tag = CEL_GREEN }
-									}
-								}
-								do_english_renames = yes
-							}
 						}
 
 					### ROM ###

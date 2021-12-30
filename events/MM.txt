@@ -3526,17 +3526,15 @@ country_event = { #New Leader
 			factor = 0
 		}
 		hidden_effect = {
-		GRE = {
-
-create_country_leader = {
-	name = "Aftokrátoras Geórgios II tou Glýxmpournk"
-	desc = ""
-	picture = "Portrait_George_II.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
+		POR = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Presidente Marcelo Nuno Duarte Rebelo de Sousa"
+        		desc = ""
+        		picture = POR_Sousa.tga
+        		expire = "1965.1.1"
+        		ideology = repfash
+				}
 			}
 		}
 	}
