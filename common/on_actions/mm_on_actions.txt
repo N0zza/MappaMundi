@@ -1080,10 +1080,10 @@ on_actions = {
 					LAT = {
 						transfer_state = 1008
 						transfer_state = 13830
-					}
-					}
-					}
-					}
+				}
+			}
+		}
+	}
 					
 	on_startup = {
 		#Split Russia and Moscovy into TNO warlords
@@ -5611,7 +5611,7 @@ on_actions = {
 								   tag = SER
 								   tag = TYR
 								   tag = KTI
-								   tag = ILY}}
+								   tag = ILY
 								   tag = CHA}}
 					drop_cosmetic_tag = yes
 					if = {
@@ -5622,8 +5622,8 @@ on_actions = {
 						every_state = {
 							limit = {
 								is_owned_by = ROOT
-							}
-						do_italian_renames = yes
+								}
+							do_italian_renames = yes
 						}
 					}
 				}
@@ -5662,11 +5662,12 @@ on_actions = {
 									tag = DAH
 									tag = GNA
 									tag = TOG
-									tag = CHD
+									tag = CHA
 									tag = CAR
 									tag = RCG
 									tag = GAB
 									tag = LIB
+									tag = INC
 								}
 							}
 							drop_cosmetic_tag = yes
@@ -5797,6 +5798,8 @@ on_actions = {
 								   tag = NOR
 								   tag = KAZ
 								   tag = EST
+								   tag = ILY
+								   tag = TKS
 								   tag = UTR}}
 					drop_cosmetic_tag = yes
 					if = {
@@ -5834,6 +5837,12 @@ on_actions = {
 				if = {
 					limit = {tag = INS}
 					drop_cosmetic_tag = yes
+					if = {
+						limit = {
+							has_government = conservative_monarchism
+						}
+						set_cosmetic_tag = UK_RED
+					}
 					if = {
 						limit = {
 							has_government = fascism

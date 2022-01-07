@@ -60,6 +60,46 @@ on_actions = {
 						do_tibetian_pinyin_renames = yes
 					}
 					
+					### KYR ###
+					if = {
+						limit = {
+							ROOT = {tag = KYR}
+						}
+						do_kyrgyz_renames = yes
+					}
+					
+					### TAJ ###
+					if = {
+						limit = {
+							ROOT = {tag = TAJ}
+						}
+						do_tajik_renames = yes
+					}
+					
+					### TMS ###
+					if = {
+						limit = {
+							ROOT = {tag = TMS}
+						}
+						do_turkmen_renames = yes
+					}
+					
+					### KPK ###
+					if = {
+						limit = {
+							ROOT = {tag = KPK}
+						}
+						do_karakalpak_renames = yes
+					}
+					
+					### UZB ###
+					if = {
+						limit = {
+							ROOT = {tag = UZB}
+						}
+						do_uzbek_renames = yes
+					}
+					
 					### KAZ ###
 					if = {
 						limit = {
@@ -341,7 +381,8 @@ on_actions = {
 					### ITA ###
 						if = {
 							limit = {
-								ROOT = { tag = ITA }
+								ROOT = {OR =  { tag = ITA 
+												is_subject_of = ITA}}
 							}
 							do_italian_renames = yes
 						}
