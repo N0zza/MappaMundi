@@ -3,8 +3,9 @@
 oob = "NZG_1936"
 
 set_popularities = {
-	national_socialism
-		= 100
+	national_socialism = 80
+	stratocratic = 10
+	theocratic = 10
 }
 
 set_politics = { 
@@ -15,80 +16,39 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Adolf Hitler"
+	name = "Führer und Reichskanzler Adolf Hitler"
 	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Portrait_Hitler_Skeleton.dds"
+	picture = "NZG_Hitler.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
-		dictator
 	}
 }
 
 create_country_leader = {
-	name = "Hermann Wilhelm Göring"
+	name = "Führer und Reichskanzler Hermann Wilhelm Göring"
 	desc = ""
-	picture = "PRS_Goering.tga"
+	picture = "NZG_Goering.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = authmon
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Albert Speer"
+	name = "Führer und Reichskanzler Berthold Konrad Hermann Albert Speer"
 	desc = ""
-	picture = "Portrait_Albert_Speer.dds"
+	picture = "NZG_Speer.tga"
 	expire = "1965.1.1"
-	ideology = demsoc
+	ideology = repfash
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Albert Speer"
+	name = "Führer und Reichskanzler Berthold Konrad Hermann Albert Speer"
 	desc = ""
-	picture = "Portrait_Albert_Speer.dds"
-	expire = "1965.1.1"
-	ideology = monsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Martin Ludwig Bormann"
-	desc = ""
-	picture = "Portrait_Martin_Bormann.dds"
-	expire = "1965.1.1"
-	ideology = socdem
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Martin Ludwig Bormann"
-	desc = ""
-	picture = "Portrait_Martin_Bormann.dds"
-	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Hermann Wilhelm Göring"
-	desc = ""
-	picture = "PRS_Goering.tga"
-	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Reinhard Tristan Eugen Heydrich"
-	desc = ""
-	picture = "Portrait_Reinhard_Heydrich.dds"
+	picture = "NZG_Speer.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -96,19 +56,29 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Reinhard Tristan Eugen Heydrich"
+	name = "Führer und Reichskanzler Martin Ludwig Bormann"
 	desc = ""
-	picture = "Portrait_Reinhard_Heydrich.dds"
+	picture = "NZG_Bormann.tga"
 	expire = "1965.1.1"
-	ideology = cenmon
+	ideology = despotism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Ferdinand Schörner"
+	name = "Führer und Reichskanzler Reinhard Tristan Eugen Heydrich"
 	desc = ""
-	picture = "gfx/leaders/GMA/GMA_Schorner.tga"
+	picture = "NZG_Heydrich.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Führer und Reichskanzler Ferdinand Schörner"
+	desc = ""
+	picture = "NZG_Schorner.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -116,9 +86,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Karl Dönitz"
+	name = "Führer und Reichskanzler Karl Dönitz"
 	desc = ""
-	picture = "Portrait_Karl_Doenitz.dds"
+	picture = "NZG_Doenitz.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -126,9 +96,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Heinrich Luitpold Himmler"
+	name = "Führer und Reichskanzler Heinrich Luitpold Himmler"
 	desc = ""
-	picture = "Portrait_Heinrich_Himmler.dds"
+	picture = "NZG_Himmler.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -136,11 +106,31 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Heinrich Luitpold Himmler"
+	name = "Führer und Reichskanzler Hans Speidel"
 	desc = ""
-	picture = "Portrait_Heinrich_Himmler.dds"
+	picture = "NZG_Speidel.tga"
 	expire = "1965.1.1"
-	ideology = repfash
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Generalsekretärin Ulrike Marie Meinhof"
+	desc = ""
+	picture = "NZG_Meinhof.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Generalsekretärin Ulrike Marie Meinhof"
+	desc = ""
+	picture = "NZG_Meinhof.tga"
+	expire = "1965.1.1"
+	ideology = marxism
 	traits = {
 	}
 }
