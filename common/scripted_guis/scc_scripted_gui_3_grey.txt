@@ -11,62 +11,342 @@ scripted_gui = {
         
         effects = {
             GREY1_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = WHITE
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = WHITE
+						clr_country_flag = scc_actor
+					}
+				}
 				set_variable = { global.test_test = 1 }
 				set_variable = { global.white_name = "Working" }
             }
 			GREY2_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = AUSTRIA_WHITE
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = AUSTRIA_WHITE
+						clr_country_flag = scc_actor
+					}
+				}
             }
 			GREY3_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = JAPAN_WHITE
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = JAPAN_WHITE
+						clr_country_flag = scc_actor
+					}
+				}
             }
 			GREY4_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = SILVER
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = SILVER
+						clr_country_flag = scc_actor
+					}
+				}
             }
 			GREY5_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = GREY_GER1
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = GREY_GER1
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			GREY6_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = GREY_GER2
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = GREY_GER2
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			GREY7_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = GREY_GER3
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = GREY_GER3
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			GREY8_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = TUR_GREY
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = TUR_GREY
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			GREY9_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = IRN_GREY
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = IRN_GREY
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			GREY10_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = PRU_GREY
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = PRU_GREY
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			GREY11_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = INS_GREY
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = INS_GREY
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			GREY12_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = BLACK
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = BLACK
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			GREY13_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = FIN_COLONY
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = FIN_COLONY
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			GREY14_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = NEP_COLONY
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = NEP_COLONY
+						clr_country_flag = scc_actor
+					}
+				}
 			}
         }
         

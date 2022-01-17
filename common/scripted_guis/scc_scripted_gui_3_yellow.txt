@@ -11,88 +11,508 @@ scripted_gui = {
 		
 		effects = {
 			YELLOW1_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = PERSIA_YELLOW
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = PERSIA_YELLOW
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW2_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = ROM_YELLOW
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = ROM_YELLOW
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW3_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = LIT_YELLOW
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = LIT_YELLOW
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW4_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = SPR_YELLOW
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = SPR_YELLOW
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW5_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = BEL_YELLOW
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = BEL_YELLOW
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW6_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = HOL_ORANGE
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = HOL_ORANGE
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW7_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = HUN_ORANGE
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = HUN_ORANGE
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW8_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = RAJ_ORANGE
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = RAJ_ORANGE
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW9_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = CHI_YELLOW
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = CHI_YELLOW
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW10_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = COL_YELLOW
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = COL_YELLOW
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW11_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = BOL_YELLOW
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = BOL_YELLOW
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW12_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = MAN_ORANGE
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = MAN_ORANGE
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW13_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = DEN_BROWN
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = DEN_BROWN
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW14_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = SANJOSE_ORANGE
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = SANJOSE_ORANGE
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW15_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = METALLIC_GOLD
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = METALLIC_GOLD
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW16_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = PEACHTREE_GOLD
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = PEACHTREE_GOLD
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW17_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = GEORGIA_BRONZE
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = GEORGIA_BRONZE
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW18_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = CAPITOL_COPPER
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = CAPITOL_COPPER
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW19_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = CATALONIA_YELLOW
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = CATALONIA_YELLOW
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW20_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = TRIBAL_BROWN
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = TRIBAL_BROWN
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 			YELLOW21_button_click = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = ETH_COLONY
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = GER_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = ETH_COLONY
+						clr_country_flag = scc_actor
+					}
+				}
 			}
 		}
 		
