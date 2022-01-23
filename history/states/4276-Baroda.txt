@@ -1,23 +1,24 @@
-state={
-	id=4276
-	name="STATE_4276"
-	provinces={
-		14941 
-	}
-	manpower = 1000
-	
-	local_supplies = 0.0
-	state_category = pastoral
 
-	history={
-		owner = BDA
-		buildings = {
-			infrastructure = 1
-		}
-		add_core_of = BDA
-		add_core_of = RAJ 
-		add_core_of = IND
-		add_core_of = GUJ
-	}
-	buildings_max_level_factor=1.000
+state={
+     id=4276
+     name="STATE_4276"
+     
+     provinces={
+        14941 
+     }
+
+     history={
+          owner = BDA
+          add_core_of = BDA
+          add_core_of = RAJ 
+          add_core_of = IND
+          add_core_of = GUJ
+        victory_points = {
+            14941 5
+        }
+     }
+     
+     buildings_max_level_factor=1.000
+     state_category = pastoral
+     manpower = 1000
 }

@@ -1,23 +1,22 @@
 
 state={
 	id=445
-	name="STATE_445" # Quetta
-	manpower = 1
-	
-	local_supplies = 0.0
-	state_category = wasteland
+	name="STATE_445"
 
+	provinces={
+		8044
+	}
+	
 	history={
 		owner = RAJ
 		add_core_of = RAJ 
 		add_core_of = BLO
 		add_core_of = PAK
 		victory_points = {
-			8044 5
+			8044 25
 		}
 	}
 
-	provinces={
-		8044
-	}
+	state_category = wasteland
+	manpower = 1
 }

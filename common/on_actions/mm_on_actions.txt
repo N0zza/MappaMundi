@@ -51,30 +51,64 @@ on_actions = {
 							add_state_core = PREV
 						}
 					}
+				every_state = {
+					limit = {
+						is_core_of = GER
+						}
+						NZG = {
+							add_state_core = PREV
+						}
+					}
+				every_state = {
+					limit = {
+						is_claimed_by = GER
+						}
+						NZG = {
+							add_state_claim = PREV
+						}
+					}
 					every_state = {
 						limit = {
 							OR = {
 								is_core_of = ONG
 							}
 						}
-					ONG = {
-						transfer_state = PREV
-						set_cosmetic_tag = FIN_COLONY
-					}
+						ONG = {
+							transfer_state = PREV
+							set_cosmetic_tag = FIN_COLONY
+						}
 					}
 					PSS = {
 						set_politics = {
 							ruling_party = stratocratic
 						}
-						}
+					}
 					UKH = {
 						set_politics = {
 							ruling_party = stratocratic
 						}
 					}
 					KAZ = {
-						set_politics = {
-							ruling_party = stratocratic
+						release = ATY
+						release = KST
+						release = ATB
+						release = KSU
+						release = PAV
+						release = ATU
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = ATY
+								is_core_of = KST
+								is_core_of = ATB
+								is_core_of = KSU
+								is_core_of = PAV
+								is_core_of = ATU
+							}
+						}
+						KAZ = {
+							add_state_core = PREV
 						}
 					}
 					KYR = {
@@ -667,13 +701,11 @@ on_actions = {
 					every_state = {
 						limit = {
 							is_core_of = KAR
-						NOT = {
-							is_core_of = ONG
+							NOT = {is_core_of = ONG}
 						}
+						FIN = {
+							transfer_state = PREV
 						}
-					FIN = {
-						transfer_state = PREV
-					}
 					}
 					FIN = {
 						transfer_state = 13600
@@ -682,31 +714,6 @@ on_actions = {
 						transfer_state = 12302
 						transfer_state = 12029
 						transfer_state = 12290
-					}
-					KAZ = {
-						release = ATY
-						release = KST
-						release = ATB
-						release = KSU
-						release = PAV
-						release = ATU
-					}
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = ATY
-								is_core_of = KST
-								is_core_of = ATB
-								is_core_of = KSU
-								is_core_of = PAV
-								is_core_of = ATU
-								}
-						}
-					KAZ = {
-						add_state_core = PREV
-						set_capital = 12450
-						set_cosmetic_tag = KAZ_TNO
-					}
 					}
 					ATU = {
 						set_politics = {
@@ -1080,10 +1087,10 @@ on_actions = {
 					LAT = {
 						transfer_state = 1008
 						transfer_state = 13830
-					}
-					}
-					}
-					}
+				}
+			}
+		}
+	}
 					
 	on_startup = {
 		#Split Russia and Moscovy into TNO warlords
@@ -1897,6 +1904,7 @@ on_actions = {
 						release = KSU
 						release = PAV
 						release = ATU
+						release = KYZ
 					}
 					KYZ = {
 						annex_country = {target = KAZ}
@@ -1910,6 +1918,7 @@ on_actions = {
 								is_core_of = KSU
 								is_core_of = PAV
 								is_core_of = ATU
+								is_owned_by = KYZ
 								}
 						}
 						KYZ = {
@@ -5611,7 +5620,8 @@ on_actions = {
 								   tag = SER
 								   tag = TYR
 								   tag = KTI
-								   tag = ILY}}
+								   tag = ILY
+								   tag = CHA}}
 					drop_cosmetic_tag = yes
 					if = {
 						limit = {
@@ -5621,8 +5631,8 @@ on_actions = {
 						every_state = {
 							limit = {
 								is_owned_by = ROOT
-							}
-						do_italian_renames = yes
+								}
+							do_italian_renames = yes
 						}
 					}
 				}
@@ -5661,11 +5671,12 @@ on_actions = {
 									tag = DAH
 									tag = GNA
 									tag = TOG
-									tag = CHD
+									tag = CHA
 									tag = CAR
 									tag = RCG
 									tag = GAB
 									tag = LIB
+									tag = INC
 								}
 							}
 							drop_cosmetic_tag = yes
@@ -5795,7 +5806,14 @@ on_actions = {
 								   tag = MSC 
 								   tag = NOR
 								   tag = KAZ
-								   tag = UTR}}
+								   tag = EST
+								   tag = ILY
+								   tag = TKS
+								   tag = UTR
+								   tag = TZN
+								   tag = NMB
+								   tag = MAD
+								   tag = RCG}}
 					drop_cosmetic_tag = yes
 					if = {
 						limit = {
@@ -5832,6 +5850,12 @@ on_actions = {
 				if = {
 					limit = {tag = INS}
 					drop_cosmetic_tag = yes
+					if = {
+						limit = {
+							has_government = conservative_monarchism
+						}
+						set_cosmetic_tag = UK_RED
+					}
 					if = {
 						limit = {
 							has_government = fascism

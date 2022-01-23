@@ -3526,16 +3526,21 @@ country_event = { #New Leader
 			factor = 0
 		}
 		hidden_effect = {
-		USA = {
+		RCG = {
 			kill_country_leader = yes
-			create_country_leader = {
-				name = "President Harry S Truman"
-				desc = ""
-				picture = USA_Truman.tga
-				expire = "1965.1.1"
-				ideology = socdem
-				}
+
+
+create_country_leader = {
+	
+	name = "Reichsprotektor Hermann Wilhelm von Göring"
+	picture = "Portrait_von_Goering.dds"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {	
+	}
+}
 			}
+		}
 	}
 	option = {
 		name = "Nah"

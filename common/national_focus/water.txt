@@ -4736,7 +4736,7 @@
 			transfer_state = 3403
 			set_politics = {
 				ruling_party = conservative_monarchism
-				
+				}
 			}
 		ICE ={
 			set_politics = {
@@ -5528,9 +5528,9 @@
 			set_cosmetic_tag = ITA_GREEN
 			}
 		CMR = {
-			set_cosmetic_tag = CMR_GER
+			set_cosmetic_tag = GREY_GER3
 			set_politics = {
-				ruling_party = authoritarian_monarchism
+				ruling_party = stratocratic_monarchism
 					}
 			}
 		every_state = {
@@ -5561,22 +5561,22 @@
 				}
 			}
 		TOG = {
-			set_cosmetic_tag = TOG_GER
+			set_cosmetic_tag = GREY_GER3
 			set_politics = {
-				ruling_party = authoritarian_monarchism
+				ruling_party = stratocratic_monarchism
 					}
 			}
 		TZN = {
 			transfer_state = 1491
-			set_cosmetic_tag = KEN_GER
+			set_cosmetic_tag = GREY_GER3
 			set_politics = {
-				ruling_party = authoritarian_monarchism
+				ruling_party = stratocratic_monarchism
 					}
 			}
 		NMB = {
-			set_cosmetic_tag = NMB_GER
+			set_cosmetic_tag = GREY_GER3
 			set_politics = {
-				ruling_party = authoritarian_monarchism
+				ruling_party = stratocratic_monarchism
 					}
 			}
 		SAF = {
@@ -5616,6 +5616,7 @@
 			transfer_state = 451
 			transfer_state = 7271
 			transfer_state = 9847
+			transfer_state = 15809
 			set_cosmetic_tag = CYR_ITA
 			}
 		CYR = {
@@ -5655,6 +5656,16 @@
 			transfer_state = 15078
 			transfer_state = 15077
 			transfer_state = 13069
+			transfer_state = 15833
+			transfer_state = 15746
+			set_capital = 856
+			set_politics = {
+				ruling_party = authoritarian_monarchism
+					}
+			}
+		COG = {
+			set_capital = 1498
+			}
 		BLN = {
 			transfer_state = 13011
 			transfer_state = 13012
@@ -5694,11 +5705,6 @@
 					}
 				}
 			set_demilitarized_zone = no
-			}
-			set_capital = 856
-			set_politics = {
-				ruling_party = authoritarian_monarchism
-					}
 			}
 		SUD = {
 			transfer_state = 6049
@@ -5986,19 +5992,157 @@
 			transfer_state = 15280
 			}
 		NGU = {
-			set_cosmetic_tag = NGU_GER
+			set_cosmetic_tag = GREY_GER3
+			set_politics = {
+				ruling_party = stratocratic_monarchism
+				}
 			}
 		SAM = {
-			set_cosmetic_tag = SAM_GER
+			set_cosmetic_tag = GREY_GER3
+			set_politics = {
+				ruling_party = stratocratic_monarchism
+				}
 			}
 		NFI = {
 			set_cosmetic_tag = NFI_ENG
 				}
+				
+					ICE = {
+						kill_country_leader = yes
+						create_country_leader = {
+							name = "Guvernor Hannes Þórður Pétursson Hafstein"
+							desc = ""
+							picture = "1914_ICE_Hannes_Hafstein.tga"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+					}
+					ENG = {
+						kill_country_leader = yes
+						create_country_leader = {
+							name = "King George V of Saxe-Coburg and Gotha"
+							desc = ""
+							picture = "1914_ENG_George_V.tga"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+							traits = {
+							}
+						}
+					}
+					FRA = {
+						kill_country_leader = yes
+						create_country_leader = {
+							name = "Président Raymond Nicolas Landry Poincaré"
+							desc = ""
+							picture = "1914_FRA_Raymond_Poincare.tga"
+							expire = "1965.1.1"
+							ideology = liberalism
+							traits = {
+							}
+						}
+					}
+					ITA = {
+						kill_country_leader = yes
+						create_country_leader = {
+							name = "Re Vittorio Emanuele III di Savoia"
+							desc = ""
+							picture = "1914_ITA_Victor_Emmannuel_III.tga"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+					}
+					RUS = {
+						kill_country_leader = yes
+						create_country_leader = {
+							name = "Tsar Nikolai II Alexandrovich Romanov"
+							desc = ""
+							picture = "1914_RUS_Nicholas_II.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+							traits = {
+							}
+						}
+					}
+					GER = {
+						kill_country_leader = yes
+						create_country_leader = {
+							name = "Kaiser Wilhelm II von Hohenzollern"
+							desc = ""
+							picture = "1914_GER_Wilhelm_II.tga"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+					}
+					AUS = {
+						kill_country_leader = yes
+						create_country_leader = {
+							name = "Kaiser Franz Josef I von Habsburg-Lothringen"
+							desc = ""
+							picture = "1914_AUS_Franz_Josef.tga"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+							traits = {
+							}
+						}
+					}
+					TUR = {
+						kill_country_leader = yes
+						create_country_leader = {
+							name = "Padişah Mehmed V Reşâd"
+							desc = ""
+							picture = "1914_TUR_Mehmed_V.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+							traits = {
+							}
+						}
+					}
+					USA = {
+						kill_country_leader = yes
+						create_country_leader = {
+							name = "President Thomas Woodrow Wilson"
+							desc = ""
+							picture = "1914_USA_Woodrow_Wilson.tga"
+							expire = "1965.1.1"
+							ideology = socdem
+							traits = {
+							}
+						}
+					}
+					JAP = {
+						kill_country_leader = yes
+						create_country_leader = {
+							name = "Ten'nō Yoshihito"
+							desc = ""
+							picture = "1914_JAP_Yoshihito.tga"
+							expire = "1965.1.1"
+							ideology = stratmon
+							traits = {
+							}
+						}
+					}
+					CHI = {
+						kill_country_leader = yes
+						create_country_leader = {
+							name = "Tsungt'ung Yüan Shih-k'ai"
+							desc = ""
+							picture = "1914_CHI_Yuan_Shikai.tga"
+							expire = "1965.1.1"
+							ideology = despotism
+							traits = {
+							}
+						}
+					}
 				}
 			}
 		}
 	}
-}
 	
 	focus = {
 		id = WTR_1939_start
@@ -8535,7 +8679,7 @@
 		}
 	}
 	focus = {
-		id = WTR_2021_start
+		id = WTR_2022_start
 		icon = GFX_goal_anschluss
 		x = 0
 		y = 1
@@ -8586,7 +8730,7 @@
 				ideology = total_anarchist
 				}
 			}
-		##EUROPE 2021
+		##EUROPE 2022
 		GER = {
 			release = CZC
 			release = AUS
@@ -9283,7 +9427,7 @@
 			}
 		HUN = {
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = democratic
 					}
 			}
 		HUN = {
@@ -9293,7 +9437,7 @@
            		desc = ""
            		picture = HUN_Ader.tga
            		expire = "1965.1.1"
-           		ideology = socdem
+           		ideology = conservatism
 				}
 			}
 		HUN = {
@@ -9302,7 +9446,7 @@
            		desc = ""
            		picture = HUN_Orban.tga
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = socdem
 				}
 			}
 		ITA = {
@@ -9623,7 +9767,7 @@
         		desc = ""
         		picture = POR_Sousa.tga
         		expire = "1965.1.1"
-        		ideology = despotism
+        		ideology = repfash
 				}
 			}
 		SPR = {
@@ -9652,7 +9796,7 @@
 				}
 			}
 		GIB = {
-			drop_cosmetic_tag = yes
+			set_cosmetic_tag = UK_RED
 			set_politics = {
 				ruling_party = socialist_monarchy
 				}
@@ -9838,7 +9982,7 @@
 				add_state_core = PREV
 					}
 				}
-			##ASIA 2021
+			##ASIA 2022
 		every_state = {
 			limit = {
 				OR = {
@@ -10187,6 +10331,14 @@
         		picture = gfx/leaders/IDS/ACE_Nova_Iriansyah.tga
         		expire = "1965.1.1"
         		ideology = socdem
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = RMM
+				}
+			RMM = {
+				transfer_state = PREV
 				}
 			}
 		every_state = {
@@ -10619,7 +10771,7 @@
 			}
 		AFG = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = theocratic
 				}
 			}
 		every_state = {
@@ -10808,6 +10960,30 @@
             		expire = "1965.1.1"
             		ideology = conservatism
 				}
+			}
+		add_victory_points = {
+			province = 4321
+			value = 5
+			}
+		add_victory_points = {
+			province = 2605
+			value = 5
+			}
+		add_victory_points = {
+			province = 14049
+			value = 5
+			}
+		add_victory_points = {
+			province = 2444
+			value = 5
+			}
+		add_victory_points = {
+			province = 1061
+			value = 5
+			}
+		add_victory_points = {
+			province = 14759
+			value = 5
 			}
 		set_victory_points = {
 			province = 15531
@@ -11271,10 +11447,6 @@
 			15687 = {
 				set_demilitarized_zone = yes
 				}
-				NGK = {
-					transfer_state = PREV
-						}
-					}
 			every_state = {
 				limit = {
 					OR = {
@@ -11542,7 +11714,7 @@
 			1775 = {
 			set_demilitarized_zone = no
 			}
-		##AFRICA 2021
+		##AFRICA 2022
 		every_state = {
 			limit = {
 				OR = {
@@ -12365,11 +12537,12 @@
 				}
 			}
 		MLI = {
-			transfer_state = 864
+			transfer_state = 7889
 			transfer_state = 1598
 			transfer_state = 4997
 			transfer_state = 6668
 			transfer_state = 6669
+			transfer_state = 7675
 			transfer_state = 7677
 			drop_cosmetic_tag = yes
 			set_politics = {
@@ -12863,7 +13036,7 @@
         		ideology = moderatism
 				}
 			}
-		##OCEANIA 2021
+		##OCEANIA 2022
 		every_state = {
 			limit = {
 				is_core_of = CKI
@@ -13395,7 +13568,7 @@
         		ideology = conservative_constitutionalism
 				}
 			}
-		##AMERICAS 2021
+		##AMERICAS 2022
 		STH = {
 			transfer_state = 2688
 			transfer_state = 2689
@@ -14317,7 +14490,7 @@
            		ideology = liberalism
 				}
 			}
-		##MISC 2021
+		##MISC 2022
 		every_state = {
 			limit = {
 				is_core_of = ATC
@@ -14334,6 +14507,36 @@
 				transfer_state = PREV
 				add_state_core = PREV
 					}
+				}
+		every_state = {
+			limit = {
+				is_owned_by = UZB
+			}
+			do_uzbek_renames = yes
+				}
+		every_state = {
+			limit = {
+				is_owned_by = KPK
+			}
+			do_karakalpak_renames = yes
+				}
+		every_state = {
+			limit = {
+				is_owned_by = TMS
+			}
+			do_turkmen_renames = yes
+				}
+		every_state = {
+			limit = {
+				is_owned_by = KYR
+			}
+			do_kyrgyz_renames = yes
+				}
+		every_state = {
+			limit = {
+				is_owned_by = TAJ
+			}
+			do_tajik_renames = yes
 				}
 			}
 		}

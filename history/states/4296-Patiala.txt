@@ -1,13 +1,11 @@
+
 state={
 	id=4296
 	name="STATE_4296"
+	
 	provinces={
 		15024 
 	}
-	manpower = 1000
-	
-	local_supplies = 0.0
-	state_category = pastoral
 
 	history={
 		owner = PTI
@@ -15,6 +13,12 @@ state={
 		add_core_of = RAJ 
 		add_core_of = IND
 		add_core_of = EPU
+        victory_points = {
+			15024 5
+		}
 	}
+	
+	state_category = pastoral
+	manpower = 1000
 	buildings_max_level_factor=1.000
 }

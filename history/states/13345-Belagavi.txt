@@ -1,10 +1,11 @@
-	state={
+
+state={
 	id=13345
 	name="STATE_13345"
-	manpower = 10
-	
-	local_supplies = 0.0
-	state_category = rural
+
+	provinces={
+		4291
+	}
 
 	history={
 		owner = RAJ
@@ -12,10 +13,11 @@
 		add_core_of = IND
 		add_core_of = MAH
 		add_core_of = KRN
-
+		victory_points = {
+			4291 5
+		}
 	}
-
-	provinces={
-		4291
-	}
+	
+	state_category = rural
+	manpower = 10
 }

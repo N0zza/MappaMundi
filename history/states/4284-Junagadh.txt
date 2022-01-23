@@ -1,13 +1,11 @@
+
 state={
 	id=4284
 	name="STATE_4284"
+	
 	provinces={
 		4090
 	}
-	manpower = 1000
-	
-	local_supplies = 0.0
-	state_category = pastoral
 
 	history={
 		owner = JGH
@@ -16,6 +14,12 @@ state={
 		add_core_of = IND
 		add_core_of = GUJ
 		add_claim_by = PAK
+        victory_points = {
+			4090 5
+		}
 	}
+	
+	state_category = pastoral
+	manpower = 1000
 	buildings_max_level_factor=1.000
 }

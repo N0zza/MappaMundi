@@ -81,9 +81,44 @@ scripted_gui = {
 					} 
 				}
 			}
+			scc_marker_click = {
+				set_country_flag = scc_actor
+			}
+			scc_unmarker_click = {
+				clr_country_flag = scc_actor
+			}
+			scc_unmark_all_click = {
+				every_country = {
+					limit = { has_country_flag = scc_actor }
+					clr_country_flag = scc_actor
+				}
+			}
         }
         
         triggers = {
+			scc_marker_visible = {
+				NOT = {
+					has_country_flag = scc_actor
+				}
+			}
+			scc_marker_enabled = {
+				NOT = {
+					has_country_flag = scc_actor
+				}
+			}
+			scc_unmarker_visible = {
+				has_country_flag = scc_actor
+			}
+			scc_unmarker_click_enabled = {
+				has_country_flag = scc_actor
+			}
+			scc_unmark_all_visible = {
+			}
+			scc_unmark_all_click_enabled = {
+				any_country = {
+					has_country_flag = scc_actor
+				}
+			}
         }
     }
 }
