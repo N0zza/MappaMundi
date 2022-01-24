@@ -7789,6 +7789,17 @@
 							}
 					every_state = {
 						limit = {
+							is_core_of = LCT
+							OR = {
+								is_core_of = RUS
+								}
+							}
+						WTR = {
+							transfer_state = PREV
+								}
+							}
+					every_state = {
+						limit = {
 							OR = {
 							is_core_of = GER
 							is_owned_by = NOR
