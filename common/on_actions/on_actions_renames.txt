@@ -169,7 +169,7 @@ on_actions = {
 					### MON ###
 					if = {
 						limit = {
-							ROOT = {tag = MON}
+							ROOT = {OR = {tag = MON tag = INM}}
 						}
 						do_mongolian_renames = yes
 					}
@@ -177,7 +177,7 @@ on_actions = {
 					### UYG ###
 					if = {
 						limit = {
-							ROOT = {tag = UYG}
+							ROOT = {tag = SIK}
 						}
 						do_uyghur_renames = yes
 					}
