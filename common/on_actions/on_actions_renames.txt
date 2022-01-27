@@ -27,39 +27,6 @@ on_actions = {
 						do_sovietturkestan_renames = yes
 					}
 					
-					### MON ###
-					if = {
-						limit = {
-							ROOT = {tag = MON}
-						}
-						do_mongolian_renames = yes
-					}
-					
-					### UYG ###
-					if = {
-						limit = {
-							ROOT = {tag = UYG}
-						}
-						do_uyghur_renames = yes
-					}
-					
-					### TIB ###
-					if = {
-						limit = {
-							ROOT = {tag = TIB}
-						}
-						do_tibetian_renames = yes
-					}
-					
-					### TIB ###
-					if = {
-						limit = {
-							ROOT = {tag = TIB}
-							has_government = socialism_ideology
-						}
-						do_tibetian_pinyin_renames = yes
-					}
-					
 					### KYR ###
 					if = {
 						limit = {
@@ -197,6 +164,39 @@ on_actions = {
 									OR = {has_government = socialism_ideology has_government = communism has_government = vanguardism }}
 						}
 						do_pinyin_renames = yes
+					}
+					
+					### MON ###
+					if = {
+						limit = {
+							ROOT = {tag = MON}
+						}
+						do_mongolian_renames = yes
+					}
+					
+					### UYG ###
+					if = {
+						limit = {
+							ROOT = {tag = UYG}
+						}
+						do_uyghur_renames = yes
+					}
+					
+					### TIB ###
+					if = {
+						limit = {
+							ROOT = {tag = TIB}
+						}
+						do_tibetian_renames = yes
+					}
+					
+					### TIB ###
+					if = {
+						limit = {
+							ROOT = {tag = TIB}
+							has_government = socialism_ideology
+						}
+						do_tibetian_pinyin_renames = yes
 					}
 
 					### GER ###

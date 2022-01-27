@@ -3526,19 +3526,15 @@ country_event = { #New Leader
 			factor = 0
 		}
 		hidden_effect = {
-		RCG = {
+		RMM = {
 			kill_country_leader = yes
-
-
-create_country_leader = {
-	
-	name = "Reichsprotektor Hermann Wilhelm von Göring"
-	picture = "Portrait_von_Goering.dds"
-	expire = "1965.1.1"
-	ideology = natsoc
-	traits = {	
-	}
-}
+			create_country_leader = {
+        		name = "Wali Sheikh Khalifa Usman Nando"
+        		desc = ""
+        		picture = "gfx/leaders/PHI/RMM_Nando.tga"
+        		expire = "1965.1.1"
+        		ideology = conservatism
+				}
 			}
 		}
 	}
