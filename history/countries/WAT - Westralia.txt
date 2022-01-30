@@ -13,10 +13,8 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	        democratic = 10
-        communism = 5
-        fascism = 25
-        neutrality = 60
+        democratic_monarchism = 80
+        conservative_monarchism = 20
 
 }
 
@@ -36,5 +34,15 @@ create_country_leader = {
 	ideology = natsoc
 	traits = {
 		
+	}
+}
+
+create_country_leader = {
+	name = "Gouverneur Pieter Sjoerds Gerbrandy"
+	desc = ""
+	picture = "WAT_Gerbrandy.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
 	}
 }
