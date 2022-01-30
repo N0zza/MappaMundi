@@ -1,6 +1,6 @@
-﻿capital = [CAPNUM]
+﻿capital = 
 
-oob = "[TAG]_1936"
+oob = "GAE_1936"
 
 # Starting tech
 set_technology = {
@@ -24,7 +24,7 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "[TAG]_1939"
+	oob = "GAE_1939"
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -62,13 +62,36 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-[PARTIES]
+        neutrality = 4
+        monarchism = 4
+        democratic = 4
+        liberal_republic = 4
+        communism = 4
+        vanguardism = 4
+        fascism = 4
+        anarchism_ideology = 4
+        socialism_ideology = 4
+        democratic_monarchism = 4
+        conservative_monarchism = 4
+        stratocratic = 4
+        authoritarian_monarchism = 4
+        republican_fascism = 4
+        national_socialism = 4
+        theocratic = 4
+        left_anarchism = 4
+        right_anarchism = 4
+        socialist_monarchy = 4
+        centrist_republic = 4
+        centrist_monarchism = 4
+        stratocratic_monarchism = 4
+
 }
 
 set_politics = {
 	
-	ruling_party = [RULINGPARTY]
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+
