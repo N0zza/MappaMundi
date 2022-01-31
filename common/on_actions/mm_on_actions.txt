@@ -1906,8 +1906,13 @@ on_actions = {
 						release = ATU
 						release = KYZ
 					}
-					KYZ = {
-						annex_country = {target = KAZ}
+					every_state = {
+						limit = {
+								is_owned_by = KAZ
+						}
+						KYZ = {
+							transfer_state = PREV
+						}
 					}
 					every_state = {
 						limit = {
