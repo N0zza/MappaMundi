@@ -5711,302 +5711,305 @@
 			transfer_state = 7255
 			transfer_state = 6391
 			}
-			every_state = {
-				limit = {
-					is_core_of = SD0
-					OR = {
-						is_core_of = CHA
-						}
-					NOT = {
-						is_owned_by = CYR
-						}
-					}
-				NGR = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = CHA
-						is_core_of = CAR
-						}
-					NOT = {
-						is_owned_by = NGR
-						is_owned_by = CMR
-						is_owned_by = CYR
+					every_state = {
+						limit = {
+							is_core_of = SD0
+							OR = {
+								is_core_of = CHA
+								}
+							NOT = {
+								is_owned_by = CYR
+								}
+							}
+						NGR = {
+							transfer_state = PREV
 						}
 					}
-				CAR = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					is_core_of = VOL
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = CHA
+								is_core_of = CAR
+								}
+							NOT = {
+								is_owned_by = NGR
+								is_owned_by = CMR
+								is_owned_by = CYR
+								}
+							}
+						CAR = {
+							transfer_state = PREV
+						}
 					}
-				MLI = {
-					transfer_state = PREV
-					transfer_state = 4736
-					transfer_state = 7873
-					transfer_state = 7874
+					every_state = {
+						limit = {
+							is_core_of = VOL
+							}
+						MLI = {
+							transfer_state = PREV
+							transfer_state = 4736
+							transfer_state = 7873
+							transfer_state = 7874
+							set_politics = {
+								ruling_party = centrist_republic
+							}
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = RCG
+								NOT = {
+								is_owned_by = CMR
+								}
+							}
+						RCG = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = GAB
+								NOT = {
+								is_owned_by = CMR
+								}
+							}
+						GAB = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_owned_by = LBA
+								NOT = {
+								is_owned_by = CYR
+								is_core_of = CYR
+								}
+							}
+						TRP = {
+							transfer_state = PREV
+						}
+					}
+					CAR = {
+					transfer_state = 7842
+					transfer_state = 5296
+					transfer_state = 7833
+					transfer_state = 6434
+					transfer_state = 881
+					transfer_state = 9989
+						}
+					NGR = {
+					transfer_state = 6405
+					transfer_state = 6401
 					set_politics = {
-						ruling_party = centrist_republic
-					}
-				}
-			}
-			every_state = {
-				limit = {
-					is_core_of = RCG
-						NOT = {
-						is_owned_by = CMR
+						ruling_party = stratocratic
+							}
 						}
-					}
-				RCG = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					is_core_of = GAB
-						NOT = {
-						is_owned_by = CMR
+					GAB = {
+					transfer_state = 5262
+					transfer_state = 5294
 						}
-					}
-				GAB = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					is_owned_by = LBA
-						NOT = {
-						is_owned_by = CYR
-						is_core_of = CYR
+					TRP = {
+						set_politics = {
+							ruling_party = fascism
 						}
-					}
-				TRP = {
-					transfer_state = PREV
-				}
-			}
-		CAR = {
-		transfer_state = 7842
-		transfer_state = 5296
-		transfer_state = 7833
-		transfer_state = 6434
-		transfer_state = 881
-		transfer_state = 9989
-			}
-		NGR = {
-		transfer_state = 6405
-		transfer_state = 6401
-		set_politics = {
-			ruling_party = stratocratic
-				}
-			}
-		GAB = {
-		transfer_state = 5262
-		transfer_state = 5294
-			}
-		TRP = {
-			set_politics = {
-				ruling_party = fascism
-			}
-		set_cosmetic_tag = TRP_ITA
-			}
-		PAN = {
-			set_cosmetic_tag = USA_BLUE
-			transfer_state = 4679
-			}
-		NIC = {
-			set_cosmetic_tag = USA_BLUE
-			}
-		VRC = {
-			transfer_state = 477
-			transfer_state = 3665
-			set_cosmetic_tag = USA_BLUE
-			set_politics = {
-				ruling_party = stratocratic
-				}
-			}
-		WVI = {
-			set_politics = {
-				ruling_party = authoritarian_monarchism
-				}
-			set_cosmetic_tag = DEN_COLONY
-			}
-		every_state = {
-			limit = {
-				is_core_of = MRL
-				}
-			MRL = {
-				transfer_state = PREV
-				set_cosmetic_tag = SOV_RED
-				set_politics = {
-					ruling_party = socialism_ideology
+					set_cosmetic_tag = TRP_ITA
 						}
+					PAN = {
+						set_cosmetic_tag = USA_BLUE
+						transfer_state = 4679
+						}
+					NIC = {
+						set_cosmetic_tag = USA_BLUE
+						}
+					VRC = {
+						transfer_state = 477
+						transfer_state = 3665
+						set_cosmetic_tag = USA_BLUE
+						set_politics = {
+							ruling_party = stratocratic
+							}
+						}
+					WVI = {
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+							}
+						set_cosmetic_tag = DEN_COLONY
+						}
+					every_state = {
+						limit = {
+							is_core_of = MRL
+							}
+						MRL = {
+							transfer_state = PREV
+							set_cosmetic_tag = SOV_RED
+							set_politics = {
+								ruling_party = socialism_ideology
+									}
+								}
+							}
+					CHL = {
+						transfer_state = 1673
+						}
+					PRU = {
+						transfer_state = 2109
+						transfer_state = 1689
+						transfer_state = 9130
+						transfer_state = 9348
+						transfer_state = 1688
+						transfer_state = 2110
+						}
+					BRA = {
+						drop_cosmetic_tag = yes
+						}
+					BOL = {
+						transfer_state = 10595
+						transfer_state = 10611
+						transfer_state = 10610
+						transfer_state = 6123
+						transfer_state = 10609
+						transfer_state = 10612
+						transfer_state = 10597
+						}
+					ARG = {
+						set_politics = {
+							ruling_party = liberal_republic
+							}
+						}
+					every_state = {
+						limit = {
+							is_core_of = ATC
+							}
+						UNC = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = PAC
+								is_core_of = NAU
+								}
+							}
+						NGU = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							is_core_of = AA2
+							}
+						AA2 = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							is_core_of = AA3
+							}
+						AA3 = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							is_core_of = AA7
+							}
+						AA7 = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							is_core_of = AA8
+							}
+						AA8 = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							is_core_of = AA9
+							}
+						AA9 = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							is_core_of = AB3
+							}
+						AB3 = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							is_core_of = AB4
+							}
+						AB4 = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							is_core_of = AB5
+							}
+						AB5 = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							is_core_of = AB6
+							}
+						AB6 = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							is_core_of = AT0
+							}
+						AT0 = {
+							transfer_state = PREV
+							}
+						}
+					every_state = {
+						limit = {
+							is_core_of = TI2
+							}
+						TI2 = {
+							transfer_state = PREV
+							set_cosmetic_tag = TRIBAL_BROWN
+							set_politics = {
+								ruling_party = anarchism_ideology
+								}
+							}
 					}
-				}
-		CHL = {
-			transfer_state = 1673
-			}
-		PRU = {
-			transfer_state = 2109
-			transfer_state = 1689
-			transfer_state = 9130
-			transfer_state = 9348
-			transfer_state = 1688
-			transfer_state = 2110
-			}
-		BRA = {
-			drop_cosmetic_tag = yes
-			}
-		BOL = {
-			transfer_state = 10595
-			transfer_state = 10611
-			transfer_state = 10610
-			transfer_state = 6123
-			transfer_state = 10609
-			transfer_state = 10612
-			transfer_state = 10597
-			}
-		ARG = {
-			set_politics = {
-				ruling_party = liberal_republic
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = ATC
-				}
-			UNC = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				OR = {
-					is_core_of = PAC
-					is_core_of = NAU
+					AST = {
+						transfer_state = 8994
+						transfer_state = 15279
+						transfer_state = 15280
 					}
-				}
-			NGU = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = AA2
-				}
-			AA2 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = AA3
-				}
-			AA3 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = AA7
-				}
-			AA7 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = AA8
-				}
-			AA8 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = AA9
-				}
-			AA9 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = AB3
-				}
-			AB3 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = AB4
-				}
-			AB4 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = AB5
-				}
-			AB5 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = AB6
-				}
-			AB6 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = AT0
-				}
-			AT0 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = TI2
-				}
-			TI2 = {
-				transfer_state = PREV
-				set_cosmetic_tag = TRIBAL_BROWN
-				set_politics = {
-					ruling_party = anarchism_ideology
+					NGU = {
+						set_cosmetic_tag = GREY_GER3
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+							}
 					}
-				}
-			}
-		AST = {
-			transfer_state = 8994
-			transfer_state = 15279
-			transfer_state = 15280
-			}
-		NGU = {
-			set_cosmetic_tag = GREY_GER3
-			set_politics = {
-				ruling_party = stratocratic_monarchism
-				}
-			}
-		SAM = {
-			set_cosmetic_tag = GREY_GER3
-			set_politics = {
-				ruling_party = stratocratic_monarchism
-				}
-			}
-		NFI = {
-			set_cosmetic_tag = NFI_ENG
-				}
-				
+					SAM = {
+						set_cosmetic_tag = GREY_GER3
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+							}
+					}
+					RUS = {
+						all_owned_states = {do_russian_renames = yes}
+					}
+					NFI = {
+						set_cosmetic_tag = NFI_ENG
+					}
+					
 					ICE = {
 						kill_country_leader = yes
 						create_country_leader = {
