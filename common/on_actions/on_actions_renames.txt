@@ -427,12 +427,21 @@ on_actions = {
 						do_ukrainian_renames = yes
 					}
 					
+					### PHI ###
+					if = {
+						limit = {
+							ROOT = {tag = PHI}
+						}
+						do_philippine_renames = yes
+					}
+					
 					### UKR ###
 					if = {
 						limit = {
 							ROOT = {tag = UKR}
 							OR = { has_government = communism
-								has_government = vanguardism}
+								   has_government = vanguardism
+							}
 						}
 						do_sovietukrainian_renames = yes
 					}
