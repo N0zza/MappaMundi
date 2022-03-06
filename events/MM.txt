@@ -3526,14 +3526,16 @@ country_event = { #New Leader
 			factor = 0
 		}
 		hidden_effect = {
-		BAR = {
-			kill_country_leader = yes
-			create_country_leader = {
-        		name = "President Sandra Prunella Mason"
-        		desc = ""
-        		picture = BAR_Sandra_Mason.tga
-        		expire = "1965.1.1"
-        		ideology = conservatism
+			ORN = {
+				kill_country_leader = yes
+				create_country_leader = {
+					name = "Sovet Rabochikh Orenburga"
+					desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+					picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = {
+					}
 				}
 			}
 		}
