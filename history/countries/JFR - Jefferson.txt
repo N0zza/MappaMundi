@@ -5,29 +5,48 @@ oob = "JFR_1936"
 set_convoys = 10
 
 set_popularities = {
-        monarchism = 0
-        neutrality = 80
-        democratic = 15
-        communism = 2
-        fascism = 3
+
+        neutrality = 50
+        democratic = 10
+        liberal_republic = 40
 
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = liberal_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-
 create_country_leader = {
-	name = "To Be Added"
+	name = "Chairman Jonathan Mayhew Wainwright IV"
 	desc = ""
-	picture = "To_be_added.dds"
+	picture = "JFR_Wainwright.tga"
 	expire = "1965.1.1"
-	ideology = absolutism
+	ideology = oligarchism
 	traits = {
 	}
 }
+
+create_country_leader = {
+	name = "President Jonathan Mayhew Wainwright IV"
+	desc = ""
+	picture = "JFR_Wainwright.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Charles Linza McNary"
+	desc = ""
+	picture = "JFR_McNary.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+

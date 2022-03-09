@@ -5,11 +5,8 @@ oob = "LIN_1936"
 set_convoys = 10
 
 set_popularities = {
-        monarchism = 10
-        neutrality = 70
-        democratic = 5
-        communism = 5
-        fascism = 10
+        left_anarchism = 20
+        liberal_republic = 80
 
 }
 
@@ -21,13 +18,23 @@ set_politics = {
 	elections_allowed = no
 }
 
-
 create_country_leader = {
-	name = "To Be Added"
+	name = "Governor William Edgar Borah"
 	desc = ""
-	picture = "To_be_added.dds"
+	picture = "LIN_Borah.tga"
 	expire = "1965.1.1"
-	ideology = absolutism
+	ideology = socdem
 	traits = {
 	}
 }
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
