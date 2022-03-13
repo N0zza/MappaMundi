@@ -1,0 +1,21 @@
+country_event = { #Debug
+	id = mm.debug
+	title = mm.debug.t
+	desc = mm.debug.d
+	is_triggered_only = yes
+	
+	option = { #Sure
+		name = mm.debug.a
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+		}
+	}
+	option = { #Nah
+		name = mm.debug.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

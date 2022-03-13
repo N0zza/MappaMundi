@@ -27,8 +27,28 @@ scripted_gui = {
 			}
 			smt_mark_all_click = {
 				FROM.OWNER = {
-					every_owned_state = {
-						set_state_flag = smt_marked
+					if = {
+						limit = {
+							tag = WTR
+						}
+						every_country = {
+							limit = {
+								is_ai = no
+							}
+							country_event = {
+								id = mm.watermoment
+							}
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								tag = WTR
+							}
+						}
+						every_owned_state = {
+							set_state_flag = smt_marked
+						}
 					}
 				}
 			}
