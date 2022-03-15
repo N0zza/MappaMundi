@@ -2,27 +2,19 @@
 
 oob = "NSW_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-	early_fighter = 1
-}
-
-
-set_convoys = 10
-
 set_popularities = {
-	        democratic = 10
-        communism = 5
-        fascism = 25
-        neutrality = 60
-
+        communism = 2
+	democratic_monarchism = 5
+	centrist_monarchism = 13
+	conservative_monarchism = 34
+	fascism = 2
+	socialist_monarchy = 42
+	neutrality = 2
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = conservative_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -34,6 +26,26 @@ create_country_leader = {
 	picture = "Portrait_Tony_Abbott.dds"
 	expire = "1965.1.1"
 	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Bertram Sydney Barnsdale Stevens"
+	desc = ""
+	picture = "NSW_Stevens.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Alexander Gore Arkwright Hore-Ruthven, Baron Gowrie"
+	desc = ""
+	picture = "NSW_Gowrie.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
 	traits = {
 	}
 }

@@ -2,29 +2,35 @@
 
 oob = "TAS_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-	early_fighter = 1
-}
-
-
-set_convoys = 10
-
 set_popularities = {
-	        democratic = 10
-        communism = 5
-        fascism = 25
-        neutrality = 60
-
+	democratic_monarchism = 47
+	centrist_monarchism = 7
+	conservative_monarchism = 46
 }
 
 set_politics = {
-	
-	ruling_party = neutrality
+	ruling_party = democratic_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Premier Albert George Ogilvie"
+	desc = ""
+	picture = "TAS_Ogilvie.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir Ernest Clark"
+	desc = ""
+	picture = "TAS_Clark.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
