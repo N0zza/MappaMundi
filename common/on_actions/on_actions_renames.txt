@@ -761,6 +761,18 @@ on_actions = {
 						ROOT = {
 							OR = {
 								tag = ENG
+								has_cosmetic_tag = UK_RED
+								AND = {
+									tag = RAJ
+									OR = {
+										has_government = authoritarian_monarchism
+										has_government = conservative_monarchism
+										has_government = stratocratic_monarchism
+										has_government = stratocratic
+										has_government = monarchism
+										has_government = right_anarchism
+									}
+								}
 							}
 						}
 					}
