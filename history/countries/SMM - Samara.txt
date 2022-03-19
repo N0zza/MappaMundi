@@ -3,34 +3,12 @@
 oob = "SMM_1936"
 
 set_popularities = {
-        neutrality = 70
-        monarchism = 0
-        democratic = 0
-        liberal_republic = 0
-        communism = 0
-        vanguardism = 0
-        fascism = 0
-        anarchism_ideology = 0
-        socialism_ideology = 0
-        democratic_monarchism = 0
-        conservative_monarchism = 0
-        stratocratic = 0
-        authoritarian_monarchism = 0
-        republican_fascism = 30
-        national_socialism = 0
-        theocratic = 0
-        left_anarchism = 0
-        right_anarchism = 0
-        socialist_monarchy = 0
-        centrist_republic = 0
-        centrist_monarchism = 0
-        stratocratic_monarchism = 0
-
+    right_anarchism = 30
+    republican_fascism = 70
 }
 
 set_politics = {
-	
-	ruling_party = neutrality
+	ruling_party = stratocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -41,7 +19,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/SMM_Vlasov.tga"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = repfash
 	traits = {
 	}
 }
@@ -71,7 +49,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/SMM_Oktan.tga"
 	expire = "1965.1.1"
-	ideology = repfash
+	ideology = ancap
 	traits = {
 	}
 }
