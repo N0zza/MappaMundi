@@ -13,18 +13,47 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-        democratic = 25
-        communism = 25
-        fascism = 25
-        neutrality = 25
+
+        democratic = 80
+        national_socialism = 20
 
 }
 
 set_politics = {
 	
-	ruling_party = fascism
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Premieres-Minister Abdul Medjid Bey Ortsa Tchermoeff"
+	desc = ""
+	picture = "CHE_Tchermoeff_dem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Premieres-Minister Abdul Medjid Bey Ortsa Tchermoeff"
+	desc = ""
+	picture = "CHE_Tchermoeff_dem.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichskommissar Walter Warlimont"
+	desc = ""
+	picture = "CSS_Warlimont.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+		
+	}
+}
