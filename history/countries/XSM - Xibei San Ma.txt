@@ -3,15 +3,15 @@
 oob = "XSM_1936"
 
 	set_popularities = {
-		democratic
-			 = 0
-		fascism
-			 = 0
+		liberal_republic
+			 = 2
+		centrist_republic
+			 = 8
 		communism
 			 = 0
 			
 		stratocratic
-			 = 100
+			 = 90
 		
 	}
 	set_politics = { 
@@ -33,9 +33,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Shengch'ang Ma Pufang"
+	name = "Shengch'ang Ma Lin"
 	desc = ""
-	picture = "Portrait_Xibei_San_Ma_Ma_Bufang.dds"
+	picture = "XSM_Ma_Lin.tga"
 	expire = "1975.7.1"
 	ideology = stratmon
 	traits = {
@@ -44,7 +44,18 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ma Pufang"
+	name = "Shengch'ang Ma Lin"
+	desc = ""
+	picture = "XSM_Ma_Lin.tga"
+	expire = "1975.7.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Huang ti Ma Pufang"
 	desc = ""
 	picture = "Portrait_Xibei_San_Ma_Ma_Bufang.dds"
 	expire = "1975.7.1"
@@ -55,23 +66,34 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ma Puching"
+	name = "Chiji Tomoyuki Yamashita"
 	desc = ""
-	picture = "Portrait_Xibei_San_Ma_Ma_Buqing.dds"
+	picture = "XSM_Yamashita.tga"
 	expire = "1975.7.1"
 	ideology = fascism_ideology
 	traits = {
 		#
 	}
 }
+
 create_country_leader = {
-	name = "Kao Shuhsun"
+	name = "Chu hsi Pan Zili"
 	desc = ""
-	picture = "Portrait_Xibei_San_Ma_Gao_Shuxun.dds"
+	picture = "XSM_Zili.tga"
 	expire = "1975.7.1"
-	ideology = marxism
+	ideology = totsoc
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Inam Hu Songshan"
+	desc = ""
+	picture = "XSM_Songshan.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
 	}
 }
 
@@ -92,6 +114,17 @@ create_country_leader = {
 	picture = "Portrait_Xibei_San_Ma_Ma_Bufang.dds"
 	expire = "1975.7.1"
 	ideology = cenmon
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Tsung t'ung Ma Pufang"
+	desc = ""
+	picture = "Portrait_Xibei_San_Ma_Ma_Bufang.dds"
+	expire = "1975.7.1"
+	ideology = socdem
 	traits = {
 		#
 	}
