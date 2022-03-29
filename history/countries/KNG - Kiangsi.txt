@@ -3,11 +3,28 @@
 oob = "KNG_1936"
 
 set_popularities = {
-        stratocratic = 70
-        monarchism = 5
-        democratic = 15
-        communism = 5
-        fascism = 5
+        anarchism_ideology = 0
+        monarchism = 0
+        neutrality = 40
+        democratic = 0
+        liberal_republic = 0
+        communism = 0
+        vanguardism = 0
+        fascism = 0
+        socialism_ideology = 0
+        democratic_monarchism = 0
+        conservative_monarchism = 0
+        stratocratic = 60
+        authoritarian_monarchism = 0
+        republican_fascism = 0
+        national_socialism = 0
+        theocratic = 0
+        left_anarchism = 0
+        right_anarchism = 0
+        socialist_monarchy = 0
+        centrist_republic = 0
+        centrist_monarchism = 0
+        stratocratic_monarchism = 0
 
 }
 
@@ -19,3 +36,22 @@ set_politics = {
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Chou ch'ang Tang Sheng-chih"
+	desc = ""
+	picture = "KNG_Tang.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chou ch'ang Tang Sheng-chih"
+	desc = ""
+	picture = "KNG_Tang.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
