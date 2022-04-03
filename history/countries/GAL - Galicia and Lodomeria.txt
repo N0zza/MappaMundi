@@ -21,61 +21,58 @@ set_technology = {
 
 
 	set_popularities = {
+
 		democratic 
-			 = 2
-		fascism
-			 = 6
-		communism
-			 = 2
-		neutrality
-			 = 90
+			 = 20
+		authoritarian_monarchism
+			 = 20
+		monarchism
+			 = 60
+
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = monarchism
 	last_election = "1960.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Paul Giesler"
+	name = "Prezydent Stanislaw Klimecki"
 	desc = ""
-	picture = "Portrait_Bavaria_Paul Giesler.dds"
-	expire = "1960.1.1"
-	ideology = nazism
+	picture = "FCK_Klimecki.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Ernst Toller"
+	name = "Król Carl Ludwig z Habsburgów"
 	desc = ""
-	picture = "Portrait_Bavaria_Ernst.dds"
-	expire = "1960.1.1"
-	ideology = stalinism
+	picture = "GAL_Ludwig.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Fritz Schäffer"
+	name = "Ksiaze Witold I z Czartoryski"
 	desc = ""
-	picture = "Portrait_Bavaria_Fritz.dds"
-	expire = "1960.1.1"
-	ideology = socialism
+	picture = "GAL_Witold.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Ernest Louis"
+	name = "Komisarz generalny Witold Leon Czartoryski"
 	desc = ""
-	picture = "Portrait_Bavaria_Rupprecht.dds"
-	expire = "1951.1.1"
-	ideology = despotism
+	picture = "GAL_Witold.tga"
+	expire = "1989.1.1"
+	ideology = authmon
 	traits = {
 	}
 }
