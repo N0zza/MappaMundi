@@ -19,66 +19,69 @@ set_technology = {
 
 	set_popularities = {
 		democratic 
-			 = 3
-		fascism
-			 = 4
+			 = 50
+		vanguardism
+			 = 20
 		neutrality
-			 = 93
+			 = 30
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = democratic
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
-add_ideas = {
-	neutrality_idea	
-	limited_conscription
-}
-
-set_stability = 0.85
-
 create_country_leader = {
-	name = "Boglárka Zolten"
+	name = "Predsedavajući Jovan Veselinov Zarko"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = despotism 
+	picture = "VDJ_Zarko.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
 	traits = {
-		#
+		
 	}
 }
 
 create_country_leader = {
-	name = "Ernest Béuin"
-	desc = "POLITICS_ERNST_BEGUIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Dr. Max Leo Keller"
-	desc = "POLITICS_MAX_LEO_KELLER_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Fritz Platten"
-	desc = "POLITICS_FRITZ_PLATTEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
+	name = "Predsedavajući Jovan Veselinov Zarko"
+	desc = ""
+	picture = "VDJ_Zarko.tga"
+	expire = "1953.3.1"
 	ideology = marxism
 	traits = {
-		#
+		
 	}
 }
+
+create_country_leader = {
+	name = "Elnok David Popović"
+	desc = ""
+	picture = "VJD_Popovic.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Ban David Popović"
+	desc = ""
+	picture = "VJD_Popovic.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Király Daka I of Popović"
+	desc = ""
+	picture = "VJD_Popovic.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+

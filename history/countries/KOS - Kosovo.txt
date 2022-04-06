@@ -21,60 +21,80 @@ set_technology = {
 
 
 	set_popularities = {
-		democratic 
-			 = 40
-		fascism
-			 = 20
-		neutrality
-			 = 40
+		liberal_republic
+			 = 60
+		vanguardism
+			 = 30
+		republican_fascism
+			 = 10
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = liberal_republic
 	last_election = "1960.1.1"
 	election_frequency = 40
 	elections_allowed = no # none after offset 1
 }
 
 create_country_leader = {
-	name = "Miljko Lazić"
+	name = "Kryetari Fadil Hoxha"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1960.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Mojsije Ristovski"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1960.1.1"
-	ideology = stalinism
+	picture = "KOS_Hoxha.tga"
+	expire = "1953.3.1"
+	ideology = totsoc
 	traits = {
 		
 	}
 }
 
 create_country_leader = {
-	name = "Jugoslav Nikolić"
+	name = "Predsedavajući Fadil Hoxha"
 	desc = ""
-	picture = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
-	expire = "1960.1.1"
-	ideology = conservatism
+	picture = "KOS_Hoxha.tga"
+	expire = "1953.3.1"
+	ideology = marxism
 	traits = {
 		
 	}
 }
 
 create_country_leader = {
-	name = "Filotije Despotović"
+	name = "President Hasan Prishtina"
 	desc = ""
-	picture = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
-	expire = "1960.1.1"
-	ideology = moderatism
+	picture = "KOS_Prishtina.tga"
+	expire = "1965.1.1"
+	ideology = socdem
 	traits = {
-		
 	}
 }
+
+create_country_leader = {
+	name = "Kryetari Hasan Prishtina"
+	desc = ""
+	picture = "KOS_Prishtina.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Shefi Mid'hat Frasheri"
+	desc = ""
+	picture = "KOS_Frasheri.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kosovar Council"
+	desc = ""
+	picture = "KOS_Council.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+
