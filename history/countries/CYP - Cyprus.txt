@@ -19,11 +19,11 @@ set_technology = {
 
 	set_popularities = {
 		democratic 
-			 = 20
-		fascism
+			 = 15
+		theocratic
 			 = 5
-		communism
-			 = 5
+		liberal_republic
+			 = 10
 		authoritarian_monarchism
 			 = 70
 		}
@@ -34,36 +34,83 @@ set_technology = {
 	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Ploutis Servas"
-	desc = ""
-	picture = "gfx/leaders/Europe/Ploutis_Servas.dds"
-	expire = "2001.2.14"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
-
-
 	create_country_leader = {
-		name = "Makarios III"
-		desc = ""
-		picture = "gfx/leaders/Europe/Makarios_III.dds"
-		expire = "1977.8.3"
-		ideology = liberalism
-		traits = {
-			#
-		}
-	}
-
-	create_country_leader = {
-	name = "Herbert Richmond Palmer"
+	name = "Governor Herbert Richmond Palmer"
 	desc = ""
 	picture = "Portrait_Herbert_Richmond_Palmer.dds"
 	expire = "1958.5.22"
 	ideology = authmon
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Próedros Fazil Kücük"
+	desc = ""
+	picture = "NOC_Kucuk.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Próedros Georgios Grivas"
+	desc = ""
+	picture = "CYP_Grivas.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Mársal Georgios Grivas"
+	desc = ""
+	picture = "CYP_Grivas.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Antivasiléas Leontios II"
+	desc = ""
+	picture = "CYP_Leontios.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Archiepískopos Leontios II"
+	desc = ""
+	picture = "CYP_Leontios.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Francesco Pricolo"
+	desc = ""
+	picture = "CYP_Pricolo.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Hans Ferdinand Geisler"
+	desc = ""
+	picture = "CYP_Geisler.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
 	}
 }

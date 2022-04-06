@@ -19,14 +19,14 @@ set_technology = {
 
 
 	set_popularities = {
+
 		democratic 
-			 = 5
-		fascism
 			 = 20
-		communism
-			 = 5
+		conservative_monarchism
+			 = 10
 		authoritarian_monarchism
 			 = 70
+
 		}
 	set_politics = { 
  ruling_party = authoritarian_monarchism
@@ -47,19 +47,28 @@ create_country_leader = {
 	}
 }
 
-	create_country_leader = {
-		name = "Paul Boffa"
-		desc = ""
-		picture = "gfx/leaders/Europe/Paul_Boffa.dds"
-		expire = "1962.7.6"
-		ideology = liberalism
-		traits = {
-			#
-		}
+create_country_leader = {
+	name = "President Enrico Mizzi"
+	desc = ""
+	picture = "MLT_Mizzi.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
 	}
+}
 
-	create_country_leader = {
-	name = "David Campbell"
+create_country_leader = {
+	name = "Prim Ministru Enrico Mizzi"
+	desc = ""
+	picture = "MLT_Mizzi.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir David Graham Muschet Campbell"
 	desc = ""
 	picture = "Portrait_David_Campbell.dds"
 	expire = "1936.3.12"

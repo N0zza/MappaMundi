@@ -19,17 +19,15 @@ set_technology = {
 
 
 	set_popularities = {
-		democratic 
-			 = 10
-		fascism
-			 = 5
-		communism
+
+		stratocratic_monarchism
 			 = 20
-		neutrality 
-			 = 65
+		centrist_monarchism
+			 = 80
+
 		}
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = centrist_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 36
 	elections_allowed = yes
@@ -76,5 +74,15 @@ create_country_leader = {
 	ideology = stratmon
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Ypatos armostís George tou Glýxmpournk"
+	desc = ""
+	picture = "CRE_George.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
 	}
 }
