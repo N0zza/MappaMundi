@@ -13,18 +13,48 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	        democratic = 15
-        communism = 5
-        fascism = 20
-        neutrality = 60
+
+	democratic = 50
+        conservative_monarchism = 30
+        liberal_republic = 20
+        neutrality = 0
 
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Prothypourgós Nikolaos Politis"
+	desc = ""
+	picture = "ION_Politis.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prothypourgós Nikolaos Politis"
+	desc = ""
+	picture = "ION_Politis.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prothypourgós Nikolaos Politis"
+	desc = ""
+	picture = "ION_Politis.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}

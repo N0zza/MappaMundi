@@ -13,18 +13,36 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	        democratic = 15
-        communism = 5
-        fascism = 20
-        neutrality = 60
+
+        democratic_monarchism = 40
+        monarchism = 60
 
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Despotéssa Aikateríni I tou Nklýxmpournk"
+	desc = ""
+	picture = "GRE_Aikaterinil.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Vasílissa Aikateríni I tou Nklýxmpournk"
+	desc = ""
+	picture = "GRE_Aikaterinil.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}

@@ -13,18 +13,27 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	        democratic = 15
-        communism = 5
-        fascism = 20
-        neutrality = 60
+	        democratic = 0
+        communism = 0
+        fascism = 0
+        centrist_republic = 100
 
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = centrist_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Próedros Eleftherios Kyriakou Venizelos"
+	desc = ""
+	picture = "GRE_Venizelos.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
