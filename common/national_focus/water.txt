@@ -4391,11 +4391,13 @@
 						limit = {
 							OR = {
 								is_core_of = PRE
-								is_core_of = ALC
-								is_core_of = LOR
 								is_core_of = GER
 								is_core_of = KON
 								is_claimed_by = CZC
+								AND = { 
+									is_owned_by = FRA
+									is_claimed_by = GER
+								}
 							}
 							NOT = {
 								is_core_of = CHI
