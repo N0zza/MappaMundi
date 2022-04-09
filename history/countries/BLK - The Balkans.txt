@@ -6,7 +6,7 @@ set_popularities = {
         neutrality = 0
         monarchism = 0
         democratic = 0
-        liberal_republic = 0
+        liberal_republic = 60
         communism = 0
         vanguardism = 0
         fascism = 0
@@ -17,7 +17,7 @@ set_popularities = {
         stratocratic = 0
         authoritarian_monarchism = 0
         republican_fascism = 0
-        national_socialism = 100
+        national_socialism = 40
         theocratic = 0
         left_anarchism = 0
         right_anarchism = 0
@@ -30,54 +30,28 @@ set_popularities = {
 
 set_politics = {
 	
-	ruling_party = national_socialism
+	ruling_party = liberal_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "To Be Added"
+	name = "Reichsprotektor Karl August Hanke"
 	desc = ""
-	picture = "To_be_added.dds"
+	picture = "gfx/leaders/ILY/ILY_Hanke_nazi.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = natsoc
 	traits = {
 	}
 }
+
 create_country_leader = {
-	name = "To Be Added"
+	name = "Predsednik Svetozar Pribićević"
 	desc = ""
-	picture = "To_be_added.dds"
+	picture = "gfx/leaders/SER/yug_pribicevic.tga"
 	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = despotism
+	ideology = socdem
 	traits = {
 	}
 }
