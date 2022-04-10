@@ -2,21 +2,7 @@
 
 oob = "TAN_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-}
-set_cosmetic_tag = TAN_1936
-add_ideas = {
-	limited_conscription
-}
-
-
-
 	set_popularities = {
-		democratic 
-			 = 0
-			
                stratocratic = 20
 			
 		vanguardism
@@ -34,6 +20,17 @@ create_country_leader = {
 	name = "Yerönkhii Nariin Bichig Salchak Kalbakkhorekovich Toka"
 	desc = "POLITICS_SALCHAK_TOKA_DESC"
 	picture = "TAN_Toka.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Töraga Adyg-Tulush Khemchik-ool"
+	desc = ""
+	picture = "TAN_Adyg.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
