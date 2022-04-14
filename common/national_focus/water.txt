@@ -3086,6 +3086,7 @@
 					transfer_state = 12639
 					transfer_state = 12608
 					transfer_state = 12607
+					transfer_state = 16380
 					transfer_state = 12631
 					transfer_state = 12632
 					transfer_state = 12661
@@ -4363,6 +4364,53 @@
 			HYD = {
 				transfer_state = PREV
 				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = H17
+				}
+			H17 = {
+				transfer_state = PREV
+				set_cosmetic_tag = RAJ_COLONY
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = H43
+				}
+			H43 = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = H46
+				}
+			H46 = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = H48
+				}
+			H48 = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = H50
+				}
+			H50 = {
+				transfer_state = PREV
+				}
+			}
+		SKM = {
+			drop_cosmetic_tag = yes
+			}
+		BHU = {
+			drop_cosmetic_tag = yes
 			}
 		RAJ = {
 			transfer_state = 14064
