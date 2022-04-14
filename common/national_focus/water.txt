@@ -950,9 +950,6 @@
 				WTR = {
 					transfer_state = 3186
 					}
-				BEL = {
-					transfer_state = 1257
-					}
 				KRW = {
 					transfer_state = 88
 					transfer_state = 1738
@@ -1042,6 +1039,7 @@
 					transfer_state = 838
 					transfer_state = 2463
 					transfer_state = 2503
+					transfer_state = 16709
 					}
 				MCO = {
 					set_politics = {
@@ -2428,11 +2426,29 @@
 				}
 			every_state = {
 				limit = {
+					is_core_of = SB2
+					}
+				SB2 = {
+					transfer_state = PREV
+					}
+				}
+			every_state = {
+				limit = {
+					is_core_of = SB3
+					}
+				SB3 = {
+					transfer_state = PREV
+					}
+				}
+			every_state = {
+				limit = {
 					is_core_of = INM
 					NOT = {
 						is_core_of = MAN
 						is_core_of = SUI
 						is_core_of = SB1
+						is_core_of = SB2
+						is_core_of = SB3
 						is_core_of = SB4
 						}
 					}
@@ -2825,7 +2841,6 @@
 						tag = INM
 						tag = MON
 						tag = XSM
-						tag = SIK
 						}
 					}
 				set_politics = {
@@ -2895,11 +2910,13 @@
 					transfer_state = 2343
 					transfer_state = 1188
 					transfer_state = 1006
-					transfer_state = 1322
+					transfer_state = 3056
 					transfer_state = 11605
 					transfer_state = 14078
 					transfer_state = 14657
 					transfer_state = 14656
+					transfer_state = 16766
+					transfer_state = 16771
 					}
 				MAN = {
 					transfer_state = 10442
@@ -3417,6 +3434,11 @@
 					transfer_state = 13188
 					transfer_state = 13189
 					transfer_state = 13190
+					transfer_state = 15948
+					transfer_state = 15949
+					set_politics = {
+						ruling_party = right_anarchism
+						}
 					}
 				every_state = {
 					limit = {
@@ -3759,7 +3781,7 @@
 							tag = SLM
 							tag = KTK
 							tag = PSR
-							tag = BLN
+							tag = SUU
 							}
 						}
 					drop_cosmetic_tag = yes
@@ -3912,17 +3934,25 @@
 						}
 					TDG = {
 						transfer_state = PREV
-						set_cosmetic_tag = BLN_COLONY
+						set_cosmetic_tag = SUU_COLONY
 						}
 					}
 				every_state = {
 					limit = {
 						is_core_of = SUU
+						NOT = {
+							is_core_of = GGT
+							is_core_of = SBG
+							is_core_of = BLN
+							is_core_of = TDG
+							}
 						}
 					SUU = {
 						transfer_state = PREV
-						set_cosmetic_tag = BLN_COLONY
 						}
+					}
+				BLN = {
+					set_cosmetic_tag = SUU_COLONY
 					}
 				KWG = {
 					transfer_state = 2158
@@ -4326,6 +4356,19 @@
 					}
 				}
 			}
+		every_state = {
+			limit = {
+				is_claimed_by = HYD
+				}
+			HYD = {
+				transfer_state = PREV
+				}
+			}
+		RAJ = {
+			transfer_state = 14064
+			transfer_state = 14065
+			transfer_state = 14066
+			}
 				}
 			}
 		}
@@ -4624,6 +4667,7 @@
 						transfer_state = 2204
 						transfer_state = 5911
 						transfer_state = 14440
+						transfer_state = 4209
 						set_capital = 341
 						set_politics = {
 							ruling_party = monarchism
@@ -5351,7 +5395,7 @@
 		BEL = {
 			transfer_state = 1478
 			}
-			BLN = {
+		BLN = {
 			transfer_state = 13011
 			transfer_state = 13012
 			transfer_state = 13013
@@ -5412,6 +5456,9 @@
 			set_demilitarized_zone = yes
 		}
 		5841 = {
+			set_demilitarized_zone = yes
+		}
+		15404 = {
 			set_demilitarized_zone = yes
 		}
 		GKS = {
@@ -5618,7 +5665,6 @@
 			transfer_state = 451
 			transfer_state = 7271
 			transfer_state = 9847
-			transfer_state = 15809
 			set_cosmetic_tag = CYR_ITA
 			}
 		CYR = {
@@ -5663,7 +5709,7 @@
 			set_capital = 856
 			set_politics = {
 				ruling_party = authoritarian_monarchism
-					}
+				}
 			}
 		COG = {
 			set_capital = 1498
@@ -6456,6 +6502,7 @@
 						transfer_state = 15401
 						transfer_state = 15373
 						transfer_state = 15374
+						transfer_state = 16586
 					}
 					PSC = {
 						transfer_state = 615
@@ -7867,11 +7914,13 @@
 			transfer_state = 5376
 			transfer_state = 1782
 			transfer_state = 4028
+			set_cosmetic_tag = UKR_1939
 			}
 		BLR = {
 			transfer_state = 4766
 			transfer_state = 4767
 			transfer_state = 8036
+			set_cosmetic_tag = BLR_1939
 			}
 		LIT = {
 			set_politics = {
@@ -7913,6 +7962,78 @@
 				expire = "1965.1.1"
 				ideology = totsoc
 				}
+			}
+		CRM = {
+			set_cosmetic_tag = CRM_1939
+			}
+		ABK = {
+			set_cosmetic_tag = ABK_1939
+			}
+		GEO = {
+			set_cosmetic_tag = GEO_1939
+			}
+		ADJ = {
+			set_cosmetic_tag = ADJ_1939
+			}
+		ARM = {
+			set_cosmetic_tag = ARM_1939
+			}
+		AZR = {
+			set_cosmetic_tag = AZR_1939
+			}
+		NAK = {
+			set_cosmetic_tag = NAK_1939
+			}
+		DAG = {
+			set_cosmetic_tag = DAG_1939
+			}
+		KMK = {
+			set_cosmetic_tag = KMK_1939
+			}
+		TMS = {
+			set_cosmetic_tag = TMS_1939
+			}
+		KPK = {
+			set_cosmetic_tag = KPK_1939
+			}
+		UZB = {
+			set_cosmetic_tag = UZB_1939
+			}
+		TAJ = {
+			set_cosmetic_tag = TAJ_1939
+			}
+		KYR = {
+			set_cosmetic_tag = KYR_1939
+			}
+		KAZ = {
+			set_cosmetic_tag = KAZ_1939
+			}
+		KAR = {
+			set_cosmetic_tag = KAR_1939
+			}
+		MRD = {
+			set_cosmetic_tag = MRD_1939
+			}
+		CVS = {
+			set_cosmetic_tag = CVS_1939
+			}
+		MRE = {
+			set_cosmetic_tag = MRE_1939
+			}
+		TTR = {
+			set_cosmetic_tag = TTR_1939
+			}
+		UDM = {
+			set_cosmetic_tag = UDM_1939
+			}
+		BSH = {
+			set_cosmetic_tag = BSH_1939
+			}
+		BML = {
+			set_cosmetic_tag = BML_1939
+			}
+		YKT = {
+			set_cosmetic_tag = YKT_1939
 			}
 		WGR = {
 			kill_country_leader = yes
@@ -8033,7 +8154,7 @@
 			}
 		MOL = {
 			set_capital = 78
-			set_cosmetic_tag = RUS_RED
+			set_cosmetic_tag = MOL_1950
 			}
 		HUN = {
 			set_politics = {
@@ -8501,9 +8622,9 @@
 					transfer_state = PREV
 					}
 				}
-				#DJI = {
-				#	transfer_state = 7939
-				#	}
+				DJI = {
+					transfer_state = 7940
+					}
 				ERI = {
 					set_cosmetic_tag = UK_RED
 					set_politics = {
@@ -8516,9 +8637,9 @@
 						ruling_party = stratocratic_monarchism
 						}
 					}
-				#DJI = {
-				#	transfer_state = 7939
-				#	}
+				DJI = {
+					transfer_state = 7940
+					}
 				KEN = {
 					transfer_state = 5254
 					transfer_state = 9797
