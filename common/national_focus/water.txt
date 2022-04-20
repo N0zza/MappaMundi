@@ -9457,6 +9457,7 @@
         		ideology = socdem
 				}
 			}
+		set_province_name = { id = 15986 name = "Giżycko"}
 		POL = {
 			transfer_state = 7444
 			transfer_state = 8046
@@ -9507,7 +9508,7 @@
 			transfer_state = 80
 			transfer_state = 5376
 			drop_cosmetic_tag = yes
-			set_cosmetic_tag = UKR_2021
+			set_cosmetic_tag = UKR_2022
 			set_politics = {
 				ruling_party = democratic
 				}
@@ -9742,6 +9743,7 @@
 			set_politics = {
 				ruling_party = democratic
 				}
+			set_cosmetic_tag = AUS_2022
 			}
 		AUS = {
 			kill_country_leader = yes
@@ -9785,7 +9787,8 @@
 		HUN = {
 			set_politics = {
 				ruling_party = democratic
-					}
+				}
+			set_cosmetic_tag = HUN_2022
 			}
 		HUN = {
 			kill_country_leader = yes
@@ -10009,6 +10012,11 @@
 				}
 			}
 		NOR = {
+			set_politics = {
+				ruling_party = socialist_monarchy
+				}
+			set_cosmetic_tag = NOR_2022
+			}
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "Konge Harald V av Glücksburg"
@@ -11497,6 +11505,9 @@
 			}
 		LEB = {
 			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = liberal_republic
+				}
 		}
 		LEB = {
 			kill_country_leader = yes
@@ -11673,6 +11684,7 @@
             	expire = "1965.1.1"
             	ideology = absolutism
 			}
+			set_cosmetic_tag = SAU_2022
 		}
 		TUR = {
 		    transfer_state = 5699
@@ -11711,8 +11723,9 @@
             limit = { 
 				is_core_of = ISR
 			}
-            ISR = { transfer_state = PREV }
-			do_hebrew_renames = yes
+            ISR = { 
+				transfer_state = PREV 
+			}
         }
 		ISR = {
 		    transfer_state = 1204
@@ -11741,7 +11754,7 @@
             limit = { 
 				is_owned_by = ISR
 			}
-			do_hebrew_renames = yes
+			do_israeli_renames = yes
         }
 		every_state = {
 			limit = {
@@ -12120,6 +12133,7 @@
 			EGY = {
 				transfer_state = PREV
 				}
+			do_standard_arabic_renames = yes
 			}
 		every_state = {
 			limit = {
@@ -12428,13 +12442,19 @@
 				}
 			}
 		DGC = {
+			set_politics = {
+				ruling_party = conservative_monarchism
+			}
+			set_cosmetic_tag = UK_RED
+			}
+		DGC = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Queen Elizabeth II of Windsor"
+           		name = "Commissioner Paul Chandler"
            		desc = ""
-           		picture = DGC_Queen_Elizabeth_II.tga
+           		picture = DGC_Paul_Chandler.tga
            		expire = "1965.1.1"
-           		ideology = authmon
+           		ideology = conservative_constitutionalism
 				}
 			}
 		every_state = {
@@ -12546,20 +12566,21 @@
 			transfer_state = 8139
 			transfer_state = 12367
 			transfer_state = 12368
+			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
-				}
+			}
 		}
-				ALG = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Président Abdelmadjid Tebboune"
-            			desc = ""
-            			picture = ALG_Tebboune.tga
-            			expire = "1965.1.1"
-            			ideology = conservatism
-						}
-					}
+		ALG = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Président Abdelmadjid Tebboune"
+        		desc = ""
+        		picture = ALG_Tebboune.tga
+        		expire = "1965.1.1"
+        		ideology = conservatism
+				}
+			}
 		MOR = {
 			transfer_state = 6739
 			drop_cosmetic_tag = yes
@@ -13141,6 +13162,9 @@
            		ideology = liberalism
 				}
 			}
+		19316 = {
+			set_state_name = Kinshasa
+			}
 		COG = {
 			transfer_state = 5241
 			drop_cosmetic_tag = yes
@@ -13158,6 +13182,10 @@
         		ideology = conservatism
 				}
 			}
+		set_province_name = {
+			id = 10966
+			name = Huambo
+		}
 		ANG = {
 			drop_cosmetic_tag = yes
 			set_politics = {
@@ -13191,6 +13219,7 @@
 				}
 			}
 		MLW = {
+			set_capital = 5007
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
@@ -13222,6 +13251,10 @@
         		ideology = conservatism
 				}
 			}
+		set_province_name = {
+			id = 10929
+			name = Harare
+		}
 		ZIM = {
 			drop_cosmetic_tag = yes
 			set_politics = {
@@ -13335,7 +13368,7 @@
 				}
 			}
 		MAD = {
-			drop_cosmetic_tag = yes
+			set_cosmetic_tag = MAD_2022
 			set_politics = {
 				ruling_party = democratic
 				}
@@ -14218,9 +14251,9 @@
 				}
 			}
 		CUB = {
-			drop_cosmetic_tag = yes
+			set_cosmetic_tag = CUB_2022
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = vanguardism
 				}
 			}
 		CUB = {
@@ -14230,7 +14263,7 @@
         		desc = ""
         		picture = CUB_Canel.tga
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = totsoc
 				}
 			}
 		HAI = {
@@ -14715,6 +14748,22 @@
         		picture = ARG_Fernandez.tga
         		expire = "1965.1.1"
         		ideology = socdem
+				}
+			}
+		URG = {
+			set_cosmetic_tag = URG_2022
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		URG = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "PresidentE Luis Alberto Aparicio Alejandro Lacalle Pou"
+        		desc = ""
+        		picture = URG_Luis_Lacalle_Pou.tga
+        		expire = "1965.1.1"
+        		ideology = conservatism
 				}
 			}
 		BOL = {
