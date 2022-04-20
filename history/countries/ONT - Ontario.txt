@@ -13,27 +13,77 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	liberal_republic
+	democratic_monarchism
 		= 73
 	democratic
 		= 19
-	socialism_ideology
+	authoritarian_monarchism
 		= 8
 }
 
 set_politics = { 
-	ruling_party = liberal_republic
+	ruling_party = democratic_monarchism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Mitchell Hepburn"
+	name = "President Mitchell Hepburn"
 	desc = ""
 	picture = "ONT_Hepburn.tga"
 	expire = "1950.1.1"
 	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Premier Mitchell Hepburn"
+	desc = ""
+	picture = "ONT_Hepburn.tga"
+	expire = "1950.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Commissioner Sir James Howden MacBrien"
+	desc = ""
+	picture = "ONT_MacBrien.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor-general Sir James Howden MacBrien"
+	desc = ""
+	picture = "ONT_MacBrien.tga"
+	expire = "1989.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir James Howden MacBrien"
+	desc = ""
+	picture = "ONT_MacBrien.tga"
+	expire = "1989.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President George Alexander Drew"
+	desc = ""
+	picture = "ONT_Drew.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
 	}
 }
