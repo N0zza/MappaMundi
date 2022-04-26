@@ -7030,6 +7030,12 @@
 							ideology = totsoc
 						}
 					}
+					every_state = {
+						limit = {
+							is_owned_by = MON
+						}
+						do_mongolian_renames = yes
+					}
 					MON = {
 						kill_country_leader = yes
 						create_country_leader = {
@@ -7332,6 +7338,7 @@
 				RUS = {
 					transfer_state = PREV
 					}
+				do_russian_renames = yes
 				}
 			every_state = {
 				limit = {
