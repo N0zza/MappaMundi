@@ -7591,12 +7591,10 @@
 				NVI = {
 					transfer_state = PREV
 				}
-				do_vietnamese_renames = yes
-				do_northvietnamese_renames = yes
 			}
 			every_state = {
 				limit = {
-					is_owned_by = NVI
+					is_core_of = VIN
 					}
 				do_vietnamese_renames = yes
 				do_northvietnamese_renames = yes
@@ -10122,6 +10120,7 @@
 				}
 			}
 		FIN = {
+			set_cosmetic_tag = FIN_2022
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "Presidentti Sauli Väinämö Niinistö"
@@ -10840,7 +10839,7 @@
 			}
 		NVI = {
 			set_politics = {
-				ruling_party = communism
+				ruling_party = vanguardism
 				}
 			}
 		NVI = {
@@ -10850,7 +10849,7 @@
         		desc = ""
         		picture = NVI_Trong.tga
         		expire = "1965.1.1"
-        		ideology = marxism
+        		ideology = totsoc
 				}
 			}
 		LAO = {
