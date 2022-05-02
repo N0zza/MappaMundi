@@ -4,11 +4,11 @@ oob = "NFL_1936"
 set_cosmetic_tag = UK_RED
 	set_popularities = {
 		authoritarian_monarchism 
-			 = 90
-		fascism
+			 = 80
+		democratic_monarchism
 			 = 10
-		communism
-			 = 0
+		conservative_monarchism
+			 = 10
 			
 		}
 	set_politics = { 
@@ -19,7 +19,7 @@ set_cosmetic_tag = UK_RED
 }
 
 create_country_leader = {
-	name = "Humphrey T. Walwyn"
+	name = "Commission Governor Sir Humphrey Thomas Walwyn"
 	desc = ""
 	picture = "Portrait_Humphrey_Walwyn.dds"
 	expire = "1965.1.1"
@@ -30,27 +30,82 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Jagger Jenkins"
+	name = "Governor Sir Humphrey Thomas Walwyn"
 	desc = ""
-	picture = "gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+	picture = "Portrait_Humphrey_Walwyn.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = stratmon
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Bradley Allen"
+	name = "Tsar Vladimir IV Romanovskiy"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "NFL_Cabecadas.tga"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = cenmon
 	traits = {
-		#
 	}
 }
 
-set_convoys = 100
-set_stability = 0.75
+create_country_leader = {
+	name = "President Joseph Roberts Smallwood"
+	desc = ""
+	picture = "NFL_Smallwood.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
 
+create_country_leader = {
+	name = "Premier Joseph Roberts Smallwood"
+	desc = ""
+	picture = "NFL_Smallwood.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chairman Joseph Roberts Smallwood"
+	desc = ""
+	picture = "NFL_Smallwood.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Minister-President Frederick Charles Alderdice"
+	desc = ""
+	picture = "NFL_Alderdice.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Premier Frederick Charles Alderdice"
+	desc = ""
+	picture = "NFL_Alderdice.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "King Frederick I of Alderdice"
+	desc = ""
+	picture = "NFL_Alderdice.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
