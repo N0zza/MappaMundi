@@ -9,23 +9,12 @@ country_event = { #Debug
 		ai_chance = {
 			factor = 0
 		}
-		hidden_effect = {
-		DGC = {
-			set_politics = {
-				ruling_party = conservative_monarchism
+	hidden_effect = {
+		every_state = {
+			limit = {
+				is_owned_by = PL2
 			}
-			set_cosmetic_tag = UK_RED
-			}
-		DGC = {
-			kill_country_leader = yes
-			create_country_leader = {
-           		name = "Commissioner Paul Chandler"
-           		desc = ""
-           		picture = DGC_Paul_Chandler.tga
-           		expire = "1965.1.1"
-           		ideology = conservative_constitutionalism
-				}
-			}
+			do_polish_renames = yes
 		}
 	}
 	option = { #Nah
