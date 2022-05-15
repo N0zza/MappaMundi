@@ -19,8 +19,16 @@ on_actions = {
 	on_startup = {
 		#Split Russia and Moscovy into TNO warlords
 		effect = {
-			RUS = {
-				do_tno_normal_warlord_russia = yes
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_unite_ussr
+						option = FULL_WARLORD_RUSSIA
+					}
+				}
+				RUS = {
+					do_tno_normal_warlord_russia = yes
+				}
 			}
 		}					
 	}			 
