@@ -3622,6 +3622,16 @@ do_lower_german_renames = {
     }
 }
 do_german_renames = {
+
+	if = {
+		limit = {
+			state = 13603
+		}		
+		set_province_name = {
+			id = 2279
+			name = "Kutais"
+		}
+	}
 		
 	if = {
 		limit = {
