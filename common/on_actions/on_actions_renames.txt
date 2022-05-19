@@ -800,7 +800,10 @@ on_actions = {
 				if = {
 					limit = {
 						ROOT = {
-							tag = TUR
+							OR = {
+								tag = TUR
+								tag = RUM
+							}
 						}
 					}
 					do_turkish_renames = yes
