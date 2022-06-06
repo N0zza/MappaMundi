@@ -9,12 +9,14 @@ country_event = { #Debug
 		ai_chance = {
 			factor = 0
 		}
-	hidden_effect = {
-		every_state = {
-			limit = {
-				is_owned_by = SYR
+		hidden_effect = {
+			ATB = {
+				set_party_name = {
+					ideology = vanguardism
+					name = "QKP"
+					long_name = "Qazaqstan Kommınystik Partiiasy"
+				}
 			}
-			do_arabic_renames = yes
 		}
 	}
 	option = { #Nah

@@ -3,33 +3,11 @@
 oob = "ZLO_1936"
 
 set_popularities = {
-        neutrality = 0
-        monarchism = 0
-        democratic = 0
-        liberal_republic = 0
-        communism = 0
-        vanguardism = 0
-        fascism = 0
-        anarchism_ideology = 0
-        socialism_ideology = 0
-        democratic_monarchism = 0
-        conservative_monarchism = 0
-        stratocratic = 0
-        authoritarian_monarchism = 0
-        republican_fascism = 0
-        national_socialism = 0
-        theocratic = 0
-        left_anarchism = 0
-        right_anarchism = 100
-        socialist_monarchy = 0
-        centrist_republic = 0
-        centrist_monarchism = 0
-        stratocratic_monarchism = 0
-
+    liberal_republic = 25
+    right_anarchism = 75
 }
 
 set_politics = {
-	
 	ruling_party = right_anarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -37,11 +15,21 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Prezident Yevgeny Fyodorovich Dragunov"
+	name = "Prezidént Evgénij Fëdorovič Dragúnov"
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/ZLO_Dragunov.tga"
 	expire = "1965.1.1"
 	ideology = ancap
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prezidént Mixaíl Timoféevič Kalášnikov"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/ZLO_Kalashnikov.tga"
+	expire = "1965.1.1"
+	ideology = socdem
 	traits = {
 	}
 }

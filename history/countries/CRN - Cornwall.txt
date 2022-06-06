@@ -1,20 +1,17 @@
-﻿capital = 986
+﻿
+capital = 986
 
 #oob = "EGL_1936"
 
+set_popularities = {
+	authoritarian_monarchism = 20
+	fascism = 0
+	communism = 0
+	liberal_republic = 80
+}
 
-	set_popularities = {
-		authoritarian_monarchism
-			 = 20
-		fascism
-			 = 0
-		communism
-			 = 0
-		liberal_republic
-			 = 80
-		}
-	set_politics = { 
- ruling_party = liberal_republic
+set_politics = { 
+	ruling_party = liberal_republic
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
@@ -42,6 +39,16 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Generaloberst Franz Halder"
+	desc = ""
+	picture = "CRN_Halder_nazi.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichskommissar Franz Halder"
 	desc = ""
 	picture = "CRN_Halder_nazi.tga"
 	expire = "1965.1.1"
