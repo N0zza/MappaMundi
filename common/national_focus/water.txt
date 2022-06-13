@@ -11730,26 +11730,18 @@
         }
 		every_state = { 
             limit = { 
-				is_core_of = ISR
+				OR = {
+					is_core_of = ISR
+					is_claimed_by = ISR
+				}
 			}
+			do_israeli_renames = yes
             ISR = { 
 				transfer_state = PREV 
+				set_capital = 3382
 			}
         }
 		ISR = {
-		    transfer_state = 1204
-		   	transfer_state = 1206
-		   	transfer_state = 6796
-			set_capital = 3382
-		   	transfer_state = 3381
-		   	transfer_state = 3386
-		   	transfer_state = 2305
-		   	transfer_state = 3378
-		   	transfer_state = 3379
-		   	transfer_state = 1208
-			transfer_state = 931
-			transfer_state = 3406	
-			transfer_state = 3377
 			kill_country_leader = yes
 			create_country_leader = {
             	name = "Nesi Isaac Herzog"
