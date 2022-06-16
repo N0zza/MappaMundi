@@ -366,7 +366,12 @@ do_all_renames = {
 				OR = { 
 					tag = POL 
 					tag = GAL 
-					tag = PL2 
+					AND = {
+						tag = PL2 
+						NOT = {
+							has_government  = national_socialism
+						}
+					}
 				}
 			}
 		}
