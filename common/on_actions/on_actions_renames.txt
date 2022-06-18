@@ -10,7 +10,14 @@ on_actions = {
 			}
 		}
 	}
-	on_ruling_party_changed = {
+	on_government_change = {
+		effect = {
+			every_owned_state = {
+				do_all_renames = yes
+			}
+		}
+	}
+	on_ruling_party_change = {
 		effect = {
 			every_owned_state = {
 				do_all_renames = yes
