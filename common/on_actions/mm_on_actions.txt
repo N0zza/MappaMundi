@@ -3275,18 +3275,18 @@ on_actions = {
 	}
 # I will destroy Gaffate
 	on_ruling_party_change = {
-			effect = {
-				ROOT = {
+		effect = {
+			ROOT = {
 				if = {
 					limit = {
 						has_government = anarchism_ideology
 					}
-					
 					set_cosmetic_tag = TRIBAL_BROWN
 				}
 				if = {
-					limit = {tag = BGN}
-					
+					limit = {
+						tag = BGN
+					}
 					every_state = {
 						limit = {
 							is_owned_by = ROOT
@@ -3302,7 +3302,7 @@ on_actions = {
 							limit = {
 								is_owned_by = ROOT
 							}
-						do_german_renames = yes
+							do_german_renames = yes
 						}
 					}
 					if = {
@@ -3314,13 +3314,17 @@ on_actions = {
 							limit = {
 								is_owned_by = ROOT
 							}
-						do_german_renames = yes
+							do_german_renames = yes
 						}
 					}
 				}
 				if = {
-					limit = {OR = {tag = WTO tag = TOG}}
-					
+					limit = {
+						OR = {
+							tag = WTO 
+							tag = TOG
+						}
+					}
 					if = {
 						limit = {
 							has_government = centrist_republic
@@ -3335,8 +3339,9 @@ on_actions = {
 					}
 				}
 				if = {
-					limit = {tag = TOG}
-					
+					limit = {
+						tag = TOG
+					}
 					if = {
 						limit = {
 							has_government = neutrality
@@ -3345,39 +3350,42 @@ on_actions = {
 					}
 				}
 				if = {
-					limit = {OR = {tag = ALB
-								   tag = MNT
-								   tag = EGY
-								   tag = SUD
-								   tag = KEN
-								   tag = UGA
-								   tag = CHA
-								   tag = ETH
-								   tag = OMN
-								   tag = UAE
-								   tag = YEM
-								   tag = ALG
-								   tag = KMN
-								   tag = BRG
-								   tag = WLC
-								   tag = SYR
-								   tag = PAL
-								   tag = ISR
-								   tag = RUM
-								   tag = SYR
-								   tag = IRQ
-								   tag = AGV
-								   tag = CST
-								   tag = PVC
-								   tag = SER
-								   tag = TYR
-								   tag = KTI
-								   tag = TUN
-								   tag = ILY
-								   tag = PPN
-								   tag = AGV
-								   tag = CHA}}
-					
+					limit = {
+						OR = {
+							tag = ALB
+							tag = MNT
+							tag = EGY
+							tag = SUD
+							tag = KEN
+							tag = UGA
+							tag = CHA
+							tag = ETH
+							tag = OMN
+							tag = UAE
+							tag = YEM
+							tag = ALG
+							tag = KMN
+							tag = BRG
+							tag = WLC
+							tag = SYR
+							tag = PAL
+							tag = ISR
+							tag = RUM
+							tag = SYR
+							tag = IRQ
+							tag = AGV
+							tag = CST
+							tag = PVC
+							tag = SER
+							tag = TYR
+							tag = KTI
+							tag = TUN
+							tag = ILY
+							tag = PPN
+							tag = AGV
+							tag = CHA
+						}
+					}
 					if = {
 						limit = {
 							has_government = fascism
@@ -3392,10 +3400,13 @@ on_actions = {
 					}
 				}
 				if = {
-					limit = {OR = {tag = SAU
-								   tag = GRE
-								   tag = MOR}}
-					
+					limit = {
+						OR = {
+							tag = SAU
+							tag = GRE
+							tag = MOR
+						}
+					}
 					if = {
 						limit = {
 							has_government = republican_fascism
@@ -3411,30 +3422,29 @@ on_actions = {
 				}
 				if = {
 					limit = {
-							OR = { 
-									tag = WTO
-									tag = CMR
-									tag = ALG
-									tag = TUN
-									tag = MOR
-									tag = MRT
-									tag = NGR
-									tag = MLI
-									tag = IVO
-									tag = VOL
-									tag = SEN
-									tag = DAH
-									tag = GNA
-									tag = TOG
-									tag = CHA
-									tag = CAR
-									tag = RCG
-									tag = GAB
-									tag = LIB
-									tag = INC
-								}
-							}
-							
+						OR = { 
+							tag = WTO
+							tag = CMR
+							tag = ALG
+							tag = TUN
+							tag = MOR
+							tag = MRT
+							tag = NGR
+							tag = MLI
+							tag = IVO
+							tag = VOL
+							tag = SEN
+							tag = DAH
+							tag = GNA
+							tag = TOG
+							tag = CHA
+							tag = CAR
+							tag = RCG
+							tag = GAB
+							tag = LIB
+							tag = INC
+						}
+					}	
 					if = {
 						limit = {
 							has_government = authoritarian_monarchism
@@ -3455,8 +3465,8 @@ on_actions = {
 								tag = TUN
 								tag = MOR
 								tag = SNW
-								}
 							}
+						}
 					
 					if = {
 						limit = {
@@ -3466,8 +3476,9 @@ on_actions = {
 					}
 				}
 				if = {
-					limit = {tag = MAD}
-					
+					limit = {
+						tag = MAD
+					}
 					if = {
 						limit = {
 							has_government = conservative_monarchism
@@ -3476,8 +3487,9 @@ on_actions = {
 					}
 				}
 				if = {
-					limit = {tag = RAJ}
-					
+					limit = {
+						tag = RAJ
+					}
 					if = {
 						limit = {
 							has_government = national_socialism
@@ -3528,91 +3540,94 @@ on_actions = {
 					}
 				}
 				if = {
-					limit = {OR = {tag = URL 
-								   tag = UR2 
-								   tag = ORN 
-								   tag = ARH 
-								   tag = CHY 
-								   tag = SBR 
-								   tag = YKT 
-								   tag = TYU 
-								   tag = TOM 
-								   tag = IRK 
-								   tag = DEN 
-								   tag = NOR 
-								   tag = FLA 
-								   tag = WLL 
-								   tag = URL 
-								   tag = CRM 
-								   tag = PL2 
-								   tag = LV2 
-								   tag = UA2 
-								   tag = SLO 
-								   tag = BLR 
-								   tag = POL 
-								   tag = UKR 
-								   tag = WTO 
-								   tag = TOG 
-								   tag = PL2 
-								   tag = CZC 
-								   tag = CZE 
-								   tag = LIT
-								   tag = TSC 
-								   tag = MSC 
-								   tag = NOR
-								   tag = KAZ
-								   tag = EST
-								   tag = ILY
-								   tag = TKS
-								   tag = UTR
-								   tag = TZN
-								   tag = NMB
-								   tag = MAD
-								   tag = RCG
-								   tag = NND
-								   tag = OCC
-								   tag = SCN
-								   tag = FIN
-								   tag = RSI
-								   tag = RUM
-								   tag = WLC
-								   tag = BRG
-								   tag = BSQ
-								   tag = CST
-								   tag = CAT
-								   tag = GLC
-								   tag = ADU
-								   tag = PPN
-								   tag = BUR
-								   tag = BLK
-								   tag = SER
-								   tag = AGV
-								   tag = NAP
-								   tag = EPR
-								   tag = ALN
-								   tag = DON
-								   tag = SWI
-								   tag = BNT
-								   tag = ENG
-								   tag = GRL
-								   tag = ICE
-								   tag = GOL
-								   tag = CRN
-								   tag = CAP
-								   tag = NMB
-								   tag = COG
-								   tag = RCG
-								   tag = TZN
-								   tag = MAD
-								   tag = SYR
-								   tag = ITA
-								   tag = FWA
-								   tag = LBA
-								   tag = ETH
-								   tag = IRQ
-								   tag = SAU
-								   tag = LAT}}
-					
+					limit = {
+						OR = {
+							tag = URL 
+							tag = UR2 
+							tag = ORN 
+							tag = ARH 
+							tag = CHY 
+							tag = SBR 
+							tag = YKT 
+							tag = TYU 
+							tag = TOM 
+							tag = IRK 
+							tag = DEN 
+							tag = NOR 
+							tag = FLA 
+							tag = WLL 
+							tag = URL 
+							tag = CRM 
+							tag = PL2 
+							tag = LV2 
+							tag = UA2 
+							tag = SLO 
+							tag = BLR 
+							tag = POL 
+							tag = UKR 
+							tag = WTO 
+							tag = TOG 
+							tag = PL2 
+							tag = CZC 
+							tag = CZE 
+							tag = LIT
+							tag = TSC 
+							tag = MSC 
+							tag = NOR
+							tag = KAZ
+							tag = EST
+							tag = ILY
+							tag = TKS
+							tag = UTR
+							tag = TZN
+							tag = NMB
+							tag = MAD
+							tag = RCG
+							tag = NND
+							tag = OCC
+							tag = SCN
+							tag = FIN
+							tag = RSI
+							tag = RUM
+							tag = WLC
+							tag = BRG
+							tag = BSQ
+							tag = CST
+							tag = CAT
+							tag = GLC
+							tag = ADU
+							tag = PPN
+							tag = BUR
+							tag = BLK
+							tag = SER
+							tag = AGV
+							tag = NAP
+							tag = EPR
+							tag = ALN
+							tag = DON
+							tag = SWI
+							tag = BNT
+							tag = ENG
+							tag = GRL
+							tag = ICE
+							tag = GOL
+							tag = CRN
+							tag = CAP
+							tag = NMB
+							tag = COG
+							tag = RCG
+							tag = TZN
+							tag = MAD
+							tag = SYR
+							tag = ITA
+							tag = FWA
+							tag = LBA
+							tag = ETH
+							tag = IRQ
+							tag = SAU
+							tag = LAT
+						}
+					}
 					if = {
 						limit = {
 							has_government = national_socialism
@@ -3627,27 +3642,32 @@ on_actions = {
 					}
 				}
 				if = {
-					limit = {OR = {tag = RUS tag = SOV}}
-					
+					limit = {
+						OR = {
+							tag = RUS 
+							tag = SOV
+						}
+					}
 					if = {
 						limit = {
 							OR = {
-							has_government = fascism
-							has_government = monarchism
-							has_government = socialist_monarchy
-							has_government = democratic_monarchism
-							has_government = conservative_monarchism
-							has_government = centrist_monarchism
-							has_government = stratocratic_monarchism
-							has_government = authoritarian_monarchism
+								has_government = fascism
+								has_government = monarchism
+								has_government = socialist_monarchy
+								has_government = democratic_monarchism
+								has_government = conservative_monarchism
+								has_government = centrist_monarchism
+								has_government = stratocratic_monarchism
+								has_government = authoritarian_monarchism
 							}
 						}
 						set_cosmetic_tag = RUS_GREEN
 					}
 				}
 				if = {
-					limit = {tag = INS}
-					
+					limit = {
+						tag = INS
+					}
 					if = {
 						limit = {
 							has_government = conservative_monarchism
@@ -3687,12 +3707,12 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
-							has_government = socialist_monarchy
-							has_government = liberal_republic
-							has_government = democratic_monarchism
-							has_government = centrist_republic
-							has_government = theocratic
-							has_government = republican_fascism
+								has_government = socialist_monarchy
+								has_government = liberal_republic
+								has_government = democratic_monarchism
+								has_government = centrist_republic
+								has_government = theocratic
+								has_government = republican_fascism
 							}
 						}
 						set_cosmetic_tag = INS_GREY
@@ -3700,18 +3720,19 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
-							has_government = vanguardism
-							has_government = communism
-							has_government = left_anarchism
-							has_government = socialism_ideology
+								has_government = vanguardism
+								has_government = communism
+								has_government = left_anarchism
+								has_government = socialism_ideology
 							}
 						}
 						set_cosmetic_tag = INS_SOCIALIST
 					}
 				}
 				if = {
-					limit = {tag = GER}
-					
+					limit = {
+						tag = GER
+						}
 					if = {
 						limit = {
 							has_government = democratic_monarchism
@@ -3727,10 +3748,10 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
-							has_government = socialism_ideology
-							has_government = liberal_republic
-							has_government = democratic
-							has_government = right_anarchism
+								has_government = socialism_ideology
+								has_government = liberal_republic
+								has_government = democratic
+								has_government = right_anarchism
 							}
 						}
 						set_cosmetic_tag = GER_REPUBLIC
@@ -3738,12 +3759,12 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
-							has_government = monarchism
-							has_government = conservative_monarchism
-							has_government = centrist_monarchism
-							has_government = authoritarian_monarchism
-							has_government = stratocratic_monarchism
-							has_government = socialist_monarchy
+								has_government = monarchism
+								has_government = conservative_monarchism
+								has_government = centrist_monarchism
+								has_government = authoritarian_monarchism
+								has_government = stratocratic_monarchism
+								has_government = socialist_monarchy
 							}
 						}
 						set_cosmetic_tag = GREY_GER2
@@ -3751,26 +3772,27 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
-							has_government = vanguardism
-							has_government = communism
-							has_government = left_anarchism
+								has_government = vanguardism
+								has_government = communism
+								has_government = left_anarchism
 							}
 						}
 						set_cosmetic_tag = GER_SOCIALIST
 					}
 				}
 				if = {
-					limit = {tag = FRA}
-					
+					limit = {
+						tag = FRA
+					}
 					if = {
 						limit = {
 							OR = {
-							has_government = national_socialism
-							has_government = centrist_republic
-							has_government = stratocratic
-							has_government = right_anarchism
-							has_government = theocratic
-							has_government = republican_fascism
+								has_government = national_socialism
+								has_government = centrist_republic
+								has_government = stratocratic
+								has_government = right_anarchism
+								has_government = theocratic
+								has_government = republican_fascism
 							}
 						}
 						set_cosmetic_tag = FRA_AUTH
@@ -3778,9 +3800,9 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
-							has_government = socialist_monarchy
-							has_government = democratic_monarchism
-							has_government = centrist_monarchism
+								has_government = socialist_monarchy
+								has_government = democratic_monarchism
+								has_government = centrist_monarchism
 							}
 						}
 						set_cosmetic_tag = FRA_KINGDOM
@@ -3788,8 +3810,8 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
-							has_government = fascism
-							has_government = monarchism
+								has_government = fascism
+								has_government = monarchism
 							}
 						}
 						set_cosmetic_tag = FRA_EMPIRE
@@ -3797,8 +3819,8 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
-							has_government = conservative_monarchism
-							has_government = stratocratic_monarchism
+								has_government = conservative_monarchism
+								has_government = stratocratic_monarchism
 							}
 						}
 						set_cosmetic_tag = FRA_NAPOLEON
@@ -3806,27 +3828,28 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
-							has_government = communism
-							has_government = vanguardism
-							has_government = socialism_ideology
-							has_government = left_anarchism
+								has_government = communism
+								has_government = vanguardism
+								has_government = socialism_ideology
+								has_government = left_anarchism
 							}
 						}
 						set_cosmetic_tag = FRA_SOCIALIST
 					}
 				}
 				if = {
-					limit = {tag = SPR}
-					
+					limit = {
+						tag = SPR
+					}
 					if = {
 						limit = {
 							OR = {
-							has_government = national_socialism
-							has_government = right_anarchism
-							has_government = republican_fascism
-							has_government = stratocratic
-							has_government = stratocratic_monarchism
-							has_government = neutrality
+								has_government = national_socialism
+								has_government = right_anarchism
+								has_government = republican_fascism
+								has_government = stratocratic
+								has_government = stratocratic_monarchism
+								has_government = neutrality
 							}
 						}
 						set_cosmetic_tag = SPR_AUTH
@@ -3834,11 +3857,11 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
-							has_government = democratic_monarchism
-							has_government = centrist_monarchism
-							has_government = conservative_monarchism
-							has_government = authoritarian_monarchism
-							has_government = theocratic
+								has_government = democratic_monarchism
+								has_government = centrist_monarchism
+								has_government = conservative_monarchism
+								has_government = authoritarian_monarchism
+								has_government = theocratic
 							}
 						}
 						set_cosmetic_tag = SPR_KINGDOM
@@ -3858,28 +3881,29 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
-							has_government = communism
-							has_government = vanguardism
-							has_government = left_anarchism
+								has_government = communism
+								has_government = vanguardism
+								has_government = left_anarchism
 							}
 						}
 						set_cosmetic_tag = SPR_SOCIALIST
 					}
 				}
 				if = {
-					limit = {tag = POR}
-					
+					limit = {
+						tag = POR
+					}
 					if = {
 						limit = {
 							OR = {
-							has_government = fascism
-							has_government = monarchism
-							has_government = socialist_monarchy
-							has_government = democratic_monarchism
-							has_government = conservative_monarchism
-							has_government = centrist_monarchism
-							has_government = stratocratic_monarchism
-							has_government = authoritarian_monarchism
+								has_government = fascism
+								has_government = monarchism
+								has_government = socialist_monarchy
+								has_government = democratic_monarchism
+								has_government = conservative_monarchism
+								has_government = centrist_monarchism
+								has_government = stratocratic_monarchism
+								has_government = authoritarian_monarchism
 							}
 						}
 						set_cosmetic_tag = POR_MONARCHISM

@@ -10,11 +10,35 @@ country_event = { #Debug
 			factor = 0
 		}
 		hidden_effect = {
-			SRL = {
-				set_party_name = { 
-					ideology = authoritarian_monarchism
-					long_name = "British Administration" 
-					name = "BA" 
+			PL3 = {
+				create_country_leader = {
+					name = "Generał Brygady August Emil Fieldorf"
+					desc = ""
+					picture = "PL3_Fieldorf.tga"
+					expire = "1965.1.1"
+					ideology = oligarchism
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Przewodniczący Stanisław Radkiewicz"
+					desc = ""
+					picture = "PL3_Radkiewicz.tga"
+					expire = "1965.1.1"
+					ideology = totsoc
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Lider Maciej Marian Giertych"
+					desc = ""
+					picture = "PL3_Giertych.tga"
+					expire = "1965.1.1"
+					ideology = repfash
+					traits = {
+					}
 				}
 			}
 		}
