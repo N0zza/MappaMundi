@@ -10,34 +10,14 @@ country_event = { #Debug
 			factor = 0
 		}
 		hidden_effect = {
-			PL3 = {
+			SMR = {
+				kill_country_leader = yes
 				create_country_leader = {
-					name = "Generał Brygady August Emil Fieldorf"
+					name = "Consiglio Grande e Generale"
 					desc = ""
-					picture = "PL3_Fieldorf.tga"
+					picture = SMR_council.tga
 					expire = "1965.1.1"
-					ideology = oligarchism
-					traits = {
-						#
-					}
-				}
-				create_country_leader = {
-					name = "Przewodniczący Stanisław Radkiewicz"
-					desc = ""
-					picture = "PL3_Radkiewicz.tga"
-					expire = "1965.1.1"
-					ideology = totsoc
-					traits = {
-						#
-					}
-				}
-				create_country_leader = {
-					name = "Lider Maciej Marian Giertych"
-					desc = ""
-					picture = "PL3_Giertych.tga"
-					expire = "1965.1.1"
-					ideology = repfash
-					traits = {
+					ideology = conservatism
 					}
 				}
 			}
