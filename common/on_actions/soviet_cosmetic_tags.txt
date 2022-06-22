@@ -1,0 +1,14 @@
+on_actions = {
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = soviet_mark
+				}
+				ROOT = {
+					do_soviet_cosmetic_tag = yes
+				}
+			}
+		}
+	}
+}

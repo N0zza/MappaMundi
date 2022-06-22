@@ -838,7 +838,10 @@ do_tno_normal_warlord_russia = {
 	every_state = {
 		limit = {
 			is_core_of = KAR
-			NOT = {is_core_of = ONG}
+			NOT = {
+				is_core_of = ONG
+				state = 17313
+			}
 		}
 		FIN = {
 			transfer_state = PREV

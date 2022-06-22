@@ -689,11 +689,14 @@ do_all_renames = {
 					tag = RUS 
 					tag = ADJ 
 					tag = ABK 
+					tag = SOS
 					AND = {
-						tag = TSC
+						OR = {
+							tag = TSC
+							tag = UKR
+						}
 						has_government = vanguardism
 					}
-					tag = SOS
 				}
 			}
 		}
