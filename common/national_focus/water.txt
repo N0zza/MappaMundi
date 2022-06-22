@@ -11749,6 +11749,26 @@
         }
 		every_state = { 
             limit = { 
+				is_core_of = GZS
+			}
+            GZS = { 
+				transfer_state = PREV
+			}
+        }
+		GZS = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Ra'is Yahya Ibrahim Hassan Sinwar"
+				desc = ""
+				picture = "GZS_Sinwar.tga"
+				expire = "1965.1.1"
+				ideology = militarism
+				traits = {
+				}
+			}
+        }
+		every_state = { 
+            limit = { 
 				is_core_of = PAL
 				NOT = {
 					is_core_of = ISR
