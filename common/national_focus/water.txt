@@ -11293,21 +11293,21 @@
 				}
 			}
 		BRM = {
-			drop_cosmetic_tag = yes
+			set_cosmetic_tag = BRM_2022
 			set_politics = {
-	       		ruling_party = democratic
-            	}	
+	       		ruling_party = stratocratic
+            }	
+		}
+		BRM = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Nuing Ngam Tau Samma Ta Myint Swe"
+        		desc = ""
+        		picture = BRM_Swe.tga
+        		expire = "1965.1.1"
+        		ideology = militarism
 			}
-				BRM = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Nuing Ngam Tau Samma Ta Win Myint"
-            			desc = ""
-            			picture = BRM_Myint.tga
-            			expire = "1965.1.1"
-            			ideology = conservatism
-						}
-					}
+		}
 		BAN = {
 			drop_cosmetic_tag = yes
 			set_politics = {
