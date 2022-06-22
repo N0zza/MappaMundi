@@ -11401,7 +11401,7 @@
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
-			}
+		}
 		ENG = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -11420,7 +11420,7 @@
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
-			}
+		}
 		GSY = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -11430,7 +11430,12 @@
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
+		}
+		MNX = {
+			set_politics = {
+				ruling_party = conservative_monarchism
 			}
+		}
 		MNX = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -11438,9 +11443,9 @@
            		desc = ""
            		picture = MNX_Richard_Gozney.tga
            		expire = "1965.1.1"
-           		ideology = authmon
+           		ideology = conservative_constitutionalism
 				}
-			}
+		}
 		JSY = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -11450,7 +11455,7 @@
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
-			}
+		}
 		ENG = {
 			create_country_leader = {
            		name = "Prime Minister Alexander Boris de Pfeffel Johnson"
@@ -11459,23 +11464,23 @@
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
-			}
+		}
 		every_state = {
 			limit = {
 				is_core_of = UAE
-				}
+			}
 			UAE = {
 				transfer_state = PREV
-				}
 			}
+		}
 		every_state = {
 			limit = {
 				is_core_of = SYR
-				}
+			}
 			SYR = {
 				transfer_state = PREV
-				}
-			}			
+			}
+		}			
 		UAE = {
 			set_politics = {
 				ruling_party = conservative_monarchism
