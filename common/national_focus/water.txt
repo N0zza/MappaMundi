@@ -9613,9 +9613,9 @@
 		EST = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "President Kersti Kaljulaid"
+        		name = "President Alar Karis"
         		desc = ""
-        		picture = EST_Kalijukaid.tga
+        		picture = EST_Karis.tga
         		expire = "1965.1.1"
         		ideology = repfash
 				}
@@ -9799,9 +9799,9 @@
 		HUN = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Elnöke János Áder"
+           		name = "Elnöke Katalin Éva Novák"
            		desc = ""
-           		picture = HUN_Ader.tga
+           		picture = HUN_Novak.tga
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -10473,9 +10473,9 @@
 		ROK = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Daetonglyeong Moon Jae-in"
+        		name = "Daetonglyeong Yun Seok-yeol"
         		desc = ""
-        		picture = ROK_Moon.tga
+        		picture = ROK_Yun.tga
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -10831,9 +10831,9 @@
 		ETM = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Presidente Francisco Guterres"
+        		name = "Presidente José Manuel Ramos-Horta"
         		desc = ""
-        		picture = ETM_Guterres.tga
+        		picture = ETM_Ramos-Horta.tga
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -11087,7 +11087,7 @@
 		TMS = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Prezident Gurbanguly Mälikgulyýewiç Berdimuhamedow"
+           		name = "Prezident Serdar Gurbangulyýewiç Berdimuhamedow"
            		desc = ""
            		picture = TMS_Berdimuhamedow.tga
            		expire = "1965.1.1"
@@ -12012,9 +12012,9 @@
 		ARM = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Nakhagah Armen Vardani Sarkissian"
+           		name = "Nakhagah Vahagn Garniki Khachaturyan"
            		desc = ""
-           		picture = ARM_Sarkissian.tga
+           		picture = ARM_Khachaturyan.tga
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -12798,11 +12798,11 @@
 		TZN = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Rais John Pombe Joseph Magufuli"
+        		name = "Rais Samia Suluhu Hassan"
         		desc = ""
-        		picture = TZN_Magufuli.tga
+        		picture = TZN_Hassan.tga
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = socialism
 				}
 			}
 		RWA = {
@@ -12844,9 +12844,9 @@
 		NGR = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Président Mahamadou Issoufou"
+        		name = "Président Mohamed Bazoum"
         		desc = ""
-        		picture = NGR_Issoufou.tga
+        		picture = NGR_Bazoum.tga
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -13266,11 +13266,11 @@
 		ZAM = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "President Edgar Chagwa Lungu"
+        		name = "President Hakainde Hichilema"
         		desc = ""
-        		picture = ZAM_Lungu.tga
+        		picture = ZAM_Hichilema.tga
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = liberalism
 				}
 			}
 		MLW = {
@@ -14405,11 +14405,11 @@
 		COS = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Presidente Carlos Andrés Alvarado Quesada"
+           		name = "Presidente Rodrigo Alberto de Jesús Chaves Robles"
            		desc = ""
-           		picture = COS_Carlos_Alvarado_Quesada.tga
+           		picture = COS_Robles.tga
            		expire = "1965.1.1"
-           		ideology = socialism
+           		ideology = conservatism
 				}
 			}
 		PAN = {
@@ -14429,6 +14429,7 @@
 			}
 		HON = {
 			transfer_state = 2511
+			set_politics = HON_2022
 			set_politics = {
 				ruling_party = democratic
 				}
@@ -14436,11 +14437,11 @@
 		HON = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Presidente Juan Orlando Hernández Alvarado"
+           		name = "Presidenta Iris Xiomara Castro Sarmiento"
            		desc = ""
-           		picture = HON_Juan_Orlando_Hernandez.tga
+           		picture = HON_Castro.tga
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = socialism
 				}
 			}
 		ELS = {
@@ -14861,21 +14862,27 @@
 		ECU = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Presidente Lenín Boltaire Moreno Garcés"
+           		name = "Presidente Guillermo Alberto Santiago Lasso Mendoza"
            		desc = ""
-           		picture = ECU_Moreno.tga
+           		picture = ECU_Lasso.tga
            		expire = "1965.1.1"
            		ideology = demsoc
 				}
 			}
 		PRU = {
+			set_cosmetic_tag = PRU_2022
+			set_politics = {
+				ruling_party = democratic
+				}
+			}
+		PRU = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Presidente Francisco Rafael Sagasti Hochhausler"
+           		name = "Presidente José Pedro Castillo Terrones"
            		desc = ""
-           		picture = PRU_Sagasti.tga
+           		picture = PRU_Castillo.tga
            		expire = "1965.1.1"
-           		ideology = militarism
+           		ideology = socialism
 				}
 			}
 		VEN = {
