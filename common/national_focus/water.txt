@@ -11962,7 +11962,7 @@
 		AZR = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Prezidenti Ilham Heydar oghlu Aliyev"
+           		name = "Prezident İlham Heydər oğlu Əliyev"
            		desc = ""
            		picture = AZR_Aliyev.tga
            		expire = "1965.1.1"
@@ -12319,11 +12319,16 @@
 		every_state = {
 			limit = {
 				is_core_of = AZW
-				NOT = {
-					is_core_of = VOL 
-					}
 				}
 			AZW = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = AQ1
+				}
+			AQ1 = {
 				transfer_state = PREV
 				}
 			}
