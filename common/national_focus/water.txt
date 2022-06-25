@@ -12348,6 +12348,14 @@
 				transfer_state = PREV
 				}
 			}
+		every_state = {
+			limit = {
+				is_core_of = AQ2
+				}
+			AQ2 = {
+				transfer_state = PREV
+				}
+			}
 		AQ1 = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -12371,9 +12379,19 @@
 		IS2 = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Decentralised Cells"
+           		name = "Ra'is Abdul al-Qādir Mū'min"
            		desc = ""
-           		picture = gfx/leaders/Anarchy/Decentralised_Cells.tga
+           		picture = IS2_Mumin.tga
+           		expire = "1965.1.1"
+           		ideology = christian
+				}
+			}
+		AQ2 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Boqor Axmed Cumar"
+           		desc = ""
+           		picture = AQ2_Cumar.tga
            		expire = "1965.1.1"
            		ideology = christian
 				}
