@@ -7553,6 +7553,7 @@
 						is_core_of = FND
 						is_core_of = GOA
 						is_core_of = NEP
+						is_core_of = NSE
 						is_claimed_by = TUG
 						}
 					}
@@ -10212,9 +10213,9 @@
 		SMR = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Consiglio Grande e Generale"
+        		name = "Capitano Reggente Oscar Mina"
         		desc = ""
-        		picture = SMR_council.tga
+        		picture = SMR_Mina.tga
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -11198,6 +11199,7 @@
 				NOT = {
 					is_core_of = PAK
 					is_core_of = NEP
+					is_core_of = NSE
 					is_owned_by = PRC
 					}
 				}
@@ -11367,7 +11369,6 @@
 			set_politics = {
 	       		ruling_party = democratic
               	}	
-				kill_country_leader = yes
 				create_country_leader = {
             		name = "Rāṣṭrapati Rām Nāth Kovind"
             		desc = ""
@@ -11376,6 +11377,18 @@
             		ideology = conservatism
 				}
 			}
+		NSE = {	
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "North Sentinel Islanders"
+				desc = ""
+				picture = "gfx/leaders/Anarchy/Sentinelese_colour.tga"
+				expire = "1965.1.1"
+				ideology = total_anarchist
+				traits = {
+				}
+			}
+		}
 		add_victory_points = {
 			province = 4321
 			value = 5
@@ -11503,9 +11516,9 @@
 		UAE = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Ra'is Khalifa bin Zayed bin Sultan Al Nahyan"
+           		name = "Ra'is Sheikh Mohamed bin Zayed bin Sultan Al Nahyan"
            		desc = ""
-           		picture = UAE_Khalifa.tga
+           		picture = UAE_MBZ.tga
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -11635,16 +11648,16 @@
 	        ruling_party = democratic
 				}
 		    }  
-				YEM = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Ra'is Abdrabbuh Mansur Hadi"
-            			desc = ""
-            			picture = YEM_Hadi.tga
-            			expire = "1965.1.1"
-            			ideology = conservatism
-						}
-					}
+		YEM = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Ra'is Rashad Muhammad al-Alimi"
+        		desc = ""
+        		picture = YEM_Alimi.tga
+        		expire = "1965.1.1"
+        		ideology = conservatism
+				}
+			}
 		OMA = {
 		    transfer_state = 2868
 		    transfer_state = 4210
@@ -12667,21 +12680,21 @@
 			transfer_state = 1628
 			transfer_state = 1629
 			transfer_state = 10162
-			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = stratocratic
+				}
+			set_cosmetic_tag = SUD_2022
+			}
+		SUD = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Ra'is Abdel Fattah Abdelrahman al-Burhan"
+        		desc = ""
+        		picture = SUD_Burhan.tga
+        		expire = "1965.1.1"
+        		ideology = militarism
 				}
 			}
-				SUD = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Majlis Alsiyadat Alsuwdaniu"
-            			desc = ""
-            			picture = SUD_fuck.tga
-            			expire = "1965.1.1"
-            			ideology = conservatism
-						}
-					}
 		SSU = {
 			set_politics = {
 				ruling_party = democratic
@@ -13045,16 +13058,16 @@
 				ruling_party = democratic
 				}
 			}
-				CHA = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Président Idriss Déby Itno"
-            			desc = ""
-            			picture = CHA_Deby.tga
-            			expire = "1965.1.1"
-            			ideology = conservatism
-						}
-					}
+		CHA = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Président Mahamat Idriss Déby Itno"
+        		desc = ""
+        		picture = CHA_Deby.tga
+        		expire = "1965.1.1"
+        		ideology = conservatism
+				}
+			}
 		VOL = {
 			set_politics = {
 				ruling_party = democratic
