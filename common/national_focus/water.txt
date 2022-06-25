@@ -12340,6 +12340,14 @@
 				transfer_state = PREV
 				}
 			}
+		every_state = {
+			limit = {
+				is_core_of = IS2
+				}
+			IS2 = {
+				transfer_state = PREV
+				}
+			}
 		AQ1 = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -12351,6 +12359,16 @@
 				}
 			}
 		IS1 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Decentralised Cells"
+           		desc = ""
+           		picture = gfx/leaders/Anarchy/Decentralised_Cells.tga
+           		expire = "1965.1.1"
+           		ideology = christian
+				}
+			}
+		IS2 = {
 			kill_country_leader = yes
 			create_country_leader = {
            		name = "Decentralised Cells"
