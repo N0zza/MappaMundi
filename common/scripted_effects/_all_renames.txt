@@ -1312,4 +1312,17 @@ do_all_renames = {
 		}
 		do_komi_renames = yes
 	}
+	### India ###
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = IND
+					tag = PAK
+					tag = BAN
+				}
+			}
+		}
+		do_indian_renames = yes
+	}
 }

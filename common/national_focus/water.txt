@@ -11336,18 +11336,21 @@
 			drop_cosmetic_tag = yes
 			set_politics = {
 	       		ruling_party = centrist_republic
+			}
+			every_owned_state = {
+				do_indian_renames = yes
+			}
+		}
+		BAN = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Rashtrôpôti Mohammad Abdul Hamid"
+        		desc = ""
+        		picture = BAN_Hamid.tga
+        		expire = "1965.1.1"
+        		ideology = cenrep
 				}
 			}
-				BAN = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Rashtrôpôti Mohammad Abdul Hamid"
-            			desc = ""
-            			picture = BAN_Hamid.tga
-            			expire = "1965.1.1"
-            			ideology = cenrep
-						}
-					}
 		BHU = {
 			drop_cosmetic_tag = yes
 			set_politics = {
@@ -11364,19 +11367,32 @@
 						}
 					}		
 			}
+		add_victory_points = { #Rourkela
+			province = 2425
+			value = 5
+		}
+		add_victory_points = { #Bhilai
+			province = 2444
+			value = 5
+		}
 		IND = {			
             set_capital = 4732
 			set_politics = {
 	       		ruling_party = democratic
-              	}	
-				create_country_leader = {
-            		name = "Rāṣṭrapati Rām Nāth Kovind"
-            		desc = ""
-            		picture = IND_Kovind.tga
-            		expire = "1965.1.1"
-            		ideology = conservatism
-				}
+              }	
+			every_owned_state = {
+				do_indian_renames = yes
 			}
+		}
+		IND = {			
+			create_country_leader = {
+            	name = "Rāṣṭrapati Rām Nāth Kovind"
+            	desc = ""
+            	picture = IND_Kovind.tga
+            	expire = "1965.1.1"
+            	ideology = conservatism
+			}
+		}
 		NSE = {	
 			kill_country_leader = yes
 			create_country_leader = {
@@ -11402,10 +11418,6 @@
 			value = 5
 			}
 		add_victory_points = {
-			province = 2444
-			value = 5
-			}
-		add_victory_points = {
 			province = 1061
 			value = 5
 			}
@@ -11426,7 +11438,10 @@
 			set_politics = {
 				ruling_party = theocratic
 				}
+			every_owned_state = {
+				do_indian_renames = yes
 			}
+		}
 		ENG = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -13042,16 +13057,16 @@
 				ruling_party = democratic
 				}
 			}
-				CAR = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Président Faustin-Archange Touadéra"
-            			desc = ""
-            			picture = CAR_Touadera.tga
-            			expire = "1965.1.1"
-            			ideology = conservatism
-						}
-					}
+		CAR = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Président Faustin-Archange Touadéra"
+        		desc = ""
+        		picture = CAR_Touadera.tga
+        		expire = "1965.1.1"
+        		ideology = conservatism
+				}
+			}
 		CHA = {
 			drop_cosmetic_tag = yes
 			set_politics = {
@@ -13073,48 +13088,48 @@
 				ruling_party = democratic
 				}
 			}
-				VOL = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Président Roch Marc Christian Kaboré"
-            			desc = ""
-            			picture = VOL_Kabore.tga
-            			expire = "1965.1.1"
-            			ideology = conservatism
-						}
-					}
+		VOL = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Président Roch Marc Christian Kaboré"
+        		desc = ""
+        		picture = VOL_Kabore.tga
+        		expire = "1965.1.1"
+        		ideology = conservatism
+				}
+			}
 		RCG = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
 				}
 			}
-				RCG = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Président Denis Sassou Nguesso"
-            			desc = ""
-            			picture = RCG_Nguesso.tga
-            			expire = "1965.1.1"
-            			ideology = conservatism
-						}
-					}
+		RCG = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Président Denis Sassou Nguesso"
+        		desc = ""
+        		picture = RCG_Nguesso.tga
+        		expire = "1965.1.1"
+        		ideology = conservatism
+				}
+			}
 		GNA = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
 				}
 			}
-				GNA = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Président Alpha Condé"
-            			desc = ""
-            			picture = GNA_Alpha.tga
-            			expire = "1965.1.1"
-            			ideology = conservatism
-						}
-					}
+		GNA = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Président Alpha Condé"
+        		desc = ""
+        		picture = GNA_Alpha.tga
+        		expire = "1965.1.1"
+        		ideology = conservatism
+				}
+			}
 		GAB = {
 			drop_cosmetic_tag = yes
 			set_politics = {
