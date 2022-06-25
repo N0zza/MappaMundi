@@ -9261,6 +9261,28 @@
         		ideology = despotism
 				}
 			}
+		DPR = {
+			set_cosmetic_tag = RUS_GREEN
+			}
+		every_state = {
+			limit = {
+				is_claimed_by = DPR
+				}
+			DPR = {
+				transfer_state = PREV
+				}
+			}
+		LPR = {
+			set_cosmetic_tag = RUS_GREEN
+			}
+		every_state = {
+			limit = {
+				is_claimed_by = LPR
+				}
+			LPR = {
+				transfer_state = PREV
+				}
+			}
 		LPR = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -10786,9 +10808,9 @@
 		PHI = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Pangulo Rodrigo Roa Duterte"
+        		name = "Pangulo Ferdinand Romualdez Marcos Jr."
         		desc = ""
-        		picture = PHI_Duterte.tga
+        		picture = PHI_Bongbong.tga
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -12369,6 +12391,14 @@
 				is_core_of = YM2
 				}
 			YM2 = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = FAR
+				}
+			FAR = {
 				transfer_state = PREV
 				}
 			}
