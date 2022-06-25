@@ -10,17 +10,22 @@ country_event = { #Debug
 			factor = 0
 		}
 		hidden_effect = {
-			SMR = {
-				kill_country_leader = yes
-				create_country_leader = {
-					name = "Consiglio Grande e Generale"
-					desc = ""
-					picture = SMR_council.tga
-					expire = "1965.1.1"
-					ideology = conservatism
-					}
-				}
+		BRM = {
+			set_cosmetic_tag = BRM_2022
+			set_politics = {
+	       		ruling_party = stratocratic
+            }	
+		}
+		BRM = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Nuing Ngam Tau Samma Ta Myint Swe"
+        		desc = ""
+        		picture = BRM_Swe.tga
+        		expire = "1965.1.1"
+        		ideology = militarism
 			}
+		}
 		}
 	}
 	option = { #Nah

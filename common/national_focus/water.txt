@@ -11414,16 +11414,6 @@
 				ruling_party = theocratic
 				}
 			}
-		BRM = {
-			kill_country_leader = yes
-			create_country_leader = {
-           		name = "Nuing Ngam Tau Samma Ta Win Myint"
-           		desc = ""
-           		picture = BRM_Myint.tga
-           		expire = "1965.1.1"
-           		ideology = conservatism
-				}
-		}
 		ENG = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -12797,6 +12787,7 @@
 				}
 			}
 		ERI = {
+			transfer_state = 6875
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = socialism_ideology
@@ -12812,6 +12803,34 @@
         		ideology = demsoc
 				}
 			}
+		every_state = {
+			limit = {
+				is_core_of = TIG
+				NOT = {
+					is_core_of = ERI
+					state = 7911
+					state = 10471
+				}
+			}
+			TIG = {
+				transfer_state = PREV
+			}
+		}
+		TIG = {
+			set_politics = {
+				ruling_party = centrist_republic
+			}
+		}
+		TIG = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Pirēzīdaniti Debretsion Gebremichael"
+        		desc = ""
+        		picture = TIG_Gebremichael.tga
+        		expire = "1965.1.1"
+        		ideology = cenrep
+				}
+		}
 		ETH = {
 			drop_cosmetic_tag = yes
 			set_politics = {
@@ -14549,7 +14568,7 @@
 			}
 		HON = {
 			transfer_state = 2511
-			set_politics = HON_2022
+			set_cosmetic_tag = HON_2022
 			set_politics = {
 				ruling_party = democratic
 				}
