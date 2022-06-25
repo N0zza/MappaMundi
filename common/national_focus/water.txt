@@ -12356,6 +12356,22 @@
 				transfer_state = PREV
 				}
 			}
+		every_state = {
+			limit = {
+				is_core_of = YM1
+				}
+			YM1 = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = YM2
+				}
+			YM2 = {
+				transfer_state = PREV
+				}
+			}
 		AQ1 = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -12394,6 +12410,26 @@
            		picture = AQ2_Cumar.tga
            		expire = "1965.1.1"
            		ideology = christian
+				}
+			}
+		YM1 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Ra'is Mahdi al-Mashat"
+           		desc = ""
+           		picture = YM1_Mahdi.tga
+           		expire = "1965.1.1"
+           		ideology = despotism
+				}
+			}
+		YM2 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Ra'is Aidarus Qassem Abdulaziz al-Zoubaidi"
+           		desc = ""
+           		picture = YM2_Zoubaidi.tga
+           		expire = "1965.1.1"
+           		ideology = despotism
 				}
 			}
 		every_state = {
