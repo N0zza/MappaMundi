@@ -12414,6 +12414,22 @@
 			}
 		every_state = {
 			limit = {
+				is_core_of = IS3
+				}
+			IS3 = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = AQ3
+				}
+			AQ3 = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
 				is_core_of = FAR
 				}
 			FAR = {
@@ -12478,6 +12494,26 @@
            		picture = YM2_Zoubaidi.tga
            		expire = "1965.1.1"
            		ideology = despotism
+				}
+			}
+		IS3 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Decentralised Cells"
+           		desc = ""
+           		picture = gfx/leaders/Anarchy/Decentralised_Cells.tga
+           		expire = "1965.1.1"
+           		ideology = christian
+				}
+			}
+		AQ3 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Decentralised Cells"
+           		desc = ""
+           		picture = gfx/leaders/Anarchy/Decentralised_Cells.tga
+           		expire = "1965.1.1"
+           		ideology = christian
 				}
 			}
 		every_state = {
