@@ -266,7 +266,10 @@ do_all_renames = {
 	if = {
 		limit = {
 			ROOT = {
-				tag = SIK
+				OR = {
+					tag = SIK
+					tag = UYG
+				}
 			}
 		}
 		do_uyghur_renames = yes
