@@ -9246,6 +9246,38 @@
 			}
 		every_state = {
 			limit = {
+				is_core_of = SR1
+				}
+			SR1 = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = RJV
+				}
+			RJV = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = SR2
+				}
+			SR2 = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = SR3
+				}
+			SR3 = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
 				is_core_of = SK2
 				}
 			GSY = {
@@ -9264,6 +9296,12 @@
 			}
 		DPR = {
 			set_cosmetic_tag = RUS_GREEN
+			}
+		RJV = {
+			set_cosmetic_tag = SYR_COLONY
+			}
+		SR2 = {
+			set_cosmetic_tag = TUR_COLONY
 			}
 		every_state = {
 			limit = {
