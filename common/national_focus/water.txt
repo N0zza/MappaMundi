@@ -4461,9 +4461,9 @@
 					limit = { UCL = { exists = no } }
 					
 					#Province names
-					set_province_name = { id = 3151 name = "Sankt-Peterbˊurg" }
-					195 = { set_state_name = Sankt-Peterbˊurg }
-					1082 = { set_state_name = "Jˊužnyj Sankt-Peterbˊurg" }
+					set_province_name = { id = 3151 name = "Sankt-Peterbúrg" }
+					195 = { set_state_name = Sankt-Peterbúrg }
+					1082 = { set_state_name = "Júžnyj Sankt-Peterbúrg" }
 					set_province_name = { id = 3529 name = "Tsaritsyn" }
 					217 = { set_state_name = Carícyn }
 					set_province_name = { id = 9833 name = "Kostantiniyye" }
@@ -6899,7 +6899,7 @@
 						set_cosmetic_tag = CHE_1939
 						kill_country_leader = yes
 						create_country_leader = {
-							name = "Predsedátel' Jusˊup Dudáevič Tambiev"
+							name = "Predsedátel' Jusúp Dudáevič Tambiev"
 							desc = ""
 							picture = CHE_Tambiyev.tga
 							expire = "1965.1.1"
@@ -8943,10 +8943,10 @@
 			release = CZC
 			release = AUS
 			}
-		set_province_name = { id = 3151 name = "Sankt-Peterbˊurg"}
+		set_province_name = { id = 3151 name = "Sankt-Peterbúrg"}
 		set_province_name = { id = 3529 name = "Volgográd"}
-		195 = { set_state_name = "Sankt-Peterbˊurg" }
-		1082 = { set_state_name = "Jˊužnyj Sankt-Peterbˊurg" }
+		195 = { set_state_name = "Sankt-Peterbúrg" }
+		1082 = { set_state_name = "Júžnyj Sankt-Peterbúrg" }
 		217 = { set_state_name = Volgográd }
 		RUS = {
 			transfer_state = 2414
@@ -9246,38 +9246,6 @@
 			}
 		every_state = {
 			limit = {
-				is_core_of = SR1
-				}
-			SR1 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = RJV
-				}
-			RJV = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = SR2
-				}
-			SR2 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = SR3
-				}
-			SR3 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
 				is_core_of = SK2
 				}
 			GSY = {
@@ -9306,22 +9274,22 @@
 		every_state = {
 			limit = {
 				is_claimed_by = DPR
-				}
+			}
 			DPR = {
 				transfer_state = PREV
-				}
 			}
+		}
 		LPR = {
 			set_cosmetic_tag = RUS_GREEN
 			}
 		every_state = {
 			limit = {
 				is_claimed_by = LPR
-				}
+			}
 			LPR = {
 				transfer_state = PREV
-				}
 			}
+		}
 		LPR = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -11554,7 +11522,79 @@
 			SYR = {
 				transfer_state = PREV
 			}
-		}			
+		}		
+		every_state = {
+			limit = {
+				is_core_of = SR1
+				}
+			SR1 = {
+				transfer_state = PREV
+				}
+			}
+		SR1 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Qa'id Muhannad al-Tala'"
+           		desc = ""
+           		picture = SR1_Tala.tga
+           		expire = "1965.1.1"
+           		ideology = militarism
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = RJV
+				}
+			RJV = {
+				transfer_state = PREV
+				}
+			}
+		RJV = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Encûmena Rêvebir a Federaliyê"
+           		desc = ""
+           		picture = RJV_Council.tga
+           		expire = "1965.1.1"
+           		ideology = demsoc
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = SR2
+				}
+			SR2 = {
+				transfer_state = PREV
+				}
+			}
+		SR2 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Ra'is Salem al-Meslet"
+           		desc = ""
+           		picture = SR2_Meslet.tga
+           		expire = "1965.1.1"
+           		ideology = militarism
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = SR3
+				}
+			SR3 = {
+				transfer_state = PREV
+				}
+			}	
+		SR3 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Ra'is al-Wuzara' Ali Abdulrahman Keda"
+           		desc = ""
+           		picture = SR3_Keda.tga
+           		expire = "1965.1.1"
+           		ideology = despotism
+				}
+			}
 		UAE = {
 			set_politics = {
 				ruling_party = conservative_monarchism
@@ -11801,6 +11841,9 @@
 				is_owned_by = JOR
 				is_owned_by = PAL
 				is_owned_by = SYR
+				is_owned_by = SR1
+				is_owned_by = SR2
+				is_owned_by = SR3
 				is_owned_by = LEB
 				is_owned_by = EGY
 				is_owned_by = SUD
@@ -11812,6 +11855,12 @@
 				}
 			}
 			do_standard_arabic_renames = yes
+        }
+		every_state = { 
+            limit = { 
+				is_owned_by = RJV
+			}
+			do_kurdish_renames = yes
         }
 		every_state = { 
             limit = { 
@@ -14610,7 +14659,7 @@
         		ideology = socdem
 				}
 			}
-		set_province_name = { id = 13826 name = "Sankt-Peterbˊurg" }
+		set_province_name = { id = 13826 name = "Sankt-Peterbúrg" }
 		TAC = {
 			set_cosmetic_tag = TAC_ENG
 			set_politics = {
