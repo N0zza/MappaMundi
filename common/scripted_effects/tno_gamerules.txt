@@ -396,12 +396,12 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 16258 
 		transfer_state = 16256
 		transfer_state = 11954
+		transfer_state = 11960
 		set_cosmetic_tag = SVR_TNO
 	}
 	
 	TYU = {
 		transfer_state = 572
-		transfer_state = 11960
 		transfer_state = 3623
 		transfer_state = 11957
 		transfer_state = 403
@@ -458,6 +458,11 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 13819
 		transfer_state = 13821
 		transfer_state = 13820
+		transfer_state = 17858
+		transfer_state = 17859
+		transfer_state = 17860
+		transfer_state = 17861
+		transfer_state = 17862
 		set_cosmetic_tag = TOM_DEM
 	}
 	NVO = {
@@ -927,20 +932,8 @@ do_tno_normal_warlord_russia = {
 		}
 	}
 
-	every_state = {
-		limit = {
-			is_core_of = ALD
-		}
-		ALD = {
-			transfer_state = PREV
-			set_politics = {
-				ruling_party = stratocratic
-			}
-		}
-	}
-
 	YKT = {
-		drop_cosmetic_tag = yes
+		set_cosmetic_tag = YKT_TNO
 		set_politics = {
 			ruling_party = liberal_republic
 		}
