@@ -443,26 +443,12 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 13807
 		transfer_state = 577
 		transfer_state = 10435
-		transfer_state = 6093
-		transfer_state = 11970
-		transfer_state = 10433
-		transfer_state = 11975
-		transfer_state = 516
-		transfer_state = 10957
-		transfer_state = 10931
-		transfer_state = 11981
-		transfer_state = 11976
 		transfer_state = 10437
 		transfer_state = 10436
 		transfer_state = 11977
 		transfer_state = 13819
-		transfer_state = 13821
 		transfer_state = 13820
-		transfer_state = 17858
 		transfer_state = 17859
-		transfer_state = 17860
-		transfer_state = 17861
-		transfer_state = 17862
 		set_cosmetic_tag = TOM_DEM
 	}
 	NVO = {
@@ -931,6 +917,18 @@ do_tno_normal_warlord_russia = {
 			}
 		}
 	}
+	
+	every_state = {
+		limit = {
+			is_core_of = ALD
+			NOT = {
+				state = 12001
+			}
+		}
+		YKT = {
+			transfer_state = PREV
+		}
+	}
 
 	YKT = {
 		set_cosmetic_tag = YKT_TNO
@@ -976,25 +974,27 @@ do_tno_normal_warlord_russia = {
 
 	every_state = {
 		limit = {
-			is_core_of = CSV
-		}
-		CSV = {
-			transfer_state = PREV
-			set_politics = {
-				ruling_party = anarchism_ideology
-			}
-			set_cosmetic_tag = TRIBAL_BROWN
-		}
-	}
-
-	every_state = {
-		limit = {
 			is_core_of = VYY
 		}
 		VYY = {
 			transfer_state = PREV
+			transfer_state = 6093
+			transfer_state = 11970
+			transfer_state = 10433
+			transfer_state = 11975
+			transfer_state = 516
+			transfer_state = 10957
+			transfer_state = 10931
+			transfer_state = 11981
+			transfer_state = 11976
+			transfer_state = 13821
+			transfer_state = 17858
+			transfer_state = 17860
+			transfer_state = 17861
+			transfer_state = 17862
+			set_capital = 516
 			set_politics = {
-				ruling_party = anarchism_ideology
+				ruling_party = right_anarchism
 			}
 			set_cosmetic_tag = TRIBAL_BROWN
 		}
@@ -1002,35 +1002,9 @@ do_tno_normal_warlord_russia = {
 
 	every_state = {
 		limit = {
-			is_core_of = KLY
-		}
-		KLY = {
-			transfer_state = PREV
-			set_politics = {
-				ruling_party = anarchism_ideology
-			}
-			set_cosmetic_tag = TRIBAL_BROWN
-		}
-	}
-
-	every_state = {
-		limit = {
-			is_core_of = OMO
-		}
-		OMO = {
-			transfer_state = PREV
-			set_politics = {
-				ruling_party = anarchism_ideology
-			}
-			set_cosmetic_tag = TRIBAL_BROWN
-		}
-	}
-
-	every_state = {
-		limit = {
-			is_core_of = CCI
-			NOT = {
-				is_core_of = OMO
+			OR = {
+				is_core_of = CCI
+				is_claimed_by = CCI
 			}
 		}
 		CCI = {
@@ -1046,10 +1020,17 @@ do_tno_normal_warlord_russia = {
 			transfer_state = 14027
 			transfer_state = 12510
 			transfer_state = 12506
-			set_capital = 12496
+			transfer_state = 11997
+			transfer_state = 575
+			transfer_state = 14006
+			transfer_state = 10434
+			transfer_state = 14020
+			transfer_state = 14021
+			transfer_state = 12563
+			set_capital = 12516
 			set_cosmetic_tag = TRIBAL_BROWN
 			set_politics = {
-				ruling_party = anarchism_ideology
+				ruling_party = right_anarchism
 			}
 		}
 	}
