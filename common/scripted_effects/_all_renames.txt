@@ -313,22 +313,23 @@ do_all_renames = {
 					is_subject_of = NZG
 					tag = PRE
 					tag = BAY
-					AND = {
-						tag = PL2
-						NOT = {
-							has_government = vanguardism
-						}
-					}
+					tag = PL2
 					tag = UA2
 					tag = LV2
 					tag = BL2
 					AND = {
-						tag = TSC
+						OR = {
+							tag = TSC
+							tag = MSC
+							tag = RIG
+							tag = SUV
+							tag = LTG
+						}
 						has_government = national_socialism
 					}
 					AND = {
-						tag = MSC
-						has_government = national_socialism
+						tag = WLN
+						has_government = liberal_republic
 					}
 					capital_scope = {
 						OR = {
@@ -370,7 +371,10 @@ do_all_renames = {
 					tag = POL 
 					tag = GAL 
 					AND = {
-						tag = PL2 
+						OR = {
+							tag = PL2
+							tag = PL3
+						}
 						NOT = {
 							has_government  = national_socialism
 						}
@@ -807,7 +811,13 @@ do_all_renames = {
 	if = {
 		limit = {
 			ROOT = {
-				tag = BLR
+				OR = {
+					tag = BLR
+					AND = {
+						tag = NOW
+						has_government = republican_fascism
+					}
+				}
 			}
 		}
 		do_belarussian_renames = yes
@@ -1327,5 +1337,17 @@ do_all_renames = {
 			}
 		}
 		do_indian_renames = yes
+	}
+	### Yiddish ###
+	if = {
+		limit = {
+			ROOT = {
+				AND = {
+					tag = AUK
+					has_government = stratocratic
+				}
+			}
+		}
+		do_yiddish_renames = yes
 	}
 }
