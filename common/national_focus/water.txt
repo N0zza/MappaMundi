@@ -12527,6 +12527,14 @@
 				transfer_state = PREV
 				}
 			}
+		every_state = {
+			limit = {
+				is_core_of = RAF
+				}
+			RAF = {
+				transfer_state = PREV
+				}
+			}
 		AQ1 = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -12615,6 +12623,16 @@
            		picture = gfx/leaders/Anarchy/Decentralised_Cells.tga
            		expire = "1965.1.1"
            		ideology = christian
+				}
+			}
+		RAF = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "General-Polkovnik Gennady Valeryevich Zhidko, Komanduyushchiy Rossiyskimi Voyskami na Ukraine"
+           		desc = ""
+           		picture = RAF_Zhidko.tga
+           		expire = "1965.1.1"
+           		ideology = militarism
 				}
 			}
 		every_state = {
