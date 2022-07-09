@@ -9001,33 +9001,31 @@
 		every_state = {
 			limit = {
 				is_owned_by = RUS
-				NOT = {
-				is_owned_by = POL
-				is_owned_by = LIT
-					}
-				}
-				do_russian_renames = yes
+				is_owned_by = DPR
+				is_owned_by = LPR
 			}
+			do_russian_renames = yes
+		}
 		every_state = {
 			limit = {
 				is_owned_by = RUS
 				is_core_of = FIN
-				}
-				do_russian_renames = yes
 			}
+			do_russian_renames = yes
+		}
 		every_state = {
 			limit = {
 				OR = {
-				is_core_of = RUS
-				is_owned_by = RUS
-				is_owned_by = TAN
-					}
+					is_core_of = RUS
+					is_owned_by = RUS
+					is_owned_by = TAN
 				}
+			}
 			RUS = {
 				transfer_state = PREV
 				add_state_core = PREV
-					}
-				}
+			}
+		}
 		every_state = {
 			limit = {
 				OR = {
@@ -9255,7 +9253,7 @@
 		DPR = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Glava Denis Vladimirovich Pushilin"
+        		name = "Glavá Den'ıs Vladímirovič Pušílin"
         		desc = ""
         		picture = DPR_Pushlin.tga
         		expire = "1965.1.1"
@@ -9293,7 +9291,7 @@
 		LPR = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Glava Leonid Ivanovich Pasechnik"
+        		name = "Glavá Leoníd Ivánovič Pásečnik"
         		desc = ""
         		picture = LPR_Pasechnik.tga
         		expire = "1965.1.1"
@@ -12535,6 +12533,7 @@
 			RAF = {
 				transfer_state = PREV
 				}
+			do_russian_renames = yes
 			}
 		AQ1 = {
 			kill_country_leader = yes
