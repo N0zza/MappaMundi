@@ -3,33 +3,16 @@
 oob = "MC2_1936"
 
 set_popularities = {
-        neutrality = 0
-        monarchism = 0
-        democratic = 0
-        liberal_republic = 0
-        communism = 0
-        vanguardism = 0
-        fascism = 0
-        anarchism_ideology = 0
-        socialism_ideology = 
-        democratic_monarchism = 0
-        conservative_monarchism = 0
-        stratocratic = 0
-        authoritarian_monarchism = 0
-        republican_fascism = 
-        national_socialism = 100
-        theocratic = 0
-        left_anarchism = 0
-        right_anarchism = 0
-        socialist_monarchy = 0
-        centrist_republic = 0
-        centrist_monarchism = 0
-        stratocratic_monarchism = 0
-
+    national_socialism = 55
+    republican_fascism = 13
+    stratocratic = 12
+    stratocratic_monarchism = 10
+    democratic = 10
 }
 
+set_cosmetic_tag = MSC_TNO
+
 set_politics = {
-	
 	ruling_party = national_socialism
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -37,47 +20,91 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "To Be Added"
+	name = "Reichskommissar Siegfried Kasche"
 	desc = ""
-	picture = "To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
+	picture = "gfx/leaders/TNOWarlords/MC2_Kasche.tga"
+	expire = "1953.3.1"
+	ideology = natsoc
 	traits = {
 	}
 }
+
 create_country_leader = {
-	name = "To Be Added"
+	name = "Oberst Alexis Freiherr von Rönne"
 	desc = ""
-	picture = "To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "To_be_added.dds"
-	expire = "1965.1.1"
+	picture = "gfx/leaders/TNOWarlords/MC2_Roenne.tga"
+	expire = "1953.3.1"
 	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Generalfeldmarschall Ferdinand Schörner"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/MC2_Schorner.tga"
+	expire = "1953.3.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Paktkommissar Alexis Freiherr von Rönne"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/MC2_Roenne.tga"
+	expire = "1953.3.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichskommissar Wolf-Heinrich Julius Otto Bernhard Fritz Hermann Ferdinand Graf von Helldorff"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/MC2_Helldorff.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Generaloberst Dietrich Friedrich Eduard Casimir von Saucken"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/MC2_Saucken.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kórmčij Bronisláv Vladislávovič Kamínskij"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/MC2_Kaminski.tga"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prezidént Mixaíl Sergéevič Gorbačëv"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/MC2_Gorbachev.tga"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Schutzstaffel-Obergruppenführer Herbert Friedrich Wilhelm Backe"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/PSK_Backe.tga"
+	expire = "1965.1.1"
+	ideology = repfash
 	traits = {
 	}
 }

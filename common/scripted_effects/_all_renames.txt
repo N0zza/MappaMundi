@@ -318,6 +318,13 @@ do_all_renames = {
 					tag = LV2
 					tag = BL2
 					AND = {
+						tag = MC2
+						NOT = {
+							has_government = fascism
+							has_government = democratic
+						}
+					}
+					AND = {
 						OR = {
 							tag = TSC
 							tag = MSC
@@ -697,6 +704,13 @@ do_all_renames = {
 					tag = ADJ 
 					tag = ABK 
 					tag = SOS
+					AND = {
+						tag = MC2
+						OR = {
+							has_government = fascism
+							has_government = democratic
+						}
+					}
 					AND = {
 						OR = {
 							tag = TSC
