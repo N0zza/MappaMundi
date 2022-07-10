@@ -4058,6 +4058,246 @@ on_actions = {
 			}
 		}
 	}
+	on_ruling_party_change = {
+		effect = {
+			ROOT = {
+				if = {
+					limit = {
+						tag = KMR
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = liberal_republic
+								has_government = democratic
+								has_government = centrist_republic
+							}
+						}
+						set_cosmetic_tag = KMR_DEM
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = KMR_AUTHREP
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = vanguardism
+								has_government = communism
+								has_government = socialism_ideology
+							}
+						}
+						set_cosmetic_tag = KMR_LEFT
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = authoritarian_monarchism
+								has_government = republican_fascism
+								has_government = national_socialism
+								has_government = theocratic
+							}
+						}
+						set_cosmetic_tag = KMR_RIGHT
+					}
+				}
+				if = {
+					limit = {
+						tag = KMR
+						controls_west_russia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = liberal_republic
+								has_government = democratic
+								has_government = centrist_republic
+							}
+						}
+						set_cosmetic_tag = KMR_REGIONAL_DEM
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = KMR_REGIONAL_AUTHREP
+					}
+					if = {
+						limit = {
+							has_government = socialism_ideology
+						}
+						set_cosmetic_tag = KMR_REGIONAL_VAN
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = KMR_REGIONAL_COMMUN
+					}
+					if = {
+						limit = {
+							has_government = socialism_ideology
+						}
+						set_cosmetic_tag = KMR_REGIONAL_SOCREP
+					}
+					if = {
+						limit = {
+							has_government = authoritarian_monarchism
+						}
+						set_cosmetic_tag = KMR_REGIONAL_AUTHMON
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = KMR_REGIONAL_REPFASH
+					}
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = KMR_REGIONAL_NATSOC
+					}
+					if = {
+						limit = {
+							has_government = theocratic
+						}
+						set_cosmetic_tag = KMR_REGIONAL_THEO
+					}
+				}
+				if = {
+					limit = {
+						tag = KMR
+						controls_western_russia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = liberal_republic
+								has_government = democratic
+								has_government = centrist_republic
+							}
+						}
+						set_cosmetic_tag = KMR_SUPERREGIONAL_DEM
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = KMR_SUPERREGIONAL_AUTHREP
+					}
+					if = {
+						limit = {
+							has_government = socialism_ideology
+						}
+						set_cosmetic_tag = KMR_SUPERREGIONAL_VAN
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = KMR_SUPERREGIONAL_COMMUN
+					}
+					if = {
+						limit = {
+							has_government = socialism_ideology
+						}
+						set_cosmetic_tag = KMR_SUPERREGIONAL_SOCREP
+					}
+					if = {
+						limit = {
+							has_government = authoritarian_monarchism
+						}
+						set_cosmetic_tag = KMR_SUPERREGIONAL_AUTHMON
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = KMR_SUPERREGIONAL_REPFASH
+					}
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = KMR_SUPERREGIONAL_NATSOC
+					}
+					if = {
+						limit = {
+							has_government = theocratic
+						}
+						set_cosmetic_tag = KMR_SUPERREGIONAL_THEO
+					}
+				}
+				if = {
+					limit = {
+						tag = KMR
+						controls_western_russia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = liberal_republic
+								has_government = democratic
+								has_government = centrist_republic
+							}
+						}
+						set_cosmetic_tag = KMR_NATIONAL_DEM
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = KMR_NATIONAL_AUTHREP
+					}
+					if = {
+						limit = {
+							has_government = socialism_ideology
+						}
+						set_cosmetic_tag = KMR_NATIONAL_VAN
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = KMR_NATIONAL_COMMUN
+					}
+					if = {
+						limit = {
+							has_government = socialism_ideology
+						}
+						set_cosmetic_tag = KMR_NATIONAL_SOCREP
+					}
+					if = {
+						limit = {
+							has_government = authoritarian_monarchism
+						}
+						set_cosmetic_tag = KMR_NATIONAL_AUTHMON
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = KMR_NATIONAL_REPFASH
+					}
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = KMR_NATIONAL_NATSOC
+					}
+					if = {
+						limit = {
+							has_government = theocratic
+						}
+						set_cosmetic_tag = KMR_NATIONAL_THEO
+					}
+				}
+			}
+		}
+	}
 	on_state_control_changed = {
 		effect = {
 			ROOT = {

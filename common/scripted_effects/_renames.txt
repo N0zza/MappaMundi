@@ -24676,6 +24676,301 @@ do_russian_renames = {
 
 	if = {
 		limit = {
+			state = 10413
+		}		
+		set_province_name = {
+			id = 11356
+			name = "Novočeboksársk"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 256
+		}		
+		set_province_name = {
+			id = 19831
+			name = "Čeboksáry"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 399
+		}		
+		set_province_name = {
+			id = 6278
+			name = "Ižévsk"
+		}
+		set_province_name = {
+			id = 7359
+			name = "Igrá"
+		}
+		set_province_name = {
+			id = 9293
+			name = "Glázov"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 10888
+		}		
+		set_province_name = {
+			id = 19818
+			name = "Ašá"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 10420
+		}		
+		set_province_name = {
+			id = 19773
+			name = "Sibáj"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 10897
+		}		
+		set_province_name = {
+			id = 4265
+			name = "Beloréck"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 13669
+		}		
+		set_province_name = {
+			id = 4354
+			name = "Sterlitamák"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 10419
+		}		
+		set_province_name = {
+			id = 6285
+			name = "Birsk"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 651
+		}		
+		set_province_name = {
+			id = 19817
+			name = "Oktjábr'skij"
+		}
+		set_province_name = {
+			id = 273
+			name = "Ufá"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 10416
+		}		
+		set_province_name = {
+			id = 6323
+			name = "Elábuga"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 249
+		}		
+		set_province_name = {
+			id = 6338
+			name = "Kazán'"
+		}
+		set_province_name = {
+			id = 19843
+			name = "Arsk"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 11936
+		}		
+		set_province_name = {
+			id = 99
+			name = "Syktyvkár"
+		}
+		set_province_name = {
+			id = 11203
+			name = "Ust'-Kulóm"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 11936
+			ROOT = {
+				tag = KMR
+				OR = {
+					has_government = authoritarian_monarchism
+					has_government = national_socialism
+					has_government = republican_fascism
+					has_government = theocratic
+					has_government = fascism
+				}
+			}
+		}		
+		set_province_name = {
+			id = 99
+			name = "Ust-Sysol'sk"
+		}
+		set_province_name = {
+			id = 11203
+			name = "Ust'-Kulóm"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 564
+		}	
+		set_province_name = {
+			id = 7835
+			name = "Ulán-Udê"
+		}
+		set_province_name = {
+			id = 1696
+			name = "Petróvsk-Zabajkál'skij"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 564
+			ROOT = {
+				is_russian_communist_warlord = yes
+			}
+		}	
+		set_province_name = {
+			id = 7835
+			name = "Verxneúdinsk"
+		}
+		set_province_name = {
+			id = 1696
+			name = "Petróvsk-Zabajkál'skij"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 403
+		}		
+		set_province_name = {
+			id = 12521
+			name = "Iším"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 403
+			ROOT = {
+				tag = TYU
+				has_government = vanguardism
+			}
+		}		
+		set_province_name = {
+			id = 12521
+			name = "Kaganóvičgrad"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 400
+		}		
+		set_province_name = {
+			id = 6124
+			name = "Kírov"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 400
+			ROOT = {
+				is_russian_communist_warlord = yes
+			}
+		}		
+		set_province_name = {
+			id = 6124
+			name = "Rýkov"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 400
+			ROOT = {
+				is_russian_monarchist_warlord = yes
+			}
+		}		
+		set_province_name = {
+			id = 6124
+			name = "Vjátka"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 398
+		}		
+		set_province_name = {
+			id = 206
+			name = "Čajkóvskyj"
+		}	
+		set_province_name = {
+			id = 12216
+			name = "Kungúr"
+		}
+		set_province_name = {
+			id = 7375
+			name = "Perm'"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 398
+			ROOT = {
+				tag = HYP
+				has_government = national_socialism
+			}
+		}		
+		set_province_name = {
+			id = 206
+			name = "Gítlerxajm"
+		}	
+		set_province_name = {
+			id = 12216
+			name = "Kungúr"
+		}
+		set_province_name = {
+			id = 7375
+			name = "Permxájm"
+		}
+	}
+
+	if = {
+		limit = {
 			state = 950
 		}		
 		set_province_name = {
@@ -25471,6 +25766,20 @@ do_russian_renames = {
 		set_province_name = {
 			id = 7763
 			name = "Blagovéščensk"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 12019
+			ROOT = {
+				tag = AMU
+				has_government = national_socialism
+			}
+		}	
+		set_province_name = {
+			id = 7763
+			name = "Rodzaévsk"
 		}
 	}
 	
@@ -27383,6 +27692,27 @@ do_russian_renames = {
 		set_province_name = {
 			id = 1821
 			name = "Ekaterinbúrg"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 653
+			ROOT = {
+				OR = {
+					has_government = vanguardism
+					has_government = communism
+					has_government = socialism_ideology
+					has_government = socialist_monarchy
+					has_government = stratocratic
+					has_government = stratocratic_monarchism
+					is_russian_communist_warlord = yes
+				}
+			}
+		}		
+		set_province_name = {
+			id = 1821
+			name = "Sverdlóvsk"
 		}
 	}
 
@@ -30430,16 +30760,6 @@ do_soviet_renames = {
 		set_province_name = {
 			id = 6327
 			name = "Kstóvo"
-		}
-	}
-
-	if = {
-		limit = {
-			state = 653
-		}		
-		set_province_name = {
-			id = 1821
-			name = "Sverdlóvsk"
 		}
 	}
 
