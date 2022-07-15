@@ -308,7 +308,12 @@ do_all_renames = {
 		limit = {
 			ROOT = {
 				OR = {
-					tag = GER
+					AND = {
+						tag = GER
+						NOT = {
+							has_government = democratic_monarchism
+						}
+					}
 					is_subject_of = GER
 					tag = WGR
 					is_subject_of = WGR
@@ -634,12 +639,14 @@ do_all_renames = {
 	### VCT ###
 	if = {
 		limit = {
-			OR = {
-				ROOT = {
+			ROOT = {
+				OR = {
 					tag = VCT
-				}
-				ROOT = {
-					tag = ITA has_cosmetic_tag = SPQR
+					has_cosmetic_tag = SPQR 
+					AND = {
+						tag = GER
+						has_government = democratic_monarchism
+					}
 				}
 			}
 		}
@@ -811,6 +818,10 @@ do_all_renames = {
 			ROOT = {
 				OR = {
 					tag = ENG
+					tag = EGL
+					capital_scope = {
+						is_core_of = EGL
+					}
 					has_cosmetic_tag = UK_RED
 					AND = {
 						tag = RAJ
