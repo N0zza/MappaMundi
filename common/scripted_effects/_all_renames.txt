@@ -329,6 +329,7 @@ do_all_renames = {
 					tag = UA2
 					tag = LV2
 					tag = BL2
+					tag = KC2
 					AND = {
 						tag = MC2
 						NOT = {
@@ -343,6 +344,8 @@ do_all_renames = {
 							tag = RIG
 							tag = SUV
 							tag = LTG
+							tag = CZE
+							tag = SLO
 						}
 						has_government = national_socialism
 					}
@@ -354,6 +357,13 @@ do_all_renames = {
 						OR = {
 							is_core_of = GER
 							is_core_of = PRE
+						}
+					}
+					has_cosmetic_tag = GREY_GER3
+					AND = {
+						tag = KC2
+						NOT = {
+							has_government = centrist_monarchism
 						}
 					}
 				}
@@ -421,7 +431,12 @@ do_all_renames = {
 	if = {
 		limit = {
 			ROOT = {
-				tag = SLO
+				AND = {
+					tag = SLO
+					NOT = {
+						has_government = national_socialism
+					}
+				}
 			}
 		}
 		do_slovak_renames = yes
@@ -718,6 +733,12 @@ do_all_renames = {
 					tag = ADJ 
 					tag = ABK 
 					tag = SOS
+					AND = {
+						tag = MSC
+						NOT = {
+							has_government = national_socialism
+						}
+					}
 					is_russian_warlord = yes
 					AND = {
 						tag = MC2
@@ -1281,7 +1302,13 @@ do_all_renames = {
 	if = {
 		limit = {
 			ROOT = {
-				tag = GEO
+				OR = {
+					tag = GEO
+					AND = {
+						tag = KC2
+						has_government = centrist_monarchism
+					}
+				}
 			}
 		}
 		do_georgian_renames = yes
