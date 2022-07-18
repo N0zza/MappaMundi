@@ -4011,6 +4011,32 @@ on_actions = {
 						set_cosmetic_tag = KC2_NATSOC
 					}
 				}
+				if = {
+					limit = {
+						tag = VGR
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = VGR_REPFASH
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = VGR_AUTHREP
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_government = republican_fascism
+								has_government = neutrality
+							}
+						}
+						drop_cosmetic_tag = yes
+					}
+				}
 			}
 		}
 	}
