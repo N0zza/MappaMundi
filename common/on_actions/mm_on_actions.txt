@@ -4023,15 +4023,159 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							NOT = {
+								has_government = republican_fascism
+							}
+						}
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = UA2
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = UA2_STRAT
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = UA2_REPFASH
+					}
+					if = {
+						limit = {
 							has_government = neutrality
 						}
-						set_cosmetic_tag = VGR_AUTHREP
+						set_cosmetic_tag = UA2_AUTHREP
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_government = stratocratic
+								has_government = republican_fascism
+								has_government = neutrality
+							}
+						}
+						set_cosmetic_tag = UA2_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = LV2
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = LV2_STRAT
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = LV2_REPFASH
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = LV2_AUTHREP
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_government = stratocratic
+								has_government = republican_fascism
+								has_government = neutrality
+							}
+						}
+						set_cosmetic_tag = LV2_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = WR2
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = WR2_AUTHREP
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = WR2_REPFASH
+					}
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = WR2_NATSOC
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_government = neutrality
+								has_government = republican_fascism
+								has_government = national_socialism
+							}
+						}
+						set_cosmetic_tag = WR2_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = PL2
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = PL2_STRAT
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = PL2_REPFASH
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = PL2_AUTHREP
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_government = stratocratic
+								has_government = republican_fascism
+								has_government = neutrality
+							}
+						}
+						set_cosmetic_tag = PL2_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = KHE
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = KHE_REPFASH
 					}
 					if = {
 						limit = {
 							NOT = {
 								has_government = republican_fascism
-								has_government = neutrality
 							}
 						}
 						drop_cosmetic_tag = yes

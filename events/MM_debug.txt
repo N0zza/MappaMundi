@@ -10,16 +10,13 @@ country_event = { #Debug
 			factor = 0
 		}
 		hidden_effect = {
-				POR = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Rainha Maria II de Bragança"
-            			desc = ""
-            			picture = 1836_POR_Maria_II.tga
-            			expire = "1965.1.1"
-            			ideology = conservative_constitutionalism
-						}
-					}
+			LV2 = {
+				set_party_name = {
+					ideology = republican_fascism
+					name = LV2_republican_fascism_party
+					long_name = LV2_republican_fascism_party_long
+				}
+			}
 		}
 	}
 	option = { #Nah

@@ -328,6 +328,7 @@ do_all_renames = {
 					tag = PL2
 					tag = UA2
 					tag = LV2
+					tag = WR2
 					tag = BL2
 					tag = KC2
 					AND = {
@@ -366,6 +367,11 @@ do_all_renames = {
 							has_government = centrist_monarchism
 						}
 					}
+					tag = VGR
+					AND = {
+						tag = KHE
+						has_government = republican_fascism
+					}
 				}
 			}										
 		}
@@ -400,12 +406,17 @@ do_all_renames = {
 					tag = POL 
 					tag = GAL 
 					AND = {
-						OR = {
-							tag = PL2
-							tag = PL3
-						}
+						tag = PL3
 						NOT = {
 							has_government  = national_socialism
+						}
+					}
+					AND = {
+						tag = PL2
+						NOT = {
+							has_government  = national_socialism
+							has_government  = republican_fascism
+							has_government  = stratocratic
 						}
 					}
 				}
@@ -672,7 +683,13 @@ do_all_renames = {
 	if = {
 		limit = {
 			ROOT = {
-				tag = UKR
+				OR = {
+					tag = UKR
+					AND = {
+						tag = UA2
+						has_government = neutrality
+					}
+				}
 			}
 		}
 		do_ukrainian_renames = yes
@@ -870,6 +887,10 @@ do_all_renames = {
 					AND = {
 						tag = NOW
 						has_government = republican_fascism
+					}
+					AND = {
+						tag = WR2
+						has_government = neutrality
 					}
 				}
 			}

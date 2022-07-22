@@ -5,7 +5,12 @@ oob = "UA2_1936"
 set_cosmetic_tag = GREY_GER3
 
 set_popularities = {
-    national_socialism = 100
+    national_socialism = 45
+    republican_fascism = 21
+    neutrality = 11
+    communism = 10
+    socialism_ideology = 8
+    stratocratic = 5
 }
 
 set_politics = {
@@ -17,23 +22,53 @@ set_politics = {
 }
 
 create_country_leader = {
+	name = "Reichskommissar Erich Koch"
+	desc = ""
+	picture = "UA2_Koch.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Militärgouverneur Ewald-Heinrich Hermann Konrad Oskar Ulrich Wolf Alfred von Kleist-Schmenzin"
+	desc = ""
+	picture = "UA2_Kleist-Schmenzin.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichslandsführer Juri Andrijowytsch Krochmaljuk"
+	desc = ""
+	picture = "UA2_Tys.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prezydent Volodymyr Mykhaylovych Kubiyovych"
+	desc = ""
+	picture = "UA2_Kubiyovych.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Velykyy Knyaz Danylo Skoropadśkyj"
 	desc = ""
 	picture = "gfx/leaders/UKR/UKR_Skoropadsky.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Reichskommissar Erich Koch"
-	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Koch.tga"
-	expire = "1965.1.1"
-	ideology = natsoc
-	traits = {
-		
 	}
 }
 
@@ -137,25 +172,25 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "General Fyodor Ivanovich Truhin"
-	desc = ""
-	picture = "gfx/leaders/TNOWarlords/SMM_Truhin.tga"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-	}
-}
+#create_country_leader = {
+#	name = "General Fyodor Ivanovich Truhin"
+#	desc = ""
+#	picture = "gfx/leaders/TNOWarlords/SMM_Truhin.tga"
+#	expire = "1965.1.1"
+#	ideology = despotism
+#	traits = {
+#	}
+#}
 
-create_country_leader = {
-	name = "Voyenachalʹnyk Volodymyr Oleksandrovych Antonov-Ovsyeyenko"
-	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Ovseenko.tga"
-	expire = "1965.1.1"
-	ideology = militarism
-	traits = {
-	}
-}
+#create_country_leader = {
+#	name = "Voyenachalʹnyk Volodymyr Oleksandrovych Antonov-Ovsyeyenko"
+#	desc = ""
+#	picture = "gfx/leaders/UKR/UKR_Ovseenko.tga"
+#	expire = "1965.1.1"
+#	ideology = militarism
+#	traits = {
+#	}
+#}
 
 create_country_leader = {
 	name = "Hetman Pavlo Petrovyč Skoropadśkyj"
@@ -197,15 +232,15 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Posibnyk Stepan Andriyovych Bandera"
-	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Bandera.tga"
-	expire = "1965.1.1"
-	ideology = repfash
-	traits = {
-	}
-}
+#create_country_leader = {
+#	name = "Posibnyk Stepan Andriyovych Bandera"
+#	desc = ""
+#	picture = "gfx/leaders/UKR/UKR_Bandera.tga"
+#	expire = "1965.1.1"
+#	ideology = repfash
+#	traits = {
+#	}
+#}
 
 create_country_leader = {
 	name = "Tribal Leadership"
