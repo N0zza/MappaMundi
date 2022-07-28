@@ -10,17 +10,12 @@ country_event = { #Debug
 			factor = 0
 		}
 		hidden_effect = {
-			LV2 = {
-
-create_country_leader = {
-	name = "Reichslandsführer Harald Reibach"
-	desc = ""
-	picture = "LV2_Riipalu.tga"
-	expire = "1965.1.1"
-	ideology = repfash
-	traits = {
-	}
-}
+			PL3 = {
+				set_party_name = {
+					ideology = national_socialism
+					name = PL3_national_socialism_party
+					long_name = PL3_national_socialism_party_long
+				}
 			}
 		}
 	}
