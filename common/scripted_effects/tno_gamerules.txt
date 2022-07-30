@@ -14,7 +14,6 @@ do_tno_normal_warlord_russia = {
 		release = OMS
 		release = TOM
 		release = KNY
-		release = MSC
 	}
 	
 	every_state = {
@@ -33,12 +32,24 @@ do_tno_normal_warlord_russia = {
 				is_core_of = OMS
 				is_core_of = TOM
 				is_core_of = KNY
-				is_core_of = MSC
 			}
 		}
 		RUS = {
 			add_state_core = PREV
 		}
+	}
+	
+	every_state = {
+		limit = {
+			is_core_of = MSC
+		}
+		MC2 = {
+			transfer_state = PREV
+		}
+	}
+	
+	GER = {
+		add_state_claim = 936
 	}
 	
 	every_state = {
@@ -246,6 +257,11 @@ do_tno_normal_warlord_russia = {
 		set_politics = {
 			ruling_party = conservative_monarchism
 		}
+	}	
+	
+	set_victory_points = {
+		province = 6124
+		value = 25
 	}
 	
 	KMR = {
@@ -257,6 +273,11 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 11916
 		transfer_state = 13651
 		set_cosmetic_tag = KMR_DEM
+	}
+	
+	set_victory_points = {
+		province = 99
+		value = 25
 	}
 	
 	VLG = {
@@ -636,7 +657,7 @@ do_tno_normal_warlord_russia = {
 				is_core_of = TIK
 			}
 		}
-		MSC = {
+		MC2 = {
 			transfer_state = PREV
 		}
 	}
@@ -648,7 +669,7 @@ do_tno_normal_warlord_russia = {
 				is_core_of = SMM
 			}
 		}
-		MSC = {
+		MC2 = {
 			transfer_state = PREV
 		}
 	}
@@ -660,7 +681,7 @@ do_tno_normal_warlord_russia = {
 				is_core_of = SMM
 			}
 		}
-		MSC = {
+		MC2 = {
 			transfer_state = PREV
 		}
 	}
@@ -670,9 +691,11 @@ do_tno_normal_warlord_russia = {
 			is_core_of = SRT
 			NOT = {
 				is_core_of = SMM
+				is_state = 17268
+				is_state = 17270
 			}
 		}
-		MSC = {
+		MC2 = {
 			transfer_state = PREV
 		}
 	}
@@ -686,7 +709,7 @@ do_tno_normal_warlord_russia = {
 				is_core_of = ASK
 			}
 		}
-		MSC = {
+		MC2 = {
 			transfer_state = PREV
 			transfer_state = 17313
 			transfer_state = 13597
@@ -807,10 +830,6 @@ do_tno_normal_warlord_russia = {
 			add_state_claim = 16335
 			add_state_claim = 17333
 			add_state_claim = 14127
-			set_politics = {
-				ruling_party = national_socialism
-			}
-			set_cosmetic_tag = MSC_TNO
 		}
 	}
 	
@@ -866,6 +885,8 @@ do_tno_normal_warlord_russia = {
 	}
 
 	ATY = {
+		transfer_state = 17268
+		transfer_state = 17270
 		set_capital = 3306
 		set_cosmetic_tag = ATY_TNO
 		set_politics = {
@@ -1062,22 +1083,18 @@ do_tno_normal_warlord_russia = {
 			is_core_of = CSS
 			NOT = {
 				is_owned_by = UKR
-				is_owned_by = MSC
+				is_owned_by = MC2
 				is_owned_by = TUR
 				is_owned_by = ATY
 			}
 		}
-		TSC = {
+		KC2 = {
 			transfer_state = PREV
 			annex_country = {target = AZR}
 			annex_country = {target = NGK}
 			annex_country = {target = GEO}
 			annex_country = {target = ABK}
 			set_capital = 4977
-			set_politics = {
-				ruling_party = national_socialism
-			}
-			set_cosmetic_tag = TSC_TNO
 		}
 	}
 	

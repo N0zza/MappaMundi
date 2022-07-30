@@ -3627,6 +3627,7 @@ on_actions = {
 							tag = IRQ
 							tag = SAU
 							tag = LAT
+							tag = GMY
 						}
 					}
 					if = {
@@ -3984,6 +3985,202 @@ on_actions = {
 						set_cosmetic_tag = MC2_CONREP
 					}
 				}
+				if = {
+					limit = {
+						tag = KC2
+					}
+					if = {
+						limit = {
+							has_government = centrist_monarchism
+						}
+						set_cosmetic_tag = KC2_CENMON
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = KC2_AUTHREP
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_government = centrist_monarchism
+								has_government = neutrality
+							}
+						}
+						set_cosmetic_tag = KC2_NATSOC
+					}
+				}
+				if = {
+					limit = {
+						tag = VGR
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = VGR_REPFASH
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_government = republican_fascism
+							}
+						}
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = UA2
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = UA2_STRAT
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = UA2_REPFASH
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = UA2_AUTHREP
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_government = stratocratic
+								has_government = republican_fascism
+								has_government = neutrality
+							}
+						}
+						set_cosmetic_tag = UA2_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = LV2
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = LV2_STRAT
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = LV2_REPFASH
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = LV2_AUTHREP
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_government = stratocratic
+								has_government = republican_fascism
+								has_government = neutrality
+							}
+						}
+						set_cosmetic_tag = LV2_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = WR2
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = WR2_AUTHREP
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = WR2_REPFASH
+					}
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = WR2_NATSOC
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_government = neutrality
+								has_government = republican_fascism
+								has_government = national_socialism
+							}
+						}
+						set_cosmetic_tag = WR2_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = PL2
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = PL2_STRAT
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = PL2_REPFASH
+					}
+					if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = PL2_AUTHREP
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_government = stratocratic
+								has_government = republican_fascism
+								has_government = neutrality
+							}
+						}
+						set_cosmetic_tag = PL2_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = KHE
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = KHE_REPFASH
+					}
+					if = {
+						limit = {
+							NOT = {
+								has_government = republican_fascism
+							}
+						}
+						drop_cosmetic_tag = yes
+					}
+				}
 			}
 		}
 	}
@@ -4293,6 +4490,69 @@ on_actions = {
 							has_government = theocratic
 						}
 						set_cosmetic_tag = KMR_NATIONAL_THEO
+					}
+				}
+				if = {
+					limit = {
+						tag = SVR
+						controls_western_siberia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = neutrality
+								has_government = stratocratic
+							}
+						}
+						set_cosmetic_tag = SVR_REGIONAL_STRAT
+					}
+					if = {
+						limit = {
+							has_government = democratic
+						}
+						set_cosmetic_tag = SVR_REGIONAL_DEM
+					}
+				}
+				if = {
+					limit = {
+						tag = SVR
+						controls_western_russia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = neutrality
+								has_government = stratocratic
+							}
+						}
+						set_cosmetic_tag = SVR_SUPERREGIONAL_STRAT
+					}
+					if = {
+						limit = {
+							has_government = democratic
+						}
+						set_cosmetic_tag = SVR_SUPERREGIONAL_DEM
+					}
+				}
+				if = {
+					limit = {
+						tag = SVR
+						controls_russia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = neutrality
+								has_government = stratocratic
+							}
+						}
+						set_cosmetic_tag = SVR_NATIONAL_STRAT
+					}
+					if = {
+						limit = {
+							has_government = democratic
+						}
+						set_cosmetic_tag = SVR_NATIONAL_DEM
 					}
 				}
 			}

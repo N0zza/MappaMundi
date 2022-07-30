@@ -3,7 +3,13 @@
 oob = "PL2_1936"
 
 set_popularities = {
-    national_socialism = 100
+    national_socialism = 64
+    neutrality = 20
+    liberal_republic = 6
+    stratocratic = 4
+    communism = 3
+    republican_fascism = 2
+    fascism = 1
 }
 
 set_cosmetic_tag = GREY_GER3
@@ -17,15 +23,55 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Premier Ignacy Mościcki"
-	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
-	picture = "gfx/leaders/POL/Portrait_Poland_Ignacy_Moscicki.dds"
+	name = "Generalgouverneur Hans Michael Frank"
+	desc = ""
+	picture = "PL2_Frank.tga"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = natsoc
 	traits = {
-		#
 	}
 }
+
+create_country_leader = {
+	name = "Militärgouverneur Werner Schrader"
+	desc = ""
+	picture = "PL2_Schrader.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichslandsführer Adam Baworowski"
+	desc = ""
+	picture = "PL2_Baworowski.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prezydent Stanisław Wachowiak"
+	desc = ""
+	picture = "PL2_Wachowiak.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+#create_country_leader = {
+#	name = "Premier Ignacy Mościcki"
+#	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
+#	picture = "gfx/leaders/POL/Portrait_Poland_Ignacy_Moscicki.dds"
+#	expire = "1965.1.1"
+#	ideology = oligarchism
+#	traits = {
+#		#
+#	}
+#}
 
 create_country_leader = {
 	name = "Przewodniczący Bolesław Bierut"
@@ -128,15 +174,15 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Głównodowodzacy Edward Rydz-Smigly"
-	desc = ""
-	picture = "gfx/leaders/POL/Portrait_Edward_Rydz_Smigly.dds"
-	expire = "1965.1.1"
-	ideology = militarism
-	traits = {
-	}
-}
+#create_country_leader = {
+#	name = "Głównodowodzacy Edward Rydz-Smigly"
+#	desc = ""
+#	picture = "gfx/leaders/POL/Portrait_Edward_Rydz_Smigly.dds"
+#	expire = "1965.1.1"
+#	ideology = militarism
+#	traits = {
+#	}
+#}
 
 create_country_leader = {
 	name = "Król Jan I z Piłsudski"
@@ -188,25 +234,15 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Przewodniczący Bolesław Piasecki"
-	desc = ""
-	picture = "gfx/leaders/POL/Portrait_Boleslaw_Piasecki.dds"
-	expire = "1965.1.1"
-	ideology = repfash
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Generalgouverneur Hans Michael Frank"
-	desc = ""
-	picture = "gfx/leaders/POL/POL_Hans_Frank.tga"
-	expire = "1965.1.1"
-	ideology = natsoc
-	traits = {
-	}
-}
+#create_country_leader = {
+#	name = "Przewodniczący Bolesław Piasecki"
+#	desc = ""
+#	picture = "gfx/leaders/POL/Portrait_Boleslaw_Piasecki.dds"
+#	expire = "1965.1.1"
+#	ideology = repfash
+#	traits = {
+#	}
+#}
 
 create_country_leader = {
 	name = "Tribal Leadership"
