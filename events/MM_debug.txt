@@ -10,11 +10,21 @@ country_event = { #Debug
 			factor = 0
 		}
 		hidden_effect = {
-			PL3 = {
+			PL2 = {
 				set_party_name = {
-					ideology = national_socialism
-					name = PL3_national_socialism_party
-					long_name = PL3_national_socialism_party_long
+					ideology = fascism
+					name = PL2_fascism_party
+					long_name = PL2_fascism_party_long
+				}
+				kill_ideology_leader = fascism
+				create_country_leader = {
+					name = "Reichskommissar Hans Michael Frank"
+					desc = ""
+					picture = "PL2_Frank.tga"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+					}
 				}
 			}
 		}

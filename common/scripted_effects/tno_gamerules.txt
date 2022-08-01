@@ -1051,8 +1051,53 @@ do_tno_normal_warlord_russia = {
 			}
 		}
 	}
+	every_state = { 
+		limit = {
+			is_owned_by = BLR
+			is_core_of = UA2
+			NOT = {
+				state = 17304
+			}
+		}
+		UA2 = {
+			transfer_state = PREV
+		}
+	}
+	every_state = { 
+		limit = {
+			OR = {
+				is_owned_by = CRM
+				is_owned_by = KHE
+				is_owned_by = ZAP
+			}
+		}
+		GER = {
+			transfer_state = PREV
+		}
+	}
+	every_state = { 
+		limit = {
+			OR = {
+				is_owned_by = UKR
+				is_owned_by = MOL
+			}
+			is_claimed_by = ROM
+		}
+		ROM = {
+			transfer_state = PREV
+		}
+	}
 	
-	UKR = {
+	LV2 = {
+		annex_country = {
+			target = BLR
+		}
+	}
+	
+	UA2 = {
+		annex_country = {
+			target = UKR
+		}
 		transfer_state = 240
 		transfer_state = 14227
 		transfer_state = 3780
@@ -1082,6 +1127,7 @@ do_tno_normal_warlord_russia = {
 		limit = {
 			is_core_of = CSS
 			NOT = {
+				is_owned_by = UA2
 				is_owned_by = UKR
 				is_owned_by = MC2
 				is_owned_by = TUR
