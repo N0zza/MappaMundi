@@ -648,6 +648,10 @@ do_all_renames = {
 						tag = LCC
 						tag = TUS
 						tag = NAP
+						AND = {
+							tag = ALB
+							has_government = fascism
+						}
 					}
 				}
 			}
@@ -910,6 +914,13 @@ do_all_renames = {
 				OR = {
 					tag = TUR
 					tag = RUM
+					AND = {
+						OR = {
+							tag = WTC
+							tag = ETC
+						}
+						has_government = stratocratic
+					}
 				}
 			}
 		}
