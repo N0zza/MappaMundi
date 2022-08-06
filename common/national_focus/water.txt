@@ -9320,6 +9320,9 @@
 		SR2 = {
 			set_cosmetic_tag = TUR_COLONY
 			}
+		GAU = {
+			set_cosmetic_tag = MOL_COLONY
+			}
 		every_state = {
 			limit = {
 				is_claimed_by = DPR
@@ -12587,6 +12590,14 @@
 				}
 			do_russian_renames = yes
 			}
+		every_state = {
+			limit = {
+				is_core_of = HAU
+				}
+			GAU = {
+				transfer_state = PREV
+				}
+			}
 		AQ1 = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -12685,6 +12696,16 @@
            		picture = RAF_Zhidko.tga
            		expire = "1965.1.1"
            		ideology = militarism
+				}
+			}
+		GAU = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Başkan Irina Vlah"
+           		desc = ""
+           		picture = GAU_Vlah.tga
+           		expire = "1965.1.1"
+           		ideology = demsoc
 				}
 			}
 		every_state = {
