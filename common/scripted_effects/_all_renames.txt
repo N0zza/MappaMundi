@@ -345,6 +345,7 @@ do_all_renames = {
 							tag = RIG
 							tag = SUV
 							tag = LTG
+							tag = CZC
 							tag = CZE
 							tag = SLO
 						}
@@ -434,9 +435,14 @@ do_all_renames = {
 	if = {
 		limit = {
 			ROOT = {
-				OR = { 
-					tag = CZE 
-					tag = CZC 
+				AND = {
+					OR = { 
+						tag = CZE 
+						tag = CZC 
+					}
+					NOT = {
+						has_government = national_socialism
+					}
 				}
 			}
 		}

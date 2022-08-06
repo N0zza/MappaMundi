@@ -11441,9 +11441,9 @@
 		}
 		IND = {			
 			create_country_leader = {
-            	name = "Rāṣṭrapati Rām Nāth Kovind"
+            	name = "Rāṣṭrapati Draupati Murmū"
             	desc = ""
-            	picture = gfx/leaders/India/IND_Kovind.tga
+            	picture = gfx/leaders/India/IND_Murmu.tga
             	expire = "1965.1.1"
             	ideology = conservatism
 			}
@@ -12551,14 +12551,6 @@
 			}
 		every_state = {
 			limit = {
-				is_core_of = IS3
-				}
-			IS3 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
 				is_core_of = IS4
 				}
 			IS4 = {
@@ -12592,7 +12584,7 @@
 			}
 		every_state = {
 			limit = {
-				is_core_of = HAU
+				is_core_of = GAU
 				}
 			GAU = {
 				transfer_state = PREV
@@ -12820,6 +12812,14 @@
 				is_core_of = NCM
 				}
 			NGA = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = IS3
+				}
+			IS3 = {
 				transfer_state = PREV
 				}
 			}
