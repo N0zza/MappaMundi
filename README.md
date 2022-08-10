@@ -1,4 +1,6 @@
-How to install this trainwreck - presented by the Mappa Mundi team
+![MM Banner](MappaMundi\.git\images\banner.png)
+
+###How to install this trainwreck - presented by the Mappa Mundi team
 1) Download the mod, check your download directory (usually ThisPC/Downloads)
 2) Unzip the modfile. Make sure the folder name is still MappaMundi, and if isn't rename it.
 3) Enter the folder, Take out the .MOD file (the file called mappamundi.mod) and put it outside the folder into whatever directory you downloaded the mod into.
@@ -9,12 +11,12 @@ How to install this trainwreck - presented by the Mappa Mundi team
 8) Search for Mappa Mundi - Github Version and activate the mod.
 9) Play the mod and enjoy.
 ---------------
-Extra notes:
+###Extra notes:
 
 - the reason why you have to rename the folder to MappaMundi is because the game won't read the mod folder if it isn't the same name as the .MOD file.
 - don't expect every version to not be a buggy mess. as OCD-pleasing the mod may be, it's not bug-pleasing.
 ---------------
-Credits:
+###Credits:
  - Nozza, Faaz Noushad, Jingo Spunk, Mr Confused, Gaffate, Bonkey Donk, schloky, Der Hauptmann, birdirdirbirb, Marblistic, Exocamp, egg138, Esotericist, Crepe, & RicardoPetro
  
  - Special thanks to some of those who have worked with us in the past, including: snoekbaars, Limfjorden, Zooptyx, scrylveon, Foxite, MaiNai, Lum, Sikyk, twotle, Volksmarine, MihalRacovita, TrueSoviet, Holy Doggo, JoshyFlip, SamFan2, blue69982, Gindisi, Kels, and K0rhan.
