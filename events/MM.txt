@@ -4751,13 +4751,50 @@ country_event = {
 		}
 		every_state = {
 			limit = { 
-				owner = WTR
+				is_owned_by = WTR
 			}
 			set_state_flag = smt_marked
 		}
 	}
 	option = {#No, I don't have a supercomputer lol
 		name = mm.watermoment.b
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+add_namespace = smt
+
+#bigcountry moment
+country_event = {
+	id = smt.bigcountry
+	title = smt.bigcountry.t
+	desc = smt.bigcountry.d
+	is_triggered_only = yes
+
+	option = {#Sure
+		name = smt.bigcountry.a
+		ai_chance = {
+			base = 0
+		}
+		every_state = {
+			limit = { 
+				owner = {
+					has_country_flag = smt_temp_mark
+				}
+			}
+			set_state_flag = smt_marked
+		}
+		every_country = {
+			limit = {
+				has_country_flag = smt_temp_mark
+			}
+			clr_country_flag = smt_temp_mark
+		}
+	}
+	option = {#On Second thoughts....
+		name = smt.bigcountry.b
 		ai_chance = {
 			base = 100
 		}

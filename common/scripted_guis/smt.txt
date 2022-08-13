@@ -42,8 +42,23 @@ scripted_gui = {
 					}
 					if = {
 						limit = {
+							num_of_controlled_states > 500
+						}
+						set_country_flag = smt_temp_mark
+						every_country = {
+							limit = {
+								is_ai = no
+							}
+							country_event = {
+								id = smt.bigcountry
+							}
+						}
+					}
+					if = {
+						limit = {
 							NOT = {
 								tag = WTR
+								num_of_controlled_states > 500
 							}
 						}
 						every_owned_state = {
