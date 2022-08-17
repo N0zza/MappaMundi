@@ -822,25 +822,42 @@ do_all_renames = {
 	}
 	
 	### SAU ###
-		if = {
-			limit = {
-				ROOT = {
-					OR = {
-						tag = IRQ 
-						tag = SAU
-					}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = IRQ
+					tag = SYR
+					tag = JOR
+					tag = PAL
+					tag = KUW
+					tag = SAU
+					tag = BHR
+					tag = QAT
+					tag = UAE
+					tag = OMA
+					tag = YEM
+					tag = EGY
+					tag = SUD
+					tag = LBA
+					tag = TUN
+					tag = ALG
+					tag = MOR
+					tag = WES
 				}
-			}
-			do_standard_arabic_renames = yes
-			if = {
-				limit = {
-					ROOT = {
-						NOT = { has_cosmetic_tag = ARAB }
-					}
-				}
-				do_arabic_renames = yes
 			}
 		}
+		do_standard_arabic_renames = yes
+		if = {
+			ROOT = {
+				OR = {
+					has_government = authoritarian_monarchism
+					has_cosmetic_tag = UK_RED
+				}
+			}
+			do_arabic_renames = yes
+		}
+	}
 		
 	### CEL ###
 		if = {

@@ -3,21 +3,19 @@ country_event = { #Debug
 	title = mm.100.t
 	desc = mm.100.d
 	is_triggered_only = yes
-	
 	option = { #Sure
 		name = mm.100.a
 		ai_chance = {
 			factor = 0
 		}
 		hidden_effect = {
-			CZ2 = {
-
-set_popularities = {
-	national_socialism = 43
-	theocratic = 28
-	republican_fascism = 22
-	democratic = 7
-}
+			SGM = {
+				set_party_name = {
+					ideology = centrist_republic
+					name = SGM_centrist_republic_party
+					long_name = SGM_centrist_republic_party_long
+				}
+			}
 		}
 	}
 	option = { #Nah
