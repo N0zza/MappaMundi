@@ -9,11 +9,14 @@ country_event = { #Debug
 			factor = 0
 		}
 		hidden_effect = {
-			KUW = {
-				set_party_name = {
-					ideology = conservative_monarchism
-					name = KUW_conservative_monarchism_party
-					long_name = KUW_conservative_monarchism_party_long
+		EGY = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Raʾīs ʿAbd al-Fattāḥ Saʿīd Ḥusayn H̱alīl as-Sīsī"
+           		desc = ""
+           		picture = EGY_Sisi.tga
+           		expire = "1965.1.1"
+           		ideology = socdem
 				}
 			}
 		}
