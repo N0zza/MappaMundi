@@ -1,0 +1,56 @@
+scripted_gui = {
+    colour_changer_main = {
+        window_name = "colour_changer_main"
+        context_type = player_context
+        parent_window_token = top_bar
+
+        visible = {
+			ROOT = {
+				OR = {
+					tag = ENG
+					tag = FRA
+					tag = SPR
+					tag = POR
+					tag = ITA
+					tag = GER
+					tag = IRE
+					tag = HOL
+					tag = BEL
+					tag = SWI
+				}
+			}
+        }
+        
+        effects = {
+            colour_changer_button_click = {
+				ROOT = {
+					set_global_flag = colour_changer_mark
+				}
+            }
+            colour_changer_off_button_click = {
+				ROOT = {
+					clr_global_flag = colour_changer_mark
+				}
+            }
+        }
+        
+        triggers = {
+            colour_changer_button_click_visible = {
+				NOT = {
+					has_global_flag = colour_changer_mark
+				}
+            }
+            colour_changer_off_button_click_visible = {
+				has_global_flag = colour_changer_mark
+            }
+            colour_changer_button_click_enabled = {
+				NOT = {
+					has_global_flag = colour_changer_mark
+				}
+            }
+            colour_changer_off_button_click_enabled = {
+				has_global_flag = colour_changer_mark
+			}
+		}
+	}
+}
