@@ -7646,8 +7646,8 @@
 			}
 			every_state = {
 				limit = {
-					is_core_of = VIN
-					}
+					is_owned_by = NVI
+				}
 				do_vietnamese_renames = yes
 				do_northvietnamese_renames = yes
 			}
@@ -8461,6 +8461,7 @@
 			}
 		ITA = {
 			transfer_state = 5940
+			set_cosmetic_tag = ITA_REPUBLIC
 			set_politics = {
 				ruling_party = liberal_republic
 			}
@@ -9893,6 +9894,7 @@
 				}
 			}
 		ITA = {
+			set_cosmetic_tag = ITA_REPUBLIC
 			set_politics = {
 				ruling_party = liberal_republic
 				}
@@ -10899,6 +10901,13 @@
 			}
 		every_state = {
 			limit = {
+				is_owned_by = NVI
+			}
+			do_vietnamese_renames = yes
+			do_northvietnamese_renames = yes
+		}
+		every_state = {
+			limit = {
 				is_core_of = LAO
 				}
 			LAO = {
@@ -11806,8 +11815,9 @@
 		    transfer_state = 4210
 		    transfer_state = 9412
 			set_politics = {
-	        ruling_party = authoritarian_monarchism
-              }
+				ruling_party = authoritarian_monarchism
+             }
+			drop_cosmetic_tag = yes
 			kill_country_leader = yes
 			create_country_leader = {
             	name = "Sulṭān Hayṯam bin Ṭāriq bin Taymūr as-Saʿīd"
