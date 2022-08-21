@@ -39915,6 +39915,16 @@ do_english_renames = {
 }
 
 do_latin_renames = {
+		
+	if = {
+		limit = {
+			state = 2377
+		}		
+		set_province_name = {
+			id = 13863
+			name = "Roma"
+		}
+	}
 
 	if = {
 		limit = {
