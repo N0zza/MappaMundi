@@ -2292,9 +2292,23 @@
                             ruling_party = conservative_monarchism
                         }
                     }
+					
 					FRA = {
 						transfer_state = 13590
+						transfer_state = 272
+						transfer_state = 5348
+					}
+					
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = SEN
+							}
 						}
+						TRB = {
+							transfer_state = PREV
+						}
+					}
 					
 					##1836 ASIA##
 			PER = {
