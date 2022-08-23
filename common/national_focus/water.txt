@@ -2296,13 +2296,135 @@
 					FRA = {
 						transfer_state = 13590
 						transfer_state = 272
-						transfer_state = 5348
+						transfer_state = 16278
+						transfer_state = 15076
+					}
+					
+					SPR = {
+						transfer_state = 6782
+						transfer_state = 6760
+					}
+					
+					MRT = {
+						release = TGT
+						release = TRZ
+						release = BRK
+					}
+					
+					LIB = {
+						ruling_party = centrist_republic
+						set_cosmetic_tag = USA_BLUE
+					}
+					
+					KGG = {
+						drop_cosmetic_tag = yes
+					
+					every_state = {
+						limit = {
+							is_core_of = ARR
+						}
+						ARR = {
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							is_core_of = AJJ
+						}
+						AJJ = {
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							is_core_of = KLO
+						}
+						KLO = {
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							is_core_of = KGG
+						}
+						KGG = {
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							is_core_of = KLT
+						}
+						KLT = {	
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							is_core_of = ADG
+						}
+						ADG = {	
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							is_core_of = TKT
+						}
+						TKT = {	
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							is_core_of = KLN
+						}
+						KLN = {	
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							is_core_of = AYR
+						}
+						AYR = {	
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							is_core_of = GS2
+						}
+						GS2 = {	
+							transfer_state = PREV
+						}
+					}
+					
+					TRB = {
+						transfer_state = 6940
+						transfer_state = 6941
+						transfer_state = 1917
+						transfer_state = 6951
+						transfer_state = 6895
 					}
 					
 					every_state = {
 						limit = {
 							OR = {
 								is_owned_by = SEN
+								is_owned_by = WES
+								is_owned_by = MRT
+								is_owned_by = MLI
+								is_owned_by = GNA
 							}
 						}
 						TRB = {
