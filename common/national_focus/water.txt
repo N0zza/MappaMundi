@@ -9506,17 +9506,282 @@
 				name = RUS_centrist_republic_2022_party
 				long_name = RUS_centrist_republic_2022_party_long
 			}
+			set_party_name = {
+				ideology = neutrality
+				name = RUS_neutrality_2022_party
+				long_name = RUS_neutrality_2022_party_long
+			}
+			set_party_name = {
+				ideology = democratic
+				name = RUS_democratic_2022_party
+				long_name = RUS_democratic_2022_party_long
+			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = RUS_socialism_ideology_2022_party
+				long_name = RUS_socialism_ideology_2022_party_long
+			}
+			set_party_name = {
+				ideology = communism
+				name = RUS_communism_2022_party
+				long_name = RUS_communism_2022_party_long
+			}
+			set_party_name = {
+				ideology = vanguardism
+				name = RUS_vanguardism_2022_party
+				long_name = RUS_vanguardism_2022_party_long
+			}
+			set_party_name = {
+				ideology = liberal_republic
+				name = RUS_liberal_republic_2022_party
+				long_name = RUS_liberal_republic_2022_party_long
+			}
+			set_party_name = {
+				ideology = stratocratic
+				name = RUS_stratocratic_2022_party
+				long_name = RUS_stratocratic_2022_party_long
+			}
+			set_party_name = {
+				ideology = republican_fascism
+				name = RUS_republican_fascism_2022_party
+				long_name = RUS_republican_fascism_2022_party_long
+			}
+			set_party_name = {
+				ideology = national_socialism
+				name = RUS_national_socialism_2022_party
+				long_name = RUS_national_socialism_2022_party_long
+			}
+			set_party_name = {
+				ideology = theocratic
+				name = RUS_theocratic_2022_party
+				long_name = RUS_theocratic_2022_party_long
+			}
+			set_party_name = {
+				ideology = centrist_monarchism
+				name = RUS_centrist_monarchism_2022_party
+				long_name = RUS_centrist_monarchism_2022_party_long
+			}
+			set_party_name = {
+				ideology = authoritarian_monarchism
+				name = RUS_authoritarian_monarchism_2022_party
+				long_name = RUS_authoritarian_monarchism_2022_party_long
+			}
+			set_party_name = {
+				ideology = socialist_monarchy
+				name = RUS_socialist_monarchy_2022_party
+				long_name = RUS_socialist_monarchy_2022_party_long
+			}
+			set_party_name = {
+				ideology = monarchism
+				name = RUS_monarchism_2022_party
+				long_name = RUS_monarchism_2022_party_long
+			}
+			set_party_name = {
+				ideology = fascism
+				name = RUS_fascism_2022_party
+				long_name = RUS_fascism_2022_party_long
+			}
+			set_party_name = {
+				ideology = democratic_monarchism
+				name = RUS_democratic_monarchism_2022_party
+				long_name = RUS_democratic_monarchism_2022_party_long
+			}
+			set_party_name = {
+				ideology = conservative_monarchism
+				name = RUS_conservative_monarchism_2022_party
+				long_name = RUS_conservative_monarchism_2022_party_long
+			}
 		}
 		RUS = {
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "Prezidént Vladímir Vladímirovič Pútin"
         		desc = ""
-        		picture = gfx/leaders/Russia/RUS_Putin.tga
+        		picture = "gfx/leaders/Russia/RUS_Putin.tga"
         		expire = "1965.1.1"
         		ideology = cenrep
-				}
 			}
+		}
+		RUS = {
+			kill_ideology_leader = neutrality
+			create_country_leader = {
+        		name = "Prezidént Dmítrij Anatól'evič Medvédev"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Medvedev.tga"
+        		expire = "1965.1.1"
+        		ideology = despotism
+			}
+		}
+		RUS = {
+			kill_ideology_leader = democratic
+			create_country_leader = {
+        		name = "Prezidént Alekséj Anatól'evič Navál'nyj"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Navalny.tga"
+        		expire = "1965.1.1"
+        		ideology = liberalism
+			}
+		}
+		RUS = {
+			kill_ideology_leader = socialism_ideology
+			create_country_leader = {
+        		name = "Prezidént Gennádij Andréevič Zjugánov"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Zyuganov.tga"
+        		expire = "1965.1.1"
+        		ideology = demsoc
+			}
+		}
+		RUS = {
+			kill_ideology_leader = communism
+			create_country_leader = {
+        		name = "Generál'nyj Sekretár' Mixaíl Sergéevič Gorbačëv"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Gorbachev.tga"
+        		expire = "1965.1.1"
+        		ideology = marxism
+			}
+		}
+		RUS = {
+			kill_ideology_leader = vanguardism
+			create_country_leader = {
+        		name = "Generál'nyj Sekretár' Sergéj Aleksándrovič Malinkóvič"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Malinkovich.tga"
+        		expire = "1965.1.1"
+        		ideology = totsoc
+			}
+		}
+		RUS = {
+			kill_ideology_leader = liberal_republic
+			create_country_leader = {
+        		name = "Prezidént Nikoláj Ígorevič Rybakóv"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Rybakov.tga"
+        		expire = "1965.1.1"
+        		ideology = socdem
+			}
+		}
+		RUS = {
+			kill_ideology_leader = stratocratic
+			create_country_leader = {
+        		name = "Verxóvnyj Glavnokomándujuščij Sergéj Kužugétovič Šojgú"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Shoigu.tga"
+        		expire = "1965.1.1"
+        		ideology = militarism
+			}
+		}
+		RUS = {
+			kill_ideology_leader = republican_fascism
+			create_country_leader = {
+        		name = "Vožd' Alekséj Aleksándrovič Žuravlëv"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Zhuravlyov.tga"
+        		expire = "1965.1.1"
+        		ideology = repfash
+			}
+		}
+		RUS = {
+			kill_ideology_leader = national_socialism
+			create_country_leader = {
+        		name = "Verxóvnyj Vožd' Aleksándr Aleksándrovič Avérin"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Averin.tga"
+        		expire = "1965.1.1"
+        		ideology = natsoc
+			}
+		}
+		RUS = {
+			kill_ideology_leader = theocratic
+			create_country_leader = {
+        		name = "Patriárx Vladímir Mixájlovič Gundjáev"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Kirill.tga"
+        		expire = "1965.1.1"
+        		ideology = christian
+			}
+		}
+		RUS = {
+			kill_ideology_leader = centrist_monarchism
+			create_country_leader = {
+        		name = "Caríca Maríja Romanóvskaja"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Grand_Duchess_Maria.tga"
+        		expire = "1965.1.1"
+        		ideology = cenmon
+			}
+		}
+		RUS = {
+			kill_ideology_leader = authoritarian_monarchism
+			create_country_leader = {
+        		name = "Caríca Maríja Romanóvskaja"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Grand_Duchess_Maria.tga"
+        		expire = "1965.1.1"
+        		ideology = authmon
+			}
+		}
+		RUS = {
+			kill_ideology_leader = socialist_monarchy
+			create_country_leader = {
+        		name = "Koról' Nikoláj III Romanóvskij"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Karl_Emich.tga"
+        		expire = "1965.1.1"
+        		ideology = monsoc
+			}
+		}
+		RUS = {
+			kill_ideology_leader = monarchism
+			create_country_leader = {
+        		name = "Imperátor Nikoláj III Romanóvskij"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Karl_Emich.tga"
+        		expire = "1965.1.1"
+        		ideology = absolutism
+			}
+		}
+		RUS = {
+			kill_ideology_leader = fascism
+			create_country_leader = {
+        		name = "Imperátor Vserossíjskij Nikoláj III Romanóvskij"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Karl_Emich.tga"
+        		expire = "1965.1.1"
+        		ideology = fascism_ideology
+			}
+		}
+		RUS = {
+			kill_ideology_leader = stratocratic_monarchism
+			create_country_leader = {
+        		name = "Verxóvnyj Vožd' Antón Alekséevič Bákov"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Bakov.tga"
+        		expire = "1965.1.1"
+        		ideology = stratmon
+			}
+		}
+		RUS = {
+			kill_ideology_leader = conservative_monarchism
+			create_country_leader = {
+        		name = "Car' Alekséj III Romanóvskij"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Alexis_Andreevich.tga"
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+			}
+		}
+		RUS = {
+			kill_ideology_leader = conservative_monarchism
+			create_country_leader = {
+        		name = "Car' Alekséj III Romanóvskij"
+        		desc = ""
+        		picture = "gfx/leaders/Russia/RUS_Alexis_Andreevich.tga"
+        		expire = "1965.1.1"
+        		ideology = liberal_constitutionalism
+			}
+		}
 		add_victory_points = {
 			province = 1780
 			value = 5
@@ -11712,6 +11977,15 @@
            		picture = ENG_Johnson.tga
            		expire = "1965.1.1"
            		ideology = conservatism
+				}
+			
+			kill_ideology_leader = democratic_monarchism
+			create_country_leader = {
+           		name = "King Charles III of Mountbatten-Windsor"
+           		desc = ""
+           		picture = ENG_Prince_Charles.tga
+           		expire = "1965.1.1"
+           		ideology = liberal_constitutionalism
 				}
 		}
 		GSY = {
