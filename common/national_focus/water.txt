@@ -2419,14 +2419,6 @@
 						}
 					}
 					
-					TRB = {
-						transfer_state = 6940
-						transfer_state = 6941
-						transfer_state = 1917
-						transfer_state = 6951
-						transfer_state = 6895
-					}
-					
 					every_state = {
 						limit = {
 							OR = {
@@ -2442,6 +2434,811 @@
 							transfer_state = PREV
 						}
 					}
+					
+					ASS = {
+						add_state_core = 7940
+						add_state_core = 13146
+						
+						every_state = {
+							limit = {
+								OR = {
+								is_core_of = ASS
+								is_core_of = DJI
+								}
+							}
+							ASS = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					ETH = {
+						every_state = {
+							limit = {
+								OR = {
+								is_core_of = ETH
+								is_core_of = ERI
+								}
+								NOT = {
+									is_core_of = ASS
+									is_core_of = E02
+									is_core_of = E03
+									is_core_of = E04
+									is_core_of = E05
+									is_core_of = E08
+									is_core_of = E09
+									is_core_of = E10
+									is_core_of = E12
+									is_core_of = GMM
+									is_core_of = GM2
+									is_core_of = GLE
+									is_core_of = GRA
+									is_core_of = HOB
+									is_core_of = JIM
+									is_core_of = LME
+									is_core_of = MAJ
+									is_core_of = ORM
+									is_core_of = SOM
+									is_core_of = TNA
+								}
+							}
+							ETH = {
+								transfer_state = PREV
+							}
+						} 
+						
+						set_politics = {
+							ruling_party = monarchism
+							elections_allowed = no
+							last_election = "1836.1.1"
+							election_frequency = 48
+						}
+						
+						set_popularities = {
+						monarchism = 100
+						}
+					}
+					
+					E02 = {
+						every_state = {
+							limit = {
+								is_core_of = E02
+							}
+							E02 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E03 = {
+						every_state = {
+							limit = {
+								is_core_of = E03
+							}
+							E03 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E04 = {
+						every_state = {
+							limit = {
+								is_core_of = E04
+							}
+							E04 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E05 = {
+						every_state = {
+							limit = {
+								is_core_of = E05
+							}
+							E05 = {
+								transfer_state = PREV
+							}
+						}
+						
+						transfer_state = 17103
+					}
+					
+					E08 = {
+						every_state = {
+							limit = {
+								is_core_of = E08
+							}
+							E08 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E09 = {
+						every_state = {
+							limit = {
+								is_core_of = E09
+							}
+							E09 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E10 = {
+						every_state = {
+							limit = {
+								is_core_of = E10
+							}
+							E10 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E12 = {
+						add_state_core = 17098
+						remove_state_core = 17121
+						
+						every_state = {
+							limit = {
+								is_core_of = E12
+							}
+							E12 = {
+								transfer_state = PREV
+							}
+						}
+						
+					}
+					
+					GMM = {
+						every_state = {
+							limit = {
+								is_core_of = GMM
+							}
+							GMM = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					GM2 = {
+						add_state_core = 6865
+						add_state_core = 17096
+						add_state_core = 17097
+						
+						every_state = {
+							limit = {
+								is_core_of = GM2
+							}
+							GM2 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					GLE = {
+						add_state_core = 559
+						add_state_core = 5305
+						add_state_core = 5306
+						add_state_core = 8114
+						add_state_core = 8115
+						add_state_core = 17690
+						add_state_core = 17695
+						add_state_core = 17696
+						add_state_core = 17697
+						
+						every_state = {
+							limit = {
+								is_core_of = GLE
+							}
+							GLE = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					GRA = {
+						every_state = {
+							limit = {
+								is_core_of = GRA
+							}
+							GRA = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					HOB = {
+						add_state_core = 17699
+						
+						every_state = {
+							limit = {
+								is_core_of = HOB
+							}
+							HOB = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					JIM = {
+						every_state = {
+							limit = {
+								is_core_of = JIM
+							}
+							JIM = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					LME = {
+						add_state_core = 13158
+						add_state_core = 17095
+						
+						every_state = {
+							limit = {
+								is_core_of = LME
+							}
+							LME = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					JUB = {
+						every_state = {
+							limit = {
+								is_claimed_by = JUB
+								NOT = {
+								is_core_of = GLE
+								}
+							}
+							
+							JUB = {
+								add_state_core = PREV
+							}
+						}
+						
+					}
+					
+					MAJ = {
+						every_state = {
+							limit = {
+								is_core_of = MAJ
+							}
+							MAJ = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					ORM = {
+						add_state_core = 1550
+						add_state_core = 5258
+						add_state_core = 5322
+						add_state_core = 6866
+						add_state_core = 7850
+						add_state_core = 7932
+						add_state_core = 9260
+						add_state_core = 9794
+						add_state_core = 9796
+						add_state_core = 9799
+						add_state_core = 10367
+						add_state_core = 13144
+						add_state_core = 13156
+						add_state_core = 13162
+						add_state_core = 13173
+						add_state_core = 13176
+						remove_state_core = 17103
+						add_state_core = 17109
+						
+						every_state = {
+							limit = {
+								is_core_of = SNN
+							}
+							ORM = {
+								add_state_core = PREV
+							}
+						}
+						
+						every_state = {
+							limit = {
+								is_core_of = ORM
+								NOT = {
+									is_core_of = ASS
+									is_core_of = E02
+									is_core_of = E03
+									is_core_of = E04
+									is_core_of = E05
+									is_core_of = E08
+									is_core_of = E09
+									is_core_of = E10
+									is_core_of = E12
+									is_core_of = GMM
+									is_core_of = GM2
+									is_core_of = GLE
+									is_core_of = GRA
+									is_core_of = HOB
+									is_core_of = JIM
+									is_core_of = LME
+									is_core_of = MAJ
+									is_core_of = SOM
+									is_core_of = TNA
+								}
+							}
+							ORM = {
+								transfer_state = PREV
+							}
+						}
+						
+						set_politics = {
+							ruling_party = anarchism_ideology
+							elections_allowed = no
+							last_election = "1836.1.1"
+							election_frequency = 48
+						}
+						
+						set_popularities = {
+						anarchism_ideology = 100
+						}
+						
+						set_cosmetic_tag = TRIBAL_BROWN
+					}
+					
+					SMI = {
+						remove_state_core = 7850
+					}
+					
+					SOM = {
+						add_state_core = 5003
+						add_state_core = 7933
+						add_state_core = 7934
+						add_state_core = 9795
+						add_state_core = 10624
+						
+						every_state = {
+							limit = {
+								OR = {
+								is_core_of = SMI
+								is_core_of = SOM
+								is_core_of = JUB
+								}
+								NOT = {
+								is_core_of = ASS
+								is_core_of = GLE
+								is_core_of = HOB
+								is_core_of = MAJ
+								}
+							}
+							SOM = {
+								transfer_state = PREV
+							}
+						}
+						
+						set_politics = {
+							ruling_party = anarchism_ideology
+							elections_allowed = no
+							last_election = "1836.1.1"
+							election_frequency = 48
+						}
+						
+						set_popularities = {
+						anarchism_ideology = 100
+						}
+						
+						set_cosmetic_tag = TRIBAL_BROWN
+					}
+					
+					TNA = {
+						add_state_core = 6854
+						add_state_core = 9800
+						
+						every_state = {
+							limit = {
+								is_core_of = TNA
+							}
+							TNA = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					# North Africa
+					
+					SGR = { # Tribes put on very top for easier coding
+						transfer_state = 459
+						transfer_state = 3427
+						transfer_state = 3428
+						transfer_state = 3430
+						transfer_state = 6371
+						transfer_state = 6372
+						transfer_state = 6373
+						transfer_state = 6919
+						transfer_state = 6922
+						transfer_state = 6923
+						transfer_state = 6924
+						transfer_state = 8127
+						
+						every_state = {
+							limit = {
+								is_owned_by = SGR
+							}
+							SGR = {
+								add_state_core = PREV
+							}
+						}
+						
+						set_politics = {
+							ruling_party = anarchism_ideology
+							elections_allowed = no
+							last_election = "1836.1.1"
+							election_frequency = 48
+						}
+						
+						set_popularities = {
+						anarchism_ideology = 100
+						}
+						
+						set_cosmetic_tag = TRIBAL_BROWN
+						
+					}
+					
+					TRB = {
+						add_state_core = 552
+						add_state_core = 854
+						add_state_core = 856
+						add_state_core = 857
+						add_state_core = 861
+						add_state_core = 862
+						add_state_core = 1841
+						add_state_core = 2153
+						add_state_core = 2216
+						add_state_core = 2745
+						add_state_core = 2875
+						add_state_core = 3882
+						add_state_core = 4999
+						add_state_core = 5261
+						add_state_core = 5785
+						add_state_core = 6048
+						add_state_core = 6049
+						add_state_core = 6050
+						add_state_core = 6051
+						add_state_core = 6052
+						add_state_core = 6053
+						add_state_core = 6054
+						add_state_core = 6055
+						add_state_core = 6056
+						add_state_core = 6057
+						add_state_core = 6058
+						add_state_core = 6059
+						add_state_core = 6061
+						add_state_core = 6062
+						add_state_core = 6063
+						add_state_core = 6064
+						add_state_core = 6065
+						add_state_core = 6066
+						add_state_core = 6067
+						add_state_core = 6365
+						add_state_core = 6367
+						add_state_core = 6388
+						add_state_core = 6389
+						add_state_core = 6390
+						add_state_core = 6391
+						add_state_core = 6392
+						add_state_core = 6393
+						add_state_core = 6395
+						add_state_core = 6396
+						add_state_core = 6397
+						add_state_core = 6398
+						add_state_core = 6399
+						add_state_core = 6746
+						add_state_core = 6760
+						add_state_core = 6766
+						add_state_core = 6767
+						add_state_core = 6768
+						add_state_core = 6769
+						add_state_core = 6870
+						add_state_core = 6899
+						add_state_core = 6901
+						add_state_core = 6902
+						add_state_core = 6903
+						add_state_core = 6904
+						add_state_core = 6927
+						add_state_core = 6928
+						add_state_core = 6929
+						add_state_core = 6930
+						add_state_core = 6931
+						add_state_core = 6932
+						add_state_core = 6933
+						add_state_core = 6953
+						add_state_core = 7255
+						add_state_core = 7659
+						add_state_core = 7663
+						add_state_core = 7664
+						add_state_core = 8136
+						add_state_core = 8137
+						add_state_core = 8140
+						add_state_core = 9047
+						add_state_core = 9782
+						add_state_core = 9786
+						add_state_core = 9787
+						add_state_core = 9876
+						add_state_core = 9877
+						add_state_core = 9879
+						add_state_core = 9891
+						add_state_core = 10176
+						add_state_core = 10178
+						add_state_core = 12102
+						add_state_core = 12103
+						add_state_core = 12104
+						add_state_core = 12105
+						add_state_core = 12106
+						add_state_core = 12107
+						add_state_core = 12115
+						add_state_core = 12116
+						add_state_core = 12117
+						add_state_core = 12118
+						add_state_core = 12119
+						add_state_core = 12120
+						add_state_core = 12121
+						add_state_core = 12122
+						add_state_core = 12123
+						add_state_core = 12124
+						add_state_core = 12125
+						add_state_core = 12126
+						add_state_core = 12127
+						add_state_core = 12128
+						add_state_core = 12130
+						add_state_core = 12131
+						add_state_core = 12138
+						add_state_core = 12147
+						add_state_core = 12148
+						add_state_core = 12150
+						add_state_core = 12151
+						add_state_core = 12152
+						add_state_core = 12153
+						add_state_core = 12683
+						add_state_core = 13069
+						add_state_core = 15077
+						add_state_core = 15078
+						add_state_core = 15079
+						add_state_core = 15080
+						add_state_core = 15081
+						add_state_core = 15082
+						add_state_core = 15746
+						add_state_core = 15747
+						add_state_core = 15748
+						add_state_core = 15749
+						add_state_core = 15750
+						add_state_core = 15751
+						add_state_core = 15752
+						add_state_core = 15753
+						add_state_core = 15833
+						add_state_core = 15834
+						add_state_core = 15838
+						add_state_core = 15987
+						add_state_core = 15988
+						add_state_core = 15989
+						add_state_core = 15990
+						add_state_core = 15991
+						add_state_core = 15993
+						add_state_core = 17880
+						add_state_core = 17877
+						add_state_core = 17878
+						add_state_core = 17879
+						
+						every_state = {
+							limit = {
+								is_core_of = TRB
+							}
+							TRB = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					ALG = {
+						every_state = {
+							limit = {
+								is_core_of = ALG
+								NOT = {
+								is_core_of = CAG
+								is_core_of = CNT
+								is_core_of = FRA
+								is_core_of = LBA
+								is_core_of = MCS
+								is_core_of = SBA
+								is_core_of = SGR
+								is_core_of = TGG
+								is_core_of = TRB
+								}
+							}
+							ALG = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					CAG = {
+						remove_state_core = 1459
+						remove_state_core = 3433
+						add_state_core = 3438
+						add_state_core = 3439
+						add_state_core = 3443
+						add_state_core = 3447
+						add_state_core = 6376
+						add_state_core = 6377
+						add_state_core = 7618
+						add_state_core = 7646
+						add_state_core = 7648
+						add_state_core = 7649
+						add_state_core = 7651
+						remove_state_core = 13591
+						
+						every_state = {
+							limit = {
+								is_core_of = CAG
+							}
+							CAG = {
+								transfer_state = PREV
+							}
+						}
+						
+						set_cosmetic_tag = CAG_Mascara
+					}
+					
+					CNT = {
+						transfer_state = 460
+						transfer_state = 3426
+						transfer_state = 3441
+						transfer_state = 3442
+						transfer_state = 10212
+						
+						set_cosmetic_tag = CNT_OTTO
+					}
+					
+					EGY = {
+						add_state_core = 551
+						add_state_core = 643
+						add_state_core = 1037
+						add_state_core = 3867
+						add_state_core = 8106
+						add_state_core = 10474
+						add_state_core = 10475
+						add_state_core = 10478
+						add_state_core = 10479
+						add_state_core = 10500
+						add_state_core = 12108
+						add_state_core = 12112
+						add_state_core = 12114
+						add_state_core = 12162
+						add_state_core = 12163
+						add_state_core = 12164
+						add_state_core = 12165
+						add_state_core = 12166
+						add_state_core = 12167
+						add_state_core = 12175
+						add_state_core = 12176
+						add_state_core = 12177
+						add_state_core = 12178
+						add_state_core = 12179
+						add_state_core = 12180
+						add_state_core = 12181
+						add_state_core = 12205
+						
+						every_state = {
+							limit = {
+							is_core_of = TRB
+							}
+							EGY = {
+							remove_state_core = PREV
+							}
+						}
+						
+						every_state = {
+							limit = {
+							is_core_of = EGY
+							}
+							EGY = {
+							transfer_state = PREV
+							}
+						}
+						
+						set_cosmetic_tag = EGY_OTTO
+					}
+					
+					FRA = {
+						add_state_core = 13591
+						transfer_state = 13591
+					}
+					
+					LBA = {
+						set_cosmetic_tag = LBA_OTTO
+					}
+					
+					MCS = {
+						remove_state_core = 459
+						remove_state_core = 1458
+						remove_state_core = 3428
+						remove_state_core = 3429
+						remove_state_core = 3430
+						remove_state_core = 3431
+						remove_state_core = 3439
+						add_state_core = 7618
+						add_state_core = 7619
+						add_state_core = 7647
+						remove_state_core = 7649
+						remove_state_core = 7651
+						remove_state_core = 13590
+						
+						every_state = {
+							limit = {
+								is_core_of = MCS
+							}
+							MCS = {
+								transfer_state = PREV
+							}
+						}
+						
+						set_cosmetic_tag = MCS_Ouled_Nail
+					}
+					
+					MOR = {
+						
+						every_state = {
+							limit = {
+								is_core_of = MOR
+								NOT = {
+								is_core_of = ARR
+								is_core_of = FRA
+								is_owned_by = TRB
+								}
+							}
+							MOR = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					SBA = {
+						remove_state_core = 7619
+						remove_state_core = 7647
+						add_state_core = 10214
+						add_state_core = 10215
+						
+						every_state = {
+							limit = {
+								is_core_of = SBA
+							}
+							SBA = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					TGG = {
+						remove_state_core = 6376
+						remove_state_core = 6377
+						add_state_core = 10203
+						
+						every_state = {
+							limit = {
+								is_core_of = TGG
+							}
+							TGG = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					TUN = {
+						set_cosmetic_tag = TUN_OTTO
+					}
+				}
 					
 					##1836 ASIA##
 			PER = {
