@@ -9773,10 +9773,30 @@
 				ruling_party = centrist_republic
 				}
 			drop_cosmetic_tag = yes
+			set_party_name = {
+				ideology = centrist_republic
+				name = BLR_centrist_republic_2022_party
+				long_name = BLR_centrist_republic_2022_party_long
+			}
+			set_party_name = {
+				ideology = democratic
+				name = BLR_democratic_2022_party
+				long_name = BLR_democratic_2022_party_long
+			}
+			}
+		BLR = {
+			kill_ideology_leader = democratic
+			create_country_leader = {
+        		name = "Prezidént Sviatlána Hieórhijeŭna Cichanóŭskaja"
+        		desc = ""
+        		picture = BLR_Tsikhanouskaya.tga
+        		expire = "1965.1.1"
+        		ideology = liberalism
+				}
 			}
 		BLR = {
 			create_country_leader = {
-        		name = "Prezident Alaksándr Ryhóravič Lukašénka"
+        		name = "Prezidént Alaksándr Ryhóravič Lukašénka"
         		desc = ""
         		picture = BLR_Lukashenko.tga
         		expire = "1965.1.1"
