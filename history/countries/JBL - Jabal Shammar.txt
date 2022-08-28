@@ -10,21 +10,11 @@ set_technology = {
 
 set_convoys = 5
 
-
-
-	set_popularities = {
-		democratic 
-			 = 0
-		fascism
-			 = 0
-		communism
-			 = 0
-			
-		monarchism 
-			 = 100
-		}
-	set_politics = { 
- ruling_party = monarchism
+set_popularities = {
+	monarchism = 100
+}
+set_politics = { 
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -40,7 +30,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Emir Muhammad bin Talal Al Rashid"
 	desc = ""
@@ -49,5 +38,14 @@ create_country_leader = {
 	ideology = authmon
 	traits = {
 		#
+	}
+}
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
 	}
 }

@@ -3041,6 +3041,10 @@
 						}
 					}
 					
+					WTR = { #:troll:
+						transfer_state = 8696
+					}
+					
 					ALG = {
 						every_state = {
 							limit = {
@@ -4560,19 +4564,24 @@
 						transfer_state = PREV
 						}
 					}
-				JBL = {
-					transfer_state = 5884
-					transfer_state = 14392
-					transfer_state = 14393
-					transfer_state = 14394
-					transfer_state = 6802
-					transfer_state = 1176
-					transfer_state = 14432
-					transfer_state = 14433
-					transfer_state = 3358
-					set_cosmetic_tag = TRIBAL_BROWN
-					set_politics = {
-						ruling_party = anarchism_ideology
+					JBL = {
+						transfer_state = 5884
+						transfer_state = 14392
+						transfer_state = 14393
+						transfer_state = 14394
+						transfer_state = 6802
+						transfer_state = 1176
+						transfer_state = 14432
+						transfer_state = 14433
+						transfer_state = 3358
+						
+						set_cosmetic_tag = TRIBAL_BROWN
+						
+						set_politics = {
+							ruling_party = anarchism_ideology
+						}
+						set_popularities = {
+							anarchism_ideology = 100
 						}
 					}
 				every_state = {
