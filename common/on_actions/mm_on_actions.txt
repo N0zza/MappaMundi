@@ -1,5 +1,11 @@
 on_actions = {
 	on_startup = {
+		effect = {
+			set_global_flag = colour_changer_mark
+			set_global_flag = vp_renaming_toggler_enabled
+		}
+	}
+	on_startup = {
 		#Split Russia into TNO warlords
 		effect = {
 			if = {

@@ -5,8 +5,13 @@ on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
 		effect = {
-			FROM.FROM = {	
-				do_all_renames = yes
+			if = {
+				limit = {
+					has_global_flag = vp_renaming_toggler_enabled
+				}
+				FROM.FROM = {	
+					do_all_renames = yes
+				}
 			}
 		}
 	}

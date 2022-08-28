@@ -1,0 +1,45 @@
+scripted_gui = {
+    vp_renaming_toggler_main = {
+        window_name = "vp_renaming_toggler_main"
+        context_type = player_context
+        parent_window_token = top_bar
+
+        visible = {
+			ROOT = {
+				ai = no
+			}
+        }
+        
+        effects = {
+            vp_renaming_toggler_on_button_click = {
+				ROOT = {
+					set_global_flag = vp_renaming_toggler_enabled
+				}
+            }
+            vp_renaming_toggler_off_button_click = {
+				ROOT = {
+					clr_global_flag = vp_renaming_toggler_enabled
+				}
+            }
+        }
+        
+        triggers = {
+            vp_renaming_toggler_on_button_click_visible = {
+				NOT = {
+					has_global_flag = vp_renaming_toggler_enabled
+				}
+            }
+            vp_renaming_toggler_off_button_click_visible = {
+				has_global_flag = vp_renaming_toggler_enabled
+            }
+            vp_renaming_toggler_on_button_click_enabled = {
+				NOT = {
+					has_global_flag = vp_renaming_toggler_enabled
+				}
+            }
+            vp_renaming_toggler_off_button_click_enabled = {
+				has_global_flag = vp_renaming_toggler_enabled
+			}
+		}
+	}
+}
