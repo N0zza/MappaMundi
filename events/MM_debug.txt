@@ -9,18 +9,22 @@ country_event = { #Debug
 			factor = 0
 		}
 		hidden_effect = {
-		PL2= {
-			kill_country_leader = yes
-
-create_country_leader = {
-	name = "Król Fryderyk Krystian Wettyn"
-	desc = ""
-	picture = "gfx/leaders/POL/Portrait_Fryderyk_Krystian_Wettin.tga"
-	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
-	traits = {
-	}
-}
+			USA = {
+				set_party_name = {
+					ideology = right_anarchism
+					name = USA_right_anarchism_2022_party
+					long_name = USA_right_anarchism_2022_party_long
+				}
+				kill_ideology_leader = right_anarchism
+				create_country_leader = {
+					name = "Chairman Jeffrey Preston Bezos"
+					desc = ""
+					picture = "USA_Bezos.tga"
+					expire = "1965.1.1"
+					ideology = ancap
+					traits = {
+					}
+				}
 			}
 		}
 	}
