@@ -3851,32 +3851,24 @@
 					transfer_state = 11145
 					}
 				SIK = {
-					transfer_state = 10216
-					transfer_state = 13228
 					transfer_state = 10345
 					transfer_state = 10224
 					transfer_state = 1007
 					transfer_state = 12381
 					transfer_state = 12382
 					transfer_state = 12383
+					transfer_state = 13316
 					}
 				TIB = {
 					transfer_state = 10742
 					transfer_state = 10743
 					transfer_state = 10744
 					transfer_state = 12384
-					transfer_state = 1318
 					transfer_state = 1319
-					transfer_state = 2343
 					transfer_state = 1188
 					transfer_state = 1006
-					transfer_state = 3056
 					transfer_state = 11605
 					transfer_state = 14078
-					transfer_state = 14657
-					transfer_state = 14656
-					transfer_state = 16766
-					transfer_state = 16771
 					}
 				MAN = {
 					transfer_state = 10442
@@ -3992,6 +3984,8 @@
 					transfer_state = 11874
 					transfer_state = 12457
 					transfer_state = 12474
+					transfer_state = 1053
+					transfer_state = 10227
 					}
 				KOK = {
 					transfer_state = 12426
@@ -5106,7 +5100,331 @@
 					transfer_state = 3119
 					transfer_state = 14547
 					}
-				##OCEANIA 1836##
+		every_state = {
+			limit = {
+				is_claimed_by = HYD
+				}
+			HYD = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = H17
+				}
+			H17 = {
+				transfer_state = PREV
+				set_cosmetic_tag = RAJ_COLONY
+				set_politics = {
+					ruling_party = authoritarian_monarchism
+					}
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = H43
+				}
+			H43 = {
+				transfer_state = PREV
+				set_cosmetic_tag = RAJ_COLONY
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = H46
+				}
+			H46 = {
+				transfer_state = PREV
+				set_cosmetic_tag = RAJ_COLONY
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = H48
+				}
+			H48 = {
+				transfer_state = PREV
+				set_cosmetic_tag = RAJ_COLONY
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = H50
+				}
+			H50 = {
+				transfer_state = PREV
+				set_cosmetic_tag = RAJ_COLONY
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = H51
+				}
+			H51 = {
+				transfer_state = PREV
+				set_cosmetic_tag = RAJ_COLONY
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = KFS
+				}
+			KFS = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_owned_by = RAJ
+				OR = {
+					is_core_of = PAK
+					is_core_of = EPU
+					}
+				NOT = {
+					is_core_of = BAN
+					}
+				}
+			PAK = {
+				transfer_state = PREV
+				set_politics = {
+					ruling_party = fascism
+					}
+				}
+			}
+		every_state = {
+			limit = {
+				is_owned_by = RAJ
+				OR = {
+					is_core_of = ASM
+					}
+				}
+			ASM = {
+				transfer_state = PREV
+				set_cosmetic_tag = RAJ_COLONY
+				set_politics = {
+					ruling_party = monarchism
+					}
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = SND
+				}
+			SND = {
+				transfer_state = PREV
+				drop_cosmetic_tag = yes
+				set_politics = {
+					ruling_party = democratic_monarchism
+					}
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = TLN
+				NOT = {
+					is_core_of = H51
+					is_core_of = PUD
+					is_core_of = TVC
+					}
+				}
+			TLN = {
+				transfer_state = PREV
+				set_politics = {
+					ruling_party = monarchism
+					}
+				set_cosmetic_tag = RAJ_COLONY
+				}
+			}
+		TLN = {
+			transfer_state = 424
+			transfer_state = 3261
+			transfer_state = 11760
+			transfer_state = 13460
+			transfer_state = 13461
+			transfer_state = 13462
+			transfer_state = 13463
+			transfer_state = 13467
+			transfer_state = 13468
+			transfer_state = 13469
+			transfer_state = 13470
+			transfer_state = 13471
+			}
+		every_country = {
+				limit = {
+					OR = {
+						tag = SKM
+						tag = BHU
+						tag = BHW
+						tag = KLA
+						tag = SWT
+						tag = HZR
+						tag = KHS
+						tag = CTL
+						tag = HZA
+						tag = AMB
+						tag = NAG
+						}
+					}
+				drop_cosmetic_tag = yes
+				}
+		every_country = {
+				limit = {
+					OR = {
+						tag = WAA
+						tag = TCH
+						tag = KRR
+						tag = KYB
+						tag = KHS
+						}
+					}
+				set_cosmetic_tag = TRIBAL_BROWN
+				}
+		GLG = {
+			transfer_state = 1322
+			set_politics = {
+				ruling_party = socialist_monarchy
+				}
+			}
+		PMR = {
+			transfer_state = 13315
+			transfer_state = 10345
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = authoritarian_monarchism
+				}
+			}
+		BDK = {
+			transfer_state = 3323
+			transfer_state = 3631
+			transfer_state = 10224
+			transfer_state = 10226
+			}
+		WAA = {
+			transfer_state = 13304
+			transfer_state = 14660
+			transfer_state = 14661
+			}
+		AFG = {
+			transfer_state = 445
+			transfer_state = 3179
+			transfer_state = 3634
+			transfer_state = 4289
+			transfer_state = 10738
+			transfer_state = 14662
+			transfer_state = 14663
+			transfer_state = 14664
+			transfer_state = 14678
+			transfer_state = 4290
+			transfer_state = 3561
+			transfer_state = 5877
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
+			}
+		KLA = {
+			transfer_state = 14672
+			transfer_state = 6255
+			transfer_state = 4288
+			transfer_state = 3178
+			transfer_state = 4004
+			transfer_state = 6254
+			transfer_state = 14665
+			set_cosmetic_tag = SILVER
+			}
+		MKN = {
+			transfer_state = 6252
+			transfer_state = 6253
+			transfer_state = 3180
+			transfer_state = 410
+			transfer_state = 8094
+			transfer_state = 14814
+			transfer_state = 3560
+			set_cosmetic_tag = SILVER
+			}
+		BLO = {
+			transfer_state = 8091
+			transfer_state = 2514
+			set_cosmetic_tag = SILVER
+			set_politics = {
+				ruling_party = liberal_republic
+				}
+			}
+		LBE = {
+			set_cosmetic_tag = SILVER
+			}
+		KAS = {
+			set_cosmetic_tag = PAK_COLONY
+			set_politics = {
+				ruling_party = democratic_monarchism
+				}
+			}
+		LAD = {
+			transfer_state = 1318
+			transfer_state = 2343
+			transfer_state = 3056
+			transfer_state = 14657
+			transfer_state = 14656
+			transfer_state = 16766
+			transfer_state = 16770
+			transfer_state = 16771
+			set_cosmetic_tag = PAK_COLONY
+			set_politics = {
+				ruling_party = centrist_republic
+				}
+			}
+		CHM = {
+			set_cosmetic_tag = PAK_COLONY
+			}
+		PAK = {
+			transfer_state = 16759
+			transfer_state = 1320
+			}
+		OMN = {
+			transfer_state = 3558
+			transfer_state = 3557
+			transfer_state = 3616
+			transfer_state = 3556
+			transfer_state = 3555
+			transfer_state = 2700
+			}
+		RAJ = {
+			transfer_state = 14064
+			transfer_state = 14065
+			transfer_state = 14066
+			transfer_state = 11756
+			transfer_state = 13296
+			transfer_state = 13293
+			transfer_state = 13291
+			transfer_state = 13290
+			transfer_state = 13289
+			transfer_state = 13288
+			transfer_state = 13287
+			transfer_state = 3258
+			transfer_state = 3259
+			transfer_state = 11757
+			transfer_state = 10563
+			transfer_state = 3095
+			transfer_state = 3096
+			transfer_state = 3099
+			transfer_state = 14607
+			transfer_state = 10575
+			transfer_state = 11801
+			transfer_state = 11802
+			transfer_state = 11804
+			transfer_state = 11805
+			transfer_state = 11806
+			transfer_state = 11807
+			transfer_state = 11810
+			transfer_state = 17051
+			transfer_state = 1003
+			transfer_state = 7071
+			transfer_state = 16957
+			transfer_state = 16958
+			transfer_state = 16966
+			transfer_state = 4303
+			transfer_state = 14647
+			}
+	##OCEANIA 1836##
 		every_state = {
 			limit = {
 				is_core_of = AA0
@@ -5334,66 +5652,6 @@
 					ruling_party = anarchism_ideology
 					}
 				}
-			}
-		every_state = {
-			limit = {
-				is_claimed_by = HYD
-				}
-			HYD = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = H17
-				}
-			H17 = {
-				transfer_state = PREV
-				set_cosmetic_tag = RAJ_COLONY
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = H43
-				}
-			H43 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = H46
-				}
-			H46 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = H48
-				}
-			H48 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = H50
-				}
-			H50 = {
-				transfer_state = PREV
-				}
-			}
-		SKM = {
-			drop_cosmetic_tag = yes
-			}
-		BHU = {
-			drop_cosmetic_tag = yes
-			}
-		RAJ = {
-			transfer_state = 14064
-			transfer_state = 14065
-			transfer_state = 14066
 			}
 				}
 			}
@@ -8907,7 +9165,17 @@
 							transfer_state = PREV
 								}
 							}
+							
 					every_state = {
+						limit = {
+							is_core_of = NFL
+							NOT = { is_core_of = SPM }
+							}	
+						CAN = {
+							transfer_state = PREV
+							}
+							}
+						every_state = {
 						limit = {
 							OR = {
 							is_core_of = GER
