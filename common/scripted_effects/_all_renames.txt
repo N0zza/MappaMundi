@@ -338,6 +338,10 @@ do_all_renames = {
 					tag = WR2
 					tag = BL2
 					tag = KC2
+					tag = GGM
+					tag = SGM
+					tag = BGM
+					tag = HGM
 					AND = {
 						tag = MC2
 						NOT = {
@@ -355,10 +359,7 @@ do_all_renames = {
 							tag = CZC
 							tag = CZE
 							tag = SLO
-							tag = GGM
-							tag = SGM
-							tag = BGM
-							tag = HGM
+							tag = BGN
 						}
 						has_government = national_socialism
 					}
@@ -381,7 +382,10 @@ do_all_renames = {
 					}
 					tag = VGR
 					AND = {
-						tag = KHE
+						OR = {
+							tag = KHE
+							tag = BGN
+						}
 						has_government = republican_fascism
 					}
 					AND = {
@@ -713,7 +717,10 @@ do_all_renames = {
 					tag = UKR
 					AND = {
 						tag = UA2
-						has_government = neutrality
+						OR = {
+							has_government = neutrality
+							has_government = democratic
+						}
 					}
 				}
 			}
