@@ -1096,6 +1096,7 @@
 						tag = MZB
 						tag = GOA
 						tag = ETM
+						tag = MCU
 						}
 					}
 				set_cosmetic_tag = POR_MONARCHISM
@@ -5711,7 +5712,8 @@
 			limit = {
 				OR = {
 					is_core_of = KDZ
-					is_claimed_by = KDZ
+					is_core_of = KLB
+					is_core_of = TKG
 					}
 				}
 			KDZ = {
@@ -5747,6 +5749,25 @@
 				is_core_of = MMN
 				}
 			MMN = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = DIN
+				}
+			DIN = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = HRT
+				NOT = {
+					is_core_of = SST
+					}
+				}
+			HRT = {
 				transfer_state = PREV
 				}
 			}
@@ -5895,6 +5916,13 @@
 			transfer_state = 13304
 			transfer_state = 14660
 			transfer_state = 14661
+			}
+		IND = {
+			transfer_state = 4733
+			transfer_state = 4570
+			set_politics = {
+				ruling_party = stratocratic_monarchism
+				}
 			}
 		AFG = {
 			transfer_state = 445
