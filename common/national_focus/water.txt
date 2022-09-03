@@ -1089,6 +1089,17 @@
 						ruling_party = conservative_monarchism
 						}
 					}
+				every_country = {
+				limit = {
+					OR = {
+						tag = ANG
+						tag = MZB
+						tag = GOA
+						tag = ETM
+						}
+					}
+				set_cosmetic_tag = POR_MONARCHISM
+				}
 				KNE = {
 					set_politics = {
 						ruling_party = conservative_monarchism
@@ -2791,7 +2802,7 @@
 					}
 					
 					AFA = {
-						transfer_state = 1533
+						transfer_state = 1553
 						transfer_state = 2333
 						transfer_state = 2831
 						transfer_state = 4103
@@ -3747,6 +3758,8 @@
 					
 					##1836 ASIA##
 			PER = {
+				transfer_state = 12467
+				transfer_state = 3881
 				set_cosmetic_tag = PERSIA_YELLOW
 				set_politics = {
 					ruling_party = monarchism
@@ -4428,6 +4441,9 @@
 							is_core_of = KHI
 							is_core_of = TCP
 							is_core_of = KPK
+							}
+						NOT = {
+							is_owned_by = PER
 							}
 						}
 					KHI = {
@@ -5669,9 +5685,68 @@
 			}
 		every_state = {
 			limit = {
-				is_core_of = KFS
+				is_core_of = SHN
 				}
-			KFS = {
+			SHN = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = ROS
+				}
+			ROS = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = DVZ
+				}
+			DVZ = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = KDZ
+					is_claimed_by = KDZ
+					}
+				}
+			KDZ = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = SBN
+				}
+			SBN = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = SIU
+				}
+			SIU = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = ADK
+				}
+			ADK = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = MMN
+				}
+			MMN = {
 				transfer_state = PREV
 				}
 			}
@@ -5691,6 +5766,17 @@
 				set_politics = {
 					ruling_party = fascism
 					}
+				}
+			}
+		every_state = {
+			limit = {
+				is_owned_by = KAS
+				OR = {
+					is_core_of = PAK
+					}
+				}
+			AZK = {
+				transfer_state = PREV
 				}
 			}
 		every_state = {
@@ -5765,6 +5851,7 @@
 						tag = HZA
 						tag = AMB
 						tag = NAG
+						tag = DIR
 						}
 					}
 				drop_cosmetic_tag = yes
@@ -5800,6 +5887,9 @@
 			transfer_state = 3631
 			transfer_state = 10224
 			transfer_state = 10226
+			set_politics = {
+				ruling_party = monarchism
+				}
 			}
 		WAA = {
 			transfer_state = 13304
@@ -5866,9 +5956,7 @@
 			transfer_state = 3056
 			transfer_state = 14657
 			transfer_state = 14656
-			transfer_state = 16766
 			transfer_state = 16770
-			transfer_state = 16771
 			set_cosmetic_tag = PAK_COLONY
 			set_politics = {
 				ruling_party = centrist_republic
@@ -5888,6 +5976,20 @@
 			transfer_state = 3556
 			transfer_state = 3555
 			transfer_state = 2700
+			}
+		AZK = {
+			transfer_state = 16774
+			transfer_state = 441
+			transfer_state = 16775
+			transfer_state = 16772
+			transfer_state = 16773
+			transfer_state = 11162
+			transfer_state = 5846
+			transfer_state = 16765
+			set_cosmetic_tag = PAK_COLONY
+			set_politics = {
+				ruling_party = conservative_monarchism
+				}
 			}
 		RAJ = {
 			transfer_state = 14064
