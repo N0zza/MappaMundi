@@ -1,0 +1,451 @@
+do_tno_german_civil_war = {
+	
+	every_state = {
+		limit = {
+			is_core_of = HGM
+		}
+		HGM = {
+			transfer_state = PREV
+		}
+	}
+	
+	every_state = {
+		limit = {
+			is_core_of = GGM
+		}
+		GGM = {
+			transfer_state = PREV
+		}
+	}
+	
+	every_state = {
+		limit = {
+			is_core_of = SGM
+		}
+		SGM = {
+			transfer_state = PREV
+		}
+	}
+	
+	every_state = {
+		limit = {
+			is_core_of = BGM
+		}
+		BGM = {
+			transfer_state = PREV
+		}
+	}
+	
+	every_state = {
+		limit = {
+			is_core_of = PL2
+		}
+		PL2 = {
+			transfer_state = PREV
+		}
+	}
+	
+	every_state = {
+		limit = {
+			is_core_of = PL3
+		}
+		PL3 = {
+			transfer_state = PREV
+		}
+	}
+	
+	SLO = {
+		every_state = {
+			limit = {
+				is_core_of = SLO
+			}
+			SLO = {
+				transfer_state = PREV
+			}
+		}
+		
+		set_politics = {
+		ruling_party = republican_fascism
+		}
+		
+		set_popularities = {
+		republican_fascism = 50
+		national_socialism = 25
+		stratocratic = 25
+		}
+	}
+	
+	every_state = {
+		limit = {
+			is_claimed_by = HUN
+			AND = {
+			is_core_of = SLO
+			}
+			NOT = {
+			is_core_of = BGM
+			is_core_of = ROM			
+			}
+		}
+		HUN = {
+			add_state_core = PREV
+		}
+	}
+	
+	every_state = {
+		limit = {
+			is_core_of = HUN
+			NOT = {
+			is_core_of = BGM
+			is_core_of = ROM
+			}
+		}
+		HUN = {
+			transfer_state = PREV
+		}
+	}
+	
+	
+	BRL = {
+		add_state_core = 774
+		add_state_core = 1805
+		add_state_core = 2523
+		add_state_core = 4830
+		add_state_core = 4831
+		add_state_core = 5101
+		add_state_core = 5102
+		add_state_core = 5103
+		add_state_core = 5975
+		add_state_core = 7465
+		add_state_core = 8224
+		
+		every_state = {
+			limit = {
+				is_core_of = BRL
+			}
+			BRL = {
+				transfer_state = PREV
+			}
+		}
+		
+		set_politics = {
+		ruling_party = stratocratic
+		}
+		
+		set_popularities = {
+		stratocratic = 70
+		national_socialism = 20
+		neutrality = 10
+		}
+	}
+	
+	CZ2 = {
+		every_state = {
+			limit = {
+				is_core_of = CZC
+				NOT = {
+				is_core_of = BGM
+				is_core_of = GGM
+				}
+			}
+			CZ2 = {
+				add_state_core = PREV
+			}
+		}
+		
+		every_state = {
+			limit = {
+				is_core_of = CZ2
+			}
+			CZ2 = {
+				transfer_state = PREV
+			}
+		}
+		
+		set_popularities = {
+		stratocratic = 55
+		national_socialism = 25
+		neutrality = 20
+		}
+		
+		set_politics = {
+		ruling_party = stratocratic
+		}
+	}
+}
+
+do_tno_ostland_civil_war = {
+	
+	RIG = {
+		every_state = {
+			limit = {
+				OR = {
+				is_core_of = RIG
+				is_core_of = SSK
+				is_core_of = BOB
+				is_core_of = MSK
+				is_core_of = MGV
+				is_core_of = LAT
+				is_core_of = EST
+				
+				state = 95
+				state = 1763
+				state = 3239
+				state = 4846
+				state = 5563
+				state = 5998
+				state = 6000
+				state = 11001
+				state = 17904
+				state = 17838
+				state = 17804
+				state = 17805
+				state = 17808
+				state = 17809
+				state = 17812
+				state = 17813
+				state = 17815
+				state = 17863
+				state = 17944
+				state = 17945
+				state = 17946
+				state = 17958
+				state = 17959
+				
+				}
+				NOT = {
+				is_owned_by = WLN
+				is_owned_by = BLR
+				is_owned_by = RUS
+				is_owned_by = LTG
+				is_owned_by = SUV
+				is_owned_by = AUK
+				
+				state = 995
+				state = 2119
+				state = 17803
+				state = 17804
+				state = 17902
+				state = 17903
+				state = 17953
+				state = 17955
+				state = 17956
+				}
+			}
+			RIG = {
+				transfer_state = PREV
+			}
+		}
+		
+		set_popularities = {
+		national_socialism = 100
+		}
+		
+		set_politics = {
+		ruling_party = national_socialism
+		}
+	}
+	
+	WLN = {
+		every_state = {
+			limit = {
+				OR = {
+				is_core_of = WLN
+				state = 206
+				state = 4086
+				state = 17772
+				state = 17807
+				state = 17957
+				state = 17794
+				state = 17795
+				}
+				NOT = {
+				is_core_of = HGM
+				
+				state = 5564
+				state = 5788
+				state = 17791
+				state = 17801
+				state = 17802
+				state = 17842
+				state = 17845
+				state = 17847
+				}
+			}
+			WLN = {
+				transfer_state = PREV
+			}
+		}
+		
+		set_popularities = {
+		liberal_republic = 60
+		neutrality = 25
+		republican_fascism = 15
+		}
+		
+		set_politics = {
+		ruling_party = liberal_republic
+		}
+	}
+	
+	AUK = {
+		every_state = {
+			limit = {
+				OR = {
+				is_core_of = AUK
+				
+				state = 6003
+				state = 17790
+				state = 17800
+				state = 4078
+				state = 4079
+				state = 4080
+				state = 7406
+				state = 17788
+				state = 17789
+				state = 17849
+				}
+				NOT = {
+				is_owned_by = LTG
+				is_owned_by = RIG
+				is_owned_by = SUV
+				}
+			}
+			AUK = {
+				transfer_state = PREV
+			}
+		}
+		
+		set_popularities = {
+		stratocratic = 100
+		}
+		
+		set_politics = {
+		ruling_party = stratocratic
+		}
+	}
+	
+	LTG = {
+		every_state = {
+			limit = {
+				OR = {
+				is_core_of = LTG
+				
+				state = 993
+				state = 1293
+				state = 4851
+				state = 6012
+				}
+				NOT = {
+				state = 4847
+				state = 5777
+				state = 5778
+				state = 17775
+				state = 17781
+				state = 17782
+				}
+			}
+			LTG = {
+				transfer_state = PREV
+			}
+		}
+		
+		set_popularities = {
+		national_socialism = 100
+		}
+		
+		set_politics = {
+		ruling_party = national_socialism
+		}
+	}
+	
+	SUV = {
+		every_state = {
+			limit = {
+				OR = {
+				is_core_of = SUV
+				is_core_of = LIT
+				is_core_of = COU
+				
+				state = 995
+				state = 2119
+				state = 17792
+				state = 17793
+				}
+				NOT = {
+				is_owned_by = LTG
+				is_core_of = HGM
+				is_owned_by = AUK
+				is_core_of = WLN
+				
+				state = 4086
+				state = 4846
+				state = 11001
+				state = 17772
+				state = 17794
+				state = 17795
+				}
+			}
+			SUV = {
+				transfer_state = PREV
+			}
+		}
+		
+		set_popularities = {
+		national_socialism = 100
+		}
+		
+		set_politics = {
+		ruling_party = national_socialism
+		}
+	}
+	
+	NOW = {
+		every_state = {
+			limit = {
+				OR = {
+				is_core_of = NOW
+				is_core_of = WR2
+				
+				state = 5564
+				state = 5788
+				state = 17791
+				state = 17801
+				state = 17802
+				state = 17803
+				state = 17804
+				state = 17842
+				state = 17845
+				state = 17847
+				state = 17955
+				}
+				NOT = {
+				is_core_of = HGM
+				is_owned_by = WLN
+				is_owned_by = RIG
+				is_owned_by = SUV
+				is_owned_by = LTG
+				is_owned_by = AUK
+				
+				state = 206
+				state = 1289
+				state = 17807
+				state = 17846
+				}
+			}
+			NOW = {
+				transfer_state = PREV
+			}
+		}
+		
+		set_popularities = {
+		republican_fascism = 100
+		}
+		
+		set_politics = {
+		ruling_party = republican_fascism
+		}
+		
+		set_capital = {state = 207}
+	}
+	
+}

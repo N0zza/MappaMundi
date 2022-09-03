@@ -1376,14 +1376,31 @@
 						}
 					}
 				USA = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "President Andrew Jackson"
-            			desc = ""
-            			picture = 1836_USA_Andrew_Jackson.tga
-            			expire = "1965.1.1"
-            			ideology = socdem
+					
+					set_cosmetic_tag = USA_NEW
+					
+					kill_country_leader = conservatism
+					
+						create_country_leader = {
+							name = "President Andrew Jackson"
+							desc = ""
+							picture = 1836_USA_Andrew_Jackson.tga
+							expire = "1965.1.1"
+							ideology = conservatism
 						}
+						
+						set_politics = {
+						ruling_party = democratic
+						}
+						
+						set_popularities = {
+							democratic = 33
+							liberal_republic = 28
+							neutrality = 17
+							centrist_republic = 18
+							socialism_ideology = 4
+						}
+						
 					}
 				POR = {
 					kill_country_leader = yes
@@ -2435,9 +2452,28 @@
 						}
 					}
 					
+					# Ethiopia
+					
 					ASS = {
+						add_state_core = 1546
+						add_state_core = 5326
+						add_state_core = 6559
+						add_state_core = 7853
+						add_state_core = 7936
 						add_state_core = 7940
+						add_state_core = 9697
+						add_state_core = 9698
+						add_state_core = 10468
+						add_state_core = 10470
+						add_state_core = 12171
+						add_state_core = 12172
+						add_state_core = 12173
+						add_state_core = 13143
+						add_state_core = 13144
 						add_state_core = 13146
+						add_state_core = 17103
+						add_state_core = 17109
+						add_state_core = 17115
 						
 						every_state = {
 							limit = {
@@ -2452,12 +2488,28 @@
 						}
 					}
 					
+					BGZ = {
+						transfer_state = 1550
+						transfer_state = 6866
+						
+						set_politics = {
+							ruling_party = monarchism
+							elections_allowed = no
+							last_election = "1836.1.1"
+							election_frequency = 48
+						}
+						
+						set_popularities = {
+							monarchism = 100
+						}
+					}
+					
+					
 					ETH = {
 						every_state = {
 							limit = {
 								OR = {
 								is_core_of = ETH
-								is_core_of = ERI
 								}
 								NOT = {
 									is_core_of = ASS
@@ -2498,7 +2550,7 @@
 						monarchism = 100
 						}
 					}
-					
+
 					E02 = {
 						every_state = {
 							limit = {
@@ -2541,8 +2593,28 @@
 								transfer_state = PREV
 							}
 						}
-						
-						transfer_state = 17103
+					}
+					
+					E06 = {
+						every_state = {
+							limit = {
+								is_core_of = E06
+							}
+							E06 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E07 = {
+						every_state = {
+							limit = {
+								is_core_of = E07
+							}
+							E07 = {
+								transfer_state = PREV
+							}
+						}
 					}
 					
 					E08 = {
@@ -2578,10 +2650,18 @@
 						}
 					}
 					
+					E11 = {
+						every_state = {
+							limit = {
+								is_core_of = E11
+							}
+							E11 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
 					E12 = {
-						add_state_core = 17098
-						remove_state_core = 17121
-						
 						every_state = {
 							limit = {
 								is_core_of = E12
@@ -2590,7 +2670,173 @@
 								transfer_state = PREV
 							}
 						}
+					}
+					
+					E17 = {
+						every_state = {
+							limit = {
+								is_core_of = E17
+							}
+							E17 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E18 = {
+						every_state = {
+							limit = {
+								is_core_of = E18
+							}
+							E18 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E19 = {
+						every_state = {
+							limit = {
+								is_core_of = E19
+							}
+							E19 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E20 = {
+						every_state = {
+							limit = {
+								is_core_of = E20
+							}
+							E20 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E21 = {
+						every_state = {
+							limit = {
+								is_core_of = E21
+							}
+							E21 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E22 = {
+						every_state = {
+							limit = {
+								is_core_of = E22
+							}
+							E22 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E23 = {
+						every_state = {
+							limit = {
+								is_core_of = E23
+							}
+							E23 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E24 = {
+						every_state = {
+							limit = {
+								is_core_of = E24
+							}
+							E24 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					E25 = {
+						every_state = {
+							limit = {
+								is_core_of = E25
+							}
+							E25 = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					ERI = {
+						transfer_state = 9806
+						transfer_state = 10484
+						transfer_state = 12193
 						
+						set_politics = {
+							ruling_party = democratic_monarchism
+							elections_allowed = no
+							last_election = "1836.1.1"
+							election_frequency = 48
+						}
+						
+						set_popularities = {
+							democratic_monarchism = 100
+						}
+						
+						set_cosmetic_tag = ERI
+					}
+					
+					AFA = {
+						transfer_state = 1533
+						transfer_state = 2333
+						transfer_state = 2831
+						transfer_state = 4103
+						transfer_state = 4104
+						transfer_state = 4105
+						transfer_state = 4106
+						transfer_state = 6631
+						transfer_state = 6655
+						transfer_state = 6656
+						transfer_state = 6875
+						transfer_state = 6876
+						transfer_state = 7861
+						transfer_state = 7939
+						transfer_state = 7940
+						transfer_state = 9261
+						transfer_state = 10464
+						transfer_state = 10466
+						transfer_state = 10467
+						transfer_state = 10483
+						transfer_state = 12170
+						transfer_state = 17082
+						transfer_state = 17116
+						transfer_state = 17117
+						
+						set_politics = {
+							ruling_party = centrist_republic
+							elections_allowed = no
+							last_election = "1836.1.1"
+							election_frequency = 48
+						}
+						
+						set_popularities = {
+						centrist_republic = 100
+						}
+						
+						set_cosmetic_tag = AFA_OTTO
+						
+						every_state = {
+							limit = {
+							is_owned_by = AFA
+							}
+							AFA = {
+							add_state_core = PREV
+							}
+						}
 					}
 					
 					GMM = {
@@ -2605,9 +2851,7 @@
 					}
 					
 					GM2 = {
-						add_state_core = 6865
 						add_state_core = 17096
-						add_state_core = 17097
 						
 						every_state = {
 							limit = {
@@ -2625,6 +2869,7 @@
 						add_state_core = 5306
 						add_state_core = 8114
 						add_state_core = 8115
+						add_state_core = 15448
 						add_state_core = 17690
 						add_state_core = 17695
 						add_state_core = 17696
@@ -2648,6 +2893,32 @@
 							GRA = {
 								transfer_state = PREV
 							}
+						}
+					}
+					
+					HAR = {
+						add_state_core = 7850
+						add_state_core = 13147
+						add_state_core = 17105
+						
+						every_state = {
+							limit = {
+								is_core_of = HAR
+							}
+							HAR = {
+								transfer_state = PREV
+							}
+						}
+						
+						set_politics = {
+							ruling_party = monarchism
+							elections_allowed = no
+							last_election = "1836.1.1"
+							election_frequency = 48
+						}
+						
+						set_popularities = {
+							monarchism = 100
 						}
 					}
 					
@@ -2676,12 +2947,14 @@
 					}
 					
 					LME = {
-						add_state_core = 13158
 						add_state_core = 17095
 						
 						every_state = {
 							limit = {
 								is_core_of = LME
+								NOT = {
+								is_core_of = E17
+								}
 							}
 							LME = {
 								transfer_state = PREV
@@ -2720,12 +2993,12 @@
 						add_state_core = 1550
 						add_state_core = 5258
 						add_state_core = 5322
+						add_state_core = 6865
 						add_state_core = 6866
 						add_state_core = 7850
 						add_state_core = 7932
 						add_state_core = 9260
 						add_state_core = 9794
-						add_state_core = 9796
 						add_state_core = 9799
 						add_state_core = 10367
 						add_state_core = 13144
@@ -2735,6 +3008,7 @@
 						add_state_core = 13176
 						remove_state_core = 17103
 						add_state_core = 17109
+						add_state_core = 17097
 						
 						every_state = {
 							limit = {
@@ -2793,6 +3067,23 @@
 						remove_state_core = 7850
 					}
 					
+					
+					SNN = {
+						transfer_state = 13161
+						transfer_state = 13163
+						
+						set_politics = {
+						ruling_party = democratic_monarchism
+						elections_allowed = no
+						last_election = "1836.1.1"
+						election_frequency = 48
+						}
+						
+						set_popularities = {
+						democratic_monarchism = 100
+						}
+					}
+					
 					SOM = {
 						add_state_core = 5003
 						add_state_core = 7933
@@ -2833,6 +3124,94 @@
 						set_cosmetic_tag = TRIBAL_BROWN
 					}
 					
+					SML = {
+						every_state = {
+							limit = {
+								is_core_of = SML
+								NOT = {
+								is_owned_by = SML
+								}
+							}
+							SML = {
+								remove_state_core = PREV
+							}
+						}
+						
+						transfer_state = 269
+						transfer_state = 1552
+						transfer_state = 1614
+						transfer_state = 5316
+						transfer_state = 5318
+						transfer_state = 7854
+						transfer_state = 17179
+						
+						set_politics = {
+							ruling_party = democratic_monarchism
+							elections_allowed = no
+							last_election = "1836.1.1"
+							election_frequency = 48
+						}
+						
+						set_popularities = {
+						democratic_monarchism = 100
+						}
+						
+						set_cosmetic_tag = SML
+						
+					}
+					
+					TIG = {
+						every_state = {
+							limit = {
+								is_core_of = TIG
+							}
+							TIG = {
+								remove_state_core = PREV
+							}
+						}
+						
+						add_state_core = 2374
+						add_state_core = 4100
+						add_state_core = 4101
+						add_state_core = 4102
+						add_state_core = 9694
+						add_state_core = 9695
+						add_state_core = 9696
+						add_state_core = 10469
+						add_state_core = 15443
+						add_state_core = 15444
+						add_state_core = 15450
+						add_state_core = 15454
+						add_state_core = 17083
+						add_state_core = 17088
+						add_state_core = 17089
+						add_state_core = 17113
+						add_state_core = 17114
+						add_state_core = 17145
+						add_state_core = 17146
+						add_state_core = 17196
+						
+						every_state = {
+							limit = {
+								is_core_of = TIG
+							}
+							TIG = {
+								transfer_state = PREV
+							}
+						}
+						
+						set_politics = {
+							ruling_party = democratic_monarchism
+							elections_allowed = no
+							last_election = "1836.1.1"
+							election_frequency = 48
+						}
+						
+						set_popularities = {
+						democratic_monarchism = 100
+						}
+					}
+					
 					TNA = {
 						add_state_core = 6854
 						add_state_core = 9800
@@ -2847,9 +3226,22 @@
 						}
 					}
 					
+					WAG = {
+						remove_state_core = 17084
+						
+						every_state = {
+							limit = {
+								is_core_of = WAG
+							}
+							WAG = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
 					# North Africa
 					
-					SGR = { # Tribes put on very top for easier coding
+					SGR = { # Tribes put before the countries for easier coding shit
 						transfer_state = 459
 						transfer_state = 3427
 						transfer_state = 3428
@@ -2897,6 +3289,7 @@
 						add_state_core = 1841
 						add_state_core = 2153
 						add_state_core = 2216
+						add_state_core = 2287
 						add_state_core = 2745
 						add_state_core = 2875
 						add_state_core = 3882
@@ -2941,7 +3334,10 @@
 						add_state_core = 6767
 						add_state_core = 6768
 						add_state_core = 6769
+						add_state_core = 6869
 						add_state_core = 6870
+						add_state_core = 6871
+						add_state_core = 6872
 						add_state_core = 6899
 						add_state_core = 6901
 						add_state_core = 6902
@@ -2959,6 +3355,7 @@
 						add_state_core = 7659
 						add_state_core = 7663
 						add_state_core = 7664
+						add_state_core = 7832
 						add_state_core = 8136
 						add_state_core = 8137
 						add_state_core = 8140
@@ -2972,6 +3369,9 @@
 						add_state_core = 9891
 						add_state_core = 10176
 						add_state_core = 10178
+						add_state_core = 10353
+						add_state_core = 10354
+						add_state_core = 10364
 						add_state_core = 12102
 						add_state_core = 12103
 						add_state_core = 12104
@@ -3001,6 +3401,8 @@
 						add_state_core = 12151
 						add_state_core = 12152
 						add_state_core = 12153
+						add_state_core = 12155
+						add_state_core = 12156
 						add_state_core = 12683
 						add_state_core = 13069
 						add_state_core = 15077
@@ -3105,16 +3507,34 @@
 						set_cosmetic_tag = CNT_OTTO
 					}
 					
+					DRF = {
+						every_state = {
+							limit = {
+								is_core_of = DRF
+							}
+							DRF = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
 					EGY = {
 						add_state_core = 551
 						add_state_core = 643
 						add_state_core = 1037
+						add_state_core = 1561
 						add_state_core = 3867
 						add_state_core = 8106
+						add_state_core = 9093
+						add_state_core = 10361
+						add_state_core = 10472
+						add_state_core = 10473
 						add_state_core = 10474
 						add_state_core = 10475
 						add_state_core = 10478
 						add_state_core = 10479
+						add_state_core = 10480
+						add_state_core = 10488
 						add_state_core = 10500
 						add_state_core = 12108
 						add_state_core = 12112
@@ -3132,6 +3552,7 @@
 						add_state_core = 12179
 						add_state_core = 12180
 						add_state_core = 12181
+						add_state_core = 12200
 						add_state_core = 12205
 						
 						every_state = {
@@ -3224,6 +3645,48 @@
 						}
 					}
 					
+					SSU = {
+						add_state_core = 4737
+						add_state_core = 6854
+						add_state_core = 9796
+						add_state_core = 13162
+						add_state_core = 13169
+						add_state_core = 13173
+						add_state_core = 17097
+						
+						every_state = {
+							limit = {
+									OR = {
+									is_core_of = SSU
+									is_owned_by = UGA
+									}
+									NOT = {
+									is_core_of = E25
+									is_core_of = TNA
+									state = 5218
+									state = 5238
+									state = 6552
+									}
+							}
+							SSU = {
+								transfer_state = PREV
+							}
+						}
+						
+						set_politics = {
+							ruling_party = anarchism_ideology
+							elections_allowed = no
+							last_election = "1836.1.1"
+							election_frequency = 48
+						}
+						
+						set_popularities = {
+						anarchism_ideology = 100
+						}
+						
+						set_cosmetic_tag = TRIBAL_BROWN
+					}
+					
 					TGG = {
 						remove_state_core = 6376
 						remove_state_core = 6377
@@ -3240,7 +3703,46 @@
 					}
 					
 					TUN = {
-						set_cosmetic_tag = TUN_OTTO
+						set_cosmetic_tag = TUN_OTTO_BYLK
+					}
+					
+					WAD = {
+						every_state = {
+							limit = {
+								is_core_of = WAD
+							}
+							WAD = {
+								transfer_state = PREV
+							}
+						}
+					}
+					
+					# last things for africa 1836
+					
+					every_state = {
+						limit = {
+							is_owned_by = SUD
+							NOT = {
+							state = 6656
+							state = 10483
+							}
+						}
+						EGY = {
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							is_owned_by = ETH
+						}
+						ERI = {
+							transfer_state = PREV
+						}
+					}
+					
+					ETH = {
+					transfer_state = 1547
 					}
 					
 					##1836 ASIA##

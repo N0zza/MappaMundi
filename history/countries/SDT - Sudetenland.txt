@@ -15,27 +15,16 @@ set_technology = {
 	CAS1 = 1
 }
 
-
-
-	set_popularities = {
-		democratic 
-			 = 0
-		fascism
-			 = 100
-		neutrality
-			 = 0
-		}
-	set_politics = { 
- ruling_party = fascism
+set_popularities = {
+fascism = 10
+neutrality = 90
+}
+		
+set_politics = { 
+ ruling_party = neutrality
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
-}
-
-
-add_ideas = {
-	neutrality_idea	
-	limited_conscription
 }
 
 set_stability = 0.85
