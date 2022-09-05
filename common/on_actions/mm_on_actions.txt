@@ -4570,6 +4570,15 @@ on_actions = {
 						has_government = neutrality
 					}
 					set_cosmetic_tag = MC2_AUTHREP
+					if = {
+						limit = {
+							has_country_leader = {
+								name = "Militärgouverneur Albert Hoffman"
+								ruling_only = yes
+							}
+						set_cosmetic_tag = MC2_NATSOC
+						}
+					}
 				}
 				if = {
 					limit = {

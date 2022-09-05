@@ -3,15 +3,15 @@
 oob = "KC2_1936"
 
 set_popularities = {
-	republican_fascism = 74
-	national_socialism = 18
+	national_socialism = 74
+	republican_fascism = 18
 	fascism = 8
 }
 
 set_cosmetic_tag = KC2_NATSOC
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = national_socialism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -22,7 +22,7 @@ create_country_leader = {
 	desc = ""
 	picture = "KC2_Josias.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = natsoc
 	traits = {
 	}
 }
@@ -42,37 +42,7 @@ create_country_leader = {
 	desc = ""
 	picture = "KC2_Kaiser_Josias.tga"
 	expire = "1965.1.1"
-	ideology = stratmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Reichskommissar Paul Pleiger"
-	desc = ""
-	picture = "KC2_Pleiger.tga"
-	expire = "1965.1.1"
-	ideology = natsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Reichskommissar Wittekind Adolf Heinrich Georg-Wilhelm Prinz zu Waldeck und Pyrmont"
-	desc = ""
-	picture = "KC2_Wittekind.tga"
-	expire = "1965.1.1"
-	ideology = cenrep
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Kaiser Wittekind I zu Waldeck und Pyrmont"
-	desc = ""
-	picture = "KC2_Kaiser_Wittekind.tga"
-	expire = "1965.1.1"
-	ideology = authmon
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -88,7 +58,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Reichsprotekto Wittekind Adolf Heinrich Georg-Wilhelm Prinz zu Waldeck und Pyrmont"
+	name = "Reichsprotektor Wittekind Adolf Heinrich Georg-Wilhelm Prinz zu Waldeck und Pyrmont"
 	desc = ""
 	picture = "KC2_Wittekind.tga"
 	expire = "1965.1.1"
@@ -102,7 +72,7 @@ create_country_leader = {
 	desc = ""
 	picture = "KC2_Irakli.tga"
 	expire = "1965.1.1"
-	ideology = cenmon
+	ideology = authmon
 	traits = {
 	}
 }
