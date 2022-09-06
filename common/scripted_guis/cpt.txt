@@ -95,21 +95,29 @@ scripted_gui = {
 						}
 					}
 					OVERLORD = {
+						PREV = { 
+							save_party_popularities = yes
+						}
 						set_autonomy = {
 							target = PREV
 							autonomy_state = autonomy_free
+						}
+						PREV = { 
+							apply_party_popularities = yes
 						}
 					}
 				}
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						set_autonomy = {
 							target = PREV
 							autonomy_state = autonomy_free
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -119,6 +127,7 @@ scripted_gui = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						puppet = PREV
 						set_autonomy = {
@@ -126,6 +135,7 @@ scripted_gui = {
 							autonomy_state = autonomy_puppet
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -138,21 +148,29 @@ scripted_gui = {
 						}
 					}
 					OVERLORD = {
+						PREV = {
+							save_party_popularities = yes
+						}
 						set_autonomy = {
 							target = PREV
 							autonomy_state = autonomy_free
+						}
+						PREV = {
+							apply_party_popularities = yes
 						}
 					}
 				}
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						set_autonomy = {
 							target = PREV
 							autonomy_state = autonomy_free
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -162,6 +180,7 @@ scripted_gui = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						puppet = PREV
 						set_autonomy = {
@@ -169,6 +188,7 @@ scripted_gui = {
 							autonomy_state = autonomy_integrated_puppet
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -177,6 +197,7 @@ scripted_gui = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						puppet = PREV
 						set_autonomy = {
@@ -184,6 +205,7 @@ scripted_gui = {
 							autonomy_state = autonomy_puppet
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -192,6 +214,7 @@ scripted_gui = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						puppet = PREV
 						set_autonomy = {
@@ -199,6 +222,7 @@ scripted_gui = {
 							autonomy_state = autonomy_colony
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -207,6 +231,7 @@ scripted_gui = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						puppet = PREV
 						set_autonomy = {
@@ -215,6 +240,7 @@ scripted_gui = {
 						}
 					}
 					clr_country_flag = cpt_puppetee
+					apply_party_popularities = yes
 				}
 				bst_count_civf = yes
 			}
@@ -226,21 +252,29 @@ scripted_gui = {
 						}
 					}
 					OVERLORD = {
+						PREV = {
+							save_party_popularities = yes
+						}
 						set_autonomy = {
 							target = PREV
 							autonomy_state = autonomy_free
+						}
+						PREV = {
+							apply_party_popularities = yes
 						}
 					}
 				}
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						set_autonomy = {
 							target = PREV
 							autonomy_state = autonomy_free
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -250,6 +284,7 @@ scripted_gui = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						puppet = PREV
 						set_autonomy = {
@@ -257,6 +292,7 @@ scripted_gui = {
 							autonomy_state = autonomy_reichskommissariat
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -265,6 +301,7 @@ scripted_gui = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						puppet = PREV
 						set_autonomy = {
@@ -272,6 +309,7 @@ scripted_gui = {
 							autonomy_state = autonomy_reichsprotectorate
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -280,6 +318,7 @@ scripted_gui = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						puppet = PREV
 						set_autonomy = {
@@ -287,6 +326,7 @@ scripted_gui = {
 							autonomy_state = autonomy_satellite
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -299,21 +339,29 @@ scripted_gui = {
 						}
 					}
 					OVERLORD = {
+						PREV = {
+							save_party_popularities = yes
+						}
 						set_autonomy = {
 							target = PREV
 							autonomy_state = autonomy_free
+						}
+						PREV = {
+							apply_party_popularities = yes
 						}
 					}
 				}
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						set_autonomy = {
 							target = PREV
 							autonomy_state = autonomy_free
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -323,6 +371,7 @@ scripted_gui = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						puppet = PREV
 						set_autonomy = {
@@ -330,6 +379,7 @@ scripted_gui = {
 							autonomy_state = autonomy_wtt_imperial_protectorate
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -338,6 +388,7 @@ scripted_gui = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						puppet = PREV
 						set_autonomy = {
@@ -345,6 +396,7 @@ scripted_gui = {
 							autonomy_state = autonomy_wtt_imperial_associate
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -357,21 +409,29 @@ scripted_gui = {
 						}
 					}
 					OVERLORD = {
+						PREV = {
+							save_party_popularities = yes
+						}
 						set_autonomy = {
 							target = PREV
 							autonomy_state = autonomy_free
+						}
+						PREV = {
+							apply_party_popularities = yes
 						}
 					}
 				}
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						set_autonomy = {
 							target = PREV
 							autonomy_state = autonomy_free
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -381,6 +441,7 @@ scripted_gui = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						puppet = PREV
 						set_autonomy = {
@@ -388,6 +449,7 @@ scripted_gui = {
 							autonomy_state = autonomy_wtt_imperial_protectorate
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -396,6 +458,7 @@ scripted_gui = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						puppet = PREV
 						set_autonomy = {
@@ -403,6 +466,7 @@ scripted_gui = {
 							autonomy_state = autonomy_wtt_imperial_associate
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -411,6 +475,7 @@ scripted_gui = {
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						puppet = PREV
 						set_autonomy = {
@@ -418,6 +483,7 @@ scripted_gui = {
 							autonomy_state = autonomy_wtt_imperial_subject
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
@@ -430,21 +496,29 @@ scripted_gui = {
 						}
 					}
 					OVERLORD = {
+						PREV = {
+							save_party_popularities = yes
+						}
 						set_autonomy = {
 							target = PREV
 							autonomy_state = autonomy_free
+						}
+						PREV = {
+							apply_party_popularities = yes
 						}
 					}
 				}
 				set_temp_variable = { puppeteer = this }
 				every_country = {
 					limit = { has_country_flag = cpt_puppetee }
+					save_party_popularities = yes
 					var:puppeteer = {
 						set_autonomy = {
 							target = PREV
 							autonomy_state = autonomy_free
 						}
 					}
+					apply_party_popularities = yes
 					clr_country_flag = cpt_puppetee
 				}
 				bst_count_civf = yes
