@@ -55,8 +55,8 @@ do_tno_german_civil_war = {
 	every_state = {
 		limit = {
 			OR = {
-			is_core_of = PL3
-			is_claimed_by = PL3
+				is_core_of = PL3
+				is_claimed_by = PL3
 			}
 		}
 		PL3 = {
@@ -73,15 +73,13 @@ do_tno_german_civil_war = {
 				transfer_state = PREV
 			}
 		}
-		
 		set_politics = {
-		ruling_party = republican_fascism
+			ruling_party = republican_fascism
 		}
-		
 		set_popularities = {
-		republican_fascism = 50
-		national_socialism = 25
-		stratocratic = 25
+			republican_fascism = 50
+			national_socialism = 25
+			stratocratic = 25
 		}
 	}
 	
@@ -91,7 +89,6 @@ do_tno_german_civil_war = {
 		add_state_core = 2481
 		add_state_core = 2482
 		add_state_core = 9092
-		
 		every_state = {
 			limit = {
 				is_core_of = SSC
@@ -100,143 +97,89 @@ do_tno_german_civil_war = {
 				transfer_state = PREV
 			}
 		}
-		
 		set_politics = {
-		ruling_party = stratocratic
+			ruling_party = stratocratic
 		}
-		
+		set_cosmetic_tag = CRM_TNO
 		set_popularities = {
 		stratocratic = 100
 		}
-	}
-	
-	every_state = {
-		limit = {
-			is_claimed_by = HUN
-			AND = {
-			is_core_of = SLO
-			}
-			NOT = {
-			is_core_of = BGM
-			is_core_of = ROM			
-			}
-		}
-		HUN = {
-			add_state_core = PREV
-		}
-	}
-	
-	every_state = {
-		limit = {
-			is_core_of = HUN
-			NOT = {
-			is_core_of = BGM
-			is_core_of = ROM
-			}
-		}
-		HUN = {
-			transfer_state = PREV
-		}
-	}
-	
+	}	
 	
 	BRL = {
-		add_state_core = 774
-		add_state_core = 775
-		add_state_core = 1805
-		add_state_core = 2523
-		add_state_core = 3914
-		add_state_core = 3923
-		add_state_core = 4831
-		add_state_core = 5089
-		add_state_core = 5092
-		add_state_core = 5093
-		add_state_core = 5098
-		add_state_core = 5099
-		add_state_core = 5101
-		add_state_core = 5102
-		add_state_core = 7465
-		add_state_core = 8224
-		add_state_core = 8226
-		add_state_core = 8227
-		add_state_core = 8228
-		add_state_core = 8229
-		add_state_core = 8230
-		add_state_core = 8231
-		add_state_core = 8232
-		add_state_core = 8233
-		add_state_core = 8234
-		add_state_core = 8235
-		add_state_core = 8236
-		add_state_core = 8237
-		add_state_core = 8238
-		add_state_core = 8239
-		add_state_core = 8240
-		add_state_core = 8241
-		add_state_core = 8242
-		add_state_core = 8243
-		add_state_core = 8302
-		add_state_core = 8303
-		
-		every_state = {
-			limit = {
-				is_core_of = BRL
-			}
-			BRL = {
-				transfer_state = PREV
-			}
-		}
-		
+		transfer_state = 774
+		transfer_state = 775
+		transfer_state = 1805
+		transfer_state = 2523
+		transfer_state = 3914
+		transfer_state = 3923
+		transfer_state = 4831
+		transfer_state = 5089
+		transfer_state = 5092
+		transfer_state = 5093
+		transfer_state = 5098
+		transfer_state = 5099
+		transfer_state = 5101
+		transfer_state = 5102
+		transfer_state = 7465
+		transfer_state = 8224
+		transfer_state = 8226
+		transfer_state = 8227
+		transfer_state = 8228
+		transfer_state = 8229
+		transfer_state = 8230
+		transfer_state = 8231
+		transfer_state = 8232
+		transfer_state = 8233
+		transfer_state = 8234
+		transfer_state = 8235
+		transfer_state = 8236
+		transfer_state = 8237
+		transfer_state = 8238
+		transfer_state = 8239
+		transfer_state = 8240
+		transfer_state = 8241
+		transfer_state = 8242
+		transfer_state = 8243
+		transfer_state = 8302
+		transfer_state = 8303
 		set_politics = {
-		ruling_party = stratocratic
+			ruling_party = stratocratic
 		}
-		
 		set_popularities = {
-		stratocratic = 70
-		national_socialism = 20
-		neutrality = 10
+			stratocratic = 70
+			national_socialism = 20
+			neutrality = 10
 		}
-		
 		set_cosmetic_tag = GREY_GER3
 	}
 	
 	CZ2 = {
 		every_state = {
-			limit = {
-				is_core_of = CZC
-				NOT = {
+		limit = {
+			is_core_of = CZC
+			NOT = {
 				is_core_of = BGM
 				is_core_of = GGM
-				}
-			}
-			CZ2 = {
-				add_state_core = PREV
 			}
 		}
-		
-		every_state = {
-			limit = {
-				is_core_of = CZ2
-			}
-			CZ2 = {
-				transfer_state = PREV
+		CZ2 = {
+			transfer_state = PREV
 			}
 		}
-		
 		set_popularities = {
-		stratocratic = 55
-		national_socialism = 25
-		neutrality = 20
+			stratocratic = 55
+			national_socialism = 25
+			neutrality = 20
 		}
-		
 		set_politics = {
-		ruling_party = stratocratic
+			ruling_party = stratocratic
 		}
 	}
 	
 	every_state = {
 		limit = {
-		is_owned_by = POL
+			is_owned_by = POL
 		}
 		UA2 = {
 			transfer_state = PREV
@@ -1032,11 +975,11 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		stratocratic = 100
+		national_socialism = 100
 		}
 		
 		set_politics = {
-		ruling_party = stratocratic
+		ruling_party = national_socialism
 		}
 		
 		set_cosmetic_tag = TIK_TNO
