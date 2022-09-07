@@ -9,17 +9,13 @@ country_event = { #Debug
 			factor = 0
 		}
 		hidden_effect = {
-			CZ2 = {
-				kill_ideology_leader = stratocratic_monarchism
-				create_country_leader = {
-					name = "SS-Oberst-Gruppenführer Kurt Max Franz Daluege"
-					desc = ""
-					picture = "CZ2_Daluege.tga"
-					expire = "1965.1.1"
-					ideology = stratmon
-					traits = {
+			every_country = {
+				limit = {
+					capital_scope = {
+						is_core_of = SOV
 					}
 				}
+				set_cosmetic_tag = RUS_GREEN
 			}
 		}
 	}

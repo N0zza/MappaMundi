@@ -216,6 +216,13 @@ do_all_renames = {
 					tag = CRO
 					tag = BOS
 					tag = MNT
+					AND = {
+						tag = ILY
+						NOT = {
+							has_government = national_socialism
+							has_government = republican_fascism
+						}
+					}
 				}
 			}
 		}
@@ -361,6 +368,8 @@ do_all_renames = {
 							tag = CZE
 							tag = SLO
 							tag = BGN
+							tag = NND
+							tag = OCC
 						}
 						has_government = national_socialism
 					}
@@ -415,9 +424,14 @@ do_all_renames = {
 	if = {
 		limit = {
 			ROOT = {
-				tag = OCC
+				AND = {
+					tag = OCC
+					NOT = {
+						has_government = national_socialism
+					}
 				}
 			}
+		}
 		do_occitanian_renames = yes
 	}
 
@@ -756,10 +770,10 @@ do_all_renames = {
 		limit = {
 			ROOT = {
 				tag = UKR
-			}
-			OR = {
-				has_government = communism
-				has_government = vanguardism
+				OR = {
+					has_government = communism
+					has_government = vanguardism
+				}
 			}
 		}
 		do_sovietukrainian_renames = yes
@@ -873,10 +887,12 @@ do_all_renames = {
 		}
 		do_standard_arabic_renames = yes
 		if = {
-			ROOT = {
-				OR = {
-					has_government = authoritarian_monarchism
-					has_cosmetic_tag = UK_RED
+			limit = {
+				ROOT = {
+					OR = {
+						has_government = authoritarian_monarchism
+						has_cosmetic_tag = UK_RED
+					}
 				}
 			}
 			do_arabic_renames = yes
@@ -986,6 +1002,16 @@ do_all_renames = {
 		limit = {
 			ROOT = {
 				has_cosmetic_tag = OTTO
+				AND = {
+					tag = TUR
+					OR = {
+						has_government = conservative_monarchism
+						has_government = authoritarian_monarchism
+						has_government = stratocratic_monarchism
+						has_government = monarchism
+						has_government = fascism
+					}
+				}
 			}
 		}
 		do_ottoman_renames = yes

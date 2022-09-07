@@ -9438,6 +9438,23 @@ do_german_renames = {
 		}		
 		set_province_name = {
 			id = 9508
+			name = "Lodsch"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 3492
+			ROOT = {
+				OR = {
+					has_government = republican_fascism
+					has_government = fascism
+					has_government = national_socialism
+				}
+			}
+		}		
+		set_province_name = {
+			id = 9508
 			name = "Litzmannstadt"
 		}
 	}
@@ -49627,7 +49644,7 @@ do_polish_renames = {
 		}		
 		set_province_name = {
 			id = 11574
-			name = "Oprisavci"
+			name = "Slawoński Brod"
 		}
 	}
 
@@ -52881,7 +52898,7 @@ do_czech_renames = {
 		}		
 		set_province_name = {
 			id = 11574
-			name = "Oprisavci"
+			name = "Szlavónbród"
 		}
 	}
 
@@ -55399,7 +55416,7 @@ do_serbocroat_renames = {
 		}		
 		set_province_name = {
 			id = 11574
-			name = "Oprisavci"
+			name = "Slavonski Brod"
 		}
 	}
 
@@ -56081,7 +56098,7 @@ do_yugoslavian_renames = {
 		}		
 		set_province_name = {
 			id = 11574
-			name = "Oprisavci"
+			name = "Slavonski Brod"
 		}
 	}
 	
@@ -59623,7 +59640,7 @@ do_romanian_renames = {
 		}		
 		set_province_name = {
 			id = 11574
-			name = "Oprisavți"
+			name = "Slavonă Brod"
 		}
 	}
 	
@@ -80116,7 +80133,7 @@ do_french_renames = {
 		}		
 		set_province_name = {
 			id = 11574
-			name = "Oprisavtsi"
+			name = "Slavon Brod"
 		}
 	}
 	
