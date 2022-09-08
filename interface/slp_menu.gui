@@ -28,6 +28,273 @@ guiTypes = {
 		}
 	}
 	
+	### Großgermanisches Reich ###
+	containerWindowType = {
+		name = "slp_menu_NZG_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_NZG_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_NZG_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_NZG"
+				spriteType = "GFX_pol_leader_frame_hitler"
+				position = { x = 12 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame1_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_NZG_name"
+				position = { x = 12 y = 238 }
+				font = "hoi_18mbs"
+				text = "Hitler"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_NZG"
+				spriteType = "GFX_pol_leader_frame_bormann"
+				position = { x = 202 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame2_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_NZG_name"
+				position = { x = 210 y = 238 }
+				font = "hoi_18mbs"
+				text = "Bormann"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_NZG"
+				spriteType = "GFX_pol_leader_frame_goring"
+				position = { x = 12 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame3_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_NZG_name"
+				position = { x = 12 y = 518 }
+				font = "hoi_18mbs"
+				text = "Göring"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_NZG"
+				spriteType = "GFX_pol_leader_frame_speer"
+				position = { x = 202 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame4_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_NZG_name"
+				position = { x = 202 y = 518 }
+				font = "hoi_18mbs"
+				text = "Speer"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame5_NZG"
+				spriteType = "GFX_pol_leader_frame_heydrich"
+				position = { x = 12 y = 580 }
+			}
+
+			iconType ={
+				name ="leader_frame5_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 568 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame5_NZG_name"
+				position = { x = 12 y = 798 }
+				font = "hoi_18mbs"
+				text = "Heydrich"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame6_NZG"
+				spriteType = "GFX_pol_leader_frame_schorner"
+				position = { x = 202 y = 580 }
+			}
+
+			iconType ={
+				name ="leader_frame6_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 568 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame6_NZG_name"
+				position = { x = 202 y = 798 }
+				font = "hoi_18mbs"
+				text = "Schörner"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame7_NZG"
+				spriteType = "GFX_pol_leader_frame_speidel"
+				position = { x = 12 y = 860 }
+			}
+
+			iconType ={
+				name ="leader_frame7_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 848 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame7_NZG_name"
+				position = { x = 12 y = 1078 }
+				font = "hoi_18mbs"
+				text = "Speidel"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame8_NZG"
+				spriteType = "GFX_pol_leader_frame_oberlander"
+				position = { x = 202 y = 860 }
+			}
+
+			iconType ={
+				name ="leader_frame8_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 848 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame8_NZG_name"
+				position = { x = 202 y = 1078 }
+				font = "hoi_18mbs"
+				text = "Oberländer"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_NZG_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
 	### RK Ukraine ###
 	containerWindowType = {
 		name = "slp_menu_UA2_container"
