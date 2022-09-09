@@ -44,7 +44,10 @@ scripted_gui = {
 					limit = {
 						AND = {
 							tag = LV2
-							has_government = national_socialism
+							OR = {
+								has_government = national_socialism
+								has_government = fascism
+							}
 						}
 					}
 					set_temp_variable = { show = 1 }
@@ -55,7 +58,10 @@ scripted_gui = {
 					limit = {
 						AND = {
 							tag = PL2
-							has_government = national_socialism
+							OR = {
+								has_government = national_socialism
+								has_government = fascism
+							}
 						}
 					}
 					set_temp_variable = { show = 1 }
@@ -490,16 +496,32 @@ scripted_gui = {
 				always = yes
 			}
 			leader_frame1_LV2_click_enabled = {
-				has_government = national_socialism
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
 				check_variable = { lv2_port_1 < 0.99 }
 			}
 			leader_frame2_LV2_click_enabled = {
-				has_government = national_socialism
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
 				check_variable = { lv2_port_2 < 0.99 }
 			}
 			leader_frame3_LV2_click_enabled = {
-				has_government = national_socialism
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
 				check_variable = { lv2_port_3 < 0.99 }
+			}
+			leader_frame4_LV2_click_enabled = {
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
+				check_variable = { lv2_port_4 < 0.99 }
 			}
         }
 	}
@@ -589,19 +611,31 @@ scripted_gui = {
 				always = yes
 			}
 			leader_frame1_PL2_click_enabled = {
-				has_government = national_socialism
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
 				check_variable = { pl2_port_1 < 0.99 }
 			}
 			leader_frame2_PL2_click_enabled = {
-				has_government = national_socialism
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
 				check_variable = { pl2_port_2 < 0.99 }
 			}
 			leader_frame3_PL2_click_enabled = {
-				has_government = national_socialism
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
 				check_variable = { pl2_port_3 < 0.99 }
 			}
 			leader_frame4_PL2_click_enabled = {
-				has_government = national_socialism
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
 				check_variable = { pl2_port_4 < 0.99 }
 			}
         }
