@@ -1,26 +1,25 @@
+
 state={
 	id=1771
 	name="STATE_1771"
 	
-	local_supplies = 0.0
-	state_category=town
-	
-	history={
-		owner = FRA
-		buildings = {
-			infrastructure = 8
-
-		}
-		add_core_of = FRA
-		add_core_of = BSQ
-		add_core_of = GSC
-		add_core_of = OFR
-
-	}
-	
 	provinces={
 		743 
 	}
+	
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = BSQ
+		add_core_of = GSC
+		add_core_of = AQT
+		add_core_of = OFR
+		victory_points = {
+			743 5
+		}
+	}
+	
+	state_category=town
 	manpower=16931
 	buildings_max_level_factor=1.000
 }

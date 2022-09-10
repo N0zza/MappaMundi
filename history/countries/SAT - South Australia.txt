@@ -2,29 +2,49 @@
 
 oob = "SAT_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-	early_fighter = 1
-}
-
-
-set_convoys = 10
-
 set_popularities = {
-	        democratic = 10
-        communism = 5
-        fascism = 25
-        neutrality = 60
-
+        communism = 2
+	democratic_monarchism = 44
+	centrist_monarchism = 12
+	conservative_monarchism = 35
+	centrist_republic = 3
+	socialist_monarchy = 4
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = conservative_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Gouverneur Alphonse Joseph Georges"
+	desc = ""
+	picture = "SAT_Georges.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Richard Layton Butler"
+	desc = ""
+	picture = "SAT_Butler.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir Winston Joseph Dugan"
+	desc = ""
+	picture = "SAT_Dugan.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}

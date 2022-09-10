@@ -1,6 +1,6 @@
 ﻿capital = 2709
 
-set_cosmetic_tag = BAH_ENG
+set_cosmetic_tag = UK_RED
 
 oob = "ENG_gen"
 
@@ -18,12 +18,12 @@ set_technology = {
 
 
 	set_popularities = {
-		democratic 
-			 = 10
-		fascism
+		conservative_monarchism 
+			 = 15
+		monarchism
 			 = 5
 		communism
-			 = 5
+			 = 0
 		authoritarian_monarchism
 			 = 80
 		}
@@ -33,23 +33,11 @@ set_technology = {
 	election_frequency = 48
 	elections_allowed = no
 }
-
 	
-	create_country_leader = {
-		name = "Axel Wenner-Gren"
-		desc = ""
-		picture = "gfx/leaders/Central America/Axel_Wenner-Gren.dds"
-		expire = "1961.11.24"
-		ideology = fascism_ideology
-		traits = {
-			#
-		}
-	}
-	
-	create_country_leader = {
-	name = "Roland Theodore Symonette"
+create_country_leader = {
+	name = "President Roland Theodore Symonette"
 	desc = ""
-	picture = "gfx/leaders/Central America/Roland_Symonette.dds"
+	picture = "BAH_Symonette.tga"
 	expire = "1980.3.13"
 	ideology = conservatism
 	traits = {
@@ -57,9 +45,19 @@ set_technology = {
 	}
 }
 
+create_country_leader = {
+	name = "Premier Sir Roland Theodore Symonette"
+	desc = ""
+	picture = "BAH_Symonette.tga"
+	expire = "1980.3.13"
+	ideology = conservative_constitutionalism
+	traits = {
+		#
+	}
+}
 
 create_country_leader = {
-	name = "Sir Charles Cecil Dundas"
+	name = "Governor Sir Charles Cecil Dundas"
 	desc = ""
 	picture = "Portrait_Charles_Dundas.dds"
 	expire = "1956.4.26"
@@ -70,11 +68,31 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prince David of Windsor"
+	name = "Governor David, Prince of Windsor"
 	desc = ""
-	picture = "Portrait_Edward_VIII.dds"
+	picture = "Portrait_Prince_David.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "King David I of Windsor"
+	desc = ""
+	picture = "Portrait_Prince_David.dds"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Captain Rafael de Nogales Méndez"
+	desc = ""
+	picture = "BAH_Pirate.tga"
+	expire = "1965.1.1"
+	ideology = ancap
 	traits = {
 	}
 }

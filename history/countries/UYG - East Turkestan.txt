@@ -3,81 +3,122 @@
 oob = "UYG_1936"
 
 set_popularities = {
-        neutrality = 600
-        monarchism = 4
-        democratic = 4
-        liberal_republic = 4
-        communism = 4
-        vanguardism = 4
-        fascism = 4
-        anarchism_ideology = 4
-        socialism_ideology = 4
-        democratic_monarchism = 4
-        conservative_monarchism = 4
-        stratocratic = 4
-        authoritarian_monarchism = 4
-        republican_fascism = 4
-        national_socialism = 4
-        theocratic = 4
-        left_anarchism = 4
-        right_anarchism = 4
-        socialist_monarchy = 4
-        centrist_republic = 4
-        centrist_monarchism = 4
-        stratocratic_monarchism = 4
+
+        neutrality = 10
+        socialism_ideology = 10
+        conservative_monarchism = 10
+        stratocratic = 10
+        theocratic = 60
 
 }
 
 set_politics = {
 	
-	ruling_party = neutrality
+	ruling_party = theocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "To_be_added.dds"
+	name = "Duban Sheng Shihtsai"
+	desc = "POLITICS_SHENG_SHICAI_DESC"
+	picture = "gfx/leaders/SIK/Portrait_Sinkiang_Sheng_Shicai.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = totsoc
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Duban Sheng Shihtsai"
+	desc = "POLITICS_SHENG_SHICAI_DESC"
+	picture = "gfx/leaders/SIK/Portrait_Sinkiang_Sheng_Shicai.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Sheng Zhuxí Sheng Shihtsai"
+	desc = "POLITICS_SHENG_SHICAI_DESC"
+	picture = "gfx/leaders/SIK/Portrait_Sinkiang_Sheng_Shicai.dds"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "King Khalid Sheldrake"
+	desc = ""
+	picture = "SIK_Sheldrake.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
 	traits = {
 	}
 }
+
 create_country_leader = {
-	name = "To Be Added"
+	name = "Zongtong Sabit Damolla"
 	desc = ""
-	picture = "To_be_added.dds"
+	picture = "SIK_Damolla.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Sheng Zong Silìng Jin Shuren"
+	desc = ""
+	picture = "SIK_Shuren.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Yulbars Khan"
+	desc = ""
+	picture = "Portrait_Yulbars_Khan.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
 	}
 }
+
 create_country_leader = {
-	name = "To Be Added"
+	name = "Zongtong Muhammad Amin Bughra"
 	desc = ""
-	picture = "To_be_added.dds"
+	picture = "SIK_Bughra.tga"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = christian
 	traits = {
 	}
 }
+
 create_country_leader = {
-	name = "To Be Added"
+	name = "Zongtong Muhammad Amin Bughra"
 	desc = ""
-	picture = "To_be_added.dds"
+	picture = "SIK_Bughra.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chiji Rikichi Ando"
+	desc = ""
+	picture = "SIK_Ando.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = despotism
 	traits = {
 	}
 }

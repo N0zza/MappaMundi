@@ -3,26 +3,20 @@ state={
 	id=177
 	name="STATE_177"
 
-	history={
-		owner = SPR
-		buildings = {
-			infrastructure = 6
-			air_base = 1
-			9793 = {
-				naval_base = 2
-
-			}
-
-		}
-		add_core_of = SPR
-		add_core_of = BAL
-		add_core_of = SP2
-
-	}
-
 	provinces={
 		9793 
 	}
+
+	history={
+		owner = SPR
+		add_core_of = SPR
+		add_core_of = BAL
+		add_core_of = SP2
+		victory_points = {
+			9793 5
+		}
+	}
+	
 	manpower=200000
 	buildings_max_level_factor=1.000
 	local_supplies = 0.0

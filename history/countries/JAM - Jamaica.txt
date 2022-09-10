@@ -1,7 +1,7 @@
 ﻿capital = 689
 
 oob = "JAM_1936"
-set_cosmetic_tag = JAM_ENG
+set_cosmetic_tag = UK_RED
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -14,15 +14,15 @@ set_convoys = 5
 
 
 	set_popularities = {
-		democratic 
-			 = 0
+		liberal_republic 
+			 = 10
 		authoritarian_monarchism
-			 = 100
+			 = 80
 		
-		fascism
-			 = 0
-		communism
-			 = 0
+		theocratic
+			 = 5
+		neutrality
+			 = 5
 			
 		}
 	set_politics = { 
@@ -33,45 +33,42 @@ set_convoys = 5
 }
 
 create_country_leader = {
-	name = "Tomás Canto Clemente"
-	desc = ""
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_5.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Paulo Neves dos Reis"
-	desc = ""
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Milton Guerra Corrêa"
-	desc = ""
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Edward Brandis Denham"
+	name = "Governor Edward Brandis Denham"
 	desc = ""
 	picture = "Portrait_Edward_Brandis_Denham.dds"
 	expire = "1956.4.26"
 	ideology = authmon
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Chairman Marcus Mosiah Garvey"
+	desc = ""
+	picture = "JAM_Garvey.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Negus Haile Selassie I la Salomonawiwi"
+	desc = ""
+	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Premier Norman Washington Manley"
+	desc = ""
+	picture = "JAM_Manley.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
 	}
 }

@@ -17,12 +17,12 @@ save_global_event_target_as = WTT_communist_china
 
 
 	set_popularities = {
-		democratic 
-			 = 0
+		communism 
+			 = 10
 		fascism
 			 = 0
 		vanguardism
-			 = 100
+			 = 90
 			
 		}
 	set_politics = { 
@@ -47,7 +47,7 @@ if = {
 add_opinion_modifier = { target = CHI modifier = hostile_status }
 
 create_country_leader = {
-	name = "Chuhsi  Mao Tse-tung"
+	name = "Chuhsi Mao Tse-tung"
 	desc = "POLITICS_MAO_ZEDONG_DESC"
 	picture = "Portrait_Mao_Zedong.dds"
 	expire = "1965.1.1"
@@ -55,3 +55,54 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+create_country_leader = {
+	name = "Chuhsi Mao Tse-tung"
+	desc = "POLITICS_MAO_ZEDONG_DESC"
+	picture = "Portrait_Mao_Zedong.dds"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chuhsi Mao Tse-tung"
+	desc = "POLITICS_MAO_ZEDONG_DESC"
+	picture = "Portrait_Mao_Zedong.dds"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Zongtong Li Huang"
+	desc = ""
+	picture = "Portrait_Li_Huang.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chuhsi Lin Boqu"
+	desc = ""
+	picture = "PRC_Boqu.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Chuhsi Wang Ming"
+	desc = ""
+	picture = "PRC_Ming.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+

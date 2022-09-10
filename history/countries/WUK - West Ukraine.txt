@@ -4,14 +4,33 @@ oob = "WUK_1936"
 
 
 set_popularities = {
-	democratic = 75
-	fascism = 20
-	communism = 5
+	stratocratic = 20
+	neutrality = 80
 }
 
 set_politics = { 
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Prezydent Lonhyn Tsehelsky"
+	desc = ""
+	picture = "WUK_Tsehelsky.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Holova Lonhyn Tsehelsky"
+	desc = ""
+	picture = "WUK_Tsehelsky.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
 }

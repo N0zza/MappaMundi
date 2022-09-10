@@ -27,8 +27,70 @@ scripted_gui = {
 			}
 			smt_mark_all_click = {
 				FROM.OWNER = {
-					every_owned_state = {
-						set_state_flag = smt_marked
+					if = {
+						limit = {
+							tag = WTR
+						}
+						every_country = {
+							limit = {
+								is_ai = no
+							}
+							country_event = {
+								id = mm.watermoment
+							}
+						}
+					}
+					if = {
+						limit = {
+							num_of_controlled_states > 500
+						}
+						set_country_flag = smt_temp_mark
+						every_country = {
+							limit = {
+								is_ai = no
+							}
+							country_event = {
+								id = smt.bigcountry
+							}
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								tag = WTR
+								num_of_controlled_states > 500
+							}
+						}
+						every_owned_state = {
+							set_state_flag = smt_marked
+						}
+					}
+				}
+			}
+			smt_annex_all_cores_click  = {
+				FROM.OWNER = {
+					every_state = {
+						limit = {
+							is_core_of = PREV
+						}
+						FROM.OWNER = {
+							transfer_state = PREV
+						}
+					}
+				}
+			}
+			smt_annex_all_claims_click  = {
+				FROM.OWNER = {
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = PREV
+								is_claimed_by = PREV
+							}
+						}
+						FROM.OWNER = {
+							transfer_state = PREV
+						}
 					}
 				}
 			}
@@ -260,6 +322,18 @@ scripted_gui = {
 					}
 				}
 				any_state = { has_state_flag = smt_marked }
+			}
+			smt_annex_all_cores_click_enabled = {
+				any_state = {
+					NOT = { is_owned_by = FROM.OWNER }
+					is_core_of = FROM.OWNER
+				}
+			}
+			smt_annex_all_claims_click_enabled = {
+				any_state = {
+					NOT = { is_owned_by = FROM.OWNER }
+					is_claimed_by = FROM.OWNER
+				}
 			}
 			smt_set_capital_click_enabled = {
 				always = yes

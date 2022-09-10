@@ -14,17 +14,79 @@ set_convoys = 10
 
 
 	set_popularities = {
-        democratic =  25
-        communism =  25
-        fascism =  25
-        neutrality =  25
+        democratic =  60
+        stratocratic = 5
+        national_socialism = 5
+        neutrality = 10
+        fascism = 10
+        monarchism = 10
 
 	}
 	
 	set_politics = { 
- ruling_party = neutrality
+ ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Commandt Jefferson Davis Pinkard"
+	desc = ""
+	picture = "YUC_Pinkard.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Jonathan Mayhew Wainwright IV"
+	desc = ""
+	picture = "JFR_Wainwright.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Territortial Governor Jonathan Mayhew Wainwright IV"
+	desc = ""
+	picture = "JFR_Wainwright.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Manuel Gómez Morín"
+	desc = ""
+	picture = "YUC_Morin.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Emperador Kʼinich Yax Kʼukʼ Moʼ II"
+	desc = ""
+	picture = "YUC_Morin.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rey Kʼinich Yax Kʼukʼ Moʼ II"
+	desc = ""
+	picture = "YUC_Morin.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
 }
 

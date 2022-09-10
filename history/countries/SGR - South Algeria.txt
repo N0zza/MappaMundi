@@ -1,7 +1,7 @@
 ﻿capital = 3437
 
 oob = "SGR_1936"
-set_cosmetic_tag = SGR_FRA
+set_cosmetic_tag = FRA_COLONY
 
 set_convoys = 10
 
@@ -22,11 +22,20 @@ set_politics = {
 
 
 create_country_leader = {
-	name = "Georges le Beau"
+	name = "Gouverneur Georges le Beau"
 	desc = ""
 	picture = "SGR_Beau.tga"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
 	traits = {
 	}
 }

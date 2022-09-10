@@ -1,17 +1,14 @@
-﻿capital = 3731
+﻿capital = 16583
 
 oob = "INI_1936"
-set_cosmetic_tag = INI_FRA
-
-set_convoys = 10
+set_cosmetic_tag = FRA_COLONY
 
 set_popularities = {
-        monarchism = 0
+        liberal_republic = 10
         neutrality = 70
         democratic = 20
-        communism = 5
-        fascism = 5
-
+        communism = 0
+        fascism = 0
 }
 
 set_politics = {
@@ -23,12 +20,33 @@ set_politics = {
 
 
 create_country_leader = {
-	name = "Max de Masson de Saint-Félix"
+	name = "Gouverneur Max de Masson de Saint-Félix"
 	desc = ""
 	picture = "CAY_SaintFelix.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Préfet Max de Masson de Saint-Félix"
+	desc = ""
+	picture = "CAY_SaintFelix.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Président René Jadfard"
+	desc = ""
+	picture = "CAY_Jadfard.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
 	}
 }

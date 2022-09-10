@@ -1,7 +1,7 @@
 ﻿capital = 2465
 
 oob = "NBO_1936"
-set_cosmetic_tag = NBO_ENG
+set_cosmetic_tag = UK_RED
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -15,9 +15,9 @@ set_convoys = 10
 
 	set_popularities = {
         
-        communism =  15 
-        fascism =  5 
-        authoritarian_monarchism =  80 
+        communism =  0 
+        fascism =  0
+        authoritarian_monarchism =  100 
 
 	}
 	
@@ -29,12 +29,32 @@ set_convoys = 10
 }
 
 create_country_leader = {
-	name = "Douglas James Jardine"
+	name = "Governor Douglas James Jardine"
 	desc = ""
 	picture = "Portrait_Douglas_James_Jardine.dds"
 	ideology = authmon
 	expire = "1963.6.16"
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "Zenpan-teki Masao Baba"
+	desc = ""
+	picture = "BEO_Baba.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Lily Eberwein Abdullah"
+	desc = ""
+	picture = "BEO_Lily.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
 	}
 }

@@ -2,22 +2,12 @@
 
 oob = "QNS_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-	early_fighter = 1
-}
-
-
-set_convoys = 10
-
 set_popularities = {
-	democratic = 8
         communism = 2
-	democratic_monarchism = 50
-	conservative_monarchism = 40
-
+	democratic_monarchism = 53
+	centrist_monarchism = 19
+	conservative_monarchism = 19
+	neutrality = 7
 }
 
 set_politics = {
@@ -29,9 +19,20 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "William Forgan Smith"
+	name = "President William Forgan Smith"
 	desc = ""
 	picture = "Portrait_William_Forgan_Smith.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir Leslie Wilson"
+	desc = ""
+	picture = "Portrait_Sir_Leslie_Wilson.dds"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -40,18 +41,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Sir Leslie Wilson"
-	desc = ""
-	picture = "Portrait_Sir_Leslie_Wilson.dds"
-	expire = "1965.1.1"
-	ideology = authmon
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Prince Henry of Windsor"
+	name = "Grand Duke Henry of Windsor"
 	desc = ""
 	picture = "Portrait_Prince_Henry.dds"
 	expire = "1965.1.1"

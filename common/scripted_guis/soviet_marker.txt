@@ -1,0 +1,48 @@
+scripted_gui = {
+    soviet_marker_main = {
+        window_name = "soviet_marker_main"
+        context_type = player_context
+        parent_window_token = top_bar
+
+        visible = {
+			ROOT = {
+				has_government = vanguardism
+				capital_scope = {
+					is_core_of = SOV
+				}
+			}
+        }
+        
+        effects = {
+            soviet_marker_button_click = {
+				ROOT = {
+					set_global_flag = soviet_mark
+				}
+            }
+            soviet_unmarker_button_click = {
+				ROOT = {
+					clr_global_flag = soviet_mark
+				}
+            }
+        }
+        
+        triggers = {
+            soviet_marker_button_click_visible = {
+				NOT = {
+					has_global_flag = soviet_mark
+				}
+            }
+            soviet_unmarker_button_click_visible = {
+				has_global_flag = soviet_mark
+            }
+            soviet_marker_button_click_enabled = {
+				NOT = {
+					has_global_flag = soviet_mark
+				}
+            }
+            soviet_unmarker_button_click_enabled = {
+				has_global_flag = soviet_mark
+			}
+		}
+	}
+}

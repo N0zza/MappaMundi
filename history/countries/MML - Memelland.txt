@@ -6,8 +6,8 @@ set_cosmetic_tag = LIT_COLONY
 
 set_popularities = {
         republican_fascism = 55
-        national_socialism = 45
-
+        national_socialism = 30
+	neutrality = 15
 }
 
 set_politics = {
@@ -19,11 +19,21 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Direktorius Augustas Baldžius"
+	name = "Gubernatorius Vladas Kurkauskas"
+	desc = ""
+	picture = "MML_Kurkauskas.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Direktorius August Baldschus"
 	desc = ""
 	picture = "MML_Bald.tga"
 	expire = "1965.1.1"
-	ideology = repfash
+	ideology = oligarchism
 	traits = {
 	}
 }

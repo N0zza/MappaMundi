@@ -1,0 +1,1351 @@
+guiTypes = {
+	containerWindowType = {
+		name = "slp_container"
+		position = { x = -220 y = -177 }
+		
+		buttonType = {
+			name ="slp_icon"
+			spriteType = "GFX_generic_box_80"
+			position = { x= 435 y = 257 }
+			Orientation = "UPPER_LEFT"
+			
+			pdx_tooltip = "PORTRAIT_TOOLTIP"
+			pdx_tooltip_delayed = "PORTRAIT_TOOLTIP_DELAYED"
+		}
+		
+		instantTextBoxType = {
+			name ="portrait_text"
+			position = { x= 435 y = 260 }
+			font = "hoi_18mbs"
+			text = "Portrait"
+			format = center
+			maxWidth = 80
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "PORTRAIT_TOOLTIP"
+			pdx_tooltip_delayed = "PORTRAIT_TOOLTIP_DELAYED"
+		}
+	}
+	
+	### Großgermanisches Reich ###
+	containerWindowType = {
+		name = "slp_menu_NZG_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_NZG_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_NZG_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_NZG"
+				spriteType = "GFX_pol_leader_frame_hitler"
+				position = { x = 12 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame1_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_NZG_name"
+				position = { x = 12 y = 238 }
+				font = "hoi_18mbs"
+				text = "Hitler"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_NZG"
+				spriteType = "GFX_pol_leader_frame_bormann"
+				position = { x = 202 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame2_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_NZG_name"
+				position = { x = 210 y = 238 }
+				font = "hoi_18mbs"
+				text = "Bormann"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_NZG"
+				spriteType = "GFX_pol_leader_frame_goring"
+				position = { x = 12 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame3_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_NZG_name"
+				position = { x = 12 y = 518 }
+				font = "hoi_18mbs"
+				text = "Göring"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_NZG"
+				spriteType = "GFX_pol_leader_frame_speer"
+				position = { x = 202 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame4_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_NZG_name"
+				position = { x = 202 y = 518 }
+				font = "hoi_18mbs"
+				text = "Speer"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame5_NZG"
+				spriteType = "GFX_pol_leader_frame_heydrich"
+				position = { x = 12 y = 580 }
+			}
+
+			iconType ={
+				name ="leader_frame5_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 568 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame5_NZG_name"
+				position = { x = 12 y = 798 }
+				font = "hoi_18mbs"
+				text = "Heydrich"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame6_NZG"
+				spriteType = "GFX_pol_leader_frame_schorner"
+				position = { x = 202 y = 580 }
+			}
+
+			iconType ={
+				name ="leader_frame6_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 568 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame6_NZG_name"
+				position = { x = 202 y = 798 }
+				font = "hoi_18mbs"
+				text = "Schörner"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame7_NZG"
+				spriteType = "GFX_pol_leader_frame_speidel"
+				position = { x = 12 y = 860 }
+			}
+
+			iconType ={
+				name ="leader_frame7_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 848 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame7_NZG_name"
+				position = { x = 12 y = 1078 }
+				font = "hoi_18mbs"
+				text = "Speidel"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame8_NZG"
+				spriteType = "GFX_pol_leader_frame_oberlander"
+				position = { x = 202 y = 860 }
+			}
+
+			iconType ={
+				name ="leader_frame8_NZG_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 848 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame8_NZG_name"
+				position = { x = 202 y = 1078 }
+				font = "hoi_18mbs"
+				text = "Oberländer"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_NZG_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### RK Ukraine ###
+	containerWindowType = {
+		name = "slp_menu_UA2_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_UA2_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_UA2_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_UA2"
+				spriteType = "GFX_pol_leader_frame_koch"
+				position = { x = 12 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame1_UA2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_UA2_name"
+				position = { x = 12 y = 238 }
+				font = "hoi_18mbs"
+				text = "Koch"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_UA2"
+				spriteType = "GFX_pol_leader_frame_leibbrandt"
+				position = { x = 202 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame2_UA2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_UA2_name"
+				position = { x = 210 y = 238 }
+				font = "hoi_18mbs"
+				text = "Leibbrandt"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_UA2"
+				spriteType = "GFX_pol_leader_frame_heerema"
+				position = { x = 12 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame3_UA2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_UA2_name"
+				position = { x = 12 y = 518 }
+				font = "hoi_18mbs"
+				text = "Heerema"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_UA2"
+				spriteType = "GFX_pol_leader_frame_oberlander"
+				position = { x = 202 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame4_UA2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_UA2_name"
+				position = { x = 202 y = 518 }
+				font = "hoi_18mbs"
+				text = "Oberländer"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_UA2_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### RK Ostland ###
+	containerWindowType = {
+		name = "slp_menu_LV2_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_LV2_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_LV2_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_LV2"
+				spriteType = "GFX_pol_leader_frame_lohse"
+				position = { x = 12 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame1_LV2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_LV2_name"
+				position = { x = 12 y = 238 }
+				font = "hoi_18mbs"
+				text = "Lohse"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_LV2"
+				spriteType = "GFX_pol_leader_frame_stahlecker"
+				position = { x = 202 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame2_LV2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_LV2_name"
+				position = { x = 202 y = 238 }
+				font = "hoi_18mbs"
+				text = "Stahlecker"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_LV2"
+				spriteType = "GFX_pol_leader_frame_drechsler"
+				position = { x = 12 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame3_LV2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_LV2_name"
+				position = { x = 12 y = 518 }
+				font = "hoi_18mbs"
+				text = "Drechsler"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_LV2"
+				spriteType = "GFX_pol_leader_frame_vialon"
+				position = { x = 202 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame4_LV2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_LV2_name"
+				position = { x = 202 y = 518 }
+				font = "hoi_18mbs"
+				text = "Vialon"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_LV2_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Generalgouverement ###
+	containerWindowType = {
+		name = "slp_menu_PL2_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_PL2_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_PL2_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_PL2"
+				spriteType = "GFX_pol_leader_frame_frank"
+				position = { x = 12 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame1_PL2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_PL2_name"
+				position = { x = 12 y = 238 }
+				font = "hoi_18mbs"
+				text = "Frank"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_PL2"
+				spriteType = "GFX_pol_leader_frame_wagner"
+				position = { x = 202 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame2_PL2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_PL2_name"
+				position = { x = 202 y = 238 }
+				font = "hoi_18mbs"
+				text = "Wagner"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_PL2"
+				spriteType = "GFX_pol_leader_frame_koch2"
+				position = { x = 12 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame3_PL2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_PL2_name"
+				position = { x = 12 y = 518 }
+				font = "hoi_18mbs"
+				text = "Koch"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_PL2"
+				spriteType = "GFX_pol_leader_frame_dollinger"
+				position = { x = 202 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame4_PL2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_PL2_name"
+				position = { x = 202 y = 518 }
+				font = "hoi_18mbs"
+				text = "Dollinger"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			gridBoxType = {
+				name = "box"
+				position = { x = 10 y = 10 }
+				size = { width = 500 height = 1 }
+				slotsize = { width = 231 height = 75 }
+				max_slots_horizontal = 2
+				add_horizontal = yes
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		buttonType = {
+			name = "slp_PL2_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### RK Moskowien ###
+	containerWindowType = {
+		name = "slp_menu_MC2_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_MC2_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_MC2_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_MC2"
+				spriteType = "GFX_pol_leader_frame_kasche"
+				position = { x = 12 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame1_MC2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_MC2_name"
+				position = { x = 12 y = 238 }
+				font = "hoi_18mbs"
+				text = "Kasche"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_MC2"
+				spriteType = "GFX_pol_leader_frame_helldorff"
+				position = { x = 202 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame2_MC2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_MC2_name"
+				position = { x = 210 y = 238 }
+				font = "hoi_18mbs"
+				text = "Helldorff"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_MC2"
+				spriteType = "GFX_pol_leader_frame_pannowitz"
+				position = { x = 12 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame3_MC2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_MC2_name"
+				position = { x = 12 y = 518 }
+				font = "hoi_18mbs"
+				text = "Pannowitz"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_MC2"
+				spriteType = "GFX_pol_leader_frame_wenck"
+				position = { x = 202 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame4_MC2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_MC2_name"
+				position = { x = 202 y = 518 }
+				font = "hoi_18mbs"
+				text = "Wenck"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+		}
+		
+		buttonType = {
+			name = "slp_MC2_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### MB Moskowien ###
+	containerWindowType = {
+		name = "slp_menu_MC22_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_MC22_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_MC22_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_MC22"
+				spriteType = "GFX_pol_leader_frame_roenne"
+				position = { x = 12 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame1_MC22_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_MC22_name"
+				position = { x = 12 y = 238 }
+				font = "hoi_18mbs"
+				text = "Rönne"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_MC22"
+				spriteType = "GFX_pol_leader_frame_schorner"
+				position = { x = 202 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame2_MC22_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_MC22_name"
+				position = { x = 210 y = 238 }
+				font = "hoi_18mbs"
+				text = "Schörner"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_MC22"
+				spriteType = "GFX_pol_leader_frame_hoffman"
+				position = { x = 12 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame3_MC22_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_MC22_name"
+				position = { x = 12 y = 518 }
+				font = "hoi_18mbs"
+				text = "Hoffman"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+		}
+		
+		buttonType = {
+			name = "slp_MC22_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### RK Kaukasien ###
+	containerWindowType = {
+		name = "slp_menu_KC2_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_KC2_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_KC2_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_KC2"
+				spriteType = "GFX_pol_leader_frame_josias"
+				position = { x = 12 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame1_KC2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_KC2_name"
+				position = { x = 12 y = 238 }
+				font = "hoi_18mbs"
+				text = "Josias"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_KC2"
+				spriteType = "GFX_pol_leader_frame_wittekind"
+				position = { x = 202 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame2_KC2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_KC2_name"
+				position = { x = 210 y = 238 }
+				font = "hoi_18mbs"
+				text = "Wittekind"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_KC2"
+				spriteType = "GFX_pol_leader_frame_pleiger"
+				position = { x = 12 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame3_KC2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_KC2_name"
+				position = { x = 12 y = 518 }
+				font = "hoi_18mbs"
+				text = "Pleiger"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_KC2"
+				spriteType = "GFX_pol_leader_frame_gablenz"
+				position = { x = 202 y = 300 }
+			}
+
+			iconType ={
+				name ="leader_frame4_KC2_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_KC2_name"
+				position = { x = 202 y = 518 }
+				font = "hoi_18mbs"
+				text = "Gablenz"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+		}
+		
+		buttonType = {
+			name = "slp_KC2_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	
+	### Kingdom of Kaukasia ###
+	containerWindowType = {
+		name = "slp_menu_KC22_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_KC22_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_KC22_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+			
+			buttonType = {
+				name = "leader_frame1_KC22"
+				spriteType = "GFX_pol_leader_frame_kaiser_josias"
+				position = { x = 12 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame1_KC22_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_KC22_name"
+				position = { x = 12 y = 238 }
+				font = "hoi_18mbs"
+				text = "Josias"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_KC22"
+				spriteType = "GFX_pol_leader_frame_kaiser_wittekind"
+				position = { x = 202 y = 20 }
+			}
+
+			iconType ={
+				name ="leader_frame2_KC22_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_KC22_name"
+				position = { x = 210 y = 238 }
+				font = "hoi_18mbs"
+				text = "Wittekind"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+		}
+		
+		buttonType = {
+			name = "slp_KC22_close"
+			position = { x = -50 y = 5 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+}

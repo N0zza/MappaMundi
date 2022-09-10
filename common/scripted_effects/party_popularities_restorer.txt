@@ -1,0 +1,94 @@
+# Thing I took from TNO to unfuck party popularities when puppeting a nation.
+# Use both effects on the same scope
+save_party_popularities = { # Use this before puppeting
+	log = "[GetDateText]: [THIS.GetName]: Running save_party_popularities command"
+	set_temp_variable = { PartyPopTotal = 0 }
+	add_to_array = { PartyPops = party_popularity@anarchism_ideology }
+	add_to_array = { PartyPops = party_popularity@left_anarchism }
+	add_to_array = { PartyPops = party_popularity@communism }
+	add_to_array = { PartyPops = party_popularity@vanguardism }
+	add_to_array = { PartyPops = party_popularity@socialism_ideology }
+	add_to_array = { PartyPops = party_popularity@socialist_monarchy }
+	add_to_array = { PartyPops = party_popularity@liberal_republic }
+	add_to_array = { PartyPops = party_popularity@democratic_monarchism }
+	add_to_array = { PartyPops = party_popularity@right_anarchism }
+	add_to_array = { PartyPops = party_popularity@centrist_republic }
+	add_to_array = { PartyPops = party_popularity@centrist_monarchism }
+	add_to_array = { PartyPops = party_popularity@democratic }
+	add_to_array = { PartyPops = party_popularity@conservative_monarchism }
+	add_to_array = { PartyPops = party_popularity@neutrality }
+	add_to_array = { PartyPops = party_popularity@authoritarian_monarchism }
+	add_to_array = { PartyPops = party_popularity@stratocratic }
+	add_to_array = { PartyPops = party_popularity@stratocratic_monarchism }
+	add_to_array = { PartyPops = party_popularity@republican_fascism }
+	add_to_array = { PartyPops = party_popularity@fascism }
+	add_to_array = { PartyPops = party_popularity@national_socialism }
+	add_to_array = { PartyPops = party_popularity@monarchism }
+	add_to_array = { PartyPops = party_popularity@theocratic }
+
+	for_each_loop = {
+		array = PartyPops
+		multiply_variable = { PartyPops^i = 100 }
+		round_variable = PartyPops^i
+		add_to_temp_variable = { PartyPopTotal = PartyPops^i }
+	}
+
+	if = {
+		limit = { check_variable = { PartyPopTotal > 100 } }
+		subtract_from_temp_variable = { PartyPopTotal = 100 }
+		log = "[GetDateText]: [THIS.GetName]: PartyPop value exceeds 100 - [?PartyPopTotal]"
+		for_each_loop = {
+			array = PartyPop
+			if = {
+				limit = { check_variable = { PartyPop^i > PartyPopTotal } }
+				subtract_from_variable = { PartyPop^i = PartyPopTotal }
+				add_to_temp_variable = { break = 1 }
+			}
+		}
+	}
+	else_if = {
+		limit = { check_variable = { PartyPopTotal < 100 } }
+		subtract_from_temp_variable = { PartyPopTotal = 100 }
+		multiply_temp_variable = { PartyPopTotal = -1 }
+		log = "[GetDateText]: [THIS.GetName]: PartyPop value is less than 100 - [?PartyPopTotal]"
+		set_temp_variable = { a = 0 }
+		randomize_temp_variable = {
+			var = a
+			distribution = uniform
+			min = 0
+			max = 11
+		}
+		round_temp_variable = a
+		add_to_variable = { PartyPop^a = PartyPopTotal }
+	}
+}
+
+apply_party_popularities = { # Use this after puppeting
+	hidden_effect = {
+		set_popularities = {
+			anarchism_ideology = PartyPops^0
+			left_anarchism = PartyPops^1
+			communism = PartyPops^2
+			vanguardism = PartyPops^3
+			socialism_ideology = PartyPops^4
+			socialist_monarchy = PartyPops^5
+			liberal_republic = PartyPops^6
+			democratic_monarchism = PartyPops^7
+			right_anarchism = PartyPops^8
+			centrist_republic = PartyPops^9
+			centrist_monarchism = PartyPops^10
+			democratic = PartyPops^11
+			conservative_monarchism = PartyPops^12
+			neutrality = PartyPops^13
+			authoritarian_monarchism = PartyPops^14
+			stratocratic = PartyPops^15
+			stratocratic_monarchism = PartyPops^16
+			republican_fascism = PartyPops^17
+			fascism = PartyPops^18
+			national_socialism = PartyPops^19
+			monarchism = PartyPops^20
+			theocratic = PartyPops^21
+		}
+		clear_array = PartyPops
+	}
+}

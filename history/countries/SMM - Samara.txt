@@ -3,51 +3,29 @@
 oob = "SMM_1936"
 
 set_popularities = {
-        neutrality = 70
-        monarchism = 0
-        democratic = 0
-        liberal_republic = 0
-        communism = 0
-        vanguardism = 0
-        fascism = 0
-        anarchism_ideology = 0
-        socialism_ideology = 0
-        democratic_monarchism = 0
-        conservative_monarchism = 0
-        stratocratic = 0
-        authoritarian_monarchism = 0
-        republican_fascism = 30
-        national_socialism = 0
-        theocratic = 0
-        left_anarchism = 0
-        right_anarchism = 0
-        socialist_monarchy = 0
-        centrist_republic = 0
-        centrist_monarchism = 0
-        stratocratic_monarchism = 0
-
+    republican_fascism = 70
+    right_anarchism = 30
 }
 
 set_politics = {
-	
-	ruling_party = neutrality
+	ruling_party = republican_fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Predsedatel Andrey Andreyevich Vlasov"
+	name = "Predsedátel' Andréj Andréevič Vlásov"
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/SMM_Vlasov.tga"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = repfash
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Predsedatel Sergei Kuzmich Bunyachenko"
+	name = "Predsedátel' Sergéj Kuz'míč Bunjačenko"
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/SMM_Bunyachenko.tga"
 	expire = "1965.1.1"
@@ -57,27 +35,27 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Predsedatel Milyetiy Aleksandrovich Zykov"
+	name = "Predsedátel' Miletij Aleksándrovič Zýkov"
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/SMM_Zykov.tga"
 	expire = "1965.1.1"
-	ideology = cenrep
+	ideology = despotism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Predsedatel Mikhail Aleksandrovich Oktan"
+	name = "Predsedátel' Mixaíl Aleksándrovič Oktán"
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/SMM_Oktan.tga"
 	expire = "1965.1.1"
-	ideology = repfash
+	ideology = ancap
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Patriarkh Sergey Mikhailovich Izvekov"
+	name = "Patriárx Sergéj Mixájlovič Izvékov"
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/SMM_Izvekov.tga"
 	expire = "1965.1.1"
@@ -87,7 +65,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prezident Viktor Polyakov"
+	name = "Prezidént Víktor Nikoláevič Poljakóv"
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/SMM_Polyakov.tga"
 	expire = "1965.1.1"

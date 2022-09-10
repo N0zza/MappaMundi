@@ -3,16 +3,16 @@
 oob = "NOR_1936"
 
 set_popularities = {
-	socialist_monarchy 
-		= 96
-	fascism
-		= 2
-	communism
-		= 2
+        democratic_monarchism = 31
+        vanguardism = 2
+        fascism = 2
+        conservative_monarchism = 20
+        socialist_monarchy = 14
+        centrist_monarchism = 31
 	}
 
 set_politics = { 
-	ruling_party = socialist_monarchy
+	ruling_party = democratic_monarchism
 	last_election = "1933.10.16"
 	election_frequency = 36
 	elections_allowed = yes
@@ -100,7 +100,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Haakon VII av Glücksburg"
+	name = "Konge Haakon VII av Glücksburg"
 	desc = ""
 	picture = "NOR_HaakonVII.tga"
 	expire = "1965.1.1"

@@ -1,17 +1,17 @@
 ﻿capital = 1927 #Hanoi
 
 oob = "SRW_1936"
-set_cosmetic_tag = SRW_ENG
+set_cosmetic_tag = UK_RED
 
 	set_popularities = {
 		democratic 
-			 = 30
-		fascism
-			 = 5
-		communism
 			 = 10
+		fascism
+			 = 0
+		stratocratic_monarchism
+			 = 20
 		authoritarian_monarchism
-			 = 55
+			 = 70
 	}
 
 	set_politics = { 
@@ -21,10 +21,8 @@ set_cosmetic_tag = SRW_ENG
 	elections_allowed = no
 }
 
-#NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
-
 create_country_leader = {
-	name = "Charles Vyner Brooke"
+	name = "Rajah Charles Vyner Brooke"
 	desc = ""
 	picture = "Portrait_Charles_Vyner_Brooke.dds"
 	expire = "1953.3.1"
@@ -33,6 +31,38 @@ create_country_leader = {
 		
 	}
 }
+
+create_country_leader = {
+	name = "President Lily Eberwein Abdullah"
+	desc = ""
+	picture = "BEO_Lily.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor Douglas James Jardine"
+	desc = ""
+	picture = "Portrait_Douglas_James_Jardine.dds"
+	ideology = stratmon
+	expire = "1963.6.16"
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Chiji Masao Baba"
+	desc = ""
+	picture = "BEO_Baba.tga"
+	expire = "1989.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
 
 
 

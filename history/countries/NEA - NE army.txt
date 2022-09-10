@@ -14,13 +14,13 @@ set_technology = {
 		democratic 
 			 = 0
 			
-		fascism
-			 = 0
-		communism
-			 = 0
+		neutrality
+			 = 20
+		stratocratic_monarchism
+			 = 20
 			
 		stratocratic
-			 = 100
+			 = 60
 		}
 	set_politics = { 
  ruling_party = stratocratic
@@ -35,10 +35,26 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Chang Hsueh-liang"
+	name = "Chou ch'ang Chang Hsueh-liang"
 	desc = "POLITICS_ZHANG_XUELIANG_DESC"
 	picture = "Portrait_Zhang_Xueliang.dds"
 	expire = "1938.1.20"
 	ideology = militarism
+}
+
+create_country_leader = {
+	name = "Chou ch'ang Chang Hsueh-liang"
+	desc = "POLITICS_ZHANG_XUELIANG_DESC"
+	picture = "Portrait_Zhang_Xueliang.dds"
+	expire = "1938.1.20"
+	ideology = oligarchism
+}
+
+create_country_leader = {
+	name = "Chou ch'ang Chang Hsueh-liang"
+	desc = "POLITICS_ZHANG_XUELIANG_DESC"
+	picture = "Portrait_Zhang_Xueliang.dds"
+	expire = "1938.1.20"
+	ideology = stratmon
 }
 

@@ -2,24 +2,12 @@
 
 oob = "WLC_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-	early_fighter = 1
+set_popularities = {
+    monarchism = 95
+    fascism = 5
 }
-
-set_convoys = 10
-
-
-
-	set_popularities = {
-        monarchism = 95
-        fascism = 5
-
-	}
 	
-	set_politics = { 
+set_politics = { 
 	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -42,6 +30,16 @@ create_country_leader = {
 	picture = "WLC_Bernotti.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichskommissar Helmut Poppendick"
+	desc = ""
+	picture = "WLC_Poppendick.png"
+	expire = "1965.1.1"
+	ideology = natsoc
 	traits = {
 	}
 }

@@ -2,7 +2,7 @@
 
 oob = "ENG_gen"
 
-set_cosmetic_tag = TRI_ENG
+set_cosmetic_tag = UK_RED
 
 # Starting tech
 set_technology = {
@@ -22,11 +22,11 @@ set_technology = {
 		democratic 
 			 = 10
 		fascism
-			 = 5
+			 = 0
 		communism
-			 = 5
+			 = 0
 		authoritarian_monarchism
-			 = 80
+			 = 90
 		}
 	set_politics = { 
  ruling_party = authoritarian_monarchism
@@ -34,37 +34,34 @@ set_technology = {
 	election_frequency = 48
 	elections_allowed = no
 }
-
 	
 	create_country_leader = {
-		name = "Tubal Uriah Butler"
-		desc = ""
-		picture = "gfx/leaders/Central America/Tubal_Butler.dds"
-		expire = "1977.2.20"
-		ideology = fascism_ideology
-		traits = {
-			#
-		}
-	}
-	
-	create_country_leader = {
-	name = "Eric Williams"
-	desc = ""
-	picture = "gfx/leaders/Central America/Eric_Williams.dds"
-	expire = "1981.3.29"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-	
-	create_country_leader = {
-	name = "Sir Alfred Claud Hollis"
+	name = "Governor Sir Alfred Claud Hollis"
 	desc = ""
 	picture = "Portrait_Alfred_Claud_Hollis.dds"
 	expire = "1961.11.22"
 	ideology = authmon
 	traits = {
 		#
+	}
+}
+
+create_country_leader = {
+	name = "President Eric Eustace Williams"
+	desc = ""
+	picture = "TRI_Williams.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Raja Boysie Singh"
+	desc = ""
+	picture = "TRI_Singh.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
 	}
 }

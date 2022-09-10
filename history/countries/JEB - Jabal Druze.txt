@@ -2,7 +2,7 @@
 
 oob = "JEB_1936"
 
-set_cosmetic_tag = JEB_FRA
+set_cosmetic_tag = FRA_COLONY
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -14,10 +14,10 @@ set_convoys = 10
 
 
 	set_popularities = {
-        democratic =  25
-        communism =  25
-        fascism =  25
-        neutrality =  25
+        democratic =  8
+        monarchism =  10
+        fascism =  2
+        neutrality =  80
 
 	}
 	
@@ -30,7 +30,7 @@ set_convoys = 10
 
 
 create_country_leader = {
-	name = "Pierre-Joseph-François Tarrit"
+	name = "Gouverneur Pierre-Joseph-François Tarrit"
 	desc = ""
 	picture = "Portrait_Pierre-Joseph-François_Tarrit.dds"
 	expire = "1965.1.1"
@@ -40,12 +40,32 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gubernator Anatoly Ivanov Skurtaov"
+	name = "Gubernator Anatoly Ivanov Skuratov"
 	desc = ""
-	picture = "gfx/leaders/PAL/PAL_Skuratov.tga"
+	picture = "gfx/leaders/HYP/HYP_Skuratov.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
 		
+	}
+}
+
+create_country_leader = {
+	name = "Sultan Pasha al-Atrash"
+	desc = ""
+	picture = "JEB_Atrash.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Rayiys Pasha al-Atrash"
+	desc = ""
+	picture = "JEB_Atrash.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
 	}
 }

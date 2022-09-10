@@ -3,45 +3,34 @@
 oob = "KAM_1936"
 
 set_popularities = {
-        neutrality = 16
-        monarchism = 4
-        democratic = 4
-        liberal_republic = 4
-        communism = 4
-        vanguardism = 4
-        fascism = 4
-        anarchism_ideology = 4
-        socialism_ideology = 4
-        democratic_monarchism = 4
-        conservative_monarchism = 4
-        stratocratic = 4
-        authoritarian_monarchism = 4
-        republican_fascism = 4
-        national_socialism = 4
-        theocratic = 4
-        left_anarchism = 4
-        right_anarchism = 4
-        socialist_monarchy = 4
-        centrist_republic = 4
-        centrist_monarchism = 4
-        stratocratic_monarchism = 4
-
+        neutrality = 20
+        democratic = 40
+        stratocratic = 40
 }
 
 set_politics = {
-	
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Admiral Nikolay Fyodorovich Artamonov"
+	name = "Admirál Iván Stepánovič Jumášev"
 	desc = ""
-	picture = "KAM_Artamonov.tga"
+	picture = "gfx/leaders/TNOWarlords/KAM_Yumashev.tga"
 	expire = "1965.1.1"
-	ideology = cenrep
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Admirál Nikoláj Fëdorovič Artamónov"
+	desc = ""
+	picture = "gfx/leaders/TNOWarlords/KAM_Artamonov.tga"
+	expire = "1965.1.1"
+	ideology = despotism
 	traits = {
 	}
 }

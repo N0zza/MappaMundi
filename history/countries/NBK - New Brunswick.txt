@@ -13,21 +13,21 @@ set_technology = {
 set_convoys = 10
 
 set_popularities = {
-	liberal_republic
+	democratic_monarchism
 		= 90
-	democratic
+	centrist_monarchism
 		= 10
 }
 
 set_politics = { 
-	ruling_party = liberal_republic
+	ruling_party = democratic_monarchism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Allison Dysart"
+	name = "President Albert Allison Dysart"
 	desc = ""
 	picture = "NBK_Dysart.tga"
 	expire = "1950.1.1"
@@ -35,3 +35,55 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+create_country_leader = {
+	name = "Premier Albert Allison Dysart"
+	desc = ""
+	picture = "NBK_Dysart.tga"
+	expire = "1950.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prime Minister William Joseph Parnell MacMillan"
+	desc = ""
+	picture = "NBK_Parnell.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Premier William Joseph Parnell MacMillan"
+	desc = ""
+	picture = "NBK_Parnell.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Peter John Veniot"
+	desc = ""
+	picture = "NBK_Veniot.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gouverneur Peter John Veniot"
+	desc = ""
+	picture = "NBK_Veniot.tga"
+	expire = "1965.1.1"
+	ideology = stratmon
+	traits = {
+	}
+}
+
+

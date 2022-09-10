@@ -1,0 +1,1271 @@
+scripted_gui = {
+   slp = { 
+     window_name = "slp_container"
+ 
+       context_type = player_context
+	   parent_window_token = politics_tab
+ 
+       visible = {
+            OR = {
+				tag = NZG
+				tag = UA2
+				tag = LV2
+				tag = PL2
+				tag = MC2
+				tag = KC2
+			}
+        }
+ 
+        effects = {
+            slp_icon_click = {
+				if = {
+					limit = {
+						AND = {
+							tag = NZG
+							has_government = national_socialism
+						}
+					}
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_menu_nzg }
+					set_variable = { show_menu_nzg = show }
+				}
+				if = {
+					limit = {
+						AND = {
+							tag = UA2
+							has_government = national_socialism
+						}
+					}
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_menu_ua2 }
+					set_variable = { show_menu_ua2 = show }
+				}
+				if = {
+					limit = {
+						AND = {
+							tag = LV2
+							OR = {
+								has_government = national_socialism
+								has_government = fascism
+							}
+						}
+					}
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_menu_lv2 }
+					set_variable = { show_menu_lv2 = show }
+				}
+				if = {
+					limit = {
+						AND = {
+							tag = PL2
+							OR = {
+								has_government = national_socialism
+								has_government = fascism
+							}
+						}
+					}
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_menu_pl2 }
+					set_variable = { show_menu_pl2 = show }
+				}
+				if = {
+					limit = {
+						AND = {
+							tag = MC2
+							has_government = national_socialism
+						}
+					}
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_menu_mc2 }
+					set_variable = { show_menu_mc2 = show }
+				}
+				if = {
+					limit = {
+						AND = {
+							tag = MC2
+							has_government = neutrality
+						}
+					}
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_menu_mc22 }
+					set_variable = { show_menu_mc22 = show }
+				}
+				if = {
+					limit = {
+						AND = {
+							tag = KC2
+							has_government = national_socialism
+						}
+					}
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_menu_kc2 }
+					set_variable = { show_menu_kc2 = show }
+				}
+				if = {
+					limit = {
+						AND = {
+							tag = KC2
+							has_government = fascism
+						}
+					}
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_menu_kc22 }
+					set_variable = { show_menu_kc22 = show }
+				}
+            }
+        }
+        triggers = {
+			slp_icon_click_enabled = {
+				always = yes
+			}
+        }
+    }
+	
+	### Großgermanisches Reich ###
+	slp_menu_NZG = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_NZG_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_nzg > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_NZG_close_click = {
+                subtract_from_temp_variable = { show = show_menu_nzg }
+                set_variable = { show_menu_nzg = show }
+            }
+			leader_frame1_NZG_click = {
+				subtract_from_temp_variable = { show = show_menu_nzg }
+                set_variable = { show_menu_nzg = show }
+				NZG = {	country_event = { id = slp_menu.16 } }
+				add_to_variable = { nzg_port_1 = 1 }
+				set_variable = { nzg_port_2 = 0 }
+				set_variable = { nzg_port_3 = 0 }
+				set_variable = { nzg_port_4 = 0 }
+				set_variable = { nzg_port_5 = 0 }
+				set_variable = { nzg_port_6 = 0 }
+				set_variable = { nzg_port_7 = 0 }
+				set_variable = { nzg_port_8 = 0 }
+			}
+			leader_frame2_NZG_click = {
+				subtract_from_temp_variable = { show = show_menu_nzg }
+                set_variable = { show_menu_nzg = show }
+				NZG = {	country_event = { id = slp_menu.27 } }
+				add_to_variable = { nzg_port_2 = 1 }
+				set_variable = { nzg_port_1 = 0 }
+				set_variable = { nzg_port_3 = 0 }
+				set_variable = { nzg_port_4 = 0 }
+				set_variable = { nzg_port_5 = 0 }
+				set_variable = { nzg_port_6 = 0 }
+				set_variable = { nzg_port_7 = 0 }
+				set_variable = { nzg_port_8 = 0 }
+			}
+			leader_frame3_NZG_click = {
+				subtract_from_temp_variable = { show = show_menu_nzg }
+                set_variable = { show_menu_nzg = show }
+				NZG = {	country_event = { id = slp_menu.28 } }
+				add_to_variable = { nzg_port_3 = 1 }
+				set_variable = { nzg_port_1 = 0 }
+				set_variable = { nzg_port_2 = 0 }
+				set_variable = { nzg_port_4 = 0 }
+				set_variable = { nzg_port_5 = 0 }
+				set_variable = { nzg_port_6 = 0 }
+				set_variable = { nzg_port_7 = 0 }
+				set_variable = { nzg_port_8 = 0 }
+			}
+			leader_frame4_NZG_click = {
+				subtract_from_temp_variable = { show = show_menu_nzg }
+                set_variable = { show_menu_nzg = show }
+				NZG = {	country_event = { id = slp_menu.29 } }
+				add_to_variable = { nzg_port_4 = 1 }
+				set_variable = { nzg_port_1 = 0 }
+				set_variable = { nzg_port_2 = 0 }
+				set_variable = { nzg_port_3 = 0 }
+				set_variable = { nzg_port_5 = 0 }
+				set_variable = { nzg_port_6 = 0 }
+				set_variable = { nzg_port_7 = 0 }
+				set_variable = { nzg_port_8 = 0 }
+			}
+			leader_frame5_NZG_click = {
+				subtract_from_temp_variable = { show = show_menu_nzg }
+                set_variable = { show_menu_nzg = show }
+				NZG = {	country_event = { id = slp_menu.30 } }
+				add_to_variable = { nzg_port_5 = 1 }
+				set_variable = { nzg_port_1 = 0 }
+				set_variable = { nzg_port_2 = 0 }
+				set_variable = { nzg_port_3 = 0 }
+				set_variable = { nzg_port_4 = 0 }
+				set_variable = { nzg_port_6 = 0 }
+				set_variable = { nzg_port_7 = 0 }
+				set_variable = { nzg_port_8 = 0 }
+			}
+			leader_frame6_NZG_click = {
+				subtract_from_temp_variable = { show = show_menu_nzg }
+                set_variable = { show_menu_nzg = show }
+				NZG = {	country_event = { id = slp_menu.31 } }
+				add_to_variable = { nzg_port_6 = 1 }
+				set_variable = { nzg_port_1 = 0 }
+				set_variable = { nzg_port_2 = 0 }
+				set_variable = { nzg_port_3 = 0 }
+				set_variable = { nzg_port_4 = 0 }
+				set_variable = { nzg_port_5 = 0 }
+				set_variable = { nzg_port_7 = 0 }
+				set_variable = { nzg_port_8 = 0 }
+			}
+			leader_frame7_NZG_click = {
+				subtract_from_temp_variable = { show = show_menu_nzg }
+                set_variable = { show_menu_nzg = show }
+				NZG = {	country_event = { id = slp_menu.32 } }
+				add_to_variable = { nzg_port_7 = 1 }
+				set_variable = { nzg_port_1 = 0 }
+				set_variable = { nzg_port_2 = 0 }
+				set_variable = { nzg_port_3 = 0 }
+				set_variable = { nzg_port_4 = 0 }
+				set_variable = { nzg_port_5 = 0 }
+				set_variable = { nzg_port_6 = 0 }
+				set_variable = { nzg_port_8 = 0 }
+			}
+			leader_frame8_NZG_click = {
+				subtract_from_temp_variable = { show = show_menu_nzg }
+                set_variable = { show_menu_nzg = show }
+				NZG = {	country_event = { id = slp_menu.33 } }
+				add_to_variable = { nzg_port_8 = 1 }
+				set_variable = { nzg_port_1 = 0 }
+				set_variable = { nzg_port_2 = 0 }
+				set_variable = { nzg_port_3 = 0 }
+				set_variable = { nzg_port_4 = 0 }
+				set_variable = { nzg_port_5 = 0 }
+				set_variable = { nzg_port_6 = 0 }
+				set_variable = { nzg_port_7 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = NZG
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.nzg_port_2 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { nzg_port_2 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame2_NZG_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+        triggers = {
+			slp_NZG_close_enabled = {
+				always = yes
+			}
+			leader_frame1_NZG_click_enabled = {
+				has_government = national_socialism
+				check_variable = { nzg_port_1 < 0.99 }
+			}
+			leader_frame2_NZG_click_enabled = {
+				has_government = national_socialism
+				check_variable = { nzg_port_2 < 0.99 }
+			}
+			leader_frame3_NZG_click_enabled = {
+				has_government = national_socialism
+				check_variable = { nzg_port_3 < 0.99 }
+			}
+			leader_frame4_NZG_click_enabled = {
+				has_government = national_socialism
+				check_variable = { nzg_port_4 < 0.99 }
+			}
+			leader_frame5_NZG_click_enabled = {
+				has_government = national_socialism
+				check_variable = { nzg_port_5 < 0.99 }
+			}
+			leader_frame6_NZG_click_enabled = {
+				has_government = national_socialism
+				check_variable = { nzg_port_6 < 0.99 }
+			}
+			leader_frame7_NZG_click_enabled = {
+				has_government = national_socialism
+				check_variable = { nzg_port_7 < 0.99 }
+			}
+			leader_frame8_NZG_click_enabled = {
+				has_government = national_socialism
+				check_variable = { nzg_port_8 < 0.99 }
+			}
+        }
+	}
+	
+	### RK Ukraine ###
+	slp_menu_UA2 = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_UA2_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_ua2 > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_UA2_close_click = {
+                subtract_from_temp_variable = { show = show_menu_ua2 }
+                set_variable = { show_menu_ua2 = show }
+            }
+			leader_frame1_UA2_click = {
+				subtract_from_temp_variable = { show = show_menu_ua2 }
+                set_variable = { show_menu_ua2 = show }
+				UA2 = {	country_event = { id = slp_menu.1 } }
+				add_to_variable = { ua2_port_1 = 1 }
+				set_variable = { ua2_port_2 = 0 }
+				set_variable = { ua2_port_3 = 0 }
+				set_variable = { ua2_port_4 = 0 }
+			}
+			leader_frame2_UA2_click = {
+				subtract_from_temp_variable = { show = show_menu_ua2 }
+                set_variable = { show_menu_ua2 = show }
+				UA2 = {	country_event = { id = slp_menu.2 } }
+				add_to_variable = { ua2_port_2 = 1 }
+				set_variable = { ua2_port_1 = 0 }
+				set_variable = { ua2_port_3 = 0 }
+				set_variable = { ua2_port_4 = 0 }
+			}
+			leader_frame3_UA2_click = {
+				subtract_from_temp_variable = { show = show_menu_ua2 }
+                set_variable = { show_menu_ua2 = show }
+				UA2 = {	country_event = { id = slp_menu.3 } }
+				add_to_variable = { ua2_port_3 = 1 }
+				set_variable = { ua2_port_1 = 0 }
+				set_variable = { ua2_port_2 = 0 }
+				set_variable = { ua2_port_4 = 0 }
+			}
+			leader_frame4_UA2_click = {
+				subtract_from_temp_variable = { show = show_menu_ua2 }
+                set_variable = { show_menu_ua2 = show }
+				UA2 = {	country_event = { id = slp_menu.4 } }
+				add_to_variable = { ua2_port_4 = 1 }
+				set_variable = { ua2_port_1 = 0 }
+				set_variable = { ua2_port_2 = 0 }
+				set_variable = { ua2_port_3 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = UA2
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.ua2_port_2 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { ua2_port_2 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame2_UA2_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+        triggers = {
+			slp_UA2_close_enabled = {
+				always = yes
+			}
+			leader_frame1_UA2_click_enabled = {
+				has_government = national_socialism
+				check_variable = { ua2_port_1 < 0.99 }
+			}
+			leader_frame2_UA2_click_enabled = {
+				has_government = national_socialism
+				check_variable = { ua2_port_2 < 0.99 }
+			}
+			leader_frame3_UA2_click_enabled = {
+				has_government = national_socialism
+				check_variable = { ua2_port_3 < 0.99 }
+			}
+			leader_frame4_UA2_click_enabled = {
+				has_government = national_socialism
+				check_variable = { ua2_port_4 < 0.99 }
+			}
+        }
+	}
+	
+	### RK Ostland ###
+	slp_menu_LV2 = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_LV2_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_lv2 > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_LV2_close_click = {
+                subtract_from_temp_variable = { show = show_menu_lv2 }
+                set_variable = { show_menu_lv2 = show }
+            }
+			leader_frame1_LV2_click = {
+				subtract_from_temp_variable = { show = show_menu_lv2 }
+                set_variable = { show_menu_lv2 = show }
+				LV2 = {	country_event = { id = slp_menu.5 } }
+				add_to_variable = { lv2_port_1 = 1 }
+				set_variable = { lv2_port_2 = 0 }
+				set_variable = { lv2_port_3 = 0 }
+				set_variable = { lv2_port_4 = 0 }
+			}
+			leader_frame2_LV2_click = {
+				subtract_from_temp_variable = { show = show_menu_lv2 }
+                set_variable = { show_menu_lv2 = show }
+				LV2 = {	country_event = { id = slp_menu.6 } }
+				add_to_variable = { lv2_port_2 = 1 }
+				set_variable = { lv2_port_1 = 0 }
+				set_variable = { lv2_port_3 = 0 }
+				set_variable = { lv2_port_4 = 0 }
+			}
+			leader_frame3_LV2_click = {
+				subtract_from_temp_variable = { show = show_menu_lv2 }
+                set_variable = { show_menu_lv2 = show }
+				LV2 = {	country_event = { id = slp_menu.7 } }
+				add_to_variable = { lv2_port_3 = 1 }
+				set_variable = { lv2_port_1 = 0 }
+				set_variable = { lv2_port_2 = 0 }
+				set_variable = { lv2_port_4 = 0 }
+			}
+			leader_frame4_LV2_click = {
+				subtract_from_temp_variable = { show = show_menu_lv2 }
+                set_variable = { show_menu_lv2 = show }
+				LV2 = {	country_event = { id = slp_menu.8 } }
+				add_to_variable = { lv2_port_4 = 1 }
+				set_variable = { lv2_port_1 = 0 }
+				set_variable = { lv2_port_2 = 0 }
+				set_variable = { lv2_port_3 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = LV2
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.lv2_port_2 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { lv2_port_2 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame2_LV2_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+        triggers = {
+			slp_LV2_close_enabled = {
+				always = yes
+			}
+			leader_frame1_LV2_click_enabled = {
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
+				check_variable = { lv2_port_1 < 0.99 }
+			}
+			leader_frame2_LV2_click_enabled = {
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
+				check_variable = { lv2_port_2 < 0.99 }
+			}
+			leader_frame3_LV2_click_enabled = {
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
+				check_variable = { lv2_port_3 < 0.99 }
+			}
+			leader_frame4_LV2_click_enabled = {
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
+				check_variable = { lv2_port_4 < 0.99 }
+			}
+        }
+	}
+	
+	### Generalgouvernement ###
+	slp_menu_PL2 = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_PL2_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_pl2 > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_PL2_close_click = {
+                subtract_from_temp_variable = { show = show_menu_pl2 }
+                set_variable = { show_menu_pl2 = show }
+            }
+			leader_frame1_PL2_click = {
+				subtract_from_temp_variable = { show = show_menu_pl2 }
+                set_variable = { show_menu_pl2 = show }
+				PL2 = {	country_event = { id = slp_menu.9 } }
+				add_to_variable = { pl2_port_1 = 1 }
+				set_variable = { pl2_port_2 = 0 }
+				set_variable = { pl2_port_3 = 0 }
+				set_variable = { pl2_port_4 = 0 }
+			}
+			leader_frame2_PL2_click = {
+				subtract_from_temp_variable = { show = show_menu_pl2 }
+                set_variable = { show_menu_pl2 = show }
+				PL2 = {	country_event = { id = slp_menu.10 } }
+				add_to_variable = { pl2_port_2 = 1 }
+				set_variable = { pl2_port_1 = 0 }
+				set_variable = { pl2_port_3 = 0 }
+				set_variable = { pl2_port_4 = 0 }
+			}
+			leader_frame3_PL2_click = {
+				subtract_from_temp_variable = { show = show_menu_pl2 }
+                set_variable = { show_menu_pl2 = show }
+				PL2 = {	country_event = { id = slp_menu.11 } }
+				add_to_variable = { pl2_port_3 = 1 }
+				set_variable = { pl2_port_1 = 0 }
+				set_variable = { pl2_port_2 = 0 }
+				set_variable = { pl2_port_4 = 0 }
+			}
+			leader_frame4_PL2_click = {
+				subtract_from_temp_variable = { show = show_menu_pl2 }
+                set_variable = { show_menu_pl2 = show }
+				PL2 = {	country_event = { id = slp_menu.12 } }
+				add_to_variable = { pl2_port_4 = 1 }
+				set_variable = { pl2_port_1 = 0 }
+				set_variable = { pl2_port_2 = 0 }
+				set_variable = { pl2_port_3 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = PL2
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.pl2_port_2 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { pl2_port_2 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame2_PL2_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+        triggers = {
+			slp_PL2_close_enabled = {
+				always = yes
+			}
+			leader_frame1_PL2_click_enabled = {
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
+				check_variable = { pl2_port_1 < 0.99 }
+			}
+			leader_frame2_PL2_click_enabled = {
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
+				check_variable = { pl2_port_2 < 0.99 }
+			}
+			leader_frame3_PL2_click_enabled = {
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
+				check_variable = { pl2_port_3 < 0.99 }
+			}
+			leader_frame4_PL2_click_enabled = {
+				OR = {
+					has_government = national_socialism
+					has_government = fascism
+				}
+				check_variable = { pl2_port_4 < 0.99 }
+			}
+        }
+	}
+	
+	### RK Moskowien ###
+	slp_menu_MC2 = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_MC2_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_mc2 > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_MC2_close_click = {
+                subtract_from_temp_variable = { show = show_menu_mc2 }
+                set_variable = { show_menu_mc2 = show }
+            }
+			leader_frame1_MC2_click = {
+				subtract_from_temp_variable = { show = show_menu_mc2 }
+                set_variable = { show_menu_mc2 = show }
+				MC2 = {	country_event = { id = slp_menu.13 } }
+				add_to_variable = { mc2_port_1 = 1 }
+				set_variable = { mc2_port_2 = 0 }
+				set_variable = { mc2_port_3 = 0 }
+				set_variable = { mc2_port_4 = 0 }
+			}
+			leader_frame2_MC2_click = {
+				subtract_from_temp_variable = { show = show_menu_mc2 }
+                set_variable = { show_menu_mc2 = show }
+				MC2 = {	country_event = { id = slp_menu.14 } }
+				add_to_variable = { mc2_port_2 = 1 }
+				set_variable = { mc2_port_1 = 0 }
+				set_variable = { mc2_port_3 = 0 }
+				set_variable = { mc2_port_4 = 0 }
+			}
+			leader_frame3_MC2_click = {
+				subtract_from_temp_variable = { show = show_menu_mc2 }
+                set_variable = { show_menu_mc2 = show }
+				MC2 = {	country_event = { id = slp_menu.15 } }
+				add_to_variable = { mc2_port_3 = 1 }
+				set_variable = { mc2_port_1 = 0 }
+				set_variable = { mc2_port_2 = 0 }
+				set_variable = { mc2_port_4 = 0 }
+			}
+			leader_frame4_MC2_click = {
+				subtract_from_temp_variable = { show = show_menu_mc2 }
+                set_variable = { show_menu_mc2 = show }
+				MC2 = {	country_event = { id = slp_menu.16 } }
+				add_to_variable = { mc2_port_4 = 1 }
+				set_variable = { mc2_port_1 = 0 }
+				set_variable = { mc2_port_2 = 0 }
+				set_variable = { mc2_port_3 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = MC2
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.mc2_port_2 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { mc2_port_2 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame2_MC2_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+        triggers = {
+			slp_MC2_close_enabled = {
+				always = yes
+			}
+			leader_frame1_MC2_click_enabled = {
+				has_government = national_socialism
+				check_variable = { mc2_port_1 < 0.99 }
+			}
+			leader_frame2_MC2_click_enabled = {
+				has_government = national_socialism
+				check_variable = { mc2_port_2 < 0.99 }
+			}
+			leader_frame3_MC2_click_enabled = {
+				has_government = national_socialism
+				check_variable = { mc2_port_3 < 0.99 }
+			}
+			leader_frame4_MC2_click_enabled = {
+				has_government = national_socialism
+				check_variable = { mc2_port_4 < 0.99 }
+			}
+        }
+	}
+	
+	### MB Moskowien ###
+	slp_menu_MC22 = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_MC22_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_mc22 > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_MC22_close_click = {
+                subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+            }
+			leader_frame1_MC22_click = {
+				subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+				MC2 = {	country_event = { id = slp_menu.17 } }
+				add_to_variable = { mc22_port_1 = 1 }
+				set_variable = { mc22_port_2 = 0 }
+				set_variable = { mc22_port_3 = 0 }
+			}
+			leader_frame2_MC22_click = {
+				subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+				MC2 = {	country_event = { id = slp_menu.18 } }
+				add_to_variable = { mc22_port_2 = 1 }
+				set_variable = { mc22_port_1 = 0 }
+				set_variable = { mc22_port_3 = 0 }
+			}
+			leader_frame3_MC22_click = {
+				subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+				MC2 = {	country_event = { id = slp_menu.19 } }
+				add_to_variable = { mc22_port_3 = 1 }
+				set_variable = { mc22_port_1 = 0 }
+				set_variable = { mc22_port_2 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = MC2
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.mc22_port_2 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { mc22_port_2 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame2_MC22_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+        triggers = {
+			slp_MC22_close_enabled = {
+				always = yes
+			}
+			leader_frame1_MC22_click_enabled = {
+				has_government = neutrality
+				check_variable = { mc22_port_1 < 0.99 }
+			}
+			leader_frame2_MC22_click_enabled = {
+				has_government = neutrality
+				check_variable = { mc22_port_2 < 0.99 }
+			}
+			leader_frame3_MC22_click_enabled = {
+				has_government = neutrality
+				check_variable = { mc22_port_3 < 0.99 }
+			}
+        }
+	}
+	
+	### MB Moskowien ###
+	slp_menu_MC22 = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_MC22_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_mc22 > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_MC22_close_click = {
+                subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+            }
+			leader_frame1_MC22_click = {
+				subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+				MC2 = {	country_event = { id = slp_menu.17 } }
+				add_to_variable = { mc22_port_1 = 1 }
+				set_variable = { mc22_port_2 = 0 }
+				set_variable = { mc22_port_3 = 0 }
+			}
+			leader_frame2_MC22_click = {
+				subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+				MC2 = {	country_event = { id = slp_menu.18 } }
+				add_to_variable = { mc22_port_2 = 1 }
+				set_variable = { mc22_port_1 = 0 }
+				set_variable = { mc22_port_3 = 0 }
+			}
+			leader_frame3_MC22_click = {
+				subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+				MC2 = {	country_event = { id = slp_menu.19 } }
+				add_to_variable = { mc22_port_3 = 1 }
+				set_variable = { mc22_port_1 = 0 }
+				set_variable = { mc22_port_2 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = MC2
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.mc22_port_2 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { mc22_port_2 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame2_MC22_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+        triggers = {
+			slp_MC22_close_enabled = {
+				always = yes
+			}
+			leader_frame1_MC22_click_enabled = {
+				has_government = neutrality
+				check_variable = { mc22_port_1 < 0.99 }
+			}
+			leader_frame2_MC22_click_enabled = {
+				has_government = neutrality
+				check_variable = { mc22_port_2 < 0.99 }
+			}
+			leader_frame3_MC22_click_enabled = {
+				has_government = neutrality
+				check_variable = { mc22_port_3 < 0.99 }
+			}
+        }
+	}
+	
+	### MB Moskowien ###
+	slp_menu_MC22 = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_MC22_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_mc22 > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_MC22_close_click = {
+                subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+            }
+			leader_frame1_MC22_click = {
+				subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+				MC2 = {	country_event = { id = slp_menu.17 } }
+				add_to_variable = { mc22_port_1 = 1 }
+				set_variable = { mc22_port_2 = 0 }
+				set_variable = { mc22_port_3 = 0 }
+			}
+			leader_frame2_MC22_click = {
+				subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+				MC2 = {	country_event = { id = slp_menu.18 } }
+				add_to_variable = { mc22_port_2 = 1 }
+				set_variable = { mc22_port_1 = 0 }
+				set_variable = { mc22_port_3 = 0 }
+			}
+			leader_frame3_MC22_click = {
+				subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+				MC2 = {	country_event = { id = slp_menu.19 } }
+				add_to_variable = { mc22_port_3 = 1 }
+				set_variable = { mc22_port_1 = 0 }
+				set_variable = { mc22_port_2 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = MC2
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.mc22_port_2 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { mc22_port_2 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame2_MC22_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+        triggers = {
+			slp_MC22_close_enabled = {
+				always = yes
+			}
+			leader_frame1_MC22_click_enabled = {
+				has_government = neutrality
+				check_variable = { mc22_port_1 < 0.99 }
+			}
+			leader_frame2_MC22_click_enabled = {
+				has_government = neutrality
+				check_variable = { mc22_port_2 < 0.99 }
+			}
+			leader_frame3_MC22_click_enabled = {
+				has_government = neutrality
+				check_variable = { mc22_port_3 < 0.99 }
+			}
+        }
+	}
+	
+	### MB Moskowien ###
+	slp_menu_MC22 = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_MC22_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_mc22 > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_MC22_close_click = {
+                subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+            }
+			leader_frame1_MC22_click = {
+				subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+				MC2 = {	country_event = { id = slp_menu.17 } }
+				add_to_variable = { mc22_port_1 = 1 }
+				set_variable = { mc22_port_2 = 0 }
+				set_variable = { mc22_port_3 = 0 }
+			}
+			leader_frame2_MC22_click = {
+				subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+				MC2 = {	country_event = { id = slp_menu.18 } }
+				add_to_variable = { mc22_port_2 = 1 }
+				set_variable = { mc22_port_1 = 0 }
+				set_variable = { mc22_port_3 = 0 }
+			}
+			leader_frame3_MC22_click = {
+				subtract_from_temp_variable = { show = show_menu_mc22 }
+                set_variable = { show_menu_mc22 = show }
+				MC2 = {	country_event = { id = slp_menu.19 } }
+				add_to_variable = { mc22_port_3 = 1 }
+				set_variable = { mc22_port_1 = 0 }
+				set_variable = { mc22_port_2 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = MC2
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.mc22_port_2 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { mc22_port_2 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame2_MC22_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+        triggers = {
+			slp_MC22_close_enabled = {
+				always = yes
+			}
+			leader_frame1_MC22_click_enabled = {
+				has_government = neutrality
+				check_variable = { mc22_port_1 < 0.99 }
+			}
+			leader_frame2_MC22_click_enabled = {
+				has_government = neutrality
+				check_variable = { mc22_port_2 < 0.99 }
+			}
+			leader_frame3_MC22_click_enabled = {
+				has_government = neutrality
+				check_variable = { mc22_port_3 < 0.99 }
+			}
+        }
+	}
+	
+	### RK Kaukasien ###
+	slp_menu_KC2 = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_KC2_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_kc2 > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_KC2_close_click = {
+                subtract_from_temp_variable = { show = show_menu_kc2 }
+                set_variable = { show_menu_kc2 = show }
+            }
+			leader_frame1_KC2_click = {
+				subtract_from_temp_variable = { show = show_menu_kc2 }
+                set_variable = { show_menu_kc2 = show }
+				KC2 = {	country_event = { id = slp_menu.20 } }
+				add_to_variable = { kc2_port_1 = 1 }
+				set_variable = { kc2_port_2 = 0 }
+				set_variable = { kc2_port_3 = 0 }
+				set_variable = { kc2_port_4 = 0 }
+			}
+			leader_frame2_KC2_click = {
+				subtract_from_temp_variable = { show = show_menu_kc2 }
+                set_variable = { show_menu_kc2 = show }
+				KC2 = {	country_event = { id = slp_menu.21 } }
+				add_to_variable = { kc2_port_2 = 1 }
+				set_variable = { kc2_port_1 = 0 }
+				set_variable = { kc2_port_3 = 0 }
+				set_variable = { kc2_port_4 = 0 }
+			}
+			leader_frame3_KC2_click = {
+				subtract_from_temp_variable = { show = show_menu_kc2 }
+                set_variable = { show_menu_kc2 = show }
+				KC2 = {	country_event = { id = slp_menu.22 } }
+				add_to_variable = { kc2_port_3 = 1 }
+				set_variable = { kc2_port_1 = 0 }
+				set_variable = { kc2_port_2 = 0 }
+				set_variable = { kc2_port_4 = 0 }
+			}
+			leader_frame4_KC2_click = {
+				subtract_from_temp_variable = { show = show_menu_kc2 }
+                set_variable = { show_menu_kc2 = show }
+				KC2 = {	country_event = { id = slp_menu.23 } }
+				add_to_variable = { kc2_port_4 = 1 }
+				set_variable = { kc2_port_1 = 0 }
+				set_variable = { kc2_port_2 = 0 }
+				set_variable = { kc2_port_3 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = KC2
+			tag = KC2
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.kc2_port_2 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { kc2_port_2 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame2_KC2_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+        triggers = {
+			slp_KC2_close_enabled = {
+				always = yes
+			}
+			leader_frame1_KC2_click_enabled = {
+				has_government = national_socialism
+				check_variable = { kc2_port_1 < 0.99 }
+			}
+			leader_frame2_KC2_click_enabled = {
+				has_government = national_socialism
+				check_variable = { kc2_port_2 < 0.99 }
+			}
+			leader_frame3_KC2_click_enabled = {
+				has_government = national_socialism
+				check_variable = { kc2_port_3 < 0.99 }
+			}
+			leader_frame4_KC2_click_enabled = {
+				has_government = national_socialism
+				check_variable = { kc2_port_4 < 0.99 }
+			}
+        }
+	}
+	
+	### Kingdom of Kaukasia ###
+	slp_menu_KC22 = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_KC22_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_kc22 > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_KC22_close_click = {
+                subtract_from_temp_variable = { show = show_menu_kc22 }
+                set_variable = { show_menu_kc22 = show }
+            }
+			leader_frame1_KC22_click = {
+				subtract_from_temp_variable = { show = show_menu_kc22 }
+                set_variable = { show_menu_kc22 = show }
+				KC2 = {	country_event = { id = slp_menu.24 } }
+				add_to_variable = { kc22_port_1 = 1 }
+				set_variable = { kc22_port_2 = 0 }
+			}
+			leader_frame2_KC22_click = {
+				subtract_from_temp_variable = { show = show_menu_kc22 }
+                set_variable = { show_menu_kc22 = show }
+				KC2 = {	country_event = { id = slp_menu.25 } }
+				add_to_variable = { kc22_port_2 = 1 }
+				set_variable = { kc22_port_1 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = KC2
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.kc22_port_2 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { kc22_port_2 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame2_KC22_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+        triggers = {
+			slp_KC22_close_enabled = {
+				always = yes
+			}
+			leader_frame1_KC22_click_enabled = {
+				has_government = fascism
+				check_variable = { kc22_port_1 < 0.99 }
+			}
+			leader_frame2_KC22_click_enabled = {
+				has_government = fascism
+				check_variable = { kc22_port_2 < 0.99 }
+			}
+        }
+	}
+}

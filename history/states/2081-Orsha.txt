@@ -1,28 +1,25 @@
+
 state={
 	id=2081
 	name="STATE_2081"
 	
-	local_supplies = 0.0
-	state_category=rural
+	provinces={
+		6371  
+	}
 
 	history={
 		owner = BLR
-		victory_points = {
-			11241 25 
-		}
-		buildings = {
-			infrastructure = 5
-			air_base = 5
-
-		}
 		add_core_of = SOV
 		add_core_of = BLR
-
+		add_core_of = PLT
+		add_core_of = WR2
+		add_claim_by = LV2
+		victory_points = {
+			6371 5 
+		}
 	}
-
-	provinces={
-		3331 6220 6371 9241 
-	}
+	
+	state_category=rural
 	manpower=200000
 	buildings_max_level_factor=1.000
 }

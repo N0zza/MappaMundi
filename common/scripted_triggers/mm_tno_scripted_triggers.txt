@@ -1,0 +1,337 @@
+controls_west_russia = { 
+	AND = {
+		owns_state = 4884
+		owns_state = 11914
+		owns_state = 397
+		owns_state = 11936
+		owns_state = 11936
+		owns_state = 11938
+		owns_state = 13662
+		owns_state = 11927
+		owns_state = 1725
+		owns_state = 400
+		owns_state = 399
+		owns_state = 249
+		owns_state = 252
+		owns_state = 398
+		owns_state = 651
+		owns_state = 251
+	}
+}
+controls_western_siberia = { 
+	AND = {
+		owns_state = 10874
+		owns_state = 13697
+		owns_state = 3622
+		owns_state = 13703
+		owns_state = 653
+		owns_state = 572
+		owns_state = 16252
+		owns_state = 3078
+	}
+}
+controls_central_siberia = { 
+	AND = {
+		owns_state = 11965
+		owns_state = 11967
+		owns_state = 40
+		owns_state = 11972
+		owns_state = 569
+		owns_state = 568
+		owns_state = 1394
+		owns_state = 329
+	}
+}
+controls_far_east = { 
+	AND = {
+		owns_state = 566
+		owns_state = 564
+		owns_state = 10431
+		owns_state = 11142
+		owns_state = 12015
+		owns_state = 7908
+		owns_state = 637
+		owns_state = 12516
+	}
+}
+controls_southern_urals = { 
+	AND = {
+		owns_state = 12573
+		owns_state = 12663
+		owns_state = 582
+		owns_state = 10897
+	}
+}
+controls_western_russia = { 
+	AND = {
+		owns_state = 4884
+		owns_state = 11914
+		owns_state = 397
+		owns_state = 11936
+		owns_state = 11936
+		owns_state = 11938
+		owns_state = 13662
+		owns_state = 11927
+		owns_state = 1725
+		owns_state = 400
+		owns_state = 399
+		owns_state = 249
+		owns_state = 252
+		owns_state = 398
+		owns_state = 651
+		owns_state = 251
+		owns_state = 10874
+		owns_state = 13697
+		owns_state = 3622
+		owns_state = 13703
+		owns_state = 653
+		owns_state = 572
+		owns_state = 16252
+		owns_state = 3078
+		owns_state = 12573
+		owns_state = 12663
+		owns_state = 582
+		owns_state = 10897
+	}
+}
+controls_siberia = { 
+	AND = {
+		owns_state = 11965
+		owns_state = 11967
+		owns_state = 40
+		owns_state = 11972
+		owns_state = 569
+		owns_state = 568
+		owns_state = 1394
+		owns_state = 329
+		owns_state = 566
+		owns_state = 564
+		owns_state = 10431
+		owns_state = 11142
+		owns_state = 12015
+		owns_state = 7908
+		owns_state = 637
+		owns_state = 12516
+	}
+}
+controls_russia = { 
+	AND = {
+		owns_state = 4884
+		owns_state = 11914
+		owns_state = 397
+		owns_state = 11936
+		owns_state = 11936
+		owns_state = 11938
+		owns_state = 13662
+		owns_state = 11927
+		owns_state = 1725
+		owns_state = 400
+		owns_state = 399
+		owns_state = 249
+		owns_state = 252
+		owns_state = 398
+		owns_state = 651
+		owns_state = 251
+		owns_state = 10874
+		owns_state = 13697
+		owns_state = 3622
+		owns_state = 13703
+		owns_state = 653
+		owns_state = 572
+		owns_state = 16252
+		owns_state = 3078
+		owns_state = 12573
+		owns_state = 12663
+		owns_state = 582
+		owns_state = 10897
+		owns_state = 11965
+		owns_state = 11967
+		owns_state = 40
+		owns_state = 11972
+		owns_state = 569
+		owns_state = 568
+		owns_state = 1394
+		owns_state = 329
+		owns_state = 566
+		owns_state = 564
+		owns_state = 10431
+		owns_state = 11142
+		owns_state = 12015
+		owns_state = 7908
+		owns_state = 637
+		owns_state = 12516
+	}
+}
+controls_kazakhstan = { 
+	AND = {
+		owns_state = 12450
+		owns_state = 3090
+		owns_state = 3077
+		owns_state = 12252
+		owns_state = 583
+		owns_state = 3308
+		owns_state = 587
+		owns_state = 3306
+	}
+}
+is_russian_warlord = {
+	OR = {
+		tag = ONG
+		tag = ARH
+		tag = PSS
+		tag = UKH
+		tag = KMR
+		tag = GYY
+		tag = BRZ
+		tag = VLG
+		tag = KSA
+		tag = VYA
+		tag = GRK
+		tag = HYP
+		tag = SMM
+		tag = ORN
+		tag = MGN
+		tag = UR2
+		tag = VRK
+		tag = SUG
+		tag = YGR
+		tag = SVR
+		tag = TYU
+		tag = OMS
+		tag = ZLO
+		tag = TOM
+		tag = NVO
+		tag = KRV
+		tag = KNY
+		tag = ALI
+		tag = TAN
+		tag = KKS
+		tag = IRK
+		tag = BML
+		tag = CTA
+		tag = AMU
+		tag = MGD
+		tag = YKT
+		tag = ALD
+		tag = OMO
+		tag = KMC
+	}
+}
+is_russian_communist_warlord = {
+	OR = {
+		AND = {
+			tag = ARH
+			OR = {
+				has_government = vanguardism
+				has_government = communism
+				has_government = stratocratic
+				has_government = neutrality
+			}
+		}
+		AND = {
+			tag = PSS
+			has_government = stratocratic
+		}
+		AND = {
+			tag = UKH
+			has_government = stratocratic
+		}
+		AND = {
+			tag = KMR
+			OR = {
+				has_government = vanguardism
+				has_government = communism
+				has_government = socialism_ideology
+			}
+		}
+		AND = {
+			tag = GRK
+			has_government = stratocratic
+		}
+		AND = {
+			tag = ORN
+			OR = {
+				has_government = vanguardism
+				has_government = communism
+				has_government = socialism_ideology
+				has_government = left_anarchism
+			}
+		}
+		AND = {
+			tag = MGN
+			has_government = neutrality
+		}
+		AND = {
+			tag = SUG
+			OR = {
+				has_government = stratocratic
+				has_government = socialism_ideology
+			}
+		}
+		AND = {
+			tag = SVR
+			OR = {
+				has_government = stratocratic
+				has_government = neutrality
+			}
+		}
+		AND = {
+			tag = TYU
+			OR = {
+				has_government = vanguardism
+				has_government = communism
+			}
+		}
+		AND = {
+			tag = TAN
+			has_government = stratocratic
+		}
+		AND = {
+			tag = IRK
+			has_government = vanguardism
+		}
+		AND = {
+			tag = BML
+			has_government = communism
+		}
+		AND = {
+			tag = KMC
+			has_government = centrist_republic
+		}
+	}
+}
+is_russian_monarchist_warlord = {
+	OR = {
+		AND = {
+			tag = VYA
+			has_government = conservative_monarchism
+		}
+		AND = {
+			tag = BRZ
+			has_government = authoritarian_monarchism
+		}
+		AND = {
+			tag = KMR
+			OR = {
+				has_government = theocratic
+				has_government = fascism
+			}
+		}
+		AND = {
+			tag = KRV
+			OR = {
+				has_government = authoritarian_monarchism
+				has_government = stratocratic_monarchism
+				has_government = conservative_monarchism
+				has_government = centrist_monarchism
+			}
+		}
+		AND = {
+			tag = CTA
+			OR = {
+				has_government = stratocratic_monarchism
+				has_government = centrist_monarchism
+			}
+		}
+	}
+}

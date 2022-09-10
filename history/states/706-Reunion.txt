@@ -1,23 +1,20 @@
+
 state={
 	id=706
 	name="STATE_706"
-	manpower = 186637
 	
-	local_supplies = 0.0
-	state_category = small_island
-
+	provinces={
+		13017
+	}
+	
 	history={
 		owner = REU
 		add_core_of = REU
-		buildings = {
-			infrastructure = 3
-			13017 = {
-				naval_base = 1
-			}
+		victory_points = {
+			13017 5
 		}
 	}
-
-	provinces={
-		13017 
-	}
+	
+	state_category = small_island
+	manpower = 186637
 }

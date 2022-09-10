@@ -3,7 +3,13 @@
 oob = "PL2_1936"
 
 set_popularities = {
-    national_socialism = 100
+    national_socialism = 64
+    neutrality = 20
+    liberal_republic = 6
+    stratocratic = 4
+    communism = 3
+    republican_fascism = 2
+    fascism = 1
 }
 
 set_cosmetic_tag = GREY_GER3
@@ -17,18 +23,68 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Ignacy Mościcki"
-	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
-	picture = "gfx/leaders/POL/Portrait_Poland_Ignacy_Moscicki.dds"
+	name = "Generalgouverneur Hans Michael Frank"
+	desc = ""
+	picture = "PL2_Frank.tga"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = natsoc
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Bolesław Bierut"
+	name = "Reichskommissar Hans Michael Frank"
+	desc = ""
+	picture = "PL2_Frank.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Militärgouverneur Werner Schrader"
+	desc = ""
+	picture = "PL2_Schrader.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichslandsführer Adam Baworowski"
+	desc = ""
+	picture = "PL2_Baworowski.tga"
+	expire = "1965.1.1"
+	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prezydent Stanisław Wachowiak"
+	desc = ""
+	picture = "PL2_Wachowiak.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+#create_country_leader = {
+#	name = "Premier Ignacy Mościcki"
+#	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
+#	picture = "gfx/leaders/POL/Portrait_Poland_Ignacy_Moscicki.dds"
+#	expire = "1965.1.1"
+#	ideology = oligarchism
+#	traits = {
+#		#
+#	}
+#}
+
+create_country_leader = {
+	name = "Przewodniczący Bolesław Bierut"
 	desc = ""
 	picture = "gfx/leaders/POL/Portrait_Boleslaw_Bierut.dds"
 	expire = "1965.1.1"
@@ -39,7 +95,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Władysław Gomułka"
+	name = "I Sekretarz Władysław Gomułka"
 	desc = ""
 	picture = "gfx/leaders/POL/Portrait_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
@@ -49,7 +105,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Tomasz Stefan Arciszewski"
+	name = "Prezydent Tomasz Stefan Arciszewski"
 	desc = ""
 	picture = "gfx/leaders/POL/Portrait_Tomasz_Arciszewski.dds"
 	expire = "1965.1.1"
@@ -59,7 +115,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Augustyn I z Czartoryski"
+	name = "Wielki Książę Augustyn I z Czartoryski"
 	desc = ""
 	picture = "gfx/leaders/POL/Portrait_Augustyn_Czartoryski.dds"
 	expire = "1965.1.1"
@@ -69,7 +125,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Wincenty Witos"
+	name = "Prezydent Wincenty Witos"
 	desc = ""
 	picture = "gfx/leaders/POL/Portrait_Wincenty_Witos.dds"
 	expire = "1965.1.1"
@@ -79,7 +135,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Walery Sławek"
+	name = "Prezydent Walery Sławek"
 	desc = ""
 	picture = "gfx/leaders/POL/Portrait_Walery_Slawek.dds"
 	expire = "1965.1.1"
@@ -89,7 +145,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Friedrich Christian I von Wettin"
+	name = "Król Fryderyk Krystian Wettyn"
 	desc = ""
 	picture = "gfx/leaders/POL/Portrait_Fryderyk_Krystian_Wettin.tga"
 	expire = "1965.1.1"
@@ -99,7 +155,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Fryderyk Krystian I z Wettin"
+	name = "Król Fryderyk Krystian I z Wettin"
 	desc = ""
 	picture = "gfx/leaders/POL/Portrait_Fryderyk_Krystian_Wettin.tga"
 	expire = "1965.1.1"
@@ -109,7 +165,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Władysław Sikorski"
+	name = "Premier Władysław Sikorski"
 	desc = ""
 	picture = "gfx/leaders/POL/Portrait_Wladyslaw_Sikorski.dds"
 	expire = "1965.1.1"
@@ -119,7 +175,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Wanda I z Piłsudski"
+	name = "Królowa Wanda I z Piłsudski"
 	desc = ""
 	picture = "gfx/leaders/POL/Portrait_Wanda_Pilsudski.dds"
 	expire = "1965.1.1"
@@ -128,18 +184,18 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Edward Rydz-Smigly"
-	desc = ""
-	picture = "gfx/leaders/POL/Portrait_Edward_Rydz_Smigly.dds"
-	expire = "1965.1.1"
-	ideology = militarism
-	traits = {
-	}
-}
+#create_country_leader = {
+#	name = "Głównodowodzacy Edward Rydz-Smigly"
+#	desc = ""
+#	picture = "gfx/leaders/POL/Portrait_Edward_Rydz_Smigly.dds"
+#	expire = "1965.1.1"
+#	ideology = militarism
+#	traits = {
+#	}
+#}
 
 create_country_leader = {
-	name = "Jan I z Piłsudski"
+	name = "Król Jan I z Piłsudski"
 	desc = ""
 	picture = "gfx/leaders/POL/Portrait_Jan_Pilsudski.dds"
 	expire = "1965.1.1"
@@ -149,7 +205,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Karl Albrecht z Habsburg-Lothringen"
+	name = "Król Karl Albrecht z Habsburg-Lothringen"
 	desc = ""
 	picture = "gfx/leaders/POL/Portrait_Karl_Albrecht_Habsburg.dds"
 	expire = "1965.1.1"
@@ -159,7 +215,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Mendog I & III z Urach"
+	name = "Król Mendog I & III z Urach"
 	desc = ""
 	picture = "gfx/leaders/POL/Portrait_Mendog_Wurttemberg.tga"
 	expire = "1965.1.1"
@@ -169,7 +225,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "August Hlond"
+	name = "Ksiaze-Arcybiskup August Hlond"
 	desc = ""
 	picture = "gfx/leaders/POL/Portrait_August_Hlond.dds"
 	expire = "1965.1.1"
@@ -178,35 +234,25 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Augustus IV z Hohenzollern"
-	desc = ""
-	picture = "gfx/leaders/POL/Portrait_August_Hohenzollern.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
+#create_country_leader = {
+#	name = "Cesarz Augustus IV z Hohenzollern"
+#	desc = ""
+#	picture = "gfx/leaders/POL/Portrait_August_Hohenzollern.dds"
+#	expire = "1965.1.1"
+#	ideology = fascism_ideology
+#	traits = {
+#	}
+#}
 
-create_country_leader = {
-	name = "Bolesław Piasecki"
-	desc = ""
-	picture = "gfx/leaders/POL/Portrait_Boleslaw_Piasecki.dds"
-	expire = "1965.1.1"
-	ideology = repfash
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Generalgouverneur Hans Michael Frank"
-	desc = ""
-	picture = "gfx/leaders/POL/POL_Hans_Frank.tga"
-	expire = "1965.1.1"
-	ideology = natsoc
-	traits = {
-	}
-}
+#create_country_leader = {
+#	name = "Przewodniczący Bolesław Piasecki"
+#	desc = ""
+#	picture = "gfx/leaders/POL/Portrait_Boleslaw_Piasecki.dds"
+#	expire = "1965.1.1"
+#	ideology = repfash
+#	traits = {
+#	}
+#}
 
 create_country_leader = {
 	name = "Tribal Leadership"

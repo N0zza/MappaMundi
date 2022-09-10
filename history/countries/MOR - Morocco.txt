@@ -2,25 +2,21 @@
 
 oob = "MAR_1936"
 
-set_research_slots = 3
-set_cosmetic_tag = MOR_FRA
+set_cosmetic_tag = FRA_COLONY
 
-	set_popularities = {
-		democratic 
-			 = 30
-		vanguardism
-			 = 10
-		authoritarian_monarchism 
-			 = 60
-			
-	}
-	
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+set_popularities = {
+	democratic = 30
+	vanguardism = 10
+	authoritarian_monarchism = 60
+}
+
+set_politics = { 
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
+
 create_country_leader = {
 	name = "Sultan Mohammed V d'Alaouite"
 	desc = ""
@@ -123,6 +119,16 @@ create_country_leader = {
 	picture = "MOR_Botto.tga"
 	expire = "1965.1.1"
 	ideology = repfash
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichskommissar Emil Leeb"
+	desc = ""
+	picture = "MOR_Leeb.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
 	traits = {
 	}
 }

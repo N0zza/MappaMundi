@@ -4,14 +4,9 @@ oob = "BEO_1936"
 
 	set_popularities = {
 		democratic 
-			 = 35
+			 = 80
 		fascism
-			 = 15
-		communism
-			 = 15
-		neutrality
-			 = 35
-		
+			 = 20		
 	}
 
 	set_politics = { 
@@ -21,47 +16,43 @@ oob = "BEO_1936"
 	elections_allowed = yes
 }
 
-#NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
-
 create_country_leader = {
-	name = "Phan Bôi Châu" 
+	name = "Chiji Masao Baba"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
-	expire = "1953.3.1"
-	ideology = fascism_ideology 
+	picture = "BEO_Baba.tga"
+	expire = "1989.1.1"
+	ideology = fascism_ideology
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Ho Chí Minh" 
+	name = "President Lily Eberwein Abdullah"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds"
-	expire = "1953.3.1"
-	ideology = marxism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Ngô Đình Diêm"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
-	expire = "1953.3.1"
+	picture = "BEO_Lily.tga"
+	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
-	name = "Nguyen Tuong Tam"
+	name = "Governor Douglas James Jardine"
 	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
+	picture = "Portrait_Douglas_James_Jardine.dds"
+	ideology = stratmon
+	expire = "1963.6.16"
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "King Charles Vyner Brooke"
+	desc = ""
+	picture = "Portrait_Charles_Vyner_Brooke.dds"
 	expire = "1953.3.1"
-	ideology = moderatism
+	ideology = absolutism
 	traits = {
 		
 	}

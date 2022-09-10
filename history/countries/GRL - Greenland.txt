@@ -28,61 +28,76 @@ set_convoys = 10
 
 
 	set_popularities = {
-		democratic 
-			 = 96
-		fascism
-			 = 2
-		communism
-			 = 2
+		authoritarian_monarchism 
+			 = 80
+		centrist_republic
+			 = 10
+		liberal_republic
+			 = 10
 		}
 	set_politics = { 
- ruling_party = democratic
+ ruling_party = authoritarian_monarchism
 	last_election = "1933.10.16"
 	election_frequency = 36
 	elections_allowed = no
 }
 
-
 create_country_leader = {
-	name = "Massak (Soft Snow)"
+	name = "Guvernør Aksel Svane"
 	desc = ""
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+	picture = "SG1_Svane.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = authmon
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Amaqjuaq (Strong One)"
+	name = "Governor Sir Arthur Francis Eric Palliser"
 	desc = ""
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
+	picture = "GRL_Palliser.tga"
+	expire = "1989.1.1"
+	ideology = stratmon
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Noahtakmiut (Little River)"
+	name = "Siulittaasuat Pitseolak Ashoona"
 	desc = ""
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	picture = "GRL_Ashoona.tga"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = socdem
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Aujaq (Summer)"
+	name = "Siulittaasuat Knud Johan Victor Rasmussen"
 	desc = ""
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+	picture = "GRL_Rasmussen.tga"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = cenrep
 	traits = {
-		#
+	}
+}
+
+create_country_leader = {
+	name = "Governor John Matthew Devine"
+	desc = ""
+	picture = "GRL_Devine.tga"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Kurt Fricke"
+	desc = ""
+	picture = "GRL_Fricke.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
 	}
 }

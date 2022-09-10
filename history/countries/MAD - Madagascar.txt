@@ -1,4 +1,5 @@
-﻿capital = 3149
+﻿
+capital = 3149
 
 oob = "MAD_1936"
 
@@ -8,32 +9,24 @@ set_technology = {
 	gwtank = 1
 }
 
-set_cosmetic_tag = MAD_FRA
+set_cosmetic_tag = FRA_COLONY
 
 set_convoys = 20
 
+set_popularities = {
+	liberal_republic = 10
+	monarchism = 5
+	vanguardism = 5
+	neutrality = 80
+}
 
-
-
-	set_popularities = {
-		liberal_republic
-			 = 10
-		monarchism
-			 = 5
-		vanguardism
-			 = 5
-			
-		neutrality 
-			 = 80
-		}
-	set_politics = { 
- ruling_party = neutrality
+set_politics = { 
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
-	
-	
 }
+
 create_country_leader = {
 	name = "Gouverneur Léon Henri Charles Cayla"
 	desc = ""
@@ -57,7 +50,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gouverneur Walter Karl von Reichenau"
+	name = "Gouverneur Walter Karl Ernst August von Reichenau"
 	desc = ""
 	picture = "MAD_Reichenau.tga"
 	expire = "1989.1.1"
@@ -67,7 +60,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Reichsprotektor Walter Karl von Reichenau"
+	name = "Reichsprotektor Walter Karl Ernst August von Reichenau"
 	desc = ""
 	picture = "MAD_Reichenau.tga"
 	expire = "1965.1.1"
