@@ -510,4 +510,38 @@ guiTypes = {
 			clicksound = click_default
 		}
 	}
+	
+	containerWindowType = {
+		name = "group_railway_guns_box"
+		position = { x=0 y=0 }
+		size = { width=27 height=97 }
+		Orientation = upper_left
+		
+		buttonType = {
+			name = "button_assign_railway_gun"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_attached_air_bg"
+			clicksound = click_checkbox
+			scale = 0.8
+		}
+	
+		iconType = {
+			name = "railway_gun_icon"
+			spriteType = "GFX_railway_gun_assign_to_army"
+			position = {x=3 y=2}
+			frame = 1
+			scale = 0.8
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "railway_gun_count_box"
+			position = {x=2 y=23}
+			font = "Main_14_grey"
+			maxWidth = 26
+			maxHeight = 23
+			format = centre
+			text = "30"
+		}
+	}
 }
