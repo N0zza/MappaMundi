@@ -1,45 +1,12 @@
 ﻿capital = 1866
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "Waking the Tiger"
-		}
-	}
-	add_ideas = {
-		CHI_communist_uprisings
-	}
+set_popularities = {
+	democratic = 40
+	neutrality = 60
 }
-
-
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}		
-	add_ideas = {
-		CHI_nine_power_treaty
-		CHI_army_corruption_1
-		CHI_ineffective_bureaucracy
-		CHI_incompetent_officers
-		free_trade
-		CHI_hyper_inflation_1
-	}
-}
-save_global_event_target_as = WTT_current_china_leader
-
-	set_popularities = {
-		democratic 
-			 = 40
-		fascism
-			 = 0
-		communism
-			 = 0
-			
-		neutrality 
-			 = 60
-		}
-	set_politics = { 
- ruling_party = neutrality
+	
+set_politics = { 
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
