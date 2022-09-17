@@ -107,6 +107,15 @@ do_tno_german_civil_war = {
 	}	
 	
 	BRL = {
+		every_state = {
+			limit = {
+			is_core_of = BRL	
+			}
+			BRL = {
+			transfer_state = PREV
+			}
+		}
+		
 		transfer_state = 774
 		transfer_state = 775
 		transfer_state = 1805
@@ -180,6 +189,10 @@ do_tno_german_civil_war = {
 	every_state = {
 		limit = {
 			is_owned_by = POL
+			NOT = {
+				is_core_of = PL2
+				is_core_of = LV2
+			}
 		}
 		UA2 = {
 			transfer_state = PREV
@@ -315,49 +328,6 @@ do_tno_ostland_civil_war = {
 		set_cosmetic_tag = WLN_TNO
 	}
 	
-	AUK = {
-		every_state = {
-			limit = {
-				OR = {
-				is_core_of = AUK
-				
-				state = 6003
-				state = 17790
-				state = 17800
-				state = 4078
-				state = 4079
-				state = 4080
-				state = 4846
-				state = 7406
-				state = 11001
-				state = 17781
-				state = 17782
-				state = 17783
-				state = 17788
-				state = 17789
-				state = 17849
-				}
-				NOT = {
-				is_owned_by = LTG
-				is_owned_by = SUV
-				}
-			}
-			AUK = {
-				transfer_state = PREV
-			}
-		}
-		
-		set_popularities = {
-		stratocratic = 100
-		}
-		
-		set_politics = {
-		ruling_party = stratocratic
-		}
-		
-		set_cosmetic_tag = AUK_TNO
-	}
-	
 	LTG = {
 		every_state = {
 			limit = {
@@ -435,6 +405,44 @@ do_tno_ostland_civil_war = {
 		}
 		
 		set_cosmetic_tag = SUV_TNO
+	}
+	
+	AUK = {
+		every_state = {
+			limit = {
+				OR = {
+				state = 991
+				state = 6003
+				state = 17790
+				state = 17800
+				state = 4078
+				state = 4079
+				state = 4080
+				state = 4846
+				state = 7406
+				state = 11001
+				state = 17781
+				state = 17782
+				state = 17783
+				state = 17788
+				state = 17789
+				state = 17849
+				}
+			}
+			AUK = {
+				transfer_state = PREV
+			}
+		}
+		
+		set_popularities = {
+		stratocratic = 100
+		}
+		
+		set_politics = {
+		ruling_party = stratocratic
+		}
+		
+		set_cosmetic_tag = AUK_TNO
 	}
 	
 	NOW = {
@@ -841,11 +849,11 @@ do_tno_moskowien_civil_war = {
 		set_cosmetic_tag = UA2_TNO
 		
 		set_popularities = {
-		neutrality = 100
+		democratic = 100
 		}
 		
 		set_politics = {
-		ruling_party = neutrality
+		ruling_party = democratic
 		}
 		
 	}
