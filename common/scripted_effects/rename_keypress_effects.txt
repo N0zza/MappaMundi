@@ -4,7 +4,7 @@ keypress_init = {
         set_variable = { current_char = -1 }
         resize_array = {
             array = chars
-            size = 32
+            size = 56
         }
     }
     add_to_variable = { current_char = 1 }
@@ -16,7 +16,7 @@ get_keypress_backspace = {
     clamp_variable = {
         var = current_char
         min = 0
-        max = 32
+        max = 56
     }
 }
 
