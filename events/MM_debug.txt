@@ -9,12 +9,11 @@ country_event = { #Debug
 			factor = 0
 		}
 		hidden_effect = {
-			TIK = {
-				set_party_name = {
-					ideology = national_socialism
-					name = TIK_national_socialism_party
-					long_name = TIK_national_socialism_party_long
+			every_country = {
+				limit = {
+					has_cosmetic_tag = RAJ_ORANGE
 				}
+				set_cosmetic_tag = RAJ_RED
 			}
 		}
 	}
