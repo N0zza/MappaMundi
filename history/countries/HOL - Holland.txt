@@ -1,18 +1,12 @@
 ﻿capital = 7
 
 set_popularities = {
-	neutrality
-		= 32
-	socialism_ideology
-		= 23
-	conservative_monarchism
-		= 25
-	democratic_monarchism
-		= 14
-	vanguardism
-		= 4
-	communism
-		= 2
+	neutrality = 32
+	conservative_monarchism = 25
+	socialism_ideology = 23
+	democratic_monarchism = 14
+	vanguardism = 4
+	communism = 2
 }
 
 set_politics = { 
@@ -117,6 +111,16 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "President Pieter Jacobus Oud"
+	desc = ""
+	picture = "gfx/leaders/HOL/HOL_Oud.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Koningin Wilhelmina van Oranje-Nassau"
 	desc = ""
 	picture = "Portrait_Wilhelmina.dds"
@@ -127,7 +131,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Staatholder Josephus Robertus van Schaik"	
+	name = "Staatholder Josephus Robertus Hendricus van Schaik"	
 	desc = ""
 	picture = "gfx/leaders/HOL/HOL_Juliana.tga"
 	expire = "1965.1.1"
@@ -167,7 +171,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prins-Aartsbisschop  Johannes Petrus Huibers"
+	name = "Prins-Aartsbisschop Johannes Petrus Huibers"
 	desc = ""
 	picture = "gfx/leaders/HOL/HOL_Huibers.tga"
 	expire = "1965.1.1"
@@ -197,7 +201,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Leider Ernst Herman van Rappard"
+	name = "Leider Ernst Herman Ridder van Rappard"
 	desc = ""
 	picture = "gfx/leaders/HOL/HOL_Rappart.tga"
 	expire = "1965.1.1"
@@ -232,16 +236,6 @@ create_country_leader = {
 	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
 	expire = "1965.1.1"
 	ideology = ancap
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "President Pieter Jacobus Oud"
-	desc = ""
-	picture = "gfx/leaders/HOL/HOL_Oud.tga"
-	expire = "1965.1.1"
-	ideology = socdem
 	traits = {
 	}
 }
