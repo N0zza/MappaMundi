@@ -1,34 +1,15 @@
 ﻿capital = 1259
-}
 
-set_convoys = 10
+set_popularities = {
+	vanguardism = 80
+	communism = 15
+	socialism_ideology = 5
+}
 
-
-
-	set_popularities = {
-        neutrality = 0
-        monarchism = 0
-        democratic = 0
-        liberal_republic = 0
-        communism = 15
-        vanguardism = 80
-        fascism = 0
-        anarchism_ideology = 0
-        socialism_ideology = 5
-        democratic_monarchism = 0
-        conservative_monarchism = 0
-        stratocratic = 0
-        authoritarian_monarchism = 0
-        republican_fascism = 0
-        national_socialism = 0
-        theocratic = 0
-
-	}
-	
 set_cosmetic_tag = ADJ_SOV
 	
-	set_politics = { 
- ruling_party = vanguardism
+set_politics = { 
+	ruling_party = vanguardism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -41,6 +22,5 @@ create_country_leader = {
 	expire = "1960.1.1"
 	ideology = totsoc
 	traits = {
-		
 	}
 }
