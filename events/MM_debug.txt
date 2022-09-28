@@ -9,11 +9,17 @@ country_event = { #Debug
 			factor = 0
 		}
 		hidden_effect = {
-			every_country = {
-				limit = {
-					has_cosmetic_tag = RAJ_ORANGE
+			AZR = {
+				kill_current_leader = yes
+				create_country_leader = {
+					name = "Bala Xan I Aşurbəyov"	
+					desc = ""
+					picture = "gfx/leaders/AZR/AZR_Balabey_absmon.tga"
+					expire = "1965.1.1"
+					ideology = absolutism
+					traits = {
+					}
 				}
-				set_cosmetic_tag = RAJ_RED
 			}
 		}
 	}

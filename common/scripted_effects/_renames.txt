@@ -6980,7 +6980,7 @@ do_german_renames = {
 		}		
 		set_province_name = {
 			id = 8193
-			name = "Brazzastadt"
+			name = "Brazzaville"
 		}
 	}
 		
@@ -10256,6 +10256,19 @@ do_german_renames = {
 		set_province_name = {
 			id = 11586
 			name = "Belgrad"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 107
+			ROOT = {
+				has_government = national_socialism
+			}
+		}		
+		set_province_name = {
+			id = 11586
+			name = "Prinz-Eugen-Stadt"
 		}
 	}
 
@@ -31625,7 +31638,7 @@ do_arabic_renames = {
 		}		
 		set_province_name = {
 			id = 8270
-			name = "Aljoun"
+			name = "Ajloun"
 		}
 	}
 	
@@ -32055,7 +32068,7 @@ do_arabic_renames = {
 		}		
 		set_province_name = {
 			id = 3198
-			name = "Beni Suef"
+			name = "Bani Suef"
 		}
 	}
 	
@@ -71799,6 +71812,516 @@ do_ethiopian_renames = {
 	}	
 }
 do_italian_renames = {
+	
+	if = {
+		limit = {
+			state = 6990
+		}		
+		set_province_name = {
+			id = 2013
+			name = "Deir el-Zor"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 5693
+		}		
+		set_province_name = {
+			id = 1578
+			name = "Hassaké"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 9852
+		}		
+		set_province_name = {
+			id = 19178
+			name = "Raqqa"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 6988
+		}		
+		set_province_name = {
+			id = 17366
+			name = "Idlib"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 5686
+		}		
+		set_province_name = {
+			id = 16039
+			name = "Hama"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 2048
+		}		
+		set_province_name = {
+			id = 1088
+			name = "Laodicea"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1142
+		}		
+		set_province_name = {
+			id = 10087
+			name = "Tartus"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 5687
+		}		
+		set_province_name = {
+			id = 1056
+			name = "Homs"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 554
+		}		
+		set_province_name = {
+			id = 4111
+			name = "Duma"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 2030
+		}		
+		set_province_name = {
+			id = 13318
+			name = "Assueida"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1848
+		}		
+		set_province_name = {
+			id = 1074
+			name = "Dar'a"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 17388
+		}		
+		set_province_name = {
+			id = 7032
+			name = "Kuneitra"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 17404
+		}		
+		set_province_name = {
+			id = 7047
+			name = "Berito"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 17390
+		}		
+		set_province_name = {
+			id = 7038
+			name = "Tripoli"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 3363
+		}		
+		set_province_name = {
+			id = 14401
+			name = "Zahle"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 17403
+		}		
+		set_province_name = {
+			id = 14400
+			name = "Sidone"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 17517
+		}		
+		set_province_name = {
+			id = 8265
+			name = "Amman"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 17523
+		}		
+		set_province_name = {
+			id = 8271
+			name = "Zarqa"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 6801
+		}		
+		set_province_name = {
+			id = 7001
+			name = "Mafrac"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 6800
+		}		
+		set_province_name = {
+			id = 7170
+			name = "Irbid"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 17522
+		}		
+		set_province_name = {
+			id = 8270
+			name = "Ajlun"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 17521
+		}		
+		set_province_name = {
+			id = 8269
+			name = "Gerasa"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 455
+		}		
+		set_province_name = {
+			id = 7151
+			name = "Salt"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 17516
+		}		
+		set_province_name = {
+			id = 8264
+			name = "Madaba"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 9034
+		}		
+		set_province_name = {
+			id = 18311
+			name = "Karak"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 17506
+		}		
+		set_province_name = {
+			id = 8166
+			name = "Tafila"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 5670
+		}		
+		set_province_name = {
+			id = 16028
+			name = "Ma'an"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1177
+		}		
+		set_province_name = {
+			id = 13338
+			name = "Acaba"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 17549
+		}		
+		set_province_name = {
+			id = 8298
+			name = "Genìn"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 17542
+		}		
+		set_province_name = {
+			id = 8291
+			name = "Ramallah"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 3380
+		}		
+		set_province_name = {
+			id = 14395
+			name = "Gerico"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 17538
+		}		
+		set_province_name = {
+			id = 8286
+			name = "Betlemme"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 17533
+		}		
+		set_province_name = {
+			id = 8158
+			name = "Khan Yunis"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 3405
+		}		
+		set_province_name = {
+			id = 14446
+			name = "Hebron"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 1206
+		}		
+		set_province_name = {
+			id = 13351
+			name = "Acri"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 6797
+		}		
+		set_province_name = {
+			id = 17008
+			name = "Bersabea"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 17559
+		}		
+		set_province_name = {
+			id = 8309
+			name = "Ascalona"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 17544
+		}		
+		set_province_name = {
+			id = 8293
+			name = "Netanya"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 931
+		}		
+		set_province_name = {
+			id = 13281
+			name = "Asdòd"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 17556
+		}		
+		set_province_name = {
+			id = 8305
+			name = "Petah Tikva"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 17540
+		}		
+		set_province_name = {
+			id = 8289
+			name = "Riscion LeZion"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 3385
+		}		
+		set_province_name = {
+			id = 1201
+			name = "Caifa"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 3375
+		}		
+		set_province_name = {
+			id = 1015
+			name = "Eylat"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 3376
+		}		
+		set_province_name = {
+			id = 14389
+			name = "Gaza"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 17554
+		}		
+		set_province_name = {
+			id = 8303
+			name = "Nazaret"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3382
+		}		
+		set_province_name = {
+			id = 4206
+			name = "Giaffa"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1205
+		}		
+		set_province_name = {
+			id = 1086
+			name = "Gerusalemme"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 1584
+		}		
+		set_province_name = {
+			id = 8193
+			name = "Brazzàvilla"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1586
+		}		
+		set_province_name = {
+			id = 5139
+			name = "Liberavilla"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3608
+		}		
+		set_province_name = {
+			id = 14550
+			name = "Duàla"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3336
+		}		
+		set_province_name = {
+			id = 2080
+			name = "Iaundè"
+		}
+	}
 
 	if = {
 		limit = {
@@ -73823,16 +74346,6 @@ do_italian_renames = {
 
 	if = {
 		limit = {
-			state = 17404
-		}		
-		set_province_name = {
-			id = 7047
-			name = "Berito"
-		}
-	}
-
-	if = {
-		limit = {
 			state = 5698
 		}		
 		set_province_name = {
@@ -73878,46 +74391,6 @@ do_italian_renames = {
 		set_province_name = {
 			id = 13352
 			name = "Kazrin"
-		}
-	}
-
-	if = {
-		limit = {
-			state = 17517
-		}		
-		set_province_name = {
-			id = 8265
-			name = "Filadelfia"
-		}
-	}
-
-	if = {
-		limit = {
-			state = 17554
-		}		
-		set_province_name = {
-			id = 8303
-			name = "Nazaret"
-		}
-	}
-
-	if = {
-		limit = {
-			state = 3382
-		}		
-		set_province_name = {
-			id = 4206
-			name = "Giaffa"
-		}
-	}
-
-	if = {
-		limit = {
-			state = 1205
-		}		
-		set_province_name = {
-			id = 1086
-			name = "Gerusalemme"
 		}
 	}
 	

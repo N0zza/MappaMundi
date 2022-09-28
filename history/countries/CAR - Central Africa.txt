@@ -1,33 +1,22 @@
 ﻿capital = 660
 
-
 set_cosmetic_tag = FRA_COLONY
 
+set_popularities = {
+	neutrality = 80
+	stratocratic = 10
+	liberal_republic = 10
+}
 
-	set_popularities = {
-		stratocratic
-			 = 10
-			
-		
-		
-		liberal_republic
-			 = 10
-		
-		
-		democratic 
-			 = 0
-		neutrality 
-			 = 80
-		}
-	set_politics = { 
- ruling_party = neutrality
+set_politics = { 
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Empereur Bokassa I"
+	name = "Empereur Bokassa I de Bokassa"
 	desc = ""
 	picture = "gfx/leaders/CAR/CAR_Bokassa.tga"
 	ideology = stratmon
@@ -63,6 +52,16 @@ create_country_leader = {
 	picture = "gfx/leaders/CAR/CAR_Bokassa.tga"
 	expire = "1965.1.1"
 	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Giovanni Giuriati"
+	desc = ""
+	picture = "gfx/leaders/FEA/FEA_Giuriati_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
 	traits = {
 	}
 }
