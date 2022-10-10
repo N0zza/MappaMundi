@@ -2501,8 +2501,17 @@
 					}
 					
 					BGZ = {
-						transfer_state = 1550
-						transfer_state = 6866
+						every_state = {
+							limit = {
+								OR = {
+									state = 1550
+									state = 6866
+								}
+							}
+							BGZ = {
+								add_state_core = PREV
+							}
+						}
 						
 						set_politics = {
 							ruling_party = monarchism
@@ -3002,11 +3011,9 @@
 					}
 					
 					ORM = {
-						add_state_core = 1550
 						add_state_core = 5258
 						add_state_core = 5322
 						add_state_core = 6865
-						add_state_core = 6866
 						add_state_core = 7850
 						add_state_core = 7932
 						add_state_core = 9260
@@ -3389,8 +3396,6 @@
 						add_state_core = 12118
 						add_state_core = 12122
 						add_state_core = 12123
-						add_state_core = 12124
-						add_state_core = 12126
 						add_state_core = 12127
 						add_state_core = 12128
 						add_state_core = 12138
@@ -3559,6 +3564,8 @@
 						add_state_core = 12108
 						add_state_core = 12112
 						add_state_core = 12114
+						add_state_core = 12124
+						add_state_core = 12126
 						add_state_core = 12162
 						add_state_core = 12163
 						add_state_core = 12164
