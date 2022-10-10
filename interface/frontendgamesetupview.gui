@@ -1463,40 +1463,40 @@ guiTypes = {
 			clicksound = click_checkbox
 		}
 	}
-	
+
 	containerWindowType = {
 		name ="difficulty_setting_item"
 		position = { x = 3 y = 0 }
 		size = { width = 630 height = 40 }
-		
+
 		background = {
 			name = "background"
 			quadTextureSprite ="GFX_tiled_generic_bg_1"
 		}
-		
+
 #		background = {
 #			name = "on_indicator"
 #			quadTextureSprite ="GFX_changed_slider_indicator"
 #			position = { x = 602 y = 10 }
 #		}
-		
+
 		iconType = {
 			name = "custom_difficulty_icon"
 			spriteType = "gfx_transparency_white"
-			position = { x = 3 y = 0 }
+			position = { x = 3 y = 4 }
 			alwaystransparent = yes
 		}
-		
+
 		instantTextboxType = {
 			name = "custom_difficulty_name"
-			position = { x = 37 y = 6 }
+			position = { x = 37 y = 10 }
 			font = "hoi_18mbs"
 			maxWidth = 270
 			maxHeight = 18
 			format = left
 			multiline = no
 		}
-		
+
 		extendedScrollbarType = {
 			name = "difficulty_slider"
 			position = { x = 326 y = 10 }
@@ -1508,33 +1508,33 @@ guiTypes = {
 			startValue = 0
 			horizontal = yes
 			clickonly = yes
-			
+
 			background = {
-				name = "Background"	
+				name = "Background"
 				quadTextureSprite = "GFX_custom_setting_slider_bg"
 				position = { x= -1 y = -4 }
 			}
-			
+
 			slider = {
 				name = "Slider"
 				quadTextureSprite = "GFX_scroll_drager"
 				position = { x = 0 y = -2 }
 			}
-			
+
 			track = {
 				name = "Track"
 				quadTextureSprite = "GFX_scroll_track_horisontal"
 				position = { x = 0 y = 5 }
 				alwaystransparent = yes
 			}
-			
+
 			decreaseButton = {
 				name = "Decrease"
 				quadTextureSprite = "yearslider_leftbutton"
 				position = { x = 3 y = 1 }
 				clicksound = click_scroll
 			}
-			
+
 			increaseButton = {
 				name = "Increase"
 				quadTextureSprite = "yearslider_rightbutton"
@@ -1967,12 +1967,12 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "date"
-					position = { x = -240 y = 85 }
+					position = { x = -340 y = 82 }
 					font = "hoi_36header"
 					borderSize = {x = 4 y = 4}
 					text = "Pikku Saippuakauppias Itkee!!"	
-					maxWidth = 400
-					maxHeight = 30	
+					maxWidth = 600
+					maxHeight = 36	
 					format = centre
 				}
 				
@@ -2050,7 +2050,7 @@ guiTypes = {
 
 			ButtonType = {
 				name = "randomize_country_button"
-				position = { x = 40 y = 75 }
+				position = { x = 1175 y = 58 }
 				quadTextureSprite ="GFX_button_261x34"
 				buttonText = "FE_RANDOMIZE_COUNTRY"
 				buttonFont = "hoi_20b"
@@ -2062,7 +2062,7 @@ guiTypes = {
 
 			ButtonType = {
 				name = "observer_button"
-				position = { x = 320 y = 49 }
+				position = { x = 1320 y = 49 }
 				quadTextureSprite ="GFX_observer_button"
 				Orientation = "UPPER_LEFT"
 				clicksound = click_default

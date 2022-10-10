@@ -427,7 +427,7 @@ on_actions = {
 						is_core_of = OMO
 						is_core_of = CTA
 						is_core_of = MGD
-						is_core_of = BML
+						is_core_of = BYA
 						is_core_of = CCI
 						is_core_of = IRK
 					}
@@ -2277,7 +2277,7 @@ on_actions = {
 			transfer_state = 1479
 			transfer_state = 11061
 			annex_country = { target = YKT }
-			annex_country = { target = BML }
+			annex_country = { target = BYA }
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = monarchism
@@ -3293,7 +3293,7 @@ on_actions = {
 							tag = TTR
 							tag = UDM
 							tag = BSH
-							tag = BML
+							tag = BYA
 							tag = YKT
 							tag = NAK
 							tag = ADJ
@@ -3680,6 +3680,7 @@ on_actions = {
 								tag = ISR
 								tag = CSS
 								tag = MDD
+								tag = LMC
 							}
 						}
 						if = {
@@ -6101,26 +6102,26 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						tag = BML
+						tag = BYA
 						has_government = communism
 					}
 					if = {
 						limit = {
 							controls_far_east = yes
 						}
-						set_cosmetic_tag = BML_REGIONAL_COM
+						set_cosmetic_tag = BYA_REGIONAL_COM
 					}
 					if = {
 						limit = {
 							controls_siberia = yes
 						}
-						set_cosmetic_tag = BML_REGIONAL_COM
+						set_cosmetic_tag = BYA_REGIONAL_COM
 					}
 					if = {
 						limit = {
 							controls_russia = yes
 						}
-						set_cosmetic_tag = BML_NATIONAL_COM
+						set_cosmetic_tag = BYA_NATIONAL_COM
 					}
 				}
 				if = {
