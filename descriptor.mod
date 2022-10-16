@@ -6,6 +6,7 @@ tags={
 }
 name="Mappa Mundi - Github Version"
 picture="thumbnail.png"
+replace_path="events"
 replace_path="history/states"
 replace_path="history/countries"
 replace_path="history/units"
