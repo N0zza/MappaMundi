@@ -3681,6 +3681,8 @@ on_actions = {
 								tag = CSS
 								tag = MDD
 								tag = LMC
+								tag = IST
+								tag = TRT
 							}
 						}
 						if = {
@@ -4707,6 +4709,65 @@ on_actions = {
 								}
 							}
 							set_cosmetic_tag = IRE_AUTH
+						}
+					}
+					if = {
+						limit = {
+							tag = HUN
+						}
+						if = {
+							limit = {
+								has_government = left_anarchism
+							}
+							set_cosmetic_tag = HUN_ANARCHIST
+						}
+						if = {
+							limit = {
+								OR = {
+								has_government = socialism_ideology
+								has_government = socialist_monarchy
+								has_government = communism
+								has_government = vanguardism
+								}
+							}
+							set_cosmetic_tag = HUN_SOCIALIST
+						}
+						if = {
+							limit = {
+								OR = {
+								has_government = theocratic
+								has_government = republican_fascism
+								has_government = fascism
+								has_government = national_socialism
+								has_government = right_anarchism
+								}
+							}
+							set_cosmetic_tag = HUN_AUTH
+						}
+						if = {
+							limit = {
+								OR = {
+								has_government = authoritarian_monarchism
+								has_government = stratocratic_monarchism
+								has_government = monarchism
+								has_government = democratic_monarchism
+								has_government = conservative_monarchism
+								}
+							}
+							set_cosmetic_tag = HUN_EMPIRE
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = democratic
+									has_government = liberal_republic
+									has_government = centrist_republic
+									has_government = centrist_monarchism
+									has_government = neutrality
+									has_government = stratocratic
+								}
+							}
+							set_cosmetic_tag = HUN_REPUBLIC
 						}
 					}
 				}
