@@ -1,31 +1,5 @@
 ﻿capital = 219
 
-oob = "SOV_1936"
-
-	
-#if = {
-#	limit = {
-#		has_dlc = "Together for Victory"
-#	}
-#	set_autonomy = {
-#		target = MON
-#		autonomous_state = autonomy_puppet
-#	}
-#	set_autonomy = {
-#		target = TAN
-#		autonomous_state = autonomy_integrated_puppet
-#	}
-#	set_autonomy = {
-#		target = SIK
-#		autonomous_state = autonomy_dominion
-#	}
-#	else = {
-#		puppet = MON
-#		puppet = TAN
-#		puppet = SIK
-#	}
-#}
-
 set_popularities = {
 	democratic 
 		= 10 #shared between all set_popularities, should add to 100
@@ -40,11 +14,6 @@ set_politics = {
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
-}
-
-add_ideas = {
-	trotskyite_plot
-	home_of_revolution
 }
 
 create_country_leader = {

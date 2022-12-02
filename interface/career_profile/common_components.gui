@@ -1,0 +1,3033 @@
+guiTypes = {
+
+	@ColumnWidth = 370
+	@ColumnHeight = 448
+	@LeftColumnPosX = -385
+	@MiddleColumnPosX = 0
+	@RightColumnPosX = 385
+	@ColumnPosY = 7
+
+	@StatContainerSideW = 170
+	@StatContainerH = 80
+	@StatContainerCenterW = 300
+
+	@StatContainerLeftX = 14
+	@StatContainerRightX = -14
+	@StatContainerCenterX = 0
+
+	# 4 rows layout
+	@StatsRow1of4 = 60
+	@StatsRow2of4 = 145
+	@StatsRow3of4 = 230
+	@StatsRow4of4 = 315
+
+	# 5 rows layout
+	@StatsRow1of5 = 5
+	@StatsRow2of5 = 90
+	@StatsRow3of5 = 175
+	@StatsRow4of5 = 260
+	@StatsRow5of5 = 345
+
+	# DLC layouts are all 3 rows
+	@DlcStatsRow1Y = 120
+	@DlcStatsRow2Y = 230
+	@DlcStatsRow3Y = 340
+
+	@DlcTitleW = 300
+	@DlcTitleX = -150 # Negative half of the text width, because text don't have origin
+	@DlcTitleY = 40
+
+	@StatNumberTextW = 134
+	@StatNumberTextLeftX = 34
+	@StatNumberTextRightX = -168 # Negative sum of width and margin, because text don't have origin
+	@StatNumberTextY = 0
+	@StatNumberTextWideW = 120
+	@StatNumberTextWideX = -125 # Negative sum of width and half spacing, because text don't have origin
+	@StatNumberTextWideY = 20
+
+	@StatLabelTextW = 132
+	@StatLabelTextLeftX = 36
+	@StatLabelTextRightX = -168 # Negative sum of width and margin, because text don't have origin
+	@StatLabelTextY = 35
+	@StatLabelTextWideW = 120
+	@StatLabelTextWideX = 5
+	@StatLabelTextWideY = 22
+
+	@StatTextCenterW = 300
+	@StatTextCenterX = -150 # Negative half of the text width, because text don't have origin
+
+	@StarCenterX = 0
+	@StarCenterY = 30
+	@StarCenterBigY = 40
+	@StarCenterWideX = -26 # A centered single-line stat with star to the right
+	@StarCenterWideY = 40 # A centered single-line stat with star to the right
+	@StarLeftX = 16
+	@StarRightX = -16
+	@StarSideY = 20
+
+	containerWindowType = {
+		name = "career_profile_pages"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 100% }
+
+		containerWindowType = {
+			name = "page0"
+			position = { x = 0 y = 0 }
+			size = { width = 100% height = 100% }
+
+			### General Container ###
+
+			containerWindowType = {
+				name = "general_numbers"
+				position = { x = @LeftColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				### Game Years ###
+
+				containerWindowType = {
+					name = "game_years_container"
+					position = { x = 0 y = 0 }
+					size = { width = @ColumnWidth height = 147 }
+
+					positionType = {
+						name = "playthrough_stats_size"
+						position = { x = @ColumnWidth y = 222 }
+					}
+
+					background = {
+						name = "Background"
+						quadTextureSprite ="GFX_tiled_stats_bg"
+					}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = -18 y = 22 }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = center
+					}
+
+					instantTextboxType = {
+						name = "game_time"
+						position = { x = -110 y = -35 }
+						font = "hoi_30"
+						text = "XXX"
+						maxWidth = 220
+						maxHeight = 18
+						format = center
+						alwaystransparent = yes
+						Orientation = center
+					}
+
+					instantTextboxType = {
+						name = "game_time_label"
+						position = { x = -100 y = 5 }
+						font = "hoi_18"
+						text = "Time Label"
+						maxWidth = 200
+						maxHeight = 18
+						format = center
+						alwaystransparent = yes
+						Orientation = center
+						text_color_code = L
+					}
+				}
+
+				### Playthroughs ###
+
+				containerWindowType = {
+					name = "playthroughs_container"
+					position = { x = 0 y = 150 }
+					size = { width = @ColumnWidth height = 147 }
+
+					background = {
+						name = "Background"
+						quadTextureSprite = "GFX_tiled_stats_bg"
+					}
+
+					instantTextboxType = {
+						name = "playthroughs"
+						position = { x = -110 y = -35 }
+						font = "hoi_30"
+						text = "XXX"
+						maxWidth = 220
+						maxHeight = 18
+						format = center
+						alwaystransparent = yes
+						Orientation = center
+					}
+
+					instantTextboxType = {
+						name = "playthroughs_label"
+						position = { x = -100 y = 5 }
+						font = "hoi_18"
+						text = CAREER_PROFILE_PLAYTHROUGHS_LABEL
+						maxWidth = 200
+						maxHeight = 18
+						format = center
+						alwaystransparent = yes
+						Orientation = center
+						text_color_code = L
+					}
+				}
+
+				### Hours Played ###
+
+				containerWindowType = {
+					name = "hours_played_container"
+					position = { x = 0 y = 301 }
+					size = { width = @ColumnWidth height = 147 }
+
+					positionType = {
+						name = "playthrough_stats_position"
+						position = { x = 0 y = 227 }
+					}
+
+					positionType = {
+						name = "playthrough_stats_size"
+						position = { x = @ColumnWidth y = 223 }
+					}
+
+					background = {
+						name = "Background"
+						quadTextureSprite ="GFX_tiled_stats_bg"
+					}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = -18 y = 22 }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = center
+					}
+
+					instantTextboxType = {
+						name = "hours_played"
+						position = { x = -110 y = -35 }
+						font = "hoi_30"
+						text = "XXX"
+						maxWidth = 220
+						maxHeight = 18
+						format = center
+						alwaystransparent = yes
+						Orientation = center
+					}
+
+					instantTextboxType = {
+						name = "hours_played_label"
+						position = { x = -100 y = 5 }
+						font = "hoi_18"
+						text = CAREER_PROFILE_HOURS_LABEL
+						maxWidth = 200
+						maxHeight = 18
+						format = center
+						alwaystransparent = yes
+						Orientation = center
+						text_color_code = L
+					}
+				}
+			}
+
+			### Warfare Container ###
+
+			containerWindowType = {
+				name = "warfare_numbers"
+				position = { x = @MiddleColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_tiled_war_bg_overlay"
+				}
+
+				### Warfare Row 1 ###
+
+				containerWindowType = {
+					name = "longest_battle_duration_container"
+					position = { x = @StatContainerLeftX y = @StatsRow1of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarLeftX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "longest_battle_duration"
+						position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = left
+						maxWidth = @StatNumberTextW
+					}
+
+					instantTextboxType = {
+						name = "longest_battle_duration_label"
+						position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_LONGEST_BATTLE_DURATION_LABEL
+						format = left
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+					}
+				}
+
+				containerWindowType = {
+					name = "largest_manpower_battle_container"
+					position = { x = @StatContainerRightX y = @StatsRow1of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "largest_manpower_battle"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "largest_manpower_battle_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_LARGEST_MANPOWER_BATTLE_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+
+				### Warfare Row 2 ###
+
+				containerWindowType = {
+					name = "highest_casualty_war_container"
+					position = { x = @StatContainerLeftX y = @StatsRow2of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarLeftX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						centerposition = yes
+					}
+					instantTextboxType = {
+						name = "highest_casualty_war"
+						position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = left
+						maxWidth = @StatNumberTextW
+					}
+
+					instantTextboxType = {
+						name = "highest_casualty_war_label"
+						position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_HIGHEST_CASUALTY_WAR_LABEL
+						format = left
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+					}
+				}
+
+				containerWindowType = {
+					name = "highest_enemy_casualty_war_container"
+					position = { x = @StatContainerRightX y = @StatsRow2of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "highest_enemy_casualty_war"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "highest_enemy_casualty_war_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_HIGHEST_ENEMY_CASUALTY_WAR_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+
+
+				#### Warfare Row 3 ###
+
+				containerWindowType = {
+					name = "largest_tanks_battle_container"
+					position = { x = @StatContainerLeftX y = @StatsRow3of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarLeftX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "largest_tanks_battle"
+						position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = left
+						maxWidth = @StatNumberTextW
+					}
+
+					instantTextboxType = {
+						name = "largest_tanks_battle_label"
+						position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_LARGEST_TANKS_BATTLE_LABEL
+						format = left
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+					}
+				}
+
+				containerWindowType = {
+					name = "largest_army_container"
+					position = { x = @StatContainerRightX y = @StatsRow3of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "largest_army"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "largest_army_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_LARGEST_ARMY_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+
+				#### Warfare Row 4 ###
+
+				containerWindowType = {
+					name = "largest_navy_container"
+					position = { x = @StatContainerLeftX y = @StatsRow4of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarLeftX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						centerposition = yes
+					}
+					instantTextboxType = {
+						name = "largest_navy"
+						position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = left
+						maxWidth = @StatNumberTextW
+					}
+
+					instantTextboxType = {
+						name = "largest_navy_label"
+						position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_LARGEST_NAVY_LABEL
+						format = left
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+					}
+				}
+
+				containerWindowType = {
+					name = "largest_airforce_container"
+					position = { x = @StatContainerRightX y = @StatsRow4of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "largest_airforce"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "largest_airforce_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_LARGEST_AIRFORCE_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+			}
+
+			### Detailed Container ###
+
+			containerWindowType = {
+				name = "detailed_numbers"
+				position = { x = @RightColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_tiled_stats_bg"
+				}
+
+				### Detailed Row 1 ###
+
+				containerWindowType = {
+					name = "conquered_percentage_container"
+					position = { x = 0 y = @StatsRow1of5 }
+					size = { width = @StatContainerCenterW height = @StatContainerH }
+					Orientation = center_up
+					Origo = center_up
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarCenterWideX y = @StarCenterWideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "conquered_percentage"
+						position = { x = @StatNumberTextWideX y = @StatNumberTextWideY }
+						font = "hoi_30"
+						text = "0000000000000000000"
+						format = right
+						maxWidth = @StatNumberTextWideW
+						multiline = no
+						Orientation = center_up
+					}
+
+					instantTextboxType = {
+						name = "conquered_percentage_label"
+						position = { x = @StatLabelTextWideX y = @StatLabelTextWideY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_CONQUERED_PERCENTAGE_LABEL
+						format = left
+						vertical_alignment = CENTER
+						maxHeight = 36
+						maxWidth = @StatLabelTextWideW
+						text_color_code = L
+						Orientation = center_up
+					}
+				}
+
+				containerWindowType = {
+					name = "liberated_nations_container"
+					position = { x = 0 y = @StatsRow2of5 }
+					size = { width = @StatContainerCenterW height = @StatContainerH }
+					Orientation = center_up
+					Origo = center_up
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarCenterWideX y = @StarCenterWideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "liberated_nations"
+						position = { x = @StatNumberTextWideX y = @StatNumberTextWideY }
+						font = "hoi_30"
+						text = "0000000000000000000000"
+						format = right
+						maxWidth = @StatNumberTextWideW
+						multiline = no
+						Orientation = center_up
+					}
+
+					instantTextboxType = {
+						name = "liberated_nations_label"
+						position = { x = @StatLabelTextWideX y = @StatLabelTextWideY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_LIBERATED_NATIONS_LABEL
+						format = left
+						vertical_alignment = CENTER
+						maxHeight = 36
+						maxWidth = @StatLabelTextWideW
+						text_color_code = L
+						Orientation = center_up
+					}
+				}
+
+
+				### Detailed Row 2 ###
+
+				containerWindowType = {
+					name = "most_factories_built_container"
+					position = { x = @StatContainerLeftX y = @StatsRow3of5 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarLeftX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "most_factories_built"
+						position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = left
+						maxWidth = @StatNumberTextW
+					}
+
+					instantTextboxType = {
+						name = "most_factories_built_label"
+						position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+						font = "hoi_18"
+						text =  CAREER_PROFILE_MOST_FACTORIES_BUILT_LABEL
+						format = left
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+					}
+				}
+
+				containerWindowType = {
+					name = "built_ships_container"
+					position = { x = @StatContainerRightX y = @StatsRow3of5 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+					instantTextboxType = {
+						name = "built_ships"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "built_ships_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_BUILT_SHIPS_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+
+				#### Detailed Row 3 ###
+
+				containerWindowType = {
+					name = "built_tanks_container"
+					position = { x = @StatContainerLeftX y = @StatsRow4of5 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarLeftX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						centerposition = yes
+					}
+					instantTextboxType = {
+						name = "built_tanks"
+						position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = left
+						maxWidth = @StatNumberTextW
+					}
+
+					instantTextboxType = {
+						name = "built_tanks_label"
+						position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_BUILT_TANKS_LABEL
+						format = left
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+					}
+				}
+
+				containerWindowType = {
+					name = "successful_coups_container"
+					position = { x = @StatContainerRightX y = @StatsRow4of5 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "successful_coups"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "successful_coups_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_SUCCESSFUL_COUPS_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+
+				#### Detailed Row 4 ###
+
+				containerWindowType = {
+					name = "sunk_pride_of_the_fleet_container"
+					position = { x = @StatContainerLeftX y = @StatsRow5of5 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarLeftX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "sunk_pride_of_the_fleet"
+						position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = left
+						maxWidth = @StatNumberTextW
+					}
+
+					instantTextboxType = {
+						name = "sunk_pride_of_the_fleet_label"
+						position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_SUNK_PRIDE_OF_THE_FLEET_LABEL
+						format = left
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+					}
+				}
+
+				containerWindowType = {
+					name = "shot_aces_container"
+					position = { x = @StatContainerRightX y = @StatsRow5of5 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "shot_aces"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "shot_aces_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_SHOT_ACES_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+			}
+
+		}
+
+		containerWindowType = {
+			name = "page1"
+			position = { x = 0 y = 0 }
+			size = { width = 100% height = 100% }
+
+			### Left Container ###
+
+			containerWindowType = {
+				name = "left_numbers"
+				position = { x = @LeftColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_tiled_stats_bg"
+				}
+
+				#### Warfare Row 1 ###
+
+				containerWindowType = {
+					name = "offensive_battles_container"
+					position = { x = @StatContainerLeftX y = @StatsRow1of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarLeftX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						centerposition = yes
+					}
+					instantTextboxType = {
+						name = "offensive_battles"
+						position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = left
+						maxWidth = @StatNumberTextW
+					}
+
+					instantTextboxType = {
+						name = "offensive_battles_label"
+						position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_OFFENSIVE_BATTLES_LABEL
+						format = left
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+					}
+				}
+
+				containerWindowType = {
+					name = "defensive_battles_container"
+					position = { x = @StatContainerRightX y = @StatsRow1of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "defensive_battles"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "defensive_battles_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_DEFENSIVE_BATTLES_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+
+				#### Warfare Row 2 ###
+
+				containerWindowType = {
+					name = "total_battles_container"
+					position = { x = @StatContainerLeftX y = @StatsRow2of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarLeftX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						centerposition = yes
+					}
+					instantTextboxType = {
+						name = "total_battles"
+						position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = left
+						maxWidth = @StatNumberTextW
+					}
+
+					instantTextboxType = {
+						name = "total_battles_label"
+						position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_TOTAL_BATTLES_LABEL
+						format = left
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+					}
+				}
+
+				containerWindowType = {
+					name = "offensive_battles_ratio_container"
+					position = { x = @StatContainerRightX y = @StatsRow2of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "offensive_battles_ratio"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "offensive_battles_ratio_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_OFFENSIVE_BATTLES_RATIO_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+
+				#### Warfare Row 3 ###
+
+				containerWindowType = {
+					name = "battles_against_encircled_container"
+					position = { x = @StatContainerLeftX y = @StatsRow3of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarLeftX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						centerposition = yes
+					}
+					instantTextboxType = {
+						name = "battles_against_encircled"
+						position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = left
+						maxWidth = @StatNumberTextW
+					}
+
+					instantTextboxType = {
+						name = "battles_against_encircled_label"
+						position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_BATTLES_AGAINST_ENCIRCLED_LABEL
+						format = left
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+					}
+				}
+
+				containerWindowType = {
+					name = "battles_against_encircled_ratio_container"
+					position = { x = @StatContainerRightX y = @StatsRow3of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "battles_against_encircled_ratio"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "battles_against_encircled_ratio_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_BATTLES_AGAINST_ENCIRCLED_RATIO_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+
+				#### Warfare Row 4 ###
+
+				containerWindowType = {
+					name = "battles_with_air_support_container"
+					position = { x = @StatContainerLeftX y = @StatsRow4of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarLeftX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						centerposition = yes
+					}
+					instantTextboxType = {
+						name = "battles_with_air_support"
+						position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = left
+						maxWidth = @StatNumberTextW
+					}
+
+					instantTextboxType = {
+						name = "battles_with_air_support_label"
+						position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_BATTLES_WITH_AIR_SUPPORT_LABEL
+						format = left
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+					}
+				}
+
+				containerWindowType = {
+					name = "battles_with_air_support_ratio_container"
+					position = { x = @StatContainerRightX y = @StatsRow4of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "battles_with_air_support_ratio"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "battles_with_air_support_ratio_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_BATTLES_WITH_AIR_SUPPORT_RATIO_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+
+			}
+
+			### Middle Container ###
+
+			containerWindowType = {
+				name = "middle_numbers"
+				position = { x = @MiddleColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_tiled_war_bg_overlay"
+				}
+
+				#### Detailed Row 1 ###
+
+				containerWindowType = {
+					name = "time_at_war_container"
+					position = { x = @StatContainerLeftX y = @StatsRow1of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarLeftX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						centerposition = yes
+					}
+					instantTextboxType = {
+						name = "time_at_war"
+						position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = left
+						maxWidth = @StatNumberTextW
+					}
+
+					instantTextboxType = {
+						name = "time_at_war_label"
+						position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_TIME_AT_WAR_LABEL
+						format = left
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+					}
+				}
+
+				containerWindowType = {
+					name = "provinces_gained_container"
+					position = { x = @StatContainerRightX y = @StatsRow1of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "provinces_gained"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "provinces_gained_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_PROVINCES_GAINED_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+
+				#### Detailed Row 2 ###
+
+				containerWindowType = {
+					name = "provinces_lost_container"
+					position = { x = @StatContainerLeftX y = @StatsRow2of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarLeftX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						centerposition = yes
+					}
+					instantTextboxType = {
+						name = "provinces_lost"
+						position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = left
+						maxWidth = @StatNumberTextW
+					}
+
+					instantTextboxType = {
+						name = "provinces_lost_label"
+						position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_PROVINCES_LOST_LABEL
+						format = left
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+					}
+				}
+
+				containerWindowType = {
+					name = "provinces_gained_per_year_container"
+					position = { x = @StatContainerRightX y = @StatsRow2of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					#background = {
+					#	name = "background"
+					#	quadTextureSprite = "GFX_tiled_stats_bg"
+					#}
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "provinces_gained_per_year"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "provinces_gained_per_year_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_PROVINCES_GAINED_PER_YEAR_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+
+				containerWindowType = {
+					name = "total_own_casualties_container"
+					position = { x = @StatContainerLeftX y = @StatsRow3of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarLeftX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						centerposition = yes
+					}
+					instantTextboxType = {
+						name = "total_own_casualties"
+						position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = left
+						maxWidth = @StatNumberTextW
+					}
+
+					instantTextboxType = {
+						name = "total_own_casualties_label"
+						position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_TOTAL_OWN_CASUALTIES_LABEL
+						format = left
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+					}
+				}
+
+				containerWindowType = {
+					name = "enemy_casualties_container"
+					position = { x = @StatContainerRightX y = @StatsRow3of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "enemy_casualties"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "enemy_casualties_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_ENEMY_CASUALTIES_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+
+				containerWindowType = {
+					name = "casualties_per_week_container"
+					position = { x = @StatContainerRightX y = @StatsRow4of4 }
+					size = { width = @StatContainerSideW height = @StatContainerH }
+					Orientation = upper_right
+					Origo = upper_right
+
+					iconType = {
+						name = "best_in_career_icon"
+						position = { x = @StarRightX y = @StarSideY }
+						spriteType = "GFX_icon_best_in_career"
+						tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+						Orientation = upper_right
+						centerposition = yes
+					}
+
+					instantTextboxType = {
+						name = "casualties_per_week"
+						position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+						font = "hoi_30"
+						text = "XXX"
+						format = right
+						maxWidth = @StatNumberTextW
+						Orientation = upper_right
+					}
+
+					instantTextboxType = {
+						name = "casualties_per_week_label"
+						position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+						font = "hoi_18"
+						text = CAREER_PROFILE_CASUALTIES_PER_WEEK_LABEL
+						format = right
+						maxWidth = @StatLabelTextW
+						text_color_code = L
+						Orientation = upper_right
+					}
+				}
+			}
+
+			### Right Container ###
+
+			containerWindowType = {
+				name = "column_dlc036"
+				position = { x = @RightColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				containerWindowType = {
+					name = "details"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_bg_dlc036_owned"
+					}
+
+					instantTextboxType = {
+						name = "dlc_title"
+						position = { x = @DlcTitleX y = @DlcTitleY }
+						font = "hoi_36header"
+						borderSize = { x = 0 y = 0 }
+						maxWidth = @DlcTitleW
+						format = center
+						text = "BY_BLOOD_ALONE"
+						Orientation = center_up
+					}
+
+					containerWindowType = {
+						name = "designed_planes_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow1Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						instantTextboxType = {
+							name = "designed_planes"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = DESIGNED_PLANES
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "designed_planes_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_DESIGNED_PLANES_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+
+					containerWindowType = {
+						name = "field_officers_promoted_container"
+						position = { x = @StatContainerLeftX y = @DlcStatsRow2Y }
+						size = { width = @StatContainerSideW height = @StatContainerH }
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarLeftX y = @StarSideY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							centerposition = yes
+						}
+
+						instantTextboxType = {
+							name = "field_officers_promoted"
+							position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = "XXX"
+							format = left
+							maxWidth = @StatNumberTextW
+						}
+
+						instantTextboxType = {
+							name = "field_officers_promoted_label"
+							position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+							font = "hoi_18"
+							text = CAREER_PROFILE_FIELD_OFFICERS_PROMOTED_LABEL
+							format = left
+							maxWidth = @StatLabelTextW
+							text_color_code = L
+						}
+					}
+
+					containerWindowType = {
+						name = "mussolini_missions_container"
+						position = { x = @StatContainerRightX y = @DlcStatsRow2Y }
+						size = { width = @StatContainerSideW height = @StatContainerH }
+						Orientation = upper_right
+						Origo = upper_right
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarRightX y = @StarSideY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = upper_right
+							centerposition = yes
+						}
+
+						instantTextboxType = {
+							name = "mussolini_missions"
+							position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = "XXX"
+							format = right
+							maxWidth = @StatNumberTextW
+							Orientation = upper_right
+						}
+
+						instantTextboxType = {
+							name = "mussolini_missions_label"
+							position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+							font = "hoi_18"
+							text = CAREER_PROFILE_MUSSOLINI_MISSIONS_LABEL
+							format = right
+							maxWidth = @StatLabelTextW
+							text_color_code = L
+							Orientation = upper_right
+						}
+					}
+
+					containerWindowType = {
+						name = "ships_sunk_by_maritime_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow3Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "ships_sunk_by_maritime"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = SHIPS_SUNK_BY_MARITIME
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "ships_sunk_by_maritime_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_SHIPS_SUNK_BY_MARITIME_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+				}
+			}
+		}
+
+		containerWindowType = {
+			name = "page2"
+			position = { x = 0 y = 0 }
+			size = { width = 100% height = 100% }
+
+			### Left Container ###
+
+			containerWindowType = {
+				name = "column_dlc034"
+				position = { x = @LeftColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				containerWindowType = {
+					name = "details"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_bg_dlc034_owned"
+					}
+
+					instantTextboxType = {
+						name = "dlc_title"
+						position = { x = @DlcTitleX y = @DlcTitleY }
+						font = "hoi_36header"
+						borderSize = { x = 0 y = 0 }
+						maxWidth = @DlcTitleW
+						format = center
+						text = "NO_STEP_BACK"
+						Orientation = center_up
+					}
+
+					containerWindowType = {
+						name = "designed_tanks_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow1Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "designed_tanks"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = DESIGNED_TANKS
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "designed_tanks_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_DESIGNED_TANKS_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+
+					containerWindowType = {
+						name = "built_railway_guns_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow2Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "built_railway_guns"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = BUILT_RAILWAY_GUNS
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "built_railway_guns_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_BUILT_RAILWAY_GUNS_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+
+					containerWindowType = {
+						name = "bombed_trains_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow3Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "bombed_trains"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = BOMBED_TRAINS
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "bombed_trains_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_BOMBED_TRAINS_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+				}
+
+
+			}
+
+			### Middle Container ###
+
+			containerWindowType = {
+				name = "column_dlc031"
+				position = { x = @MiddleColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				containerWindowType = {
+					name = "details"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_bg_dlc031_owned"
+					}
+
+					instantTextboxType = {
+						name = "dlc_title"
+						position = { x = @DlcTitleX y = @DlcTitleY }
+						font = "hoi_36header"
+						borderSize = { x = 0 y = 0 }
+						maxWidth = @DlcTitleW
+						format = center
+						text = "BATTLE_FOR_THE_BOSPORUS"
+						Orientation = center_up
+					}
+
+					containerWindowType = {
+						name = "fought_civil_wars_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow1Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						instantTextboxType = {
+							name = "fought_civil_wars"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = FOUGHT_CIVIL_WARS
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "fought_civil_wars_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_FOUGHT_CIVIL_WARS_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+
+					containerWindowType = {
+						name = "highest_casualty_civil_war_container"
+						position = { x = @StatContainerLeftX y = @DlcStatsRow2Y }
+						size = { width = @StatContainerSideW height = @StatContainerH }
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarLeftX y = @StarSideY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							centerposition = yes
+						}
+
+						instantTextboxType = {
+							name = "highest_casualty_civil_war"
+							position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = "XXX"
+							format = left
+							maxWidth = @StatNumberTextW
+						}
+
+						instantTextboxType = {
+							name = "highest_casualty_civil_war_label"
+							position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+							font = "hoi_18"
+							text = CAREER_PROFILE_HIGHEST_CASUALTY_CIVIL_WAR_LABEL
+							format = left
+							maxWidth = @StatLabelTextW
+							text_color_code = L
+						}
+					}
+
+					containerWindowType = {
+						name = "highest_enemy_casualty_civil_war_container"
+						position = { x = @StatContainerRightX y = @DlcStatsRow2Y }
+						size = { width = @StatContainerSideW height = @StatContainerH }
+						Orientation = upper_right
+						Origo = upper_right
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarRightX y = @StarSideY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = upper_right
+							centerposition = yes
+						}
+
+						instantTextboxType = {
+							name = "highest_enemy_casualty_civil_war"
+							position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = "XXX"
+							format = right
+							maxWidth = @StatNumberTextW
+							Orientation = upper_right
+						}
+
+						instantTextboxType = {
+							name = "highest_enemy_casualty_civil_war_label"
+							position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+							font = "hoi_18"
+							text = CAREER_PROFILE_HIGHEST_ENEMY_CASUALTY_CIVIL_WAR_LABEL
+							format = right
+							maxWidth = @StatLabelTextW
+							text_color_code = L
+							Orientation = upper_right
+						}
+					}
+				}
+			}
+
+			### Right Container ###
+
+			containerWindowType = {
+				name = "column_dlc028"
+				position = { x = @RightColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				containerWindowType = {
+					name = "details"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_bg_dlc028_owned"
+					}
+
+					instantTextboxType = {
+						name = "dlc_title"
+						position = { x = @DlcTitleX y = @DlcTitleY }
+						font = "hoi_36header"
+						borderSize = { x = 0 y = 0 }
+						maxWidth = @DlcTitleW
+						format = center
+						text = "LA_RESISTANCE"
+						Orientation = center_up
+					}
+
+					containerWindowType = {
+						name = "successful_operations_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow1Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "successful_operations"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = SUCCESSFUL_OPERATIONS
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "successful_operations_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_SUCCESSFUL_OPERATIONS_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+
+					containerWindowType = {
+						name = "recruited_operatives_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow2Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "recruited_operatives"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = RECRUITED_OPERATIVES
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "recruited_operatives_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_RECRUITED_OPERATIVES_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+
+					containerWindowType = {
+						name = "captured_operatives_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow3Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "captured_operatives"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = CAPTURED_OPERATIVES
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "captured_operatives_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_CAPTURED_OPERATIVES_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+				}
+			}
+		}
+
+		containerWindowType = {
+			name = "page3"
+			position = { x = 0 y = 0 }
+			size = { width = 100% height = 100% }
+
+			### Left Container ###
+
+			containerWindowType = {
+				name = "column_dlc023"
+				position = { x = @LeftColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				containerWindowType = {
+					name = "details"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_bg_dlc023_owned"
+					}
+
+					instantTextboxType = {
+						name = "dlc_title"
+						position = { x = @DlcTitleX y = @DlcTitleY }
+						font = "hoi_36header"
+						borderSize = { x = 0 y = 0 }
+						maxWidth = @DlcTitleW
+						format = center
+						text = "MAN_THE_GUNS"
+						Orientation = center_up
+					}
+
+					containerWindowType = {
+						name = "designed_ships_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow1Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "designed_ships"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = DESIGNED_SHIPS
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "designed_ships_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_DESIGNED_SHIPS_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+
+					containerWindowType = {
+						name = "admiral_traits_unlocked_container"
+						position = { x = @StatContainerLeftX y = @DlcStatsRow2Y }
+						size = { width = @StatContainerSideW height = @StatContainerH }
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarLeftX y = @StarSideY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							centerposition = yes
+						}
+						instantTextboxType = {
+							name = "admiral_traits_unlocked"
+							position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = "XXX"
+							format = left
+							maxWidth = @StatNumberTextW
+						}
+
+						instantTextboxType = {
+							name = "admiral_traits_unlocked_label"
+							position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+							font = "hoi_18"
+							text = CAREER_PROFILE_ADMIRAL_TRAITS_UNLOCKED_LABEL
+							format = left
+							maxWidth = @StatLabelTextW
+							text_color_code = L
+						}
+					}
+
+					containerWindowType = {
+						name = "sunk_convoys_container"
+						position = { x = @StatContainerRightX y = @DlcStatsRow2Y }
+						size = { width = @StatContainerSideW height = @StatContainerH }
+						Orientation = upper_right
+						Origo = upper_right
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarRightX y = @StarSideY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = upper_right
+							centerposition = yes
+						}
+
+						instantTextboxType = {
+							name = "sunk_convoys"
+							position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = "XXX"
+							format = right
+							maxWidth = @StatNumberTextW
+							Orientation = upper_right
+						}
+
+						instantTextboxType = {
+							name = "sunk_convoys_label"
+							position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+							font = "hoi_18"
+							text = CAREER_PROFILE_SUNK_CONVOYS_LABEL
+							format = right
+							maxWidth = @StatLabelTextW
+							text_color_code = L
+							Orientation = upper_right
+						}
+					}
+
+					containerWindowType = {
+						name = "hosted_governments_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow3Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "hosted_governments"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = HOSTED_GOVERNMENTS
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "hosted_governments_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_HOSTED_GOVERNMENTS_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+				}
+			}
+
+			### Middle Container ###
+
+			containerWindowType = {
+				name = "column_dlc022"
+				position = { x = @MiddleColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				containerWindowType = {
+					name = "details"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_bg_dlc022_owned"
+					}
+
+					instantTextboxType = {
+						name = "dlc_title"
+						position = { x = @DlcTitleX y = @DlcTitleY }
+						font = "hoi_36header"
+						borderSize = { x = 0 y = 0 }
+						maxWidth = @DlcTitleW
+						format = center
+						text = "WAKING_THE_TIGER"
+						Orientation = center_up
+					}
+
+					containerWindowType = {
+						name = "general_traits_unlocked_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow1Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "general_traits_unlocked"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = GENERAL_TRAITS_UNLOCKED
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "general_traits_unlocked_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_GENERAL_TRAITS_UNLOCKED_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+
+					containerWindowType = {
+						name = "planes_sent_as_volunteer_force_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow2Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "planes_sent_as_volunteer_force"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = PLANES_SENT_AS_VOLUNTEER_FORCE
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "planes_sent_as_volunteer_force_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_PLANES_SENT_AS_VOLUNTEER_FORCE_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+
+					containerWindowType = {
+						name = "captured_equipment_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow3Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "captured_equipment"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = CAPTURED_EQUIPMENT
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "captured_equipment_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_CAPTURED_EQUIPMENT_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+				}
+			}
+
+			### Right Container ###
+
+			containerWindowType = {
+				name = "column_dlc020"
+				position = { x = @RightColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				containerWindowType = {
+					name = "details"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_bg_dlc020_owned"
+					}
+
+					instantTextboxType = {
+						name = "dlc_title"
+						position = { x = @DlcTitleX y = @DlcTitleY }
+						font = "hoi_36header"
+						borderSize = { x = 0 y = 0 }
+						maxWidth = @DlcTitleW
+						format = center
+						text = "DEATH_OR_DISHONOR"
+						Orientation = center_up
+					}
+
+					containerWindowType = {
+						name = "puppeted_countries_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow1Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "puppeted_countries"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = PUPPETED_COUNTRIES
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "puppeted_countries_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_PUPPETED_COUNTRIES_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+
+					containerWindowType = {
+						name = "licensed_foreign_military_tech_container"
+						position = { x = @StatContainerLeftX y = @DlcStatsRow2Y }
+						size = { width = @StatContainerSideW height = @StatContainerH }
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarLeftX y = @StarSideY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							centerposition = yes
+						}
+						instantTextboxType = {
+							name = "licensed_foreign_military_tech"
+							position = { x = @StatNumberTextLeftX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = "XXX"
+							format = left
+							maxWidth = @StatNumberTextW
+						}
+
+						instantTextboxType = {
+							name = "licensed_foreign_military_tech_label"
+							position = { x = @StatLabelTextLeftX y = @StatLabelTextY }
+							font = "hoi_18"
+							text = CAREER_PROFILE_LICENSED_FOREIGN_MILITARY_TECH_LABEL
+							format = left
+							maxWidth = @StatLabelTextW
+							text_color_code = L
+						}
+					}
+
+					containerWindowType = {
+						name = "converted_vehicles_container"
+						position = { x = @StatContainerRightX y = @DlcStatsRow2Y }
+						size = { width = @StatContainerSideW height = @StatContainerH }
+						Orientation = upper_right
+						Origo = upper_right
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarRightX y = @StarSideY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = upper_right
+							centerposition = yes
+						}
+
+						instantTextboxType = {
+							name = "converted_vehicles"
+							position = { x = @StatNumberTextRightX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = "XXX"
+							format = right
+							maxWidth = @StatNumberTextW
+							Orientation = upper_right
+						}
+
+						instantTextboxType = {
+							name = "converted_vehicles_label"
+							position = { x = @StatLabelTextRightX y = @StatLabelTextY }
+							font = "hoi_18"
+							text = CAREER_PROFILE_CONVERTED_VEHICLES_LABEL
+							format = right
+							maxWidth = @StatLabelTextW
+							text_color_code = L
+							Orientation = upper_right
+						}
+					}
+				}
+			}
+		}
+
+		containerWindowType = {
+			name = "page4"
+			position = { x = 0 y = 0 }
+			size = { width = 100% height = 100% }
+
+			### Left Container ###
+
+			containerWindowType = {
+				name = "column_dlc018"
+				position = { x = @LeftColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				containerWindowType = {
+					name = "details"
+					position = { x = 0 y = 0 }
+					size = { width = 100% height = 100% }
+
+					background = {
+						name = "background"
+						quadTextureSprite = "GFX_bg_dlc018_owned"
+					}
+
+					instantTextboxType = {
+						name = "dlc_title"
+						position = { x = @DlcTitleX y = @DlcTitleY }
+						font = "hoi_36header"
+						borderSize = { x = 0 y = 0 }
+						maxWidth = @DlcTitleW
+						format = center
+						text = "TOGETHER_FOR_VICTORY"
+						Orientation = center_up
+					}
+
+					containerWindowType = {
+						name = "vehicles_received_by_lease_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow1Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "vehicles_received_by_lease"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = VEHICLES_RECEIVED_BY_LEASE
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "vehicles_received_by_lease_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_VEHICLES_RECEIVED_BY_LEASE_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+
+					containerWindowType = {
+						name = "vehicles_sent_by_lease_container"
+						position = { x = @StatContainerCenterX y = @DlcStatsRow2Y }
+						size = { width = @StatContainerCenterW height = @StatContainerH }
+						Orientation = center_up
+						Origo = center_up
+
+						#background = {
+						#	name = "background"
+						#	quadTextureSprite = "GFX_tiled_stats_bg"
+						#}
+
+						instantTextboxType = {
+							name = "vehicles_sent_by_lease"
+							position = { x = @StatTextCenterX y = @StatNumberTextY }
+							font = "hoi_30"
+							text = VEHICLES_SENT_BY_LEASE
+							format = center
+							maxWidth = @StatTextCenterW
+							multiline = no
+							Orientation = center_up
+						}
+
+						instantTextboxType = {
+							name = "vehicles_sent_by_lease_label"
+							position = { x = @StatTextCenterX y = @StatLabelTextY }
+							font = "hoi_18"
+							text =  CAREER_PROFILE_VEHICLES_SENT_BY_LEASE_LABEL
+							format = center
+							maxWidth = @StatTextCenterW
+							text_color_code = L
+							Orientation = center_up
+						}
+
+						iconType = {
+							name = "best_in_career_icon"
+							position = { x = @StarCenterX y = @StarCenterY }
+							spriteType = "GFX_icon_best_in_career"
+							tooltip = "CAREER_PROFILE_BEST_IN_CAREER_TOOLTIP"
+							Orientation = center
+							centerposition = yes
+						}
+					}
+				}
+			}
+
+			### Middle Container ###
+
+			containerWindowType = {
+				name = "middle_numbers"
+				position = { x = @MiddleColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				background = {
+					name = "background"
+					quadTextureSprite = "GFX_tiled_war_bg_overlay"
+				}
+			}
+
+			### Right Container ###
+
+			containerWindowType = {
+				name = "right_numbers"
+				position = { x = @RightColumnPosX y = @ColumnPosY }
+				size = { width = @ColumnWidth height = @ColumnHeight }
+				orientation = center_up
+				origo = center_up
+
+				background = {
+					name = "background"
+					quadTextureSprite = "GFX_tiled_war_bg_overlay"
+				}
+			}
+		}
+
+		### Page Buttons ###
+
+		buttonType = {
+			name = "previous_page_button"
+			Orientation = "center_down"
+			position = { x = -65 y = -15 }
+			quadTextureSprite = "GFX_profile_button_navigation_left"
+			centerposition = yes
+		}
+
+		containerWindowType = {
+			name = "page_dots_container"
+			position = { x = 2 y = -15 }
+			size = { width = 100 height = 16 }
+			Orientation = center_down
+			Origo = center
+
+			overlappingElementsBoxType = {
+				name = "page_dots"
+				position = { x = 0 y = 0 }
+				size = { x = 100 y = 16 }
+				format = center
+				spacing = 1.0
+			}
+		}
+
+		buttonType = {
+			name = "next_page_button"
+			Orientation = "center_down"
+			position = { x = 65 y = -15 }
+			quadTextureSprite = "GFX_profile_button_navigation_right"
+			centerposition = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "career_profile_page_dot"
+		position = { x = 0 y = 0 }
+		size = { width = 20 height = 16 }
+
+		buttonType = {
+			name = "page_dot_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_profile_button_navigation_dot"
+			frame = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "career_profile_dlc_promotion_window"
+		position = { x = 0 y = 0 }
+		size = { width = 376 height = 100% }
+		Origo = center_up
+		Orientation = center_up
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_bg_dlc034" # Will be replaced in code
+		}
+
+		instantTextboxType = {
+			name = "dlc_title"
+			position = { x = @DlcTitleX y = @DlcTitleY }
+			Orientation = center_up
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			maxWidth = @DlcTitleW
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "dlc_description"
+			position = { x = 30 y = 130 }
+			textureFile = ""
+			font = "hoi_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 310
+			maxHeight = 100
+			format = left
+		}
+
+		buttonType = {
+			name = "store_page_button"
+			position = { x = 80 y = -120 }
+			quadTextureSprite = "GFX_btn_blue"
+			buttonText = "CAREER_PROFILE_SHOW_IN_STORE"
+			buttonFont = "hoi_16mbs"
+			Orientation = "lower_left"
+			clicksound = click_default
+		}
+	}
+}

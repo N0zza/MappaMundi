@@ -270,7 +270,9 @@ do_tno_ostland_civil_war = {
 			}
 		}
 		
-		set_capital = 1135
+		set_capital = {
+			state = 1135
+		}
 		
 		set_popularities = {
 		national_socialism = 100
@@ -491,7 +493,9 @@ do_tno_ostland_civil_war = {
 		ruling_party = republican_fascism
 		}
 		
-		set_capital = 207
+		set_capital = {
+			state = 207
+		}
 		
 		set_cosmetic_tag = NOW_TNO
 	}
@@ -1009,11 +1013,11 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		neutrality = 100
+		stratocratic_monarchism = 100
 		}
 		
 		set_politics = {
-		ruling_party = neutrality
+		ruling_party = stratocratic_monarchism
 		}
 		
 		set_cosmetic_tag = PTG_TNO
@@ -1260,7 +1264,7 @@ do_tno_moskowien_civil_war = {
 		}
 	}
 
-	BYA = {
+	BYS = {
 		every_state = {
 			limit = {
 				is_owned_by = SMO
@@ -1280,7 +1284,7 @@ do_tno_moskowien_civil_war = {
 				state = 17328
 				}
 			}
-			BYA = {
+			BYS = {
 				transfer_state = PREV
 			}
 		}
@@ -1307,7 +1311,7 @@ do_tno_moskowien_civil_war = {
 		ruling_party = stratocratic
 		}
 		
-		set_cosmetic_tag = BYA_TNO
+		set_cosmetic_tag = BYS_TNO
 	}
 	
 	CPT = {

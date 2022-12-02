@@ -621,7 +621,7 @@ country_event = {
 				}
 				kill_ideology_leader = national_socialism
 				create_country_leader = {
-					name = "Oberst Alexis Freiherr von Rönne"
+					name = "Oberst Alexis Peter Wilhelm Hugo Freiherr von Rönne"
 					desc = ""
 					picture = "gfx/leaders/TNOWarlords/MC2_Roenne.tga"
 					expire = "1965.1.1"
@@ -1127,5 +1127,125 @@ country_event = {
 	
 	option = {
 		name = slp_menu.32.a
+	}
+}
+country_event = {
+	id = slp_menu.34
+	title = slp_menu.34.t
+	desc = slp_menu.34.d
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				kill_ideology_leader = republican_fascism
+				create_country_leader = {
+					name = "Reichskanzler Berthold Konrad Hermann Albert Speer"
+					desc = ""
+					picture = "gfx/leaders/NZG/NZG_Speer.tga"
+					expire = "1965.1.1"
+					ideology = repfash
+					traits = {
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = slp_menu.34.a
+	}
+}
+country_event = {
+	id = slp_menu.35
+	title = slp_menu.35.t
+	desc = slp_menu.35.d
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				kill_ideology_leader = republican_fascism
+				create_country_leader = {
+					name = "Reichskanzler Berthold Konrad Hermann Albert Speer"
+					desc = ""
+					picture = "gfx/leaders/NZG/NZG_Speer_REPFASH.tga"
+					expire = "1965.1.1"
+					ideology = repfash
+					traits = {
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = slp_menu.35.a
+	}
+}
+country_event = {
+	id = slp_menu.36
+	title = slp_menu.36.t
+	desc = slp_menu.36.d
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				kill_ideology_leader = republican_fascism
+				create_country_leader = {
+					name = "Reichskanzler Berthold Konrad Hermann Albert Speer"
+					desc = ""
+					picture = "gfx/leaders/NZG/NZG_Speer_AUTHREP.tga"
+					expire = "1965.1.1"
+					ideology = repfash
+					traits = {
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = slp_menu.36.a
+	}
+}
+country_event = {
+	id = slp_menu.37
+	title = slp_menu.37.t
+	desc = slp_menu.37.d
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				kill_ideology_leader = republican_fascism
+				create_country_leader = {
+					name = "Reichskanzler Berthold Konrad Hermann Albert Speer"
+					desc = ""
+					picture = "gfx/leaders/NZG/NZG_Speer_NATSOC.tga"
+					expire = "1965.1.1"
+					ideology = repfash
+					traits = {
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = slp_menu.37.a
 	}
 }

@@ -4,7 +4,7 @@ keypress_init = {
         set_variable = { current_char = -1 }
         resize_array = {
             array = chars
-            size = 32
+            size = 56
         }
     }
     add_to_variable = { current_char = 1 }
@@ -16,13 +16,17 @@ get_keypress_backspace = {
     clamp_variable = {
         var = current_char
         min = 0
-        max = 32
+        max = 56
     }
 }
 
 get_keypress_space = {
 	keypress_init = yes
 	set_variable = { chars^current_char = 32 }
+}
+get_apostrophe_space = {
+	keypress_init = yes
+	set_variable = { chars^current_char = 39 }
 }
 get_keypress_exclamation_mark = {
 	keypress_init = yes

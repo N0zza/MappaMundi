@@ -359,6 +359,10 @@ do_all_renames = {
 					}
 					AND = {
 						OR = {
+							tag = LAT
+							tag = EST
+							tag = UKR
+							tag = BLR
 							tag = TSC
 							tag = MSC
 							tag = RIG
@@ -553,6 +557,7 @@ do_all_renames = {
 				OR = {
 					tag = FRA
 				  	is_subject_of = FRA
+					has_cosmetic_tag = FRA_COLONY
 				}
 			}
 		}
@@ -741,7 +746,13 @@ do_all_renames = {
 		limit = {
 			ROOT = {
 				OR = {
-					tag = UKR
+					AND = {
+						tag = UKR
+						NOT = {
+							has_government = vanguardism
+							has_government = national_socialism
+						}
+					}
 					AND = {
 						tag = UA2
 						OR = {
@@ -882,6 +893,7 @@ do_all_renames = {
 					tag = ALG
 					tag = MOR
 					tag = WES
+					tag = HJZ
 				}
 			}
 		}
@@ -889,13 +901,24 @@ do_all_renames = {
 		if = {
 			limit = {
 				ROOT = {
-					OR = {
+					AND = {
 						has_government = authoritarian_monarchism
 						has_cosmetic_tag = UK_RED
 					}
 				}
 			}
 			do_arabic_renames = yes
+		}
+		if = {
+			limit = {
+				ROOT = {
+					OR = {
+						has_cosmetic_tag = FRA_BLUE
+						has_cosmetic_tag = FRA_COLONY
+					}
+				}
+			}
+			do_french_renames= yes
 		}
 	}
 		
@@ -962,7 +985,12 @@ do_all_renames = {
 		limit = {
 			ROOT = {
 				OR = {
-					tag = BLR
+					AND = {
+						tag = BLR
+						NOT = {
+							has_government = national_socialism
+						}
+					}
 					AND = {
 						tag = NOW
 						has_government = republican_fascism
@@ -1210,6 +1238,7 @@ do_all_renames = {
 			        has_cosmetic_tag = BUL_GER
 			        has_cosmetic_tag = GRE_GER
 			        has_cosmetic_tag = TUR_GER
+			        has_cosmetic_tag = GREY_GER3
 				}
 			}
 		}
@@ -1270,6 +1299,12 @@ do_all_renames = {
 		            has_cosmetic_tag = NAP_SPR
 		            has_cosmetic_tag = RDO_SPR
 		            has_cosmetic_tag = SEH_SPR
+		            has_cosmetic_tag = SPR_YELLOW
+					has_cosmetic_tag = SPR_AUTH
+					has_cosmetic_tag = SPR_KINGDOM
+					has_cosmetic_tag = SPR_IBERIA
+					has_cosmetic_tag = SPR_SOCIALIST
+					has_cosmetic_tag = SPR_EMPIRE
 				}
 			}
 		}

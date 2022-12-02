@@ -149,7 +149,9 @@ scripted_gui = {
 			smt_set_capital_click = {
 				random_country = {
 					limit = { owns_state = FROM.FROM }
-					set_capital = FROM.FROM
+					set_capital = {
+						state = FROM.FROM
+					}
 				}
 			}
 			smt_core_states_click = {

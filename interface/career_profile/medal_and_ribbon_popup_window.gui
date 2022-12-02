@@ -1,0 +1,276 @@
+guiTypes = {
+	containerWindowType = {
+		name = "medal_popup_window"
+		position = { x = 20 y = -260 }
+		size = { width = 362 height = 150 }
+		orientation = lower_right
+		origo = lower_right
+
+		show_position = { x = -20 y = -260 }
+		show_animation_type = decelerated
+		animation_time = 600
+
+		fade_type = linear
+		fade_time = 400
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_stats_bg"
+		}
+
+		containerWindowType = {
+			name = "content"
+			position = { x = 0 y = 0 }
+			size = { width = 100% height = 100% }
+
+			fade_type = linear
+			fade_time = 600
+
+			containerWindowType = {
+				name = "medal"
+				position = { x = 15 y = 39 }
+				size = { width = 80 height = 80 }
+
+				iconType = {
+					name = "layer0"
+					position = { x = 40 y = 35 }
+					spriteType = "GFX_career_profile_medal_bg"
+					centerposition = yes
+				}
+
+				iconType = {
+					name = "layer1"
+					position = { x = 40 y = 35 }
+					spriteType = "GFX_career_profile_medal_mg"
+					centerposition = yes
+				}
+
+				iconType = {
+					name = "layer2"
+					position = { x = 40 y = 35 }
+					spriteType = "GFX_career_profile_medal_fg1"
+					centerposition = yes
+				}
+			}
+
+			instantTextboxType = {
+				name = "title"
+				position = { x = 110 y = 40 }
+				Orientation = upper_left
+				maxWidth = 260
+				font = "hoi_18mbs"
+				text = "title"
+				format = left
+				multiline = no
+			}
+
+			instantTextboxType = {
+				name = "description"
+				position = { x = 110 y = 70 }
+				Orientation = upper_left
+				maxWidth = 250
+				font = "hoi_18"
+				text = "description"
+				format = left
+				multiline = yes
+			}
+		}
+
+		buttonType = {
+			name = "frame"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_widget_frame_medal"
+			clicksound = click_scroll
+		}
+	}
+
+	containerWindowType = {
+		name = "ribbon_popup_window"
+		position = { x = 20 y = -260 }
+		size = { width = 300 height = 200 }
+		orientation = lower_right
+		origo = lower_right
+
+		show_position = { x = -20 y = -260 }
+		show_animation_type = decelerated
+		animation_time = 600
+
+		fade_type = linear
+		fade_time = 400
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_stats_bg"
+		}
+
+		containerWindowType = {
+			name = "content"
+			position = { x = 0 y = 0 }
+			size = { width = 100% height = 100% }
+
+			fade_type = linear
+			fade_time = 600
+
+			containerWindowType = {
+				name = "ribbon"
+				orientation = center_up
+				origo = center_up
+				position = { x = 0 y = 50 }
+				size = { width = 176 height = 50 }
+
+				iconType = {
+					name = "layer0"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_career_profile_ribbon_bg"
+				}
+
+				iconType = {
+					name = "layer1"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_career_profile_ribbon_fg1"
+				}
+
+				iconType = {
+					name = "layer2"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_career_profile_ribbon_fg2"
+				}
+
+				iconType = {
+					name = "layer3"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_career_profile_ribbon_fg3"
+				}
+			}
+
+			instantTextboxType = {
+				name = "title"
+				position = { x = 20 y = 20 }
+				maxWidth = 260
+				font = "hoi_18mbs"
+				text = "title"
+				format = center
+				multiline = no
+			}
+
+			instantTextboxType = {
+				name = "description"
+				position = { x = 20 y = 110 }
+				maxWidth = 260
+				font = "hoi_18"
+				text = "description"
+				format = center
+				multiline = yes
+			}
+		}
+
+		buttonType = {
+			name = "frame"
+			size = { x = 300 y = 200 }
+			quadTextureSprite = "GFX_tiled_widget_frame_ribbon"
+			clicksound = click_scroll
+		}
+	}
+
+	containerWindowType = {
+		name = "custom_achievement_popup_window"
+		position = { x = 20 y = -260 }
+		size = { width = 300 height = 200 }
+		orientation = lower_right
+		origo = lower_right
+
+		show_position = { x = -20 y = -260 }
+		show_animation_type = decelerated
+		animation_time = 600
+
+		fade_type = linear
+		fade_time = 400
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_stats_bg"
+		}
+
+		containerWindowType = {
+			name = "content"
+			position = { x = 0 y = 0 }
+			size = { width = 100% height = 100% }
+
+			fade_type = linear
+			fade_time = 600
+
+			containerWindowType = {
+				name = "ribbon"
+				position = { x = 0 y = 50 }
+				size = { width = 176 height = 50 }
+				orientation = center_up
+				origo = center_up
+
+				iconType = {
+					name = "missing"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_career_profile_ribbon_missing"
+				}
+
+				iconType = {
+					name = "layer0"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_career_profile_ribbon_bg"
+				}
+
+				iconType = {
+					name = "layer1"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_career_profile_ribbon_fg1"
+				}
+
+				iconType = {
+					name = "layer2"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_career_profile_ribbon_fg2"
+				}
+
+				iconType = {
+					name = "layer3"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_career_profile_ribbon_fg3"
+				}
+			}
+
+			iconType = {
+				name ="achievement_icon"
+				spriteType = "GFX_idea_unknown"
+				position = { x = 0 y = 75 }
+				centerposition = yes
+				Orientation = center_up
+			}
+
+			instantTextboxType = {
+				name = "title"
+				position = { x = 20 y = 20 }
+				maxWidth = 260
+				font = "hoi_18mbs"
+				text = "title"
+				format = center
+				multiline = no
+			}
+
+			instantTextboxType = {
+				name = "description"
+				position = { x = 20 y = 125 }
+				maxWidth = 260
+				font = "hoi_18"
+				text = "description"
+				format = center
+				multiline = yes
+			}
+		}
+
+		buttonType = {
+			name = "frame"
+			size = { x = 300 y = 200 }
+			quadTextureSprite = "GFX_tiled_widget_frame_ribbon"
+			clicksound = click_scroll
+		}
+	}
+}

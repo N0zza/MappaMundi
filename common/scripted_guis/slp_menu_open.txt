@@ -8,6 +8,7 @@ scripted_gui = {
        visible = {
             OR = {
 				tag = NZG
+				tag = SGM
 				tag = UA2
 				tag = LV2
 				tag = PL2
@@ -28,6 +29,17 @@ scripted_gui = {
 					set_temp_variable = { show = 1 }
 					subtract_from_temp_variable = { show = show_menu_nzg }
 					set_variable = { show_menu_nzg = show }
+				}
+				if = {
+					limit = {
+						AND = {
+							tag = SGM
+							has_government = republican_fascism
+						}
+					}
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_menu_sgm }
+					set_variable = { show_menu_sgm = show }
 				}
 				if = {
 					limit = {
@@ -143,7 +155,7 @@ scripted_gui = {
 			leader_frame1_NZG_click = {
 				subtract_from_temp_variable = { show = show_menu_nzg }
                 set_variable = { show_menu_nzg = show }
-				NZG = {	country_event = { id = slp_menu.16 } }
+				NZG = {	country_event = { id = slp_menu.26 } }
 				add_to_variable = { nzg_port_1 = 1 }
 				set_variable = { nzg_port_2 = 0 }
 				set_variable = { nzg_port_3 = 0 }
@@ -304,6 +316,109 @@ scripted_gui = {
 			leader_frame8_NZG_click_enabled = {
 				has_government = national_socialism
 				check_variable = { nzg_port_8 < 0.99 }
+			}
+        }
+	}
+	
+	### Speer's Germany	###
+	slp_menu_SGM = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_SGM_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_sgm > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_SGM_close_click = {
+                subtract_from_temp_variable = { show = show_menu_sgm }
+                set_variable = { show_menu_sgm = show }
+            }
+			leader_frame1_SGM_click = {
+				subtract_from_temp_variable = { show = show_menu_sgm }
+                set_variable = { show_menu_sgm = show }
+				SGM = {	country_event = { id = slp_menu.34 } }
+				add_to_variable = { sgm_port_1 = 1 }
+				set_variable = { sgm_port_2 = 0 }
+				set_variable = { sgm_port_3 = 0 }
+				set_variable = { sgm_port_4 = 0 }
+			}
+			leader_frame2_SGM_click = {
+				subtract_from_temp_variable = { show = show_menu_sgm }
+                set_variable = { show_menu_sgm = show }
+				SGM = {	country_event = { id = slp_menu.35 } }
+				add_to_variable = { sgm_port_2 = 1 }
+				set_variable = { sgm_port_1 = 0 }
+				set_variable = { sgm_port_3 = 0 }
+				set_variable = { sgm_port_4 = 0 }
+			}
+			leader_frame3_SGM_click = {
+				subtract_from_temp_variable = { show = show_menu_sgm }
+                set_variable = { show_menu_sgm = show }
+				SGM = {	country_event = { id = slp_menu.36 } }
+				add_to_variable = { sgm_port_3 = 1 }
+				set_variable = { sgm_port_1 = 0 }
+				set_variable = { sgm_port_2 = 0 }
+				set_variable = { sgm_port_4 = 0 }
+			}
+			leader_frame4_SGM_click = {
+				subtract_from_temp_variable = { show = show_menu_sgm }
+                set_variable = { show_menu_sgm = show }
+				SGM = {	country_event = { id = slp_menu.37 } }
+				add_to_variable = { sgm_port_4 = 1 }
+				set_variable = { sgm_port_1 = 0 }
+				set_variable = { sgm_port_2 = 0 }
+				set_variable = { sgm_port_3 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = SGM
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.sgm_port_2 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { sgm_port_2 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame2_SGM_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+        triggers = {
+			slp_SGM_close_enabled = {
+				always = yes
+			}
+			leader_frame1_SGM_click_enabled = {
+				has_government = republican_fascism
+				check_variable = { sgm_port_1 < 0.99 }
+			}
+			leader_frame2_SGM_click_enabled = {
+				has_government = republican_fascism
+				check_variable = { sgm_port_2 < 0.99 }
+			}
+			leader_frame3_SGM_click_enabled = {
+				has_government = republican_fascism
+				check_variable = { sgm_port_3 < 0.99 }
+			}
+			leader_frame4_SGM_click_enabled = {
+				has_government = republican_fascism
+				check_variable = { sgm_port_4 < 0.99 }
 			}
         }
 	}

@@ -1160,7 +1160,9 @@
 				MNT = {
 					transfer_state = 2791
 					transfer_state = 105
-					set_capital = 2791
+					set_capital = {
+						state = 2791
+					}
 					set_politics = {
 						ruling_party = theocratic
 						}
@@ -1292,7 +1294,7 @@
 					create_country_leader = {
             			name = "King William IV of Brunswick-Lüneburg"
             			desc = ""
-            			picture = 1836_ENG_William_IV.tga
+            			picture = "gfx/leaders/ENG/1836_ENG_William_IV.tga"
             			expire = "1965.1.1"
             			ideology = conservative_constitutionalism
 						}
@@ -1302,7 +1304,7 @@
 					create_country_leader = {
             			name = "Roi Louis-Philippe de Orléans"
             			desc = ""
-            			picture = 1836_FRA_Louis_Philippe_I.tga
+            			picture = "gfx/leaders/FRA/1836_FRA_Louis_Philippe_I.tga"
             			expire = "1965.1.1"
             			ideology = authmon
 						}
@@ -1312,7 +1314,7 @@
 					create_country_leader = {
             			name = "Kaiser Ferdinand von Habsburg-Lothringen"
             			desc = ""
-            			picture = 1836_AUS_Ferdinand_I.tga
+            			picture = "gfx/leaders/AUS/1836_AUS_Ferdinand_I.tga"
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1322,7 +1324,7 @@
 					create_country_leader = {
             			name = "Imperátor Nikoláj Romanóvskij"
             			desc = ""
-            			picture = gfx/leaders/Russia/1836_RUS_Nicholas_I.tga
+            			picture = "gfx/leaders/Russia/1836_RUS_Nicholas_I.tga"
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1332,7 +1334,7 @@
 					create_country_leader = {
             			name = "König Friedrich Wilhelm III von Hohenzollern"
             			desc = ""
-            			picture = 1836_PRE_Friedrich_Wilhelm_III.tga
+            			picture = "gfx/leaders/PRE/1836_PRE_Friedrich_Wilhelm_III.tga"
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1342,7 +1344,7 @@
 					create_country_leader = {
             			name = "Emîrü'l-mü'minîn Mahmud II"
             			desc = ""
-            			picture = 1836_TUR_Mahmud_II.tga
+            			picture = "gfx/leaders/TUR/1836_TUR_Mahmud_II.tga"
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1352,7 +1354,7 @@
 					create_country_leader = {
             			name = "Re Carlo Alberto I di Savoia"
             			desc = ""
-            			picture = 1836_PIE_Charles_Albert_I.tga
+            			picture = "gfx/leaders/PIE/1836_PIE_Charles_Albert_I.tga"
             			expire = "1965.1.1"
             			ideology = authmon
 						}
@@ -1362,7 +1364,7 @@
 					create_country_leader = {
             			name = "Kong Frederik VI af Oldenborg"
             			desc = ""
-            			picture = 1836_DEN_Frederick_VI.tga
+            			picture = "gfx/leaders/DEN/1836_DEN_Frederick_VI.tga"
             			expire = "1965.1.1"
             			ideology = monsoc
 						}
@@ -1372,7 +1374,7 @@
 					create_country_leader = {
             			name = "Kong Frederik VI af Oldenborg"
             			desc = ""
-            			picture = gfx/leaders/DEN/1836_DEN_Frederick_VI.tga
+            			picture = "gfx/leaders/DEN/1836_DEN_Frederick_VI.tga"
             			expire = "1965.1.1"
             			ideology = authmon
 						}
@@ -1382,7 +1384,7 @@
 					create_country_leader = {
             			name = "Tao-kuang Ti Min-ning"
             			desc = ""
-            			picture = 1836_CHI_Mianning.tga
+            			picture = "gfx/leaders/CHI/1836_CHI_Mianning.tga"
             			expire = "1965.1.1"
             			ideology = conservative_constitutionalism
 						}
@@ -1391,12 +1393,12 @@
 					
 					set_cosmetic_tag = USA_NEW
 					
-					kill_country_leader = conservatism
+					kill_country_leader = democratic
 					
 						create_country_leader = {
 							name = "President Andrew Jackson"
 							desc = ""
-							picture = 1836_USA_Andrew_Jackson.tga
+							picture = "gfx/leaders/USA/1836_USA_Andrew_Jackson.tga"
 							expire = "1965.1.1"
 							ideology = conservatism
 						}
@@ -1419,7 +1421,7 @@
 					create_country_leader = {
             			name = "Rainha Maria II de Bragança"
             			desc = ""
-            			picture = 1836_POR_Maria_II.tga
+            			picture = "gfx/leaders/POR/1836_POR_Maria_II.tga"
             			expire = "1965.1.1"
             			ideology = conservative_constitutionalism
 						}
@@ -1439,7 +1441,7 @@
 					create_country_leader = {
             			name = "Co-Príncep Episcopal Simó Rojas de Guardiola i Hortoneda, Bisbe d'Urgell"
             			desc = ""
-            			picture = 1836_ADR_Simo.tga
+            			picture = "gfx/leaders/ADR/1836_ADR_Simo.tga"
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1449,7 +1451,7 @@
 					create_country_leader = {
             			name = "King William IV of Brunswick-Lüneburg"
             			desc = ""
-            			picture = gfx/leaders/ENG/1836_ENG_William_IV.tga
+            			picture = "gfx/leaders/ENG/1836_ENG_William_IV.tga"
             			expire = "1965.1.1"
             			ideology = stratmon
 						}
@@ -1459,7 +1461,7 @@
 					create_country_leader = {
             			name = "King William IV of Brunswick-Lüneburg"
             			desc = ""
-            			picture = gfx/leaders/ENG/1836_ENG_William_IV.tga
+            			picture = "gfx/leaders/ENG/1836_ENG_William_IV.tga"
             			expire = "1965.1.1"
             			ideology = conservative_constitutionalism
 						}
@@ -1469,7 +1471,7 @@
 					create_country_leader = {
             			name = "King William IV of Brunswick-Lüneburg"
             			desc = ""
-            			picture = gfx/leaders/ENG/1836_ENG_William_IV.tga
+            			picture = "gfx/leaders/ENG/1836_ENG_William_IV.tga"
             			expire = "1965.1.1"
             			ideology = conservative_constitutionalism
 						}
@@ -1479,7 +1481,7 @@
 					create_country_leader = {
             			name = "King William IV of Brunswick-Lüneburg"
             			desc = ""
-            			picture = gfx/leaders/ENG/1836_ENG_William_IV.tga
+            			picture = "gfx/leaders/ENG/1836_ENG_William_IV.tga"
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1489,7 +1491,7 @@
 					create_country_leader = {
             			name = "King William IV of Brunswick-Lüneburg"
             			desc = ""
-            			picture = gfx/leaders/ENG/1836_ENG_William_IV.tga
+            			picture = "gfx/leaders/ENG/1836_ENG_William_IV.tga"
             			expire = "1965.1.1"
             			ideology = authmon
 						}
@@ -1499,7 +1501,7 @@
 					create_country_leader = {
             			name = "King William IV of Brunswick-Lüneburg"
             			desc = ""
-            			picture = gfx/leaders/ENG/1836_ENG_William_IV.tga
+            			picture = "gfx/leaders/ENG/1836_ENG_William_IV.tga"
             			expire = "1965.1.1"
             			ideology = stratmon
 						}
@@ -1509,7 +1511,7 @@
 					create_country_leader = {
             			name = "Re Ferdinando II di Borbone"
             			desc = ""
-            			picture = 1836_NAP_Ferdinand_II.tga
+            			picture = "gfx/leaders/NAP/1836_NAP_Ferdinand_II.tga"
             			expire = "1965.1.1"
             			ideology = authmon
 						}
@@ -1519,7 +1521,7 @@
 					create_country_leader = {
             			name = "Papa Gregorius XVI"
             			desc = ""
-            			picture = 1836_VCT_Gregory_XVI.tga
+            			picture = "gfx/leaders/VCT/1836_VCT_Gregory_XVI.tga"
             			expire = "1965.1.1"
             			ideology = despotism
 						}
@@ -1529,7 +1531,7 @@
 					create_country_leader = {
             			name = "Luogotenente Generale Carlo Candida"
             			desc = ""
-            			picture = 1836_OML_Carlo_Candida.tga
+            			picture = "gfx/leaders/OML/1836_OML_Carlo_Candida.tga"
             			expire = "1965.1.1"
             			ideology = christian
 						}
@@ -1539,7 +1541,7 @@
 					create_country_leader = {
             			name = "Capitani Reggenti Giambattista Bonelli"
             			desc = ""
-            			picture = 1836_SMR_Giambattista_Bonelli.tga
+            			picture = "gfx/leaders/SMR/1836_SMR_Giambattista_Bonelli.tga"
             			expire = "1965.1.1"
             			ideology = repfash
 						}
@@ -1549,7 +1551,7 @@
 					create_country_leader = {
             			name = "Granduca Leopoldo II di Toscana"
             			desc = ""
-            			picture = 1836_TUS_Leopold_II.tga
+            			picture = "gfx/leaders/TUS/1836_TUS_Leopold_II.tga"
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1559,7 +1561,7 @@
 					create_country_leader = {
             			name = "Granduchessa Maria Luigia d'Absburgo-Lorena"
             			desc = ""
-            			picture = 1836_PRM_Maria_Luigia.tga
+            			picture = "gfx/leaders/PRM/1836_PRM_Maria_Luigia.tga"
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1569,7 +1571,7 @@
 					create_country_leader = {
             			name = "Duca Carlo I di Borbone-Parma"
             			desc = ""
-            			picture = 1836_LCC_Charles_I.tga
+            			picture = "gfx/leaders/LCC/1836_LCC_Charles_I.tga"
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1579,7 +1581,7 @@
 					create_country_leader = {
             			name = "Duca Francesco IV d'Asburgo-Este"
             			desc = ""
-            			picture = 1836_MDN_Francesco_IV.tga
+            			picture = "gfx/leaders/MDN/1836_MDN_Francesco_IV.tga"
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1589,7 +1591,7 @@
 					create_country_leader = {
             			name = "Prince Honoré V de Grimaldi"
             			desc = ""
-            			picture = 1836_MCO_Honore_V.tga
+            			picture = "gfx/leaders/MCO/1836_MCO_Honore_V.tga"
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1599,7 +1601,7 @@
 					create_country_leader = {
             			name = "Präsident Karl Friedrich Tscharner"
             			desc = ""
-            			picture = 1836_SWI_Friedrich_Tscharner.tga
+            			picture = "gfx/leaders/SWI/1836_SWI_Friedrich_Tscharner.tga"
             			expire = "1965.1.1"
             			ideology = cenrep
 						}
@@ -1609,7 +1611,7 @@
 					create_country_leader = {
             			name = "Gouverneur und Generalleutnant Adolf Heinrich Ernst Pfuehl"
             			desc = ""
-            			picture = 1836_KNE_Adolf_Pfuehl.tga
+            			picture = "gfx/leaders/KNE/1836_KNE_Adolf_Pfuehl.tga"
             			expire = "1965.1.1"
             			ideology = stratmon
 						}
@@ -1624,7 +1626,7 @@
 					create_country_leader = {
             			name = "Fürstliche Landvogt Johann Michael Menzinger"
             			desc = ""
-            			picture = 1836_LIE_Johann_Menzinger.tga
+            			picture = "gfx/leaders/LIE/1836_LIE_Johann_Menzinger.tga"
             			expire = "1965.1.1"
             			ideology = authmon
 						}
@@ -1634,7 +1636,7 @@
 					create_country_leader = {
             			name = "Koning Willem I van Oranje-Nassau"
             			desc = ""
-            			picture = 1836_HOL_Willem_I.tga
+            			picture = "gfx/leaders/HOL/1836_HOL_Willem_I.tga"
             			expire = "1965.1.1"
             			ideology = conservative_constitutionalism
 						}
@@ -1644,7 +1646,7 @@
 					create_country_leader = {
             			name = "Roi Léopold I de Saxe-Cobourg et Gotha"
             			desc = ""
-            			picture = 1836_BEL_Leopold_I.tga
+            			picture = "gfx/leaders/BEL/1836_BEL_Leopold_I.tga"
             			expire = "1965.1.1"
             			ideology = conservative_constitutionalism
 						}
@@ -1654,7 +1656,7 @@
 					create_country_leader = {
             			name = "König Ludwig I von Wittelsbach"
             			desc = ""
-            			picture = 1836_BAY_Ludwig_I.tga
+            			picture = "gfx/leaders/BAY/1836_BAY_Ludwig_I.tga"
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1664,7 +1666,7 @@
 					create_country_leader = {
             			name = "Großherzog Leopold I von Zähringen"
             			desc = ""
-            			picture = 1836_BAD_Leopold_I.tga
+            			picture = "gfx/leaders/BAD/1836_BAD_Leopold_I.tga"
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1674,7 +1676,7 @@
 					create_country_leader = {
             			name = "König Wilhelm I von Württemberg"
             			desc = ""
-            			picture = 1836_WUR_Wilhelm_I.tga
+            			picture = "gfx/leaders/WUR/1836_WUR_Wilhelm_I.tga"
             			expire = "1965.1.1"
             			ideology = absolutism
 						}
@@ -1830,7 +1832,7 @@
 						transfer_state = PREV
 						set_cosmetic_tag = USA_BLUE
 						set_politics = {
-						ruling_party = cenrep
+						ruling_party = centrist_republic
 							}
 						}
 					}
@@ -2009,7 +2011,9 @@
 						}
 					}
 				OT2 = {
-					set_capital = 9344
+					set_capital = {
+						state = 9344
+					}
 					transfer_state = 4410
 					transfer_state = 4411
 					transfer_state = 4652
@@ -3811,7 +3815,7 @@
 						}
 					NOT = {
 					is_core_of = SEM
-					is_core_of = BKH
+					is_core_of = BUK
 					is_core_of = TIB
 					is_core_of = BRM
 					is_core_of = KOK
@@ -3873,7 +3877,9 @@
 					transfer_state = PREV
 					add_state_core = PREV
 					set_cosmetic_tag = CHI_YELLOW
-					set_capital = 608
+					set_capital = {
+						state = 608
+					}
 					set_politics = {
 						ruling_party = conservative_monarchism
 						}
@@ -3905,7 +3911,7 @@
 						is_core_of = PMR
 						}
 					NOT = {
-						is_core_of = BKH
+						is_core_of = BUK
 						}
 					}
 				SIK = {
@@ -4491,7 +4497,7 @@
 				every_state = {
 					limit = {
 						OR = {
-							is_core_of = BKH
+							is_core_of = BUK
 							is_core_of = UZB
 							is_claimed_by = UZB
 							is_owned_by = TAJ
@@ -4502,7 +4508,7 @@
 							is_owned_by = SIK
 							}
 						}
-					BKH = {
+					BUK = {
 						transfer_state = PREV
 						}
 					}
@@ -4529,7 +4535,7 @@
 					transfer_state = 14370
 					transfer_state = 14371
 					}
-				BKH = {
+				BUK = {
 					transfer_state = 12238
 					transfer_state = 1392
 					transfer_state = 12459
@@ -4715,9 +4721,9 @@
 					}
 				every_state = {
 					limit = {
-						is_core_of = CRI
+						is_core_of = CRM
 						}
-					CRI = {
+					CRM = {
 						transfer_state = PREV
 						set_cosmetic_tag = SIA_COLONY
 						}
@@ -5401,7 +5407,9 @@
 				TUR = {
 					transfer_state = PREV
 					add_state_core = PREV
-					set_capital = 341
+					set_capital = {
+						state = 341
+					}
 						}
 					}
 				every_state = {
@@ -6659,14 +6667,6 @@
 			}
 		every_state = {
 			limit = {
-				is_core_of = AB0
-				}
-			AB0 = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
 				is_core_of = AB1
 				}
 			AB1 = {
@@ -7015,7 +7015,9 @@
 						set_politics = {
 							ruling_party = monarchism
 						}
-						set_capital = 195
+						set_capital = {
+							state = 195
+						}
 					}
 					
 					every_state = {
@@ -7104,7 +7106,9 @@
 						transfer_state = 5911
 						transfer_state = 14440
 						transfer_state = 4209
-						set_capital = 341
+						set_capital = {
+							state = 341
+						}
 						set_politics = {
 							ruling_party = monarchism
 						}
@@ -7117,7 +7121,9 @@
 						set_politics = {
 							ruling_party = monarchism
 						}
-						set_capital = 2791
+						set_capital = {
+							state = 2791
+						}
 					}
 					
 					SER = {
@@ -7706,11 +7712,11 @@
 			every_state = {
 				limit = {
 					OR = {
-						is_core_of = BKH
-						is_claimed_by = BKH
+						is_core_of = BUK
+						is_claimed_by = BUK
 						}
 					}
-				BKH = {
+				BUK = {
 					transfer_state = PREV
 						}
 					}
@@ -7725,7 +7731,9 @@
 						}
 					}
 		CHI = {
-			set_capital = 608
+			set_capital = {
+				state = 608
+			}
 			set_cosmetic_tag = CHI_YELLOW
 			}
 		MON = {
@@ -7770,7 +7778,9 @@
 			transfer_state = 11061
 			transfer_state = 17266
 			drop_cosmetic_tag = yes
-			set_capital = 195
+			set_capital = {
+				state = 195
+			}
 			set_politics = {
 				ruling_party = monarchism
 				}
@@ -7779,7 +7789,7 @@
 				limit = {
 					OR = {
 					is_core_of = YKT
-					is_core_of = BML
+					is_core_of = BYA
 					is_owned_by = RUS
 						}
 					NOT = {
@@ -7837,7 +7847,7 @@
 			transfer_state = 5651
 			transfer_state = 5652
 			}
-		BKH = {
+		BUK = {
 			set_cosmetic_tag = RUS_GREEN
 			}
 		KHI = {
@@ -8209,13 +8219,17 @@
 			transfer_state = 6048
 			transfer_state = 6870
 			transfer_state = 6399
-			set_capital = 856
+			set_capital = {
+				state = 856
+			}
 			set_politics = {
 				ruling_party = authoritarian_monarchism
 				}
 			}
 		COG = {
-			set_capital = 1498
+			set_capital = {
+				state = 1498
+			}
 			}
 		BLN = {
 			transfer_state = 13011
@@ -8550,12 +8564,11 @@
 							}
 					}
 					RUS = {
-						all_owned_states = {do_russian_renames = yes}
+						every_owned_states = {do_russian_renames = yes}
 					}
 					NFI = {
 						set_cosmetic_tag = NFI_ENG
 					}
-					
 					ICE = {
 						kill_country_leader = yes
 						create_country_leader = {
@@ -8746,7 +8759,6 @@
 						}
 						set_demilitarized_zone = no
 					}
-					limit = { UCL = { exists = no } }
 					every_state = {
 						limit = {
 							OR = {
@@ -8767,7 +8779,7 @@
 						create_country_leader = {
 							name = "King George VI of Windsor"
 							desc = ""
-							picture = ENG_George_VI.tga
+							picture = "gfx/leaders/ENG/ENG_George_VI.tga"
 							expire = "1965.1.1"
 							ideology = conservative_constitutionalism
 							}
@@ -8847,7 +8859,7 @@
 						create_country_leader = {
 							name = "Darga Demchugdongrub"
 							desc = ""
-							picture = gfx/leaders/MON/MON_Demchugdongrub.tga
+							picture = "gfx/leaders/MON/MON_Demchugdongrub.tga"
 							expire = "1965.1.1"
 							ideology = authmon
 						}
@@ -8880,7 +8892,7 @@
 						create_country_leader = {
 							name = "Darga Demchugdongrub"
 							desc = ""
-							picture = gfx/leaders/MON/MON_Demchugdongrub.tga
+							picture = "gfx/leaders/MON/MON_Demchugdongrub.tga"
 							expire = "1965.1.1"
 							ideology = authmon
 						}
@@ -9153,18 +9165,18 @@
 						create_country_leader = {
 							name = "Predsedátel' Ión Lukíč Stepanénko"
 							desc = ""
-							picture = YKT_Stepanenko.tga
+							picture = "gfx/leaders/YKT/YKT_Stepanenko.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
 					}
-					BML = {
-						set_cosmetic_tag = BML_1939
+					BYA = {
+						set_cosmetic_tag = BYA_1939
 						kill_country_leader = yes
 						create_country_leader = {
 							name = "Predsedátel' Semën Denísovič Ignát'ev"
 							desc = ""
-							picture = BML_Ignatyev.tga
+							picture = "gfx/leaders/BYA/BYA_Ignatyev.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9175,7 +9187,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Nikoláj Aleksándrovič Skvorcóv"
 							desc = ""
-							picture = KAZ_Skvortsov.tga
+							picture = "gfx/leaders/KAZ/KAZ_Skvortsov.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9189,7 +9201,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Xivali Babáevič Babáev"
 							desc = ""
-							picture = TMS_Babayev.tga
+							picture = "gfx/leaders/TMS/TMS_Babayev.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9200,7 +9212,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Alekséj Vlásovič Vagov"
 							desc = ""
-							picture = KYR_Vagov.tga
+							picture = "gfx/leaders/KYR/KYR_Vagov.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9211,7 +9223,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Minovar Šagadáev"
 							desc = ""
-							picture = TAJ_Shagadayev.tga
+							picture = "gfx/leaders/TAJ/TAJ_Shagadayev.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9233,7 +9245,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Iván Semënovič Anošin"
 							desc = ""
-							picture = VGR_Anoshin.tga
+							picture = "gfx/leaders/VGR/VGR_Anoshin.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9244,7 +9256,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Iván Dmítrievič Rjazánov"
 							desc = ""
-							picture = KMI_Ryazanov.tga
+							picture = "gfx/leaders/KMI/KMI_Ryazanov.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9255,7 +9267,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Gennádij Nikoláevič Kuprijánov"
 							desc = ""
-							picture = KAR_Kupriyanov.tga
+							picture = "gfx/leaders/KAR/KAR_Kupriyanov.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9266,7 +9278,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Aleksándr Tarásovič Zalykin"
 							desc = ""
-							picture = BSH_Zalikin.tga
+							picture = "gfx/leaders/BSH/BSH_Zalikin.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9277,7 +9289,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Dmítrij Vasíl'evič Šlenov"
 							desc = ""
-							picture = TTR_Alemasov.tga
+							picture = "gfx/leaders/TTR/TTR_Alemasov.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9288,7 +9300,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Dmítrij Vasíl'evič Šlenov"
 							desc = ""
-							picture = UDM_Shlenov.tga
+							picture = "gfx/leaders/UDM/UDM_Shlenov.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9299,7 +9311,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Veniamín Mixájlovič Kušnarëv"
 							desc = ""
-							picture = MRE_Kushnaryov.tga
+							picture = "gfx/leaders/MRE/MRE_Kushnaryov.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9310,7 +9322,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Alekséj Alekséevič Vólkov"
 							desc = ""
-							picture = CVS_Volkov.tga
+							picture = "gfx/leaders/CVS/CVS_Volkov.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9321,18 +9333,18 @@
 						create_country_leader = {
 							name = "Predsedátel' Iván Alekséevič Kuznecóv"
 							desc = ""
-							picture = MRD_Kuznetsov.tga
+							picture = "gfx/leaders/MRD/MRD_Kuznetsov.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
 					}
-					KMK = {
-						set_cosmetic_tag = KMK_1939
+					KAL = {
+						set_cosmetic_tag = KAL_1939
 						kill_country_leader = yes
 						create_country_leader = {
 							name = "Predsedátel' Pëtr Vasíl'evič Lavrént'ev"
 							desc = ""
-							picture = KMK_Lavrentyev.tga
+							picture = "gfx/leaders/KAL/KAL_Lavrentyev.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9354,7 +9366,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Jusúp Dudáevič Tambiev"
 							desc = ""
-							picture = CHE_Tambiyev.tga
+							picture = "gfx/leaders/CHE/CHE_Tambiyev.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9365,7 +9377,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Nikíta Petróvič Ivanóv"
 							desc = ""
-							picture = NOS_Ivanov.tga
+							picture = "gfx/leaders/NOS/NOS_Ivanov.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9376,7 +9388,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Aleksándr Vasíl'evič Kudrjávcev"
 							desc = ""
-							picture = KBK_Kudryavstev.tga
+							picture = "gfx/leaders/KBK/KBK_Kudryavstev.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9387,7 +9399,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Kandíd Néstorovič Čarkviani"
 							desc = ""
-							picture = GEO_Charkviani.tga
+							picture = "gfx/leaders/GEO/GEO_Charkviani.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9398,7 +9410,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Kiríll Geórgievič Bečvaja"
 							desc = ""
-							picture = ABK_Bechvaya.tga
+							picture = "gfx/leaders/ABK/ABK_Bechvaya.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9409,7 +9421,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Mixaíl Ivánovič Baramija"
 							desc = ""
-							picture = ADJ_Baramiya.tga
+							picture = "gfx/leaders/ADJ/ADJ_Baramiya.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9420,7 +9432,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Grigórij Artëmovič Arutjunov"
 							desc = ""
-							picture = ARM_Arutyunov.tga
+							picture = "gfx/leaders/ARM/ARM_Arutyunov.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9431,7 +9443,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Kjazím Gejdár oglý Ismaílov"
 							desc = ""
-							picture = NAK_Ismailov.tga
+							picture = "gfx/leaders/NAK/NAK_Ismailov.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9445,7 +9457,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Nikíta Sergéevič Xruščëv"
 							desc = ""
-							picture = UKR_Khrushchev.tga
+							picture = "gfx/leaders/UKR/UKR_Khrushchev.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9456,7 +9468,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Vladímir Semënovič Bulátov"
 							desc = ""
-							picture = CRM_Bulatov.tga
+							picture = "gfx/leaders/CRM/CRM_Bulatov.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9478,7 +9490,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Pantelejmón Kondrát'evič Ponomarénko"
 							desc = ""
-							picture = BLR_Ponomarenko.tga
+							picture = "gfx/leaders/BLR/BLR_Ponomarenko.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9494,7 +9506,7 @@
 						create_country_leader = {
 							name = "Darga Khorloogiyn Choybalsan"
 							desc = ""
-							picture = MON_Choybalsan.tga
+							picture = "gfx/leaders/MON/MON_Choybalsan.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -9872,7 +9884,9 @@
 				}
 			PRC = {
 				set_cosmetic_tag = PRC_proclaimed
-				set_capital = 608
+				set_capital = {
+					state = 608
+				}
 				release = ROK
 				transfer_state = 11585
 				transfer_state = 11586
@@ -10410,7 +10424,9 @@
 			transfer_state = 7461
 			transfer_state = 7460
 			transfer_state = 1384
-			set_capital = 51
+			set_capital = {
+				state = 51
+			}
 			}
 		POL = {
 			transfer_state = 7444
@@ -10484,7 +10500,7 @@
 			create_country_leader = {
 				name = "Generalii Sekretár' Iósif Vissariónovič Stálin"
 				desc = ""
-				picture = gfx/leaders/Russia/Portrait_Iosif_Stalin.tga
+				picture = "gfx/leaders/Russia/Portrait_Iosif_Stalin.tga"
 				expire = "1965.1.1"
 				ideology = totsoc
 				}
@@ -10494,7 +10510,7 @@
 			create_country_leader = {
 				name = "Generalii Sekretár' Iósif Vissariónovič Stálin"
 				desc = ""
-				picture = gfx/leaders/Russia/Portrait_Iosif_Stalin.tga
+				picture = "gfx/leaders/Russia/Portrait_Iosif_Stalin.tga"
 				expire = "1965.1.1"
 				ideology = totsoc
 				}
@@ -10523,8 +10539,8 @@
 		DAG = {
 			set_cosmetic_tag = DAG_1939
 			}
-		KMK = {
-			set_cosmetic_tag = KMK_1939
+		KAL = {
+			set_cosmetic_tag = KAL_1939
 			}
 		TMS = {
 			set_cosmetic_tag = TMS_1939
@@ -10565,8 +10581,8 @@
 		BSH = {
 			set_cosmetic_tag = BSH_1939
 			}
-		BML = {
-			set_cosmetic_tag = BML_1939
+		BYA = {
+			set_cosmetic_tag = BYA_1939
 			}
 		YKT = {
 			set_cosmetic_tag = YKT_1939
@@ -10576,7 +10592,7 @@
 			create_country_leader = {
 				name = "Bundespräsident Theodor Heuss"
 				desc = ""
-				picture = WGR_Heuss.tga
+				picture = "gfx/leaders/WGR/WGR_Heuss.tga"
 				expire = "1965.1.1"
 				ideology = liberalism
 				}
@@ -10586,7 +10602,7 @@
 			create_country_leader = {
 				name = "King George VI of Windsor"
 				desc = ""
-				picture = ENG_George_VI_2.tga
+				picture = "gfx/leaders/ENG/ENG_George_VI_2.tga"
 				expire = "1965.1.1"
 				ideology = conservative_constitutionalism
 				}
@@ -10596,7 +10612,7 @@
 			create_country_leader = {
 				name = "Président Vincent Jules Auriol"
 				desc = ""
-				picture = FRA_Auriol.tga
+				picture = "gfx/leaders/FRA/FRA_Auriol.tga"
 				expire = "1965.1.1"
 				ideology = socialism
 				}
@@ -10616,7 +10632,7 @@
 			create_country_leader = {
 				name = "President Harry S Truman"
 				desc = ""
-				picture = USA_Truman.tga
+				picture = "gfx/leaders/USA/USA_Truman.tga"
 				expire = "1965.1.1"
 				ideology = socdem
 				}
@@ -10626,7 +10642,7 @@
 			create_country_leader = {
 				name = "Chuhsi Mao Tse-tung"
 				desc = ""
-				picture = PRC_Mao.tga
+				picture = "gfx/leaders/PRC/PRC_Mao.tga"
 				expire = "1965.1.1"
 				ideology = totsoc
 				}
@@ -10689,7 +10705,9 @@
 				}
 			}
 		MOL = {
-			set_capital = 78
+			set_capital = {
+				state = 78
+			}
 			set_cosmetic_tag = MOL_1950
 			}
 		HUN = {
@@ -10952,7 +10970,9 @@
 			transfer_state = 15407
 			}
 			MOL = {
-			set_capital = 78
+			set_capital = {
+				state = 78
+			}
 			}
 		 	ALB = {
 		 		set_politics = {
@@ -11416,7 +11436,7 @@
 			create_country_leader = {
 				name = "Wilem Powerfish"
 				desc = ""
-				picture = WTR_Wilem_Powerfish.tga
+				picture = "gfx/leaders/WTR/WTR_Wilem_Powerfish.tga"
 				expire = "1965.1.1"
 				ideology = total_anarchist
 				}
@@ -11738,7 +11758,7 @@
 			create_country_leader = {
         		name = "Glavá Den'ıs Vladímirovič Pušílin"
         		desc = ""
-        		picture = DPR_Pushlin.tga
+        		picture = "gfx/leaders/DPR/DPR_Pushlin.tga"
         		expire = "1965.1.1"
         		ideology = despotism
 				}
@@ -11779,7 +11799,7 @@
 			create_country_leader = {
         		name = "Glavá Leoníd Ivánovič Pásečnik"
         		desc = ""
-        		picture = LPR_Pasechnik.tga
+        		picture = "gfx/leaders/LPR/LPR_Pasechnik.tga"
         		expire = "1965.1.1"
         		ideology = despotism
 				}
@@ -12228,7 +12248,9 @@
 			transfer_state = 7461
 			transfer_state = 7460
 			transfer_state = 1384
-			set_capital = 64
+			set_capital = {
+				state = 64
+			}
 			set_party_name = {
 				ideology = democratic
 				name = WGR_democratic_2022_party
@@ -12240,7 +12262,7 @@
 			create_country_leader = {
         		name = "Bundespräsident Frank-Walter Steinmeier"
         		desc = ""
-        		picture = WGR_Steinmeier.tga
+        		picture = "gfx/leaders/WGR/WGR_Steinmeier.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -12249,7 +12271,7 @@
 			create_country_leader = {
         		name = "Bundeskanzlerin Angela Dorothea Merkel"
         		desc = ""
-        		picture = WGR_Merkel.tga
+        		picture = "gfx/leaders/WGR/WGR_Merkel.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -12282,7 +12304,7 @@
 			create_country_leader = {
         		name = "Prezydent Andrzej Sebastian Duda"
         		desc = ""
-        		picture = POL_Andrzej_Duda.tga
+        		picture = "gfx/leaders/POL/POL_Andrzej_Duda.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -12314,7 +12336,7 @@
 			create_country_leader = {
         		name = "Prezydent Volodymyr Oleksandrovych Zelenskyy"
         		desc = ""
-        		picture = UKR_Zelensky.tga
+        		picture = "gfx/leaders/UKR/UKR_Zelensky.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -12343,7 +12365,7 @@
 			create_country_leader = {
         		name = "Prezidént Sviatlána Hieórhijeŭna Cichanóŭskaja"
         		desc = ""
-        		picture = BLR_Tsikhanouskaya.tga
+        		picture = "gfx/leaders/BLR/BLR_Tsikhanouskaya.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -12352,7 +12374,7 @@
 			create_country_leader = {
         		name = "Prezidént Alaksándr Ryhóravič Lukašénka"
         		desc = ""
-        		picture = BLR_Lukashenko.tga
+        		picture = "gfx/leaders/BLR/BLR_Lukashenko.tga"
         		expire = "1965.1.1"
         		ideology = cenrep
 				}
@@ -12385,7 +12407,7 @@
 			create_country_leader = {
         		name = "Guvernör Rolf Peter Lindbäck"
         		desc = ""
-        		picture = ALN_Peter_Lindback.tga
+        		picture = "gfx/leaders/ALN/ALN_Peter_Lindback.tga"
         		expire = "1965.1.1"
         		ideology = cenrep
 				}
@@ -12394,14 +12416,16 @@
 			set_politics = {
 				ruling_party = republican_fascism
 				}
-			set_capital = 96
+			set_capital = {
+				state = 96
+			}
 			}
 		LIT = {
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "Pirmininkas Gitanas Nausėda"
         		desc = ""
-        		picture = LIT_Nauseda.tga
+        		picture = "gfx/leaders/LIT/LIT_Nauseda.tga"
         		expire = "1965.1.1"
         		ideology = repfash
 				}
@@ -12416,7 +12440,7 @@
 			create_country_leader = {
         		name = "Prezidents Egils Levits"
         		desc = ""
-        		picture = LAT_Egils.tga
+        		picture = "gfx/leaders/LAT/LAT_Egils.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -12426,7 +12450,7 @@
 			create_country_leader = {
         		name = "President Alar Karis"
         		desc = ""
-        		picture = EST_Karis.tga
+        		picture = "gfx/leaders/EST/EST_Karis.tga"
         		expire = "1965.1.1"
         		ideology = repfash
 				}
@@ -12449,7 +12473,7 @@
 			create_country_leader = {
         		name = "Prezident Zuzana Čaputová"
         		desc = ""
-        		picture = SLO_Caputova.tga
+        		picture = "gfx/leaders/SLO/SLO_Caputova.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -12465,7 +12489,7 @@
 			create_country_leader = {
         		name = "Prezident Miloš Zeman"
         		desc = ""
-        		picture = CZE_Zeman.tga
+        		picture = "gfx/leaders/Czechia/CZC_Zeman.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -12480,7 +12504,7 @@
 			create_country_leader = {
            		name = "Președinte Klaus Werner Iohannis"
            		desc = ""
-           		picture = ROM_Iohannis.tga
+           		picture = "gfx/leaders/ROM/ROM_Iohannis.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -12495,7 +12519,7 @@
 			create_country_leader = {
            		name = "Prezident Rumen Georgiev Radev"
            		desc = ""
-           		picture = BUL_modern.tga
+           		picture = "gfx/leaders/BUL/BUL_modern.tga"
            		expire = "1965.1.1"
            		ideology = cenrep
 				}
@@ -12510,7 +12534,7 @@
 			create_country_leader = {
         		name = "Próedros Katerína Sakellaropoúlou"
         		desc = ""
-        		picture = GRE_Sakellaropoulou.tga
+        		picture = "gfx/leaders/GRE/GRE_Sakellaropoulou.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -12520,14 +12544,16 @@
 			create_country_leader = {
         		name = "Politikós Dioikitís Thanásis Martínos"
         		desc = ""
-        		picture = MAT_Thanassis_Martinos.tga
+        		picture = "gfx/leaders/MAT/MAT_Thanassis_Martinos.tga"
         		expire = "1965.1.1"
         		ideology = christian
 				}
 			}
 		MOL = {
 			drop_cosmetic_tag = yes
-			set_capital = 78
+			set_capital = {
+				state = 78
+			}
 			set_politics = {
 				ruling_party = democratic
 				}
@@ -12537,7 +12563,7 @@
 			create_country_leader = {
            		name = "Președinte Maia Sandu"
            		desc = ""
-           		picture = MOL_Maia_Sandu.tga
+           		picture = "gfx/leaders/MOL/MOL_Maia_Sandu.tga"
            		expire = "1965.1.1"
            		ideology = liberalism
 				}
@@ -12551,7 +12577,7 @@
 			create_country_leader = {
            		name = "Prezident Vadim Nikolaevich Krasnoselsky"
            		desc = ""
-           		picture = TRN_Vadim_Krasnoselsky.tga
+           		picture = "gfx/leaders/TRN/TRN_Vadim_Krasnoselsky.tga"
            		expire = "1965.1.1"
            		ideology = oligarchism
 				}
@@ -12567,7 +12593,7 @@
 			create_country_leader = {
            		name = "Bundespräsident Alexander Van der Bellen"
            		desc = ""
-           		picture = AUS_Bellen.tga
+           		picture = "gfx/leaders/AUS/AUS_Bellen.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -12577,7 +12603,7 @@
 			create_country_leader = {
            		name = "Co-Príncep Episcopal Joan Enric Vives i Sicília"
            		desc = ""
-           		picture = ADR_Joan.tga
+           		picture = "gfx/leaders/ADR/ADR_Joan.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -12587,7 +12613,7 @@
 			create_country_leader = {
            		name = "Koning Filip Leopold Lodewijk Maria der Belgen"
            		desc = ""
-           		picture = BEL_Philippe.tga
+           		picture = "gfx/leaders/BEL/BEL_Philippe.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -12596,7 +12622,7 @@
 			create_country_leader = {
            		name = "Eerste Minister Charles Michel"
            		desc = ""
-           		picture = BEL_Philippe.tga
+           		picture = "gfx/leaders/BEL/BEL_Philippe.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -12612,7 +12638,7 @@
 			create_country_leader = {
            		name = "Elnöke Katalin Éva Novák"
            		desc = ""
-           		picture = HUN_Novak.tga
+           		picture = "gfx/leaders/HUN/HUN_Novak.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -12621,7 +12647,7 @@
 			create_country_leader = {
            		name = "Miniszterelnök Viktor Mihály Orbán"
            		desc = ""
-           		picture = HUN_Orban.tga
+           		picture = "gfx/leaders/HUN/HUN_Orban.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -12637,7 +12663,7 @@
 			create_country_leader = {
            		name = "Presidente Sergio Mattarella"
            		desc = ""
-           		picture = ITA_Mattarella.tga
+           		picture = "gfx/leaders/ITA/ITA_Mattarella.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -12647,7 +12673,7 @@
 			create_country_leader = {
            		name = "Luogotenente di Gran Maestro Marco Luzzago"
            		desc = ""
-           		picture = OML_Marco_Luzzago.tga
+           		picture = "gfx/leaders/OML/OML_Marco_Luzzago.tga"
            		expire = "1965.1.1"
            		ideology = christian
 				}
@@ -12671,7 +12697,7 @@
 			create_country_leader = {
         		name = "Predsednik Aleksandar Vučić"
         		desc = ""
-        		picture = SER_modern.tga
+        		picture = "gfx/leaders/SER/SER_modern.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -12687,7 +12713,7 @@
 			create_country_leader = {
            		name = "Predsjednik Zoran Milanović"
            		desc = ""
-           		picture = CRO_modern.tga
+           		picture = "gfx/leaders/CRO/CRO_modern.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -12697,7 +12723,7 @@
 			create_country_leader = {
            		name = "Prezident Miloš Zeman"
            		desc = ""
-           		picture = CZE_Zeman.tga
+           		picture = "gfx/leaders/CZE/CZE_Zeman.tga"
            		expire = "1965.1.1"
            		ideology = cenrep
 				}
@@ -12712,7 +12738,7 @@
 			create_country_leader = {
         		name = "Predsednik Borut Pahor"
         		desc = ""
-        		picture = SLV_modern.tga
+        		picture = "gfx/leaders/SLV/SLV_modern.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -12727,7 +12753,7 @@
 			create_country_leader = {
            		name = "Predsjedavajući Milorad Dodik"
            		desc = ""
-           		picture = BOS_modern.tga
+           		picture = "gfx/leaders/BOS/BOS_modern.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -12744,7 +12770,7 @@
 			create_country_leader = {
         		name = "Predsjednik Milo Dukanović"
         		desc = ""
-        		picture = MNT_modern.tga
+        		picture = "gfx/leaders/MNT/MNT_modern.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -12759,7 +12785,7 @@
 			create_country_leader = {
         		name = "Presidenti Stevo Pendarovski"
         		desc = ""
-        		picture = MAC_modern.tga
+        		picture = "gfx/leaders/MAC/MAC_modern.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -12775,7 +12801,7 @@
 			create_country_leader = {
         		name = "Presidenti Ilir Rexhep Meta"
         		desc = ""
-        		picture = ALB_Meta.tga
+        		picture = "gfx/leaders/ALB/ALB_Meta.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -12785,7 +12811,7 @@
 			create_country_leader = {
         		name = "Dronning Margrethe II af Glücksburg"
         		desc = ""
-        		picture = DEN_Margrethe.tga
+        		picture = "gfx/leaders/DEN/DEN_Margrethe.tga"
         		expire = "1965.1.1"
         		ideology = monsoc
 				}
@@ -12794,7 +12820,7 @@
 			create_country_leader = {
         		name = "Statsminister Mette Frederiksen"
         		desc = ""
-        		picture = DEN_Frederiksen.tga
+        		picture = "gfx/leaders/DEN/DEN_Frederiksen.tga"
         		expire = "1965.1.1"
         		ideology = demsoc
 				}
@@ -12809,7 +12835,7 @@
 			create_country_leader = {
         		name = "Rigsombudsmand Lene Moyell Johansen"
         		desc = ""
-        		picture = FAR_Lene_Moyell_Johansen.tga
+        		picture = "gfx/leaders/FAR/FAR_Lene_Moyell_Johansen.tga"
         		expire = "1965.1.1"
         		ideology = monsoc
 				}
@@ -12824,7 +12850,7 @@
 			create_country_leader = {
         		name = "Rigsombudskvinde Mikaela Engell"
         		desc = ""
-        		picture = GRL_Mikaela_Engell.tga
+        		picture = "gfx/leaders/GRL/GRL_Mikaela_Engell.tga"
         		expire = "1965.1.1"
         		ideology = monsoc
 				}
@@ -12838,7 +12864,7 @@
 			create_country_leader = {
         		name = "Konge Harald V av Glücksburg"
         		desc = ""
-        		picture = NOR_King.tga
+        		picture = "gfx/leaders/NOR/NOR_King.tga"
         		expire = "1965.1.1"
         		ideology = monsoc
 				}
@@ -12849,7 +12875,7 @@
 			create_country_leader = {
         		name = "Sysselmester Lars Fause"
         		desc = ""
-        		picture = SLB_Fause.tga
+        		picture = "gfx/leaders/SLB/SLB_Fause.tga"
         		expire = "1965.1.1"
         		ideology = authmon
 				}
@@ -12859,7 +12885,7 @@
 			create_country_leader = {
         		name = "Konung Carl XVI Gustaf av Bernadotte"
         		desc = ""
-        		picture = SWE_King.tga
+        		picture = "gfx/leaders/SWE/SWE_King.tga"
         		expire = "1965.1.1"
         		ideology = monsoc
 				}
@@ -12868,7 +12894,7 @@
 			create_country_leader = {
         		name = "Statsminister Kjell Stefan Löfven"
         		desc = ""
-        		picture = SWE_Lofven.tga
+        		picture = "gfx/leaders/SWE/SWE_Lofven.tga"
         		expire = "1965.1.1"
         		ideology = demsoc
 				}
@@ -12878,7 +12904,7 @@
 			create_country_leader = {
         		name = "Presidente Ignazio Daniele Giovanni Cassis"
         		desc = ""
-        		picture = SWI_Cassis.tga
+        		picture = "gfx/leaders/SWI/SWI_Cassis.tga"
         		expire = "1965.1.1"
         		ideology = cenrep
 				}
@@ -12888,7 +12914,7 @@
 			create_country_leader = {
         		name = "Papa Franciscus"
         		desc = ""
-        		picture = VCT_Francis.tga
+        		picture = "gfx/leaders/VCT/VCT_Francis.tga"
         		expire = "1965.1.1"
         		ideology = christian
 				}
@@ -12898,7 +12924,7 @@
 			create_country_leader = {
         		name = "Groussherzog Henri von Nassau-Weilburg"
         		desc = ""
-        		picture = LUX_Henri.tga
+        		picture = "gfx/leaders/LUX/LUX_Henri.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -12908,7 +12934,7 @@
 			create_country_leader = {
         		name = "Fürst Hans-Adam II von Liechtenstein"
         		desc = ""
-        		picture = LIE_Adam.tga
+        		picture = "gfx/leaders/LIE/LIE_Adam.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -12918,7 +12944,7 @@
 			create_country_leader = {
         		name = "Koning Willem-Alexander van Oranje-Nassau"
         		desc = ""
-        		picture = HOL_Willem.tga
+        		picture = "gfx/leaders/HOL/HOL_Willem.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -12927,7 +12953,7 @@
 			create_country_leader = {
         		name = "Minister-President Mark Rutte"
         		desc = ""
-        		picture = HOL_Rutte.tga
+        		picture = "gfx/leaders/HOL/HOL_Rutte.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -12938,7 +12964,7 @@
 			create_country_leader = {
         		name = "Presidentti Sauli Väinämö Niinistö"
         		desc = ""
-        		picture = FIN_Niinisto.tga
+        		picture = "gfx/leaders/FIN/FIN_Niinisto.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -12948,7 +12974,7 @@
 			create_country_leader = {
         		name = "Presidente Marcelo Nuno Duarte Rebelo de Sousa"
         		desc = ""
-        		picture = POR_Sousa.tga
+        		picture = "gfx/leaders/POR/POR_Sousa.tga"
         		expire = "1965.1.1"
         		ideology = repfash
 				}
@@ -12964,7 +12990,7 @@
 			create_country_leader = {
         		name = "Rey Felipe VI de Borbón-Anjou"
         		desc = ""
-        		picture = SPR_Felipe.tga
+        		picture = "gfx/leaders/SPR/SPR_Felipe.tga"
         		expire = "1965.1.1"
         		ideology = liberal_constitutionalism
 				}
@@ -12973,7 +12999,7 @@
 			create_country_leader = {
         		name = "Presidente del Gobierno Pedro Sánchez Pérez-Castejón"
         		desc = ""
-        		picture = SPR_Sanchez.tga
+        		picture = "gfx/leaders/SPR/SPR_Sanchez.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -12989,7 +13015,7 @@
 			create_country_leader = {
         		name = "Governor Sir David George Steel"
         		desc = ""
-        		picture = GIB_David_Steel.tga
+        		picture = "gfx/leaders/GIB/GIB_David_Steel.tga"
         		expire = "1965.1.1"
         		ideology = monsoc
 				}
@@ -13004,7 +13030,7 @@
 			create_country_leader = {
         		name = "Capitano Reggente Oscar Mina"
         		desc = ""
-        		picture = SMR_Mina.tga
+        		picture = "gfx/leaders/SMR/SMR_Mina.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -13014,7 +13040,7 @@
 			create_country_leader = {
         		name = "Prince Albert II"
         		desc = ""
-        		picture = MCO_Albert_II.tga
+        		picture = "gfx/leaders/MCO/MCO_Albert_II.tga"
         		expire = "1965.1.1"
         		ideology = authmon
 				}
@@ -13030,7 +13056,7 @@
 			create_country_leader = {
         		name = "President George William Vella"
         		desc = ""
-        		picture = MLT_modern.tga
+        		picture = "gfx/leaders/MLT/MLT_modern.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -13046,7 +13072,7 @@
 			create_country_leader = {
            		name = "Forseti Guoni Thorlacius Jóhannesson"
            		desc = ""
-           		picture = ICE_Johannesson.tga
+           		picture = "gfx/leaders/ICE/ICE_Johannesson.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -13065,7 +13091,7 @@
 			create_country_leader = {
            		name = "Presidenti Vjosa Osmani-Sadriu"
            		desc = ""
-           		picture = KOS_modern.tga
+           		picture = "gfx/leaders/KOS/KOS_modern.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -13078,7 +13104,7 @@
 			create_country_leader = {
            		name = "Prince Michael of Sealand"
            		desc = ""
-           		picture = SLD_Michael_Bates.tga
+           		picture = "gfx/leaders/SLD/SLD_Michael_Bates.tga"
            		expire = "1965.1.1"
            		ideology = absolutism
 				}
@@ -13094,7 +13120,7 @@
 			create_country_leader = {
            		name = "Uachtarán Mícheál Dónal Ó hUigínn"
            		desc = ""
-           		picture = IRE_Higgins.tga
+           		picture = "gfx/leaders/IRE/IRE_Higgins.tga"
            		expire = "1965.1.1"
            		ideology = cenrep
 				}
@@ -13268,7 +13294,7 @@
 			create_country_leader = {
         		name = "Ten'nō Naruhito"
         		desc = ""
-        		picture = JAP_Naruhito.tga
+        		picture = "gfx/leaders/JAP/JAP_Naruhito.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -13287,7 +13313,7 @@
 			create_country_leader = {
         		name = "Daetonglyeong Yun Seok-yeol"
         		desc = ""
-        		picture = ROK_Yun.tga
+        		picture = "gfx/leaders/ROK/ROK_Yun.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -13305,7 +13331,7 @@
 			create_country_leader = {
         		name = "Kukmuwiwŏnhoe Wiwŏnjang Kim Chŏngŭn"
         		desc = ""
-        		picture = DPK_Kim.tga
+        		picture = "gfx/leaders/DPK/DPK_Kim.tga"
         		expire = "1965.1.1"
         		ideology = totsoc
 				}
@@ -13336,7 +13362,9 @@
 				name = PRC_socialism_ideology_2022_party
 				long_name = PRC_socialism_ideology_2022_party_long
 			}
-            set_capital = 608				
+            set_capital = {
+            	state = 608				
+            }
 			}
 		every_state = {
 			limit = {
@@ -13356,7 +13384,7 @@
 			create_country_leader = {
            		name = "Zŏngtŏng Xí Jìnpíng"
            		desc = ""
-           		picture = PRC_pooh.tga
+           		picture = "gfx/leaders/PRC/PRC_pooh.tga"
            		expire = "1965.1.1"
            		ideology = demsoc
 				}
@@ -13384,7 +13412,7 @@
 			create_country_leader = {
            		name = "Chief Executive Carrie Lam Cheng Yuet-ngor"
            		desc = ""
-           		picture = HKG_Carrie_Lam.tga
+           		picture = "gfx/leaders/HKG/HKG_Carrie_Lam.tga"
            		expire = "1965.1.1"
            		ideology = demsoc
 				}
@@ -13400,7 +13428,7 @@
 			create_country_leader = {
            		name = "Chief Executive Ho Iat-seng"
            		desc = ""
-           		picture = MCU_Ho_Iat-seng.tga
+           		picture = "gfx/leaders/MCU/MCU_Ho_Iat-seng.tga"
            		expire = "1965.1.1"
            		ideology = demsoc
 				}
@@ -13428,7 +13456,7 @@
 			create_country_leader = {
         		name = "Yerönkhiilögch Ukhnaagiin Khürelsükh"
         		desc = ""
-        		picture = MON_Khurelsukh.tga
+        		picture = "gfx/leaders/MON/MON_Khurelsukh.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 			}
@@ -13481,7 +13509,7 @@
 			create_country_leader = {
         		name = "Presiden Joko Widodo"
         		desc = ""
-        		picture = IDS_Widodo.tga
+        		picture = "gfx/leaders/IDS/IDS_Widodo.tga"
         		expire = "1965.1.1"
         		ideology = oligarchism
 				}
@@ -13506,7 +13534,7 @@
 			create_country_leader = {
         		name = "Gubernur Sri Sultan Hamengkubuwono X"
         		desc = ""
-        		picture = gfx/leaders/IDS/YGY_Hamengkubuwono_X.tga
+        		picture = "gfx/leaders/IDS/YGY_Hamengkubuwono_X.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -13528,7 +13556,7 @@
 			create_country_leader = {
         		name = "Gubernur Nova Iriansyah"
         		desc = ""
-        		picture = gfx/leaders/IDS/ACE_Nova_Iriansyah.tga
+        		picture = "gfx/leaders/IDS/ACE_Nova_Iriansyah.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -13552,7 +13580,9 @@
 		MAL = {
 			release = SGP
 			drop_cosmetic_tag = yes
-			set_capital = 5566
+			set_capital = {
+				state = 5566
+			}
 			set_politics = {
 	       		ruling_party = conservative_monarchism
            		}
@@ -13562,7 +13592,7 @@
 			create_country_leader = {
         		name = "Yang di-Pertuan Agong Al-Sultan Abdullah Ri'ayatuddin Al-Mustafa Billah Shah ibni Almarhum Sultan Haji Ahmad Shah Al-Musta'in Billah"
         		desc = ""
-        		picture = MAL_Abdullah.tga
+        		picture = "gfx/leaders/MAL/MAL_Abdullah.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -13572,7 +13602,7 @@
 			create_country_leader = {
         		name = "President Halimah Binte Yacob"
         		desc = ""
-        		picture = SGP_Yacob.tga
+        		picture = "gfx/leaders/SGP/SGP_Yacob.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -13588,7 +13618,7 @@
 			create_country_leader = {
         		name = "Yang di-Pertuan Negara Hassanal Bolkiah"
         		desc = ""
-        		picture = BEI_Bolkiah.tga
+        		picture = "gfx/leaders/BEI/BEI_Bolkiah.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -13605,7 +13635,7 @@
 			create_country_leader = {
         		name = "Pangulo Ferdinand Romualdez Marcos Jr."
         		desc = ""
-        		picture = PHI_Bongbong.tga
+        		picture = "gfx/leaders/PHI/PHI_Bongbong.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -13657,7 +13687,7 @@
 			create_country_leader = {
         		name = "Presidente José Manuel Ramos-Horta"
         		desc = ""
-        		picture = ETM_Ramos-Horta.tga
+        		picture = "gfx/leaders/ETM/ETM_Ramos-Horta.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -13672,7 +13702,7 @@
 			create_country_leader = {
         		name = "Chủ tịch Nguyễn Xuân Phúc"
         		desc = ""
-        		picture = NVI_Trong.tga
+        		picture = "gfx/leaders/NVI/NVI_Trong.tga"
         		expire = "1965.1.1"
         		ideology = totsoc
 				}
@@ -13688,7 +13718,7 @@
 			create_country_leader = {
         		name = "Président Thongloun Sisoulith"
         		desc = ""
-        		picture = LAO_Sisoulith.tga
+        		picture = "gfx/leaders/LAO/LAO_Sisoulith.tga"
         		expire = "1965.1.1"
         		ideology = marxism
 				}
@@ -13704,7 +13734,7 @@
 			create_country_leader = {
 				name = "Ste ch Norodom Sihamoni"
 				desc = ""
-				picture = CAM_Sihamoni.tga
+				picture = "gfx/leaders/CAM/CAM_Sihamoni.tga"
 				expire = "1965.1.1"
 				ideology = conservative_constitutionalism
 				}
@@ -13722,7 +13752,7 @@
 			create_country_leader = {
 				name = "Tsungtung Tsai Ing-wen"
 				desc = ""
-				picture = CHI_Tsai.tga
+				picture = "gfx/leaders/CHI/CHI_Tsai.tga"
 				expire = "1965.1.1"
 				ideology = despotism
 				}
@@ -13753,7 +13783,7 @@
 			create_country_leader = {
         		name = "Ks'atriy Rama X"
         		desc = ""
-        		picture = SIA_Vajiralongkorn.tga
+        		picture = "gfx/leaders/SIA/SIA_Vajiralongkorn.tga"
         		expire = "1965.1.1"
         		ideology = liberal_constitutionalism
 				}
@@ -13856,7 +13886,7 @@
 			create_country_leader = {
 					name = "Prezident Murat Kallibekovich Kamalov"
 					desc = ""
-					picture = KPK_Murat_Kamalov.tga
+					picture = "gfx/leaders/KPK/KPK_Murat_Kamalov.tga"
 					expire = "1965.1.1"
 					ideology = conservatism
 				}
@@ -13881,7 +13911,7 @@
 			create_country_leader = {
 					name = "Prezident Shavkat Miromon o'g'li Mirziyoyev"
 					desc = ""
-					picture = UZB_Mirziyoyev.tga
+					picture = "gfx/leaders/UZB/UZB_Mirziyoyev.tga"
 					expire = "1965.1.1"
 					ideology = conservatism
 				}
@@ -13897,7 +13927,7 @@
 			create_country_leader = {
            		name = "Prezident Emomalī Şarīpoviç Rahmonov"
            		desc = ""
-           		picture = TAJ_Rahmon.tga
+           		picture = "gfx/leaders/TAJ/TAJ_Rahmon.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -13913,7 +13943,7 @@
 			create_country_leader = {
            		name = "Prezident Serdar Gurbangulyýewiç Berdimuhamedow"
            		desc = ""
-           		picture = TMS_Berdimuhamedow.tga
+           		picture = "gfx/leaders/TMS/TMS_Berdimuhamedow.tga"
            		expire = "1965.1.1"
            		ideology = oligarchism
 				}
@@ -13936,7 +13966,9 @@
 			transfer_state = 12376
 			transfer_state = 12377
 			drop_cosmetic_tag = yes
-			set_capital = 590
+			set_capital = {
+				state = 590
+			}
 			set_politics = {
 	       		ruling_party = democratic
            		}
@@ -13946,7 +13978,7 @@
 			create_country_leader = {
            		name = "Prezident Qasym-Jomart Kemelūly Toqaev"
            		desc = ""
-           		picture = KAZ_Tokayev.tga
+           		picture = "gfx/leaders/KAZ/KAZ_Tokayev.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -13964,7 +13996,7 @@
 			create_country_leader = {
         		name = "Prezident Sadır Nurgojo uulu Japarov"
         		desc = ""
-        		picture = KYR_Japarov.tga
+        		picture = "gfx/leaders/KYR/KYR_Japarov.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -14009,7 +14041,7 @@
 				create_country_leader = {
         			name = "Amir al-Mu'minin Hibatullah Akhundzada"
         			desc = ""
-        			picture = AFG_Akhundzada.tga
+        			picture = "gfx/leaders/AFG/AFG_Akhundzada.tga"
         			expire = "1965.1.1"
         			ideology = christian
 					}
@@ -14055,7 +14087,7 @@
 			create_country_leader = {
         		name = "Rāṣṭrapati Bidya Devi Bhandari"
         		desc = ""
-        		picture = NEP_Bhandari.tga
+        		picture = "gfx/leaders/NEP/NEP_Bhandari.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -14071,7 +14103,7 @@
 					create_country_leader = {
             			name = "Janatipati Nandasena Gotabaya Rajapaksa"
             			desc = ""
-            			picture = SRL_Rajapaksa.tga
+            			picture = "gfx/leaders/SRL/SRL_Rajapaksa.tga"
             			expire = "1965.1.1"
             			ideology = demsoc
 						}
@@ -14087,7 +14119,7 @@
 			create_country_leader = {
             	name = "President Ibrahim Mohamed Solih"
             	desc = ""
-            	picture = MLD_Ibrahim_Solih.tga
+            	picture = "gfx/leaders/MLD/MLD_Ibrahim_Solih.tga"
             	expire = "1965.1.1"
             	ideology = conservatism
 				}
@@ -14104,7 +14136,9 @@
 			set_politics = {
 	       		ruling_party = theocratic
             	}
-			set_capital = 14847
+			set_capital = {
+				state = 14847
+			}
 			release = BAN
 			}
 		PAK = {
@@ -14112,7 +14146,7 @@
 			create_country_leader = {
            		name = "Sadr Arif-ur-Rehman Alvi"
            		desc = ""
-           		picture = PAK_Alvi.tga
+           		picture = "gfx/leaders/PAK/PAK_Alvi.tga"
            		expire = "1965.1.1"
            		ideology = christian
 				}
@@ -14128,7 +14162,7 @@
 			create_country_leader = {
         		name = "Nuing Ngam Tau Samma Ta Myint Swe"
         		desc = ""
-        		picture = BRM_Swe.tga
+        		picture = "gfx/leaders/BRM/BRM_Swe.tga"
         		expire = "1965.1.1"
         		ideology = militarism
 			}
@@ -14147,7 +14181,7 @@
 			create_country_leader = {
         		name = "Rashtrôpôti Mohammad Abdul Hamid"
         		desc = ""
-        		picture = BAN_Hamid.tga
+        		picture = "gfx/leaders/BAN/BAN_Hamid.tga"
         		expire = "1965.1.1"
         		ideology = cenrep
 				}
@@ -14162,7 +14196,7 @@
 					create_country_leader = {
             			name = "Druk Gyalpo Jigme Khesar Namgyel Wangchuck"
             			desc = ""
-            			picture = BHU_Jigme.tga
+            			picture = "gfx/leaders/BHU/BHU_Jigme.tga"
             			expire = "1965.1.1"
             			ideology = monsoc
 						}
@@ -14177,7 +14211,9 @@
 			value = 5
 		}
 		IND = {			
-            set_capital = 4732
+            set_capital = {
+            	state = 4732
+            }
 			set_politics = {
 	       		ruling_party = democratic
               }		
@@ -14194,7 +14230,7 @@
 			create_country_leader = {
             	name = "Rāṣṭrapati Rām Nāth Kovind"
             	desc = ""
-            	picture = gfx/leaders/India/IND_Kovind.tga
+            	picture = "gfx/leaders/India/IND_Kovind.tga"
             	expire = "1965.1.1"
             	ideology = conservatism
 			}
@@ -14253,7 +14289,7 @@
 			create_country_leader = {
            		name = "Queen Elizabeth II of Windsor"
            		desc = ""
-           		picture = ENG_Queen_Elizabeth_II.tga
+           		picture = "gfx/leaders/ENG/ENG_Queen_Elizabeth_II.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -14262,7 +14298,7 @@
 			create_country_leader = {
            		name = "Prime Minister Alexander Boris de Pfeffel Johnson"
            		desc = ""
-           		picture = ENG_Johnson.tga
+           		picture = "gfx/leaders/ENG/ENG_Johnson.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -14271,7 +14307,7 @@
 			create_country_leader = {
            		name = "King Charles III of Mountbatten-Windsor"
            		desc = ""
-           		picture = ENG_Prince_Charles.tga
+           		picture = "gfx/leaders/ENG/ENG_Prince_Charles.tga"
            		expire = "1965.1.1"
            		ideology = liberal_constitutionalism
 				}
@@ -14281,7 +14317,7 @@
 			create_country_leader = {
            		name = "Governor Sir Ian Fergus Corder"
            		desc = ""
-           		picture = GSY_Ian_Corder.tga
+           		picture = "gfx/leaders/GSY/GSY_Ian_Corder.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -14296,7 +14332,7 @@
 			create_country_leader = {
            		name = "Lieutenant Governor Sir Richard Hugh Turton Gozney"
            		desc = ""
-           		picture = MNX_Richard_Gozney.tga
+           		picture = "gfx/leaders/MNX/MNX_Richard_Gozney.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -14306,7 +14342,7 @@
 			create_country_leader = {
            		name = "Governor Sir Stephen Gary George Dalton"
            		desc = ""
-           		picture = JSY_Stephen_Dalton.tga
+           		picture = "gfx/leaders/JSY/JSY_Stephen_Dalton.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -14315,7 +14351,7 @@
 			create_country_leader = {
            		name = "Prime Minister Alexander Boris de Pfeffel Johnson"
            		desc = ""
-           		picture = ENG_Johnson.tga
+           		picture = "gfx/leaders/ENG/ENG_Johnson.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -14349,7 +14385,7 @@
 			create_country_leader = {
            		name = "Qāʾid Muhannad al-Ṭalāʿ"
            		desc = ""
-           		picture = SR1_Tala.tga
+           		picture = "gfx/leaders/SR1/SR1_Tala.tga"
            		expire = "1965.1.1"
            		ideology = militarism
 				}
@@ -14367,7 +14403,7 @@
 			create_country_leader = {
            		name = "Encûmena Rêvebir a Federaliyê"
            		desc = ""
-           		picture = RJV_Council.tga
+           		picture = "gfx/leaders/RJV/RJV_Council.tga"
            		expire = "1965.1.1"
            		ideology = demsoc
 				}
@@ -14385,7 +14421,7 @@
 			create_country_leader = {
            		name = "Raʾīs Sālim al-Misliṭ"
            		desc = ""
-           		picture = SR2_Meslet.tga
+           		picture = "gfx/leaders/SR2/SR2_Meslet.tga"
            		expire = "1965.1.1"
            		ideology = militarism
 				}
@@ -14403,7 +14439,7 @@
 			create_country_leader = {
            		name = "Raʾīs al-Wuzarāʾ ʿAlī ʿAbd ur-Raḥman Kidah"
            		desc = ""
-           		picture = SR3_Keda.tga
+           		picture = "gfx/leaders/SR3/SR3_Keda.tga"
            		expire = "1965.1.1"
            		ideology = despotism
 				}
@@ -14420,7 +14456,7 @@
 			create_country_leader = {
            		name = "Raʾīs Šayẖ Muḥammad bin Zāyid bin Sulṭān al-Nahyān"
            		desc = ""
-           		picture = UAE_MBZ.tga
+           		picture = "gfx/leaders/UAE/UAE_MBZ.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -14439,7 +14475,7 @@
 			create_country_leader = {
            		name = "Raʾīs Bašār Ḥāfiẓ al-Assad"
            		desc = ""
-           		picture = SYR_Assad.tga
+           		picture = "gfx/leaders/SYR/SYR_Assad.tga"
            		expire = "1965.1.1"
            		ideology = oligarchism
 				}
@@ -14455,7 +14491,7 @@
 			create_country_leader = {
            		name = "Président Michel Naim Aoun"
            		desc = ""
-           		picture = LEB_Aoun.tga
+           		picture = "gfx/leaders/LEB/LEB_Aoun.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -14475,7 +14511,7 @@
 			create_country_leader = {
            		name = "Milk ʿAbd ul-llāh al-Ṯānī bin al-Ḥussayn al-Hāšimī"
            		desc = ""
-           		picture = JOR_Abdullah.tga
+           		picture = "gfx/leaders/JOR/JOR_Abdullah.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 			}
@@ -14492,7 +14528,7 @@
 			create_country_leader = {
            		name = "Milk Ḥamad bin ʿĪsaỳ bin Salmān al-H̱alīfaẗ"
            		desc = ""
-           		picture = BHR_Hamad.tga
+           		picture = "gfx/leaders/BHR/BHR_Hamad.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -14507,7 +14543,7 @@
 			create_country_leader = {
            		name = "Amīr Šayẖ Tamīm bin Ḥamad bin H̱alīfaẗ bin Ḥamad bin ʿAbd ul-llāh bin Ǧāsim bin Muḥammad al-Ṯānī"
            		desc = ""
-           		picture = QAT_Thani.tga
+           		picture = "gfx/leaders/QAT/QAT_Thani.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -14522,7 +14558,7 @@
 			create_country_leader = {
            		name = "Amīr Nawwāf al-Aḥmad al-Ǧābir al-Mubārak aṣ-Ṣubāḥ"
            		desc = ""
-           		picture = KUW_Nawaf.tga
+           		picture = "gfx/leaders/KUW/KUW_Nawaf.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 			}
@@ -14556,7 +14592,7 @@
 			create_country_leader = {
         		name = "Raʾīs Rašād Muḥammad al-ʿAlīmī"
         		desc = ""
-        		picture = YEM_Alimi.tga
+        		picture = "gfx/leaders/YEM/YEM_Alimi.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -14573,7 +14609,7 @@
 			create_country_leader = {
             	name = "Sulṭān Hayṯam bin Ṭāriq bin Taymūr as-Saʿīd"
             	desc = ""
-            	picture = OMA_Haitham.tga
+            	picture = "gfx/leaders/OMA/OMA_Haitham.tga"
             	expire = "1965.1.1"
             	ideology = authmon
 			}
@@ -14589,7 +14625,7 @@
 			create_country_leader = {
             	name = "Raʾīs Barham Aḥmad Ṣāliḥ Qāsim"
             	desc = ""
-            	picture = IRQ_Salih.tga
+            	picture = "gfx/leaders/IRQ/IRQ_Salih.tga"
             	expire = "1965.1.1"
             	ideology = conservatism
 			}
@@ -14600,7 +14636,9 @@
 				ruling_party = neutrality
             }
 			drop_cosmetic_tag = yes
-			set_capital = 17542	
+			set_capital = {
+				state = 17542	
+			}
 		}
 		
 		PAL = {
@@ -14608,7 +14646,7 @@
 			create_country_leader = {
             	name = "Raʾīs Abū Māzin Maḥmūd Riḍā ʿAbbās"
             	desc = ""
-            	picture = PAL_Abbas.tga
+            	picture = "gfx/leaders/PAL/PAL_Abbas.tga"
             	expire = "1965.1.1"
             	ideology = oligarchism
 			}	
@@ -14629,7 +14667,7 @@
 			create_country_leader = {
             	name = "Milk Salmān bin ʿAbd al-ʿAzīz bin ʿAbd ar-Raḥman as- Suʿūd"
             	desc = ""
-            	picture = SAU_Salman.tga
+            	picture = "gfx/leaders/SAU/SAU_Salman.tga"
             	expire = "1965.1.1"
             	ideology = absolutism
 			}
@@ -14686,7 +14724,9 @@
 			do_israeli_renames = yes
             ISR = { 
 				transfer_state = PREV 
-				set_capital = {state = 3382}
+				set_capital = {
+					state = {state = 3382}
+				}
 			}
         }
 		every_state = { 
@@ -14702,7 +14742,7 @@
 			create_country_leader = {
 				name = "Raʾīs Yaḥyaỳ Ibrāhīm Ḥasan al-Sinwār"
 				desc = ""
-				picture = "GZS_Sinwar.tga"
+				picture = "gfx/leaders/GZS/GZS_Sinwar.tga"
 				expire = "1965.1.1"
 				ideology = militarism
 				traits = {
@@ -14724,7 +14764,7 @@
 			create_country_leader = {
             	name = "Nāśiyʾ Yiṣḥāq Herṣōg"
             	desc = ""
-            	picture = ISR_Herzog.tga
+            	picture = "gfx/leaders/ISR/ISR_Herzog.tga"
             	expire = "1965.1.1"
             	ideology = despotism
 			}
@@ -14775,7 +14815,7 @@
 			create_country_leader = {
            		name = "Kibris Ersin Tatar"
            		desc = ""
-           		picture = NOC_modern.tga
+           		picture = "gfx/leaders/NOC/NOC_modern.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -14791,7 +14831,7 @@
 			create_country_leader = {
            		name = "Proedros Nicos Anastasiades"
            		desc = ""
-           		picture = CYP_modern.tga
+           		picture = "gfx/leaders/CYP/CYP_modern.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -14901,7 +14941,7 @@
 			create_country_leader = {
            		name = "Prezident İlham Heydər oğlu Əliyev"
            		desc = ""
-           		picture = AZR_Aliyev.tga
+           		picture = "gfx/leaders/AZR/AZR_Aliyev.tga"
            		expire = "1965.1.1"
            		ideology = cenrep
 				}
@@ -14916,7 +14956,7 @@
 			create_country_leader = {
            		name = "Cumhurbaşkani Recep Tayyip Erdoğan"
            		desc = ""
-           		picture = TUR_Erdogan.tga
+           		picture = "gfx/leaders/TUR/TUR_Erdogan.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -14932,7 +14972,7 @@
 			create_country_leader = {
            		name = "Nakhagah Arayik Vladimiri Harutyunyan"
            		desc = ""
-           		picture = NGK_Harutyunyan.tga
+           		picture = "gfx/leaders/NGK/NGK_Harutyunyan.tga"
            		expire = "1965.1.1"
            		ideology = oligarchism
 				}
@@ -14951,7 +14991,7 @@
 			create_country_leader = {
            		name = "Nakhagah Vahagn Garniki Khachaturyan"
            		desc = ""
-           		picture = ARM_Khachaturyan.tga
+           		picture = "gfx/leaders/ARM/ARM_Khachaturyan.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -14975,7 +15015,7 @@
 			create_country_leader = {
            		name = "P'rezident'i Salome Zourabichvili"
            		desc = ""
-           		picture = GEO_Salome.tga
+           		picture = "gfx/leaders/GEO/GEO_Salome.tga"
            		expire = "1965.1.1"
            		ideology = cenrep
 				}
@@ -14991,7 +15031,7 @@
 			create_country_leader = {
            		name = "Prezident Gaglojty Edwardy fyrt Alan"
            		desc = ""
-           		picture = SOS_Gagloyev.tga
+           		picture = "gfx/leaders/SOS/SOS_Gagloyev.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -15007,7 +15047,7 @@
 			create_country_leader = {
            		name = "Ahada Aslan G'arg'-iṕa Bžania"
            		desc = ""
-           		picture = ABK_Bzhania.tga
+           		picture = "gfx/leaders/ABK/ABK_Bzhania.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -15023,7 +15063,7 @@
 				create_country_leader = {
             		name = "Maqām Mo'azzam Rahbari Sayyed 'Ali Hosseyni Xāmenehey"
             		desc = ""
-            		picture = PER_Khamenei.tga
+            		picture = "gfx/leaders/PER/PER_Khamenei.tga"
             		expire = "1965.1.1"
             		ideology = christian
 				}
@@ -15356,7 +15396,7 @@
 			create_country_leader = {
            		name = "Raʾīs Īyād Aġ Ġālī"
            		desc = ""
-           		picture = AQ1_Ghaly.tga
+           		picture = "gfx/leaders/AQ1/AQ1_Ghaly.tga"
            		expire = "1965.1.1"
            		ideology = christian
 				}
@@ -15366,7 +15406,7 @@
 			create_country_leader = {
            		name = "Decentralised Cells"
            		desc = ""
-           		picture = gfx/leaders/Anarchy/Decentralised_Cells.tga
+           		picture = "gfx/leaders/Anarchy/Decentralised_Cells.tga"
            		expire = "1965.1.1"
            		ideology = christian
 				}
@@ -15376,7 +15416,7 @@
 			create_country_leader = {
            		name = "Raʾīs Abdul al-Qādir Mū'min"
            		desc = ""
-           		picture = IS2_Mumin.tga
+           		picture = "gfx/leaders/IS2/IS2_Mumin.tga"
            		expire = "1965.1.1"
            		ideology = christian
 				}
@@ -15386,7 +15426,7 @@
 			create_country_leader = {
            		name = "Boqor Axmed Cumar"
            		desc = ""
-           		picture = AQ2_Cumar.tga
+           		picture = "gfx/leaders/AQ2/AQ2_Cumar.tga"
            		expire = "1965.1.1"
            		ideology = christian
 				}
@@ -15416,7 +15456,7 @@
 			create_country_leader = {
            		name = "Decentralised Cells"
            		desc = ""
-           		picture = gfx/leaders/Anarchy/Decentralised_Cells.tga
+           		picture = "gfx/leaders/Anarchy/Decentralised_Cells.tga"
            		expire = "1965.1.1"
            		ideology = christian
 				}
@@ -15426,7 +15466,7 @@
 			create_country_leader = {
            		name = "Decentralised Cells"
            		desc = ""
-           		picture = gfx/leaders/Anarchy/Decentralised_Cells.tga
+           		picture = "gfx/leaders/Anarchy/Decentralised_Cells.tga"
            		expire = "1965.1.1"
            		ideology = christian
 				}
@@ -15436,7 +15476,7 @@
 			create_country_leader = {
            		name = "Decentralised Cells"
            		desc = ""
-           		picture = gfx/leaders/Anarchy/Decentralised_Cells.tga
+           		picture = "gfx/leaders/Anarchy/Decentralised_Cells.tga"
            		expire = "1965.1.1"
            		ideology = christian
 				}
@@ -15446,7 +15486,7 @@
 			create_country_leader = {
            		name = "Generál-Polkóvnik Gennádij Valér'evič Žídko, Komándujuščij Rossíjskimi Vojskámi na Ukraíne"
            		desc = ""
-           		picture = RAF_Zhidko.tga
+           		picture = "gfx/leaders/RAF/RAF_Zhidko.tga"
            		expire = "1965.1.1"
            		ideology = militarism
 				}
@@ -15456,7 +15496,7 @@
 			create_country_leader = {
            		name = "Başkan Irina Vlah"
            		desc = ""
-           		picture = GAU_Vlah.tga
+           		picture = "gfx/leaders/GAU/GAU_Vlah.tga"
            		expire = "1965.1.1"
            		ideology = demsoc
 				}
@@ -15636,7 +15676,7 @@
 			create_country_leader = {
            		name = "Commissioner Paul Chandler"
            		desc = ""
-           		picture = DGC_Paul_Chandler.tga
+           		picture = "gfx/leaders/DGC/DGC_Paul_Chandler.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -15673,7 +15713,7 @@
 			create_country_leader = {
            		name = "Raʾīs ʿAbd al-Fattāḥ Saʿīd Ḥusayn H̱alīl as-Sīsī"
            		desc = ""
-           		picture = EGY_Sisi.tga
+           		picture = "gfx/leaders/EGY/EGY_Sisi.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -15694,7 +15734,7 @@
 			create_country_leader = {
         		name = "Raʾīs ʿAbd al-Fattāḥ ʿAbd ar-Raḥman al-Burhān"
         		desc = ""
-        		picture = SUD_Burhan.tga
+        		picture = "gfx/leaders/SUD/SUD_Burhan.tga"
         		expire = "1965.1.1"
         		ideology = militarism
 				}
@@ -15709,7 +15749,7 @@
 					create_country_leader = {
             			name = "President Salva Kiir Mayardit"
             			desc = ""
-            			picture = SSU_Salva.tga
+            			picture = "gfx/leaders/SSU/SSU_Salva.tga"
             			expire = "1965.1.1"
             			ideology = conservatism
 						}
@@ -15725,7 +15765,7 @@
 					create_country_leader = {
             			name = "Raʾīs Fāyiz Muṣṭafaỳ as-Sarrāǧ"
             			desc = ""
-            			picture = LBA_Menfi.tga
+            			picture = "gfx/leaders/LBA/LBA_Menfi.tga"
             			expire = "1965.1.1"
             			ideology = cenrep
 						}
@@ -15741,7 +15781,7 @@
 					create_country_leader = {
             			name = "Raʾīs Qays Saʿīd"
             			desc = ""
-            			picture = TUN_Kais.tga
+            			picture = "gfx/leaders/TUN/TUN_Kais.tga"
             			expire = "1965.1.1"
             			ideology = conservatism
 						}
@@ -15760,7 +15800,7 @@
 			create_country_leader = {
         		name = "Raʾīs ʿAbd ul-Maǧīd Tabbūn"
         		desc = ""
-        		picture = ALG_Tebboune.tga
+        		picture = "gfx/leaders/ALG/ALG_Tebboune.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -15777,7 +15817,7 @@
 			create_country_leader = {
            		name = "Milk Muḥammad VI bin al-Ḥasan al-Ṯānī al-ʿAlawī"
            		desc = ""
-           		picture = MOR_Mohammed.tga
+           		picture = "gfx/leaders/MOR/MOR_Mohammed.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -15791,14 +15831,16 @@
 			transfer_state = 6786
 			transfer_state = 1633
 			transfer_state = 6759
-			set_capital = 1844
+			set_capital = {
+				state = 1844
+			}
 			}
 		WES = {
 			kill_country_leader = yes
 			create_country_leader = {
            		name = "Raʾīs Ibrāhīm Ġālī"
            		desc = ""
-           		picture = WES_Brahim_Ghali.tga
+           		picture = "gfx/leaders/WES/WES_Brahim_Ghali.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -15815,7 +15857,7 @@
 			create_country_leader = {
         		name = "Pirezīdeniti Isaias Afwerki"
         		desc = ""
-        		picture = ERI_Isaias_Afwerki.tga
+        		picture = "gfx/leaders/ERI/ERI_Isaias_Afwerki.tga"
         		expire = "1965.1.1"
         		ideology = demsoc
 				}
@@ -15843,7 +15885,7 @@
 			create_country_leader = {
         		name = "Pirēzīdaniti Debretsion Gebremichael"
         		desc = ""
-        		picture = TIG_Gebremichael.tga
+        		picture = "gfx/leaders/TIG/TIG_Gebremichael.tga"
         		expire = "1965.1.1"
         		ideology = cenrep
 				}
@@ -15859,7 +15901,7 @@
 			create_country_leader = {
         		name = "Parezidanata Sahle-Work Zewde"
         		desc = ""
-        		picture = ETH_Zewde.tga
+        		picture = "gfx/leaders/ETH/ETH_Zewde.tga"
         		expire = "1965.1.1"
         		ideology = demsoc
 				}
@@ -15875,7 +15917,7 @@
 			create_country_leader = {
         		name = "Madaxweyne Xasan Sheekh Maxamuud"
         		desc = ""
-        		picture = SOM_Mohamud.tga
+        		picture = "gfx/leaders/SOM/SOM_Mohamud.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -15891,7 +15933,7 @@
 			create_country_leader = {
         		name = "Président Muse Bihi Abdi"
         		desc = ""
-        		picture = SML_Muse_Bihi_Abdi.tga
+        		picture = "gfx/leaders/SML/SML_Muse_Bihi_Abdi.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -15907,7 +15949,7 @@
 			create_country_leader = {
         		name = "Président Ismaïl Omar Guelleh"
         		desc = ""
-        		picture = DJI_Ismail_Omar_Guelleh.tga
+        		picture = "gfx/leaders/DJI/DJI_Ismail_Omar_Guelleh.tga"
         		expire = "1965.1.1"
         		ideology = demsoc
 				}
@@ -15923,7 +15965,7 @@
 			create_country_leader = {
         		name = "President Uhuru Muigai Kenyatta"
         		desc = ""
-        		picture = KEN_Kenyatta.tga
+        		picture = "gfx/leaders/KEN/KEN_Kenyatta.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -15939,14 +15981,16 @@
 			create_country_leader = {
         		name = "President Yoweri Kaguta Museveni"
         		desc = ""
-        		picture = UGA_Museveni.tga
+        		picture = "gfx/leaders/UGA/UGA_Museveni.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
 			}
 		TZN = {
 			drop_cosmetic_tag = yes
-			set_capital = 546
+			set_capital = {
+				state = 546
+			}
 			set_politics = {
 				ruling_party = democratic
 				}
@@ -15956,7 +16000,7 @@
 			create_country_leader = {
         		name = "Rais Samia Suluhu Hassan"
         		desc = ""
-        		picture = TZN_Hassan.tga
+        		picture = "gfx/leaders/TZN/TZN_Hassan.tga"
         		expire = "1965.1.1"
         		ideology = socialism
 				}
@@ -15971,7 +16015,7 @@
 			create_country_leader = {
         		name = "President Paul Kagame"
         		desc = ""
-        		picture = RWA_Paul_Kagame.tga
+        		picture = "gfx/leaders/RWA/RWA_Paul_Kagame.tga"
         		expire = "1965.1.1"
         		ideology = centrism
 				}
@@ -15986,7 +16030,7 @@
 			create_country_leader = {
         		name = "Président Évariste Ndayishimiye"
         		desc = ""
-        		picture = BRD_Evariste_Ndayishimiye.tga
+        		picture = "gfx/leaders/BRD/BRD_Evariste_Ndayishimiye.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -16002,7 +16046,7 @@
 			create_country_leader = {
         		name = "Président Mohamed Bazoum"
         		desc = ""
-        		picture = NGR_Bazoum.tga
+        		picture = "gfx/leaders/NGR/NGR_Bazoum.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16019,7 +16063,7 @@
 			create_country_leader = {
         		name = "Président Patrice Guillaume Athanase Talon"
         		desc = ""
-        		picture = DAH_Patrice_Talon.tga
+        		picture = "gfx/leaders/DAH/DAH_Patrice_Talon.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16035,7 +16079,7 @@
 			create_country_leader = {
         		name = "Président Alassane Dramane Ouattara"
         		desc = ""
-        		picture = IVO_Ouattara.tga
+        		picture = "gfx/leaders/IVO/IVO_Ouattara.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16051,7 +16095,7 @@
 			create_country_leader = {
         		name = "Président Faustin-Archange Touadéra"
         		desc = ""
-        		picture = CAR_Touadera.tga
+        		picture = "gfx/leaders/CAR/CAR_Touadera.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16067,7 +16111,7 @@
 			create_country_leader = {
         		name = "Président Mahamat Idriss Déby Itno"
         		desc = ""
-        		picture = CHA_Deby.tga
+        		picture = "gfx/leaders/CHA/CHA_Deby.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16082,7 +16126,7 @@
 			create_country_leader = {
         		name = "Président Roch Marc Christian Kaboré"
         		desc = ""
-        		picture = VOL_Kabore.tga
+        		picture = "gfx/leaders/VOL/VOL_Kabore.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16098,7 +16142,7 @@
 			create_country_leader = {
         		name = "Président Denis Sassou Nguesso"
         		desc = ""
-        		picture = RCG_Nguesso.tga
+        		picture = "gfx/leaders/RCG/RCG_Nguesso.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16114,7 +16158,7 @@
 			create_country_leader = {
         		name = "Président Alpha Condé"
         		desc = ""
-        		picture = GNA_Alpha.tga
+        		picture = "gfx/leaders/GNA/GNA_Alpha.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16130,7 +16174,7 @@
 			create_country_leader = {
         		name = "Président Ali Bongo Ondimba"
         		desc = ""
-        		picture = GAB_Bongo.tga
+        		picture = "gfx/leaders/GAB/GAB_Bongo.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16147,7 +16191,7 @@
 			create_country_leader = {
         		name = "Président Paul Biya"
         		desc = ""
-        		picture = CMR_Biya.tga
+        		picture = "gfx/leaders/CMR/CMR_Biya.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16170,7 +16214,7 @@
 			create_country_leader = {
         		name = "Président Bah Ndaw"
         		desc = ""
-        		picture = MLI_Ndaw.tga
+        		picture = "gfx/leaders/MLI/MLI_Ndaw.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16180,7 +16224,7 @@
 			create_country_leader = {
         		name = "Secrétaire-Général Alghabass Ag Intalla"
         		desc = ""
-        		picture = AZW_Ag_Intalla.tga
+        		picture = "gfx/leaders/AZW/AZW_Ag_Intalla.tga"
         		expire = "1965.1.1"
         		ideology = despotism
 				}
@@ -16196,7 +16240,7 @@
 			create_country_leader = {
         		name = "Président Faure Essozimna Gnassingbé Eyadéma"
         		desc = ""
-        		picture = TOG_Faure_Gnassingbe.tga
+        		picture = "gfx/leaders/TOG/TOG_Faure_Gnassingbe.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16204,7 +16248,9 @@
 		SEN = {
 			drop_cosmetic_tag = yes
 			transfer_state = 16278
-			set_capital = 272
+			set_capital = {
+				state = 272
+			}
 			set_politics = {
 				ruling_party = democratic
 				}
@@ -16214,7 +16260,7 @@
 			create_country_leader = {
         		name = "Président Macky Sall"
         		desc = ""
-        		picture = SEN_Macky.tga
+        		picture = "gfx/leaders/SEN/SEN_Macky.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16231,7 +16277,7 @@
 			create_country_leader = {
           			name = "Raʾīs Muḥammad wald al-Šayẖ Muḥammad Aḥmad wald al-Ġazwānī"
           			desc = ""
-          			picture = MRT_Ghazouani.tga
+          			picture = "gfx/leaders/MRT/MRT_Ghazouani.tga"
           			expire = "1965.1.1"
           			ideology = christian
 				}
@@ -16247,7 +16293,7 @@
 			create_country_leader = {
             	name = "Presidente Jorge Carlos de Almeida Fonseca"
             	desc = ""
-            	picture = CVD_Jorge_Carlos_Fonseca.tga
+            	picture = "gfx/leaders/CVD/CVD_Jorge_Carlos_Fonseca.tga"
             	expire = "1965.1.1"
             	ideology = cenrep
 				}
@@ -16263,7 +16309,7 @@
 			create_country_leader = {
             	name = "President Adama Barrow"
             	desc = ""
-            	picture = GAM_Adama_Barrow.tga
+            	picture = "gfx/leaders/GAM/GAM_Adama_Barrow.tga"
             	expire = "1965.1.1"
             	ideology = liberalism
 				}
@@ -16280,7 +16326,7 @@
 			create_country_leader = {
             	name = "Presidente Umaro Mokhtar Sissoco Embaló"
             	desc = ""
-            	picture = GNB_Umaro_Embalo.tga
+            	picture = "gfx/leaders/GNB/GNB_Umaro_Embalo.tga"
             	expire = "1965.1.1"
             	ideology = demsoc
 				}
@@ -16296,7 +16342,7 @@
 			create_country_leader = {
            		name = "President Julius Maada Bio"
            		desc = ""
-           		picture = SIE_Julius_Maada.tga
+           		picture = "gfx/leaders/SIE/SIE_Julius_Maada.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -16311,7 +16357,7 @@
 			create_country_leader = {
            		name = "President Nana Addo Dankwa Akufo-Addo"
            		desc = ""
-           		picture = GHA_Nana.tga
+           		picture = "gfx/leaders/GHA/GHA_Nana.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -16321,7 +16367,7 @@
 			create_country_leader = {
            		name = "President George Manneh Oppong Weah"
            		desc = ""
-           		picture = LIB_George_Weah.tga
+           		picture = "gfx/leaders/LIB/LIB_George_Weah.tga"
            		expire = "1965.1.1"
            		ideology = liberalism
 				}
@@ -16338,7 +16384,7 @@
 			create_country_leader = {
            		name = "President Muhammadu Buhari"
            		desc = ""
-           		picture = NGA_Buhari.tga
+           		picture = "gfx/leaders/NGA/NGA_Buhari.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -16354,7 +16400,7 @@
 			create_country_leader = {
            		name = "Presidente Teodoro Obiang Nguema Mbasogo"
            		desc = ""
-           		picture = EQG_Teodoro_Obiang.tga
+           		picture = "gfx/leaders/EQG/EQG_Teodoro_Obiang.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -16370,7 +16416,7 @@
 			create_country_leader = {
            		name = "Presidente Carlos Manuel Vila Nova"
            		desc = ""
-           		picture = SAO_Carlos_Vila_Nova.tga
+           		picture = "gfx/leaders/SAO/SAO_Carlos_Vila_Nova.tga"
            		expire = "1965.1.1"
            		ideology = liberalism
 				}
@@ -16390,7 +16436,7 @@
 			create_country_leader = {
         		name = "Président Félix Antoine Tshisekedi Tshilombo"
         		desc = ""
-        		picture = COG_Tshisekedi.tga
+        		picture = "gfx/leaders/COG/COG_Tshisekedi.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16410,7 +16456,7 @@
 			create_country_leader = {
         		name = "Presidente João Manuel Gonçalves Lourenço"
         		desc = ""
-        		picture = ANG_Lourenco.tga
+        		picture = "gfx/leaders/ANG/ANG_Lourenco.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16426,13 +16472,15 @@
 			create_country_leader = {
         		name = "President Hakainde Hichilema"
         		desc = ""
-        		picture = ZAM_Hichilema.tga
+        		picture = "gfx/leaders/ZAM/ZAM_Hichilema.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
 			}
 		MLW = {
-			set_capital = 5007
+			set_capital = {
+				state = 5007
+			}
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
@@ -16443,7 +16491,7 @@
 			create_country_leader = {
         		name = "President Lazarus Chakwera"
         		desc = ""
-        		picture = MLW_Lazarus_Chakwera.tga
+        		picture = "gfx/leaders/MLW/MLW_Lazarus_Chakwera.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16459,7 +16507,7 @@
 			create_country_leader = {
         		name = "Presidente Filipe Jacinto Nyusi"
         		desc = ""
-        		picture = MZB_Nyusi.tga
+        		picture = "gfx/leaders/MZB/MZB_Nyusi.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16479,7 +16527,7 @@
 			create_country_leader = {
         		name = "President Emmerson Dambudzo Mnangagwa"
         		desc = ""
-        		picture = ZIM_Mnangagwa.tga
+        		picture = "gfx/leaders/ZIM/ZIM_Mnangagwa.tga"
         		expire = "1965.1.1"
         		ideology = demsoc
 				}
@@ -16495,7 +16543,7 @@
 			create_country_leader = {
         		name = "President Mokgweetsi Eric Keabetswe Masisi"
         		desc = ""
-        		picture = BOT_Masisi.tga
+        		picture = "gfx/leaders/BOT/BOT_Masisi.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -16511,7 +16559,7 @@
 			create_country_leader = {
         		name = "President Hage Gottfried Geingob"
         		desc = ""
-        		picture = NMB_Geingob.tga
+        		picture = "gfx/leaders/NMB/NMB_Geingob.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16527,7 +16575,7 @@
 			create_country_leader = {
         		name = "President Matamela Cyril Ramaphosa"
         		desc = ""
-        		picture = SAF_Ramaphosa.tga
+        		picture = "gfx/leaders/SAF/SAF_Ramaphosa.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -16543,7 +16591,7 @@
 			create_country_leader = {
         		name = "Marena Letsie III"
         		desc = ""
-        		picture = LES_Letsie_III.tga
+        		picture = "gfx/leaders/LES/LES_Letsie_III.tga"
         		expire = "1965.1.1"
         		ideology = cenmon
 				}
@@ -16559,7 +16607,7 @@
 			create_country_leader = {
         		name = "Ngwenyama Mswati III"
         		desc = ""
-        		picture = SWZ_Mswati_III.tga
+        		picture = "gfx/leaders/SWZ/SWZ_Mswati_III.tga"
         		expire = "1965.1.1"
         		ideology = absolutism
 				}
@@ -16591,7 +16639,7 @@
 			create_country_leader = {
         		name = "Filoha Andry Nirina Rajoelina"
         		desc = ""
-        		picture = MAD_Rajoelina.tga
+        		picture = "gfx/leaders/MAD/MAD_Rajoelina.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -16607,7 +16655,7 @@
 			create_country_leader = {
         		name = "Président Prithvirajsing Roopun"
         		desc = ""
-        		picture = MRS_Prithvirajsing_Roopun.tga
+        		picture = "gfx/leaders/MRS/MRS_Prithvirajsing_Roopun.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -16622,7 +16670,7 @@
 			create_country_leader = {
         		name = "Président Azali Assoumani"
         		desc = ""
-        		picture = COM_Azali_Assoumani.tga
+        		picture = "gfx/leaders/COM/COM_Azali_Assoumani.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -16639,7 +16687,7 @@
 			create_country_leader = {
         		name = "Président Emmanuel Jean-Michel Frédéric Macron"
         		desc = ""
-        		picture = REU_Emmanuel_Macron.tga
+        		picture = "gfx/leaders/REU/REU_Emmanuel_Macron.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -16655,7 +16703,7 @@
 			create_country_leader = {
         		name = "Charles Kormi Kudzordzi"
         		desc = ""
-        		picture = WTO_Charles_Kudzordzi.tga
+        		picture = "gfx/leaders/WTO/WTO_Charles_Kudzordzi.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -16673,7 +16721,7 @@
 			create_country_leader = {
         		name = "Interim Government of Ambazonia"
         		desc = ""
-        		picture = SCM_Interim_Government.tga
+        		picture = "gfx/leaders/SCM/SCM_Interim_Government.tga"
         		expire = "1965.1.1"
         		ideology = moderatism
 				}
@@ -16811,7 +16859,7 @@
 			create_country_leader = {
            		name = "Governor-General Dame Alcyion Cynthia Kiro"
            		desc = ""
-           		picture = gfx/leaders/NZL/NZL_Kiro.tga
+           		picture = "gfx/leaders/NZL/NZL_Kiro.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -16826,7 +16874,7 @@
 			create_country_leader = {
            		name = "Administrator Don Higgins"
            		desc = ""
-           		picture = TKL_Higgins.tga
+           		picture = "gfx/leaders/TKL/TKL_Higgins.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -16842,7 +16890,7 @@
 			create_country_leader = {
            		name = "Queen's Representative Sir Tom John Marsters"
            		desc = ""
-           		picture = CKI_Tom_Marsters.tga
+           		picture = "gfx/leaders/CKI/CKI_Tom_Marsters.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -16857,7 +16905,7 @@
 			create_country_leader = {
            		name = "Governor-General Dame Alcyion Cynthia Kiro"
            		desc = ""
-           		picture = NZL_Kiro.tga
+           		picture = "gfx/leaders/NZL/NZL_Kiro.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -16873,7 +16921,7 @@
 			create_country_leader = {
         		name = "Governor-General Sir Bob Dadae"
         		desc = ""
-        		picture = PNG_Dadae.tga
+        		picture = "gfx/leaders/PNG/PNG_Dadae.tga"
         		expire = "1965.1.1"
         		ideology = oligarchism
 				}
@@ -16889,7 +16937,7 @@
 			create_country_leader = {
         		name = "Préfète Sylvie Feucher"
         		desc = ""
-        		picture = SBT_Sylvie_Feucher.tga
+        		picture = "gfx/leaders/SBT/SBT_Sylvie_Feucher.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -16906,7 +16954,7 @@
 			create_country_leader = {
         		name = "Préfète Sylvie Feucher"
         		desc = ""
-        		picture = NSM_Sylvie_Feucher.tga
+        		picture = "gfx/leaders/NSM/NSM_Sylvie_Feucher.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -16921,7 +16969,7 @@
 			create_country_leader = {
         		name = "Administrateur Supérieur Hervé Jonathan"
         		desc = ""
-        		picture = WAF_Herve_Jonathan.tga
+        		picture = "gfx/leaders/WAF/WAF_Herve_Jonathan.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -16936,7 +16984,7 @@
 			create_country_leader = {
         		name = "Préfèt Thierry_Devimeux"
         		desc = ""
-        		picture = SPM_Thierry_Devimeux.tga
+        		picture = "gfx/leaders/SPM/SPM_Thierry_Devimeux.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -16951,7 +16999,7 @@
 			create_country_leader = {
         		name = "Haut-Commissaire Dominique Sorain"
         		desc = ""
-        		picture = TAH_Dominique_Sorain.tga
+        		picture = "gfx/leaders/TAH/TAH_Dominique_Sorain.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -16966,7 +17014,7 @@
 			create_country_leader = {
         		name = "Haut-Commissaire Laurent Prévost"
         		desc = ""
-        		picture = NCL_Laurent_Prevost.tga
+        		picture = "gfx/leaders/NCL/NCL_Laurent_Prevost.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -16982,7 +17030,7 @@
 			create_country_leader = {
         		name = "O le Ao o le Malo Tuimalealiifano Va'aletoa Sualauvi II"
         		desc = ""
-        		picture = SAM_Tuimalealiifano_Sualauvi_Vaaletoa_II.tga
+        		picture = "gfx/leaders/SAM/SAM_Tuimalealiifano_Sualauvi_Vaaletoa_II.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -16997,7 +17045,7 @@
 			create_country_leader = {
         		name = "Governor Lemanu Palepoi Sialega Mauga"
         		desc = ""
-        		picture = ESM_Lemanu_Peleti_Mauga.tga
+        		picture = "gfx/leaders/ESM/ESM_Lemanu_Peleti_Mauga.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -17012,7 +17060,7 @@
 			create_country_leader = {
         		name = "Governor-General Reverend Tofiga Vaevalu Falani"
         		desc = ""
-        		picture = TUV_Falani.tga
+        		picture = "gfx/leaders/TUV/TUV_Falani.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -17028,7 +17076,7 @@
 			create_country_leader = {
         		name = "President Lionel Rouwen Aingimea"
         		desc = ""
-        		picture = NAU_Lionel_Aingimea.tga
+        		picture = "gfx/leaders/NAU/NAU_Lionel_Aingimea.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -17044,7 +17092,7 @@
 			create_country_leader = {
         		name = "Governor-General Sir David Okete Vuvuiri Vunagi"
         		desc = ""
-        		picture = SOL_David_Vunagi.tga
+        		picture = "gfx/leaders/SOL/SOL_David_Vunagi.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -17075,7 +17123,7 @@
 			create_country_leader = {
         		name = "President Ratu Wiliame Maivalili Katonivere"
         		desc = ""
-        		picture = FIJ_Katonivere.tga
+        		picture = "gfx/leaders/FIJ/FIJ_Katonivere.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -17091,7 +17139,7 @@
 			create_country_leader = {
         		name = "Governor Ralph Deleon Guerrero Torres"
         		desc = ""
-        		picture = NMI_Ralph_Torres.tga
+        		picture = "gfx/leaders/NMI/NMI_Ralph_Torres.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -17108,7 +17156,7 @@
 			create_country_leader = {
         		name = "Governor Lourdes Aflague Leon Guerrero"
         		desc = ""
-        		picture = GUM_Lou_Leon_Guerrero.tga
+        		picture = "gfx/leaders/GUM/GUM_Lou_Leon_Guerrero.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -17139,7 +17187,7 @@
 			create_country_leader = {
         		name = "Governor Laura Mary Clarke"
         		desc = ""
-        		picture = PTC_Laura_Clarke.tga
+        		picture = "gfx/leaders/PTC/PTC_Laura_Clarke.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -17155,7 +17203,7 @@
 			create_country_leader = {
         		name = "Tu'i 'Aho'eitu Tupou VI"
         		desc = ""
-        		picture = TON_Tupou_VI.tga
+        		picture = "gfx/leaders/TON/TON_Tupou_VI.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -17170,7 +17218,7 @@
 			create_country_leader = {
         		name = "President David Panuelo"
         		desc = ""
-        		picture = FSM_David_Panuelo.tga
+        		picture = "gfx/leaders/FSM/FSM_David_Panuelo.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -17185,7 +17233,7 @@
 			create_country_leader = {
         		name = "President Surangel S. Whipps Jr."
         		desc = ""
-        		picture = PLU_Surangel_Whipps.tga
+        		picture = "gfx/leaders/PLU/PLU_Surangel_Whipps.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -17200,7 +17248,7 @@
 			create_country_leader = {
         		name = "President David Kabua"
         		desc = ""
-        		picture = MAR_David_Kabua.tga
+        		picture = "gfx/leaders/MAR/MAR_David_Kabua.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -17215,7 +17263,7 @@
 			create_country_leader = {
         		name = "Governor-General David John Hurley"
         		desc = ""
-        		picture = AST_Hurley.tga
+        		picture = "gfx/leaders/AST/AST_Hurley.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -17233,7 +17281,7 @@
 			create_country_leader = {
         		name = "Governor Philip Edward Rushbrook"
         		desc = ""
-        		picture = STH_Philip_Rushbrook.tga
+        		picture = "gfx/leaders/STH/STH_Philip_Rushbrook.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -17248,7 +17296,7 @@
 			create_country_leader = {
         		name = "Governor Nigel James Phillips"
         		desc = ""
-        		picture = FAL_Nigel_Phillips.tga
+        		picture = "gfx/leaders/FAL/FAL_Nigel_Phillips.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -17265,7 +17313,7 @@
 			create_country_leader = {
         		name = "Governor Nigel James Phillips"
         		desc = ""
-        		picture = SGE_Nigel_Phillips.tga
+        		picture = "gfx/leaders/SGE/SGE_Nigel_Phillips.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -17417,7 +17465,7 @@
 			create_country_leader = {
         		name = "Président Emmanuel Jean-Michel Frédéric Macron"
         		desc = ""
-        		picture = FRA_Emmanuel_Macron.tga
+        		picture = "gfx/leaders/FRA/FRA_Emmanuel_Macron.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -17468,7 +17516,7 @@
 			create_country_leader = {
         		name = "President Joseph Robinette Biden Jr."
         		desc = ""
-        		picture = USA_Biden.tga
+        		picture = "gfx/leaders/USA/USA_Biden.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -17478,7 +17526,7 @@
 			create_country_leader = {
         		name = "President Donald John Trump"
         		desc = ""
-        		picture = USA_Trump.tga
+        		picture = "gfx/leaders/USA/USA_Trump.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -17488,7 +17536,7 @@
 			create_country_leader = {
 				name = "Chancellor Andrew Yang"
 				desc = ""
-				picture = "USA_Yang.tga"
+				picture = "gfx/leaders/USA/USA_Yang.tga"
 				expire = "1965.1.1"
 				ideology = cenrep
 				traits = {
@@ -17500,7 +17548,7 @@
 			create_country_leader = {
 				name = "Divine President William Edward Lori"
 				desc = ""
-				picture = "USA_Lori.tga"
+				picture = "gfx/leaders/USA/USA_Lori.tga"
 				expire = "1965.1.1"
 				ideology = christian
 				traits = {
@@ -17512,7 +17560,7 @@
 			create_country_leader = {
 				name = "President Bernard Sanders"
 				desc = ""
-				picture = "USA_Sanders.tga"
+				picture = "gfx/leaders/USA/USA_Sanders.tga"
 				expire = "1965.1.1"
 				ideology = demsoc
 				traits = {
@@ -17524,7 +17572,7 @@
 			create_country_leader = {
 				name = "Commander-in-Chief Mark Alexander Milley"
 				desc = ""
-				picture = "USA_Milley.tga"
+				picture = "gfx/leaders/USA/USA_Milley.tga"
 				expire = "1965.1.1"
 				ideology = militarism
 				traits = {
@@ -17536,7 +17584,7 @@
 			create_country_leader = {
 				name = "President Donald Leon Blankenship"
 				desc = ""
-				picture = "USA_Blankenship.tga"
+				picture = "gfx/leaders/USA/USA_Blankenship.tga"
 				expire = "1965.1.1"
 				ideology = oligarchism
 				traits = {
@@ -17548,7 +17596,7 @@
 			create_country_leader = {
 				name = "Princeps-President William Daniel Johnson, Supreme Protector of Congress"
 				desc = ""
-				picture = "USA_Johnson.tga"
+				picture = "gfx/leaders/USA/USA_Johnson.tga"
 				expire = "1965.1.1"
 				ideology = repfash
 				traits = {
@@ -17560,7 +17608,7 @@
 			create_country_leader = {
 				name = "Supreme Commander Burt Colucci"
 				desc = ""
-				picture = "USA_Colucci.tga"
+				picture = "gfx/leaders/USA/USA_Colucci.tga"
 				expire = "1965.1.1"
 				ideology = natsoc
 				traits = {
@@ -17572,7 +17620,7 @@
 			create_country_leader = {
 				name = "Chairwoman Angela Yvonne Davis"
 				desc = ""
-				picture = "USA_Davis.tga"
+				picture = "gfx/leaders/USA/USA_Davis.tga"
 				expire = "1965.1.1"
 				ideology = totsoc
 				traits = {
@@ -17584,7 +17632,7 @@
 			create_country_leader = {
 				name = "Chairman Jack Whittier Barnes"
 				desc = ""
-				picture = "USA_Barnes.tga"
+				picture = "gfx/leaders/USA/USA_Barnes.tga"
 				expire = "1965.1.1"
 				ideology = marxism
 				traits = {
@@ -17596,7 +17644,7 @@
 			create_country_leader = {
 				name = "Chairman James Riddle Hoffa"
 				desc = ""
-				picture = "USA_Hoffa.tga"
+				picture = "gfx/leaders/USA/USA_Hoffa.tga"
 				expire = "1965.1.1"
 				ideology = ancom
 				traits = {
@@ -17608,7 +17656,7 @@
 			create_country_leader = {
 				name = "Emperor Robert III of Lee"
 				desc = ""
-				picture = "USA_Robert_III.tga"
+				picture = "gfx/leaders/USA/USA_Robert_III.tga"
 				expire = "1965.1.1"
 				ideology = fascism_ideology
 				traits = {
@@ -17620,7 +17668,7 @@
 			create_country_leader = {
 				name = "King Lawrence II of Washington"
 				desc = ""
-				picture = "USA_Lawrence_II.tga"
+				picture = "gfx/leaders/USA/USA_Lawrence_II.tga"
 				expire = "1965.1.1"
 				ideology = monsoc
 				traits = {
@@ -17632,7 +17680,7 @@
 			create_country_leader = {
 				name = "Queen Brynda I of Washington"
 				desc = ""
-				picture = "USA_Brynda.tga"
+				picture = "gfx/leaders/USA/USA_Brynda.tga"
 				expire = "1965.1.1"
 				ideology = cenmon
 				traits = {
@@ -17644,7 +17692,7 @@
 			create_country_leader = {
 				name = "Governor Prince Edward George Nicholas Paul Patrick of Windsor, Duke of Kent"
 				desc = ""
-				picture = "USA_Prince_Edward.tga"
+				picture = "gfx/leaders/USA/USA_Prince_Edward.tga"
 				expire = "1965.1.1"
 				ideology = stratmon
 				traits = {
@@ -17656,7 +17704,7 @@
 			create_country_leader = {
 				name = "Governor-General David Michael James Brudenell-Bruce, Earl of Cardigan"
 				desc = ""
-				picture = "USA_Brudenell-Bruce.tga"
+				picture = "gfx/leaders/USA/USA_Brudenell-Bruce.tga"
 				expire = "1965.1.1"
 				ideology = authmon
 				traits = {
@@ -17668,7 +17716,7 @@
 			create_country_leader = {
 				name = "Queen Meghan I of Markle"
 				desc = ""
-				picture = "USA_Markle.tga"
+				picture = "gfx/leaders/USA/USA_Markle.tga"
 				expire = "1965.1.1"
 				ideology = absolutism
 				traits = {
@@ -17680,7 +17728,7 @@
 			create_country_leader = {
 				name = "Prime Minister Roy-Charles Aquila Coulombe"
 				desc = ""
-				picture = "USA_Coulombe.tga"
+				picture = "gfx/leaders/USA/USA_Coulombe.tga"
 				expire = "1965.1.1"
 				ideology = conservative_constitutionalism
 				traits = {
@@ -17692,7 +17740,7 @@
 			create_country_leader = {
 				name = "Prime Minister Carla Hanson"
 				desc = ""
-				picture = "USA_Hanson.tga"
+				picture = "gfx/leaders/USA/USA_Hanson.tga"
 				expire = "1965.1.1"
 				ideology = liberal_constitutionalism
 				traits = {
@@ -17704,7 +17752,7 @@
 			create_country_leader = {
 				name = "Chairman Jeffrey Preston Bezos"
 				desc = ""
-				picture = "USA_Bezos.tga"
+				picture = "gfx/leaders/USA/USA_Bezos.tga"
 				expire = "1965.1.1"
 				ideology = ancap
 				traits = {
@@ -17729,7 +17777,7 @@
 			create_country_leader = {
         		name = "Governor Mary Jeannie May Simon"
         		desc = ""
-        		picture = CAN_Simon.tga
+        		picture = "gfx/leaders/CAN/CAN_Simon.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 			}
@@ -17743,7 +17791,7 @@
 			create_country_leader = {
         		name = "Presidente Andrés Manuel López Obrador"
         		desc = ""
-        		picture = MEX_Obrador.tga
+        		picture = "gfx/leaders/MEX/MEX_Obrador.tga"
         		expire = "1965.1.1"
         		ideology = demsoc
 			}
@@ -17759,7 +17807,7 @@
 			create_country_leader = {
         		name = "Presidente Miguel Mario Díaz-Canel Bermúdez"
         		desc = ""
-        		picture = CUB_Canel.tga
+        		picture = "gfx/leaders/CUB/CUB_Canel.tga"
         		expire = "1965.1.1"
         		ideology = totsoc
 				}
@@ -17774,7 +17822,7 @@
 			create_country_leader = {
         		name = "Président Jovenel Moïse"
         		desc = ""
-        		picture = HAI_Jovenel_Moise.tga
+        		picture = "gfx/leaders/HAI/HAI_Jovenel_Moise.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 				}
@@ -17789,7 +17837,7 @@
 			create_country_leader = {
         		name = "Presidente Luis Rodolfo Abinader Corona"
         		desc = ""
-        		picture = DOM_Luis_Abinader.tga
+        		picture = "gfx/leaders/DOM/DOM_Luis_Abinader.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -17806,7 +17854,7 @@
 			create_country_leader = {
            		name = "Governor-General Nigel John Dakin"
            		desc = ""
-           		picture = TAC_Nigel_Dakin.tga
+           		picture = "gfx/leaders/TAC/TAC_Nigel_Dakin.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -17822,7 +17870,7 @@
 			create_country_leader = {
            		name = "Governor-General Martyn John Roper"
            		desc = ""
-           		picture = CYM_Martyn_Roper.tga
+           		picture = "gfx/leaders/CYM/CYM_Martyn_Roper.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -17838,7 +17886,7 @@
 			create_country_leader = {
            		name = "Governor-General Dame Froyla Tzalam"
            		desc = ""
-           		picture = BLZ_Tzalam.tga
+           		picture = "gfx/leaders/BLZ/BLZ_Tzalam.tga"
            		expire = "1965.1.1"
            		ideology = cenmon
 				}
@@ -17848,7 +17896,7 @@
 			create_country_leader = {
            		name = "Presidente Rodrigo Alberto de Jesús Chaves Robles"
            		desc = ""
-           		picture = COS_Robles.tga
+           		picture = "gfx/leaders/COS/COS_Robles.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -17863,7 +17911,7 @@
 			create_country_leader = {
            		name = "Presidente Laurentino Cortizo Cohen"
            		desc = ""
-           		picture = PAN_Laurentino_Cortizo.tga
+           		picture = "gfx/leaders/PAN/PAN_Laurentino_Cortizo.tga"
            		expire = "1965.1.1"
            		ideology = conservatism
 				}
@@ -17880,7 +17928,7 @@
 			create_country_leader = {
            		name = "Presidenta Iris Xiomara Castro Sarmiento"
            		desc = ""
-           		picture = HON_Castro.tga
+           		picture = "gfx/leaders/HON/HON_Castro.tga"
            		expire = "1965.1.1"
            		ideology = socialism
 				}
@@ -17895,7 +17943,7 @@
 			create_country_leader = {
            		name = "Presidente Nayib Armando Bukele Ortez"
            		desc = ""
-           		picture = ELS_Nayib_Bukele.tga
+           		picture = "gfx/leaders/ELS/ELS_Nayib_Bukele.tga"
            		expire = "1965.1.1"
            		ideology = cenrep
 				}
@@ -17910,7 +17958,7 @@
 			create_country_leader = {
            		name = "Presidente Alejandro Eduardo Giammattei Falla"
            		desc = ""
-           		picture = GUA_Alejandro_Giammattei.tga
+           		picture = "gfx/leaders/GUA/GUA_Alejandro_Giammattei.tga"
            		expire = "1965.1.1"
            		ideology = centrism
 				}
@@ -17926,7 +17974,7 @@
 			create_country_leader = {
            		name = "Presidente José Daniel Ortega Saavedra"
            		desc = ""
-           		picture = NIC_Daniel_Ortega.tga
+           		picture = "gfx/leaders/NIC/NIC_Daniel_Ortega.tga"
            		expire = "1965.1.1"
            		ideology = demsoc
 				}
@@ -17942,7 +17990,7 @@
 			create_country_leader = {
            		name = "Governor-General Sir Cornelius Alvin Smith"
            		desc = ""
-           		picture = BAH_Cornelius_Smith.tga
+           		picture = "gfx/leaders/BAH/BAH_Cornelius_Smith.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -17958,7 +18006,7 @@
 			create_country_leader = {
            		name = "Governor-General Sir Patrick Linton Allen"
            		desc = ""
-           		picture = JAM_Patrick_Allen.tga
+           		picture = "gfx/leaders/JAM/JAM_Patrick_Allen.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -17975,7 +18023,7 @@
 			create_country_leader = {
         		name = "Governor Pedro Rafael Pierluisi Urrutia"
         		desc = ""
-        		picture = PUE_Pedro_Pierluisi.tga
+        		picture = "gfx/leaders/PUE/PUE_Pedro_Pierluisi.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -17985,7 +18033,7 @@
 			create_country_leader = {
         		name = "Governor Albert Bryan Jr."
         		desc = ""
-        		picture = WVI_Albert_Bryan.tga
+        		picture = "gfx/leaders/WVI/WVI_Albert_Bryan.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -18001,7 +18049,7 @@
 			create_country_leader = {
         		name = "President Charles Angelo Savarin"
         		desc = ""
-        		picture = DMC_Charles_Savarin.tga
+        		picture = "gfx/leaders/DMC/DMC_Charles_Savarin.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -18026,7 +18074,7 @@
 			create_country_leader = {
         		name = "Governor-General Cyril Errol Melchiades Charles"
         		desc = ""
-        		picture = STL_Charles.tga
+        		picture = "gfx/leaders/STL/STL_Charles.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -18042,7 +18090,7 @@
 			create_country_leader = {
         		name = "Governor John James Rankin"
         		desc = ""
-        		picture = EVI_John_Rankin.tga
+        		picture = "gfx/leaders/EVI/EVI_John_Rankin.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -18058,7 +18106,7 @@
 			create_country_leader = {
         		name = "President Sandra Prunella Mason"
         		desc = ""
-        		picture = BAR_Sandra_Mason.tga
+        		picture = "gfx/leaders/BAR/BAR_Sandra_Mason.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -18074,7 +18122,7 @@
 			create_country_leader = {
         		name = "Governor-General Dame Susan Dilys Dougan"
         		desc = ""
-        		picture = SVC_Susan_Dougan.tga
+        		picture = "gfx/leaders/SVC/SVC_Susan_Dougan.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -18090,7 +18138,7 @@
 			create_country_leader = {
         		name = "Governor-General Dame Cécile Ellen Fleurette La Grenade"
         		desc = ""
-        		picture = GDA_Cecile_La_Grenade.tga
+        		picture = "gfx/leaders/GDA/GDA_Cecile_La_Grenade.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -18107,7 +18155,7 @@
 			create_country_leader = {
         		name = "Governor-General Sir Samuel Weymouth Tapley Seaton"
         		desc = ""
-        		picture = SKT_Tapley_Seaton.tga
+        		picture = "gfx/leaders/SKT/SKT_Tapley_Seaton.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -18122,7 +18170,7 @@
 			create_country_leader = {
         		name = "Governor-General Sir Rodney Errey Lawrence Williams"
         		desc = ""
-        		picture = ANB_Rodney_Williams.tga
+        		picture = "gfx/leaders/ANB/ANB_Rodney_Williams.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -18139,7 +18187,7 @@
 			create_country_leader = {
         		name = "Governor Andrew John Pearce"
         		desc = ""
-        		picture = MSR_Andrew_Pearce.tga
+        		picture = "gfx/leaders/MSR/MSR_Andrew_Pearce.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -18156,7 +18204,7 @@
 			create_country_leader = {
         		name = "Gouverneur Eugene Bernard Holiday"
         		desc = ""
-        		picture = SSM_Eugene_Holiday.tga
+        		picture = "gfx/leaders/SSM/SSM_Eugene_Holiday.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -18173,7 +18221,7 @@
 			create_country_leader = {
         		name = "Gouverneur Lucille Andrea George-Wout"
         		desc = ""
-        		picture = CRC_Lucille_George-Wout.tga
+        		picture = "gfx/leaders/CRC/CRC_Lucille_George-Wout.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -18190,7 +18238,7 @@
 			create_country_leader = {
         		name = "Gouverneur Juan Alfonso Boekhoudt"
         		desc = ""
-        		picture = ARU_Alfonso_Boekhoudt.tga
+        		picture = "gfx/leaders/ARU/ARU_Alfonso_Boekhoudt.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -18211,7 +18259,7 @@
 			create_country_leader = {
         		name = "Governor Dileeni Daniel-Selvaratnam"
         		desc = ""
-        		picture = AGL_Dileeni_Daniel-Selvaratnam.tga
+        		picture = "gfx/leaders/AGL/AGL_Dileeni_Daniel-Selvaratnam.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 				}
@@ -18244,7 +18292,7 @@
 			create_country_leader = {
         		name = "Presidente Alberto Ángel Fernández"
         		desc = ""
-        		picture = ARG_Fernandez.tga
+        		picture = "gfx/leaders/ARG/ARG_Fernandez.tga"
         		expire = "1965.1.1"
         		ideology = socdem
 				}
@@ -18260,7 +18308,7 @@
 			create_country_leader = {
         		name = "PresidentE Luis Alberto Aparicio Alejandro Lacalle Pou"
         		desc = ""
-        		picture = URG_Luis_Lacalle_Pou.tga
+        		picture = "gfx/leaders/URG/URG_Luis_Lacalle_Pou.tga"
         		expire = "1965.1.1"
         		ideology = conservatism
 				}
@@ -18275,7 +18323,7 @@
 			create_country_leader = {
            		name = "Presidente Luis Alberto Arce Catacora"
            		desc = ""
-           		picture = BOL_Arce.tga
+           		picture = "gfx/leaders/BOL/BOL_Arce.tga"
            		expire = "1965.1.1"
            		ideology = demsoc
 				}
@@ -18285,7 +18333,7 @@
 			create_country_leader = {
            		name = "Presidente Gabriel Boric Font"
            		desc = ""
-           		picture = CHL_Boric.tga
+           		picture = "gfx/leaders/CHL/CHL_Boric.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -18295,7 +18343,7 @@
 			create_country_leader = {
            		name = "Presidente Iván Duque Márquez"
            		desc = ""
-           		picture = COL_Duque.tga
+           		picture = "gfx/leaders/COL/COL_Duque.tga"
            		expire = "1965.1.1"
            		ideology = demsoc
 				}
@@ -18305,7 +18353,7 @@
 			create_country_leader = {
            		name = "Presidente Guillermo Alberto Santiago Lasso Mendoza"
            		desc = ""
-           		picture = ECU_Lasso.tga
+           		picture = "gfx/leaders/ECU/ECU_Lasso.tga"
            		expire = "1965.1.1"
            		ideology = demsoc
 				}
@@ -18321,7 +18369,7 @@
 			create_country_leader = {
            		name = "Presidente José Pedro Castillo Terrones"
            		desc = ""
-           		picture = PRU_Castillo.tga
+           		picture = "gfx/leaders/PRU/PRU_Castillo.tga"
            		expire = "1965.1.1"
            		ideology = socialism
 				}
@@ -18336,7 +18384,7 @@
 					create_country_leader = {
             			name = "Presidente Nicolás Maduro Moros"
             			desc = ""
-            			picture = VEN_Maduro.tga
+            			picture = "gfx/leaders/VEN/VEN_Maduro.tga"
             			expire = "1965.1.1"
             			ideology = demsoc
 						}
@@ -18351,7 +18399,7 @@
 			create_country_leader = {
            		name = "President Mohamed Irfaan Ali"
            		desc = ""
-           		picture = GYA_Irfaan_Ali.tga
+           		picture = "gfx/leaders/GYA/GYA_Irfaan_Ali.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -18366,7 +18414,7 @@
 			create_country_leader = {
            		name = "President Chandrikapersad Santokhi"
            		desc = ""
-           		picture = SUR_Chan_Santokhi.tga
+           		picture = "gfx/leaders/SUR/SUR_Chan_Santokhi.tga"
            		expire = "1965.1.1"
            		ideology = socdem
 				}
@@ -18380,7 +18428,7 @@
 			create_country_leader = {
            		name = "Governor Rena Lalgie"
            		desc = ""
-           		picture = BER_Rena_Lalgie.tga
+           		picture = "gfx/leaders/BER/BER_Rena_Lalgie.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
 				}
@@ -18397,13 +18445,15 @@
 			set_politics = {
 				ruling_party = centrist_republic
 				}
-			set_capital = 1646
+			set_capital = {
+				state = 1646
+			}
 			}
 		BRA = {
 			create_country_leader = {
            		name = "Presidente Jair Messias Bolsonaro"
            		desc = ""
-           		picture = BRA_fela.tga
+           		picture = "gfx/leaders/BRA/BRA_fela.tga"
            		expire = "1965.1.1"
            		ideology = cenrep
 				}
@@ -18418,7 +18468,7 @@
 			create_country_leader = {
            		name = "Presidente Mario Abdo Benítez"
            		desc = ""
-           		picture = PAR_Mario_Abdo_Benitez.tga
+           		picture = "gfx/leaders/PAR/PAR_Mario_Abdo_Benitez.tga"
            		expire = "1965.1.1"
            		ideology = liberalism
 				}
@@ -18434,7 +18484,7 @@
 			create_country_leader = {
            		name = "President Paula-Mae Weekes"
            		desc = ""
-           		picture = TRI_Paula-Mae_Weekes.tga
+           		picture = "gfx/leaders/TRI/TRI_Paula-Mae_Weekes.tga"
            		expire = "1965.1.1"
            		ideology = liberalism
 				}

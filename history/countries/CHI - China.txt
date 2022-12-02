@@ -1,47 +1,12 @@
 ﻿capital = 1866
 
-oob = "CHI_1936"
-
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "Waking the Tiger"
-		}
-	}
-	add_ideas = {
-		CHI_communist_uprisings
-	}
+set_popularities = {
+	democratic = 40
+	neutrality = 60
 }
-
-
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}		
-	add_ideas = {
-		CHI_nine_power_treaty
-		CHI_army_corruption_1
-		CHI_ineffective_bureaucracy
-		CHI_incompetent_officers
-		free_trade
-		CHI_hyper_inflation_1
-	}
-}
-save_global_event_target_as = WTT_current_china_leader
-
-	set_popularities = {
-		democratic 
-			 = 40
-		fascism
-			 = 0
-		communism
-			 = 0
-			
-		neutrality 
-			 = 60
-		}
-	set_politics = { 
- ruling_party = neutrality
+	
+set_politics = { 
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -50,7 +15,7 @@ save_global_event_target_as = WTT_current_china_leader
 create_country_leader = {
 	name = "Chuhsi Lin Sen"
 	desc = ""
-	picture = "Portrait_Lin_Sen.tga"
+	picture = "gfx/leaders/Assorted/Portrait_Lin_Sen.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -60,7 +25,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Zongtong Wang Chao-ming"
 	desc = ""
-	picture = "Portrait_Wang_Chao-ming.tga"
+	picture = "gfx/leaders/Assorted/Portrait_Wang_Chao-ming.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -70,7 +35,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hsuant'ung Emperor"
 	desc = ""
-	picture = "Portrait_China_Puyi.dds"
+	picture = "gfx/leaders/Assorted/Portrait_China_Puyi.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -80,7 +45,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Zongtong Li Huang"
 	desc = ""
-	picture = "Portrait_Li_Huang.tga"
+	picture = "gfx/leaders/Assorted/Portrait_Li_Huang.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -110,7 +75,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chuhsi Mao Tse-tung"
 	desc = ""
-	picture = "Portrait_China_Mao.dds"
+	picture = "gfx/leaders/Assorted/Portrait_China_Mao.dds"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -121,7 +86,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mishu Ch'ang Ch'en Tu-hsiu"
 	desc = ""
-	picture = "Portrait_Chen_Tu-hsiu.tga"
+	picture = "gfx/leaders/Assorted/Portrait_Chen_Tu-hsiu.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -131,7 +96,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tsungt'ung Chang Chun-mai"
 	desc = ""
-	picture = "Portrait_Chang_Chun-mai.tga"
+	picture = "gfx/leaders/Assorted/Portrait_Chang_Chun-mai.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -141,7 +106,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hsüant'ung Ti Puyi"
 	desc = ""
-	picture = "Portrait_China_Puyi.dds"
+	picture = "gfx/leaders/Assorted/Portrait_China_Puyi.dds"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -151,7 +116,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tsungt'ung Wang Chao-ming"
 	desc = ""
-	picture = "Portrait_Wang_Chao-ming.tga"
+	picture = "gfx/leaders/Assorted/Portrait_Wang_Chao-ming.tga"
 	expire = "1965.1.1"
 	ideology = socdem
 	traits = {
@@ -161,7 +126,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Aihsin Chuehlo de Puyi"
 	desc = ""
-	picture = "Portrait_China_Puyi.dds"
+	picture = "gfx/leaders/Assorted/Portrait_China_Puyi.dds"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -171,7 +136,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hsüant'ung Ti Puyi"
 	desc = ""
-	picture = "Portrait_China_Puyi.dds"
+	picture = "gfx/leaders/Assorted/Portrait_China_Puyi.dds"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -181,7 +146,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tsungli Chiang Chung-cheng"
 	desc = ""
-	picture = "Portrait_Chiang_Kai_Shek.dds"
+	picture = "gfx/leaders/Assorted/Portrait_Chiang_Kai_Shek.dds"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -191,7 +156,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tsungli Chiang Chung-cheng"
 	desc = ""
-	picture = "Portrait_Chiang_Kai_Shek.dds"
+	picture = "gfx/leaders/Assorted/Portrait_Chiang_Kai_Shek.dds"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -201,7 +166,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tsungli Chiang Chung-cheng"
 	desc = ""
-	picture = "Portrait_Chiang_Kai_Shek.dds"
+	picture = "gfx/leaders/Assorted/Portrait_Chiang_Kai_Shek.dds"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -211,7 +176,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Luchün Shang Chiang Yuan K'eiting"
 	desc = ""
-	picture = "Portrait_Yuan_Keiting.tga"
+	picture = "gfx/leaders/Assorted/Portrait_Yuan_Keiting.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -221,7 +186,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hsüant'ung Ti Puyi"
 	desc = ""
-	picture = "Portrait_China_Puyi.dds"
+	picture = "gfx/leaders/Assorted/Portrait_China_Puyi.dds"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -231,7 +196,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Yen-sheng Kung K'ung Te-ch'eng"
 	desc = ""
-	picture = "Portrait_Kung_Te-cheng.tga"
+	picture = "gfx/leaders/Assorted/Portrait_Kung_Te-cheng.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -241,7 +206,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "K'angte Puyi"
 	desc = ""
-	picture = "Portrait_China_Puyi.dds"
+	picture = "gfx/leaders/Assorted/Portrait_China_Puyi.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -251,7 +216,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tikuo Weiyüanhui Weiyüan Wang Chao-ming"
 	desc = ""
-	picture = "Portrait_Wang_Chao-ming.tga"
+	picture = "gfx/leaders/Assorted/Portrait_Wang_Chao-ming.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -261,7 +226,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Legate Norman Lockhart Smith"
 	desc = ""
-	picture = "Portrait_Norman_Smith.tga"
+	picture = "gfx/leaders/Assorted/Portrait_Norman_Smith.tga"
 	expire = "1965.1.1"
 	ideology = ancap
 	traits = {
