@@ -65,7 +65,7 @@ MM_unite_ussr = {
 		text = "RULE_OPTION_DEFAULT"
 		desc = "The USSR will be divided into SSRs and ASSRs as it is by default."
 	}
-		option = {
+	option = {
 		name = DIVIDED_USSR
 		text = "Divide it Further"
 		desc = "The USSR will be divided into SSRs, ASSRs, Okrugs, and Autonomous Oblasts."
@@ -168,6 +168,23 @@ MM_unite_indonesia = {
 		allow_achievements = yes
 	}
 }
+
+MM_germany = {
+	name = "Germany Settings"
+	group = "RULE_GROUP_MM_SETTINGS"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "Germany will be unchanged."
+	}
+	option = {
+		name = EINHEITSPAKT_SETUP
+		text = "Einheitspakt Setup"
+		desc = "Germany and the surrounding countries will be changed to set up the Einheitspakt. (Use this with the TNO Russia Gamerule in the USSR options)"
+		allow_achievements = yes
+	}
+}
+
 #MM_set_scenario = {
 #	name = "Set Upcoming Scenario"
 #	group = "RULE_GROUP_MM_SETTINGS"
