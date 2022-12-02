@@ -39,6 +39,24 @@ on_actions = {
 			}
 		}
 	}
+
+	on_startup = {
+		#Set up the Einheitspakt.
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_germany
+						option = EINHEITSPAKT_SETUP
+					}
+				}
+				GER = {
+					do_tno_einheitspakt_setup = yes
+				}
+			}
+		}
+	}
+	
 	on_startup = {
 		#USSR before the west russian war
 		effect = {
@@ -3311,6 +3329,86 @@ on_actions = {
 # I will destroy Gaffate
 	on_ruling_party_change = {
 		effect = {
+			if {
+				limit = {
+					has_game_rule = {
+						rule = MM_unite_ussr
+						option = NORMAL_WARLORD_RUSSIA
+					}
+					ROOT = {
+						tag = UTR
+					}
+				}
+				ROOT = {
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = UTR_TNO
+						every_state = {
+							limit = {
+								is_owned_by = ROOT
+							}
+							do_german_renames = yes
+						}
+					}
+				}
+			}
+			if {
+				limit = {
+					has_game_rule = {
+						rule = MM_unite_ussr
+						option = NORMAL_WARLORD_RUSSIA
+					}
+					ROOT = {
+						tag = DEN
+					}
+				}
+				ROOT = {
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = DEN_TNO
+						every_state = {
+							limit = {
+								is_owned_by = ROOT
+							}
+							do_german_renames = yes
+						}
+					}
+				}
+			}
+			if {
+				limit = {
+					has_game_rule = {
+						rule = MM_unite_ussr
+						option = NORMAL_WARLORD_RUSSIA
+					}
+					ROOT = {
+						tag = NOR
+					}
+				}
+				ROOT = {
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = NOR_TNO
+						every_state = {
+							limit = {
+								is_owned_by = ROOT
+							}
+							do_german_renames = yes
+						}
+					}
+				}
+			}
+		}
+	}
+# I will destroy Gaffate
+	on_ruling_party_change = {
+		effect = {
 			if = {
 				limit = {
 					has_global_flag = colour_changer_mark
@@ -3597,8 +3695,6 @@ on_actions = {
 								tag = TYU
 								tag = TOM
 								tag = IRK
-								tag = DEN
-								tag = NOR
 								tag = FLA
 								tag = WLL
 								tag = URL
@@ -3624,11 +3720,12 @@ on_actions = {
 								tag = ILY
 								tag = TKS
 								tag = UTR
+								tag = DEN
+								tag = NOR
 								tag = TZN
 								tag = NMB
 								tag = MAD
 								tag = RCG
-								tag = NND
 								tag = OCC
 								tag = SCN
 								tag = FIN
@@ -3683,6 +3780,7 @@ on_actions = {
 								tag = LMC
 								tag = IST
 								tag = TRT
+								tag = NFL
 							}
 						}
 						if = {
@@ -4236,6 +4334,7 @@ on_actions = {
 										has_cosmetic_tag = POR_GREEN
 										has_cosmetic_tag = POR_MONARCHISM
 										has_cosmetic_tag = POR_SOCIALIST
+										has_cosmetic_tag = POR_AUTH
 									}
 								}
 								set_cosmetic_tag = POR_MONARCHISM
@@ -4255,9 +4354,27 @@ on_actions = {
 										has_cosmetic_tag = POR_GREEN
 										has_cosmetic_tag = POR_MONARCHISM
 										has_cosmetic_tag = POR_SOCIALIST
+										has_cosmetic_tag = POR_AUTH
 									}
 								}
 								set_cosmetic_tag = POR_SOCIALIST
+							}
+						}
+						if = {
+							limit = {
+								has_government = national_socialism
+							}
+							set_cosmetic_tag = POR_AUTH
+							every_country = {
+								limit = {
+									OR = {
+										has_cosmetic_tag = POR_GREEN
+										has_cosmetic_tag = POR_MONARCHISM
+										has_cosmetic_tag = POR_SOCIALIST
+										has_cosmetic_tag = POR_AUTH
+									}
+								}
+								set_cosmetic_tag = POR_AUTH
 							}
 						}
 					}
@@ -4770,6 +4887,208 @@ on_actions = {
 							set_cosmetic_tag = HUN_REPUBLIC
 						}
 					}
+					if = {
+						limit = {
+							tag = NND
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = republican_fascism
+									has_government = national_socialism
+								}
+							}
+							set_cosmetic_tag = GREY_GER3
+							
+							do_german_renames = yes
+						}
+						else_if = {
+							limit = {
+								has_government = socialism_ideology
+							}
+							
+							set_cosmetic_tag = NND_SOCREP
+							
+							do_french_renames = yes
+						}
+						else_if = {
+							limit = {
+								has_government = fascism
+							}
+							
+							set_cosmetic_tag = NND_FASHMON
+						}
+						else_if = {
+							limit = {
+								OR = {
+									has_government = democratic_monarchism
+									has_government = conservative_monarchism
+								}
+							}
+							
+							set_cosmetic_tag = UK_RED
+						}
+						else_if = {
+							limit = {
+								has_government = stratocratic
+							}
+							
+							set_cosmetic_tag = NND_STRAT
+						}
+						else = {
+							drop_cosmetic_tag
+							
+							do_french_renames = yes
+						}
+					}
+					if = {
+						limit = {
+							tag = USA
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = neutrality
+									has_government = stratocratic
+									has_government = fascism
+									has_government = republican_fascism
+									has_government = national_socialism
+								}
+							}
+							set_cosmetic_tag = USA_AUTH
+							every_country = {
+								limit = {
+									OR = {
+										has_cosmetic_tag = USA_AUTH
+										has_cosmetic_tag = USA_SOCIALIST
+										has_cosmetic_tag = USA_BRITISH
+										has_cosmetic_tag = USA_MONARCHIST
+										has_cosmetic_tag = USA_BLUE
+										has_cosmetic_tag = ALA_USA
+										has_cosmetic_tag = HAW_USA
+										has_cosmetic_tag = PUE_USA
+										has_cosmetic_tag = PCZ_USA
+										has_cosmetic_tag = PHI_USA
+										has_cosmetic_tag = ESM_USA
+									}
+								}
+								set_cosmetic_tag = USA_AUTH
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = socialism_ideology
+									has_government = communism
+									has_government = vanguardism
+								}
+							}
+							set_cosmetic_tag = USA_SOCIALIST
+							every_country = {
+								limit = {
+									OR = {
+										has_cosmetic_tag = USA_AUTH
+										has_cosmetic_tag = USA_SOCIALIST
+										has_cosmetic_tag = USA_BRITISH
+										has_cosmetic_tag = USA_MONARCHIST
+										has_cosmetic_tag = USA_BLUE
+										has_cosmetic_tag = ALA_USA
+										has_cosmetic_tag = HAW_USA
+										has_cosmetic_tag = PUE_USA
+										has_cosmetic_tag = PCZ_USA
+										has_cosmetic_tag = PHI_USA
+										has_cosmetic_tag = ESM_USA
+									}
+								}
+								set_cosmetic_tag = USA_SOCIALIST
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = democratic_monarchism
+									has_government = conservative_monarchism
+									has_government = authoritarian_monarchism
+									has_government = stratocratic_monarchism
+									has_government = monarchism
+								}
+							}
+							set_cosmetic_tag = USA_BRITISH
+							every_country = {
+								limit = {
+									OR = {
+										has_cosmetic_tag = USA_AUTH
+										has_cosmetic_tag = USA_SOCIALIST
+										has_cosmetic_tag = USA_BRITISH
+										has_cosmetic_tag = USA_MONARCHIST
+										has_cosmetic_tag = USA_BLUE
+										has_cosmetic_tag = ALA_USA
+										has_cosmetic_tag = HAW_USA
+										has_cosmetic_tag = PUE_USA
+										has_cosmetic_tag = PCZ_USA
+										has_cosmetic_tag = PHI_USA
+										has_cosmetic_tag = ESM_USA
+									}
+								}
+								set_cosmetic_tag = USA_BRITISH
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = centrist_monarchism
+									has_government = socialist_monarchy
+								}
+							}
+							set_cosmetic_tag = USA_MONARCHIST
+							every_country = {
+								limit = {
+									OR = {
+										has_cosmetic_tag = USA_AUTH
+										has_cosmetic_tag = USA_SOCIALIST
+										has_cosmetic_tag = USA_BRITISH
+										has_cosmetic_tag = USA_MONARCHIST
+										has_cosmetic_tag = USA_BLUE
+										has_cosmetic_tag = ALA_USA
+										has_cosmetic_tag = HAW_USA
+										has_cosmetic_tag = PUE_USA
+										has_cosmetic_tag = PCZ_USA
+										has_cosmetic_tag = PHI_USA
+										has_cosmetic_tag = ESM_USA
+									}
+								}
+								set_cosmetic_tag = USA_MONARCHIST
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = liberal_republic
+									has_government = democratic
+									has_government = centrist_republic
+								}
+							}
+							set_cosmetic_tag = USA_BLUE
+							every_country = {
+								limit = {
+									OR = {
+										has_cosmetic_tag = USA_AUTH
+										has_cosmetic_tag = USA_SOCIALIST
+										has_cosmetic_tag = USA_BRITISH
+										has_cosmetic_tag = USA_MONARCHIST
+										has_cosmetic_tag = USA_BLUE
+										has_cosmetic_tag = ALA_USA
+										has_cosmetic_tag = HAW_USA
+										has_cosmetic_tag = PUE_USA
+										has_cosmetic_tag = PCZ_USA
+										has_cosmetic_tag = PHI_USA
+										has_cosmetic_tag = ESM_USA
+									}
+								}
+								set_cosmetic_tag = USA_BLUE
+							}
+						}
+					}
 				}
 			}
 		}
@@ -5063,77 +5382,6 @@ on_actions = {
 			}
 		}
 	}
-# I will destroy Gaffate
-	on_ruling_party_change = {
-		effect = {
-			if {
-				limit = {
-					has_global_flag = tno_setup
-					ROOT = {
-						tag = UTR
-					}
-				}
-				ROOT = {
-					if = {
-						limit = {
-							has_government = national_socialism
-						}
-						set_cosmetic_tag = UTR_TNO
-						every_state = {
-							limit = {
-								is_owned_by = ROOT
-							}
-							do_german_renames = yes
-						}
-					}
-				}
-			}
-			if {
-				limit = {
-					has_global_flag = tno_setup
-					ROOT = {
-						tag = DEN
-					}
-				}
-				ROOT = {
-					if = {
-						limit = {
-							has_government = national_socialism
-						}
-						set_cosmetic_tag = DEN_TNO
-						every_state = {
-							limit = {
-								is_owned_by = ROOT
-							}
-							do_german_renames = yes
-						}
-					}
-				}
-			}
-			if {
-				limit = {
-					has_global_flag = tno_setup
-					ROOT = {
-						tag = NOR
-					}
-				}
-				ROOT = {
-					if = {
-						limit = {
-							has_government = national_socialism
-						}
-						set_cosmetic_tag = NOR_TNO
-						every_state = {
-							limit = {
-								is_owned_by = ROOT
-							}
-							do_german_renames = yes
-						}
-					}
-				}
-			}
-		}
-	}
 	on_ruling_party_change = {
 		effect = {
 			ROOT = {
@@ -5177,6 +5425,12 @@ on_actions = {
 							}
 						}
 						set_cosmetic_tag = KMR_RIGHT
+					}
+					if = {
+						limit = {
+							has_government = monarchism
+						}
+						set_cosmetic_tag = KMR_PostMid
 					}
 				}
 				if = {
@@ -5310,7 +5564,7 @@ on_actions = {
 				if = {
 					limit = {
 						tag = KMR
-						controls_western_russia = yes
+						controls_russia = yes
 					}
 					if = {
 						limit = {
@@ -5369,6 +5623,12 @@ on_actions = {
 							has_government = theocratic
 						}
 						set_cosmetic_tag = KMR_NATIONAL_THEO
+					}
+					if = {
+						limit = {
+							has_government = monarchism
+						}
+						set_cosmetic_tag = KMR_NATIONAL_PostMid
 					}
 				}
 				if = {

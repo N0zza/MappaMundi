@@ -803,7 +803,11 @@ do_all_renames = {
 					tag = RFC
 					tag = SCA 
 					tag = NSX
-					tag = EHC	  
+					tag = EHC
+					AND = {
+						tag = CAL
+						has_government = fascism
+					}
 				  	is_subject_of = JAP
 				}
 			}
@@ -1488,6 +1492,9 @@ do_all_renames = {
 		limit = {
 			ROOT = {
 				tag = BSH
+				NOT = {
+					has_government = stratocratic
+				}
 			}
 		}
 		do_bashkir_renames = yes

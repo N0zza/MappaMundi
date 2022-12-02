@@ -1,8 +1,6 @@
 do_tno_normal_warlord_russia = {
 
 	RUS = {
-		release = PSS
-		release = UKH
 		release = GYY
 		release = VYA
 		release = GRK
@@ -19,8 +17,6 @@ do_tno_normal_warlord_russia = {
 	every_state = {
 		limit = {
 			OR = {
-				is_core_of = PSS
-				is_core_of = UKH
 				is_core_of = GYY
 				is_core_of = VYA
 				is_core_of = GRK
@@ -123,20 +119,6 @@ do_tno_normal_warlord_russia = {
 		YGR = {
 			transfer_state = PREV
 		}
-	}
-	
-	PSS = {
-		set_politics = {
-			ruling_party = stratocratic
-		}
-		set_cosmetic_tag = ARH_TNO
-	}
-	
-	UKH = {
-		set_politics = {
-			ruling_party = stratocratic
-		}
-		set_cosmetic_tag = ARH_TNO
 	}
 	
 	every_state = {
@@ -252,6 +234,18 @@ do_tno_normal_warlord_russia = {
 		set_cosmetic_tag = ARH_TNO
 	}
 	
+	every_state = {
+		limit = {
+			OR = { 
+				is_core_of = PSS
+				is_core_of = UKH
+			}
+		}
+		ARH = {
+			transfer_state = PREV
+		}
+	}
+	
 	GYY = {
 		set_politics = {
 			ruling_party = theocratic
@@ -261,6 +255,7 @@ do_tno_normal_warlord_russia = {
 	VYA = {
 		transfer_state = 399
 		transfer_state = 10416
+		transfer_state = 18262
 		set_politics = {
 			ruling_party = conservative_monarchism
 		}
@@ -305,6 +300,7 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 16321 
 		transfer_state = 16318 
 		transfer_state = 16316
+		transfer_state = 18197
 		set_cosmetic_tag = VLG_TNO
 		set_politics = {
 			ruling_party = neutrality
@@ -351,6 +347,9 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 11919
 		transfer_state = 13658
 		transfer_state = 1727
+		transfer_state = 18257
+		transfer_state = 18258
+		transfer_state = 18260
 		set_cosmetic_tag = TTR_TNO
 		set_politics = {
 			ruling_party = democratic
@@ -513,62 +512,62 @@ do_tno_normal_warlord_russia = {
 		}
 	}
 	TAN = {
-		transfer_state = 14007
-		transfer_state = 14008
-		transfer_state = 13940
-		transfer_state = 10439
-		transfer_state = 1254
-		transfer_state = 13945
-		transfer_state = 13914
-		transfer_state = 14349
-		transfer_state = 14350
-		transfer_state = 13892
-		transfer_state = 14351
-		transfer_state = 14352
-		transfer_state = 13891
-		transfer_state = 13998
-		transfer_state = 13999
-		transfer_state = 8739
-		transfer_state = 13941
-		transfer_state = 8823
-		transfer_state = 8680
-		transfer_state = 8715
-		transfer_state = 8690
-		transfer_state = 13883
-		transfer_state = 13884
-		transfer_state = 13885
-		transfer_state = 13890
-		transfer_state = 13889
-		transfer_state = 13893
-		transfer_state = 13888
-		transfer_state = 14354
-		transfer_state = 13907
-		transfer_state = 13997
-		transfer_state = 13996
-		transfer_state = 13900
-		transfer_state = 13887
-		transfer_state = 13886
-		transfer_state = 971
-		transfer_state = 8708
-		transfer_state = 8753
-		transfer_state = 12285
-		transfer_state = 11181
-		transfer_state = 13990
-		transfer_state = 13980
-		transfer_state = 13983
-		transfer_state = 13951
-		transfer_state = 13981
-		transfer_state = 13985
-		transfer_state = 11178
-		transfer_state = 11180
-		transfer_state = 13984
-		transfer_state = 8694
-		transfer_state = 8699
-		transfer_state = 13989
-		transfer_state = 8709
-		transfer_state = 8701
-		transfer_state = 8697
-		transfer_state = 8695
+		add_state_claim = 14007
+		add_state_claim = 14008
+		add_state_claim = 13940
+		add_state_claim = 10439
+		add_state_claim = 1254
+		add_state_claim = 13945
+		add_state_claim = 13914
+		add_state_claim = 14349
+		add_state_claim = 14350
+		add_state_claim = 13892
+		add_state_claim = 14351
+		add_state_claim = 14352
+		add_state_claim = 13891
+		add_state_claim = 13998
+		add_state_claim = 13999
+		add_state_claim = 8739
+		add_state_claim = 13941
+		add_state_claim = 8823
+		add_state_claim = 8680
+		add_state_claim = 8715
+		add_state_claim = 8690
+		add_state_claim = 13883
+		add_state_claim = 13884
+		add_state_claim = 13885
+		add_state_claim = 13890
+		add_state_claim = 13889
+		add_state_claim = 13893
+		add_state_claim = 13888
+		add_state_claim = 14354
+		add_state_claim = 13907
+		add_state_claim = 13997
+		add_state_claim = 13996
+		add_state_claim = 13900
+		add_state_claim = 13887
+		add_state_claim = 13886
+		add_state_claim = 971
+		add_state_claim = 8708
+		add_state_claim = 8753
+		add_state_claim = 12285
+		add_state_claim = 11181
+		add_state_claim = 13990
+		add_state_claim = 13980
+		add_state_claim = 13983
+		add_state_claim = 13951
+		add_state_claim = 13981
+		add_state_claim = 13985
+		add_state_claim = 11178
+		add_state_claim = 11180
+		add_state_claim = 13984
+		add_state_claim = 8694
+		add_state_claim = 8699
+		add_state_claim = 13989
+		add_state_claim = 8709
+		add_state_claim = 8701
+		add_state_claim = 8697
+		add_state_claim = 8695
 		set_cosmetic_tag = TAN_TNO
 		set_politics = {
 			ruling_party = stratocratic
@@ -652,6 +651,8 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 12498
 		transfer_state = 12497
 		transfer_state = 14029
+		transfer_state = 18245
+		transfer_state = 18246
 		set_cosmetic_tag = KAM_TNO
 		set_capital = {
 			state = 637
@@ -927,11 +928,11 @@ do_tno_normal_warlord_russia = {
 		}
 	}
 
-	BML = {
+	BYA = {
 		transfer_state = 10440
 		transfer_state = 10451
 		transfer_state = 12560
-		drop_cosmetic_tag = yes
+		set_cosmetic_tag = BYA_COMMUN
 		set_politics = {
 			ruling_party = communism
 		}
@@ -1433,4 +1434,333 @@ do_tno_normal_warlord_russia = {
 		value = 5
 	}
 
+}
+
+do_tno_einheitspakt_setup = {
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = GER
+				is_core_of = CZC
+				is_core_of = CRM
+				is_core_of = KHE
+				is_core_of = ZAP
+				is_owned_by = AUS
+				is_owned_by = MML
+				is_owned_by = LIE
+				is_claimed_by = GER
+			}
+		}
+		set_demilitarized_zone = no
+		transfer_state_to = NZG
+	}
+	NZG = {
+		change_tag_from = GER
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_owned_by = EST
+				is_owned_by = LAT
+				is_owned_by = LIT
+				AND = {
+					is_owned_by = POL
+					is_core_of = LV2
+				}
+			}
+		}
+		transfer_state_to = LV2
+	}
+	every_state = {
+		limit = {
+			is_owned_by = POL
+			is_core_of = UA2
+			NOT = {
+				is_claimed_by = ROM
+			}
+		}
+		transfer_state_to = UA2
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_owned_by = GER
+				is_owned_by = CZE
+				is_owned_by = POL
+			}
+			is_core_of = SLO
+		}
+		transfer_state_to = SLO
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = CRP
+				state = 7975
+				AND = {
+					is_owned_by = YUG
+					is_claimed_by = HUN
+				}
+			}
+			
+		}
+		transfer_state_to = HUN
+	}
+	PL2 = {
+		annex_country = {
+			target = POL
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				AND = {
+					is_owned_by = ROM
+					is_core_of = BUL
+				}
+				AND = {
+					is_owned_by = YUG
+					is_core_of = BUL
+				}
+				AND = {
+					is_owned_by = YUG
+					is_claimed_by = BUL
+				}
+			}
+			
+		}
+		transfer_state_to = BUL
+	}
+	DEN = {
+		set_politics = {
+			ruling_party = national_socialism
+		}
+		every_owned_state = {
+			do_german_renames = yes
+		}
+		set_cosmetic_tag = DEN_TNO
+	}
+	NOR = {
+		set_politics = {
+			ruling_party = national_socialism
+		}
+		every_owned_state = {
+			do_german_renames = yes
+		}
+		set_cosmetic_tag = NOR_TNO
+	}
+	UTR = {
+		annex_country = {
+			target = HOL
+		}
+		set_capital = {
+			state = 7
+			remember_old_capital = no
+		}
+		set_politics = {
+			ruling_party = national_socialism
+		}
+		every_owned_state = {
+			do_german_renames = yes
+		}
+		set_cosmetic_tag = UTR_TNO
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = BL2
+				is_core_of = FRC
+				AND = {
+					is_core_of = LOR
+					NOT = {
+						is_owned_by = NZG
+					}
+				}
+				state = 16742
+				state = 1354
+				state = 16629
+				state = 833
+				state = 7477
+				state = 16629
+				state = 17025
+				state = 16626
+				state = 1357
+				state = 4032
+				state = 4145
+				state = 16625
+				state = 985
+				state = 17026
+				state = 16623
+				state = 16623
+				state = 16747
+				state = 5067
+				state = 1749
+			}
+		}
+		transfer_state_to = BGN
+	}
+	BGN = {
+		set_capital = {
+			state = 831
+			remember_old_capital = no
+		}
+		set_politics = {
+			ruling_party = national_socialism
+		}
+		every_owned_state = {
+			do_german_renames = yes
+		}
+		set_cosmetic_tag = BRG_TNO
+	}
+	IRE = {
+		set_politics = {
+			ruling_party = centrist_republic
+		}
+		transfer_state = 3204
+		transfer_state = 3205
+		transfer_state = 3206
+		transfer_state = 4961
+		transfer_state = 119
+	}
+	every_state = {
+		limit = {
+			is_core_of = NIR
+			NOT = {
+				is_owned_by = IRE
+			}
+		}
+		transfer_state_to = NIR
+	}
+	NIR = {
+		set_politics = {
+			ruling_party = centrist_republic
+		}
+		set_cosmetic_tag = IRE_GREEN
+	}
+	every_state = {
+		limit = {
+			is_core_of = SCO
+		}
+		transfer_state_to = SCO
+	}
+	SCO = {
+		set_politics = {
+			ruling_party = democratic
+		}
+	}
+	every_state = {
+		limit = {
+			is_core_of = WLS
+		}
+		transfer_state_to = WLS
+	}
+	WLS = {
+		set_politics = {
+			ruling_party = democratic
+		}
+	}
+	CRN = {
+		transfer_state = 986
+		annex_country = {
+			target = JSY
+		}
+		annex_country = {
+			target = GSY
+		}
+		annex_country = {
+			target = SK2
+		}
+		set_politics = {
+			ruling_party = national_socialism
+		}
+		every_owned_state = {
+			do_german_renames = yes
+		}
+		set_cosmetic_tag = GREY_GER3
+	}
+	EGL = {
+		annex_country = {
+			target = MNX
+		}
+		annex_country = {
+			target = ENG
+		}
+		set_politics = {
+			ruling_party = authoritarian_monarchism
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				AND = {
+					is_core_of = CRN
+					NOT = {
+						is_owned_by = CRN
+					}
+				}
+				state = 4937
+				state = 5157
+			}
+		}
+		set_demilitarized_zone = yes
+	}
+	every_state = {
+		limit = {
+			is_claimed_by = ITA
+		}
+		transfer_state_to = ITA
+	}
+	FRA = {
+		set_politics = {
+			ruling_party = republican_fascism
+		}
+		set_cosmetic_tag = VICHY_BLUE
+	}
+	every_state = {
+		limit = {
+			OR = {
+				state = 16672
+				state = 16710
+				state = 1758
+				state = 13098
+				state = 13099
+				state = 5578
+				state = 11901
+				state = 1757
+				state = 16646
+				state = 16632
+				state = 835
+				state = 7745
+				state = 8422
+				state = 5365
+				AND = {
+					is_core_of = CPG
+					NOT = {
+						is_owned_by = BGN
+						state = 16647
+						state = 16745
+					}
+				}
+				AND = {
+					is_core_of = PAS
+					NOT = {
+						is_owned_by = BGN
+						state = 5050
+						state = 1768
+						state = 8419
+						state = 1912
+						state = 1911
+						state = 16
+					}
+				}
+				AND = {
+					is_core_of = PIC
+					NOT = {
+						is_owned_by = BGN
+					}
+				}
+			}
+		}
+		set_demilitarized_zone = yes
+	}
 }

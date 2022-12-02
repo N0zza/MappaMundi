@@ -192,6 +192,7 @@ is_russian_warlord = {
 		tag = ORN
 		tag = MGN
 		tag = UR2
+		tag = CHY
 		tag = VRK
 		tag = SUG
 		tag = YGR
@@ -215,6 +216,12 @@ is_russian_warlord = {
 		tag = ALD
 		tag = OMO
 		tag = KMC
+		AND = {
+			tag = BSH
+			NOT = {
+				has_government = stratocratic
+			}
+		}
 	}
 }
 is_russian_communist_warlord = {
@@ -265,7 +272,7 @@ is_russian_communist_warlord = {
 			tag = SUG
 			OR = {
 				has_government = stratocratic
-				has_government = socialism_ideology
+				has_government = left_anarchism
 			}
 		}
 		AND = {
@@ -314,8 +321,24 @@ is_russian_monarchist_warlord = {
 			tag = KMR
 			OR = {
 				has_government = theocratic
-				has_government = fascism
+				has_government = monarchism
 			}
+		}
+		AND = {
+			tag = VLG
+			has_government = right_anarchism
+		}
+		AND = {
+			tag = BSH
+			has_government = stratocratic
+		}
+		AND = {
+			tag = BYA
+			has_government = fascism
+		}
+		AND = {
+			tag = YGR
+			has_government = stratocratic
 		}
 		AND = {
 			tag = KRV
