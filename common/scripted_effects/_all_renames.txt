@@ -898,6 +898,13 @@ do_all_renames = {
 					tag = MOR
 					tag = WES
 					tag = HJZ
+					AND = {
+						tag = ADU
+						OR = {
+							has_government = authoritarian_monarchism
+							has_government = monarchism
+						}
+					}
 				}
 			}
 		}
