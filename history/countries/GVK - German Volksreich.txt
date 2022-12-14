@@ -1,0 +1,45 @@
+capital = 64
+
+set_popularities = {
+	socialism_ideology = 45
+	liberal_republic = 40
+	stratocratic = 10
+	national_socialism = 5
+}
+
+set_politics = { 
+	ruling_party = socialism_ideology
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Demokratischer Übergangsrat"
+	desc = ""
+	picture = "gfx/leaders/GVK/Potrait_Peoples_Germany_Democratic_Government.dds"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Deutscher Revolutionsrat"
+	desc = ""
+	picture = "gfx/leaders/GVK/Potrait_Peoples_Germany_Revolutionary_Government.dds"
+	expire = "1965.1.1"
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Volksführer Paul Joseph Goebbels"
+	desc = ""
+	picture = "gfx/leaders/GVK/Potrait_Peoples_Germany_Goebbels.dds"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}

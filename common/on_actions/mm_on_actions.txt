@@ -5089,6 +5089,40 @@ on_actions = {
 							}
 						}
 					}
+					if = {
+						limit = {
+							tag = GVK
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = centrist_republic
+								}
+							}
+							set_cosmetic_tag = GVK_CENREP
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = liberal_republic
+									has_government = democratic
+								}
+							}
+							set_cosmetic_tag = GVK_DEMOCRATIC
+						}
+						if = {
+							limit = {
+								NOT = {
+									OR = {
+										has_government = centrist_republic
+										has_government = liberal_republic
+										has_government = democratic
+									}
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+					}
 				}
 			}
 		}

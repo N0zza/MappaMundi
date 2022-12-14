@@ -4753,6 +4753,60 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = mm.abolishreality
+	title = mm.abolishreality.t
+	desc = mm.abolishreality.d
+	is_triggered_only = yes
+
+	option = {#Speeeeed
+		name = mm.abolishreality.a
+		ai_chance = {
+			base = 0
+		}
+		
+		FRA = {
+			set_cosmetic_tag = FRA_RED_FLOOD_INSANE
+		}
+		
+		set_province_name = {
+			id = 11506
+			name = "Le Soleil"
+		}
+	}
+	option = {#Speed
+		name = mm.abolishreality.b
+		ai_chance = {
+			base = 0
+		}
+		
+		FRA = {
+			set_cosmetic_tag = FRA_RED_FLOOD
+		}
+		
+		set_province_name = {
+			id = 11506
+			name = "Le Soleil"
+		}
+	}
+	option = {#No
+		name = mm.abolishreality.c
+		ai_chance = {
+			base = 100
+		}
+		
+		hidden_effect = {
+			FRA = {
+				drop_cosmetic_tag = yes
+			}
+			set_province_name = {
+			id = 11506
+			name = "Paris"
+			}
+		}
+	}
+}
+
 #water moment
 country_event = {
 	id = mm.watermoment
