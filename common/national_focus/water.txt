@@ -10091,6 +10091,15 @@
 				do_vietnamese_renames = yes
 				do_northvietnamese_renames = yes
 			}
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = CMI
+						is_owned_by = LAM
+					}
+				}
+				transfer_state_to = SIA
+			}
 			SIA = {
 				set_politics = {
 					ruling_party = democratic_monarchism
@@ -14845,6 +14854,9 @@
 				}
 			}
 		CYP = {
+			every_owned_state = {
+				do_greek_renames = yes
+			}
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
@@ -15743,8 +15755,6 @@
 				}
 			}
 		SUD = {
-			transfer_state = 10307
-			transfer_state = 10308
 			transfer_state = 1628
 			transfer_state = 1629
 			transfer_state = 10162
