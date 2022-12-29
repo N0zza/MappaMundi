@@ -20,6 +20,7 @@ buildings = {
 	}
 
 	arms_factory = {
+		show_on_map = 6
 		base_cost = 7200
 		base_cost_conversion = 4000
 		military_production = 1
@@ -31,6 +32,7 @@ buildings = {
 	}
 
 	industrial_complex = {
+		show_on_map = 6
 		base_cost = 10800
 		base_cost_conversion = 9000
 		general_production = 1
@@ -42,6 +44,7 @@ buildings = {
 	}
 
 	air_base = {
+		show_on_map = 1
 		base_cost = 1250
 		icon_frame = 5
 		air_base = yes
@@ -53,11 +56,13 @@ buildings = {
 	}
 
 	supply_node = {
+		show_on_map = 1
 		base_cost = 20000
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 15
 		max_level = 1
+		centered = yes
 		supply_node = yes
 		damage_factor = 0.1
 		allied_build = yes
@@ -76,6 +81,8 @@ buildings = {
 	}
 	
 	naval_base = {
+		show_on_map = 1
+		show_on_map_meshes = 3
 		always_shown = yes
 		base_cost = 5000
 		per_level_extra_cost = 1000
@@ -90,6 +97,7 @@ buildings = {
 	}
 
 	bunker = {
+		show_on_map = 1
 		has_destroyed_mesh = yes
 		base_cost = 500
 		per_level_extra_cost = 500
@@ -103,6 +111,7 @@ buildings = {
 	}
 	
 	coastal_bunker = {
+		show_on_map = 1
 		has_destroyed_mesh = yes
 		base_cost = 500
 		per_level_extra_cost = 500
@@ -117,6 +126,8 @@ buildings = {
 	}
 
 	dockyard = {
+		show_on_map = 1
+		show_on_map_meshes = 3
 		base_cost = 6400
 		only_costal = yes
 		naval_production = 1
@@ -130,6 +141,7 @@ buildings = {
 
 	
 	anti_air_building = {
+		show_on_map = 3
 		base_cost = 2500
 		icon_frame = 9
 		anti_air = yes
@@ -142,6 +154,7 @@ buildings = {
 	}
 
 	synthetic_refinery = {
+		show_on_map = 1
 		base_cost = 14500
 		icon_frame = 10
 		#local_resources_oil = 1 # May use local_resources_ + any resource name
@@ -157,6 +170,7 @@ buildings = {
 	}
 
 	fuel_silo = {
+		show_on_map = 1
 		base_cost = 5000
 		icon_frame = 14
 		#max_level = 1
@@ -170,6 +184,7 @@ buildings = {
 	}
 
 	radar_station = {
+		show_on_map = 1
 		base_cost = 3375
 		icon_frame = 11
 		radar = yes
@@ -177,11 +192,13 @@ buildings = {
 		max_level = 6 # This is the max unlock level
 		damage_factor = 0.5
 		value = 4
+		centered = yes
 		allied_build = yes
 		infrastructure_construction_effect = yes
 	}
 
 	rocket_site = {
+		show_on_map = 1
 		base_cost = 6400
 		icon_frame = 12
 		rocket_production = 5
@@ -193,6 +210,7 @@ buildings = {
 	}
 
 	nuclear_reactor = {
+		show_on_map = 1
 		base_cost = 30000
 		icon_frame = 13
 		nuclear_reactor = yes
