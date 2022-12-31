@@ -2,27 +2,20 @@
 
 set_cosmetic_tag = RAJ_RED
 
+set_popularities = {
+	authoritarian_monarchism = 90
+	neutrality = 10
+}
 
-	set_popularities = {
-		authoritarian_monarchism
-			 = 90
-		
-		communism
-			 = 0
-		neutrality
-			 = 10
-		
-	}
-
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+set_politics = { 
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Queen Myat Phaya Lat"
+	name = "Bhuraiṅm Mratʻ Bhuyā'' Latʻ"
 	desc = ""
 	picture = "gfx/leaders/BRM/BRM_Myat_mon.tga"
 	expire = "1965.1.1"
@@ -44,7 +37,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "President Galon U Saw"
+	name = "Sammata Gaḍunʻ Ñī'' Co"
 	desc = ""
 	picture = "gfx/leaders/BRM/BRM_Saw_authdem.tga"
 	expire = "1965.1.1"
@@ -55,7 +48,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Chairman Bogyoke Aung San"
+	name = "'Atvetve 'Atvaṅʻ''re''mhū'' 'Aoṅʻ'' Chanʻ''"
 	desc = ""
 	picture = "gfx/leaders/BRM/BRM_Bogyoke_commie.tga"
 	expire = "1965.1.1"
@@ -65,7 +58,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "President Thakin Kodaw Hmaing"
+	name = "'Atvetve 'Atvaṅʻ''re''mhū'' 'Aoṅʻ'' Chanʻ''"
+	desc = ""
+	picture = "gfx/leaders/BRM/BRM_Bogyoke_commie.tga"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Sammata Sakhaṅai Kuitaiyaitoʻ Mhaiṅai"
 	desc = ""
 	picture = "gfx/leaders/BRM/BRM_Hmaing_condem.tga"
 	expire = "1965.1.1"
@@ -75,7 +78,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Chiji Hajime Sugiyama"
+	name = "Chiji Sugiyama Hajime"
 	desc = ""
 	picture = "gfx/leaders/BRM/BRM_Sugiyama_fash.tga"
 	expire = "1965.1.1"
@@ -85,7 +88,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Head of State Ba Maw"
+	name = "Nuiṅaiṅito' 'Adhipati Bha Mo'"
 	desc = ""
 	picture = "gfx/leaders/BRM/BRM_Maw_repfash.tga"
 	expire = "1965.1.1"
@@ -95,9 +98,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "President Chit Hlaing"
+	name = "Sammata Khyicai Lhuiṅai"
 	desc = ""
 	picture = "gfx/leaders/BRM/BRM_Hlaing_libdem.tga"
+	expire = "1965.1.1"
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Sammata Cavʻ Rvhe Suikʻ"
+	desc = ""
+	picture = "gfx/leaders/BRM/BRM_Thaik_cenrep.tga"
 	expire = "1965.1.1"
 	ideology = socdem
 	traits = {
