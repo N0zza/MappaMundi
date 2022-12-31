@@ -910,7 +910,33 @@ do_tno_normal_warlord_russia = {
 	}
 
 	ATB = {
+		limit = {
+			is_core_of = ATU
+			
+			state = 1371
+			state = 3373
+			state = 9610
+			state = 10103
+			state = 12226
+			state = 12385
+			state = 12387
+			state = 12421
+			state = 12470
+			state = 12593
+			state = 12594
+			state = 14062
+			state = 14063
+			state = 14360
+			state = 18322
+			state = 18468
+			state = 18469
+		}
+		ATB = {
+			transfer_state = PREV
+		}
+		
 		set_cosmetic_tag = ATB_TNO
+		
 		set_politics = {
 			ruling_party = republican_fascism
 		}
@@ -1219,6 +1245,7 @@ do_tno_normal_warlord_russia = {
 	}
 
 	TMS = {
+		
 		set_cosmetic_tag = TMS_TNO
 		set_politics = {
 			ruling_party = neutrality

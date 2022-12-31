@@ -11530,9 +11530,11 @@
 			transfer_state = 15408
 			transfer_state = 15407
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = neutrality
 				}
 			drop_cosmetic_tag = yes
+			
+			set_cosmetic_tag = RUS_2023_neutrality
 			}
 		every_state = {
 			limit = {
@@ -11941,17 +11943,17 @@
         		desc = ""
         		picture = "gfx/leaders/Russia/RUS_Putin.tga"
         		expire = "1965.1.1"
-        		ideology = cenrep
+        		ideology = putinism
 			}
 		}
 		RUS = {
-			kill_ideology_leader = neutrality
+			kill_ideology_leader = centrist_republic
 			create_country_leader = {
         		name = "Prezidént Dmítrij Anatól'evič Medvédev"
         		desc = ""
         		picture = "gfx/leaders/Russia/RUS_Medvedev.tga"
         		expire = "1965.1.1"
-        		ideology = despotism
+        		ideology = cenrep
 			}
 		}
 		RUS = {
@@ -12031,7 +12033,7 @@
         		desc = ""
         		picture = "gfx/leaders/Russia/RUS_Averin.tga"
         		expire = "1965.1.1"
-        		ideology = natsoc
+        		ideology = neo_nazism
 			}
 		}
 		RUS = {
@@ -12379,7 +12381,7 @@
 			transfer_state = 4767
 			transfer_state = 8036
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = neutrality
 				}
 			drop_cosmetic_tag = yes
 			set_party_name = {
@@ -17561,7 +17563,7 @@
         		desc = ""
         		picture = "gfx/leaders/USA/USA_Biden.tga"
         		expire = "1965.1.1"
-        		ideology = socdem
+        		ideology = american_liberalism
 				}
 			}
 		USA = {
@@ -17571,7 +17573,7 @@
         		desc = ""
         		picture = "gfx/leaders/USA/USA_Trump.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = american_conservatism
 				}
 			}
 		USA = {
@@ -17653,7 +17655,7 @@
 				desc = ""
 				picture = "gfx/leaders/USA/USA_Colucci.tga"
 				expire = "1965.1.1"
-				ideology = natsoc
+				ideology = neo_nazism
 				traits = {
 				}
 			}
