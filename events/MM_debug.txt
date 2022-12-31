@@ -1,4 +1,4 @@
-add_namespace = mmdebug
+add_namespace = mmleaderdebug
 
 country_event = { Country Leader Changing Template Event
 	id = mmdebug.1
@@ -11,17 +11,15 @@ country_event = { Country Leader Changing Template Event
 		ai_chance = {
 			base = 100
 		}
-		ALG = {
-			kill_current_leader = yes
+		VAN = {
+			kill_country_leader = yes
 			create_country_leader = {
-				name = "Gouverneur Général Maxime Weygand"
-				desc = ""
-				picture = "gfx/leaders/ALG/ALG_Weygand_strat.tga"
-				expire = "1965.1.1"
-				ideology = cenrep
-				traits = {
+        		name = "President Nikenike Vurobaravu"
+        		desc = ""
+        		picture = "gfx/leaders/VAN/VAN_Vurobaravu.tga"
+        		expire = "1965.1.1"
+        		ideology = socdem
 				}
 			}
-		}
 	}
 }
