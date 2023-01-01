@@ -11539,8 +11539,10 @@
 		every_state = {
 			limit = {
 				is_owned_by = RUS
-				is_owned_by = DPR
-				is_owned_by = LPR
+				is_core_of = DPR
+				is_core_of = LPR
+				is_claimed_by = DPR
+				is_claimed_by = LPR
 			}
 			do_russian_renames = yes
 		}
@@ -11766,40 +11768,11 @@
 			}
 		every_state = {
 			limit = {
-				is_core_of = DPR
-				}
-			RUS = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
-				is_core_of = LPR
-				}
-			RUS = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-			limit = {
 				is_core_of = SK2
 				}
 			GSY = {
 				transfer_state = PREV
 				}
-			}
-		DPR = {
-			kill_country_leader = yes
-			create_country_leader = {
-        		name = "Glavá Den'ıs Vladímirovič Pušílin"
-        		desc = ""
-        		picture = "gfx/leaders/DPR/DPR_Pushlin.tga"
-        		expire = "1965.1.1"
-        		ideology = despotism
-				}
-			}
-		DPR = {
-			set_cosmetic_tag = RUS_GREEN
 			}
 		RJV = {
 			set_cosmetic_tag = SYR_COLONY
@@ -11812,35 +11785,39 @@
 			}
 		every_state = {
 			limit = {
-				is_claimed_by = DPR
+				is_core_of = DPR
 			}
-			DPR = {
+			RUS = {
 				transfer_state = PREV
 			}
 		}
-		LPR = {
-			set_cosmetic_tag = RUS_GREEN
+		every_state = {
+			limit = {
+				is_core_of = LPR
 			}
+			RUS = {
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_claimed_by = DPR
+			}
+			RUS = {
+				transfer_state = PREV
+			}
+		}
 		every_state = {
 			limit = {
 				is_claimed_by = LPR
 			}
-			LPR = {
+			RUS = {
 				transfer_state = PREV
 			}
 		}
-		LPR = {
-			kill_country_leader = yes
-			create_country_leader = {
-        		name = "Glavá Leoníd Ivánovič Pásečnik"
-        		desc = ""
-        		picture = "gfx/leaders/LPR/LPR_Pasechnik.tga"
-        		expire = "1965.1.1"
-        		ideology = despotism
-				}
-			}
 			
 		RUS = {
+			
 			set_cosmetic_tag = RUS_2023
 		}
 			
@@ -13807,6 +13784,15 @@
 			transfer_state = 2634
 			transfer_state = 2633
 			transfer_state = 2632
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = CMI
+						is_owned_by = LAM
+					}
+				}
+				transfer_state_to = SIA
 			}
 		SIA = {
 			set_politics = {
