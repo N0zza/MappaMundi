@@ -9613,7 +9613,7 @@
 				}
 			every_state = {
 				limit = {
-					is_owned_by = CMI
+					is_core_of = CMI
 					}
 				SIA = {
 					transfer_state = PREV
@@ -9621,7 +9621,7 @@
 				}
 			every_state = {
 				limit = {
-					is_owned_by = LAM
+					is_core_of = LAM
 					}
 				SIA = {
 					transfer_state = PREV
@@ -10090,6 +10090,15 @@
 				}
 				do_vietnamese_renames = yes
 				do_northvietnamese_renames = yes
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = CMI
+						is_owned_by = LAM
+					}
+				}
+				transfer_state_to = SIA
 			}
 			SIA = {
 				set_politics = {
@@ -11475,26 +11484,6 @@
 		195 = { set_state_name = "Sankt-Peterbúrg" }
 		1082 = { set_state_name = "Júžnyj Sankt-Peterbúrg" }
 		217 = { set_state_name = Volgográd }
-		every_state = {
-			limit = {
-				OR = {
-					is_core_of = DPR
-					is_claimed_by = DPR
-				}
-				}
-			RUS = {
-				transfer_state = PREV
-				}
-			}
-		every_state = {
-				OR = {
-					is_core_of = LPR
-					is_claimed_by = LPR
-				}
-			RUS = {
-				transfer_state = PREV
-				}
-			}
 		RUS = {
 			transfer_state = 2414
 			transfer_state = 1081
@@ -11544,11 +11533,24 @@
 				ruling_party = neutrality
 				}
 			drop_cosmetic_tag = yes
-			set_cosmetic_tag = RUS_2023
-			every_owned_state = {
-				do_russian_renames = yes
+			
+			set_cosmetic_tag = RUS_2023_neutrality
 			}
+		every_state = {
+			limit = {
+				is_owned_by = RUS
+				is_owned_by = DPR
+				is_owned_by = LPR
 			}
+			do_russian_renames = yes
+		}
+		every_state = {
+			limit = {
+				is_owned_by = RUS
+				is_core_of = FIN
+			}
+			do_russian_renames = yes
+		}
 		every_state = {
 			limit = {
 				OR = {
@@ -11764,11 +11766,40 @@
 			}
 		every_state = {
 			limit = {
+				is_core_of = DPR
+				}
+			RUS = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
+				is_core_of = LPR
+				}
+			RUS = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
 				is_core_of = SK2
 				}
 			GSY = {
 				transfer_state = PREV
 				}
+			}
+		DPR = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Glavá Den'ıs Vladímirovič Pušílin"
+        		desc = ""
+        		picture = "gfx/leaders/DPR/DPR_Pushlin.tga"
+        		expire = "1965.1.1"
+        		ideology = despotism
+				}
+			}
+		DPR = {
+			set_cosmetic_tag = RUS_GREEN
 			}
 		RJV = {
 			set_cosmetic_tag = SYR_COLONY
@@ -11778,6 +11809,35 @@
 			}
 		GAU = {
 			set_cosmetic_tag = MOL_COLONY
+			}
+		every_state = {
+			limit = {
+				is_claimed_by = DPR
+			}
+			DPR = {
+				transfer_state = PREV
+			}
+		}
+		LPR = {
+			set_cosmetic_tag = RUS_GREEN
+			}
+		every_state = {
+			limit = {
+				is_claimed_by = LPR
+			}
+			LPR = {
+				transfer_state = PREV
+			}
+		}
+		LPR = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Glavá Leoníd Ivánovič Pásečnik"
+        		desc = ""
+        		picture = "gfx/leaders/LPR/LPR_Pasechnik.tga"
+        		expire = "1965.1.1"
+        		ideology = despotism
+				}
 			}
 			
 		RUS = {
@@ -13748,15 +13808,6 @@
 			transfer_state = 2633
 			transfer_state = 2632
 			}
-			every_state = {
-				limit = {
-					OR = {
-						is_owned_by = CMI
-						is_owned_by = LAM
-					}
-				}
-				transfer_state_to = SIA
-			}
 		SIA = {
 			set_politics = {
 				ruling_party = democratic_monarchism
@@ -13889,7 +13940,6 @@
 			transfer_state = 18298
 			transfer_state = 18299
 			transfer_state = 18333
-			transfer_state = 18381
 			drop_cosmetic_tag = yes
 			set_politics = {
 	       		ruling_party = democratic
