@@ -11768,7 +11768,7 @@
 			limit = {
 				is_core_of = DPR
 				}
-			DPR = {
+			RUS = {
 				transfer_state = PREV
 				}
 			}
@@ -11776,7 +11776,7 @@
 			limit = {
 				is_core_of = LPR
 				}
-			LPR = {
+			RUS = {
 				transfer_state = PREV
 				}
 			}
@@ -15425,10 +15425,18 @@
 			limit = {
 				is_core_of = RAF
 				}
-			RAF = {
+			RUS = {
 				transfer_state = PREV
 				}
 			do_russian_renames = yes
+			}
+		every_state = {
+			limit = {
+				is_core_of = AQ4
+				}
+			AQ4 = {
+				transfer_state = PREV
+				}
 			}
 		every_state = {
 			limit = {
@@ -15528,15 +15536,18 @@
            		ideology = christian
 				}
 			}
-		RAF = {
+		AQ4 = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Generál-Polkóvnik Gennádij Valér'evič Žídko, Komándujuščij Rossíjskimi Vojskámi na Ukraíne"
+           		name = "Amir Khālid Saʿīd Bāṭarfī"
            		desc = ""
-           		picture = "gfx/leaders/RAF/RAF_Zhidko.tga"
+           		picture = "gfx/leaders/AQ4/AQ4_Batarfi.tga"
            		expire = "1965.1.1"
-           		ideology = militarism
+           		ideology = christian
 				}
+			}
+		SAU = {
+			transfer_state = 5650
 			}
 		GAU = {
 			kill_country_leader = yes
