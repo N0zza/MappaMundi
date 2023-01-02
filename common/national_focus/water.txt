@@ -15426,6 +15426,14 @@
 			}
 		every_state = {
 			limit = {
+				is_core_of = OM2
+				}
+			OM2 = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
 				is_core_of = GAU
 				}
 			GAU = {
@@ -15532,8 +15540,38 @@
            		ideology = christian
 				}
 			}
+		OM2 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Ajajaa Olaanaa Kumsa Diriba"
+           		desc = ""
+           		picture = "gfx/leaders/OM2/OM2_Diriba.tga"
+           		expire = "1965.1.1"
+           		ideology = christian
+				}
+			}
 		SAU = {
 			transfer_state = 5650
+			}
+		AQ3 = {
+			transfer_state = 8644
+			}
+		ETH = {
+			transfer_state = 8641
+			transfer_state = 9044
+			transfer_state = 9045
+			transfer_state = 9046
+			transfer_state = 9048
+			transfer_state = 9049
+			transfer_state = 9050
+			transfer_state = 9051
+			transfer_state = 9052
+			transfer_state = 13242
+			transfer_state = 13245
+			transfer_state = 15451
+			transfer_state = 15452
+			transfer_state = 17143
+			transfer_state = 17144
 			}
 		GAU = {
 			kill_country_leader = yes
