@@ -190,6 +190,10 @@ defined_text = {
 		localization_key = putinism
 	}
 	text = {
+		trigger = { has_country_leader_ideology = gaullism }
+		localization_key = gaullism
+	}
+	text = {
 		localization_key = neutrality
 	}
 }
@@ -204,12 +208,28 @@ defined_text = {
 defined_text = {
 	name = GetSubIdeologyLocStratocraticRepublicanism
 	text = {
+		trigger = { has_country_leader_ideology = military_junta }
+		localization_key = military_junta
+	}
+	text = {
+		trigger = { has_country_leader_ideology = military_formation }
+		localization_key = military_formation
+	}
+	text = {
+		trigger = { has_country_leader_ideology = revolutionary_state }
+		localization_key = revolutionary_state
+	}
+	text = {
 		localization_key = stratocratic
 	}
 }
 
 defined_text = {
 	name = GetSubIdeologyLocStratocraticMonarchism
+	text = {
+		trigger = { has_country_leader_ideology = military_formation_monarchist }
+		localization_key = military_formation_monarchist
+	}
 	text = {
 		localization_key = stratocratic_monarchism
 	}
