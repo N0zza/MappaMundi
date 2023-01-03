@@ -3417,6 +3417,10 @@ on_actions = {
 					if = {
 						limit = {
 							has_government = anarchism_ideology
+							
+							NOT = {
+								tag = WTR
+							}
 						}
 						set_cosmetic_tag = TRIBAL_BROWN
 					}
@@ -5120,11 +5124,20 @@ on_actions = {
 						}
 						if = {
 							limit = {
+								OR = {
+									has_government = theocratic
+								}
+							}
+							set_cosmetic_tag = GVK_THEOC
+						}
+						if = {
+							limit = {
 								NOT = {
 									OR = {
 										has_government = centrist_republic
 										has_government = liberal_republic
 										has_government = democratic
+										has_government = theocratic
 									}
 								}
 							}
