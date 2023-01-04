@@ -1,31 +1,25 @@
 ﻿capital = 14802
 set_cosmetic_tag = UK_RED
 
-	set_popularities = {
-		democratic 
-			 = 10
-		monarchism
-			 = 5
-		communism
-			 = 0
-			
-		authoritarian_monarchism 
-			 = 85
-		}
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+ set_popularities = {
+	democratic  = 10
+	monarchism = 5
+	authoritarian_monarchism  = 85
+ }
+ 
+ set_politics = { 
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
-}
+ } 
 
 create_country_leader = {
 	name = "Resident Commissioner Sir Charles Ferdinand Rey"
 	picture = "gfx/leaders/Assorted/Portrait_Sir_Charles_Fernand_Rey.dds"
 	expire = "1965.1.1"
-	ideology = authmon
+	ideology = british_colonialism
 	traits = {
-		#
 	}
 }
 

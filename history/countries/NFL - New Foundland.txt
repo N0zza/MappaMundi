@@ -1,29 +1,24 @@
 ﻿capital = 2736
 set_cosmetic_tag = UK_RED
-	set_popularities = {
-		authoritarian_monarchism 
-			 = 80
-		democratic_monarchism
-			 = 10
-		conservative_monarchism
-			 = 10
-			
-		}
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+ set_popularities = {
+	authoritarian_monarchism = 80
+	democratic_monarchism = 10
+	conservative_monarchism = 10	
+ }
+ set_politics = { 
+	ruling_party = authoritarian_monarchism
 	last_election = "1935.10.14"
 	election_frequency = 60
 	elections_allowed = yes
-}
+ }
 
 create_country_leader = {
 	name = "Commission Governor Sir Humphrey Thomas Walwyn"
 	desc = ""
 	picture = "gfx/leaders/Assorted/Portrait_Humphrey_Walwyn.dds"
 	expire = "1965.1.1"
-	ideology = authmon
+	ideology = british_colonialism
 	traits = {
-		#
 	}
 }
 

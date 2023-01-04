@@ -1,18 +1,13 @@
 ﻿capital = 2259
 set_cosmetic_tag = UK_RED
 
-	set_popularities = {
-		neutrality
-			 = 10
-		liberal_republic
-			 = 10
-		communism
-			 = 0
-			
-		authoritarian_monarchism 
-			 = 80
-		}
-	set_politics = { 
+ set_popularities = {
+	neutrality = 10
+	liberal_republic = 10
+	authoritarian_monarchism  = 80
+ }
+ 
+ set_politics = { 
  ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -23,9 +18,8 @@ create_country_leader = {
 	name = "Governor Sir Harold Baxter Kittermaster"
 	picture = "gfx/leaders/Assorted/Portrait_Harold_Baxter_Kittermaster.dds"
 	expire = "1965.1.1"
-	ideology = authmon
+	ideology = british_colonialism
 	traits = {
-		#
 	}
 }
 
