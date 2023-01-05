@@ -18656,19 +18656,16 @@
 			}
 			
 			hidden_effect = {
-				if = {
-					limit = { SAR = { exists = no } }
-					every_state {
-						limit = {
-							NOT = {
-								is_owned_by = WTR
-								is_owned_by = ICE
-							}
+				every_state {
+					limit = {
+						NOT = {
+							is_owned_by = WTR
+							is_owned_by = ICE
 						}
-						set_demilitarized_zone = no
-						UCL = {
-							transfer_state = PREV
-						}
+					}
+					set_demilitarized_zone = no
+					UCL = {
+						transfer_state = PREV
 					}
 				}
 			}
