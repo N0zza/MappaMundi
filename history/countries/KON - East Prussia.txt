@@ -1,7 +1,8 @@
 ﻿capital = 5
 
 set_popularities = {
-	fascism = 100
+	fascism = 70
+	neutrality = 30
 }
 	
 set_politics = { 
@@ -9,6 +10,16 @@ set_politics = {
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Reichskanzler Carl Friedrich Goerdeler"
+	desc = ""
+	picture = "gfx/leaders/KON/KON_Goerdeler.tga"
+	expire = "1965.1.1"
+	ideology = provisional_government
+	traits = {
+	}
 }
 
 create_country_leader = {
