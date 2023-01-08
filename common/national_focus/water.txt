@@ -10695,9 +10695,7 @@
 					is_owned_by = POL
 					}
 				}
-			DDR = {
-				transfer_state = PREV
-					}
+			transfer_state_to = DDR
 				}
 		every_state = {
 			limit = {
@@ -10706,9 +10704,7 @@
 					is_core_of = ROM
 					}
 				}
-			BUL = {
-				transfer_state = PREV
-					}
+			transfer_state_to = BUL
 				}
 		every_state = {
 			limit = {
@@ -10720,9 +10716,7 @@
 					is_owned_by = UKR
 					}
 				}
-			MOL = {
-				transfer_state = PREV
-					}
+			transfer_state_to = MOL
 				}
 		ROM = {
 			set_politics = {
@@ -10760,9 +10754,7 @@
 			limit = {
 				is_core_of = DDO
 				}
-			GRE = {
-				transfer_state = PREV
-					}
+			transfer_state_to = GRE
 				}
 		SPR = {
 			set_politics = {
@@ -11581,9 +11573,7 @@
 				is_owned_by = RUS 
 					}
 				}
-			POL = {
-				transfer_state = PREV
-					}
+			transfer_state_to = POL
 			}
 			every_state = {
 			limit = {
@@ -11595,17 +11585,13 @@
 				is_core_of = LIT
 					}
 				}
-			BLR = {
-				transfer_state = PREV
-					}
+			transfer_state_to = BLR
 				}
 		every_state = {
 			limit = {
 				is_core_of = CRP
 				}
-			UKR = {
-				transfer_state = PREV
-					}
+			transfer_state_to = UKR
 				}
 		every_state = {
 			limit = {
@@ -13145,9 +13131,7 @@
 					is_core_of = NIR
 					}
 				}
-			IRE = {
-				transfer_state = PREV
-					}
+			transfer_state_to = IRE
 				}
 		every_state = {
 			limit = {
@@ -13821,9 +13805,7 @@
 					is_core_of = RUS
 					}
 				}
-			KAZ = {
-				transfer_state = PREV
-					}
+			transfer_state_to = KAZ
 				}
 		every_state = {
 			limit = {
@@ -13832,9 +13814,7 @@
 					is_core_of = TAJ
 					}
 				}
-			UZB = {
-				transfer_state = PREV
-					}
+			transfer_state_to = UZB
 				}
 		every_state = {
 			limit = {
@@ -13844,9 +13824,7 @@
 					is_core_of = KYR
 					}
 				}
-			UZB = {
-				transfer_state = PREV
-					}
+			transfer_state_to = UZB
 				}
 		every_state = {
 			limit = {
@@ -13855,9 +13833,7 @@
 					is_core_of = PRC
 					}
 				}
-			TAJ = {
-				transfer_state = PREV
-					}
+			transfer_state_to = TAJ
 				}
 		every_state = {
 			limit = {
@@ -13867,17 +13843,13 @@
 					is_claimed_by = KPK
 					}
 				}
-			TMS = {
-				transfer_state = PREV
-					}
+			transfer_state_to = TMS
 				}
 		every_state = {
 			limit = {
 				is_core_of = KPK
 				}
-			KPK = {
-				transfer_state = PREV
-					}
+			transfer_state_to = KPK
 				}
 		every_state = {
 			limit = {
@@ -13887,9 +13859,7 @@
 					is_core_of = TAJ
 					}
 				}
-			KYR = {
-				transfer_state = PREV
-					}
+			transfer_state_to = KYR
 				}
 		KPK = {
 			transfer_state = 8996
@@ -14092,17 +14062,13 @@
 			limit = {
 				is_core_of = NEP
 				}
-			NEP = {
-				transfer_state = PREV
-					}
+			transfer_state_to = NEP
 				}
 		every_state = {
 			limit = {
 				is_core_of = BRM
 				}
-			BRM = {
-				transfer_state = PREV
-					}
+			transfer_state_to = BRM
 				}
 		NEP = {
 			set_politics = {
@@ -15612,6 +15578,82 @@
 			}
 		every_state = {
 			limit = {
+				is_core_of = CA0
+			}
+			transfer_state_to = CA0
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = CA1
+			}
+			transfer_state_to = CA1
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = CA2
+			}
+			transfer_state_to = CA2
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = CA3
+			}
+			transfer_state_to = CA3
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = CA4
+			}
+			transfer_state_to = CA4
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = CA5
+			}
+			transfer_state_to = CA5
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = CA6
+			}
+			transfer_state_to = CA6
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = CA7
+			}
+			transfer_state_to = CA7
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = CA8
+			}
+			transfer_state_to = CA8
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = CA9
+			}
+			transfer_state_to = CA9
+		}
+
+		every_state = {
+			limit = {
+				is_core_of = LRA
+			}
+			transfer_state_to = LRA
+		}
+		every_state = {
+			limit = {
 				is_core_of = CAR
 				}
 			CAR = {
@@ -16866,57 +16908,43 @@
 			limit = {
 				is_core_of = NMI
 				}
-			NMI = {
-				transfer_state = PREV
-					}
+			transfer_state_to = NMI
 				}
 		every_state = {
 			limit = {
 				is_core_of = MAR
 				}
-			MAR = {
-				transfer_state = PREV
-					}
+			transfer_state_to = MAR
 				}
 		every_state = {
 			limit = {
 				is_core_of = TUV
 				}
-			TUV = {
-				transfer_state = PREV
-					}
+			transfer_state_to = TUV
 				}
 		every_state = {
 			limit = {
 				is_core_of = MAR
 				}
-			MAR = {
-				transfer_state = PREV
-					}
+			transfer_state_to = MAR
 				}
 		every_state = {
 			limit = {
 				is_core_of = FIJ
 				}
-			FIJ = {
-				transfer_state = PREV
-					}
+			transfer_state_to = FIJ
 				}
 		every_state = {
 			limit = {
 				is_core_of = KIR
 				}
-			KIR = {
-				transfer_state = PREV
-					}
+			transfer_state_to = KIR
 				}
 		every_state = {
 			limit = {
 				is_core_of = PLU
 				}
-			PLU = {
-				transfer_state = PREV
-					}
+			transfer_state_to = PLU
 				}
 		NIU = {
 			set_cosmetic_tag = NZL_PURPLE
@@ -17431,33 +17459,25 @@
 					is_claimed_by = ANB
 					}
 				}
-			ANB = {
-				transfer_state = PREV
-					}
+			transfer_state_to = ANB
 				}
 		every_state = {
 			limit = {
 				is_core_of = SVC
 				}
-			SVC = {
-				transfer_state = PREV
-					}
+			transfer_state_to = SVC
 				}
 		every_state = {
 			limit = {
 				is_core_of = GDA
 				}
-			GDA = {
-				transfer_state = PREV
-					}
+			transfer_state_to = GDA
 				}
 		every_state = {
 			limit = {
 				is_core_of = EVI
 				}
-			EVI = {
-				transfer_state = PREV
-					}
+			transfer_state_to = EVI
 				}
 		every_state = {
 			limit = {
@@ -17466,17 +17486,13 @@
 					is_core_of = PAN
 					}
 				}
-			COS = {
-				transfer_state = PREV
-					}
+			transfer_state_to = COS
 				}
 		every_state = {
 			limit = {
 				is_core_of = PCZ
 				}
-			PAN = {
-				transfer_state = PREV
-					}
+			transfer_state_to = PAN
 				}
 		every_state = {
 			limit = {
@@ -18564,9 +18580,7 @@
 			limit = {
 				is_core_of = ATC
 				}
-			ATC = {
-				transfer_state = PREV
-					}
+			transfer_state_to = ATC
 				}
 		every_state = {
 			limit = {
