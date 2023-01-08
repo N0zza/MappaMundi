@@ -15588,6 +15588,14 @@
 			}
 		every_state = {
 			limit = {
+				is_core_of = CAR
+				}
+			CAR = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
 				is_core_of = CA0
 			}
 			transfer_state_to = CA0
@@ -15662,14 +15670,6 @@
 			}
 			transfer_state_to = LRA
 		}
-		every_state = {
-			limit = {
-				is_core_of = CAR
-				}
-			CAR = {
-				transfer_state = PREV
-				}
-			}
 		every_state = {
 			limit = {
 				is_core_of = RCG
