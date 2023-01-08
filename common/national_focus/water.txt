@@ -15436,6 +15436,14 @@
 			}
 		every_state = {
 			limit = {
+				is_core_of = LRA
+				}
+			LRA = {
+				transfer_state = PREV
+				}
+			}
+		every_state = {
+			limit = {
 				is_core_of = GAU
 				}
 			GAU = {
@@ -15548,6 +15556,16 @@
            		name = "Ajajaa Olaanaa Kumsa Diriba"
            		desc = ""
            		picture = "gfx/leaders/OM2/OM2_Diriba.tga"
+           		expire = "1965.1.1"
+           		ideology = military_organisation
+				}
+			}
+		LRA = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "General Joseph Rao Kony"
+           		desc = ""
+           		picture = "gfx/leaders/LRA/LRA_Kony.tga"
            		expire = "1965.1.1"
            		ideology = military_organisation
 				}
