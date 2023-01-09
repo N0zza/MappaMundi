@@ -34867,7 +34867,7 @@ do_dari_renames = {
 	}
 }
 
-do_persian_renames = {
+do_persian_renames = { #UN (2012), with â instead of ā.
 	
 	if = {
 		limit = {
@@ -87521,6 +87521,56 @@ do_turkmen_renames = {
 
 	if = {
 		limit = {
+			state = 11892
+		}		
+		set_province_name = {
+			id = 7639
+			name = "Qarshi"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 11169
+		}		
+		set_province_name = {
+			id = 20678
+			name = "Fargʻona"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 4007
+		}		
+		set_province_name = {
+			id = 13758
+			name = "Namangan"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 11867
+		}		
+		set_province_name = {
+			id = 4599
+			name = "Gyzylarbat"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 12805
+		}		
+		set_province_name = {
+			id = 1026
+			name = "Balkanabat"
+		}
+	}
+
+	if = {
+		limit = {
 			state = 587
 		}		
 		set_province_name = {
@@ -87650,11 +87700,91 @@ do_turkmen_renames = {
 	}
 }
 
-do_kyrgyz_renames = {
+do_kyrgyz_renames = { #A mix of BGN/PCGN and Yañalif
 
 	if = {
 		limit = {
-			state = 1380 		
+			state = 11169
+		}		
+		set_province_name = {
+			id = 20678
+			name = "Bargana"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 4007
+		}		
+		set_province_name = {
+			id = 13758
+			name = "Namangon"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 18404
+		}		
+		set_province_name = {
+			id = 20323
+			name = "Bohtar"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 18406
+		}		
+		set_province_name = {
+			id = 20254
+			name = "Kulob"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 10114
+		}		
+		set_province_name = {
+			id = 19439
+			name = "Kojent"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3580
+		}		
+		set_province_name = {
+			id = 10417
+			name = "Horog"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 12441
+		}		
+		set_province_name = {
+			id = 4768
+			name = "Karakol"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 12249
+		}		
+		set_province_name = {
+			id = 20965
+			name = "Jalal-Abat"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1380
 		}		
 		set_province_name = {
 			id = 1384
@@ -87713,15 +87843,95 @@ do_kyrgyz_renames = {
 	}
 }
 
-do_tajik_renames = {
+do_tajik_renames = { #ALA-LC, but Қ becomes Q and Ҷ becomes J
 
 	if = {
 		limit = {
-			state = 1380 		
+			state = 11169
+		}		
+		set_province_name = {
+			id = 20678
+			name = "Farḡona"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 4007
+		}		
+		set_province_name = {
+			id = 13758
+			name = "Namangon"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 12441
+		}		
+		set_province_name = {
+			id = 4768
+			name = "Qarakūl"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 12249
+		}		
+		set_province_name = {
+			id = 20965
+			name = "Jalolobod"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 18404
+		}		
+		set_province_name = {
+			id = 20323
+			name = "Boxtar"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 18406
+		}		
+		set_province_name = {
+			id = 20254
+			name = "Kūlob"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 10114
+		}		
+		set_province_name = {
+			id = 19439
+			name = "Xujand"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3580
+		}		
+		set_province_name = {
+			id = 10417
+			name = "Xoruḡ"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1380
 		}		
 		set_province_name = {
 			id = 1384
-			name = "Dushanbe"
+			name = "Dušanbe"
 		}
 	}
 
@@ -87741,7 +87951,7 @@ do_tajik_renames = {
 		}		
 		set_province_name = {
 			id = 10488
-			name = "Xūqand"
+			name = "Qūqand"
 		}
 	}
 
@@ -87751,7 +87961,7 @@ do_tajik_renames = {
 		}		
 		set_province_name = {
 			id = 1459
-			name = "Toshkand"
+			name = "Toškand"
 		}
 	}
 
@@ -87761,7 +87971,7 @@ do_tajik_renames = {
 		}		
 		set_province_name = {
 			id = 12583
-			name = "Bishkek"
+			name = "Biškek"
 		}
 	}
 
@@ -87771,12 +87981,122 @@ do_tajik_renames = {
 		}		
 		set_province_name = {
 			id = 20967
-			name = "Ūsh"
+			name = "Ūš"
 		}
 	}
 }
 
 do_karakalpak_renames = {
+
+	if = {
+		limit = {
+			state = 11867
+		}		
+		set_province_name = {
+			id = 4599
+			name = "Gyzylarbat"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 12805
+		}		
+		set_province_name = {
+			id = 1026
+			name = "Balkanabad"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 584
+		}		
+		set_province_name = {
+			id = 7924
+			name = "Tu'rkmenabad"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 12241
+		}		
+		set_province_name = {
+			id = 4482
+			name = "Mary"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1365
+		}		
+		set_province_name = {
+			id = 12333
+			name = "Ashxabat"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 11866
+		}		
+		set_province_name = {
+			id = 12324
+			name = "Dashoguz"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 11892
+		}		
+		set_province_name = {
+			id = 7639
+			name = "Qarshi"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 12403
+		}		
+		set_province_name = {
+			id = 12239
+			name = "Termiz"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 11891
+		}		
+		set_province_name = {
+			id = 10671
+			name = "Samarqand"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1378
+		}		
+		set_province_name = {
+			id = 1573
+			name = "Buxara"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 405	
+		}		
+		set_province_name = {
+			id = 1459
+			name = "Tashkent"
+		}
+	}
 	
 	if = {
 		limit = {
@@ -87810,6 +88130,116 @@ do_karakalpak_renames = {
 }
 
 do_uzbek_renames = {
+
+	if = {
+		limit = {
+			state = 11867
+		}		
+		set_province_name = {
+			id = 4599
+			name = "Qizilarvot"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 12441
+		}		
+		set_province_name = {
+			id = 4768
+			name = "Qoraqoʻl"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 12249
+		}		
+		set_province_name = {
+			id = 20965
+			name = "Jalolobod"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 18404
+		}		
+		set_province_name = {
+			id = 20323
+			name = "Boxtar"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 18406
+		}		
+		set_province_name = {
+			id = 20254
+			name = "Koʻlob"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 10114
+		}		
+		set_province_name = {
+			id = 19439
+			name = "Хoʻjand"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3580
+		}		
+		set_province_name = {
+			id = 10417
+			name = "Xorugʻ"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 12805
+		}		
+		set_province_name = {
+			id = 1026
+			name = "Balqonobod"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 11892
+		}		
+		set_province_name = {
+			id = 7639
+			name = "Qarshi"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 11169
+		}		
+		set_province_name = {
+			id = 20678
+			name = "Fargʻona"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 4007
+		}		
+		set_province_name = {
+			id = 13758
+			name = "Namangan"
+		}
+	}
 
 	if = {
 		limit = {
@@ -88032,7 +88462,57 @@ do_uzbek_renames = {
 	}
 }
 
-do_kazakh_renames = {
+do_kazakh_renames = { #Kazakh Latin Alphabet 2023
+
+	if = {
+		limit = {
+			state = 2666
+		}		
+		set_province_name = {
+			id = 4277
+			name = "Jezqazğan"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 11884
+		}		
+		set_province_name = {
+			id = 10619
+			name = "Taldyqorğan"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3307
+		}		
+		set_province_name = {
+			id = 10630
+			name = "Ekıbastūz"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3081
+		}		
+		set_province_name = {
+			id = 4850
+			name = "Petropavl"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1391
+		}		
+		set_province_name = {
+			id = 12564
+			name = "Öskemen"
+		}
+	}
 
 	if = {
 		limit = {
