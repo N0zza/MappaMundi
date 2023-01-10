@@ -111,6 +111,10 @@ defined_text = {
 defined_text = {
 	name = GetSubIdeologyLocSocialism
 	text = {
+		trigger = { has_country_leader_ideology = demsoc_revanchism }
+		localization_key = demsoc_revanchism
+	}
+	text = {
 		localization_key = socialism_ideology
 	}
 }
@@ -149,6 +153,14 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = american_conservatism }
 		localization_key = american_conservatism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = liberalism }
+		localization_key = liberalism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = socialism }
+		localization_key = socialism
 	}
 	text = {
 		localization_key = democratic
@@ -200,6 +212,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = provisional_government }
 		localization_key = provisional_government
+	}
+	text = {
+		trigger = { has_country_leader_ideology = revanchism }
+		localization_key = revanchism
 	}
 	text = {
 		localization_key = neutrality
@@ -316,6 +332,14 @@ defined_text = {
 
 defined_text = {
 	name = GetSubIdeologyLocRightAnarchism
+	text = {
+		trigger = { has_country_leader_ideology = non_governmental_organization }
+		localization_key = non_governmental_organization
+	}
+	text = {
+		trigger = { has_country_leader_ideology = corporatocracy }
+		localization_key = corporatocracy
+	}
 	text = {
 		localization_key = right_anarchism
 	}
