@@ -14,6 +14,7 @@ scripted_gui = {
 				tag = PL2
 				tag = MC2
 				tag = KC2
+				tag = USA
 			}
         }
  
@@ -123,6 +124,17 @@ scripted_gui = {
 					set_temp_variable = { show = 1 }
 					subtract_from_temp_variable = { show = show_menu_kc22 }
 					set_variable = { show_menu_kc22 = show }
+				}
+				if = {
+					limit = {
+						AND = {
+							tag = USA
+							has_government = liberal_republic
+						}
+					}
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_menu_USA }
+					set_variable = { show_menu_USA = show }
 				}
             }
         }
@@ -1380,6 +1392,109 @@ scripted_gui = {
 			leader_frame2_KC22_click_enabled = {
 				has_government = fascism
 				check_variable = { kc22_port_2 < 0.99 }
+			}
+        }
+	}
+	
+	### United States of America ###
+	slp_menu_USA = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_USA_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_USA > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_USA_close_click = {
+                subtract_from_temp_variable = { show = show_menu_USA }
+                set_variable = { show_menu_USA = show }
+            }
+			leader_frame1_USA_click = {
+				subtract_from_temp_variable = { show = show_menu_USA }
+                set_variable = { show_menu_USA = show }
+				USA = {	country_event = { id = slp_menu.38 } }
+				add_to_variable = { USA_port_1 = 1 }
+				set_variable = { USA_port_2 = 0 }
+				set_variable = { USA_port_3 = 0 }
+				set_variable = { USA_port_4 = 0 }
+			}
+			leader_frame2_USA_click = {
+				subtract_from_temp_variable = { show = show_menu_USA }
+                set_variable = { show_menu_USA = show }
+				USA = {	country_event = { id = slp_menu.39 } }
+				add_to_variable = { USA_port_2 = 1 }
+				set_variable = { USA_port_1 = 0 }
+				set_variable = { USA_port_3 = 0 }
+				set_variable = { USA_port_4 = 0 }
+			}
+			leader_frame3_USA_click = {
+				subtract_from_temp_variable = { show = show_menu_USA }
+                set_variable = { show_menu_USA = show }
+				USA = {	country_event = { id = slp_menu.40 } }
+				add_to_variable = { USA_port_3 = 1 }
+				set_variable = { USA_port_1 = 0 }
+				set_variable = { USA_port_2 = 0 }
+				set_variable = { USA_port_4 = 0 }
+			}
+			leader_frame4_USA_click = {
+				subtract_from_temp_variable = { show = show_menu_USA }
+                set_variable = { show_menu_USA = show }
+				USA = {	country_event = { id = slp_menu.41 } }
+				add_to_variable = { USA_port_4 = 1 }
+				set_variable = { USA_port_1 = 0 }
+				set_variable = { USA_port_2 = 0 }
+				set_variable = { USA_port_3 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = USA
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.USA_port_5 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { USA_port_5 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame5_USA_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+        triggers = {
+			slp_USA_close_enabled = {
+				always = yes
+			}
+			leader_frame1_USA_click_enabled = {
+				has_government = liberal_republic
+				check_variable = { USA_port_1 < 0.99 }
+			}
+			leader_frame2_USA_click_enabled = {
+				has_government = liberal_republic
+				check_variable = { USA_port_2 < 0.99 }
+			}
+			leader_frame3_USA_click_enabled = {
+				has_government = liberal_republic
+				check_variable = { USA_port_3 < 0.99 }
+			}
+			leader_frame4_USA_click_enabled = {
+				has_government = liberal_republic
+				check_variable = { USA_port_4 < 0.99 }
 			}
         }
 	}

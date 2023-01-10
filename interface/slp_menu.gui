@@ -1505,4 +1505,151 @@ guiTypes = {
 			pdx_tooltip = "CLOSE"
 		}
 	}
+	
+	### United States of America ###
+	containerWindowType = {
+		name = "slp_menu_USA_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_USA_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_USA_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+		
+			buttonType = {
+				name = "leader_frame1_USA"
+				spriteType = "GFX_pol_leader_frame_eisenhower"
+				position = { x = 12 y = 20 }
+			}
+	
+			iconType ={
+				name ="leader_frame1_USA_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_USA_name"
+				position = { x = 12 y = 238 }
+				font = "hoi_18mbs"
+				text = "Eisenhower"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_USA"
+				spriteType = "GFX_pol_leader_frame_LyndonJohnson"
+				position = { x = 202 y = 20 }
+			}
+			
+			iconType ={
+				name ="leader_frame2_USA_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_USA_name"
+				position = { x = 210 y = 238 }
+				font = "hoi_18mbs"
+				text = "Johnson"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame3_USA"
+				spriteType = "GFX_pol_leader_frame_RobbertKennedy"
+				position = { x = 12 y = 300 }
+			}
+			
+			iconType ={
+				name ="leader_frame3_USA_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame3_USA_name"
+				position = { x = 12 y = 518 }
+				font = "hoi_18mbs"
+				text = "Kennedy"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame4_USA"
+				spriteType = "GFX_pol_leader_frame_JFK"
+				position = { x = 210 y = 300 }
+			}
+			
+			iconType ={
+				name ="leader_frame4_USA_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 288 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame4_USA_name"
+				position = { x = 210 y = 518 }
+				font = "hoi_18mbs"
+				text = "Kennedy"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+		}
+	}
 }
