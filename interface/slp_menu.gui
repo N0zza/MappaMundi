@@ -5,7 +5,7 @@ guiTypes = {
 		
 		buttonType = {
 			name ="slp_icon"
-			spriteType = "GFX_generic_box_80"
+			spriteType = "GFX_slp_icon"
 			position = { x= 435 y = 257 }
 			Orientation = "UPPER_LEFT"
 			
@@ -1553,7 +1553,7 @@ guiTypes = {
 		
 			buttonType = {
 				name = "leader_frame1_USA"
-				spriteType = "GFX_pol_leader_frame_eisenhower"
+				spriteType = "GFX_pol_leader_frame_FDR"
 				position = { x = 12 y = 20 }
 			}
 	
@@ -1569,7 +1569,7 @@ guiTypes = {
 				name = "leader_frame1_USA_name"
 				position = { x = 12 y = 238 }
 				font = "hoi_18mbs"
-				text = "Eisenhower"
+				text = "Roosevelt"
 				maxWidth = 155
 				maxHeight = 20
 				format = center
@@ -1578,7 +1578,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "leader_frame2_USA"
-				spriteType = "GFX_pol_leader_frame_LyndonJohnson"
+				spriteType = "GFX_pol_leader_frame_eisenhower"
 				position = { x = 202 y = 20 }
 			}
 			
@@ -1594,7 +1594,7 @@ guiTypes = {
 				name = "leader_frame2_USA_name"
 				position = { x = 210 y = 238 }
 				font = "hoi_18mbs"
-				text = "Johnson"
+				text = "Eisenhower"
 				maxWidth = 155
 				maxHeight = 20
 				format = center
@@ -1603,7 +1603,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "leader_frame3_USA"
-				spriteType = "GFX_pol_leader_frame_RobbertKennedy"
+				spriteType = "GFX_pol_leader_frame_JFK"
 				position = { x = 12 y = 300 }
 			}
 			
@@ -1628,7 +1628,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "leader_frame4_USA"
-				spriteType = "GFX_pol_leader_frame_JFK"
+				spriteType = "GFX_pol_leader_frame_RobbertKennedy"
 				position = { x = 210 y = 300 }
 			}
 			
@@ -1653,7 +1653,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "leader_frame5_USA"
-				spriteType = "GFX_pol_leader_frame_Hoover"
+				spriteType = "GFX_pol_leader_frame_LyndonJohnson"
 				position = { x = 12 y = 580 }
 			}
 			
@@ -1669,7 +1669,7 @@ guiTypes = {
 				name = "leader_frame5_USA_name"
 				position = { x = 12 y = 798 }
 				font = "hoi_18mbs"
-				text = "Hoover"
+				text = "Johnson"
 				maxWidth = 155
 				maxHeight = 20
 				format = center
@@ -1678,7 +1678,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "leader_frame6_USA"
-				spriteType = "GFX_pol_leader_frame_Harding"
+				spriteType = "GFX_pol_leader_frame_Hoover"
 				position = { x = 202 y = 580 }
 			}
 			
@@ -1694,7 +1694,7 @@ guiTypes = {
 				name = "leader_frame6_USA_name"
 				position = { x = 202 y = 798 }
 				font = "hoi_18mbs"
-				text = "Harding"
+				text = "Hoover"
 				maxWidth = 155
 				maxHeight = 20
 				format = center
@@ -1703,7 +1703,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "leader_frame7_USA"
-				spriteType = "GFX_pol_leader_frame_Taft"
+				spriteType = "GFX_pol_leader_frame_Harding"
 				position = { x = 12 y = 860 }
 			}
 			
@@ -1719,7 +1719,7 @@ guiTypes = {
 				name = "leader_frame7_USA_name"
 				position = { x = 12 y = 1078 }
 				font = "hoi_18mbs"
-				text = "Taft"
+				text = "Harding"
 				maxWidth = 155
 				maxHeight = 20
 				format = center
@@ -1728,7 +1728,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "leader_frame8_USA"
-				spriteType = "GFX_pol_leader_frame_Roosevelt"
+				spriteType = "GFX_pol_leader_frame_Taft"
 				position = { x = 202 y = 860 }
 			}
 			
@@ -1744,7 +1744,57 @@ guiTypes = {
 				name = "leader_frame8_USA_name"
 				position = { x = 202 y = 1078 }
 				font = "hoi_18mbs"
+				text = "Taft"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame9_USA"
+				spriteType = "GFX_pol_leader_frame_Roosevelt"
+				position = { x = 12 y = 1140 }
+			}
+			
+			iconType ={
+				name ="leader_frame9_USA_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 1128 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame9_USA_name"
+				position = { x = 12 y = 1358 }
+				font = "hoi_18mbs"
 				text = "Roosevelt"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame10_USA"
+				spriteType = "GFX_pol_leader_frame_Debs"
+				position = { x = 202 y = 1140 }
+			}
+			
+			iconType ={
+				name ="leader_frame10_USA_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 1128 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame10_USA_name"
+				position = { x = 202 y = 1358 }
+				font = "hoi_18mbs"
+				text = "Debs"
 				maxWidth = 155
 				maxHeight = 20
 				format = center
