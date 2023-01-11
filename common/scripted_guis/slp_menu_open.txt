@@ -15,6 +15,7 @@ scripted_gui = {
 				tag = MC2
 				tag = KC2
 				tag = USA
+				tag = GMA
 			}
         }
  
@@ -135,6 +136,17 @@ scripted_gui = {
 					set_temp_variable = { show = 1 }
 					subtract_from_temp_variable = { show = show_menu_USA }
 					set_variable = { show_menu_USA = show }
+				}
+				if = {
+					limit = {
+						AND = {
+							tag = GMA
+							has_government = democratic_monarchism
+						}
+					}
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_menu_GMA }
+					set_variable = { show_menu_GMA = show }
 				}
             }
         }
@@ -1423,6 +1435,10 @@ scripted_gui = {
 				set_variable = { USA_port_2 = 0 }
 				set_variable = { USA_port_3 = 0 }
 				set_variable = { USA_port_4 = 0 }
+				set_variable = { USA_port_5 = 0 }
+				set_variable = { USA_port_6 = 0 }
+				set_variable = { USA_port_7 = 0 }
+				set_variable = { USA_port_8 = 0 }
 			}
 			leader_frame2_USA_click = {
 				subtract_from_temp_variable = { show = show_menu_USA }
@@ -1432,6 +1448,10 @@ scripted_gui = {
 				set_variable = { USA_port_1 = 0 }
 				set_variable = { USA_port_3 = 0 }
 				set_variable = { USA_port_4 = 0 }
+				set_variable = { USA_port_5 = 0 }
+				set_variable = { USA_port_6 = 0 }
+				set_variable = { USA_port_7 = 0 }
+				set_variable = { USA_port_8 = 0 }
 			}
 			leader_frame3_USA_click = {
 				subtract_from_temp_variable = { show = show_menu_USA }
@@ -1441,6 +1461,10 @@ scripted_gui = {
 				set_variable = { USA_port_1 = 0 }
 				set_variable = { USA_port_2 = 0 }
 				set_variable = { USA_port_4 = 0 }
+				set_variable = { USA_port_5 = 0 }
+				set_variable = { USA_port_6 = 0 }
+				set_variable = { USA_port_7 = 0 }
+				set_variable = { USA_port_8 = 0 }
 			}
 			leader_frame4_USA_click = {
 				subtract_from_temp_variable = { show = show_menu_USA }
@@ -1450,6 +1474,66 @@ scripted_gui = {
 				set_variable = { USA_port_1 = 0 }
 				set_variable = { USA_port_2 = 0 }
 				set_variable = { USA_port_3 = 0 }
+				set_variable = { USA_port_5 = 0 }
+				set_variable = { USA_port_6 = 0 }
+				set_variable = { USA_port_7 = 0 }
+				set_variable = { USA_port_8 = 0 }
+			}
+			
+			leader_frame5_USA_click = {
+				subtract_from_temp_variable = { show = show_menu_USA }
+                set_variable = { show_menu_USA = show }
+				USA = {	country_event = { id = slp_menu.42 } }
+				add_to_variable = { USA_port_5 = 1 }
+				set_variable = { USA_port_1 = 0 }
+				set_variable = { USA_port_2 = 0 }
+				set_variable = { USA_port_3 = 0 }
+				set_variable = { USA_port_4 = 0 }
+				set_variable = { USA_port_6 = 0 }
+				set_variable = { USA_port_7 = 0 }
+				set_variable = { USA_port_8 = 0 }
+			}
+			
+			leader_frame6_USA_click = {
+				subtract_from_temp_variable = { show = show_menu_USA }
+                set_variable = { show_menu_USA = show }
+				USA = {	country_event = { id = slp_menu.43 } }
+				add_to_variable = { USA_port_6 = 1 }
+				set_variable = { USA_port_1 = 0 }
+				set_variable = { USA_port_2 = 0 }
+				set_variable = { USA_port_3 = 0 }
+				set_variable = { USA_port_4 = 0 }
+				set_variable = { USA_port_5 = 0 }
+				set_variable = { USA_port_7 = 0 }
+				set_variable = { USA_port_8 = 0 }
+			}
+			
+			leader_frame7_USA_click = {
+				subtract_from_temp_variable = { show = show_menu_USA }
+                set_variable = { show_menu_USA = show }
+				USA = {	country_event = { id = slp_menu.44 } }
+				add_to_variable = { USA_port_7 = 1 }
+				set_variable = { USA_port_1 = 0 }
+				set_variable = { USA_port_2 = 0 }
+				set_variable = { USA_port_3 = 0 }
+				set_variable = { USA_port_4 = 0 }
+				set_variable = { USA_port_5 = 0 }
+				set_variable = { USA_port_6 = 0 }
+				set_variable = { USA_port_8 = 0 }
+			}
+			
+			leader_frame8_USA_click = {
+				subtract_from_temp_variable = { show = show_menu_USA }
+                set_variable = { show_menu_USA = show }
+				USA = {	country_event = { id = slp_menu.45 } }
+				add_to_variable = { USA_port_8 = 1 }
+				set_variable = { USA_port_1 = 0 }
+				set_variable = { USA_port_2 = 0 }
+				set_variable = { USA_port_3 = 0 }
+				set_variable = { USA_port_4 = 0 }
+				set_variable = { USA_port_5 = 0 }
+				set_variable = { USA_port_6 = 0 }
+				set_variable = { USA_port_7 = 0 }
 			}
 		}
 		
@@ -1458,7 +1542,7 @@ scripted_gui = {
 		}
 		
 		ai_check = {
-			check_variable = { ROOT.USA_port_5 < 0.99 }
+			check_variable = { ROOT.USA_port_0 < 0.99 }
 			check_variable = { ai_random > 0.4 }
 		}
 		
@@ -1466,11 +1550,11 @@ scripted_gui = {
         ai_test_variance = 0.2
  
         ai_check = {
-            check_variable = { USA_port_5 < 0.99 }
+            check_variable = { USA_port_0 < 0.99 }
         }
 		
 		ai_weights = {
-			leader_frame5_USA_click = {
+			leader_frame0_USA_click = {
 				ai_will_do = {
 					factor = 20
 				}
@@ -1496,6 +1580,96 @@ scripted_gui = {
 				has_government = liberal_republic
 				check_variable = { USA_port_4 < 0.99 }
 			}
+			leader_frame5_USA_click_enabled = {
+				has_government = liberal_republic
+				check_variable = { USA_port_5 < 0.99 }
+			}
+			leader_frame6_USA_click_enabled = {
+				has_government = liberal_republic
+				check_variable = { USA_port_6 < 0.99 }
+			}
+			leader_frame7_USA_click_enabled = {
+				has_government = liberal_republic
+				check_variable = { USA_port_7 < 0.99 }
+			}
+			leader_frame8_USA_click_enabled = {
+				has_government = liberal_republic
+				check_variable = { USA_port_8 < 0.99 }
+			}
         }
+	}
+	
+	### German-America ###
+	slp_menu_GMA = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_GMA_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_GMA > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_GMA_close_click = {
+                subtract_from_temp_variable = { show = show_menu_GMA }
+                set_variable = { show_menu_GMA = show }
+            }
+			leader_frame1_GMA_click = {
+				subtract_from_temp_variable = { show = show_menu_GMA }
+                set_variable = { show_menu_GMA = show }
+				GMA = {	country_event = { id = slp_menu.99 } }
+				add_to_variable = { GMA_port_1 = 1 }
+				set_variable = { USA_port_2 = 0 }
+			}
+			leader_frame2_GMA_click = {
+				subtract_from_temp_variable = { show = show_menu_GMA }
+                set_variable = { show_menu_GMA = show }
+				GMA = {	country_event = { id = slp_menu.98 } }
+				add_to_variable = { GMA_port_2 = 1 }
+				set_variable = { GMA_port_1 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = GMA
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.GMA_port_1 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { GMA_port_1 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame1_GMA_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+		
+		triggers = {
+			slp_GMA_close_enabled = {
+				always = yes
+			}
+			leader_frame1_GMA_click_enabled = {
+				has_government = democratic_monarchism
+				check_variable = { GMA_port_1 < 0.99 }
+			}
+			leader_frame2_GMA_click_enabled = {
+				has_government = democratic_monarchism
+				check_variable = { GMA_port_2 < 0.99 }
+			}
+		}
 	}
 }

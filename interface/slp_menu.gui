@@ -1650,6 +1650,202 @@ guiTypes = {
 				format = center
 				vertical_alignment = center
 			}
+			
+			buttonType = {
+				name = "leader_frame5_USA"
+				spriteType = "GFX_pol_leader_frame_Hoover"
+				position = { x = 12 y = 580 }
+			}
+			
+			iconType ={
+				name ="leader_frame5_USA_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 568 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame5_USA_name"
+				position = { x = 12 y = 798 }
+				font = "hoi_18mbs"
+				text = "Hoover"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame6_USA"
+				spriteType = "GFX_pol_leader_frame_Harding"
+				position = { x = 202 y = 580 }
+			}
+			
+			iconType ={
+				name ="leader_frame6_USA_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 568 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame6_USA_name"
+				position = { x = 202 y = 798 }
+				font = "hoi_18mbs"
+				text = "Harding"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame7_USA"
+				spriteType = "GFX_pol_leader_frame_Taft"
+				position = { x = 12 y = 860 }
+			}
+			
+			iconType ={
+				name ="leader_frame7_USA_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 848 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame7_USA_name"
+				position = { x = 12 y = 1078 }
+				font = "hoi_18mbs"
+				text = "Taft"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame8_USA"
+				spriteType = "GFX_pol_leader_frame_Roosevelt"
+				position = { x = 202 y = 860 }
+			}
+			
+			iconType ={
+				name ="leader_frame8_USA_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 848 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame8_USA_name"
+				position = { x = 202 y = 1078 }
+				font = "hoi_18mbs"
+				text = "Roosevelt"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "slp_menu_GMA_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_GMA_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
+		
+		containerWindowType = {
+			name = "slp_GMA_grid"
+			position = { x = 0 y = 40 }
+			size = { width=400 height=400 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 4 bottom = 12 }	
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+			
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
+				position = { x = -1 y = 0 }					
+			}
+		
+			buttonType = {
+				name = "leader_frame1_GMA"
+				spriteType = "GFX_pol_leader_frame_GMA_Eisenhower"
+				position = { x = 12 y = 20 }
+			}
+	
+			iconType ={
+				name ="leader_frame1_GMA_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 4 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame1_GMA_name"
+				position = { x = 12 y = 238 }
+				font = "hoi_18mbs"
+				text = "Eisenhower"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			
+			buttonType = {
+				name = "leader_frame2_GMA"
+				spriteType = "GFX_pol_leader_frame_Free_Government"
+				position = { x = 202 y = 20 }
+			}
+			
+			iconType ={
+				name ="leader_frame2_GMA_frame"
+				spriteType = "GFX_slp_frame"
+				position = { x = 194 y = 8 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			instantTextboxType = {
+				name = "leader_frame2_GMA_name"
+				position = { x = 210 y = 238 }
+				font = "hoi_18mbs"
+				text = "Free Government"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
 		}
 	}
 }
