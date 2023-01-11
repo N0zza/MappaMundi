@@ -137,6 +137,10 @@ defined_text = {
 		localization_key = american_liberalism
 	}
 	text = {
+		trigger = { has_country_leader_ideology = liberalism }
+		localization_key = liberalism
+	}
+	text = {
 		localization_key = liberal_republic
 	}
 }
@@ -155,12 +159,16 @@ defined_text = {
 		localization_key = american_conservatism
 	}
 	text = {
-		trigger = { has_country_leader_ideology = liberalism }
-		localization_key = liberalism
+		trigger = { has_country_leader_ideology = conservatism }
+		localization_key = conservatism
 	}
 	text = {
-		trigger = { has_country_leader_ideology = socialism }
-		localization_key = socialism
+		trigger = { has_country_leader_ideology = liberal_conservatism }
+		localization_key = liberal_conservatism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = paternalistic_conservatism }
+		localization_key = paternalistic_conservatism
 	}
 	text = {
 		localization_key = democratic
