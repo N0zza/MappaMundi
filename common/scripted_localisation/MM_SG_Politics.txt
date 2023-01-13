@@ -111,8 +111,16 @@ defined_text = {
 defined_text = {
 	name = GetSubIdeologyLocSocialism
 	text = {
+		trigger = { has_country_leader_ideology = demsoc }
+		localization_key = demsoc
+	}
+	text = {
 		trigger = { has_country_leader_ideology = demsoc_revanchism }
 		localization_key = demsoc_revanchism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = social_democracy }
+		localization_key = social_democracy
 	}
 	text = {
 		localization_key = socialism_ideology
@@ -124,6 +132,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = monarcho_communism }
 		localization_key = monarcho_communism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = socmon_social_democracy }
+		localization_key = socmon_social_democracy
 	}
 	text = {
 		localization_key = socialist_monarchy

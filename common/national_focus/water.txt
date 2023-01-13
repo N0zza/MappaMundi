@@ -11936,7 +11936,7 @@
         		desc = ""
         		picture = "gfx/leaders/Russia/RUS_Gorbachev.tga"
         		expire = "1965.1.1"
-        		ideology = demsoc
+        		ideology = social_democracy
 			}
 		}
 		RUS = {
@@ -12249,12 +12249,36 @@
 			set_capital = {
 				state = 64
 			}
+			set_popularities = {
+				vanguardism = 5
+				socialism_ideology = 28
+				liberal_republic = 29
+				democratic = 27
+				centrist_republic = 11
+			}
+			set_cosmetic_tag = WGR_2023
 			set_party_name = {
-				ideology = democratic
-				name = WGR_democratic_2023_party
-				long_name = WGR_democratic_2023_party_long
+				ideology = vanguardism
+				name = WGR_vanguardism_2023_party
+				long_name = WGR_vanguardism_2023_party_long
 			}
+			set_party_name = {
+				ideology = liberal_republic
+				name = WGR_liberal_republic_2023_party
+				long_name = WGR_liberal_republic_2023_party_long
 			}
+			set_party_name = {
+				ideology = centrist_republic
+				name = WGR_centrist_republic_2023_party
+				long_name = WGR_centrist_republic_2023_party_long
+			}
+			set_politics = {
+				ruling_party = socialism_ideology
+				elections_allowed = yes
+				last_election = "2022.2.13"
+				election_frequency = 60
+			}
+		}
 		WGR = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -12262,7 +12286,7 @@
         		desc = ""
         		picture = "gfx/leaders/WGR/WGR_Steinmeier.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = social_democracy
 				}
 			}
 		WGR = {
@@ -12812,7 +12836,7 @@
         		desc = ""
         		picture = "gfx/leaders/DEN/DEN_Margrethe.tga"
         		expire = "1965.1.1"
-        		ideology = monsoc
+        		ideology = socmon_social_democracy
 				}
 			}
 		DEN = {
@@ -12821,7 +12845,7 @@
         		desc = ""
         		picture = "gfx/leaders/DEN/DEN_Frederiksen.tga"
         		expire = "1965.1.1"
-        		ideology = demsoc
+        		ideology = social_democracy
 				}
 			}
 		FAR = {
@@ -12836,7 +12860,7 @@
         		desc = ""
         		picture = "gfx/leaders/FAR/FAR_Lene_Moyell_Johansen.tga"
         		expire = "1965.1.1"
-        		ideology = monsoc
+        		ideology = socmon_social_democracy
 				}
 			}
 		GRL = {
@@ -12851,7 +12875,7 @@
         		desc = ""
         		picture = "gfx/leaders/GRL/GRL_Mikaela_Engell.tga"
         		expire = "1965.1.1"
-        		ideology = monsoc
+        		ideology = socmon_social_democracy
 				}
 			}
 		NOR = {
