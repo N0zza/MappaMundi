@@ -12273,6 +12273,11 @@
 				long_name = WGR_centrist_republic_2023_party_long
 			}
 			set_party_name = {
+				ideology = neutrality
+				name = WGR_neutrality_2023_party
+				long_name = WGR_neutrality_2023_party_long
+			}
+			set_party_name = {
 				ideology = centrist_monarchism
 				name = WGR_centrist_monarchism_2023_party
 				long_name = WGR_centrist_monarchism_2023_party_long
@@ -12352,6 +12357,14 @@
         		picture = "gfx/leaders/WGR/WGR_Chrupalla.tga"
         		expire = "1965.1.1"
         		ideology = cenrep
+			}
+			kill_ideology_leader = neutrality
+			create_country_leader = {
+        		name = "Kanzler Tino Chrupalla"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Chrupalla.tga"
+        		expire = "1965.1.1"
+        		ideology = despotism
 			}
 			kill_ideology_leader = stratocratic
 			create_country_leader = {
