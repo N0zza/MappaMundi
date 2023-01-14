@@ -12272,6 +12272,31 @@
 				name = WGR_centrist_republic_2023_party
 				long_name = WGR_centrist_republic_2023_party_long
 			}
+			set_party_name = {
+				ideology = centrist_monarchism
+				name = WGR_centrist_monarchism_2023_party
+				long_name = WGR_centrist_monarchism_2023_party_long
+			}
+			set_party_name = {
+				ideology = conservative_monarchism
+				name = WGR_conservative_monarchism_2023_party
+				long_name = WGR_conservative_monarchism_2023_party_long
+			}
+			set_party_name = {
+				ideology = fascism
+				name = WGR_fascism_2023_party
+				long_name = WGR_fascism_2023_party_long
+			}
+			set_party_name = {
+				ideology = republican_fascism
+				name = WGR_republican_fascism_2023_party
+				long_name = WGR_republican_fascism_2023_party_long
+			}
+			set_party_name = {
+				ideology = national_socialism
+				name = WGR_national_socialism_2023_party
+				long_name = WGR_national_socialism_2023_party_long
+			}
 			set_politics = {
 				ruling_party = socialism_ideology
 				elections_allowed = yes
@@ -12287,17 +12312,136 @@
         		picture = "gfx/leaders/WGR/WGR_Steinmeier.tga"
         		expire = "1965.1.1"
         		ideology = social_democracy
-				}
 			}
-		WGR = {
+			kill_ideology_leader = vanguardism
 			create_country_leader = {
-        		name = "Bundeskanzler Olaf Scholz"
+        		name = "Bundespräsidentin Janine Natalie Wißler"
         		desc = ""
-        		picture = "gfx/leaders/WGR/WGR_Scholz.tga"
+        		picture = "gfx/leaders/WGR/WGR_Wissler.tga"
+        		expire = "1965.1.1"
+        		ideology = totsoc
+			}
+			kill_ideology_leader = communism
+			create_country_leader = {
+        		name = "Vorsitzende Patrik Köbele"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Kobele.tga"
+        		expire = "1965.1.1"
+        		ideology = marxism
+			}
+			kill_ideology_leader = liberal_republic
+			create_country_leader = {
+        		name = "Bundespräsident Christian Wolfgang Lindner"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Lindner.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
-				}
 			}
+			kill_ideology_leader = democratic
+			create_country_leader = {
+        		name = "Bundespräsident Joachim-Friedrich Martin Josef Merz"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Merz.tga"
+        		expire = "1965.1.1"
+        		ideology = liberal_conservatism
+			}
+			kill_ideology_leader = centrist_republic
+			create_country_leader = {
+        		name = "Präsident Tino Chrupalla"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Chrupalla.tga"
+        		expire = "1965.1.1"
+        		ideology = cenrep
+			}
+			kill_ideology_leader = stratocratic
+			create_country_leader = {
+        		name = "Generalinspekteur Eberhard Zorn"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Zorn.tga"
+        		expire = "1965.1.1"
+        		ideology = military_junta
+			}
+			kill_ideology_leader = stratocratic_monarchism
+			create_country_leader = {
+        		name = "Herrscher Jürgen-Joachim von Sandrart"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Zorn.tga"
+        		expire = "1965.1.1"
+        		ideology = stratmon
+			}
+			kill_ideology_leader = authoritarian_monarchism
+			create_country_leader = {
+        		name = "Kaiser Friedrich IV von Hohenzollern"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Georg_Friedrich.tga"
+        		expire = "1965.1.1"
+        		ideology = authmon
+			}
+			kill_ideology_leader = monarchism
+			create_country_leader = {
+        		name = "Kaiser Friedrich IV von Hohenzollern"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Georg_Friedrich.tga"
+        		expire = "1965.1.1"
+        		ideology = absolutism
+			}
+			kill_ideology_leader = democratic_monarchism
+			create_country_leader = {
+        		name = "Imperator Romanorum Fredericus de Hohenzollern"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Georg_Friedrich.tga"
+        		expire = "1965.1.1"
+        		ideology = liberal_constitutionalism
+			}
+			kill_ideology_leader = conservative_monarchism
+			create_country_leader = {
+        		name = "König Friedrich IV von Hohenzollern"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Georg_Friedrich.tga"
+        		expire = "1965.1.1"
+        		ideology = conservative_constitutionalism
+			}
+			kill_ideology_leader = centrist_monarchism
+			create_country_leader = {
+        		name = "Kaiser und Bundespräsident Friedrich IV von Hohenzollern"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Georg_Friedrich.tga"
+        		expire = "1965.1.1"
+        		ideology = cenmon
+			}
+			kill_ideology_leader = fascism
+			create_country_leader = {
+        		name = "Kaiser Heinrich XIII von Reuß"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Heinrich_XIII.tga"
+        		expire = "1965.1.1"
+        		ideology = nazism
+			}
+			kill_ideology_leader = republican_fascism
+			create_country_leader = {
+        		name = "Reichsführer Heinrich XIII, Prinz von Reuß"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Heinrich_XIII.tga"
+        		expire = "1965.1.1"
+        		ideology = repfash
+			}
+			kill_ideology_leader = national_socialism
+			create_country_leader = {
+        		name = "Reichsführer Frank Franz"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Franz.tga"
+        		expire = "1965.1.1"
+        		ideology = neo_nazism
+			}
+			kill_ideology_leader = theocratic
+			create_country_leader = {
+        		name = "Präses Anna-Nicole Heinrich"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Anna.tga"
+        		expire = "1965.1.1"
+        		ideology = christian
+			}
+		}
 		set_province_name = { id = 15986 name = "Giżycko"}
 		POL = {
 			transfer_state = 7444
@@ -14156,9 +14300,14 @@
             	}
 			set_capital = {
 				state = 14847
+				remember_old_capital = no
+			}
+			every_owned_state = {
+				do_indian_renames = yes
 			}
 			release = BAN
-			}
+			transfer_state = 1914
+		}
 		PAK = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -14298,15 +14447,6 @@
 			province = 15532
 			value = 30
 			}
-		PAK = {
-			transfer_state = 1914
-			set_politics = {
-				ruling_party = theocratic
-				}
-			every_owned_state = {
-				do_indian_renames = yes
-			}
-		}
 		ENG = {
 			kill_country_leader = yes
 			create_country_leader = {
