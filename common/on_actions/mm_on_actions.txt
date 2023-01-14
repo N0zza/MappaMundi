@@ -3776,6 +3776,7 @@ on_actions = {
 								tag = LON
 								tag = KET
 								tag = BGN
+								tag = DIN
 							}
 						}
 						if = {
@@ -3793,6 +3794,49 @@ on_actions = {
 								}
 								do_german_renames = yes
 							}
+						}
+					}
+					if = {
+						limit = {						
+							OR = {
+								tag = DIN
+								tag = GCO
+								tag = AHI
+								tag = GNH
+							}
+						}
+						if = {
+							limit = {
+								has_government = socialist_monarchy
+							}
+							set_cosmetic_tag = DEN_BROWN
+						}
+					}
+					if = {
+						limit = {						
+							OR = {
+								tag = DIN
+								tag = GCO
+								tag = AHI
+								tag = GNH
+							}
+						}
+						if = {
+							limit = {
+								has_government = democratic_monarchism
+							}
+							set_cosmetic_tag = SWE_BLUE
+						}
+					}
+					if = {
+						limit = {						
+							tag = DIN
+						}
+						if = {
+							limit = {
+								has_government = centrist_monarchism
+							}
+							set_cosmetic_tag = RUS_GREEN
 						}
 					}
 					if = {
@@ -3821,6 +3865,7 @@ on_actions = {
 								tag = FWA
 								tag = MAD
 								tag = INC
+								tag = DIN
 							}
 						}
 						if = {
