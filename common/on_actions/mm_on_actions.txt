@@ -5180,6 +5180,35 @@ on_actions = {
 							drop_cosmetic_tag = yes
 						}
 					}
+					if = {
+						limit = {
+							tag = ALA
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = socialist_monarchy
+								}
+							}
+							set_cosmetic_tag = ALA_SOCMON
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = centrist_monarchism
+								}
+							}
+							set_cosmetic_tag = ALA_CENMON
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = authoritarian_monarchism
+								}
+							}
+							set_cosmetic_tag = ALA_AUTHMON
+						}
+					}
 				}
 			}
 		}

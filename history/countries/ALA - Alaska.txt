@@ -1,17 +1,18 @@
 ﻿capital = 1030
+
 set_cosmetic_tag = ALA_USA
 
+set_popularities = {
+	communism = 3
+	socialist_monarchy = 7
+	liberal_republic  = 53
+	centrist_monarchism = 5
+	conservative_monarchism = 10
+	democratic = 20
+	right_anarchism = 2
+}
 
-	set_popularities = {
-		liberal_republic 
-			 = 80
-		fascism
-			 = 0
-		democratic 
-			 = 20
-		neutrality = 0
-		}
-	set_politics = { 
+set_politics = { 
  ruling_party = liberal_republic
 	last_election = "1932.11.8"
 	election_frequency = 48
@@ -75,6 +76,16 @@ create_country_leader = {
 	picture = "gfx/leaders/ALA/ALA_Parks_dem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prinz Franz I von Liechtenstein"
+	desc = ""
+	picture = "gfx/leaders/Assorted/Portrait_Liechtenstein_franz.dds"
+	expire = "1965.1.1"
+	ideology = socmon_social_democracy
 	traits = {
 	}
 }
