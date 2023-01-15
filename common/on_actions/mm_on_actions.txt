@@ -5187,6 +5187,14 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
+									has_government = vanguardism
+								}
+							}
+							set_cosmetic_tag = ALA_SOV
+						}
+						if = {
+							limit = {
+								OR = {
 									has_government = socialist_monarchy
 								}
 							}
@@ -5210,11 +5218,21 @@ on_actions = {
 						}
 						if = {
 							limit = {
+								OR = {
+									has_government = stratocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = ALA_STRATMON
+						}
+						if = {
+							limit = {
 								NOT = {
 									OR = {
+										has_government = vanguardism
 										has_government = socialist_monarchy
 										has_government = centrist_monarchism
 										has_government = conservative_monarchism
+										has_government = stratocratic_monarchism
 									}
 								}
 							}
