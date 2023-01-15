@@ -11803,7 +11803,13 @@
 		}
 			
 		RUS = {
-			
+			set_popularities = {
+				neutrality = 72
+				communism = 13
+				democratic_monarchism = 6
+				fascism = 5
+				liberal_republic = 4
+			}
 			set_cosmetic_tag = RUS_2023
 		}
 			
@@ -12508,16 +12514,27 @@
 			drop_cosmetic_tag = yes
 			set_cosmetic_tag = UKR_2023
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
 				}
+			set_popularities = {
+				liberal_republic = 57
+				neutrality = 19
+				democratic = 10
+				centrist_republic = 14
 			}
+			set_party_name = {
+				ideology = liberal_republic
+				name = UKR_liberal_republic_2023_party
+				long_name = UKR_liberal_republic_2023_party_long
+			}
+		}
 		UKR = {
 			create_country_leader = {
         		name = "Prezydent Volodymyr Oleksandrovych Zelenskyy"
         		desc = ""
         		picture = "gfx/leaders/UKR/UKR_Zelensky.tga"
         		expire = "1965.1.1"
-        		ideology = liberal_conservatism
+        		ideology = liberalism
 				}
 			}
 		BLR = {
@@ -12526,27 +12543,33 @@
 			transfer_state = 8036
 			set_politics = {
 				ruling_party = neutrality
-				}
+			}
+			set_popularities = {
+				neutrality = 81
+				communism = 10
+				socialism_ideology = 5
+				liberal_republic = 4
+			}
 			drop_cosmetic_tag = yes
 			set_party_name = {
-				ideology = centrist_republic
-				name = BLR_centrist_republic_2023_party
-				long_name = BLR_centrist_republic_2023_party_long
+				ideology = neutrality
+				name = BLR_neutrality_2023_party
+				long_name = BLR_neutrality_2023_party_long
 			}
 			set_party_name = {
-				ideology = democratic
-				name = BLR_democratic_2023_party
-				long_name = BLR_democratic_2023_party_long
+				ideology = liberal_republic
+				name = BLR_liberal_republic_2023_party
+				long_name = BLR_liberal_republic_2023_party_long
 			}
-			}
+		}
 		BLR = {
-			kill_ideology_leader = democratic
+			kill_ideology_leader = liberal_republic
 			create_country_leader = {
         		name = "Prezidént Sviatlána Hieórhijeŭna Cichanóŭskaja"
         		desc = ""
         		picture = "gfx/leaders/BLR/BLR_Tsikhanouskaya.tga"
         		expire = "1965.1.1"
-        		ideology = liberal_conservatism
+        		ideology = liberalism
 				}
 			}
 		BLR = {
@@ -17825,8 +17848,12 @@
 		USA = {
 			set_politics = {
 				ruling_party = liberal_republic
-				}
+			}
 			set_cosmetic_tag = USA_2023
+			set_popularities = {
+				liberal_republic = 49
+				democratic = 51
+			}
 			set_party_name = {
 				ideology = centrist_republic
 				name = USA_centrist_republic_2023_party
