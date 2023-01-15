@@ -3,13 +3,14 @@
 set_cosmetic_tag = ALA_USA
 
 set_popularities = {
-	communism = 3
-	socialist_monarchy = 7
-	liberal_republic  = 53
-	centrist_monarchism = 5
-	conservative_monarchism = 10
-	democratic = 20
-	right_anarchism = 2
+	vanguardism = 1
+	socialist_monarchy = 3
+	liberal_republic  = 62
+	centrist_monarchism = 2
+	democratic = 27
+	conservative_monarchism = 3
+	stratocratic = 1
+	right_anarchism = 1
 }
 
 set_politics = { 
@@ -34,7 +35,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ALA/ALA_Laning.tga"
 	expire = "1965.1.1"
-	ideology = militarism
+	ideology = military_junta
 	traits = {
 	}
 }
@@ -44,7 +45,7 @@ create_country_leader = {
 	desc = "POLITICS_ALA_liberalism_DESC"
 	picture = "gfx/leaders/Assorted/Portrait_Alaska_John_Weir_Troy.dds"
 	expire = "1950.1.1"
-	ideology = liberalism
+	ideology = american_liberalism
 	traits = {
 	}
 }
@@ -75,7 +76,17 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ALA/ALA_Parks_dem.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = american_conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Velikiy Regent Antón Ivánovič Deníkin"
+	desc = ""
+	picture = "gfx/leaders/Russia/Portrait_Anton_Denikin.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
 	traits = {
 	}
 }
