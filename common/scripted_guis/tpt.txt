@@ -367,12 +367,24 @@ scripted_gui = {
 			tpt_drop_cosmetic_tag_click = {
 				if = {
 					limit = {
-					    	any_country = { has_country_flag = tpt_actor }
-					    }
-				     	    every_country = {
-						    limit = {has_country_flag = tpt_actor}
-						             drop_cosmetic_tag = yes
-						             clr_country_flag = tpt_actor}
+						all_country = {
+							NOT = { has_country_flag = tpt_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					clr_country_flag = tpt_actor
+				}
+				if = {
+					limit = {
+					    any_country = { has_country_flag = tpt_actor }
+							}
+				     	every_country = {
+						    limit = { 
+								has_country_flag = tpt_actor 
+							}
+						    drop_cosmetic_tag = yes
+						    clr_country_flag = tpt_actor
+						}
 					}
 				}
 			tpt_add_fascism_click = {
@@ -6159,6 +6171,12 @@ scripted_gui = {
 			tpt_enable_elections_visible = {
 				has_global_flag = tpt_window_a
 			}
+			tpt_drop_cosmetic_tag_visible = {
+				has_global_flag = tpt_window_a
+			}
+			tpt_drop_cosmetic_tag_text_visible = {
+				has_global_flag = tpt_window_a
+			}
 			tpt_enable_elections_click_enabled = {
 				OR = {
 					AND = {
@@ -6194,7 +6212,7 @@ scripted_gui = {
 					}
 				}
 			}
-### DIPLMOACY ###
+### DIPLOMACY ###
 			tpt_drop_cosmetic_tag_visible = {
 				has_global_flag = tpt_window_b
 			}
