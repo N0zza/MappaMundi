@@ -12482,18 +12482,26 @@
 			transfer_state = 8222
 			transfer_state = 10954
 			set_politics = {
-				ruling_party = liberal_republic
-				}
+				ruling_party = centrist_republic
 			}
+			set_popularities = {
+				centrist_republic = 50
+				liberal_republic = 27
+				socialism_ideology = 10
+				democratic = 10
+				neutrality = 3
+			}
+			set_cosmetic_tag = POL_2023
+		}
 		POL = {
 			create_country_leader = {
         		name = "Prezydent Andrzej Sebastian Duda"
         		desc = ""
         		picture = "gfx/leaders/POL/POL_Andrzej_Duda.tga"
         		expire = "1965.1.1"
-        		ideology = liberalism
-				}
+        		ideology = national_conservatism
 			}
+		}
 		set_province_name = { id = 15825 name = "Donetsk"}
 		set_province_name = { id = 9461 name = "Luhansk"}
 		UKR = {
@@ -12832,7 +12840,7 @@
 			}
 		HUN = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
 				}
 			set_cosmetic_tag = HUN_2023
 			}
@@ -12843,7 +12851,7 @@
            		desc = ""
            		picture = "gfx/leaders/HUN/HUN_Novak.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = national_conservatism
 				}
 			}
 		HUN = {
@@ -14420,13 +14428,20 @@
             set_capital = {
             	state = 4732
             }
+			set_cosmetic_tag = IND_2023
 			set_politics = {
-	       		ruling_party = democratic
+	       		ruling_party = centrist_republic
               }		
 			set_party_name = {
-				ideology = democratic
-				name = IND_democratic_2023_party
-				long_name = IND_democratic_2023_party_long
+				ideology = centrist_republic
+				name = IND_centrist_republic_2023_party
+				long_name = IND_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				centrist_republic = 61
+				liberal_republic = 16
+				democratic = 15
+				socialism_ideology = 8
 			}
 			every_owned_state = {
 				do_indian_renames = yes
@@ -14438,7 +14453,7 @@
             	desc = ""
             	picture = gfx/leaders/India/IND_Murmu.tga
             	expire = "1965.1.1"
-            	ideology = conservatism
+            	ideology = national_conservatism
 			}
 		}
 		NSE = {	
@@ -15147,10 +15162,19 @@
 				}
 			}
 		TUR = {
+			set_cosmetic_tag = TUR_2023
 			set_politics = {
-				ruling_party = democratic
-				}
+				ruling_party = centrist_republic
 			}
+			set_popularities = {
+				centrist_republic = 48
+				socialism_ideology = 23
+				republican_fascism = 8
+				liberal_conservatism = 9
+				democratic = 6
+				neutrality = 6
+			}
+		}
 		TUR = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -15158,7 +15182,7 @@
            		desc = ""
            		picture = "gfx/leaders/TUR/TUR_Erdogan.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = national_conservatism
 				}
 			}
 		NGK = {
