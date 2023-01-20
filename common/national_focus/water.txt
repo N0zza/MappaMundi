@@ -12824,18 +12824,19 @@
         		picture = "gfx/leaders/MAT/MAT_Thanassis_Martinos.tga"
         		expire = "1965.1.1"
         		ideology = christian
-				}
 			}
+		}
 		MOL = {
 			drop_cosmetic_tag = yes
+			
+			set_politics = {
+				ruling_party = democratic
+			}
+			
 			set_capital = {
 				state = 78
 			}
-			set_politics = {
-				ruling_party = democratic
-				}
-			}
-		MOL = {
+			
 			kill_country_leader = yes
 			create_country_leader = {
            		name = "Președinte Maia Sandu"
@@ -12843,14 +12844,13 @@
            		picture = "gfx/leaders/MOL/MOL_Maia_Sandu.tga"
            		expire = "1965.1.1"
            		ideology = liberal_conservatism
-				}
 			}
+		}
 		TRN = {
 			transfer_state = 790
 			transfer_state = 7325
 			transfer_state = 18700
-			}
-		TRN = {
+			
 			kill_country_leader = yes
 			create_country_leader = {
            		name = "Prezident Vadim Nikolaevich Krasnoselsky"
@@ -12858,23 +12858,22 @@
            		picture = "gfx/leaders/TRN/TRN_Vadim_Krasnoselsky.tga"
            		expire = "1965.1.1"
            		ideology = oligarchism
-				}
 			}
+		}
 		AUS = {
+			set_cosmetic_tag = AUS_2023
+			
 			set_politics = {
 				ruling_party = democratic
 			}
-			set_cosmetic_tag = AUS_2023
-		}
-		AUS = {
+			
 			set_popularities = {
 				democratic = 44
 				liberal_republic = 10
 				socialism_ideology = 30
 				centrist_republic = 16
 			}
-		}
-		AUS = {
+			
 			kill_country_leader = yes
 			create_country_leader = {
            		name = "Bundespräsident Alexander Van der Bellen"
