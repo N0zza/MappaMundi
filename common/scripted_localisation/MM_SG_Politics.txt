@@ -97,12 +97,20 @@ defined_text = {
 		localization_key = stalinism
 	}
 	text = {
+		trigger = { has_country_leader_ideology = dengism }
+		localization_key = dengism
+	}
+	text = {
 		localization_key = communism
 	}
 }
 
 defined_text = {
 	name = GetSubIdeologyLocMarxismLeninism
+	text = {
+		trigger = { has_country_leader_ideology = ml_stalinism }
+		localization_key = ml_stalinism
+	}
 	text = {
 		localization_key = vanguardism
 	}
@@ -199,6 +207,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = national_conservatism }
 		localization_key = national_conservatism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = right-wing_populism }
+		localization_key = right-wing_populism
 	}
 	text = {
 		localization_key = centrist_republic
