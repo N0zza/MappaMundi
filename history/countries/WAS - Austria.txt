@@ -1,18 +1,26 @@
 ﻿capital = 5171
 
 set_popularities = {
-        democratic = 75
-        communism = 0
-        fascism = 5
-        neutrality = 20
-
+	democratic = 70
+	republican_fascism = 10
+	neutrality = 15
+	national_socialism = 5
 }
 
 set_politics = {
-	
 	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Nationaler Führer Odoardo Dino Alfieri"
+	desc = ""
+	picture = "gfx/leaders/TYR/TYR_Alfieri.tga"
+	expire = "1965.1.1"
+	ideology = rep_italian_fascism
+	traits = {
+	}
 }
 
