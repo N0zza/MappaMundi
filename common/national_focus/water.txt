@@ -12711,7 +12711,7 @@
 		SLO = {
 			set_politics = {
 				ruling_party = democratic
-				}
+			}
 			transfer_state = 901
 			transfer_state = 2472
 			transfer_state = 3934
@@ -12720,7 +12720,21 @@
 			transfer_state = 3773
 			transfer_state = 3937
 			transfer_state = 10534
-				}
+			set_party_name = {
+				ideology = democratic
+				name = SLO_democratic_2023_party
+				long_name = SLO_democratic_2023_party_long
+			}
+			set_popularities = {
+				democratic = 28
+				centrist_republic = 14
+				neutrality = 4
+				socialism_ideology = 25
+				liberal_republic = 21
+				republican_fascism = 3
+				national_socialism = 5
+			}
+		}
 		SLO = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -12735,8 +12749,18 @@
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
-				}
 			}
+			set_party_name = {
+				ideology = democratic
+				name = CZC_democratic_2023_party
+				long_name = CZC_democratic_2023_party_long
+			}
+			set_popularities = {
+				democratic = 71
+				liberal_republic = 37
+				centrist_republic = 92
+			}
+		}
 		CZC = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -12744,7 +12768,7 @@
         		desc = ""
         		picture = "gfx/leaders/Czechia/CZC_Zeman.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = liberal_conservatism
 				}
 			}
 		ROM = {
@@ -12857,7 +12881,7 @@
            		desc = ""
            		picture = "gfx/leaders/AUS/AUS_Bellen.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = liberal_conservatism
 			}
 		}
 		ADR = {
@@ -12928,11 +12952,22 @@
 				}
 			}
 		ITA = {
-			set_cosmetic_tag = ITA_REPUBLIC
+			set_cosmetic_tag = ITA_2023
 			set_politics = {
-				ruling_party = liberal_republic
-				}
+				ruling_party = centrist_republic
 			}
+			set_party_name = {
+				ideology = centrist_republic
+				name = ITA_centrist_republic_2023_party
+				long_name = ITA_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				centrist_republic = 46
+				democratic = 14
+				socialism_ideology = 20
+				liberal_republic = 20
+			}
+		}
 		ITA = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -12940,7 +12975,7 @@
            		desc = ""
            		picture = "gfx/leaders/ITA/ITA_Mattarella.tga"
            		expire = "1965.1.1"
-           		ideology = liberalism
+           		ideology = right_wing_populism
 				}
 			}
 		OML = {
@@ -13256,10 +13291,16 @@
 			}
 		SPR = {
 			set_politics = {
-				ruling_party = democratic_monarchism
-				}
-			set_cosmetic_tag = SPR_KINGDOM
+				ruling_party = socialist_monarchy
 			}
+			set_cosmetic_tag = SPR_2023
+			set_popularities = {
+				socialist_monarchy = 54
+				conservative_monarchism = 25
+				centrist_monarchism = 15
+				democratic_monarchism = 6
+			}
+		}
 		SPR = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -13267,7 +13308,7 @@
         		desc = ""
         		picture = "gfx/leaders/SPR/SPR_Felipe.tga"
         		expire = "1965.1.1"
-        		ideology = liberal_constitutionalism
+        		ideology = socmon_social_democracy
 				}
 			}
 		SPR = {
@@ -13686,6 +13727,9 @@
 			set_politics = {
 				ruling_party = communism
 			}
+			set_popularities = {
+				communism = 100
+			}
 		}
 		HKG = {
 			kill_country_leader = yes
@@ -13702,6 +13746,9 @@
 			set_politics = {
 				ruling_party = communism
 			}
+			set_popularities = {
+				communism = 100
+			}
 		}
 		MCU = {
 			kill_country_leader = yes
@@ -13710,7 +13757,7 @@
            		desc = ""
            		picture = "gfx/leaders/MCU/MCU_Ho_Iat-seng.tga"
            		expire = "1965.1.1"
-           		ideology = demsoc
+           		ideology = dengism
 				}
 			}
 		MON = {
@@ -17176,23 +17223,6 @@
         		ideology = liberalism
 				}
 			}
-		REU = {
-			set_politics = {
-				ruling_party = democratic
-				}
-			drop_cosmetic_tag = yes
-			set_cosmetic_tag = FRA_BLUE
-			}
-		REU = {
-			kill_country_leader = yes
-			create_country_leader = {
-        		name = "Président Emmanuel Jean-Michel Frédéric Macron"
-        		desc = ""
-        		picture = "gfx/leaders/REU/REU_Emmanuel_Macron.tga"
-        		expire = "1965.1.1"
-        		ideology = liberal_conservatism
-				}
-			}
 		WTO = {
 			drop_cosmetic_tag = yes
 			set_politics = {
@@ -17936,13 +17966,31 @@
 			}
 		}
 		FRA = {
+			set_politics = {
+				ruling_party = liberal_republic
+			}
+			set_cosmetic_tag = FRA_2023
+			set_party_name = {
+				ideology = liberal_republic
+				name = FRA_liberal_republic_2023_party
+				long_name = FRA_liberal_republic_2023_party_long
+			}
+			set_popularities = {
+				liberal_republic = 41
+				centrist_republic = 16
+				socialism_ideology = 23
+				democratic = 16
+				vanguardism = 4
+			}
+		}
+		FRA = {
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "Président Emmanuel Jean-Michel Frédéric Macron"
         		desc = ""
         		picture = "gfx/leaders/FRA/FRA_Emmanuel_Macron.tga"
         		expire = "1965.1.1"
-        		ideology = liberal_conservatism
+        		ideology = liberalism
 				}
 			}
 		USA = {
