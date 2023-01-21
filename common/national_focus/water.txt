@@ -921,8 +921,8 @@
 					set_cosmetic_tag = FIN_RUS
 					set_politics = {
 						ruling_party = monarchism
-						}
 					}
+				}
 				POL = {
 					set_cosmetic_tag = POL_RUS
 					set_politics = {
@@ -6960,15 +6960,20 @@
 					every_state = {
 						limit = {
 							is_core_of = ALN
-							}
+						}
 						FIN = {
 							transfer_state = PREV
+							
 							set_cosmetic_tag = FIN_RUS
 							set_politics = {
 								ruling_party = monarchism
-								}
+							}
+							
+							set_popularities = {
+								monarchism = 100
 							}
 						}
+					}
 			
 					every_state = {
 						limit = {
@@ -6995,12 +7000,6 @@
 							}
 						}
 						set_demilitarized_zone = no
-					}
-			
-					GER = {
-						set_politics = {
-							ruling_party = authoritarian_monarchism
-						}
 					}
 					AUS = {
 						transfer_state = 932
@@ -7765,9 +7764,13 @@
 			transfer_state = 14773
 			transfer_state = 11299
 			transfer_state = 14780
+			
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = theocratic
+			}
+			set_popularities = {
+				theocratic = 100
 			}
 		}
 		TAN = {
@@ -8057,9 +8060,14 @@
 		}
 		CMR = {
 			set_cosmetic_tag = GREY_GER3
+			
 			set_politics = {
 				ruling_party = stratocratic_monarchism
-				}
+			}
+			
+			set_popularities = {
+				stratocratic_monarchism = 100
+			}
 		}
 		every_state = {
 			limit = {
@@ -8188,13 +8196,6 @@
 			transfer_state = 8125
 			transfer_state = 6385
 			transfer_state = 10191
-			transfer_state = 7657
-			transfer_state = 859
-			transfer_state = 8126
-			transfer_state = 6383
-			transfer_state = 18145
-			transfer_state = 18137
-			transfer_state = 18138
 			transfer_state = 18135
 			transfer_state = 18136
 			transfer_state = 18163
@@ -8227,6 +8228,8 @@
 			transfer_state = 6048
 			transfer_state = 6870
 			transfer_state = 6399
+			transfer_state = 10308
+			transfer_state = 10349
 			set_capital = {
 				state = 856
 			}
@@ -8348,11 +8351,11 @@
 					every_state = {
 						limit = {
 							is_owned_by = LBA
-								NOT = {
+							NOT = {
 								is_owned_by = CYR
 								is_core_of = CYR
-								}
 							}
+						}
 						TRP = {
 							transfer_state = PREV
 						}
@@ -8641,6 +8644,10 @@
 						}
 					}
 					GER = {
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+						
 						set_popularities = {
 							authoritarian_monarchism = 100
 						}
@@ -8654,6 +8661,15 @@
 							ideology = authmon
 							traits = {
 							}
+						}
+						
+						every_state = {
+							limit = {
+								NOT = {
+									is_owned_by = GER
+								}
+							}
+							remove_state_claim = PREV
 						}
 					}
 					AUS = {
