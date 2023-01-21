@@ -1,4 +1,48 @@
 ideologies = {
+	right_anarchism = {
+		types = {
+		
+			ancap = {
+			}
+			
+			non_governmental_organization = {
+				can_be_randomly_selected = no
+			}
+			
+			corporatocracy = {
+				can_be_randomly_selected = no
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+		
+		color = { 50 49 19 }
+		
+		
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+		
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+		
+		
+		faction_modifiers = {
+		}
+
+		can_be_boosted = yes
+		can_collaborate = yes
+
+		ai_neutral = yes # 
+	}
 	theocratic = {
 	
 		types = {
@@ -996,51 +1040,7 @@ ideologies = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 0 0 0 }
-		
-		
-		war_impact_on_world_tension = 0.25		#no major danger
-		faction_impact_on_world_tension = 0.1
-		
-		rules = {
-			can_force_government = yes
-			can_puppet = yes
-			can_send_volunteers = yes
-		}
-		
-		
-		faction_modifiers = {
-		}
-
-		can_be_boosted = yes
-		can_collaborate = yes
-
-		ai_neutral = yes # 
-	}
-	right_anarchism = {
-		types = {
-		
-			ancap = {
-			}
-			
-			non_governmental_organization = {
-				can_be_randomly_selected = no
-			}
-			
-			corporatocracy = {
-				can_be_randomly_selected = no
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_NONALIGNED_1"
-			"FACTION_NAME_NONALIGNED_2"
-			"FACTION_NAME_NONALIGNED_3"
-			"FACTION_NAME_NONALIGNED_4"
-			"FACTION_NAME_NONALIGNED_5"
-		}
-		
-		color = { 50 49 19 }
+		color = { 5 5 5 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger

@@ -8551,8 +8551,8 @@
 							set_cosmetic_tag = TRIBAL_BROWN
 							set_politics = {
 								ruling_party = anarchism_ideology
-								}
 							}
+						}
 					}
 					AST = {
 						transfer_state = 8994
@@ -8571,9 +8571,6 @@
 							ruling_party = stratocratic_monarchism
 							}
 					}
-					RUS = {
-						every_owned_states = {do_russian_renames = yes}
-					}
 					NFI = {
 						set_cosmetic_tag = NFI_ENG
 					}
@@ -8582,7 +8579,7 @@
 						create_country_leader = {
 							name = "Guvernor Hannes Þórður Pétursson Hafstein"
 							desc = ""
-							picture = "1914_ICE_Hannes_Hafstein.tga"
+							picture = "gfx/leaders/ICE/1914_ICE_Hannes_Hafstein.tga"
 							expire = "1965.1.1"
 							ideology = authmon
 							traits = {
@@ -8594,7 +8591,7 @@
 						create_country_leader = {
 							name = "King George V of Saxe-Coburg and Gotha"
 							desc = ""
-							picture = "1914_ENG_George_V.tga"
+							picture = "gfx/leaders/ENG/1914_ENG_George_V.tga"
 							expire = "1965.1.1"
 							ideology = conservative_constitutionalism
 							traits = {
@@ -8606,7 +8603,7 @@
 						create_country_leader = {
 							name = "Président Raymond Nicolas Landry Poincaré"
 							desc = ""
-							picture = "1914_FRA_Raymond_Poincare.tga"
+							picture = "gfx/leaders/FRA/1914_FRA_Raymond_Poincare.tga"
 							expire = "1965.1.1"
 							ideology = liberal_conservatism
 							traits = {
@@ -8618,7 +8615,7 @@
 						create_country_leader = {
 							name = "Re Vittorio Emanuele III di Savoia"
 							desc = ""
-							picture = "1914_ITA_Victor_Emmannuel_III.tga"
+							picture = "gfx/leaders/ITA/1914_ITA_Victor_Emmannuel_III.tga"
 							expire = "1965.1.1"
 							ideology = authmon
 							traits = {
@@ -8626,6 +8623,12 @@
 						}
 					}
 					RUS = {
+						every_owned_states = {do_russian_renames = yes}
+						
+						set_popularities = {
+							monarchism = 100
+						}
+						
 						kill_country_leader = yes
 						create_country_leader = {
 							name = "Car' Nikoláj II Romanóvskij"
@@ -8638,11 +8641,15 @@
 						}
 					}
 					GER = {
+						set_popularities = {
+							authoritarian_monarchism = 100
+						}
+						
 						kill_country_leader = yes
 						create_country_leader = {
 							name = "Kaiser Wilhelm II von Hohenzollern"
 							desc = ""
-							picture = "1914_GER_Wilhelm_II.tga"
+							picture = "gfx/leaders/GER/1914_GER_Wilhelm_II.tga"
 							expire = "1965.1.1"
 							ideology = authmon
 							traits = {
@@ -8654,11 +8661,15 @@
 						create_country_leader = {
 							name = "Kaiser Franz Josef I von Habsburg-Lothringen"
 							desc = ""
-							picture = "1914_AUS_Franz_Josef.tga"
+							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
 							expire = "1965.1.1"
 							ideology = conservative_constitutionalism
 							traits = {
 							}
+						}
+						
+						set_popularities = {
+							conservative_monarchism = 100
 						}
 					}
 					TUR = {
@@ -8666,7 +8677,7 @@
 						create_country_leader = {
 							name = "Padişah Mehmed V Reşâd"
 							desc = ""
-							picture = "1914_TUR_Mehmed_V.tga"
+							picture = "gfx/leaders/TUR/1914_TUR_Mehmed_V.tga"
 							expire = "1965.1.1"
 							ideology = absolutism
 							traits = {
@@ -8678,7 +8689,7 @@
 						create_country_leader = {
 							name = "President Thomas Woodrow Wilson"
 							desc = ""
-							picture = "1914_USA_Woodrow_Wilson.tga"
+							picture = "gfx/leaders/USA/1914_USA_Woodrow_Wilson.tga"
 							expire = "1965.1.1"
 							ideology = liberalism
 							traits = {
@@ -8690,7 +8701,7 @@
 						create_country_leader = {
 							name = "Ten'nō Yoshihito"
 							desc = ""
-							picture = "1914_JAP_Yoshihito.tga"
+							picture = "gfx/leaders/JAP/1914_JAP_Yoshihito.tga"
 							expire = "1965.1.1"
 							ideology = stratmon
 							traits = {
@@ -8702,7 +8713,7 @@
 						create_country_leader = {
 							name = "Tsungt'ung Yüan Shih-k'ai"
 							desc = ""
-							picture = "1914_CHI_Yuan_Shikai.tga"
+							picture = "gfx/leaders/CHI/1914_CHI_Yuan_Shikai.tga"
 							expire = "1965.1.1"
 							ideology = despotism
 							traits = {
