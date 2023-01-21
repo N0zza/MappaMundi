@@ -4013,12 +4013,37 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
+									has_government = stratocratic
+								}
+							}
+							set_cosmetic_tag = GREY_GER1
+						}
+						if = {
+							limit = {
+								OR = {
 									has_government = vanguardism
 									has_government = communism
 									has_government = left_anarchism
 								}
 							}
 							set_cosmetic_tag = GER_SOCIALIST
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = national_socialism
+									has_government = republican_fascism
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = theocratic
+								}
+							}
+							set_cosmetic_tag = GER_THEO
 						}
 					}
 					if = {
@@ -5443,13 +5468,41 @@ on_actions = {
 				}
 				if = {
 					limit = {
+						OR = {
+							has_government = liberal_republic
+							has_government = centrist_republic
+							has_government = democratic
+						}
+					}
+					set_cosmetic_tag = LV2_DEMOCRATIC
+				}
+				if = {
+					limit = {
 						NOT = {
 							has_government = stratocratic
 							has_government = republican_fascism
 							has_government = neutrality
+							has_government = liberal_republic
+							has_government = centrist_republic
+							has_government = democratic
 						}
 					}
 					set_cosmetic_tag = LV2_TNO
+				}
+			}
+			if = {
+				limit = {
+					tag = CZ2
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = liberal_republic
+							has_government = centrist_republic
+							has_government = democratic
+						}
+					}
+					set_cosmetic_tag = CZ2_DEMOCRATIC
 				}
 			}
 			if = {
@@ -5509,10 +5562,21 @@ on_actions = {
 				}
 				if = {
 					limit = {
+						OR = {
+							has_government = liberal_republic
+							has_government = democratic
+						}
+					}
+					set_cosmetic_tag = PL2_DEMOCRATIC
+				}
+				if = {
+					limit = {
 						NOT = {
 							has_government = stratocratic
 							has_government = republican_fascism
 							has_government = neutrality
+							has_government = liberal_republic
+							has_government = democratic
 						}
 					}
 					set_cosmetic_tag = PL2_TNO
