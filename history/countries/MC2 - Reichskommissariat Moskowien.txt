@@ -1,9 +1,10 @@
 ﻿capital = 219
 
 set_popularities = {
-    national_socialism = 60
-    stratocratic_monarchism = 20
-    democratic = 20
+    national_socialism = 57
+    stratocratic_monarchism = 23
+    democratic = 15
+	communism = 5
 }
 
 set_cosmetic_tag = MSC_TNO
@@ -100,7 +101,17 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/PSK_Backe.tga"
 	expire = "1965.1.1"
-	ideology = repfash
+	ideology = esoteric_nazism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Freier Anführer Willy Brandt"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.tga"
+	expire = "1965.1.1"
+	ideology = partisan_movement
 	traits = {
 	}
 }
