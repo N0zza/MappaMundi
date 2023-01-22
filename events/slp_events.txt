@@ -1621,3 +1621,34 @@ country_event = {
 		name = slp_menu.99.a
 	}
 }
+
+country_event = {
+	id = slp_menu.100
+	title = slp_menu.100
+	desc = slp_menu.100.democratic
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				kill_ideology_leader = liberal_republic
+				create_country_leader = {
+					name = "President Barack Hussein Obama II"
+					desc = ""
+					picture = "gfx/leaders/USA/USA_Obama.tga"
+					expire = "1965.1.1"
+					ideology = american_liberalism
+					traits = {
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = slp_menu.100.a
+	}
+}
