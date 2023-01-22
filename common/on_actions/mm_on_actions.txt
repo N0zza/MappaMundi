@@ -5358,6 +5358,15 @@ on_actions = {
 				}
 				if = {
 					limit = {
+						OR = {
+							has_government = liberal_republic
+							has_government = democratic
+						}
+					}
+					set_cosmetic_tag = KC2_DEMOCRATIC
+				}
+				if = {
+					limit = {
 						has_government = centrist_monarchism
 					}
 					set_cosmetic_tag = KC2_CENMON
@@ -5511,6 +5520,15 @@ on_actions = {
 				}
 				if = {
 					limit = {
+						OR = {
+							has_government = liberal_republic
+							has_government = democratic
+						}
+					}
+					set_cosmetic_tag = WR2_DEMOCRATIC
+				}
+				if = {
+					limit = {
 						has_government = neutrality
 					}
 					set_cosmetic_tag = WR2_AUTHREP
@@ -5530,6 +5548,8 @@ on_actions = {
 				if = {
 					limit = {
 						NOT = {
+							has_government = liberal_republic
+							has_government = democratic
 							has_government = neutrality
 							has_government = republican_fascism
 							has_government = national_socialism
