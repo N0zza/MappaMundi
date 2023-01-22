@@ -13384,13 +13384,31 @@
 			}
 		}
 		POR = {
+			set_politics = {
+				ruling_party = socialism_ideology
+			}
+			set_cosmetic_tag = POR_2023
+			set_party_name = {
+				ideology = socialism_ideology
+				name = POR_socialism_ideology_2023_party
+				long_name = POR_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 55
+				democratic = 34
+				centrist_republic = 5
+				liberal_republic = 4
+				communism = 2
+			}
+		}
+		POR = {
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "Presidente Marcelo Nuno Duarte Rebelo de Sousa"
         		desc = ""
         		picture = "gfx/leaders/POR/POR_Sousa.tga"
         		expire = "1965.1.1"
-        		ideology = repfash
+        		ideology = social_democracy
 			}
 		}
 		SPR = {
@@ -13532,7 +13550,19 @@
 		IRE = {
 			transfer_state = 3205
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = democratic
+			}
+			set_cosmetic_tag = IRE_2023
+			set_party_name = {
+				ideology = democratic
+				name = IRE_democratic_2023_party
+				long_name = IRE_democratic_2023_party_long
+			}
+			set_popularities = {
+				democratic = 44
+				liberal_republic = 8
+				socialism_ideology = 34
+				centrist_republic = 14
 			}
 		}
 		IRE = {
@@ -13542,7 +13572,7 @@
            		desc = ""
            		picture = "gfx/leaders/IRE/IRE_Higgins.tga"
            		expire = "1965.1.1"
-           		ideology = cenrep
+           		ideology = liberal_conservatism
 			}
 		}
 		every_state = {
