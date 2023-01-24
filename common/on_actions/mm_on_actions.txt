@@ -5516,6 +5516,43 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					tag = DN2
+				}
+				if = {
+					limit = {
+						has_government = theocratic
+					}
+					set_cosmetic_tag = DN2_THEO
+				}
+				if = {
+					limit = {
+						has_government = neutrality
+					}
+					set_cosmetic_tag = DN2_AUTHREP
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = democratic
+							has_government = socialist_monarchy
+						}
+					}
+					set_cosmetic_tag = DN2_DEMOCRATIC
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_government = theocratic
+							has_government = neutrality
+							has_government = democratic
+							has_government = socialist_monarchy
+						}
+					}
+					set_cosmetic_tag = DN2_TNO
+				}
+			}
+			if = {
+				limit = {
 					tag = WR2
 				}
 				if = {
