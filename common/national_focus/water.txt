@@ -2454,6 +2454,17 @@
 					
 					every_state = {
 						limit = {
+							is_core_of = CA0
+						}
+						CA0 = {
+							transfer_state = PREV
+						}
+					}
+					
+					
+					
+					every_state = {
+						limit = {
 							OR = {
 								is_owned_by = SEN
 								is_owned_by = WES
@@ -2461,10 +2472,23 @@
 								is_owned_by = MLI
 								is_owned_by = GNA
 								is_owned_by = GNB
+								is_owned_by = HSL
+								is_owned_by = IVO
 							}
 						}
 						TRB = {
 							transfer_state = PREV
+						}
+					}
+					
+					SNW = {
+						drop_cosmetic_tag = yes
+					}
+					
+					AHI = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = fascism
 						}
 					}
 					
