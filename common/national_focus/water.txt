@@ -2371,6 +2371,35 @@
 						}
 					}
 					
+					every_state = {	
+						limit = {
+							is_core_of = KKG
+							is_claimed_by = KKG
+						}
+						KKG = {
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							is_core_of = CKW
+						}
+						CKW = {
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {	
+							is_core_of = KSJ
+						}
+						
+						KSJ = {
+							transfer_state = PREV
+						}
+					}
+					
 					every_state = {
 						limit = {
 							is_core_of = AJJ
@@ -2474,6 +2503,8 @@
 								is_owned_by = GNB
 								is_owned_by = HSL
 								is_owned_by = IVO
+								is_owned_by = FEA
+								is_owned_by = NGR
 							}
 						}
 						TRB = {
@@ -3518,34 +3549,37 @@
 						}
 					}
 					
+					TRB = {
+						transfer_state = 6941
+						transfer_state = 6940
+						transfer_state = 1917
+						transfer_state = 6951
+						transfer_state = 6895
+						transfer_state = 3346
+						transfer_state = 10081
+					}
+					
 					WTR = { #:troll:
 						transfer_state = 8696
 					}
 					
-					ALG = {
+					KBY = {
 						every_state = {
 							limit = {
-								is_core_of = ALG
-								NOT = {
-								is_core_of = CAG
-								is_core_of = CNT
-								is_core_of = FRA
-								is_core_of = LBA
-								is_core_of = MCS
-								is_core_of = SBA
-								is_core_of = SGR
-								is_core_of = TGG
-								is_core_of = TRB
-								}
+								is_core_of = KBY
 							}
-							ALG = {
+							KBY = {
 								transfer_state = PREV
 							}
 						}
-					}
+						
+						set_politics = {
+							ruling_party = anarchism_ideology
+						}
+						
+						
 					
 					CAG = {
-						remove_state_core = 1459
 						remove_state_core = 3433
 						add_state_core = 3438
 						add_state_core = 3439
@@ -3558,6 +3592,13 @@
 						add_state_core = 7648
 						add_state_core = 7649
 						add_state_core = 7651
+						add_state_core = 3431
+						add_state_core = 1458
+						add_state_core = 3429
+						add_state_core = 3430
+						add_state_core = 1013
+						add_state_core = 3428
+						
 						remove_state_core = 13591
 						
 						every_state = {
@@ -3578,6 +3619,7 @@
 						transfer_state = 3441
 						transfer_state = 3442
 						transfer_state = 10212
+						transfer_state = 3446
 						set_politics = {
 							ruling_party = stratocratic_monarchism
 						}
