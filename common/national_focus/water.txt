@@ -16543,8 +16543,16 @@
 			transfer_state = 10162
 			set_politics = {
 				ruling_party = stratocratic
-				}
+			}
 			set_cosmetic_tag = SUD_2023
+			set_popularities = {
+				stratocratic = 100
+			}
+			set_party_name = {
+				ideology = stratocratic
+				name = SUD_stratocratic_2023_party
+				long_name = SUD_stratocratic_2023_party_long
+			}
 		}
 		SUD = {
 			kill_country_leader = yes
@@ -18555,7 +18563,14 @@
 		}	
 		CAN = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = democratic_monarchism
+			}
+			set_cosmetic_tag = CAN_2023
+			set_popularities = {
+				democratic_monarchism = 49
+				conservative_monarchism = 35
+				socialism_ideology = 9
+				socialist_monarchy = 7
 			}
 		}
 		CAN = {
@@ -18565,7 +18580,7 @@
         		desc = ""
         		picture = "gfx/leaders/CAN/CAN_Simon.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = liberal_constitutionalism
 			}
 		}
 		set_province_name = {

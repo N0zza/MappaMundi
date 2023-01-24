@@ -172,6 +172,10 @@ defined_text = {
 defined_text = {
 	name = GetSubIdeologyLocLiberalMonarchism
 	text = {
+		trigger = { has_country_leader_ideology = liberal_constitutionalism }
+		localization_key = liberalism
+	}
+	text = {
 		localization_key = democratic_monarchism
 	}
 }
@@ -201,6 +205,10 @@ defined_text = {
 
 defined_text = {
 	name = GetSubIdeologyLocConservativeMonarchism
+	text = {
+		trigger = { has_country_leader_ideology = conservative_constitutionalism }
+		localization_key = conservatism
+	}
 	text = {
 		localization_key = conservative_monarchism
 	}
