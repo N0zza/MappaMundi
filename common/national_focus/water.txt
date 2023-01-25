@@ -2492,6 +2492,15 @@
 					
 					every_state = {
 						limit = {
+							is_core_of = ARI
+						}
+						ARI = {
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
 							is_core_of = DBO
 						}
 						DBO = {
