@@ -5513,6 +5513,16 @@ on_actions = {
 					}
 					set_cosmetic_tag = CZ2_DEMOCRATIC
 				}
+				if = {
+					limit = {
+						NOT = {
+							has_government = liberal_republic
+							has_government = centrist_republic
+							has_government = democratic
+						}
+					}
+					set_cosmetic_tag = CZ2
+				}
 			}
 			if = {
 				limit = {
