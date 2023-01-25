@@ -14821,8 +14821,17 @@
 		}
 		SRL = {
 			set_cosmetic_tag = SRL_2023
-            set_politics = {
-                 ruling_party = democratic
+            set_party_name = {
+				ideology = socialism_ideology
+				name = SRL_socialism_ideology_2023_party
+				long_name = SRL_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 60
+				democratic = 25
+				centrist_republic = 8
+				liberal_republic = 6
+				communism = 1
 			}
 		}
 		SRL = {
@@ -14832,7 +14841,7 @@
         		desc = ""
         		picture = "gfx/leaders/SRL/SRL_Wickremsinghe.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = demsoc
 			}
 		}
 		MLD = {
@@ -14840,15 +14849,27 @@
             set_politics = {
                 ruling_party = democratic
 			}
+			set_party_name = {
+				ideology = democratic
+				name = MLD_democratic_2023_party
+				long_name = MLD_democratic_2023_party_long
+			}
+			set_popularities = {
+				democratic = 78
+				liberal_republic = 7
+				centrist_republic = 7
+				socialism_ideology = 3
+				neutrality = 5
+			}
 		}
 		MLD = {
 			kill_country_leader = yes
 			create_country_leader = {
-            	name = "President Ibrahim Mohamed Solih"
+            	name = "Raīs Ibrāhīm Muh̤ammadu Sālih̤"
             	desc = ""
             	picture = "gfx/leaders/MLD/MLD_Ibrahim_Solih.tga"
             	expire = "1965.1.1"
-            	ideology = conservatism
+            	ideology = liberal_conservatism
 			}
 		}
 		add_victory_points = {
