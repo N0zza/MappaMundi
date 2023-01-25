@@ -13998,6 +13998,7 @@
 			transfer_state = 1786
 			transfer_state = 1792
 			transfer_state = 9701
+			set_cosmetic_tag = DPK_2023
 			set_party_name = {
 				ideology = communism
 				name = DPK_communism_2023_party
@@ -14455,13 +14456,30 @@
 			name = Hsinpei
 		}
 		CHI = {
+			set_politics = {
+				ruling_party = liberal_republic
+			}
+			set_cosmetic_tag = CHI_2023
+			set_party_name = {
+				ideology = liberal_republic
+				name = CHI_liberal_republic_2023_party
+				long_name = CHI_liberal_republic_2023_party_long
+			}
+			set_popularities = {
+				liberal_republic = 57
+				democratic = 34
+				socialism_ideology = 7
+				centrist_republic = 2
+			}
+		}
+		CHI = {
 			kill_country_leader = yes
 			create_country_leader = {
 				name = "Tsungtung Tsai Ing-wen"
 				desc = ""
 				picture = "gfx/leaders/CHI/CHI_Tsai.tga"
 				expire = "1965.1.1"
-				ideology = despotism
+				ideology = liberalism
 			}
 		}
 		DST = {
