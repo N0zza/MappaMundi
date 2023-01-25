@@ -2501,6 +2501,15 @@
 					
 					every_state = {
 						limit = {
+							is_core_of = BCH
+						}
+						BCH = {
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
 							is_core_of = DBO
 						}
 						DBO = {
