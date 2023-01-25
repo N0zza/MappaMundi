@@ -2494,7 +2494,16 @@
 						limit = {
 							is_core_of = ARO
 						}
-						ARI = {
+						ARO = {
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							is_core_of = BOR
+						}
+						BOR = {
 							transfer_state = PREV
 						}
 					}
