@@ -5557,11 +5557,22 @@ on_actions = {
 				}
 				if = {
 					limit = {
+						OR = {
+							has_government = communism
+							has_government = vanguardism
+						}
+					}
+					set_cosmetic_tag = DN2_COMMUNISM
+				}
+				if = {
+					limit = {
 						NOT = {
 							has_government = theocratic
 							has_government = neutrality
 							has_government = democratic
 							has_government = socialist_monarchy
+							has_government = communism
+							has_government = vanguardism
 						}
 					}
 					set_cosmetic_tag = DN2_TNO
