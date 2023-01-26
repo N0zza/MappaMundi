@@ -2367,39 +2367,22 @@
 					
 					every_state = {	
 						limit = {
-							is_claimed_by = KKG
-						}
-						KKG = {
-							transfer_state = PREV
-						}
-					}
-
-					every_state = {	
-						limit = {
 							is_core_of = KKG
-						}
+							is_claimed_by = KKG
+					}
 						KKG = {
 							transfer_state = PREV
-						}
-					}					
+					}
+				}
 					
 					every_state = {
 						limit = {
 							is_core_of = CKW
-						}
+					}
 						CKW = {
 							transfer_state = PREV
-						}
 					}
-					
-					every_state = {
-						limit = {
-							is_core_of = DGR
-						}
-						DGR = {
-							transfer_state = PREV
-						}
-					}
+				}
 					
 					every_state = {
 						limit = {	
