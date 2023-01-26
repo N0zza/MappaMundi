@@ -2523,6 +2523,15 @@
 					
 					every_state = {
 						limit = {
+							is_core_of = KZM
+						}
+						KZM = {
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
 							is_core_of = SOK
 						}
 						SOK = {
