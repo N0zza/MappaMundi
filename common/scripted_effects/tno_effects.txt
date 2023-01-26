@@ -4,6 +4,10 @@ do_tno_explode_everything = {
 	do_tno_moskowien_civil_war = yes
 }
 
+####################
+# German Civil War #
+####################
+
 do_tno_german_civil_war = {
 	
 	every_state = {
@@ -199,6 +203,10 @@ do_tno_german_civil_war = {
 	}
 }
 
+#####################
+# Ostland Civil War #
+#####################
+
 do_tno_ostland_civil_war = {
 	
 	RIG = {
@@ -317,13 +325,13 @@ do_tno_ostland_civil_war = {
 		}
 		
 		set_popularities = {
-		liberal_republic = 60
-		neutrality = 25
-		republican_fascism = 15
+			liberal_republic = 60
+			neutrality = 25
+			republican_fascism = 15
 		}
 		
 		set_politics = {
-		ruling_party = liberal_republic
+			ruling_party = liberal_republic
 		}
 		
 		set_cosmetic_tag = WLN_TNO
@@ -355,11 +363,11 @@ do_tno_ostland_civil_war = {
 		}
 		
 		set_popularities = {
-		national_socialism = 100
+			national_socialism = 100
 		}
 		
 		set_politics = {
-		ruling_party = national_socialism
+			ruling_party = national_socialism
 		}
 		
 		set_cosmetic_tag = LTG_TNO
@@ -369,27 +377,27 @@ do_tno_ostland_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				is_core_of = SUV
-				is_core_of = LIT
-				is_core_of = COU
-				
-				state = 995
-				state = 2119
-				state = 17792
-				state = 17793
+					is_core_of = SUV
+					is_core_of = LIT
+					is_core_of = COU
+					
+					state = 995
+					state = 2119
+					state = 17792
+					state = 17793
 				}
 				NOT = {
-				is_owned_by = LTG
-				is_core_of = HGM
-				is_owned_by = AUK
-				is_core_of = WLN
-				
-				state = 4086
-				state = 4846
-				state = 11001
-				state = 17772
-				state = 17794
-				state = 17795
+					is_owned_by = LTG
+					is_core_of = HGM
+					is_owned_by = AUK
+					is_core_of = WLN
+					
+					state = 4086
+					state = 4846
+					state = 11001
+					state = 17772
+					state = 17794
+					state = 17795
 				}
 			}
 			SUV = {
@@ -412,22 +420,22 @@ do_tno_ostland_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				state = 991
-				state = 6003
-				state = 17790
-				state = 17800
-				state = 4078
-				state = 4079
-				state = 4080
-				state = 4846
-				state = 7406
-				state = 11001
-				state = 17781
-				state = 17782
-				state = 17783
-				state = 17788
-				state = 17789
-				state = 17849
+					state = 991
+					state = 6003
+					state = 17790
+					state = 17800
+					state = 4078
+					state = 4079
+					state = 4080
+					state = 4846
+					state = 7406
+					state = 11001
+					state = 17781
+					state = 17782
+					state = 17783
+					state = 17788
+					state = 17789
+					state = 17849
 				}
 			}
 			AUK = {
@@ -436,11 +444,11 @@ do_tno_ostland_civil_war = {
 		}
 		
 		set_popularities = {
-		stratocratic = 100
+			stratocratic = 100
 		}
 		
 		set_politics = {
-		ruling_party = stratocratic
+			ruling_party = stratocratic
 		}
 		
 		set_cosmetic_tag = AUK_TNO
@@ -450,33 +458,33 @@ do_tno_ostland_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				is_core_of = NOW
-				is_core_of = WR2
-				
-				state = 5564
-				state = 5788
-				state = 17791
-				state = 17801
-				state = 17802
-				state = 17803
-				state = 17804
-				state = 17842
-				state = 17845
-				state = 17847
-				state = 17955
+					is_core_of = NOW
+					is_core_of = WR2
+					
+					state = 5564
+					state = 5788
+					state = 17791
+					state = 17801
+					state = 17802
+					state = 17803
+					state = 17804
+					state = 17842
+					state = 17845
+					state = 17847
+					state = 17955
 				}
 				NOT = {
-				is_core_of = HGM
-				is_owned_by = WLN
-				is_owned_by = RIG
-				is_owned_by = SUV
-				is_owned_by = LTG
-				is_owned_by = AUK
-				
-				state = 206
-				state = 1289
-				state = 17807
-				state = 17846
+					is_core_of = HGM
+					is_owned_by = WLN
+					is_owned_by = RIG
+					is_owned_by = SUV
+					is_owned_by = LTG
+					is_owned_by = AUK
+					
+					state = 206
+					state = 1289
+					state = 17807
+					state = 17846
 				}
 			}
 			NOW = {
@@ -485,11 +493,11 @@ do_tno_ostland_civil_war = {
 		}
 		
 		set_popularities = {
-		republican_fascism = 100
+			republican_fascism = 100
 		}
 		
 		set_politics = {
-		ruling_party = republican_fascism
+			ruling_party = republican_fascism
 		}
 		
 		set_capital = {
@@ -502,13 +510,13 @@ do_tno_ostland_civil_war = {
 	if = {
 		limit = {
 			OR = {
-			1008 = { owner = LAT }
-			13830 = { owner = LAT }
+				1008 = { owner = LAT }
+				13830 = { owner = LAT }
 			}
 		}
 		every_state = {
 			limit = {
-			is_owned_by = LAT
+				is_owned_by = LAT
 			}
 			MC2 = {
 				transfer_state = PREV
@@ -517,6 +525,10 @@ do_tno_ostland_civil_war = {
 	}
 	
 }
+
+#######################
+# Moskowien Civil War #
+#######################
 
 do_tno_moskowien_civil_war = {
 	
@@ -679,9 +691,9 @@ do_tno_moskowien_civil_war = {
 	}
 	
 	MC2 = {
-	release = SMO
-	release = PNZ
-	release = SRT
+		release = SMO
+		release = PNZ
+		release = SRT
 	}
 	
 	SMO = {
@@ -700,34 +712,32 @@ do_tno_moskowien_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				state = 10412	
-				state = 14293
-				state = 14294
-				state = 14295
-				state = 17256
-				state = 17257
-				state = 17258
-				state = 17261
-				state = 17262
-				state = 17265
-				state = 17321
-				state = 17329
-				state = 17753
-				}
-				NOT = {
+					state = 10412	
+					state = 14293
+					state = 14294
+					state = 14295
+					state = 17256
+					state = 17257
+					state = 17258
+					state = 17261
+					state = 17262
+					state = 17265
+					state = 17321
+					state = 17329
+					state = 17753
 				}
 			}
 			
 			PNZ = {
-			transfer_state = PREV
+				transfer_state = PREV
 			}
 		}
 		set_popularities = {
-		stratocratic = 100
+			stratocratic = 100
 		}
 		
 		set_politics = {
-		ruling_party = stratocratic
+			ruling_party = stratocratic
 		}
 		
 		set_cosmetic_tag = PNZ_TNO
@@ -741,17 +751,17 @@ do_tno_moskowien_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				state = 10409
-				state = 11923
-				state = 14249
-				state = 14267
-				state = 14296
-				state = 14297
-				state = 14298
-				state = 14299
-				state = 14303
-				state = 14304
-				state = 17320
+					state = 10409
+					state = 11923
+					state = 14249
+					state = 14267
+					state = 14296
+					state = 14297
+					state = 14298
+					state = 14299
+					state = 14303
+					state = 14304
+					state = 17320
 				}
 			}
 			
@@ -760,11 +770,11 @@ do_tno_moskowien_civil_war = {
 			}
 		}
 		set_popularities = {
-		stratocratic = 100
+			stratocratic = 100
 		}
 		
 		set_politics = {
-		ruling_party = stratocratic
+			ruling_party = stratocratic
 		}
 		
 		set_cosmetic_tag = SRT_TNO
@@ -774,38 +784,38 @@ do_tno_moskowien_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				state = 257
-				state = 14147
-				state = 14277
-				state = 14278
-				state = 14279
-				state = 14280
-				state = 14285
-				state = 14286
-				state = 14287
-				state = 14288
-				state = 14289
-				state = 14290
-				state = 14291
-				state = 14292
-				state = 16365
-				state = 16366
-				state = 16377
-				state = 16378
-				state = 16379
+					state = 257
+					state = 14147
+					state = 14277
+					state = 14278
+					state = 14279
+					state = 14280
+					state = 14285
+					state = 14286
+					state = 14287
+					state = 14288
+					state = 14289
+					state = 14290
+					state = 14291
+					state = 14292
+					state = 16365
+					state = 16366
+					state = 16377
+					state = 16378
+					state = 16379
 				}
 			}
 			
 			TAM = {
-			transfer_state = PREV
+				transfer_state = PREV
 			}
 		}
 		set_popularities = {
-		right_anarchism = 100
+			right_anarchism = 100
 		}
 		
 		set_politics = {
-		ruling_party = right_anarchism
+			ruling_party = right_anarchism
 		}
 		
 		set_cosmetic_tag = TAM_TNO
@@ -815,48 +825,50 @@ do_tno_moskowien_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				is_core_of = UA2
-				is_core_of = UKR
+					is_core_of = UA2
+					is_core_of = UKR
+					state = 240
+					state = 14227
+					state = 3780
+					state = 2190
+					state = 11107
+					state = 11111
+					state = 218
+					state = 17279
+					state = 17303
+					state = 14253
+					state = 17282
+					state = 17283
+					state = 14250
+					state = 17292
+					state = 17293
+					state = 17295
+					state = 17297
 				}
 				NOT = {
-				is_claimed_by = ROM
-				is_owned_by = ROM
-				is_core_of = CZE
-				is_owned_by = POL
-				is_owned_by = HUN
+					is_claimed_by = ROM
+					is_owned_by = ROM
+					is_core_of = CZE
+					is_owned_by = POL
+					is_owned_by = Pl2
+					is_owned_by = Pl3
+					is_owned_by = HUN
 				}
 			}
 			
 			UA2 = {
-			transfer_state = PREV
+				transfer_state = PREV
 			}
 		}
-		transfer_state = 240
-		transfer_state = 14227
-		transfer_state = 3780
-		transfer_state = 2190
-		transfer_state = 11107
-		transfer_state = 11111
-		transfer_state = 218
-		transfer_state = 17279
-		transfer_state = 17303
-		transfer_state = 14253
-		transfer_state = 17282
-		transfer_state = 17283
-		transfer_state = 14250
-		transfer_state = 17292
-		transfer_state = 17293
-		transfer_state = 17295
-		transfer_state = 17297
 		
 		set_cosmetic_tag = UA2_TNO
 		
 		set_popularities = {
-		democratic = 100
+			democratic = 100
 		}
 		
 		set_politics = {
-		ruling_party = democratic
+			ruling_party = democratic
 		}
 		
 	}
@@ -865,22 +877,21 @@ do_tno_moskowien_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				is_core_of = ASK
-				
-				state = 2488
-				state = 11110
+					is_core_of = ASK
+					state = 2488
+					state = 11110
 				}
 				NOT = {
-				state = 10139
-				state = 10140
-				state = 11925
-				state = 12656
-				state = 12792
-				state = 12793
-				state = 12794
-				state = 12800
-				state = 17302
-				state = 17308
+					state = 10139
+					state = 10140
+					state = 11925
+					state = 12656
+					state = 12792
+					state = 12793
+					state = 12794
+					state = 12800
+					state = 17302
+					state = 17308
 				}
 			}
 			ASK = {
@@ -889,11 +900,11 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		stratocratic = 100
+			stratocratic = 100
 		}
 		
 		set_politics = {
-		ruling_party = stratocratic
+			ruling_party = stratocratic
 		}
 		
 		set_cosmetic_tag = ASK_TNO
@@ -903,11 +914,11 @@ do_tno_moskowien_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				state = 238
-				state = 11108
-				state = 14323
-				state = 14324
-				state = 14325
+					state = 238
+					state = 11108
+					state = 14323
+					state = 14324
+					state = 14325
 				}
 			}
 			DON = {
@@ -916,11 +927,11 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		stratocratic = 100
+			stratocratic = 100
 		}
 		
 		set_politics = {
-		ruling_party = stratocratic
+			ruling_party = stratocratic
 		}
 		
 		set_cosmetic_tag = DON_TNO
@@ -930,19 +941,19 @@ do_tno_moskowien_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				state = 209
-				state = 210
-				state = 1008
-				state = 1294
-				state = 3009
-				state = 3010
-				state = 13830
-				state = 13841
-				state = 13843
-				state = 13845
-				state = 13873
-				state = 17306
-				state = 17779
+					state = 209
+					state = 210
+					state = 1008
+					state = 1294
+					state = 3009
+					state = 3010
+					state = 13830
+					state = 13841
+					state = 13843
+					state = 13845
+					state = 13873
+					state = 17306
+					state = 17779
 				}
 			}
 			NVG = {
@@ -951,11 +962,11 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		stratocratic = 100
+			stratocratic = 100
 		}
 		
 		set_politics = {
-		ruling_party = stratocratic
+			ruling_party = stratocratic
 		}
 		
 		set_cosmetic_tag = NVG_TNO
@@ -965,19 +976,19 @@ do_tno_moskowien_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				is_core_of = TIK
-				state = 244
-				state = 3012
-				state = 4866
-				state = 16308
-				state = 16309
-				state = 16310
+					is_core_of = TIK
+					state = 244
+					state = 3012
+					state = 4866
+					state = 16308
+					state = 16309
+					state = 16310
 				}
 				NOT = {
-				is_owned_by = PSS
-				state = 11114
-				state = 13595
-				state = 13832
+					is_owned_by = PSS
+					state = 11114
+					state = 13595
+					state = 13832
 				}
 			}
 			TIK = {
@@ -986,11 +997,11 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		national_socialism = 100
+			national_socialism = 100
 		}
 		
 		set_politics = {
-		ruling_party = national_socialism
+			ruling_party = national_socialism
 		}
 		
 		set_cosmetic_tag = TIK_TNO
@@ -1012,11 +1023,11 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		stratocratic_monarchism = 100
+			stratocratic_monarchism = 100
 		}
 		
 		set_politics = {
-		ruling_party = stratocratic_monarchism
+			ruling_party = stratocratic_monarchism
 		}
 		
 		set_cosmetic_tag = PTG_TNO
@@ -1026,17 +1037,17 @@ do_tno_moskowien_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				state = 3011
-				state = 3525
-				state = 4860
-				state = 4861
-				state = 4862
-				state = 4863
-				state = 4869
-				state = 13838
-				state = 13842
-				state = 13844
-				state = 17307
+					state = 3011
+					state = 3525
+					state = 4860
+					state = 4861
+					state = 4862
+					state = 4863
+					state = 4869
+					state = 13838
+					state = 13842
+					state = 13844
+					state = 17307
 				}
 			}
 			PSK = {
@@ -1045,11 +1056,11 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		national_socialism = 100
+			national_socialism = 100
 		}
 		
 		set_politics = {
-		ruling_party = national_socialism
+			ruling_party = national_socialism
 		}
 		
 		set_cosmetic_tag = PSK_TNO
@@ -1074,19 +1085,19 @@ do_tno_moskowien_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				is_core_of = IGR
-				state = 1082
-				state = 13834
+					is_core_of = IGR
+					state = 1082
+					state = 13834
 				}
 				NOT = {
-				is_owned_by = PTG
-				is_owned_by = RIG
-				is_owned_by = LV2
-				is_owned_by = EST
-				state = 244
-				state = 4866
-				state = 13855
-				state = 16309
+					is_owned_by = PTG
+					is_owned_by = RIG
+					is_owned_by = LV2
+					is_owned_by = EST
+					state = 244
+					state = 4866
+					state = 13855
+					state = 16309
 				}
 			}
 			IGR = {
@@ -1095,11 +1106,11 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		stratocratic = 100
+			stratocratic = 100
 		}
 		
 		set_politics = {
-		ruling_party = stratocratic
+			ruling_party = stratocratic
 		}
 		
 		set_cosmetic_tag = IGR_TNO
@@ -1109,23 +1120,23 @@ do_tno_moskowien_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				is_core_of = ORO
-				
-				state = 205
-				state = 260
-				state = 14164
-				state = 14165
-				state = 14166
-				state = 14167
-				state = 14168
-				state = 14169
-				state = 14224
-				state = 14254
-				state = 14255
-				state = 16355
-				state = 16356
-				state = 16360
-				state = 16361
+					is_core_of = ORO
+					
+					state = 205
+					state = 260
+					state = 14164
+					state = 14165
+					state = 14166
+					state = 14167
+					state = 14168
+					state = 14169
+					state = 14224
+					state = 14254
+					state = 14255
+					state = 16355
+					state = 16356
+					state = 16360
+					state = 16361
 				}
 			}
 			ORO = {
@@ -1134,11 +1145,11 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		neutrality = 100
+			neutrality = 100
 		}
 		
 		set_politics = {
-		ruling_party = neutrality
+			ruling_party = neutrality
 		}
 		
 		set_cosmetic_tag = ORO_TNO
@@ -1148,33 +1159,33 @@ do_tno_moskowien_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				is_core_of = VRN
-				
-				state = 1329
-				state = 11112
-				state = 14317
-				state = 14318
-				state = 14319
-				state = 14320
-				state = 14321
-				state = 14322
-				state = 17277
-				state = 17278
-				state = 17324
-				state = 17325
+					is_core_of = VRN
+					
+					state = 1329
+					state = 11112
+					state = 14317
+					state = 14318
+					state = 14319
+					state = 14320
+					state = 14321
+					state = 14322
+					state = 17277
+					state = 17278
+					state = 17324
+					state = 17325
 				}
 				NOT = {
-				is_owned_by = UA2
-				is_owned_by = ORO
-				
-				state = 1330
-				state = 14248
-				state = 14249
-				state = 14262
-				state = 14263
-				state = 14264
-				state = 14265
-				state = 14268
+					is_owned_by = UA2
+					is_owned_by = ORO
+					
+					state = 1330
+					state = 14248
+					state = 14249
+					state = 14262
+					state = 14263
+					state = 14264
+					state = 14265
+					state = 14268
 				}
 			}
 			VRN = {
@@ -1183,11 +1194,11 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		vanguardism = 100
+			vanguardism = 100
 		}
 		
 		set_politics = {
-		ruling_party = vanguardism
+			ruling_party = vanguardism
 		}
 		
 		set_cosmetic_tag = VRN_TNO
@@ -1197,32 +1208,32 @@ do_tno_moskowien_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				is_core_of = VLD
-				
-				state = 239
-				state = 5906
-				state = 13597
-				state = 13598
-				state = 14248
-				state = 14269
-				state = 14270
-				state = 14271
-				state = 14272
-				state = 14273
-				state = 14274
-				state = 14275
-				state = 14314
-				state = 14315
-				state = 17266
-				state = 17267
-				state = 17269
-				state = 17322
-				state = 17323
-				state = 17881
-				state = 17882
+					is_core_of = VLD
+					
+					state = 239
+					state = 5906
+					state = 13597
+					state = 13598
+					state = 14248
+					state = 14269
+					state = 14270
+					state = 14271
+					state = 14272
+					state = 14273
+					state = 14274
+					state = 14275
+					state = 14314
+					state = 14315
+					state = 17266
+					state = 17267
+					state = 17269
+					state = 17322
+					state = 17323
+					state = 17881
+					state = 17882
 				}
 				NOT = {
-				is_owned_by = VRN
+					is_owned_by = VRN
 				}
 			}
 			VLD = {
@@ -1231,11 +1242,11 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		stratocratic = 100
+			stratocratic = 100
 		}
 		
 		set_politics = {
-		ruling_party = stratocratic
+			ruling_party = stratocratic
 		}
 		
 		set_cosmetic_tag = VLD_TNO
@@ -1247,19 +1258,19 @@ do_tno_moskowien_civil_war = {
 	
 	every_state = {
 		limit = {
-		is_owned_by = CSS
+			is_owned_by = CSS
 		}
 		VLD = {
-		transfer_state = PREV
+			transfer_state = PREV
 		}
 	}
 	
 	every_state = {
 		limit = {
-		state = 17309
+			state = 17309
 		}
 		ATY = {
-		transfer_state = PREV
+			transfer_state = PREV
 		}
 	}
 
@@ -1268,19 +1279,19 @@ do_tno_moskowien_civil_war = {
 			limit = {
 				is_owned_by = SMO
 				NOT = {
-				state = 242
-				state = 1288
-				state = 14160
-				state = 14161
-				state = 14162
-				state = 14163
-				state = 14170
-				state = 14171
-				state = 14173
-				state = 16262
-				state = 16263
-				state = 17317
-				state = 17328
+					state = 242
+					state = 1288
+					state = 14160
+					state = 14161
+					state = 14162
+					state = 14163
+					state = 14170
+					state = 14171
+					state = 14173
+					state = 16262
+					state = 16263
+					state = 17317
+					state = 17328
 				}
 			}
 			BYS = {
@@ -1291,10 +1302,10 @@ do_tno_moskowien_civil_war = {
 		every_state = {
 			limit = {
 				OR = {
-				state = 14172
-				state = 17316
-				state = 17326
-				state = 17327
+					state = 14172
+					state = 17316
+					state = 17326
+					state = 17327
 				}
 			}
 			MC2 = {
@@ -1303,28 +1314,27 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		stratocratic = 100
+			stratocratic = 100
 		}
 		
 		set_politics = {
-		ruling_party = stratocratic
+			ruling_party = stratocratic
 		}
 		
 		set_cosmetic_tag = BYS_TNO
 	}
 	
 	CPT = {
-		transfer_state = 11114
-		transfer_state = 13595
-		
 		every_state = {
 			limit = {
 				OR = {
-				is_core_of = VLG
-				state = 13858
-				state = 13859
-				state = 16325
-				state = 17314
+					is_core_of = VLG
+					state = 11114
+					state = 13595
+					state = 13858
+					state = 13859
+					state = 16325
+					state = 17314
 				}
 				NOT = {
 					NOT = {
@@ -1339,11 +1349,11 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		stratocratic = 100
+			stratocratic = 100
 		}
 		
 		set_politics = {
-		ruling_party = stratocratic
+			ruling_party = stratocratic
 		}
 		
 		set_cosmetic_tag = CPT_TNO
@@ -1352,7 +1362,7 @@ do_tno_moskowien_civil_war = {
 	TVE = {
 		every_state = {
 			limit = {
-			is_owned_by = MC2
+				is_owned_by = MC2
 			}
 			TVE = {
 				transfer_state = PREV
@@ -1360,18 +1370,20 @@ do_tno_moskowien_civil_war = {
 		}
 		
 		set_popularities = {
-		stratocratic = 100
+			stratocratic = 100
 		}
 		
 		set_politics = {
-		ruling_party = stratocratic
+			ruling_party = stratocratic
 		}
 		
 		set_cosmetic_tag = TVE_TNO
 	}
 }
 
-# post midnight russia
+########################
+# Post Midnight Russia #
+########################
 
 do_tno_post_midnight_russia = {
 	
