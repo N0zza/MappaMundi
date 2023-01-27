@@ -14379,13 +14379,24 @@
 			}
 		}
 		SGP = {
+			set_politics = {
+				ruling_party = centrist_republic
+			}
+			set_popularities = {
+				centrist_republic = 81
+				communism = 9
+				neutrality = 9
+				socialism_ideology = 1
+			}
+		}
+		SGP = {
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "President Halimah Binte Yacob"
         		desc = ""
         		picture = "gfx/leaders/SGP/SGP_Yacob.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = national_conservatism
 			}
 		}
 		BEI = {
@@ -14879,17 +14890,31 @@
 		}
 		NEP = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = vanguardism
+			}
+			set_party_name = {
+				ideology = vanguardism
+				name = NEP_vanguardism_2023_party
+				long_name = NEP_vanguardism_2023_party_long
+			}
+			set_popularities = {
+				liberal_republic = 32
+				vanguardism = 29
+				communism = 12
+				neutrality = 8
+				socialism_ideology = 7
+				democratic = 7
+				centrist_republic = 5
 			}
 		}
 		NEP = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Rāṣṭrapati Bidya Devi Bhandari"
+        		name = "Rāṣṭrapati Vidyādēvī Bhaṇḍārī"
         		desc = ""
         		picture = "gfx/leaders/NEP/NEP_Bhandari.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = totsoc
 			}
 		}
 		SRL = {
@@ -15014,38 +15039,48 @@
 		BAN = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-	       		ruling_party = centrist_republic
-		}
+	       		ruling_party = socialism_ideology
+			}
 			every_owned_state = {
 				do_indian_renames = yes
+			}
+			set_popularities = {
+				socialism_ideology = 87
+				democratic = 8
+				vanguardism = 1
+				centrist_republic = 4
 			}
 		}
 		BAN = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Rashtrôpôti Mohammad Abdul Hamid"
+        		name = "Rashtrôpôti Mohāmmāda Āvadula Hāmida"
         		desc = ""
         		picture = "gfx/leaders/BAN/BAN_Hamid.tga"
         		expire = "1965.1.1"
-        		ideology = cenrep
+        		ideology = social_democracy
 			}
 		}
 		BHU = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 	       		ruling_party = socialist_monarchy
-              }
-				BHU = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Druk Gyalpo Jigme Khesar Namgyel Wangchuck"
-            			desc = ""
-            			picture = "gfx/leaders/BHU/BHU_Jigme.tga"
-            			expire = "1965.1.1"
-            			ideology = monsoc
-					}
-				}		
+			}
+			set_popularities = {
+				socialist_monarchy = 70
+				conservative_monarchism = 30
+			}
 		}
+		BHU = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Druk Gyalpo Jigsmed Gesar Rnamrgyal Dbangphyug"
+        		desc = ""
+        		picture = "gfx/leaders/BHU/BHU_Jigme.tga"
+        		expire = "1965.1.1"
+        		ideology = socmon_social_democracy
+			}
+		}		
 		add_victory_points = { #Rourkela
 			province = 2425
 			value = 5
