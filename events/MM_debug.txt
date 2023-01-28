@@ -1,25 +1,52 @@
 add_namespace = mmleaderdebug
 
-country_event = { Country Leader Changing Template Event
-	id = mmdebug.1
-	title = mmdebug.1.t
-	desc = mmdebug.1.d
+country_event = { #Yeet the princely states 2 electric boogaloo
+	id = mm.69
+	title = "Debug Event ?"
+	desc = "Debug Event"
+	fire_only_once = yes
 	is_triggered_only = yes
-
-	option = {
-		name = mmdebug.1.a
+	
+	option = { #Agree
+		name = "Sure"
 		ai_chance = {
-			base = 100
+			factor = 0
 		}
-		VAN = {
-			kill_country_leader = yes
-			create_country_leader = {
-        		name = "President Nikenike Vurobaravu"
-        		desc = ""
-        		picture = "gfx/leaders/VAN/VAN_Vurobaravu.tga"
-        		expire = "1965.1.1"
-        		ideology = liberalism
+
+		hidden_effect = {
+			ROM = {
+				set_politics = {
+					ruling_party = democratic
+				}
+				set_party_name = {
+					ideology = democratic
+					name = ROM_democratic_2023_party
+					long_name = ROM_democratic_2023_party_long
+				}
+				set_popularities = {
+					democratic = 35
+					socialism_ideology = 33
+					liberal_republic = 22
+					centrist_republic = 10
 				}
 			}
+			ROM = {
+				kill_country_leader = yes
+				create_country_leader = {
+					name = "Președinte Klaus Werner Iohannis"
+					desc = ""
+					picture = "gfx/leaders/ROM/ROM_Iohannis.tga"
+					expire = "1965.1.1"
+					ideology = liberal_conservatism
+				}
+			}
+		}
+	}
+	option = { #reject
+		name = "No"
+		ai_chance = {
+			factor = 100
+		}
+
 	}
 }

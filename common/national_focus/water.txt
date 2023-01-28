@@ -13081,6 +13081,17 @@
 			set_politics = {
 				ruling_party = democratic
 			}
+			set_party_name = {
+				ideology = democratic
+				name = ROM_democratic_2023_party
+				long_name = ROM_democratic_2023_party_long
+			}
+			set_popularities = {
+				democratic = 35
+				socialism_ideology = 33
+				liberal_republic = 22
+				centrist_republic = 10
+			}
 		}
 		ROM = {
 			kill_country_leader = yes
@@ -13089,7 +13100,7 @@
            		desc = ""
            		picture = "gfx/leaders/ROM/ROM_Iohannis.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = liberal_conservatism
 			}
 		}
 		BUL = {
@@ -13133,37 +13144,59 @@
 			}
 		}
 		MOL = {
-			drop_cosmetic_tag = yes
-			
-			set_politics = {
-				ruling_party = democratic
-			}
-			
 			set_capital = {
 				state = 78
+				remember_old_capital = no
 			}
-			
+			set_politics = {
+				ruling_party = liberal_republic
+			}
+			set_cosmetic_tag = MOL_2023
+			set_party_name = {
+				ideology = liberal_republic
+				name = MOL_liberal_republic_2023_party
+				long_name = MOL_liberal_republic_2023_party_long
+			}
+			set_popularities = {
+				liberal_republic = 62
+				socialism_ideology = 23
+				vanguardism = 8
+				centrist_republic = 6
+				neutrality = 1
+			}
+		}
+		
+		MOL = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Președinte Maia Sandu"
+           		name = "Președintă Maia Sandu"
            		desc = ""
            		picture = "gfx/leaders/MOL/MOL_Maia_Sandu.tga"
            		expire = "1965.1.1"
-           		ideology = liberal_conservatism
+           		ideology = liberalism
 			}
 		}
 		TRN = {
 			transfer_state = 790
 			transfer_state = 7325
 			transfer_state = 18700
+			set_popularities = {
+				neutrality = 88
+				centrist_republic = 12
+			}
+			every_owned_state = {
+				do_russian_renames = yes
+			}
+		}
 			
+		TRN = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Prezident Vadim Nikolaevich Krasnoselsky"
+           		name = "Prezidént Vadím Nikoláevič Krasnosélʹskij"
            		desc = ""
            		picture = "gfx/leaders/TRN/TRN_Vadim_Krasnoselsky.tga"
            		expire = "1965.1.1"
-           		ideology = oligarchism
+           		ideology = putinism
 			}
 		}
 		AUS = {
@@ -16552,9 +16585,21 @@
 			transfer_state = 5650
 		}
 		GAU = {
+			set_party_name = {
+				ideology = socialism_ideology
+				name = GAU_socialism_ideology_2023_party
+				long_name = GAU_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				neutrality = 74
+				socialism_ideology = 23
+				liberal_republic = 3
+			}
+		}
+		GAU = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Başkan Irina Vlah"
+           		name = "Başkan İrina Vlah"
            		desc = ""
            		picture = "gfx/leaders/GAU/GAU_Vlah.tga"
            		expire = "1965.1.1"
