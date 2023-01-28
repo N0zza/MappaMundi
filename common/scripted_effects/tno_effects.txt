@@ -87,35 +87,70 @@ do_tno_german_civil_war = {
 	}
 	
 	SSC = {
-		add_state_core = 137
-		add_state_core = 2480
-		add_state_core = 2481
-		add_state_core = 2482
-		add_state_core = 9092
-		every_state = {
+		if = {
 			limit = {
-				is_core_of = SSC
+				OR = {
+					137 = {owner = NZG}
+					137 = {owner = GER}
+				}
 			}
-			SSC = {
-				transfer_state = PREV
-			}
+			transfer_state = 137
 		}
+		if = {
+			limit = {
+				OR = {
+					2480 = {owner = NZG}
+					2480 = {owner = GER}
+				}
+			}
+			transfer_state = 2480
+		}
+		if = {
+			limit = {
+				OR = {
+					2481 = {owner = NZG}
+					2481 = {owner = GER}
+				}
+			}
+			transfer_state = 2481
+		}
+		if = {
+			limit = {
+				OR = {
+					2482 = {owner = NZG}
+					2482 = {owner = GER}
+				}
+			}
+			transfer_state = 2482
+		}
+		if = {
+			limit = {
+				OR = {
+					9092 = {owner = NZG}
+					9092 = {owner = GER}
+				}
+			}
+			transfer_state = 9092
+		}
+		
+		set_cosmetic_tag = CRM_TNO
+		
 		set_politics = {
 			ruling_party = stratocratic
 		}
-		set_cosmetic_tag = CRM_TNO
+		
 		set_popularities = {
-		stratocratic = 100
+			stratocratic = 100
 		}
 	}	
 	
 	BRL = {
 		every_state = {
 			limit = {
-			is_core_of = BRL	
+				is_core_of = BRL	
 			}
 			BRL = {
-			transfer_state = PREV
+				transfer_state = PREV
 			}
 		}
 		
@@ -155,35 +190,40 @@ do_tno_german_civil_war = {
 		transfer_state = 8243
 		transfer_state = 8302
 		transfer_state = 8303
+		
 		set_politics = {
 			ruling_party = stratocratic
 		}
+		
 		set_popularities = {
 			stratocratic = 70
 			national_socialism = 20
 			neutrality = 10
 		}
+		
 		set_cosmetic_tag = GREY_GER3
 	}
 	
 	CZ2 = {
 		every_state = {
-		limit = {
-			is_core_of = CZC
-			NOT = {
-				is_core_of = BGM
-				is_core_of = GGM
+			limit = {
+				is_core_of = CZC
+				NOT = {
+					is_core_of = BGM
+					is_core_of = GGM
+				}
+			}
+			CZ2 = {
+				transfer_state = PREV
 			}
 		}
-		CZ2 = {
-			transfer_state = PREV
-			}
-		}
+		
 		set_popularities = {
 			stratocratic = 55
 			national_socialism = 25
 			neutrality = 20
 		}
+		
 		set_politics = {
 			ruling_party = stratocratic
 		}
@@ -698,11 +738,11 @@ do_tno_moskowien_civil_war = {
 	
 	SMO = {
 		set_popularities = {
-		communism = 100
+			communism = 100
 		}
 		
 		set_politics = {
-		ruling_party = communism
+			ruling_party = communism
 		}
 		
 		set_cosmetic_tag = SMO_TNO
