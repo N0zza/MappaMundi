@@ -14543,33 +14543,39 @@
 		LAO = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = communism
+				ruling_party = vanguardism
+			}
+			set_popularities = {
+				vanguardism = 100
 			}
 		}
 		LAO = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Président Thongloun Sisoulith"
+        		name = "Pathanpathet Thongloun Sisoulit"
         		desc = ""
         		picture = "gfx/leaders/LAO/LAO_Sisoulith.tga"
         		expire = "1965.1.1"
-        		ideology = marxism
+        		ideology = totsoc
 			}
 		}
 		CAM = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = conservative_monarchism
+				ruling_party = centrist_monarchism
+			}
+			set_popularities = {
+				centrist_monarchism = 100
 			}
 		}
 		CAM = {
 			kill_country_leader = yes
 			create_country_leader = {
-				name = "Ste ch Norodom Sihamoni"
+				name = "Môhaksâtr Nôroŭttâm Seihâmŭni"
 				desc = ""
 				picture = "gfx/leaders/CAM/CAM_Sihamoni.tga"
 				expire = "1965.1.1"
-				ideology = conservative_constitutionalism
+				ideology = cenmon_national_conservatism
 			}
 		}
 		add_victory_points = {
@@ -14633,18 +14639,29 @@
 				transfer_state_to = SIA
 		}
 		SIA = {
-			set_politics = {
-				ruling_party = democratic_monarchism
+			set_cosmetic_tag = SIA_2023
+			set_party_name = {
+				ideology = stratocratic_monarchism
+				name = SIA_stratocratic_monarchism_2023_party
+				long_name = SIA_stratocratic_monarchism_2023_party_long
+			}
+			set_popularities = {
+				stratocratic_monarchism = 20
+				authoritarian_monarchism = 11
+				centrist_monarchism = 16
+				conservative_monarchism = 12
+				democratic_monarchism = 31
+				socialist_monarchy = 10
 			}
 		}
 		SIA = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Ks'atriy Rama X"
+        		name = "Kasat Wachiralongkon"
         		desc = ""
         		picture = "gfx/leaders/SIA/SIA_Vajiralongkorn.tga"
         		expire = "1965.1.1"
-        		ideology = liberal_constitutionalism
+        		ideology = stratmon_military_junta
 			}
 		}
 		every_state = {
