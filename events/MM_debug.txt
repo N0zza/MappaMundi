@@ -14,32 +14,16 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			ROM = {
-				set_politics = {
-					ruling_party = democratic
-				}
-				set_party_name = {
-					ideology = democratic
-					name = ROM_democratic_2023_party
-					long_name = ROM_democratic_2023_party_long
-				}
-				set_popularities = {
-					democratic = 35
-					socialism_ideology = 33
-					liberal_republic = 22
-					centrist_republic = 10
-				}
+		YM1 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Raʾīs Mahdī Muḥammad Ḥusayn al-Mašāṭ"
+           		desc = ""
+           		picture = "gfx/leaders/YM1/YM1_Mahdi.tga"
+           		expire = "1965.1.1"
+           		ideology = provisional_government
 			}
-			ROM = {
-				kill_country_leader = yes
-				create_country_leader = {
-					name = "Președinte Klaus Werner Iohannis"
-					desc = ""
-					picture = "gfx/leaders/ROM/ROM_Iohannis.tga"
-					expire = "1965.1.1"
-					ideology = liberal_conservatism
-				}
-			}
+		}
 		}
 	}
 	option = { #reject

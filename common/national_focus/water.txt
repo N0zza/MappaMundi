@@ -13847,13 +13847,21 @@
 			release = SLD
 		}
 		SLD = {
+			set_politics = {
+				ruling_party = authoritarian_monarchism
+			}
+			set_popularities = {
+				authoritarian_monarchism = 100
+			}
+		}
+		SLD = {
 			kill_country_leader = yes
 			create_country_leader = {
            		name = "Prince Michael of Sealand"
            		desc = ""
            		picture = "gfx/leaders/SLD/SLD_Michael_Bates.tga"
            		expire = "1965.1.1"
-           		ideology = absolutism
+           		ideology = authmon
 			}
 		}
 		IRE = {
@@ -15373,11 +15381,15 @@
 		}
 		UAE = {
 			set_politics = {
-				ruling_party = conservative_monarchism
+				ruling_party = authoritarian_monarchism
+			}
+			set_popularities = {
+				authoritarian_monarchism = 50
+				centrist_monarchism = 50
 			}
 			drop_cosmetic_tag = yes
 			transfer_state = 3390
-		   }  
+		}  
 		UAE = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -15385,7 +15397,7 @@
            		desc = ""
            		picture = "gfx/leaders/UAE/UAE_MBZ.tga"
            		expire = "1965.1.1"
-           		ideology = conservative_constitutionalism
+           		ideology = authmon
 			}
 		}
 		17388 = {
@@ -15447,7 +15459,12 @@
 			drop_cosmetic_tag = yes
 		    transfer_state = 3276
 			set_politics = {
-				ruling_party = conservative_monarchism
+				ruling_party = authoritarian_monarchism
+			}
+			set_popularities = {
+				authoritarian_monarchism = 92
+				centrist_monarchism = 5
+				socialist_monarchy = 3
 			}
         }
 		BHR = {
@@ -15457,13 +15474,18 @@
            		desc = ""
            		picture = "gfx/leaders/BHR/BHR_Hamad.tga"
            		expire = "1965.1.1"
-           		ideology = conservative_constitutionalism
+           		ideology = authmon
 			}
 		}
         QAT = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = conservative_monarchism
+				ruling_party = authoritarian_monarchism
+			}
+			set_popularities = {
+				authoritarian_monarchism = 67
+				centrist_monarchism = 33
+			}
 		}
 		QAT = {
 			kill_country_leader = yes
@@ -15472,10 +15494,9 @@
            		desc = ""
            		picture = "gfx/leaders/QAT/QAT_Thani.tga"
            		expire = "1965.1.1"
-           		ideology = conservative_constitutionalism
+           		ideology = authmon
 			}
 		}
-        }
         KUW = {
 			drop_cosmetic_tag = yes
 			set_politics = {
@@ -15488,7 +15509,7 @@
            		picture = "gfx/leaders/KUW/KUW_Nawaf.tga"
            		expire = "1965.1.1"
            		ideology = conservative_constitutionalism
-		}
+			}
         }
 		every_state = {
 			limit = {
@@ -15511,9 +15532,15 @@
 		}
 		YEM = {
 			set_politics = {
-	        ruling_party = democratic
+				ruling_party = centrist_republic
 			}
-		    }  
+			set_popularities = {
+				centrist_republic = 56
+				neutrality = 27
+				theocratic = 14
+				socialism_ideology = 3
+			}
+		}  
 		YEM = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -15521,7 +15548,7 @@
         		desc = ""
         		picture = "gfx/leaders/YEM/YEM_Alimi.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = cenrep
 			}
 		}
 		OMA = {
@@ -15529,16 +15556,19 @@
 		    transfer_state = 4210
 		    transfer_state = 9412
 			set_politics = {
-				ruling_party = authoritarian_monarchism
-             }
+				ruling_party = monarchism
+			}
 			drop_cosmetic_tag = yes
+		}
+		
+		OMA = {
 			kill_country_leader = yes
 			create_country_leader = {
             	name = "Sulṭān Hayṯam bin Ṭāriq bin Taymūr as-Saʿīd"
             	desc = ""
             	picture = "gfx/leaders/OMA/OMA_Haitham.tga"
             	expire = "1965.1.1"
-            	ideology = authmon
+            	ideology = absolutism
 			}
 		}
 		IRQ = {
@@ -16418,7 +16448,7 @@
            		desc = ""
            		picture = "gfx/leaders/YM1/YM1_Mahdi.tga"
            		expire = "1965.1.1"
-           		ideology = despotism
+           		ideology = provisional_government
 			}
 		}
 		YM2 = {
@@ -16428,7 +16458,7 @@
            		desc = ""
            		picture = "gfx/leaders/YM2/YM2_Zoubaidi.tga"
            		expire = "1965.1.1"
-           		ideology = despotism
+           		ideology = provisional_government
 			}
 		}
 		IS3 = {
