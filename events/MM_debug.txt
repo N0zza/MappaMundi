@@ -14,16 +14,27 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-		YM1 = {
-			kill_country_leader = yes
-			create_country_leader = {
-           		name = "Raʾīs Mahdī Muḥammad Ḥusayn al-Mašāṭ"
-           		desc = ""
-           		picture = "gfx/leaders/YM1/YM1_Mahdi.tga"
-           		expire = "1965.1.1"
-           		ideology = provisional_government
+			KUW = {
+				drop_cosmetic_tag = yes
+				set_politics = {
+					ruling_party = authoritarian_monarchism
+				}
+				set_popularities = {
+					authoritarian_monarchism = 87
+					centrist_monarchism = 13
+				}
 			}
-		}
+			
+			KUW = {
+				kill_country_leader = yes
+				create_country_leader = {
+					name = "Amīr Nawwāf al-Aḥmad al-Ǧābir al-Mubārak aṣ-Ṣubāḥ"
+					desc = ""
+					picture = "gfx/leaders/KUW/KUW_Nawaf.tga"
+					expire = "1965.1.1"
+					ideology = authmon
+				}
+			}
 		}
 	}
 	option = { #reject

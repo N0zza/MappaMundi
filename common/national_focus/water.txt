@@ -14533,9 +14533,9 @@
 		NVI = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Chủ tịch Nguyễn Xuân Phúc"
+        		name = "Chủ tịch nước Nguyễn Xuân Phúc"
         		desc = ""
-        		picture = "gfx/leaders/NVI/NVI_Trong.tga"
+        		picture = "gfx/leaders/NVI/NVI_Nguyen.tga"
         		expire = "1965.1.1"
         		ideology = totsoc
 			}
@@ -15500,15 +15500,22 @@
         KUW = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = conservative_monarchism
+				ruling_party = authoritarian_monarchism
 			}
+			set_popularities = {
+				authoritarian_monarchism = 87
+				centrist_monarchism = 13
+			}
+		}
+		
+        KUW = {
 			kill_country_leader = yes
 			create_country_leader = {
            		name = "Amīr Nawwāf al-Aḥmad al-Ǧābir al-Mubārak aṣ-Ṣubāḥ"
            		desc = ""
            		picture = "gfx/leaders/KUW/KUW_Nawaf.tga"
            		expire = "1965.1.1"
-           		ideology = conservative_constitutionalism
+           		ideology = authmon
 			}
         }
 		every_state = {
@@ -15557,6 +15564,9 @@
 		    transfer_state = 9412
 			set_politics = {
 				ruling_party = monarchism
+			}
+			set_popularities = {
+				monarchism = 100
 			}
 			drop_cosmetic_tag = yes
 		}
