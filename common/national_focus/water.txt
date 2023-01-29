@@ -13410,7 +13410,19 @@
 		CRO = {
 			transfer_state = 818
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = democratic
+			}
+			set_cosmetic_tag = CRO_2023
+			set_party_name = {
+				ideology = democratic
+				name = CRO_democratic_2023_party
+				long_name = CRO_democratic_2023_party_long
+			}
+			set_popularities = {
+				democratic = 50
+				socialism_ideology = 27
+				liberal_republic = 11
+				centrist_republic = 12
 			}
 		}
 		CRO = {
@@ -13420,7 +13432,7 @@
            		desc = ""
            		picture = "gfx/leaders/CRO/CRO_modern.tga"
            		expire = "1965.1.1"
-           		ideology = liberalism
+           		ideology = conservatism
 			}
 		}
 		CZE = {
@@ -13435,7 +13447,18 @@
 		}
 		SLV = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
+			}
+			set_party_name = {
+				ideology = liberal_republic
+				name = SLV_liberal_republic_2023_party
+				long_name = SLV_liberal_republic_2023_party_long
+			}
+			set_popularities = {
+				liberal_republic = 48
+				centrist_republic = 30
+				socialism_ideology = 13
+				democratic = 9
 			}
 		}
 		SLV = {
@@ -13445,12 +13468,24 @@
         		desc = ""
         		picture = "gfx/leaders/SLV/SLV_Musar.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = liberalism
 			}
 		}
 		BOS = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = socialism_ideology
+			}
+			set_cosmetic_tag = BOS_2023
+			set_party_name = {
+				ideology = socialism_ideology
+				name = BOS_socialism_ideology_2023_party
+				long_name = BOS_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 33
+				centrist_republic = 31
+				democratic = 19
+				liberal_republic = 17
 			}
 		}
 		BOS = {
@@ -13460,7 +13495,7 @@
            		desc = ""
            		picture = "gfx/leaders/BOS/BOS_Cvijanovic.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = social_democracy
 			}
 		}
 		MNT = {
@@ -15453,8 +15488,15 @@
 			}
 		}
 		JOR = {
-			set_politics = {
-				ruling_party = conservative_monarchism
+			set_cosmetic_tag = JOR_2023
+			set_party_name = {
+				ideology = authoritarian_monarchism
+				name = JOR_authoritarian_monarchism_2023_party
+				long_name = JOR_authoritarian_monarchism_2023_party_long
+			}
+			set_popularities = {
+				authoritarian_monarchism = 91
+				centrist_monarchism = 9
 			}
 		    transfer_state = 1175
 		    transfer_state = 1177
@@ -15462,14 +15504,16 @@
 			transfer_state = 14409
 			transfer_state = 17501
 			transfer_state = 17513
-			drop_cosmetic_tag = yes
+		}
+		
+		JOR = {
 			kill_country_leader = yes
 			create_country_leader = {
            		name = "Milk ʿAbd ul-llāh al-Ṯānī bin al-Ḥussayn al-Hāšimī"
            		desc = ""
            		picture = "gfx/leaders/JOR/JOR_Abdullah.tga"
            		expire = "1965.1.1"
-           		ideology = conservative_constitutionalism
+           		ideology = authmon
 			}
 		} 
         BHR = {

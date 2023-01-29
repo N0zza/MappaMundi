@@ -14,24 +14,33 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			CAM = {
-				drop_cosmetic_tag = yes
+			BOS = {
 				set_politics = {
-					ruling_party = centrist_monarchism
+					ruling_party = socialism_ideology
+				}
+				set_cosmetic_tag = BOS_2023
+				set_party_name = {
+					ideology = socialism_ideology
+					name = BOS_socialism_ideology_2023_party
+					long_name = BOS_socialism_ideology_2023_party_long
 				}
 				set_popularities = {
-					centrist_monarchism = 100
+					socialism_ideology = 33
+					centrist_republic = 31
+					democratic = 19
+					liberal_republic = 17
 				}
 			}
-			CAM = {
+			BOS = {
 				kill_country_leader = yes
 				create_country_leader = {
-					name = "Môhaksâtr Nôroŭttâm Seihâmŭni"
+					name = "Predsjedavajuća Željka Cvijanović"
 					desc = ""
-					picture = "gfx/leaders/CAM/CAM_Sihamoni.tga"
+					picture = "gfx/leaders/BOS/BOS_Cvijanovic.tga"
 					expire = "1965.1.1"
-					ideology = cenmon_national_conservatism
-			}
+					ideology = social_democracy
+				}
+			}	
 		}
 	}
 	option = { #reject
