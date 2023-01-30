@@ -3,18 +3,13 @@
 set_cosmetic_tag = FRA_COLONY
 
 
-	set_popularities = {
-		democratic 
-			 = 0
-		fascism
-			 = 0
-		liberal_republic
-			 = 20
-		neutrality 
-			 = 80
-		}
-	set_politics = { 
- ruling_party = neutrality
+set_popularities = {
+	liberal_republic = 20
+	neutrality  = 80
+}
+
+set_politics = { 
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -26,6 +21,16 @@ create_country_leader = {
 	picture = "gfx/leaders/NGR/NGR_Chazelas.tga"
 	expire = "1965.1.1"
 	ideology = french_colonialism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = strat_french_colonialism
 	traits = {
 	}
 }

@@ -1,16 +1,13 @@
 ﻿capital = 5219
+
 set_cosmetic_tag = SAF_COLONY
 
-	set_popularities = {
-		authoritarian_monarchism 
-			 = 80
-		conservative_monarchism
-			 = 20
-		neutrality 
-			 = 0
-		}
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+set_popularities = {
+	authoritarian_monarchism  = 80
+	conservative_monarchism = 20
+}
+set_politics = { 
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -22,14 +19,13 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
-	name = "Funny Man Adolf Hitler Uunona"
+	name = "President Adolf Hitler Uunona"
 	desc = ""
-	picture = "gfx/leaders/NMB/Portrait/Namibian_Hitler.tga"
+	picture = "gfx/leaders/NMB/Namibian_Hitler.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -91,7 +87,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/NMB/NMB_Lamoureux_strat.tga"
 	expire = "1965.1.1"
-	ideology = militarism
+	ideology = strat_french_colonialism
 	traits = {
 	}
 }
