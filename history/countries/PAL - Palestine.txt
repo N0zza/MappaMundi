@@ -2,20 +2,14 @@
 
 set_cosmetic_tag = UK_RED
 
+set_popularities = {
+	democratic  = 10
+	neutrality = 20
+	authoritarian_monarchism = 70
+}
 
-	set_popularities = {
-		democratic 
-			 = 10
-		fascism
-			 = 0
-	        neutrality
-		         = 20
-			
-		authoritarian_monarchism
-			 = 70
-		}
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+set_politics = { 
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -27,7 +21,6 @@ create_country_leader = {
 	picture = "gfx/leaders/PAL/Portrait_Arthur_Grenfell_Wauchope.dds"
 	ideology = british_colonialism
 	traits = {
-		#
 	}
 }
 
@@ -38,7 +31,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = liberalism 
 	traits = {
-		#
 	}
 }
 
@@ -49,7 +41,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
-		#
 	}
 }
 
@@ -60,7 +51,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
-		#
 	}
 }
 
@@ -109,7 +99,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/PAL/PAL_Husseini_theoc.tga"
 	expire = "1965.1.1"
-	ideology = christian
+	ideology = islamic_theocracy
 	traits = {
 	}
 }
