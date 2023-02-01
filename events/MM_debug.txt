@@ -14,33 +14,34 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			BOS = {
+			GRE = {
 				set_politics = {
-					ruling_party = socialism_ideology
+					ruling_party = democratic
 				}
-				set_cosmetic_tag = BOS_2023
+				set_cosmetic_tag = GRE_2023
 				set_party_name = {
-					ideology = socialism_ideology
-					name = BOS_socialism_ideology_2023_party
-					long_name = BOS_socialism_ideology_2023_party_long
+					ideology = democratic
+					name = GRE_democratic_2023_party
+					long_name = GRE_democratic_2023_party_long
 				}
 				set_popularities = {
-					socialism_ideology = 33
-					centrist_republic = 31
-					democratic = 19
-					liberal_republic = 17
+					democratic = 52
+					socialism_ideology = 39
+					vanguardism = 5
+					republican_fascism = 3
+					neutrality = 1
 				}
 			}
-			BOS = {
+			GRE = {
 				kill_country_leader = yes
 				create_country_leader = {
-					name = "Predsjedavajuća Željka Cvijanović"
+					name = "Próedros Katerína Sakellaropoúlou"
 					desc = ""
-					picture = "gfx/leaders/BOS/BOS_Cvijanovic.tga"
+					picture = "gfx/leaders/GRE/GRE_Sakellaropoulou.tga"
 					expire = "1965.1.1"
-					ideology = social_democracy
+					ideology = liberal_conservatism
 				}
-			}	
+			}
 		}
 	}
 	option = { #reject

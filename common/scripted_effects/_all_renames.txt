@@ -734,7 +734,16 @@ do_all_renames = {
 					tag = VCT
 					has_cosmetic_tag = SPQR 
 					AND = {
-						tag = GER
+						OR = {
+							tag = GER
+							AND = {
+								tag = WGR
+								OR = {
+									has_start_date = 2023.01.01
+									has_cosmetic_tag = WGR_2023
+								}
+							}
+						}
 						has_government = democratic_monarchism
 					}
 				}
