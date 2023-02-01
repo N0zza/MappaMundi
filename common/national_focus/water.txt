@@ -7923,9 +7923,21 @@
 				SUO = {
 					transfer_state = PREV
 					set_politics = {
+					}
 				}
 			}
-		}
+			every_state = {
+				limit = {
+					is_core_of = KTO
+				}
+				KTO = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = stratocratic_monarchism
+					}
+					set_cosmetic_tag = GREY_GER3
+				}
+			}
 			every_country = {
 				limit = {
 					OR = {
@@ -8109,15 +8121,14 @@
 		GER = {
 			transfer_state = 1481
 			transfer_state = 11058
-			transfer_state = 743
-	}
+		}
 		ENG = {
 			transfer_state = 11062
 			transfer_state = 956
-	}
+		}
 		AUS = {
 			transfer_state = 1192
-	}
+		}
 		PER = {
 			transfer_state = 12784
 			set_cosmetic_tag = PERSIA_YELLOW
@@ -8127,7 +8138,7 @@
 		}
 		AFG = {
 			set_cosmetic_tag = AFG_RAJ
-	}
+		}
 		ASR = {
 			transfer_state = 5651
 			transfer_state = 5652
