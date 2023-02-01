@@ -1,33 +1,22 @@
 ﻿capital = 767
 
+set_popularities = {
+	theocratic = 100
+}
 
-
-	set_popularities = {
-		democratic 
-			 = 0
-		theocratic
-			 = 100
-		}
-	set_politics = { 
- ruling_party = theocratic
+set_politics = { 
+	ruling_party = theocratic
 	last_election = "1932.2.6"
 	election_frequency = 60
 	elections_allowed = yes
-}
-
-add_ideas = {
-	neutrality_idea	
-	disarmed_nation
-}
-
+}
 create_country_leader = {
 	name = "Papa Pius XI"
 	desc = ""
 	picture = "gfx/leaders/VCT/Portrait_Vatican_Pope.dds"
 	expire = "1939.2.11"
-	ideology = christian
+	ideology = christian_theocracy
 	traits = {
-		#
 	}
 }
 
@@ -38,7 +27,6 @@ create_country_leader = {
 	expire = "1939.2.11"
 	ideology = authmon
 	traits = {
-		#
 	}
 }
 
@@ -49,7 +37,6 @@ create_country_leader = {
 	expire = "1939.2.11"
 	ideology = oligarchism
 	traits = {
-		#
 	}
 }
 
@@ -60,7 +47,6 @@ create_country_leader = {
 	expire = "1939.2.11"
 	ideology = absolutism
 	traits = {
-		#
 	}
 }
 
