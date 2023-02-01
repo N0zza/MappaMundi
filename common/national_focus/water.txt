@@ -16098,6 +16098,18 @@
 			set_politics = {
 				ruling_party = centrist_republic
 			}
+			set_party_name = {
+				ideology = centrist_republic
+				name = AZR_centrist_republic_2023_party
+				long_name = AZR_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				centrist_republic = 59
+				neutrality = 34
+				democratic = 3
+				socialism_ideology = 1
+				liberal_republic = 3
+			}
 		}
 		AZR = {
 			kill_country_leader = yes
@@ -16106,7 +16118,7 @@
            		desc = ""
            		picture = "gfx/leaders/AZR/AZR_Aliyev.tga"
            		expire = "1965.1.1"
-           		ideology = cenrep
+           		ideology = national_conservatism
 			}
 		}
 		TUR = {
@@ -16143,11 +16155,23 @@
 			set_politics = {
 				ruling_party = neutrality
 			}
+			set_party_name = {
+				ideology = neutrality
+				name = NGK_neutrality_2023_party
+				long_name = NGK_neutrality_2023_party_long
+			}
+			set_popularities = {
+				neutrality = 48
+				socialism_ideology = 28
+				communism = 9
+				liberal_republic = 9
+				centrist_republic = 6
+			}
 		}
 		NGK = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Nakhagah Arayik Vladimiri Harutyunyan"
+           		name = "Nakhagah Arayik Vladimiri Harut’yunyan"
            		desc = ""
            		picture = "gfx/leaders/NGK/NGK_Harutyunyan.tga"
            		expire = "1965.1.1"
@@ -16158,19 +16182,29 @@
 			transfer_state = 3944
 			transfer_state = 3945
 			transfer_state = 8087
-			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
+			}
+			set_cosmetic_tag = ARM_2023
+			set_party_name = {
+				ideology = liberal_republic
+				name = ARM_liberal_republic_2023_party
+				long_name = ARM_liberal_republic_2023_party_long
+			}
+			set_popularities = {
+				liberal_republic = 65
+				socialism_ideology = 14
+				centrist_republic = 21
 			}
 		}
 		ARM = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Nakhagah Vahagn Garniki Khachaturyan"
+           		name = "Nakhagah Vahagn Garrniki Khach’aturyan"
            		desc = ""
            		picture = "gfx/leaders/ARM/ARM_Khachaturyan.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = liberalism
 			}
 		}
 		every_state = {
@@ -16182,25 +16216,49 @@
 			}
 		}
 		GEO = {
-			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = socialism_ideology
+			}
+			set_cosmetic_tag = GEO_2023
+			set_party_name = {
+				ideology = socialism_ideology
+				name = GEO_socialism_ideology_2023_party
+				long_name = GEO_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 52
+				centrist_republic = 6
+				democratic = 8
+				liberal_republic = 23
+				neutrality = 11
 			}
 		}
 		GEO = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "P'rezident'i Salome Zourabichvili"
+           		name = "P'rezident'i Salome Nino Levanis asuli Zurabishvili"
            		desc = ""
            		picture = "gfx/leaders/GEO/GEO_Salome.tga"
            		expire = "1965.1.1"
-           		ideology = cenrep
+           		ideology = social_democracy
 			}
 		}
 		SOS = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = neutrality
+			}
+			set_party_name = {
+				ideology = neutrality
+				name = SOS_neutrality_2023_party
+				long_name = SOS_neutrality_2023_party_long
+			}
+			set_popularities = {
+				neutrality = 53
+				liberal_republic = 15
+				democratic = 9
+				vanguardism = 6
+				centrist_republic = 17
 			}
 		}
 		SOS = {
@@ -16210,23 +16268,33 @@
            		desc = ""
            		picture = "gfx/leaders/SOS/SOS_Gagloyev.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = putinism
 			}
 		}
 		ABK = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = neutrality
+			}
+			set_party_name = {
+				ideology = neutrality
+				name = ABK_neutrality_2023_party
+				long_name = ABK_neutrality_2023_party_long
+			}
+			set_popularities = {
+				neutrality = 85
+				republican_fascism = 11
+				centrist_republic = 3
 			}
 		}
 		ABK = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Ahada Aslan G'arg'-iṕa Bžania"
+           		name = "Ahada Aslan Gʹargʹ-iṕa Bžania"
            		desc = ""
            		picture = "gfx/leaders/ABK/ABK_Bzhania.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = putinism
 			}
 		}
 		10107 = {
