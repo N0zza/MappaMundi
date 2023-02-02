@@ -1,43 +1,63 @@
 ﻿capital = 765
 
 set_popularities = {
-	conservative_monarchism = 100
+	centrist_monarchism = 87
+	conservative_monarchism = 13
 }
 
 set_politics = { 
-	ruling_party = conservative_monarchism
+	ruling_party = centrist_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Prinz Franz I von Liechtenstein"
+	name = "Fürst Franz I von Liechtenstein"
 	desc = ""
 	picture = "gfx/leaders/LIE/Portrait_Liechtenstein_franz.dds"
 	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
+	ideology = cenmon_national_conservatism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Paul Hasler"
+	name = "Fürst Franz I von Liechtenstein"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/LIE/Portrait_Liechtenstein_franz.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = conmon_liberal_conservatism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Macro Frick"
+	name = "Fürst Franz I von Liechtenstein"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds" 
+	picture = "gfx/leaders/LIE/Portrait_Liechtenstein_franz.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = authmon
 	traits = {
 	}
 }
 
+create_country_leader = {
+	name = "König Franz I von Liechtenstein"
+	desc = ""
+	picture = "gfx/leaders/LIE/Portrait_Liechtenstein_franz.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kaiser Franz I von Liechtenstein"
+	desc = ""
+	picture = "gfx/leaders/LIE/Portrait_Liechtenstein_franz.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
