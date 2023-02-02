@@ -12941,7 +12941,18 @@
 		}
 		ALN = {
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = liberal_republic
+			}
+			set_party_name = {
+				ideology = liberal_republic
+				name = ALN_liberal_republic_2023_party
+				long_name = ALN_liberal_republic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 10
+				liberal_republic = 60
+				democratic = 27
+				centrist_republic = 3
 			}
 		}
 		ALN = {
@@ -12951,7 +12962,7 @@
         		desc = ""
         		picture = "gfx/leaders/ALN/ALN_Peter_Lindback.tga"
         		expire = "1965.1.1"
-        		ideology = cenrep
+        		ideology = liberalism
 			}
 		}
 		LIT = {
@@ -13351,13 +13362,32 @@
 			}
 		}
 		BEL = {
+			set_politics = {
+				ruling_party = democratic_monarchism
+			}
+			set_cosmetic_tag = BEL_2023
+			set_party_name = {
+				ideology = democratic_monarchism
+				name = BEL_democratic_monarchism_2023_party
+				long_name = BEL_democratic_monarchism_2023_party_long
+			}
+			set_popularities = {
+				socialist_monarchy = 19
+				democratic_monarchism = 28
+				conservative_monarchism = 16
+				centrist_monarchism = 28
+				vanguardism = 8
+				authoritarian_monarchism = 1
+			}
+		}
+		BEL = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Koning Filip Leopold Lodewijk Maria der Belgen"
+           		name = "Koning Filip der Belgen"
            		desc = ""
            		picture = "gfx/leaders/BEL/BEL_Philippe.tga"
            		expire = "1965.1.1"
-           		ideology = conservative_constitutionalism
+           		ideology = liberal_constitutionalism
 			}
 		}
 		BEL = {
@@ -13657,6 +13687,19 @@
 			}
 		}
 		DEN = {
+			set_party_name = {
+				ideology = socialist_monarchy
+				name = DEN_socialist_monarchy_2023_party
+				long_name = DEN_socialist_monarchy_2023_party_long
+			}
+			set_popularities = {
+				socialist_monarchy = 43
+				democratic_monarchism = 30
+				conservative_monarchism = 14
+				centrist_monarchism = 13
+			}
+		}
+		DEN = {
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "Dronning Margrethe II af Glücksburg"
@@ -13679,6 +13722,14 @@
 			set_politics = {
 				ruling_party = socialist_monarchy
 			}
+			set_popularities = {
+				socialism_ideology = 18
+				socialist_monarchy = 28
+				liberal_republic = 9
+				democratic_monarchism = 21
+				democratic = 18
+				conservative_monarchism = 6
+			}
 		}
 		FAR = {
 			kill_country_leader = yes
@@ -13694,15 +13745,25 @@
 			set_politics = {
 				ruling_party = socialist_monarchy
 			}
+			set_party_name = {
+				ideology = socialist_monarchy
+				name = GRL_socialist_monarchy_2023_party
+				long_name = GRL_socialist_monarchy_2023_party_long
+			}
+			set_popularities = {
+				socialist_monarchy = 71
+				democratic_monarchism = 10
+				conservative_monarchism = 19
+			}
 		}
 		GRL = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Rigsombudskvinde Mikaela Engell"
+        		name = "Naalagaaffiup Sinniisoqarfia Julie Præst Wilche"
         		desc = ""
-        		picture = "gfx/leaders/GRL/GRL_Mikaela_Engell.tga"
+        		picture = "gfx/leaders/GRL/GRL_Wilche.tga"
         		expire = "1965.1.1"
-        		ideology = socmon_social_democracy
+        		ideology = monsoc
 			}
 		}
 		NOR = {
@@ -13710,24 +13771,61 @@
 				ruling_party = socialist_monarchy
 			}
 			set_cosmetic_tag = NOR_2023
+			set_party_name = {
+				ideology = socialist_monarchy
+				name = NOR_socialist_monarchy_2023_party
+				long_name = NOR_socialist_monarchy_2023_party_long
+			}
+			set_popularities = {
+				socialist_monarchy = 41
+				democratic_monarchism = 7
+				conservative_monarchism = 40
+				centrist_monarchism = 12
+			}
+		}
+		NOR = {
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "Konge Harald V av Glücksburg"
         		desc = ""
-        		picture = "gfx/leaders/NOR/NOR_King.tga"
+        		picture = "gfx/leaders/NOR/NOR_Harald_V.tga"
         		expire = "1965.1.1"
-        		ideology = monsoc
+        		ideology = socmon_social_democracy
 			}
 		}
 		SLB = {
 			transfer_state = 13075
+			set_politics = {
+				ruling_party = centrist_monarchism
+			}
+			set_popularities = {
+				centrist_monarchism = 100
+			}
+		}
+		SLB = {
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "Sysselmester Lars Fause"
         		desc = ""
         		picture = "gfx/leaders/SLB/SLB_Fause.tga"
         		expire = "1965.1.1"
-        		ideology = authmon
+        		ideology = cenmon
+			}
+		}
+		SWE = {
+			set_politics = {
+				ruling_party = conservative_monarchism
+			}
+			set_party_name = {
+				ideology = conservative_monarchism
+				name = SWE_conservative_monarchism_2023_party
+				long_name = SWE_conservative_monarchism_2023_party_long
+			}
+			set_popularities = {
+				socialist_monarchy = 38
+				conservative_monarchism = 37
+				democratic_monarchism = 4
+				centrist_monarchism = 21
 			}
 		}
 		SWE = {
@@ -13737,16 +13835,17 @@
         		desc = ""
         		picture = "gfx/leaders/SWE/SWE_King.tga"
         		expire = "1965.1.1"
-        		ideology = monsoc
+        		ideology = conmon_liberal_conservatism
 			}
 		}
 		SWE = {
+			kill_ideology_leader = socialism_ideology
 			create_country_leader = {
         		name = "Statsminister Kjell Stefan Löfven"
         		desc = ""
         		picture = "gfx/leaders/SWE/SWE_Lofven.tga"
         		expire = "1965.1.1"
-        		ideology = monsoc
+        		ideology = social_democracy
 			}
 		}
 		SWI = {
@@ -13788,13 +13887,30 @@
 			}
 		}
 		LUX = {
+			set_politics = {
+				ruling_party = democratic_monarchism
+			}
+			set_cosmetic_tag = LUX_2023
+			set_party_name = {
+				ruling_party = democratic_monarchism
+				name = LUX_democratic_monarchism_2023_party
+				long_name = LUX_democratic_monarchism_2023_party_long
+			}
+			set_popularities = {
+				socialist_monarchy = 20
+				democratic_monarchism = 38
+				conservative_monarchism = 35
+				centrist_monarchism = 7
+			}
+		}
+		LUX = {
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "Groussherzog Henri von Nassau-Weilburg"
         		desc = ""
         		picture = "gfx/leaders/LUX/LUX_Henri.tga"
         		expire = "1965.1.1"
-        		ideology = conservative_constitutionalism
+        		ideology = liberal_constitutionalism
 			}
 		}
 		LIE = {
@@ -13824,13 +13940,31 @@
 			}
 		}
 		HOL = {
+			set_politics = {
+				ruling_party = democratic_monarchism
+			}
+			set_cosmetic_tag = HOL_2023
+			set_party_name = {
+				ruling_party = democratic_monarchism
+				name = HOL_democratic_monarchism_2023_party
+				long_name = HOL_democratic_monarchism_2023_party_long
+			}
+			set_popularities = {
+				democratic_monarchism = 40
+				conservative_monarchism = 16
+				centrist_monarchism = 17
+				socialist_monarchy = 24
+				authoritarian_monarchism = 3
+			}
+		}
+		HOL = {
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "Koning Willem-Alexander van Oranje-Nassau"
         		desc = ""
         		picture = "gfx/leaders/HOL/HOL_Willem.tga"
         		expire = "1965.1.1"
-        		ideology = conservative_constitutionalism
+        		ideology = liberal_constitutionalism
 			}
 		}
 		HOL = {
@@ -13843,14 +13977,26 @@
 			}
 		}
 		FIN = {
+			set_politics = {
+				ruling_party = socialism_ideology
+			}
 			set_cosmetic_tag = FIN_2023
+			set_popularities = {
+				socialism_ideology = 28
+				liberal_republic = 31
+				democratic = 21
+				centrist_republic = 19
+				republican_fascism = 1
+			}
+		}
+		FIN = {
 			kill_country_leader = yes
 			create_country_leader = {
         		name = "Presidentti Sauli Väinämö Niinistö"
         		desc = ""
         		picture = "gfx/leaders/FIN/FIN_Niinisto.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = social_democracy
 			}
 		}
 		POR = {
@@ -14015,18 +14161,28 @@
 		}
 		ICE = {
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = socialism_ideology
 			}
-			drop_cosmetic_tag = yes
+			set_cosmetic_tag = ICE_2023
+			set_party_name = {
+				ideology = socialism_ideology
+				name = ICE_socialism_ideology_2023_party
+				long_name = ICE_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 22
+				liberal_republic = 38
+				democratic = 40
+			}
 		}
 		ICE = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Forseti Guoni Thorlacius Jóhannesson"
+           		name = "Forseti Guðni Thorlacius Jóhannesson"
            		desc = ""
            		picture = "gfx/leaders/ICE/ICE_Johannesson.tga"
            		expire = "1965.1.1"
-           		ideology = liberalism
+           		ideology = demsoc
 			}
 		}
 		HOL = {
@@ -15463,7 +15619,7 @@
            		desc = ""
            		picture = "gfx/leaders/ENG/ENG_Charles_III.tga"
            		expire = "1965.1.1"
-           		ideology = conservative_constitutionalism
+           		ideology = conmon_paternalistic_conservatism
 			}
 			
 			kill_ideology_leader = democratic
@@ -15472,7 +15628,7 @@
            		desc = ""
            		picture = "gfx/leaders/ENG/ENG_Sunak.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = paternalistic_conservatism
 			}
 			
 			kill_ideology_leader = democratic_monarchism
@@ -15485,6 +15641,9 @@
 				}
 		}
 		GSY = {
+			set_politics = {
+				ruling_party = centrist_monarchism
+			}
 			set_cosmetic_tag = GSY_2023
 			set_party_name = {
 				ideology = centrist_monarchism
@@ -15534,6 +15693,9 @@
 				}
 			}
 		JSY = {
+			set_politics = {
+				ruling_party = centrist_monarchism
+			}
 			set_cosmetic_tag = JSY_2023
 			set_party_name = {
 				ideology = centrist_monarchism
@@ -15556,15 +15718,6 @@
            		picture = "gfx/leaders/JSY/JSY_Stephen_Dalton.tga"
            		expire = "1965.1.1"
            		ideology = cenmon
-				}
-			}
-		ENG = {
-			create_country_leader = {
-           		name = "Prime Minister Alexander Boris de Pfeffel Johnson"
-           		desc = ""
-           		picture = "gfx/leaders/ENG/ENG_Johnson.tga"
-           		expire = "1965.1.1"
-           		ideology = conservatism
 				}
 			}
 		every_state = {
