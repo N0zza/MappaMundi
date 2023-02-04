@@ -8258,8 +8258,8 @@
 				}
 				CMR = {
 					transfer_state = PREV
-					}
 				}
+			}
 			every_state = {
 				limit= { 
 					is_core_of = CHA
@@ -8385,39 +8385,39 @@
 			set_cosmetic_tag = GREY_GER3
 			set_politics = {
 				ruling_party = stratocratic_monarchism
-				}
 			}
+		}
 		TZN = {
 			transfer_state = 1491
 			set_cosmetic_tag = GREY_GER3
 			set_politics = {
 				ruling_party = stratocratic_monarchism
-				}
 			}
+		}
 		NMB = {
 			set_cosmetic_tag = GREY_GER3
 			set_politics = {
 				ruling_party = stratocratic_monarchism
-				}
 			}
+		}
 		SAF = {
 			transfer_state = 889
-	}
+		}
 		RIF = {
 			transfer_state = 1775
-	}
+		}
 		CAR = {
 			transfer_state = 7830
-	}
+		}
 		UGA = {
 			transfer_state = 6855
 			transfer_state = 4737
-	}
+		}
 		TNA = {
 			transfer_state = 6854
 			transfer_state = 9800
 			transfer_state = 9796
-	}
+		}
 		ETH = {
 			transfer_state = 7846
 			transfer_state = 7847
@@ -8428,10 +8428,10 @@
 			transfer_state = 15446
 			transfer_state = 15448
 			transfer_state = 15449
-	}
+		}
 		SML = {
 			transfer_state = 8107
-	}
+		}
 		LBA = {
 			transfer_state = 450
 			transfer_state = 451
@@ -8458,7 +8458,7 @@
 			transfer_state = 18107
 			transfer_state = 18187
 			set_cosmetic_tag = CYR_ITA
-	}
+		}
 		CYR = {
 			transfer_state = 6953
 			transfer_state = 6933
@@ -8581,36 +8581,38 @@
 							transfer_state = PREV
 					}
 				}
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = CHA
-								is_core_of = CAR
-							}
-							NOT = {
-								is_owned_by = NGR
-								is_owned_by = CMR
-								is_owned_by = CYR
-							}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = CHA
+							is_core_of = CAR
 						}
-						CAR = {
-							transfer_state = PREV
+						NOT = {
+							is_owned_by = NGR
+							is_owned_by = CMR
+							is_owned_by = CYR
+							is_owned_by = RCG
+						}
+					}
+					CAR = {
+						transfer_state = PREV
 					}
 				}
 					every_state = {
 						limit = {
 							is_core_of = VOL
-					}
+						}
 						MLI = {
 							transfer_state = PREV
 							transfer_state = 4736
 							transfer_state = 7873
 							transfer_state = 7874
+							transfer_state = 17668
 							set_politics = {
 								ruling_party = centrist_republic
+							}
 						}
 					}
-				}
 					every_state = {
 						limit = {
 							is_core_of = RCG
@@ -8654,9 +8656,12 @@
 					transfer_state = 9989
 					}
 					NGR = {
-					transfer_state = 6405
-					transfer_state = 6401
-					set_politics = {
+						transfer_state = 6405
+						transfer_state = 6401
+						transfer_state = 9220
+						transfer_state = 10019
+						transfer_state = 10099
+						set_politics = {
 							ruling_party = stratocratic
 						}
 					}
@@ -13471,7 +13476,7 @@
            		desc = ""
            		picture = "gfx/leaders/OML/OML_Dunlap.tga"
            		expire = "1965.1.1"
-           		ideology = christian
+           		ideology = christian_theocracy
 			}
 		}
 		SER = {
