@@ -1,14 +1,12 @@
 ﻿capital = 6793
 
-	set_popularities = {
-		stratocratic_monarchism
-			 = 55
-		authoritarian_monarchism
-			 = 45
-			
-		}
-	set_politics = { 
- ruling_party = stratocratic_monarchism
+set_popularities = {
+	stratocratic_monarchism = 55
+	authoritarian_monarchism = 45
+}
+
+set_politics = { 
+	ruling_party = stratocratic_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -30,6 +28,16 @@ create_country_leader = {
 	picture = "gfx/leaders/SZ2/Portrait/Suez_Boyle.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = absmon_german_colonialism
 	traits = {
 	}
 }

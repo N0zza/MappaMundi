@@ -2,19 +2,14 @@ capital = 13061
 
 set_cosmetic_tag = FRA_COLONY
 
-	set_popularities = {
-		democratic 
-			 = 5
-		fascism
-			 = 0
-		communism
-			 = 20
-		neutrality
-			 = 75
-	}
+set_popularities = {
+	democratic = 5
+	communism = 20
+	neutrality = 75
+}
 
-	set_politics = { 
- ruling_party = neutrality
+set_politics = { 
+	ruling_party = neutrality
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
@@ -27,7 +22,6 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = french_colonialism
 	traits = {
-		
 	}
 }
 
@@ -38,7 +32,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
-		#
 	}
 }
 
@@ -67,7 +60,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/INC/INC_Mucke.tga"
 	expire = "1965.1.1"
-	ideology = stratmon
+	ideology = german_colonialism
 	traits = {
 	}
 }

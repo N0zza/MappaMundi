@@ -7085,10 +7085,10 @@
 		cost = 5
 		ai_will_do = {
 			factor = 40
-	}
+		}
 		available = {
 			has_global_flag = startdate_1914_select
-	}
+		}
 		bypass = {
 			NOT = {
 				has_global_flag = startdate_1914_select
@@ -7099,7 +7099,7 @@
 		available_if_capitulated = no
 		search_filters = {
 			FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER
-	}
+		}
 		
 		completion_reward = {
 			#tooltip
@@ -7118,35 +7118,35 @@
 					
 					#Province names
 					set_province_name = {
-					id = 3151 name = "Sankt-Peterbúrg"
-			}
+						id = 3151 name = "Sankt-Peterbúrg"
+					}
 					195 = {
-					set_state_name = Sankt-Peterbúrg
-			}
+						set_state_name = Sankt-Peterbúrg
+					}
 					1082 = {
-					set_state_name = "Júžnyj Sankt-Peterbúrg"
-			}
+						set_state_name = "Júžnyj Sankt-Peterbúrg"
+					}		
 					set_province_name = {
-					id = 3529 name = "Tsaritsyn"
-			}
+						id = 3529 name = "Tsaritsyn"
+					}
 					217 = {
-					set_state_name = Carícyn
-			}
+						set_state_name = Carícyn
+					}
 					set_province_name = {
-					id = 9833 name = "Kostantiniyye"
-			}
+						id = 9833 name = "Kostantiniyye"
+					}
 					341 = {
-					set_state_name = Kostantiniyye
-			}
+						set_state_name = Kostantiniyye
+					}
 					
 					every_state = {
 						limit = {
 							is_core_of = KON
-					}
+						}
 						KON = {
 							transfer_state = PREV
+						}
 					}
-				}
 					
 					every_state = {
 						limit = {
@@ -7158,18 +7158,18 @@
 								AND = { 
 									is_owned_by = FRA
 									is_claimed_by = GER
+								}
 							}
-						}
 							NOT = {
 								is_core_of = CHI
+							}
 						}
-					}
 						GER = {
 							transfer_state = PREV
 							add_state_core = PREV
-					}
+						}
 						do_german_renames = yes
-				}
+					}
 					
 					every_state = {
 						limit = {
@@ -7187,27 +7187,27 @@
 								is_core_of = VJD
 								is_core_of = CZC
 								is_claimed_by = CRO
-						}
+							}
 							NOT = {
 								is_owned_by = LIE
 								is_core_of = CHI
 								is_owned_by = TEU
 								is_core_of = PRE
+							}
 						}
-					}
 						AUS = {
 							transfer_state = PREV
 							add_state_core = PREV
+						}
 					}
-				}
 					every_state = {
 						limit = {
 							is_core_of = LIE
-					}
+						}
 						LIE = {
 							transfer_state = PREV
+						}
 					}
-				}
 					every_state = {
 						limit = {
 							OR = {
@@ -8300,21 +8300,21 @@
 					}
 				}
 			every_state = {
-				limit= { 
+				limit = { 
 					is_core_of = DRF
 				}
-					DRF = { 
-						transfer_state = PREV
-					}
+				DRF = { 
+					transfer_state = PREV
 				}
+			}
 			every_state = {
-				limit= { 
+				limit = { 
 					is_core_of = CYR
 				}
-					CYR = { 
-						transfer_state = PREV
-					}
+				CYR = { 
+					transfer_state = PREV
 				}
+			}
 			every_state = {
 				limit = {
 					is_core_of = MAJ
@@ -8339,10 +8339,10 @@
 			}
 		MAJ = {
 			set_cosmetic_tag = ITA_GREEN
-	}
+		}
 		HOB = {
 			set_cosmetic_tag = ITA_GREEN
-	}
+		}
 		CMR = {
 			set_cosmetic_tag = GREY_GER3
 			
@@ -8460,61 +8460,82 @@
 			set_cosmetic_tag = CYR_ITA
 		}
 		CYR = {
-			transfer_state = 6953
-			transfer_state = 6933
+			transfer_state = 552
+			transfer_state = 858
+			transfer_state = 861
+			transfer_state = 862
 			transfer_state = 2153
+			transfer_state = 2369
+			transfer_state = 2745
+			transfer_state = 4999
+			transfer_state = 5261
+			transfer_state = 5785
+			transfer_state = 6045
+			transfer_state = 6046
+			transfer_state = 6048
 			transfer_state = 6056
 			transfer_state = 6057
 			transfer_state = 6058
-			transfer_state = 2745
-			transfer_state = 12118
-			transfer_state = 12103
-			transfer_state = 12104
-			transfer_state = 862
-			transfer_state = 6388
-			transfer_state = 858
-			transfer_state = 6046
+			transfer_state = 6383
 			transfer_state = 6384
-			transfer_state = 6045
-			transfer_state = 6387
-			transfer_state = 6386
-			transfer_state = 8125
 			transfer_state = 6385
-			transfer_state = 10191
-			transfer_state = 18135
-			transfer_state = 18136
-			transfer_state = 18163
-			transfer_state = 8131
-			transfer_state = 12115
-			transfer_state = 552
-			transfer_state = 12683
-			transfer_state = 861
+			transfer_state = 6386
+			transfer_state = 6387
+			transfer_state = 6388
 			transfer_state = 6389
-			transfer_state = 15078
-			transfer_state = 15077
-			transfer_state = 13069
-			transfer_state = 15833
-			transfer_state = 15746
-			transfer_state = 12117
-			transfer_state = 12147
-			transfer_state = 12148
-			transfer_state = 4999
-			transfer_state = 12151
-			transfer_state = 6397
-			transfer_state = 12150
+			transfer_state = 6392
 			transfer_state = 6393
 			transfer_state = 6395
-			transfer_state = 12152
-			transfer_state = 5261
-			transfer_state = 5785
-			transfer_state = 6398
 			transfer_state = 6396
-			transfer_state = 6392
-			transfer_state = 6048
-			transfer_state = 6870
+			transfer_state = 6397
+			transfer_state = 6398
 			transfer_state = 6399
+			transfer_state = 6870
+			transfer_state = 6933
+			transfer_state = 6953
+			transfer_state = 7657
+			transfer_state = 8125
+			transfer_state = 8126
+			transfer_state = 8131
+			transfer_state = 10191
 			transfer_state = 10308
 			transfer_state = 10349
+			transfer_state = 12103
+			transfer_state = 12104
+			transfer_state = 12115
+			transfer_state = 12117
+			transfer_state = 12118
+			transfer_state = 12147
+			transfer_state = 12148
+			transfer_state = 12150
+			transfer_state = 12151
+			transfer_state = 12152
+			transfer_state = 12683
+			transfer_state = 13069
+			transfer_state = 15078
+			transfer_state = 15077
+			transfer_state = 15746
+			transfer_state = 15833
+			transfer_state = 18133
+			transfer_state = 18134
+			transfer_state = 18135
+			transfer_state = 18136
+			transfer_state = 18137
+			transfer_state = 18138
+			transfer_state = 18145
+			transfer_state = 18163
+			transfer_state = 18199
+			transfer_state = 18200
+			transfer_state = 18213
+			transfer_state = 18214
+			transfer_state = 18215
+			transfer_state = 18216
+			transfer_state = 18217
+			transfer_state = 18229
+			transfer_state = 18230
+			transfer_state = 18232
+			transfer_state = 18233
+			transfer_state = 18234
 			set_capital = {
 				state = 856
 			}
@@ -8532,7 +8553,7 @@
 			transfer_state = 13012
 			transfer_state = 13013
 			transfer_state = 13014
-	}
+		}
 		SRW = {
 			transfer_state = 13053
 			transfer_state = 13045
@@ -8542,7 +8563,7 @@
 			transfer_state = 13033
 			transfer_state = 14520
 			transfer_state = 14508
-	}
+		}
 		every_state = {
 			limit = {
 				OR = {
@@ -8627,26 +8648,26 @@
 					every_state = {
 						limit = {
 							is_core_of = GAB
-								NOT = {
+							NOT = {
 								is_owned_by = CMR
-							}
+							}		
 						}
 						GAB = {
 							transfer_state = PREV
+						}
 					}
-				}
 					every_state = {
 						limit = {
 							is_owned_by = LBA
 							NOT = {
 								is_owned_by = CYR
 								is_core_of = CYR
+							}
 						}
-					}
 						TRP = {
 							transfer_state = PREV
+						}
 					}
-				}
 					CAR = {
 					transfer_state = 7842
 					transfer_state = 5296

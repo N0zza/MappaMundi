@@ -1,32 +1,26 @@
 ﻿capital = 1495
 
-set_cosmetic_tag =   POR_GREEN
+set_cosmetic_tag = POR_GREEN
 
-	set_popularities = {
-		democratic 
-			 = 10
-		vanguardism
-			 = 10
-		communism
-			 = 0
-		republican_fascism 
-			 = 80
-		}
-	set_politics = { 
- ruling_party = republican_fascism
+set_popularities = {
+	democratic = 10
+	vanguardism = 10
+	republican_fascism = 80
+}
+
+set_politics = { 
+	ruling_party = republican_fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	
 	name = "Governador-Geral José Ricardo Pereira Cabral"
 	picture = "gfx/leaders/MZB/cabral.dds"
 	expire = "1975.11.22"
 	ideology = repfash
 	traits = {
-		#
 	}
 }
 
@@ -37,7 +31,6 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
-		
 	}
 }
 
@@ -101,3 +94,12 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = german_colonialism
+	traits = {
+	}
+}

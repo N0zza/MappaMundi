@@ -1,19 +1,15 @@
 ﻿capital = 3598
+
 set_cosmetic_tag = FRA_COLONY
 
-	set_popularities = {
-		democratic 
-			 = 0
-		liberal_republic
-			 = 10
-		stratocratic
-			 = 10
-		neutrality 
-			 = 80
-		
-	}
-	set_politics = { 
- ruling_party = neutrality
+set_popularities = {
+	liberal_republic = 10
+	stratocratic = 10
+	neutrality = 80	
+}
+
+set_politics = { 
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -25,7 +21,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = french_colonialism
 	traits = {
-		#
 	}
 }
 
@@ -34,7 +29,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/TOG/TOG_Lindequist.tga"
 	expire = "1989.1.1"
-	ideology = stratmon
+	ideology = german_colonialism
 	traits = {
 	}
 }

@@ -1,25 +1,14 @@
 ﻿capital = 701
 
-
 set_cosmetic_tag = UK_RED
 
-	set_popularities = {
-		communism
-			 = 0
-			
-		
-		
-		fascism
-			 = 0
-		
-		
-		democratic 
-			 = 20
-		authoritarian_monarchism 
-			 = 80
-		}
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+set_popularities = {
+	democratic = 20
+	authoritarian_monarchism = 80
+}
+
+set_politics = { 
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -32,7 +21,6 @@ create_country_leader = {
 	ideology = authmon
 	expire = "1957.3.15"
 	traits = {
-		#
 	}
 }
 
@@ -42,6 +30,16 @@ create_country_leader = {
 	picture = "gfx/leaders/GAM/GAM_Njie_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = german_colonialism
 	traits = {
 	}
 }

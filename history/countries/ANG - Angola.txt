@@ -1,19 +1,15 @@
 ﻿capital = 1610
 
-set_cosmetic_tag =   POR_GREEN
+set_cosmetic_tag = POR_GREEN
 
-	set_popularities = {
-		democratic 
-			 = 10
-		republican_fascism
-			 = 0
-		vanguardism
-			 = 5
-		neutrality 
-			 = 85
-		}
-	set_politics = { 
- ruling_party = republican_fascism
+set_popularities = {
+	democratic = 10
+	vanguardism = 5
+	neutrality = 85
+}
+
+set_politics = { 
+	ruling_party = republican_fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -25,7 +21,6 @@ create_country_leader = {
 	expire = "1975.11.22"
 	ideology = repfash
 	traits = {
-		#
 	}
 }
 
@@ -106,6 +101,16 @@ create_country_leader = {
 	picture = "gfx/leaders/ANG/Portrait/mateus.dds"
 	expire = "1965.1.1"
 	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = german_colonialism
 	traits = {
 	}
 }

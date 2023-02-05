@@ -1,21 +1,15 @@
 ﻿capital = 10024
 
-
 set_cosmetic_tag = FRA_COLONY
 
-	set_popularities = {
-		democratic 
-			 = 0
-		liberal_republic
-			 = 10
-		socialism_ideology
-			 = 10
-			
-		neutrality 
-			 = 80
-		}
-	set_politics = { 
- ruling_party = neutrality
+set_popularities = {
+	liberal_republic = 10
+	socialism_ideology = 10
+	neutrality = 80
+}
+
+set_politics = { 
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -28,7 +22,6 @@ create_country_leader = {
 	ideology = french_colonialism
 	expire = "1978.10.27"
 	traits = {
-		#
 	}
 }
 
@@ -39,7 +32,6 @@ create_country_leader = {
 	ideology = militarism
 	expire = "1978.10.27"
 	traits = {
-		#
 	}
 }
 
@@ -98,7 +90,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/RCG/Portrait_von_Goering.dds"
 	expire = "1965.1.1"
-	ideology = stratmon
+	ideology = german_colonialism
 	traits = {
 	}
 }

@@ -2,19 +2,13 @@
 
 set_cosmetic_tag = FRA_COLONY
 
-	set_popularities = {
-		democratic 
-			 = 10
-		communism
-			 = 10
-		communism
-			 = 0
-			
-		neutrality 
-			 = 80
-		}
-	set_politics = { 
- ruling_party = neutrality
+set_popularities = {
+	democratic = 10
+	neutrality = 80
+}
+
+set_politics = { 
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -26,7 +20,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
-		#
 	}
 }
 
@@ -35,7 +28,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/CMR/CMR_Ebermaier.tga"
 	expire = "1989.1.1"
-	ideology = stratmon
+	ideology = german_colonialism
 	traits = {
 	}
 }
