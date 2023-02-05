@@ -14,14 +14,30 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			NOR = {
+			TMS = {
+				drop_cosmetic_tag = yes
+				set_politics = {
+					ruling_party = neutrality
+				}
+				set_party_name = {
+					ideology = neutrality
+					name = TMS_neutrality_2023_party
+					long_name = TMS_neutrality_2023_party_long
+				}
+				set_popularities = {
+					neutrality = 82
+					centrist_republic = 9
+					democratic = 9
+				}
+			}
+			TMS = {
 				kill_country_leader = yes
 				create_country_leader = {
-					name = "Konge Harald V av Glücksburg"
+					name = "Prezident Serdar Gurbangulyýewiç Berdimuhamedow"
 					desc = ""
-					picture = "gfx/leaders/NOR/NOR_Harald_V.tga"
+					picture = "gfx/leaders/TMS/TMS_Berdimuhamedow.tga"
 					expire = "1965.1.1"
-					ideology = socmon_social_democracy
+					ideology = despotism
 				}
 			}
 		}

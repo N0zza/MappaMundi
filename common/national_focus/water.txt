@@ -13101,12 +13101,11 @@
 			}
 			set_popularities = {
 				democratic = 28
-				centrist_republic = 14
+				centrist_republic = 17
 				neutrality = 4
 				socialism_ideology = 25
 				liberal_republic = 21
-				republican_fascism = 3
-				national_socialism = 5
+				republican_fascism = 5
 			}
 		}
 		SLO = {
@@ -13340,7 +13339,7 @@
            		desc = ""
            		picture = "gfx/leaders/AUS/AUS_Bellen.tga"
            		expire = "1965.1.1"
-           		ideology = liberal_conservatism
+           		ideology = christian_democracy
 			}
 			kill_ideology_leader = conservative_monarchism
 			create_country_leader = {
@@ -13418,7 +13417,7 @@
            		desc = ""
            		picture = "gfx/leaders/BEL/BEL_Philippe.tga"
            		expire = "1965.1.1"
-           		ideology = liberal_constitutionalism
+           		ideology = libmon_conservative_liberalism
 			}
 		}
 		BEL = {
@@ -13569,7 +13568,7 @@
            		desc = ""
            		picture = "gfx/leaders/CRO/CRO_modern.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = christian_democracy
 			}
 		}
 		CZE = {
@@ -13996,7 +13995,7 @@
         		desc = ""
         		picture = "gfx/leaders/HOL/HOL_Willem.tga"
         		expire = "1965.1.1"
-        		ideology = liberal_constitutionalism
+        		ideology = libmon_conservative_liberalism
 			}
 		}
 		HOL = {
@@ -14479,7 +14478,7 @@
         		desc = ""
         		picture = "gfx/leaders/JAP/JAP_Naruhito.tga"
         		expire = "1965.1.1"
-        		ideology = cenmon_national_conservatism
+        		ideology = cenmon_dominant_party_democracy
 			}
 		}
 		ROK = {
@@ -15136,6 +15135,9 @@
 			}
 			transfer_state_to = KYR
 		}
+		UZB = {
+			puppet = KPK
+		}
 		KPK = {
 			transfer_state = 8996
 			transfer_state = 8997
@@ -15143,10 +15145,19 @@
 			transfer_state = 8999
 			transfer_state = 9000
 			transfer_state = 9001
-			set_cosmetic_tag = UZB_BLUE
 			set_politics = {
-	       		ruling_party = democratic
+	       		ruling_party = centrist_republic
             }	
+			set_party_name = {
+				ideology = centrist_republic
+				name = KPK_centrist_republic_2023_party
+				long_name = KPK_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				centrist_republic = 51
+				socialism_ideology = 34
+				liberal_republic = 15
+			}
 		}
 		KPK = {
 			kill_country_leader = yes
@@ -15155,10 +15166,9 @@
 					desc = ""
 					picture = "gfx/leaders/KPK/KPK_Murat_Kamalov.tga"
 					expire = "1965.1.1"
-					ideology = conservatism
+					ideology = dominant_party_democracy
 			}
 		}
-			
 		UZB = {
 			transfer_state = 585
 			transfer_state = 1372
@@ -15172,10 +15182,20 @@
 			transfer_state = 18298
 			transfer_state = 18299
 			transfer_state = 18332
-			drop_cosmetic_tag = yes
 			set_politics = {
-	       		ruling_party = democratic
+	       		ruling_party = centrist_republic
             }	
+			set_cosmetic_tag = UZB_2023
+			set_party_name = {
+				ideology = centrist_republic
+				name = UZB_centrist_republic_2023_party
+				long_name = UZB_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				centrist_republic = 60
+				socialism_ideology = 30
+				liberal_republic = 10
+			}
 		}
 		UZB = {
 			kill_country_leader = yes
@@ -15184,14 +15204,26 @@
 					desc = ""
 					picture = "gfx/leaders/UZB/UZB_Mirziyoyev.tga"
 					expire = "1965.1.1"
-					ideology = conservatism
+					ideology = dominant_party_democracy
 			}
 		}
 		TAJ = {
-			drop_cosmetic_tag = yes
 			set_politics = {
-	       		ruling_party = democratic
-           			}
+	       		ruling_party = neutrality
+			}
+			set_cosmetic_tag = TAJ_2023
+			set_party_name = {
+				ideology = neutrality
+				name = TAJ_neutrality_2023_party
+				long_name = TAJ_neutrality_2023_party_long
+			}
+			set_popularities = {
+				neutrality = 75
+				vanguardism = 3
+				socialism_ideology = 1
+				democratic = 13
+				liberal_republic = 8
+			}
 		}
 		TAJ = {
 			kill_country_leader = yes
@@ -15200,14 +15232,24 @@
            		desc = ""
            		picture = "gfx/leaders/TAJ/TAJ_Rahmon.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = despotism
 			}
 		}
 		TMS = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 	       		ruling_party = neutrality
-           			}
+			}
+			set_party_name = {
+				ideology = neutrality
+				name = TMS_neutrality_2023_party
+				long_name = TMS_neutrality_2023_party_long
+			}
+			set_popularities = {
+				neutrality = 82
+				centrist_republic = 9
+				democratic = 9
+			}
 		}
 		TMS = {
 			kill_country_leader = yes
@@ -15216,7 +15258,7 @@
            		desc = ""
            		picture = "gfx/leaders/TMS/TMS_Berdimuhamedow.tga"
            		expire = "1965.1.1"
-           		ideology = oligarchism
+           		ideology = despotism
 			}
 		}
 		KAZ = {
@@ -15234,13 +15276,24 @@
 			transfer_state = 12375
 			transfer_state = 12377
 			transfer_state = 18381
-			drop_cosmetic_tag = yes
 			set_capital = {
 				state = 590
 			}
 			set_politics = {
-	       		ruling_party = democratic
-           }
+				ruling_party = centrist_republic
+			}
+			set_cosmetic_tag = KAZ_2023
+			set_party_name = {
+				ideology = centrist_republic
+				name = KAZ_centrist_republic_2023_party
+				long_name = KAZ_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				centrist_republic = 71
+				democratic = 11
+				socialism_ideology = 9
+				liberal_republic = 9
+			}
 		}
 		KAZ = {
 			kill_country_leader = yes
@@ -15249,7 +15302,7 @@
            		desc = ""
            		picture = "gfx/leaders/KAZ/KAZ_Tokayev.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = dominant_party_democracy
 			}
 		}
 		KYR = {
@@ -15258,8 +15311,21 @@
 			transfer_state = 18315
 			drop_cosmetic_tag = yes	
 			set_politics = {
-	       		ruling_party = democratic
-           			}
+	       		ruling_party = centrist_republic
+			}
+			set_cosmetic_tag = KYR_2023
+			set_party_name = {
+				ideology = centrist_republic
+				name = KYR_centrist_republic_2023_party
+				long_name = KYR_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				neutrality = 4
+				centrist_republic = 36
+				democratic = 30
+				liberal_republic = 29
+				socialism_ideology = 1
+			}
 		}
 		KYR = {
 			kill_country_leader = yes
@@ -15268,7 +15334,7 @@
         		desc = ""
         		picture = "gfx/leaders/KYR/KYR_Japarov.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = national_conservatism
 			}
 		}
 		every_state = {
@@ -15504,18 +15570,20 @@
 			}
 		}
 		BAN = {
-			drop_cosmetic_tag = yes
 			set_politics = {
-	       		ruling_party = socialism_ideology
+	       		ruling_party = centrist_republic
 			}
+			drop_cosmetic_tag = yes
 			every_owned_state = {
 				do_indian_renames = yes
 			}
 			set_popularities = {
-				socialism_ideology = 87
+				centrist_republic = 86
 				democratic = 8
-				vanguardism = 1
-				centrist_republic = 4
+				socialism_ideology = 1
+				liberal_republic = 2
+				vanguardism = 2
+				neutrality = 1
 			}
 		}
 		BAN = {
@@ -15525,7 +15593,7 @@
         		desc = ""
         		picture = "gfx/leaders/BAN/BAN_Hamid.tga"
         		expire = "1965.1.1"
-        		ideology = social_democracy
+        		ideology = dominant_party_democracy
 			}
 		}
 		BHU = {
