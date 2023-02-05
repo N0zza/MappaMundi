@@ -14,25 +14,33 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			NZL = {
+			SYR = {
 				set_politics = {
-					ruling_party = socialist_monarchy
+					ruling_party = neutrality
 				}
-				set_cosmetic_tag = NZL_2023
+				drop_cosmetic_tag = yes
+				set_party_name = {
+					ideology = neutrality
+					name = SYR_neutrality_2023_party
+					long_name = SYR_neutrality_2023_party_long
+				}
 				set_popularities = {
-					socialist_monarchy = 64
-					conservative_monarchism = 28
-					centrist_republic = 8
+					vanguardism = 1
+					communism = 1
+					socialism_ideology = 4
+					centrist_republic = 27
+					neutrality = 66
+					republican_fascism = 1
 				}
-			}
-			NZL = {
+			}  
+			SYR = {
 				kill_country_leader = yes
 				create_country_leader = {
-					name = "Governor-General Dame Alcyion Cynthia Kiro"
+					name = "Raʾīs Bašār Ḥāfiẓ al-Assad"
 					desc = ""
-					picture = "gfx/leaders/NZL/NZL_Kiro.tga"
+					picture = "gfx/leaders/SYR/SYR_Assad.tga"
 					expire = "1965.1.1"
-					ideology = socmon_social_democracy
+					ideology = despotism
 				}
 			}
 		}

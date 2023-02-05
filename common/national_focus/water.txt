@@ -15851,7 +15851,7 @@
 		SR1 = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Qāʾid Muhannad al-Ṭalāʿ"
+           		name = "Qāʾid Muhannad Aḥmad al-Ṭalāʿ"
            		desc = ""
            		picture = "gfx/leaders/SR1/SR1_Tala.tga"
            		expire = "1965.1.1"
@@ -15873,7 +15873,7 @@
            		desc = ""
            		picture = "gfx/leaders/RJV/RJV_Council.tga"
            		expire = "1965.1.1"
-           		ideology = demsoc
+           		ideology = ancom
 			}
 		}
 		every_state = {
@@ -15887,7 +15887,14 @@
 		SR2 = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Raʾīs Sālim al-Misliṭ"
+           		name = "Raʾīs Sālim ʿAbd al-ʿAzīz al-Misliṭ"
+           		desc = ""
+           		picture = "gfx/leaders/SR2/SR2_Meslet.tga"
+           		expire = "1965.1.1"
+           		ideology = provisional_government
+			}
+			create_country_leader = {
+           		name = "Raʾīs Sālim ʿAbd al-ʿAzīz al-Misliṭ"
            		desc = ""
            		picture = "gfx/leaders/SR2/SR2_Meslet.tga"
            		expire = "1965.1.1"
@@ -15909,7 +15916,7 @@
            		desc = ""
            		picture = "gfx/leaders/SR3/SR3_Keda.tga"
            		expire = "1965.1.1"
-           		ideology = despotism
+           		ideology = provisional_government
 			}
 		}
 		UAE = {
@@ -15941,7 +15948,20 @@
 				ruling_party = neutrality
 			}
 			drop_cosmetic_tag = yes
-		   }  
+			set_party_name = {
+				ideology = neutrality
+				name = SYR_neutrality_2023_party
+				long_name = SYR_neutrality_2023_party_long
+			}
+			set_popularities = {
+				vanguardism = 1
+				communism = 1
+				socialism_ideology = 4
+				centrist_republic = 27
+				neutrality = 66
+				republican_fascism = 1
+			}
+		}  
 		SYR = {
 			kill_country_leader = yes
 			create_country_leader = {
@@ -15949,21 +15969,34 @@
            		desc = ""
            		picture = "gfx/leaders/SYR/SYR_Assad.tga"
            		expire = "1965.1.1"
-           		ideology = oligarchism
+           		ideology = despotism
 			}
 		}
 		LEB = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = liberal_republic
-				}
 			}
+			set_party_name = {
+				ideology = liberal_republic
+				name = LEB_liberal_republic_2023_party
+				long_name = LEB_liberal_republic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 10
+				liberal_republic = 27
+				democratic = 31
+				centrist_republic = 11
+				neutrality = 9
+				theocratic = 12
+			}
+		}
 		LEB = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Président Michel Naim Aoun"
+           		name = "Maǧlis al-Wuzarāʾ al-Libnānī"
            		desc = ""
-           		picture = "gfx/leaders/LEB/LEB_Aoun.tga"
+           		picture = "gfx/leaders/LEB/LEB_Council.tga"
            		expire = "1965.1.1"
            		ideology = liberalism
 			}
@@ -16128,25 +16161,52 @@
 			transfer_state = 12035
 			transfer_state = 14418
 			set_politics = {
-	        ruling_party = democratic
-        }
+				ruling_party = democratic
+			}
+			set_party_name = {
+				ideology = democratic
+				name = IRQ_democratic_2023_party
+				long_name = IRQ_democratic_2023_party_long
+			}
+			set_popularities = {
+				liberal_republic = 18
+				democratic = 46
+				centrist_republic = 11
+				neutrality = 12
+				theocratic = 13
+			}
+		}
+		IRQ = {
 			kill_country_leader = yes
 			create_country_leader = {
             	name = "Raʾīs ʿAbd ul-Laṭīf Ǧamāl Rašīd"
             	desc = ""
             	picture = "gfx/leaders/IRQ/IRQ_Rashid.tga"
             	expire = "1965.1.1"
-            	ideology = conservatism
+            	ideology = populism
 			}
 		}
 		
 		PAL = {
-			set_politics = {
-				ruling_party = neutrality
-            }
-			drop_cosmetic_tag = yes
 			set_capital = {
-				state = 17542	
+				state = 17542
+			}
+			set_politics = {
+				ruling_party = socialism_ideology
+            }
+			set_cosmetic_tag = PAL_2023
+			set_party_name = {
+				name = socialism_ideology
+				name = PAL_socialism_ideology_2023_party
+				long_name = PAL_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 34
+				stratocratic = 32
+				vanguardism = 4
+				communism = 6
+				liberal_republic = 2
+				neutrality = 22
 			}
 		}
 		
@@ -16157,8 +16217,8 @@
             	desc = ""
             	picture = "gfx/leaders/PAL/PAL_Abbas.tga"
             	expire = "1965.1.1"
-            	ideology = oligarchism
-		}	
+            	ideology = left_wing_populism
+			}	
 		}
 		
 		SAU = {
@@ -16228,22 +16288,30 @@
 				OR = {
 					is_core_of = ISR
 					is_claimed_by = ISR
+				}
 			}
-		}
 			do_israeli_renames = yes
             ISR = { 
 				transfer_state = PREV 
 				set_capital = {
-					state = {state = 3382}
+					state =  1205
+				}
 			}
-		}
         }
 		every_state = { 
             limit = { 
 				is_core_of = GZS
 			}
-            GZS = { 
-				transfer_state = PREV
+            transfer_state_to = GZS
+        }
+		GZS = {
+			set_popularities = {
+				theocratic = 56
+				socialism_ideology = 36
+				vanguardism = 1
+				communism = 2
+				liberal_republic = 2
+				centrist_republic = 3
 			}
         }
 		GZS = {
@@ -16255,8 +16323,17 @@
 				expire = "1965.1.1"
 				ideology = military_junta
 				traits = {
+				}
 			}
-		}
+			create_country_leader = {
+				name = "Raʾīs Yaḥyaỳ Ibrāhīm Ḥasan al-Sinwār"
+				desc = ""
+				picture = "gfx/leaders/GZS/GZS_Sinwar.tga"
+				expire = "1965.1.1"
+				ideology = islamic_theocracy
+				traits = {
+				}
+			}
         }
 		every_state = { 
             limit = { 
@@ -16264,9 +16341,27 @@
 				NOT = {
 					is_core_of = ISR
 					is_claimed_by = ISR
+				}
 			}
-		}
 			do_standard_arabic_renames = yes
+        }
+		ISR = {
+			set_politics = {
+				ruling_party = centrist_republic
+			}
+			set_cosmetic_tag = ISR_2023
+			set_party_name = {
+				ideology = centrist_republic
+				name = ISR_centrist_republic_2023_party
+				long_name = ISR_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 7
+				liberal_republic = 27
+				democratic = 12
+				centrist_republic = 43
+				republican_fascism = 11
+			}
         }
 		ISR = {
 			kill_country_leader = yes
@@ -16275,7 +16370,7 @@
             	desc = ""
             	picture = "gfx/leaders/ISR/ISR_Herzog.tga"
             	expire = "1965.1.1"
-            	ideology = despotism
+            	ideology = national_liberalism
 			}
 		}
 		every_state = { 
