@@ -15148,6 +15148,7 @@
 			set_politics = {
 	       		ruling_party = centrist_republic
             }	
+			set_cosmetic_tag = KPK_2023
 			set_party_name = {
 				ideology = centrist_republic
 				name = KPK_centrist_republic_2023_party
@@ -15448,6 +15449,9 @@
 			}
 		}
 		SRL = {
+			set_politics = {
+				ruling_party = socialism_ideology
+			}
 			set_cosmetic_tag = SRL_2023
             set_party_name = {
 				ideology = socialism_ideology
@@ -18693,7 +18697,13 @@
 		}
 		NZL = {
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = socialist_monarchy
+			}
+			set_cosmetic_tag = NZL_2023
+			set_popularities = {
+				socialist_monarchy = 63
+				conservative_monarchism = 28
+				centrist_republic = 8
 			}
 		}
 		NZL = {
@@ -18703,7 +18713,7 @@
            		desc = ""
            		picture = "gfx/leaders/NZL/NZL_Kiro.tga"
            		expire = "1965.1.1"
-           		ideology = liberalism
+           		ideology = socmon_social_democracy
 			}
 		}
 		PNG = {
@@ -19048,11 +19058,20 @@
         		expire = "1965.1.1"
         		ideology = liberalism
 			}
-		}	
+		}
 		AST = {
 			transfer_state = 711
 			transfer_state = 712
 			transfer_state = 2692
+			set_politics = {
+				ruling_party = socialist_monarchy
+			}
+			set_popularities = {
+				socialist_monarchy = 51
+				democratic_monarchism = 3
+				conservative_monarchism = 38
+				centrist_monarchism = 8
+			}
 		}
 		AST = {
 			kill_country_leader = yes
@@ -19061,7 +19080,7 @@
         		desc = ""
         		picture = "gfx/leaders/AST/AST_Hurley.tga"
         		expire = "1965.1.1"
-        		ideology = conservative_constitutionalism
+        		ideology = socmon_social_democracy
 			}
 		}
 		##AMERICAS 2023
