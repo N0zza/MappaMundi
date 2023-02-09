@@ -196,7 +196,7 @@ guiTypes = {
 
 		positionType = {
 			name = "subscription_size"
-			position = { x = 320 y = 563 }
+			position = { x = 320 y = 450 }
 		}
 				
 		background = {
@@ -232,7 +232,6 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-
 			name ="version_label"
 			position = { x = 35 y = 396 }
 			textureFile = ""
@@ -320,13 +319,13 @@ guiTypes = {
 
 		iconType = {
 			name = "subscription_divider"
-			position = { x = 4 y = 336 }
+			position = { x = 4 y = 10000 }
 			spriteType = "GFX_main_lobby_divider"
 		}
 
 		containerWindowType = {
 			name = "subscription_widget"
-			position = { x = 16 y = 352 }
+			position = { x = 16 y = 10000 }
 			size = { width = 288 height = 108 }
 
 			ButtonType = {
@@ -380,7 +379,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "social_view_interface_window"
-			position = { x = 250 y = 0  }
+			position = { x = 250 y = 50 }
 			size = { width = 60 height = 40 }
 			
 			buttonType = {
@@ -425,14 +424,14 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "homepage_button"
-			position = { x=0 y=0 }
+			position = { x=0 y=-60 }
 			quadTextureSprite ="homepage"
 			clicksound = click_default
 			pdx_tooltip = "MENU_HOMEPAGE"
 		}
 		ButtonType = {
 			name = "forum_button"
-			position = { x=50 y=0 }
+			position = { x=50 y=-60  }
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FORUM"
@@ -440,7 +439,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "facebook_button"
-			position = { x=100 y=0 }
+			position = { x=100 y=-60  }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FACEBOOK"
@@ -448,7 +447,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "twitter_button"
-			position = { x=150 y=0 }
+			position = { x=150 y=-60  }
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_TWITTER"
@@ -456,7 +455,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "privacy_policy_button"
-			position = { x=200 y=0 }
+			position = { x=200 y=-60  }
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_PRIVACY_POLICY"
