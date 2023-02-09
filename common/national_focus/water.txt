@@ -16629,6 +16629,13 @@
            		expire = "1965.1.1"
            		ideology = national_conservatism
 			}
+			create_country_leader = {
+           		name = "Cumhurbaşkanı Kemal Kılıçdaroğlu"
+           		desc = ""
+           		picture = "gfx/leaders/TUR/TUR_Kılıçdaroğlu.tga"
+           		expire = "1965.1.1"
+           		ideology = socrep_kemalism
+			}
 		}
 		NGK = {
 			drop_cosmetic_tag = yes
@@ -17713,37 +17720,55 @@
 					}
 			}
 		LBA = {
-			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = neutrality
+			}
+			set_cosmetic_tag = LBA_2023
+			set_party_name = {
+			  ideology = neutrality
+			  name = LBA_neutrality_2023_party
+			  long_name = LBA_neutrality_2023_party_long
+			}
+			set_popularities = {
+			  neutrality = 100
 			}
 		}
-				LBA = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Raʾīs Fāyiz Muṣṭafaỳ as-Sarrāǧ"
-            			desc = ""
-            			picture = "gfx/leaders/LBA/LBA_Menfi.tga"
-            			expire = "1965.1.1"
-            			ideology = cenrep
-					}
+		LBA = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Raʾīs Muḥammad Yūnus Bašīr Būḥwīš al-Manfī"
+        		desc = ""
+        		picture = "gfx/leaders/LBA/LBA_Menfi.tga"
+        		expire = "1965.1.1"
+        		ideology = provisional_government
 			}
+		  }
 		TUN = {
-			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = neutrality
+			}
+			drop_cosmetic_tag = yes
+			set_party_name = {
+			  ideology = neutrality
+			  name = TUN_neutrality_2023_party
+			  long_name = TUN_neutrality_2023_party_long
+			}
+			set_popularities = {
+				neutrality = 62
+				centrist_republic = 5
+				democratic = 33
 			}
 		}
-				TUN = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Raʾīs Qays Saʿīd"
-            			desc = ""
-            			picture = "gfx/leaders/TUN/TUN_Kais.tga"
-            			expire = "1965.1.1"
-            			ideology = conservatism
-					}
+		TUN = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Raʾīs Qays bin al-Munṣif bin Muḥammad Saʿīd"
+        		desc = ""
+        		picture = "gfx/leaders/TUN/TUN_Kais.tga"
+        		expire = "1965.1.1"
+        		ideology = despotism
 			}
+		}
 		ALG = {
 			transfer_state = 8139
 			transfer_state = 12367
@@ -17756,7 +17781,7 @@
 		ALG = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Raʾīs ʿAbd ul-Maǧīd Tabbūn"
+        		name = "Raʾīs ʿAbd ul-Maǧīd bin al-Ḥāǧi Aḥmad bin Muḥammad Tabbūn"
         		desc = ""
         		picture = "gfx/leaders/ALG/ALG_Tebboune.tga"
         		expire = "1965.1.1"

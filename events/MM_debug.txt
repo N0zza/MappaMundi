@@ -14,15 +14,27 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			POL = {
-				create_country_leader = {
-					name = "Król Michał-Benedykt Wettyn"
-					desc = ""
-					picture = "gfx/leaders/POL/POL_Michael.tga"
-					expire = "1965.1.1"
-					ideology = liberal_constitutionalism
-				}
+		LBA = {
+			set_politics = {
+				ruling_party = neutrality
 			}
+			set_cosmetic_tag = LBA_2023
+			set_party_name = {
+			  ideology = neutrality
+			  name = LBA_neutrality_2023_party
+			  long_name = LBA_neutrality_2023_party_long
+			}
+		}
+		LBA = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Raʾīs Muḥammad Yūnus Bašīr Būḥwīš al-Manfī"
+        		desc = ""
+        		picture = "gfx/leaders/LBA/LBA_Menfi.tga"
+        		expire = "1965.1.1"
+        		ideology = provisional_government
+			}
+		  }
 		}
 	}
 	option = { #reject
