@@ -5319,6 +5319,53 @@ on_actions = {
 							drop_cosmetic_tag = yes
 						}
 					}
+					if = {
+						limit = {
+							tag = EUR
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = vanguardism
+									has_government = communism
+									has_government = socialist_monarchy
+									has_government = socialism_ideology
+								}
+							}
+							set_cosmetic_tag = EUR_SOCIALIST
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = neutrality
+								}
+							}
+							set_cosmetic_tag = EUR_AUTHREP
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = national_socialism
+								}
+							}
+							set_cosmetic_tag = EUR_NATSOC
+						}
+						if = {
+							limit = {
+								NOT = {
+									OR = {
+										has_government = vanguardism
+										has_government = communism
+										has_government = socialist_monarchy
+										has_government = socialism_ideology
+										has_government = neutrality
+										has_government = national_socialism
+									}
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+					}
 				}
 			}
 		}
