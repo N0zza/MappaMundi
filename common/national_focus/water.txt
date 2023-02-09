@@ -13245,7 +13245,7 @@
         		desc = ""
         		picture = "gfx/leaders/MAT/MAT_Thanassis_Martinos.tga"
         		expire = "1965.1.1"
-        		ideology = christian
+        		ideology = christian_theocracy
 			}
 		}
 		MOL = {
@@ -15683,6 +15683,10 @@
 			province = 15535
 			value = 5
 		}
+		add_victory_points = { #Bokaro
+			province = 2256
+			value = 5
+		}
 		IND = {			
             set_capital = {
             	state = 4732
@@ -17687,13 +17691,25 @@
 		}
 		UNC = {
 			transfer_state = 890
-		}		
+		}
 		EGY = {
-			drop_cosmetic_tag = yes
 			transfer_state = 891
 			transfer_state = 12109
 			set_politics = {
-	        	ruling_party = liberal_republic
+	        	ruling_party = neutrality
+			}
+			set_cosmetic_tag = EGY_2023
+			set_party_name = {
+				ideology = neutrality
+				name = EGY_neutrality_2023_party
+				long_name = EGY_neutrality_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 2
+				liberal_republic = 11
+				centrist_republic = 21
+				neutrality = 65
+				theocratic = 1
 			}
 		}
 		EGY = {
@@ -17703,7 +17719,7 @@
            		desc = ""
            		picture = "gfx/leaders/EGY/EGY_Sisi.tga"
            		expire = "1965.1.1"
-           		ideology = liberalism
+           		ideology = despotism
 			}
 		}
 		SUD = {
@@ -17804,7 +17820,14 @@
 			transfer_state = 12368
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = socialism_ideology
+			}
+			set_popularities = {
+				socialism_ideology = 24
+				liberal_republic = 16
+				democratic = 26
+				centrist_republic = 13
+				neutrality = 21
 			}
 		}
 		ALG = {
@@ -17814,14 +17837,24 @@
         		desc = ""
         		picture = "gfx/leaders/ALG/ALG_Tebboune.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = left_wing_populism
 			}
 		}
 		MOR = {
 			transfer_state = 6739
-			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = conservative_monarchism
+				ruling_party = democratic_monarchism
+			}
+			set_cosmetic_tag = MOR_2023
+			set_party_name = {
+				ideology = democratic_monarchism
+				name = MOR_democratic_monarchism_2023_party
+				long_name = MOR_democratic_monarchism_2023_party_long
+			}
+			set_popularities = {
+				socialist_monarchy = 16
+				democratic_monarchism = 47
+				conservative_monarchism = 37
 			}
 		}
 		MOR = {
@@ -17831,20 +17864,23 @@
            		desc = ""
            		picture = "gfx/leaders/MOR/MOR_Mohammed.tga"
            		expire = "1965.1.1"
-           		ideology = conservative_constitutionalism
+           		ideology = liberal_constitutionalism
 			}
 		}
 		WES = {
-			set_politics = {
-				ruling_party = liberal_republic
-			}
-			drop_cosmetic_tag = yes
 			transfer_state = 1844
 			transfer_state = 6786
 			transfer_state = 1633
 			transfer_state = 6759
 			set_capital = {
 				state = 1844
+			}
+			drop_cosmetic_tag = yes
+			set_politics = {
+				ruling_party = socialism_ideology
+			}
+			set_popularities = {
+				socialism_ideology = 100
 			}
 		}
 		WES = {
@@ -17854,7 +17890,7 @@
            		desc = ""
            		picture = "gfx/leaders/WES/WES_Brahim_Ghali.tga"
            		expire = "1965.1.1"
-           		ideology = liberalism
+           		ideology = left_wing_populism
 			}
 		}
 		ERI = {
