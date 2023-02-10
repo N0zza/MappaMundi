@@ -4288,6 +4288,48 @@ on_actions = {
 								set_cosmetic_tag = FRA_SOCIALIST
 							}
 						}
+						if = {
+							limit = {
+								NOT = {
+									OR = {
+										has_government = national_socialism
+										has_government = centrist_republic
+										has_government = stratocratic
+										has_government = right_anarchism
+										has_government = theocratic
+										has_government = republican_fascism
+										has_government = socialist_monarchy
+										has_government = democratic_monarchism
+										has_government = centrist_monarchism
+										has_government = authoritarian_monarchism
+										has_government = fascism
+										has_government = monarchism
+										has_government = conservative_monarchism
+										has_government = stratocratic_monarchism
+										has_government = communism
+										has_government = vanguardism
+										has_government = socialism_ideology
+										has_government = left_anarchism
+									}
+								}
+							}
+							set_cosmetic_tag = FRA_BLUE
+							every_country = {
+								limit = {
+									OR = {
+										has_cosmetic_tag = FRA_BLUE
+										has_cosmetic_tag = FRA_COLONY
+										has_cosmetic_tag = FRA_AUTH
+										has_cosmetic_tag = FRA_KINGDOM
+										has_cosmetic_tag = FRA_EMPIRE
+										has_cosmetic_tag = FRA_NAPOLEON
+										has_cosmetic_tag = FRA_SOCIALIST
+										has_cosmetic_tag = VICHY_BLUE
+									}
+								}
+								set_cosmetic_tag = FRA_BLUE
+							}
+						}
 					}
 					if = {
 						limit = {
@@ -5436,6 +5478,29 @@ on_actions = {
 								}
 							}
 							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
+							tag = CYR
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = conservative_monarchism
+								}
+							}
+							set_cosmetic_tag = UK_RED
+						}
+						if = {
+							limit = {
+								NOT = {
+									OR = {
+										has_government = conservative_monarchism
+									}
+								}
+							}
+							set_cosmetic_tag = CYR
 						}
 					}
 				}
