@@ -15015,12 +15015,14 @@
 			}
 		}
 		CAM = {
-			drop_cosmetic_tag = yes
-			set_politics = {
-				ruling_party = centrist_monarchism
+			set_cosmetic_tag = CAM_2023
+			set_party_name = {
+				ideology = authoritarian_monarchism
+				name = CAM_authoritarian_monarchism_2023_party
+				long_name = CAM_authoritarian_monarchism_2023_party_long
 			}
 			set_popularities = {
-				centrist_monarchism = 100
+				authoritarian_monarchism = 100
 			}
 		}
 		CAM = {
@@ -15030,7 +15032,7 @@
 				desc = ""
 				picture = "gfx/leaders/CAM/CAM_Sihamoni.tga"
 				expire = "1965.1.1"
-				ideology = cenmon_national_conservatism
+				ideology = authmon_authoritarian_conservatism
 			}
 		}
 		add_victory_points = {
@@ -16272,7 +16274,7 @@
             	desc = ""
             	picture = "gfx/leaders/PAL/PAL_Abbas.tga"
             	expire = "1965.1.1"
-            	ideology = left_wing_populism
+            	ideology = left_wing_nationalism
 			}	
 		}
 		
@@ -16607,21 +16609,21 @@
 			transfer_state = 12312
 			transfer_state = 12319
 			transfer_state = 12320
-			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = neutrality
 			}
+			set_cosmetic_tag = AZR_2023
 			set_party_name = {
-				ideology = centrist_republic
-				name = AZR_centrist_republic_2023_party
-				long_name = AZR_centrist_republic_2023_party_long
+				ideology = neutrality
+				name = AZR_neutrality_2023_party
+				long_name = AZR_neutrality_2023_party_long
 			}
 			set_popularities = {
-				centrist_republic = 59
-				neutrality = 34
-				democratic = 3
 				socialism_ideology = 1
 				liberal_republic = 3
+				democratic = 1
+				centrist_republic = 33
+				neutrality = 62
 			}
 		}
 		AZR = {
@@ -16631,7 +16633,7 @@
            		desc = ""
            		picture = "gfx/leaders/AZR/AZR_Aliyev.tga"
            		expire = "1965.1.1"
-           		ideology = national_conservatism
+           		ideology = authoritarian_conservatism
 			}
 		}
 		TUR = {
@@ -17837,7 +17839,7 @@
         		desc = ""
         		picture = "gfx/leaders/ALG/ALG_Tebboune.tga"
         		expire = "1965.1.1"
-        		ideology = left_wing_populism
+        		ideology = left_wing_nationalism
 			}
 		}
 		MOR = {
@@ -17890,7 +17892,7 @@
            		desc = ""
            		picture = "gfx/leaders/WES/WES_Brahim_Ghali.tga"
            		expire = "1965.1.1"
-           		ideology = left_wing_populism
+           		ideology = left_wing_nationalism
 			}
 		}
 		ERI = {
@@ -18307,7 +18309,18 @@
 			transfer_state = 6782
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = theocratic
+				ruling_party = democratic
+			}
+			set_party_name = {
+				ideology = democratic
+				name = MRT_democratic_2023_party
+				long_name = MRT_democratic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 9
+				liberal_republic = 11
+				democratic = 71
+				theocratic = 9
 			}
 		}
 		MRT = {
@@ -18317,7 +18330,7 @@
           			desc = ""
           			picture = "gfx/leaders/MRT/MRT_Ghazouani.tga"
           			expire = "1965.1.1"
-          			ideology = christian
+          			ideology = populism
 			}
 		}
 		CVD = {

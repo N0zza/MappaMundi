@@ -14,30 +14,32 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			WES = {
-				transfer_state = 1844
-				transfer_state = 6786
-				transfer_state = 1633
-				transfer_state = 6759
-				set_capital = {
-					state = 1844
-				}
+			MRT = {
+				transfer_state = 6782
 				drop_cosmetic_tag = yes
 				set_politics = {
-					ruling_party = socialism_ideology
+					ruling_party = democratic
 				}
-				set_politics = {
-					socialism_ideology = 100
+				set_party_name = {
+					ideology = democratic
+					name = MRT_democratic_2023_party
+					long_name = MRT_democratic_2023_party_long
+				}
+				set_popularities = {
+					socialism_ideology = 9
+					liberal_republic = 11
+					democratic = 71
+					theocratic = 9
 				}
 			}
-			WES = {
+			MRT = {
 				kill_country_leader = yes
 				create_country_leader = {
-					name = "Raʾīs Ibrāhīm Ġālī"
-					desc = ""
-					picture = "gfx/leaders/WES/WES_Brahim_Ghali.tga"
-					expire = "1965.1.1"
-					ideology = left_wing_populism
+						name = "Raʾīs Muḥammad wald al-Šayẖ Muḥammad Aḥmad wald al-Ġazwānī"
+						desc = ""
+						picture = "gfx/leaders/MRT/MRT_Ghazouani.tga"
+						expire = "1965.1.1"
+						ideology = populism
 				}
 			}
 		}
