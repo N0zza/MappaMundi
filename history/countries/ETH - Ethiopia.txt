@@ -1,18 +1,11 @@
 ﻿capital = 271
 
-	set_popularities = {
-		democratic 
-			 = 0
-		fascism
-			 = 0
-		communism
-			 = 0
-			
-		authoritarian_monarchism 
-			 = 100
-		}
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+set_popularities = {
+	authoritarian_monarchism = 100
+}
+
+set_politics = { 
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -25,7 +18,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
-		#
 	}
 }
 
@@ -36,7 +28,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
-		#
 	}
 }
 
@@ -47,7 +38,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = liberalism 
 	traits = {
-		#
 	}
 }
 
@@ -58,7 +48,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
-		#
 	}
 }
 
@@ -69,7 +58,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
-		#
 	}
 }
 
@@ -80,7 +68,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
-		#
 	}
 }
 
@@ -169,7 +156,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ETH/ETH_Mulugeta_strat.tga"
 	expire = "1965.1.1"
-	ideology = militarism
+	ideology = military_junta
 	traits = {
 	}
 }

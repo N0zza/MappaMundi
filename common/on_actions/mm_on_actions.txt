@@ -3518,6 +3518,7 @@ on_actions = {
 								tag = CAR
 								tag = FEA
 								tag = CYP
+								tag = SZ2
 							}
 						}
 						if = {
@@ -3578,6 +3579,7 @@ on_actions = {
 								tag = LIB
 								tag = INC
 								tag = OFR
+								tag = SZ2
 							}
 						}
 						if = {
@@ -3586,23 +3588,18 @@ on_actions = {
 							}
 							set_cosmetic_tag = UK_RED
 						}
-						if = {
-							limit = {
-								has_government = neutrality
-							}
-							set_cosmetic_tag = FRA_COLONY
-						}
 					}
 					if = {
 						limit = {
 							OR = {
 								tag = ALG
-									tag = TUN
-									tag = MOR
-									tag = SNW
-									tag = OFR
-								}
+								tag = TUN
+								tag = MOR
+								tag = SNW
+								tag = OFR
+								tag = SZ2
 							}
+						}
 	
 						if = {
 							limit = {
@@ -3933,6 +3930,7 @@ on_actions = {
 						limit = {
 							OR = {
 								tag = CAR
+								tag = SZ2
 							}
 						}
 						if = {
@@ -3945,6 +3943,52 @@ on_actions = {
 									is_owned_by = ROOT
 								}
 								do_german_renames = yes
+							}
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								tag = NMB
+								tag = SZ2
+								tag = LBA
+								tag = NGR
+								tag = RUU
+								tag = SUD
+								tag = ALG
+							}
+						}
+						if = {
+							limit = {
+								has_government = stratocratic
+							}
+							set_cosmetic_tag = FRA_COLONY
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_french_renames = yes
+							}
+						}
+					}
+					if = {
+						limit = {
+							OR = {
+								tag = TZN
+								tag = WTO
+								tag = PCZ
+							}
+						}
+						if = {
+							limit = {
+								has_government = neutrality
+							}
+							set_cosmetic_tag = FRA_COLONY
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_french_renames = yes
 							}
 						}
 					}

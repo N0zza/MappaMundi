@@ -1,8 +1,10 @@
 ﻿capital = 6793
 
 set_popularities = {
-	stratocratic_monarchism = 55
-	authoritarian_monarchism = 45
+	stratocratic_monarchism = 50
+	authoritarian_monarchism = 40
+	stratocratic = 5
+	monarchism = 5
 }
 
 set_politics = { 
@@ -15,7 +17,7 @@ set_politics = {
 create_country_leader = {
 	name = "Admiral William Henry Dudley Boyle, Earl of Cork and Orrery"
 	desc = ""
-	picture = "gfx/leaders/SZ2/Portrait/Suez_Boyle.tga"
+	picture = "gfx/leaders/SZ2/Suez_Boyle.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -25,7 +27,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Admiral William Henry Dudley Boyle, Earl of Cork and Orrery"
 	desc = ""
-	picture = "gfx/leaders/SZ2/Portrait/Suez_Boyle.tga"
+	picture = "gfx/leaders/SZ2/Suez_Boyle.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -37,7 +39,27 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/To_be_added.dds"
 	expire = "1965.1.1"
+	ideology = strat_french_colonialism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
 	ideology = absmon_german_colonialism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = italian_colonialism
 	traits = {
 	}
 }
