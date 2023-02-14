@@ -12877,8 +12877,6 @@
 				ideology = liberal_constitutionalism
 			}
 		}
-		set_province_name = { id = 15825 name = "Donetsk"}
-		set_province_name = { id = 9461 name = "Luhansk"}
 		UKR = {
 			transfer_state = 2506
 			transfer_state = 7484
@@ -14894,7 +14892,7 @@
         		desc = ""
         		picture = "gfx/leaders/SGP/SGP_Yacob.tga"
         		expire = "1965.1.1"
-        		ideology = national_conservatism
+        		ideology = dominant_party_democracy
 			}
 		}
 		BEI = {
@@ -15069,7 +15067,7 @@
 				desc = ""
 				picture = "gfx/leaders/CHI/CHI_Tsai.tga"
 				expire = "1965.1.1"
-				ideology = liberalism
+				ideology = social_liberalism
 			}
 		}
 		DST = {
@@ -16255,7 +16253,7 @@
             }
 			set_cosmetic_tag = PAL_2023
 			set_party_name = {
-				name = socialism_ideology
+				ideology = socialism_ideology
 				name = PAL_socialism_ideology_2023_party
 				long_name = PAL_socialism_ideology_2023_party_long
 			}
@@ -17303,7 +17301,7 @@
            		desc = ""
            		picture = "gfx/leaders/OM2/OM2_Diriba.tga"
            		expire = "1965.1.1"
-           		ideology = military_organisation
+           		ideology = strat_partisan_movement
 			}
 		}
 		LRA = {
@@ -17313,7 +17311,19 @@
            		desc = ""
            		picture = "gfx/leaders/LRA/LRA_Kony.tga"
            		expire = "1965.1.1"
-           		ideology = military_organisation
+           		ideology = warlordism
+			}
+		}
+		CA0 = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Tribal Leadership"
+				desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+				picture = "gfx/leaders/CA0/CA0_Tribes.tga"
+				expire = "1965.1.1"
+				ideology = total_anarchist
+				traits = {
+				}
 			}
 		}
 		CA1 = {
@@ -17353,7 +17363,7 @@
            		desc = ""
            		picture = "gfx/leaders/CA4/CA4_Gregaza.tga"
            		expire = "1965.1.1"
-           		ideology = militarism
+           		ideology = military_junta
 			}
 		}
 		CA5 = {
@@ -17383,7 +17393,7 @@
            		desc = ""
            		picture = "gfx/leaders/CA7/CA7_Khatim.tga"
            		expire = "1965.1.1"
-           		ideology = militarism
+           		ideology = warlordism
 			}
 		}
 		CA8 = {
@@ -17393,17 +17403,17 @@
            		desc = ""
            		picture = "gfx/leaders/CA8/CA8_Darassa.tga"
            		expire = "1965.1.1"
-           		ideology = militarism
+           		ideology = warlordism
 			}
 		}
 		CA9 = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Anti-balaka Militias"
+           		name = "Disorganised Militias"
            		desc = ""
            		picture = "gfx/leaders/CA9/CA9_balaka.tga"
            		expire = "1965.1.1"
-           		ideology = military_organisation
+           		ideology = warlordism
 			}
 		C00 = {
 			kill_country_leader = yes
@@ -17724,10 +17734,10 @@
 			}
 		}
 		DGC = {
-			set_politics = {
-				ruling_party = conservative_monarchism
-			}
 			set_cosmetic_tag = UK_RED
+			set_popularities = 
+				authoritarian_monarchism = 100
+			}
 		}
 		DGC = {
 			kill_country_leader = yes
@@ -17736,7 +17746,7 @@
            		desc = ""
            		picture = "gfx/leaders/DGC/DGC_Paul_Chandler.tga"
            		expire = "1965.1.1"
-           		ideology = conservative_constitutionalism
+           		ideology = british_colonialism
 			}
 		}
 		every_state = {
@@ -17817,19 +17827,28 @@
 		}
 		SSU = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = neutrality
+			}
+			set_cosmetic_tag = SSU_2023
+			set_party_name = {
+				ideology = neutrality
+				name = SSU_neutrality_2023_party
+				long_name = SSU_neutrality_2023_party_long
+			}
+			set_popularities = {
+				neutrality = 100
 			}
 		}
-				SSU = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "President Salva Kiir Mayardit"
-            			desc = ""
-            			picture = "gfx/leaders/SSU/SSU_Salva.tga"
-            			expire = "1965.1.1"
-            			ideology = conservatism
-					}
+		SSU = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "President Salva Kiir Mayardit"
+        		desc = ""
+        		picture = "gfx/leaders/SSU/SSU_Salva.tga"
+        		expire = "1965.1.1"
+        		ideology = provisional_government
 			}
+		}
 		LBA = {
 			set_politics = {
 				ruling_party = neutrality
@@ -17963,17 +17982,25 @@
 			transfer_state = 6875
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = neutrality
+			}
+			set_party_name = {
+				ideology = neutrality
+				name = ERI_neutrality_2023_party
+				long_name = ERI_neutrality_2023_party_long
+			}
+			set_popularities = {
+				neutrality = 100
 			}
 		}
 		ERI = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Pirezīdeniti Isaias Afwerki"
+        		name = "Pəräzidänətə ʼIsayəyasə ʼAfəwärəqi"
         		desc = ""
         		picture = "gfx/leaders/ERI/ERI_Isaias_Afwerki.tga"
         		expire = "1965.1.1"
-        		ideology = demsoc
+        		ideology = despotism
 			}
 		}
 		TIG = {
@@ -17990,21 +18017,31 @@
         		expire = "1965.1.1"
         		ideology = cenrep
 				}
-			}
+		}
 		ETH = {
-			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = centrist_republic
+			}
+			set_cosmetic_tag = ETH_2023
+			set_party_name = {
+				ideology = centrist_republic
+				name = ETH_centrist_republic_2023_party
+				long_name = ETH_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				liberal_republic = 1
+				centrist_republic = 75
+				neutrality = 24
 			}
 		}
 		ETH = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Parezidanata Sahle-Work Zewde"
+        		name = "Pərezədanətə Sahəlä-Wärəqə Zäwəde"
         		desc = ""
         		picture = "gfx/leaders/ETH/ETH_Zewde.tga"
         		expire = "1965.1.1"
-        		ideology = demsoc
+        		ideology = national_liberalism
 			}
 		}
 		AQ3 = {
@@ -18014,6 +18051,16 @@
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
+			}
+			set_party_name = {
+				ideology = democratic
+				name = SOM_democratic_2023_party
+				long_name = SOM_democratic_2023_party_long
+			}
+			set_popularities = {
+				liberal_republic = 47
+				democratic = 34
+				centrist_republic = 19
 			}
 		}
 		SOM = {
@@ -18031,21 +18078,40 @@
 			set_politics = {
 				ruling_party = democratic
 			}
+			set_party_name = {
+				ideology = democratic
+				name = SML_democratic_2023_party
+				long_name = SML_democratic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 25
+				liberal_republic = 37
+				democratic = 38
+			}
 		}
 		SML = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Président Muse Bihi Abdi"
+        		name = "Madaxweyne Muuse Biixi Cabdi"
         		desc = ""
         		picture = "gfx/leaders/SML/SML_Muse_Bihi_Abdi.tga"
         		expire = "1965.1.1"
-        		ideology = liberal_conservatism
+        		ideology = populism
 			}
 		}
 		DJI = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = centrist_republic
+			}
+			set_party_name = {
+				ideology = centrist_republic
+				name = DJI_centrist_republic_2023_party
+				long_name = DJI_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				liberal_republic = 12
+				centrist_republic = 88
 			}
 		}
 		DJI = {
@@ -18055,13 +18121,24 @@
         		desc = ""
         		picture = "gfx/leaders/DJI/DJI_Ismail_Omar_Guelleh.tga"
         		expire = "1965.1.1"
-        		ideology = demsoc
+        		ideology = social_authoritarianism
 			}
 		}
 		KEN = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
+			}
+			set_party_name = {
+				ideology = democratic
+				name = KEN_democratic_2023_party
+				long_name = KEN_democratic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 10
+				liberal_republic = 25
+				democratic = 52
+				centrist_republic = 13
 			}
 		}
 		KEN = {
@@ -18071,32 +18148,55 @@
         		desc = ""
         		picture = "gfx/leaders/KEN/KEN_Ruto.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = populism
 			}
 		}
 		UGA = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = neutrality
+			}
+			set_party_name = {
+				ideology = neutrality
+				name = UGA_neutrality_2023_party
+				long_name = UGA_neutrality_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 2
+				liberal_republic = 17
+				democratic = 2
+				centrist_republic = 14
+				neutrality = 63
+				stratocratic = 2
 			}
 		}
 		UGA = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "President Yoweri Kaguta Museveni"
+        		name = "President Yoweri Kaguta Museveni Tibuhaburwa"
         		desc = ""
         		picture = "gfx/leaders/UGA/UGA_Museveni.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = despotism
 			}
 		}
 		TZN = {
 			drop_cosmetic_tag = yes
 			set_capital = {
 				state = 546
+				remember_old_capital = no
 			}
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = socialism_ideology
+			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = TZN_socialism_ideology_2023_party
+				long_name = TZN_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 92
+				liberal_republic = 8
 			}
 		}
 		TZN = {
@@ -18106,12 +18206,23 @@
         		desc = ""
         		picture = "gfx/leaders/TZN/TZN_Hassan.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = left_wing_nationalism
 			}
 		}
 		RWA = {
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = centrist_republic
+			}
+			set_party_name = {
+				ideology = centrist_republic
+				name = RWA_centrist_republic_2023_party
+				long_name = RWA_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 9
+				liberal_republic = 7
+				centrist_republic = 50
+				neutrality = 34
 			}
 		}
 		RWA = {
@@ -18121,12 +18232,21 @@
         		desc = ""
         		picture = "gfx/leaders/RWA/RWA_Paul_Kagame.tga"
         		expire = "1965.1.1"
-        		ideology = centrism
+        		ideology = dominant_party_democracy
 			}
 		}
 		BRD = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
+			}
+			set_party_name = {
+				ideology = centrist_republic
+				name = BRD_centrist_republic_2023_party
+				long_name = BRD_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				centrist_republic = 70
+				neutrality = 30
 			}
 		}
 		BRD = {
@@ -18136,7 +18256,7 @@
         		desc = ""
         		picture = "gfx/leaders/BRD/BRD_Evariste_Ndayishimiye.tga"
         		expire = "1965.1.1"
-        		ideology = liberal_conservatism
+        		ideology = right_wing_populism
 			}
 		}
 		NGR = {
@@ -18171,7 +18291,11 @@
 			drop_cosmetic_tag = yes
 			transfer_state = 2618
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
+			}
+			set_popularities = {
+				socialism_ideology = 26
+				centrist_republic = 74
 			}
 		}
 		DAH = {
@@ -18181,13 +18305,25 @@
         		desc = ""
         		picture = "gfx/leaders/DAH/DAH_Patrice_Talon.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = social_authoritarianism
 			}
 		}
 		IVO = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
+			}
+			set_party_name = {
+				ideology = democratic
+				name = IVO_democratic_2023_party
+				long_name = IVO_democratic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 8
+				liberal_republic = 3
+				democratic = 54
+				centrist_republic = 25
+				neutrality = 10
 			}
 		}
 		IVO = {
@@ -18197,13 +18333,25 @@
         		desc = ""
         		picture = "gfx/leaders/IVO/IVO_Ouattara.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = liberal_conservatism
 			}
 		}
 		CAR = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = socialism_ideology
+			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = CAR_socialism_ideology_2023_party
+				long_name = CAR_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 49
+				liberal_republic = 18
+				democratic = 1
+				centrist_republic = 25
+				neutrality = 7
 			}
 		}
 		CAR = {
@@ -18213,7 +18361,7 @@
         		desc = ""
         		picture = "gfx/leaders/CAR/CAR_Touadera.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = social_democracy
 			}
 		}
 		CHA = {
@@ -18266,7 +18414,19 @@
 		RCG = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
+			}
+			set_party_name = {
+				ideology = centrist_republic
+				name = RCG_centrist_republic_2023_party
+				long_name = RCG_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 10
+				liberal_republic = 8
+				democratic = 4
+				centrist_republic = 74
+				neutrality = 4
 			}
 		}
 		RCG = {
@@ -18276,29 +18436,49 @@
         		desc = ""
         		picture = "gfx/leaders/RCG/RCG_Nguesso.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = social_authoritarianism
 			}
 		}
 		GNA = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = stratocratic
+			}
+			set_party_name = {
+				ideology = stratocratic
+				name = GNA_stratocratic_2023_party
+				long_name = GNA_stratocratic_2023_party_long
+			}
+			set_popularities = {
+				stratocratic = 100
 			}
 		}
 		GNA = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Président Alpha Condé"
+        		name = "Président Mamady Doumbouya"
         		desc = ""
-        		picture = "gfx/leaders/GNA/GNA_Alpha.tga"
+        		picture = "gfx/leaders/GNA/GNA_Doumbaya.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = military_junta
 			}
 		}
 		GAB = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
+			}
+			set_party_name = {
+				ideology = centrist_republic
+				name = GAB_centrist_republic_2023_party
+				long_name = GAB_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 3
+				liberal_republic = 5
+				democratic = 7
+				centrist_republic = 79
+				neutrality = 6
 			}
 		}
 		GAB = {
@@ -18308,24 +18488,32 @@
         		desc = ""
         		picture = "gfx/leaders/GAB/GAB_Bongo.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = dominant_party_democracy
 			}
 		}
 		CMR = {
 			transfer_state = 17738
-			drop_cosmetic_tag = yes
-			set_politics = {
-				ruling_party = democratic
+			set_cosmetic_tag = CMR_2023
+			set_party_name {
+				ideology = neutrality
+				name = CMR_neutrality_2023_party
+				long_name = CMR_neutrality_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 7
+				liberal_republic = 8
+				democratic = 1
+				neutrality = 84
 			}
 		}
 		CMR = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Président Paul Biya"
+        		name = "Président Paul Barthélemy Biya'a bi Mvondo"
         		desc = ""
         		picture = "gfx/leaders/CMR/CMR_Biya.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = despotism
 			}
 		}
 		MLI = {
@@ -18378,9 +18566,17 @@
 			}
 		}
 		TOG = {
-			drop_cosmetic_tag = yes
-			set_politics = {
-				ruling_party = democratic
+			set_cosmetic_tag = TOG_2023
+			set_party_name = {
+				ideology = neutrality
+				name = TOG_neutrality_2023_party
+				long_name = TOG_neutrality_2023_party_long
+			}
+			set_popularities = {
+				vanguardism = 4
+				socialism_ideology = 8
+				centrist_republic = 22
+				neutrality = 66
 			}
 		}
 		TOG = {
@@ -18390,17 +18586,27 @@
         		desc = ""
         		picture = "gfx/leaders/TOG/TOG_Faure_Gnassingbe.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = authoritarian_conservatism
 			}
 		}
 		SEN = {
-			drop_cosmetic_tag = yes
 			transfer_state = 16278
 			set_capital = {
 				state = 272
 			}
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
+			}
+			set_cosmetic_tag = SEN_2023
+			set_party_name = {
+				ideology = liberal_republic
+				name = SEN_liberal_republic_2023_party
+				long_name = SEN_liberal_republic_2023_party_long
+			}
+			set_popularities = {
+				liberal_republic = 50
+				democratic = 15
+				centrist_republic = 35
 			}
 		}
 		SEN = {
@@ -18410,7 +18616,7 @@
         		desc = ""
         		picture = "gfx/leaders/SEN/SEN_Macky.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = liberalism
 			}
 		}
 		MRT = {
@@ -18444,23 +18650,44 @@
 		CVD = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = liberal_republic
+			}
+			set_party_name = {
+				ideology = liberal_republic
+				name = CVD_liberal_republic_2023_party
+				long_name = CVD_liberal_republic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 42
+				liberal_republic = 53
+				democratic = 5
 			}
 		}
 		CVD = {
 			kill_country_leader = yes
 			create_country_leader = {
-            	name = "Presidente Jorge Carlos de Almeida Fonseca"
-            	desc = ""
-            	picture = "gfx/leaders/CVD/CVD_Jorge_Carlos_Fonseca.tga"
-            	expire = "1965.1.1"
-            	ideology = cenrep
+				name = "Presidente José Maria Pereira Neves"
+				desc = ""
+				picture = "gfx/leaders/CVD/CVD_Neves.tga"
+				expire = "1965.1.1"
+				ideology = conservative_liberalism
 			}
 		}
 		GAM = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
+			}
+			set_party_name = {
+				ideology = democratic
+				name = GAM_democratic_2023_party
+				long_name = GAM_democratic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 3
+				liberal_republic = 26
+				democratic = 50
+				centrist_republic = 21
 			}
 		}
 		GAM = {
@@ -18470,7 +18697,7 @@
             	desc = ""
             	picture = "gfx/leaders/GAM/GAM_Adama_Barrow.tga"
             	expire = "1965.1.1"
-            	ideology = liberal_conservatism
+            	ideology = paternalistic_conservatism
 			}
 		}
 		GNB = {
@@ -18478,6 +18705,16 @@
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = socialism_ideology
+			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = GNB_socialism_ideology_2023_party
+				long_name = GNB_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				communism = 46
+				socialism_ideology = 32
+				liberal_republic = 22
 			}
 		}
 		GNB = {
@@ -18487,13 +18724,19 @@
             	desc = ""
             	picture = "gfx/leaders/GNB/GNB_Umaro_Embalo.tga"
             	expire = "1965.1.1"
-            	ideology = demsoc
+            	ideology = left_wing_populism
 			}
 		}
 		SIE = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = liberal_republic
+			}
+			set_popularities = {
+				socialism_ideology = 49
+				liberal_republic = 39
+				centrist_republic = 2
+				neutrality = 10
 			}
 		}
 		SIE = {
@@ -18510,6 +18753,15 @@
 			set_politics = {
 				ruling_party = democratic
 			}
+			set_party_name = {
+				ideology = democratic
+				name = GHA_democratic_2023_party
+				long_name = GHA_democratic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 50
+				democratic = 50
+			}
 		}
 		GHA = {
 			kill_country_leader = yes
@@ -18518,7 +18770,24 @@
            		desc = ""
            		picture = "gfx/leaders/GHA/GHA_Nana.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = liberal_conservatism
+			}
+		}
+		LIB = {
+			set_politics = {
+				ruling_party = liberal_republic
+			}
+			set_cosmetic_tag = LIB_2023
+			set_party_name = {
+				ideology = liberal_republic
+				name = LIB_liberal_republic_2023_party
+				long_name = LIB_liberal_republic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 11
+				liberal_republic = 23
+				democratic = 43
+				centrist_republic = 23
 			}
 		}
 		LIB = {
@@ -18528,14 +18797,26 @@
            		desc = ""
            		picture = "gfx/leaders/LIB/LIB_George_Weah.tga"
            		expire = "1965.1.1"
-           		ideology = liberal_conservatism
+           		ideology = conservative_liberalism
 			}
 		}
 		NGA = {
 			transfer_state = 17742
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
+			}
+			set_party_name = {
+				ideology = centrist_republic
+				name = NGA_centrist_republic_2023_party
+				long_name = NGA_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 5
+				liberal_republic = 35
+				democratic = 3
+				centrist_republic = 56
+				neutrality = 1
 			}
 		}
 		NGA = {
@@ -18545,14 +18826,19 @@
            		desc = ""
            		picture = "gfx/leaders/NGA/NGA_Buhari.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = big_tent
 			}
 		}
 		EQG = {
-			set_politics = {
-				ruling_party = democratic
+			set_cosmetic_tag = EQG_2023
+			set_party_name = {
+				ideology = neutrality
+				name = EQG_neutrality_2023_party
+				long_name = EQG_neutrality_2023_party_long
 			}
-			drop_cosmetic_tag = yes
+			set_popularities = {
+				neutrality = 100
+			}
 		}
 		EQG = {
 			kill_country_leader = yes
@@ -18561,13 +18847,23 @@
            		desc = ""
            		picture = "gfx/leaders/EQG/EQG_Teodoro_Obiang.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = despotism
 			}
 		}
 		SAO = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
+			}
+			set_party_name = {
+				ideology = democratic
+				name = SAO_democratic_2023_party
+				long_name = SAO_democratic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 42
+				liberal_republic = 4
+				democratic = 54
 			}
 		}
 		SAO = {
@@ -18577,7 +18873,7 @@
            		desc = ""
            		picture = "gfx/leaders/SAO/SAO_Carlos_Vila_Nova.tga"
            		expire = "1965.1.1"
-           		ideology = liberal_conservatism
+           		ideology = christian_democracy
 			}
 		}
 		19316 = {
@@ -18586,7 +18882,16 @@
 		COG = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = socialism_ideology
+			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = COG_socialism_ideology_2023_party
+				long_name = COG_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 78
+				liberal_republic = 22
 			}
 		}
 		CO3 = {
@@ -18599,7 +18904,7 @@
         		desc = ""
         		picture = "gfx/leaders/COG/COG_Tshisekedi.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = third_way
 			}
 		}
 		set_province_name = {
@@ -18609,7 +18914,13 @@
 		ANG = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = socialism_ideology
+			}
+			set_popularities = {
+				socialism_ideology = 56
+				liberal_republic = 2
+				democratic = 1
+				centrist_republic = 41
 			}
 		}
 		ANG = {
@@ -18619,13 +18930,24 @@
         		desc = ""
         		picture = "gfx/leaders/ANG/ANG_Lourenco.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = left_wing_nationalism
 			}
 		}
 		ZAM = {
-			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
+			}
+			set_cosmetic_tag = ZAM_2023
+			set_party_name = {
+				ideology = liberal_republic
+				name = ZAM_liberal_republic_2023_party
+				long_name = ZAM_liberal_republic_2023_party_long
+			}
+			set_popularities = {
+				liberal_republic = 49
+				democratic = 37
+				centrist_republic = 8
+				neutrality = 6
 			}
 		}
 		ZAM = {
@@ -18635,7 +18957,7 @@
         		desc = ""
         		picture = "gfx/leaders/ZAM/ZAM_Hichilema.tga"
         		expire = "1965.1.1"
-        		ideology = liberal_conservatism
+        		ideology = social_liberalism
 			}
 		}
 		MLW = {
@@ -18644,23 +18966,45 @@
 			}
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
+			}
+			set_party_name = {
+				ideology = centrist_republic
+				name = MLW_centrist_republic_2023_party
+				long_name = MLW_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 1
+				liberal_republic = 8
+				democratic = 31
+				centrist_republic = 30
+				neutrality = 30
 			}
 		}
 		MLW = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "President Lazarus Chakwera"
+        		name = "President Lazarus McCarthy Chakwera"
         		desc = ""
         		picture = "gfx/leaders/MLW/MLW_Lazarus_Chakwera.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = national_conservatism
 			}
 		}
 		MZB = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = socialism_ideology
+			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = MZB_socialism_ideology_2023_party
+				long_name = MZB_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 84
+				democratic = 2
+				centrist_republic = 24
 			}
 		}
 		MZB = {
@@ -18670,7 +19014,7 @@
         		desc = ""
         		picture = "gfx/leaders/MZB/MZB_Nyusi.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = demsoc
 			}
 		}
 		set_province_name = {
@@ -18682,6 +19026,16 @@
 			set_politics = {
 				ruling_party = socialism_ideology
 			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = ZIM_socialism_ideology_2023_party
+				long_name = ZIM_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 67
+				liberal_republic = 32
+				centrist_republic = 1
+			}
 		}
 		ZIM = {
 			kill_country_leader = yes
@@ -18690,13 +19044,19 @@
         		desc = ""
         		picture = "gfx/leaders/ZIM/ZIM_Mnangagwa.tga"
         		expire = "1965.1.1"
-        		ideology = demsoc
+        		ideology = left_wing_populism
 			}
 		}
 		BOT = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = democratic
+			}
+			set_popularities = {
+				liberal_republic = 29
+				democratic = 59
+				centrist_republic = 9
+				neutrality = 3
 			}
 		}
 		BOT = {
@@ -18706,13 +19066,20 @@
         		desc = ""
         		picture = "gfx/leaders/BOT/BOT_Masisi.tga"
         		expire = "1965.1.1"
-        		ideology = liberalism
+        		ideology = paternalistic_conservatism
 			}
 		}
 		NMB = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = socialism_ideology
+			}
+			set_popularities = {
+				socialism_ideology = 67
+				liberal_republic = 16
+				democratic = 3
+				centrist_republic = 2
+				neutrality = 12
 			}
 		}
 		NMB = {
@@ -18722,13 +19089,27 @@
         		desc = ""
         		picture = "gfx/leaders/NMB/NMB_Geingob.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = third_way
 			}
 		}
 		SAF = {
 			transfer_state = 10870
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = socialism_ideology
+			}
+			set_cosmetic_tag = SAF_2023
+			set_party_name = {
+				ideology = socialism_ideology
+				name = SAF_socialism_ideology_2023_party
+				long_name = SAF_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				vanguardism = 11
+				socialism_ideology = 59
+				liberal_republic = 22
+				democratic = 2
+				conservative_monarchism = 4
+				centrist_republic = 2
 			}
 		}
 		SAF = {
@@ -18738,13 +19119,24 @@
         		desc = ""
         		picture = "gfx/leaders/SAF/SAF_Ramaphosa.tga"
         		expire = "1965.1.1"
-        		ideology = liberalism
+        		ideology = socrep_third_way
 			}
 		}
 		LES = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = centrist_monarchism
+				ruling_party = democratic_monarchism
+			}
+			set_party_name = {
+				ideology = democratic_monarchism
+				name = LES_democratic_monarchism_2023_party
+				long_name = LES_democratic_monarchism_2023_party_long
+			}
+			set_popularities = {
+				socialist_monarchy = 39
+				democratic_monarchism = 57
+				democratic = 2
+				conservative_monarchism = 2
 			}
 		}
 		LES = {
@@ -18754,13 +19146,16 @@
         		desc = ""
         		picture = "gfx/leaders/LES/LES_Letsie_III.tga"
         		expire = "1965.1.1"
-        		ideology = cenmon
+        		ideology = libmon_social_liberalism
 			}
 		}
 		SWZ = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = monarchism
+			}
+			set_popularities = {
+				monarchism = 100
 			}
 		}
 		SWZ = {
@@ -18776,23 +19171,43 @@
 		SEY = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = liberal_republic
+			}
+			set_party_name = {
+				ideology = liberal_republic
+				name = SEY_liberal_republic_2023_party
+				long_name = SEY_liberal_republic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 29
+				liberal_republic = 71
 			}
 		}
 		SEY = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Président Wavel Ramkalawan"
+        		name = "President Wavel Ramkalawan"
         		desc = ""
-        		picture = SEY_Wavel_Ramkalawan.png
+				picture = "gfx/leaders/SEY/SEY_Wavel_Ramkalawan.png"
         		expire = "1965.1.1"
-        		ideology = liberal_conservatism
+        		ideology = liberalism
 			}
 		}
 		MAD = {
 			set_cosmetic_tag = MAD_2023
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = socialism_ideology
+			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = MAD_socialism_ideology_2023_party
+				long_name = MAD_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 56
+				liberal_republic = 2
+				democratic = 11
+				centrist_republic = 31
 			}
 		}
 		MAD = {
@@ -18802,13 +19217,23 @@
         		desc = ""
         		picture = "gfx/leaders/MAD/MAD_Rajoelina.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = social_democracy
 			}
 		}
 		MRS = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = socialism_ideology
+			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = MRS_socialism_ideology_2023_party
+				long_name = MRS_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 94
+				democratic = 6
+				centrist_republic = 2
 			}
 		}
 		MRS = {
@@ -18823,7 +19248,17 @@
 		}
 		COM = {
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = socialism_ideology
+			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = COM_socialism_ideology_2023_party
+				long_name = COM_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 67
+				centrist_republic = 6
+				neutrality = 27
 			}
 		}
 		COM = {
@@ -18833,7 +19268,7 @@
         		desc = ""
         		picture = "gfx/leaders/COM/COM_Azali_Assoumani.tga"
         		expire = "1965.1.1"
-        		ideology = liberalism
+        		ideology = social_democracy
 			}
 		}
 		WTO = {
@@ -18859,13 +19294,16 @@
 			set_politics = {
 				ruling_party = neutrality
 			}	
+			set_popularities = {
+				neutrality = 100
+			}
 		}
 		SCM = {
 			kill_country_leader = yes
 			create_country_leader = {
-        		name = "Interim Government of Ambazonia"
+        		name = "Disputed Leadership"
         		desc = ""
-        		picture = "gfx/leaders/SCM/SCM_Interim_Government.tga"
+        		picture = "gfx/leaders/SCM/SCM_Disputed.tga"
         		expire = "1965.1.1"
         		ideology = provisional_government
 			}
@@ -19410,7 +19848,7 @@
         		desc = ""
         		picture = "gfx/leaders/AST/AST_Hurley.tga"
         		expire = "1965.1.1"
-        		ideology = socmon_social_democracy
+        		ideology = socmon_third_way
 			}
 		}
 		##AMERICAS 2023

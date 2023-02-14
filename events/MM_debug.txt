@@ -14,29 +14,16 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			VOL = {
-				set_politics = {
-					ruling_party = stratocratic
-				}
-				set_party_name = {
-					ideology = stratocratic
-					name = VOL_stratocratic_2023_party
-					long_name = VOL_stratocratic_2023_party_long
-				}
-				set_popularities = {
-					stratocratic = 100
-				}
+		DGC = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Commissioner Paul Chandler"
+           		desc = ""
+           		picture = "gfx/leaders/DGC/DGC_Paul_Chandler.tga"
+           		expire = "1965.1.1"
+           		ideology = british_colonialism
 			}
-			VOL = {
-				kill_country_leader = yes
-				create_country_leader = {
-					name = "Président Ibrahim Traoré"
-					desc = ""
-					picture = "gfx/leaders/VOL/VOL_Traore.tga"
-					expire = "1965.1.1"
-					ideology = military_junta
-				}
-			}
+		}
 		}
 	}
 	option = { #reject
