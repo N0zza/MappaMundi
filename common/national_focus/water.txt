@@ -17405,6 +17405,44 @@
            		expire = "1965.1.1"
            		ideology = military_organisation
 			}
+		C00 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Chef Spirituel Ali Ngadjole Ngabu"
+           		desc = ""
+           		picture = "gfx/leaders/C00/C00_Ngadjole.tga"
+           		expire = "1965.1.1"
+           		ideology = militarism
+			}
+		}
+		C01 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Hema Militias"
+           		desc = ""
+           		picture = "gfx/leaders/CA9/CA9_balaka.tga"
+           		expire = "1965.1.1"
+           		ideology = military_organisation
+			}
+		}
+		C02 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Lendu Militias"
+           		desc = ""
+           		picture = "gfx/leaders/CA9/CA9_balaka.tga"
+           		expire = "1965.1.1"
+           		ideology = military_organisation
+			}
+		C03 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Général Baudouin Adirodo"
+           		desc = ""
+           		picture = "gfx/leaders/C03/C03_Adirodo.tga"
+           		expire = "1965.1.1"
+           		ideology = militarism
+			}
 		}
 		SAU = {
 			transfer_state = 5650
@@ -17525,6 +17563,30 @@
 				is_core_of = CA9
 			}
 			transfer_state_to = CA9
+		}
+		every_state = {
+			limit = {
+				is_core_of = C00
+			}
+			transfer_state_to = C00
+		}
+		every_state = {
+			limit = {
+				is_core_of = C01
+			}
+			transfer_state_to = C01
+		}
+		every_state = {
+			limit = {
+				is_core_of = C02
+			}
+			transfer_state_to = C02
+		}
+		every_state = {
+			limit = {
+				is_core_of = C03
+			}
+			transfer_state_to = C03
 		}
 		every_state = {
 			limit = {
@@ -18522,11 +18584,13 @@
 			set_state_name = Kinshasa
 		}
 		COG = {
-			transfer_state = 5241
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = democratic
 			}
+		}
+		CO3 = {
+			transfer_state = 5241
 		}
 		COG = {
 			kill_country_leader = yes
