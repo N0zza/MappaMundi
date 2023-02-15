@@ -17428,7 +17428,7 @@
 		C01 = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Hema Militias"
+           		name = "Decentralised Militias"
            		desc = ""
            		picture = "gfx/leaders/CA9/CA9_balaka.tga"
            		expire = "1965.1.1"
@@ -17438,7 +17438,7 @@
 		C02 = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "Lendu Militias"
+           		name = "Decentralised Militias"
            		desc = ""
            		picture = "gfx/leaders/CA9/CA9_balaka.tga"
            		expire = "1965.1.1"
@@ -17452,6 +17452,45 @@
            		picture = "gfx/leaders/C03/C03_Adirodo.tga"
            		expire = "1965.1.1"
            		ideology = militarism
+			}
+		}
+		C04 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Decentralised Cells"
+           		desc = ""
+           		picture = "gfx/leaders/Anarchy/Decentralised_Cells.tga"
+           		expire = "1965.1.1"
+           		ideology = jihadism
+			}
+		}
+		C05 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Decentralised Militias"
+           		desc = ""
+           		picture = "gfx/leaders/CA9/CA9_balaka.tga"
+           		expire = "1965.1.1"
+           		ideology = military_organisation
+			}
+		C06 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Decentralised Cells"
+           		desc = ""
+           		picture = "gfx/leaders/Anarchy/Decentralised_Cells.tga"
+           		expire = "1965.1.1"
+           		ideology = jihadism
+			}
+		}
+		C07 = {
+			kill_country_leader = yes
+			create_country_leader = {
+           		name = "Émir Musa Seka Baluku"
+           		desc = ""
+           		picture = "gfx/leaders/C07/C07_Baluku.tga"
+           		expire = "1965.1.1"
+           		ideology = jihadism
 			}
 		}
 		SAU = {
@@ -17597,6 +17636,30 @@
 				is_core_of = C03
 			}
 			transfer_state_to = C03
+		}
+		every_state = {
+			limit = {
+				is_core_of = C04
+			}
+			transfer_state_to = C04
+		}
+		every_state = {
+			limit = {
+				is_core_of = C05
+			}
+			transfer_state_to = C05
+		}
+		every_state = {
+			limit = {
+				is_core_of = C06
+			}
+			transfer_state_to = C06
+		}
+		every_state = {
+			limit = {
+				is_core_of = C07
+			}
+			transfer_state_to = C07
 		}
 		every_state = {
 			limit = {
