@@ -1,20 +1,12 @@
 ﻿capital = 965 #Hanoi
 set_cosmetic_tag = UK_RED
 
-	set_popularities = {
-		democratic 
-			 = 0
-		fascism
-			 = 0
-		communism
-			 = 0
-		monarchism
-			 = 100
-		
-	}
+set_popularities = {
+	authoritarian_monarchism = 100	
+}
 
-	set_politics = { 
- ruling_party = monarchism
+set_politics = { 
+	ruling_party = authoritarian_monarchism
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = no
@@ -27,7 +19,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/BEI/Portrait_Ahmad_Tajuddin.dds"
 	expire = "1953.3.1"
-	ideology = absolutism
+	ideology = authmon
 	traits = {
 		
 	}
@@ -38,7 +30,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/BEI/Portrait_Ahmad_Tajuddin.dds"
 	expire = "1953.3.1"
-	ideology = authmon
+	ideology = absolutism
 	traits = {
 		
 	}

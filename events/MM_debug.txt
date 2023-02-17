@@ -14,16 +14,33 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-		DGC = {
-			kill_country_leader = yes
-			create_country_leader = {
-           		name = "Commissioner Paul Chandler"
-           		desc = ""
-           		picture = "gfx/leaders/DGC/DGC_Paul_Chandler.tga"
-           		expire = "1965.1.1"
-           		ideology = british_colonialism
+			PNG = {
+				drop_cosmetic_tag = yes
+				set_politics = {
+					ruling_party = democratic
+				}
+			set_party_name = {
+				ideology = democratic
+				name = PNG_democratic_2023_party
+				long_name = PNG_democratic_2023_party_long
 			}
-		}
+				set_popularities = {
+					socialism_ideology = 11
+					liberal_republic = 21
+					democratic = 56
+					centrist_republic = 12
+				}
+			}
+			PNG = {
+				kill_country_leader = yes
+				create_country_leader = {
+					name = "Governor-General Sir Bob Dadae"
+					desc = ""
+					picture = "gfx/leaders/PNG/PNG_Dadae.tga"
+					expire = "1965.1.1"
+					ideology = christian_democracy
+				}
+			}
 		}
 	}
 	option = { #reject
