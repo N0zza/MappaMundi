@@ -14,31 +14,27 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			PNG = {
-				drop_cosmetic_tag = yes
+			BER = {
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = socialist_monarchy
 				}
-			set_party_name = {
-				ideology = democratic
-				name = PNG_democratic_2023_party
-				long_name = PNG_democratic_2023_party_long
-			}
+				set_party_name = {
+					ideology = socialist_monarchy
+					name = BER_socialist_monarchy_2023_party
+					long_name = BER_socialist_monarchy_2023_party_long
+				}
 				set_popularities = {
-					socialism_ideology = 11
-					liberal_republic = 21
-					democratic = 56
-					centrist_republic = 12
+					socialist_monarchy = 86
+					conservative_monarchism = 14
 				}
 			}
-			PNG = {
-				kill_country_leader = yes
+			BER = {
 				create_country_leader = {
-					name = "Governor-General Sir Bob Dadae"
+					name = "Governor Rena Lalgie"
 					desc = ""
-					picture = "gfx/leaders/PNG/PNG_Dadae.tga"
+					picture = "gfx/leaders/BER/BER_Rena_Lalgie.tga"
 					expire = "1965.1.1"
-					ideology = christian_democracy
+					ideology = socmon_social_democracy
 				}
 			}
 		}

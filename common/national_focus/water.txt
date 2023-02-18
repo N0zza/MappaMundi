@@ -14935,6 +14935,9 @@
 			set_politics = {
 				ruling_party = monarchism
 			}
+			set_popularities = {
+				monarchism = 100
+			}
 		}
 		BEI = {
 			kill_country_leader = yes
@@ -14977,8 +14980,8 @@
 		RMM = {
 			set_party_name = {
 				ideology = democratic
-				name = PHI_democratic_2023_party
-				long_name = PHI_democratic_2023_party_long
+				name = RMM_democratic_2023_party
+				long_name = RMM_democratic_2023_party_long
 			}
 		}
 		RMM = {
@@ -14988,7 +14991,7 @@
         		desc = ""
         		picture = "gfx/leaders/PHI/RMM_Nando.tga"
         		expire = "1965.1.1"
-        		ideology = conservatism
+        		ideology = islamic_democracy
 			}
 		}
 		ETM = {
@@ -15657,7 +15660,7 @@
            		desc = ""
            		picture = "gfx/leaders/PAK/PAK_Alvi.tga"
            		expire = "1965.1.1"
-           		ideology = liberal_conservatism
+           		ideology = islamic_democracy
 			}
 		}
 		BRM = {
@@ -19685,6 +19688,15 @@
 			set_politics = {
 				ruling_party = democratic
 			}
+			set_party_name = {
+				ideology = democratic
+				name = SPM_democratic_2023_party
+				long_name = SPM_democratic_2023_party_long
+			}
+			set_popularities = {
+				liberal_republic = 21
+				democratic = 79
+			}
 		}
 		SPM = {
 			kill_country_leader = yes
@@ -19693,7 +19705,7 @@
         		desc = ""
         		picture = "gfx/leaders/SPM/SPM_Thierry_Devimeux.tga"
         		expire = "1965.1.1"
-        		ideology = liberal_conservatism
+        		ideology = christian_democracy
 			}
 		}
 		TAH = {
@@ -20548,6 +20560,14 @@
 			set_politics = {
 				ruling_party = vanguardism
 			}
+			set_popularities = {
+				vanguardism = 100
+			}
+			set_party_name = {
+				ideology = vanguardism
+				name = CUB_vanguardism_2023_party
+				long_name = CUB_vanguardism_2023_party_long
+			}
 		}
 		CUB = {
 			kill_country_leader = yes
@@ -21128,17 +21148,26 @@
 			set_politics = {
 				ruling_party = socialism_ideology
 			}
-		}
-				VEN = {
-					kill_country_leader = yes
-					create_country_leader = {
-            			name = "Presidente Nicolás Maduro Moros"
-            			desc = ""
-            			picture = "gfx/leaders/VEN/VEN_Maduro.tga"
-            			expire = "1965.1.1"
-            			ideology = demsoc
-					}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = VEN_socialism_ideology_2023_party
+				long_name = VEN_socialism_ideology_2023_party_long
 			}
+			set_popularities = {
+				socialism_ideology = 92
+				liberal_republic = 8
+			}
+		}
+		VEN = {
+			kill_country_leader = yes
+			create_country_leader = {
+        		name = "Presidente Nicolás Maduro Moros"
+        		desc = ""
+        		picture = "gfx/leaders/VEN/VEN_Maduro.tga"
+        		expire = "1965.1.1"
+        		ideology = left_wing_nationalism
+			}
+		}
 		GYA = {
 			drop_cosmetic_tag = yes
 			set_politics = {
@@ -21171,7 +21200,16 @@
 		}
 		BER = {
 			set_politics = {
-				ruling_party = conservative_monarchism
+				ruling_party = socialist_monarchy
+			}
+			set_party_name = {
+				ideology = socialist_monarchy
+				name = BER_socialist_monarchy_2023_party
+				long_name = BER_socialist_monarchy_2023_party_long
+			}
+			set_popularities = {
+				socialist_monarchy = 86
+				conservative_monarchism = 14
 			}
 		}
 		BER = {
@@ -21180,7 +21218,7 @@
            		desc = ""
            		picture = "gfx/leaders/BER/BER_Rena_Lalgie.tga"
            		expire = "1965.1.1"
-           		ideology = conservative_constitutionalism
+           		ideology = socmon_social_democracy
 			}
 		}
 		add_victory_points = {
