@@ -334,7 +334,10 @@ scripted_gui = {
 			smt_annex_all_claims_click_enabled = {
 				any_state = {
 					NOT = { is_owned_by = FROM.OWNER }
-					is_claimed_by = FROM.OWNER
+					OR = {
+						is_core_of = FROM.OWNER
+						is_claimed_by = FROM.OWNER
+					}
 				}
 			}
 			smt_set_capital_click_enabled = {
