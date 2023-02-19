@@ -14,16 +14,24 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			TML = {
-				create_country_leader = {
-					name = "Reichsprotektor Wilhelm Rudolf Dommes"
-					desc = ""
-					picture = "gfx/leaders/TML/TML_Dommes.tga"
-					expire = "1965.1.1"
-					ideology = natsoc
-					traits = {
+			every_country = {
+				limit = {
+					capital_scope = {
+						is_core_of = SLW
+					}
+					NOT = {
+						capital_scope = {
+							is_core_of = NSI
+						}
+						tag = BGG
+						tag = TJO
+						tag = BNK
+						tag = GRT
+						tag = BLM
+						tag = BUO
 					}
 				}
+				drop_cosmetic_tag = yes
 			}
 		}
 	}
