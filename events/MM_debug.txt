@@ -14,24 +14,16 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			every_country = {
-				limit = {
-					capital_scope = {
-						is_core_of = SLW
-					}
-					NOT = {
-						capital_scope = {
-							is_core_of = NSI
-						}
-						tag = BGG
-						tag = TJO
-						tag = BNK
-						tag = GRT
-						tag = BLM
-						tag = BUO
+			MDP = {
+				create_country_leader = {
+					name = "Govenrnor Sir Hyde Clarendon Gowan"
+					desc = ""
+					picture = "gfx/leaders/MDP/MDP_Gowan.tga"
+					expire = "1965.1.1"
+					ideology = british_colonialism
+					traits = {
 					}
 				}
-				drop_cosmetic_tag = yes
 			}
 		}
 	}
