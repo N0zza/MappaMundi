@@ -14613,6 +14613,11 @@
 				name = PRC_communism_2023_party
 				long_name = PRC_communism_2023_party_long
 			}
+			set_party_name = {
+				ideology = centrist_republic
+				name = PRC_centrist_republic_2023_party
+				long_name = PRC_centrist_republic_2023_party_long
+			}
             set_capital = {
             	state = 608				
             }
@@ -14634,6 +14639,16 @@
            		picture = "gfx/leaders/PRC/PRC_pooh.tga"
            		expire = "1965.1.1"
            		ideology = dengism
+			}
+		}
+		PRC = {
+			kill_ideology_leader = centrist_republic
+			create_country_leader = {
+           		name = "Guo Wengui"
+           		desc = ""
+           		picture = "gfx/leaders/PRC/PRC_2023_Wengui.tga"
+           		expire = "1965.1.1"
+           		ideology = cenrep
 			}
 		}
 		every_state = {
