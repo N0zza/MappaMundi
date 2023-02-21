@@ -1,19 +1,24 @@
 ﻿capital = 4241
 
 set_popularities = {
-        monarchism = 0
-        neutrality = 70
-        democratic = 20
-        communism = 5
-        fascism = 5
+	authoritarian_monarchism = 100
 }
 
 set_politics = {
-	
-	ruling_party = democratic
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_cosmetic_tag = RAJ_RED
+
+create_country_leader = {
+	name = "Chief Commissioner George Drummond Ogilvie"
+	desc = ""
+	picture = "gfx/leaders/AJR/AJR_Ogilvie.tga"
+	expire = "1965.1.1"
+	ideology = british_colonialism
+	traits = {
+	}
+}
