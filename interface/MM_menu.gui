@@ -1,0 +1,70 @@
+guiTypes = {
+	containerWindowType = {
+		name = "MM_menu_container"
+		position = { x = -800 y = -400 }
+		size = { width = 300 height = 500 }
+		orientation = UPPER_RIGHT
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_thin_border"
+		}
+		
+		show_position = { x = -800 y = 0 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 150
+		
+		instantTextBoxType = {
+			name = "MM_Menu_Title"
+			position = { x = 5 y = 10 }
+			text = "The Mappa Mundi Informational Menu"
+			font = hoi_20bs
+			maxWidth = 300
+			maxHeight = 50
+			format = center
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "MM_Menu_Welcome_Text"
+			position = { x = 5 y = 40 }
+			text = "Welcome to Mappa Mundi: A modifaction for the game, Hearts of Iron IV. This mod is a map painting tool that allows you to make almost any map you could wish for. This menu answers some common questions and gives information about this mod."
+			font = cg_16b
+			maxWidth = 290
+			maxHeight = 50
+			format = center
+			alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "MM_menu_button_container"
+		position = { x = -490 y = 10000 }
+		orientation = UPPER_RIGHT
+		
+		buttonType = {
+			name = "MM_Menu_Button"
+			quadTextureSprite = "GFX_MM_Menu_Button_open"
+			position = { x = 0 y = 0 }
+			shortcut = ""
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+	}
+	
+	containerWindowType = {
+		name = "MM_menu_button_close_container"
+		position = { x = -490 y = 0 }
+		orientation = UPPER_RIGHT
+		
+		buttonType = {
+			name = "MM_Menu_Button_close"
+			quadTextureSprite = "GFX_MM_Menu_Button_close"
+			position = { x = 0 y = 0 }
+			shortcut = ""
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+	}
+}
