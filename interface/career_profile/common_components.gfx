@@ -3,6 +3,12 @@ spriteTypes = {
 	### Backgrounds ###
 
 	spriteType = {
+		name = "GFX_career_bg_flyout"
+		texturefile = "gfx/interface/career_profile/career_bg_flyout.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	spriteType = {
 		name = "GFX_career_profile_bg"
 		texturefile = "gfx/interface/career_profile/career_profile_bg.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -21,12 +27,26 @@ spriteTypes = {
 	}
 
 	corneredTileSpriteType = {
+		name = "GFX_tiled_career_profile_brown_60"
+		texturefile = "gfx/interface/career_profile/tiled_career_profile_brown_60.dds"
+		borderSize = { x = 1 y = 1 }
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_frame_selected"
+		texturefile = "gfx/interface/career_profile/tiled_frame_selected.dds"
+		borderSize = { x = 30 y = 30 }
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
 		name = "GFX_tiled_stats_bg"
 		texturefile = "gfx/interface/career_profile/tiled_stats_bg.dds"
 		borderSize = { x = 1 y = 1 }
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
-	
+
 	corneredTileSpriteType = {
 		name = "GFX_tiled_stats_bg_dark"
 		texturefile = "gfx/interface/career_profile/tiled_stats_bg_dark.dds"
@@ -76,17 +96,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/career_profile/scroll_thumb.dds"
 	}
 
-	spriteType = {
-		name = "GFX_profile_scroll_button_up"
-		texturefile = "gfx/interface/career_profile/scroll_button_up.dds"
-	}
-
-	spriteType = {
-		name = "GFX_profile_scroll_button_down"
-		texturefile = "gfx/interface/career_profile/scroll_button_down.dds"
-	}
-
 	### Buttons ###
+
+	spriteType = {
+		name = "GFX_career_checkbox"
+		texturefile = "gfx/interface/career_profile/career_checkbox.dds"
+		noOfFrames = 2
+	}
 
 	spriteType = {
 		name = "GFX_profile_button_toggle"
@@ -141,39 +157,7 @@ spriteTypes = {
 		clicksound = click_default
 	}
 
-	### Profile Picture ###
-
-	spriteType = {
-		name = "GFX_profile_picture_bg_default"
-		texturefile = "gfx/interface/career_profile/profile_picture_bg_default.dds"
-		effectFile = "gfx/FX/buttonstate_nodownordisableeffect.lua"
-	}
-
-	spriteType = {
-		name = "GFX_profile_picture_selected"
-		texturefile = "gfx/interface/career_profile/profile_picture_selected.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}
-
-	spriteType = {
-		name = "GFX_profile_picture_bg_default_locked"
-		texturefile = "gfx/interface/career_profile/profile_picture_bg_default_locked.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
-	}
-
-	spriteType = {
-		name = "GFX_profile_picture_lock"
-		texturefile = "gfx/interface/career_profile/profile_picture_lock.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}
-
 	### Other ###
-
-	spriteType = {
-		name = "GFX_bg_promotional"
-		texturefile = "gfx/interface/career_profile/bg_promotional.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}
 
 	spriteType = {
 		name = "GFX_bg_dlc018"
@@ -372,18 +356,6 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 
-	spriteType = {
-		name = "GFX_image_playthrough_stats"
-		texturefile = "gfx/interface/career_profile/image_playthrough_stats.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}
-
-	spriteType = {
-		name = "GFX_image_subscription"
-		texturefile = "gfx/interface/career_profile/image_subscription.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}
-
 	corneredTileSpriteType = {
 		name = "GFX_tiled_bg_empty_temp"
 		texturefile = "gfx/interface/career_profile/tiled_bg_empty_temp.dds"
@@ -394,60 +366,6 @@ spriteTypes = {
 		name = "GFX_tiled_bg_temp"
 		texturefile = "gfx/interface/career_profile/tiled_bg_temp.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-	}
-
-	spriteType = {
-		name = "GFX_btn_medal_base"
-		texturefile = "gfx/interface/career_profile/btn_medal_base.dds"
-		noOfframes = 2
-	}
-
-	spriteType = {
-		name = "GFX_btn_medal_together"
-		texturefile = "gfx/interface/career_profile/btn_medal_together.dds"
-		noOfframes = 4
-	}
-
-	spriteType = {
-		name = "GFX_btn_medal_death"
-		texturefile = "gfx/interface/career_profile/btn_medal_death.dds"
-		noOfframes = 4
-	}
-
-	spriteType = {
-		name = "GFX_btn_medal_waking"
-		texturefile = "gfx/interface/career_profile/btn_medal_waking.dds"
-		noOfframes = 4
-	}
-
-	spriteType = {
-		name = "GFX_btn_medal_man"
-		texturefile = "gfx/interface/career_profile/btn_medal_man.dds"
-		noOfframes = 4
-	}
-
-	spriteType = {
-		name = "GFX_btn_medal_resistance"
-		texturefile = "gfx/interface/career_profile/btn_medal_resistance.dds"
-		noOfframes = 4
-	}
-
-	spriteType = {
-		name = "GFX_btn_medal_battle"
-		texturefile = "gfx/interface/career_profile/btn_medal_battle.dds"
-		noOfframes = 4
-	}
-
-	spriteType = {
-		name = "GFX_btn_medal_no"
-		texturefile = "gfx/interface/career_profile/btn_medal_no.dds"
-		noOfframes = 4
-	}
-
-	spriteType = {
-		name = "GFX_btn_navigation_dot"
-		texturefile = "gfx/interface/career_profile/btn_navigation_dot.dds"
-		noOfframes = 2
 	}
 
 	maskedShieldType = {
@@ -480,11 +398,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_btn_dropdown_dark"
-		texturefile = "gfx/interface/career_profile/btn_dropdown_dark.dds"
-	}
-
-	spriteType = {
 		name = "GFX_btn_expand_isolated"
 		texturefile = "gfx/interface/career_profile/btn_expand_isolated.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -498,8 +411,34 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_bg_most_played"
-		texturefile = "gfx/interface/career_profile/bg_most_played.dds"
+		name = "GFX_icon_compare_stats_difference"
+		texturefile = "gfx/interface/career_profile/icon_compare_stats_difference.dds"
+		noOfFrames = 3
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+
+	spriteType = {
+		name = "GFX_icon_compare_stats_difference_negative"
+		texturefile = "gfx/interface/career_profile/icon_compare_stats_difference_negative.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	progressbartype = {
+		name = "GFX_profile_stats_bar"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/career_profile/tiled_transparent_bg_light.dds"
+		textureFile2 = "gfx/interface/in_game_menu_dark_overlay.dds"
+		size = { x = 272 y = 30 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+
+	### Icons
+	spriteType = {
+		name = "GFX_icon_already_selected"
+		texturefile = "gfx/interface/career_profile/icon_already_selected.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
 }

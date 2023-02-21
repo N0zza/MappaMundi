@@ -24,7 +24,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "section_title"
-				position = { x = 25 y = 35 }
+				position = { x = 15 y = 35 }
 				font = "hoi_30"
 				text = "CAREER_PROFILE_MEDALS"
 				maxWidth = 1000
@@ -38,7 +38,7 @@ guiTypes = {
 				position = { x = -564 y = 90 }
 				orientation = center_up
 				size = { width = 1110 height = 100%% } # The width is slotsize.width * max_slots_horizontal
-				slotsize = { width = 372 height = 160 } # The slot size adds margins between the items
+				slotsize = { width = 371 height = 160 } # The slot size adds margins between the items
 				format = "UPPER_LEFT"
 				max_slots_horizontal = 3
 			}
@@ -51,7 +51,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "section_title"
-				position = { x = 25 y = 35 }
+				position = { x = 15 y = 35 }
 				font = "hoi_30"
 				text = "CAREER_PROFILE_RIBBONS"
 				maxWidth = 1000
@@ -286,7 +286,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "mod_achievement_item"
 		position = { x = 0 y = 0 }
-		size = { width = 270 height = 200 }
+		size = { width = 270 height = 280 }
 		clipping = no
 
 		background = {
@@ -297,7 +297,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "frame"
 			position = { x = 0 y = 0 }
-			size = { width = 270 height = 200 }
+			size = { width = 270 height = 280 }
 			clipping = no
 
 			background = {
@@ -308,12 +308,13 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "name"
-			position = { x = 20 y = 20 }
+			position = { x = 20 y = -1 }
 			font = "hoi_18mbs"
 			format = center
 			maxWidth = 230
 			maxHeight = 40
 			fixedsize = yes
+			vertical_alignment = bottom
 		}
 
 		containerWindowType = {
@@ -367,7 +368,7 @@ guiTypes = {
 			position = { x = 20 y = 110 }
 			font = "hoi_18"
 			maxWidth = 230
-			maxHeight = 110
+			maxHeight = 163
 			fixedsize = yes
 			format = center
 		}
@@ -399,7 +400,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "section_title"
-			position = { x = 25 y = 35 }
+			position = { x = 15 y = 35 }
 			font = "hoi_30"
 			maxWidth = 1000
 			maxHeight = 50
@@ -412,7 +413,7 @@ guiTypes = {
 			position = { x = -564 y = 90 } # The x position is -(width / 2 - slot margin / 2) to add some margin to the left
 			orientation = center_up
 			size = { width = 1110 height = 100%% } # The width is slotsize.width * max_slots_horizontal
-			slotsize = { width = 278 height = 207 } # The slot size adds margins between the items
+			slotsize = { width = 278 height = 287 } # The slot size adds margins between the items
 			format = "UPPER_LEFT"
 			max_slots_horizontal = 4
 		}

@@ -11,20 +11,21 @@ spriteTypes = {
 		name = "GFX_career_profile_medal_bg"
 		texturefile = "gfx/interface/career_profile/medal_bg.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		noOfFrames = 4
 	}
 
 	spriteType = {
 		name = "GFX_career_profile_medal_fg1"
 		texturefile = "gfx/interface/career_profile/medal_fg1.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		noOfFrames = 3
+		noOfFrames = 4
 	}
 
 	spriteType = {
 		name = "GFX_career_profile_medal_mg"
 		texturefile = "gfx/interface/career_profile/medal_mg.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		noOfFrames = 2
+		noOfFrames = 8
 	}
 
 	# Shiny medal layers
@@ -32,14 +33,14 @@ spriteTypes = {
 		name = "GFX_career_profile_medal_bg_shiny"
 		texturefile = "gfx/interface/career_profile/medal_bg.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
-		noOfFrames = 1
+		noOfFrames = 4
 
 		animation = {
 			animationmaskfile = "gfx/interface/career_profile/medal_bg.dds"
 			animationtexturefile = "gfx/interface/career_profile/shine_sharp.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
-			animationtime = 0.7				# in seconds - make this longer if there are more frames
+			animationtime = 2				# in seconds - make this longer if there are more frames
 			animationdelay = 0				# in seconds
 			animationblendmode = "add"		#add, multiply, overlay
 			animationtype = "scrolling"		#scrolling, rotating, pulsing
@@ -54,14 +55,14 @@ spriteTypes = {
 		name = "GFX_career_profile_medal_fg1_shiny"
 		texturefile = "gfx/interface/career_profile/medal_fg1.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
-		noOfFrames = 3
+		noOfFrames = 4
 
 		animation = {
 			animationmaskfile = "gfx/interface/career_profile/medal_fg1.dds"
 			animationtexturefile = "gfx/interface/career_profile/shine_sharp.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
-			animationtime = 1.2				# in seconds - make this longer if there are more frames
+			animationtime = 2				# in seconds - make this longer if there are more frames
 			animationdelay = 0				# in seconds
 			animationblendmode = "add"		#add, multiply, overlay
 			animationtype = "scrolling"		#scrolling, rotating, pulsing
@@ -76,14 +77,14 @@ spriteTypes = {
 		name = "GFX_career_profile_medal_mg_shiny"
 		texturefile = "gfx/interface/career_profile/medal_mg.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
-		noOfFrames = 2
+		noOfFrames = 8
 
 		animation = {
 			animationmaskfile = "gfx/interface/career_profile/medal_mg.dds"
 			animationtexturefile = "gfx/interface/career_profile/shine_sharp.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
-			animationtime = 1			# in seconds - make this longer if there are more frames
+			animationtime = 2.5				# in seconds - make this longer if there are more frames
 			animationdelay = 0				# in seconds
 			animationblendmode = "add"		#add, multiply, overlay
 			animationtype = "scrolling"		#scrolling, rotating, pulsing
@@ -109,21 +110,21 @@ spriteTypes = {
 		name = "GFX_career_profile_ribbon_fg1"
 		texturefile = "gfx/interface/career_profile/ribbon_fg1.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		noOfFrames = 2
+		noOfFrames = 3
 	}
 
 	spriteType = {
 		name = "GFX_career_profile_ribbon_fg2"
 		texturefile = "gfx/interface/career_profile/ribbon_fg2.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		noOfFrames = 2
+		noOfFrames = 3
 	}
 
 	spriteType = {
 		name = "GFX_career_profile_ribbon_fg3"
 		texturefile = "gfx/interface/career_profile/ribbon_fg3.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		noOfFrames = 2
+		noOfFrames = 3
 	}
 
 	# Shiny ribbon layers
@@ -153,7 +154,7 @@ spriteTypes = {
 		name = "GFX_career_profile_ribbon_fg1_shiny"
 		texturefile = "gfx/interface/career_profile/ribbon_fg1.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
-		noOfFrames = 2
+		noOfFrames = 3
 
 		animation = {
 			animationmaskfile = "gfx/interface/career_profile/ribbon_fg1.dds"
@@ -175,7 +176,7 @@ spriteTypes = {
 		name = "GFX_career_profile_ribbon_fg2_shiny"
 		texturefile = "gfx/interface/career_profile/ribbon_fg2.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
-		noOfFrames = 2
+		noOfFrames = 3
 
 		animation = {
 			animationmaskfile = "gfx/interface/career_profile/ribbon_fg2.dds"
@@ -197,7 +198,7 @@ spriteTypes = {
 		name = "GFX_career_profile_ribbon_fg3_shiny"
 		texturefile = "gfx/interface/career_profile/ribbon_fg3.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
-		noOfFrames = 2
+		noOfFrames = 3
 
 		animation = {
 			animationmaskfile = "gfx/interface/career_profile/ribbon_fg3.dds"

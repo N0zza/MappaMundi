@@ -64,7 +64,7 @@ guiTypes = {
 				name = "profile_picture_tab_button"
 				quadTextureSprite = "GFX_profile_button_tab"
 				position = { x = 500 y = 0 }
-				buttonText = "CAREER_PROFILE_PROFILE_TAB_LABEL"
+				buttonText = "CAREER_PROFILE_BADGE_TAB_LABEL"
 				font = "hoi_18mbs"
 			}
 		}
@@ -74,73 +74,114 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "player_header"
-			position = { x = 12 y = 42 }
+			position = { x = 0 y = 42 }
 			size = { width = 100% height = 180 }
+			margin = { left = 12 right = 12 }
 
-			iconType = {
+			containerWindowType = {
+				name = "profile_background_container"
+				position = { x = 3 y = 16 }
+				size = { width = 360 height = 119 }
+
+				buttonType = {
+					name = "profile_background_bg"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_profile_background_1_1"
+					clicksound = click_default
+				}
+			}
+
+			buttonType = {
 				name = "profile_picture_bg"
-				position = { x = 85 y = 88 }
+				position = { x = 71 y = 86 }
 				spriteType = "GFX_profile_picture_bg_default"
 				centerposition = yes
+				clicksound = click_default
 			}
 
 			iconType = {
 				name = "profile_picture"
-				position = { x = 85 y = 88 }
+				position = { x = 71 y = 86 }
 				spriteType = "GFX_goal_generic_trade"
 				centerposition = yes
+				alwaystransparent = yes
 			}
 
 			instantTextboxType = {
 				name = "name"
-				position = { x = 180 y = 30 }
+				position = { x = 140 y = 34 }
 				maxWidth = 280
 				font = "hoi_30"
 				format = left
 				multiline = no
+				alwaystransparent = yes
 			}
 
 			instantTextboxType = {
 				name = "career_points"
-				position = { x = 180 y = 80 }
+				position = { x = 140 y = 80 }
 				maxWidth = 280
 				font = "hoi_30"
 				format = left
 				multiline = no
+				alwaystransparent = yes
 			}
 
 			instantTextboxType = {
 				name = "career_points_label"
-				position = { x = 180 y = 120 }
+				position = { x = 140 y = 114 }
 				maxWidth = 280
 				text = "CAREER_PROFILE_CAREER_POINTS_LABEL"
 				font = "hoi_18mbs"
 				format = left
 				multiline = no
+				alwaystransparent = yes
 			}
 
 			containerWindowType = {
 				name = "privacy_information"
 				orientation = upper_right
 				origo = upper_right
-				position = { x = -20 y = 30 }
-				size = { width = 200 height = 40 }
+				position = { x = -28 y = 20 }
+				size = { width = 180 height = 40 }
 
-				checkboxType = {
-					name = "privacy_switcher"
-					spriteType = "GFX_profile_button_toggle"
-					position = { x = 110 y = 5 }
-					pdx_tooltip = "CAREER_PROFILE_SWITCHER_TOOLTIP"
+				instantTextBoxType={
+					position = {x = 0 y = 0 }
+					name = "privacy_switcher_label"
+					font = "hoi_18mbs"
+					borderSize = {x = 0 y = 0}
+					maxWidth = 180
+					maxHeight = 18
+					text = "CAREER_PROFILE_VISIBILITY"
+					orientation = "UPPER_LEFT"
+					format = centre
 				}
 
-				instantTextboxType = {
-					name = "privacy_switcher_label"
-					position = { x = 0 y = 8 }
-					maxWidth = 100
-					multiline = no
+				instantTextBoxType={
+					position = {x = 0 y = 23 }
+					name = "privacy_switcher_value"
+					font = "hoi_18"
+					borderSize = {x = 0 y = 0}
+					maxWidth = 180
+					maxHeight = 18
 					text = "CAREER_PROFILE_SWITCHER_ON"
-					font = "hoi_18mbs"
-					format = right
+					orientation = "UPPER_LEFT"
+					format = centre
+				}
+
+				buttonType = {
+					name = "privacy_left_button"
+					position = { x = 10 y = 31 }
+					spriteType = "GFX_profile_button_navigation_left"
+					centerposition = yes
+				}
+
+				buttonType = {
+					name = "privacy_right_button"
+					position = { x = -10 y = 31 }
+					spriteType = "GFX_profile_button_navigation_right"
+					centerposition = yes
+					orientation = "UPPER_RIGHT"
 				}
 			}
 
@@ -148,13 +189,13 @@ guiTypes = {
 				name = "information_text_container"
 				orientation = upper_right
 				origo = upper_right
-				position = { x = -20 y = 70 }
-				size = { width = 300 height = 80 }
+				position = { x = -28 y = 80 }
+				size = { width = 180 height = 80 }
 
 				instantTextboxType = {
 					name = "information_text"
-					position = { x = -20 y = 8 }
-					maxWidth = 270
+					position = { x = 0 y = 8 }
+					maxWidth = 180
 					maxHeight = 100
 					text = "CAREER_PROFILE_HEADER_DISCLAIMER"
 					font = "hoi_18"
@@ -329,7 +370,7 @@ guiTypes = {
 	}
 
 	containerWindowType = {
-		name = "data_set_item"
+		name = "career_profile_simple_dropdown_item"
 		position = { x = 0 y = 0 }
 		size = { width = 236 height = 38 }
 		clipping = no
