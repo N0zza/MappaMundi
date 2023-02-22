@@ -5220,6 +5220,10 @@
 					set_politics = {
 							ruling_party = right_anarchism
 					}
+					set_capital = {
+						state = 431
+						remember_old_capital = no
+					}
 				}
 				every_state = {
 					limit = {
@@ -7753,7 +7757,8 @@
 				}
 			}
 		}
-			every_state = {
+				
+				every_state = {
 				limit = {
 					is_core_of = LGQ
 				}
@@ -8070,6 +8075,12 @@
 		TIB = {
 			transfer_state = 11605
 	}
+			RAJ = {
+					set_capital = {
+						state = 431
+						remember_old_capital = no
+					}
+				}
 		RUS = {
 			transfer_state = 1479
 			transfer_state = 11061
@@ -9229,37 +9240,35 @@
 					every_state = {
 						limit = {
 							is_core_of = RFC
+						}
+						RFC = {
+							transfer_state = PREV
+						}
+						MEN = {
+							kill_country_leader = yes
+							create_country_leader = {
+								name = "Darga Demchugdongrub"
+								desc = ""
+								picture = "gfx/leaders/MON/MON_Demchugdongrub.tga"
+								expire = "1965.1.1"
+								ideology = authmon
+							}
+						}
 					}
-					RFC = {
-						transfer_state = PREV
-					}
-					MEN = {
-						kill_country_leader = yes
-						create_country_leader = {
-							name = "Darga Demchugdongrub"
-							desc = ""
-							picture = "gfx/leaders/MON/MON_Demchugdongrub.tga"
-							expire = "1965.1.1"
-							ideology = authmon
-					}
-				}
-				}
 					every_state = {
 						limit = {
 							is_core_of = BRM
 							NOT = {
 								is_core_of = SHA
 							}
+						}
+						transfer_state = BRM
 					}
-					BRM = {
-						transfer_state = PREV
-					}
-				}
 					BRM = {
 						set_politics = {
-							ruling_party = authoritarian_monarchism
+							ruling_party = stratocratic_monarchism
 						}
-						set_cosmetic_tag = BRM_ENG
+						set_cosmetic_tag = UK_RED
 					}
 					LHJ = {
 						transfer_state = 3875
@@ -19189,7 +19198,7 @@
 		SIE = {
 			kill_country_leader = yes
 			create_country_leader = {
-           		name = "President Julius Maada Bio"
+           		name = "President Julius Maada Wonie Bio"
            		desc = ""
            		picture = "gfx/leaders/SIE/SIE_Julius_Maada.tga"
            		expire = "1965.1.1"

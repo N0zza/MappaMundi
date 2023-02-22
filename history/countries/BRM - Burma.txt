@@ -3,8 +3,7 @@
 set_cosmetic_tag = RAJ_RED
 
 set_popularities = {
-	authoritarian_monarchism = 90
-	neutrality = 10
+	authoritarian_monarchism = 100
 }
 
 set_politics = { 
@@ -26,11 +25,22 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Governor-General Sir Archibald Douglas Cochrane"
+	name = "Governor Sir Hugh Landsowne Stephenson"
+	desc = ""
+	picture = "gfx/leaders/BRM/BRM_Stephenson.tga"
+	expire = "1965.1.1"
+	ideology = british_colonialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Governor Sir Archibald Douglas Cochrane"
 	desc = ""
 	picture = "gfx/leaders/BRM/BRM_Cochrane_authmon.tga"
 	expire = "1965.1.1"
-	ideology = authmon
+	ideology = stratmon_british_colonialism
 	traits = {
 		#
 	}
