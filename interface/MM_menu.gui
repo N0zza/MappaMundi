@@ -28,11 +28,10 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "MM_Menu_Welcome_Text"
-			position = { x = 5 y = 40 }
+			position = { x = 20 y = 40 }
 			text = "Welcome to Mappa Mundi: A modifaction for the game, Hearts of Iron IV. This mod is a map painting tool that allows you to make almost any map you could wish for. This menu answers some common questions and gives information about this mod."
 			font = cg_16b
-			maxWidth = 290
-			maxHeight = 50
+			maxWidth = 250
 			format = center
 			alwaystransparent = yes
 		}
@@ -52,6 +51,8 @@ guiTypes = {
 				quadTextureSprite = "GFX_tiled_window_thin_border"
 			}
 			
+			# Each button should have a spacing of 120
+			
 			buttonType = {
 				name = "MM_Menu_Answer_Button_1"
 				position = {x = 5 y = 0}
@@ -63,8 +64,8 @@ guiTypes = {
 			
 			buttonType = {
 				name = "MM_Menu_Answer_Button_2"
-				position = {x = 5 y = 75}
-				spriteType = "GFX_MM_Menu_Question_Button_1"
+				position = {x = 5 y = 120 }
+				spriteType = "GFX_MM_Menu_Question_Button_2"
 				
 				buttonFont = "cg_16b"
 				buttonText = "Why can't I unpause the game?"
@@ -74,7 +75,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "MM_menu_button_container"
-		position = { x = -490 y = 10000 }
+		position = { x = -490 y = 0 }
 		orientation = UPPER_RIGHT
 		
 		buttonType = {
@@ -89,7 +90,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "MM_menu_button_close_container"
-		position = { x = -490 y = 10000 }
+		position = { x = -490 y = 0 }
 		orientation = UPPER_RIGHT
 		
 		buttonType = {
@@ -105,7 +106,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "MM_menu_answer_box_container"
 		position = { x = -800 y = -500 }
-		size = { width = 300 height = 200 }
+		size = { width = 300 height = 350 }
 		orientation = UPPER_RIGHT
 		
 		background = {
@@ -113,7 +114,7 @@ guiTypes = {
 			spriteType = "GFX_tiled_window_thin_border"
 		}
 		
-		show_position = { x = -800 y = 492 }
+		show_position = { x = -800 y = 490 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 200
@@ -131,19 +132,19 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "MM_Menu_Answerbox_Text"
-			position = { x = 5 y = 30 }
+			position = { x = 10 y = 40 }
 			text = "[GetMappaMundiMenuAnswerText]"
 			font = cg_16b
-			maxWidth = 290
-			maxHeight = 50
+			maxWidth = 280
+			maxHeight = 300
 			format = center
-			alwaystransparent = yes
 		}
 		
 		buttonType = {
 			name = "MM_Menu_Answer_Box_Close"
-			position = {x = 265 y = 0}
+			position = {x = 270 y = 5}
 			spriteType = "GFX_closebutton"
+			scale = 0.8
 		}
 	}
 }
