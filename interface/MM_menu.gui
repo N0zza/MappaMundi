@@ -36,6 +36,40 @@ guiTypes = {
 			format = center
 			alwaystransparent = yes
 		}
+		
+		containerWindowType = {
+			name = "MM_Question_Buttons_Scroll_Container"
+			position = { x = -145 y = 0 }
+			orientation = CENTER
+			
+			size = { width = 290 height = 230 }
+			margin = { top = 10 bottom = 10 }
+			
+			verticalScrollbar = "right_vertical_slider"
+			
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_thin_border"
+			}
+			
+			buttonType = {
+				name = "MM_Menu_Answer_Button_1"
+				position = {x = 5 y = 0}
+				spriteType = "GFX_MM_Menu_Question_Button_1"
+				
+				buttonFont = "cg_16b"
+				buttonText = "Why is there no water?"
+			}
+			
+			buttonType = {
+				name = "MM_Menu_Answer_Button_2"
+				position = {x = 5 y = 75}
+				spriteType = "GFX_MM_Menu_Question_Button_1"
+				
+				buttonFont = "cg_16b"
+				buttonText = "Why can't I unpause the game?"
+			}
+		}
 	}
 	
 	containerWindowType = {
@@ -55,7 +89,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "MM_menu_button_close_container"
-		position = { x = -490 y = 0 }
+		position = { x = -490 y = 10000 }
 		orientation = UPPER_RIGHT
 		
 		buttonType = {
@@ -65,6 +99,51 @@ guiTypes = {
 			shortcut = ""
 			clicksound = click_ok
 			oversound = ui_menu_over
+		}
+	}
+	
+	containerWindowType = {
+		name = "MM_menu_answer_box_container"
+		position = { x = -800 y = -500 }
+		size = { width = 300 height = 200 }
+		orientation = UPPER_RIGHT
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_thin_border"
+		}
+		
+		show_position = { x = -800 y = 492 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 200
+		
+		instantTextBoxType = {
+			name = "MM_Menu_Answerbox_Text_Title"
+			position = { x = 5 y = 5 }
+			text = "[GetMappaMundiMenuAnswerTextTitle]"
+			font = cg_16b
+			maxWidth = 290
+			maxHeight = 16
+			format = center
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "MM_Menu_Answerbox_Text"
+			position = { x = 5 y = 30 }
+			text = "[GetMappaMundiMenuAnswerText]"
+			font = cg_16b
+			maxWidth = 290
+			maxHeight = 50
+			format = center
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "MM_Menu_Answer_Box_Close"
+			position = {x = 265 y = 0}
+			spriteType = "GFX_closebutton"
 		}
 	}
 }
