@@ -1,17 +1,11 @@
-﻿capital = 524
+﻿capital = 8696
 
-
-
-	set_popularities = {
-        democratic =  0
-        communism =  0
-        fascism =  0
-        neutrality =  100
-
-	}
+set_popularities = {
+	neutrality =  100
+}
 	
-	set_politics = { 
- ruling_party = neutrality
+set_politics = { 
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -24,6 +18,15 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		#
+	}
+}
+
+create_country_leader = {
+	name = "Nuclear Wasteland"
+	desc = ""
+	picture = "gfx/leaders/WST/WST_Nuclear.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
 	}
 }
