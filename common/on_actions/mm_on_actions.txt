@@ -1073,16 +1073,20 @@ on_actions = {
 				limit = {
 					OR = {
 						is_core_of = BLO
-						}
+					}
 					NOT = {
 						is_owned_by = RAJ
 						is_owned_by = OMA
-						}
-					}
-				BLO = {
-				 	transfer_state = PREV
+						is_owned_by = PER
 					}
 				}
+				KLA = {
+				 	transfer_state = PREV
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+					}
+				}
+			}
 			every_state = {
 				limit = {
 					OR = {
