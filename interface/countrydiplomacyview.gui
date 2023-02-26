@@ -7,7 +7,7 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300	
-		size = { width=745 height=435 }
+		size = { width=745 height=735 }
 		verticalScrollbar = "right_vertical_slider"
         clipping = no
 		
@@ -205,46 +205,30 @@ guiTypes = {
 				}
 				
 				iconType = {
-					name = "secondary_leader_portrait"
-					position = { x = 231 y = 8 }
-					spriteType = "GFX_leader_unknown"
-					scale = 1
-				}
-				
-				iconType = {
-					name = "diplo_secondary_leader_frame"
-					position = { x = 219 y = 0 }
-					spriteType = "GFX_diplo_leader_frame"
-					alwaystransparent = yes
-					scale = 1.35
-				}
-				
-				iconType = {
 					name = "top_bg"
 					spriteType = "GFX_diplo_upper_diplo_bg"
 					position = { x = 333 y = 5 }
 					alwaystransparent = yes
 				}
-				
+					
 				containerWindowType = {
 					name = "political_pie_chart"
-					position = { x = 394 y = 14 }
-					size = { width=330 height=30 }
+					position = { x= 270 y = 304 }
+					size = { width=100 height=100 }
 					clipping = no
-
-					iconType ={
-						name ="chart"
-						spriteType = "GFX_political_chart_big"
-						position = { x = 51 y = 5 }
+			
+					iconType = {
+						name = "chart"
+						spriteType = "GFX_political_chart"
+						position = { x = 20 y = -275}
 					}
 					
 					iconType ={
 						name ="pol_view_bg"
-						spriteType = "GFX_pol_piechart_overlay"
-						position = { x= 15 y = 0 }
-						scale = 1
-					}				
-				}	
+						spriteType = "GFX_pol_piechart_overlay_63x63"
+						position = { x= -65	y = -291 }
+					}
+				}
 				
 				containerWindowType = {
 					name = "ruling_party_info"
@@ -353,7 +337,7 @@ guiTypes = {
 				position = { x = 20 y = 295 }
 				font = "hoi_24header"
 				text = "Rudolf Kittler"
-				maxWidth = 160
+				maxWidth = 250
 				maxHeight = 36
 				format = left				
 			}

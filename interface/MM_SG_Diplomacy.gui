@@ -17,12 +17,27 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "secondary_leader_name"
-			position = { x = 225 y = 295 }
+			position = { x = 25 y = 620 }
 			font = "hoi_24header"
 			text = "[GetSecondaryLeaderName]"
-			maxWidth = 160
+			maxWidth = 250
 			maxHeight = 36
 			format = left				
+		}
+		
+		iconType = {
+			name = "diplo_secondary_leader_frame"
+			position = { x = 15 y = 392 }
+			spriteType = "GFX_diplo_leader_frame"
+			alwaystransparent = yes
+			scale = 1.35
+		}
+		
+		iconType = {
+			name = "secondary_leader_portrait"
+			position = { x = 25 y = 400 }
+			spriteType = "GFX_leader_unknown"
+			scale = 1
 		}
 	}
 }

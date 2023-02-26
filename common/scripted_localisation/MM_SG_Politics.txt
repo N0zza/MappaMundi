@@ -590,7 +590,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ENG
-				has_government = conservative_constitutionalism
+				has_government = conservative_monarchism
 			}
 		}
 		localization_key = "Prime Minister Stanley Baldwin, 1st Earl Baldwin of Bewdley"
@@ -598,7 +598,10 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				tag = SOV
+				OR = {
+					tag = SOV
+					tag = RUS
+				}
 				has_government = vanguardism
 			}
 		}
@@ -619,7 +622,7 @@ defined_text = {
 				NOT = { 
 					AND = {
 						tag = ENG
-						has_government = conservative_constitutionalism
+						has_government = conservative_monarchism
 					}
 				}
 				NOT = { 
@@ -630,7 +633,10 @@ defined_text = {
 				}
 				NOT = { 
 					AND = {
-						tag = SOV
+						OR = {
+							tag = SOV
+							tag = RUS
+						}
 						has_government = vanguardism
 					}
 				}
