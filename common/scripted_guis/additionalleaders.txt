@@ -1,0 +1,18 @@
+scripted_gui = {
+	MM_SG_Diplomacy_Ideology = {
+		context_type = selected_country_context
+		
+		window_name = "MM_SG_Diplomacy_Ideology"
+		parent_window_token = selected_country_view_diplomacy
+
+		visible = {
+			always = yes
+		}
+		
+		properties = {
+			secondary_leader_portrait = {
+				image = "[This.leader_two_portrait]"
+			}
+		}
+	}
+}
