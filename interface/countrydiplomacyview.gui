@@ -7,10 +7,9 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300	
-		size = { width=550 height=367 }
+		size = { width=745 height=435 }
 		verticalScrollbar = "right_vertical_slider"
-		#horizontalScrollbar = "bottom_horizontal_slider"
-                clipping = no
+        clipping = no
 		
 		hide_sound = menu_close_window
 		show_sound = menu_open_window
@@ -26,7 +25,7 @@ guiTypes = {
 			name = "country_info"
 			position = { x = 0 y = 55}	
 			size = { width = 530 height = 100%% }
-                        clipping = no
+            clipping = no
 
 			iconType = {
 				name = "diplo_upper_win_bg"
@@ -206,15 +205,30 @@ guiTypes = {
 				}
 				
 				iconType = {
+					name = "secondary_leader_portrait"
+					position = { x = 231 y = 8 }
+					spriteType = "GFX_leader_unknown"
+					scale = 1
+				}
+				
+				iconType = {
+					name = "diplo_secondary_leader_frame"
+					position = { x = 219 y = 0 }
+					spriteType = "GFX_diplo_leader_frame"
+					alwaystransparent = yes
+					scale = 1.35
+				}
+				
+				iconType = {
 					name = "top_bg"
 					spriteType = "GFX_diplo_upper_diplo_bg"
-					position = { x = 133 y = 5 }
+					position = { x = 333 y = 5 }
 					alwaystransparent = yes
 				}
 				
 				containerWindowType = {
 					name = "political_pie_chart"
-					position = { x = 194 y = 14 }
+					position = { x = 394 y = 14 }
 					size = { width=330 height=30 }
 					clipping = no
 
@@ -234,13 +248,13 @@ guiTypes = {
 				
 				containerWindowType = {
 					name = "ruling_party_info"
-					position = { x = 218 y = 125 }
+					position = { x = 418 y = 125 }
 					size = { width = 255 height = 60 }
 					clipping = no
 							
 					instantTextboxType = {
 						name = "party_name"
-						position = { x = 5 y = -5 }
+						position = { x = -5 y = -5 }
 						font = "hoi_24header"
 						text = "party"
 						maxWidth = 245
@@ -250,7 +264,7 @@ guiTypes = {
 					
 					instantTextboxType = {
 						name = "ideology_name"
-						position = { x = 5 y = 10 }
+						position = { x = 405 y = 10 }
 						font = "invisiblefont"
 						text = "ideology"
 						maxWidth = 345
@@ -318,7 +332,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "faction"
-				position = { x = 223 y = 168}	
+				position = { x = 413 y = 168}	
 				size = { width = 175 height = 20 }
 				clipping = no
 			
@@ -336,18 +350,18 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "leader_name"
-				position = { x = 200 y = 230 }
+				position = { x = 20 y = 295 }
 				font = "hoi_24header"
 				text = "Rudolf Kittler"
-				maxWidth = 330
+				maxWidth = 160
 				maxHeight = 36
 				format = left				
-			}			
+			}
 			
 			iconType ={
 				name = "ideology_icon"
 				spriteType = "GFX_ideology_unknown"
-				position = { x = 378 y = 80 }
+				position = { x = 578 y = 80 }
 				Orientation = "UPPER_LEFT"
 				frame = 1
 			}
@@ -714,16 +728,16 @@ guiTypes = {
 			
 			#------------------------- END INFO TAB ----------------------------
 
-			iconType ={
-				name ="diplomacy_bottom"
-				spriteType = "GFX_main_screens_bottom"
-				position = { x = 3 y = -8 }
-				Orientation = "LOWER_LEFT"
-			}	
+			#iconType ={
+			#	name ="diplomacy_bottom"
+			#	spriteType = "GFX_main_screens_bottom"
+			#	position = { x = 3 y = -8 }
+			#	Orientation = "LOWER_LEFT"
+			#}	
 			
 			buttonType = {
 				name = "back_button"
-				position = { x = 150 y = -1 }
+				position = { x = 450 y = -140 }
 				clicksound = click_close
 				quadTextureSprite ="GFX_button_221x34"
 				buttonFont = "hoi_16mbs"
@@ -735,7 +749,7 @@ guiTypes = {
 
 		iconType ={
 			name ="production_header_bg"
-			spriteType = "GFX_header_bg"
+			spriteType = "GFX_header_bg_long"
 			position = { x= 5 y = 6 }
 			Orientation = "UPPER_LEFT"
 		}
@@ -897,7 +911,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "close_button"
-			position = { x = -43 y = 8 }
+			position = { x = -38 y = 8 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "hoi_16mbs"
 			shortcut = "ESCAPE"

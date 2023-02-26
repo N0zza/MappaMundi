@@ -583,3 +583,59 @@ defined_text = {
 		localization_key = theocratic
 	}
 }
+
+defined_text = {
+	name = GetSecondaryLeaderName
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = conservative_constitutionalism
+			}
+		}
+		localization_key = "Prime Minister Stanley Baldwin, 1st Earl Baldwin of Bewdley"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SOV
+				has_government = vanguardism
+			}
+		}
+		localization_key = "General Secretary of the CPSU Joseph Vissarionovich Stalin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GER
+				has_government = national_socialism
+			}
+		}
+		localization_key = "Stellvertreter des Führers Rudolf Walter Richard Heß"
+	}
+	text = {
+		trigger = {
+			OR = {
+				NOT = { 
+					AND = {
+						tag = ENG
+						has_government = conservative_constitutionalism
+					}
+				}
+				NOT = { 
+					AND = {
+						tag = GER
+						has_government = national_socialism
+					}
+				}
+				NOT = { 
+					AND = {
+						tag = SOV
+						has_government = vanguardism
+					}
+				}
+			}
+		}
+		localization_key = "To Be Added"
+	}
+}
