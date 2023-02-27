@@ -693,7 +693,10 @@ defined_text = {
 				OR = {
 					AND = {
 						tag = GER
-						has_government = national_socialism
+						OR = {
+							has_government = national_socialism
+							has_government = socialist_monarchy
+						}
 					}
 					AND = {
 						OR = {
