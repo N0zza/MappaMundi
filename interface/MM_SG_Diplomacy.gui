@@ -5,7 +5,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "ideology"
-			position = { x = 413 y = 198 }
+			position = { x = 203 y = 198 }
 			font = "hoi_24header"
 			text = [GetSubIdeologyLoc]
 			alwaystransparent = yes
@@ -14,30 +14,44 @@ guiTypes = {
 			format = left
 			fixedsize = yes
 		}
+	}
+	containerWindowType = {
+		name = "MM_SG_Secondary_Leader_Container"
+		position = { x = -1000 y = 355 }
+		show_position = { x = 0 y = 355 }
+		size = { width=300 height=300 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_bg"
+		}
 		
 		instantTextboxType = {
 			name = "secondary_leader_name"
-			position = { x = 25 y = 520 }
+			position = { x = 25 y = 240 }
 			font = "hoi_24header"
 			text = "[GetSecondaryLeaderName]"
 			maxWidth = 250
 			maxHeight = 36
-			format = left				
+			format = center				
 		}
 		
 		iconType = {
 			name = "diplo_secondary_leader_frame"
-			position = { x = 15 y = 342 }
+			position = { x = 60 y = 10 }
 			spriteType = "GFX_diplo_leader_frame"
 			alwaystransparent = yes
-			scale = 1.02
+			scale = 1.35
 		}
 		
 		iconType = {
 			name = "secondary_leader_portrait"
-			position = { x = 25 y = 350 }
+			position = { x = 72 y = 18 }
 			spriteType = "GFX_leader_unknown"
-			scale = 0.75
+			scale = 1
 		}
 	}
 }
