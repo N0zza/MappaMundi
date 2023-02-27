@@ -647,7 +647,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = secondary_leader_portrait
+	name = get_secondary_leader_portrait
 	text = {
 		trigger = {
 			AND = {
@@ -656,5 +656,46 @@ defined_text = {
 			}
 		}
 		localization_key = GFX_Rudolf_Hess
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = conservative_monarchism
+			}
+		}
+		localization_key = GFX_stanley_baldwin
+	}
+	text = {
+		trigger = {
+			AND = {
+				OR = {
+					tag = SOV
+					tag = RUS
+				}
+				has_government = vanguardism
+			}
+		}
+		localization_key = GFX_joseph_stalin
+	}
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					AND = {
+						tag = GER
+						has_government = national_socialism
+					}
+					AND = {
+						OR = {
+							tag = SOV
+							tag = RUS
+						}
+						has_government = vanguardism
+					}
+				}
+			}
+		}
+		localization_key = GFX_Unknown_Leader
 	}
 }
