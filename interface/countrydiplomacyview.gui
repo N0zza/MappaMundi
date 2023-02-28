@@ -50,9 +50,9 @@ guiTypes = {
 			instantTextboxType = {
 				name = "country_name"
 				position = { x = 160 y = 0 }
-				font = "hoi_20bs"
+				font = "hoi_33"
 				text = "Germanian"
-				maxWidth = 360
+				maxWidth = 540
 				fixedsize = yes
 				maxHeight = 80
 				format = center
@@ -213,8 +213,8 @@ guiTypes = {
 				
 				containerWindowType = {
 					name = "political_pie_chart_background"
-					position = { x= 525 y = -70 }
-					size = { width = 215 height = 370 }
+					position = { x= 525 y = 0 }
+					size = { width = 215 height = 300 }
 					clipping = no
 					
 					background = {
@@ -271,7 +271,7 @@ guiTypes = {
 					
 					instantTextboxType = {
 						name = "ideology_name"
-						position = { x = 405 y = 10 }
+						position = { x = -5 y = 10 }
 						font = "invisiblefont"
 						text = "ideology"
 						maxWidth = 345
@@ -367,10 +367,10 @@ guiTypes = {
 			iconType ={
 				name = "ideology_icon"
 				spriteType = "GFX_ideology_unknown"
-				position = { x = 370 y = 80 }
+				position = { x = 206 y = 84 }
 				Orientation = "UPPER_LEFT"
 				frame = 1
-				scale = 1.1
+				scale = 1
 			}
 		
 			
@@ -744,7 +744,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "back_button"
-				position = { x = -345 y = 230 }
+				position = { x = -285 y = 250 }
 				clicksound = click_close
 				quadTextureSprite ="GFX_button_221x34"
 				buttonFont = "hoi_16mbs"
