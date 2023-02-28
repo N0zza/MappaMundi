@@ -1,0 +1,68 @@
+characters = {
+	ITA_Benito_Mussolini = {
+		name = "Benito Amilcare Andrea Mussolini"
+		portraits = {
+			civilian = {
+				large = GFX_Benito_Mussolini
+			}
+		}
+		advisor = {
+			slot = secondary_leader
+			idea_token = ITA_Benito_Mussolini_SL
+			allowed = { original_tag = ITA }
+			ledger = civilian
+			traits = {}
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+		country_leader = {
+			name = "Presidente Benito Amilcare Andrea Mussolini, Duce del Fascismo"
+			desc = "POLITICS_ITA_NATSOC_DESC"
+			expire = "1965.1.1"
+			ideology = natsoc
+			traits = {
+			}
+		}
+    }
+	ITA_Vittorio_Emanuele_III = {
+		name = "Vittorio Emanuele Ferdinando Maria Gennaro di Savoia"
+		portraits = {
+			civilian = {
+				large = GFX_Vittorio_Emanuele
+			}
+		}
+		country_leader = {
+			name = "Imperatore Vittorio Emanuele III di Savoia"
+			desc = "POLITICS_ITA_ABSMONS_DESC"
+			expire = "1965.1.1"
+			ideology = absolutism
+			traits = {
+			}
+		}
+		country_leader = {
+			name = "Re Vittorio Emanuele III di Savoia"
+			desc = "POLITICS_ITA_ABSMONS_DESC"
+			expire = "1965.1.1"
+			ideology = libmon_conservative_liberalism
+			traits = {
+			}
+		}
+		country_leader = {
+			name = "Re Vittorio Emanuele III di Savoia"
+			desc = "POLITICS_ITA_ABSMONS_DESC"
+			expire = "1965.1.1"
+			ideology = conmon_christian_democracy
+			traits = {
+			}
+		}
+		country_leader = {
+			name = "Re Vittorio Emanuele III di Savoia"
+			desc = "POLITICS_ITA_ABSMONS_DESC"
+			expire = "1965.1.1"
+			ideology = italian_fascism
+			traits = {
+			}
+		}
+    }
+}
