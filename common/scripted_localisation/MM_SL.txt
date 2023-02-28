@@ -14,14 +14,20 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				OR = {
-					tag = SOV
-					tag = RUS
-				}
+				tag = SOV
 				has_government = vanguardism
 			}
 		}
 		localization_key = "Predsedátelʹ Vjačesláv Mixájlovič Mólotov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = vanguardism
+			}
+		}
+		localization_key = "Predsedátelʹ Daniíl Egórovič Sulímov"
 	}
 	text = {
 		trigger = {
@@ -49,6 +55,15 @@ defined_text = {
 			}
 		}
 		localization_key = "Capo del Governo, Primo Ministro Segretario di Stato Benito Amilcare Andrea Mussolini"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JAP
+				has_government = stratocratic_monarchism
+			}
+		}
+		localization_key = "Naikakusōri daijin Keisuke Okada"
 	}
 }
 
@@ -84,14 +99,20 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				OR = {
-					tag = SOV
-					tag = RUS
-				}
+				tag = SOV
 				has_government = vanguardism
 			}
 		}
 		localization_key = "GFX_Vyacheslav_Molotov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = vanguardism
+			}
+		}
+		localization_key = "GFX_Daniil_Sulimov"
 	}
 	text = {
 		trigger = {
@@ -101,6 +122,15 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Benito_Mussolini"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JAP
+				has_government = stratocratic_monarchism
+			}
+		}
+		localization_key = "GFX_Keisuke_Okada"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
