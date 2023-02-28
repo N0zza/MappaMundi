@@ -1,4 +1,4 @@
-MM_PORTRAITS_USA_OTL = {
+MM_PORTRAITS_USA_OTL_CATEGORY = {
 
 #	USA_OTL_GEORGE_WASHINGTON = {
 #		allowed = {
@@ -407,7 +407,7 @@ MM_PORTRAITS_USA_OTL = {
 #			
 #		}
 #	}
-#	USA_OTL_GROVER_CLEVELAND = {
+#	USA_OTL_BENJAMIN_HARRISON = {
 #		allowed = {
 #			
 #		}
@@ -426,7 +426,7 @@ MM_PORTRAITS_USA_OTL = {
 #			
 #		}
 #	}
-#	USA_OTL_GEORGE_WASHINGTON = {
+#	USA_OTL_GROVER_CLEVELAND = {
 #		allowed = {
 #			
 #		}
@@ -522,25 +522,34 @@ MM_PORTRAITS_USA_OTL = {
 		}
 	}
 	
-#	USA_OTL_WOODROW_WILSON = {
-#		allowed = {
-#			
-#		}
-#		available = {
-#			
-#		}
-#		visible = {
-#			tag = USA
-#		}
-#		cost = 0
-#		days_re_enable = 0
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		complete_effect = {
-#			
-#		}
-#	}
+	USA_OTL_WOODROW_WILSON = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = liberal_republic
+			create_country_leader = {
+				name = "President Thomas Woodrow Wilson"
+				desc = ""
+				picture = "gfx/leaders/USA/1914_USA_Woodrow_Wilson.tga"
+				expire = "1965.1.1"
+				ideology = american_liberalism
+				traits = {
+				}			
+		}
+	}
+
 	USA_OTL_WARREN_HARDING = {
 		allowed = {
 			
@@ -570,25 +579,34 @@ MM_PORTRAITS_USA_OTL = {
 		}
 	}
 	
-#	USA_OTL_CALVIN_COOLIDGE = {
-#		allowed = {
-#			
-#		}
-#		available = {
-#			
-#		}
-#		visible = {
-#			tag = USA
-#		}
-#		cost = 0
-#		days_re_enable = 0
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		complete_effect = {
-#			
-#		}
-#	}
+	USA_OTL_CALVIN_COOLIDGE = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = democratic
+			create_country_leader = {
+				name = "President John Calvin Coolidge Junior"
+				desc = ""
+				picture = "gfx/leaders/USA/USA_Coolidge.tga"
+				expire = "1965.1.1"
+				ideology = american_conservatism
+				traits = {
+				}
+			}
+		}
+	}
 
 	USA_OTL_HERBERT_HOOVER = {
 		allowed = {
@@ -612,7 +630,7 @@ MM_PORTRAITS_USA_OTL = {
 				desc = ""
 				picture = "gfx/leaders/USA/USA_Hoover.tga"
 				expire = "1965.1.1"
-				ideology = american_liberalism
+				ideology = american_conservatism
 				traits = {
 				}
 			}
@@ -647,25 +665,33 @@ MM_PORTRAITS_USA_OTL = {
 			}
 		}
 	}
-#	USA_OTL_TRUMAN = {
-#		allowed = {
-#			
-#		}
-#		available = {
-#			
-#		}
-#		visible = {
-#			tag = USA
-#		}
-#		cost = 0
-#		days_re_enable = 0
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		complete_effect = {
-#			
-#		}
-#	}
+	
+	USA_OTL_TRUMAN = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_country_leader = liberal_republic
+			create_country_leader = {
+				name = "President Harry S. Truman"
+				desc = ""
+				picture = "gfx/leaders/USA/USA_Truman.tga"
+				expire = "1965.1.1"
+				ideology = american_liberalism
+			}
+		}
+	}
 
 	USA_OTL_EISENHOWER = {
 		allowed = {
@@ -754,25 +780,35 @@ MM_PORTRAITS_USA_OTL = {
 		}
 	}
 	
-#	USA_OTL_NIXON = {
-#		allowed = {
-#			
-#		}
-#		available = {
-#			
-#		}
-#		visible = {
-#			tag = USA
-#		}
-#		cost = 0
-#		days_re_enable = 0
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		complete_effect = {
-#			
-#		}
-#	}
+	USA_OTL_NIXON = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = democratic
+			create_country_leader = {
+				name = "Richard Milhous Nixon"
+				desc = ""
+				picture = "gfx/leaders/USA/USA_Nixon.tga"
+				expire = "1965.1.1"
+				ideology = american_conservatism
+				traits = {
+				}
+			}			
+		}
+	}
+
 #	USA_OTL_FORD = {
 #		allowed = {
 #			
@@ -792,6 +828,7 @@ MM_PORTRAITS_USA_OTL = {
 #			
 #		}
 #	}
+
 #	USA_OTL_CARTER = {
 #		allowed = {
 #			
@@ -811,6 +848,7 @@ MM_PORTRAITS_USA_OTL = {
 #			
 #		}
 #	}
+
 #	USA_OTL_REAGAN = {
 #		allowed = {
 #			
