@@ -3542,6 +3542,29 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
+								tag = TML
+								tag = INC
+								tag = PHI
+								tag = SRW
+								tag = FMS
+								tag = NGU
+								tag = PNG
+								tag = NZL
+								tag = GND
+								tag = GXC
+								tag = BRM
+							}
+						}
+						if = {
+							limit = {
+								has_government = fascism
+							}
+							set_cosmetic_tag = JAP_COLONY
+						}
+					}
+					if = {
+						limit = {
+							OR = {
 								tag = SAU
 								tag = GRE
 								tag = MOR
