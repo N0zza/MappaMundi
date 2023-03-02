@@ -21,7 +21,7 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				tag = RUS
+			tag = RUS
 				has_government = vanguardism
 			}
 		}
@@ -62,6 +62,15 @@ defined_text = {
 			}
 		}
 		localization_key = "Naikakusōri daijin Keisuke Okada"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUR
+				has_government = neutrality
+			}
+		}
+		localization_key = "Başbakanı Mustafa İsmet İnönü"
 	}
 	text = {
 		localization_key = "To Be Added"
@@ -131,7 +140,16 @@ defined_text = {
 				has_government = stratocratic_monarchism
 			}
 		}
-		localization_key = "GFX_Okada_Keisuke"
+		localization_key = ""
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUR
+				has_government = neutrality
+			}
+		}
+		localization_key = "GFX_Ismet_Inonu"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
