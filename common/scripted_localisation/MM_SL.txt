@@ -61,7 +61,7 @@ defined_text = {
 				has_government = stratocratic_monarchism
 			}
 		}
-		localization_key = "Naikakusōri daijin Keisuke Okada"
+		localization_key = "Naikakusōri daijin Okada Keisuke"
 	}
 	text = {
 		trigger = {
@@ -71,6 +71,24 @@ defined_text = {
 			}
 		}
 		localization_key = "Başbakanı Mustafa İsmet İnönü"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = IRE
+				has_government = centrist_monarchism
+			}
+		}
+		localization_key = "Uachtarán Éamon de Valera"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = IRE
+				has_government = centrist_republic
+			}
+		}
+		localization_key = "Taoiseach Éamon de Valera"
 	}
 	text = {
 		localization_key = "To Be Added"
@@ -140,7 +158,7 @@ defined_text = {
 				has_government = stratocratic_monarchism
 			}
 		}
-		localization_key = ""
+		localization_key = "GFX_Okada_Keisuke"
 	}
 	text = {
 		trigger = {
@@ -150,6 +168,18 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Ismet_Inonu"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = IRE
+				OR = {
+					has_government = centrist_monarchism
+					has_government = centrist_republic
+				}
+			}
+		}
+		localization_key = "GFX_Eamon_de_Valera"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"

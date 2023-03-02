@@ -14,23 +14,16 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			generate_character = {
-				token_base = JAP_Okada_Keisuke
-				name = "Okada Keisuke"
-				portraits = {
-					civilian = {
-						large = GFX_Okada_Keisuke
+				IRE = {
+					create_country_leader = {
+						name = "Uachtarán Dubhghlas de hÍde"
+						desc = ""
+						picture = "gfx/leaders/IRE/IRE_Hyde.tga"
+						expire = "1965.1.1"
+						ideology = dominant_party_democracy
+						traits = {
+						}
 					}
-				}
-				advisor = {
-					slot = secondary_leader
-					idea_token = JAP_Okada_Keisuke_SL
-					allowed = { original_tag = GER }
-					ledger = civilian
-					traits = {}
-					cost = -1
-					removal_cost = -1
-					ai_will_do = { factor = 0 }
 				}
 			}
 		}
