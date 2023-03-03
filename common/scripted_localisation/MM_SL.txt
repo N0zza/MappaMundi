@@ -40,6 +40,16 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = RUS
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Mixaíl Vladímirovič Mišústin"
+	}
+	text = {
+		trigger = {
+			AND = {
 			tag = RUS
 				has_government = vanguardism
 			}
@@ -73,7 +83,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Presidentessa del Consiglio dei ministri della Repubblica Italiana Giorgia Meloni"
+		localization_key = "Presidentessa del Consiglio dei ministri Giorgia Meloni"
 	}
 	text = {
 		trigger = {
@@ -115,6 +125,16 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = JAP
+				has_government = centrist_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Naikakusōri daijin Kishida Fumio"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = TUR
 				has_government = neutrality
 			}
@@ -148,6 +168,15 @@ defined_text = {
 			}
 		}
 		localization_key = "Pradhānamantrī Narēndra Bhāī Dāmōdaradās Mōdī"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = IND
+				has_government = socialist_monarchy
+			}
+		}
+		localization_key = "Pradhānmantrī Javāharlāl Nēhrū"
 	}
 	text = {
 		trigger = {
@@ -187,7 +216,32 @@ defined_text = {
 		localization_key = "Vice President John Nance Garner"
 	}
 	text = {
-		localization_key = "To Be Added"
+		trigger = {
+			AND = {
+				tag = CHI
+				has_government = neutrality
+			}
+		}
+		localization_key = "Hsingcheng Yüan Yüanch'ang Chiang Chieh-shih"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PRC
+				has_government = vanguardism
+			}
+		}
+		localization_key = "Chungyang Renmin Weiyüanhui Chuhsi Chang Wen-t'ien"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PRC
+				has_government = communism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Guówùyuàn Zǒnglǐ Lǐ Kèqiáng"
 	}
 }
 
@@ -253,6 +307,16 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = RUS
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Mikhail_Mishtusin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
 				has_government = vanguardism
 			}
 		}
@@ -308,6 +372,16 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = JAP
+				has_government = centrist_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Kishida_Fumio"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = TUR
 				has_government = neutrality
 			}
@@ -335,6 +409,15 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Narendra_Modi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = IND
+				has_government = socialist_monarchy
+			}
+		}
+		localization_key = "GFX_Jawaharlal_Nehru"
 	}
 	text = {
 		trigger = {
@@ -372,6 +455,34 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_John_Garner"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CHI
+				has_government = neutrality
+			}
+		}
+		localization_key = "GFX_Chiang_Kaishek"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PRC
+				has_government = vanguardism
+			}
+		}
+		localization_key = "GFX_Zhang_Wentian"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PRC
+				has_government = communism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Li_Keqiang"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
