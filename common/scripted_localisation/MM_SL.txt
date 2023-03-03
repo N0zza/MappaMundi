@@ -5,9 +5,28 @@ defined_text = {
 			AND = {
 				tag = ENG
 				has_government = conservative_monarchism
+				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Prime Minister Stanley Baldwin, 1st Earl Baldwin of Bewdley"
+		localization_key = "First Lord of the Treasury Rishi Sunak"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = conservative_monarchism
+			}
+		}
+		localization_key = "First Lord of the Treasury Stanley Baldwin, 1st Earl Baldwin of Bewdley"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CAN
+				has_government = democratic_monarchism
+			}
+		}
+		localization_key = "Prime Minister William Lyon Mackenzie King"
 	}
 	text = {
 		trigger = {
@@ -49,10 +68,39 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
+				has_government = centrist_republic	
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Presidentessa del Consiglio dei ministri della Repubblica Italiana Giorgia Meloni"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
 				has_government = fascism
 			}
 		}
 		localization_key = "Capo del Governo, Primo Ministro Segretario di Stato Benito Amilcare Andrea Mussolini"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Bundeskanzler Olaf Scholz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = democratic
+			}
+		}
+		localization_key = "Bundeskanzler Konrad Hermann Joseph Adenauer"
 	}
 	text = {
 		trigger = {
@@ -91,6 +139,52 @@ defined_text = {
 		localization_key = "Taoiseach Éamon de Valera"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = IND
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Pradhānamantrī Narēndra Bhāī Dāmōdaradās Mōdī"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				has_government = democratic
+			}
+		}
+		localization_key = "Premier Ministre Pierre Jean Marie Laval"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AST
+				has_government = conservative_monarchism
+			}
+		}
+		localization_key = "Prime Minister Joseph Aloysius Lyon"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NZL
+				has_government = democratic_monarchism
+			}
+		}
+		localization_key = "Prime Minister Michael Joseph Savage"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = USA
+				has_government = liberal_republic
+			}
+		}
+		localization_key = "Vice President John Nance Garner"
+	}
+	text = {
 		localization_key = "To Be Added"
 	}
 }
@@ -120,9 +214,28 @@ defined_text = {
 			AND = {
 				tag = ENG
 				has_government = conservative_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Rishi_Sunak"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = conservative_monarchism
 			}
 		}
 		localization_key = "GFX_Stanley_Baldwin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CAN
+				has_government = democratic_monarchism
+			}
+		}
+		localization_key = "GFX_William_Mackenzie"
 	}
 	text = {
 		trigger = {
@@ -146,10 +259,39 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Giorgia_Meloni"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
 				has_government = fascism
 			}
 		}
 		localization_key = "GFX_Benito_Mussolini"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Olaf_Scholz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = democratic
+			}
+		}
+		localization_key = "GFX_Konrad_Adenauer"
 	}
 	text = {
 		trigger = {
@@ -180,6 +322,52 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Eamon_de_Valera"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = IND
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Narendra_Modi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				has_government = democratic
+			}
+		}
+		localization_key = "GFX_Pierre_Laval"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AST
+				has_government = conservative_monarchism
+			}
+		}
+		localization_key = "GFX_Joseph_Lyons"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NZL
+				has_government = democratic_monarchism
+			}
+		}
+		localization_key = "GFX_Michael_Savage"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = USA
+				has_government = liberal_republic
+			}
+		}
+		localization_key = "GFX_John_Garner"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
