@@ -14,13 +14,14 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-				MEX = {
-					set_popularities = {
-						vanguardism = 1
-						communism = 1
-						socialism_ideology = 98
-					}
-				}
+			set_global_flag = non_hog_secondary_leaders
+			
+			USA = {
+				set_country_flag = has_secondary_leader
+			}
+			
+			GER = {
+				set_country_flag = has_secondary_leader
 			}
 		}
 	}
