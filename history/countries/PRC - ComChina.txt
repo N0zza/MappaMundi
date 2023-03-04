@@ -1,39 +1,16 @@
 ﻿capital = 622
-
+set_country_flag = has_secondary_leader
 
-save_global_event_target_as = WTT_communist_china
+set_popularities = {
+	vanguardism = 100
+}
 
-
-
-	set_popularities = {
-		communism 
-			 = 10
-		fascism
-			 = 0
-		vanguardism
-			 = 90
-			
-		}
-	set_politics = { 
- ruling_party = vanguardism
+set_politics = { 
+	ruling_party = vanguardism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	add_ideas = {
-		PRC_the_long_march_1
-		PRC_low_popular_support_3
-		PRC_power_struggles
-		PRC_red_army_weakened
-	}
-}
-
-add_opinion_modifier = { target = CHI modifier = hostile_status }
 
 create_country_leader = {
 	name = "Chuhsi Mao Tse-tung"

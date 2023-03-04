@@ -23,54 +23,20 @@
 #	}
 #}
 
+set_country_flag = has_secondary_leader
+recruit_character = ITA_Benito_Mussolini
+recruit_character = ITA_Vittorio_Emanuele_III
+recruit_character = ITA_Vittorio_Emanuele_III_absmon
 
+set_popularities = {
+	fascism = 100
+}
 
-	set_popularities = {
-		democratic 
-			 = 22
-		fascism
-			 = 76
-		communism
-			 = 2
-		}
-	set_politics = { 
- ruling_party = fascism
+set_politics = { 
+	ruling_party = fascism
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = no
-}
-
-
-
-create_country_leader = {
-	name = "Re Vittorio Emanuele III di Savoia"
-	desc = "POLITICS_ITA_FASCISM_DESC"
-	picture = "gfx/leaders/ITA/Portrait_Italy_Victor_Emmanuel_III.dds"
-	expire = "1965.1.1"
-	ideology = italian_fascism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Presidente Benito Amilcare Andrea Mussolini, Duce del Fascismo"
-	desc = "POLITICS_ITA_NATSOC_DESC"
-	picture = "gfx/leaders/ITA/Italy_Mussolini.dds"
-	expire = "1965.1.1"
-	ideology = natsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Imperatore Vittorio Emanuele III di Savoia"
-	desc = "POLITICS_ITA_ABSMONS_DESC"
-	picture = "gfx/leaders/ITA/Portrait_Italy_Victor_Emmanuel_III.dds"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-	}
 }
 
 create_country_leader = {
@@ -129,26 +95,6 @@ create_country_leader = {
 	picture = "gfx/leaders/ITA/Portrait_Francesco_Nitti.tga"
 	expire = "1965.1.1"
 	ideology = liberalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Re Vittorio Emanuele III di Savoia"
-	desc = "POLITICS_ITA_LIBMON_DESC"
-	picture = "gfx/leaders/ITA/Portrait_Italy_Victor_Emmanuel_III.dds"
-	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Re Vittorio Emanuele III di Savoia"
-	desc = "POLITICS_ITA_CONMON_DESC"
-	picture = "gfx/leaders/ITA/Portrait_Italy_Victor_Emmanuel_III.dds"
-	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
 	traits = {
 	}
 }

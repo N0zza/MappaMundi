@@ -185,6 +185,22 @@ MM_germany = {
 	}
 }
 
+MM_secondary_leaders = {
+	name = "Use Non-HoG Secondary Leaders"
+	group = "RULE_GROUP_MM_SETTINGS"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "Secondary leaders that are not head of government will not be shown."
+	}
+	option = {
+		name = NON_HOG_SECONDARY_LEADERS
+		text = "Non-HoG Secondary Leaders"
+		desc = "Secondary leaders that are not head of government will be shown."
+		allow_achievements = yes
+	}
+}
+
 #MM_set_scenario = {
 #	name = "Set Upcoming Scenario"
 #	group = "RULE_GROUP_MM_SETTINGS"

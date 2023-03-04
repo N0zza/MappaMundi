@@ -58,6 +58,37 @@ on_actions = {
 	}
 	
 	on_startup = {
+		#Set up Non HoG Secondary Leaders.
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_secondary_leaders
+						option = NON_HOG_SECONDARY_LEADERS
+					}
+				}
+				set_global_flag = non_hog_secondary_leaders
+				
+				USA = {
+					set_country_flag = has_secondary_leader
+				}
+			
+				GER = {
+					set_country_flag = has_secondary_leader
+				}
+				if = {
+					limit = {
+						has_start_date > 2022.01.01
+					}
+					TUR = {
+						set_country_flag = has_secondary_leader
+					}
+				}
+			}
+		}
+	}
+	
+	on_startup = {
 		#USSR before the west russian war
 		effect = {
 			if = {

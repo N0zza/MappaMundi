@@ -1,10 +1,16 @@
 ﻿capital = 51
 
+set_country_flag = has_secondary_leader
+
 set_popularities = {
-	democratic = 80
-	fascism = 10
-	communism = 10
+    vanguardism = 6
+    socialism_ideology = 29
+    liberal_republic = 13
+	democratic = 35
+    centrist_republic = 12
+    neutrality = 5
 }
+
 
 set_politics = { 
 	ruling_party = democratic
@@ -12,6 +18,16 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 
+}
+
+create_country_leader = {
+    name = "Bundeskanzler Theodor Heuss"
+    desc = ""
+    picture = "gfx/leaders/WGR/WGR_Heuss.tga"
+    expire = "1939.1.16"
+    ideology = christian_democracy
+    traits = {
+    }
 }
 
 create_country_leader = {
@@ -45,11 +61,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Bundeskanzler Konrad Hermann Joseph Adenauer"
+    name = "Bundeskanzler Franz Blücher"
     desc = ""
-    picture = "gfx/leaders/WGR/Portrait_WGR_Konrad_Adenauer.dds"
-    expire = "1965.1.1"
-    ideology = conservatism
+    picture = "gfx/leaders/WGR/WGR_Blucher.tga"
+    expire = "1939.1.16"
+    ideology = liberalism
     traits = {
     }
 }
@@ -60,16 +76,6 @@ create_country_leader = {
     picture = "gfx/leaders/WGR/WGR_Mielke.tga"
     expire = "1965.1.1"
     ideology = totsoc
-    traits = {
-    }
-}
-
-create_country_leader = {
-    name = "Bundeskanzler Theodor Heuss"
-    desc = ""
-    picture = "gfx/leaders/WGR/WGR_Heuss.tga"
-    expire = "1939.1.16"
-    ideology = liberalism
     traits = {
     }
 }

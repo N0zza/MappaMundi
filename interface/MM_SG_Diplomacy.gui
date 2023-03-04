@@ -1,11 +1,11 @@
 guiTypes = {	
 	containerWindowType = {
 		name = "MM_SG_Diplomacy_Ideology"
-		position = { x = 0 y = 0 } #y = 134
+		position = { x = 0 y = 0 }
 
 		instantTextboxType = {
 			name = "ideology"
-			position = { x = 223 y = 198 }
+			position = { x = 203 y = 198 }
 			font = "hoi_24header"
 			text = [GetSubIdeologyLoc]
 			alwaystransparent = yes
@@ -13,6 +13,45 @@ guiTypes = {
 			maxHeight = 20
 			format = left
 			fixedsize = yes
+		}
+	}
+	containerWindowType = {
+		name = "MM_SG_Secondary_Leader_Container"
+		position = { x = -300 y = 355 }
+		show_position = { x = 0 y = 355 }
+		size = { width=300 height=350 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+		
+		instantTextboxType = {
+			name = "secondary_leader_name"
+			position = { x = 25 y = 250 }
+			font = "hoi_24header"
+			text = "[GetSecondaryLeaderName]"
+			maxWidth = 250
+			maxHeight = 100
+			format = center				
+		}
+		
+		iconType = {
+			name = "diplo_secondary_leader_frame"
+			position = { x = 60 y = 17 }
+			spriteType = "GFX_diplo_leader_frame"
+			alwaystransparent = yes
+			scale = 1.35
+		}
+		
+		iconType = {
+			name = "secondary_leader_portrait"
+			position = { x = 72 y = 25 }
+			spriteType = ""
+			scale = 1
 		}
 	}
 }

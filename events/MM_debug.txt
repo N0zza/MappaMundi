@@ -14,15 +14,14 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			WGR = {
-				kill_ideology_leader = socialist_monarchy
-				create_country_leader = {
-					name = "Kaiser Friedrich IV von Hohenzollern"
-					desc = ""
-					picture = "gfx/leaders/WGR/WGR_Georg_Friedrich.tga"
-					expire = "1965.1.1"
-					ideology = socmon_social_democracy
-				}
+			set_global_flag = non_hog_secondary_leaders
+			
+			USA = {
+				set_country_flag = has_secondary_leader
+			}
+			
+			GER = {
+				set_country_flag = has_secondary_leader
 			}
 		}
 	}
