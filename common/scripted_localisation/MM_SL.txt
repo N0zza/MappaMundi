@@ -1,7 +1,7 @@
 defined_text = {
 	name = GetSecondaryLeaderName
 	text = {
-		trigger = {
+	trigger = {
 			AND = {
 				tag = ENG
 				has_government = conservative_monarchism
@@ -18,6 +18,16 @@ defined_text = {
 			}
 		}
 		localization_key = "First Lord of the Treasury Stanley Baldwin, 1st Earl Baldwin of Bewdley"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CAN
+				has_government = democratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Prime Minister Justin Pierre James Trudeau"
 	}
 	text = {
 		trigger = {
@@ -145,10 +155,31 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TUR
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+				has_global_flag = non_hog_secondary_leaders
+			}
+		}
+		localization_key = "Cumhurbaşkanı Yardımcısı Fuat Oktay"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUR
 				has_government = neutrality
 			}
 		}
 		localization_key = "Başbakanı Mustafa İsmet İnönü"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = IRE
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Taoiseach Leo Eric Varadkar"
 	}
 	text = {
 		trigger = {
@@ -167,6 +198,25 @@ defined_text = {
 			}
 		}
 		localization_key = "Taoiseach Éamon de Valera"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PAK
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Wazīri Aʻẓam Miyān Muh̤ammad Śaḥbāz Śarīf"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PAK
+				has_government = conservative_monarchism
+			}
+		}
+		localization_key = "Wazīri Aʻẓam Liyāqat ʻAlī K͟hān"
 	}
 	text = {
 		trigger = {
@@ -191,6 +241,16 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = FRA
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Premiére Ministre Élizabeth Borne"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
 				has_government = democratic
 			}
 		}
@@ -200,10 +260,30 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = AST
+				has_government = democratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Prime Minister Anthony Norman Albanese"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AST
 				has_government = conservative_monarchism
 			}
 		}
 		localization_key = "Prime Minister Joseph Aloysius Lyon"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NZL
+				has_government = socialist_monarchy
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Prime Minister Christopher John Hipkins"
 	}
 	text = {
 		trigger = {
@@ -220,9 +300,30 @@ defined_text = {
 				tag = USA
 				has_government = liberal_republic
 				has_global_flag = non_hog_secondary_leaders
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Vice President Kamala Devi Harris"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = USA
+				has_government = liberal_republic
+				has_global_flag = non_hog_secondary_leaders
 			}
 		}
 		localization_key = "Vice President John Nance Garner"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CHI
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Hsingcheng Yüan Yüanch'ang Su Tseng-chang"
 	}
 	text = {
 		trigger = {
@@ -251,6 +352,25 @@ defined_text = {
 			}
 		}
 		localization_key = "Guówùyuàn Zǒnglǐ Lǐ Kèqiáng"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PER
+				has_government = theocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Raʾis Ebrāhim Raʾis ol-Sādāti"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PER
+				has_government = authoritarian_monarchism
+			}
+		}
+		localization_key = "Noxost Vazir Mahmud Xān Modir ol-Molk Jam"
 	}
 }
 
@@ -302,6 +422,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Stanley_Baldwin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CAN
+				has_government = democratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Justin_Trudeau"
 	}
 	text = {
 		trigger = {
@@ -401,6 +531,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TUR
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+				has_global_flag = non_hog_secondary_leaders
+			}
+		}
+		localization_key = "GFX_Fuat_Oktay"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUR
 				has_government = neutrality
 			}
 		}
@@ -417,6 +558,35 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Eamon_de_Valera"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = IRE
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Leo_Varadkar"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PAK
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Shehbaz_Sharif"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PAK
+				has_government = conservative_monarchism
+			}
+		}
+		localization_key = "GFX_Liaquat_Khan"
 	}
 	text = {
 		trigger = {
@@ -441,10 +611,30 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = FRA
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Elizabeth_Borne"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
 				has_government = democratic
 			}
 		}
 		localization_key = "GFX_Pierre_Laval"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AST
+				has_government = democratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Anthony_Albanese"
 	}
 	text = {
 		trigger = {
@@ -459,10 +649,31 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = NZL
+				has_government = socialist_monarchy
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Chris_Hipkins"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NZL
 				has_government = democratic_monarchism
 			}
 		}
 		localization_key = "GFX_Michael_Savage"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = USA
+				has_government = liberal_republic
+				has_global_flag = non_hog_secondary_leaders
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Kamala_Harris"
 	}
 	text = {
 		trigger = {
@@ -486,6 +697,16 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = CHI
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Su_Tsengchang"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = PRC
 				has_government = vanguardism
 			}
@@ -501,6 +722,25 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Li_Keqiang"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PER
+				has_government = theocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Ebrahim_Raisi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PER
+				has_government = authoritarian_monarchism
+			}
+		}
+		localization_key = "GFX_Mahmoud_Djam"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"

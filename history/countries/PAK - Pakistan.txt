@@ -1,11 +1,10 @@
 ﻿capital = 997
 
-	set_popularities = {
-        authoritarian_monarchism = 55
-        theocratic = 45
-		}
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+set_popularities = {
+    conservative_monarchism = 100
+}
+set_politics = { 
+	ruling_party = conservative_monarchism
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = no
@@ -96,7 +95,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/PAK/PAK_Hayat.tga"
 	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
+	ideology = british_colonialism
 	traits = {
 	}
 }
@@ -142,11 +141,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Governor-General Muhammad Ali Jinnah"
+	name = "Gavarnar Janaral Muh̤ammad ʻAlī Jinnāh̤"
 	desc = ""
 	picture = "gfx/leaders/PAK/PAK_Jinnah.tga"
 	expire = "1965.1.1"
-	ideology = authmon
+	ideology = conmon_islamic_democracy
 	traits = {
 	}
 }
@@ -162,11 +161,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "President Syed Abul A'la Maududi"
+	name = "Imam Syed Abul A'la Maududi"
 	desc = ""
 	picture = "gfx/leaders/PAK/PAK_Maududi.tga"
 	expire = "1965.1.1"
-	ideology = christian
+	ideology = islamic_theocracy
 	traits = {
 	}
 }
