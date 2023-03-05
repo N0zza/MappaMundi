@@ -11898,6 +11898,16 @@
 			}
 		}
 		##EUROPE 2023
+		every_state = {
+			limit = {
+				OR = {
+				is_core_of = EUR
+				}
+			}
+			EUR = {
+				transfer_state = PREV
+			}
+		}
 		GER = {
 			release = CZC
 			release = AUS
