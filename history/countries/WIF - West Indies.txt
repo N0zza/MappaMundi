@@ -1,15 +1,13 @@
 ﻿capital = 691
 
-	set_popularities = {
+set_popularities = {
+	democratic = 5
+	liberal_republic = 5
+	democratic_monarchism = 90	
+}
 
-                democratic = 5
-                liberal_republic = 5
-		democratic_monarchism
-			 = 90
-			
-		}
-	set_politics = { 
- ruling_party = democratic_monarchism
+set_politics = { 
+	ruling_party = democratic_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -81,6 +79,16 @@ create_country_leader = {
 	picture = "gfx/leaders/WIF/WIF_Freyberg.tga"
 	expire = "1965.1.1"
 	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = absmon_german_colonialism
 	traits = {
 	}
 }
