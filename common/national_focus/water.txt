@@ -12922,6 +12922,25 @@
         		ideology = christian_theocracy
 			}
 		}
+		EUR = {
+			set_country_flag = has_secondary_leader
+			set_cosmetic_tag = EUR_2023
+			create_country_leader = {
+        		name = "Präsidentin der Europäischen Kommission Ursula Gertrud von der Leyen"
+        		desc = ""
+        		picture = "gfx/leaders/EUR/EUR_von_der_Leyen.tga"
+        		expire = "1965.1.1"
+        		ideology = christian_democracy
+			}
+			set_popularities = {
+				communism = 5
+				socialism_ideology = 20
+				liberal_republic = 25
+				democratic = 25
+				centrist_republic = 18
+				neutrality = 7
+			}
+		}
 		set_province_name = { id = 15986 name = "Giżycko"}
 		POL = {
 			transfer_state = 7444
@@ -21748,6 +21767,45 @@
 			}
 			do_tajik_renames = yes
 					}
+					
+		every_state = {
+			limit = {
+				OR = {
+					is_owned_by = POR
+					is_owned_by = SPR
+					is_owned_by = MLT
+					is_owned_by = FRA
+					is_owned_by = ITA
+					is_owned_by = CYP
+					is_owned_by = GRE
+					is_owned_by = BUL
+					is_owned_by = ROM
+					is_owned_by = IRE
+					is_owned_by = LUX
+					is_owned_by = BEL
+					is_owned_by = HOL
+					is_owned_by = WGR
+					is_owned_by = AUS
+					is_owned_by = HUN
+					is_owned_by = CRO
+					is_owned_by = SLV
+					is_owned_by = POL
+					is_owned_by = EST
+					is_owned_by = LAT
+					is_owned_by = LIT
+					is_owned_by = DEN
+					is_owned_by = SWE
+					is_owned_by = FIN
+					is_owned_by = ALN
+					is_owned_by = GRL
+					is_owned_by = TAH
+					is_owned_by = SPM
+				}
+			}
+			EUR = {
+				add_state_core = PREV
+			}
+		}
 				}
 			}
 		}

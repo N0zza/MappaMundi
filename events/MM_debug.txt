@@ -14,14 +14,23 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			set_global_flag = non_hog_secondary_leaders
-			
-			USA = {
-				set_country_flag = has_secondary_leader
-			}
-			
-			GER = {
-				set_country_flag = has_secondary_leader
+			EUR = {
+				set_cosmetic_tag = EUR_2023
+				create_country_leader = {
+					name = "Präsidentin der Europäischen Kommission Ursula Gertrud von der Leyen"
+					desc = ""
+					picture = "gfx/leaders/EUR/EUR_von_der_Leyen.tga"
+					expire = "1965.1.1"
+					ideology = christian_democracy
+				}
+				set_popularities = {
+					communism = 5
+					socialism_ideology = 20
+					liberal_republic = 25
+					democratic = 25
+					centrist_republic = 18
+					neutrality = 7
+				}
 			}
 		}
 	}
