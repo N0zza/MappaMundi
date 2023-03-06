@@ -1,32 +1,13 @@
 ﻿capital = 594
-
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	add_ideas = {
-		PRC_government_corruption
-		CHI_ineffective_bureaucracy_warlord
-	}
+
+set_popularities = {
+	democratic = 4
+	liberal_republic = 3
+	stratocratic = 93
 }
 
-
-
-
-	set_popularities = {
-		democratic 
-			 = 4
-		liberal_republic
-			 = 3
-		communism
-			 = 0
-			
-		stratocratic 
-			 = 93
-		
-	}
-	set_politics = { 
- ruling_party = stratocratic
+set_politics = { 
+	ruling_party = stratocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -37,9 +18,8 @@ create_country_leader = {
 	desc = "POLITICS_LI_ZONGREN_DESC"
 	picture = "gfx/leaders/GXC/Portrait_Guanxi_Clique_Li_Zongren.dds"
 	expire = "1965.1.1"
-	ideology = militarism
+	ideology = warlordism
 	traits = {
-		#
 	}
 }
 
@@ -50,7 +30,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
-		#
 	}
 }
 
@@ -61,7 +40,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
-		#
 	}
 }
 

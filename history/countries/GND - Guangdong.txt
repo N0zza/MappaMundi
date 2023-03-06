@@ -1,26 +1,16 @@
 ﻿capital = 592
 
+set_popularities = {
+	democratic = 4
+	liberal_republic = 3	
+	stratocratic = 93
+}
 
-
-	set_popularities = {
-		democratic 
-			 = 4
-		liberal_republic
-			 = 3
-		communism
-			 = 0
-			
-		stratocratic 
-			 = 93
-		
-	}
-
-	set_politics = { 
- ruling_party = stratocratic
+set_politics = { 
+	ruling_party = stratocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
-
 }
 
 create_country_leader = {
@@ -28,9 +18,8 @@ create_country_leader = {
 	desc = "POLITICS_CHEN_JITANG_DESC"
 	picture = "gfx/leaders/GND/Portrait_Guangdong_Chen_Jitang.dds"
 	expire = "1954.11.3"
-	ideology = militarism
+	ideology = warlordism
 	traits = {
-		#
 	}
 }
 
@@ -41,7 +30,6 @@ create_country_leader = {
 	expire = "1954.11.3"
 	ideology = oligarchism
 	traits = {
-		#
 	}
 }
 
@@ -52,7 +40,6 @@ create_country_leader = {
 	expire = "1954.11.3"
 	ideology = stratmon
 	traits = {
-		#
 	}
 }
 
