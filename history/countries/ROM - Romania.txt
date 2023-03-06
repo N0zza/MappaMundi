@@ -1,17 +1,13 @@
 ﻿capital = 46
 
-	set_popularities = {
-		authoritarian_monarchism 
-			 = 60
-		fascism
-			 = 18
-		communism
-			 = 2
-		neutrality 
-			 = 20
-		}
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+set_popularities = {
+	authoritarian_monarchism = 60
+	fascism = 18
+	communism = 2
+	neutrality = 20
+}
+set_politics = { 
+	ruling_party = authoritarian_monarchism
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
@@ -171,7 +167,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ROM/ROM_Antonescu.tga"
 	expire = "1965.1.1"
-	ideology = stratmon
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -191,7 +187,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ROM/ROM_Mihail.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = stratmon
 	traits = {
 	}
 }
