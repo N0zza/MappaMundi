@@ -14,22 +14,24 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			EUR = {
-				set_cosmetic_tag = EUR_2023
-				create_country_leader = {
-					name = "Präsidentin der Europäischen Kommission Ursula Gertrud von der Leyen"
-					desc = ""
-					picture = "gfx/leaders/EUR/EUR_von_der_Leyen.tga"
-					expire = "1965.1.1"
-					ideology = christian_democracy
+			GYA = {
+				drop_cosmetic_tag = yes
+				set_politics = {
+					ruling_party = socialism_ideology
 				}
 				set_popularities = {
-					communism = 5
-					socialism_ideology = 20
-					liberal_republic = 25
-					democratic = 25
-					centrist_republic = 18
-					neutrality = 7
+					communism = 48
+					socialism_ideology = 51
+					liberal_republic = 1
+				}
+			}
+			GYA = {
+				create_country_leader = {
+					name = "President Mohamed Irfaan Ali"
+					desc = ""
+					picture = "gfx/leaders/GYA/GYA_Irfaan_Ali.tga"
+					expire = "1965.1.1"
+					ideology = demsoc
 				}
 			}
 		}

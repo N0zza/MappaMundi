@@ -21615,7 +21615,12 @@
 		GYA = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = socialism_ideology
+			}
+			set_popularities = {
+				communism = 48
+				socialism_ideology = 51
+				liberal_republic = 1
 			}
 		}
 		GYA = {
@@ -21624,13 +21629,24 @@
            		desc = ""
            		picture = "gfx/leaders/GYA/GYA_Irfaan_Ali.tga"
            		expire = "1965.1.1"
-           		ideology = liberalism
+           		ideology = demsoc
 			}
 		}
 		SUR = {
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = liberal_republic
+			}
+			set_party_name = {
+				ideology = liberal_republic
+				name = SUR_liberal_republic_2023_party
+				long_name = SUR_liberal_republic_2023_party_long
+			}
+			set_popularities = {
+				communism = 35
+				socialism_ideology = 17
+				liberal_republic = 45
+				democratic = 3
 			}
 		}
 		SUR = {
@@ -21639,7 +21655,7 @@
            		desc = ""
            		picture = "gfx/leaders/SUR/SUR_Chan_Santokhi.tga"
            		expire = "1965.1.1"
-           		ideology = liberalism
+           		ideology = third_way
 			}
 		}
 		BER = {
