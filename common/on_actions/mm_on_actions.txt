@@ -3584,7 +3584,6 @@ on_actions = {
 								tag = GND
 								tag = GXC
 								tag = BRM
-								tag = ULE
 							}
 						}
 						if = {
@@ -4146,6 +4145,54 @@ on_actions = {
 							}
 							set_cosmetic_tag = INS_SOCIALIST
 						}
+					}
+					if = {
+						limit = {
+							tag = ULE
+						}
+						if = {
+							limit = {
+								has_government = centrist_monarchism
+							}
+							set_cosmetic_tag = YUG_BLUE
+						}
+						if = {
+							limit = {
+								has_government = authoritarian_monarchism
+							}
+							set_cosmetic_tag = BEL_YELLOW
+						}
+						if = {
+							limit = {
+								has_government = stratocratic_monarchism
+							}
+							set_cosmetic_tag = AUSTRIA_WHITE
+						}
+						if = {
+							limit = {
+								has_government = stratocratic
+							}
+							set_cosmetic_tag = BRA_GREEN
+						}
+						if = {
+							limit = {
+								has_government = fascism
+							}
+							set_cosmetic_tag = JAP_COLONY
+						}
+						if = {
+							limit = {
+								NOT = {
+									has_government = centrist_monarchism
+									has_government = authoritarian_monarchism
+									has_government = stratocratic
+									has_government = stratocratic_monarchism
+									has_government = fascism
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+						
 					}
 					if = {
 						limit = {
