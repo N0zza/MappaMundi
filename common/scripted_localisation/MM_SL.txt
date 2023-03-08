@@ -390,6 +390,44 @@ defined_text = {
 		}
 		localization_key = "Président du Conseil européen Charles Yves Jean Ghislaine Michel"
 	}
+	text = {
+		trigger = {
+			AND = {
+				tag = POR
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Primeiro-Ministro António Luís Santos da Costa"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = POR
+				has_government = republican_fascism
+			}
+		}
+		localization_key = "Primeiro-Ministro António de Oliveira Salazar"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SPR
+				has_government = socialist_monarchy
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Presidente del Gobierno Pedro Sánchez Pérez-Castejón"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SPR
+				has_government = democratic
+			}
+		}
+		localization_key = "Presidente del Consejo de Ministros Manuel Portela Valladares"
+	}
 }
 
 defined_text = {
@@ -777,6 +815,44 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Charles_Michel"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = POR
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Antonio_Costa"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = POR
+				has_government = republican_fascism
+			}
+		}
+		localization_key = "GFX_Antonio_Salazar"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SPR
+				has_government = socialist_monarchy
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Pedro_Sanchez"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SPR
+				has_government = democratic
+			}
+		}
+		localization_key = "GFX_Manuel_Valladares"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
