@@ -3689,6 +3689,20 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							tag = IRQ
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = democratic_monarchism
+									has_government = stratocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = UK_RED
+						}
+					}
+					if = {
+						limit = {
 							tag = RAJ
 						}
 						if = {

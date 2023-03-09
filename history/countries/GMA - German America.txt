@@ -1,16 +1,14 @@
 ﻿capital = 389
 
 set_popularities = {
-	        democratic = 10
-        communism = 5
-        fascism = 70
-        neutrality = 15
-
+	democratic = 35
+	liberal_republic = 45
+	communism = 5
+	neutrality = 15
 }
 
 set_politics = {
-	
-	ruling_party = national_socialism
+	ruling_party = liberal_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -57,11 +55,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Reichsprotektor Johann Ferdinand Schörner"
+	name = "Ausschussvorsitzender Johann Ferdinand Schörner"
 	desc = ""
 	picture = "gfx/leaders/GMA/GMA_Schorner.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = provisional_government
 	traits = {
 	}
 }
