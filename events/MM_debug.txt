@@ -14,24 +14,16 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			GYA = {
-				drop_cosmetic_tag = yes
-				set_politics = {
-					ruling_party = socialism_ideology
-				}
-				set_popularities = {
-					communism = 48
-					socialism_ideology = 51
-					liberal_republic = 1
-				}
-			}
-			GYA = {
+			POL = {
 				create_country_leader = {
-					name = "President Mohamed Irfaan Ali"
-					desc = ""
-					picture = "gfx/leaders/GYA/GYA_Irfaan_Ali.tga"
+					name = "Prezydent Ignacy Mościcki"
+					desc = "POLITICS_IGNACY_MOSCICKI_DESC"
+					picture = "gfx/leaders/POL/Portrait_Poland_Ignacy_Moscicki.dds"
 					expire = "1965.1.1"
-					ideology = demsoc
+					ideology = social_authoritarianism
+					traits = {
+						#
+					}
 				}
 			}
 		}

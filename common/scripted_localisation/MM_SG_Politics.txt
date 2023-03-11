@@ -25,6 +25,14 @@ defined_text = {
 		localization_key = "[GetSubIdeologyLocLiberalMonarchism]"
 	}
 	text = {
+		trigger = { has_government = centrist_republic }
+		localization_key = "[GetSubIdeologyLocCentristRepublicanism]"
+	}
+	text = {
+		trigger = { has_government = centrist_monarchism }
+		localization_key = "[GetSubIdeologyLocCentristMonarchism]"
+	}
+	text = {
 		trigger = { has_government = democratic }
 		localization_key = "[GetSubIdeologyLocConservativeRepublicanism]"
 	}
@@ -33,12 +41,12 @@ defined_text = {
 		localization_key = "[GetSubIdeologyLocConservativeMonarchism]"
 	}
 	text = {
-		trigger = { has_government = centrist_republic }
-		localization_key = "[GetSubIdeologyLocCentristRepublicanism]"
+		trigger = { has_government = anocratic_republic }
+		localization_key = "[GetSubIdeologyLocAnocraticRepublicanism]"
 	}
 	text = {
-		trigger = { has_government = centrist_monarchism }
-		localization_key = "[GetSubIdeologyLocCentristMonarchism]"
+		trigger = { has_government = anocratic_monarchism }
+		localization_key = "[GetSubIdeologyLocAnocraticMonarchism]"
 	}
 	text = {
 		trigger = { has_government = neutrality }
@@ -233,6 +241,60 @@ defined_text = {
 }
 
 defined_text = {
+	name = GetSubIdeologyLocCentristRepublicanism
+	text = {
+		trigger = { has_country_leader_ideology = national_conservatism }
+		localization_key = national_conservatism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = right_wing_populism }
+		localization_key = right_wing_populism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = dominant_party_democracy }
+		localization_key = dominant_party_democracy
+	}
+	text = {
+		trigger = { has_country_leader_ideology = national_liberalism }
+		localization_key = national_liberalism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = big_tent }
+		localization_key = big_tent
+	}
+	text = {
+		localization_key = centrist_republic
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocCentristMonarchism
+	text = {
+		trigger = { has_country_leader_ideology = cenmon_national_conservatism }
+		localization_key = cenmon_national_conservatism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = cenmon_right_wing_populism }
+		localization_key = cenmon_right_wing_populism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = cenmon_dominant_party_democracy }
+		localization_key = cenmon_dominant_party_democracy
+	}
+	text = {
+		trigger = { has_country_leader_ideology = cenmon_national_liberalism }
+		localization_key = cenmon_national_liberalism
+	}
+	text = {
+		trigger = { has_country_leader_ideology = cenmon_big_tent }
+		localization_key = cenmon_big_tent
+	}
+	text = {
+		localization_key = centrist_monarchism
+	}
+}
+
+defined_text = {
 	name = GetSubIdeologyLocConservativeRepublicanism
 	text = {
 		trigger = { has_country_leader_ideology = american_conservatism }
@@ -295,64 +357,24 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetSubIdeologyLocCentristRepublicanism
-	text = {
-		trigger = { has_country_leader_ideology = national_conservatism }
-		localization_key = national_conservatism
-	}
-	text = {
-		trigger = { has_country_leader_ideology = right_wing_populism }
-		localization_key = right_wing_populism
-	}
-	text = {
-		trigger = { has_country_leader_ideology = dominant_party_democracy }
-		localization_key = dominant_party_democracy
-	}
-	text = {
-		trigger = { has_country_leader_ideology = national_liberalism }
-		localization_key = national_liberalism
-	}
+	name = GetSubIdeologyLocAnocraticRepublicanism
 	text = {
 		trigger = { has_country_leader_ideology = social_authoritarianism }
 		localization_key = social_authoritarianism
 	}
 	text = {
-		trigger = { has_country_leader_ideology = big_tent }
-		localization_key = big_tent
-	}
-	text = {
-		localization_key = centrist_republic
+		localization_key = anocratic_republic
 	}
 }
 
 defined_text = {
-	name = GetSubIdeologyLocCentristMonarchism
+	name = GetSubIdeologyLocAnocraticMonarchism
 	text = {
-		trigger = { has_country_leader_ideology = cenmon_national_conservatism }
-		localization_key = cenmon_national_conservatism
+		trigger = { has_country_leader_ideology = anocmon_social_authoritarianism }
+		localization_key = anocmon_social_authoritarianism
 	}
 	text = {
-		trigger = { has_country_leader_ideology = cenmon_right_wing_populism }
-		localization_key = cenmon_right_wing_populism
-	}
-	text = {
-		trigger = { has_country_leader_ideology = cenmon_dominant_party_democracy }
-		localization_key = cenmon_dominant_party_democracy
-	}
-	text = {
-		trigger = { has_country_leader_ideology = cenmon_national_liberalism }
-		localization_key = cenmon_national_liberalism
-	}
-	text = {
-		trigger = { has_country_leader_ideology = cenmon_social_authoritarianism }
-		localization_key = cenmon_social_authoritarianism
-	}
-	text = {
-		trigger = { has_country_leader_ideology = cenmon_big_tent }
-		localization_key = cenmon_big_tent
-	}
-	text = {
-		localization_key = centrist_monarchism
+		localization_key = anocratic_monarchism
 	}
 }
 
