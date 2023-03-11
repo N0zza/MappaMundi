@@ -526,35 +526,10 @@ ideologies = {
 
 		ai_neutral = yes # 
 	}
-	centrist_monarchism = {
+	anocratic_monarchism = {
 	
 		types = {
-			
-			cenmon = {
-			}
-			
-			cenmon_national_conservatism = {
-				can_be_randomly_selected = no
-			}
-			
-			cenmon_right_wing_populism = {
-				can_be_randomly_selected = no
-			}
-			
-			cenmon_dominant_party_democracy = {
-				can_be_randomly_selected = no
-			}
-			
-			cenmon_national_liberalism = {
-				can_be_randomly_selected = no
-			}
-			
-			cenmon_social_authoritarianism = {
-				can_be_randomly_selected = no
-			}
-			
-			cenmon_big_tent = {
-				can_be_randomly_selected = no
+			anomon  = {
 			}
 		}
 		dynamic_faction_names = {
@@ -597,35 +572,10 @@ ideologies = {
 		}
 		ai_democratic = yes # uses the democratic AI behaviour
 	}
-	centrist_republic = {
+	anocratic_republic = {
 	
 		types = {
-			
-			cenrep = {
-			}
-			
-			national_conservatism = {
-				can_be_randomly_selected = no
-			}
-			
-			right_wing_populism = {
-				can_be_randomly_selected = no
-			}
-			
-			dominant_party_democracy = {
-				can_be_randomly_selected = no
-			}
-			
-			national_liberalism = {
-				can_be_randomly_selected = no
-			}
-			
-			social_authoritarianism = {
-				can_be_randomly_selected = no
-			}
-			
-			big_tent = {
-				can_be_randomly_selected = no
+			anorep  = {
 			}
 		}
 		dynamic_faction_names = {
@@ -783,6 +733,148 @@ ideologies = {
 		
 		color = { 30 28 140 }
 		
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			generate_wargoal_tension = 1.00
+			join_faction_tension = 0.80
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.25
+			annex_cost_factor = 0.5
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_democratic = yes # uses the democratic AI behaviour
+	}
+	centrist_monarchism = {
+	
+		types = {
+			
+			cenmon = {
+			}
+			
+			cenmon_national_conservatism = {
+				can_be_randomly_selected = no
+			}
+			
+			cenmon_right_wing_populism = {
+				can_be_randomly_selected = no
+			}
+			
+			cenmon_dominant_party_democracy = {
+				can_be_randomly_selected = no
+			}
+			
+			cenmon_national_liberalism = {
+				can_be_randomly_selected = no
+			}
+			
+			cenmon_social_authoritarianism = {
+				can_be_randomly_selected = no
+			}
+			
+			cenmon_big_tent = {
+				can_be_randomly_selected = no
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		color = { 18 130 55 }
+
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+			generate_wargoal_tension = 1.00
+			join_faction_tension = 0.80
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.25
+			annex_cost_factor = 0.5
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		ai_democratic = yes # uses the democratic AI behaviour
+	}
+	centrist_republic = {
+	
+		types = {
+			
+			cenrep = {
+			}
+			
+			national_conservatism = {
+				can_be_randomly_selected = no
+			}
+			
+			right_wing_populism = {
+				can_be_randomly_selected = no
+			}
+			
+			dominant_party_democracy = {
+				can_be_randomly_selected = no
+			}
+			
+			national_liberalism = {
+				can_be_randomly_selected = no
+			}
+			
+			social_authoritarianism = {
+				can_be_randomly_selected = no
+			}
+			
+			big_tent = {
+				can_be_randomly_selected = no
+			}
+		}
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		color = { 28 140 65 }
+
 		rules = {
 			can_declare_war_on_same_ideology = no
 			can_force_government = yes
