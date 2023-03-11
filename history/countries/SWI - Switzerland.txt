@@ -1,13 +1,17 @@
 ﻿capital = 1123
 
-	set_popularities = {
-		centrist_republic 
-			 = 55
-		democratic
-			 = 45
-		}
-	set_politics = { 
- ruling_party = centrist_republic
+set_popularities = {
+	communism = 1
+	socialism_ideology = 29
+	liberal_republic = 7
+	centrist_republic = 25
+	democratic = 35
+	republican_fascism = 1
+	national_socialism = 2
+}
+
+set_politics = { 
+	ruling_party = centrist_republic
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
@@ -18,7 +22,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SWI/SWI_albert_meyer.tga"
 	expire = "1965.1.1"
-	ideology = cenrep
+	ideology = big_tent
 	traits = {
 	}
 }

@@ -14,16 +14,29 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			POL = {
+			ROM = {
+				set_popularities = {
+					socialist_monarchy = 2
+					democratic_monarchism = 1
+					centrist_monarchism = 24
+					conservative_monarchism = 8
+					anocratic_monarchism = 52
+					fascism = 8
+					national_socialism = 5
+				}
+				set_politics = { 
+					ruling_party = anocratic_monarchism
+					last_election = "1933.12.20"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+
 				create_country_leader = {
-					name = "Prezydent Ignacy Mościcki"
-					desc = "POLITICS_IGNACY_MOSCICKI_DESC"
-					picture = "gfx/leaders/POL/Portrait_Poland_Ignacy_Moscicki.dds"
-					expire = "1965.1.1"
-					ideology = social_authoritarianism
-					traits = {
-						#
-					}
+					name = "Rege Carol II de Hohenzollern-Sigmaringen"
+					desc = ""
+					picture = "gfx/leaders/ROM/Portrait_Carol_II.dds"
+					expire = "1945.1.1"
+					ideology = anocmon
 				}
 			}
 		}

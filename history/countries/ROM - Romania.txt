@@ -1,16 +1,27 @@
 ﻿capital = 46
 
 set_popularities = {
-	authoritarian_monarchism = 60
-	fascism = 18
-	communism = 2
-	neutrality = 20
+	socialist_monarchy = 2
+	democratic_monarchism = 1
+	centrist_monarchism = 24
+	conservative_monarchism = 8
+	anocratic_monarchism = 52
+	fascism = 8
+	national_socialism = 5
 }
 set_politics = { 
-	ruling_party = authoritarian_monarchism
+	ruling_party = anocratic_monarchism
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Rege Carol II de Hohenzollern-Sigmaringen"
+	desc = ""
+	picture = "gfx/leaders/ROM/Portrait_Carol_II.dds"
+	expire = "1945.1.1"
+	ideology = anocmon
 }
 
 create_country_leader = {
@@ -148,6 +159,16 @@ create_country_leader = {
 	picture = "gfx/leaders/ROM/ROM_Averescu.tga"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Președinte Alexandru Averescu"
+	desc = ""
+	picture = "gfx/leaders/ROM/ROM_Averescu.tga"
+	expire = "1965.1.1"
+	ideology = anocrep
 	traits = {
 	}
 }
