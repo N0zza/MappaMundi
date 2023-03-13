@@ -790,6 +790,18 @@ scripted_gui = {
 			tpt_ancap_off_click = {
 				clr_global_flag = tpt_ancap
 			}
+			tpt_anocrep_on_click = {
+				set_global_flag = tpt_anocrep
+			}
+			tpt_anocrep_off_click = {
+				clr_global_flag = tpt_anocrep
+			}
+			tpt_anocmon_on_click = {
+				set_global_flag = tpt_anocmon
+			}
+			tpt_anocmon_off_click = {
+				clr_global_flag = tpt_anocmon
+			}
 		
 			tpt_enable_elections_click = {
 				if = {
@@ -982,6 +994,18 @@ scripted_gui = {
 						}
 						set_politics = { ruling_party = right_anarchism }
 					}
+					if = {
+						limit = {
+							has_global_flag = tpt_anocrep
+						}
+						set_politics = { ruling_party = anocratic_republic }
+					}
+					if = {
+						limit = {
+							has_global_flag = tpt_anocmon
+						}
+						set_politics = { ruling_party = anocratic_monarchism }
+					}
 				}
 				if = {
 					limit = {
@@ -1120,6 +1144,18 @@ scripted_gui = {
 							has_global_flag = tpt_ancap
 						}
 						set_politics = { ruling_party = right_anarchism }
+					}
+					if = {
+						limit = {
+							has_global_flag = tpt_anocrep
+						}
+						set_politics = { ruling_party = anocratic_republic }
+					}
+					if = {
+						limit = {
+							has_global_flag = tpt_anocmon
+						}
+						set_politics = { ruling_party = anocratic_monarchism }
 					}
 						clr_country_flag = tpt_actor
 					}
@@ -1331,6 +1367,24 @@ scripted_gui = {
 					popularity = 0.05
 				}				
 			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocrep 
+ 				}
+				add_popularity = {
+					ideology = anocratic_republic
+					popularity = 0.05
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocmon
+ 				}
+				add_popularity = {
+					ideology = anocratic_monarchism
+					popularity = 0.05
+				}				
+			}
 				}
 				if = {
 					limit = {
@@ -1534,6 +1588,24 @@ scripted_gui = {
  				}
 				add_popularity = {
 					ideology = right_anarchism
+					popularity = 0.05
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocrep
+ 				}
+				add_popularity = {
+					ideology = anocratic_republic
+					popularity = 0.05
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocmon
+ 				}
+				add_popularity = {
+					ideology = anocratic_monarchism
 					popularity = 0.05
 				}				
 			}
@@ -1746,6 +1818,24 @@ scripted_gui = {
 					popularity = -0.05
 				}				
 			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocrep 
+ 				}
+				add_popularity = {
+					ideology = anocratic_republic
+					popularity = -0.05
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocmon
+ 				}
+				add_popularity = {
+					ideology = anocratic_monarchism
+					popularity = -0.05
+				}				
+			}
 				}
 				if = {
 					limit = {
@@ -1948,6 +2038,24 @@ scripted_gui = {
  				}
 				add_popularity = {
 					ideology = right_anarchism
+					popularity = -0.05
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocrep 
+ 				}
+				add_popularity = {
+					ideology = anocratic_republic
+					popularity = -0.05
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocmon
+ 				}
+				add_popularity = {
+					ideology = anocratic_monarchism
 					popularity = -0.05
 				}				
 			}
@@ -2161,6 +2269,24 @@ scripted_gui = {
 					popularity = 0.10
 				}				
 			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocrep
+ 				}
+				add_popularity = {
+					ideology = anocratic_republic
+					popularity = 0.10
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocmon
+ 				}
+				add_popularity = {
+					ideology = anocratic_monarchism
+					popularity = 0.10
+				}				
+			}
 				}
 				if = {
 					limit = {
@@ -2364,6 +2490,24 @@ scripted_gui = {
  				}
 				add_popularity = {
 					ideology = right_anarchism
+					popularity = 0.10
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocrep
+ 				}
+				add_popularity = {
+					ideology = anocratic_republic
+					popularity = 0.10
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocmon
+ 				}
+				add_popularity = {
+					ideology = anocratic_monarchism
 					popularity = 0.10
 				}				
 			}
@@ -2577,6 +2721,24 @@ scripted_gui = {
 					popularity = -0.10
 				}				
 			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocrep
+ 				}
+				add_popularity = {
+					ideology = anocratic_republic
+					popularity = -0.10
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocmon
+ 				}
+				add_popularity = {
+					ideology = anocratic_monarchism
+					popularity = -0.10
+				}				
+			}
 				}
 				if = {
 					limit = {
@@ -2780,6 +2942,24 @@ scripted_gui = {
  				}
 				add_popularity = {
 					ideology = right_anarchism
+					popularity = -0.10
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocrep
+ 				}
+				add_popularity = {
+					ideology = anocratic_republic
+					popularity = -0.10
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocmon
+ 				}
+				add_popularity = {
+					ideology = anocratic_monarchism
 					popularity = -0.10
 				}				
 			}
@@ -2993,6 +3173,24 @@ scripted_gui = {
 					popularity = 0.50
 				}				
 			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocrep
+ 				}
+				add_popularity = {
+					ideology = anocratic_republic
+					popularity = 0.50
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocmon
+ 				}
+				add_popularity = {
+					ideology = anocratic_monarchism
+					popularity = 0.50
+				}				
+			}
 				}
 				if = {
 					limit = {
@@ -3196,6 +3394,24 @@ scripted_gui = {
  				}
 				add_popularity = {
 					ideology = right_anarchism
+					popularity = 0.50
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocrep
+ 				}
+				add_popularity = {
+					ideology = anocratic_republic
+					popularity = 0.50
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocmon
+ 				}
+				add_popularity = {
+					ideology = anocratic_monarchism
 					popularity = 0.50
 				}				
 			}
@@ -3409,6 +3625,24 @@ scripted_gui = {
 					popularity = -0.50
 				}				
 			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocrep
+ 				}
+				add_popularity = {
+					ideology = anocratic_republic
+					popularity = -0.50
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocmon
+ 				}
+				add_popularity = {
+					ideology = anocratic_monarchism
+					popularity = -0.50
+				}				
+			}
 				}
 				if = {
 					limit = {
@@ -3612,6 +3846,24 @@ scripted_gui = {
  				}
 				add_popularity = {
 					ideology = right_anarchism
+					popularity = -0.50
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocrep
+ 				}
+				add_popularity = {
+					ideology = anocratic_republic
+					popularity = -0.50
+				}				
+			}
+			if = { 
+ 				limit = { 
+ 					has_global_flag = tpt_anocmon
+ 				}
+				add_popularity = {
+					ideology = anocratic_monarchism
 					popularity = -0.50
 				}				
 			}
@@ -5354,6 +5606,22 @@ scripted_gui = {
 				has_global_flag = tpt_window_a
 				NOT = { has_global_flag = tpt_ancap}
 			}
+			tpt_anocrep_off_visible = {
+				has_global_flag = tpt_window_a
+				has_global_flag = tpt_anocrep
+			}
+			tpt_anocrep_on_visible = {
+				has_global_flag = tpt_window_a
+				NOT = { has_global_flag = tpt_anocrep}
+			}
+			tpt_anocmon_off_visible = {
+				has_global_flag = tpt_window_a
+				has_global_flag = tpt_anocmon
+			}
+			tpt_anocmon_on_visible = {
+				has_global_flag = tpt_window_a
+				NOT = { has_global_flag = tpt_anocmon}
+			}
 			tpt_communist_on_visible = {
 				has_global_flag = tpt_window_a
 				NOT = { has_global_flag = tpt_communist }
@@ -5402,6 +5670,8 @@ scripted_gui = {
 					has_global_flag = tpt_natsoc
 					has_global_flag = tpt_theoc
 					has_global_flag = tpt_ancap
+					has_global_flag = tpt_anocrep
+					has_global_flag = tpt_anocmon
 				}
 			}
 			tpt_add_5_visible = {
@@ -5431,6 +5701,8 @@ scripted_gui = {
 					has_global_flag = tpt_natsoc
 					has_global_flag = tpt_theoc
 					has_global_flag = tpt_ancap
+					has_global_flag = tpt_anocrep
+					has_global_flag = tpt_anocmon
 				}
 			}
 			tpt_subtract_5_visible = {
@@ -5460,6 +5732,8 @@ scripted_gui = {
 					has_global_flag = tpt_natsoc
 					has_global_flag = tpt_theoc
 					has_global_flag = tpt_ancap
+					has_global_flag = tpt_anocrep
+					has_global_flag = tpt_anocmon
 				}
 			}
 			tpt_add_10_visible = {
@@ -5489,6 +5763,8 @@ scripted_gui = {
 					has_global_flag = tpt_natsoc
 					has_global_flag = tpt_theoc
 					has_global_flag = tpt_ancap
+					has_global_flag = tpt_anocrep
+					has_global_flag = tpt_anocmon
 				}
 			}
 			tpt_subtract_10_visible = {
@@ -5518,6 +5794,8 @@ scripted_gui = {
 					has_global_flag = tpt_natsoc
 					has_global_flag = tpt_theoc
 					has_global_flag = tpt_ancap
+					has_global_flag = tpt_anocrep
+					has_global_flag = tpt_anocmon
 				}
 			}
 			tpt_add_50_visible = {
@@ -5547,6 +5825,8 @@ scripted_gui = {
 					has_global_flag = tpt_natsoc
 					has_global_flag = tpt_theoc
 					has_global_flag = tpt_ancap
+					has_global_flag = tpt_anocrep
+					has_global_flag = tpt_anocmon
 				}
 			}
 			tpt_subtract_50_visible = {
@@ -5577,6 +5857,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_ancap }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_communist
@@ -5601,6 +5883,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_ancap }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_democratic
@@ -5625,6 +5909,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_ancap }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_neutral
@@ -5649,6 +5935,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_ancap }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					
 					AND = {
@@ -5674,6 +5962,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_ancap }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					
 					AND = {
@@ -5699,6 +5989,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_librep
@@ -5723,6 +6015,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_vanguard
@@ -5747,6 +6041,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_totanc
@@ -5771,6 +6067,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_ancom
@@ -5795,6 +6093,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_soc
@@ -5819,6 +6119,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_socmon
@@ -5843,6 +6145,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_demmon
@@ -5867,6 +6171,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_conmon
@@ -5891,6 +6197,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_cenrep
@@ -5915,6 +6223,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_cenmon
@@ -5939,6 +6249,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_strat
@@ -5963,6 +6275,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_stratmon
@@ -5987,6 +6301,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_authmon
@@ -6011,6 +6327,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_repfash
@@ -6035,6 +6353,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_natsoc
@@ -6059,6 +6379,8 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_repfash }
 					NOT = { has_global_flag = tpt_theoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
 					}
 					AND = {
 						has_global_flag = tpt_theoc
@@ -6083,6 +6405,59 @@ scripted_gui = {
 					NOT = { has_global_flag = tpt_repfash }
 					NOT = { has_global_flag = tpt_natsoc }
 					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_anocrep }
+					NOT = { has_global_flag = tpt_anocmon }
+					}
+					AND = {
+						has_global_flag = tpt_anocrep
+						NOT = { has_global_flag = tpt_fascist }
+						NOT = { has_global_flag = tpt_communist }
+						NOT = { has_global_flag = tpt_democratic }
+						NOT = { has_global_flag = tpt_neutral }
+					NOT = { has_global_flag = tpt_ancap }
+					NOT = { has_global_flag = tpt_librep }
+					NOT = { has_global_flag = tpt_vanguard }
+					NOT = { has_global_flag = tpt_totanc }
+					NOT = { has_global_flag = tpt_ancom }
+					NOT = { has_global_flag = tpt_soc }
+					NOT = { has_global_flag = tpt_socmon }
+					NOT = { has_global_flag = tpt_demmon }
+					NOT = { has_global_flag = tpt_conmon }
+					NOT = { has_global_flag = tpt_cenrep }
+					NOT = { has_global_flag = tpt_cenmon }
+					NOT = { has_global_flag = tpt_strat }
+					NOT = { has_global_flag = tpt_stratmon }
+					NOT = { has_global_flag = tpt_authmon }
+					NOT = { has_global_flag = tpt_repfash }
+					NOT = { has_global_flag = tpt_natsoc }
+					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_theoc }
+					}
+					AND = {
+						has_global_flag = tpt_anocmon
+						NOT = { has_global_flag = tpt_fascist }
+						NOT = { has_global_flag = tpt_communist }
+						NOT = { has_global_flag = tpt_democratic }
+						NOT = { has_global_flag = tpt_neutral }
+					NOT = { has_global_flag = tpt_ancap }
+					NOT = { has_global_flag = tpt_librep }
+					NOT = { has_global_flag = tpt_vanguard }
+					NOT = { has_global_flag = tpt_totanc }
+					NOT = { has_global_flag = tpt_ancom }
+					NOT = { has_global_flag = tpt_soc }
+					NOT = { has_global_flag = tpt_socmon }
+					NOT = { has_global_flag = tpt_demmon }
+					NOT = { has_global_flag = tpt_conmon }
+					NOT = { has_global_flag = tpt_cenrep }
+					NOT = { has_global_flag = tpt_cenmon }
+					NOT = { has_global_flag = tpt_strat }
+					NOT = { has_global_flag = tpt_stratmon }
+					NOT = { has_global_flag = tpt_authmon }
+					NOT = { has_global_flag = tpt_repfash }
+					NOT = { has_global_flag = tpt_natsoc }
+					NOT = { has_global_flag = tpt_monarchism }
+					NOT = { has_global_flag = tpt_theoc }
+					NOT = { has_global_flag = tpt_anocrep}
 					}
 				}
 			}
@@ -6153,6 +6528,12 @@ scripted_gui = {
 				has_global_flag = tpt_window_a
 			}
 			tpt_ancap_text_visible = {
+				has_global_flag = tpt_window_a
+			}
+			tpt_anocrep_text_visible = {
+				has_global_flag = tpt_window_a
+			}
+			tpt_anocmon_text_visible = {
 				has_global_flag = tpt_window_a
 			}
 			tpt_democratic_number_visible = {
