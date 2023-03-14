@@ -1,63 +1,36 @@
 ﻿capital = 41
 
-#set_popularities = {
-#	socialism_ideology
-#		= 21
-#	liberal_republic
-#	 	= 29
-#	vanguardism
-#	 	= 5
-#	democratic
-#	 	= 13
-#	neutrality
-#	 	= 27
-#	monarchism
-#		= 3
-#	authoritarian_monarchism
-#		= 2
-#}
-
 set_country_flag = has_secondary_leader
 	
 set_popularities = {
-	socialism_ideology
-		= 17
-	democratic
-		= 31
-	conservative_monarchism
-		= 8
-	neutrality
-		= 34
-	authoritarian_monarchism
-		= 5
-	monarchism
-		= 5
+	vanguardism = 3
+	socialism_ideology = 13
+	liberal_republic = 8
+	centrist_republic = 21
+	democratic = 8
+	neutrality = 41
+	anocratic_monarchism = 1
+	conservative_monarchism = 1
+	republican_fascism = 2
+	fascism = 2
 }
 
 set_politics = { 
-	ruling_party = democratic
+	ruling_party = centrist_republic
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
 }
-
-#if = {
-#	limit = {
-#		has_dlc = "Together for Victory"
-#	}
-#	set_autonomy = {
-#		target = EQG
-#		autonomous_state = autonomy_colony
-#	}
-#	set_autonomy = {
-#		target = RIF
-#		autonomous_state = autonomy_colony
-#	}
-#	else = {
-#		puppet = EQG
-#		puppet = RIF
-#	}
-#}
+
+create_country_leader = {
+	name = "Presidente Niceto Alcalá-Zamora y Torres"
+	desc = ""
+	picture = "gfx/leaders/SPR/Portrait_Nicesto_Alcala_Zamora.dds"
+	expire = "1965.1.1"
+	ideology = big_tent
+	traits = {
+	}
+}
 
 create_country_leader = {
 	name = "Presidente Niceto Alcalá-Zamora y Torres"
@@ -130,6 +103,16 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Emperador Alfonso XIII de Borbón"
+	desc = "POLITICS_ALFONSO_XIII_DESC"
+	picture = "gfx/leaders/SPR/SPR_AlfonsoXIII.tga"
+	expire = "1965.1.1"
+	ideology = anocmon
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Primer Ministro Manuel Azaña Díaz"
 	desc = ""
 	picture = "gfx/leaders/SPR/Portrait_Manual_Azana.dds"
@@ -164,7 +147,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SPR/SPR_Lerroux.tga"
 	expire = "1965.1.1"
-	ideology = cenrep
+	ideology = anocrep
 	traits = {
 	}
 }

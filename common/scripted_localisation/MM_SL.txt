@@ -423,10 +423,29 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SPR
-				has_government = democratic
+				has_government = centrist_republic
 			}
 		}
 		localization_key = "Presidente del Consejo de Ministros Manuel Portela Valladares"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = socialism_ideology
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Dawid Ḃen-Gẇriyŵn"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Ḃinyamiyn Ntanyahẇ"
 	}
 }
 
@@ -849,10 +868,29 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SPR
-				has_government = democratic
+				has_government = centrist_republic
 			}
 		}
 		localization_key = "GFX_Manuel_Valladares"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = anocratic_republic
+			}
+		}
+		localization_key = "GFX_David_Ben_Gurion"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Benjamin_Netanyahu"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
