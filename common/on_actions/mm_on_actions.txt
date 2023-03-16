@@ -3667,6 +3667,7 @@ on_actions = {
 								tag = SNW
 								tag = OFR
 								tag = SZ2
+								tag = TEK
 							}
 						}
 	
@@ -3679,7 +3680,10 @@ on_actions = {
 					}
 					if = {
 						limit = {
-							tag = MAD
+							OR = {
+								tag = MAD
+								tag = TEK
+							}
 						}
 						if = {
 							limit = {
