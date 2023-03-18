@@ -1,13 +1,12 @@
 ﻿capital = 361
 
 set_popularities = {
-        neutrality = 92
-        democratic = 4
-        liberal_republic = 4
+	neutrality = 92
+	democratic = 4
+	liberal_republic = 4
 }
 
 set_politics = {
-	
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -90,6 +89,16 @@ create_country_leader = {
 	picture = "gfx/leaders/USA/USA_JohnWashington.tga"
 	expire = "1965.1.1"
 	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Imperator Douglas MacArthur"
+	desc = ""
+	picture = "gfx/leaders/PHI/PHI_Mac_mon.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
 	traits = {
 	}
 }
