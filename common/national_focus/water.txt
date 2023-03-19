@@ -14632,19 +14632,20 @@
 		}	
 		JAP = {
 			set_politics = {
-				ruling_party = centrist_monarchism
+				ruling_party = anocratic_monarchism
 			}
 			set_cosmetic_tag = JAP_2023
 			set_party_name = {
-				ideology = centrist_monarchism
-				name = JAP_centrist_monarchism_2023_party
-				long_name = JAP_centrist_monarchism_2023_party_long
+				ideology = anocratic_monarchism
+				name = JAP_anocratic_monarchism_2023_party
+				long_name = JAP_anocratic_monarchism_2023_party_long
 			}
 			set_popularities = {
-				centrist_monarchism = 65
-				conservative_monarchism = 10
-				democratic_monarchism = 21
 				socialist_monarchy = 3
+				democratic_monarchism = 21
+				centrist_monarchism = 12
+				conservative_monarchism = 7
+				anocratic_monarchism = 56
 				authoritarian_monarchism = 1
 			}
 		}
@@ -14655,7 +14656,7 @@
         		desc = ""
         		picture = "gfx/leaders/JAP/JAP_Naruhito.tga"
         		expire = "1965.1.1"
-        		ideology = cenmon_dominant_party_democracy
+        		ideology = anocmon_dominant_party_democracy
 			}
 		}
 		ROK = {
@@ -14664,17 +14665,17 @@
 			transfer_state = 1789
 			transfer_state = 1783
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = anocratic_republic
 			}
 			set_cosmetic_tag = ROK_2023
 			set_party_name = {
-				ideology = centrist_republic
-				name = ROK_centrist_republic_2023_party
-				long_name = ROK_centrist_republic_2023_party_long
+				ideology = anocratic_republic
+				name = ROK_anocratic_republic_2023_party
+				long_name = ROK_anocratic_republic_2023_party_long
 			}
 			set_popularities = {
-				centrist_republic = 39
-				democratic = 56
+				anocratic_republic = 39
+				centrist_republic = 56
 				socialism_ideology = 3
 				liberal_republic = 2
 			}
@@ -14933,9 +14934,11 @@
 				long_name = IDS_centrist_republic_2023_party_long
 			}
 			set_popularities = {
-				liberal_republic = 13
-				democratic = 42
-				centrist_republic = 45
+				socialism_ideology = 22
+				liberal_republic = 10
+				centrist_republic = 26
+				democratic = 20
+				anocratic_republic = 22
 			}
 		}
 		IDS = {
@@ -14945,7 +14948,7 @@
         		desc = ""
         		picture = "gfx/leaders/IDS/IDS_Widodo.tga"
         		expire = "1965.1.1"
-        		ideology = national_liberalism
+        		ideology = pancasila
 			}
 		}
 		every_state = {
@@ -14961,7 +14964,10 @@
 			transfer_state = PREV
 			set_cosmetic_tag = IDS_COLONY
 			set_politics = {
-				ruling_party = centrist_monarchism
+				ruling_party = anocratic_monarchism
+			}
+			set_popularities = {
+				anocratic_monarchism = 100
 			}
 		}
 		YGY = {
@@ -14971,7 +14977,7 @@
         		desc = ""
         		picture = "gfx/leaders/IDS/YGY_Hamengkubuwono_X.tga"
         		expire = "1965.1.1"
-        		ideology = cenmon
+        		ideology = anocmon
 			}
 		}
 		every_state = {
@@ -14991,9 +14997,11 @@
 				long_name = ACH_democratic_2023_party_long
 			}
 			set_popularities = {
-				liberal_republic = 8
-				democratic = 40
-				centrist_republic = 52
+				socialism_ideology = 1
+				liberal_republic = 3
+				centrist_republic = 25
+				democratic = 20
+				anocratic_republic = 52
 			}
 		}
 		ACH = {
@@ -15038,11 +15046,12 @@
 				long_name = MAL_democratic_monarchism_2023_party_long
 			}
 			set_popularities = {
-				socialist_monarchy = 19
-				democratic_monarchism = 22
+				socialist_monarchy = 20
+				democratic_monarchism = 19
+				centrist_monarchism = 9
 				conservative_monarchism = 19
-				authoritarian_monarchism = 18
-				centrist_monarchism = 22
+				anocratic_monarchism = 14
+				neutrality = 19
 			}
 		}
 		MAL = {
@@ -15057,13 +15066,13 @@
 		}
 		SGP = {
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = anocratic_republic
 			}
 			set_popularities = {
-				centrist_republic = 81
 				communism = 9
-				neutrality = 9
 				socialism_ideology = 1
+				anocratic_republic = 81
+				neutrality = 9
 			}
 		}
 		SGP = {
@@ -15096,21 +15105,18 @@
 			}
 		}
 		PHI = {
-			set_politics = {
-				ruling_party = centrist_republic
-			}
 			set_cosmetic_tag = PHI_2023
 			set_party_name = {
-				ideology = centrist_republic
-				name = PHI_centrist_republic_2023_party
-				long_name = PHI_centrist_republic_2023_party_long
+				ideology = democratic
+				name = PHI_democratic_2023_party
+				long_name = PHI_democratic_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 1
-				liberal_republic = 33
-				democratic = 44
-				centrist_republic = 21
-				neutrality = 1
+				socialism_ideology = 13
+				liberal_republic = 8
+				centrist_republic = 20
+				democratic = 58
+				anocratic_republic = 1
 			}
 		}
 		PHI = {
@@ -15120,7 +15126,7 @@
         		desc = ""
         		picture = "gfx/leaders/PHI/PHI_Bongbong.tga"
         		expire = "1965.1.1"
-        		ideology = right_wing_populism
+        		ideology = populism
 			}
 		}
 		RMM = {
@@ -15147,8 +15153,9 @@
 			}
 			set_popularities = {
 				socialism_ideology = 69
-				liberal_republic = 22
-				democratic = 9
+				liberal_republic = 9
+				centrist_republic = 20
+				democratic = 2
 			}
 		}
 		ETM = {
@@ -15262,9 +15269,8 @@
 			}
 			set_popularities = {
 				liberal_republic = 57
+				centrist_republic = 9
 				democratic = 34
-				socialism_ideology = 7
-				centrist_republic = 2
 			}
 		}
 		CHI = {
@@ -15310,12 +15316,13 @@
 				long_name = SIA_stratocratic_monarchism_2023_party_long
 			}
 			set_popularities = {
-				stratocratic_monarchism = 20
-				authoritarian_monarchism = 11
-				centrist_monarchism = 16
-				conservative_monarchism = 12
-				democratic_monarchism = 31
-				socialist_monarchy = 10
+				socialist_monarchy = 7
+				democratic_monarchism = 26
+				centrist_monarchism = 3
+				conservative_monarchism = 8
+				anocratic_monarchism = 17
+				authoritarian_monarchism = 6
+				stratocratic_monarchism = 33
 			}
 		}
 		SIA = {
@@ -15406,18 +15413,18 @@
 			transfer_state = 9000
 			transfer_state = 9001
 			set_politics = {
-	       		ruling_party = centrist_republic
+	       		ruling_party = anocratic_republic
             }	
 			set_cosmetic_tag = KPK_2023
 			set_party_name = {
-				ideology = centrist_republic
-				name = KPK_centrist_republic_2023_party
-				long_name = KPK_centrist_republic_2023_party_long
+				ideology = anocratic_republic
+				name = KPK_anocratic_republic_2023_party
+				long_name = KPK_anocratic_republic_2023_party_long
 			}
 			set_popularities = {
-				centrist_republic = 51
 				socialism_ideology = 34
-				liberal_republic = 15
+				centrist_republic = 15
+				anocratic_republic = 51
 			}
 		}
 		KPK = {
@@ -15444,18 +15451,18 @@
 			transfer_state = 18299
 			transfer_state = 18332
 			set_politics = {
-	       		ruling_party = centrist_republic
+	       		ruling_party = anocratic_republic
             }	
 			set_cosmetic_tag = UZB_2023
 			set_party_name = {
-				ideology = centrist_republic
-				name = UZB_centrist_republic_2023_party
-				long_name = UZB_centrist_republic_2023_party_long
+				ideology = anocratic_republic
+				name = UZB_anocratic_republic_2023_party
+				long_name = UZB_anocratic_republic_2023_party_long
 			}
 			set_popularities = {
-				centrist_republic = 60
-				socialism_ideology = 30
-				liberal_republic = 10
+				socialism_ideology = 31
+				centrist_republic = 10
+				anocratic_republic = 59
 			}
 		}
 		UZB = {
@@ -15479,11 +15486,12 @@
 				long_name = TAJ_neutrality_2023_party_long
 			}
 			set_popularities = {
-				neutrality = 75
-				vanguardism = 3
-				socialism_ideology = 1
-				democratic = 13
+				vanguardism = 2
+				socialism_ideology = 2
 				liberal_republic = 8
+				democratic = 2
+				centrist_republic = 11
+				neutrality = 75
 			}
 		}
 		TAJ = {
@@ -15493,7 +15501,7 @@
            		desc = ""
            		picture = "gfx/leaders/TAJ/TAJ_Rahmon.tga"
            		expire = "1965.1.1"
-           		ideology = despotism
+           		ideology = nationalism
 			}
 		}
 		TMS = {
@@ -15507,9 +15515,9 @@
 				long_name = TMS_neutrality_2023_party_long
 			}
 			set_popularities = {
-				neutrality = 82
 				centrist_republic = 9
 				democratic = 9
+				neutrality = 82
 			}
 		}
 		TMS = {
@@ -15541,19 +15549,19 @@
 				state = 590
 			}
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = anocratic_republic
 			}
 			set_cosmetic_tag = KAZ_2023
 			set_party_name = {
-				ideology = centrist_republic
-				name = KAZ_centrist_republic_2023_party
-				long_name = KAZ_centrist_republic_2023_party_long
+				ideology = anocratic_republic
+				name = KAZ_anocratic_republic_2023_party
+				long_name = KAZ_anocratic_republic_2023_party_long
 			}
 			set_popularities = {
-				centrist_republic = 71
-				democratic = 11
 				socialism_ideology = 9
-				liberal_republic = 9
+				centrist_republic = 9
+				democratic = 11
+				anocratic_republic = 71
 			}
 		}
 		KAZ = {
@@ -15572,20 +15580,20 @@
 			transfer_state = 18315
 			drop_cosmetic_tag = yes	
 			set_politics = {
-	       		ruling_party = centrist_republic
+	       		ruling_party = anocratic_republic
 			}
 			set_cosmetic_tag = KYR_2023
 			set_party_name = {
-				ideology = centrist_republic
-				name = KYR_centrist_republic_2023_party
-				long_name = KYR_centrist_republic_2023_party_long
+				ideology = anocratic_republic
+				name = KYR_anocratic_republic_2023_party
+				long_name = KYR_anocratic_republic_2023_party_long
 			}
 			set_popularities = {
-				neutrality = 4
-				centrist_republic = 36
-				democratic = 30
-				liberal_republic = 29
 				socialism_ideology = 1
+				liberal_republic = 8
+				centrist_republic = 24
+				democratic = 24
+				anocratic_republic = 43
 			}
 		}
 		KYR = {
@@ -15595,7 +15603,7 @@
         		desc = ""
         		picture = "gfx/leaders/KYR/KYR_Japarov.tga"
         		expire = "1965.1.1"
-        		ideology = national_conservatism
+        		ideology = right_wing_populism
 			}
 		}
 		every_state = {
@@ -15689,13 +15697,13 @@
 				long_name = NEP_communism_2023_party_long
 			}
 			set_popularities = {
-				liberal_republic = 32
-				vanguardism = 29
-				communism = 12
-				neutrality = 8
-				socialism_ideology = 7
-				democratic = 7
-				centrist_republic = 5
+				vanguardism = 33
+				communism = 11
+				socialism_ideology = 42
+				liberal_republic = 7
+				centrist_republic = 1
+				democratic = 5
+				anocratic_republic = 1
 			}
 		}
 		NEP = {
@@ -15792,11 +15800,12 @@
 				long_name = PAK_democratic_2023_party_long
 			}
 			set_popularities = {
-				democratic = 30
-				socialism_ideology = 19
-				centrist_republic = 4
-				liberal_republic = 21
-				neutrality = 26
+				socialism_ideology = 18
+				liberal_republic = 10
+				centrist_republic = 3
+				democratic = 27
+				anocratic_republic = 5
+				neutrality = 37
 			}
 		}
 		PAK = {
@@ -15835,19 +15844,19 @@
 		}
 		BAN = {
 			set_politics = {
-	       		ruling_party = centrist_republic
+	       		ruling_party = anocratic_republic
 			}
 			drop_cosmetic_tag = yes
 			every_owned_state = {
 				do_indian_renames = yes
 			}
 			set_popularities = {
-				centrist_republic = 86
-				democratic = 8
+				vanguardism = 1
 				socialism_ideology = 1
-				liberal_republic = 2
-				vanguardism = 2
-				neutrality = 1
+				liberal_republic = 1
+				centrist_republic = 1
+				democratic = 8
+				anocratic_republic = 87
 			}
 		}
 		BAN = {
@@ -15902,12 +15911,12 @@
             }
 			set_cosmetic_tag = IND_2023
 			set_politics = {
-	       		ruling_party = centrist_republic
-              }		
+	       		ruling_party = anocratic_republic
+            }		
 			set_party_name = {
-				ideology = centrist_republic
-				name = IND_centrist_republic_2023_party
-				long_name = IND_centrist_republic_2023_party_long
+				ideology = anocratic_republic
+				name = IND_anocratic_republic_2023_party
+				long_name = IND_anocratic_republic_2023_party_long
 			}
 			set_popularities = {
 				centrist_republic = 61
@@ -16826,11 +16835,11 @@
 				long_name = AZR_neutrality_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 1
-				liberal_republic = 3
-				democratic = 1
-				centrist_republic = 33
-				neutrality = 62
+				liberal_republic = 2
+				centrist_republic = 2
+				democratic = 2
+				anocratic_republic = 33
+				neutrality = 61
 			}
 		}
 		AZR = {
@@ -16846,15 +16855,15 @@
 		TUR = {
 			set_cosmetic_tag = TUR_2023
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = anocratic_republic
 			}
 			set_party_name = {
-				ideology = centrist_republic
-				name = TUR_centrist_republic_2023_party
-				long_name = TUR_centrist_republic_2023_party_long
+				ideology = anocratic_republic
+				name = TUR_anocratic_republic_2023_party
+				long_name = TUR_anocratic_republic_2023_party_long
 			}
 			set_popularities = {
-				centrist_republic = 48
+				anocratic_republic = 48
 				socialism_ideology = 23
 				republican_fascism = 8
 				liberal_republic = 9
@@ -16883,19 +16892,19 @@
 		NGK = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = democratic
 			}
 			set_party_name = {
-				ideology = neutrality
-				name = NGK_neutrality_2023_party
-				long_name = NGK_neutrality_2023_party_long
+				ideology = democratic
+				name = NGK_democratic_2023_party
+				long_name = NGK_democratic_2023_party_long
 			}
 			set_popularities = {
-				neutrality = 48
-				socialism_ideology = 28
 				communism = 9
+				socialism_ideology = 27
 				liberal_republic = 9
-				centrist_republic = 6
+				democratic = 49
+				anocratic_republic = 6
 			}
 		}
 		NGK = {
@@ -16905,7 +16914,7 @@
            		desc = ""
            		picture = "gfx/leaders/NGK/NGK_Harutyunyan.tga"
            		expire = "1965.1.1"
-           		ideology = oligarchism
+           		ideology = nationalism
 			}
 		}
 		ARM = {
@@ -16922,9 +16931,10 @@
 				long_name = ARM_liberal_republic_2023_party_long
 			}
 			set_popularities = {
-				liberal_republic = 65
-				socialism_ideology = 14
-				centrist_republic = 21
+				socialism_ideology = 28
+				liberal_republic = 58
+				centrist_republic = 7
+				anocratic_republic = 7
 			}
 		}
 		ARM = {
@@ -16957,10 +16967,11 @@
 			}
 			set_popularities = {
 				socialism_ideology = 52
-				centrist_republic = 6
-				democratic = 8
-				liberal_republic = 23
-				neutrality = 11
+				liberal_republic = 9
+				centrist_republic = 22
+				democratic = 3
+				anocratic_republic = 5
+				neutrality = 9
 			}
 		}
 		GEO = {
@@ -16984,11 +16995,12 @@
 				long_name = SOS_neutrality_2023_party_long
 			}
 			set_popularities = {
-				neutrality = 53
-				liberal_republic = 15
-				democratic = 9
 				vanguardism = 6
-				centrist_republic = 17
+				liberal_republic = 14
+				centrist_republic = 18
+				democratic = 9
+				anocratic_republic = 12
+				neutrality = 41
 			}
 		}
 		SOS = {
@@ -17012,9 +17024,9 @@
 				long_name = ABK_neutrality_2023_party_long
 			}
 			set_popularities = {
+				anocratic_republic = 3
 				neutrality = 85
 				republican_fascism = 12
-				centrist_republic = 3
 			}
 		}
 		ABK = {
