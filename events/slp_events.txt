@@ -1724,6 +1724,106 @@ country_event = {
 }
 
 country_event = {
+	id = slp_menu.49
+	title = slp_menu.49.t
+	desc = slp_menu.49.d
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				if = {
+					limit = {
+						COG = {
+							NOT = {
+								has_government = stratocratic_monarchism
+							}
+						}
+					}
+					set_politics = {
+						ruling_party = stratocratic_monarchism
+					}
+				}
+				kill_ideology_leader = stratocratic_monarchism
+				create_country_leader = {
+					name = "Gouverneur Hermann Wilhelm Göring"
+					desc = ""
+					picture = "gfx/leaders/COG/Portrait_von_Goering.dds"
+					expire = "1965.1.1"
+					ideology = german_colonialism
+					traits = {
+					}
+				}
+				set_cosmetic_tag = GREY_GER2
+				
+				set_party_name = {
+					ideology = stratocratic_monarchism
+					name = COG_stratocratic_monarchism_party
+					long_name = COG_stratocratic_monarchism_party_long
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = slp_menu.49.a
+	}
+}
+
+country_event = {
+	id = slp_menu.50
+	title = slp_menu.50.t
+	desc = slp_menu.50.d
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				if = {
+					limit = {
+						COG = {
+							NOT = {
+								has_government = stratocratic_monarchism
+							}
+						}
+					}
+					set_politics = {
+						ruling_party = stratocratic_monarchism
+					}
+				}
+				kill_ideology_leader = stratocratic_monarchism
+				create_country_leader = {
+					name = "Interimsklonialregierung von Mittelafrika"
+					desc = ""
+					picture = "gfx/leaders/COG/Portrait_COG_InterimGov.tga"
+					expire = "1965.1.1"
+					ideology = german_colonialism
+					traits = {
+					}
+				}
+				set_cosmetic_tag = COG_MITTELAFRIKA_PROVGOV 
+				
+				set_party_name = {
+					ideology = stratocratic_monarchism
+					name = COG_stratocratic_monarchism_InterimGov
+					long_name = COG_stratocratic_monarchism_InterimGov_long
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = slp_menu.50.a
+	}
+}
+
+country_event = {
 	id = slp_menu.98
 	title = slp_menu.98.t
 	desc = slp_menu.98.d
