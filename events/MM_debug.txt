@@ -14,16 +14,17 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			GEO = {
-				set_popularities = {
-					socialism_ideology = 52
-					liberal_republic = 9
-					centrist_republic = 22
-					democratic = 3
-					anocratic_republic = 5
-					neutrality = 9
+			GAL = {
+				create_country_leader = {
+					name = "Król Karol Ludwik z Habsburgów"
+					desc = ""
+					picture = "gfx/leaders/GAL/GAL_Ludwig.tga"
+					expire = "1965.1.1"
+					ideology = absolutism
+					traits = {
+					}
 				}
-			}
+			}  
 		}
 	}
 	option = { #reject
@@ -31,6 +32,5 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		ai_chance = {
 			factor = 100
 		}
-
 	}
 }
