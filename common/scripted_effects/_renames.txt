@@ -10859,6 +10859,16 @@ do_siamese_renames = {
 }
 
 do_vietnamese_renames = {
+
+	if = {
+		limit = {
+			state = 11398
+		}		
+		set_province_name = {
+			id = 11986
+			name = "Tuyền Châu"
+		}
+	}
  
  	if = {
  		limit = {
@@ -12625,7 +12635,17 @@ do_mongolian_renames = {
 	}
 }
 
-do_pinyin_renames = {	
+do_pinyin_renames = {
+
+	if = {
+		limit = {
+			state = 11398
+		}		
+		set_province_name = {
+			id = 11986
+			name = "Quánzhōu"
+		}
+	}
 		
 	if = {
 		limit = {
@@ -13589,11 +13609,11 @@ do_pinyin_renames = {
 		
 	if = {
 		limit = {
-			state = 11460
+			state = 3315
 		}	
 		set_province_name = {
-			id = 7201
-			name = "Ēnshī"
+			id = 944
+			name = "Yánjí"
 		}
 	}
 		
@@ -14329,6 +14349,12 @@ do_pinyin_renames = {
 			id = 11771
 			name = "Shěnyáng"
 		}
+	}
+
+	if = {
+		limit = {
+			state = 716
+		}	
 		set_province_name = {
 			id = 11808
 			name = "Fǔshùn"
@@ -16104,6 +16130,16 @@ do_philippine_renames = {
 }
 
 do_japanese_renames = {
+
+	if = {
+		limit = {
+			state = 11398
+		}		
+		set_province_name = {
+			id = 11986
+			name = "Senshū"
+		}
+	}
 
 	if = {
 		limit = {
@@ -19207,11 +19243,11 @@ do_japanese_renames = {
 		
 	if = {
 		limit = {
-			state = 11460
+			state = 3315
 		}	
 		set_province_name = {
-			id = 7201
-			name = "Onshi"
+			id = 944
+			name = "Enkichi"
 		}
 	}
 		
@@ -19935,7 +19971,7 @@ do_japanese_renames = {
 		}		
 		set_province_name = {
 			id = 6981
-			name = "Antō"
+			name = "Andō"
 		}
 	}
 
@@ -19947,6 +19983,12 @@ do_japanese_renames = {
 			id = 11771
 			name = "Hōten"
 		}
+	}
+
+	if = {
+		limit = {
+			state = 18715
+		}	
 		set_province_name = {
 			id = 11808
 			name = "Fujun"
@@ -20538,16 +20580,6 @@ do_japanese_renames = {
 		set_province_name = {
 			id = 12189
 			name = "Bori"
-		}
-	}
-
-	if = {
-		limit = {
-			state = 716
-		}		
-		set_province_name = {
-			id = 11771
-			name = "Hōten"
 		}
 	}
 
@@ -22760,6 +22792,16 @@ do_chinese_renames = {
 
 	if = {
 		limit = {
+			state = 11398
+		}		
+		set_province_name = {
+			id = 11986
+			name = "Ch'üanchou"
+		}
+	}
+
+	if = {
+		limit = {
 			state = 11203
 		}		
 		set_province_name = {
@@ -23230,11 +23272,11 @@ do_chinese_renames = {
 		
 	if = {
 		limit = {
-			state = 11460
+			state = 3315
 		}	
 		set_province_name = {
-			id = 7201
-			name = "Enshih"
+			id = 944
+			name = "Yeongil"
 		}
 	}
 		
@@ -23970,6 +24012,12 @@ do_chinese_renames = {
 			id = 11771
 			name = "Fengtien"
 		}
+	}
+
+	if = {
+		limit = {
+			state = 716
+		}	
 		set_province_name = {
 			id = 11808
 			name = "Fushun"
@@ -78605,6 +78653,26 @@ do_north_korean_renames = {
 	}
 }
 do_korean_renames = {
+
+	if = {
+		limit = {
+			state = 11398
+		}		
+		set_province_name = {
+			id = 11986
+			name = "Cheonju"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 3315
+		}	
+		set_province_name = {
+			id = 944
+			name = "Yeongil"
+		}
+	}
 		
 	if = {
 		limit = {
