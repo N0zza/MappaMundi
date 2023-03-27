@@ -16492,21 +16492,22 @@
 				state = 17542
 			}
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = anocratic_republic
             }
 			set_cosmetic_tag = PAL_2023
 			set_party_name = {
-				ideology = socialism_ideology
-				name = PAL_socialism_ideology_2023_party
-				long_name = PAL_socialism_ideology_2023_party_long
+				ideology = anocratic_republic
+				name = PAL_anocratic_republic_2023_party
+				long_name = PAL_anocratic_republic_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 34
-				stratocratic = 32
-				vanguardism = 4
-				communism = 6
+				vanguardism = 6
+				communism = 2
+				socialism_ideology = 2
 				liberal_republic = 2
+				anocratic_republic = 34
 				neutrality = 22
+				stratocratic = 32
 			}
 		}
 		
@@ -16517,7 +16518,7 @@
             	desc = ""
             	picture = "gfx/leaders/PAL/PAL_Abbas.tga"
             	expire = "1965.1.1"
-            	ideology = left_wing_nationalism
+            	ideology = social_authoritarianism
 			}	
 		}
 		
@@ -16606,12 +16607,12 @@
         }
 		GZS = {
 			set_popularities = {
-				theocratic = 56
-				socialism_ideology = 36
 				vanguardism = 1
 				communism = 2
+				socialism_ideology = 36
 				liberal_republic = 2
-				centrist_republic = 3
+				anocratic_republic = 3
+				stratocratic = 56
 			}
         }
 		GZS = {
@@ -16622,6 +16623,15 @@
 				picture = "gfx/leaders/GZS/GZS_Sinwar.tga"
 				expire = "1965.1.1"
 				ideology = military_junta
+				traits = {
+				}
+			}
+			create_country_leader = {
+				name = "Raʾīs Yaḥyaỳ Ibrāhīm Ḥasan al-Sinwār"
+				desc = ""
+				picture = "gfx/leaders/GZS/GZS_Sinwar.tga"
+				expire = "1965.1.1"
+				ideology = stratmon_military_organisation
 				traits = {
 				}
 			}
