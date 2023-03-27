@@ -11959,7 +11959,7 @@ do_tibetian_renames = {
 		}	
 		set_province_name = {
 			id = 10726
-			name = "Yalga'dzegspa"
+			name = "Yalgavdzegspa"
 		}
 	}
 
@@ -14480,7 +14480,7 @@ do_pinyin_renames = {
 
 	if = {
 		limit = {
-			state = 716
+			state = 18715
 		}	
 		set_province_name = {
 			id = 11808
@@ -15889,6 +15889,17 @@ do_pinyin_renames = {
 		set_province_name = {
 			id = 13282
 			name = "Wēihǎiwèi"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 956
+			date > 2022.01.01
+		}		
+		set_province_name = {
+			id = 13282
+			name = "Wēihǎi"
 		}
 	}
 
@@ -19981,21 +19992,21 @@ do_japanese_renames = {
 	if = {
 		limit = {
 			state = 11391
+			date > 2022.01.01
 		}	
 		set_province_name = {
 			id = 12036
-			name = "Wainan"
+			name = "Waian"
 		}
 	}
 		
 	if = {
 		limit = {
 			state = 11391
-			date > 2022.01.01
 		}	
 		set_province_name = {
 			id = 12036
-			name = "Waian"
+			name = "Wainan"
 		}
 	}
 		
@@ -22981,7 +22992,18 @@ do_japanese_renames = {
 		}		
 		set_province_name = {
 			id = 13282
-			name = "Wikaiwi"
+			name = "Ikaie"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 956
+			date > 2022.01.01
+		}		
+		set_province_name = {
+			id = 13282
+			name = "Ikai"
 		}
 	}
 
@@ -24427,7 +24449,7 @@ do_chinese_renames = {
 
 	if = {
 		limit = {
-			state = 716
+			state = 18715
 		}	
 		set_province_name = {
 			id = 11808
@@ -24962,6 +24984,17 @@ do_chinese_renames = {
 		set_province_name = {
 			id = 13282
 			name = "Weihaiwei"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 956
+			date > 2022.01.01
+		}		
+		set_province_name = {
+			id = 13282
+			name = "Weihai"
 		}
 	}
 
@@ -28665,6 +28698,17 @@ do_russian_renames = {
 		set_province_name = {
 			id = 13282
 			name = "Vèjxajvèj"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 956
+			date > 2022.01.01
+		}		
+		set_province_name = {
+			id = 13282
+			name = "Vèjxaj"
 		}
 	}
 
@@ -79968,7 +80012,7 @@ do_korean_renames = {
 
 	if = {
 		limit = {
-			state = 716
+			state = 18715
 		}	
 		set_province_name = {
 			id = 11808
@@ -80162,7 +80206,7 @@ do_korean_renames = {
 		}		
 		set_province_name = {
 			id = 1590
-			name = Janggagu
+			name = "Janggagu"
 		}
 	}
 		
@@ -80172,7 +80216,7 @@ do_korean_renames = {
 		}		
 		set_province_name = {
 			id = 10309
-			name = Hwa
+			name = "Hwa"
 		}
 	}
 
@@ -80182,7 +80226,7 @@ do_korean_renames = {
 		}		
 		set_province_name = {
 			id = 10129
-			name = Geunjeo
+			name = "Geunjeo"
 		}
 	}
 
@@ -80192,7 +80236,7 @@ do_korean_renames = {
 		}		
 		set_province_name = {
 			id = 4401
-			name = Saegon
+			name = "Saegon"
 		}
 	}
 
@@ -80202,7 +80246,7 @@ do_korean_renames = {
 		}		
 		set_province_name = {
 			id = 10137
-			name = Tayang
+			name = "Tayang"
 		}
 	}
 
@@ -80212,7 +80256,7 @@ do_korean_renames = {
 		}		
 		set_province_name = {
 			id = 4397
-			name = Yeong
+			name = "Yeong"
 		}
 	}
 
@@ -80222,7 +80266,7 @@ do_korean_renames = {
 		}		
 		set_province_name = {
 			id = 4119
-			name = Haebang
+			name = "Haebang"
 		}
 	}
 
@@ -80232,7 +80276,7 @@ do_korean_renames = {
 		}		
 		set_province_name = {
 			id = 10841
-			name = Gangjeong
+			name = "Gangjeong"
 		}
 	}
 
@@ -80242,7 +80286,7 @@ do_korean_renames = {
 		}		
 		set_province_name = {
 			id = 19004
-			name = Gyeongdo
+			name = "Gyeongdo"
 		}
 	}
 
@@ -80252,7 +80296,7 @@ do_korean_renames = {
 		}		
 		set_province_name = {
 			id = 4075
-			name = Hanae
+			name = "Hanae"
 		}
 	}
 
@@ -80262,7 +80306,7 @@ do_korean_renames = {
 		}		
 		set_province_name = {
 			id = 4401
-			name = Sigon
+			name = "Sigon"
 		}
 	}
  
@@ -80272,7 +80316,7 @@ do_korean_renames = {
  		}
  		set_province_name = {
  			id = 10433
- 			name = Habibin
+ 			name = "Habibin"
  		}
  	}
  		
@@ -80282,7 +80326,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 12446
- 			name = Pungwon
+ 			name = "Pungwon"
  		}
  	}
  		
@@ -80292,7 +80336,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 13025
- 			name = Lyunolangdo
+ 			name = "Lyunolangdo"
  		}
  	}
  
@@ -80302,7 +80346,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 6994
- 			name = Chologsam
+ 			name = "Chologsam"
  		}
  	}
  
@@ -80312,7 +80356,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7169
- 			name = Seontae
+ 			name = "Seontae"
  		}
  	}
  
@@ -80322,7 +80366,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 1117
- 			name = Sinseog
+ 			name = "Sinseog"
  		}
  	}
  
@@ -80332,7 +80376,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 1182
- 			name = Donggyeong
+ 			name = "Donggyeong"
  		}
  	}
  
@@ -80342,7 +80386,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7087
- 			name = Sijeuoka
+ 			name = "Sijeuoka"
  		}
  	}
  
@@ -80352,7 +80396,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 10032
- 			name = Geumsawa
+ 			name = "Geumsawa"
  		}
  	}
  
@@ -80362,7 +80406,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 10125
- 			name = Myeonggoog
+ 			name = "Myeonggoog"
  		}
  	}
  
@@ -80372,7 +80416,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7072
- 			name = Daepan
+ 			name = "Daepan"
  		}
  	}
  
@@ -80382,7 +80426,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7197
- 			name = Goji
+ 			name = "Goji"
  		}
  	}
  
@@ -80392,7 +80436,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 16401
- 			name = Sochang
+ 			name = "Sochang"
  		}
  	}
  
@@ -80402,7 +80446,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 1092
- 			name = Keugigo
+ 			name = "Keugigo"
  		}
  	}
  
@@ -80412,7 +80456,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 4102
- 			name = Nogerdo
+ 			name = "Nogerdo"
  		}
  	}
  
@@ -80422,7 +80466,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 9950
- 			name = Janggi
+ 			name = "Janggi"
  		}
  	}
  
@@ -80432,7 +80476,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 10124
- 			name = Napae
+ 			name = "Napae"
  		}
  	}
  
@@ -80442,7 +80486,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 12732
- 			name = Nanju
+ 			name = "Nanju"
  		}
  	}
  
@@ -80452,7 +80496,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7940
- 			name = Gyeogi
+ 			name = "Gyeogi"
  		}
  	}
  
@@ -80462,7 +80506,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7186
- 			name = Daebae
+ 			name = "Daebae"
  		}
  	}
  
@@ -80472,7 +80516,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 11914
- 			name = Goung
+ 			name = "Goung"
  		}
  	}
  
@@ -80482,7 +80526,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 1150
- 			name = Daelyeon
+ 			name = "Daelyeon"
  		}
  	}
  
@@ -80492,7 +80536,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 1070
- 			name = Haegu
+ 			name = "Haegu"
  		}
  	}
  
@@ -80502,7 +80546,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7965
- 			name = Daeli
+ 			name = "Daeli"
  		}
  	}
  
@@ -80512,7 +80556,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 1319
- 			name = Gonmyeong
+ 			name = "Gonmyeong"
  		}
  	}
  
@@ -80522,7 +80566,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 2045
- 			name = Cheonsu
+ 			name = "Cheonsu"
  		}
  	}
  
@@ -80532,7 +80576,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 6999
- 			name = Junggyeong
+ 			name = "Junggyeong"
  		}	
  	}
  
@@ -80542,7 +80586,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 8026
- 			name = Seongdo
+ 			name = "Seongdo"
  		}
  	}
  
@@ -80552,7 +80596,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7418
- 			name = Seoan
+ 			name = "Seoan"
  		}
  	}
  
@@ -80562,7 +80606,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7137
- 			name = Namnyeong
+ 			name = "Namnyeong"
  		}
  	}
  
@@ -80572,7 +80616,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 10404
- 			name = Gyelin
+ 			name = "Gyelin"
  		}
  	}
  
@@ -80582,7 +80626,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 1047
- 			name = Gwangju
+ 			name = "Gwangju"
  		}
  	}
  
@@ -80592,7 +80636,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 4189
- 			name = Omun
+ 			name = "Omun"
  		}
  	}
  
@@ -80602,7 +80646,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 14678
- 			name = Hyanghang
+ 			name = "Hyanghang"
  		}
  	}
  
@@ -80612,7 +80656,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 8095
- 			name = Gwiyang
+ 			name = "Gwiyang"
  		}
  	}
  
@@ -80622,7 +80666,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7097
- 			name = Jangsa
+ 			name = "Jangsa"
  		}
  	}
  
@@ -80632,7 +80676,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 4619
- 			name = Muhan
+ 			name = "Muhan"
  		}
  	}
  
@@ -80642,7 +80686,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7101
- 			name = Sangdeog
+ 			name = "Sangdeog"
  		}
  	}
  
@@ -80652,7 +80696,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 9958
- 			name = Jeongju
+ 			name = "Jeongju"
  		}
  	}
  
@@ -80662,7 +80706,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7071
- 			name = Hamun
+ 			name = "Hamun"
  		}
  	}
  
@@ -80672,7 +80716,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 4196
- 			name = Bogju
+ 			name = "Bogju"
  		}
  	}
  
@@ -80682,7 +80726,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 3992
- 			name = Namjang
+ 			name = "Namjang"
  		}
  	}
  
@@ -80692,7 +80736,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 9974
- 			name = Nyeongpa
+ 			name = "Nyeongpa"
  		}
  	}
  
@@ -80702,7 +80746,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7191
- 			name = Jeondang
+ 			name = "Jeondang"
  		}
  	}
  
@@ -80712,11 +80756,11 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 10444
- 			name = Chalhwang
+ 			name = "Chalhwang"
  		}
  		set_province_name = {
  			id = 12421
- 			name = Ugcheon
+ 			name = "Ugcheon"
  		}
  	}
  
@@ -80726,7 +80770,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7014
- 			name = Sanghae
+ 			name = "Sanghae"
  		}
  	}
  
@@ -80736,7 +80780,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 11913
- 			name = Namgyeong
+ 			name = "Namgyeong"
  		}
  	}
  
@@ -80746,7 +80790,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7222
- 			name = Habbi
+ 			name = "Habbi"
  		}
  	}
  
@@ -80756,7 +80800,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 8049
- 			name = Yeonan
+ 			name = "Yeonan"
  		}
  	}
  
@@ -80766,7 +80810,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 1519
- 			name = Taewon
+ 			name = "Taewon"
  		}
  	}
  
@@ -80776,7 +80820,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 10000
- 			name = Chologdo
+ 			name = "Cheongdo"
  		}
  	}
  
@@ -80786,7 +80830,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 1069
- 			name = Jenam
+ 			name = "Jenam"
  		}
  	}
  
@@ -80796,9 +80840,20 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 13282
- 			name = Wihaewi
+ 			name = "Wihaewi"
  		}
  	}
+
+	if = {
+		limit = {
+			state = 956
+			date > 2022.01.01
+		}		
+		set_province_name = {
+			id = 13282
+			name = "Wihae"
+		}
+	}
  
  	if = {
  		limit = {
@@ -80806,7 +80861,7 @@ do_korean_renames = {
  		}
  		set_province_name = {
  			id = 10433
- 			name = Ha-eolbin
+ 			name = "Ha-eolbin"
  		}
  	}
  
@@ -80816,7 +80871,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 12331
- 			name = Baeglyeongmyo
+ 			name = "Baeglyeongmyo"
  		}
  	}
  
@@ -80826,7 +80881,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 9843
- 			name = Bukgyeong
+ 			name = "Bukgyeong"
  		}
  	}
  
@@ -80836,7 +80891,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 10068
- 			name = Cheonjin
+ 			name = "Cheonjin"
  		}
  	}
  
@@ -80846,7 +80901,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 957
- 			name = Haesamwi
+ 			name = "Haesamwi"
  		}
  	}
  
@@ -80856,7 +80911,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 1150
- 			name = Daelyeon
+ 			name = "Daelyeon"
  		}
  	}
  
@@ -80866,7 +80921,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 12189
- 			name = Baeglyeog
+ 			name = "Baeglyeog"
  		}
  	}
  
@@ -80876,7 +80931,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 4572
- 			name = Jangchun
+ 			name = "Jangchun"
  		}
  	}
  
@@ -80886,7 +80941,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 9788
- 			name = Busin
+ 			name = "Busin"
  		}
  	}
  
@@ -80896,7 +80951,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 11771
- 			name = Simyang
+ 			name = "Simyang"
  		}
  	}
  
@@ -80906,7 +80961,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 898
- 			name = Cheongjin
+ 			name = "Cheongjin"
  		}
  	}
  
@@ -80916,7 +80971,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 959
- 			name = Gimchaek
+ 			name = "Gimchaek"
  		}
  	}
  
@@ -80926,7 +80981,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 19086
- 			name = Sinuiju
+ 			name = "Sinuiju"
  		}
  	}
  
@@ -80936,7 +80991,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 6928
- 			name = Hamheung
+ 			name = "Hamheung"
  		}
  	}
  
@@ -80946,7 +81001,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 11958
- 			name = Wonsan
+ 			name = "Wonsan"
  		}
  	}
  
@@ -80956,7 +81011,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7155
- 			name = Nampo
+ 			name = "Nampo"
  		}
  	}
  
@@ -80966,7 +81021,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 12040
- 			name = Haeju
+ 			name = "Haeju"
  		}
  	}
  
@@ -80976,7 +81031,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 4052
- 			name = Pyeongyang
+ 			name = "Pyeongyang"
  		}
  	}
  
@@ -80986,7 +81041,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 19108
- 			name = Gaeseong
+ 			name = "Gaeseong"
  		}
  	}
  
@@ -80996,7 +81051,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 19098
- 			name = Incheon
+ 			name = "Incheon"
  		}
  	}
  
@@ -81006,7 +81061,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7125
- 			name = Seoul
+ 			name = "Seoul"
  		}
  	}
  
@@ -81016,7 +81071,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 10110
- 			name = Gwangju
+ 			name = "Gwangju"
  		}
  	}
  
@@ -81026,7 +81081,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 1081
- 			name = Daegu
+ 			name = "Daegu"
  		}
  	}
  
@@ -81036,7 +81091,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7204
- 			name = Daejeon
+ 			name = "Daejeon"
  		}
  	}
  
@@ -81046,7 +81101,7 @@ do_korean_renames = {
  		}		
  		set_province_name = {
  			id = 7021
- 			name = Gangneung
+ 			name = "Gangneung"
  		}
  	}
 
@@ -81056,7 +81111,7 @@ do_korean_renames = {
 		}		
 		set_province_name = {
 			id = 4056
-			name = Busan
+			name = "Busan"
 		}
 	}
 }
