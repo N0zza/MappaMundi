@@ -12733,6 +12733,16 @@
 				long_name = WGR_centrist_republic_2023_party_long
 			}
 			set_party_name = {
+				ideology = anocratic_republic
+				name = WGR_anocratic_republic_2023_party
+				long_name = WGR_anocratic_republic_2023_party_long
+			}
+			set_party_name = {
+				ideology = anocratic_monarchism
+				name = WGR_anocratic_monarchism_2023_party
+				long_name = WGR_anocratic_monarchism_2023_party_long
+			}
+			set_party_name = {
 				ideology = neutrality
 				name = WGR_neutrality_2023_party
 				long_name = WGR_neutrality_2023_party_long
@@ -12812,6 +12822,14 @@
 			}
 			kill_ideology_leader = centrist_republic
 			create_country_leader = {
+        		name = "Bundesräsident Omid Nouripour"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Nouripour.tga"
+        		expire = "1965.1.1"
+        		ideology = cenrep
+			}
+			kill_ideology_leader = anocratic_republic_republic
+			create_country_leader = {
         		name = "Präsident Tino Chrupalla"
         		desc = ""
         		picture = "gfx/leaders/WGR/WGR_Chrupalla.tga"
@@ -12874,6 +12892,14 @@
         		expire = "1965.1.1"
         		ideology = libmon_conservative_liberalism
 			}
+			kill_ideology_leader = centrist_monarchism
+			create_country_leader = {
+        		name = "König Friedrich IV von Hohenzollern"
+        		desc = ""
+        		picture = "gfx/leaders/WGR/WGR_Georg_Friedrich.tga"
+        		expire = "1965.1.1"
+        		ideology = cenmon
+			}
 			kill_ideology_leader = conservative_monarchism
 			create_country_leader = {
         		name = "König Friedrich IV von Hohenzollern"
@@ -12882,13 +12908,13 @@
         		expire = "1965.1.1"
         		ideology = conmon_christian_democracy
 			}
-			kill_ideology_leader = centrist_monarchism
+			kill_ideology_leader = anocratic_monarchism
 			create_country_leader = {
         		name = "Kaiser und Bundespräsident Friedrich IV von Hohenzollern"
         		desc = ""
         		picture = "gfx/leaders/WGR/WGR_Georg_Friedrich.tga"
         		expire = "1965.1.1"
-        		ideology = cenmon_right_wing_populism
+        		ideology = anocmon_right_wing_populism
 			}
 			kill_ideology_leader = fascism
 			create_country_leader = {
