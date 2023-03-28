@@ -117,11 +117,117 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = WGR
+				has_government = vanguardism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Bundeskanzlerin Janine Natalie Wißler"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
 				has_government = socialism_ideology
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "Bundeskanzler Olaf Scholz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = socialist_monarchy
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Reichskanzler Olaf Scholz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Bundeskanzler Christian Wolfgang Lindner"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = democratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Archipincerna Carolus de Habsburgum, Rex Bohemiae"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Bundeskanzlerin Annalena Charlotte Alma Baerbock"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = centrist_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Reichskanzlerin Annalena Charlotte Alma Baerbock"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Bundeskanzler Armin Laschet"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = conservative_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Reichskanzler Armin Laschet"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				OR = {
+					has_government = anocratic_republic
+					has_government = neutrality
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Kanzler Tino Chrupalla"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				OR = {
+					has_government = anocratic_monarchism
+					has_government = authoritarian_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Reichskanzler Tino Chrupalla"
 	}
 	text = {
 		trigger = {
@@ -568,11 +674,85 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = WGR
-				has_government = socialism_ideology
+				has_government = vanguardism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Janine_Wissler"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				OR = {
+					has_government = socialism_ideology
+					has_government = socialist_monarchy
+				}
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "GFX_Olaf_Scholz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Wolfgang_Lindner"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = democratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Karl_Habsburg"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				OR = {
+					has_government = centrist_republic
+					has_government = centrist_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Annalena_Baerbock"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				OR = {
+					has_government = democratic
+					has_government = conservative_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Armin_Laschet"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				OR = {
+					has_government = anocratic_republic
+					has_government = anocratic_monarchism
+					has_government = neutrality
+					has_government = authoritarian_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Tino_Chrupalla"
 	}
 	text = {
 		trigger = {
