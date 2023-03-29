@@ -5724,6 +5724,57 @@ on_actions = {
 							set_cosmetic_tag = CYR
 						}
 					}
+					
+					if = {
+						limit = {
+							tag = DJI
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = neutrality
+									has_government = stratocratic
+								}
+							}
+							set_cosmetic_tag = FRA_COLONY
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = centrist_monarchism
+								}
+							}
+							set_cosmetic_tag = UK_RED
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = anocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = DJI_ANOCMON
+							
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_russian_renames = yes
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									NOT = {
+										has_government = neutrality
+										has_government = stratocratic
+										has_government = centrist_monarchism
+										has_government = anocratic_monarchism
+									}
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+					}
 				}
 			}
 		}
