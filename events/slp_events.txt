@@ -1824,6 +1824,92 @@ country_event = {
 }
 
 country_event = {
+	id = slp_menu.51
+	title = slp_menu.51.t
+	desc = slp_menu.51.d
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				if = {
+					limit = {
+						GER = {
+							NOT = {
+								has_government = centrist_monarchism
+							}
+						}
+					}
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+				kill_ideology_leader = centrist_monarchism
+				create_country_leader = {
+					name = "Kaiser und Bundespräsident August Wilhelm von Hohenzollern"
+					desc = "POLITICS_GER_CENMON_DESC"
+					picture = "gfx/leaders/GER/Portrait_August_Hohenzollern.dds"
+					expire = "1965.1.1"
+					ideology = cenmon
+					traits = {
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = slp_menu.51.a
+	}
+}
+
+country_event = {
+	id = slp_menu.52
+	title = slp_menu.52.t
+	desc = slp_menu.52.d
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				if = {
+					limit = {
+						GER = {
+							NOT = {
+								has_government = centrist_monarchism
+							}
+						}
+					}
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+				kill_ideology_leader = centrist_monarchism
+				create_country_leader = {
+					name = "Frankfurter Nationalversammlung"
+					desc = "POLITICS_GER_CENMON_DESC"
+					picture = "gfx/leaders/GER/Portrait_Frankfurt_Parliament.dds"
+					expire = "1965.1.1"
+					ideology = cenmon_big_tent
+					traits = {
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = slp_menu.52.a
+	}
+}
+
+country_event = {
 	id = slp_menu.98
 	title = slp_menu.98.t
 	desc = slp_menu.98.d

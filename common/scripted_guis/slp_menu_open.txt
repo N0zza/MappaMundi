@@ -17,6 +17,7 @@ scripted_gui = {
 				tag = USA
 				tag = GMA
 				tag = COG
+				tag = GER
 			}
         }
  
@@ -163,6 +164,17 @@ scripted_gui = {
 					set_temp_variable = { show = 1 }
 					subtract_from_temp_variable = { show = show_menu_COG }
 					set_variable = { show_menu_COG = show }
+				}
+				if = {
+					limit = {
+						AND = {
+							tag = COG
+							has_government = centrist_monarchism
+						}
+					}
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_menu_GER }
+					set_variable = { show_menu_GER = show }
 				}
             }
         }
@@ -1836,6 +1848,81 @@ scripted_gui = {
 			leader_frame2_COG_click_enabled = {
 				has_government = stratocratic_monarchism
 				check_variable = { COG_port_2 < 0.99 }
+			}
+		}
+	}
+	
+	### Germany ###
+	
+	slp_menu_GER = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_GER_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_GER > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_GER_close_click = {
+                subtract_from_temp_variable = { show = show_menu_GER }
+                set_variable = { show_menu_GER = show }
+            }
+			leader_frame1_GER_click = {
+				subtract_from_temp_variable = { show = show_menu_GER }
+                set_variable = { show_menu_GER = show }
+				GER = {	country_event = { id = slp_menu.51 } }
+				add_to_variable = { GER_port_1 = 1 }
+				set_variable = { GER_port_2 = 0 }
+			}
+			leader_frame2_GER_click = {
+				subtract_from_temp_variable = { show = show_menu_GER }
+                set_variable = { show_menu_GER = show }
+				GER = {	country_event = { id = slp_menu.52 } }
+				add_to_variable = { GER_port_2 = 1 }
+				set_variable = { GER_port_1 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = GER
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.GER_port_1 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { GER_port_1 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame1_GER_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+		
+		triggers = {
+			slp_GER_close_enabled = {
+				always = yes
+			}
+			leader_frame1_GER_click_enabled = {
+				has_government = centrist_monarchism
+				check_variable = { GER_port_1 < 0.99 }
+			}
+			leader_frame2_GER_click_enabled = {
+				has_government = centrist_monarchism
+				check_variable = { GER_port_2 < 0.99 }
 			}
 		}
 	}
