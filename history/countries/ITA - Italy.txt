@@ -1,28 +1,5 @@
 ﻿capital = 2377
 
-#if = {
-#	limit = {
-#		has_dlc = "Together for Victory"
-#	}
-#	set_autonomy = {
-#		target = SOM
-#		autonomous_state = autonomy_reichskommissariat
-#	}
-#	set_autonomy = {
-#		target = ERI
-#		autonomous_state = autonomy_reichskommissariat
-#	}
-#	set_autonomy = {
-#		target = LBA
-#		autonomous_state = autonomy_reichskommissariat
-#	}
-#	else = {
-#		puppet = SOM
-#		puppet = ERI
-#		puppet = LBA
-#	}
-#}
-
 set_country_flag = has_secondary_leader
 recruit_character = ITA_Benito_Mussolini
 recruit_character = ITA_Vittorio_Emanuele_III
@@ -125,6 +102,16 @@ create_country_leader = {
 	picture = "gfx/leaders/ITA/Salvemini.tga"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Re Federale Robert I di Habsburg"
+	desc = "POLITICS_ITA_ANOCMON_DESC"
+	picture = "gfx/leaders/ITA/Portrait_Robert_Habsburg.tga"
+	expire = "1965.1.1"
+	ideology = anocmon
 	traits = {
 	}
 }
