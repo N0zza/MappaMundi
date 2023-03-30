@@ -2018,6 +2018,34 @@ guiTypes = {
 				vertical_alignment = center
 			}
 		}
+	}
+		
+	containerWindowType = {
+		name = "slp_menu_GER_container"
+		position = {x=-545 y=4}
+		size = { width=400 height=440 }
+		clipping = no
+		show_position = { x= 545 y = 4 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		show_sound = open_sub_window
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_plain_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "slp_menu_GER_headline"
+			position = {x=145 y=15}
+			font = "hoi_18mbs"
+			text = "SELECT_PORTRAIT"
+			maxWidth = 125
+			maxHeight = 23
+			format = left
+		}
 		
 		containerWindowType = {
 			name = "slp_GER_grid"
