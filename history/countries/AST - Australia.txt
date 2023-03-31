@@ -2,18 +2,19 @@
 
 set_country_flag = has_secondary_leader
 
- set_popularities = {
+set_popularities = {
 	communism = 2
 	conservative_monarchism = 52
 	democratic_monarchism = 44
 	liberal_republic = 2
- }
- set_politics = { 
+}
+
+set_politics = { 
 	ruling_party = conservative_monarchism
 	last_election = "1934.9.15"
 	election_frequency = 36
 	elections_allowed = yes
- }
+}
 
 create_country_leader = {
 	name = "Governor-General Sir Isaac Alfred Isaacs"
@@ -82,7 +83,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
-		#
 	}
 }
 
@@ -117,7 +117,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "President Jack Lang"
+	name = "President John Thomas Lang"
 	desc = ""
 	picture = "gfx/leaders/AST/Portrait_Jack_Lang.dds"
 	expire = "1965.1.1"
@@ -162,6 +162,26 @@ create_country_leader = {
 	picture = "gfx/leaders/AST/Portrait_Earle_Page.dds"
 	expire = "1965.1.1"
 	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President George Frederick Wootten"
+	desc = ""
+	picture = "gfx/leaders/AST/Portrait_Frederick_Wootten.dds"
+	expire = "1965.1.1"
+	ideology = anocrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Oceanian Regency Council"
+	desc = ""
+	picture = "gfx/leaders/AST/Portrait_Oceanian_Council.dds"
+	expire = "1965.1.1"
+	ideology = anocmon
 	traits = {
 	}
 }
