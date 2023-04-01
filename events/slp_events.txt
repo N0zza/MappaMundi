@@ -1764,6 +1764,12 @@ country_event = {
 					name = COG_stratocratic_monarchism_party
 					long_name = COG_stratocratic_monarchism_party_long
 				}
+				
+				set_party_name = {
+					ideology = socialist_monarchy
+					name = COG_socialist_monarchy_party
+					long_name = COG_socialist_monarchy_party_long
+				}
 			}
 		}
 	}
@@ -1814,6 +1820,12 @@ country_event = {
 					name = COG_stratocratic_monarchism_InterimGov
 					long_name = COG_stratocratic_monarchism_InterimGov_long
 				}
+				
+				set_party_name = {
+					ideology = socialist_monarchy
+					name = COG_socialist_monarchy_party
+					long_name = COG_socialist_monarchy_party_long
+				}
 			}
 		}
 	}
@@ -1837,25 +1849,32 @@ country_event = {
 			ROOT = {
 				if = {
 					limit = {
-						GER = {
+						COG = {
 							NOT = {
-								has_government = centrist_monarchism
+								has_government = socialist_monarchy
 							}
 						}
 					}
 					set_politics = {
-						ruling_party = centrist_monarchism
+						ruling_party = socialist_monarchy
 					}
 				}
-				kill_ideology_leader = centrist_monarchism
+				kill_ideology_leader = socialist_monarchy
 				create_country_leader = {
-					name = "Kaiser und Bundespräsident August Wilhelm von Hohenzollern"
-					desc = "POLITICS_GER_CENMON_DESC"
-					picture = "gfx/leaders/GER/Portrait_August_Hohenzollern.dds"
+					name = "Gouverneur Albert Günther Göring"
+					desc = ""
+					picture = "gfx/leaders/NZG/Portrait_Albert_Goering.dds"
 					expire = "1965.1.1"
-					ideology = cenmon
+					ideology = socmon_third_way
 					traits = {
 					}
+				}
+				set_cosmetic_tag = COG_MITTELAFRIKA_ALBERT
+				
+				set_party_name = {
+					ideology = socialist_monarchy
+					name = COG_socialist_monarchy_AlbertGoring
+					long_name = COG_socialist_monarchy_AlbertGoring_long
 				}
 			}
 		}
@@ -1892,6 +1911,49 @@ country_event = {
 				}
 				kill_ideology_leader = centrist_monarchism
 				create_country_leader = {
+					name = "Kaiser und Bundespräsident August Wilhelm von Hohenzollern"
+					desc = "POLITICS_GER_CENMON_DESC"
+					picture = "gfx/leaders/GER/Portrait_August_Hohenzollern.dds"
+					expire = "1965.1.1"
+					ideology = cenmon
+					traits = {
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = slp_menu.52.a
+	}
+}
+
+country_event = {
+	id = slp_menu.53
+	title = slp_menu.53.t
+	desc = slp_menu.53.d
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				if = {
+					limit = {
+						GER = {
+							NOT = {
+								has_government = centrist_monarchism
+							}
+						}
+					}
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+				}
+				kill_ideology_leader = centrist_monarchism
+				create_country_leader = {
 					name = "Frankfurter Nationalversammlung"
 					desc = "POLITICS_GER_CENMON_DESC"
 					picture = "gfx/leaders/GER/Portrait_Frankfurt_Parliament.dds"
@@ -1905,7 +1967,7 @@ country_event = {
 	}
 	
 	option = {
-		name = slp_menu.52.a
+		name = slp_menu.53.a
 	}
 }
 

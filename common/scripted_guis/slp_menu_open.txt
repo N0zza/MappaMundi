@@ -158,7 +158,10 @@ scripted_gui = {
 					limit = {
 						AND = {
 							tag = COG
-							has_government = stratocratic_monarchism
+							OR = {
+								has_government = stratocratic_monarchism
+								has_government = socialist_monarchy
+							}
 						}
 					}
 					set_temp_variable = { show = 1 }
@@ -1803,6 +1806,7 @@ scripted_gui = {
 				COG = {	country_event = { id = slp_menu.49 } }
 				add_to_variable = { COG_port_1 = 1 }
 				set_variable = { COG_port_2 = 0 }
+				set_variable = { COG_port_3 = 0 }
 			}
 			leader_frame2_COG_click = {
 				subtract_from_temp_variable = { show = show_menu_COG }
@@ -1810,6 +1814,15 @@ scripted_gui = {
 				COG = {	country_event = { id = slp_menu.50 } }
 				add_to_variable = { COG_port_2 = 1 }
 				set_variable = { COG_port_1 = 0 }
+				set_variable = { COG_port_3 = 0 }
+			}
+			leader_frame3_COG_click = {
+				subtract_from_temp_variable = { show = show_menu_COG }
+                set_variable = { show_menu_COG = show }
+				COG = {	country_event = { id = slp_menu.51 } }
+				add_to_variable = { COG_port_3 = 1 }
+				set_variable = { COG_port_1 = 0 }
+				set_variable = { COG_port_2 = 0 }
 			}
 		}
 		
@@ -1842,12 +1855,13 @@ scripted_gui = {
 				always = yes
 			}
 			leader_frame1_COG_click_enabled = {
-				has_government = stratocratic_monarchism
 				check_variable = { COG_port_1 < 0.99 }
 			}
 			leader_frame2_COG_click_enabled = {
-				has_government = stratocratic_monarchism
 				check_variable = { COG_port_2 < 0.99 }
+			}
+			leader_frame3_COG_click_enabled = {
+				check_variable = { COG_port_3 < 0.99 }
 			}
 		}
 	}
@@ -1875,14 +1889,14 @@ scripted_gui = {
 			leader_frame1_GER_click = {
 				subtract_from_temp_variable = { show = show_menu_GER }
                 set_variable = { show_menu_GER = show }
-				GER = {	country_event = { id = slp_menu.51 } }
+				GER = {	country_event = { id = slp_menu.52 } }
 				add_to_variable = { GER_port_1 = 1 }
 				set_variable = { GER_port_2 = 0 }
 			}
 			leader_frame2_GER_click = {
 				subtract_from_temp_variable = { show = show_menu_GER }
                 set_variable = { show_menu_GER = show }
-				GER = {	country_event = { id = slp_menu.52 } }
+				GER = {	country_event = { id = slp_menu.53 } }
 				add_to_variable = { GER_port_2 = 1 }
 				set_variable = { GER_port_1 = 0 }
 			}
