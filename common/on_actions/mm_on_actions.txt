@@ -5640,6 +5640,79 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							tag = FR2
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = stratocratic
+									has_government = republican_fascism
+									has_government = fascism
+									has_government = national_socialism
+									has_government = theocratic
+									has_government = right_anarchism
+								}
+							}
+							set_cosmetic_tag = FRA_AUTH
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_french_renames = yes
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = stratocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = GREY_GER2
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_german_renames = yes
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = neutrality
+									has_government = anocratic_republic
+									has_government = democratic
+									has_government = centrist_republic
+									has_government = liberal_republic
+								}
+							}
+							set_cosmetic_tag = FRA_BLUE
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_french_renames = yes
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = vanguardism
+									has_government = communism
+									has_government = socialism_ideology
+									has_government = socialist_monarchy
+								}
+							}
+							set_cosmetic_tag = FRA_SOCIALIST
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_french_renames = yes
+							}
+						}
+					}
+					if = {
+						limit = {
 							tag = GVK
 						}
 						if = {
