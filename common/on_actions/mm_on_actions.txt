@@ -5664,6 +5664,22 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
+									has_government = authoritarian_monarchism
+									has_government = conservative_monarchism
+									has_government = democratic_monarchism
+								}
+							}
+							set_cosmetic_tag = FRA_KINGDOM
+							every_state = {
+								limit = {
+									is_owned_by = ROOT
+								}
+								do_french_renames = yes
+							}
+						}
+						if = {
+							limit = {
+								OR = {
 									has_government = stratocratic_monarchism
 								}
 							}
