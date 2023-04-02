@@ -6118,6 +6118,29 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					tag = FRN
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = centrist_monarchism
+							has_government = democratic_monarchism
+						}
+					}
+					set_cosmetic_tag = GREY_GER2
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_government = centrist_monarchism
+							has_government = democratic_monarchism
+						}
+					}
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
 					tag = UA2
 				}
 				if = {
