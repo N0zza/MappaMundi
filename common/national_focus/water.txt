@@ -21156,8 +21156,9 @@
 		}
 		ARG = {
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = socialism_ideology
 			}
+			set_cosmetic_tag = ARG_2023
 		}
 		ARG = {
 			create_country_leader = {
@@ -21165,13 +21166,25 @@
         		desc = ""
         		picture = "gfx/leaders/ARG/ARG_Fernandez.tga"
         		expire = "1965.1.1"
-        		ideology = liberalism
+        		ideology = left_wing_populism
 			}
 		}
 		URG = {
 			set_cosmetic_tag = URG_2023
 			set_politics = {
 				ruling_party = democratic
+			}
+			set_popularities = {
+				socialism_ideology = 42
+				liberal_republic = 14
+				centrist_republic = 2
+				democratic = 31
+				anocratic_republic = 11
+			}
+			set_party_name = {
+				ideology = democratic
+				name = URG_democratic_2023_party
+				long_name = URG_democratic_2023_party_long
 			}
 		}
 		URG = {
@@ -21187,14 +21200,43 @@
 			set_politics = {
 				ruling_party = socialism_ideology
 			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = BOL_socialism_ideology_2023_party
+				long_name = BOL_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 58
+				liberal_republic = 30
+				democratic = 12
+			}
 		}
 		BOL = {
 			create_country_leader = {
-           		name = "Presidente Luis Alberto Arce Catacora"
-           		desc = ""
-           		picture = "gfx/leaders/BOL/BOL_Arce.tga"
-           		expire = "1965.1.1"
-           		ideology = demsoc
+				name = "Presidente Luis Alberto Arce Catacora"
+				desc = ""
+				picture = "gfx/leaders/BOL/BOL_Arce.tga"
+				expire = "1965.1.1"
+				ideology = left_wing_nationalism
+			}
+		}
+		CHL = {
+			set_politics = {
+				ruling_party = socialism_ideology
+			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = CHL_socialism_ideology_2023_party
+				long_name = CHL_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				vanguardism = 8
+				socialism_ideology = 22
+				liberal_republic = 11
+				centrist_republic = 14
+				democratic = 34
+				anocratic_republic = 9
+				neutrality = 2
 			}
 		}
 		CHL = {
@@ -21203,7 +21245,7 @@
            		desc = ""
            		picture = "gfx/leaders/CHL/CHL_Boric.tga"
            		expire = "1965.1.1"
-           		ideology = liberalism
+           		ideology = demsoc
 			}
 		}
 		COL = {
@@ -21340,11 +21382,26 @@
 			name = Brasília
 		}	
 		BRA = {
-			set_politics = {
-				ruling_party = centrist_republic
-			}
 			set_capital = {
 				state = 1646
+				remember_old_capital = no
+			}
+			set_politics = {
+				ruling_party = socialism_ideology
+			}
+			set_cosmetic_tag = BRA_2023
+			set_popularities = {
+				vanguardism = 1
+				socialism_ideology = 22
+				liberal_republic = 18
+				centrist_republic = 21
+				democratic = 20
+				anocratic_republic = 18
+			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = BRA_socialism_ideology_2023_party
+				long_name = BRA_socialism_ideology_2023_party_long
 			}
 		}
 		BRA = {
@@ -21353,12 +21410,12 @@
            		desc = ""
            		picture = "gfx/leaders/BRA/BRA_fela.tga"
            		expire = "1965.1.1"
-           		ideology = cenrep
+           		ideology = social_democracy
 			}
 		}
 		PAR = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = anocratic_republic
 			}
 		}
 		PAR = {
@@ -21367,7 +21424,7 @@
            		desc = ""
            		picture = "gfx/leaders/PAR/PAR_Mario_Abdo_Benitez.tga"
            		expire = "1965.1.1"
-           		ideology = liberal_conservatism
+           		ideology = national_conservatism
 			}
 		}
 		TRI = {

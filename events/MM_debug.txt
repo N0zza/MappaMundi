@@ -14,22 +14,33 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			SOV = {
-				set_cosmetic_tag = SOV_2023
-				set_popularities = {
-					vanguardism = 100
+			CHL = {
+				set_politics = {
+					ruling_party = socialism_ideology
 				}
+				set_cosmetic_tag = CHL_2023
 				set_party_name = {
-					ideology = vanguardism
-					name = SOV_vanguardism_2023_party
-					long_name = SOV_vanguardism_2023_party_long
+					ideology = socialism_ideology
+					name = CHL_socialism_ideology_2023_party
+					long_name = CHL_socialism_ideology_2023_party_long
 				}
+				set_popularities = {
+					vanguardism = 8
+					socialism_ideology = 22
+					liberal_republic = 11
+					centrist_republic = 14
+					democratic = 34
+					anocratic_republic = 9
+					neutrality = 2
+				}
+			}
+			CHL = {
 				create_country_leader = {
-					name = "Prezidént Gennádij Andréevič Zjugánov"
+					name = "Presidente Gabriel Boric Font"
 					desc = ""
-					picture = "gfx/leaders/Russia/RUS_Zyuganov.tga"
+					picture = "gfx/leaders/CHL/CHL_Boric.tga"
 					expire = "1965.1.1"
-					ideology = totsoc
+					ideology = demsoc
 				}
 			}
 		}
