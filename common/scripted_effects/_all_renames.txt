@@ -229,6 +229,29 @@ do_all_renames = {
 		do_serbocroat_renames = yes
 	}
 	
+	### JAP ###
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = JAP 
+					tag = PSC
+					tag = RGC 
+					tag = RFC
+					tag = SCA 
+					tag = NSX
+					tag = EHC
+					AND = {
+						tag = CAL
+						has_government = fascism
+					}
+				  	is_subject_of = JAP
+				}
+			}
+		}
+		do_japanese_renames = yes
+	}
+	
 	### CHI ###
 	if = {
 		limit = {
@@ -236,12 +259,6 @@ do_all_renames = {
 				capital_scope = {
 					is_core_of = CHI
 				} 
-				NOT = { 
-					OR = { 
-						tag = MAN 
-						tag = MEN
-					}
-				}
 			}
 		}
 		do_chinese_renames = yes
