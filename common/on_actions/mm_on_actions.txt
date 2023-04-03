@@ -5425,7 +5425,6 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
-									has_government = anocratic_republic
 									has_government = neutrality
 									has_government = stratocratic
 									has_government = republican_fascism
@@ -5543,8 +5542,9 @@ on_actions = {
 							limit = {
 								OR = {
 									has_government = liberal_republic
-									has_government = democratic
 									has_government = centrist_republic
+									has_government = democratic
+									has_government = anocratic_republic
 								}
 							}
 							drop_cosmetic_tag = yes
