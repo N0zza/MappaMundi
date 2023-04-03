@@ -5640,6 +5640,76 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							tag = MEX
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = theocratic
+								}
+							}
+							set_cosmetic_tag = MEX_THEOC
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = neutrality
+									has_government = stratocratic
+									has_government = stratocratic_monarchism
+									has_government = republican_fascism
+									has_government = fascism
+									has_government = national_socialism
+									has_government = right_anarchism
+								}
+							}
+							set_cosmetic_tag = MEX_AUTH
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = monarchism
+									has_government = conservative_monarchism
+									has_government = democratic_monarchism
+									has_government = authoritarian_monarchism
+									has_government = anocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = MEX_MONARCHY
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = centrist_monarchism
+								}
+							}
+							set_cosmetic_tag = MEX_CENMON
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = anocratic_republic
+									has_government = democratic
+									has_government = centrist_republic
+									has_government = liberal_republic
+									has_government = socialism_ideology
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = socialist_monarchy
+									has_government = communism
+									has_government = vanguardism
+									has_government = left_anarchism
+								}
+							}
+							set_cosmetic_tag = MEX_SOCIALIST
+						}
+					}
+					if = {
+						limit = {
 							tag = FR2
 						}
 						if = {
