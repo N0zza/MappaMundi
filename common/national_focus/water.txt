@@ -19661,6 +19661,16 @@
 		}
 		every_state = {
 			limit = {
+				OR = {
+					is_core_of = ERH
+				}
+			}
+			ERH = {
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
 				is_core_of = NGU
 			}
 			PNG = {
@@ -20368,6 +20378,30 @@
         		picture = "gfx/leaders/FRA/FRA_Emmanuel_Macron.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
+			}
+		}
+		ERH = {
+			set_politics = {
+				ruling_party = centrist_republic
+			}
+			set_popularities = {
+				centrist_republic = 100
+			}
+		}
+		every_state = {
+			limit = {
+				OR = {
+					NOT = {
+						is_owned_by = WTR
+						is_owned_by = WES
+						is_owned_by = VCT
+						is_owned_by = OML
+						is_owned_by = PAL
+					}
+				}
+			}
+			ERH = {
+				add_state_core = PREV
 			}
 		}
 		USA = {
