@@ -89,6 +89,228 @@ on_actions = {
 	}
 	
 	on_startup = {
+		#Set up De Jure Borders.
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_de_jure_borders
+						option = DE_JURE_BORDERS
+					}
+				}
+				
+				set_global_flag = de_jure_borders
+				
+				if = {
+					limit = {
+						has_start_date > 2022.01.01
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = CA0
+								is_owned_by = CA1
+								is_owned_by = CA2
+								is_owned_by = CA3
+								is_owned_by = CA4
+								is_owned_by = CA5
+								is_owned_by = CA6
+								is_owned_by = CA7
+								is_owned_by = CA8
+								is_owned_by = CA9
+								is_owned_by = LRA
+							}
+						}
+						CAR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = COG
+							}
+						}
+						COG = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = OM2
+							}
+						}
+						ETH = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = IS2
+								is_owned_by = AQ2
+							}
+						}
+						SOM = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = IS4
+							}
+						}
+						MZB = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = AQ3
+								is_owned_by = IS3
+								NOT = {
+									is_core_of = NGR
+									is_core_of = CHA
+									is_core_of = CMR
+								}
+							}
+						}
+						NGA = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = NGR
+							}
+						}
+						NGR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = CHA
+								NOT = {
+									is_owned_by = LBA
+								}
+							}
+						}
+						CHA = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = CMR
+							}
+						}
+						CMR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = CMR
+							}
+						}
+						CMR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = AQ1
+								is_owned_by = AZW
+								NOT = {
+									is_core_of = VOL
+								}
+							}
+						}
+						MLI = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = VOL
+							}
+						}
+						VOL = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = SR1
+								is_owned_by = SR2
+								is_owned_by = SR3
+								is_owned_by = RJV
+								
+								state = 1208
+							}
+						}
+						SYR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = { # +100000 social credit
+						limit = {
+							OR = {
+								is_owned_by = CHI
+							}
+						}
+						PRC = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = UKR
+							}
+						}
+						UKR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = TRN
+							}
+						}
+						MOL = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = ABK
+								is_owned_by = SOS
+							}
+						}
+						GEO = {
+							transfer_state = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	on_startup = {
 		#USSR before the west russian war
 		effect = {
 			if = {
