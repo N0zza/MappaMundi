@@ -17,211 +17,57 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 			every_state = {
 				limit = {
 					OR = {
-						is_owned_by = CA0
-						is_owned_by = CA1
-						is_owned_by = CA2
-						is_owned_by = CA3
-						is_owned_by = CA4
-						is_owned_by = CA5
-						is_owned_by = CA6
-						is_owned_by = CA7
-						is_owned_by = CA8
-						is_owned_by = CA9
-						is_owned_by = LRA
-					}
-				}
-				CAR = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = COG
-					}
-				}
-				COG = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_owned_by = OM2
-					}
-				}
-				ETH = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_owned_by = IS2
-						is_owned_by = AQ2
-					}
-				}
-				SOM = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = NGA
-					}
-				}
-				NGA = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = CHA
-					}
-				}
-				CHA = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = CMR
-					}
-				}
-				CMR = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						state = 18655
-					}
-				}
-				NGR = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_owned_by = AQ1
-						is_owned_by = AZW
-						is_owned_by = IS1
-					}
-				}
-				MLI = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = VOL
-					}
-				}
-				VOL = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_owned_by = WES
-					}
-				}
-				MOR = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_owned_by = IS4
-					}
-				}
-				MZB = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_owned_by = SR1
-						is_owned_by = SR2
-						is_owned_by = SR3
-						is_owned_by = RJV
+						#Africa
+						is_owned_by = EGY
+						is_owned_by = PAL
+						is_owned_by = JOR
+						is_owned_by = CYP
+						is_owned_by = MLT
+						is_owned_by = SUD
+						is_owned_by = TAQ
+						is_owned_by = DGI
+						is_owned_by = SML
+						is_core_of = UGA
+						is_owned_by = KEN
+						is_owned_by = TZN
+						is_owned_by = ZAN
+						is_owned_by = MMB
+						is_owned_by = MLW
+						is_owned_by = ZAM
+						is_owned_by = ZIM
+						is_owned_by = BOT
+						is_owned_by = SWZ
+						is_owned_by = LES
 						
-						state = 1208
+						#Yemen
+						AND = {
+							AND = {
+								is_core_of = YEM
+								NOT = {
+									is_owned_by = YEM
+								}
+							}
+							NOT = {
+								is_owned_by = SAU
+								is_owned_by = IMO
+							}
+						}
+						
+						#The Americas
+						is_owned_by = FAL
+						is_owned_by = GYA
+						is_owned_by = TRI
+						is_owned_by = BSA
+						is_owned_by = BAR
+						is_owned_by = BAS
+						is_owned_by = JAM
+						is_owned_by = BLZ
+						is_owned_by = BAH
+						is_owned_by = BER
+						is_owned_by = NFL
 					}
 				}
-				SYR = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_owned_by = YM1
-						is_owned_by = YM2
-						is_owned_by = AQ4
-					}
-				}
-				YEM = {
-					transfer_state = PREV
-				}
-			}
-			every_state = { # +100000 social credit
-				limit = {
-					OR = {
-						is_owned_by = CHI
-					}
-				}
-				PRC = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_owned_by = NOC
-					}
-				}
-				CYP = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = UKR
-					}
-				}
-				UKR = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_core_of = TRN
-					}
-				}
-				MOL = {
-					transfer_state = PREV
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						is_owned_by = ABK
-						is_owned_by = SOS
-					}
-				}
-				GEO = {
+				ENG = {
 					transfer_state = PREV
 				}
 			}
