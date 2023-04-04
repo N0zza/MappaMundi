@@ -1,21 +1,13 @@
-﻿capital = 525 #South Korea - Seoul
-set_cosmetic_tag = KOR_JAP
+﻿capital = 525 #Keijō (Seoul)
 
-	set_popularities = {
-		democratic 
-			 = 10
-		fascism
-			 = 10
-		communism
-			 = 5
-		stratocratic_monarchism
-			 = 55
-		neutrality
-			 = 20
-		
-	}
-	set_politics = { 
- ruling_party = stratocratic_monarchism
+set_cosmetic_tag = JAP_COLONY
+
+set_popularities = {
+	stratocratic_monarchism = 100
+}
+
+set_politics = { 
+	ruling_party = stratocratic_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -26,7 +18,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/KOR/Kazushige_Ugaki.dds"
 	expire = "1965.1.1"
-	ideology = stratmon
+	ideology = stratmon_japanese_colonialism
 	traits = {
 		#
 	}

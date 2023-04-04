@@ -1,51 +1,54 @@
 ﻿capital = 611
-set_cosmetic_tag = MEN_ECA
 
-	set_popularities = {
-		democratic 
-			 = 0
-			
-		stratocratic_monarchism
-			 = 80
-		communism
-			 = 0
-			
-		fascism
-			 = 20
-		}
+set_cosmetic_tag = JAP_COLONY
+
+set_popularities = {
+	anocratic_monarchism = 100
+}
+
 set_politics = { 
-	ruling_party = stratocratic_monarchism
+	ruling_party = anocratic_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Li Shou-hsin"
+	name = "Hsingcheng Ch'angkuan Li Shou-hsin"
 	desc = "POLITICS_LI_SHOUXIN_DESC"
 	picture = "gfx/leaders/MEN/Portrait_Li_Shouxin.dds"
 	expire = "1945.1.20"
-	ideology = fascism_ideology
+	ideology = anocmon_japanese_colonialism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Li Shou-hsin"
+	name = "Chuhsi Yün-tuan Wang-ch'u-k'ei"
 	desc = "POLITICS_LI_SHOUXIN_DESC"
-	picture = "gfx/leaders/MEN/Portrait_Li_Shouxin.dds"
+	picture = "gfx/leaders/MEN/MEN_Yondonwangchug.tga"
 	expire = "1945.1.20"
-	ideology = authmon
+	ideology = stratmon_japanese_colonialism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Li Shou-hsin"
+	name = "Shuseki Yunden Wanchuku"
 	desc = "POLITICS_LI_SHOUXIN_DESC"
-	picture = "gfx/leaders/MEN/Portrait_Li_Shouxin.dds"
+	picture = "gfx/leaders/MEN/MEN_Yondonwangchug.tga"
 	expire = "1945.1.20"
-	ideology = stratmon
+	ideology = japanese_colonialism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Shuseki Demuchukudonrobu"
+	desc = "POLITICS_LI_SHOUXIN_DESC"
+	picture = "gfx/leaders/MEN/Demchugdongrub.png"
+	expire = "1945.1.20"
+	ideology = authmon_japanese_colonialism
 	traits = {
 	}
 }

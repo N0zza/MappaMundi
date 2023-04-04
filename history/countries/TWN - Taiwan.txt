@@ -1,24 +1,16 @@
 ﻿capital = 524
 
+set_cosmetic_tag = JAP_COLONY
 
-set_cosmetic_tag = TWN_JAP
-
-
-	set_popularities = {
-		democratic 
-			 = 20
-		fascism
-			 = 10
-		liberal_republic
-			 = 15
-		authoritarian_monarchism
-			 = 55
-	}
-	set_politics = { 
- ruling_party = authoritarian_monarchism
-		last_election = "1938.3.28"
-		election_frequency = 48
-		elections_allowed = no
+set_popularities = {
+	authoritarian_monarchism = 100
+}
+	
+set_politics = { 
+	ruling_party = authoritarian_monarchism
+	last_election = "1938.3.28"
+	election_frequency = 48
+	elections_allowed = no
 }
 
 create_country_leader = {
@@ -26,7 +18,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/TWN/Nakagawa_Kenzo.tga"
 	expire = "1944.6.26"
-	ideology = fascism_ideology
+	ideology = japanese_colonialism
 	traits = {
 		
 	}
@@ -37,7 +29,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/TWN/Nakagawa_Kenzo.tga"
 	expire = "1944.6.26"
-	ideology = authmon
+	ideology = authmon_japanese_colonialism
 	traits = {
 		
 	}

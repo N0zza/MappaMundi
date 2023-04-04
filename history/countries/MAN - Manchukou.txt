@@ -2,23 +2,23 @@
 
 set_cosmetic_tag = MAN_JAP
 
-	set_popularities = {
-		stratocratic_monarchism
-			 = 100
-		}
-	set_politics = { 
- ruling_party = stratocratic_monarchism
+set_popularities = {
+	stratocratic_monarchism = 100
+}
+
+set_politics = { 
+	ruling_party = stratocratic_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Huángdì Puyi"
+	name = "Sen-tsūtei Aishingyoro Pūī"
 	desc = ""
 	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 	expire = "1960.1.1"
-	ideology = stratmon
+	ideology = stratmon_japanese_colonialism
 	traits = {
 		#
 	}
@@ -171,11 +171,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Chiji Nobusuke Kishi"
+	name = "Chiji Kishi Nobusuke"
 	desc = ""
 	picture = "gfx/leaders/MAN/MAN_Kishi.tga"
 	expire = "1965.1.1"
-	ideology = authmon
+	ideology = authmon_japanese_colonialism
 	traits = {
 	}
 }
