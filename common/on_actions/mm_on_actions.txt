@@ -108,7 +108,7 @@ on_actions = {
 							has_start_date < 2049.01.01
 						}
 					}
-					log = "2023 De Jure Borders"
+					immediate = { log = "2023 De Jure Borders" }
 					every_state = {
 						limit = {
 							OR = {
@@ -275,9 +275,31 @@ on_actions = {
 						limit = {
 							OR = {
 								is_owned_by = CHI
+								is_owned_by = HKG
+								is_owned_by = MCU
 							}
 						}
 						PRC = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = NSE
+							}
+						}
+						IND = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = ACH
+							}
+						}
+						IDS = {
 							transfer_state = PREV
 						}
 					}
@@ -305,6 +327,7 @@ on_actions = {
 						limit = {
 							OR = {
 								is_core_of = TRN
+								is_owned_by = GAU
 							}
 						}
 						MOL = {
@@ -322,6 +345,26 @@ on_actions = {
 							transfer_state = PREV
 						}
 					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = NGK
+							}
+						}
+						AZR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = KPK
+							}
+						}
+						UZB = {
+							transfer_state = PREV
+						}
+					}
 				}
 				if = {
 					limit = {
@@ -330,7 +373,7 @@ on_actions = {
 							has_start_date < 1937.01.01
 						}
 					}
-					log = "1936 De Jure Borders"
+					immediate = { log = "1936 De Jure Borders" }
 					every_state = {
 						limit = {
 							OR = {
@@ -421,206 +464,6 @@ on_actions = {
 							}
 						}
 						CHI = {
-							transfer_state = PREV
-						}
-					}
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = NEP
-							}
-						}
-						NEP = {
-							transfer_state = PREV
-						}
-					}
-					every_state = {
-						limit = {
-							OR = {
-								AND = {
-									is_core_of = SHA
-									NOT = {
-										is_owned_by = CHI
-										is_owned_by = SIA
-									}
-								}
-							}
-						}
-						SHA = {
-							transfer_state = PREV
-						}
-					}
-					every_state = {
-						limit = {
-							OR = {
-								AND = {
-									is_core_of = RAJ
-									is_owned_by = SHA
-									NOT = {
-										is_owned_by = CHI
-										is_owned_by = NEP
-										is_owned_by = TIB
-									}
-								}
-							}
-						}
-						NEP = {
-							transfer_state = PREV
-						}
-					}
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = INS
-							}
-						}
-						INS = {
-							transfer_state = PREV
-						}
-					}
-					every_state = {
-						limit = {
-							OR = {
-								is_owned_by = INS
-								is_owned_by = SUR
-								is_owned_by = CRC
-							}
-						}
-						HOL = {
-							transfer_state = PREV
-						}
-					}
-					
-					# The Great British Empire on actions #
-					
-					every_state = { 
-						limit = {
-							OR = {
-								#Africa & Middle East
-								is_owned_by = EGY
-								is_owned_by = PAL
-								is_owned_by = JOR
-								is_owned_by = KUW
-								is_owned_by = CYP
-								is_owned_by = MLT
-								is_owned_by = SUD
-								is_owned_by = TAQ
-								is_owned_by = DGI
-								is_owned_by = SML
-								is_core_of = UGA
-								is_owned_by = KEN
-								is_owned_by = TZN
-								is_owned_by = ZAN
-								is_owned_by = MMB
-								is_owned_by = MLW
-								is_owned_by = ZAM
-								is_owned_by = ZIM
-								is_owned_by = BOT
-								is_owned_by = SWZ
-								is_owned_by = LES
-								is_owned_by = GB2
-								is_owned_by = GAM
-								is_owned_by = SIE
-								is_owned_by = HSL
-								is_owned_by = GNH
-								is_owned_by = AHI
-								is_owned_by = GCO
-								is_owned_by = WTO
-								is_owned_by = NGA
-								is_owned_by = NCM
-								is_owned_by = SCM
-								
-								#Yemen
-								AND = {
-									AND = {
-										is_core_of = YEM
-										NOT = {
-											is_owned_by = YEM
-										}
-									}
-									NOT = {
-										is_owned_by = SAU
-										is_owned_by = IMO
-									}
-								}
-								
-								#Trucial States
-								AND = {
-									is_core_of = UAE
-									is_owned_by = QAT
-									is_owned_by = BHR
-									NOT = {
-										is_owned_by = OMN
-										is_owned_by = SAU
-									}
-								}
-								
-								#Asia
-								is_owned_by = SRL
-								is_owned_by = HKG
-								is_owned_by = SOL
-								is_owned_by = FIJ
-								is_owned_by = BWP
-								is_owned_by = KIR
-								is_owned_by = TON
-								is_owned_by = PTC
-								AND = {
-									is_core_of = MAL
-									is_owned_by = SRW
-									is_owned_by = BEI
-									NOT = {
-										is_core_of = INS
-										is_owned_by = SIA
-									}
-								}
-								
-								#The Americas
-								is_owned_by = FAL
-								is_owned_by = GYA
-								is_owned_by = TRI
-								is_owned_by = BSA
-								is_owned_by = BAR
-								is_owned_by = BAS
-								is_owned_by = JAM
-								is_owned_by = BLZ
-								is_owned_by = BAH
-								is_owned_by = BER
-								is_owned_by = NFL
-							}
-						}
-						ENG = {
-							transfer_state = PREV
-						}
-					}
-					
-					# Australia 
-					
-					every_state = {
-						limit = {
-							OR = {
-								is_owned_by = PNG
-								is_owned_by = NGU
-								is_owned_by = NFI
-								is_owned_by = NAU
-							}
-						}
-						AST = {
-							transfer_state = PREV
-						}
-					}
-					
-					# New Zealand
-					
-					every_state = {
-						limit = {
-							OR = {
-								is_owned_by = SAM
-								is_owned_by = TKL
-								is_owned_by = NIU
-								is_owned_by = CKI
-							}
-						}
-						NZL = {
 							transfer_state = PREV
 						}
 					}
