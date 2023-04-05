@@ -1,19 +1,15 @@
 ﻿capital = 1828
 
-	set_popularities = {
-		authoritarian_monarchism 
-			 = 5
-		theocratic
-			 = 5
-		conservative_monarchism
-			 = 70
-		liberal_republic
-			 = 12
-		socialism_ideology
-			 = 8
-		}
-	set_politics = { 
- ruling_party = conservative_monarchism
+set_popularities = {
+	authoritarian_monarchism  = 5
+	theocratic = 5
+	conservative_monarchism = 70
+	liberal_republic = 12
+	socialism_ideology = 8
+}
+
+set_politics = { 
+	ruling_party = conservative_monarchism
 	last_election = "1933.1.24"
 	election_frequency = 48
 	elections_allowed = no
@@ -26,7 +22,16 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
-		#
+	}
+}
+
+create_country_leader = {
+	name = "Óglaigh na hÉireann"
+	desc = ""
+	picture = "gfx/leaders/NIR/Portrait_IRA.dds"
+	expire = "1989.1.1"
+	ideology = military_junta
+	traits = {
 	}
 }
 
