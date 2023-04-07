@@ -6271,6 +6271,14 @@ on_actions = {
 						}
 						if = {
 							limit = {
+								OR = {
+									has_government = liberal_republic
+								}
+							}
+							set_cosmetic_tag = USA_BLUE
+						}
+						if = {
+							limit = {
 								NOT = {
 									OR = {
 										has_government = vanguardism
@@ -6278,6 +6286,7 @@ on_actions = {
 										has_government = centrist_monarchism
 										has_government = conservative_monarchism
 										has_government = stratocratic_monarchism
+										has_government = liberal_republic
 									}
 								}
 							}
