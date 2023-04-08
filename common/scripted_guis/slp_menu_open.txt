@@ -172,7 +172,6 @@ scripted_gui = {
 					limit = {
 						AND = {
 							tag = GER
-							has_government = centrist_monarchism
 						}
 					}
 					set_temp_variable = { show = 1 }
@@ -1892,6 +1891,8 @@ scripted_gui = {
 				GER = {	country_event = { id = slp_menu.52 } }
 				add_to_variable = { GER_port_1 = 1 }
 				set_variable = { GER_port_2 = 0 }
+				set_variable = { GER_port_3 = 0 }
+				set_variable = { GER_port_4 = 0 }
 			}
 			leader_frame2_GER_click = {
 				subtract_from_temp_variable = { show = show_menu_GER }
@@ -1899,6 +1900,26 @@ scripted_gui = {
 				GER = {	country_event = { id = slp_menu.53 } }
 				add_to_variable = { GER_port_2 = 1 }
 				set_variable = { GER_port_1 = 0 }
+				set_variable = { GER_port_3 = 0 }
+				set_variable = { GER_port_4 = 0 }
+			}
+			leader_frame3_GER_click = {
+				subtract_from_temp_variable = { show = show_menu_GER }
+                set_variable = { show_menu_GER = show }
+				GER = {	country_event = { id = slp_menu.54 } }
+				add_to_variable = { GER_port_3 = 1 }
+				set_variable = { GER_port_1 = 0 }
+				set_variable = { GER_port_2 = 0 }
+				set_variable = { GER_port_4 = 0 }
+			}
+			leader_frame4_GER_click = {
+				subtract_from_temp_variable = { show = show_menu_GER }
+                set_variable = { show_menu_GER = show }
+				GER = {	country_event = { id = slp_menu.55 } }
+				add_to_variable = { GER_port_4 = 1 }
+				set_variable = { GER_port_1 = 0 }
+				set_variable = { GER_port_2 = 0 }
+				set_variable = { GER_port_3 = 0 }
 			}
 		}
 		
@@ -1931,12 +1952,16 @@ scripted_gui = {
 				always = yes
 			}
 			leader_frame1_GER_click_enabled = {
-				has_government = centrist_monarchism
 				check_variable = { GER_port_1 < 0.99 }
 			}
 			leader_frame2_GER_click_enabled = {
-				has_government = centrist_monarchism
 				check_variable = { GER_port_2 < 0.99 }
+			}
+			leader_frame3_GER_click_enabled = {
+				check_variable = { GER_port_3 < 0.99 }
+			}
+			leader_frame4_GER_click_enabled = {
+				check_variable = { GER_port_4 < 0.99 }
 			}
 		}
 	}

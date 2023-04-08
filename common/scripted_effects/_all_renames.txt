@@ -437,6 +437,17 @@ do_all_renames = {
 						has_government = republican_fascism
 						has_government  = stratocratic
 					}
+					AND = {
+						tag = GMA
+						has_government  = national_socialism
+						has_government = fascism
+						has_government = monarchism
+						has_government  = stratocratic_monarchism
+						has_government  = stratocratic
+						has_government = authoritarian_monarchism
+						has_government = centrist_monarchism
+						has_government = conservative_monarchism
+					}
 				}
 			}										
 		}
@@ -1014,10 +1025,44 @@ do_all_renames = {
 							has_government = right_anarchism
 						}
 					}
+					AND = {
+						tag = USA
+						OR = {
+							has_government = authoritarian_monarchism
+							has_government = democratic_monarchism
+							has_government = conservative_monarchism
+							has_government = stratocratic_monarchism
+							has_government = monarchism
+						}
+					}
 				}
 			}
 		}
 		do_english_renames = yes
+	}
+	
+	### USA ###
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					AND = {
+						tag = USA
+						NOT = {
+							OR = {
+								has_government = authoritarian_monarchism
+								has_government = democratic_monarchism
+								has_government = conservative_monarchism
+								has_government = stratocratic_monarchism
+								has_government = monarchism
+								has_government = national_socialism
+							}
+						}
+					}
+				}
+			}
+		}
+		do_american_renames = yes
 	}
 
 	### BLR ###

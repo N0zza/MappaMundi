@@ -1972,6 +1972,92 @@ country_event = {
 }
 
 country_event = {
+	id = slp_menu.54
+	title = slp_menu.54.t
+	desc = slp_menu.54.d
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				if = {
+					limit = {
+						GER = {
+							NOT = {
+								has_government = national_socialism
+							}
+						}
+					}
+					set_politics = {
+						ruling_party = national_socialism
+					}
+				}
+				kill_ideology_leader = national_socialism
+				create_country_leader = {
+					name = "Führer und Reichskanzler Adolf Hitler"
+					desc = "POLITICS_GER_NATSOC_DESC"
+					picture = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler.dds"
+					expire = "1965.1.1"
+					ideology = natsoc
+					traits = {
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = slp_menu.54.a
+	}
+}
+
+country_event = {
+	id = slp_menu.55
+	title = slp_menu.55.t
+	desc = slp_menu.55.d
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				if = {
+					limit = {
+						GER = {
+							NOT = {
+								has_government = national_socialism
+							}
+						}
+					}
+					set_politics = {
+						ruling_party = national_socialism
+					}
+				}
+				kill_ideology_leader = national_socialism
+				create_country_leader = {
+					name = "Reichsführer Ernst Julius Röhm"
+					desc = ""
+					picture = "gfx/leaders/BAY/BAY_Rohm.tga"
+					expire = "1965.1.1"
+					ideology = natsoc
+					traits = {
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = slp_menu.55.a
+	}
+}
+
+country_event = {
 	id = slp_menu.98
 	title = slp_menu.98.t
 	desc = slp_menu.98.d

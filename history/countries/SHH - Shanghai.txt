@@ -1,14 +1,12 @@
 ﻿capital = 3172
 
+set_popularities = {
+	democratic  = 30
+	neutrality = 70
+}
 
-	set_popularities = {
-		democratic 
-			 = 30
-		neutrality
-			 = 70
-		}
-	set_politics = { 
- ruling_party = neutrality
+set_politics = { 
+	ruling_party = neutrality
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -30,8 +28,7 @@ create_country_leader = {
 	picture = "gfx/leaders/To_be_added.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		
+	traits = {	
 	}
 }
 
@@ -42,7 +39,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		
 	}
 }
 
@@ -53,6 +49,15 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		
+	}
+}
+
+create_country_leader = {
+	name = "Zhǔxí Su Xiwen"
+	desc = ""
+	picture = "gfx/leaders/SHH/Portrait_Su_Xiwen.dds"
+	expire = "1965.1.1"
+	ideology = repcorp
+	traits = {
 	}
 }
