@@ -1,16 +1,18 @@
 ﻿capital = 2267
 
+set_popularities = {
+	communism = 4
+	socialism_ideology = 20
+	liberal_republic = 10
+	centrist_republic = 30
+	democratic = 15
+	anocratic_republic = 15
+	neutrality = 1
+	republican_fascism = 5
+}
 
-	set_popularities = {
-		democratic 
-			 = 60
-		republican_fascism
-			 = 10
-		vanguardism
-			 = 30
-		}
-	set_politics = { 
- ruling_party = democratic
+set_politics = { 
+	ruling_party = centrist_republic
 	last_election = "1960.1.1"
 	election_frequency = 20
 	elections_allowed = no # none after offset 1
@@ -24,6 +26,26 @@ create_country_leader = {
 	ideology = totsoc
 	traits = {
 		
+	}
+}
+
+create_country_leader = {
+	name = "Predsjednice Ivo Andrić"
+	desc = ""
+	picture = "gfx/leaders/BOS/BOS_Andric_condem.tga"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Predsjednice Ivo Andrić"
+	desc = ""
+	picture = "gfx/leaders/BOS/BOS_Andric_condem.tga"
+	expire = "1965.1.1"
+	ideology = directorial_republic
+	traits = {
 	}
 }
 

@@ -13634,10 +13634,11 @@
 				long_name = CRO_democratic_2023_party_long
 			}
 			set_popularities = {
-				democratic = 50
 				socialism_ideology = 27
-				liberal_republic = 11
-				centrist_republic = 12
+				liberal_republic = 10
+				centrist_republic = 13
+				democratic = 43
+				anocratic_republic = 7
 			}
 		}
 		CRO = {
@@ -13659,10 +13660,11 @@
 				long_name = SLV_liberal_republic_2023_party_long
 			}
 			set_popularities = {
-				liberal_republic = 48
-				centrist_republic = 30
 				socialism_ideology = 13
+				liberal_republic = 46
+				centrist_republic = 2
 				democratic = 9
+				anocratic_republic = 30
 			}
 		}
 		SLV = {
@@ -13676,19 +13678,20 @@
 		}
 		BOS = {
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = centrist_republic
 			}
-			set_cosmetic_tag = BOS_2023
 			set_party_name = {
-				ideology = socialism_ideology
-				name = BOS_socialism_ideology_2023_party
-				long_name = BOS_socialism_ideology_2023_party_long
+				ideology = centrist_republic
+				name = BOS_centrist_republic_2023_party
+				long_name = BOS_centrist_republic_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 33
-				centrist_republic = 31
-				democratic = 19
-				liberal_republic = 17
+				socialism_ideology = 17
+				liberal_republic = 14
+				centrist_republic = 26
+				democratic = 24
+				anocratic_republic = 17
+				republican_fascism = 2
 			}
 		}
 		BOS = {
@@ -13697,7 +13700,7 @@
            		desc = ""
            		picture = "gfx/leaders/BOS/BOS_Cvijanovic.tga"
            		expire = "1965.1.1"
-           		ideology = social_democracy
+           		ideology = directorial_republic
 			}
 		}
 		MNT = {
@@ -21305,6 +21308,21 @@
 			}
 		}
 		COL = {
+			set_party_name = {
+				ideology = socialism_ideology
+				name = COL_socialism_ideology_2023_party
+				long_name = COL_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				vanguardism = 2
+				socialism_ideology = 19
+				liberal_republic = 36
+				centrist_republic = 10
+				democratic = 25
+				anocratic_republic = 8
+			}
+		}
+		COL = {
 			create_country_leader = {
            		name = "Presidente Gustavo Francisco Petro Urrego"
            		desc = ""
@@ -21314,18 +21332,48 @@
 			}
 		}
 		ECU = {
+			set_politics = {
+				ruling_party = democratic
+			}
+			set_party_name = {
+				ideology = democratic
+				name = ECU_democratic_2023_party
+				long_name = ECU_democratic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 46
+				liberal_republic = 19
+				centrist_republic = 12
+				democratic = 11
+				anocratic_republic = 12
+			}
+		}
+		ECU = {
 			create_country_leader = {
            		name = "Presidente Guillermo Alberto Santiago Lasso Mendoza"
            		desc = ""
            		picture = "gfx/leaders/ECU/ECU_Lasso.tga"
            		expire = "1965.1.1"
-           		ideology = demsoc
+           		ideology = liberal_conservatism
 			}
 		}
 		PRU = {
-			set_cosmetic_tag = PRU_2023
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = anocratic_republic
+			}
+			set_cosmetic_tag = PRU_2023
+			set_party_name = {
+				ideology = anocratic_republic
+				name = PRU_anocratic_republic_2023_party
+				long_name = PRU_anocratic_republic_2023_party_long
+			}
+			set_popularities = {
+				communism = 12
+				socialism_ideology = 19
+				liberal_republic = 12
+				centrist_republic = 15
+				democratic = 16
+				anocratic_republic = 26
 			}
 		}
 		PRU = {
@@ -21334,7 +21382,7 @@
            		desc = ""
            		picture = "gfx/leaders/PRU/PRU_Boluarte.tga"
            		expire = "1965.1.1"
-           		ideology = cenrep
+           		ideology = right_wing_populism
 			}
 		}
 		VEN = {

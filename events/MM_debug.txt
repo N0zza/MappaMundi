@@ -14,61 +14,28 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						#Africa
-						is_owned_by = EGY
-						is_owned_by = PAL
-						is_owned_by = JOR
-						is_owned_by = CYP
-						is_owned_by = MLT
-						is_owned_by = SUD
-						is_owned_by = TAQ
-						is_owned_by = DGI
-						is_owned_by = SML
-						is_core_of = UGA
-						is_owned_by = KEN
-						is_owned_by = TZN
-						is_owned_by = ZAN
-						is_owned_by = MMB
-						is_owned_by = MLW
-						is_owned_by = ZAM
-						is_owned_by = ZIM
-						is_owned_by = BOT
-						is_owned_by = SWZ
-						is_owned_by = LES
-						
-						#Yemen
-						AND = {
-							AND = {
-								is_core_of = YEM
-								NOT = {
-									is_owned_by = YEM
-								}
-							}
-							NOT = {
-								is_owned_by = SAU
-								is_owned_by = IMO
-							}
-						}
-						
-						#The Americas
-						is_owned_by = FAL
-						is_owned_by = GYA
-						is_owned_by = TRI
-						is_owned_by = BSA
-						is_owned_by = BAR
-						is_owned_by = BAS
-						is_owned_by = JAM
-						is_owned_by = BLZ
-						is_owned_by = BAH
-						is_owned_by = BER
-						is_owned_by = NFL
-					}
+			COL = {
+				set_party_name = {
+					ideology = socialism_ideology
+					name = COL_socialism_ideology_2023_party
+					long_name = COL_socialism_ideology_2023_party_long
 				}
-				ENG = {
-					transfer_state = PREV
+				set_popularities = {
+					vanguardism = 2
+					socialism_ideology = 19
+					liberal_republic = 36
+					centrist_republic = 10
+					democratic = 25
+					anocratic_republic = 8
+				}
+			}
+			COL = {
+				create_country_leader = {
+					name = "Presidente Gustavo Francisco Petro Urrego"
+					desc = ""
+					picture = "gfx/leaders/COL/COL_Petro.tga"
+					expire = "1965.1.1"
+					ideology = demsoc
 				}
 			}
 		}
