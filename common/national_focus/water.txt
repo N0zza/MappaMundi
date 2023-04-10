@@ -20719,9 +20719,10 @@
 				long_name = MEX_socialism_ideology_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 55
+				socialism_ideology = 48.8
+				liberal_republic = 8.4
+				centrist_republic = 11.8
 				democratic = 31
-				liberal_republic = 14
 			}
 		}
 		MEX = {
@@ -20823,6 +20824,10 @@
 			set_politics = {
 				ruling_party = centrist_monarchism
 			}
+			set_popularities = {
+				centrist_monarchism = 84
+				conservative_monarchism = 16
+			}
 		}
 		BLZ = {
 			create_country_leader = {
@@ -20834,17 +20839,43 @@
 			}
 		}
 		COS = {
+			set_party_name = {
+				ideology = democratic
+				name = COS_democratic_2023_party
+				long_name = COS_democratic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 10
+				liberal_republic = 34
+				centrist_republic = 16
+				democratic = 28
+				anocratic_republic = 12
+			}
+		}
+		COS = {
 			create_country_leader = {
            		name = "Presidente Rodrigo Alberto de Jesús Chaves Robles"
            		desc = ""
            		picture = "gfx/leaders/COS/COS_Robles.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = populism
 			}
 		}
 		PAN = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = socialism_ideology
+			}
+			set_province_name = {
+				ideology = socialism_ideology
+				name = PAN_socialism_ideology_2023_party
+				long_name = PAN_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 49
+				liberal_republic = 7
+				centrist_republic = 26
+				democratic = 11
+				anocratic_republic = 7
 			}
 		}
 		PAN = {
@@ -20853,14 +20884,25 @@
            		desc = ""
            		picture = "gfx/leaders/PAN/PAN_Laurentino_Cortizo.tga"
            		expire = "1965.1.1"
-           		ideology = conservatism
+           		ideology = left_wing_populism
 			}
 		}
 		HON = {
 			transfer_state = 2511
-			set_cosmetic_tag = HON_2023
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = socialism_ideology
+			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = HON_socialism_ideology_2023_party
+				long_name = HON_socialism_ideology_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 38
+				liberal_republic = 17
+				centrist_republic = 9
+				democratic = 2
+				anocratic_republic = 34
 			}
 		}
 		HON = {
@@ -20876,6 +20918,18 @@
 			set_politics = {
 				ruling_party = centrist_republic
 			}
+			set_party_name = {
+				ideology = centrist_republic
+				name = ELS_centrist_republic_2023_party
+				long_name = ELS_centrist_republic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 5
+				liberal_republic = 7
+				centrist_republic = 71
+				democratic = 4
+				anocratic_republic = 13
+			}
 		}
 		ELS = {
 			create_country_leader = {
@@ -20888,7 +20942,19 @@
 		}
 		GUA = {
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = liberal_republic
+			}
+			set_party_name = {
+				ideology = liberal_republic
+				name = GUA_liberal_republic_2023_party
+				long_name = GUA_liberal_republic_2023_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 37.5
+				liberal_republic = 20.625
+				centrist_republic = 5
+				democratic = 16.25
+				anocratic_republic = 20.625
 			}
 		}
 		GUA = {
@@ -20897,13 +20963,20 @@
            		desc = ""
            		picture = "gfx/leaders/GUA/GUA_Alejandro_Giammattei.tga"
            		expire = "1965.1.1"
-           		ideology = centrism
+           		ideology = conservative_liberalism
 			}
 		}
 		NIC = {
 			transfer_state = 2452
 			set_politics = {
 				ruling_party = socialism_ideology
+			}
+			set_popularities = {
+				communism = 83
+				socialism_ideology = 1
+				liberal_republic = 11
+				democratic = 4
+				anocratic_republic = 1
 			}
 		}
 		NIC = {
