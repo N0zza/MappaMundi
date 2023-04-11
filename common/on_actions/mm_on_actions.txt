@@ -4492,7 +4492,12 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
-								tag = RUS
+								AND = {
+									tag = RUS
+									NOT = {
+										has_cosmetic_tag = RUS_2023
+									}
+								}
 								tag = SOV
 							}
 						}
