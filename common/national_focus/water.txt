@@ -13954,6 +13954,7 @@
 			}
 		}
 		SWI = {
+			transfer_state = 19313
 			set_popularities = {
 				communism = 1
 				socialism_ideology = 19.5
@@ -19677,15 +19678,22 @@
 				transfer_state = PREV
 			}
 		}
-		every_state = {
-			limit = {
-				OR = {
-					is_core_of = ERH
-					state = 19313
-				}
+		ERH = {
+			transfer_state = 19307
+			set_politics = {
+				ruling_party = anocratic_republic
 			}
-			ERH = {
-				transfer_state = PREV
+			set_popularities = {
+				anocratic_republic = 100
+			}
+		}
+		ERH = {
+			create_country_leader = {
+        		name = "Secretary-General António Manuel de Oliveira Guterres"
+        		desc = ""
+        		picture = "gfx/leaders/ERH/ERH_Guterres.tga"
+        		expire = "1965.1.1"
+        		ideology = anocrep
 			}
 		}
 		every_state = {
