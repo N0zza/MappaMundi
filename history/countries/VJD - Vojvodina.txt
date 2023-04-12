@@ -1,16 +1,13 @@
 ﻿capital = 45
 
+set_popularities = {
+	democratic = 50
+	vanguardism = 20
+	neutrality = 30
+}
 
-	set_popularities = {
-		democratic 
-			 = 50
-		vanguardism
-			 = 20
-		neutrality
-			 = 30
-		}
-	set_politics = { 
- ruling_party = democratic
+set_politics = { 
+	ruling_party = democratic
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
@@ -23,7 +20,6 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
-		
 	}
 }
 
@@ -34,7 +30,6 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = marxism
 	traits = {
-		
 	}
 }
 
@@ -54,6 +49,16 @@ create_country_leader = {
 	picture = "gfx/leaders/VJD/VJD_Popovic.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kralj Maximilian I Hohenberg"
+	desc = ""
+	picture = "gfx/leaders/ALM/ALM_Maximilian.tga"
+	expire = "1965.1.1"
+	ideology = authmon
 	traits = {
 	}
 }
