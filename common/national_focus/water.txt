@@ -12831,13 +12831,10 @@
 		}
 		EUR = {
 			set_country_flag = has_secondary_leader
-			
 			set_politics = {
 				ruling_party = democratic
 			}
-			
 			set_cosmetic_tag = EUR_2023
-			
 			create_country_leader = {
         		name = "Präsidentin der Europäischen Kommission Ursula Gertrud von der Leyen"
         		desc = ""
@@ -12845,20 +12842,24 @@
         		expire = "1965.1.1"
         		ideology = christian_democracy
 			}
-			
 			set_popularities = {
 				communism = 5
-				socialism_ideology = 20
-				liberal_republic = 25
+				socialism_ideology = 21
+				liberal_republic = 10
+				centrist_republic = 14
 				democratic = 25
-				centrist_republic = 18
+				anocratic_republic = 18
 				neutrality = 7
 			}
-			
 			set_party_name = {
 				ideology = centrist_republic
 				name = EUR_centrist_republic_2023_party
 				long_name = EUR_centrist_republic_2023_party_long
+			}
+			set_party_name = {
+				ideology = anocratic_republic
+				name = EUR_anocratic_republic_2023_party
+				long_name = EUR_anocratic_republic_2023_party_long
 			}
 		}
 		set_province_name = { id = 15986 name = "Giżycko"}
@@ -14015,18 +14016,12 @@
 		}
 		LIE = {
 			set_politics = {
-				ruling_party = conservative_monarchism
-			}
-			set_party_name = {
-				ideology = conservative_monarchism
-				name = LIE_conservative_monarchism_party
-				long_name = LIE_conservative_monarchism_party_long
+				ruling_party = centrist_monarchism
 			}
 			set_popularities = {
-				conservative_monarchism = 40
-				centrist_monarchism = 40
 				democratic_monarchism = 12
-				authoritarian_monarchism = 8
+				centrist_monarchism = 40
+				anocratic_monarchism = 48
 			}
 		}
 		LIE = {
@@ -14035,7 +14030,7 @@
         		desc = ""
         		picture = "gfx/leaders/LIE/LIE_Adam.tga"
         		expire = "1965.1.1"
-        		ideology = conmon_liberal_conservatism
+        		ideology = cenmon
 			}
 		}
 		HOL = {
@@ -21692,7 +21687,7 @@
            		desc = ""
            		picture = "gfx/leaders/PAR/PAR_Mario_Abdo_Benitez.tga"
            		expire = "1965.1.1"
-           		ideology = national_conservatism
+           		ideology = dominant_party_democracy
 			}
 		}
 		TRI = {

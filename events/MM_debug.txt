@@ -14,12 +14,37 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			MEX = {
+			EUR = {
+				set_country_flag = has_secondary_leader
+				set_politics = {
+					ruling_party = democratic
+				}
+				set_cosmetic_tag = EUR_2023
+				create_country_leader = {
+					name = "Präsidentin der Europäischen Kommission Ursula Gertrud von der Leyen"
+					desc = ""
+					picture = "gfx/leaders/EUR/EUR_von_der_Leyen.tga"
+					expire = "1965.1.1"
+					ideology = christian_democracy
+				}
 				set_popularities = {
-					socialism_ideology = 48.8
-					liberal_republic = 8.4
-					centrist_republic = 11.8
-					democratic = 31
+					communism = 5
+					socialism_ideology = 21
+					liberal_republic = 10
+					centrist_republic = 14
+					democratic = 25
+					anocratic_republic = 18
+					neutrality = 7
+				}
+				set_party_name = {
+					ideology = centrist_republic
+					name = EUR_centrist_republic_2023_party
+					long_name = EUR_centrist_republic_2023_party_long
+				}
+				set_party_name = {
+					ideology = anocratic_republic
+					name = EUR_anocratic_republic_2023_party
+					long_name = EUR_anocratic_republic_2023_party_long
 				}
 			}
 		}
