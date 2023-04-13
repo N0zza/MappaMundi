@@ -14554,10 +14554,9 @@
 				long_name = ROK_anocratic_republic_2023_party_long
 			}
 			set_popularities = {
-				anocratic_republic = 39
-				centrist_republic = 56
 				socialism_ideology = 3
-				liberal_republic = 2
+				liberal_republic = 58
+				anocratic_republic = 39
 			}
 		}
 		ROK = {
@@ -14573,22 +14572,18 @@
 			transfer_state = 1786
 			transfer_state = 1792
 			transfer_state = 9701
-			set_cosmetic_tag = DPK_2023
-			set_party_name = {
-				ideology = communism
-				name = DPK_communism_2023_party
-				long_name = DPK_communism_2023_party_long
+			set_politics = {
+				ruling_party = vanguardism
 			}
 			set_popularities = {
-				communism = 88
-				socialism_ideology = 7
-				theocratic = 3
+				vanguardism = 88
+				communism = 10
 				neutrality = 2
 			}
 		}
 		DPK = {
 			create_country_leader = {
-        		name = "Kukmuwiwŏnhoe Wiwŏnjang Kim Chŏngŭn"
+        		name = "Kukmu Wiwŏnjang Kim Chŏngŭn"
         		desc = ""
         		picture = "gfx/leaders/DPK/DPK_Kim.tga"
         		expire = "1965.1.1"
@@ -16102,22 +16097,19 @@
 			}
 		}
 		LEB = {
-			drop_cosmetic_tag = yes
-			set_politics = {
-				ruling_party = liberal_republic
-			}
+			set_cosmetic_tag = LEB_2023
 			set_party_name = {
-				ideology = liberal_republic
-				name = LEB_liberal_republic_2023_party
-				long_name = LEB_liberal_republic_2023_party_long
+				ideology = centrist_republic
+				name = LEB_centrist_republic_2023_party
+				long_name = LEB_centrist_republic_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 10
-				liberal_republic = 27
-				democratic = 31
-				centrist_republic = 11
-				neutrality = 9
-				theocratic = 12
+				socialism_ideology = 13
+				centrist_republic = 31
+				liberal_republic = 4
+				democratic = 12
+				anocratic_republic = 28
+				neutrality = 12
 			}
 		}
 		LEB = {
@@ -16126,7 +16118,7 @@
            		desc = ""
            		picture = "gfx/leaders/LEB/LEB_Council.tga"
            		expire = "1965.1.1"
-           		ideology = liberalism
+           		ideology = cenrep
 			}
 		}
 		JOR = {
@@ -16184,8 +16176,8 @@
 				ruling_party = authoritarian_monarchism
 			}
 			set_popularities = {
-				anocratic_monarchism = 33
-				authoritarian_monarchism = 67
+				anocratic_monarchism = 67
+				authoritarian_monarchism = 33
 			}
 		}
 		QAT = {
@@ -16284,19 +16276,20 @@
 			transfer_state = 12035
 			transfer_state = 14418
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
 			}
+			set_cosmetic_tag = IRQ_2023
 			set_party_name = {
-				ideology = democratic
-				name = IRQ_democratic_2023_party
-				long_name = IRQ_democratic_2023_party_long
+				ideology = centrist_republic
+				name = IRQ_centrist_republic_2023_party
+				long_name = IRQ_centrist_republic_2023_party_long
 			}
 			set_popularities = {
-				liberal_republic = 18
-				democratic = 46
-				centrist_republic = 11
-				neutrality = 12
-				theocratic = 13
+				liberal_republic = 19
+				centrist_republic = 33
+				democratic = 5
+				anocratic_republic = 27
+				neutrality = 16
 			}
 		}
 		IRQ = {
@@ -16305,7 +16298,7 @@
             	desc = ""
             	picture = "gfx/leaders/IRQ/IRQ_Rashid.tga"
             	expire = "1965.1.1"
-            	ideology = populism
+            	ideology = cenrep_populism
 			}
 		}
 		
@@ -18169,10 +18162,11 @@
 			}
 			set_popularities = {
 				socialism_ideology = 2
-				liberal_republic = 11
-				centrist_republic = 21
-				neutrality = 65
-				theocratic = 1
+				liberal_republic = 5
+				centrist_republic = 6
+				anocratic_republic = 33
+				neutrality = 53
+				republican_fascism = 1
 			}
 		}
 		EGY = {
@@ -20994,7 +20988,7 @@
            		desc = ""
            		picture = "gfx/leaders/ELS/ELS_Nayib_Bukele.tga"
            		expire = "1965.1.1"
-           		ideology = cenrep
+           		ideology = cenrep_populism
 			}
 		}
 		GUA = {
@@ -21026,8 +21020,9 @@
 		NIC = {
 			transfer_state = 2452
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = communism
 			}
+			set_cosmetic_tag = NIC_2023
 			set_popularities = {
 				communism = 83
 				socialism_ideology = 1
@@ -21042,7 +21037,7 @@
            		desc = ""
            		picture = "gfx/leaders/NIC/NIC_Daniel_Ortega.tga"
            		expire = "1965.1.1"
-           		ideology = demsoc
+           		ideology = authoritarian_socialism
 			}
 		}
 		BAH = {
@@ -21517,16 +21512,20 @@
 		}
 		VEN = {
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = communism
 			}
+			set_cosmetic_tag = VEN_2023
 			set_party_name = {
-				ideology = socialism_ideology
-				name = VEN_socialism_ideology_2023_party
-				long_name = VEN_socialism_ideology_2023_party_long
+				ideology = communism
+				name = VEN_communism_2023_party
+				long_name = VEN_communism_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 92
-				liberal_republic = 8
+				vanguardism = 3
+				communism = 79
+				socialism_ideology = 14
+				liberal_republic = 2
+				centrist_republic = 2
 			}
 		}
 		VEN = {
@@ -21535,7 +21534,7 @@
         		desc = ""
         		picture = "gfx/leaders/VEN/VEN_Maduro.tga"
         		expire = "1965.1.1"
-        		ideology = left_wing_nationalism
+        		ideology = authoritarian_socialism
 			}
 		}
 		GYA = {
