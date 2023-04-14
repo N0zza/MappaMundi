@@ -22,6 +22,25 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = ENG
+				has_government = stratocratic_monarchism
+			}
+		}
+		localization_key = "Minister for Co-ordination of Defence Sir Archibald Armar Montgomery-Massingberd"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = fascism
+				has_global_flag = non_hog_secondary_leaders
+			}
+		}
+		localization_key = "Caretaker Minister for Stability and Justice, Sir Oswald Ernald Mosley, Baronet Ancoats"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = CAN
 				has_government = democratic_monarchism
 				has_start_date > 2022.01.01
@@ -106,6 +125,15 @@ defined_text = {
 			}
 		}
 		localization_key = "Archipincerna Franciscus Iosephus II de Habsburgum, Rex Bohemiae"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GER
+				has_government = centrist_monarchism
+			}
+		}
+		localization_key = "Bundeskanzler Ludwig Kaas"
 	}
 	text = {
 		trigger = {
@@ -573,6 +601,9 @@ defined_text = {
 		}
 		localization_key = "Roʾš HaMemšalah Ḃinyamiyn Ntanyahẇ"
 	}
+	text = {
+		localization_key = "To Be Added"
+	}
 }
 
 defined_text = {
@@ -608,6 +639,15 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = GER
+				has_government = centrist_monarchism
+			}
+		}
+		localization_key = "GFX_Ludwig_Kaas"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = ENG
 				has_government = conservative_monarchism
 				has_start_date > 2022.01.01
@@ -623,6 +663,25 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Stanley_Baldwin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = stratocratic_monarchism
+			}
+		}
+		localization_key = "GFX_Archibald_Montgomery"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = fascism
+				has_global_flag = non_hog_secondary_leaders
+			}
+		}
+		localization_key = "GFX_Oswald_Mosley"
 	}
 	text = {
 		trigger = {
