@@ -6032,6 +6032,65 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							tag = RUS
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = theocratic
+								}
+							}
+							set_cosmetic_tag = RUS_THEOC
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = stratocratic
+									has_government = stratocratic_monarchism
+									has_government = republican_fascism
+									has_government = fascism
+									has_government = right_anarchism
+								}
+							}
+							set_cosmetic_tag = RUS_AUTH
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = communism
+									has_government = socialism_ideology
+									has_government = socialist_monarchy
+								}
+							}
+							set_cosmetic_tag = RUS_SOCIALIST
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = vanguardism
+								}
+							}
+							set_cosmetic_tag = RUS_SOV
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = neutrality
+									has_government = anocratic_monarchism
+									has_government = anocratic_republic
+									has_government = democratic
+									has_government = conservative_monarchism
+									has_government = centrist_republic
+									has_government = centrist_monarchism
+									has_government = liberal_republic
+									has_government = democratic_monarchism
+								}
+							}
+							drop_cosmetic_tag
+						}
+					}
+					if = {
+						limit = {
 							tag = MEX
 						}
 						if = {
