@@ -1,0 +1,150 @@
+secondary_leader_enabled_effect = {
+	if = {
+		limit = {
+			AND = {
+				tag = ENG
+				OR = {
+					AND = {
+						has_government = fascism
+						has_global_flag = non_hog_secondary_leaders
+					}
+					AND = {
+						OR = {
+							has_government = conservative_monarchism
+							has_government = stratocratic_monarchism
+						}
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = GER
+				OR = {
+					AND = {
+						has_government = national_socialism
+						has_global_flag = non_hog_secondary_leaders
+					}
+					AND = {
+						OR = {
+							has_government = socialist_monarchy
+							has_government = democratic_monarchism
+							has_government = centrist_monarchism
+						}
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = WGR
+				OR = {
+					AND = {
+						NOT = {
+							has_government = right_anarchism
+							has_government = national_socialism
+							has_government = fascism
+							has_government = republican_fascism
+							has_government = monarchism
+							has_government = stratocratic_monarchism
+							has_government = communism
+							has_government = left_anarchism
+							has_government = anarchism_ideology
+						}
+						has_start_date > 2022.01.01
+					}
+					AND = {
+						has_government = democratic
+						has_start_date < 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = FRA
+				OR = {
+					AND = {
+						has_government = democratic
+						has_start_date < 2022.01.01
+					}
+					
+					AND = {
+						has_government = liberal_republic
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = SPR
+				OR = {
+					AND = {
+						has_government = centrist_republic
+						has_start_date < 2022.01.01
+					}
+					
+					AND = {
+						has_government = socialist_monarchy
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = POR
+				OR = {
+					AND = {
+						has_government = republican_fascism
+						has_start_date < 2022.01.01
+					}
+					
+					AND = {
+						has_government = socialism_ideology
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = ITA
+				OR = {
+					AND = {
+						has_government = fascism
+						has_start_date < 2022.01.01
+					}
+					
+					AND = {
+						has_government = anocratic_republic
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else = {
+		clr_country_flag = has_secondary_leader
+	}
+}

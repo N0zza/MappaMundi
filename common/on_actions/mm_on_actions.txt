@@ -8248,4 +8248,22 @@ on_actions = {
 			}
 		}
 	}
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						tag = ENG
+						tag = GER
+						tag = WGR
+						tag = FRA
+						tag = SPR
+						tag = POR
+						tag = ITA
+					}
+				}
+				secondary_leader_enabled_effect = yes
+			}
+		}
+	}
 }
