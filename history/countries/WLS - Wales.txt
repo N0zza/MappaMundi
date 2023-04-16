@@ -1,19 +1,15 @@
 ﻿capital = 1835
 
-	set_popularities = {
-		democratic 
-			 = 5
-		liberal_republic
-			 = 20
-		neutrality
-			 = 30
-		centrist_monarchism
-			 = 5
-		conservative_monarchism
-			 = 40
-		}
-	set_politics = { 
- ruling_party = conservative_monarchism
+set_popularities = {
+	democratic = 5
+	liberal_republic = 20
+	neutrality = 30
+	centrist_monarchism = 5
+	conservative_monarchism = 40
+}
+
+set_politics = { 
+	ruling_party = conservative_monarchism
 	last_election = "1933.1.24"
 	election_frequency = 48
 	elections_allowed = no
@@ -26,7 +22,6 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
-		
 	}
 }
 
@@ -53,7 +48,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Llywydd Gwynfor Richard Evans"
 	desc = ""
-	picture = "gfx/leaders/WLS/WLS_Evans_liberalism.tga"
+	picture = "gfx/leaders/WLS/WLS_Evans_socdem.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -145,7 +140,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/WLS/WLS_Anderson_strat.tga"
 	expire = "1965.1.1"
-	ideology = militarism
+	ideology = military_junta
 	traits = {
 	}
 }
