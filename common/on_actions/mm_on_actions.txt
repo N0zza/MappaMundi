@@ -3746,6 +3746,16 @@ on_actions = {
 			}
 		}
 	}
+# Secondary leaders visibility logic
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				ROOT = {
+					secondary_leader_enabled_effect = yes
+				}
+			}
+		}
+	}
 # I will destroy Gaffate
 	on_ruling_party_change = {
 		effect = {
@@ -8305,37 +8315,6 @@ on_actions = {
 						set_cosmetic_tag = KYZ_NATIONAL
 					}
 				}
-			}
-		}
-	}
-	on_ruling_party_change = {
-		effect = {
-			if = {
-				limit = {
-					OR = {
-						tag = ENG
-						tag = IRE
-						tag = GER
-						tag = WGR
-						tag = FRA
-						tag = RUS
-						tag = SPR
-						tag = POR
-						tag = ITA
-						tag = USA
-						tag = CAN
-						tag = AST
-						tag = NZL
-						tag = JAP
-						tag = PRC
-						tag = CHI
-						tag = IND
-						tag = PAK
-						tag = PER
-						tag = TUR
-					}
-				}
-				secondary_leader_enabled_effect = yes
 			}
 		}
 	}
