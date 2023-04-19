@@ -2,21 +2,13 @@
 
 set_cosmetic_tag = UK_RED
 
+set_popularities = {
+	conservative_monarchism = 25
+	authoritarian_monarchism = 75
+}
 
-
-	set_popularities = {
-		conservative_monarchism 
-			 = 25
-		fascism
-			 = 0
-		communism
-			 = 0
-			
-		authoritarian_monarchism 
-			 = 75
-		}
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+set_politics = { 
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -28,7 +20,6 @@ create_country_leader = {
 	picture = "gfx/leaders/EGY/Portrait_Fuad_I.dds"
 	ideology = authmon
 	traits = {
-		#
 	}
 }
 
@@ -145,7 +136,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rais Ali Mahir Pasha"
 	desc = ""
-	picture = "gfx/leaders/EGY/Portrait_Turkey_Mustafa_Kemal_Ataturk.tga"
+	picture = "gfx/leaders/TUR/Portrait_Turkey_Mustafa_Kemal_Ataturk.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {

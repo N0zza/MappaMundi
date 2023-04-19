@@ -241,7 +241,10 @@ secondary_leader_enabled_effect = {
 				tag = JAP
 				OR = {
 					AND = {
-						has_government = stratocratic_monarchism
+						OR = {
+							has_government = stratocratic_monarchism
+							has_government = fascism
+						}
 						has_start_date < 2022.01.01
 					}
 					AND = {
