@@ -12611,7 +12611,7 @@
 				state = 64
 			}
 			set_popularities = {
-				vanguardism = 5
+				communism = 5
 				socialism_ideology = 28
 				liberal_republic = 13
 				centrist_republic = 16
@@ -12620,9 +12620,9 @@
 			}
 			set_cosmetic_tag = WGR_2023
 			set_party_name = {
-				ideology = vanguardism
-				name = WGR_vanguardism_2023_party
-				long_name = WGR_vanguardism_2023_party_long
+				ideology = communism
+				name = WGR_communism_2023_party
+				long_name = WGR_communism_2023_party_long
 			}
 			set_party_name = {
 				ideology = liberal_republic
@@ -12694,14 +12694,14 @@
 				desc = ""
 				picture = "gfx/leaders/WGR/WGR_Trabert.tga"
 				expire = "1965.1.1"
-				ideology = totsoc
+				ideology = authoritarian_socialism
 			}
 			create_country_leader = {
 				name = "Vorsitzende Patrik Köbele"
 				desc = ""
 				picture = "gfx/leaders/WGR/WGR_Kobele.tga"
 				expire = "1965.1.1"
-				ideology = marxism
+				ideology = totsoc
 			}
 			create_country_leader = {
 				name = "Bundespräsident Frank-Walter Steinmeier"
@@ -13020,18 +13020,19 @@
 		}
 		ALN = {
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = centrist_republic
 			}
 			set_party_name = {
-				ideology = liberal_republic
-				name = ALN_liberal_republic_2023_party
-				long_name = ALN_liberal_republic_2023_party_long
+				ideology = centrist_republic
+				name = ALN_centrist_republic_2023_party
+				long_name = ALN_centrist_republic_2023_party_long
 			}
 			set_popularities = {
 				socialism_ideology = 10
-				liberal_republic = 60
-				democratic = 27
-				centrist_republic = 3
+				liberal_republic = 27
+				centrist_republic = 33
+				democratic = 13
+				anocratic_republic = 17
 			}
 		}
 		ALN = {
@@ -13040,28 +13041,34 @@
         		desc = ""
         		picture = "gfx/leaders/ALN/ALN_Peter_Lindback.tga"
         		expire = "1965.1.1"
-        		ideology = liberalism
+        		ideology = cenrep
 			}
 		}
 		LIT = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
 			}
 			set_cosmetic_tag = LIT_2023
 			set_capital = {
 				state = 96
+				remember_old_capital = no
+			}
+			set_party_name = {
+				ideology = centrist_republic
+				name =  LIT_centrist_republic_2023_party
+				long_name =  LIT_centrist_republic_2023_party_long
 			}
 			set_party_name = {
 				ideology = democratic
-				name =  LIT_democratic_2023_party
-				long_name =  LIT_democratic_2023_party_long
+				name =  LIT_democratic_party
+				long_name =  LIT_democratic_party_long
 			}
 			set_popularities = {
-				democratic = 44
-				liberal_republic = 19
-				centrist_republic = 21
-				socialism_ideology = 9
-				neutrality = 7
+				socialism_ideology = 10
+				liberal_republic = 17
+				centrist_republic = 56
+				democratic = 16
+				anocratic_republic = 1
 			}
 		}
 		LIT = {
@@ -13070,7 +13077,7 @@
         		desc = ""
         		picture = "gfx/leaders/LIT/LIT_Nauseda.tga"
         		expire = "1965.1.1"
-        		ideology = liberal_conservatism
+        		ideology = cenrep
 			}
 		}
 		LAT = {
@@ -13078,11 +13085,10 @@
 				ruling_party = democratic
 			}
 			set_popularities = {
-				democratic = 41
-				centrist_republic = 22
-				socialism_ideology = 10
-				liberal_republic = 16
-				neutrality = 11
+				socialism_ideology = 12
+				centrist_republic = 40
+				democratic = 26
+				anocratic_republic = 22
 			}
 			set_party_name = {
 				ideology = democratic
@@ -13101,20 +13107,20 @@
 		}
 		EST = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
 			}
 			set_cosmetic_tag = EST_2023
 			set_popularities = {
-				democratic = 35
 				socialism_ideology = 9
-				liberal_republic = 23
-				centrist_republic = 19
-				neutrality = 14
+				liberal_republic = 30
+				centrist_republic = 36
+				democratic = 8
+				anocratic_republic = 17
 			}
 			set_party_name = {
-				ideology = democratic
-				name =  EST_democratic_2023_party
-				long_name =  EST_democratic_2023_party_long
+				ideology = centrist_republic
+				name =  EST_centrist_republic_2023_party
+				long_name =  EST_centrist_republic_2023_party_long
 			}
 		}
 		EST = {
@@ -13123,7 +13129,7 @@
         		desc = ""
         		picture = "gfx/leaders/EST/EST_Karis.tga"
         		expire = "1965.1.1"
-        		ideology = liberal_conservatism
+        		ideology = cenrep
 			}
 		}
 		SLO = {
@@ -13479,12 +13485,12 @@
 				long_name = BEL_democratic_monarchism_2023_party_long
 			}
 			set_popularities = {
-				socialist_monarchy = 19
-				democratic_monarchism = 28
+				communism = 8
+				socialist_monarchy = 24
+				democratic_monarchism = 31
+				centrist_monarchism = 9
 				conservative_monarchism = 16
-				centrist_monarchism = 28
-				vanguardism = 8
-				authoritarian_monarchism = 1
+				anocratic_monarchism = 12
 			}
 		}
 		BEL = {
@@ -13900,10 +13906,12 @@
 				long_name = NOR_socialist_monarchy_2023_party_long
 			}
 			set_popularities = {
-				socialist_monarchy = 41
+				communism = 5
+				socialist_monarchy = 36
 				democratic_monarchism = 7
-				conservative_monarchism = 40
-				centrist_monarchism = 12
+				centrist_monarchism = 17
+				conservative_monarchism = 23
+				anocratic_monarchism = 12
 			}
 		}
 		NOR = {
@@ -13944,10 +13952,12 @@
 				long_name = SWE_conservative_monarchism_2023_party_long
 			}
 			set_popularities = {
-				socialist_monarchy = 38
-				conservative_monarchism = 37
-				democratic_monarchism = 4
-				centrist_monarchism = 21
+				communism = 7
+				socialist_monarchy = 30
+				democratic_monarchism = 10
+				centrist_monarchism = 7
+				conservative_monarchism = 25
+				anocratic_monarchism = 21
 			}
 		}
 		SWE = {
@@ -14013,10 +14023,12 @@
 				long_name = LUX_democratic_monarchism_2023_party_long
 			}
 			set_popularities = {
-				socialist_monarchy = 20
-				democratic_monarchism = 38
+				communism = 3
+				socialist_monarchy = 17
+				democratic_monarchism = 35
+				centrist_monarchism = 3
 				conservative_monarchism = 35
-				centrist_monarchism = 7
+				anocratic_monarchism = 7
 			}
 		}
 		LUX = {
@@ -14089,11 +14101,11 @@
 			}
 			set_cosmetic_tag = FIN_2023
 			set_popularities = {
-				socialism_ideology = 28
-				liberal_republic = 31
-				democratic = 21
-				centrist_republic = 19
-				republican_fascism = 1
+				socialism_ideology = 27
+				liberal_republic = 11.5
+				centrist_republic = 12
+				democratic = 26.5
+				anocratic_republic = 23
 			}
 		}
 		FIN = {
@@ -20917,7 +20929,7 @@
 			set_politics = {
 				ruling_party = socialism_ideology
 			}
-			set_province_name = {
+			set_party_name = {
 				ideology = socialism_ideology
 				name = PAN_socialism_ideology_2023_party
 				long_name = PAN_socialism_ideology_2023_party_long
