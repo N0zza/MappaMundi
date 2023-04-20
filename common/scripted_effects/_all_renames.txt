@@ -435,6 +435,13 @@ do_all_renames = {
 						has_government = centrist_monarchism
 						has_government = conservative_monarchism
 					}
+					AND = {
+						tag = MAF
+						NOT = {
+							has_government = communism
+							has_government = vanguardism
+						}
+					}
 				}
 			}										
 		}
