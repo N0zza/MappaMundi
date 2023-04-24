@@ -1,16 +1,17 @@
 ﻿capital = 275
 
-	set_popularities = {
-        neutrality = 10
-        vanguardism = 10
-        socialism_ideology = 10
-        democratic_monarchism = 20
-        centrist_republic = 10
-        republican_fascism = 10
-        centrist_monarchism = 30
-		}
-	set_politics = { 
- ruling_party = centrist_monarchism
+set_popularities = {
+    neutrality = 10
+    vanguardism = 10
+    socialism_ideology = 10
+    democratic_monarchism = 20
+    centrist_republic = 10
+    republican_fascism = 10
+    centrist_monarchism = 30
+}
+
+set_politics = { 
+	ruling_party = centrist_monarchism
 	last_election = "1933.5.17"
 	election_frequency = 60
 	elections_allowed = yes
@@ -51,7 +52,17 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SAF/Portrait_George_Villiers.dds"
 	expire = "1965.1.1"
-	ideology = authmon
+	ideology = british_colonialism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor George Herbert Hyde Villiers, Earl of Clarendon"
+	desc = ""
+	picture = "gfx/leaders/SAF/Portrait_George_Villiers.dds"
+	expire = "1965.1.1"
+	ideology = anocmon
 	traits = {
 	}
 }
@@ -154,7 +165,17 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SAF/SAF_Gumede.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = librep_third_way
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Josiah Tshangana Gumede"
+	desc = ""
+	picture = "gfx/leaders/SAF/SAF_Gumede.tga"
+	expire = "1965.1.1"
+	ideology = dominant_party_democracy
 	traits = {
 	}
 }
@@ -194,7 +215,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SAF/SAF_Ryneveld.tga"
 	expire = "1965.1.1"
-	ideology = stratmon
+	ideology = stratmon_british_colonialism
 	traits = {
 	}
 }

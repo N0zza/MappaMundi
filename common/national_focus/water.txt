@@ -13460,9 +13460,10 @@
 				long_name = ADR_conservative_monarchism_2023_party_long
 			}
 			set_popularities = {
-				conservative_monarchism = 54
-				socialist_monarchy = 25
-				democratic_monarchism = 21
+				socialist_monarchy = 29
+				democratic_monarchism = 11
+				conservative_monarchism = 50
+				anocratic_republic = 10
 			}
 		}
 		ADR = {
@@ -14070,11 +14071,12 @@
 				long_name = HOL_democratic_monarchism_2023_party_long
 			}
 			set_popularities = {
+				communism = 10
+				socialist_monarchy = 12
 				democratic_monarchism = 40
-				conservative_monarchism = 16
-				centrist_monarchism = 17
-				socialist_monarchy = 24
-				authoritarian_monarchism = 3
+				centrist_monarchism = 9
+				conservative_monarchism = 12
+				anocratic_monarchism = 17
 			}
 		}
 		HOL = {
@@ -14202,26 +14204,26 @@
 		}
 		SMR = {
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
 			}
 			set_party_name = {
-				ideology = democratic
-				name = SMR_democratic_2023_party
-				long_name = SMR_democratic_2023_party_long
+				ideology = centrist_republic
+				name = SMR_centrist_republic_2023_party
+				long_name = SMR_centrist_republic_2023_party_long
 			}
 			set_popularities = {
-				democratic = 27
+				socialism_ideology = 33
 				liberal_republic = 32
-				socialism_ideology = 41
+				centrist_republic = 35
 			}
 		}
 		SMR = {
 			create_country_leader = {
-        		name = "Capitano Reggente Maria Luisa Berti"
-        		desc = ""
-        		picture = "gfx/leaders/SMR/SMR_Berti.tga"
-        		expire = "1965.1.1"
-        		ideology = conservatism
+				name = "Capitano Reggente Maria Luisa Berti"
+				desc = ""
+				picture = "gfx/leaders/SMR/SMR_Berti.tga"
+				expire = "1965.1.1"
+				ideology = directorial_republic
 			}
 		}
 		MCO = {
@@ -14234,9 +14236,8 @@
 				long_name = MCO_centrist_monarchism_2023_party_long
 			}
 			set_popularities = {
-				centrist_monarchism = 88
-				conservative_monarchism = 8
-				authoritarian_monarchism = 4
+				centrist_monarchism = 54
+				conservative_monarchism = 46
 			}
 		}
 		MCO = {
@@ -14245,7 +14246,7 @@
         		desc = ""
         		picture = "gfx/leaders/MCO/MCO_Albert_II.tga"
         		expire = "1965.1.1"
-        		ideology = cenmon_right_wing_populism
+        		ideology = cenmon_populism
 			}
 		}
 		MLT = {
@@ -14259,7 +14260,8 @@
 				long_name = MLT_socialism_ideology_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 56
+				socialism_ideology = 55
+				centrist_republic = 1
 				democratic = 44
 			}
 		}
@@ -15716,7 +15718,7 @@
 		}
 		BRM = {
 			create_country_leader = {
-        		name = "Sammata Myaṅʻ' Chve"
+        		name = "Sammata Mraṅʻʹ Chve"
         		desc = ""
         		picture = "gfx/leaders/BRM/BRM_Swe.tga"
         		expire = "1965.1.1"
@@ -16554,7 +16556,7 @@
 		}
 		NOC = {
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = anocratic_republic
 			}
 			set_popularities = {
 				centrist_republic = 48
@@ -17722,9 +17724,9 @@
 				long_name = GAU_socialism_ideology_2023_party_long
 			}
 			set_popularities = {
-				neutrality = 74
 				socialism_ideology = 23
 				liberal_republic = 3
+				anocratic_republic = 74
 			}
 		}
 		GAU = {
@@ -18281,9 +18283,7 @@
 			  long_name = TUN_neutrality_2023_party_long
 			}
 			set_popularities = {
-				neutrality = 62
-				centrist_republic = 5
-				democratic = 33
+				neutrality = 100
 			}
 		}
 		TUN = {
@@ -18301,13 +18301,12 @@
 			transfer_state = 12368
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = anocratic_republic
 			}
 			set_popularities = {
-				socialism_ideology = 24
-				liberal_republic = 16
-				democratic = 26
-				centrist_republic = 13
+				centrist_republic = 15
+				democratic = 27
+				anocratic_republic = 37
 				neutrality = 21
 			}
 		}
@@ -18317,7 +18316,7 @@
         		desc = ""
         		picture = "gfx/leaders/ALG/ALG_Tebboune.tga"
         		expire = "1965.1.1"
-        		ideology = left_wing_nationalism
+        		ideology = dominant_party_democracy
 			}
 		}
 		MOR = {
@@ -18333,8 +18332,9 @@
 			}
 			set_popularities = {
 				socialist_monarchy = 16
-				democratic_monarchism = 47
-				conservative_monarchism = 37
+				democratic_monarchism = 48
+				centrist_monarchism = 13
+				conservative_monarchism = 23
 			}
 		}
 		MOR = {
@@ -18343,7 +18343,7 @@
            		desc = ""
            		picture = "gfx/leaders/MOR/MOR_Mohammed.tga"
            		expire = "1965.1.1"
-           		ideology = liberal_constitutionalism
+           		ideology = libmon_conservative_liberalism
 			}
 		}
 		WES = {
@@ -18356,10 +18356,10 @@
 			}
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = communism
 			}
 			set_popularities = {
-				socialism_ideology = 100
+				communism = 100
 			}
 		}
 		WES = {
@@ -18368,7 +18368,7 @@
            		desc = ""
            		picture = "gfx/leaders/WES/WES_Brahim_Ghali.tga"
            		expire = "1965.1.1"
-           		ideology = left_wing_nationalism
+           		ideology = authoritarian_socialism
 			}
 		}
 		ERI = {
@@ -18998,18 +18998,18 @@
 			transfer_state = 6782
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = centrist_republic
 			}
 			set_party_name = {
-				ideology = democratic
-				name = MRT_democratic_2023_party
-				long_name = MRT_democratic_2023_party_long
+				ideology = centrist_republic
+				name = MRT_centrist_republic_2023_party
+				long_name = MRT_centrist_republic_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 9
-				liberal_republic = 11
-				democratic = 71
-				theocratic = 9
+				socialism_ideology = 8
+				liberal_republic = 6
+				centrist_republic = 76
+				democratic = 10
 			}
 		}
 		MRT = {
@@ -19018,7 +19018,7 @@
           			desc = ""
           			picture = "gfx/leaders/MRT/MRT_Ghazouani.tga"
           			expire = "1965.1.1"
-          			ideology = populism
+          			ideology = cenrep_populism
 			}
 		}
 		CVD = {
@@ -19452,21 +19452,15 @@
 		SAF = {
 			transfer_state = 10870
 			set_politics = {
-				ruling_party = socialism_ideology
-			}
-			set_cosmetic_tag = SAF_2023
-			set_party_name = {
-				ideology = socialism_ideology
-				name = SAF_socialism_ideology_2023_party
-				long_name = SAF_socialism_ideology_2023_party_long
+				ruling_party = anocratic_republic
 			}
 			set_popularities = {
 				vanguardism = 11
-				socialism_ideology = 59
-				liberal_republic = 22
-				democratic = 2
-				conservative_monarchism = 4
-				centrist_republic = 2
+				socialism_ideology = 1.75
+				liberal_republic = 0.5
+				centrist_republic = 21
+				democratic = 5.5
+				anocratic_republic = 60.25
 			}
 		}
 		SAF = {
@@ -19475,7 +19469,7 @@
         		desc = ""
         		picture = "gfx/leaders/SAF/SAF_Ramaphosa.tga"
         		expire = "1965.1.1"
-        		ideology = socrep_third_way
+        		ideology = dominant_party_democracy
 			}
 		}
 		LES = {
@@ -19694,7 +19688,6 @@
 		}
 		ERH = {
 			transfer_state = 19307
-			transfer_state = 19313
 			set_politics = {
 				ruling_party = anocratic_republic
 			}

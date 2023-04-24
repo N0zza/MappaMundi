@@ -14,12 +14,37 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		}
 
 		hidden_effect = {
-			PAN = {
-			set_party_name = {
-				ideology = socialism_ideology
-				name = PAN_socialism_ideology_2023_party
-				long_name = PAN_socialism_ideology_2023_party_long
+			MRT = {
+				transfer_state = 6782
+				drop_cosmetic_tag = yes
+				set_politics = {
+					ruling_party = centrist_republic
+				}
+				set_party_name = {
+					ideology = centrist_republic
+					name = MRT_centrist_republic_2023_party
+					long_name = MRT_centrist_republic_2023_party_long
+				}
+				set_party_name = {
+					ideology = democratic
+					name = MRT_democratic_party
+					long_name = MRT_democratic_party_long
+				}
+				set_popularities = {
+					socialism_ideology = 8
+					liberal_republic = 6
+					centrist_republic = 76
+					democratic = 10
+				}
 			}
+			MRT = {
+				create_country_leader = {
+						name = "Raʾīs Muḥammad wald al-Šayẖ Muḥammad Aḥmad wald al-Ġazwānī"
+						desc = ""
+						picture = "gfx/leaders/MRT/MRT_Ghazouani.tga"
+						expire = "1965.1.1"
+						ideology = cenrep_populism
+				}
 			}
 		}
 	}
