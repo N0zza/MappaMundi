@@ -18,6 +18,7 @@ scripted_gui = {
 				tag = GMA
 				tag = COG
 				tag = GER
+				tag = RCG
 			}
         }
  
@@ -177,6 +178,16 @@ scripted_gui = {
 					set_temp_variable = { show = 1 }
 					subtract_from_temp_variable = { show = show_menu_GER }
 					set_variable = { show_menu_GER = show }
+				}
+				if = {
+					limit = {
+						AND = {
+							tag = RCG
+						}
+					}
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_menu_RCG }
+					set_variable = { show_menu_RCG = show }
 				}
             }
         }
@@ -1861,6 +1872,79 @@ scripted_gui = {
 			}
 			leader_frame3_COG_click_enabled = {
 				check_variable = { COG_port_3 < 0.99 }
+			}
+		}
+	}
+	
+	### Middle Congo ###
+	
+	slp_menu_RCG = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "slp_menu_RCG_container"
+		
+		visible = {
+			OR = {
+				check_variable = { show_menu_RCG > 0.0 }
+				is_ai = YES
+			}
+		}
+		
+		effects = {
+           slp_RCG_close_click = {
+                subtract_from_temp_variable = { show = show_menu_RCG }
+                set_variable = { show_menu_RCG = show }
+            }
+			leader_frame1_RCG_click = {
+				subtract_from_temp_variable = { show = show_menu_RCG }
+                set_variable = { show_menu_RCG = show }
+				RCG = {	country_event = { id = slp_menu.56 } }
+				add_to_variable = { RCG_port_1 = 1 }
+				set_variable = { RCG_port_2 = 0 }
+			}
+			leader_frame2_RCG_click = {
+				subtract_from_temp_variable = { show = show_menu_RCG }
+                set_variable = { show_menu_RCG = show }
+				RCG = {	country_event = { id = slp_menu.57 } }
+				add_to_variable = { RCG_port_2 = 1 }
+				set_variable = { RCG_port_1 = 0 }
+			}
+		}
+		
+		ai_enabled = {
+			tag = RCG
+		}
+		
+		ai_check = {
+			check_variable = { ROOT.RCG_port_1 < 0.99 }
+			check_variable = { ai_random > 0.4 }
+		}
+		
+		ai_test_interval = 24
+        ai_test_variance = 0.2
+ 
+        ai_check = {
+            check_variable = { RCG_port_1 < 0.99 }
+        }
+		
+		ai_weights = {
+			leader_frame1_RCG_click = {
+				ai_will_do = {
+					factor = 20
+				}
+			}
+		}
+		
+		triggers = {
+			slp_RCG_close_enabled = {
+				always = yes
+			}
+			leader_frame1_RCG_click_enabled = {
+				check_variable = { RCG_port_1 < 0.99 }
+			}
+			leader_frame2_RCG_click_enabled = {
+				check_variable = { RCG_port_2 < 0.99 }
 			}
 		}
 	}

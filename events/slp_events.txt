@@ -2058,6 +2058,96 @@ country_event = {
 }
 
 country_event = {
+	id = slp_menu.56
+	title = slp_menu.56.t
+	desc = slp_menu.56.d
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				if = {
+					limit = {
+						RCG = {
+							NOT = {
+								has_government = liberal_republic
+							}
+						}
+					}
+					set_politics = {
+						ruling_party = liberal_republic
+					}
+				}
+				kill_ideology_leader = liberal_republic
+				create_country_leader = {
+					name = "Premier Ministre Abbé Fulbert Youlou"
+					desc = ""
+					picture = "gfx/leaders/RCG/RCG_Youlou_libdem.tga"
+					expire = "1965.1.1"
+					ideology = liberalism
+					traits = {
+					}
+				}
+				
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	
+	option = {
+		name = slp_menu.56.a
+	}
+}
+
+country_event = {
+	id = slp_menu.57
+	title = slp_menu.57.t
+	desc = slp_menu.57.d
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				if = {
+					limit = {
+						RCG = {
+							NOT = {
+								has_government = liberal_republic
+							}
+						}
+					}
+					set_politics = {
+						ruling_party = liberal_republic
+					}
+				}
+				kill_ideology_leader = liberal_republic
+				create_country_leader = {
+					name = "Übergangspräsident Abbé Fulbert Youlou"
+					desc = ""
+					picture = "gfx/leaders/RCG/RCG_Youlou_libdem.tga"
+					expire = "1965.1.1"
+					ideology = liberalism
+					traits = {
+					}
+				}
+				
+				set_cosmetic_tag = RCG_KX_MAF_COLLASPE
+			}
+		}
+	}
+	
+	option = {
+		name = slp_menu.57.a
+	}
+}
+
+country_event = {
 	id = slp_menu.98
 	title = slp_menu.98.t
 	desc = slp_menu.98.d
