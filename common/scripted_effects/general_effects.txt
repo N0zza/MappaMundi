@@ -1,134 +1,121 @@
-federalize_the_british_empire = {
-	
-	every_state = { 
-		limit = {
-			OR = {
-				#Africa & Middle East
-				is_owned_by = EGY
-				is_owned_by = PAL
-				is_owned_by = JOR
-				is_owned_by = KUW
-				is_owned_by = CYP
-				is_owned_by = MLT
-				is_owned_by = SUD
-				is_owned_by = TAQ
-				is_owned_by = DGI
-				is_owned_by = SML
-				is_core_of = UGA
-				is_owned_by = KEN
-				is_owned_by = TZN
-				is_owned_by = ZAN
-				is_owned_by = MMB
-				is_owned_by = MLW
-				is_owned_by = ZAM
-				is_owned_by = ZIM
-				is_owned_by = BOT
-				is_owned_by = SWZ
-				is_owned_by = LES
-				is_owned_by = GB2
-				is_owned_by = GAM
-				is_owned_by = SIE
-				is_owned_by = HSL
-				is_owned_by = GNH
-				is_owned_by = AHI
-				is_owned_by = GCO
-				is_owned_by = WTO
-				is_owned_by = NGA
-				is_owned_by = NCM
-				is_owned_by = SCM
-				
-				#Yemen
-				AND = {
-					AND = {
-						is_core_of = YEM
-						NOT = {
-							is_owned_by = YEM
-						}
-					}
-					NOT = {
-						is_owned_by = SAU
-						is_owned_by = IMO
-					}
-				}
-				
-				#Trucial States
-				AND = {
-					is_core_of = UAE
-					is_owned_by = QAT
-					is_owned_by = BHR
-					NOT = {
-						is_owned_by = OMN
-						is_owned_by = SAU
-					}
-				}
-				
-				#Asia
-				is_owned_by = SRL
-				is_owned_by = HKG
-				is_owned_by = SOL
-				is_owned_by = FIJ
-				is_owned_by = BWP
-				is_owned_by = KIR
-				is_owned_by = TON
-				is_owned_by = PTC
-				AND = {
-					is_core_of = MAL
-					is_owned_by = SRW
-					is_owned_by = BEI
-					NOT = {
-						is_core_of = INS
-						is_owned_by = SIA
-					}
-				}
-				
-				#The Americas
-				is_owned_by = FAL
-				is_owned_by = GYA
-				is_owned_by = TRI
-				is_owned_by = BSA
-				is_owned_by = BAR
-				is_owned_by = BAS
-				is_owned_by = JAM
-				is_owned_by = BLZ
-				is_owned_by = BAH
-				is_owned_by = BER
-				is_owned_by = NFL
-			}
-		}
-		ENG = {
-			transfer_state = PREV
-		}
-	}
-	
-	# Australia 
-	
+historic_claims_effect = {
+	french_louisiana_claims = yes
+}
+
+french_louisiana_claims = {
 	every_state = {
 		limit = {
 			OR = {
-				is_owned_by = PNG
-				is_owned_by = NGU
-				is_owned_by = NFI
-				is_owned_by = NAU
+				is_core_of = AKS
+				is_core_of = OKH
+				is_core_of = MSI
+				is_core_of = KAN
+				is_core_of = NEB
+				is_core_of = IOW
+				AND = {
+					is_core_of = SDA
+					NOT = {
+						state = 1404
+					}
+				}
+				AND = {
+					is_core_of = NDA
+					NOT = {
+						state = 1405
+						state = 3006
+						state = 4441
+						state = 4533
+						state = 8011
+						state = 9627
+						state = 9628
+						state = 11053
+						state = 11054
+						state = 14912
+					}
+				}
+				AND = {
+					is_core_of = MNA
+					NOT = {
+						state = 1276
+						state = 1982
+						state = 7586
+						state = 9623
+						state = 9625
+						state = 9672
+					}
+				}
+				
+				state = 381
+				state = 391
+				state = 919
+				state = 1161
+				state = 1164
+				state = 1166
+				state = 1407
+				state = 1408
+				state = 1419
+				state = 1421
+				state = 1467
+				state = 1967
+				state = 1968
+				state = 1974
+				state = 1980
+				state = 1993
+				state = 3005
+				state = 3701
+				state = 4127
+				state = 4149
+				state = 4428
+				state = 4449
+				state = 4450
+				state = 4451
+				state = 4456
+				state = 4457
+				state = 4458
+				state = 4467
+				state = 4473
+				state = 4476
+				state = 4478
+				state = 4531
+				state = 4532
+				state = 4593
+				state = 4607
+				state = 4608
+				state = 9519
+				state = 9621
+				state = 9622
+				state = 9633
+				state = 9630
+				state = 9631
+				state = 11047
+				state = 11048
+				state = 12271
+				state = 12272
+				state = 12273
+				state = 12281
+				state = 13573
+				state = 13574
+				state = 15160
+				state = 15161
+				state = 15162
+				state = 15163
+				state = 15423
+				state = 15425
+				state = 15426
+				state = 15427
+				state = 15478
+				state = 15479
+				state = 15480
+				state = 15481
+				state = 15482
+				state = 15485
+				state = 15505
+				state = 15506
+				state = 15509
 			}
 		}
-		AST = {
-			transfer_state = PREV
-		}
-	}
-	
-	# New Zealand
-	
-	every_state = {
-		limit = {
-			OR = {
-				is_owned_by = SAM
-				is_owned_by = TKL
-				is_owned_by = NIU
-				is_owned_by = CKI
-			}
-		}
-		NZL = {
-			transfer_state = PREV
+		LOU = {
+			add_state_claim = PREV
 		}
 	}
 }
