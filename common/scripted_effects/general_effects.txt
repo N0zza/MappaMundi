@@ -1,5 +1,8 @@
 historic_claims_effect = {
 	french_louisiana_claims = yes
+	greater_mexico_claims = yes
+	cisleithania_claims = yes
+	transleithania_claims = yes
 }
 
 french_louisiana_claims = {
@@ -115,6 +118,88 @@ french_louisiana_claims = {
 			}
 		}
 		LOU = {
+			add_state_claim = PREV
+		}
+	}
+}
+greater_mexico_claims = {
+	every_state = {
+		limit = {
+			OR = {
+				AND = {
+					OR = {
+						is_core_of = TEX
+						is_claimed_by = TEX
+					}
+					NOT = {
+						state = 2268
+						state = 5806
+					}
+				}
+				is_core_of = NMX
+				is_core_of = ARZ
+				is_core_of = CAL
+				is_core_of = NVA
+				is_core_of = UTH
+				
+				state = 382
+				state = 918
+				state = 1409
+				state = 3007
+				state = 4453
+				state = 4454
+				state = 4455
+				state = 4477
+				state = 9513
+				state = 9518
+				state = 9620
+				state = 14967
+				state = 15156
+				state = 15157
+				state = 15158
+				state = 15159
+			}
+		}
+		MEX = {
+			add_state_claim = PREV
+		}
+	}
+}
+cisleithania_claims = {
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = CZC
+				is_core_of = GAL
+				is_core_of = DLM
+				is_core_of = TYR
+				is_core_of = IST
+				is_core_of = SLV
+				
+				state = 5937
+			}
+		}
+		AUS = {
+			add_state_claim = PREV
+		}
+	}
+}
+transleithania_claims = {
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = SLO
+				is_core_of = TRA
+				is_core_of = VJD
+				AND = {
+					is_core_of = SVA
+					NOT = {
+						state = 5937
+					}
+				}
+			}
+		}
+		HUN = {
 			add_state_claim = PREV
 		}
 	}
