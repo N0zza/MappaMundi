@@ -169,14 +169,18 @@ cisleithania_claims = {
 	every_state = {
 		limit = {
 			OR = {
+				is_core_of = AUS
 				is_core_of = CZC
 				is_core_of = GAL
-				is_core_of = DLM
+				AND = {
+					is_core_of = DLM
+					NOT = {
+						state = 802
+					}
+				}
 				is_core_of = TYR
 				is_core_of = IST
 				is_core_of = SLV
-				
-				state = 5937
 			}
 		}
 		AUS = {
@@ -191,12 +195,12 @@ transleithania_claims = {
 				is_core_of = SLO
 				is_core_of = TRA
 				is_core_of = VJD
-				AND = {
-					is_core_of = SVA
-					NOT = {
-						state = 5937
-					}
-				}
+				is_core_of = SVA
+				is_core_of = BRG
+				state = 804
+				state = 807
+				state = 5931
+				state = 18253
 			}
 		}
 		HUN = {
