@@ -920,13 +920,13 @@
 				FIN = {
 					set_cosmetic_tag = FIN_RUS
 					set_politics = {
-							ruling_party = monarchism
+						ruling_party = monarchism
 					}
 				}
 				POL = {
 					set_cosmetic_tag = POL_RUS
 					set_politics = {
-							ruling_party = authoritarian_monarchism
+						ruling_party = authoritarian_monarchism
 					}
 					transfer_state = 789
 					transfer_state = 830
@@ -7160,30 +7160,127 @@
 						limit = {
 							OR = {
 								is_core_of = AUS
-								is_owned_by = CZE
-								is_core_of = SLO
-								is_core_of = HUN
-								is_core_of = GAL
-								is_core_of = TRA
-								is_core_of = SLV
-								is_core_of = CRO
-								is_core_of = BOS
-								is_core_of = IST
-								is_core_of = VJD
 								is_core_of = CZC
-								is_claimed_by = CRO
-							}
-							NOT = {
-								is_owned_by = LIE
-								is_core_of = CHI
-								is_owned_by = TEU
-								is_core_of = PRE
+								is_core_of = GAL
+								AND = {
+									is_core_of = DLM
+									NOT = {
+										state = 802
+									}
+								}
+								is_core_of = TYR
+								is_core_of = IST
+								is_core_of = SLV
 							}
 						}
 						AUS = {
 							transfer_state = PREV
 							add_state_core = PREV
 						}
+					}
+					
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = SLO
+								is_core_of = TRA
+								is_core_of = VJD
+								is_core_of = SVA
+								is_core_of = BRG
+								state = 804
+								state = 807
+								state = 5931
+								state = 18253
+							}
+						}
+						HUN = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = BOS
+							}
+							NOT = {
+								is_owned_by = HUN
+								is_owned_by = AUS
+							}
+						}
+						BOS = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							OR = {
+								AND = {
+									is_core_of = CRO
+									is_owned_by = HUN
+									NOT = {
+										state = 818
+										state = 2209
+										state = 7365
+									}
+								}
+								state = 814
+								state = 7377
+								state = 7378
+								state = 7620
+							}
+						}
+						CRO = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							OR = {
+								AND = {
+									is_core_of = GAL
+									is_owned_by = AUS
+								}
+							}
+						}
+						GAL = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
+					}
+					AUS = {
+						set_cosmetic_tag = AUS_1914
+					}
+					HUN = {
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+						set_cosmetic_tag = HUN_1914
+					}
+					BOS = {
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+						}
+						set_cosmetic_tag = BOS_1914
+					}
+					CRO = {
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+						set_cosmetic_tag = CRO_1914
+					}
+					GAL = {
+						set_politics = {
+							ruling_party = monarchism
+						}
+						set_cosmetic_tag = GAL_1914
+						
+						set_capital = 61
 					}
 					every_state = {
 						limit = {
@@ -7216,35 +7313,35 @@
 							add_state_core = PREV
 					}
 				}
-					every_state = {
-						limit = {
-							is_core_of = ALN
+				every_state = {
+					limit = {
+						is_core_of = ALN
 					}
-						FIN = {
-							transfer_state = PREV
+					FIN = {
+						transfer_state = PREV
 							
-							set_cosmetic_tag = FIN_RUS
-							set_politics = {
-								ruling_party = monarchism
+						set_cosmetic_tag = FIN_RUS
+						set_politics = {
+							ruling_party = monarchism
 						}
 							
-							set_popularities = {
-								monarchism = 100
+						set_popularities = {
+							monarchism = 100
 						}
 					}
 				}
 			
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = IRE
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = IRE
 						}
-							NOT = {
-								is_core_of = CHI
+						NOT = {
+							is_core_of = CHI
 						}
 					}
-						ENG = {
-							add_state_core = PREV
+					ENG = {
+						add_state_core = PREV
 					}
 				}
 					
@@ -7328,118 +7425,115 @@
 					}
 				}
 		
-					ROM = {
-							release = ALB
-						transfer_state = 77
-						transfer_state = 7296
-						transfer_state = 3188
-						transfer_state = 2174
-						transfer_state = 2173
-						transfer_state = 2172
-						transfer_state = 7312
-						transfer_state = 1488
-						transfer_state = 7301
-						transfer_state = 1489
-						transfer_state = 7307
-						transfer_state = 7308
-						transfer_state = 5537
-						transfer_state = 5538
-						transfer_state = 2250
-						set_politics = {
+				ROM = {
+					release = ALB
+					transfer_state = 77
+					transfer_state = 7296
+					transfer_state = 3188
+					transfer_state = 2174
+					transfer_state = 2173
+					transfer_state = 2172
+					transfer_state = 7312
+					transfer_state = 1488
+					transfer_state = 7301
+					transfer_state = 1489
+					transfer_state = 7307
+					transfer_state = 7308
+					transfer_state = 5537
+					transfer_state = 5538
+					transfer_state = 2250
+				}
+					
+				BUL = {
+					transfer_state = 2338
+					transfer_state = 7331
+					transfer_state = 1202
+					transfer_state = 2210
+					transfer_state = 184
+					transfer_state = 7233
+					transfer_state = 2046
+					transfer_state = 1156
+					transfer_state = 14443
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+					}
+				}
+					
+				TUR = {
+					transfer_state = 2202
+					transfer_state = 2203
+					transfer_state = 2204
+					transfer_state = 5911
+					transfer_state = 14440
+					transfer_state = 4209
+					set_capital = {
+						state = 341
+					}
+					set_politics = {
+						ruling_party = monarchism
+					}
+				}
+					
+				PER = {
+					transfer_state = 12784
+				}
+					
+				MNT = {
+					transfer_state = 5921
+					transfer_state = 5922
+					transfer_state = 3640
+					set_politics = {
+						ruling_party = monarchism
+					}
+					set_capital = {
+						state = 2791
+					}
+				}
+					
+				SER = {
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+					}
+				}
+					
+				LIE = {
+					transfer_state = 11056
+				}
+					
+				MLT = {
+					set_cosmetic_tag = MLT_ENG
+					set_politics = {
 							ruling_party = authoritarian_monarchism
 					}
 				}
 					
-					BUL = {
-						transfer_state = 2338
-						transfer_state = 7331
-						transfer_state = 1202
-						transfer_state = 2210
-						transfer_state = 184
-						transfer_state = 7233
-						transfer_state = 2046
-						transfer_state = 1156
-						transfer_state = 14443
-						set_politics = {
-							ruling_party = authoritarian_monarchism
+				CYP = {
+					set_cosmetic_tag = CYP_ENG
+					set_politics = {
+						ruling_party = authoritarian_monarchism
 					}
 				}
 					
-					TUR = {
-						transfer_state = 2202
-						transfer_state = 2203
-						transfer_state = 2204
-						transfer_state = 5911
-						transfer_state = 14440
-						transfer_state = 4209
-						set_capital = {
-							state = 341
+				every_state = {
+					limit = {
+						is_core_of = WTR
+						OR = {
+							is_owned_by = HOL
 						}
-						set_politics = {
-							ruling_party = monarchism
-						}
 					}
-					
-					PER = {
-						transfer_state = 12784
-					}
-					
-					MNT = {
-						transfer_state = 5921
-						transfer_state = 5922
-						transfer_state = 3640
-						set_politics = {
-							ruling_party = monarchism
-					}
-						set_capital = {
-							state = 2791
+					WTR = {
+						transfer_state = PREV
 					}
 				}
 					
-					SER = {
-						set_politics = {
-							ruling_party = authoritarian_monarchism
+				every_state = {
+					limit = {
+						is_core_of = CYP
 					}
-				}
-					
-					LIE = {
-						transfer_state = 11056
-				}
-					
-					MLT = {
-						set_cosmetic_tag = MLT_ENG
-						set_politics = {
-							ruling_party = authoritarian_monarchism
-					}
-				}
-					
 					CYP = {
-						set_cosmetic_tag = CYP_ENG
-						set_politics = {
-							ruling_party = authoritarian_monarchism
+						transfer_state = PREV
 					}
 				}
-					
-					every_state = {
-						limit = {
-							is_core_of = WTR
-							OR = {
-								is_owned_by = HOL
-						}
-					}
-						WTR = {
-							transfer_state = PREV
-					}
-				}
-					
-					every_state = {
-						limit = {
-							is_core_of = CYP
-					}
-						CYP = {
-							transfer_state = PREV
-					}
-			}
 		every_state = {
 			limit = {
 				is_core_of = IRE
@@ -7610,28 +7704,35 @@
 					is_core_of = KYR
 					is_core_of = TMS
 					is_core_of = KSR
+					
+					state = 19130
+					state = 19131
 					}
 				}
 				RUS = {
 					transfer_state = PREV
 					add_state_core = PREV
-					}
+				}
 			}
 		TUR = {
+			clr_country_flag = has_secondary_leader
+			set_cosmetic_tag = OTTO
+			set_politics = {
+				ruling_party = monarchism
+			}
+			set_popularities = {
+				monarchism = 100
+			}
 			transfer_state = 2333
 			transfer_state = 3356
 			transfer_state = 9395
 			transfer_state = 9871
 			transfer_state = 12780
 			transfer_state = 12781
-			set_cosmetic_tag = OTTO
-			set_politics = {
-				ruling_party = monarchism
-			}
 		}
-			every_state = {
-				limit = {
-					OR = {
+		every_state = {
+			limit = {
+				OR = {
 					is_owned_by = TUR
 					is_owned_by = YEM
 					is_owned_by = QAT
@@ -7642,24 +7743,24 @@
 					is_core_of = HJZ
 					is_core_of = IRQ
 					is_core_of = JOR
-					}
-					NOT = {
+				}
+				NOT = {
 					is_owned_by = JBL
-					}
 				}
-				TUR = {
-					transfer_state = PREV
-					add_state_core = PREV
-					}
-				}
-			every_state = {
-				limit = {
-					OR = {
+			}
+			TUR = {
+				transfer_state = PREV
+				add_state_core = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				OR = {
 					is_core_of = CHI
 					is_core_of = PRC
 					is_owned_by = TUG
-					}
-					NOT = {
+				}
+				NOT = {
 					is_core_of = SOV
 					is_core_of = TIB
 					is_core_of = BRM
@@ -7724,33 +7825,33 @@
 					is_core_of = CIH
 					is_core_of = WGS
 					is_core_of = KOR
-					}
 				}
-				CHI = {
-					transfer_state = PREV
-					add_state_core = PREV
-					}
-				}
-				every_state = {
-				limit = {
-					is_core_of = ZKK
-				}
-				ZKK = {
-					transfer_state = PREV
-					set_politics = {
-							ruling_party = centrist_monarchism
+			}
+			CHI = {
+				transfer_state = PREV
+				add_state_core = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = ZKK
+			}
+			ZKK = {
+				transfer_state = PREV
+				set_politics = {
+					ruling_party = centrist_monarchism
 				}
 			}
 		}
 				
-				every_state = {
-				limit = {
-					is_core_of = LGQ
-				}
-				LGQ = {
-					transfer_state = PREV
-					set_politics = {
-							ruling_party = centrist_monarchism
+		every_state = {
+			limit = {
+				is_core_of = LGQ
+			}
+			LGQ = {
+				transfer_state = PREV
+				set_politics = {
+					ruling_party = centrist_monarchism
 				}
 			}
 		}
@@ -8904,151 +9005,208 @@
 					NFI = {
 						set_cosmetic_tag = NFI_ENG
 				}
-					ICE = {
-						create_country_leader = {
-							name = "Guvernor Hannes Þórður Pétursson Hafstein"
-							desc = ""
-							picture = "gfx/leaders/ICE/1914_ICE_Hannes_Hafstein.tga"
-							expire = "1965.1.1"
-							ideology = authmon
-							traits = {
+				ICE = {
+					create_country_leader = {
+						name = "Guvernor Hannes Þórður Pétursson Hafstein"
+						desc = ""
+						picture = "gfx/leaders/ICE/1914_ICE_Hannes_Hafstein.tga"
+						expire = "1965.1.1"
+						ideology = authmon
+						traits = {
 						}
 					}
 				}
-					ENG = {
-						create_country_leader = {
-							name = "King George V of Saxe-Coburg and Gotha"
-							desc = ""
-							picture = "gfx/leaders/ENG/1914_ENG_George_V.tga"
-							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
-							traits = {
+				ENG = {
+					create_country_leader = {
+						name = "King George V of Saxe-Coburg and Gotha"
+						desc = ""
+						picture = "gfx/leaders/ENG/1914_ENG_George_V.tga"
+						expire = "1965.1.1"
+						ideology = conservative_constitutionalism
+						traits = {
 						}
 					}
 				}
-					FRA = {
-						create_country_leader = {
-							name = "Président Raymond Nicolas Landry Poincaré"
-							desc = ""
-							picture = "gfx/leaders/FRA/1914_FRA_Raymond_Poincare.tga"
-							expire = "1965.1.1"
-							ideology = liberal_conservatism
-							traits = {
+				FRA = {
+					create_country_leader = {
+						name = "Président Raymond Nicolas Landry Poincaré"
+						desc = ""
+						picture = "gfx/leaders/FRA/1914_FRA_Raymond_Poincare.tga"
+						expire = "1965.1.1"
+						ideology = liberal_conservatism
+						traits = {
 						}
 					}
 				}
-					ITA = {
-						create_country_leader = {
-							name = "Re Vittorio Emanuele III di Savoia"
-							desc = ""
-							picture = "gfx/leaders/ITA/1914_ITA_Victor_Emmannuel_III.tga"
-							expire = "1965.1.1"
-							ideology = authmon
-							traits = {
+				ITA = {
+					create_country_leader = {
+						name = "Re Vittorio Emanuele III di Savoia"
+						desc = ""
+						picture = "gfx/leaders/ITA/1914_ITA_Victor_Emmannuel_III.tga"
+						expire = "1965.1.1"
+						ideology = authmon
+						traits = {
 						}
 					}
 				}
-					RUS = {
-						every_owned_states = {do_russian_renames = yes}
+				RUS = {
+					clr_country_flag = has_secondary_leader
+					
+					every_owned_states = {do_russian_renames = yes}
 						
-						set_popularities = {
-							monarchism = 100
+					set_popularities = {
+						monarchism = 100
 					}
 						
-						create_country_leader = {
-							name = "Car' Nikoláj II Romanóvskij"
-							desc = ""
-							picture = "gfx/leaders/Russia/1914_RUS_Nicholas_II.tga"
-							expire = "1965.1.1"
-							ideology = absolutism
-							traits = {
+					create_country_leader = {
+						name = "Car' Nikoláj II Romanóvskij"
+						desc = ""
+						picture = "gfx/leaders/Russia/1914_RUS_Nicholas_II.tga"
+						expire = "1965.1.1"
+						ideology = absolutism
+						traits = {
 						}
 					}
 				}
+				GER = {
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+					}
+						
+					set_popularities = {
+						authoritarian_monarchism = 100
+					}
+						
+					create_country_leader = {
+						name = "Kaiser Wilhelm II von Hohenzollern"
+						desc = ""
+						picture = "gfx/leaders/GER/1914_GER_Wilhelm_II.tga"
+						expire = "1965.1.1"
+						ideology = authmon
+						traits = {
+						}
+					}
+				}
+				every_state = {
+					limit = {
+						NOT = {
+							is_owned_by = GER
+						}
+					}
 					GER = {
-						set_politics = {
-							ruling_party = authoritarian_monarchism
+						remove_state_claim = PREV
+						remove_state_core = PREV 
 					}
-						
-						set_popularities = {
-							authoritarian_monarchism = 100
-					}
-						
-						create_country_leader = {
-							name = "Kaiser Wilhelm II von Hohenzollern"
-							desc = ""
-							picture = "gfx/leaders/GER/1914_GER_Wilhelm_II.tga"
-							expire = "1965.1.1"
-							ideology = authmon
-							traits = {
+				}
+				AUS = {
+					create_country_leader = {
+						name = "Kaiser Franz Josef I von Habsburg-Lothringen"
+						desc = ""
+						picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+						expire = "1965.1.1"
+						ideology = conservative_constitutionalism
+						traits = {
 						}
 					}
 						
-						every_state = {
-							limit = {
-								NOT = {
-									is_owned_by = GER
-							}
-						}
-							remove_state_claim = PREV
+					set_popularities = {
+						conservative_monarchism = 100
 					}
+					
+					set_country_flag = has_secondary_leader
 				}
-					AUS = {
-						create_country_leader = {
-							name = "Kaiser Franz Josef I von Habsburg-Lothringen"
-							desc = ""
-							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
-							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
-							traits = {
+				HUN = {
+					create_country_leader = {
+						name = "Magyar Király I. Ferenc József Habsburg-Lotaringia"
+						desc = ""
+						picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+						expire = "1965.1.1"
+						ideology = authmon
+						traits = {
 						}
 					}
-						
-						set_popularities = {
-							conservative_monarchism = 100
+					
+					set_popularities = {
+						authoritarian_monarchism = 100
 					}
+					
+					set_country_flag = has_secondary_leader
 				}
-					TUR = {
-						create_country_leader = {
-							name = "Padişah Mehmed V Reşâd"
-							desc = ""
-							picture = "gfx/leaders/TUR/1914_TUR_Mehmed_V.tga"
-							expire = "1965.1.1"
-							ideology = absolutism
-							traits = {
+				CRO = {
+					create_country_leader = {
+						name = "Kralj Hrvatske i Slavonije Franjo Josip I."
+						desc = ""
+						picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+						expire = "1965.1.1"
+						ideology = authmon
+						traits = {
+						}
+					}
+					
+					set_popularities = {
+						authoritarian_monarchism = 100
+					}
+					
+					set_country_flag = has_secondary_leader
+				}
+				GAL = {
+					create_country_leader = {
+						name = "Kralj Galicije i Lodomerije Franciszek Józef I"
+						desc = ""
+						picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+						expire = "1965.1.1"
+						ideology = absolutism
+						traits = {
+						}
+					}
+					
+					set_popularities = {
+						monarchism = 100
+					}
+					
+					set_country_flag = has_secondary_leader
+				}
+				TUR = {
+					create_country_leader = {
+						name = "Padişah Mehmed V Reşâd"
+						desc = ""
+						picture = "gfx/leaders/TUR/1914_TUR_Mehmed_V.tga"
+						expire = "1965.1.1"
+						ideology = absolutism
+						traits = {
 						}
 					}
 				}
-					USA = {
-						create_country_leader = {
-							name = "President Thomas Woodrow Wilson"
-							desc = ""
-							picture = "gfx/leaders/USA/1914_USA_Woodrow_Wilson.tga"
-							expire = "1965.1.1"
-							ideology = american_liberalism
-							traits = {
+				USA = {
+					create_country_leader = {
+						name = "President Thomas Woodrow Wilson"
+						desc = ""
+						picture = "gfx/leaders/USA/1914_USA_Woodrow_Wilson.tga"
+						expire = "1965.1.1"
+						ideology = liberalism
+						traits = {
 						}
 					}
 				}
-					JAP = {
-						create_country_leader = {
-							name = "Ten'nō Yoshihito"
-							desc = ""
-							picture = "gfx/leaders/JAP/1914_JAP_Yoshihito.tga"
-							expire = "1965.1.1"
-							ideology = stratmon
-							traits = {
+				JAP = {
+					create_country_leader = {
+						name = "Ten'nō Yoshihito"
+						desc = ""
+						picture = "gfx/leaders/JAP/1914_JAP_Yoshihito.tga"
+						expire = "1965.1.1"
+						ideology = stratmon
+						traits = {
 						}
 					}
 				}
-					CHI = {
-						create_country_leader = {
-							name = "Tsungt'ung Yüan Shih-k'ai"
-							desc = ""
-							picture = "gfx/leaders/CHI/1914_CHI_Yuan_Shikai.tga"
-							expire = "1965.1.1"
-							ideology = despotism
-							traits = {
+				CHI = {
+					create_country_leader = {
+						name = "Tsungt'ung Yüan Shih-k'ai"
+						desc = ""
+						picture = "gfx/leaders/CHI/1914_CHI_Yuan_Shikai.tga"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
 						}
 					}
 				}
