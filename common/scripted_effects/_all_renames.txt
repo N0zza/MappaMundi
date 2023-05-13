@@ -414,26 +414,32 @@ do_all_renames = {
 					}
 					AND = {
 						tag = CZ2
-						has_government  = national_socialism
-						has_government = republican_fascism
-						has_government  = stratocratic
+						OR = {
+							has_government  = national_socialism
+							has_government = republican_fascism
+							has_government  = stratocratic
+						}
 					}
 					AND = {
 						tag = SSC
-						has_government  = national_socialism
-						has_government = republican_fascism
-						has_government  = stratocratic
+						OR = {
+							has_government  = national_socialism
+							has_government = republican_fascism
+							has_government  = stratocratic
+						}
 					}
 					AND = {
 						tag = GMA
-						has_government  = national_socialism
-						has_government = fascism
-						has_government = monarchism
-						has_government  = stratocratic_monarchism
-						has_government  = stratocratic
-						has_government = authoritarian_monarchism
-						has_government = centrist_monarchism
-						has_government = conservative_monarchism
+						OR = {
+							has_government  = national_socialism
+							has_government = fascism
+							has_government = monarchism
+							has_government  = stratocratic_monarchism
+							has_government  = stratocratic
+							has_government = authoritarian_monarchism
+							has_government = centrist_monarchism
+							has_government = conservative_monarchism
+						}
 					}
 					AND = {
 						tag = MAF
@@ -1050,6 +1056,21 @@ do_all_renames = {
 								has_government = stratocratic_monarchism
 								has_government = monarchism
 								has_government = national_socialism
+							}
+						}
+					}
+					AND = {
+						tag = GMA
+						NOT = {
+							OR = {
+								has_government  = national_socialism
+								has_government = fascism
+								has_government = monarchism
+								has_government  = stratocratic_monarchism
+								has_government  = stratocratic
+								has_government = authoritarian_monarchism
+								has_government = centrist_monarchism
+								has_government = conservative_monarchism
 							}
 						}
 					}
