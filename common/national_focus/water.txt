@@ -7245,6 +7245,13 @@
 								AND = {
 									is_core_of = GAL
 									is_owned_by = AUS
+									
+									NOT = {
+										is_core_of = BKV
+										NOT = {
+											state = 3326
+										}
+									}
 								}
 							}
 						}
@@ -7253,6 +7260,23 @@
 							add_state_core = PREV
 						}
 					}
+					
+					every_state = {
+						limit = {
+							OR = {
+								AND = {
+									is_core_of = FIU
+									is_owned_by = CRO
+								}
+								state = 5937
+							}
+						}
+						FIU = {
+							transfer_state = PREV
+							add_state_core = PREV
+						}
+					}
+					
 					AUS = {
 						set_cosmetic_tag = AUS_1914
 					}
@@ -7281,6 +7305,12 @@
 						set_cosmetic_tag = GAL_1914
 						
 						set_capital = 61
+					}
+					FIU = {
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+						set_cosmetic_tag = FIU_1914
 					}
 					every_state = {
 						limit = {
@@ -7328,6 +7358,15 @@
 						set_popularities = {
 							monarchism = 100
 						}
+					}
+				}
+				
+				every_state = {
+					limit = {
+						is_owned_by = ERH
+					}
+					SWI = {
+						transfer_state = PREV
 					}
 				}
 			
