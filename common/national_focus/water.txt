@@ -15900,13 +15900,16 @@
 			}
 		}
 		add_victory_points = { #Naypyidaw
-			province = 13206
+			province = 1650
 			value = 45
 		}
 		BRM = {
 			set_capital = {
 				state = 13206
 				remember_old_capital = no
+			}
+			every_owned_state = {
+				do_burmese_renames = yes
 			}
 			set_cosmetic_tag = BRM_2023
 			set_politics = {
@@ -16764,10 +16767,10 @@
 				ruling_party = anocratic_republic
 			}
 			set_popularities = {
-				centrist_republic = 48
 				socialism_ideology = 36
+				centrist_republic = 6
 				democratic = 10
-				neutrality = 6
+				anocratic_republic = 48
 			}
 		}
 		NOC = {
@@ -16789,10 +16792,11 @@
 			}
 			set_popularities = {
 				vanguardism = 27
-				socialism_ideology = 7
-				liberal_republic = 29
+				socialism_ideology = 5
+				liberal_republic = 13
+				centrist_republic = 16
 				democratic = 30
-				neutrality = 2
+				anocratic_republic = 4
 				republican_fascism = 5
 			}
 		}
@@ -16805,27 +16809,27 @@
            		ideology = liberal_conservatism
 			}
 		}
-			2656 = {
-				set_demilitarized_zone = yes
-			}
-			15670 = {
-				set_demilitarized_zone = yes
-			}
-			15671 = {
-				set_demilitarized_zone = yes
-			}
-			15672 = {
-				set_demilitarized_zone = yes
-			}
-			15680 = {
-				set_demilitarized_zone = yes
-			}
-			15684 = {
-				set_demilitarized_zone = yes
-			}
-			15687 = {
-				set_demilitarized_zone = yes
-			}
+		2656 = {
+			set_demilitarized_zone = yes
+		}
+		15670 = {
+			set_demilitarized_zone = yes
+		}
+		15671 = {
+			set_demilitarized_zone = yes
+		}
+		15672 = {
+			set_demilitarized_zone = yes
+		}
+		15680 = {
+			set_demilitarized_zone = yes
+		}
+		15684 = {
+			set_demilitarized_zone = yes
+		}
+		15687 = {
+			set_demilitarized_zone = yes
+		}
 			every_state = {
 				limit = {
 					OR = {
