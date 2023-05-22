@@ -13,33 +13,13 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 			factor = 0
 		}
 		hidden_effect = {
-			BRD = {
-				set_politics = {
-					ruling_party = anocratic_republic
-				}
-				set_party_name = {
-					ideology = centrist_republic
-					name = BRD_centrist_republic_party
-					long_name = BRD_centrist_republic_party_long
-				}
-				set_party_name = {
-					ideology = anocratic_republic
-					name = BRD_anocratic_republic_2023_party
-					long_name = BRD_anocratic_republic_2023_party_long
-				}
-				set_popularities = {
-					anocratic_republic = 70
-					neutrality = 30
-				}
+			NOC = {
+			set_popularities = {
+				socialism_ideology = 36
+				centrist_republic = 6
+				democratic = 10
+				anocratic_republic = 48
 			}
-			BRD = {
-				create_country_leader = {
-					name = "Président Évariste Ndayishimiye"
-					desc = ""
-					picture = "gfx/leaders/BRD/BRD_Evariste_Ndayishimiye.tga"
-					expire = "1965.1.1"
-					ideology = right_wing_populism
-				}
 			}
 		}
 	}

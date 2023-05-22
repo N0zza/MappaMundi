@@ -18773,7 +18773,7 @@
         		desc = ""
         		picture = "gfx/leaders/ETH/ETH_Zewde.tga"
         		expire = "1965.1.1"
-        		ideology = centrism
+        		ideology = cenrep
 			}
 		}
 		AQ3 = {
@@ -18949,9 +18949,11 @@
 				long_name = RWA_anocratic_republic_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 9
-				liberal_republic = 7
-				centrist_republic = 50
+				socialism_ideology = 11
+				liberal_republic = 3
+				centrist_republic = 3
+				democratic = 3
+				anocratic_republic = 46
 				neutrality = 34
 			}
 		}
@@ -19022,8 +19024,8 @@
 			}
 			set_party_name = {
 				ideology = anocratic_republic
-				name = DAH_anocratic_republic_2023
-				long_name = DAH_anocratic_republic_2023_long
+				name = DAH_anocratic_republic_2023_party
+				long_name = DAH_anocratic_republic_2023_party_long
 			}
 			set_popularities = {
 				socialism_ideology = 25
@@ -19053,9 +19055,9 @@
 			set_popularities = {
 				socialism_ideology = 8
 				liberal_republic = 3
+				centrist_republic = 10
 				democratic = 54
-				centrist_republic = 25
-				neutrality = 10
+				anocratic_republic = 25
 			}
 		}
 		IVO = {
@@ -19193,28 +19195,33 @@
 		GAB = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = centrist_republic
+				ruling_party = anocratic_republic
 			}
 			set_party_name = {
 				ideology = centrist_republic
-				name = GAB_centrist_republic_2023_party
-				long_name = GAB_centrist_republic_2023_party_long
+				name = GAB_centrist_republic_party
+				long_name = GAB_centrist_republic_party_long
+			}
+			set_party_name = {
+				ideology = anocratic_republic
+				name = GAB_anocratic_republic_2023_party
+				long_name = GAB_anocratic_republic_2023_party_long
 			}
 			set_popularities = {
 				socialism_ideology = 3
 				liberal_republic = 5
+				centrist_republic = 6
 				democratic = 7
-				centrist_republic = 79
-				neutrality = 6
+				anocratic_republic = 79
 			}
 		}
 		GAB = {
 			create_country_leader = {
-        		name = "Président Ali Bongo Ondimba"
-        		desc = ""
-        		picture = "gfx/leaders/GAB/GAB_Bongo.tga"
-        		expire = "1965.1.1"
-        		ideology = dominant_party_democracy
+				name = "Président Ali Bongo Ondimba"
+				desc = ""
+				picture = "gfx/leaders/GAB/GAB_Bongo.tga"
+				expire = "1965.1.1"
+				ideology = dominant_party_democracy
 			}
 		}
 		CMR = {
@@ -19226,9 +19233,11 @@
 				long_name = CMR_neutrality_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 7
-				liberal_republic = 8
+				socialism_ideology = 4
+				liberal_republic = 5
+				centrist_republic = 2
 				democratic = 1
+				anocratic_republic = 4
 				neutrality = 84
 			}
 		}
@@ -19296,19 +19305,19 @@
 				long_name = TOG_neutrality_2023_party_long
 			}
 			set_popularities = {
-				vanguardism = 4
-				socialism_ideology = 8
-				centrist_republic = 22
+				socialism_ideology = 9
+				liberal_republic = 3
+				anocratic_republic = 22
 				neutrality = 66
 			}
 		}
 		TOG = {
 			create_country_leader = {
-        		name = "Président Faure Essozimna Gnassingbé Eyadéma"
-        		desc = ""
-        		picture = "gfx/leaders/TOG/TOG_Faure_Gnassingbe.tga"
-        		expire = "1965.1.1"
-        		ideology = authoritarian_conservatism
+				name = "Président Faure Essozimna Gnassingbé Eyadéma"
+				desc = ""
+				picture = "gfx/leaders/TOG/TOG_Faure_Gnassingbe.tga"
+				expire = "1965.1.1"
+				ideology = authoritarian_conservatism
 			}
 		}
 		SEN = {
@@ -19337,7 +19346,7 @@
         		desc = ""
         		picture = "gfx/leaders/SEN/SEN_Macky.tga"
         		expire = "1965.1.1"
-        		ideology = liberalism
+        		ideology = conservative_liberalism
 			}
 		}
 		MRT = {
@@ -19405,8 +19414,9 @@
 			set_popularities = {
 				socialism_ideology = 3
 				liberal_republic = 26
+				centrist_republic = 16
 				democratic = 50
-				centrist_republic = 21
+				anocratic_republic = 5
 			}
 		}
 		GAM = {
@@ -19453,7 +19463,7 @@
 				socialism_ideology = 49
 				liberal_republic = 39
 				centrist_republic = 2
-				neutrality = 10
+				anocratic_republic = 10
 			}
 		}
 		SIE = {
@@ -19526,12 +19536,11 @@
 				long_name = NGA_centrist_republic_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 5
-				liberal_republic = 35
-				democratic = 3
+				socialism_ideology = 4
+				liberal_republic = 2
 				centrist_republic = 56
-				neutrality = 1
-			}
+				democratic = 3
+				anocratic_republic = 35
 		}
 		NGA = {
 			create_country_leader = {
