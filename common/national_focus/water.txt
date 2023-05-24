@@ -15136,7 +15136,7 @@
 		MAL = {
 			release = SGP
 			set_capital = {
-				state = 5566
+				state = 5567
 				remember_old_capital = no
 			}
 			set_politics = {
@@ -15171,10 +15171,10 @@
 				ruling_party = anocratic_republic
 			}
 			set_popularities = {
-				communism = 9
-				socialism_ideology = 1
-				anocratic_republic = 81
-				neutrality = 9
+				socialism_ideology = 9
+				liberal_republic = 2
+				centrist_republic = 9
+				anocratic_republic = 80
 			}
 		}
 		SGP = {
@@ -15197,7 +15197,7 @@
 		}
 		BEI = {
 			create_country_leader = {
-        		name = "Sultan dan Yang Di-Pertuan Hassanal Bolkiah ibni Omar Ali Saifuddien III"
+        		name = "Sultan Haji Hassanal Bolkiah Mu'izzaddin Waddaulah ibni Al-Marhum Sultan Haji Omar 'Ali Saifuddien Sa'adul Khairi Waddien"
         		desc = ""
         		picture = "gfx/leaders/BEI/BEI_Bolkiah.tga"
         		expire = "1965.1.1"
@@ -15402,11 +15402,14 @@
 				transfer_state_to = SIA
 		}
 		SIA = {
+			set_politics = {
+				ruling_party = anocratic_monarchism
+			}
 			set_cosmetic_tag = SIA_2023
 			set_party_name = {
-				ideology = stratocratic_monarchism
-				name = SIA_stratocratic_monarchism_2023_party
-				long_name = SIA_stratocratic_monarchism_2023_party_long
+				ideology = anocratic_monarchism
+				name = SIA_anocratic_monarchism_2023_party
+				long_name = SIA_anocratic_monarchism_2023_party_long
 			}
 			set_popularities = {
 				socialist_monarchy = 7
@@ -15420,11 +15423,11 @@
 		}
 		SIA = {
 			create_country_leader = {
-        		name = "Kasat Wachiralongkon"
+        		name = "Phrabāt Somdet Phra Pǭnmēnotra Rāmāthipdī Trīsinthǭn Mahā Ochirānngokron Mahitra Phūmipla Rātwarāngkūn Kitisiritmabūnnǭ Dunyadēt Sayāmintharāthibētra Rātwarōtma Bǭnmanāt Baphit Phra Wachin Klao Čhao `Ayū hūa"
         		desc = ""
         		picture = "gfx/leaders/SIA/SIA_Vajiralongkorn.tga"
         		expire = "1965.1.1"
-        		ideology = stratmon_military_junta
+        		ideology = anocmon_national_conservatism
 			}
 		}
 		every_state = {
@@ -16636,7 +16639,7 @@
 					is_claimed_by = ISR
 				}
 			}
-			do_israeli_renames = yes
+			do_hebrew_renames = yes
             ISR = { 
 				transfer_state = PREV 
 				set_capital = {
@@ -16730,7 +16733,7 @@
             limit = { 
 				is_owned_by = ISR
 			}
-			do_israeli_renames = yes
+			do_hebrew_renames = yes
         }
 		every_state = {
 			limit = {

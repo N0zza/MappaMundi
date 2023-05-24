@@ -689,7 +689,7 @@ do_all_renames = {
 				tag = ISR
 				}
 		}
-		do_israeli_renames = yes
+		do_hebrew_renames = yes
 	}
 
 	### CAT ###
@@ -1242,7 +1242,27 @@ do_all_renames = {
 				tag = SIA
 			}
 		}
-		do_siamese_renames = yes
+		do_thai_renames = yes
+	}
+	
+	### CAM ###
+	if = {
+		limit = {
+			ROOT = {
+				tag = CAM
+			}
+		}
+		do_khmer_renames = yes
+	}	
+	
+	### LAO ###
+	if = {
+		limit = {
+			ROOT = {
+				tag = LAO
+			}
+		}
+		do_lao_renames = yes
 	}	
 	
 	### BRM ###
