@@ -1,11 +1,12 @@
 ﻿capital = 380
 
-	set_popularities = {
-                liberal_republic = 80
-                theocratic = 20
-		}
-	set_politics = { 
- ruling_party = liberal_republic
+set_popularities = {
+	liberal_republic = 80
+	theocratic = 20
+}
+
+set_politics = { 
+	ruling_party = liberal_republic
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -67,6 +68,16 @@ create_country_leader = {
 	picture = "gfx/leaders/UTH/UTH_Niebuhr.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Grand Duke and Father Karl Paul Reinhold Niebuhr"
+	desc = ""
+	picture = "gfx/leaders/UTH/UTH_Niebuhr.tga"
+	expire = "1965.1.1"
+	ideology = socmon_social_democracy
 	traits = {
 	}
 }
