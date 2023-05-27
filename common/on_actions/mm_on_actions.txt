@@ -4287,7 +4287,10 @@ on_actions = {
 								has_government = national_socialism
 								
 								NOT = {
-									has_cosmetic_tag = RUS_2023
+									OR = {
+										has_cosmetic_tag = RUS_2023
+										has_cosmetic_tag = POL_2023
+									}
 								}
 							}
 							set_cosmetic_tag = GREY_GER3

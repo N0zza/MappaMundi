@@ -9096,7 +9096,7 @@
 				RUS = {
 					clr_country_flag = has_secondary_leader
 					
-					every_owned_states = {do_russian_renames = yes}
+					every_owned_state = {do_russian_renames = yes}
 						
 					set_popularities = {
 						monarchism = 100
@@ -13089,11 +13089,6 @@
 			transfer_state = 68
 			transfer_state = 8222
 			transfer_state = 10954
-			set_party_name = {
-				ideology = anocratic_republic
-				name = POL_anocratic_republic_2023_party
-				long_name = POL_anocratic_republic_2023_party_long
-			}
 			set_cosmetic_tag = POL_2023
 			set_popularities = {
 				socialism_ideology = 11
@@ -13105,6 +13100,175 @@
 			}
 		}
 		POL = {
+			set_party_name = {
+				ideology = right_anarchism
+				name = POL_right_anarchism_2023_party
+				long_name = POL_right_anarchism_2023_party_long
+			}
+			set_party_name = {
+				ideology = national_socialism
+				name = POL_national_socialism_2023_party
+				long_name = POL_national_socialism_2023_party_long
+			}
+			set_party_name = {
+				ideology = fascism
+				name = POL_fascism_2023_party
+				long_name = POL_fascism_2023_party_long
+			}
+			set_party_name = {
+				ideology = republican_fascism
+				name = POL_republican_fascism_2023_party
+				long_name = POL_republican_fascism_2023_party_long
+			}
+			set_party_name = {
+				ideology = stratocratic
+				name = POL_stratocratic_2023_party
+				long_name = POL_stratocratic_2023_party_long
+			}
+			set_party_name = {
+				ideology = authoritarian_monarchism
+				name = POL_authoritarian_monarchism_2023_party
+				long_name = POL_authoritarian_monarchism_2023_party_long
+			}
+			set_party_name = {
+				ideology = neutrality
+				name = POL_neutrality_2023_party
+				long_name = POL_neutrality_2023_party_long
+			}
+			set_party_name = {
+				ideology = anocratic_monarchism
+				name = POL_anocratic_monarchism_2023_party
+				long_name = POL_anocratic_monarchism_2023_party_long
+			}
+			set_party_name = {
+				ideology = anocratic_republic
+				name = POL_anocratic_republic_2023_party
+				long_name = POL_anocratic_republic_2023_party_long
+			}
+			set_party_name = {
+				ideology = democratic
+				name = POL_democratic_2023_party
+				long_name = POL_democratic_2023_party_long
+			}
+			set_party_name = {
+				ideology = centrist_monarchism
+				name = POL_centrist_monarchism_2023_party
+				long_name = POL_centrist_monarchism_2023_party_long
+			}
+			set_party_name = {
+				ideology = centrist_republic
+				name = POL_centrist_republic_2023_party
+				long_name = POL_centrist_republic_2023_party_long
+			}
+			set_party_name = {
+				ideology = democratic_monarchism
+				name = POL_democratic_monarchism_2023_party
+				long_name = POL_democratic_monarchism_2023_party_long
+			}
+			set_party_name = {
+				ideology = liberal_republic
+				name = POL_liberal_republic_2023_party
+				long_name = POL_liberal_republic_2023_party_long
+			}
+			set_party_name = {
+				ideology = socialist_monarchy
+				name = POL_socialist_monarchy_2023_party
+				long_name = POL_socialist_monarchy_2023_party_long
+			}
+			set_party_name = {
+				ideology = socialism_ideology
+				name = POL_socialism_ideology_2023_party
+				long_name = POL_socialism_ideology_2023_party_long
+			}
+			set_party_name = {
+				ideology = left_anarchism
+				name = POL_left_anarchism_2023_party
+				long_name = POL_left_anarchism_2023_party_long
+			}
+			set_party_name = {
+				ideology = communism
+				name = POL_communism_2023_party
+				long_name = POL_communism_2023_party_long
+			}
+			set_party_name = {
+				ideology = vanguardism
+				name = POL_vanguardism_2023_party
+				long_name = POL_vanguardism_2023_party_long
+			}
+		}
+		POL = {
+			create_country_leader = {
+				name = "Przewodniczący Rady Państwa Krzysztof Szwej"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Szwej.tga"
+				expire = "1965.1.1"
+				ideology = totsoc
+			}
+			create_country_leader = {
+				name = "Prezydent Krzysztof Szwej"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Szwej.tga"
+				expire = "1965.1.1"
+				ideology = authoritarian_socialism
+			}
+			create_country_leader = {
+				name = "Prezydent Robert Biedroń"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Biedroń.tga"
+				expire = "1965.1.1"
+				ideology = social_democracy
+			}
+			create_country_leader = {
+				name = "Wielki Książę Adam IV z Czartoryskich"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Adam_IV.tga"
+				expire = "1965.1.1"
+				ideology = socmon_social_democracy
+			}
+			create_country_leader = {
+				name = "Prezydent Rafał Kazimierz Trzaskowski"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Trzaskowski.tga"
+				expire = "1965.1.1"
+				ideology = liberalism
+			}
+			create_country_leader = {
+				name = "Król Michał-Benedykt Wettyn"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Michael.tga"
+				expire = "1965.1.1"
+				ideology = liberal_constitutionalism
+			}
+			create_country_leader = {
+        		name = "Prezydent Szymon Franciszek Hołownia"
+        		desc = ""
+        		picture = "gfx/leaders/POL/POL_Hołownia.tga"
+        		expire = "1965.1.1"
+        		ideology = cenrep
+			}
+			create_country_leader = {
+				name = "Król Krzysztof z Piłsudskich"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Krzysztof.tga"
+				expire = "1965.1.1"
+				ideology = cenmon
+				traits = {
+				}
+			}
+			create_country_leader = {
+        		name = "Prezydent Andrzej Sebastian Duda"
+        		desc = ""
+        		picture = "gfx/leaders/POL/POL_Andrzej_Duda.tga"
+        		expire = "1965.1.1"
+        		ideology = paternalistic_conservatism
+			}
+			create_country_leader = {
+				name = "Król Michał-Benedykt Wettyn"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Michael.tga"
+				expire = "1965.1.1"
+				ideology = conmon_paternalistic_conservatism
+			}
 			create_country_leader = {
         		name = "Prezydent Andrzej Sebastian Duda"
         		desc = ""
@@ -13113,11 +13277,89 @@
         		ideology = national_conservatism
 			}
 			create_country_leader = {
-				name = "Król Michał-Benedykt Wettyn"
+				name = "Książę Adam IV z Czartoryskich"
 				desc = ""
-				picture = "gfx/leaders/POL/POL_Michael.tga"
+				picture = "gfx/leaders/POL/POL_Adam_IV.tga"
 				expire = "1965.1.1"
-				ideology = liberal_constitutionalism
+				ideology = anocmon_national_conservatism
+			}
+			create_country_leader = {
+        		name = "Prezydent Bogusław Rogalski"
+        		desc = ""
+        		picture = "gfx/leaders/POL/POL_Rogalski.tga"
+        		expire = "1965.1.1"
+        		ideology = authoritarian_conservatism
+			}
+			create_country_leader = {
+				name = "Król Ferdynand I z Habsburg-Lotaryńskich"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Ferdinand.tga"
+				expire = "1965.1.1"
+				ideology = authmon_authoritarian_conservatism
+			}
+			create_country_leader = {
+        		name = "Głównodowodzacy Rajmund Tomasz Andrzejczak"
+        		desc = ""
+        		picture = "gfx/leaders/POL/POL_Andrzejczak.tga"
+        		expire = "1965.1.1"
+        		ideology = military_junta
+			}
+			create_country_leader = {
+				name = "Król Krzysztof z Piłsudskich"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Krzysztof.tga"
+				expire = "1965.1.1"
+				ideology = stratmon
+				traits = {
+				}
+			}
+			create_country_leader = {
+				name = "Wódz Krzysztof Bosak"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Bosak.tga"
+				expire = "1965.1.1"
+				ideology = repcorp_ultranationalism
+			}
+			create_country_leader = {
+				name = "Cesarz Krystian-Zygmunt Hohenzollern"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Christian.tga"
+				expire = "1965.1.1"
+				ideology = ultranationalism
+				traits = {
+				}
+			}
+			create_country_leader = {
+				name = "Najwyższy Przywódca Robert Bąkiewicz"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Bąkiewicz.tga"
+				expire = "1965.1.1"
+				ideology = neo_nazism
+			}
+			create_country_leader = {
+				name = "Naczelnik Janusz Ryszard Korwin-Mikke"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Korwin.tga"
+				expire = "1965.1.1"
+				ideology = libertarian_conservatism
+			}
+			create_country_leader = {
+				name = "Ksiaze-Arcybiskup Wojciech Polak"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Polak.tga"
+				expire = "1965.1.1"
+				ideology = christian_theocracy
+				traits = {
+				}
+			}
+			create_country_leader = {
+				name = "Cesarz Mendog II & IV z Urach"
+				desc = ""
+				picture = "gfx/leaders/POL/POL_Inigo.tga"
+				expire = "1965.1.1"
+				ideology = absolutism
+				traits = {
+				}
 			}
 		}
 		UKR = {
@@ -15318,6 +15560,9 @@
 			set_popularities = {
 				vanguardism = 100
 			}
+			every_owned_state = {
+				do_khmer_renames = yes
+			}
 		}
 		LAO = {
 			create_country_leader = {
@@ -15330,6 +15575,9 @@
 		}
 		CAM = {
 			set_cosmetic_tag = CAM_2023
+			every_owned_state = {
+				do_khmer_renames = yes
+			}
 			set_party_name = {
 				ideology = authoritarian_monarchism
 				name = CAM_authoritarian_monarchism_2023_party
@@ -17090,11 +17338,25 @@
            		ideology = authmon
 			}
 			create_country_leader = {
+			name = "Başkomutan Yaşar Güler"
+				desc = ""
+				picture = "gfx/leaders/TUR/TUR_Güler.tga"
+				expire = "1965.1.1"
+				ideology = military_junta
+			}
+			create_country_leader = {
+           		name = "Halife Harun"
+           		desc = ""
+           		picture = "gfx/leaders/TUR/TUR_Harun.tga"
+				expire = "1965.1.1"
+				ideology = stratmon
+			}
+			create_country_leader = {
 				name = "Cumhurbaşkanı Devlet Bahçeli"
 				desc = ""
 				picture = "gfx/leaders/TUR/TUR_Bahçeli.tga"
 				expire = "1965.1.1"
-				ideology = repcorp_ultranationalism
+				ideology = neo_fascism
 			}
 			create_country_leader = {
            		name = "Halife Harun"
