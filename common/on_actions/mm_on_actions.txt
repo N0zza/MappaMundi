@@ -6116,7 +6116,7 @@ on_actions = {
 									has_government = democratic_monarchism
 								}
 							}
-							drop_cosmetic_tag
+							drop_cosmetic_tag = yes
 						}
 					}
 					if = {
@@ -6134,9 +6134,16 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
+									has_government = stratocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = MEX_SPR
+						}
+						if = {
+							limit = {
+								OR = {
 									has_government = neutrality
 									has_government = stratocratic
-									has_government = stratocratic_monarchism
 									has_government = republican_fascism
 									has_government = fascism
 									has_government = national_socialism
@@ -6529,6 +6536,167 @@ on_actions = {
 										has_government = centrist_monarchism
 										has_government = anocratic_monarchism
 										has_government = democratic_monarchism
+									}
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
+							tag = GUA
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = stratocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = GUA_SPR
+						}
+						if = {
+							limit = {
+								OR = {
+									NOT = {
+										has_government = stratocratic_monarchism
+									}
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
+							tag = BLZ
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = stratocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = SPR_YELLOW
+						}
+						if = {
+							limit = {
+								OR = {
+									NOT = {
+										has_government = stratocratic_monarchism
+									}
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
+							tag = HON
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = stratocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = SPR_YELLOW
+						}
+						if = {
+							limit = {
+								OR = {
+									NOT = {
+										has_government = stratocratic_monarchism
+									}
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
+							tag = ELS
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = stratocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = SPR_YELLOW
+						}
+						if = {
+							limit = {
+								OR = {
+									NOT = {
+										has_government = stratocratic_monarchism
+									}
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
+							tag = NIC
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = stratocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = SPR_YELLOW
+						}
+						if = {
+							limit = {
+								OR = {
+									NOT = {
+										has_government = stratocratic_monarchism
+									}
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
+							tag = COS
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = stratocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = SPR_YELLOW
+						}
+						if = {
+							limit = {
+								OR = {
+									NOT = {
+										has_government = stratocratic_monarchism
+									}
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
+							tag = COL
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = stratocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = COL_SPR
+						}
+						if = {
+							limit = {
+								OR = {
+									NOT = {
+										has_government = stratocratic_monarchism
 									}
 								}
 							}
