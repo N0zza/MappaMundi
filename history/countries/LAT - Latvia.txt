@@ -1,27 +1,33 @@
 ﻿capital = 1135
 
 set_popularities = {
-	neutrality = 50
-	democratic = 40
-	fascism = 5
-	communism = 5
+	neutrality = 100
 }
 
 set_politics = { 
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1931.10.3"
 	election_frequency = 108
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Prezidents Kārlis Augusts Vilhelms Ulmanis"
+	name = "Prezidents Alberts Kviesis"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Karlis_Ulmanis.tga"
+	picture = "gfx/leaders/LAT/Portrait_Albert_Kviesis.dds"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = despotism
 	traits = {
-		#
+	}
+}
+
+create_country_leader = {
+	name = "Prezidents Alberts Kviesis"
+	desc = ""
+	picture = "gfx/leaders/LAT/Portrait_Albert_Kviesis.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
 	}
 }
 
@@ -72,16 +78,6 @@ create_country_leader = {
 	picture = "gfx/leaders/LAT/Portrait_Adolfs_Blodnieks.tga"
 	expire = "1965.1.1"
 	ideology = liberalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Prezidents Alberts Kviesis"
-	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Albert_Kviesis.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
 	traits = {
 	}
 }

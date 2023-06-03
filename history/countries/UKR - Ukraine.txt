@@ -2,19 +2,25 @@
 
 set_cosmetic_tag = UKR_SOV
 
-	set_popularities = {
-		democratic 
-			 = 20
-		fascism
-			 = 30
-		vanguardism
-			 = 50
-		}
-	set_politics = { 
- ruling_party = vanguardism
+set_popularities = {
+	vanguardism = 100	
+}
+
+set_politics = { 
+	ruling_party = vanguardism
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Predsedátelʹ VUCIK Grigórij Ivánovič Petróvskij"
+	desc = ""
+	picture = "gfx/leaders/UKR/Petrovskiy.dds"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+	}
 }
 
 create_country_leader = {
@@ -34,7 +40,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
-		
 	}
 }
 
@@ -54,16 +59,6 @@ create_country_leader = {
 	picture = "gfx/leaders/UKR/UKR_Vytvytskyi.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Holová Hryhóryy Ivánovych Petróvs'kyy"
-	desc = ""
-	picture = "gfx/leaders/UKR/Petrovskiy.dds"
-	expire = "1965.1.1"
-	ideology = totsoc
 	traits = {
 	}
 }
