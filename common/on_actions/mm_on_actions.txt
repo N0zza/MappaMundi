@@ -6704,6 +6704,33 @@ on_actions = {
 							drop_cosmetic_tag = yes
 						}
 					}
+					if = {
+						limit = {
+							tag = JFR
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = socialism_ideology
+									has_government = communism
+								}
+							}
+							set_cosmetic_tag = JFR_SOCIALIST
+						}
+						if = {
+							limit = {
+								OR = {
+									NOT = {
+										OR = {
+											has_government = socialism_ideology
+											has_government = communism
+										}
+									}
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+					}
 				}
 			}
 		}
