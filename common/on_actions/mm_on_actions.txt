@@ -6118,6 +6118,12 @@ on_actions = {
 								}
 							}
 							drop_cosmetic_tag = yes
+							if = {
+								limit = {
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = RUS_2023
+							}
 						}
 					}
 					if = {

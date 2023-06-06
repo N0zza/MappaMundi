@@ -12528,9 +12528,9 @@
 		}
 		RUS = {
 			create_country_leader = {
-        		name = "Verxóvnyj Glavnokomándujuščij Sergéj Kužugétovič Šojgú"
+        		name = "Verxóvnyj Glavnokomándujuščij Valérij Vasílʹevič Gerásimov"
         		desc = ""
-        		picture = "gfx/leaders/Russia/RUS_Shoigu.tga"
+        		picture = "gfx/leaders/Russia/RUS_Gerasimov.tga"
         		expire = "1965.1.1"
         		ideology = military_junta
 			}
@@ -12811,6 +12811,7 @@
 			transfer_state = 1384
 			set_capital = {
 				state = 64
+				remember_old_capital = no
 			}
 			set_popularities = {
 				communism = 5
@@ -13089,13 +13090,15 @@
 			transfer_state = 68
 			transfer_state = 8222
 			transfer_state = 10954
+		}
+		POL = {
 			set_cosmetic_tag = POL_2023
 			set_popularities = {
 				socialism_ideology = 11
 				liberal_republic = 25
 				centrist_republic = 4
-				democratic = 8
-				anocratic_republic = 51
+				democratic = 50
+				anocratic_republic = 9
 				republican_fascism = 1
 			}
 		}
@@ -13377,23 +13380,24 @@
 			transfer_state = 11004
 			transfer_state = 80
 			transfer_state = 5376
-			drop_cosmetic_tag = yes
-			set_cosmetic_tag = UKR_2023
+		}
+		UKR = {
 			set_politics = {
-				ruling_party = liberal_republic
+				ruling_party = anocratic_republic
 			}
+			set_cosmetic_tag = UKR_2023
 			set_popularities = {
 				socialism_ideology = 5
-				liberal_republic = 53
-				centrist_republic = 17
-				democratic = 6
-				anocratic_republic = 10
-				neutrality = 9
+				liberal_republic = 7
+				centrist_republic = 10
+				democratic = 15
+				anocratic_republic = 53
+				neutrality = 10
 			}
 			set_party_name = {
-				ideology = liberal_republic
-				name = UKR_liberal_republic_2023_party
-				long_name = UKR_liberal_republic_2023_party_long
+				ideology = anocratic_republic
+				name = UKR_anocratic_republic_2023_party
+				long_name = UKR_anocratic_republic_2023_party_long
 			}
 		}
 		UKR = {
@@ -13402,7 +13406,7 @@
         		desc = ""
         		picture = "gfx/leaders/UKR/UKR_Zelensky.tga"
         		expire = "1965.1.1"
-        		ideology = liberal_populism
+        		ideology = anocrep_provisional_government
 			}
 		}
 		BLR = {
