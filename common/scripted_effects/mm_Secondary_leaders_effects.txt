@@ -350,9 +350,13 @@ secondary_leader_enabled_effect = {
 			AND = {
 				tag = IND
 				OR = {
+					has_government = socialist_monarchy
 					AND = {
-						has_government = anocratic_republic
 						has_start_date > 2022.01.01
+						OR = {
+							has_government = anocratic_republic
+							has_government = liberal_republic
+						}
 					}
 				}
 			}
