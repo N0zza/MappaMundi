@@ -411,6 +411,15 @@ secondary_leader_enabled_effect = {
 		}
 		set_country_flag = has_secondary_leader
 	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = SOV
+				has_government = vanguardism
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
 	else = {
 		clr_country_flag = has_secondary_leader
 	}
