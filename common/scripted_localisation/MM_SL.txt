@@ -11,6 +11,16 @@ defined_text = {
 		localization_key = "First Lord of the Treasury Rishi Sunak"
 	}
 	text = {
+	trigger = {
+			AND = {
+				tag = ENG
+				has_government = democratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "First Lord of the Treasury Sir Keir Rodney Starmer"
+	}
+	text = {
 		trigger = {
 			AND = {
 				tag = ENG
@@ -694,6 +704,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Rishi_Sunak"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = democratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Keir_Starmer"
 	}
 	text = {
 		trigger = {
