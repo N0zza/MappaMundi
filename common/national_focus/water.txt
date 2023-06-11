@@ -21035,45 +21035,87 @@
 			set_politics = {
 				ruling_party = liberal_republic
 			}
-			
 			set_cosmetic_tag = FRA_2023
-			
+			set_party_name = {
+				ideology = vanguardism
+				name = FRA_vanguardism_2023_party
+				long_name = FRA_vanguardism_2023_party_long
+			}
+			set_party_name = {
+				ideology = vanguardism
+				name = FRA_vanguardism_2023_party
+				long_name = FRA_vanguardism_2023_party_long
+			}
+			set_party_name = {
+				ideology = communism
+				name = FRA_communism_2023_party
+				long_name = FRA_communism_2023_party_long
+			}
 			set_party_name = {
 				ideology = socialism_ideology
 				name = FRA_socialism_ideology_2023_party
 				long_name = FRA_socialism_ideology_2023_party_long
 			}
-			
+			set_party_name = {
+				ideology = socialist_monarchy
+				name = FRA_socialist_monarchy_2023_party
+				long_name = FRA_socialist_monarchy_2023_party_long
+			}
 			set_party_name = {
 				ideology = liberal_republic
 				name = FRA_liberal_republic_2023_party
 				long_name = FRA_liberal_republic_2023_party_long
 			}
-			
+			set_party_name = {
+				ideology = democratic_monarchism
+				name = FRA_democratic_monarchism_2023_party
+				long_name = FRA_democratic_monarchism_2023_party_long
+			}
+			set_party_name = {
+				ideology = centrist_republic
+				name = FRA_centrist_republic_2023_party
+				long_name = FRA_centrist_republic_2023_party_long
+			}
 			set_party_name = {
 				ideology = democratic
 				name = FRA_democratic_2023_party
 				long_name = FRA_democratic_2023_party_long
 			}
-			
 			set_party_name = {
 				ideology = anocratic_republic
 				name = FRA_anocratic_republic_2023_party
 				long_name = FRA_anocratic_republic_2023_party_long
 			}
-			
 			set_party_name = {
 				ideology = anocratic_monarchism
 				name = FRA_anocratic_monarchism_2023_party
 				long_name = FRA_anocratic_monarchism_2023_party_long
 			}
-			
 			set_party_name = {
 				ideology = neutrality
 				name = FRA_neutrality_2023_party
 				long_name = FRA_neutrality_2023_party_long
 			}
-			
+			set_party_name = {
+				ideology = stratocratic
+				name = FRA_stratocratic_2023_party
+				long_name = FRA_stratocratic_2023_party_long
+			}
+			set_party_name = {
+				ideology = republican_fascism
+				name = FRA_republican_fascism_2023_party
+				long_name = FRA_republican_fascism_2023_party_long
+			}
+			set_party_name = {
+				ideology = fascism
+				name = FRA_fascism_2023_party
+				long_name = FRA_fascism_2023_party_long
+			}
+			set_party_name = {
+				ideology = national_socialism
+				name = FRA_national_socialism_2023_party
+				long_name = FRA_national_socialism_2023_party_long
+			}
 			set_popularities = {
 				communism = 4
 				socialism_ideology = 22
@@ -21085,11 +21127,151 @@
 		}
 		FRA = {
 			create_country_leader = {
+        		name = "Porte-parole du Comité central Nathalie Yvonne Thérèse Arthaud"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Arthaud.tga"
+        		expire = "1965.1.1"
+        		ideology = totsoc
+			}
+			create_country_leader = {
+        		name = "Président Fabien Henri Amé Roussel"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Roussel.tga"
+        		expire = "1965.1.1"
+        		ideology = marxism
+			}
+			create_country_leader = {
+        		name = "Président Jean-Luc Antoine Pierre Mélenchon"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Mélenchon.tga"
+        		expire = "1965.1.1"
+        		ideology = left_wing_populism
+			}
+			create_country_leader = {
+        		name = "Roi Jean IV Carl Pierre Marie d'Orléans, Comte de Paris"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Jean_IV.tga"
+        		expire = "1965.1.1"
+        		ideology = socmon_social_democracy
+			}
+			create_country_leader = {
         		name = "Président Emmanuel Jean-Michel Frédéric Macron"
         		desc = ""
         		picture = "gfx/leaders/FRA/FRA_Emmanuel_Macron.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
+			}
+			create_country_leader = {
+        		name = "Roi Jean IV d'Orléans"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Jean_IV.tga"
+        		expire = "1965.1.1"
+        		ideology = liberal_constitutionalism
+			}
+			create_country_leader = {
+        		name = "Présidente Valérie Anne Émilie Pécresse"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Pécresse.tga"
+        		expire = "1965.1.1"
+        		ideology = cenrep
+			}
+			create_country_leader = {
+        		name = "Roi Louis XX de Bourbon"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Louis_XX.tga"
+        		expire = "1965.1.1"
+        		ideology = cenmon
+			}
+			create_country_leader = {
+        		name = "Présidente Valérie Anne Émilie Pécresse"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Pécresse.tga"
+        		expire = "1965.1.1"
+        		ideology = liberal_conservatism
+			}
+			create_country_leader = {
+        		name = "Empereur Napoleon VIII de Bonaparte"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Napoleon_VIII.tga"
+        		expire = "1965.1.1"
+        		ideology = conmon_liberal_conservatism
+			}
+			create_country_leader = {
+        		name = "Présidente Marion Anne Perrine Le Pen"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Le_Pen.tga"
+        		expire = "1965.1.1"
+        		ideology = right_wing_populism
+			}
+			create_country_leader = {
+        		name = "Roi Jean IV d'Orléans"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Jean_IV.tga"
+        		expire = "1965.1.1"
+        		ideology = anocmon_national_conservatism
+			}
+			create_country_leader = {
+        		name = "Président Éric Justin Léon Zemmour"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Zemmour.tga"
+        		expire = "1965.1.1"
+        		ideology = authoritarian_conservatism
+			}
+			create_country_leader = {
+        		name = "Roi Louis XX de Bourbon"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Louis_XX.tga"
+        		expire = "1965.1.1"
+        		ideology = authmon_authoritarian_conservatism
+			}
+			create_country_leader = {
+        		name = "Commandant en Chef Thierry Burkhard"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Burkhard.tga"
+        		expire = "1965.1.1"
+        		ideology = military_junta
+			}
+			create_country_leader = {
+        		name = "Empereur Napoleon VIII de Bonaparte"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Napoleon_VIII.tga"
+        		expire = "1965.1.1"
+        		ideology = stratmon
+			}
+			create_country_leader = {
+        		name = "Chef de l'État Yvan Benedetti"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Benedetti.tga"
+        		expire = "1965.1.1"
+        		ideology = neo_fascism
+			}
+			create_country_leader = {
+        		name = "Empereur Napoleon VIII de Bonaparte"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Napoleon_VIII.tga"
+        		expire = "1965.1.1"
+        		ideology = corpmon_neo_fascism
+			}
+			create_country_leader = {
+        		name = "Chef suprême Yvan Benedetti"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Benedetti.tga"
+        		expire = "1965.1.1"
+        		ideology = neo_nazism
+			}
+			create_country_leader = {
+        		name = "Prince-Primat Laurent Bernard Marie Ulrich"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Ulrich.tga"
+        		expire = "1965.1.1"
+        		ideology = christian_theocracy
+			}
+			create_country_leader = {
+        		name = "Roi Alphonse XV & III de Bourbon"
+        		desc = ""
+        		picture = "gfx/leaders/FRA/FRA_Louis_XX.tga"
+        		expire = "1965.1.1"
+        		ideology = absolutism
 			}
 		}
 		every_state = {

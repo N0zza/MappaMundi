@@ -4755,9 +4755,19 @@ on_actions = {
 									has_government = right_anarchism
 									has_government = theocratic
 									has_government = republican_fascism
+									AND = {
+										has_government = neutrality
+										has_start_date > 2022.01.01
+									}
 								}
 							}
 							set_cosmetic_tag = FRA_AUTH
+							if = {
+								limit = {
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = FRA_AUTH_2023
+							}
 							every_country = {
 								limit = {
 									OR = {
@@ -4859,6 +4869,12 @@ on_actions = {
 								}
 							}
 							set_cosmetic_tag = FRA_SOCIALIST
+							if = {
+								limit = {
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = FRA_SOCIALIST_2023
+							}
 							every_country = {
 								limit = {
 									OR = {
@@ -4898,10 +4914,20 @@ on_actions = {
 										has_government = vanguardism
 										has_government = socialism_ideology
 										has_government = left_anarchism
+										AND = {
+											has_government = neutrality
+											has_start_date > 2022.01.01
+										}
 									}
 								}
 							}
-							set_cosmetic_tag = FRA_BLUE
+							drop_cosmetic_tag = yes
+							if = {
+								limit = {
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = FRA_2023
+							}
 							every_country = {
 								limit = {
 									OR = {
@@ -4913,6 +4939,9 @@ on_actions = {
 										has_cosmetic_tag = FRA_NAPOLEON
 										has_cosmetic_tag = FRA_SOCIALIST
 										has_cosmetic_tag = VICHY_BLUE
+									}
+									NOT = {
+										tag = FRA
 									}
 								}
 								set_cosmetic_tag = FRA_BLUE
