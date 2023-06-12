@@ -1288,3 +1288,34 @@ defined_text = {
 		localization_key = "GFX_leader_unknown"
 	}
 }
+defined_text = {
+	name = GetTertiaryLeaderName
+	text = {
+	trigger = {
+			AND = {
+				tag = SOV
+				has_government = vanguardism
+			}
+		}
+		localization_key = "General'nyy Sekretar' TSK Kommunisticheskoy Partii Sovetskogo Soyuza Joseph Vissarionovich Stalin"
+	}
+	text = {
+		localization_key = "To Be Added"
+	}
+}
+defined_text = {
+	name = get_tertiary_leader_portrait
+	text = {
+	trigger = {
+			AND = {
+				tag = SOV
+				has_government = vanguardism
+				has_start_date < 2022.01.01
+			}
+		}
+		localization_key = "GFX_Jospeh_Stalin"
+	}
+	text = {
+		localization_key = "GFX_leader_unknown"
+	}
+}

@@ -3762,12 +3762,13 @@ on_actions = {
 			}
 		}
 	}
-# Secondary leaders visibility logic
+# Secondary and Tertiary leaders visibility logic
 	on_ruling_party_change = {
 		effect = {
 			if = {
 				ROOT = {
 					secondary_leader_enabled_effect = yes
+					tertiary_leader_enabled_effect = yes
 				}
 			}
 		}
@@ -4666,7 +4667,7 @@ on_actions = {
 					if = {
 						limit = {
 							tag = GER
-							}
+						}
 						if = {
 							limit = {
 								has_government = democratic_monarchism
@@ -4728,6 +4729,7 @@ on_actions = {
 							limit = {
 								OR = {
 									has_government = national_socialism
+									has_government = fascism
 									has_government = republican_fascism
 								}
 							}
@@ -6148,7 +6150,7 @@ on_actions = {
 									has_government = vanguardism
 								}
 							}
-							set_cosmetic_tag = RUS_SOV
+							set_cosmetic_tag = RUS_RED
 						}
 						if = {
 							limit = {
@@ -6805,6 +6807,7 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
+									has_government = socialism_ideology
 									has_government = conservative_monarchism
 								}
 							}
@@ -6817,6 +6820,7 @@ on_actions = {
 										OR = {
 											has_government = anarchism_ideology
 											has_government = vanguardism
+											has_government = socialism_ideology
 											has_government = conservative_monarchism
 											has_government = national_socialism
 										}
