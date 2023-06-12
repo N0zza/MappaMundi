@@ -538,13 +538,13 @@ MM_PORTRAITS_USA_OTL_CATEGORY = {
 			factor = 1
 		}
 		complete_effect = {
-			kill_ideology_leader = liberalism
+			kill_ideology_leader = liberal_republic
 			create_country_leader = {
 				name = "President Thomas Woodrow Wilson"
 				desc = ""
 				picture = "gfx/leaders/USA/1914_USA_Woodrow_Wilson.tga"
 				expire = "1965.1.1"
-				ideology = 
+				ideology = liberalism
 				traits = {
 				}			
 		}
@@ -597,7 +597,7 @@ MM_PORTRAITS_USA_OTL_CATEGORY = {
 		complete_effect = {
 			kill_ideology_leader = democratic
 			create_country_leader = {
-				name = "President John Calvin Coolidge Junior"
+				name = "President John Calvin Coolidge Jr."
 				desc = ""
 				picture = "gfx/leaders/USA/USA_Coolidge.tga"
 				expire = "1965.1.1"
@@ -809,122 +809,172 @@ MM_PORTRAITS_USA_OTL_CATEGORY = {
 		}
 	}
 
-#	USA_OTL_FORD = {
-#		allowed = {
-#			
-#		}
-#		available = {
-#			
-#		}
-#		visible = {
-#			tag = USA
-#		}
-#		cost = 0
-#		days_re_enable = 0
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		complete_effect = {
-#			
-#		}
-#	}
+	USA_OTL_FORD = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = democratic
+			create_country_leader = {
+        		name = "President Gerald Rudolph Ford Jr."
+        		desc = ""
+        		picture = "gfx/leaders/USA/USA_Ford.tga"
+        		expire = "1965.1.1"
+        		ideology = conservatism
+			}
+		}
+	}
 
-#	USA_OTL_CARTER = {
-#		allowed = {
-#			
-#		}
-#		available = {
-#			
-#		}
-#		visible = {
-#			tag = USA
-#		}
-#		cost = 0
-#		days_re_enable = 0
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		complete_effect = {
-#			
-#		}
-#	}
+	USA_OTL_CARTER = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = liberal_republic
+			create_country_leader = {
+        		name = "President James Earl Carter Jr."
+        		desc = ""
+        		picture = "gfx/leaders/USA/USA_Carter.tga"
+        		expire = "1965.1.1"
+        		ideology = liberalism
+			}
+		}
+	}
 
-#	USA_OTL_REAGAN = {
-#		allowed = {
-#			
-#		}
-#		available = {
-#			
-#		}
-#		visible = {
-#			tag = USA
-#		}
-#		cost = 0
-#		days_re_enable = 0
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		complete_effect = {
-#			
-#		}
-#	}
-#	USA_OTL_BUSH1 = {
-#		allowed = {
-#			
-#		}
-#		available = {
-#			
-#		}
-#		visible = {
-#			tag = USA
-#		}
-#		cost = 0
-#		days_re_enable = 0
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		complete_effect = {
-#			
-#		}
-#	}
-#	USA_OTL_CLINTON = {
-#		allowed = {
-#			
-#		}
-#		available = {
-#			
-#		}
-#		visible = {
-#			tag = USA
-#		}
-#		cost = 0
-#		days_re_enable = 0
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		complete_effect = {
-#			
-#		}
-#	}
-#	USA_OTL_BUSH2 = {
-#		allowed = {
-#			
-#		}
-#		available = {
-#			
-#		}
-#		visible = {
-#			tag = USA
-#		}
-#		cost = 0
-#		days_re_enable = 0
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		complete_effect = {
-#			
-#		}
-#	}
+	USA_OTL_REAGAN = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = democratic
+			create_country_leader = {
+        		name = "President Ronald Wilson Reagan"
+        		desc = ""
+        		picture = "gfx/leaders/USA/USA_Reagan.tga"
+        		expire = "1965.1.1"
+        		ideology = conservatism
+			}
+		}
+	}
+
+	USA_OTL_BUSH1 = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = democratic
+			create_country_leader = {
+        		name = "President George Herbert Walker Bush"
+        		desc = ""
+        		picture = "gfx/leaders/USA/USA_Bush_Father.tga"
+        		expire = "1965.1.1"
+        		ideology = conservatism
+			}
+			
+		}
+	}
+
+	USA_OTL_CLINTON = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = liberal_republic
+			create_country_leader = {
+				name = "President William Jefferson Clinton"
+				desc = ""
+				picture = "gfx/leaders/USA/USA_Clinton.tga"
+				expire = "1965.1.1"
+				ideology = third_way
+				traits = {
+				}
+			}
+		}
+	}
+	
+	USA_OTL_BUSH2 = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = democratic
+			create_country_leader = {
+        		name = "President George Walker Bush"
+        		desc = ""
+        		picture = "gfx/leaders/USA/USA_bush_son.tga"
+        		expire = "1965.1.1"
+        		ideology = conservatism
+			}
+			
+		}
+	}
+
 	USA_OTL_OBAMA = {
 		allowed = {
 			
@@ -954,41 +1004,59 @@ MM_PORTRAITS_USA_OTL_CATEGORY = {
 		}
 	}
 	
-#	USA_OTL_TRUMP = {
-#		allowed = {
-#			
-#		}
-#		available = {
-#			
-#		}
-#		visible = {
-#			tag = USA
-#		}
-#		cost = 0
-#		days_re_enable = 0
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		complete_effect = {
-#			
-#		}
-#	}
-#	USA_OTL_BIDEN = {
-#		allowed = {
-#			
-#		}
-#		available = {
-#			
-#		}
-#		visible = {
-#			tag = USA
-#		}
-#		cost = 0
-#		days_re_enable = 0
-#		ai_will_do = {
-#			factor = 1
-#		}
-#		complete_effect = {
-#			
-#		}
-#	}
+	USA_OTL_TRUMP = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = democratic
+			create_country_leader = {
+        		name = "President Donald John Trump"
+        		desc = ""
+        		picture = "gfx/leaders/USA/USA_Trump.tga"
+        		expire = "1965.1.1"
+        		ideology = populism
+			}
+		}
+	}
+
+	USA_OTL_BIDEN = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = liberal_republic
+			create_country_leader = {
+				name = "President Joseph Robinette Biden Jr."
+				desc = ""
+				picture = "gfx/leaders/USA/USA_Biden.tga"
+				expire = "1965.1.1"
+				ideology = social_liberalism
+				traits = {
+				}
+			}
+		}
+	}
+}
