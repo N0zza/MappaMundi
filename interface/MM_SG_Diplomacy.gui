@@ -57,8 +57,8 @@ guiTypes = {
 	containerWindowType = {
 		name = "MM_SG_Tertiary_Leader_Container"
 		position = { x = -300 y = 355 }
-		show_position = { x = 300 y = 355 }
-		size = { width=300 height=350 }
+		show_position = { x = 282 y = 355 }
+		size = { width=250 height=350 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 350
@@ -70,27 +70,27 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "tertiary_leader_name"
-			position = { x = 25 y = 250 }
-			font = "hoi_24header"
+			position = { x = 5 y = 230 }
+			font = "hoi_20bs"
 			text = "[GetTertiaryLeaderName]"
-			maxWidth = 250
+			maxWidth = 241
 			maxHeight = 100
 			format = center				
 		}
 		
 		iconType = {
 			name = "diplo_tertiary_leader_frame"
-			position = { x = 60 y = 17 }
+			position = { x = 45 y = 17 }
 			spriteType = "GFX_diplo_leader_frame"
 			alwaystransparent = yes
-			scale = 1.35
+			scale = 1.22
 		}
 		
 		iconType = {
 			name = "tertiary_leader_portrait"
-			position = { x = 72 y = 25 }
+			position = { x = 57 y = 27 }
 			spriteType = ""
-			scale = 1
+			scale = 0.9
 		}
 	}
 }
