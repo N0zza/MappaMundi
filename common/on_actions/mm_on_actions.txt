@@ -6354,15 +6354,16 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
-									has_government = centrist_republic
+									has_government = anocratic_republic
 								}
 							}
-							set_cosmetic_tag = GVK_CENREP
+							set_cosmetic_tag = GVK_ANOCREP
 						}
 						if = {
 							limit = {
 								OR = {
 									has_government = liberal_republic
+									has_government = centrist_republic
 									has_government = democratic
 								}
 							}
@@ -6380,8 +6381,9 @@ on_actions = {
 							limit = {
 								NOT = {
 									OR = {
-										has_government = centrist_republic
+										has_government = anocratic_republic
 										has_government = liberal_republic
+										has_government = centrist_republic
 										has_government = democratic
 										has_government = theocratic
 									}
