@@ -1,0 +1,32 @@
+MM_PORTRAITS_GER_MISC_CATEGORY = {
+	GER_MISC_BEBEL = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			OR = {
+				tag = GER
+				tag = DDR
+				tag = WGR
+			}
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = socialism_ideology
+			create_country_leader = {
+			name = "Reichspräsident Ferdinand August Bebel"
+			desc = ""
+			picture = "gfx/leaders/GER/GER_MISC_BEBEL.tga"
+			expire = "1965.1.1"
+			ideology = social_democracy
+			}			
+		}
+	}
+}
