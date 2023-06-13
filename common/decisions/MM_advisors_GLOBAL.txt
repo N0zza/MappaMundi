@@ -1,0 +1,43 @@
+MM_ADVISOR_GLOBAL_CATEGORY = {
+	MM_ADVISOR_GLOBAL_add_secondary_leader = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			NOT = {
+				has_country_flag = has_secondary_leader
+			}
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_country_flag = has_secondary_leader	
+		}
+	}
+	
+	MM_ADVISOR_GLOBAL_remove_secondary_leader = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = has_secondary_leader
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			clr_country_flag = has_secondary_leader	
+		}
+	}
+}
