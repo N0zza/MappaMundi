@@ -662,6 +662,24 @@ defined_text = {
 		localization_key = "Roʾš HaMemšalah Ḃinyamiyn Ntanyahẇ"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = UKR
+				has_government = vanguardism
+			}
+		}
+		localization_key = "Predsedátelʹ Sovnarkóma Panas Petróvič Ljúbčenko"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BLR
+				has_government = vanguardism
+			}
+		}
+		localization_key = "Staršynia Savnarkama Mikalaj Macviejevič Haladzied"
+	}
+	text = {
 		localization_key = "To Be Added"
 	}
 }
@@ -1285,6 +1303,24 @@ defined_text = {
 		localization_key = "GFX_Benjamin_Netanyahu"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = UKR
+				has_government = vanguardism
+			}
+		}
+		localization_key = "GFX_Panas_Lyubchenko"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BLR
+				has_government = vanguardism
+			}
+		}
+		localization_key = "GFX_Nikolai_Goloded"
+	}
+	text = {
 		localization_key = "GFX_leader_unknown"
 	}
 }
@@ -1293,27 +1329,83 @@ defined_text = {
 	text = {
 	trigger = {
 			AND = {
-				tag = SOV
+				OR = {
+					tag = SOV
+					tag = RUS
+				}
 				has_government = vanguardism
 			}
 		}
 		localization_key = "Generálʹnyj sekretárʹ CK VKP(b) Iósif Vissariónovič Stálin"
 	}
 	text = {
-		localization_key = "To Be Added"
+		trigger = {
+			AND = {
+				tag = UKR
+				has_government = vanguardism
+			}
+		}
+		localization_key = "Generálʹnyj sekretárʹ CK KP(b)U Stanisláv Vikéntʹevič Kosiór"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BLR
+				has_government = vanguardism
+			}
+		}
+		localization_key = "Pieršy sakratar CK KP(b)B Mikaláj Fiódaravič Hikála"
+	}
+	text = {
+		localization_key = "To be Added"
 	}
 }
 defined_text = {
 	name = get_tertiary_leader_portrait
 	text = {
-	trigger = {
+		trigger = {
 			AND = {
-				tag = SOV
+				OR = {
+					tag = SOV
+					tag = RUS
+				}
 				has_government = vanguardism
-				has_start_date < 2022.01.01
+				has_start_date < 1949.01.01
 			}
 		}
 		localization_key = "GFX_Jospeh_Stalin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				OR = {
+					tag = SOV
+					tag = RUS
+				}
+				has_government = vanguardism
+				has_start_date > 1949.01.01
+				has_start_date < 2022.01.01
+			}
+		}
+		localization_key = "GFX_Jospeh_Stalin_1950"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = UKR
+				has_government = vanguardism
+			}
+		}
+		localization_key = "GFX_Stanislaw_Kosior"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BLR
+				has_government = vanguardism
+			}
+		}
+		localization_key = "GFX_Nikolai_Gikalo"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
