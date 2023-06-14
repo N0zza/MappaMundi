@@ -673,11 +673,31 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = UKR
+				has_government = anocratic_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Prem'yér-minístr Denýs Anatóliyovych Shmyhálʹ"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = BLR
 				has_government = vanguardism
 			}
 		}
 		localization_key = "Staršynia Savnarkama Mikalaj Macviejevič Haladzied"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BLR
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Premjér-minístr Ramán Aliaksándravič Halóŭčanka"
 	}
 	text = {
 		localization_key = "To Be Added"
@@ -1314,11 +1334,31 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = UKR
+				has_government = anocratic_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Denys_Shmyhal"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = BLR
 				has_government = vanguardism
 			}
 		}
 		localization_key = "GFX_Nikolai_Goloded"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BLR
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Roman_Golovchenko"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
