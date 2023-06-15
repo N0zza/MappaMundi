@@ -259,3 +259,239 @@ country_event = { #2020 North America
 
 	}
 }
+
+country_event = { 
+	id = mmna.1776
+	title = "Disunite the United States"
+	desc = "This will release all individual states as seperate countries"
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = "Sure"
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			USA = {
+				release = ALM
+				release = ALA
+				release = ARZ
+				release = AKS
+				release = CAL
+				release = CLR
+				release = CNC
+				release = DEL
+				release = FLO
+				release = GRG
+				release = HAW
+				release = IDH
+				release = ILL
+				release = INA
+				release = IOW
+				release = KAN
+				release = KNT
+				release = LOU
+				release = MNE
+				release = MRY
+				release = MAS
+				release = MCH
+				release = MNS
+				release = MSS
+				release = MSI
+				release = MNA
+				release = NEB
+				release = NVA
+				release = NHM
+				release = NJR
+				release = NMX
+				release = NWY
+				release = NCR
+				release = NDA
+				release = OHI
+				release = OKH
+				release = ORG
+				release = PEN
+				release = RHO
+				release = SCR
+				release = SDA
+				release = TNS
+				release = TEX
+				release = UTH
+				release = VER
+				release = VIR
+				release = WSH
+				release = WDC
+				release = WVR
+				release = WSC
+				release = WYO
+				release = PUE
+				release = ESM
+				release = GUM
+			}
+		}
+	}
+	option = { #more options
+		name = "More Options"
+		ai_chance = {
+			factor = 100
+		}
+		ROOT = {
+			country_event = mmna.1777
+		}
+	}
+	option = { #reject
+		name = "No"
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = { #more options for the us state release event
+	id = mmna.1777
+	title = "Options"
+	desc = "Alternative Options for releasing the states"
+	is_triggered_only = yes
+	
+	option = { #Release as republics
+		name = "Release each state as a republic"
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			USA = {
+				release = ALM
+				release = ALA
+				release = ARZ
+				release = AKS
+				release = CAL
+				release = CLR
+				release = CNC
+				release = DEL
+				release = FLO
+				release = GRG
+				release = HAW
+				release = IDH
+				release = ILL
+				release = INA
+				release = IOW
+				release = KAN
+				release = KNT
+				release = LOU
+				release = MNE
+				release = MRY
+				release = MAS
+				release = MCH
+				release = MNS
+				release = MSS
+				release = MSI
+				release = MNA
+				release = NEB
+				release = NVA
+				release = NHM
+				release = NJR
+				release = NMX
+				release = NWY
+				release = NCR
+				release = NDA
+				release = OHI
+				release = OKH
+				release = ORG
+				release = PEN
+				release = RHO
+				release = SCR
+				release = SDA
+				release = TNS
+				release = TEX
+				release = UTH
+				release = VER
+				release = VIR
+				release = WSH
+				release = WDC
+				release = WVR
+				release = WSC
+				release = WYO
+				release = PUE
+				release = ESM
+				release = GUM
+			}
+			if = {
+				limit = {
+					PHI = {
+						has_cosmetic_tag = PHI_USA
+					}
+				}
+				PHI = {
+					set_politics = {
+						ruling_party = liberal_republic
+					}
+					drop_cosmetic_tag = yes
+				}
+			}
+			every_country = {
+				limit = {
+					us_states_republic_socrep = yes
+				}
+				THIS = {
+					set_politics = {
+						ruling_party = socialism_ideology
+					}
+					drop_cosmetic_tag = yes
+				}
+			}
+			every_country = {
+				limit = {
+					us_states_republic_librep = yes
+				}
+				THIS = {
+					set_politics = {
+						ruling_party = liberal_republic
+					}
+					drop_cosmetic_tag = yes
+				}
+			}
+			every_country = {
+				limit = {
+					us_states_republic_cenrep = yes
+				}
+				THIS = {
+					set_politics = {
+						ruling_party = centrist_republic
+					}
+					drop_cosmetic_tag = yes
+				}
+			}
+			every_country = {
+				limit = {
+					us_states_republic_conrep = yes
+				}
+				THIS = {
+					set_politics = {
+						ruling_party = democratic
+					}
+					drop_cosmetic_tag = yes
+				}
+			}
+			every_country = {
+				limit = {
+					us_states_republic_authrep = yes
+				}
+				THIS = {
+					set_politics = {
+						ruling_party = neutrality
+					}
+					drop_cosmetic_tag = yes
+				}
+			}
+		}
+	}
+	option = { #Back
+		name = "Head Back"
+		ai_chance = {
+			factor = 100
+		}
+		ROOT = {
+			country_event = mmna.1776
+		}
+	}
+}

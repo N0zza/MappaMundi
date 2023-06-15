@@ -7245,14 +7245,11 @@
 								AND = {
 									is_core_of = GAL
 									is_owned_by = AUS
-									
 									NOT = {
 										is_core_of = BKV
-										NOT = {
-											state = 3326
-										}
 									}
 								}
+								state = 3326
 							}
 						}
 						GAL = {
@@ -7618,6 +7615,7 @@
 			set_politics = {
 				ruling_party = authoritarian_monarchism
 			}
+			clr_country_flag = has_secondary_leader
 		}
 		FRA = {
 			transfer_state = 4495
@@ -8242,6 +8240,8 @@
 			set_politics = {
 				ruling_party = monarchism
 			}
+			
+			clr_country_flag = has_tertiary_leader
 		}
 			every_state = {
 				limit = {
