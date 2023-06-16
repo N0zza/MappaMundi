@@ -304,7 +304,35 @@ defined_text = {
 				has_start_date < 1915.01.01
 			}
 		}
-		localization_key = "Ministerpräsident Count Karl von Stürgkh"
+		localization_key = "Ministerpräsident Karl Maria Josef Graf von Stürgkh, Freiherr zu Plankenwarth und Vasoldsberg"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Bundeskanzler Karl Nehammer"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = republican_fascism
+			}
+		}
+		localization_key = "Bundeskanzler Kurt Alois Josef Johann von Schuschnigg"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = fascism
+			}
+		}
+		localization_key = "Bundeskanzler Kurt Alois Josef Johann Edler von Schuschnigg"
 	}
 	text = {
 		trigger = {
@@ -314,7 +342,26 @@ defined_text = {
 				has_start_date < 1915.01.01
 			}
 		}
-		localization_key = "Miniszterelnök Count István Imre Lajos Pál Tisza de Borosjenő et Szeged"
+		localization_key = "Miniszterelnök Borosjenői és szegedi gróf Tisza István Imre Lajos Pál"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HUN
+				has_government = anocratic_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Miniszterelnök Orbán Viktor Mihály"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HUN
+				has_government = fascism
+			}
+		}
+		localization_key = "Miniszterelnök Vitéz jákfai Gömbös Gyula"
 	}
 	text = {
 		trigger = {
@@ -324,7 +371,7 @@ defined_text = {
 				has_start_date < 1915.01.01
 			}
 		}
-		localization_key = "Hrvatski Ban Iván Skerlecz de Lomnicza"
+		localization_key = "Ban Barun Ivan Škrlec Lomnički"
 	}
 	text = {
 		trigger = {
@@ -334,7 +381,7 @@ defined_text = {
 				has_start_date < 1915.01.01
 			}
 		}
-		localization_key = "Gubernator Witold Korytowski"
+		localization_key = "Namiestnik Witold Korytowski"
 	}
 	text = {
 		trigger = {
@@ -740,6 +787,45 @@ defined_text = {
 		localization_key = "Prothypourgós Kyriákos Mitsotákis"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = CZC
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Předseda vlády Petr Fiala"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SLO
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Predseda vlády Eduard Heger"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = POL
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Prezes Rady Ministrów Mateusz Jakub Morawiecki"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = POL
+				has_government = anocratic_republic
+			}
+		}
+		localization_key = "Prezes Rady Ministrów Marian Zyndram-Kościałkowski"
+	}
+	text = {
 		localization_key = "To Be Added"
 	}
 }
@@ -1016,12 +1102,53 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = AUS
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Karl_Nehammer"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				OR = {
+					has_government = republican_fascism
+					has_government = fascism
+				}
+			}
+		}
+		localization_key = "GFX_Kurt_von_Schuschnigg"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = HUN
 				has_government = authoritarian_monarchism
 				has_start_date < 1915.01.01
 			}
 		}
 		localization_key = "GFX_Istvan_Tisza"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HUN
+				has_government = anocratic_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Viktor_Orban"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HUN
+				has_government = fascism
+			}
+		}
+		localization_key = "GFX_Gyula_Gömbös"
 	}
 	text = {
 		trigger = {
@@ -1439,6 +1566,45 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Kyriakos_Mitsotakis"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CZC
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Petr_Fiala"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SLO
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Eduard_Heger"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = POL
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Mateusz_Morawiecki"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = POL
+				has_government = anocratic_republic
+			}
+		}
+		localization_key = "GFX_Marian_Zyndram"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
