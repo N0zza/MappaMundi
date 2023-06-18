@@ -1608,7 +1608,7 @@
 				}
 				SWI = {
 					create_country_leader = {
-            			name = "Präsident Karl Friedrich Tscharner"
+            			name = "Präsident der Tagsatzung Karl Friedrich Tscharner"
             			desc = ""
             			picture = "gfx/leaders/SWI/1836_SWI_Friedrich_Tscharner.tga"
             			expire = "1965.1.1"
@@ -14470,6 +14470,8 @@
 		}
 		SWI = {
 			transfer_state = 19313
+			set_country_flag = has_secondary_leader
+			set_country_flag = has_tertiary_leader
 			set_popularities = {
 				communism = 1
 				socialism_ideology = 19.5
@@ -14486,7 +14488,7 @@
 		}
 		SWI = {
 			create_country_leader = {
-        		name = "Président Alain Berset"
+        		name = "Président de la Confédération Alain Berset"
         		desc = ""
         		picture = "gfx/leaders/SWI/SWI_Berset.tga"
         		expire = "1965.1.1"
@@ -15055,6 +15057,7 @@
 			}
 		}
 		ROK = {
+			set_country_flag = has_secondary_leader
 			transfer_state = 1785
 			transfer_state = 1787
 			transfer_state = 1789
@@ -15070,7 +15073,7 @@
 			}
 			set_popularities = {
 				socialism_ideology = 3
-				liberal_republic = 58
+				centrist_republic = 58
 				anocratic_republic = 39
 			}
 		}
@@ -15084,6 +15087,7 @@
 			}
 		}
 		DPK = {
+			set_country_flag = has_secondary_leader
 			transfer_state = 1786
 			transfer_state = 1792
 			transfer_state = 9701
@@ -15098,7 +15102,7 @@
 		}
 		DPK = {
 			create_country_leader = {
-        		name = "Kukmu Wiwŏnjang Kim Chŏngŭn"
+        		name = "Kukmuwiwŏnhoe Wiwŏnjang kyŏm Chosŏn Rodongdang Ch'ongbisŏ Kim Chŏngŭn"
         		desc = ""
         		picture = "gfx/leaders/DPK/DPK_Kim.tga"
         		expire = "1965.1.1"
@@ -15149,7 +15153,7 @@
 		}
 		PRC = {
 			create_country_leader = {
-           		name = "Zŏngtŏng Xí Jìnpíng"
+           		name = "Guójiā Zhǔxí, Zhōnggòng Zhōngyāng Zǒng Shūjì Xí Jìnpíng"
            		desc = ""
            		picture = "gfx/leaders/PRC/PRC_pooh.tga"
            		expire = "1965.1.1"
@@ -15586,6 +15590,8 @@
 			}
 		}
 		NVI = {
+			set_country_flag = has_secondary_leader
+			set_country_flag = has_tertiary_leader
 			set_politics = {
 				ruling_party = vanguardism
 			}
@@ -15601,6 +15607,7 @@
 		}
 		LAO = {
 			drop_cosmetic_tag = yes
+			set_country_flag = has_secondary_leader
 			set_politics = {
 				ruling_party = vanguardism
 			}
@@ -15608,12 +15615,12 @@
 				vanguardism = 100
 			}
 			every_owned_state = {
-				do_khmer_renames = yes
+				do_lao_renames = yes
 			}
 		}
 		LAO = {
 			create_country_leader = {
-        		name = "Pathanpathet Thongloun Sisoulit"
+        		name = "Pathanpathed Lae Lekhathikanhainy Khanabolihanngansunkangphak Pasason Pativadlav Thonglun Sisulid"
         		desc = ""
         		picture = "gfx/leaders/LAO/LAO_Sisoulith.tga"
         		expire = "1965.1.1"
@@ -21662,6 +21669,7 @@
 			}
 		}
 		CUB = {
+			set_country_flag = has_secondary_leader
 			set_cosmetic_tag = CUB_2023
 			set_politics = {
 				ruling_party = vanguardism
@@ -21677,7 +21685,7 @@
 		}
 		CUB = {
 			create_country_leader = {
-        		name = "Presidente Miguel Mario Díaz-Canel Bermúdez"
+        		name = "Presidente y Primer Secretario del CC del PCC Miguel Mario Díaz-Canel Bermúdez"
         		desc = ""
         		picture = "gfx/leaders/CUB/CUB_Canel.tga"
         		expire = "1965.1.1"
