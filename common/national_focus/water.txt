@@ -15090,7 +15090,6 @@
 			}
 		}
 		ROK = {
-			set_country_flag = has_secondary_leader
 			transfer_state = 1785
 			transfer_state = 1787
 			transfer_state = 1789
@@ -15466,6 +15465,7 @@
 		}
 		MAL = {
 			release = SGP
+			set_country_flag = has_secondary_leader
 			set_capital = {
 				state = 5567
 				remember_old_capital = no
@@ -15498,6 +15498,7 @@
 			}
 		}
 		SGP = {
+			set_country_flag = has_secondary_leader
 			set_politics = {
 				ruling_party = anocratic_republic
 			}
@@ -15733,17 +15734,17 @@
 			transfer_state = 2633
 			transfer_state = 2632
 		}
-			every_state = {
-				limit = {
-					OR = {
-						is_owned_by = CMI
-						is_owned_by = LAM
+		every_state = {
+			limit = {
+				OR = {
+					is_owned_by = CMI
+					is_owned_by = LAM
 				}
 			}
-				transfer_state_to = SIA
+			transfer_state_to = SIA
 		}
 		SIA = {
-			set_country_flag = has_secondary_leader
+			clr_country_flag = has_tertiary_leader
 			set_politics = {
 				ruling_party = anocratic_monarchism
 			}

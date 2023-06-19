@@ -958,6 +958,26 @@ defined_text = {
 		localization_key = "Néayôk Rôdthâmôntrei Hŭn Sên"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = MAL
+				has_government = democratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Perdana Menteri Anwar bin Ibrahim"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SGP
+				has_government = anocratic_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Prime Minister Lee Hsieng Loong"
+	}
+	text = {
 		localization_key = "To Be Added"
 	}
 }
@@ -1862,6 +1882,26 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Hun_Sen"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MAL
+				has_government = democratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Anwar_Ibrahim"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SGP
+				has_government = anocratic_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Lee_Hsien_Loong"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
