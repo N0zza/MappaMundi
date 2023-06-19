@@ -919,6 +919,45 @@ defined_text = {
 		localization_key = "Vizepräsidentin des Bundesrates Viola Patricia Amherd"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = BRM
+				has_government = stratocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Vanʻkrīʺkhyupʻ nhaṅʻʹ NCK ukkaṭṭha Maṅʻʺ ’Oṅʻ Lhuiṅʻ"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SIA
+				has_government = anocratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Nāyok Ratthamontrī Prayut Čhantha`ōchā"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SIA
+				has_government = stratocratic_monarchism
+			}
+		}
+		localization_key = "Nāyok Ratthamontrī Phrayā Ploplopyuhasēnā"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CAM
+				has_government = authoritarian_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Néayôk Rôdthâmôntrei Hŭn Sên"
+	}
+	text = {
 		localization_key = "To Be Added"
 	}
 }
@@ -1786,6 +1825,45 @@ defined_text = {
 		localization_key = "GFX_Viola_Amherd"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = BRM
+				has_government = stratocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Min_Aung_Hlaing"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SIA
+				has_government = anocratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Prayut_Chanocha"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SIA
+				has_government = stratocratic_monarchism
+			}
+		}
+		localization_key = "GFX_Phraya_Phahon"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CAM
+				has_government = authoritarian_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Hun_Sen"
+	}
+	text = {
 		localization_key = "GFX_leader_unknown"
 	}
 }
@@ -1850,6 +1928,15 @@ defined_text = {
 			}
 		}
 		localization_key = "Reichsrat"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SIA
+				has_government = stratocratic_monarchism
+			}
+		}
+		localization_key = "Phū Samret Rātchakān Thǣn Phra`ong Phra Čhao Wǭnwongthœ̄ Phra `Ong Čhao `Āthit Thip`āphā"
 	}
 	text = {
 		localization_key = "To be Added"
@@ -1931,6 +2018,15 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Reichsrat"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SIA
+				has_government = stratocratic_monarchism
+			}
+		}
+		localization_key = "GFX_Aditya_Dibabha"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
