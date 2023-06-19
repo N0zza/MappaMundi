@@ -365,6 +365,16 @@ on_actions = {
 							transfer_state = PREV
 						}
 					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = SLD
+							}
+						}
+						ENG = {
+							transfer_state = PREV
+						}
+					}
 				}
 				if = {
 					limit = {

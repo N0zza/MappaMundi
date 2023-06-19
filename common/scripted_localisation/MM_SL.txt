@@ -320,6 +320,39 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = AUS
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Bundeskanzler Sebastian Kurz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = centrist_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Ministerpräsident Sebastian Kurz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				OR = {
+					has_government = conservative_monarchism
+					has_government = democratic_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Ministerpräsident Alexander Van der Bellen"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
 				has_government = republican_fascism
 			}
 		}
@@ -1174,6 +1207,32 @@ defined_text = {
 			AND = {
 				tag = AUS
 				OR = {
+					has_government = conservative_monarchism
+					has_government = democratic_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Alexander_Bellen"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				OR = {
+					has_government = centrist_republic
+					has_government = centrist_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Sebastian_Kurz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				OR = {
 					has_government = republican_fascism
 					has_government = fascism
 				}
@@ -1783,6 +1842,16 @@ defined_text = {
 		localization_key = "SWI_FEDERAL_COUNCIL_CHARACTER"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = centrist_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Reichsrat"
+	}
+	text = {
 		localization_key = "To be Added"
 	}
 }
@@ -1852,6 +1921,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Federal_Council"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = centrist_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Reichsrat"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"

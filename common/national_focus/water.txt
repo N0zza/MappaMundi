@@ -13846,12 +13846,7 @@
 				centrist_republic = 14
 				democratic = 39
 				anocratic_republic = 16
-			}
-			set_party_name = {
-				ideology = neutrality
-				name = AUS_2023_neutrality_party
-				long_name = AUS_2023_neutrality_party_long
-			}			
+			}		
 			set_party_name = {
 				ideology = socialism_ideology
 				name = AUS_2023_socialism_ideology_party
@@ -13902,6 +13897,16 @@
 				name = AUS_2023_anocratic_monarchism_party
 				long_name = AUS_2023_anocratic_monarchism_party_long
 			}
+			set_party_name = {
+				ideology = neutrality
+				name = AUS_2023_neutrality_party
+				long_name = AUS_2023_neutrality_party_long
+			}
+			set_party_name = {
+				ideology = stratocratic
+				name = AUS_2023_stratocratic_party
+				long_name = AUS_2023_stratocratic_party_long
+			}
 			create_country_leader = {
            		name = "Bundespräsident Alexander Van der Bellen"
            		desc = ""
@@ -13910,11 +13915,32 @@
            		ideology = christian_democracy
 			}
 			create_country_leader = {
-           		name = "Bundespräsident Pamela Rendi-Wagner"
+           		name = "Bundespräsident Alexander Van der Bellen"
            		desc = ""
-           		picture = "gfx/leaders/AUS/Portrait_Wagner.dds"
+           		picture = "gfx/leaders/AUS/AUS_Bellen.tga"
            		expire = "1965.1.1"
            		ideology = social_democracy
+			}
+			create_country_leader = {
+           		name = "Kaiser Karl II von Habsburg-Lothringen"
+           		desc = ""
+           		picture = "gfx/leaders/AUS/AUS_Karl.tga"
+           		expire = "1965.1.1"
+           		ideology = absolutism
+			}
+			create_country_leader = {
+           		name = "Kaiser Karl II von Habsburg-Lothringen"
+           		desc = ""
+           		picture = "gfx/leaders/AUS/AUS_Karl.tga"
+           		expire = "1965.1.1"
+           		ideology = stratmon
+			}
+			create_country_leader = {
+           		name = "Verteidigungsminister Klaudia Tanner"
+           		desc = ""
+           		picture = "gfx/leaders/AUS/Portrait_Klaudia_Tanner.dds"
+           		expire = "1965.1.1"
+           		ideology = military_junta
 			}
 			create_country_leader = {
            		name = "Kaiser Karl II von Habsburg-Lothringen"
@@ -13924,11 +13950,18 @@
            		ideology = conmon_christian_democracy
 			}
 			create_country_leader = {
+           		name = "Bundeskaiser Karl II von Habsburg-Lothringen"
+           		desc = ""
+           		picture = "gfx/leaders/AUS/AUS_Karl.tga"
+           		expire = "1965.1.1"
+           		ideology = cenmon
+			}
+			create_country_leader = {
            		name = "Kaiser Karl II von Habsburg-Lothringen"
            		desc = ""
            		picture = "gfx/leaders/AUS/AUS_Karl.tga"
            		expire = "1965.1.1"
-           		ideology = libmon_conservative_liberalism
+           		ideology = libmon_third_way
 			}
 			create_country_leader = {
            		name = "Kaiser Karl II von Habsburg-Lothringen"
