@@ -25,6 +25,42 @@ scripted_gui = {
 					clr_state_flag = smt_marked 
 				}
 			}
+			smt_mark_landmass_click = {
+				FROM.FROM = { 
+					set_state_flag = smt_marked_temp
+					while_loop_effect = {
+						limit = {
+							any_state = {
+								has_state_flag = smt_marked_temp
+								any_neighbor_state = {
+									is_owned_by = PREV.OWNER
+									NOT = {
+										has_state_flag = smt_marked_temp
+									}
+								}
+							}
+						}
+						every_state = {
+							limit = {
+								has_state_flag = smt_marked_temp
+							}
+							every_neighbor_state = {
+								limit = {
+									is_owned_by = PREV.OWNER
+								}
+								set_state_flag = smt_marked_temp
+							}
+						}
+					}
+					every_state = {
+						limit = {
+							has_state_flag = smt_marked_temp
+						}
+						clr_state_flag = smt_marked_temp
+						set_state_flag = smt_marked
+					}
+				}
+			}
 			smt_mark_all_click = {
 				FROM.OWNER = {
 					if = {
@@ -136,7 +172,6 @@ scripted_gui = {
 					FROM.OWNER = { transfer_state = PREV }
 					clr_state_flag = smt_marked
 				}
-				bst_count_civf = yes
 			}
 			smt_transfer_control_click = {
 				every_state = {
@@ -144,7 +179,6 @@ scripted_gui = {
 					FROM.OWNER = { set_state_controller = PREV }
 					clr_state_flag = smt_marked
 				}
-				bst_count_civf = yes
 			}
 			smt_set_capital_click = {
 				random_country = {
@@ -284,6 +318,12 @@ scripted_gui = {
 			}
 			smt_unmark_button_visible = {
 				has_state_flag = smt_marked
+			}
+			smt_mark_landmass_visible = {
+				always = yes
+			}
+			smt_mark_landmass_click_enabled = {
+				always = yes
 			}
 			smt_mark_all_click_enabled = {
 				FROM.OWNER = {
