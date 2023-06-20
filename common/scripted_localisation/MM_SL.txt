@@ -978,6 +978,25 @@ defined_text = {
 		localization_key = "Prime Minister Lee Hsieng Loong"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = BOS
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Predsjedavajuća Vijeća ministara Borjana Krišto"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = YUG
+				has_government = fascism
+			}
+		}
+		localization_key = "Presednik Vlade Milan Stojadinović"
+	}
+	text = {
 		localization_key = "To Be Added"
 	}
 }
@@ -1904,6 +1923,25 @@ defined_text = {
 		localization_key = "GFX_Lee_Hsien_Loong"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = BOS
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Borjana_Kristo"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = YUG
+				has_government = fascism
+			}
+		}
+		localization_key = "GFX_Milan_Stojadinovic"
+	}
+	text = {
 		localization_key = "GFX_leader_unknown"
 	}
 }
@@ -1977,6 +2015,25 @@ defined_text = {
 			}
 		}
 		localization_key = "Phū Samret Rātchakān Thǣn Phra`ong Phra Čhao Wǭnwongthœ̄ Phra `Ong Čhao `Āthit Thip`āphā"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BOS
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Hoher Repräsentant für Bosnien und Herzegowina Hans Christian Friedrich Schmidt"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = YUG
+				has_government = fascism
+			}
+		}
+		localization_key = "Knez Namesnik Pavle Karađorđević"
 	}
 	text = {
 		localization_key = "To be Added"
@@ -2067,6 +2124,25 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Aditya_Dibabha"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BOS
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Christian_Schmidt"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = YUG
+				has_government = fascism
+			}
+		}
+		localization_key = "GFX_Paul_Karadordevic"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
