@@ -13,12 +13,30 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 			factor = 0
 		}
 		hidden_effect = {
-			YUG = {
-				set_popularities = {
-					fascism = 82
-					centrist_monarchism = 18
+				NMB = {
+					drop_cosmetic_tag = yes
+					set_politics = {
+						ruling_party = anocratic_republic
+					}
+					set_popularities = {
+						vanguardism = 2
+						socialism_ideology = 7
+						liberal_republic = 17
+						centrist_republic = 2
+						democratic = 7
+						anocratic_republic = 62
+						neutrality = 8
+					}
 				}
-			}
+				NMB = {
+					create_country_leader = {
+						name = "President Hage Gottfried Geingob"
+						desc = ""
+						picture = "gfx/leaders/NMB/NMB_Geingob.tga"
+						expire = "1965.1.1"
+						ideology = dominant_party_democracy
+					}
+				}
 		}
 	}
 	option = { #reject

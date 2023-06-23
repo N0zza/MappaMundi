@@ -1,0 +1,829 @@
+defined_text = {
+	name = get_tpt_ideology_icon
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = vanguardism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_vanguard
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_vanguardism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = communism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_communist
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_communism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = socialism_ideology
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_soc
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_socialism_ideology_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = socialist_monarchy
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_socmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_socialist_monarchy_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = liberal_republic
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_librep
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_liberal_republic_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = democratic_monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_demmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_democratic_monarchism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = centrist_republic
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_cenrep
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_centrist_republic_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = centrist_monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_cenmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_centrist_monarchism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = democratic
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_democratic
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_democratic_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = conservative_monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_conmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_conservative_monarchism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = anocratic_republic
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_anocrep
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_anocratic_republic_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = anocratic_monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_anocmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_anocratic_monarchism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = neutrality
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_neutral
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_neutrality_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = authoritarian_monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_authmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_authoritarian_monarchism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = stratocratic
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_strat
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_stratocratic_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = stratocratic_monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_stratmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_stratocratic_monarchism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = republican_fascism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_repfash
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_republican_fascism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = fascism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_fascist
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_fascism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = national_socialism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_natsoc
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_national_socialism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_monarchism
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_monarchism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = theocratic
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_theoc
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_theocratic_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = left_anarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_ancom
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_left_anarchism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = right_anarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_ancap
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_right_anarchism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = anarchism_ideology
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_totanc
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_anarchism_ideology_group"
+	}
+	text = {
+		localization_key = "GFX_ideology_unknown"
+	}
+}
+
+defined_text = {
+	name = get_tpt_ideology_name
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = vanguardism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_vanguard
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Marxism-Leninist State"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = communism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_communist
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Communist State"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = socialism_ideology
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_soc
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Socialist Republic"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = socialist_monarchy
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_socmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Socialist Monarchy"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = liberal_republic
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_librep
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Liberal Republic"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = democratic_monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_demmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Liberal Monarchy"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = centrist_republic
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_cenrep
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Centrist Republic"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = centrist_monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_cenmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Centrist Monarchy"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = democratic
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_democratic
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Conservative Republic"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = conservative_monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_conmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Conservative Monarchy"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = anocratic_republic
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_anocrep
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Anocratic Republic"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = anocratic_monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_anocmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Anocratic Monarchy"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = neutrality
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_neutral
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Authoritarian Republic"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = authoritarian_monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_authmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Authoritarian Monarchy"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = stratocratic
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_strat
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Stratocratic Republic"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = stratocratic_monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_stratmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Stratocratic Monarchy"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = republican_fascism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_repfash
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Corporatist Republic"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = fascism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_fascist
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Corporatist Monarchy"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = national_socialism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_natsoc
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "National Socialist State"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_monarchism
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Absolute Monarchy"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = theocratic
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_theoc
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Theocracy"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = left_anarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_ancom
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Left Anarchism"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = right_anarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_ancap
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Right Anarchism"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = anarchism_ideology
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_totanc
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "Tribalism"
+	}
+	text = {
+		localization_key = "Unknown"
+	}
+}

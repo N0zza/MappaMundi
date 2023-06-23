@@ -1,4 +1,5 @@
-﻿focus_tree = {
+﻿
+focus_tree = {
 	id = water_focus
 	country = {
 		factor = 0
@@ -13464,6 +13465,7 @@
 				name = BLR_liberal_republic_2023_party
 				long_name = BLR_liberal_republic_2023_party_long
 			}
+			clr_country_flag = has_secondary_leader
 			clr_country_flag = has_tertiary_leader
 		}
 		BLR = {
@@ -15610,7 +15612,7 @@
         		desc = ""
         		picture = "gfx/leaders/ETM/ETM_Ramos-Horta.tga"
         		expire = "1965.1.1"
-        		ideology = left_wing_nationalism
+        		ideology = social_democracy
 			}
 		}
 		every_state = {
@@ -19097,7 +19099,7 @@
            		desc = ""
            		picture = "gfx/leaders/WES/WES_Brahim_Ghali.tga"
            		expire = "1965.1.1"
-           		ideology = authoritarian_socialism
+           		ideology = left_wing_nationalism
 			}
 		}
 		ERI = {
@@ -20019,13 +20021,14 @@
 			name = Huambo
 		}
 		ANG = {
-			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = communism
 			}
+			set_cosmetic_tag = ANG_2023
 			set_popularities = {
-				socialism_ideology = 56
-				liberal_republic = 2
+				communism = 56
+				socialism_ideology = 1
+				liberal_republic = 1
 				democratic = 1
 				centrist_republic = 41
 			}
@@ -20050,10 +20053,11 @@
 				long_name = ZAM_liberal_republic_2023_party_long
 			}
 			set_popularities = {
-				liberal_republic = 49
+				liberal_republic = 48
 				democratic = 37
 				centrist_republic = 8
-				neutrality = 6
+				anocratic_republic = 5
+				neutrality = 2
 			}
 		}
 		ZAM = {
@@ -20096,17 +20100,17 @@
 			}
 		}
 		MZB = {
-			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = socialism_ideology
 			}
+			set_cosmetic_tag = MZB_2023
 			set_party_name = {
 				ideology = socialism_ideology
 				name = MZB_socialism_ideology_2023_party
 				long_name = MZB_socialism_ideology_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 84
+				communism = 84
 				democratic = 2
 				centrist_republic = 14
 			}
@@ -20117,7 +20121,7 @@
         		desc = ""
         		picture = "gfx/leaders/MZB/MZB_Nyusi.tga"
         		expire = "1965.1.1"
-        		ideology = demsoc
+        		ideology = authoritarian_socialism
 			}
 		}
 		set_province_name = {
@@ -20173,14 +20177,16 @@
 		NMB = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = socialism_ideology
+				ruling_party = anocratic_republic
 			}
 			set_popularities = {
-				socialism_ideology = 67
-				liberal_republic = 16
-				democratic = 3
+				vanguardism = 2
+				socialism_ideology = 7
+				liberal_republic = 17
 				centrist_republic = 2
-				neutrality = 12
+				democratic = 7
+				anocratic_republic = 62
+				neutrality = 8
 			}
 		}
 		NMB = {
@@ -20189,7 +20195,7 @@
         		desc = ""
         		picture = "gfx/leaders/NMB/NMB_Geingob.tga"
         		expire = "1965.1.1"
-        		ideology = socrep_third_way
+        		ideology = dominant_party_democracy
 			}
 		}
 		SAF = {
@@ -22283,7 +22289,7 @@
 		}
 		ARG = {
 			create_country_leader = {
-        		name = "Presidente Alberto Ángel Fernández"
+        		name = "Presidente Alberto Ángel Fernández Pérez"
         		desc = ""
         		picture = "gfx/leaders/ARG/ARG_Fernandez.tga"
         		expire = "1965.1.1"
@@ -22338,7 +22344,7 @@
 				desc = ""
 				picture = "gfx/leaders/BOL/BOL_Arce.tga"
 				expire = "1965.1.1"
-				ideology = left_wing_nationalism
+				ideology = demsoc
 			}
 		}
 		CHL = {
