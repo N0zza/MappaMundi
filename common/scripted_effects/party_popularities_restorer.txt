@@ -25,6 +25,8 @@ save_party_popularities = { # Use this before puppeting
 	add_to_array = { PartyPops = party_popularity@national_socialism }
 	add_to_array = { PartyPops = party_popularity@monarchism }
 	add_to_array = { PartyPops = party_popularity@theocratic }
+	add_to_array = { PartyPops = party_popularity@anocratic_republic }
+	add_to_array = { PartyPops = party_popularity@anocratic_monarchism }
 
 	for_each_loop = {
 		array = PartyPops
@@ -88,6 +90,8 @@ apply_party_popularities = { # Use this after puppeting
 			national_socialism = PartyPops^19
 			monarchism = PartyPops^20
 			theocratic = PartyPops^21
+			anocratic_republic = PartyPops^22
+			anocratic_monarchism = PartyPops^23
 		}
 		clear_array = PartyPops
 	}

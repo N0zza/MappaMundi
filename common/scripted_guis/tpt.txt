@@ -94,33 +94,11 @@ scripted_gui = {
 				}
 			}
 			tpt_mark_ideology_click = {
-				if = {
-					limit = { has_government = fascism }
-					every_country = {
-						limit = { has_government = fascism }
-						set_country_flag = tpt_actor
+				every_country = {
+					limit = {
+						has_government = FROM
 					}
-				}
-				if = {
-					limit = { has_government = communism }
-					every_country = {
-						limit = { has_government = communism }
-						set_country_flag = tpt_actor
-					}
-				}
-				if = {
-					limit = { has_government = democratic }
-					every_country = {
-						limit = { has_government = democratic }
-						set_country_flag = tpt_actor
-					}
-				}
-				if = {
-					limit = { has_government = neutrality }
-					every_country = {
-						limit = { has_government = neutrality }
-						set_country_flag = tpt_actor
-					}
+					set_country_flag = tpt_actor
 				}
 			}
 ### RESEARCH ###
@@ -375,286 +353,16 @@ scripted_gui = {
 				}
 				if = {
 					limit = {
-					    any_country = { has_country_flag = tpt_actor }
-							}
-				     	every_country = {
-						    limit = { 
-								has_country_flag = tpt_actor 
-							}
-						    drop_cosmetic_tag = yes
-						    clr_country_flag = tpt_actor
+					    any_country = { 
+							has_country_flag = tpt_actor 
 						}
 					}
-				}
-			tpt_add_fascism_click = {
-				if = {
-					limit = {
-						all_country = {
-							NOT = { has_country_flag = tpt_actor }
+				    every_country = {
+					    limit = { 
+							has_country_flag = tpt_actor 
 						}
-					}
-					if = {
-						limit = {
-							NOT = { has_idea = tp_fascist_nation }
-						}
-						add_ideas = tp_fascist_nation
-						else = { remove_ideas = tp_fascist_nation }
-					}
-				}
-				if = {
-					limit = {
-						any_country = { has_country_flag = tpt_actor }
-					}
-					every_country = {
-						limit = {
-							has_country_flag = tpt_actor
-							NOT = { has_idea = tp_fascist_nation }
-						}
-						add_ideas = tp_fascist_nation
-						every_other_country = {
-							limit = { has_country_flag = tpt_actor }
-							remove_ideas = tp_fascist_nation
-							clr_country_flag = tpt_actor
-						}
-						clr_country_flag = tpt_actor
-					}
-				}
-			}
-			tpt_ban_fascism_click = {
-				if = {
-					limit = {
-						all_country = {
-							NOT = { has_country_flag = tpt_actor }
-						}
-					}
-					if = {
-						limit = {
-							NOT = { has_idea = tp_fascism_banned }
-						}
-						add_ideas = tp_fascism_banned
-						else = { remove_ideas = tp_fascism_banned }
-					}
-				}
-				if = {
-					limit = {
-						any_country = { has_country_flag = tpt_actor }
-					}
-					every_country = {
-						limit = {
-							has_country_flag = tpt_actor
-							NOT = { has_idea = tp_fascism_banned }
-						}
-						add_ideas = tp_fascism_banned
-						every_other_country = {
-							limit = { has_country_flag = tpt_actor }
-							remove_ideas = tp_fascism_banned
-							clr_country_flag = tpt_actor
-						}
-						clr_country_flag = tpt_actor
-					}
-				}
-			}
-			tpt_add_communism_click = {
-				if = {
-					limit = {
-						all_country = {
-							NOT = { has_country_flag = tpt_actor }
-						}
-					}
-					if = {
-						limit = {
-							NOT = { has_idea = tp_communist_nation }
-						}
-						add_ideas = tp_communist_nation
-						else = { remove_ideas = tp_communist_nation }
-					}
-				}
-				if = {
-					limit = {
-						any_country = { has_country_flag = tpt_actor }
-					}
-					every_country = {
-						limit = {
-							has_country_flag = tpt_actor
-							NOT = { has_idea = tp_communist_nation }
-						}
-						add_ideas = tp_communist_nation
-						every_other_country = {
-							limit = { has_country_flag = tpt_actor }
-							remove_ideas = tp_communist_nation
-							clr_country_flag = tpt_actor
-						}
-						clr_country_flag = tpt_actor
-					}
-				}
-			}
-			tpt_ban_communism_click = {
-				if = {
-					limit = {
-						all_country = {
-							NOT = { has_country_flag = tpt_actor }
-						}
-					}
-					if = {
-						limit = {
-							NOT = { has_idea = tp_communism_banned }
-						}
-						add_ideas = tp_communism_banned
-						else = { remove_ideas = tp_communism_banned }
-					}
-				}
-				if = {
-					limit = {
-						any_country = { has_country_flag = tpt_actor }
-					}
-					every_country = {
-						limit = {
-							has_country_flag = tpt_actor
-							NOT = { has_idea = tp_communism_banned }
-						}
-						add_ideas = tp_communism_banned
-						every_other_country = {
-							limit = { has_country_flag = tpt_actor }
-							remove_ideas = tp_communism_banned
-							clr_country_flag = tpt_actor
-						}
-						clr_country_flag = tpt_actor
-					}
-				}
-			}
-			tpt_add_democratic_click = {
-				if = {
-					limit = {
-						all_country = {
-							NOT = { has_country_flag = tpt_actor }
-						}
-					}
-					if = {
-						limit = {
-							NOT = { has_idea = tp_democratic_nation }
-						}
-						add_ideas = tp_democratic_nation
-						else = { remove_ideas = tp_democratic_nation }
-					}
-				}
-				if = {
-					limit = {
-						any_country = { has_country_flag = tpt_actor }
-					}
-					every_country = {
-						limit = {
-							has_country_flag = tpt_actor
-							NOT = { has_idea = tp_democratic_nation }
-						}
-						add_ideas = tp_democratic_nation
-						every_other_country = {
-							limit = { has_country_flag = tpt_actor }
-							remove_ideas = tp_democratic_nation
-							clr_country_flag = tpt_actor
-						}
-						clr_country_flag = tpt_actor
-					}
-				}
-			}
-			tpt_ban_democratic_click = {
-				if = {
-					limit = {
-						all_country = {
-							NOT = { has_country_flag = tpt_actor }
-						}
-					}
-					if = {
-						limit = {
-							NOT = { has_idea = tp_democratic_banned }
-						}
-						add_ideas = tp_democratic_banned
-						else = { remove_ideas = tp_democratic_banned }
-					}
-				}
-				if = {
-					limit = {
-						any_country = { has_country_flag = tpt_actor }
-					}
-					every_country = {
-						limit = {
-							has_country_flag = tpt_actor
-							NOT = { has_idea = tp_democratic_banned }
-						}
-						add_ideas = tp_democratic_banned
-						every_other_country = {
-							limit = { has_country_flag = tpt_actor }
-							remove_ideas = tp_democratic_banned
-							clr_country_flag = tpt_actor
-						}
-						clr_country_flag = tpt_actor
-					}
-				}
-			}
-			tpt_add_neutrality_click = {
-				if = {
-					limit = {
-						all_country = {
-							NOT = { has_country_flag = tpt_actor }
-						}
-					}
-					if = {
-						limit = {
-							NOT = { has_idea = tp_neutral_nation }
-						}
-						add_ideas = tp_neutral_nation
-						else = { remove_ideas = tp_neutral_nation }
-					}
-				}
-				if = {
-					limit = {
-						any_country = { has_country_flag = tpt_actor }
-					}
-					every_country = {
-						limit = {
-							has_country_flag = tpt_actor
-							NOT = { has_idea = tp_neutral_nation }
-						}
-						add_ideas = tp_neutral_nation
-						every_other_country = {
-							limit = { has_country_flag = tpt_actor }
-							remove_ideas = tp_neutral_nation
-							clr_country_flag = tpt_actor
-						}
-						clr_country_flag = tpt_actor
-					}
-				}
-			}
-			tpt_ban_neutrality_click = {
-				if = {
-					limit = {
-						all_country = {
-							NOT = { has_country_flag = tpt_actor }
-						}
-					}
-					if = {
-						limit = {
-							NOT = { has_idea = tp_neutrality_banned }
-						}
-						add_ideas = tp_neutrality_banned
-						else = { remove_ideas = tp_neutrality_banned }
-					}
-				}
-				if = {
-					limit = {
-						any_country = { has_country_flag = tpt_actor }
-					}
-					every_country = {
-						limit = {
-							has_country_flag = tpt_actor
-							NOT = { has_idea = tp_neutrality_banned }
-						}
-						add_ideas = tp_neutrality_banned
-						every_other_country = {
-							limit = { has_country_flag = tpt_actor }
-							remove_ideas = tp_neutrality_banned
-							clr_country_flag = tpt_actor
-						}
-						clr_country_flag = tpt_actor
+					    drop_cosmetic_tag = yes
+					    clr_country_flag = tpt_actor
 					}
 				}
 			}
@@ -801,59 +509,6 @@ scripted_gui = {
 			}
 			tpt_anocmon_off_click = {
 				clr_global_flag = tpt_anocmon
-			}
-		
-			tpt_enable_elections_click = {
-				if = {
-					limit = {
-						all_country = {
-							NOT = { has_country_flag = tpt_actor }
-						}
-					}
-					set_politics = {
-						elections_allowed = yes
-					}
-				}
-				if = {
-					limit = {
-						any_country = { has_country_flag = tpt_actor }
-					}
-					every_country = {
-						limit = {
-							has_country_flag = tpt_actor
-						}
-						set_politics = {
-							elections_allowed = yes
-						}
-						clr_country_flag = tpt_actor
-					}
-				}
-			}
-			tpt_disable_elections_click = {
-				if = {
-					limit = {
-						all_country = {
-							NOT = { has_country_flag = tpt_actor }
-						}
-					}
-					set_politics = {
-						elections_allowed = no
-					}
-				}
-				if = {
-					limit = {
-						any_country = { has_country_flag = tpt_actor }
-					}
-					every_country = {
-						limit = {
-							has_country_flag = tpt_actor
-						}
-						set_politics = {
-							elections_allowed = no
-						}
-						clr_country_flag = tpt_actor
-					}
-				}
 			}
 			tpt_change_click = {
 				if = {
@@ -1037,126 +692,126 @@ scripted_gui = {
 							}
 							set_politics = { ruling_party = neutrality }
 						}
-					if = {
-						limit = {
-							has_global_flag = tpt_monarchism
+						if = {
+							limit = {
+								has_global_flag = tpt_monarchism
+							}
+							set_politics = { ruling_party = monarchism }
 						}
-						set_politics = { ruling_party = monarchism }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_librep
+						if = {
+							limit = {
+								has_global_flag = tpt_librep
+							}
+							set_politics = { ruling_party = liberal_republic }
 						}
-						set_politics = { ruling_party = liberal_republic }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_vanguard
+						if = {
+							limit = {
+								has_global_flag = tpt_vanguard
+							}
+							set_politics = { ruling_party = vanguardism }
 						}
-						set_politics = { ruling_party = vanguardism }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_totanc
+						if = {
+							limit = {
+								has_global_flag = tpt_totanc
+							}
+							set_politics = { ruling_party = anarchism_ideology }
 						}
-						set_politics = { ruling_party = anarchism_ideology }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_ancom
+						if = {
+							limit = {
+								has_global_flag = tpt_ancom
+							}
+							set_politics = { ruling_party = left_anarchism }
 						}
-						set_politics = { ruling_party = left_anarchism }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_soc
+						if = {
+							limit = {
+								has_global_flag = tpt_soc
+							}
+							set_politics = { ruling_party = socialism_ideology }
 						}
-						set_politics = { ruling_party = socialism_ideology }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_socmon
+						if = {
+							limit = {
+								has_global_flag = tpt_socmon
+							}
+							set_politics = { ruling_party = socialist_monarchy }
 						}
-						set_politics = { ruling_party = socialist_monarchy }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_demmon
+						if = {
+							limit = {
+								has_global_flag = tpt_demmon
+							}
+							set_politics = { ruling_party = democratic_monarchism }
 						}
-						set_politics = { ruling_party = democratic_monarchism }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_conmon
+						if = {
+							limit = {
+								has_global_flag = tpt_conmon
+							}
+							set_politics = { ruling_party = conservative_monarchism }
 						}
-						set_politics = { ruling_party = conservative_monarchism }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_cenrep
+						if = {
+							limit = {
+								has_global_flag = tpt_cenrep
+							}
+							set_politics = { ruling_party = centrist_republic }
 						}
-						set_politics = { ruling_party = centrist_republic }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_cenmon
+						if = {
+							limit = {
+								has_global_flag = tpt_cenmon
+							}
+							set_politics = { ruling_party = centrist_monarchism }
 						}
-						set_politics = { ruling_party = centrist_monarchism }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_strat
+						if = {
+							limit = {
+								has_global_flag = tpt_strat
+							}
+							set_politics = { ruling_party = stratocratic }
 						}
-						set_politics = { ruling_party = stratocratic }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_stratmon
+						if = {
+							limit = {
+								has_global_flag = tpt_stratmon
+							}
+							set_politics = { ruling_party = stratocratic_monarchism }
 						}
-						set_politics = { ruling_party = stratocratic_monarchism }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_authmon
+						if = {
+							limit = {
+								has_global_flag = tpt_authmon
+							}
+							set_politics = { ruling_party = authoritarian_monarchism }
 						}
-						set_politics = { ruling_party = authoritarian_monarchism }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_repfash
+						if = {
+							limit = {
+								has_global_flag = tpt_repfash
+							}
+							set_politics = { ruling_party = republican_fascism }
 						}
-						set_politics = { ruling_party = republican_fascism }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_natsoc
+						if = {
+							limit = {
+								has_global_flag = tpt_natsoc
+							}
+							set_politics = { ruling_party = national_socialism }
 						}
-						set_politics = { ruling_party = national_socialism }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_theoc
+						if = {
+							limit = {
+								has_global_flag = tpt_theoc
+							}
+							set_politics = { ruling_party = theocratic }
 						}
-						set_politics = { ruling_party = theocratic }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_ancap
+						if = {
+							limit = {
+								has_global_flag = tpt_ancap
+							}
+							set_politics = { ruling_party = right_anarchism }
 						}
-						set_politics = { ruling_party = right_anarchism }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_anocrep
+						if = {
+							limit = {
+								has_global_flag = tpt_anocrep
+							}
+							set_politics = { ruling_party = anocratic_republic }
 						}
-						set_politics = { ruling_party = anocratic_republic }
-					}
-					if = {
-						limit = {
-							has_global_flag = tpt_anocmon
+						if = {
+							limit = {
+								has_global_flag = tpt_anocmon
+							}
+							set_politics = { ruling_party = anocratic_monarchism }
 						}
-						set_politics = { ruling_party = anocratic_monarchism }
-					}
 						clr_country_flag = tpt_actor
 					}
 				}
@@ -1204,187 +859,186 @@ scripted_gui = {
 							popularity = 0.05
 						}
 					}
-					
-			if = { 
-				limit = { 
-					has_global_flag = tpt_monarchism 
-				}
-				add_popularity = {
-					ideology = monarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_librep 
-				}
-				add_popularity = {
-					ideology = liberal_republic
-					popularity = 0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_vanguard 
-				}
-				add_popularity = {
-					ideology = vanguardism
-					popularity = 0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_totanc 
-				}
-				add_popularity = {
-					ideology = anarchism_ideology
-					popularity = 0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_ancom 
-				}
-				add_popularity = {
-					ideology = left_anarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_soc 
-				}
-				add_popularity = {
-					ideology = socialism_ideology
-					popularity = 0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_socmon 
-				}
-				add_popularity = {
-					ideology = socialist_monarchy
-					popularity = 0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_demmon 
-				}
-				add_popularity = {
-					ideology = democratic_monarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_conmon 
- 				}
-				add_popularity = {
-					ideology = conservative_monarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenrep 
- 				}
-				add_popularity = {
-					ideology = centrist_republic
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenmon 
- 				}
-				add_popularity = {
-					ideology = centrist_monarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_strat 
- 				}
-				add_popularity = {
-					ideology = stratocratic
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_stratmon 
- 				}
-				add_popularity = {
-					ideology = stratocratic_monarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_authmon 
- 				}
-				add_popularity = {
-					ideology = authoritarian_monarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_repfash 
- 				}
-				add_popularity = {
-					ideology = republican_fascism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_natsoc 
- 				}
-				add_popularity = {
-					ideology = national_socialism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_theoc 
- 				}
-				add_popularity = {
-					ideology = theocratic
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_ancap 
- 				}
-				add_popularity = {
-					ideology = right_anarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocrep 
- 				}
-				add_popularity = {
-					ideology = anocratic_republic
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocmon
- 				}
-				add_popularity = {
-					ideology = anocratic_monarchism
-					popularity = 0.05
-				}				
-			}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_monarchism 
+						}
+						add_popularity = {
+							ideology = monarchism
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_librep 
+						}
+						add_popularity = {
+							ideology = liberal_republic
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_vanguard 
+						}
+						add_popularity = {
+							ideology = vanguardism
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_totanc 
+						}
+						add_popularity = {
+							ideology = anarchism_ideology
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_ancom 
+						}
+						add_popularity = {
+							ideology = left_anarchism
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_soc 
+						}
+						add_popularity = {
+							ideology = socialism_ideology
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_socmon 
+						}
+						add_popularity = {
+							ideology = socialist_monarchy
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_demmon 
+						}
+						add_popularity = {
+							ideology = democratic_monarchism
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_conmon 
+						}
+						add_popularity = {
+							ideology = conservative_monarchism
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_cenrep 
+						}
+						add_popularity = {
+							ideology = centrist_republic
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_cenmon 
+						}
+						add_popularity = {
+							ideology = centrist_monarchism
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_strat 
+						}
+						add_popularity = {
+							ideology = stratocratic
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_stratmon 
+						}
+						add_popularity = {
+							ideology = stratocratic_monarchism
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_authmon 
+						}
+						add_popularity = {
+							ideology = authoritarian_monarchism
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_repfash 
+						}
+						add_popularity = {
+							ideology = republican_fascism
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_natsoc 
+						}
+						add_popularity = {
+							ideology = national_socialism
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_theoc 
+						}
+						add_popularity = {
+							ideology = theocratic
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_ancap 
+						}
+						add_popularity = {
+							ideology = right_anarchism
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_anocrep 
+						}
+						add_popularity = {
+							ideology = anocratic_republic
+							popularity = 0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_anocmon
+						}
+						add_popularity = {
+							ideology = anocratic_monarchism
+							popularity = 0.05
+						}				
+					}
 				}
 				if = {
 					limit = {
@@ -1429,186 +1083,186 @@ scripted_gui = {
 							}
 						}
 
-			if = { 
-				limit = { 
-					has_global_flag = tpt_monarchism 
-				}
-				add_popularity = {
-					ideology = monarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_librep 
-				}
-				add_popularity = {
-					ideology = liberal_republic
-					popularity = 0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_vanguard 
-				}
-				add_popularity = {
-					ideology = vanguardism
-					popularity = 0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_totanc 
-				}
-				add_popularity = {
-					ideology = anarchism_ideology
-					popularity = 0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_ancom 
-				}
-				add_popularity = {
-					ideology = left_anarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_soc 
-				}
-				add_popularity = {
-					ideology = socialism_ideology
-					popularity = 0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_socmon 
-				}
-				add_popularity = {
-					ideology = socialist_monarchy
-					popularity = 0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_demmon 
-				}
-				add_popularity = {
-					ideology = democratic_monarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_conmon 
- 				}
-				add_popularity = {
-					ideology = conservative_monarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenrep 
- 				}
-				add_popularity = {
-					ideology = centrist_republic
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenmon 
- 				}
-				add_popularity = {
-					ideology = centrist_monarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_strat 
- 				}
-				add_popularity = {
-					ideology = stratocratic
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_stratmon 
- 				}
-				add_popularity = {
-					ideology = stratocratic_monarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_authmon 
- 				}
-				add_popularity = {
-					ideology = authoritarian_monarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_repfash 
- 				}
-				add_popularity = {
-					ideology = republican_fascism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_natsoc 
- 				}
-				add_popularity = {
-					ideology = national_socialism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_theoc 
- 				}
-				add_popularity = {
-					ideology = theocratic
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_ancap 
- 				}
-				add_popularity = {
-					ideology = right_anarchism
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocrep
- 				}
-				add_popularity = {
-					ideology = anocratic_republic
-					popularity = 0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocmon
- 				}
-				add_popularity = {
-					ideology = anocratic_monarchism
-					popularity = 0.05
-				}				
-			}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_monarchism 
+							}
+							add_popularity = {
+								ideology = monarchism
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_librep 
+							}
+							add_popularity = {
+								ideology = liberal_republic
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_vanguard 
+							}
+							add_popularity = {
+								ideology = vanguardism
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_totanc 
+							}
+							add_popularity = {
+								ideology = anarchism_ideology
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_ancom 
+							}
+							add_popularity = {
+								ideology = left_anarchism
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_soc 
+							}
+							add_popularity = {
+								ideology = socialism_ideology
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_socmon 
+							}
+							add_popularity = {
+								ideology = socialist_monarchy
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_demmon 
+							}
+							add_popularity = {
+								ideology = democratic_monarchism
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_conmon 
+							}
+							add_popularity = {
+								ideology = conservative_monarchism
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_cenrep 
+							}
+							add_popularity = {
+								ideology = centrist_republic
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_cenmon 
+							}
+							add_popularity = {
+								ideology = centrist_monarchism
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_strat 
+							}
+							add_popularity = {
+								ideology = stratocratic
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_stratmon 
+							}
+							add_popularity = {
+								ideology = stratocratic_monarchism
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_authmon 
+							}
+							add_popularity = {
+								ideology = authoritarian_monarchism
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_repfash 
+							}
+							add_popularity = {
+								ideology = republican_fascism
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_natsoc 
+							}
+							add_popularity = {
+								ideology = national_socialism
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_theoc 
+							}
+							add_popularity = {
+								ideology = theocratic
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_ancap 
+							}
+							add_popularity = {
+								ideology = right_anarchism
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_anocrep
+							}
+							add_popularity = {
+								ideology = anocratic_republic
+								popularity = 0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_anocmon
+							}
+							add_popularity = {
+								ideology = anocratic_monarchism
+								popularity = 0.05
+							}				
+						}
 						clr_country_flag = tpt_actor
 					}
 				}
@@ -1656,186 +1310,186 @@ scripted_gui = {
 							popularity = -0.05
 						}
 					}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_monarchism 
-				}
-				add_popularity = {
-					ideology = monarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_librep 
-				}
-				add_popularity = {
-					ideology = liberal_republic
-					popularity = -0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_vanguard 
-				}
-				add_popularity = {
-					ideology = vanguardism
-					popularity = -0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_totanc 
-				}
-				add_popularity = {
-					ideology = anarchism_ideology
-					popularity = -0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_ancom 
-				}
-				add_popularity = {
-					ideology = left_anarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_soc 
-				}
-				add_popularity = {
-					ideology = socialism_ideology
-					popularity = -0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_socmon 
-				}
-				add_popularity = {
-					ideology = socialist_monarchy
-					popularity = -0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_demmon 
-				}
-				add_popularity = {
-					ideology = democratic_monarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_conmon 
- 				}
-				add_popularity = {
-					ideology = conservative_monarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenrep 
- 				}
-				add_popularity = {
-					ideology = centrist_republic
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenmon 
- 				}
-				add_popularity = {
-					ideology = centrist_monarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_strat 
- 				}
-				add_popularity = {
-					ideology = stratocratic
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_stratmon 
- 				}
-				add_popularity = {
-					ideology = stratocratic_monarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_authmon 
- 				}
-				add_popularity = {
-					ideology = authoritarian_monarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_repfash 
- 				}
-				add_popularity = {
-					ideology = republican_fascism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_natsoc 
- 				}
-				add_popularity = {
-					ideology = national_socialism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_theoc 
- 				}
-				add_popularity = {
-					ideology = theocratic
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_ancap 
- 				}
-				add_popularity = {
-					ideology = right_anarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocrep 
- 				}
-				add_popularity = {
-					ideology = anocratic_republic
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocmon
- 				}
-				add_popularity = {
-					ideology = anocratic_monarchism
-					popularity = -0.05
-				}				
-			}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_monarchism 
+						}
+						add_popularity = {
+							ideology = monarchism
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_librep 
+						}
+						add_popularity = {
+							ideology = liberal_republic
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_vanguard 
+						}
+						add_popularity = {
+							ideology = vanguardism
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_totanc 
+						}
+						add_popularity = {
+							ideology = anarchism_ideology
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_ancom 
+						}
+						add_popularity = {
+							ideology = left_anarchism
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_soc 
+						}
+						add_popularity = {
+							ideology = socialism_ideology
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_socmon 
+						}
+						add_popularity = {
+							ideology = socialist_monarchy
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_demmon 
+						}
+						add_popularity = {
+							ideology = democratic_monarchism
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_conmon 
+						}
+						add_popularity = {
+							ideology = conservative_monarchism
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_cenrep 
+						}
+						add_popularity = {
+							ideology = centrist_republic
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_cenmon 
+						}
+						add_popularity = {
+							ideology = centrist_monarchism
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_strat 
+						}
+						add_popularity = {
+							ideology = stratocratic
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_stratmon 
+						}
+						add_popularity = {
+							ideology = stratocratic_monarchism
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_authmon 
+						}
+						add_popularity = {
+							ideology = authoritarian_monarchism
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_repfash 
+						}
+						add_popularity = {
+							ideology = republican_fascism
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_natsoc 
+						}
+						add_popularity = {
+							ideology = national_socialism
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_theoc 
+						}
+						add_popularity = {
+							ideology = theocratic
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_ancap 
+						}
+						add_popularity = {
+							ideology = right_anarchism
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_anocrep 
+						}
+						add_popularity = {
+							ideology = anocratic_republic
+							popularity = -0.05
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_anocmon
+						}
+						add_popularity = {
+							ideology = anocratic_monarchism
+							popularity = -0.05
+						}				
+					}
 				}
 				if = {
 					limit = {
@@ -1879,186 +1533,186 @@ scripted_gui = {
 								popularity = -0.05
 							}
 						}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_monarchism 
-				}
-				add_popularity = {
-					ideology = monarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_librep 
-				}
-				add_popularity = {
-					ideology = liberal_republic
-					popularity = -0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_vanguard 
-				}
-				add_popularity = {
-					ideology = vanguardism
-					popularity = -0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_totanc 
-				}
-				add_popularity = {
-					ideology = anarchism_ideology
-					popularity = -0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_ancom 
-				}
-				add_popularity = {
-					ideology = left_anarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_soc 
-				}
-				add_popularity = {
-					ideology = socialism_ideology
-					popularity = -0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_socmon 
-				}
-				add_popularity = {
-					ideology = socialist_monarchy
-					popularity = -0.05
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_demmon 
-				}
-				add_popularity = {
-					ideology = democratic_monarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_conmon 
- 				}
-				add_popularity = {
-					ideology = conservative_monarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenrep 
- 				}
-				add_popularity = {
-					ideology = centrist_republic
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenmon 
- 				}
-				add_popularity = {
-					ideology = centrist_monarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_strat 
- 				}
-				add_popularity = {
-					ideology = stratocratic
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_stratmon 
- 				}
-				add_popularity = {
-					ideology = stratocratic_monarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_authmon 
- 				}
-				add_popularity = {
-					ideology = authoritarian_monarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_repfash 
- 				}
-				add_popularity = {
-					ideology = republican_fascism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_natsoc 
- 				}
-				add_popularity = {
-					ideology = national_socialism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_theoc 
- 				}
-				add_popularity = {
-					ideology = theocratic
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_ancap 
- 				}
-				add_popularity = {
-					ideology = right_anarchism
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocrep 
- 				}
-				add_popularity = {
-					ideology = anocratic_republic
-					popularity = -0.05
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocmon
- 				}
-				add_popularity = {
-					ideology = anocratic_monarchism
-					popularity = -0.05
-				}				
-			}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_monarchism 
+							}
+							add_popularity = {
+								ideology = monarchism
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_librep 
+							}
+							add_popularity = {
+								ideology = liberal_republic
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_vanguard 
+							}
+							add_popularity = {
+								ideology = vanguardism
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_totanc 
+							}
+							add_popularity = {
+								ideology = anarchism_ideology
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_ancom 
+							}
+							add_popularity = {
+								ideology = left_anarchism
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_soc 
+							}
+							add_popularity = {
+								ideology = socialism_ideology
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_socmon 
+							}
+							add_popularity = {
+								ideology = socialist_monarchy
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_demmon 
+							}
+							add_popularity = {
+								ideology = democratic_monarchism
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_conmon 
+							}
+							add_popularity = {
+								ideology = conservative_monarchism
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_cenrep 
+							}
+							add_popularity = {
+								ideology = centrist_republic
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_cenmon 
+							}
+							add_popularity = {
+								ideology = centrist_monarchism
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_strat 
+							}
+							add_popularity = {
+								ideology = stratocratic
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_stratmon 
+							}
+							add_popularity = {
+								ideology = stratocratic_monarchism
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_authmon 
+							}
+							add_popularity = {
+								ideology = authoritarian_monarchism
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_repfash 
+							}
+							add_popularity = {
+								ideology = republican_fascism
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_natsoc 
+							}
+							add_popularity = {
+								ideology = national_socialism
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_theoc 
+							}
+							add_popularity = {
+								ideology = theocratic
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_ancap 
+							}
+							add_popularity = {
+								ideology = right_anarchism
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_anocrep 
+							}
+							add_popularity = {
+								ideology = anocratic_republic
+								popularity = -0.05
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_anocmon
+							}
+							add_popularity = {
+								ideology = anocratic_monarchism
+								popularity = -0.05
+							}				
+						}
 						clr_country_flag = tpt_actor
 					}
 				}
@@ -2106,187 +1760,186 @@ scripted_gui = {
 							popularity = 0.10
 						}
 					}
-
-			if = { 
-				limit = { 
-					has_global_flag = tpt_monarchism 
-				}
-				add_popularity = {
-					ideology = monarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_librep 
-				}
-				add_popularity = {
-					ideology = liberal_republic
-					popularity = 0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_vanguard 
-				}
-				add_popularity = {
-					ideology = vanguardism
-					popularity = 0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_totanc 
-				}
-				add_popularity = {
-					ideology = anarchism_ideology
-					popularity = 0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_ancom 
-				}
-				add_popularity = {
-					ideology = left_anarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_soc 
-				}
-				add_popularity = {
-					ideology = socialism_ideology
-					popularity = 0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_socmon 
-				}
-				add_popularity = {
-					ideology = socialist_monarchy
-					popularity = 0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_demmon 
-				}
-				add_popularity = {
-					ideology = democratic_monarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_conmon 
- 				}
-				add_popularity = {
-					ideology = conservative_monarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenrep 
- 				}
-				add_popularity = {
-					ideology = centrist_republic
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenmon 
- 				}
-				add_popularity = {
-					ideology = centrist_monarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_strat 
- 				}
-				add_popularity = {
-					ideology = stratocratic
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_stratmon 
- 				}
-				add_popularity = {
-					ideology = stratocratic_monarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_authmon 
- 				}
-				add_popularity = {
-					ideology = authoritarian_monarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_repfash 
- 				}
-				add_popularity = {
-					ideology = republican_fascism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_natsoc 
- 				}
-				add_popularity = {
-					ideology = national_socialism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_theoc 
- 				}
-				add_popularity = {
-					ideology = theocratic
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_ancap 
- 				}
-				add_popularity = {
-					ideology = right_anarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocrep
- 				}
-				add_popularity = {
-					ideology = anocratic_republic
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocmon
- 				}
-				add_popularity = {
-					ideology = anocratic_monarchism
-					popularity = 0.10
-				}				
-			}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_monarchism 
+						}
+						add_popularity = {
+							ideology = monarchism
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_librep 
+						}
+						add_popularity = {
+							ideology = liberal_republic
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_vanguard 
+						}
+						add_popularity = {
+							ideology = vanguardism
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_totanc 
+						}
+						add_popularity = {
+							ideology = anarchism_ideology
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_ancom 
+						}
+						add_popularity = {
+							ideology = left_anarchism
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_soc 
+						}
+						add_popularity = {
+							ideology = socialism_ideology
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_socmon 
+						}
+						add_popularity = {
+							ideology = socialist_monarchy
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_demmon 
+						}
+						add_popularity = {
+							ideology = democratic_monarchism
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_conmon 
+						}
+						add_popularity = {
+							ideology = conservative_monarchism
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_cenrep 
+						}
+						add_popularity = {
+							ideology = centrist_republic
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_cenmon 
+						}
+						add_popularity = {
+							ideology = centrist_monarchism
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_strat 
+						}
+						add_popularity = {
+							ideology = stratocratic
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_stratmon 
+						}
+						add_popularity = {
+							ideology = stratocratic_monarchism
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_authmon 
+						}
+						add_popularity = {
+							ideology = authoritarian_monarchism
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_repfash 
+						}
+						add_popularity = {
+							ideology = republican_fascism
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_natsoc 
+						}
+						add_popularity = {
+							ideology = national_socialism
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_theoc 
+						}
+						add_popularity = {
+							ideology = theocratic
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_ancap 
+						}
+						add_popularity = {
+							ideology = right_anarchism
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_anocrep
+						}
+						add_popularity = {
+							ideology = anocratic_republic
+							popularity = 0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_anocmon
+						}
+						add_popularity = {
+							ideology = anocratic_monarchism
+							popularity = 0.10
+						}				
+					}
 				}
 				if = {
 					limit = {
@@ -2331,186 +1984,186 @@ scripted_gui = {
 							}
 						}
 
-			if = { 
-				limit = { 
-					has_global_flag = tpt_monarchism 
-				}
-				add_popularity = {
-					ideology = monarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_librep 
-				}
-				add_popularity = {
-					ideology = liberal_republic
-					popularity = 0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_vanguard 
-				}
-				add_popularity = {
-					ideology = vanguardism
-					popularity = 0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_totanc 
-				}
-				add_popularity = {
-					ideology = anarchism_ideology
-					popularity = 0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_ancom 
-				}
-				add_popularity = {
-					ideology = left_anarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_soc 
-				}
-				add_popularity = {
-					ideology = socialism_ideology
-					popularity = 0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_socmon 
-				}
-				add_popularity = {
-					ideology = socialist_monarchy
-					popularity = 0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_demmon 
-				}
-				add_popularity = {
-					ideology = democratic_monarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_conmon 
- 				}
-				add_popularity = {
-					ideology = conservative_monarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenrep 
- 				}
-				add_popularity = {
-					ideology = centrist_republic
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenmon 
- 				}
-				add_popularity = {
-					ideology = centrist_monarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_strat 
- 				}
-				add_popularity = {
-					ideology = stratocratic
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_stratmon 
- 				}
-				add_popularity = {
-					ideology = stratocratic_monarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_authmon 
- 				}
-				add_popularity = {
-					ideology = authoritarian_monarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_repfash 
- 				}
-				add_popularity = {
-					ideology = republican_fascism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_natsoc 
- 				}
-				add_popularity = {
-					ideology = national_socialism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_theoc 
- 				}
-				add_popularity = {
-					ideology = theocratic
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_ancap 
- 				}
-				add_popularity = {
-					ideology = right_anarchism
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocrep
- 				}
-				add_popularity = {
-					ideology = anocratic_republic
-					popularity = 0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocmon
- 				}
-				add_popularity = {
-					ideology = anocratic_monarchism
-					popularity = 0.10
-				}				
-			}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_monarchism 
+							}
+							add_popularity = {
+								ideology = monarchism
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_librep 
+							}
+							add_popularity = {
+								ideology = liberal_republic
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_vanguard 
+							}
+							add_popularity = {
+								ideology = vanguardism
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_totanc 
+							}
+							add_popularity = {
+								ideology = anarchism_ideology
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_ancom 
+							}
+							add_popularity = {
+								ideology = left_anarchism
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_soc 
+							}
+							add_popularity = {
+								ideology = socialism_ideology
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_socmon 
+							}
+							add_popularity = {
+								ideology = socialist_monarchy
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_demmon 
+							}
+							add_popularity = {
+								ideology = democratic_monarchism
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_conmon 
+							}
+							add_popularity = {
+								ideology = conservative_monarchism
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_cenrep 
+							}
+							add_popularity = {
+								ideology = centrist_republic
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_cenmon 
+							}
+							add_popularity = {
+								ideology = centrist_monarchism
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_strat 
+							}
+							add_popularity = {
+								ideology = stratocratic
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_stratmon 
+							}
+							add_popularity = {
+								ideology = stratocratic_monarchism
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_authmon 
+							}
+							add_popularity = {
+								ideology = authoritarian_monarchism
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_repfash 
+							}
+							add_popularity = {
+								ideology = republican_fascism
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_natsoc 
+							}
+							add_popularity = {
+								ideology = national_socialism
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_theoc 
+							}
+							add_popularity = {
+								ideology = theocratic
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_ancap 
+							}
+							add_popularity = {
+								ideology = right_anarchism
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_anocrep
+							}
+							add_popularity = {
+								ideology = anocratic_republic
+								popularity = 0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_anocmon
+							}
+							add_popularity = {
+								ideology = anocratic_monarchism
+								popularity = 0.10
+							}				
+						}
 						clr_country_flag = tpt_actor
 					}
 				}
@@ -2558,187 +2211,186 @@ scripted_gui = {
 							popularity = -0.10
 						}
 					}
-
-			if = { 
-				limit = { 
-					has_global_flag = tpt_monarchism 
-				}
-				add_popularity = {
-					ideology = monarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_librep 
-				}
-				add_popularity = {
-					ideology = liberal_republic
-					popularity = -0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_vanguard 
-				}
-				add_popularity = {
-					ideology = vanguardism
-					popularity = -0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_totanc 
-				}
-				add_popularity = {
-					ideology = anarchism_ideology
-					popularity = -0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_ancom 
-				}
-				add_popularity = {
-					ideology = left_anarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_soc 
-				}
-				add_popularity = {
-					ideology = socialism_ideology
-					popularity = -0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_socmon 
-				}
-				add_popularity = {
-					ideology = socialist_monarchy
-					popularity = -0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_demmon 
-				}
-				add_popularity = {
-					ideology = democratic_monarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_conmon 
- 				}
-				add_popularity = {
-					ideology = conservative_monarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenrep 
- 				}
-				add_popularity = {
-					ideology = centrist_republic
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenmon 
- 				}
-				add_popularity = {
-					ideology = centrist_monarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_strat 
- 				}
-				add_popularity = {
-					ideology = stratocratic
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_stratmon 
- 				}
-				add_popularity = {
-					ideology = stratocratic_monarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_authmon 
- 				}
-				add_popularity = {
-					ideology = authoritarian_monarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_repfash 
- 				}
-				add_popularity = {
-					ideology = republican_fascism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_natsoc 
- 				}
-				add_popularity = {
-					ideology = national_socialism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_theoc 
- 				}
-				add_popularity = {
-					ideology = theocratic
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_ancap 
- 				}
-				add_popularity = {
-					ideology = right_anarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocrep
- 				}
-				add_popularity = {
-					ideology = anocratic_republic
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocmon
- 				}
-				add_popularity = {
-					ideology = anocratic_monarchism
-					popularity = -0.10
-				}				
-			}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_monarchism 
+						}
+						add_popularity = {
+							ideology = monarchism
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_librep 
+						}
+						add_popularity = {
+							ideology = liberal_republic
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_vanguard 
+						}
+						add_popularity = {
+							ideology = vanguardism
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_totanc 
+						}
+						add_popularity = {
+							ideology = anarchism_ideology
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_ancom 
+						}
+						add_popularity = {
+							ideology = left_anarchism
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_soc 
+						}
+						add_popularity = {
+							ideology = socialism_ideology
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_socmon 
+						}
+						add_popularity = {
+							ideology = socialist_monarchy
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_demmon 
+						}
+						add_popularity = {
+							ideology = democratic_monarchism
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_conmon 
+						}
+						add_popularity = {
+							ideology = conservative_monarchism
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_cenrep 
+						}
+						add_popularity = {
+							ideology = centrist_republic
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_cenmon 
+						}
+						add_popularity = {
+							ideology = centrist_monarchism
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_strat 
+						}
+						add_popularity = {
+							ideology = stratocratic
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_stratmon 
+						}
+						add_popularity = {
+							ideology = stratocratic_monarchism
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_authmon 
+						}
+						add_popularity = {
+							ideology = authoritarian_monarchism
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_repfash 
+						}
+						add_popularity = {
+							ideology = republican_fascism
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_natsoc 
+						}
+						add_popularity = {
+							ideology = national_socialism
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_theoc 
+						}
+						add_popularity = {
+							ideology = theocratic
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_ancap 
+						}
+						add_popularity = {
+							ideology = right_anarchism
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_anocrep
+						}
+						add_popularity = {
+							ideology = anocratic_republic
+							popularity = -0.10
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_anocmon
+						}
+						add_popularity = {
+							ideology = anocratic_monarchism
+							popularity = -0.10
+						}				
+					}
 				}
 				if = {
 					limit = {
@@ -2782,187 +2434,186 @@ scripted_gui = {
 								popularity = -0.10
 							}
 						}
-
-			if = { 
-				limit = { 
-					has_global_flag = tpt_monarchism 
-				}
-				add_popularity = {
-					ideology = monarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_librep 
-				}
-				add_popularity = {
-					ideology = liberal_republic
-					popularity = -0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_vanguard 
-				}
-				add_popularity = {
-					ideology = vanguardism
-					popularity = -0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_totanc 
-				}
-				add_popularity = {
-					ideology = anarchism_ideology
-					popularity = -0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_ancom 
-				}
-				add_popularity = {
-					ideology = left_anarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_soc 
-				}
-				add_popularity = {
-					ideology = socialism_ideology
-					popularity = -0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_socmon 
-				}
-				add_popularity = {
-					ideology = socialist_monarchy
-					popularity = -0.10
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_demmon 
-				}
-				add_popularity = {
-					ideology = democratic_monarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_conmon 
- 				}
-				add_popularity = {
-					ideology = conservative_monarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenrep 
- 				}
-				add_popularity = {
-					ideology = centrist_republic
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenmon 
- 				}
-				add_popularity = {
-					ideology = centrist_monarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_strat 
- 				}
-				add_popularity = {
-					ideology = stratocratic
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_stratmon 
- 				}
-				add_popularity = {
-					ideology = stratocratic_monarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_authmon 
- 				}
-				add_popularity = {
-					ideology = authoritarian_monarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_repfash 
- 				}
-				add_popularity = {
-					ideology = republican_fascism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_natsoc 
- 				}
-				add_popularity = {
-					ideology = national_socialism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_theoc 
- 				}
-				add_popularity = {
-					ideology = theocratic
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_ancap 
- 				}
-				add_popularity = {
-					ideology = right_anarchism
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocrep
- 				}
-				add_popularity = {
-					ideology = anocratic_republic
-					popularity = -0.10
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocmon
- 				}
-				add_popularity = {
-					ideology = anocratic_monarchism
-					popularity = -0.10
-				}				
-			}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_monarchism 
+							}
+							add_popularity = {
+								ideology = monarchism
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_librep 
+							}
+							add_popularity = {
+								ideology = liberal_republic
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_vanguard 
+							}
+							add_popularity = {
+								ideology = vanguardism
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_totanc 
+							}
+							add_popularity = {
+								ideology = anarchism_ideology
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_ancom 
+							}
+							add_popularity = {
+								ideology = left_anarchism
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_soc 
+							}
+							add_popularity = {
+								ideology = socialism_ideology
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_socmon 
+							}
+							add_popularity = {
+								ideology = socialist_monarchy
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_demmon 
+							}
+							add_popularity = {
+								ideology = democratic_monarchism
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_conmon 
+							}
+							add_popularity = {
+								ideology = conservative_monarchism
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_cenrep 
+							}
+							add_popularity = {
+								ideology = centrist_republic
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_cenmon 
+							}
+							add_popularity = {
+								ideology = centrist_monarchism
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_strat 
+							}
+							add_popularity = {
+								ideology = stratocratic
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_stratmon 
+							}
+							add_popularity = {
+								ideology = stratocratic_monarchism
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_authmon 
+							}
+							add_popularity = {
+								ideology = authoritarian_monarchism
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_repfash 
+							}
+							add_popularity = {
+								ideology = republican_fascism
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_natsoc 
+							}
+							add_popularity = {
+								ideology = national_socialism
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_theoc 
+							}
+							add_popularity = {
+								ideology = theocratic
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_ancap 
+							}
+							add_popularity = {
+								ideology = right_anarchism
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_anocrep
+							}
+							add_popularity = {
+								ideology = anocratic_republic
+								popularity = -0.10
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_anocmon
+							}
+							add_popularity = {
+								ideology = anocratic_monarchism
+								popularity = -0.10
+							}				
+						}
 						clr_country_flag = tpt_actor
 					}
 				}
@@ -3010,187 +2661,186 @@ scripted_gui = {
 							popularity = 0.50
 						}
 					}
-
-			if = { 
-				limit = { 
-					has_global_flag = tpt_monarchism 
-				}
-				add_popularity = {
-					ideology = monarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_librep 
-				}
-				add_popularity = {
-					ideology = liberal_republic
-					popularity = 0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_vanguard 
-				}
-				add_popularity = {
-					ideology = vanguardism
-					popularity = 0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_totanc 
-				}
-				add_popularity = {
-					ideology = anarchism_ideology
-					popularity = 0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_ancom 
-				}
-				add_popularity = {
-					ideology = left_anarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_soc 
-				}
-				add_popularity = {
-					ideology = socialism_ideology
-					popularity = 0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_socmon 
-				}
-				add_popularity = {
-					ideology = socialist_monarchy
-					popularity = 0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_demmon 
-				}
-				add_popularity = {
-					ideology = democratic_monarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_conmon 
- 				}
-				add_popularity = {
-					ideology = conservative_monarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenrep 
- 				}
-				add_popularity = {
-					ideology = centrist_republic
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenmon 
- 				}
-				add_popularity = {
-					ideology = centrist_monarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_strat 
- 				}
-				add_popularity = {
-					ideology = stratocratic
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_stratmon 
- 				}
-				add_popularity = {
-					ideology = stratocratic_monarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_authmon 
- 				}
-				add_popularity = {
-					ideology = authoritarian_monarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_repfash 
- 				}
-				add_popularity = {
-					ideology = republican_fascism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_natsoc 
- 				}
-				add_popularity = {
-					ideology = national_socialism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_theoc 
- 				}
-				add_popularity = {
-					ideology = theocratic
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_ancap 
- 				}
-				add_popularity = {
-					ideology = right_anarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocrep
- 				}
-				add_popularity = {
-					ideology = anocratic_republic
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocmon
- 				}
-				add_popularity = {
-					ideology = anocratic_monarchism
-					popularity = 0.50
-				}				
-			}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_monarchism 
+						}
+						add_popularity = {
+							ideology = monarchism
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_librep 
+						}
+						add_popularity = {
+							ideology = liberal_republic
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_vanguard 
+						}
+						add_popularity = {
+							ideology = vanguardism
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_totanc 
+						}
+						add_popularity = {
+							ideology = anarchism_ideology
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_ancom 
+						}
+						add_popularity = {
+							ideology = left_anarchism
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_soc 
+						}
+						add_popularity = {
+							ideology = socialism_ideology
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_socmon 
+						}
+						add_popularity = {
+							ideology = socialist_monarchy
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_demmon 
+						}
+						add_popularity = {
+							ideology = democratic_monarchism
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_conmon 
+						}
+						add_popularity = {
+							ideology = conservative_monarchism
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_cenrep 
+						}
+						add_popularity = {
+							ideology = centrist_republic
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_cenmon 
+						}
+						add_popularity = {
+							ideology = centrist_monarchism
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_strat 
+						}
+						add_popularity = {
+							ideology = stratocratic
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_stratmon 
+						}
+						add_popularity = {
+							ideology = stratocratic_monarchism
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_authmon 
+						}
+						add_popularity = {
+							ideology = authoritarian_monarchism
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_repfash 
+						}
+						add_popularity = {
+							ideology = republican_fascism
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_natsoc 
+						}
+						add_popularity = {
+							ideology = national_socialism
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_theoc 
+						}
+						add_popularity = {
+							ideology = theocratic
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_ancap 
+						}
+						add_popularity = {
+							ideology = right_anarchism
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_anocrep
+						}
+						add_popularity = {
+							ideology = anocratic_republic
+							popularity = 0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_anocmon
+						}
+						add_popularity = {
+							ideology = anocratic_monarchism
+							popularity = 0.50
+						}				
+					}
 				}
 				if = {
 					limit = {
@@ -3235,186 +2885,186 @@ scripted_gui = {
 							}
 						}
 
-			if = { 
-				limit = { 
-					has_global_flag = tpt_monarchism 
-				}
-				add_popularity = {
-					ideology = monarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_librep 
-				}
-				add_popularity = {
-					ideology = liberal_republic
-					popularity = 0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_vanguard 
-				}
-				add_popularity = {
-					ideology = vanguardism
-					popularity = 0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_totanc 
-				}
-				add_popularity = {
-					ideology = anarchism_ideology
-					popularity = 0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_ancom 
-				}
-				add_popularity = {
-					ideology = left_anarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_soc 
-				}
-				add_popularity = {
-					ideology = socialism_ideology
-					popularity = 0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_socmon 
-				}
-				add_popularity = {
-					ideology = socialist_monarchy
-					popularity = 0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_demmon 
-				}
-				add_popularity = {
-					ideology = democratic_monarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_conmon 
- 				}
-				add_popularity = {
-					ideology = conservative_monarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenrep 
- 				}
-				add_popularity = {
-					ideology = centrist_republic
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenmon 
- 				}
-				add_popularity = {
-					ideology = centrist_monarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_strat 
- 				}
-				add_popularity = {
-					ideology = stratocratic
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_stratmon 
- 				}
-				add_popularity = {
-					ideology = stratocratic_monarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_authmon 
- 				}
-				add_popularity = {
-					ideology = authoritarian_monarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_repfash 
- 				}
-				add_popularity = {
-					ideology = republican_fascism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_natsoc 
- 				}
-				add_popularity = {
-					ideology = national_socialism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_theoc 
- 				}
-				add_popularity = {
-					ideology = theocratic
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_ancap 
- 				}
-				add_popularity = {
-					ideology = right_anarchism
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocrep
- 				}
-				add_popularity = {
-					ideology = anocratic_republic
-					popularity = 0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocmon
- 				}
-				add_popularity = {
-					ideology = anocratic_monarchism
-					popularity = 0.50
-				}				
-			}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_monarchism 
+							}
+							add_popularity = {
+								ideology = monarchism
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_librep 
+							}
+							add_popularity = {
+								ideology = liberal_republic
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_vanguard 
+							}
+							add_popularity = {
+								ideology = vanguardism
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_totanc 
+							}
+							add_popularity = {
+								ideology = anarchism_ideology
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_ancom 
+							}
+							add_popularity = {
+								ideology = left_anarchism
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_soc 
+							}
+							add_popularity = {
+								ideology = socialism_ideology
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_socmon 
+							}
+							add_popularity = {
+								ideology = socialist_monarchy
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_demmon 
+							}
+							add_popularity = {
+								ideology = democratic_monarchism
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_conmon 
+							}
+							add_popularity = {
+								ideology = conservative_monarchism
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_cenrep 
+							}
+							add_popularity = {
+								ideology = centrist_republic
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_cenmon 
+							}
+							add_popularity = {
+								ideology = centrist_monarchism
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_strat 
+							}
+							add_popularity = {
+								ideology = stratocratic
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_stratmon 
+							}
+							add_popularity = {
+								ideology = stratocratic_monarchism
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_authmon 
+							}
+							add_popularity = {
+								ideology = authoritarian_monarchism
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_repfash 
+							}
+							add_popularity = {
+								ideology = republican_fascism
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_natsoc 
+							}
+							add_popularity = {
+								ideology = national_socialism
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_theoc 
+							}
+							add_popularity = {
+								ideology = theocratic
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_ancap 
+							}
+							add_popularity = {
+								ideology = right_anarchism
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_anocrep
+							}
+							add_popularity = {
+								ideology = anocratic_republic
+								popularity = 0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_anocmon
+							}
+							add_popularity = {
+								ideology = anocratic_monarchism
+								popularity = 0.50
+							}				
+						}
 						clr_country_flag = tpt_actor
 					}
 				}
@@ -3462,187 +3112,186 @@ scripted_gui = {
 							popularity = -0.50
 						}
 					}
-
-			if = { 
-				limit = { 
-					has_global_flag = tpt_monarchism 
-				}
-				add_popularity = {
-					ideology = monarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_librep 
-				}
-				add_popularity = {
-					ideology = liberal_republic
-					popularity = -0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_vanguard 
-				}
-				add_popularity = {
-					ideology = vanguardism
-					popularity = -0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_totanc 
-				}
-				add_popularity = {
-					ideology = anarchism_ideology
-					popularity = -0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_ancom 
-				}
-				add_popularity = {
-					ideology = left_anarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_soc 
-				}
-				add_popularity = {
-					ideology = socialism_ideology
-					popularity = -0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_socmon 
-				}
-				add_popularity = {
-					ideology = socialist_monarchy
-					popularity = -0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_demmon 
-				}
-				add_popularity = {
-					ideology = democratic_monarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_conmon 
- 				}
-				add_popularity = {
-					ideology = conservative_monarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenrep 
- 				}
-				add_popularity = {
-					ideology = centrist_republic
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenmon 
- 				}
-				add_popularity = {
-					ideology = centrist_monarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_strat 
- 				}
-				add_popularity = {
-					ideology = stratocratic
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_stratmon 
- 				}
-				add_popularity = {
-					ideology = stratocratic_monarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_authmon 
- 				}
-				add_popularity = {
-					ideology = authoritarian_monarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_repfash 
- 				}
-				add_popularity = {
-					ideology = republican_fascism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_natsoc 
- 				}
-				add_popularity = {
-					ideology = national_socialism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_theoc 
- 				}
-				add_popularity = {
-					ideology = theocratic
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_ancap 
- 				}
-				add_popularity = {
-					ideology = right_anarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocrep
- 				}
-				add_popularity = {
-					ideology = anocratic_republic
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocmon
- 				}
-				add_popularity = {
-					ideology = anocratic_monarchism
-					popularity = -0.50
-				}				
-			}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_monarchism 
+						}
+						add_popularity = {
+							ideology = monarchism
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_librep 
+						}
+						add_popularity = {
+							ideology = liberal_republic
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_vanguard 
+						}
+						add_popularity = {
+							ideology = vanguardism
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_totanc 
+						}
+						add_popularity = {
+							ideology = anarchism_ideology
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_ancom 
+						}
+						add_popularity = {
+							ideology = left_anarchism
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_soc 
+						}
+						add_popularity = {
+							ideology = socialism_ideology
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_socmon 
+						}
+						add_popularity = {
+							ideology = socialist_monarchy
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_demmon 
+						}
+						add_popularity = {
+							ideology = democratic_monarchism
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_conmon 
+						}
+						add_popularity = {
+							ideology = conservative_monarchism
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_cenrep 
+						}
+						add_popularity = {
+							ideology = centrist_republic
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_cenmon 
+						}
+						add_popularity = {
+							ideology = centrist_monarchism
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_strat 
+						}
+						add_popularity = {
+							ideology = stratocratic
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_stratmon 
+						}
+						add_popularity = {
+							ideology = stratocratic_monarchism
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_authmon 
+						}
+						add_popularity = {
+							ideology = authoritarian_monarchism
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_repfash 
+						}
+						add_popularity = {
+							ideology = republican_fascism
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_natsoc 
+						}
+						add_popularity = {
+							ideology = national_socialism
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_theoc 
+						}
+						add_popularity = {
+							ideology = theocratic
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_ancap 
+						}
+						add_popularity = {
+							ideology = right_anarchism
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_anocrep
+						}
+						add_popularity = {
+							ideology = anocratic_republic
+							popularity = -0.50
+						}				
+					}
+					if = { 
+						limit = { 
+							has_global_flag = tpt_anocmon
+						}
+						add_popularity = {
+							ideology = anocratic_monarchism
+							popularity = -0.50
+						}				
+					}
 				}
 				if = {
 					limit = {
@@ -3686,187 +3335,186 @@ scripted_gui = {
 								popularity = -0.50
 							}
 						}
-
-			if = { 
-				limit = { 
-					has_global_flag = tpt_monarchism 
-				}
-				add_popularity = {
-					ideology = monarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_librep 
-				}
-				add_popularity = {
-					ideology = liberal_republic
-					popularity = -0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_vanguard 
-				}
-				add_popularity = {
-					ideology = vanguardism
-					popularity = -0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_totanc 
-				}
-				add_popularity = {
-					ideology = anarchism_ideology
-					popularity = -0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_ancom 
-				}
-				add_popularity = {
-					ideology = left_anarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_soc 
-				}
-				add_popularity = {
-					ideology = socialism_ideology
-					popularity = -0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_socmon 
-				}
-				add_popularity = {
-					ideology = socialist_monarchy
-					popularity = -0.50
-				}				
-			}
-			if = { 
-				limit = { 
-					has_global_flag = tpt_demmon 
-				}
-				add_popularity = {
-					ideology = democratic_monarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_conmon 
- 				}
-				add_popularity = {
-					ideology = conservative_monarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenrep 
- 				}
-				add_popularity = {
-					ideology = centrist_republic
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_cenmon 
- 				}
-				add_popularity = {
-					ideology = centrist_monarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_strat 
- 				}
-				add_popularity = {
-					ideology = stratocratic
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_stratmon 
- 				}
-				add_popularity = {
-					ideology = stratocratic_monarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_authmon 
- 				}
-				add_popularity = {
-					ideology = authoritarian_monarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_repfash 
- 				}
-				add_popularity = {
-					ideology = republican_fascism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_natsoc 
- 				}
-				add_popularity = {
-					ideology = national_socialism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_theoc 
- 				}
-				add_popularity = {
-					ideology = theocratic
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_ancap 
- 				}
-				add_popularity = {
-					ideology = right_anarchism
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocrep
- 				}
-				add_popularity = {
-					ideology = anocratic_republic
-					popularity = -0.50
-				}				
-			}
-			if = { 
- 				limit = { 
- 					has_global_flag = tpt_anocmon
- 				}
-				add_popularity = {
-					ideology = anocratic_monarchism
-					popularity = -0.50
-				}				
-			}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_monarchism 
+							}
+							add_popularity = {
+								ideology = monarchism
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_librep 
+							}
+							add_popularity = {
+								ideology = liberal_republic
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_vanguard 
+							}
+							add_popularity = {
+								ideology = vanguardism
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_totanc 
+							}
+							add_popularity = {
+								ideology = anarchism_ideology
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_ancom 
+							}
+							add_popularity = {
+								ideology = left_anarchism
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_soc 
+							}
+							add_popularity = {
+								ideology = socialism_ideology
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_socmon 
+							}
+							add_popularity = {
+								ideology = socialist_monarchy
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_demmon 
+							}
+							add_popularity = {
+								ideology = democratic_monarchism
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_conmon 
+							}
+							add_popularity = {
+								ideology = conservative_monarchism
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_cenrep 
+							}
+							add_popularity = {
+								ideology = centrist_republic
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_cenmon 
+							}
+							add_popularity = {
+								ideology = centrist_monarchism
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_strat 
+							}
+							add_popularity = {
+								ideology = stratocratic
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_stratmon 
+							}
+							add_popularity = {
+								ideology = stratocratic_monarchism
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_authmon 
+							}
+							add_popularity = {
+								ideology = authoritarian_monarchism
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_repfash 
+							}
+							add_popularity = {
+								ideology = republican_fascism
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_natsoc 
+							}
+							add_popularity = {
+								ideology = national_socialism
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_theoc 
+							}
+							add_popularity = {
+								ideology = theocratic
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_ancap 
+							}
+							add_popularity = {
+								ideology = right_anarchism
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_anocrep
+							}
+							add_popularity = {
+								ideology = anocratic_republic
+								popularity = -0.50
+							}				
+						}
+						if = { 
+							limit = { 
+								has_global_flag = tpt_anocmon
+							}
+							add_popularity = {
+								ideology = anocratic_monarchism
+								popularity = -0.50
+							}				
+						}
 						clr_country_flag = tpt_actor
 					}
 				}
@@ -5434,30 +5082,6 @@ scripted_gui = {
 			}
 ### IDEOLOGY ###
 			tpt_ideology_icon = {
-				has_global_flag = tpt_window_a
-			}
-			tpt_add_fascism_visible = {
-				has_global_flag = tpt_window_a
-			}
-			tpt_ban_fascism_visible = {
-				has_global_flag = tpt_window_a
-			}
-			tpt_add_communism_visible = {
-				has_global_flag = tpt_window_a
-			}
-			tpt_ban_communism_visible = {
-				has_global_flag = tpt_window_a
-			}
-			tpt_add_democratic_visible = {
-				has_global_flag = tpt_window_a
-			}
-			tpt_ban_democratic_visible = {
-				has_global_flag = tpt_window_a
-			}
-			tpt_add_neutrality_visible = {
-				has_global_flag = tpt_window_a
-			}
-			tpt_ban_neutrality_visible = {
 				has_global_flag = tpt_window_a
 			}
 			tpt_fascist_on_visible = {
