@@ -4995,16 +4995,20 @@ on_actions = {
 						}
 						if = {
 							limit = {
-								has_government = communism
+								OR = {
+									has_government = communism
+									has_government = vanguardism
+								}
 							}
 							set_cosmetic_tag = RUS_RED
-							
-							every_state = {
-								limit = {
-									is_owned_by = ROOT
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = conservative_monarchism
 								}
-								do_russian_renames = yes
 							}
+							set_cosmetic_tag = UK_RED
 						}
 						if = {
 							limit = {
@@ -5021,16 +5025,18 @@ on_actions = {
 						}
 						if = {
 							limit = {
-								NOT = {
-									has_government = theocratic
-									has_government = authoritarian_monarchism
-									has_government = stratocratic_monarchism
-									has_government = national_socialism
-									has_government = republican_fascism
-									has_government = monarchism
-									has_government = communism
-								}
 								OR = {
+									NOT = {
+										has_government = theocratic
+										has_government = conservative_monarchism
+										has_government = authoritarian_monarchism
+										has_government = stratocratic_monarchism
+										has_government = national_socialism
+										has_government = republican_fascism
+										has_government = monarchism
+										has_government = communism
+										has_government = vanguardism
+									}
 									has_government = neutrality
 								}
 							}
