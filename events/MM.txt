@@ -14,26 +14,18 @@ country_event = { #Hehe Russia
 		ai_chance = {
 			factor = 0
 		}
-				hidden_effect = {
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = SOV
-								is_owned_by = RUS
-								is_owned_by = KAZ
-								is_owned_by = UZB
-								}
-							NOT = {
-								is_core_of = TAN
-								is_core_of = FIN
-								is_core_of = LAT
-								}
-							}
-						SOV = {
-							transfer_state = PREV
-							add_state_core = PREV
-							}
-						}
+		
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = SOV
+						
+					SOV = {
+						transfer_state = PREV
+						add_state_core = PREV
+					}
+				}
+			}
 		}
 	}
 	
@@ -42,7 +34,6 @@ country_event = { #Hehe Russia
 		ai_chance = {
 			factor = 100
 		}
-
 	}
 }
 
