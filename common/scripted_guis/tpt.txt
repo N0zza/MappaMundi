@@ -510,6 +510,17 @@ scripted_gui = {
 			tpt_anocmon_off_click = {
 				clr_global_flag = tpt_anocmon
 			}
+			tpt_set_politics_manually_click = {
+				if = {
+					limit = {
+						has_global_flag = tpt_set_politics_manually_window
+					}
+					clr_global_flag = tpt_set_politics_manually_window
+				}
+				else = {
+					set_global_flag = tpt_set_politics_manually_window
+				}
+			}
 			tpt_change_click = {
 				if = {
 					limit = {
@@ -5552,6 +5563,9 @@ scripted_gui = {
 			tpt_change_visible = {
 				has_global_flag = tpt_window_a
 			}
+			tpt_set_politics_manually_visible = {
+				has_global_flag = tpt_window_a
+			}
 			tpt_enable_elections_visible = {
 				has_global_flag = tpt_window_a
 			}
@@ -10213,6 +10227,314 @@ scripted_gui = {
 			}
 			tpt_cw_neutral_off_visible = {
 				has_global_flag = tpt_cw_neutral
+			}
+		}
+	}
+	tpt_set_politics_manually_window = {
+	
+		context_type = selected_country_context
+		
+		window_name = "tpt_set_politics_manually_window"
+		
+		visible = {
+			ROOT = {
+				is_ai = no
+				has_global_flag = tpt_set_politics_manually_window
+			}
+		}
+		
+		effects = {
+			tpt_fascist_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_fascist
+					}
+					clr_global_flag = enable_fascist
+				}
+				else = {
+					set_global_flag = enable_fascist
+				}
+			}
+			tpt_communist_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_communist
+					}
+					clr_global_flag = enable_communist
+				}
+				else = {
+					set_global_flag = enable_communist
+				}
+			}
+			tpt_democratic_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_democratic
+					}
+					clr_global_flag = enable_democratic
+				}
+				else = {
+					set_global_flag = enable_democratic
+				}
+			}
+			tpt_neutral_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_neutral
+					}
+					clr_global_flag = enable_neutral
+				}
+				else = {
+					set_global_flag = enable_neutral
+				}
+			}
+			tpt_monarchism_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_monarchism
+					}
+					clr_global_flag = enable_monarchism
+				}
+				else = {
+					set_global_flag = enable_monarchism
+				}
+			}
+			tpt_librep_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_librep
+					}
+					clr_global_flag = enable_librep
+				}
+				else = {
+					set_global_flag = enable_librep
+				}
+			}
+			tpt_vanguard_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_vanguard
+					}
+					clr_global_flag = enable_vanguard
+				}
+				else = {
+					set_global_flag = enable_vanguard
+				}
+			}
+			tpt_totanc_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_totanc
+					}
+					clr_global_flag = enable_totanc
+				}
+				else = {
+					set_global_flag = enable_totanc
+				}
+			}
+			tpt_ancom_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_ancom
+					}
+					clr_global_flag = enable_ancom
+				}
+				else = {
+					set_global_flag = enable_ancom
+				}
+			}
+			tpt_soc_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_soc
+					}
+					clr_global_flag = enable_soc
+				}
+				else = {
+					set_global_flag = enable_soc
+				}
+			}
+			tpt_socmon_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_socmon
+					}
+					clr_global_flag = enable_socmon
+				}
+				else = {
+					set_global_flag = enable_socmon
+				}
+			}
+			tpt_demmon_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_demmon
+					}
+					clr_global_flag = enable_demmon
+				}
+				else = {
+					set_global_flag = enable_demmon
+				}
+			}
+			tpt_conmon_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_conmon
+					}
+					clr_global_flag = enable_conmon
+				}
+				else = {
+					set_global_flag = enable_conmon
+				}
+			}
+			tpt_cenrep_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_cenrep
+					}
+					clr_global_flag = enable_cenrep
+				}
+				else = {
+					set_global_flag = enable_cenrep
+				}
+			}
+			tpt_cenmon_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_cenmon
+					}
+					clr_global_flag = enable_cenmon
+				}
+				else = {
+					set_global_flag = enable_cenmon
+				}
+			}
+			tpt_strat_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_strat
+					}
+					clr_global_flag = enable_strat
+				}
+				else = {
+					set_global_flag = enable_strat
+				}
+			}
+			tpt_strat_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_strat
+					}
+					clr_global_flag = enable_strat
+				}
+				else = {
+					set_global_flag = enable_strat
+				}
+			}
+			tpt_authmon_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_authmon
+					}
+					clr_global_flag = enable_authmon
+				}
+				else = {
+					set_global_flag = enable_authmon
+				}
+			}
+			tpt_repfash_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_repfash
+					}
+					clr_global_flag = enable_repfash
+				}
+				else = {
+					set_global_flag = enable_repfash
+				}
+			}
+			tpt_natsoc_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_natsoc
+					}
+					clr_global_flag = enable_natsoc
+				}
+				else = {
+					set_global_flag = enable_natsoc
+				}
+			}
+			tpt_theoc_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_theoc
+					}
+					clr_global_flag = enable_theoc
+				}
+				else = {
+					set_global_flag = enable_theoc
+				}
+			}
+			tpt_ancap_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_ancap
+					}
+					clr_global_flag = enable_ancap
+				}
+				else = {
+					set_global_flag = enable_ancap
+				}
+			}
+			tpt_anocrep_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_anocrep
+					}
+					clr_global_flag = enable_anocrep
+				}
+				else = {
+					set_global_flag = enable_anocrep
+				}
+			}
+			tpt_anocmon_textbox_click = {
+				if = {
+					limit = {
+						has_global_flag = enable_anocmon
+					}
+					clr_global_flag = enable_anocmon
+				}
+				else = {
+					set_global_flag = enable_anocmon
+				}
+			}
+		}
+		tpt_set_fascism_manually = {
+		
+			context_type = selected_country_context
+			window_name = "tpt_set_fascism_manually"
+			parent_window_name = "tpt_set_politics_manually_window"
+			
+			visible = {
+				is_ai = no
+				has_variable = tpt_set_politics_manually_window
+			}
+			effects = {
+				# COMMON
+				keypress_backspace_click = {
+					ROOT = { get_keypress_backspace = yes }
+				}
+
+				keypress_0_click = {get_keypress_0 = yes }
+				keypress_1_click = {get_keypress_1 = yes }
+				keypress_2_click = {get_keypress_2 = yes }
+				keypress_3_click = {get_keypress_3 = yes }
+				keypress_4_click = {get_keypress_4 = yes }
+				keypress_5_click = {get_keypress_5 = yes }
+				keypress_6_click = {get_keypress_6 = yes }
+				keypress_7_click = {get_keypress_7 = yes }
+				keypress_8_click = {get_keypress_8 = yes }
+				keypress_9_click = {get_keypress_9 = yes }
 			}
 		}
 	}

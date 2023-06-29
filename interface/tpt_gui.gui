@@ -1,6 +1,4 @@
 guiTypes = {
-
-
 	containerWindowType = {
 		name = "tpt_main_container"
 		position = {x = -250 y = -100 }
@@ -861,10 +859,17 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "tpt_change"
-			position = { x = 88 y = 198 }
+			position = { x = 64 y = 200 }
 			spriteType = "GFX_goal_generic_territory_or_war"
 			pdx_tooltip = "TPT_CHANGE"
 			scale = 0.45
+		}
+		buttonType = {
+			name = "tpt_set_politics_manually"
+			position = { x = 105 y = 193 }
+			spriteType = "GFX_tpt_set_politics_manually"
+			pdx_tooltip = "TPT_SET_POLITICS_MANUALLY"
+			scale = 0.8
 		}
 		iconType = {
 			name = "tpt_ideology_icon"
@@ -1492,6 +1497,718 @@ guiTypes = {
 			position = { x = 45 y = 131 }
 			font = "hoi_16mbs"
 			text = "TPT_NEUTRAL"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+	}
+	containerWindowType = {
+		name = "tpt_set_politics_manually_window"
+		position = { x = -744 y = -120 }
+		size = { width = 319 height = 255 }
+		orientation = CENTER_RIGHT
+		origo = center_right
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_tpt_set_politics_manually_window"
+		}
+		buttonType = {
+			name = "tpt_fascist_textbox"
+			position = { x = 25 y = 20 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_FASCIST"
+		}
+		containerWindowType = {
+			name = "tpt_set_fascism_manually"
+			position = { x = 26 y = 20 }
+			animation_time = 200		
+			size = { width=270 height=100 }
+
+			instantTextboxType = {
+				name = "display"
+				position = {x=0 y=0}
+				font = "hoi_18mbs"
+				text = "SET_FASCISM_MANUALLY"
+				maxWidth = 19
+				maxHeight = 21
+				format = centre
+			}
+
+			buttonType = {
+				name = "keypress_0"
+				position = {x= 0 y=0}
+				shortcut = "0"
+				scale = 1
+				spriteType = "GFX_cat_button_off"
+			}
+			buttonType = {
+				name = "keypress_1"
+				position = {x=-9999 y=9999}
+				shortcut = "1"
+				scale = 0.00001 quadTextureSprite ="GFX_blank" 
+			}
+			buttonType = {
+				name = "keypress_2"
+				position = {x=-9999 y=9999}
+				shortcut = "2"
+				scale = 0.00001 quadTextureSprite ="GFX_blank" 
+			}
+			buttonType = {
+				name = "keypress_3"
+				position = {x=-9999 y=9999}
+				shortcut = "3"
+				scale = 0.00001 quadTextureSprite ="GFX_blank" 
+			}
+			buttonType = {
+				name = "keypress_4"
+				position = {x=-9999 y=9999}
+				shortcut = "4"
+				scale = 0.00001 quadTextureSprite ="GFX_blank" 
+			}
+			buttonType = {
+				name = "keypress_5"
+				position = {x=-9999 y=9999}
+				shortcut = "5"
+				scale = 0.00001 quadTextureSprite ="GFX_blank" 
+			}
+			buttonType = {
+				name = "keypress_6"
+				position = {x=-9999 y=9999}
+				shortcut = "6"
+				scale = 0.00001 quadTextureSprite ="GFX_blank" 
+			}
+			buttonType = {
+				name = "keypress_7"
+				position = {x=-9999 y=9999}
+				shortcut = "7"
+				scale = 0.00001 quadTextureSprite ="GFX_blank" 
+			}
+			buttonType = {
+				name = "keypress_8"
+				position = {x=-9999 y=9999}
+				shortcut = "8"
+				scale = 0.00001 quadTextureSprite ="GFX_blank" 
+			}
+			buttonType = {
+				name = "keypress_9"
+				position = {x=-9999 y=9999}
+				shortcut = "9"
+				scale = 0.00001 quadTextureSprite ="GFX_blank" 
+			}
+
+			buttonType = {
+				name = "keypress_backspace" 
+				position = {x=-9999 y=9999}	
+				shortcut = "BACKSPACE"
+				scale = 0.00001 quadTextureSprite ="GFX_blank" 
+			}
+		}
+		instantTextboxType = {
+			name = "tpt_fascist_text_2"
+			position = { x = 55 y = 21 }
+			font = "hoi_16mbs"
+			text = "TPT_FASCIST"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_communist_textbox"
+			position = { x = 25 y = 45 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_COMMUNIST"
+		}
+		instantTextboxType = {
+			name = "tpt_communist_display"
+			position = { x = 26 y = 45 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_communist_text_2"
+			position = { x = 55 y = 46 }
+			font = "hoi_16mbs"
+			text = "TPT_COMMUNIST"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_democratic_textbox"
+			position = { x = 25 y = 70 }			
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_DEMOCRATIC"
+		}
+		instantTextboxType = {
+			name = "tpt_democratic_display"
+			position = { x = 26 y = 70 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_democratic_text_2"
+			position = { x = 55 y = 71 }
+			font = "hoi_16mbs"
+			text = "TPT_DEMOCRATIC"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_neutral_textbox"
+			position = { x = 25 y = 95 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_NEUTRAL"
+		}
+		instantTextboxType = {
+			name = "tpt_neutral_display"
+			position = { x = 26 y = 95 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_neutral_text_2"
+			position = { x = 55 y = 96 }
+			font = "hoi_16mbs"
+			text = "TPT_NEUTRAL"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_monarchism_textbox"
+			position = { x = 25 y = 120 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_MONARCHISM"
+		}
+		instantTextboxType = {
+			name = "tpt_monarchism_display"
+			position = { x = 26 y = 120 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_monarchism_text_2"
+			position = { x = 55 y = 121 }
+			font = "hoi_16mbs"
+			text = "TPT_MONARCHISM"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_librep_textbox"
+			position = { x = 25 y = 145 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_LIBREP"
+		}
+		instantTextboxType = {
+			name = "tpt_librep_display"
+			position = { x = 26 y = 145 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_librep_text_2"
+			position = { x = 55 y = 146 }
+			font = "hoi_16mbs"
+			text = "TPT_LIBREP"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_vanguard_textbox"
+			position = { x = 25 y = 170 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_VANGUARD"
+		}
+		instantTextboxType = {
+			name = "tpt_vanguard_display"
+			position = { x = 26 y = 170 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_vanguard_text_2"
+			position = { x = 55 y = 171 }
+			font = "hoi_16mbs"
+			text = "TPT_VANGUARD"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_totanc_textbox"
+			position = { x = 25 y = 195 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_TOTANC"
+		}
+		instantTextboxType = {
+			name = "tpt_totanc_display"
+			position = { x = 26 y = 195 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_totanc_text_2"
+			position = { x = 55 y = 196 }
+			font = "hoi_16mbs"
+			text = "TPT_TOTANC"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_ancom_textbox"
+			position = { x = 25 y = 220 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_ANCOM"
+		}
+		instantTextboxType = {
+			name = "tpt_ancom_display"
+			position = { x = 26 y = 220 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_ancom_text_2"
+			position = { x = 55 y = 221 }
+			font = "hoi_16mbs"
+			text = "TPT_ANCOM"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_soc_textbox"
+			position = { x = 120 y = 20 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_SOC"
+		}
+		instantTextboxType = {
+			name = "tpt_soc_display"
+			position = { x = 121 y = 20 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_soc_text_2"
+			position = { x = 150 y = 21 }
+			font = "hoi_16mbs"
+			text = "TPT_SOC"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_socmon_textbox"
+			position = { x = 120 y = 45 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_SOCMON"
+		}
+		instantTextboxType = {
+			name = "tpt_socmon_display"
+			position = { x = 121 y = 45 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_socmon_text_2"
+			position = { x = 150 y = 46 }
+			font = "hoi_16mbs"
+			text = "TPT_SOCMON"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_demmon_textbox"
+			position = { x = 120 y = 70 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_DEMMON"
+		}
+		instantTextboxType = {
+			name = "tpt_demmon_display"
+			position = { x = 121 y = 70 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_demmon_text_2"
+			position = { x = 150 y = 71 }
+			font = "hoi_16mbs"
+			text = "TPT_DEMMON"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_conmon_textbox"
+			position = { x = 120 y = 95 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_CONMON"
+		}
+		instantTextboxType = {
+			name = "tpt_conmon_display"
+			position = { x = 121 y = 95 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_conmon_text_2"
+			position = { x = 150 y = 96 }
+			font = "hoi_16mbs"
+			text = "TPT_CONMON"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_cenrep_textbox"
+			position = { x = 120 y = 120 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_CENREP"
+		}
+		instantTextboxType = {
+			name = "tpt_cenrep_display"
+			position = { x = 121 y = 120 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_cenrep_text_2"
+			position = { x = 150 y = 121 }
+			font = "hoi_16mbs"
+			text = "TPT_CENREP"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_cenmon_textbox"
+			position = { x = 120 y = 145 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_CENMON"
+		}
+		instantTextboxType = {
+			name = "tpt_cenmon_display"
+			position = { x = 121 y = 145 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_cenmon_text_2"
+			position = { x = 150 y = 146 }
+			font = "hoi_16mbs"
+			text = "TPT_CENMON"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_strat_textbox"
+			position = { x = 120 y = 170 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_STRAT"
+		}
+		instantTextboxType = {
+			name = "tpt_strat_display"
+			position = { x = 121 y = 170 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_strat_text_2"
+			position = { x = 150 y = 171 }
+			font = "hoi_16mbs"
+			text = "TPT_STRAT"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_stratmon_textbox"
+			position = { x = 120 y = 195 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_STRATMON"
+		}
+		instantTextboxType = {
+			name = "tpt_stratmon_display"
+			position = { x = 121 y = 195 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_stratmon_text_2"
+			position = { x = 150 y = 196 }
+			font = "hoi_16mbs"
+			text = "TPT_STRATMON"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_authmon_textbox"
+			position = { x = 120 y = 220 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_AUTHMON"
+		}
+		instantTextboxType = {
+			name = "tpt_authmon_display"
+			position = { x = 121 y = 220 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_authmon_text_2"
+			position = { x = 150 y = 221 }
+			font = "hoi_16mbs"
+			text = "TPT_AUTHMON"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_repfash_textbox"
+			position = { x = 215 y = 20 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_REPFASH"
+		}
+		instantTextboxType = {
+			name = "tpt_repfash_display"
+			position = { x = 216 y = 20 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_repfash_text_2"
+			position = { x = 245 y = 21 }
+			font = "hoi_16mbs"
+			text = "TPT_REPFASH"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_natsoc_textbox"
+			position = { x = 215 y = 45 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_NATSOC"
+		}
+		instantTextboxType = {
+			name = "tpt_natsoc_display"
+			position = { x = 216 y = 45 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_natsoc_text_2"
+			position = { x = 245 y = 46 }
+			font = "hoi_16mbs"
+			text = "TPT_NATSOC"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_theoc_textbox"
+			position = { x = 215 y = 70 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_THEOC"
+		}
+		instantTextboxType = {
+			name = "tpt_theoc_display"
+			position = { x = 216 y = 70 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_theoc_text_2"
+			position = { x = 245 y = 71 }
+			font = "hoi_16mbs"
+			text = "TPT_THEOC"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_ancap_textbox"
+			position = { x = 215 y = 95 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_ANCAP"
+		}
+		instantTextboxType = {
+			name = "tpt_ancap_display"
+			position = { x = 216 y = 95 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_ancap_text_2"
+			position = { x = 245 y = 96 }
+			font = "hoi_16mbs"
+			text = "TPT_ANCAP"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_anocrep_textbox"
+			position = { x = 215 y = 120 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_ANOCREP"
+		}
+		instantTextboxType = {
+			name = "tpt_anocrep_display"
+			position = { x = 216 y = 120 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_anocrep_text_2"
+			position = { x = 245 y = 121 }
+			font = "hoi_16mbs"
+			text = "TPT_ANOCREP"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_anocmon_textbox"
+			position = { x = 215 y = 145 }
+			spriteType = "GFX_blank2"
+			pdx_tooltip = "TPT_EN_ANOCMON"
+		}
+		instantTextboxType = {
+			name = "tpt_anocmon_display"
+			position = { x = 216 y = 145 }
+			font = "hoi_18mbs"
+			text = "30"
+			maxWidth = 19
+			maxHeight = 21
+			format = centre
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "tpt_anocmon_text_2"
+			position = { x = 245 y = 146 }
+			font = "hoi_16mbs"
+			text = "TPT_ANOCMON"
 			maxWidth = 140
 			maxHeight = 23
 			format = left
