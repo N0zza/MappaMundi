@@ -13680,9 +13680,9 @@ focus_tree = {
 		}
 		CZC = {
 			create_country_leader = {
-        		name = "Prezident Miloš Zeman"
+        		name = "Prezident Petr Pavel"
         		desc = ""
-        		picture = "gfx/leaders/Czechia/CZC_Zeman.tga"
+        		picture = "gfx/leaders/Czechia/CZC_Pavel.tga"
         		expire = "1965.1.1"
         		ideology = liberal_conservatism
 			}
@@ -13753,11 +13753,12 @@ focus_tree = {
 				long_name = GRE_democratic_2023_party_long
 			}
 			set_popularities = {
-				democratic = 52
-				socialism_ideology = 39
-				vanguardism = 5
-				republican_fascism = 3
-				neutrality = 1
+				democratic = 53
+				socialism_ideology = 26
+				vanguardism = 7
+				republican_fascism = 8
+				anocratic_republic = 3
+				centrist_republic = 2
 			}
 		}
 		GRE = {
@@ -14295,9 +14296,9 @@ focus_tree = {
 		}
 		MNT = {
 			create_country_leader = {
-        		name = "Predsjednik Milo Dukanović"
+        		name = "Predsjednik Jakov Milatović"
         		desc = ""
-        		picture = "gfx/leaders/MNT/MNT_modern.tga"
+        		picture = "gfx/leaders/MNT/MNT_Milatovic.tga"
         		expire = "1965.1.1"
         		ideology = social_liberalism
 			}
@@ -14642,10 +14643,6 @@ focus_tree = {
 			}
 		}
 		FIN = {
-			set_politics = {
-				ruling_party = socialism_ideology
-			}
-			set_cosmetic_tag = FIN_2023
 			set_popularities = {
 				socialism_ideology = 27
 				liberal_republic = 11.5
@@ -14660,7 +14657,7 @@ focus_tree = {
         		desc = ""
         		picture = "gfx/leaders/FIN/FIN_Niinisto.tga"
         		expire = "1965.1.1"
-        		ideology = social_democracy
+        		ideology = liberal_conservatism
 			}
 		}
 		POR = {
@@ -14760,12 +14757,14 @@ focus_tree = {
 				liberal_republic = 32
 				centrist_republic = 35
 			}
+			set_country_flag = has_secondary_leader
+			set_country_flag = has_tertiary_leader
 		}
 		SMR = {
 			create_country_leader = {
-				name = "Capitano Reggente Maria Luisa Berti"
+				name = "Capitano Reggente Alessandro Scarano"
 				desc = ""
-				picture = "gfx/leaders/SMR/SMR_Berti.tga"
+				picture = "gfx/leaders/SMR/SMR_Scarano.tga"
 				expire = "1965.1.1"
 				ideology = directorial_republic
 			}
@@ -15315,6 +15314,7 @@ focus_tree = {
 			transfer_state = 10554
 			transfer_state = 10545
 			transfer_state = 10376
+			transfer_state = 12486
 			set_politics = {
 				ruling_party = socialism_ideology
 			}
@@ -15587,9 +15587,9 @@ focus_tree = {
 		}
 		RMM = {
 			create_country_leader = {
-        		name = "Wali Sheikh Khalifa Usman Nando"
+        		name = "Wali Said Zamahsari Salendab"
         		desc = ""
-        		picture = "gfx/leaders/PHI/RMM_Nando.tga"
+        		picture = "gfx/leaders/PHI/RMM_Salendab.tga"
         		expire = "1965.1.1"
         		ideology = islamic_democracy
 			}
@@ -15650,9 +15650,9 @@ focus_tree = {
 		}
 		NVI = {
 			create_country_leader = {
-        		name = "Chủ tịch nước Nguyễn Xuân Phúc"
+        		name = "Chủ tịch nước Võ Văn Thưởng"
         		desc = ""
-        		picture = "gfx/leaders/NVI/NVI_Nguyen.tga"
+        		picture = "gfx/leaders/NVI/NVI_Vo.tga"
         		expire = "1965.1.1"
         		ideology = totsoc
 			}
@@ -15968,9 +15968,9 @@ focus_tree = {
 				long_name = TMS_neutrality_2023_party_long
 			}
 			set_popularities = {
-				centrist_republic = 9
-				democratic = 9
-				neutrality = 82
+				democratic = 19
+				anocratic_republic = 15
+				neutrality = 66
 			}
 		}
 		TMS = {
@@ -16010,10 +16010,10 @@ focus_tree = {
 				long_name = KAZ_anocratic_republic_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 9
-				centrist_republic = 9
-				democratic = 11
-				anocratic_republic = 71
+				socialism_ideology = 18
+				centrist_republic = 13
+				democratic = 6
+				anocratic_republic = 63
 			}
 		}
 		KAZ = {
@@ -16157,9 +16157,9 @@ focus_tree = {
 		}
 		NEP = {
 			create_country_leader = {
-        		name = "Rāṣṭrapati Vidyādēvī Bhaṇḍārī"
+        		name = "Rāṣṭrapati Rāmacandra Pauḍēl"
         		desc = ""
-        		picture = "gfx/leaders/NEP/NEP_Bhandari.tga"
+        		picture = "gfx/leaders/NEP/NEP_Paudel.tga"
         		expire = "1965.1.1"
         		ideology = marxism
 			}
@@ -16317,9 +16317,9 @@ focus_tree = {
 		}
 		BAN = {
 			create_country_leader = {
-        		name = "Rāṣṭrapati Mōhāmmad Ābdul Hāmid"
+        		name = "Rāṣṭrapati Mōhāmmad Sāhābuddin Cuppu"
         		desc = ""
-        		picture = "gfx/leaders/BAN/BAN_Hamid.tga"
+        		picture = "gfx/leaders/BAN/BAN_Shahabuddin.tga"
         		expire = "1965.1.1"
         		ideology = dominant_party_democracy
 			}
@@ -16794,11 +16794,15 @@ focus_tree = {
         KUW = {
 			drop_cosmetic_tag = yes
 			set_politics = {
-				ruling_party = authoritarian_monarchism
+				ruling_party = anocratic_monarchism
 			}
 			set_popularities = {
-				anocratic_monarchism = 13
-				authoritarian_monarchism = 87
+				socialist_monarchy = 1
+				democratic_monarchism = 1
+				centrist_monarchism = 1
+				conservative_monarchism = 5
+				anocratic_monarchism = 41
+				authoritarian_monarchism = 16
 			}
 		}
 		
@@ -16808,7 +16812,7 @@ focus_tree = {
            		desc = ""
            		picture = "gfx/leaders/KUW/KUW_Nawaf.tga"
            		expire = "1965.1.1"
-           		ideology = authmon
+           		ideology = anocmon
 			}
         }
 		every_state = {
@@ -16951,14 +16955,18 @@ focus_tree = {
 		    transfer_state = 4794
 		    transfer_state = 3358
 			transfer_state = 14392
+		}
+		
+		SAU = {
+			set_cosmetic_tag = SAU_2023
+			set_country_flag = has_se
 			create_country_leader = {
             	name = "Milk Salmān bin ʿAbd al-ʿAzīz bin ʿAbd ar-Raḥman as- Suʿūd"
             	desc = ""
             	picture = "gfx/leaders/SAU/SAU_Salman.tga"
             	expire = "1965.1.1"
             	ideology = absolutism
-		}
-			set_cosmetic_tag = SAU_2023
+			}
 		}
 		TUR = {
 		    transfer_state = 5689
@@ -17174,9 +17182,9 @@ focus_tree = {
 		}
 		CYP = {
 			create_country_leader = {
-           		name = "Próedros Níkos Anastasiádis"
+           		name = "Próedros Níkos Christodoulídis"
            		desc = ""
-           		picture = "gfx/leaders/CYP/CYP_modern.tga"
+           		picture = "gfx/leaders/CYP/CYP_Christodoulidis.tga"
            		expire = "1965.1.1"
            		ideology = liberal_conservatism
 			}
@@ -17344,12 +17352,11 @@ focus_tree = {
 			}
 			set_popularities = {
 				vanguardism = 1
-				socialism_ideology = 32
-				liberal_republic = 6
-				centrist_republic = 1
-				democratic = 1
-				anocratic_republic = 48
-				neutrality = 3
+				communism = 10
+				socialism_ideology = 28
+				liberal_republic = 7
+				anocratic_republic = 45
+				neutrality = 1
 				republican_fascism = 8
 			}
 			clr_country_flag = has_secondary_leader
@@ -19014,7 +19021,9 @@ focus_tree = {
 			  long_name = TUN_neutrality_2023_party_long
 			}
 			set_popularities = {
-				neutrality = 100
+				socialism_ideology = 1
+				anocratic_republic = 10
+				neutrality = 89
 			}
 		}
 		TUN = {
@@ -19926,17 +19935,19 @@ focus_tree = {
 				long_name = NGA_centrist_republic_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 4
+				socialism_ideology = 10
 				liberal_republic = 2
-				centrist_republic = 56
-				democratic = 3
-				anocratic_republic = 35
+				centrist_republic = 49
+				anocratic_republic = 33
+				neutrality = 1
+				republican_fascism = 5
+			}
 		}
 		NGA = {
 			create_country_leader = {
-           		name = "President Muhammadu Buhari"
+           		name = "President Chief Bola Ahmed Adekunle Tinubu"
            		desc = ""
-           		picture = "gfx/leaders/NGA/NGA_Buhari.tga"
+           		picture = "gfx/leaders/NGA/NGA_Tinubu.tga"
            		expire = "1965.1.1"
            		ideology = big_tent
 			}
@@ -20896,9 +20907,9 @@ focus_tree = {
 		}	
 		FSM = {
 			create_country_leader = {
-        		name = "President David Panuelo"
+        		name = "President Wesley W. Simina"
         		desc = ""
-        		picture = "gfx/leaders/FSM/FSM_David_Panuelo.tga"
+        		picture = "gfx/leaders/FSM/FSM_Simina.tga"
         		expire = "1965.1.1"
         		ideology = liberalism
 			}
@@ -21944,11 +21955,11 @@ focus_tree = {
 				long_name = GUA_liberal_republic_2023_party_long
 			}
 			set_popularities = {
-				socialism_ideology = 37.5
-				liberal_republic = 20.625
-				centrist_republic = 5
-				democratic = 16.25
-				anocratic_republic = 20.625
+				socialism_ideology = 18.75
+				liberal_republic = 12.5
+				centrist_republic = 8.75
+				democratic = 47.5
+				anocratic_republic = 12.5
 			}
 		}
 		GUA = {
@@ -22146,9 +22157,9 @@ focus_tree = {
 		}
 		SKT = {
 			create_country_leader = {
-        		name = "Governor-General Sir Samuel Weymouth Tapley Seaton"
+        		name = "Governor-General Dame Marcella Althea Liburd"
         		desc = ""
-        		picture = "gfx/leaders/SKT/SKT_Tapley_Seaton.tga"
+        		picture = "gfx/leaders/SKT/SKT_Liburd.tga"
         		expire = "1965.1.1"
         		ideology = conservative_constitutionalism
 			}
@@ -22640,9 +22651,9 @@ focus_tree = {
 		}
 		TRI = {
 			create_country_leader = {
-           		name = "President Paula-Mae Weekes"
+           		name = "President Christine Carla Kangaloo"
            		desc = ""
-           		picture = "gfx/leaders/TRI/TRI_Paula-Mae_Weekes.tga"
+           		picture = "gfx/leaders/TRI/TRI_Kangaloo.tga"
            		expire = "1965.1.1"
            		ideology = liberal_conservatism
 			}
