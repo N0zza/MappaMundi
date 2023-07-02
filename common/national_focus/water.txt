@@ -962,8 +962,9 @@ focus_tree = {
 				}
 				FRA = {
 					set_politics = {
-							ruling_party = authoritarian_monarchism
+						ruling_party = authoritarian_monarchism
 					}
+					clr_country_flag = has_secondary_leader
 				}
 				ENG = {
 					set_cosmetic_tag = BRIT
@@ -978,6 +979,7 @@ focus_tree = {
 					set_politics = {
 						ruling_party = monarchism
 					}
+					clr_country_flag = has_secondary_leader
 				}
 				RUS = {
 					transfer_state = 232
@@ -1978,6 +1980,7 @@ focus_tree = {
 					}
 					MSQ = {
 						transfer_state = PREV
+						set_cosmetic_tag = UK_RED
 					}
 				}
 				every_state = {
@@ -7900,6 +7903,14 @@ focus_tree = {
 					ruling_party = total_anarchist
 				}
 				set_cosmetic_tag = TRIBAL_BROWN
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = ATC
+			}
+			UNC = {
+				transfer_state = PREV
 			}
 		}
 		every_state = {
