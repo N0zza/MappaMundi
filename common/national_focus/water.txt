@@ -8251,6 +8251,10 @@ focus_tree = {
 			transfer_state = 14773
 			transfer_state = 11299
 			transfer_state = 14780
+			transfer_state = 19478
+			transfer_state = 19334
+			transfer_state = 19373
+			transfer_state = 19339
 			
 			drop_cosmetic_tag = yes
 			set_politics = {
@@ -8258,6 +8262,16 @@ focus_tree = {
 			}
 			set_popularities = {
 				theocratic = 100
+			}
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_owned_by = MON
+				}
+			}
+			MON = {
+				add_core_of = PREV
 			}
 		}
 		TAN = {
