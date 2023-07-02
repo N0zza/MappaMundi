@@ -4134,6 +4134,50 @@ focus_tree = {
 					
 				}
 			}
+			KOR = {
+				set_politics = {
+					ruling_party = monarchism
+					set_cosmetic_tag = KOR_1836
+				}
+			}
+			every_state = {
+				limit = {
+					AND = {
+						is_core_of = HOK
+						NOT = {
+							state = 3864
+							state = 9767
+							state = 9770
+							state = 9771
+							state = 9772
+						}
+					}
+				}
+				HOK = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = total_anarchist
+					}
+					set_cosmetic_tag = TRIBAL_BROWN
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = ATC
+				}
+				UNC = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = RYU
+				}
+				RYU = {
+					transfer_state = PREV
+					set_cosmetic_tag = JAPAN_WHITE
+				}
+			}
 			every_state = {
 				limit = {
 					OR = {
@@ -7876,50 +7920,6 @@ focus_tree = {
 			CHI = {
 				transfer_state = PREV
 				add_state_core = PREV
-			}
-		}
-		KOR = {
-			set_politics = {
-				ruling_party = monarchism
-				set_cosmetic_tag = KOR_1836
-			}
-		}
-		every_state = {
-			limit = {
-				AND = {
-					is_core_of = HOK
-					NOT = {
-						state = 3864
-						state = 9767
-						state = 9770
-						state = 9771
-						state = 9772
-					}
-				}
-			}
-			HOK = {
-				transfer_state = PREV
-				set_politics = {
-					ruling_party = total_anarchist
-				}
-				set_cosmetic_tag = TRIBAL_BROWN
-			}
-		}
-		every_state = {
-			limit = {
-				is_core_of = ATC
-			}
-			UNC = {
-				transfer_state = PREV
-			}
-		}
-		every_state = {
-			limit = {
-				is_core_of = RYU
-			}
-			RYU = {
-				transfer_state = PREV
-				set_cosmetic_tag = JAPAN_WHITE
 			}
 		}
 		every_state = {
