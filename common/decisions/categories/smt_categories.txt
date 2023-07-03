@@ -5,7 +5,14 @@ debug_decisions = {
 	}
 
 	highlight_states = {
-		highlight_states_trigger = { has_state_flag = smt_marked }
+		highlight_states_trigger = {
+			AND = {
+				has_state_flag = smt_marked
+				NOT = {
+					has_global_flag = STATE_HIGHLIGHT_DISABLED
+				}
+			}
+		}
 		highlight_color_while_active = 2
 	}
 }

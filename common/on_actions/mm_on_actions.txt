@@ -499,6 +499,21 @@ on_actions = {
 	}
 	
 	on_startup = {
+		#Check if state marking is disabled
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_state_marking
+						option = NO_STATE_MARKING_HIGHLIGHT
+					}
+				}
+				set_global_flag = STATE_HIGHLIGHT_DISABLED
+			}
+		}
+	}
+	
+	on_startup = {
 		#USSR before the west russian war
 		effect = {
 			if = {

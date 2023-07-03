@@ -233,6 +233,22 @@ MM_historic_claims = {
 	}
 }
 
+MM_state_marking = {
+	name = "Disable Showing Marked States"
+	group = "RULE_GROUP_MM_SETTINGS"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "Marked states will be highlighted (note this can cause a lot of lag if you select large countries)"
+	}
+	option = {
+		name = NO_STATE_MARKING_HIGHLIGHT
+		text = "Disbale marked state highlighting"
+		desc = "Marked states will not be highlighted"
+		allow_achievements = yes
+	}
+}
+
 #MM_set_scenario = {
 #	name = "Set Upcoming Scenario"
 #	group = "RULE_GROUP_MM_SETTINGS"

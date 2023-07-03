@@ -126,8 +126,14 @@ scripted_gui = {
 							is_core_of = PREV
 						}
 						FROM.OWNER = {
-							transfer_state = PREV
+							PREV = {
+								set_state_flag = smt_marked
+							}
 						}
+					}
+					ROOT = {
+						remove_mission = smt_highlight_states
+						activate_mission = smt_highlight_states
 					}
 				}
 			}
@@ -141,8 +147,14 @@ scripted_gui = {
 							}
 						}
 						FROM.OWNER = {
-							transfer_state = PREV
+							PREV = {
+								set_state_flag = smt_marked
+							}
 						}
+					}
+					ROOT = {
+						remove_mission = smt_highlight_states
+						activate_mission = smt_highlight_states
 					}
 				}
 			}
@@ -330,11 +342,19 @@ scripted_gui = {
 								has_country_flag = smt_actor
 							}
 						}
-						FROM.OWNER = {transfer_state = PREV}
+						FROM.OWNER = {
+							PREV = {
+								set_state_flag = smt_marked
+							}
+						}
 						every_country = {
 							limit = { has_country_flag = smt_actor }
 							clr_country_flag = smt_actor
 						}
+					}
+					ROOT = {
+						remove_mission = smt_highlight_states
+						activate_mission = smt_highlight_states
 					}
 				}
 			}
@@ -348,12 +368,18 @@ scripted_gui = {
 							}
 						}
 						FROM.OWNER = {
-							transfer_state = PREV
+							PREV = {
+								set_state_flag = smt_marked
+							}
 						}
 						every_country = {
 							limit = { has_country_flag = smt_actor }
 							clr_country_flag = smt_actor
 						}
+					}
+					ROOT = {
+						remove_mission = smt_highlight_states
+						activate_mission = smt_highlight_states
 					}
 				}
 			}
