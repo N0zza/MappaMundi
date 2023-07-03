@@ -321,9 +321,15 @@ scripted_gui = {
 			smt_take_claims_button_click = {
 				FROM.OWNER = {
 					every_state = {
-						limit = {OR = {is_claimed_by = PREV 
-									   is_core_of = PREV}
-								 owner = {has_country_flag = smt_actor}}
+						limit = {
+							OR = {
+								is_claimed_by = PREV 
+								is_core_of = PREV
+							}
+							owner = {
+								has_country_flag = smt_actor
+							}
+						}
 						FROM.OWNER = {transfer_state = PREV}
 						every_country = {
 							limit = { has_country_flag = smt_actor }
@@ -335,9 +341,15 @@ scripted_gui = {
 			smt_take_cores_button_click = {
 				FROM.OWNER = {
 					every_state = {
-						limit = {is_core_of = PREV
-								 owner = {has_country_flag = smt_actor}}
-						FROM.OWNER = {transfer_state = PREV}
+						limit = {
+							is_core_of = PREV
+							owner = {
+								has_country_flag = smt_actor
+							}
+						}
+						FROM.OWNER = {
+							transfer_state = PREV
+						}
 						every_country = {
 							limit = { has_country_flag = smt_actor }
 							clr_country_flag = smt_actor
