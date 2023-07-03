@@ -1,0 +1,28 @@
+debug_decisions = {
+	smt_highlight_states = {
+		icon = hand_grab
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 7
+		is_good = yes
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout smt_highlight_states"
+			hidden_effect = {
+				for_each_scope_loop = {
+					array = ROOT.marked_states
+					clr_state_flag = SMT_set_mark
+				}
+				clear_array = ROOT.marked_states
+			}
+		}
+	}
+}
