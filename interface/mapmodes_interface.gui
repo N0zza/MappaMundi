@@ -70,7 +70,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "open_find_view_button"
-			position = { x=590 y=-2 }
+			position = { x=590 y=0 }
 			quadTextureSprite ="GFX_find_screen_button"
 			pdx_tooltip = "SEARCH"
 			shortcut = "f"
@@ -268,11 +268,11 @@ guiTypes = {
 
 			buttonType = {
 				name = "mapmode_button_5"
-				position = { x=1609 y=42 }	
+				position = { x=609 y=42 }	
 				quadTextureSprite ="GFX_mapmode_buttons_deselected_small"
 				#shortcut = "r"
 				clicksound = click_default
-				shortcut = ""
+				shortcut = "F4"
 				pdx_tooltip_anchor =
 				{
 					x = -198
@@ -282,10 +282,10 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "mapmode_button_5_s"
-				position = { x=1609 y=41 }	
+				position = { x=609 y=41 }	
 				quadTextureSprite ="GFX_mapmode_buttons_selected_small"
 				#shortcut = "r"
-				shortcut = ""
+				shortcut = "F4"
 				pdx_tooltip_anchor =
 				{
 					x = -198
@@ -412,16 +412,16 @@ guiTypes = {
 				name = "mapmode_button_9_s_bg"
 				quadTextureSprite = "GFX_mapmode_button_depressed"
 				alwaysTransparent = no
-				position = { x=1609 y=131 }
+				position = { x=609 y=131 }
 			}
 
 			buttonType = {
 				name = "mapmode_button_9"
-				position = { x=1610 y=131 }
+				position = { x=610 y=131 }
 				quadTextureSprite ="GFX_mapmode_buttons_deselected_small"
 				#shortcut = "s"
 				clicksound = click_default
-				shortcut = ""
+				shortcut = "F8"
 				pdx_tooltip_anchor =
 				{
 					x = -174
@@ -433,7 +433,7 @@ guiTypes = {
 				name = "mapmode_button_9_s"
 				position = { x=610 y=131 }
 				quadTextureSprite ="GFX_mapmode_buttons_selected_small"
-				shortcut = ""
+				shortcut = "F8"
 				pdx_tooltip_anchor =
 				{
 					x = -174
@@ -852,7 +852,7 @@ guiTypes = {
 				quadTextureSprite ="GFX_mapmode_buttons_deselected_small"
 				#shortcut = "s"
 				clicksound = click_default
-				shortcut = ""
+				shortcut = "F8"
 				pdx_tooltip_anchor =
 				{
 					x = -174
@@ -1168,7 +1168,7 @@ guiTypes = {
 
 	containerWindowType =  {
 		name = "WindowWithMapModeSlots"
-		position = { x=1253 y=-240 }	
+		position = { x=-253 y=-240 }	
 		size = { width=180 height=192 }
 		Orientation = lower_RIGHT
 		fade_time = 500
@@ -1208,7 +1208,7 @@ guiTypes = {
 	# A window with the list of all possible map modes that is attached to the "WindowWithMapModeSlots".
 	containerWindowType =  {
 		name = "WindowWithAllMapModes"
-		position = { x=155 y=-300 }	
+		position = { x=-255 y=-300 }	
 		size = { width=180 height=274 }
 		Orientation = lower_RIGHT
 		fade_time = 500
@@ -1231,7 +1231,7 @@ guiTypes = {
 	# A window with the list of all possible map modes that is attached to the main map-modes window.
 	containerWindowType =  {
 		name = "WindowWithAllMapModes_Standalone"
-		position = { x=155 y=-300 }	
+		position = { x=-255 y=-300 }	
 		size = { width=180 height=274 } 
 		Orientation = lower_RIGHT
 		fade_time = 500
