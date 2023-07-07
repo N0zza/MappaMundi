@@ -13,6 +13,37 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 			factor = 0
 		}
 		hidden_effect = {
+			ETH = {
+				set_politics = {
+					ruling_party = neutrality
+				}
+				set_cosmetic_tag = ETH_2023
+				set_party_name = {
+					ideology = centrist_republic
+					name = ETH_centrist_republic_party
+					long_name = ETH_centrist_republic_party_long
+				}
+				set_party_name = {
+					ideology = neutrality
+					name = ETH_neutrality_2023_party
+					long_name = ETH_neutrality_2023_party_long
+				}
+				set_popularities = {
+					centrist_republic = 2
+					anocratic_republic = 22
+					neutrality = 75
+					republican_fascism = 1
+				}
+			}
+			ETH = {
+				create_country_leader = {
+					name = "Pərezədanətə Sahəlä-Wärəqə Zäwəde"
+					desc = ""
+					picture = "gfx/leaders/ETH/ETH_Zewde.tga"
+					expire = "1965.1.1"
+					ideology = one_party_dictatorship
+				}
+			}
 		}
 	}
 	option = { #reject
