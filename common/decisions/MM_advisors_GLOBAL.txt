@@ -40,4 +40,46 @@ MM_ADVISOR_GLOBAL_CATEGORY = {
 			clr_country_flag = has_secondary_leader	
 		}
 	}
+	
+	MM_ADVISOR_GLOBAL_add_tertiary_leader = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			NOT = {
+				has_country_flag = has_tertiary_leader
+			}
+		} poop
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_country_flag = has_tertiary_leader	
+		}
+	}
+	
+	MM_ADVISOR_GLOBAL_remove_tertiary_leader = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = has_tertiary_leader
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			clr_country_flag = has_tertiary_leader	
+		}
+	}
 }
