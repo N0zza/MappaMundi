@@ -1233,7 +1233,7 @@ MM_PORTRAITS_USA_OTL_CATEGORY = {
 }
 
 MM_PORTRAITS_USA_CANDIDATES_TWO_CATEGORY = {
-	USA_CANDITWO_WALLACE = {
+	USA_CANDITWO_HA_WALLACE = {
 		allowed = {
 			
 		}
@@ -1285,6 +1285,35 @@ MM_PORTRAITS_USA_CANDIDATES_TWO_CATEGORY = {
 				picture = "gfx/leaders/USA/USA_McArthur.dds"
 				expire = "1965.1.1"
 				ideology = paternalistic_conservatism
+				traits = {
+				}
+			}
+		}
+	}
+	
+	USA_CANDITWO_GOLDWATER = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = democratic
+			create_country_leader = {
+				name = "President Barry Morris Goldwater"
+				desc = ""
+				picture = "gfx/leaders/USA/USA_McArthur.dds"
+				expire = "1965.1.1"
+				ideology = populism
 				traits = {
 				}
 			}
