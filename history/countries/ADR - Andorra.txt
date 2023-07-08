@@ -1,28 +1,21 @@
 ﻿capital = 763
 
-
-
+set_country_flag = has_secondary_leader
 
 	set_popularities = {
 		conservative_monarchism
-			 = 50
-		democratic
 			 = 30
-		theocratic
+		democratic
 			 = 20
+		anocratic_monarchism
+			 = 50
 		}
 	set_politics = { 
- ruling_party = conservative_monarchism
+ ruling_party = anocratic_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
-
-add_ideas = {
-	neutrality_idea	
-	limited_conscription
-}
-
 
 create_country_leader = {
 	name = "Bisbe Justí Guitart i Vilardebó"
@@ -39,7 +32,7 @@ create_country_leader = {
 	desc = "POLITICS_ADR_CONMON_DESC"
 	picture = "gfx/leaders/ADR/Portrait_Justi_Guitart_i_Vilardebo.dds"
 	expire = "1960.1.1"
-	ideology = conservative_constitutionalism
+	ideology = anocratic_monarchism
 	traits = {
 	}
 }

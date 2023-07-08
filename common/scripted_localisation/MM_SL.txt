@@ -882,6 +882,33 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = LIE
+				has_government = anocratic_monarchism
+			}
+		}
+		localization_key = "Regierungschef Franz Josef Hoop"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MCO
+				has_government = authoritarian_monarchism
+			}
+		}
+		localization_key = "Ministre d'État Maurice Bouilloux-Lafont"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ADR
+				has_government = anocratic_monarchism
+			}
+		}
+		localization_key = "Viguiers Henri Samalens"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = GRE
 				has_government = democratic
 				has_start_date > 2022.01.01
@@ -898,6 +925,33 @@ defined_text = {
 			}
 		}
 		localization_key = "Předseda vlády Petr Fiala"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CZE
+				has_government = centrist_republic
+			}
+		}
+		localization_key = "Předseda vlády Milan Hodža"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ZIM
+				has_government = centrist_republic
+			}
+		}
+		localization_key = "Prime Minister Godfrey Martin Huggins"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MAN
+				has_government = stratocratic_monarchism
+			}
+		}
+		localization_key = "Tsungli Chang Ching-hui"
 	}
 	text = {
 		trigger = {
@@ -927,6 +981,33 @@ defined_text = {
 			}
 		}
 		localization_key = "Prezes Rady Ministrów Marian Zyndram-Kościałkowski"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LUX
+				has_government = conservative_monarchism
+			}
+		}
+		localization_key = "Premier Minister Joseph Bech"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HOL
+				has_government = conservative_monarchism
+			}
+		}
+		localization_key = "Minister-president Hendrikus Colijn"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BEL
+				has_government = conservative_monarchism
+			}
+		}
+		localization_key = "Premier Ministre Paul Guillaume van Zeeland"
 	}
 	text = {
 		trigger = {
@@ -1025,6 +1106,15 @@ defined_text = {
 			}
 		}
 		localization_key = "Capitano Reggente Adele Tonnini"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SMR
+				has_government = republican_fascism
+			}
+		}
+		localization_key = "Capitano Reggente Marino Morri"
 	}
 	text = {
 		trigger = {
@@ -1887,6 +1977,33 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = CZE
+				has_government = centrist_republic
+			}
+		}
+		localization_key = "GFX_Milan_Hodza"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ZIM
+				has_government = centrist_republic
+			}
+		}
+		localization_key = "GFX_Godfrey_Huggins"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MAN
+				has_government = stratocratic_monarchism
+			}
+		}
+		localization_key = "GFX_Zhang_Jinghui"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = SLO
 				has_government = democratic
 				has_start_date > 2022.01.01
@@ -1912,6 +2029,69 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Marian_Zyndram"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LUX
+				has_government = conservative_monarchism
+			}
+		}
+		localization_key = "GFX_Joseph_Bech"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HOL
+				has_government = conservative_monarchism
+			}
+		}
+		localization_key = "GFX_Hendrikus_Colijn"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BEL
+				has_government = conservative_monarchism
+			}
+		}
+		localization_key = "GFX_Paul_van_Zeeland"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LIE
+				has_government = anocratic_monarchism
+			}
+		}
+		localization_key = "GFX_Josef_Hoop"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MCO
+				has_government = authoritarian_monarchism
+			}
+		}
+		localization_key = "GFX_Maurice_Lafont"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ADR
+				has_government = anocratic_monarchism
+			}
+		}
+		localization_key = "GFX_Henri_Samalens"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SMR
+				has_government = republican_fascism
+			}
+		}
+		localization_key = "GFX_Marino_Morri"
 	}
 	text = {
 		trigger = {
@@ -2072,6 +2252,15 @@ defined_text = {
 			AND = {
 				tag = SWI
 				has_government = centrist_republic
+			}
+		}
+		localization_key = "SWI_FEDERAL_COUNCIL_CHARACTER"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SWI
+				has_government = centrist_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -2114,6 +2303,15 @@ defined_text = {
 			}
 		}
 		localization_key = "Kralj Petar II Karađorđević"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SMR
+				has_government = republican_fascism
+			}
+		}
+		localization_key = "Segretario di Stato per gli Affari Esteri e Politici Giuliano Gozi"
 	}
 	text = {
 		trigger = {
@@ -2191,10 +2389,28 @@ defined_text = {
 			AND = {
 				tag = SWI
 				has_government = centrist_republic
+			}
+		}
+		localization_key = "GFX_Federal_Council"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SWI
+				has_government = centrist_republic
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "GFX_Federal_Council"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SMR
+				has_government = republican_fascism
+			}
+		}
+		localization_key = "GFX_Giuliano_Gozi"
 	}
 	text = {
 		trigger = {
