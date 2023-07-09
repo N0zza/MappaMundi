@@ -13,13 +13,26 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 			factor = 0
 		}
 		hidden_effect = {
-			UKR = {
+			SMR = {
+				set_popularities = {
+					republican_fascism = 100
+				}
+
+				set_politics = { 
+					ruling_party = republican_fascism
+					last_election = "1936.1.1"
+					election_frequency = 50
+					elections_allowed = no
+				}
+set_country_flag = has_secondary_leader
+set_country_flag = has_tertiary_leader
+
 				create_country_leader = {
-					name = "Predsedátelʹ VUTsIK Grigóriy Ivánovich Petróvskiy"
+					name = "Capitani Reggenti Pompeo Righi"
 					desc = ""
-					picture = "gfx/leaders/UKR/Petrovskiy.dds"
-					expire = "1965.1.1"
-					ideology = totsoc
+					picture = "gfx/leaders/SMR/SMR_Boyardee.tga"
+					expire = "1960.1.1"
+					ideology = rep_italian_fascism
 					traits = {
 					}
 				}
