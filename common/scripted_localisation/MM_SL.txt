@@ -939,10 +939,19 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ZIM
-				has_government = centrist_republic
+				has_government = centrist_monarchism
 			}
 		}
 		localization_key = "Prime Minister Godfrey Martin Huggins"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SAF
+				has_government = centrist_monarchism
+			}
+		}
+		localization_key = "Prime Minister James Barry Munnik Hertzog"
 	}
 	text = {
 		trigger = {
@@ -1112,6 +1121,7 @@ defined_text = {
 			AND = {
 				tag = SMR
 				has_government = republican_fascism
+				has_start_date > 1936.01.01
 			}
 		}
 		localization_key = "Capitano Reggente Marino Morri"
@@ -1987,10 +1997,19 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ZIM
-				has_government = centrist_republic
+				has_government = centrist_monarchism
 			}
 		}
 		localization_key = "GFX_Godfrey_Huggins"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SAF
+				has_government = centrist_monarchism
+			}
+		}
+		localization_key = "GFX_Barry_Hertzog"
 	}
 	text = {
 		trigger = {
@@ -2089,6 +2108,7 @@ defined_text = {
 			AND = {
 				tag = SMR
 				has_government = republican_fascism
+				has_start_date > 1936.01.01
 			}
 		}
 		localization_key = "GFX_Marino_Morri"
@@ -2252,6 +2272,7 @@ defined_text = {
 			AND = {
 				tag = SWI
 				has_government = centrist_republic
+				has_start_date > 1936.01.01
 			}
 		}
 		localization_key = "SWI_FEDERAL_COUNCIL_CHARACTER"
@@ -2309,6 +2330,7 @@ defined_text = {
 			AND = {
 				tag = SMR
 				has_government = republican_fascism
+				has_start_date > 1936.01.01
 			}
 		}
 		localization_key = "Segretario di Stato per gli Affari Esteri e Politici Giuliano Gozi"
@@ -2389,6 +2411,7 @@ defined_text = {
 			AND = {
 				tag = SWI
 				has_government = centrist_republic
+				has_start_date > 1936.01.01
 			}
 		}
 		localization_key = "GFX_Federal_Council"
@@ -2408,6 +2431,7 @@ defined_text = {
 			AND = {
 				tag = SMR
 				has_government = republican_fascism
+				has_start_date > 1936.01.01
 			}
 		}
 		localization_key = "GFX_Giuliano_Gozi"
