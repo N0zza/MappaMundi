@@ -891,11 +891,47 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = ROM
+				has_government = anocratic_monarchism
+			}
+		}
+		localization_key = "Președintele Gheorghe I. Tătărescu"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = MCO
 				has_government = authoritarian_monarchism
 			}
 		}
 		localization_key = "Ministre d'État Maurice Bouilloux-Lafont"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NOR
+				has_government = democratic_monarchism
+			}
+		}
+		localization_key = "Statsminister Johan Nygaardsvold"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = DEN
+				has_government = socialist_monarchy
+			}
+		}
+		localization_key = "Statsminister Thorvald Stauning"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SWE
+				has_government = socialist_monarchy
+			}
+		}
+		localization_key = "Statsminister Per Albin Hansson"
 	}
 	text = {
 		trigger = {
@@ -1006,6 +1042,15 @@ defined_text = {
 			}
 		}
 		localization_key = "Prime Minister Godfrey Martin Huggins"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ICE
+				has_government = centrist_monarchism
+			}
+		}
+		localization_key = "Forsætisráðherra Hermann Jónasson"
 	}
 	text = {
 		trigger = {
@@ -1188,6 +1233,24 @@ defined_text = {
 			}
 		}
 		localization_key = "Capitano Reggente Marino Morri"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LIT
+				has_government = republican_fascism
+			}
+		}
+		localization_key = "Ministras Pirmininkas Juozas Tūbelis"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LAT
+				has_government = neutrality
+			}
+		}
+		localization_key = "Ministru Prezidents Kārlis Ulmanis"
 	}
 	text = {
 		trigger = {
@@ -2088,6 +2151,15 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = ICE
+				has_government = centrist_monarchism
+			}
+		}
+		localization_key = "GFX_Hermann_Jonasson"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = SAF
 				has_government = centrist_monarchism
 			}
@@ -2171,11 +2243,38 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = ROM
+				has_government = anocratic_monarchism
+			}
+		}
+		localization_key = "GFX_Gheorghe_Tatarescu"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = MCO
 				has_government = authoritarian_monarchism
 			}
 		}
 		localization_key = "GFX_Maurice_Lafont"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = DEN
+				has_government = socialist_monarchy
+			}
+		}
+		localization_key = "GFX_Thorvald_Stauning"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SWE
+				has_government = socialist_monarchy
+			}
+		}
+		localization_key = "GFX_Albin_Hansson"
 	}
 	text = {
 		trigger = {
@@ -2272,12 +2371,39 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = LIT
+				has_government = republican_fascism
+			}
+		}
+		localization_key = "GFX_Juozas_Tubelis"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LAT
+				has_government = neutrality
+			}
+		}
+		localization_key = "GFX_Karlis_Ulmanis"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = BOT
 				has_government = authoritarian_monarchism
 				has_start_date > 1936.01.01
 			}
 		}
 		localization_key = "GFX_Tshekedi_Khama"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NOR
+				has_government = democratic_monarchism
+			}
+		}
+		localization_key = "GFX_Johan_Nygaardsvold"
 	}
 	text = {
 		trigger = {
