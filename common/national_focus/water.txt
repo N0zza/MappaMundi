@@ -964,7 +964,6 @@ focus_tree = {
 					set_politics = {
 						ruling_party = authoritarian_monarchism
 					}
-					clr_country_flag = has_secondary_leader
 				}
 				ENG = {
 					set_cosmetic_tag = BRIT
@@ -979,7 +978,6 @@ focus_tree = {
 					set_politics = {
 						ruling_party = monarchism
 					}
-					clr_country_flag = has_secondary_leader
 				}
 				RUS = {
 					transfer_state = 232
@@ -7105,6 +7103,9 @@ focus_tree = {
 			}
 			}
 		}
+		every_country = {
+			secondary_tertiary_leader_enabled_effect = yes
+		}
 	}
 			}
 			}
@@ -7651,7 +7652,6 @@ focus_tree = {
 			set_politics = {
 				ruling_party = authoritarian_monarchism
 			}
-			clr_country_flag = has_secondary_leader
 		}
 		ITA = {
 			transfer_state = 767
@@ -7668,7 +7668,6 @@ focus_tree = {
 			set_popularities = {
 				authoritarian_monarchism = 100
 			}
-			clr_country_flag = has_secondary_leader
 		}
 		FRA = {
 			transfer_state = 4495
@@ -7810,7 +7809,6 @@ focus_tree = {
 				}
 			}
 		TUR = {
-			clr_country_flag = has_secondary_leader
 			set_cosmetic_tag = OTTO
 			set_politics = {
 				ruling_party = monarchism
@@ -8268,9 +8266,6 @@ focus_tree = {
 			set_popularities = {
 				theocratic = 100
 			}
-			
-			clr_country_flag = has_secondary_leader
-			clr_country_flag = has_tertiary_leader
 		}
 		every_state = {
 			limit = {
@@ -8310,9 +8305,6 @@ focus_tree = {
 			set_politics = {
 				ruling_party = monarchism
 			}
-			
-			clr_country_flag = has_secondary_leader
-			clr_country_flag = has_tertiary_leader
 		}
 			every_state = {
 				limit = {
@@ -9165,8 +9157,6 @@ focus_tree = {
 					}
 				}
 				RUS = {
-					clr_country_flag = has_secondary_leader
-					
 					every_owned_state = {do_russian_renames = yes}
 						
 					set_popularities = {
@@ -9326,8 +9316,10 @@ focus_tree = {
 						traits = {
 						}
 					}
-					
-					clr_country_flag = has_secondary_leader
+				}
+				
+				every_country = {
+					secondary_tertiary_leader_enabled_effect = yes
 				}
 			}
 		}
@@ -12171,8 +12163,6 @@ focus_tree = {
 			drop_cosmetic_tag = yes
 			
 			set_cosmetic_tag = RUS_2023_neutrality
-			
-			clr_country_flag = has_tertiary_leader
 		}
 		every_state = {
 			limit = {
@@ -13507,7 +13497,6 @@ focus_tree = {
 				name = UKR_neutrality_2023_party
 				long_name = UKR_neutrality_2023_party_long
 			}
-			clr_country_flag = has_tertiary_leader
 		}
 		UKR = {
 			create_country_leader = {
@@ -13546,8 +13535,6 @@ focus_tree = {
 				name = BLR_liberal_republic_2023_party
 				long_name = BLR_liberal_republic_2023_party_long
 			}
-			clr_country_flag = has_secondary_leader
-			clr_country_flag = has_tertiary_leader
 		}
 		BLR = {
 			create_country_leader = {
@@ -13601,7 +13588,6 @@ focus_tree = {
 				democratic = 13
 				anocratic_republic = 17
 			}
-			clr_country_flag = has_secondary_leader
 		}
 		ALN = {
 			create_country_leader = {
@@ -14454,7 +14440,6 @@ focus_tree = {
 				conservative_monarchism = 14
 				centrist_monarchism = 13
 			}
-			clr_country_flag = has_secondary_leader
 		}
 		DEN = {
 			create_country_leader = {
@@ -14538,7 +14523,6 @@ focus_tree = {
 				conservative_monarchism = 23
 				anocratic_monarchism = 12
 			}
-			clr_country_flag = has_secondary_leader
 		}
 		NOR = {
 			create_country_leader = {
@@ -14585,7 +14569,6 @@ focus_tree = {
 				conservative_monarchism = 25
 				anocratic_monarchism = 21
 			}
-			clr_country_flag = has_secondary_leader
 		}
 		SWE = {
 			create_country_leader = {
@@ -14680,7 +14663,6 @@ focus_tree = {
 				centrist_monarchism = 40
 				anocratic_monarchism = 48
 			}
-			clr_country_flag = has_secondary_leader
 		}
 		LIE = {
 			create_country_leader = {
@@ -14737,7 +14719,6 @@ focus_tree = {
 				democratic = 26.5
 				anocratic_republic = 23
 			}
-			clr_country_flag = has_secondary_leader
 		}
 		FIN = {
 			create_country_leader = {
@@ -14920,7 +14901,6 @@ focus_tree = {
 				liberal_republic = 38
 				democratic = 40
 			}
-			clr_country_flag = has_secondary_leader
 		}
 		ICE = {
 			create_country_leader = {
@@ -15851,7 +15831,6 @@ focus_tree = {
 			transfer_state_to = SIA
 		}
 		SIA = {
-			clr_country_flag = has_tertiary_leader
 			set_politics = {
 				ruling_party = anocratic_monarchism
 			}
@@ -16777,8 +16756,6 @@ focus_tree = {
 				neutrality = 66
 				republican_fascism = 1
 			}
-			clr_country_flag = has_secondary_leader
-			clr_country_flag = has_tertiary_leader
 		}  
 		SYR = {
 			create_country_leader = {
@@ -16804,8 +16781,6 @@ focus_tree = {
 				anocratic_republic = 28
 				neutrality = 12
 			}
-			clr_country_flag = has_secondary_leader
-			clr_country_flag = has_tertiary_leader
 		}
 		LEB = {
 			create_country_leader = {
@@ -16833,8 +16808,6 @@ focus_tree = {
 			transfer_state = 14409
 			transfer_state = 17501
 			transfer_state = 17513
-			clr_country_flag = has_secondary_leader
-			clr_country_flag = has_tertiary_leader
 		}
 		
 		JOR = {
@@ -16992,7 +16965,6 @@ focus_tree = {
 				anocratic_republic = 27
 				neutrality = 16
 			}
-			clr_country_flag = has_secondary_leader
 		}
 		IRQ = {
 			create_country_leader = {
@@ -17455,7 +17427,6 @@ focus_tree = {
 				neutrality = 1
 				republican_fascism = 8
 			}
-			clr_country_flag = has_secondary_leader
 		}
 		TUR = {
 			create_country_leader = {
@@ -19024,8 +18995,6 @@ focus_tree = {
 				neutrality = 53
 				republican_fascism = 1
 			}
-			clr_country_flag = has_secondary_leader
-			clr_country_flag = has_tertiary_leader
 		}
 		EGY = {
 			create_country_leader = {
@@ -19123,8 +19092,6 @@ focus_tree = {
 				anocratic_republic = 10
 				neutrality = 89
 			}
-			clr_country_flag = has_secondary_leader
-			clr_country_flag = has_tertiary_leader
 		}
 		TUN = {
 			create_country_leader = {
@@ -20252,7 +20219,6 @@ focus_tree = {
 				socialism_ideology = 33
 				anocratic_republic = 67
 			}
-			clr_country_flag = has_secondary_leader
 		}
 		ZIM = {
 			create_country_leader = {
@@ -20276,8 +20242,6 @@ focus_tree = {
 				anocratic_republic = 8
 				neutrality = 5
 			}
-			clr_country_flag = has_secondary_leader
-			clr_country_flag = has_tertiary_leader
 		}
 		BOT = {
 			create_country_leader = {
@@ -22844,6 +22808,9 @@ focus_tree = {
 			}
 			EUR = {
 				add_state_core = PREV
+			}
+			every_country = {
+				secondary_tertiary_leader_enabled_effect = yes
 			}
 		}
 				}
