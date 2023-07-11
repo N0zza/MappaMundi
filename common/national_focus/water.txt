@@ -397,11 +397,11 @@ focus_tree = {
 							OR = {
 								is_core_of = LIM
 								is_core_of = LUX
-								}
+							}
 							NOT = {
 								is_core_of = PRE
-								}
 							}
+						}
 						BEL = {
 							transfer_state = PREV
 						}
@@ -1833,7 +1833,7 @@ focus_tree = {
 							transfer_state = PREV
 							set_cosmetic_tag = UK_RED
 							set_politics = {
-							ruling_party = authoritarian_monarchism
+								ruling_party = authoritarian_monarchism
 							}
 						}
 					}
@@ -1845,7 +1845,7 @@ focus_tree = {
 							transfer_state = PREV
 							set_cosmetic_tag = UK_RED
 							set_politics = {
-							ruling_party = authoritarian_monarchism
+								ruling_party = authoritarian_monarchism
 							}
 						}
 					}
@@ -1857,7 +1857,7 @@ focus_tree = {
 							transfer_state = PREV
 							set_cosmetic_tag = UK_RED
 							set_politics = {
-							ruling_party = authoritarian_monarchism
+								ruling_party = authoritarian_monarchism
 							}
 						}
 					}
@@ -1869,7 +1869,7 @@ focus_tree = {
 							transfer_state = PREV
 							set_cosmetic_tag = UK_RED
 							set_politics = {
-							ruling_party = authoritarian_monarchism
+								ruling_party = authoritarian_monarchism
 							}
 						}
 					}
@@ -1881,7 +1881,7 @@ focus_tree = {
 							transfer_state = PREV
 							set_cosmetic_tag = UK_RED
 							set_politics = {
-							ruling_party = authoritarian_monarchism
+								ruling_party = authoritarian_monarchism
 							}
 						}
 					}
@@ -1919,7 +1919,7 @@ focus_tree = {
 							transfer_state = PREV
 							set_cosmetic_tag = UK_RED
 							set_politics = {
-							ruling_party = authoritarian_monarchism
+								ruling_party = authoritarian_monarchism
 							}
 						}
 					}
@@ -1940,7 +1940,7 @@ focus_tree = {
 							add_state_core = PREV
 							set_cosmetic_tag = USCA
 							set_politics = {
-							ruling_party = neutrality
+								ruling_party = neutrality
 							}
 						}
 					}
@@ -1961,7 +1961,7 @@ focus_tree = {
 							transfer_state = PREV
 							set_cosmetic_tag = SWE_BLUE
 							set_politics = {
-							ruling_party = authoritarian_monarchism
+								ruling_party = authoritarian_monarchism
 							}
 						}
 					}
@@ -2236,7 +2236,7 @@ focus_tree = {
 						
 					ARG = {
 						set_politics = {
-							ruling_party = .*
+							ruling_party = democratic_monarchism
 						}
 					}
 						
@@ -2247,11 +2247,11 @@ focus_tree = {
 						transfer_state = 1092
 						transfer_state = 6585
 						transfer_state = 6578
-						}
+					}
 						
 					every_state = {
 						limit = {
-							OR ={
+							OR = {
 								is_core_of = PAT
 							}
 						}
@@ -2274,7 +2274,6 @@ focus_tree = {
 							transfer_state = 13587
 							set_cosmetic_tag = TRIBAL_BROWN
 						}
-							
 						GYC = {
 							transfer_state = 9356
 							transfer_state = 6108
@@ -2290,9 +2289,7 @@ focus_tree = {
 						}
 					}
                     
-                    #############
-                    #1836 AFRICA#
-                    #############
+                    ## 1836 AFRICA ##
                     
                     MOR = {
                         drop_cosmetic_tag = yes
@@ -2300,43 +2297,35 @@ focus_tree = {
                             ruling_party = conservative_monarchism
                         }
                     }
-					
 					FRA = {
 						transfer_state = 13590
 						transfer_state = 272
 						transfer_state = 16278
 						transfer_state = 15076
 					}
-					
 					SPR = {
 						transfer_state = 6782
 						transfer_state = 6760
 					}
-					
 					MRT = {
-							release = TGT
-							release = TRZ
-							release = BRK
+						release = TGT
+						release = TRZ
+						release = BRK
 					}
-					
 					CVD = {
 						transfer_state = 296
 						transfer_state = 6032
 						set_cosmetic_tag = POR_MONARCHISM
 					}
-					
 					LIB = {
 						set_politics = {
 							ruling_party = centrist_republic
-					}
-						
+						}
 						set_cosmetic_tag = USA_BLUE
 					}
-					
 					KGG = {
 						drop_cosmetic_tag = yes
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = ARR
@@ -2345,7 +2334,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {	
 						limit = {
 							is_core_of = KKG
@@ -2354,7 +2342,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {	
 						limit = {
 							is_claimed_by = KKG
@@ -2363,7 +2350,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = CKW
@@ -2372,37 +2358,30 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {	
 							is_core_of = KSJ
 						}
-						
 						KSJ = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {	
 							is_core_of = ALY
 						}
-						
 						ALY = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {	
 							is_core_of = DGR
 						}
-						
 						DGR = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = AJJ
@@ -2411,7 +2390,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = KLO
@@ -2420,7 +2398,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = KGG
@@ -2429,7 +2406,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = KLT
@@ -2438,7 +2414,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = ADG
@@ -2447,7 +2422,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = TKT
@@ -2456,7 +2430,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = KLN
@@ -2465,7 +2438,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-						
 					every_state = {
 						limit = {
 							is_core_of = AYR
@@ -2474,7 +2446,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = GS2
@@ -2483,7 +2454,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = DAK
@@ -2492,7 +2462,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = ARO
@@ -2501,7 +2470,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = BUE
@@ -2510,7 +2478,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = KZM
@@ -2519,7 +2486,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = SOK
@@ -2528,7 +2494,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = ILR
@@ -2537,7 +2502,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = BD2
@@ -2546,7 +2510,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = ABJ
@@ -2555,7 +2518,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = BOR
@@ -2564,7 +2526,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = BCH
@@ -2573,7 +2534,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = DBO
@@ -2582,7 +2542,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = ILO
@@ -2591,7 +2550,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = KNN
@@ -2600,7 +2558,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = GBR
@@ -2609,7 +2566,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = NRI
@@ -2618,7 +2574,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = OUL
@@ -2627,7 +2582,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							is_core_of = MZA
@@ -2636,7 +2590,6 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					every_state = {
 						limit = {
 							OR = {
@@ -2656,11 +2609,9 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
-					
 					SNW = {
 						drop_cosmetic_tag = yes
 					}
-					
 					AHI = {
 						drop_cosmetic_tag = yes
 						set_politics = {
@@ -2668,34 +2619,33 @@ focus_tree = {
 						}
 					}
 					
-					# Ethiopia
+					# Ethiopia #
 					
 					ASS = {
-						add_state_core = 1546
-						add_state_core = 5326
-						add_state_core = 6559
-						add_state_core = 7853
-						add_state_core = 7936
-						add_state_core = 7940
-						add_state_core = 9697
-						add_state_core = 9698
-						add_state_core = 10468
-						add_state_core = 10470
-						add_state_core = 12171
-						add_state_core = 12172
-						add_state_core = 12173
-						add_state_core = 13143
-						add_state_core = 13144
-						add_state_core = 13146
-						add_state_core = 17103
-						add_state_core = 17109
-						add_state_core = 17115
-						
 						every_state = {
 							limit = {
 								OR = {
-								is_core_of = ASS
-								is_core_of = DJI
+									is_core_of = ASS
+									is_core_of = DJI
+									state = 1546
+									state = 5326
+									state = 6559
+									state = 7853
+									state = 7936
+									state = 7940
+									state = 9697
+									state = 9698
+									state = 10468
+									state = 10470
+									state = 12171
+									state = 12172
+									state = 12173
+									state = 13143
+									state = 13144
+									state = 13146
+									state = 17103
+									state = 17109
+									state = 17115
 								}
 							}
 							ASS = {
@@ -2703,317 +2653,266 @@ focus_tree = {
 							}
 						}
 					}
-					
-					BGZ = {
-						every_state = {
-							limit = {
-								OR = {
-									state = 1550
-									state = 6866
-								}
-							}
-							BGZ = {
-								add_state_core = PREV
+					every_state = {
+						limit = {
+							OR = {
+								state = 1550
+								state = 6866
 							}
 						}
-						
-						set_politics = {
-							ruling_party = monarchism
-							elections_allowed = no
-							last_election = "1836.1.1"
-							election_frequency = 48
-						}
-						
-						set_popularities = {
-							monarchism = 100
+						BGZ = {
+							transfer_state = PREV
+							set_politics = {
+								ruling_party = monarchism
+							}
 						}
 					}
-					
-					
-					ETH = {
-						every_state = {
-							limit = {
-								OR = {
+					every_state = {
+						limit = {
+							OR = {
 								is_core_of = ETH
-								}
-								NOT = {
-									is_core_of = ASS
-									is_core_of = E02
-									is_core_of = E03
-									is_core_of = E04
-									is_core_of = E05
-									is_core_of = E08
-									is_core_of = E09
-									is_core_of = E10
-									is_core_of = E12
-									is_core_of = GMM
-									is_core_of = GM2
-									is_core_of = GLE
-									is_core_of = GRA
-									is_core_of = HOB
-									is_core_of = JIM
-									is_core_of = LME
-									is_core_of = MAJ
-									is_core_of = ORM
-									is_core_of = SOM
-									is_core_of = TNA
-								}
 							}
-							ETH = {
-								transfer_state = PREV
-							}
-						} 
-						
-						set_politics = {
-							ruling_party = monarchism
-							elections_allowed = no
-							last_election = "1836.1.1"
-							election_frequency = 48
-						}
-						
-						set_popularities = {
-							monarchism = 100
-						}
-					}
-					E02 = {
-						every_state = {
-							limit = {
+							NOT = {
+								is_owned_by = ASS
 								is_core_of = E02
-							}
-							E02 = {
-								transfer_state = PREV
-							}
-						}
-					}
-					
-					E03 = {
-						every_state = {
-							limit = {
 								is_core_of = E03
-							}
-							E03 = {
-								transfer_state = PREV
-							}
-						}
-					}
-					
-					E04 = {
-						every_state = {
-							limit = {
 								is_core_of = E04
-							}
-							E04 = {
-								transfer_state = PREV
-							}
-						}
-					}
-					
-					E05 = {
-						every_state = {
-							limit = {
 								is_core_of = E05
-							}
-							E05 = {
-								transfer_state = PREV
-							}
-						}
-					}
-					
-					E06 = {
-						every_state = {
-							limit = {
-								is_core_of = E06
-							}
-							E06 = {
-								transfer_state = PREV
-							}
-						}
-					}
-					
-					E07 = {
-						every_state = {
-							limit = {
-								is_core_of = E07
-							}
-							E07 = {
-								transfer_state = PREV
-							}
-						}
-					}
-					
-					E08 = {
-						every_state = {
-							limit = {
 								is_core_of = E08
-							}
-							E08 = {
-								transfer_state = PREV
-							}
-						}
-					}
-					
-					E09 = {
-						every_state = {
-							limit = {
 								is_core_of = E09
-							}
-							E09 = {
-								transfer_state = PREV
-							}
-						}
-					}
-					
-					E10 = {
-						every_state = {
-							limit = {
 								is_core_of = E10
-							}
-							E10 = {
-								transfer_state = PREV
-							}
-						}
-					}
-					
-					E11 = {
-						every_state = {
-							limit = {
-								is_core_of = E11
-							}
-							E11 = {
-								transfer_state = PREV
-							}
-						}
-					}
-					
-					E12 = {
-						every_state = {
-							limit = {
 								is_core_of = E12
-							}
-							E12 = {
-								transfer_state = PREV
-							}
-						}
-					}
-					
-					E17 = {
-						every_state = {
-							limit = {
-								is_core_of = E17
-							}
-							E17 = {
-								transfer_state = PREV
-							}
-						}
-					}
-					
-					E18 = {
-						every_state = {
-							limit = {
-								is_core_of = E18
-							}
-							E18 = {
-								transfer_state = PREV
+								is_core_of = GMM
+								is_core_of = GM2
+								is_core_of = GLE
+								is_core_of = GRA
+								is_core_of = HOB
+								is_core_of = JIM
+								is_core_of = LME
+								is_core_of = MAJ
+								is_core_of = ORM
+								is_core_of = SOM
+								is_core_of = TNA
+								is_owned_by = BGZ
+								state = 6862
 							}
 						}
-					}
-					
-					E19 = {
-						every_state = {
-							limit = {
-								is_core_of = E19
-							}
-							E19 = {
-								transfer_state = PREV
-							}
+						ETH = {
+							transfer_state = PREV
+						}
+					} 
+					every_state = {
+						limit = {
+							is_core_of = E00
+						}
+						E00 = {
+							transfer_state = PREV
 						}
 					}
-					
-					E20 = {
-						every_state = {
-							limit = {
-								is_core_of = E20
-							}
-							E20 = {
-								transfer_state = PREV
-							}
+					every_state = {
+						limit = {
+							is_core_of = E01
+						}
+						E01 = {
+							transfer_state = PREV
 						}
 					}
-					
-					E21 = {
-						every_state = {
-							limit = {
-								is_core_of = E21
-							}
-							E21 = {
-								transfer_state = PREV
-							}
+					every_state = {
+						limit = {
+							is_core_of = E02
+						}
+						E02 = {
+							transfer_state = PREV
 						}
 					}
-					
-					E22 = {
-						every_state = {
-							limit = {
-								is_core_of = E22
-							}
-							E22 = {
-								transfer_state = PREV
-							}
+					every_state = {
+						limit = {
+							is_core_of = E03
+						}
+						E03 = {
+							transfer_state = PREV
 						}
 					}
-					
-					E23 = {
-						every_state = {
-							limit = {
-								is_core_of = E23
-							}
-							E23 = {
-								transfer_state = PREV
-							}
+					every_state = {
+						limit = {
+							is_core_of = E04
+						}
+						E04 = {
+							transfer_state = PREV
 						}
 					}
-					
-					E24 = {
-						every_state = {
-							limit = {
-								is_core_of = E24
-							}
-							E24 = {
-								transfer_state = PREV
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = E05
+								state = 6862
 							}
 						}
-					}
-					
-					E25 = {
-						every_state = {
-							limit = {
-								is_core_of = E25
-							}
-							E25 = {
-								transfer_state = PREV
-							}
+						E05 = {
+							transfer_state = PREV
 						}
 					}
-					
+					every_state = {
+						limit = {
+							is_core_of = E06
+						}
+						E06 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E07
+						}
+						E07 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E08
+						}
+						E08 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E09
+						}
+						E09 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E10
+						}
+						E10 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E11
+						}
+						E11 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E12
+						}
+						E12 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E13
+						}
+						E13 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E14
+						}
+						E14 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E15
+						}
+						E15 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E17
+						}
+						E17 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E18
+						}
+						E18 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E19
+						}
+						E19 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E20
+						}
+						E20 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E21
+						}
+						E21 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E22
+						}
+						E22 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E23
+						}
+						E23 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E24
+						}
+						E24 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = E25
+						}
+						E25 = {
+							transfer_state = PREV
+						}
+					}
 					ERI = {
 						transfer_state = 9806
 						transfer_state = 10484
 						transfer_state = 12193
-						
 						set_politics = {
 							ruling_party = democratic_monarchism
-							elections_allowed = no
-							last_election = "1836.1.1"
-							election_frequency = 48
 						}
-						
-						set_popularities = {
-							democratic_monarchism = 100
-						}
-						
-						set_cosmetic_tag = ERI
+						drop_cosmetic_tag = yes
 					}
-					
 					AFA = {
 						transfer_state = 1553
 						transfer_state = 2333
@@ -3039,213 +2938,157 @@ focus_tree = {
 						transfer_state = 17082
 						transfer_state = 17116
 						transfer_state = 17117
-						
 						set_politics = {
 							ruling_party = centrist_republic
-							elections_allowed = no
-							last_election = "1836.1.1"
-							election_frequency = 48
 						}
-						
-						set_popularities = {
-							centrist_republic = 100
-						}
-						
 						set_cosmetic_tag = AFA_OTTO
-						
-						every_state = {
-							limit = {
-								is_owned_by = AFA
-							}
-							AFA = {
-								add_state_core = PREV
-							}
+					}
+					every_state = {
+						limit = {
+							is_core_of = GMM
+						}
+						GMM = {
+							transfer_state = PREV
 						}
 					}
-					
-					GMM = {
-						every_state = {
-							limit = {
-								is_core_of = GMM
-							}
-							GMM = {
-								transfer_state = PREV
-							}
-						}
-					}
-					
-					GM2 = {
-						add_state_core = 17096
-						
-						every_state = {
-							limit = {
+					every_state = {
+						limit = {
+							OR = {
 								is_core_of = GM2
-							}
-							GM2 = {
-								transfer_state = PREV
+								state = 17096
 							}
 						}
+						GM2 = {
+							transfer_state = PREV
+						}
 					}
-					
-					GLE = {
-						add_state_core = 559
-						add_state_core = 5305
-						add_state_core = 5306
-						add_state_core = 8114
-						add_state_core = 8115
-						add_state_core = 15448
-						add_state_core = 17690
-						add_state_core = 17695
-						add_state_core = 17696
-						add_state_core = 17697
-						
-						every_state = {
-							limit = {
+					every_state = {
+						limit = {
+							OR = {
 								is_core_of = GLE
-							}
-							GLE = {
-								transfer_state = PREV
-							}
-						}
-					}
-					
-					GRA = {
-						every_state = {
-							limit = {
-								is_core_of = GRA
-							}
-							GRA = {
-								transfer_state = PREV
+								is_claimed_by = GLE
+								state = 559
+								state = 5305
+								state = 5306
+								state = 8114
+								state = 8115
+								state = 15448
+								state = 17690
+								state = 17695
+								state = 17696
+								state = 17697
 							}
 						}
+						GLE = {
+							transfer_state = PREV
+						}
 					}
-					
-					HAR = {
-						add_state_core = 7850
-						add_state_core = 13147
-						add_state_core = 17105
-						
-						every_state = {
-							limit = {
+					every_state = {
+						limit = {
+							is_core_of = GRA
+						}
+						GRA = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
 								is_core_of = HAR
-							}
-							HAR = {
-								transfer_state = PREV
+								state = 7850
+								state = 13147
+								state = 17105
 							}
 						}
-						
-						set_politics = {
-							ruling_party = monarchism
-							elections_allowed = no
-							last_election = "1836.1.1"
-							election_frequency = 48
-						}
-						
-						set_popularities = {
-							monarchism = 100
+						HAR = {
+							transfer_state = PREV
+							set_politics = {
+								ruling_party = monarchism
+							}
 						}
 					}
-					
-					HOB = {
-						add_state_core = 17699
-						
-						every_state = {
-							limit = {
+					every_state = {
+						limit = {
+							OR = {
 								is_core_of = HOB
-							}
-							HOB = {
-								transfer_state = PREV
+								state = 17699
 							}
 						}
-					}
-					
-					JIM = {
-						every_state = {
-							limit = {
-								is_core_of = JIM
-							}
-							JIM = {
-								transfer_state = PREV
-							}
+						HOB = {
+							transfer_state = PREV
 						}
 					}
-					
-					LME = {
-						add_state_core = 17095
-						
-						every_state = {
-							limit = {
-								is_core_of = LME
+					every_state = {
+						limit = {
+							is_core_of = JIM
+						}
+						JIM = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							AND = {
+								OR = {
+									is_core_of = LME
+									state = 17095
+								}
 								NOT = {
-								is_core_of = E17
+									is_core_of = E17
 								}
 							}
-							LME = {
-								transfer_state = PREV
-							}
+						}
+						LME = {
+							transfer_state = PREV
 						}
 					}
-					
-					JUB = {
-						every_state = {
-							limit = {
-								is_claimed_by = JUB
-								NOT = {
+					every_state = {
+						limit = {
+							is_claimed_by = JUB
+							NOT = {
 								is_core_of = GLE
-								}
-							}
-							
-							JUB = {
-								add_state_core = PREV
 							}
 						}
-						
-					}
-					
-					MAJ = {
-						every_state = {
-							limit = {
-								is_core_of = MAJ
-							}
-							MAJ = {
-								transfer_state = PREV
-							}
+						JUB = {
+							add_state_core = PREV
 						}
 					}
-					
+					every_state = {
+						limit = {
+							is_core_of = MAJ
+						}
+						MAJ = {
+							transfer_state = PREV
+						}
+					}
 					ORM = {
-						add_state_core = 5258
-						add_state_core = 5322
-						add_state_core = 6865
-						add_state_core = 7850
-						add_state_core = 7932
-						add_state_core = 9260
-						add_state_core = 9794
-						add_state_core = 9799
-						add_state_core = 10367
-						add_state_core = 13144
-						add_state_core = 13156
-						add_state_core = 13162
-						add_state_core = 13173
-						add_state_core = 13176
-						remove_state_core = 17103
-						add_state_core = 17109
-						add_state_core = 17097
-						
 						every_state = {
 							limit = {
-								is_core_of = SNN
-							}
-							ORM = {
-								add_state_core = PREV
-							}
-						}
-						
-						every_state = {
-							limit = {
-								is_core_of = ORM
+								OR = {
+									is_core_of = ORM
+									is_core_of = SNN
+									state = 5258
+									state = 5322
+									state = 6865
+									state = 7850
+									state = 7932
+									state = 9260
+									state = 9794
+									state = 9799
+									state = 10367
+									state = 13144
+									state = 13156
+									state = 13162
+									state = 13173
+									state = 13176
+									state = 17109
+									state = 17097
+								}
 								NOT = {
+									state = 17103
 									is_core_of = ASS
+									is_core_of = E00
+									is_core_of = E01
 									is_core_of = E02
 									is_core_of = E03
 									is_core_of = E04
@@ -3253,7 +3096,11 @@ focus_tree = {
 									is_core_of = E08
 									is_core_of = E09
 									is_core_of = E10
+									is_core_of = E11
 									is_core_of = E12
+									is_core_of = E13
+									is_core_of = E14
+									is_core_of = E15
 									is_core_of = GMM
 									is_core_of = GM2
 									is_core_of = GLE
@@ -3270,95 +3117,49 @@ focus_tree = {
 								transfer_state = PREV
 							}
 						}
-						
 						set_politics = {
 							ruling_party = anarchism_ideology
-							elections_allowed = no
-							last_election = "1836.1.1"
-							election_frequency = 48
 						}
-						
-						set_popularities = {
-							anarchism_ideology = 100
-						}
-						
 						set_cosmetic_tag = TRIBAL_BROWN
 					}
-					
 					SMI = {
-							remove_state_core = 7850
+						remove_state_core = 7850
 					}
-					
-					
 					SNN = {
 						transfer_state = 13161
 						transfer_state = 13163
-						
 						set_politics = {
 							ruling_party = democratic_monarchism
-							elections_allowed = no
-							last_election = "1836.1.1"
-							election_frequency = 48
-						}
-						
-						set_popularities = {
-							democratic_monarchism = 100
 						}
 					}
-					
-					SOM = {
-						add_state_core = 5003
-						add_state_core = 7933
-						add_state_core = 7934
-						add_state_core = 9795
-						add_state_core = 10624
-						
-						every_state = {
-							limit = {
-								OR = {
+					every_state = {
+						limit = {
+							OR = {
 								is_core_of = SMI
 								is_core_of = SOM
 								is_core_of = JUB
-								}
-								NOT = {
-								is_core_of = ASS
-								is_core_of = GLE
-								is_core_of = HOB
-								is_core_of = MAJ
-								}
+								state = 5003
+								state = 7933
+								state = 7934
+								state = 9795
+								state = 10624
 							}
-							SOM = {
-								transfer_state = PREV
+							NOT = {
+								is_owned_by = ASS
+								is_owned_by = GLE
+								is_owned_by = HOB
+								is_owned_by = MAJ
 							}
 						}
-						
-						set_politics = {
-							ruling_party = anarchism_ideology
-							elections_allowed = no
-							last_election = "1836.1.1"
-							election_frequency = 48
+						SOM = {
+							transfer_state = PREV
+							set_politics = {
+								ruling_party = anarchism_ideology
+							}
+							set_cosmetic_tag = TRIBAL_BROWN
 						}
-						
-						set_popularities = {
-							anarchism_ideology = 100
-						}
-						
-						set_cosmetic_tag = TRIBAL_BROWN
 					}
-					
 					SML = {
-						every_state = {
-							limit = {
-								is_core_of = SML
-								NOT = {
-								is_owned_by = SML
-								}
-							}
-							SML = {
-								remove_state_core = PREV
-							}
-						}
-						
 						transfer_state = 269
 						transfer_state = 1552
 						transfer_state = 1614
@@ -3366,93 +3167,65 @@ focus_tree = {
 						transfer_state = 5318
 						transfer_state = 7854
 						transfer_state = 17179
-						
 						set_politics = {
 							ruling_party = democratic_monarchism
-							elections_allowed = no
-							last_election = "1836.1.1"
-							election_frequency = 48
 						}
-						
-						set_popularities = {
-						democratic_monarchism = 100
-						}
-						
-						set_cosmetic_tag = SML
-						
+						drop_cosmetic_tag = yes
 					}
-					
-					TIG = {
-						every_state = {
-							limit = {
-								is_core_of = TIG
-							}
-							TIG = {
-								remove_state_core = PREV
-							}
-						}
-						
-						add_state_core = 2374
-						add_state_core = 4100
-						add_state_core = 4101
-						add_state_core = 4102
-						add_state_core = 9694
-						add_state_core = 9695
-						add_state_core = 9696
-						add_state_core = 10469
-						add_state_core = 15443
-						add_state_core = 15444
-						add_state_core = 15450
-						add_state_core = 15454
-						add_state_core = 17083
-						add_state_core = 17088
-						add_state_core = 17089
-						add_state_core = 17113
-						add_state_core = 17114
-						add_state_core = 17145
-						add_state_core = 17146
-						
-						every_state = {
-							limit = {
-								is_core_of = TIG
-							}
-							TIG = {
-								transfer_state = PREV
+					every_state = {
+						limit = {
+							OR = {
+								state = 2374
+								state = 4100
+								state = 4101
+								state = 4102
+								state = 9050
+								state = 9694
+								state = 9696
+								state = 10469
+								state = 15443
+								state = 15444
+								state = 15450
+								state = 15454
+								state = 17083
+								state = 17088
+								state = 17089
+								state = 17113
+								state = 17114
+								state = 17145
+								state = 17146
 							}
 						}
-						
-						set_politics = {
-							ruling_party = democratic_monarchism
-							elections_allowed = no
-							last_election = "1836.1.1"
-							election_frequency = 48
-						}
-						
-						set_popularities = {
-						democratic_monarchism = 100
+						TIG = {
+							transfer_state = PREV
+							set_politics = {
+								ruling_party = democratic_monarchism
+							}
 						}
 					}
-					
 					TNA = {
-						add_state_core = 6854
-						add_state_core = 9800
-						
 						every_state = {
 							limit = {
-								is_core_of = TNA
+								OR = {
+									is_core_of = TNA
+									state = 6854
+									state = 9800
+								}
 							}
 							TNA = {
 								transfer_state = PREV
 							}
 						}
 					}
-					
 					WAG = {
-							remove_state_core = 17084
-						
 						every_state = {
 							limit = {
-								is_core_of = WAG
+								AND = {
+									is_core_of = WAG
+									NOT = {
+										state = 17084
+									}
+								}
 							}
 							WAG = {
 								transfer_state = PREV
