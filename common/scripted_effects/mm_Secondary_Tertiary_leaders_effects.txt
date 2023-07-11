@@ -1,3 +1,8 @@
+secondary_tertiary_leader_enabled_effect = {
+	secondary_leader_enabled_effect = yes
+	tertiary_leader_enabled_effect = yes
+}
+
 secondary_leader_enabled_effect = {
 	if = {
 		limit = {
@@ -835,6 +840,7 @@ secondary_leader_enabled_effect = {
 					AND = {
 						has_government = neutrality
 						has_start_date < 2022.01.01
+						has_start_date > 1915.01.01
 					}
 					AND = {
 						has_government = liberal_republic

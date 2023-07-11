@@ -7143,12 +7143,13 @@ focus_tree = {
 			}
 		}
 			
-			hidden_effect = {
-				if = {
-					limit = { UCL = {
-					exists = no }
-			}
-					
+		hidden_effect = {
+			if = {
+				limit = { 
+					UCL = {
+						exists = no 
+					}
+				}
 					#Province names
 					set_province_name = {
 						id = 3151 name = "Sankt-Peterbúrg"
@@ -8267,6 +8268,9 @@ focus_tree = {
 			set_popularities = {
 				theocratic = 100
 			}
+			
+			clr_country_flag = has_secondary_leader
+			clr_country_flag = has_tertiary_leader
 		}
 		every_state = {
 			limit = {
@@ -9197,6 +9201,8 @@ focus_tree = {
 						traits = {
 						}
 					}
+					
+					set_country_flag = has_secondary_leader
 				}
 				every_state = {
 					limit = {
@@ -9320,6 +9326,8 @@ focus_tree = {
 						traits = {
 						}
 					}
+					
+					clr_country_flag = has_secondary_leader
 				}
 			}
 		}
