@@ -323,6 +323,21 @@ secondary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
+				tag = ROM
+				OR = {
+					AND = {
+						has_government = anocratic_monarchism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
 				tag = MOR
 				OR = {
 					AND = {
@@ -826,7 +841,10 @@ secondary_leader_enabled_effect = {
 			AND = {
 				tag = PRC
 				OR = {
-					has_government = vanguardism
+					AND = {
+						has_government = vanguardism
+						has_start_date > 1935.01.01
+					}
 				}
 			}
 		}
@@ -845,6 +863,36 @@ secondary_leader_enabled_effect = {
 					AND = {
 						has_government = liberal_republic
 						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = MON
+				OR = {
+					AND = {
+						has_government = vanguardism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = TAN
+				OR = {
+					AND = {
+						has_government = vanguardism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
 					}
 				}
 			}
@@ -1126,6 +1174,36 @@ tertiary_leader_enabled_effect = {
 				AND = {
 					has_government = vanguardism
 					has_start_date < 2022.01.01
+				}
+			}
+		}
+		set_country_flag = has_tertiary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = MON
+				OR = {
+					AND = {
+						has_government = vanguardism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_tertiary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = TAN
+				OR = {
+					AND = {
+						has_government = vanguardism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
 				}
 			}
 		}
