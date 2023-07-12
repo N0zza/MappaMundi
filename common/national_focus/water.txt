@@ -2643,7 +2643,6 @@ focus_tree = {
 									state = 13143
 									state = 13144
 									state = 13146
-									state = 17103
 									state = 17109
 									state = 17115
 								}
@@ -3081,11 +3080,11 @@ focus_tree = {
 									state = 13162
 									state = 13173
 									state = 13176
+									state = 17103
 									state = 17109
 									state = 17097
 								}
 								NOT = {
-									state = 17103
 									is_core_of = ASS
 									is_core_of = E00
 									is_core_of = E01
@@ -3235,487 +3234,449 @@ focus_tree = {
 					
 					# North Africa
 					
-					SGR = { # Tribes put before the countries for easier coding shit
-						transfer_state = 459
-						transfer_state = 3427
-						transfer_state = 3428
-						transfer_state = 3430
-						transfer_state = 6371
-						transfer_state = 6372
-						transfer_state = 6373
-						transfer_state = 6919
-						transfer_state = 6922
-						transfer_state = 6923
-						transfer_state = 6924
-						transfer_state = 8127
-						transfer_state = 18208
-						transfer_state = 18210
-						
+					SGR = {
 						every_state = {
 							limit = {
-								is_owned_by = SGR
+								OR = {
+									state = 3427
+									state = 3428
+									state = 3430
+									state = 6371
+									state = 6372
+									state = 6373
+									state = 6919
+									state = 6922
+									state = 6923
+									state = 6924
+									state = 8127
+									state = 18208
+									state = 18210
+								}
 							}
 							SGR = {
-								add_state_core = PREV
-							}
-						}
-						
-						set_politics = {
-							ruling_party = anarchism_ideology
-							elections_allowed = no
-							last_election = "1836.1.1"
-							election_frequency = 48
-						}
-						
-						set_popularities = {
-						anarchism_ideology = 100
-						}
-						
-						set_cosmetic_tag = TRIBAL_BROWN
-						
-					}
-					
-					TRB = {
-						add_state_core = 552
-						add_state_core = 854
-						add_state_core = 856
-						add_state_core = 857
-						add_state_core = 861
-						add_state_core = 862
-						add_state_core = 1841
-						add_state_core = 2153
-						add_state_core = 2216
-						add_state_core = 2287
-						add_state_core = 2745
-						add_state_core = 2875
-						add_state_core = 3882
-						add_state_core = 4999
-						add_state_core = 5261
-						add_state_core = 5785
-						add_state_core = 6048
-						add_state_core = 6049
-						add_state_core = 6050
-						add_state_core = 6051
-						add_state_core = 6052
-						add_state_core = 6053
-						add_state_core = 6054
-						add_state_core = 6055
-						add_state_core = 6056
-						add_state_core = 6057
-						add_state_core = 6058
-						add_state_core = 6059
-						add_state_core = 6061
-						add_state_core = 6062
-						add_state_core = 6063
-						add_state_core = 6064
-						add_state_core = 6065
-						add_state_core = 6066
-						add_state_core = 6067
-						add_state_core = 6365
-						add_state_core = 6388
-						add_state_core = 6389
-						add_state_core = 6390
-						add_state_core = 6391
-						add_state_core = 6392
-						add_state_core = 6393
-						add_state_core = 6395
-						add_state_core = 6396
-						add_state_core = 6397
-						add_state_core = 6398
-						add_state_core = 6399
-						add_state_core = 6746
-						add_state_core = 6760
-						add_state_core = 6766
-						add_state_core = 6767
-						add_state_core = 6768
-						add_state_core = 6769
-						add_state_core = 6869
-						add_state_core = 6870
-						add_state_core = 6871
-						add_state_core = 6872
-						add_state_core = 6899
-						add_state_core = 6901
-						add_state_core = 6902
-						add_state_core = 6903
-						add_state_core = 6904
-						add_state_core = 6927
-						add_state_core = 6928
-						add_state_core = 6929
-						add_state_core = 6930
-						add_state_core = 6931
-						add_state_core = 6932
-						add_state_core = 6933
-						add_state_core = 6953
-						add_state_core = 7255
-						add_state_core = 7659
-						add_state_core = 7663
-						add_state_core = 7664
-						add_state_core = 7832
-						add_state_core = 8136
-						add_state_core = 8137
-						add_state_core = 8140
-						add_state_core = 9047
-						add_state_core = 9876
-						add_state_core = 9877
-						add_state_core = 9879
-						add_state_core = 9891
-						add_state_core = 9955
-						add_state_core = 10004
-						add_state_core = 10006
-						add_state_core = 10009
-						add_state_core = 10011
-						add_state_core = 10151
-						add_state_core = 10154
-						add_state_core = 10160
-						add_state_core = 10165
-						add_state_core = 10166
-						add_state_core = 10167
-						add_state_core = 10169
-						add_state_core = 10171
-						add_state_core = 10172
-						add_state_core = 10173
-						add_state_core = 10174
-						add_state_core = 10176
-						add_state_core = 10178
-						add_state_core = 10191
-						add_state_core = 10307
-						add_state_core = 10308
-						add_state_core = 10349
-						add_state_core = 10353
-						add_state_core = 10354
-						add_state_core = 10364
-						add_state_core = 12102
-						add_state_core = 12103
-						add_state_core = 12104
-						add_state_core = 12105
-						add_state_core = 12115
-						add_state_core = 12116
-						add_state_core = 12117
-						add_state_core = 12118
-						add_state_core = 12122
-						add_state_core = 12123
-						add_state_core = 12127
-						add_state_core = 12128
-						add_state_core = 12138
-						add_state_core = 12147
-						add_state_core = 12148
-						add_state_core = 12150
-						add_state_core = 12151
-						add_state_core = 12152
-						add_state_core = 12153
-						add_state_core = 12154
-						add_state_core = 12155
-						add_state_core = 12156
-						add_state_core = 12683
-						add_state_core = 13069
-						add_state_core = 15077
-						add_state_core = 15078
-						add_state_core = 15079
-						add_state_core = 15080
-						add_state_core = 15081
-						add_state_core = 15082
-						add_state_core = 15746
-						add_state_core = 15747
-						add_state_core = 15833
-						add_state_core = 15987
-						add_state_core = 15988
-						add_state_core = 15989
-						add_state_core = 15990
-						add_state_core = 15991
-						add_state_core = 15993
-						add_state_core = 17880
-						add_state_core = 17877
-						add_state_core = 17878
-						add_state_core = 17879
-						add_state_core = 18076
-						add_state_core = 18077
-						add_state_core = 18078
-						add_state_core = 18079
-						add_state_core = 18080
-						add_state_core = 18081
-						add_state_core = 18082
-						add_state_core = 18083
-						add_state_core = 18084
-						add_state_core = 18095
-						add_state_core = 18109
-						add_state_core = 18110
-						add_state_core = 18111
-						add_state_core = 18112
-						add_state_core = 18114
-						add_state_core = 18115
-						add_state_core = 18116
-						add_state_core = 18117
-						add_state_core = 18118
-						add_state_core = 18124
-						add_state_core = 18136
-						add_state_core = 18168
-						add_state_core = 18169
-						add_state_core = 18179
-						add_state_core = 18180
-						add_state_core = 18181
-						add_state_core = 18182
-						add_state_core = 18183
-						every_state = {
-							limit = {
-								is_core_of = TRB
-							}
-							TRB = {
 								transfer_state = PREV
 							}
 						}
+						set_politics = {
+							ruling_party = anarchism_ideology
+						}
+						set_cosmetic_tag = TRIBAL_BROWN
 					}
-					TRB = {
-						transfer_state = 6941
-						transfer_state = 6940
-						transfer_state = 1917
-						transfer_state = 6951
-						transfer_state = 6895
-						transfer_state = 3346
-						transfer_state = 10081
+					every_state = {
+						limit = {
+							OR = {
+								state = 552
+								state = 854
+								state = 856
+								state = 857
+								state = 861
+								state = 862
+								state = 1841
+								state = 2153
+								state = 2216
+								state = 2287
+								state = 2745
+								state = 2875
+								state = 3882
+								state = 4999
+								state = 5261
+								state = 5785
+								state = 6048
+								state = 6049
+								state = 6050
+								state = 6051
+								state = 6052
+								state = 6053
+								state = 6054
+								state = 6055
+								state = 6056
+								state = 6057
+								state = 6058
+								state = 6059
+								state = 6061
+								state = 6062
+								state = 6063
+								state = 6064
+								state = 6065
+								state = 6066
+								state = 6067
+								state = 6365
+								state = 6388
+								state = 6389
+								state = 6390
+								state = 6391
+								state = 6392
+								state = 6393
+								state = 6395
+								state = 6396
+								state = 6397
+								state = 6398
+								state = 6399
+								state = 6746
+								state = 6760
+								state = 6766
+								state = 6767
+								state = 6768
+								state = 6769
+								state = 6869
+								state = 6870
+								state = 6871
+								state = 6872
+								state = 6899
+								state = 6901
+								state = 6902
+								state = 6903
+								state = 6904
+								state = 6927
+								state = 6928
+								state = 6929
+								state = 6930
+								state = 6931
+								state = 6932
+								state = 6933
+								state = 6953
+								state = 7255
+								state = 7659
+								state = 7663
+								state = 7664
+								state = 7832
+								state = 8136
+								state = 8137
+								state = 8140
+								state = 9047
+								state = 9876
+								state = 9877
+								state = 9879
+								state = 9891
+								state = 9955
+								state = 10004
+								state = 10006
+								state = 10009
+								state = 10011
+								state = 10151
+								state = 10154
+								state = 10160
+								state = 10165
+								state = 10166
+								state = 10167
+								state = 10169
+								state = 10171
+								state = 10172
+								state = 10173
+								state = 10174
+								state = 10176
+								state = 10178
+								state = 10191
+								state = 10307
+								state = 10308
+								state = 10349
+								state = 10353
+								state = 10354
+								state = 10364
+								state = 12102
+								state = 12103
+								state = 12104
+								state = 12105
+								state = 12115
+								state = 12116
+								state = 12117
+								state = 12118
+								state = 12122
+								state = 12123
+								state = 12127
+								state = 12128
+								state = 12138
+								state = 12147
+								state = 12148
+								state = 12150
+								state = 12151
+								state = 12152
+								state = 12153
+								state = 12154
+								state = 12155
+								state = 12156
+								state = 12683
+								state = 13069
+								state = 15077
+								state = 15078
+								state = 15079
+								state = 15080
+								state = 15081
+								state = 15082
+								state = 15746
+								state = 15747
+								state = 15833
+								state = 15987
+								state = 15988
+								state = 15989
+								state = 15990
+								state = 15991
+								state = 15993
+								state = 17880
+								state = 17877
+								state = 17878
+								state = 17879
+								state = 18076
+								state = 18077
+								state = 18078
+								state = 18079
+								state = 18080
+								state = 18081
+								state = 18082
+								state = 18083
+								state = 18084
+								state = 18095
+								state = 18109
+								state = 18110
+								state = 18111
+								state = 18112
+								state = 18114
+								state = 18115
+								state = 18116
+								state = 18117
+								state = 18118
+								state = 18124
+								state = 18136
+								state = 18168
+								state = 18169
+								state = 18179
+								state = 18180
+								state = 18181
+								state = 18182
+								state = 18183
+								state = 6941
+								state = 6940
+								state = 1917
+								state = 6951
+								state = 6895
+								state = 3346
+								state = 10081
+							}
+						}
+						TRB = {
+							transfer_state = PREV
+						}
 					}
-					WTR = { #:troll:
+					WTR = {
 						transfer_state = 8696
 					}
-					KBY = {
-						every_state = {
-							limit = {
-								is_core_of = KBY
-							}
-							KBY = {
-								transfer_state = PREV
-							}
+					every_state = {
+						limit = {
+							is_core_of = KBY
 						}
-						set_politics = {
-							ruling_party = anarchism_ideology
+						KBY = {
+							transfer_state = PREV
+							set_politics = {
+								ruling_party = anarchism_ideology
+							}
 						}
 					}
-					CAG = {
-						remove_state_core = 3433
-						add_state_core = 3438
-						add_state_core = 3439
-						add_state_core = 3443
-						add_state_core = 3447
-						add_state_core = 6376
-						add_state_core = 6377
-						add_state_core = 7618
-						add_state_core = 7646
-						add_state_core = 7648
-						add_state_core = 7649
-						add_state_core = 7651
-						add_state_core = 3431
-						add_state_core = 1458
-						add_state_core = 3429
-						add_state_core = 3430
-						add_state_core = 1013
-						add_state_core = 3428
-						remove_state_core = 13591
-						every_state = {
-							limit = {
-								is_core_of = CAG
-							}
-							CAG = {
-								transfer_state = PREV
+					every_state = {
+						limit = {
+							OR = {
+								state = 3438
+								state = 3439
+								state = 3443
+								state = 3447
+								state = 6376
+								state = 6377
+								state = 7618
+								state = 7646
+								state = 7648
+								state = 7649
+								state = 7651
+								state = 3431
+								state = 1458
+								state = 3429
+								state = 3430
+								state = 1013
+								state = 3428
+								state = 18911
+								state = 18912
+								AND = {
+									is_core_of = CAG
+									NOT = {
+										state = 3433
+										state = 13591
+									}
+								}
 							}
 						}
-						set_cosmetic_tag = CAG_Mascara
+						CAG = {
+							transfer_state = PREV
+							set_cosmetic_tag = CAG_Mascara
+						}
 					}
-					
 					CNT = {
 						transfer_state = 460
 						transfer_state = 3426
 						transfer_state = 3441
 						transfer_state = 3442
-						transfer_state = 10212
 						transfer_state = 3446
+						transfer_state = 10212
+						transfer_state = 18902
+						transfer_state = 18906
+						transfer_state = 18907
+						transfer_state = 18908
+						transfer_state = 18909
+						transfer_state = 18910
 						set_politics = {
 							ruling_party = stratocratic_monarchism
 						}
 						set_cosmetic_tag = CNT_OTTO
 					}
-					
-					DRF = {
-						every_state = {
-							limit = {
-								is_core_of = DRF
-							}
-							DRF = {
-								transfer_state = PREV
-							}
+					every_state = {
+						limit = {
+							is_core_of = DRF
 						}
-					}
-					
-					EGY = {
-						add_state_core = 551
-						add_state_core = 643
-						add_state_core = 1037
-						add_state_core = 1561
-						add_state_core = 3867
-						add_state_core = 8106
-						add_state_core = 9093
-						add_state_core = 10361
-						add_state_core = 10472
-						add_state_core = 10473
-						add_state_core = 10474
-						add_state_core = 10475
-						add_state_core = 10478
-						add_state_core = 10479
-						add_state_core = 10480
-						add_state_core = 10488
-						add_state_core = 10500
-						add_state_core = 12108
-						add_state_core = 12112
-						add_state_core = 12114
-						add_state_core = 12124
-						add_state_core = 12126
-						add_state_core = 12162
-						add_state_core = 12163
-						add_state_core = 12164
-						add_state_core = 12165
-						add_state_core = 12166
-						add_state_core = 12167
-						add_state_core = 12175
-						add_state_core = 12176
-						add_state_core = 12177
-						add_state_core = 12178
-						add_state_core = 12179
-						add_state_core = 12180
-						add_state_core = 12181
-						add_state_core = 12200
-						add_state_core = 12205
-						
-						every_state = {
-							limit = {
-							is_core_of = TRB
-						}
-							EGY = {
-							remove_state_core = PREV
-							}
-						}
-						
-						every_state = {
-							limit = {
-							is_core_of = EGY
-						}
-							EGY = {
+						DRF = {
 							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								state = 551
+								state = 643
+								state = 1037
+								state = 1561
+								state = 3867
+								state = 8106
+								state = 9093
+								state = 10361
+								state = 10472
+								state = 10473
+								state = 10474
+								state = 10475
+								state = 10478
+								state = 10479
+								state = 10480
+								state = 10488
+								state = 10500
+								state = 12108
+								state = 12112
+								state = 12114
+								state = 12124
+								state = 12126
+								state = 12162
+								state = 12163
+								state = 12164
+								state = 12165
+								state = 12166
+								state = 12167
+								state = 12175
+								state = 12176
+								state = 12177
+								state = 12178
+								state = 12179
+								state = 12180
+								state = 12181
+								state = 12200
+								state = 12205
 							}
 						}
-						
-						set_cosmetic_tag = EGY_OTTO
+						EGY = {
+							transfer_state = PREV
+							set_cosmetic_tag = EGY_OTTO
+						}
 					}
-					
 					FRA = {
-						add_state_core = 13591
 						transfer_state = 13591
 					}
-					
 					LBA = {
 						set_politics = {
 							ruling_party = stratocratic_monarchism
 						}
 						set_cosmetic_tag = LBA_OTTO
 					}
-					
-					MCS = {
-							remove_state_core = 459
-							remove_state_core = 1458
-							remove_state_core = 3428
-							remove_state_core = 3429
-							remove_state_core = 3430
-							remove_state_core = 3431
-							remove_state_core = 3439
-							add_state_core = 7618
-							add_state_core = 7619
-							add_state_core = 7647
-							remove_state_core = 7649
-							remove_state_core = 7651
-							remove_state_core = 13590
-						
-						every_state = {
-							limit = {
-								is_core_of = MCS
-							}
-							MCS = {
-								transfer_state = PREV
-							}
-						}
-						
-						set_cosmetic_tag = MCS_Ouled_Nail
-					}
-					
-					MOR = {
-						
-						every_state = {
-							limit = {
-								is_core_of = MOR
-								NOT = {
-									is_core_of = ARR
-									is_core_of = FRA
-									is_owned_by = TRB
+					every_state = {
+						limit = {
+							OR = {
+								state = 7618
+								state = 7619
+								state = 7647
+								AND = {
+									is_core_of = MCS
+									NOT = {
+										state = 459
+										state = 1458
+										state = 3428
+										state = 3429
+										state = 3430
+										state = 3431
+										state = 3439
+										state = 7649
+										state = 7651
+										state = 13590
+									}
 								}
 							}
-							MOR = {
-								transfer_state = PREV
-							}
+						}
+						MCS = {
+							transfer_state = PREV
+							set_cosmetic_tag = MCS_Ouled_Nail
 						}
 					}
-					
-					SBA = {
-						remove_state_core = 7619
-						remove_state_core = 7647
-						add_state_core = 10214
-						add_state_core = 10215
-						every_state = {
-							limit = {
-								is_core_of = SBA
-							}
-							SBA = {
-								transfer_state = PREV
+					every_state = {
+						limit = {
+							is_core_of = MOR
+							NOT = {
+								is_core_of = ARR
+								is_core_of = FRA
+								is_owned_by = TRB
 							}
 						}
+						MOR = {
+							transfer_state = PREV
+						}
 					}
-					
-					SSU = {
-						add_state_core = 4737
-						add_state_core = 6854
-						add_state_core = 9796
-						add_state_core = 13162
-						add_state_core = 13169
-						add_state_core = 13173
-						add_state_core = 17097
-						every_state = {
-							limit = {
-									OR = {
-										is_core_of = SSU
-										is_owned_by = UGA
-									}
+					every_state = {
+						limit = {
+							OR = {
+								state = 10214
+								state = 10215
+								AND = {
+									is_core_of = SBA
 									NOT = {
-										is_core_of = E25
-										is_core_of = TNA
-										state = 5218
-										state = 5238
-										state = 6552
+										state = 7619
+										state = 7647
 									}
-							}
-							SSU = {
-								transfer_state = PREV
+								}
 							}
 						}
-						
-						set_politics = {
-							ruling_party = anarchism_ideology
-							elections_allowed = no
-							last_election = "1836.1.1"
-							election_frequency = 48
+						SBA = {
+							transfer_state = PREV
 						}
-						
-						set_popularities = {
-							anarchism_ideology = 100
-						}
-						
-						set_cosmetic_tag = TRIBAL_BROWN
 					}
-					
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = SSU
+								is_owned_by = UGA
+								state = 4737
+								state = 6854
+								state = 9796
+								state = 13162
+								state = 13169
+								state = 13173
+								state = 17097
+							}
+							NOT = {
+								is_core_of = E25
+								is_core_of = TNA
+								state = 5218
+								state = 5238
+								state = 6552
+							}
+						}
+						SSU = {
+							transfer_state = PREV
+							set_politics = {
+								ruling_party = anarchism_ideology
+							}
+							set_cosmetic_tag = TRIBAL_BROWN
+						}
+					}
 					TGG = {
 						remove_state_core = 6376
 						remove_state_core = 6377
@@ -5459,7 +5420,7 @@ focus_tree = {
 						transfer_state = 3358
 						set_cosmetic_tag = TRIBAL_BROWN
 						set_politics = {
-						ruling_party = anarchism_ideology
+							ruling_party = anarchism_ideology
 						}
 						set_popularities = {
 							anarchism_ideology = 100
@@ -5485,17 +5446,22 @@ focus_tree = {
 					every_state = {
 						limit = {
 							is_owned_by = TUR
-							OR = {
-								is_core_of = EGY
-								is_core_of = PAL
-								is_core_of = JOR
-								is_core_of = HJZ
-								is_core_of = SYR
-								is_core_of = LEB
-								is_core_of = HTY
-							}
-							NOT = {
-								is_core_of = RJV
+							AND = {
+								OR = {
+									is_core_of = EGY
+									is_core_of = PAL
+									is_core_of = JOR
+									is_core_of = HJZ
+									is_core_of = SYR
+									is_core_of = LEB
+									is_core_of = HTY
+								}
+								NOT = {
+									OR = {
+										is_core_of = RJV
+										is_owned_by = TRB
+									}
+								}
 							}
 						}
 						EGY = {
@@ -5523,7 +5489,7 @@ focus_tree = {
 							transfer_state = 2333
 							set_cosmetic_tag = OTTO_COLONY
 							set_politics = {
-							ruling_party = conservative_monarchism
+								ruling_party = conservative_monarchism
 							}
 						}
 					}
