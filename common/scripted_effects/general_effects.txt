@@ -4,6 +4,7 @@ historic_claims_effect = {
 	cisleithania_claims = yes
 	transleithania_claims = yes
 	roman_empire_claims = yes
+	german_empire_claims = yes
 }
 
 french_louisiana_claims = {
@@ -581,6 +582,41 @@ roman_empire_claims = {
 			}
 		}
 		VCT = {
+			add_state_claim = PREV
+		}
+	}
+}
+
+german_empire_claims = {
+	every_state = {
+		limit = {
+			OR = {
+				AND = {
+					OR = {
+						AND = {
+							is_core_of = RHI
+							is_core_of = BEL
+						}
+						is_core_of = PRE
+					}
+					NOT = {
+						state = 3212
+					}
+				}
+				AND = {
+					OR = {
+						is_core_of = ALC
+						is_claimed_by = ALC
+					}
+					NOT = {
+						state = 12841
+						state = 12842
+					}
+				}
+				state = 3189
+			}
+		}
+		WGR = {
 			add_state_claim = PREV
 		}
 	}
