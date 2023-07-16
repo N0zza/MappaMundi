@@ -33,7 +33,7 @@ secondary_leader_enabled_effect = {
 		}
 		set_country_flag = has_secondary_leader
 	}
-	if = {
+	else_if = {
 		limit = {
 			AND = {
 				tag = MNX
@@ -47,7 +47,7 @@ secondary_leader_enabled_effect = {
 		}
 		set_country_flag = has_secondary_leader
 	}
-	if = {
+	else_if = {
 		limit = {
 			AND = {
 				tag = JSY
@@ -61,7 +61,7 @@ secondary_leader_enabled_effect = {
 		}
 		set_country_flag = has_secondary_leader
 	}
-	if = {
+	else_if = {
 		limit = {
 			AND = {
 				tag = GSY
