@@ -1804,21 +1804,30 @@ on_actions = {
 				every_state = {
 					limit = {
 						OR = {
-						is_core_of = SOV
-						is_owned_by = RUS
-						is_owned_by = KAZ
-						is_owned_by = UZB
-						is_owned_by = UKR
-						}
-						NOT = {
-						is_core_of = TAN
-						is_core_of = FIN
-						is_core_of = LAT
+							AND = {
+								OR = {
+									is_core_of = SOV
+									is_owned_by = RUS
+									is_owned_by = KAZ
+									is_owned_by = UZB
+									is_owned_by = UKR
+								}
+								NOT = {
+									is_core_of = TAN
+									is_core_of = FIN
+									is_core_of = LAT
+								}
+							}
+							is_state = 10375
+							is_state = 10330
+							is_state = 8683
+							is_state = 8681
+							is_state = 8813
 						}
 					}
-				SOV = {
-					transfer_state = PREV
-					add_state_core = PREV
+					SOV = {
+						transfer_state = PREV
+						add_state_core = PREV
 					}
 				}
 			}
