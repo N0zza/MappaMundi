@@ -8888,7 +8888,6 @@ focus_tree = {
 						}
 					}
 					
-					set_country_flag = has_secondary_leader
 				}
 				every_state = {
 					limit = {
@@ -8916,7 +8915,6 @@ focus_tree = {
 						conservative_monarchism = 100
 					}
 					
-					set_country_flag = has_secondary_leader
 				}
 				HUN = {
 					create_country_leader = {
@@ -8933,7 +8931,6 @@ focus_tree = {
 						authoritarian_monarchism = 100
 					}
 					
-					set_country_flag = has_secondary_leader
 				}
 				CRO = {
 					create_country_leader = {
@@ -8950,7 +8947,6 @@ focus_tree = {
 						authoritarian_monarchism = 100
 					}
 					
-					set_country_flag = has_secondary_leader
 				}
 				GAL = {
 					create_country_leader = {
@@ -8967,7 +8963,6 @@ focus_tree = {
 						monarchism = 100
 					}
 					
-					set_country_flag = has_secondary_leader
 				}
 				TUR = {
 					create_country_leader = {
@@ -12825,7 +12820,6 @@ focus_tree = {
 						}
 					}
 					EUR = {
-						set_country_flag = has_secondary_leader
 						set_politics = {
 							ruling_party = democratic
 						}
@@ -13356,7 +13350,6 @@ focus_tree = {
 						set_politics = {
 							ruling_party = centrist_republic
 						}
-						set_country_flag = has_secondary_leader
 						set_cosmetic_tag = EST_2023
 						set_popularities = {
 							socialism_ideology = 9
@@ -13381,7 +13374,6 @@ focus_tree = {
 						}
 					}
 					SLO = {
-						set_country_flag = has_secondary_leader
 						set_politics = {
 							ruling_party = democratic
 						}
@@ -13423,7 +13415,6 @@ focus_tree = {
 					}
 					CZC = {
 						drop_cosmetic_tag = yes
-						set_country_flag = has_secondary_leader
 						set_politics = {
 							ruling_party = democratic
 						}
@@ -13450,12 +13441,7 @@ focus_tree = {
 					}
 					ROM = {
 						set_politics = {
-							ruling_party = democratic
-						}
-						set_party_name = {
-							ideology = democratic
-							name = ROM_democratic_2023_party
-							long_name = ROM_democratic_2023_party_long
+							ruling_party = centrist_republic
 						}
 						set_popularities = {
 							socialism_ideology = 32
@@ -13471,7 +13457,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/ROM/ROM_Iohannis.tga"
 							expire = "1965.1.1"
-							ideology = liberal_conservatism
+							ideology = big_tent
 						}
 					}
 					BUL = {
@@ -13503,7 +13489,6 @@ focus_tree = {
 						}
 					}
 					GRE = {
-						set_country_flag = has_secondary_leader
 						set_politics = {
 							ruling_party = democratic
 						}
@@ -13775,7 +13760,6 @@ focus_tree = {
 						}
 					}
 					BEL = {
-						set_country_flag = has_secondary_leader
 						set_politics = {
 							ruling_party = democratic_monarchism
 						}
@@ -13850,14 +13834,14 @@ focus_tree = {
 						}
 					}
 					ITA = {
-						set_cosmetic_tag = ITA_2023
+						set_cosmetic_tag = ITA_2023_REPUBLIC
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = democratic
 						}
 						set_party_name = {
-							ideology = anocratic_republic
-							name = ITA_anocratic_republic_2023_party
-							long_name = ITA_anocratic_republic_2023_party_long
+							ideology = democratic
+							name = ITA_democratic_2023_party
+							long_name = ITA_democratic_2023_party_long
 						}
 						set_party_name = {
 							ideology = democratic_monarchism
@@ -13878,8 +13862,8 @@ focus_tree = {
 							socialism_ideology = 20
 							liberal_republic = 6
 							centrist_republic = 14.5
-							democratic = 13.5
-							anocratic_republic = 46
+							democratic = 43
+							anocratic_republic = 16.5
 						}
 					}
 					ITA = {
@@ -13888,7 +13872,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/ITA/ITA_Mattarella.tga"
 							expire = "1965.1.1"
-							ideology = right_wing_populism
+							ideology = conrep_national_conservatism
 						}
 						create_country_leader = {
 							name = "Re Aimone del Savoia"
@@ -14008,22 +13992,20 @@ focus_tree = {
 						}
 					}
 					BOS = {
-						set_country_flag = has_secondary_leader
-						set_country_flag = has_tertiary_leader
 						set_politics = {
-							ruling_party = centrist_republic
+							ruling_party = anocratic_republic
 						}
 						set_party_name = {
-							ideology = centrist_republic
-							name = BOS_centrist_republic_2023_party
-							long_name = BOS_centrist_republic_2023_party_long
+							ideology = anocratic_republic
+							name = BOS_anocratic_republic_2023_party
+							long_name = BOS_anocratic_republic_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 17
 							liberal_republic = 14
-							centrist_republic = 26
+							centrist_republic = 12
 							democratic = 24
-							anocratic_republic = 17
+							anocratic_republic = 31
 							republican_fascism = 2
 						}
 					}
@@ -14033,7 +14015,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/BOS/BOS_Cvijanovic.tga"
 							expire = "1965.1.1"
-							ideology = directorial_republic
+							ideology = social_nationalism
 						}
 					}
 					MNT = {
@@ -14283,8 +14265,6 @@ focus_tree = {
 					}
 					SWI = {
 						transfer_state = 19313
-						set_country_flag = has_secondary_leader
-						set_country_flag = has_tertiary_leader
 						set_popularities = {
 							communism = 1
 							socialism_ideology = 19.5
@@ -14298,7 +14278,6 @@ focus_tree = {
 							name = SWI_centrist_republic_2023_party
 							long_name = SWI_centrist_republic_2023_party_long
 						}
-						set_country_flag = has_secondary_leader
 					}
 					SWI = {
 						create_country_leader = {
@@ -14319,7 +14298,6 @@ focus_tree = {
 						}
 					}
 					LUX = {
-						set_country_flag = has_secondary_leader
 						set_politics = {
 							ruling_party = democratic_monarchism
 						}
@@ -14368,7 +14346,6 @@ focus_tree = {
 						}
 					}
 					HOL = {
-						set_country_flag = has_secondary_leader
 						set_politics = {
 							ruling_party = democratic_monarchism
 						}
@@ -14520,8 +14497,6 @@ focus_tree = {
 							liberal_republic = 32
 							centrist_republic = 35
 						}
-						set_country_flag = has_secondary_leader
-						set_country_flag = has_tertiary_leader
 					}
 					SMR = {
 						create_country_leader = {
@@ -14900,7 +14875,6 @@ focus_tree = {
 						}
 					}
 					DPK = {
-						set_country_flag = has_secondary_leader
 						transfer_state = 1786
 						transfer_state = 1792
 						transfer_state = 9701
@@ -15247,7 +15221,6 @@ focus_tree = {
 					}
 					MAL = {
 						release = SGP
-						set_country_flag = has_secondary_leader
 						set_capital = {
 							state = 5567
 							remember_old_capital = no
@@ -15280,7 +15253,6 @@ focus_tree = {
 						}
 					}
 					SGP = {
-						set_country_flag = has_secondary_leader
 						set_politics = {
 							ruling_party = anocratic_republic
 						}
@@ -15406,8 +15378,6 @@ focus_tree = {
 						}
 					}
 					NVI = {
-						set_country_flag = has_secondary_leader
-						set_country_flag = has_tertiary_leader
 						set_politics = {
 							ruling_party = vanguardism
 						}
@@ -15423,7 +15393,6 @@ focus_tree = {
 					}
 					LAO = {
 						drop_cosmetic_tag = yes
-						set_country_flag = has_secondary_leader
 						set_politics = {
 							ruling_party = vanguardism
 						}
@@ -15444,7 +15413,6 @@ focus_tree = {
 						}
 					}
 					CAM = {
-						set_country_flag = has_secondary_leader
 						set_cosmetic_tag = CAM_2023
 						every_owned_state = {
 							do_khmer_renames = yes
@@ -16031,7 +15999,6 @@ focus_tree = {
 						value = 45
 					}
 					BRM = {
-						set_country_flag = has_secondary_leader
 						set_capital = {
 							state = 13206
 							remember_old_capital = no
@@ -16724,7 +16691,6 @@ focus_tree = {
 					
 					SAU = {
 						set_cosmetic_tag = SAU_2023
-						set_country_flag = has_secondary_leader
 						create_country_leader = {
 							name = "Milk Salmān bin ʿAbd al-ʿAzīz bin ʿAbd ar-Raḥman as- Suʿūd"
 							desc = ""
@@ -17120,8 +17086,8 @@ focus_tree = {
 							communism = 10
 							socialism_ideology = 28
 							liberal_republic = 7
-							anocratic_republic = 45
-							neutrality = 1
+							anocratic_republic = 2
+							neutrality = 44
 							republican_fascism = 8
 						}
 					}
@@ -17166,7 +17132,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/TUR/TUR_Harun.tga"
 							expire = "1965.1.1"
-							ideology = libmon
+							ideology = libmon_social_liberalism
 						}
 						create_country_leader = {
 							name = "Cumhurbaşkanı Muharrem İnce"
@@ -17197,11 +17163,11 @@ focus_tree = {
 							ideology = conmon_liberal_conservatism
 						}
 						create_country_leader = {
-							name = "Cumhurbaşkanı Recep Tayyip Erdoğan"
+							name = "Cumhurbaşkanı Sinan Oğan"
 							desc = ""
-							picture = "gfx/leaders/TUR/TUR_Erdogan.tga"
+							picture = "gfx/leaders/TUR/TUR_Oğan.tga"
 							expire = "1965.1.1"
-							ideology = national_conservatism
+							ideology = social_nationalism
 						}
 						create_country_leader = {
 							name = "Padişah Harun"
@@ -17211,11 +17177,11 @@ focus_tree = {
 							ideology = anocmon_national_conservatism
 						}
 						create_country_leader = {
-							name = "Cumhurbaşkanı Sinan Oğan"
+							name = "Cumhurbaşkanı Recep Tayyip Erdoğan"
 							desc = ""
-							picture = "gfx/leaders/TUR/TUR_Oğan.tga"
+							picture = "gfx/leaders/TUR/TUR_Erdogan.tga"
 							expire = "1965.1.1"
-							ideology = kemalism
+							ideology = authoritarian_conservatism
 						}
 						create_country_leader = {
 							name = "Halife Harun"
@@ -17258,6 +17224,20 @@ focus_tree = {
 							picture = "gfx/leaders/TUR/TUR_Yıldırım.tga"
 							expire = "1965.1.1"
 							ideology = neo_nazism
+						}
+						create_country_leader = {
+							name = "Halife Harun"
+							desc = ""
+							picture = "gfx/leaders/TUR/TUR_Harun.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+						}
+						create_country_leader = {
+							name = "Baş Müftü Ali Erbaş"
+							desc = ""
+							picture = "gfx/leaders/TUR/TUR_Erbaş.tga"
+							expire = "1965.1.1"
+							ideology = islamic_theocracy
 						}
 					}
 					NGK = {
@@ -21538,7 +21518,6 @@ focus_tree = {
 						}
 					}
 					CUB = {
-						set_country_flag = has_secondary_leader
 						set_cosmetic_tag = CUB_2023
 						set_politics = {
 							ruling_party = vanguardism
