@@ -5,6 +5,8 @@ historic_claims_effect = {
 	transleithania_claims = yes
 	roman_empire_claims = yes
 	german_empire_claims = yes
+	neukamerun_claims = yes
+	mittelafrika_claims = yes
 }
 
 french_louisiana_claims = {
@@ -617,6 +619,58 @@ german_empire_claims = {
 			}
 		}
 		WGR = {
+			add_state_claim = PREV
+		}
+	}
+}
+
+neukamerun_claims = {
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = NCM
+				is_core_of = CMR
+			}
+		}
+		NKM = {
+			add_state_claim = PREV
+		}
+	}
+}
+
+mittelafrika_claims = {
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = NCM
+				is_core_of = NKM
+				is_core_of = CMR
+				is_core_of = KEN
+				is_core_of = TZN
+				is_core_of = ZAN
+				is_core_of = UGA
+				is_core_of = RUU
+				is_core_of = MLW
+				is_core_of = ZAM
+				is_core_of = NMB
+				is_core_of = COG
+				is_core_of = GAB
+				is_core_of = RCG
+				is_core_of = CAR
+				is_core_of = NGA
+				is_core_of = DAH
+				is_core_of = TOG
+				is_core_of = GHA
+				is_core_of = MAD
+				AND = {
+					is_core_of = CHA
+					NOT = {
+						is_core_of = SD0
+					}
+				}
+			}
+		}
+		MAF = {
 			add_state_claim = PREV
 		}
 	}
