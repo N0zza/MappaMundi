@@ -1437,7 +1437,7 @@ focus_tree = {
 					}
 					ADR = {
 						create_country_leader = {
-							name = "Co-Príncep Episcopal Simó Rojas de Guardiola i Hortoneda, Bisbe d'Urgell"
+							name = "Copríncep Episcopal Simó Rojas de Guardiola i Hortoneda, Bisbe d’Urgell"
 							desc = ""
 							picture = "gfx/leaders/ADR/1836_ADR_Simo.tga"
 							expire = "1965.1.1"
@@ -13524,7 +13524,7 @@ focus_tree = {
 					}
 					GRE = {
 						create_country_leader = {
-							name = "Próedros Katerína Sakellaropoúlou"
+							name = "Próedros Aikateríni Nikoláou Sakellaropoúlou"
 							desc = ""
 							picture = "gfx/leaders/GRE/GRE_Sakellaropoulou.tga"
 							expire = "1965.1.1"
@@ -13538,7 +13538,7 @@ focus_tree = {
 					}
 					MAT = {
 						create_country_leader = {
-							name = "Politikós Dioikitís Thanásis Martínos"
+							name = "Politikós Dioikitís Athanásios Ioánni Martínos"
 							desc = ""
 							picture = "gfx/leaders/MAT/MAT_Thanassis_Martinos.tga"
 							expire = "1965.1.1"
@@ -13767,7 +13767,7 @@ focus_tree = {
 					}
 					ADR = {
 						create_country_leader = {
-							name = "Co-Príncep Episcopal Joan Enric Vives i Sicília"
+							name = "Copríncep Episcopal Joan Enric Vives i Sicília, Bisbe d’Urgell"
 							desc = ""
 							picture = "gfx/leaders/ADR/ADR_Joan.tga"
 							expire = "1965.1.1"
@@ -14223,7 +14223,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/NOR/NOR_Harald_V.tga"
 							expire = "1965.1.1"
-							ideology = socmon_social_democracy
+							ideology = socmon_third_way
 						}
 					}
 					SLB = {
@@ -14354,7 +14354,8 @@ focus_tree = {
 						set_popularities = {
 							democratic_monarchism = 12
 							centrist_monarchism = 40
-							anocratic_monarchism = 48
+							conservative_monarchism = 40
+							anocratic_monarchism = 8
 						}
 					}
 					LIE = {
@@ -14541,13 +14542,14 @@ focus_tree = {
 							long_name = MCO_conservative_monarchism_2023_party_long
 						}
 						set_popularities = {
-							conservative_monarchism = 67
+							centrist_monarchism = 12.5
+							conservative_monarchism = 54.5
 							anocratic_monarchism = 33
 						}
 					}
 					MCO = {
 						create_country_leader = {
-							name = "Prince Albert II"
+							name = "Prince Albert II de Grimaldi"
 							desc = ""
 							picture = "gfx/leaders/MCO/MCO_Albert_II.tga"
 							expire = "1965.1.1"
@@ -16042,7 +16044,10 @@ focus_tree = {
 							ruling_party = stratocratic
 						}	
 						set_popularities = {
-							stratocratic = 100
+							anocratic_republic = 20
+							neutrality = 3
+							republican_fascism = 13
+							stratocratic = 64
 						}
 						set_party_name = {
 							ideology = stratocratic
@@ -16252,19 +16257,19 @@ focus_tree = {
 						}
 						set_popularities = {
 							centrist_monarchism = 55
-							conservative_monarchism = 25
-							democratic_monarchism = 15
+							conservative_monarchism = 15
+							anocratic_monarchism = 25
 							authoritarian_monarchism = 5
 						}
 					}
 					GSY = {
 						create_country_leader = {
-							name = "Governor Sir Ian Fergus Corder"
+							name = "Governor Richard John Cripwell"
 							desc = ""
-							picture = "gfx/leaders/GSY/GSY_Ian_Corder.tga"
+							picture = "gfx/leaders/GSY/GSY_Cripwell.tga"
 							expire = "1965.1.1"
 							ideology = cenmon
-							}
+						}
 					}
 					MNX = {
 						set_politics = {
@@ -16283,13 +16288,13 @@ focus_tree = {
 					}
 					MNX = {
 						create_country_leader = {
-							name = "Lieutenant Governor Sir Richard Hugh Turton Gozney"
+							name = "Lieutenant Governor Sir John Gordon Lorimer"
 							desc = ""
-							picture = "gfx/leaders/MNX/MNX_Richard_Gozney.tga"
+							picture = "gfx/leaders/MNX/MNX_Lorimer.tga"
 							expire = "1965.1.1"
 							ideology = cenmon
-							}
 						}
+					}
 					JSY = {
 						set_politics = {
 							ruling_party = centrist_monarchism
@@ -16301,11 +16306,10 @@ focus_tree = {
 							long_name = JSY_centrist_monarchism_2023_party_long
 						}
 						set_popularities = {
-							centrist_monarchism = 44
-							authoritarian_monarchism = 31
-							socialist_monarchy = 19
-							democratic_monarchism = 4
-							conservative_monarchism = 2
+							socialist_monarchy = 21
+							democratic_monarchism = 2
+							centrist_monarchism = 73
+							conservative_monarchism = 4
 						}
 					}
 					JSY = {
@@ -17288,19 +17292,26 @@ focus_tree = {
 						transfer_state = 3945
 						transfer_state = 8087
 						set_politics = {
-							ruling_party = liberal_republic
+							ruling_party = centrist_republic
 						}
 						set_cosmetic_tag = ARM_2023
 						set_party_name = {
 							ideology = liberal_republic
-							name = ARM_liberal_republic_2023_party
-							long_name = ARM_liberal_republic_2023_party_long
+							name = ARM_liberal_republic_party
+							long_name = ARM_liberal_republic_party_long
+						}
+						set_party_name = {
+							ideology = centrist_republic
+							name = ARM_centrist_republic_2023_party
+							long_name = ARM_centrist_republic_2023_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 28
-							liberal_republic = 58
-							centrist_republic = 7
-							anocratic_republic = 7
+							communism = 14
+							socialism_ideology = 15
+							liberal_republic = 2
+							centrist_republic = 64
+							democratic = 2
+							anocratic_republic = 4
 						}
 					}
 					ARM = {
@@ -17309,7 +17320,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/ARM/ARM_Khachaturyan.tga"
 							expire = "1965.1.1"
-							ideology = liberal_populism
+							ideology = cenrep_populism
 						}
 					}
 					every_state = {
@@ -17322,21 +17333,20 @@ focus_tree = {
 					}
 					GEO = {
 						set_politics = {
-							ruling_party = socialism_ideology
+							ruling_party = anocratic_republic
 						}
-						set_cosmetic_tag = GEO_2023
 						set_party_name = {
 							ideology = socialism_ideology
-							name = GEO_socialism_ideology_2023_party
-							long_name = GEO_socialism_ideology_2023_party_long
+							name = GEO_socialism_ideology_party
+							long_name = GEO_socialism_ideology_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 52
-							liberal_republic = 9
-							centrist_republic = 22
-							democratic = 3
-							anocratic_republic = 5
-							neutrality = 9
+							socialism_ideology = 4
+							liberal_republic = 3
+							centrist_republic = 14
+							democratic = 16
+							anocratic_republic = 56
+							neutrality = 7
 						}
 					}
 					GEO = {
@@ -17345,7 +17355,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/GEO/GEO_Salome.tga"
 							expire = "1965.1.1"
-							ideology = social_democracy
+							ideology = social_authoritarianism
 						}
 					}
 					SOS = {
@@ -17369,7 +17379,7 @@ focus_tree = {
 					}
 					SOS = {
 						create_country_leader = {
-							name = "Prezident Gaglojty Edwardy fyrt Alan"
+							name = "Prezident Gaglojty Èduardy fyrt Аlan"
 							desc = ""
 							picture = "gfx/leaders/SOS/SOS_Gagloyev.tga"
 							expire = "1965.1.1"
@@ -17394,7 +17404,7 @@ focus_tree = {
 					}
 					ABK = {
 						create_country_leader = {
-							name = "Ahada Aslan Gʹargʹ-iṕa Bžania"
+							name = "Ahada Aslan G’arg’-iṕa Bž’ania"
 							desc = ""
 							picture = "gfx/leaders/ABK/ABK_Bzhania.tga"
 							expire = "1965.1.1"

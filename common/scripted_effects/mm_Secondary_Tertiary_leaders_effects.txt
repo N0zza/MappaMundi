@@ -10,17 +10,64 @@ secondary_leader_enabled_effect = {
 				tag = ENG
 				OR = {
 					AND = {
-						has_government = fascism
-						has_global_flag = non_hog_secondary_leaders
-					}
-					AND = {
 						OR = {
 							has_government = conservative_monarchism
 							has_government = stratocratic_monarchism
+							AND = {
+								has_government = fascism
+								has_global_flag = non_hog_secondary_leaders
+							}
 						}
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
 					}
 					AND = {
-						has_government = democratic_monarchism
+						OR = {
+							has_government = democratic_monarchism
+							has_government = conservative_monarchism
+						}
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	if = {
+		limit = {
+			AND = {
+				tag = MNX
+				OR = {
+					AND = {
+						has_government = centrist_monarchism
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	if = {
+		limit = {
+			AND = {
+				tag = JSY
+				OR = {
+					AND = {
+						has_government = centrist_monarchism
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	if = {
+		limit = {
+			AND = {
+				tag = GSY
+				OR = {
+					AND = {
+						has_government = centrist_monarchism
 						has_start_date > 2022.01.01
 					}
 				}
@@ -216,6 +263,38 @@ secondary_leader_enabled_effect = {
 						has_government = centrist_monarchism
 						has_start_date > 1935.01.01
 					}
+					AND = {
+						has_government = socialism_ideology
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = FAR
+				OR = {
+					AND = {
+						has_government = socialist_monarchy
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = GRL
+				OR = {
+					AND = {
+						has_government = socialist_monarchy
+						has_start_date > 2022.01.01
+					}
 				}
 			}
 		}
@@ -285,6 +364,10 @@ secondary_leader_enabled_effect = {
 						has_start_date > 1935.01.01
 						has_start_date < 1937.01.01
 					}
+					AND = {
+						has_government = socialism_ideology
+						has_start_date > 2022.01.01
+					}
 				}
 			}
 		}
@@ -315,6 +398,10 @@ secondary_leader_enabled_effect = {
 						has_start_date > 1935.01.01
 						has_start_date < 1937.01.01
 					}
+					AND = {
+						has_government = liberal_republic
+						has_start_date > 2022.01.01
+					}
 				}
 			}
 		}
@@ -329,6 +416,38 @@ secondary_leader_enabled_effect = {
 						has_government = anocratic_monarchism
 						has_start_date > 1935.01.01
 						has_start_date < 1937.01.01
+					}
+					AND = {
+						has_government = democratic
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = MOL
+				OR = {
+					AND = {
+						has_government = liberal_republic
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = TRN
+				OR = {
+					AND = {
+						has_government = neutrality
+						has_start_date > 2022.01.01
 					}
 				}
 			}
@@ -575,6 +694,40 @@ secondary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
+				tag = ADR
+				OR = {
+					AND = {
+						has_government = anocratic_monarchism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+					
+					AND = {
+						has_government = conservative_monarchism
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = GIB
+				OR = {
+					AND = {
+						has_government = socialist_monarchy
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
 				tag = POR
 				OR = {
 					AND = {
@@ -730,6 +883,12 @@ secondary_leader_enabled_effect = {
 						has_start_date < 1937.01.01
 						has_start_date > 1935.01.01
 					}
+					AND = {
+						OR = {
+							has_government = socialist_monarchy
+						}
+						has_start_date > 2022.01.01
+					}
 				}
 			}
 		}
@@ -746,6 +905,12 @@ secondary_leader_enabled_effect = {
 						}
 						has_start_date < 1937.01.01
 						has_start_date > 1935.01.01
+					}
+					AND = {
+						OR = {
+							has_government = conservative_monarchism
+						}
+						has_start_date > 2022.01.01
 					}
 				}
 			}
@@ -764,6 +929,12 @@ secondary_leader_enabled_effect = {
 						has_start_date < 1937.01.01
 						has_start_date > 1935.01.01
 					}
+					AND = {
+						OR = {
+							has_government = socialist_monarchy
+						}
+						has_start_date > 2022.01.01
+					}
 				}
 			}
 		}
@@ -778,8 +949,14 @@ secondary_leader_enabled_effect = {
 						OR = {
 							has_government = democratic
 						}
-						has_start_date < 1937.01.01
 						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+					AND = {
+						OR = {
+							has_government = democratic
+						}
+						has_start_date > 2022.01.01
 					}
 				}
 			}
@@ -797,6 +974,12 @@ secondary_leader_enabled_effect = {
 						}
 						has_start_date < 1937.01.01
 						has_start_date > 1935.01.01
+					}
+					AND = {
+						OR = {
+							has_government = centrist_republic
+						}
+						has_start_date > 2022.01.01
 					}
 				}
 			}
@@ -1011,6 +1194,34 @@ secondary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
+				tag = BAN
+				OR = {
+					AND = {
+						has_government = anocratic_republic
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = NEP
+				OR = {
+					AND = {
+						has_government = communism
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
 				tag = PER
 				OR = {
 					AND = {
@@ -1075,6 +1286,20 @@ secondary_leader_enabled_effect = {
 					}
 					AND = {
 						has_global_flag = non_hog_secondary_leaders
+						has_government = anocratic_republic
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = NOC
+				OR = {
+					AND = {
 						has_government = anocratic_republic
 						has_start_date > 2022.01.01
 					}
@@ -1163,6 +1388,35 @@ secondary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
+				tag = YUG
+				has_government = fascism
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = SLV
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = CRO
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
 				tag = BOS
 				has_government = centrist_republic
 				has_start_date > 2022.01.01
@@ -1173,8 +1427,39 @@ secondary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
-				tag = YUG
-				has_government = fascism
+				tag = SER
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = MNT
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = KOS
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = MAC
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
 			}
 		}
 		set_country_flag = has_secondary_leader
@@ -1205,6 +1490,210 @@ secondary_leader_enabled_effect = {
 				tag = SAU
 				has_government = monarchism
 				has_start_date > 2022.01.01
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = SMR
+				OR = {
+					AND = {
+						has_government = republican_fascism
+						has_start_date > 1935.01.01
+						has_start_date > 1937.01.01
+					}
+					AND = {
+						has_government = centrist_republic
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = MCO
+				OR = {
+					AND = {
+						has_government = anocratic_monarchism
+						has_start_date > 1935.01.01
+						has_start_date > 1937.01.01
+					}
+					AND = {
+						has_government = conservative_monarchism
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = LIE
+				OR = {
+					AND = {
+						has_government = anocratic_monarchism
+						has_start_date > 1935.01.01
+						has_start_date > 1937.01.01
+					}
+					AND = {
+						has_government = centrist_monarchism
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = MLT
+				OR = {
+					AND = {
+						has_government = socialism_ideology
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = VCT
+				OR = {
+					AND = {
+						has_government = theocratic
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = OML
+				OR = {
+					AND = {
+						has_government = theocratic
+						OR = {
+							AND = {
+								has_start_date > 1935.01.01
+								has_start_date < 1937.01.01
+							}
+							has_start_date > 2022.01.01
+						}
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = MAT
+				OR = {
+					AND = {
+						has_government = theocratic
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = GEO
+				OR = {
+					AND = {
+						has_government = anocratic_republic
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = ABK
+				OR = {
+					AND = {
+						has_government = neutrality
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = SOS
+				OR = {
+					AND = {
+						has_government = neutrality
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = ARM
+				OR = {
+					AND = {
+						has_government = centrist_republic
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = NGK
+				OR = {
+					AND = {
+						has_government = democratic
+						has_global_flag = non_hog_secondary_leaders
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = AZR
+				OR = {
+					AND = {
+						has_government = neutrality
+						has_start_date > 2022.01.01
+					}
+				}
 			}
 		}
 		set_country_flag = has_secondary_leader
@@ -1420,6 +1909,39 @@ tertiary_leader_enabled_effect = {
 					AND = {
 						has_government = stratocratic_monarchism
 						has_start_date < 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_tertiary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = SMR
+				OR = {
+					AND = {
+						has_government = republican_fascism
+						has_start_date > 1935.01.01
+						has_start_date > 1937.01.01
+					}
+					AND = {
+						has_government = centrist_republic
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_tertiary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = ADR
+				OR = {
+					AND = {
+						has_government = conservative_monarchism
+						has_start_date > 2022.01.01
 					}
 				}
 			}

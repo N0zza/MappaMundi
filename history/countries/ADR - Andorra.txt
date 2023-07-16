@@ -2,16 +2,14 @@
 
 set_country_flag = has_secondary_leader
 
-	set_popularities = {
-		conservative_monarchism
-			 = 30
-		democratic
-			 = 20
-		anocratic_monarchism
-			 = 50
-		}
-	set_politics = { 
- ruling_party = anocratic_monarchism
+set_popularities = {
+	democratic = 20
+	conservative_monarchism = 30
+	anocratic_monarchism = 50
+}
+
+set_politics = { 
+	ruling_party = anocratic_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 50
 	elections_allowed = no
@@ -28,7 +26,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Co-Príncep Episcopal Justí Guitart i Vilardebó, Bisbe d’Urgell"
+	name = "Copríncep Episcopal Justí Guitart i Vilardebó, Bisbe d’Urgell"
 	desc = "POLITICS_ADR_CONMON_DESC"
 	picture = "gfx/leaders/ADR/Portrait_Justi_Guitart_i_Vilardebo.dds"
 	expire = "1960.1.1"
