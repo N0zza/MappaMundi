@@ -1,10 +1,7 @@
 ﻿capital = 2377
 
 set_popularities = {
-	republican_fascism = 80
-	national_socialism = 10
-	communism = 5
-	conservative_monarchism = 5
+	republican_fascism = 100
 }
 
 set_politics = { 
@@ -12,6 +9,56 @@ set_politics = {
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Joachim Hermann August Lemelsen"
+	desc = ""
+	picture = "gfx/leaders/RSI/RSI_Lemelsen_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Re Umberto II di Savoia"
+	desc = ""
+	picture = "gfx/leaders/RSI/Portrait_Umberto_II.tga"
+	expire = "1965.1.1"
+	ideology = italian_fascism
+	traits = {
+	}
 }
 
 create_country_leader = {
@@ -35,31 +82,60 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Commissario Palmiro Michele Nicola Togliatti"
-	desc = ""
-	picture = "gfx/leaders/RSI/Portrait_Alcide_De_Gasperi.tga"
+	name = "Ministro Della Difesa Nazionale Rodolfo Graziani"
+	picture = "gfx/leaders/SOM/Portrait_Rodolfo_Graziani.dds"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = military_junta
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Presidente Ferruccio Parri"
+	name = "Re Umberto II di Savoia"
 	desc = ""
-	picture = "gfx/leaders/RSI/RSI_Parri_libdem.tga"
+	picture = "gfx/leaders/RSI/Portrait_Umberto_II.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = authmon
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Comandante Pietro Badoglio"
+	name = "To Be Added"
 	desc = ""
-	picture = "gfx/leaders/RSI/RSI_Badoglio_conmon.tga"
+	picture = "gfx/leaders/To_be_added.dds"
 	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = anocmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = anocrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = cenmon
 	traits = {
 	}
 }
@@ -75,21 +151,101 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Re Umberto II di Savoia"
+	name = "Comandante Pietro Badoglio"
 	desc = ""
-	picture = "gfx/leaders/RSI/Portrait_Umberto_II.tga"
+	picture = "gfx/leaders/RSI/RSI_Badoglio_conmon.tga"
 	expire = "1965.1.1"
-	ideology = italian_fascism
+	ideology = conservative_constitutionalism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Reichsprotektor Joachim Hermann August Lemelsen"
+	name = "To Be Added"
 	desc = ""
-	picture = "gfx/leaders/RSI/RSI_Lemelsen_nazi.tga"
+	picture = "gfx/leaders/To_be_added.dds"
 	expire = "1965.1.1"
-	ideology = natsoc
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Ferruccio Parri"
+	desc = ""
+	picture = "gfx/leaders/RSI/RSI_Parri_libdem.tga"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Commissario Palmiro Michele Nicola Togliatti"
+	desc = ""
+	picture = "gfx/leaders/RSI/Portrait_Alcide_De_Gasperi.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
 	traits = {
 	}
 }
