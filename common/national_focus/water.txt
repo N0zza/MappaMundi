@@ -13375,7 +13375,7 @@ focus_tree = {
 					}
 					SLO = {
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = anocratic_republic
 						}
 						transfer_state = 901
 						transfer_state = 2472
@@ -13386,9 +13386,14 @@ focus_tree = {
 						transfer_state = 3937
 						transfer_state = 10534
 						set_party_name = {
+							ideology = anocratic_republic
+							name = SLO_anocratic_republic_2023_party
+							long_name = SLO_anocratic_republic_2023_party_long
+						}
+						set_party_name = {
 							ideology = democratic
-							name = SLO_democratic_2023_party
-							long_name = SLO_democratic_2023_party_long
+							name = SLO_democratic_party
+							long_name = SLO_democratic_party_long
 						}
 						set_party_name = {
 							ideology = national_socialism
@@ -13410,7 +13415,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/SLO/SLO_Caputova.tga"
 							expire = "1965.1.1"
-							ideology = liberal_conservatism
+							ideology = caretaker_government
 						}
 					}
 					CZC = {
@@ -15270,7 +15275,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/SGP/SGP_Yacob.tga"
 							expire = "1965.1.1"
-							ideology = authoritarian_capitalism
+							ideology = anocrep_authoritarian_capitalism
 						}
 					}
 					BEI = {
@@ -15520,7 +15525,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/SIA/SIA_Vajiralongkorn.tga"
 							expire = "1965.1.1"
-							ideology = anocmon_national_conservatism
+							ideology = anocmon_caretaker_government
 						}
 					}
 					every_state = {
@@ -15621,7 +15626,7 @@ focus_tree = {
 								desc = ""
 								picture = "gfx/leaders/KPK/KPK_Murat_Kamalov.tga"
 								expire = "1965.1.1"
-								ideology = authoritarian_capitalism
+								ideology = anocrep_authoritarian_capitalism
 						}
 					}
 					UZB = {
@@ -15658,7 +15663,7 @@ focus_tree = {
 								desc = ""
 								picture = "gfx/leaders/UZB/UZB_Mirziyoyev.tga"
 								expire = "1965.1.1"
-								ideology = authoritarian_capitalism
+								ideology = anocrep_authoritarian_capitalism
 						}
 					}
 					TAJ = {
@@ -15754,7 +15759,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/KAZ/KAZ_Tokayev.tga"
 							expire = "1965.1.1"
-							ideology = authoritarian_capitalism
+							ideology = anocrep_authoritarian_capitalism
 						}
 					}
 					KYR = {
@@ -18956,17 +18961,15 @@ focus_tree = {
 					SOM = {
 						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = neutrality
 						}
 						set_party_name = {
-							ideology = democratic
-							name = SOM_democratic_2023_party
-							long_name = SOM_democratic_2023_party_long
+							ideology = neutrality
+							name = SOM_neutrality_2023_party
+							long_name = SOM_neutrality_2023_party_long
 						}
 						set_popularities = {
-							liberal_republic = 47
-							democratic = 34
-							centrist_republic = 19
+							neutrality = 100
 						}
 					}
 					SOM = {
@@ -18975,23 +18978,23 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/SOM/SOM_Mohamud.tga"
 							expire = "1965.1.1"
-							ideology = islamic_democracy
+							ideology = oligarchism
 						}
 					}
 					SML = {
 						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = anocratic_republic
 						}
 						set_party_name = {
-							ideology = democratic
-							name = SML_democratic_2023_party
-							long_name = SML_democratic_2023_party_long
+							ideology = anocratic_republic
+							name = SML_anocratic_republic_2023_party
+							long_name = SML_anocratic_republic_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 25
 							liberal_republic = 37
-							democratic = 38
+							anocratic_republic = 38
 						}
 					}
 					SML = {
@@ -19000,22 +19003,19 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/SML/SML_Muse_Bihi_Abdi.tga"
 							expire = "1965.1.1"
-							ideology = populism
+							ideology = social_nationalism
 						}
 					}
 					DJI = {
-						drop_cosmetic_tag = yes
-						set_politics = {
-							ruling_party = anocratic_republic
-						}
+						set_cosmetic_tag = DJI_2023
 						set_party_name = {
-							ideology = anocratic_republic
-							name = DJI_anocratic_republic_2023_party
-							long_name = DJI_anocratic_republic_2023_party_long
+							ideology = neutrality
+							name = DJI_neutrality_2023_party
+							long_name = DJI_neutrality_2023_party_long
 						}
 						set_popularities = {
 							liberal_republic = 12
-							anocratic_republic = 88
+							neutrality = 88
 						}
 					}
 					DJI = {
@@ -19024,7 +19024,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/DJI/DJI_Ismail_Omar_Guelleh.tga"
 							expire = "1965.1.1"
-							ideology = social_authoritarianism
+							ideology = authoritarian_capitalism
 						}
 					}
 					KEN = {
@@ -19080,7 +19080,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/UGA/UGA_Museveni.tga"
 							expire = "1965.1.1"
-							ideology = despotism
+							ideology = one_party_dictatorship
 						}
 					}
 					TZN = {
@@ -19116,20 +19116,20 @@ focus_tree = {
 					}
 					RWA = {
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = neutrality
 						}
 						set_party_name = {
-							ideology = anocratic_republic
-							name = RWA_anocratic_republic_2023_party
-							long_name = RWA_anocratic_republic_2023_party_long
+							ideology = neutrality
+							name = RWA_neutrality_2023_party
+							long_name = RWA_neutrality_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 11
 							liberal_republic = 3
 							centrist_republic = 3
 							democratic = 3
-							anocratic_republic = 46
-							neutrality = 34
+							anocratic_republic = 34
+							neutrality = 46
 						}
 					}
 					RWA = {
@@ -19317,22 +19317,19 @@ focus_tree = {
 						}
 					}
 					RCG = {
-						drop_cosmetic_tag = yes
-						set_politics = {
-							ruling_party = anocratic_republic
-						}
+						set_cosmetic_tag = RCG_2023
 						set_party_name = {
-							ideology = anocratic_republic
-							name = RCG_anocratic_republic_2023_party
-							long_name = RCG_anocratic_republic_2023_party_long
+							ideology = neutrality
+							name = RCG_neutrality_2023_party
+							long_name = RCG_neutrality_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 9
 							liberal_republic = 2
 							centrist_republic = 12
 							democratic = 2
-							anocratic_republic = 74
-							neutrality = 1
+							anocratic_republic = 1
+							neutrality = 74
 						}
 					}
 					RCG = {
@@ -19341,7 +19338,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/RCG/RCG_Nguesso.tga"
 							expire = "1965.1.1"
-							ideology = social_authoritarianism
+							ideology = despotism
 						}
 					}
 					GNA = {
@@ -19368,26 +19365,19 @@ focus_tree = {
 						}
 					}
 					GAB = {
-						drop_cosmetic_tag = yes
-						set_politics = {
-							ruling_party = anocratic_republic
-						}
+						set_cosmetic_tag = GAB_2023
 						set_party_name = {
-							ideology = centrist_republic
-							name = GAB_centrist_republic_party
-							long_name = GAB_centrist_republic_party_long
-						}
-						set_party_name = {
-							ideology = anocratic_republic
-							name = GAB_anocratic_republic_2023_party
-							long_name = GAB_anocratic_republic_2023_party_long
+							ideology = neutrality
+							name = GAB_neutrality_2023_party
+							long_name = GAB_neutrality_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 3
 							liberal_republic = 5
 							centrist_republic = 6
 							democratic = 7
-							anocratic_republic = 79
+							anocratic_republic = 10
+							neutrality = 69
 						}
 					}
 					GAB = {
@@ -19396,7 +19386,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/GAB/GAB_Bongo.tga"
 							expire = "1965.1.1"
-							ideology = dominant_party_democracy
+							ideology = despotism
 						}
 					}
 					CMR = {
@@ -19492,7 +19482,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/TOG/TOG_Faure_Gnassingbe.tga"
 							expire = "1965.1.1"
-							ideology = authoritarian_conservatism
+							ideology = authoritarian_capitalism
 						}
 					}
 					SEN = {
@@ -19779,16 +19769,15 @@ focus_tree = {
 					COG = {
 						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = socialism_ideology
+							ruling_party = neutrality
 						}
 						set_party_name = {
-							ideology = socialism_ideology
-							name = COG_socialism_ideology_2023_party
-							long_name = COG_socialism_ideology_2023_party_long
+							ideology = neutrality
+							name = COG_neutrality_2023_party
+							long_name = COG_neutrality_2023_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 78
-							liberal_republic = 22
+							neutrality = 100
 						}
 					}
 					CO3 = {
@@ -19800,7 +19789,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/COG/COG_Tshisekedi.tga"
 							expire = "1965.1.1"
-							ideology = socrep_third_way
+							ideology = oligarchism
 						}
 					}
 					set_province_name = {
@@ -19916,16 +19905,13 @@ focus_tree = {
 					ZIM = {
 						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = anocratic_republic
-						}
-						set_party_name = {
-							ideology = anocratic_republic
-							name = ZIM_anocratic_republic_2023_party
-							long_name = ZIM_anocratic_republic_2023_party_long
+							ruling_party = neutrality
 						}
 						set_popularities = {
-							socialism_ideology = 33
-							anocratic_republic = 67
+							socialism_ideology = 26
+							liberal_republic = 7
+							anocratic_republic = 1
+							neutrality = 66
 						}
 					}
 					ZIM = {
@@ -19934,7 +19920,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/ZIM/ZIM_Mnangagwa.tga"
 							expire = "1965.1.1"
-							ideology = social_nationalism
+							ideology = one_party_dictatorship
 						}
 					}
 					BOT = {

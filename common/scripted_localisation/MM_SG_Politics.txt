@@ -395,15 +395,19 @@ defined_text = {
 		localization_key = anocrep_provisional_government
 	}
 	text = {
-		trigger = { has_country_leader_ideology = authoritarian_capitalism }
-		localization_key = authoritarian_capitalism
+		trigger = { has_country_leader_ideology = anocrep_authoritarian_capitalism }
+		localization_key = anocrep_authoritarian_capitalism
 	}
 	text = {
 		trigger = { has_country_leader_ideology = social_nationalism }
 		localization_key = social_nationalism
 	}
 	text = {
-		localization_key = anocratic_republic
+		trigger = { has_country_leader_ideology = caretaker_government }
+		localization_key = caretaker_government
+	}
+	text = {
+		localization_key = anocrep
 	}
 }
 
@@ -434,7 +438,11 @@ defined_text = {
 		localization_key = anocmon_japanese_colonialism
 	}
 	text = {
-		localization_key = anocratic_monarchism
+		trigger = { has_country_leader_ideology = anocmon_caretaker_government }
+		localization_key = anocmon_caretaker_government
+	}
+	text = {
+		localization_key = anocmon
 	}
 }
 
@@ -479,6 +487,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = martial_law }
 		localization_key = martial_law
+	}
+	text = {
+		trigger = { has_country_leader_ideology = authoritarian_capitalism }
+		localization_key = authoritarian_capitalism
 	}
 	text = {
 		localization_key = neutrality
