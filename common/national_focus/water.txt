@@ -18735,6 +18735,14 @@ focus_tree = {
 							long_name = SUD_stratocratic_2023_party_long
 						}
 					}
+				every_state = {
+						limit = {
+							is_core_of = RSF
+						}
+						RSF = {
+							transfer_state = PREV
+						}
+					}
 					SUD = {
 						create_country_leader = {
 							name = "Raʾīs ʿAbd al-Fattāḥ ʿAbd ar-Raḥman al-Burhān"
