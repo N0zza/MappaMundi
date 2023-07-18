@@ -13,6 +13,7 @@ secondary_leader_enabled_effect = {
 						OR = {
 							has_government = conservative_monarchism
 							has_government = stratocratic_monarchism
+							has_government = national_socialism
 							AND = {
 								has_government = fascism
 								has_global_flag = non_hog_secondary_leaders
@@ -1742,6 +1743,21 @@ tertiary_leader_enabled_effect = {
 				OR = {
 					AND = {
 						has_government = vanguardism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_tertiary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = ENG
+				OR = {
+					AND = {
+						has_government = national_socialism
 						has_start_date > 1935.01.01
 						has_start_date < 1937.01.01
 					}
