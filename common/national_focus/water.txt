@@ -21535,9 +21535,17 @@ focus_tree = {
 						}
 					}
 					HAI = {
-						set_cosmetic_tag = HAI_2023
 						set_politics = {
-							ruling_party = neutrality
+							ruling_party = anarchism_ideology
+						}
+						set_popularities = {
+							anarchism_ideology = 100
+						}
+						set_cosmetic_tag = HAI_2023
+						set_party_name = {
+							ideology = anarchism_ideology
+							name = HAI_anarchism_ideology_2023_party
+							long_name = HAI_anarchism_ideology_2023_party_long
 						}
 					}
 					HAI = {
@@ -21546,12 +21554,24 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/HAI/HAI_Henry.tga"
 							expire = "1965.1.1"
-							ideology = provisional_government
+							ideology = collapsed_government
 						}
 					}
 					DOM = {
 						set_politics = {
 							ruling_party = liberal_republic
+						}
+						set_party_name = {
+							ideology = liberal_republic
+							name = DOM_liberal_republic_2023_party
+							long_name = DOM_liberal_republic_2023_party_long
+						}
+						set_popularities = {
+							socialism_ideology = 46
+							liberal_republic = 49
+							centrist_republic = 1
+							democratic = 3
+							anocratic_republic = 1
 						}
 					}
 					DOM = {
@@ -21560,7 +21580,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/DOM/DOM_Luis_Abinader.tga"
 							expire = "1965.1.1"
-							ideology = liberalism
+							ideology = social_liberalism
 						}
 					}
 					set_province_name = {
