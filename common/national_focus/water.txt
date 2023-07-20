@@ -16438,6 +16438,9 @@ focus_tree = {
 						}
 					}
 					LEB = {
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
 						set_cosmetic_tag = LEB_2023
 						set_party_name = {
 							ideology = anocratic_republic
@@ -16620,7 +16623,7 @@ focus_tree = {
 						transfer_state = 12035
 						transfer_state = 14418
 						set_politics = {
-							ruling_party = centrist_republic
+							ruling_party = neutrality
 						}
 						set_cosmetic_tag = IRQ_2023
 						set_party_name = {
@@ -16652,7 +16655,7 @@ focus_tree = {
 						}
 						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = neutrality
 						}
 						set_popularities = {
 							vanguardism = 6
@@ -18805,8 +18808,8 @@ focus_tree = {
 						drop_cosmetic_tag = yes
 						set_party_name = {
 						ideology = neutrality
-						name = TUN_neutrality_2023_party
-						long_name = TUN_neutrality_2023_party_long
+							name = TUN_neutrality_2023_party
+							long_name = TUN_neutrality_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 1
@@ -18827,15 +18830,20 @@ focus_tree = {
 						transfer_state = 8139
 						transfer_state = 12367
 						transfer_state = 12368
-						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = neutrality
+						}
+						set_cosmetic_tag = ALG_2023
+						set_party_name = {
+						ideology = neutrality
+							name = ALG_neutrality_2023_party
+							long_name = ALG_neutrality_2023_party_long
 						}
 						set_popularities = {
 							centrist_republic = 15
 							democratic = 27
-							anocratic_republic = 37
-							neutrality = 21
+							anocratic_republic = 13
+							neutrality = 45
 						}
 					}
 					ALG = {
@@ -18844,7 +18852,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/ALG/ALG_Tebboune.tga"
 							expire = "1965.1.1"
-							ideology = dominant_party_democracy
+							ideology = oligarchism
 						}
 					}
 					MOR = {
@@ -21713,19 +21721,19 @@ focus_tree = {
 					}
 					ELS = {
 						set_politics = {
-							ruling_party = centrist_republic
+							ruling_party = anocratic_republic
 						}
 						set_party_name = {
-							ideology = centrist_republic
-							name = ELS_centrist_republic_2023_party
-							long_name = ELS_centrist_republic_2023_party_long
+							ideology = anocratic_republic
+							name = ELS_anocratic_republic_2023_party
+							long_name = ELS_anocratic_republic_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 5
-							liberal_republic = 7
-							centrist_republic = 71
-							democratic = 4
-							anocratic_republic = 13
+							liberal_republic = 1
+							centrist_republic = 7
+							democratic = 20
+							anocratic_republic = 67
 						}
 					}
 					ELS = {
@@ -21734,7 +21742,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/ELS/ELS_Nayib_Bukele.tga"
 							expire = "1965.1.1"
-							ideology = cenrep_populism
+							ideology = right_wing_populism
 						}
 					}
 					GUA = {
@@ -22582,10 +22590,10 @@ focus_tree = {
 							is_owned_by = ICE
 						}
 					}
-					set_demilitarized_zone = no
 					UCL = {
 						transfer_state = PREV
 					}
+					set_demilitarized_zone = no
 				}
 			}
 		}
