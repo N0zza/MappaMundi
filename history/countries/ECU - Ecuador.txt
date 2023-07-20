@@ -1,30 +1,23 @@
 ﻿capital = 9128
-set_country_flag = monroe_doctrine
 
-	set_popularities = {
-		socialism_ideology 
-			 = 55
-		fascism
-			 = 0
-		communism
-			 = 5
-		democratic 
-			 = 40
-			
-		}
-	set_politics = { 
- ruling_party = socialism_ideology
+set_popularities = {
+	communism = 50
+	stratocratic = 50
+}
+
+set_politics = { 
+	ruling_party = communism
 	last_election = "1933.12.15"
 	election_frequency = 84
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Presidente Federico Páez Chiriboga"
+	name = "Jefe supremo Federico Páez Chiriboga"
 	desc = "POLITICS_FEDERICO_PAEZ_DESC"
 	picture = "gfx/leaders/ECU/Portrait_ecuador_federico_paez.dds"
 	expire = "1965.1.1"
-	ideology = demsoc
+	ideology = authoritarian_socialism
 	traits = {
 		#
 	}
@@ -68,7 +61,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ECU/ECU_Romero_commie.tga"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = demsoc
 	traits = {
 		#
 	}

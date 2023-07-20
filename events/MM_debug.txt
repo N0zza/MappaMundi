@@ -13,34 +13,16 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 			factor = 0
 		}
 		hidden_effect = {
-			ALG = {
-				transfer_state = 8139
-				transfer_state = 12367
-				transfer_state = 12368
-				set_politics = {
-					ruling_party = neutrality
-				}
-				set_cosmetic_tag = ALG_2023
-				set_party_name = {
-				ideology = neutrality
-					name = ALG_neutrality_2023_party
-					long_name = ALG_neutrality_2023_party_long
-				}
-				set_popularities = {
-					centrist_republic = 15
-					democratic = 27
-					anocratic_republic = 13
-					neutrality = 45
-				}
-			}
-			ALG = {
-				create_country_leader = {
-					name = "Raʾīs ʿAbd ul-Maǧīd bin al-Ḥāǧi Aḥmad bin Muḥammad Tabbūn"
-					desc = ""
-					picture = "gfx/leaders/ALG/ALG_Tebboune.tga"
-					expire = "1965.1.1"
-					ideology = oligarchism
-				}
+			FIN = {
+create_country_leader = {
+	name = "Presidentti Pehr Evind Svinhufvud af Qvalstad"
+	desc = ""
+	picture = "gfx/leaders/FIN/Portrait_Pehr_Evind_Svinhufvud.dds"
+	expire = "1965.1.1"
+	ideology = conrep_national_conservatism
+	traits = {
+	}
+}
 			}
 		}
 	}
