@@ -14811,7 +14811,7 @@ focus_tree = {
 						transfer_state = 6352
 						transfer_state = 6353
 						transfer_state = 6354
-						transfer_state = 6355
+					z	transfer_state = 6355
 						transfer_state = 3145
 						transfer_state = 3144
 						transfer_state = 555
@@ -14826,21 +14826,45 @@ focus_tree = {
 					}	
 					JAP = {
 						set_politics = {
-							ruling_party = anocratic_monarchism
+							ruling_party = conservative_monarchism
 						}
-						set_cosmetic_tag = JAP_2023
+						set_party_name = {
+							ideology = socialist_monarchy
+							name = JAP_socialist_monarchy_2023_party
+							long_name = JAP_socialist_monarchy_2023_party_long
+						}
+						set_party_name = {
+							ideology = democratic_monarchism
+							name = JAP_democratic_monarchism_2023_party
+							long_name = JAP_democratic_monarchism_2023_party_long
+						}
+						set_party_name = {
+							ideology = centrist_monarchism
+							name = JAP_centrist_monarchism_2023_party
+							long_name = JAP_centrist_monarchism_2023_party_long
+						}
+						set_party_name = {
+							ideology = conservative_monarchism
+							name = JAP_conservative_monarchism_2023_party
+							long_name = JAP_conservative_monarchism_2023_party_long
+						}
 						set_party_name = {
 							ideology = anocratic_monarchism
 							name = JAP_anocratic_monarchism_2023_party
 							long_name = JAP_anocratic_monarchism_2023_party_long
 						}
+						set_party_name = {
+							ideology = right_anarchism
+							name = JAP_right_anarchism_2023_party
+							long_name = JAP_right_anarchism_2023_party_long
+						}
 						set_popularities = {
 							socialist_monarchy = 3
 							democratic_monarchism = 21
-							centrist_monarchism = 12
-							conservative_monarchism = 7
-							anocratic_monarchism = 56
-							authoritarian_monarchism = 1
+							centrist_monarchism = 10
+							conservative_monarchism = 34
+							anocratic_monarchism = 23
+							right_anarchism = 9
 						}
 					}
 					JAP = {
@@ -14849,7 +14873,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/JAP/JAP_Naruhito.tga"
 							expire = "1965.1.1"
-							ideology = anocmon_dominant_party_democracy
+							ideology = conmon_paternalistic_conservatism
 						}
 					}
 					ROK = {
@@ -14858,18 +14882,18 @@ focus_tree = {
 						transfer_state = 1789
 						transfer_state = 1783
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = democratic
 						}
-						set_cosmetic_tag = ROK_2023
 						set_party_name = {
-							ideology = anocratic_republic
-							name = ROK_anocratic_republic_2023_party
-							long_name = ROK_anocratic_republic_2023_party_long
+							ideology = democratic
+							name = ROK_democratic_2023_party
+							long_name = ROK_democratic_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 3
-							centrist_republic = 58
-							anocratic_republic = 39
+							liberal_republic = 13
+							centrist_republic = 45
+							democratic = 39
 						}
 					}
 					ROK = {
@@ -14878,7 +14902,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/ROK/ROK_Yun.tga"
 							expire = "1965.1.1"
-							ideology = right_wing_populism
+							ideology = populism
 						}
 					}
 					DPK = {
@@ -16658,13 +16682,7 @@ focus_tree = {
 							ruling_party = neutrality
 						}
 						set_popularities = {
-							vanguardism = 6
-							communism = 2
-							socialism_ideology = 2
-							liberal_republic = 2
-							anocratic_republic = 22
-							neutrality = 34
-							theocratic = 32
+							neutrality = 100
 						}
 					}
 					
@@ -16775,8 +16793,8 @@ focus_tree = {
 							vanguardism = 1
 							communism = 2
 							liberal_republic = 2
-							anocratic_republic = 36
-							neutrality = 3
+							anocratic_republic = 3
+							neutrality = 36
 							theocratic = 56
 						}
 					}
