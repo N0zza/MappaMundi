@@ -12418,7 +12418,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/Russia/RUS_Alexis_Andreevich.tga"
 							expire = "1965.1.1"
-							ideology = libmon_conservative_liberalism
+							ideology = liberal_constitutionalism
 						}
 					}
 					SOV = {
@@ -12767,7 +12767,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/WGR/WGR_Georg_Friedrich.tga"
 							expire = "1965.1.1"
-							ideology = libmon_conservative_liberalism
+							ideology = liberal_constitutionalism
 						}
 						create_country_leader = {
 							name = "König Friedrich IV von Hohenzollern"
@@ -13766,14 +13766,10 @@ focus_tree = {
 						}
 					}
 					BEL = {
-						set_politics = {
-							ruling_party = democratic_monarchism
-						}
-						set_cosmetic_tag = BEL_2023
 						set_party_name = {
-							ideology = democratic_monarchism
-							name = BEL_democratic_monarchism_2023_party
-							long_name = BEL_democratic_monarchism_2023_party_long
+							ideology = conservative_monarchism
+							name = BEL_conservative_monarchism_2023_party
+							long_name = BEL_conservative_monarchism_2023_party_long
 						}
 						set_popularities = {
 							communism = 8
@@ -13790,16 +13786,16 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/BEL/BEL_Philippe.tga"
 							expire = "1965.1.1"
-							ideology = libmon_conservative_liberalism
+							ideology = conmon_conservative_liberalism
 						}
 					}
 					BEL = {
 						create_country_leader = {
-							name = "Eerste Minister Charles Michel"
+							name = "Eerste Minister Alexander Francis Herman De Croo"
 							desc = ""
-							picture = "gfx/leaders/BEL/BEL_Philippe.tga"
+							picture = "gfx/leaders/BEL/BEL_De_Croo.tga"
 							expire = "1965.1.1"
-							ideology = liberalism
+							ideology = conservative_liberalism
 						}
 					}
 					HUN = {
@@ -14352,14 +14348,10 @@ focus_tree = {
 						}
 					}
 					HOL = {
-						set_politics = {
-							ruling_party = democratic_monarchism
-						}
-						set_cosmetic_tag = HOL_2023
 						set_party_name = {
-							ruling_party = democratic_monarchism
-							name = HOL_democratic_monarchism_2023_party
-							long_name = HOL_democratic_monarchism_2023_party_long
+							ruling_party = conservative_monarchism
+							name = HOL_conservative_monarchism_2023_party
+							long_name = HOL_conservative_monarchism_2023_party_long
 						}
 						set_popularities = {
 							communism = 10
@@ -14376,7 +14368,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/HOL/HOL_Willem.tga"
 							expire = "1965.1.1"
-							ideology = libmon_conservative_liberalism
+							ideology = conmon_conservative_liberalism
 						}
 					}
 					HOL = {
@@ -14385,7 +14377,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/HOL/HOL_Rutte.tga"
 							expire = "1965.1.1"
-							ideology = conservatism
+							ideology = conservative_liberalism
 						}
 					}
 					FIN = {
@@ -19522,18 +19514,13 @@ focus_tree = {
 							state = 272
 						}
 						set_politics = {
-							ruling_party = liberal_republic
+							ruling_party = democratic
 						}
-						set_cosmetic_tag = SEN_2023
-						set_party_name = {
-							ideology = liberal_republic
-							name = SEN_liberal_republic_2023_party
-							long_name = SEN_liberal_republic_2023_party_long
-						}
+						drop_cosmetic_tag = yes
 						set_popularities = {
-							liberal_republic = 50
-							democratic = 15
-							centrist_republic = 35
+							liberal_republic = 14
+							centrist_republic = 36
+							democratic = 50
 						}
 					}
 					SEN = {
@@ -19576,16 +19563,16 @@ focus_tree = {
 					CVD = {
 						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = liberal_republic
+							ruling_party = centrist_republic
 						}
 						set_party_name = {
-							ideology = liberal_republic
-							name = CVD_liberal_republic_2023_party
-							long_name = CVD_liberal_republic_2023_party_long
+							ideology = centrist_republic
+							name = CVD_centrist_republic_2023_party
+							long_name = CVD_centrist_republic_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 42
-							liberal_republic = 53
+							centrist_republic = 53
 							democratic = 5
 						}
 					}
@@ -19595,7 +19582,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/CVD/CVD_Neves.tga"
 							expire = "1965.1.1"
-							ideology = conservative_liberalism
+							ideology = cenrep
 						}
 					}
 					GAM = {
@@ -19698,28 +19685,29 @@ focus_tree = {
 					}
 					LIB = {
 						set_politics = {
-							ruling_party = liberal_republic
+							ruling_party = centrist_republic
 						}
 						set_cosmetic_tag = LIB_2023
 						set_party_name = {
-							ideology = liberal_republic
-							name = LIB_liberal_republic_2023_party
-							long_name = LIB_liberal_republic_2023_party_long
+							ideology = centrist_republic
+							name = LIB_centrist_republic_2023_party
+							long_name = LIB_centrist_republic_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 11
-							liberal_republic = 23
-							democratic = 43
-							centrist_republic = 23
+							liberal_republic = 10
+							centrist_republic = 46
+							democratic = 29
+							anocratic_republic = 4
 						}
 					}
 					LIB = {
 						create_country_leader = {
-							name = "President George Manneh Oppong Weah"
+							name = "President George Tawlon Manneh Oppong Ousman Weah"
 							desc = ""
 							picture = "gfx/leaders/LIB/LIB_George_Weah.tga"
 							expire = "1965.1.1"
-							ideology = conservative_liberalism
+							ideology = cenrep_populism
 						}
 					}
 					NGA = {
@@ -21765,18 +21753,18 @@ focus_tree = {
 					}
 					GUA = {
 						set_politics = {
-							ruling_party = liberal_republic
+							ruling_party = democratic
 						}
 						set_party_name = {
-							ideology = liberal_republic
-							name = GUA_liberal_republic_2023_party
-							long_name = GUA_liberal_republic_2023_party_long
+							ideology = democratic
+							name = GUA_democratic_2023_party
+							long_name = GUA_democratic_2023_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 18.75
-							liberal_republic = 12.5
-							centrist_republic = 8.75
-							democratic = 47.5
+							socialism_ideology = 17.5
+							liberal_republic = 11.25
+							centrist_republic = 17.5
+							democratic = 41.25
 							anocratic_republic = 12.5
 						}
 					}
