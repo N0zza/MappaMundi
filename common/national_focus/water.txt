@@ -16859,20 +16859,21 @@ focus_tree = {
 						do_standard_arabic_renames = yes
 					}
 					ISR = {
+						set_cosmetic_tag = ISR_2023
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = democratic
 						}
 						set_party_name = {
-							ideology = anocratic_republic
-							name = ISR_anocratic_republic_2023_party
-							long_name = ISR_anocratic_republic_2023_party_long
+							ideology = democratic
+							name = ISR_democratic_2023_party
+							long_name = ISR_democratic_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 8
 							liberal_republic = 20
 							centrist_republic = 10
-							democratic = 18
-							anocratic_republic = 32
+							anocratic_republic = 18
+							democratic = 32
 							republican_fascism = 12
 						}
 					}
@@ -16882,7 +16883,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/ISR/ISR_Herzog.tga"
 							expire = "1965.1.1"
-							ideology = right_wing_populism
+							ideology = populism
 						}
 					}
 					every_state = { 
@@ -16922,14 +16923,20 @@ focus_tree = {
 						do_greek_renames = yes
 					}
 					NOC = {
+						set_cosmetic_tag = NOC_2023
+						set_party_name = {
+							ideology = democratic
+							name = NOC_democratic_2023_party
+							long_name = NOC_democratic_2023_party_long
+						}
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = democratic
 						}
 						set_popularities = {
 							socialism_ideology = 36
 							centrist_republic = 6
-							democratic = 10
-							anocratic_republic = 48
+							anocratic_republic = 10
+							democratic = 48
 						}
 					}
 					NOC = {
@@ -16938,7 +16945,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/NOC/NOC_modern.tga"
 							expire = "1965.1.1"
-							ideology = national_conservatism
+							ideology = conrep_national_conservatism
 						}
 					}
 					CYP = {
@@ -20026,17 +20033,23 @@ focus_tree = {
 						}
 					}
 					SAF = {
+						set_cosmetic_tag = SAF_2023
 						transfer_state = 10870
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = democratic
 						}
 						set_popularities = {
 							vanguardism = 11
 							socialism_ideology = 1.75
 							liberal_republic = 0.5
 							centrist_republic = 21
-							democratic = 5.5
-							anocratic_republic = 60.25
+							anocratic_republic = 5.5
+							democratic = 60.25
+						}
+						set_party_name = {
+							ideology = democratic
+							name = SAF_democratic_2023_party
+							long_name = SAF_democratic_2023_party_long
 						}
 					}
 					SAF = {
@@ -20045,7 +20058,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/SAF/SAF_Ramaphosa.tga"
 							expire = "1965.1.1"
-							ideology = dominant_party_democracy
+							ideology = paternalistic_conservatism
 						}
 					}
 					LES = {
@@ -22463,19 +22476,18 @@ focus_tree = {
 					}
 					PAR = {
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = democratic
 						}
 						set_party_name = {
-							ideology = anocratic_republic
-							name = PAR_anocratic_republic_2023_party
-							long_name = PAR_anocratic_republic_2023_party_long
+							ideology = democratic
+							name = PAR_democratic_2023_party
+							long_name = PAR_democratic_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 19
 							liberal_republic = 21
-							centrist_republic = 6
-							democratic = 1
-							anocratic_republic = 53
+							centrist_republic = 7
+							democratic = 53
 						}
 					}
 					PAR = {
@@ -22484,7 +22496,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/PAR/PAR_Mario_Abdo_Benitez.tga"
 							expire = "1965.1.1"
-							ideology = dominant_party_democracy
+							ideology = paternalistic_conservatism
 						}
 					}
 					TRI = {
