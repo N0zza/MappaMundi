@@ -1,86 +1,25 @@
 ﻿capital = 2377
 
-oob = "ITA_1936"
+set_country_flag = has_secondary_leader
+recruit_character = ITA_Benito_Mussolini
+recruit_character = ITA_Vittorio_Emanuele_III
+recruit_character = ITA_Vittorio_Emanuele_III_absmon
 
-#if = {
-#	limit = {
-#		has_dlc = "Together for Victory"
-#	}
-#	set_autonomy = {
-#		target = SOM
-#		autonomous_state = autonomy_reichskommissariat
-#	}
-#	set_autonomy = {
-#		target = ERI
-#		autonomous_state = autonomy_reichskommissariat
-#	}
-#	set_autonomy = {
-#		target = LBA
-#		autonomous_state = autonomy_reichskommissariat
-#	}
-#	else = {
-#		puppet = SOM
-#		puppet = ERI
-#		puppet = LBA
-#	}
-#}
+set_popularities = {
+	fascism = 100
+}
 
-
-
-
-	set_popularities = {
-		democratic 
-			 = 22
-		fascism
-			 = 76
-		communism
-			 = 2
-		}
-	set_politics = { 
- ruling_party = fascism
+set_politics = { 
+	ruling_party = fascism
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = no
 }
 
-
-
-
-create_country_leader = {
-	name = "Re Vittorio Emanuele III di Savoia"
-	desc = "POLITICS_ITA_FASCISM_DESC"
-	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Presidente Benito Amilcare Andrea Mussolini, Duce del Fascismo"
-	desc = "POLITICS_ITA_NATSOC_DESC"
-	picture = "gfx/leaders/ITA/Italy_Mussolini.dds"
-	expire = "1965.1.1"
-	ideology = natsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Imperatore Vittorio Emanuele III di Savoia"
-	desc = "POLITICS_ITA_ABSMONS_DESC"
-	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-	}
-}
-
 create_country_leader = {
 	name = "Presidente Eugenio Chiesa"
 	desc = "POLITICS_ITA_CONREP_DESC"
-	picture = "Portrait_Eugenio_Chiesa.tga"
+	picture = "gfx/leaders/ITA/Portrait_Eugenio_Chiesa.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -90,7 +29,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Segretario Generale Palmiro Togliatti"
 	desc = "POLITICS_ITA_VAN_DESC"
-	picture = "Portrait_Palmiro_Togliatti.tga"
+	picture = "gfx/leaders/ITA/Portrait_Palmiro_Togliatti.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -100,7 +39,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Ruggero Grieco"
 	desc = "POLITICS_ITA_COM_DESC"
-	picture = "Portrait_Ruggero_Grieco.tga"
+	picture = "gfx/leaders/ITA/Portrait_Ruggero_Grieco.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -110,7 +49,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Pietro Sandro Nenni"
 	desc = "POLITICS_ITA_SOC_DESC"
-	picture = "Portrait_Pietro_Nenni.tga"
+	picture = "gfx/leaders/ITA/Portrait_Pietro_Nenni.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -120,7 +59,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Regina Mafalda I di Savoia"
 	desc = "POLITICS_ITA_MONSOC_DESC"
-	picture = "Portrait_Mafalda_Savoy.tga"
+	picture = "gfx/leaders/ITA/Portrait_Mafalda_Savoy.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -129,30 +68,10 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Presidente Francesco Saverio Nitti"
-	desc = "POLITICS_ITA_LIBREP_DESC"
-	picture = "Portrait_Francesco_Nitti.tga"
+	desc = "POLITICS_ITA_liberalism_DESC"
+	picture = "gfx/leaders/ITA/Portrait_Francesco_Nitti.tga"
 	expire = "1965.1.1"
-	ideology = socdem
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Re Vittorio Emanuele III di Savoia"
-	desc = "POLITICS_ITA_LIBMON_DESC"
-	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
-	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Re Vittorio Emanuele III di Savoia"
-	desc = "POLITICS_ITA_CONMON_DESC"
-	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
-	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
+	ideology = liberalism
 	traits = {
 	}
 }
@@ -160,7 +79,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Cancelliere Alcide Amedeo Francesco De Gasperi"
 	desc = "POLITICS_ITA_CENREP_DESC"
-	picture = "Portrait_Alcide_De_Gasperi.tga"
+	picture = "gfx/leaders/ITA/Portrait_Alcide_De_Gasperi.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -170,7 +89,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Re Umberto II di Savoia"
 	desc = "POLITICS_ITA_CENMON_DESC"
-	picture = "Portrait_Umberto_II.tga"
+	picture = "gfx/leaders/ITA/Portrait_Umberto_II.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -188,11 +107,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Re Federale Robert I di Habsburg"
+	desc = "POLITICS_ITA_ANOCMON_DESC"
+	picture = "gfx/leaders/ITA/Portrait_Robert_Habsburg.tga"
+	expire = "1965.1.1"
+	ideology = anocmon
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Comandante in Capo Federico Baistrocchi"
 	desc = "POLITICS_ITA_STRAT_DESC"
-	picture = "Portrait_Federico_Baistrocchi.tga"
+	picture = "gfx/leaders/ITA/Portrait_Federico_Baistrocchi.tga"
 	expire = "1965.1.1"
-	ideology = militarism
+	ideology = military_junta
 	traits = {
 	}
 }
@@ -200,7 +129,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Re Aimone I di Savoia-Aosta"
 	desc = "POLITICS_ITA_STRATMON_DESC"
-	picture = "Portrait_Aimone_Aosta.tga"
+	picture = "gfx/leaders/ITA/Portrait_Aimone_Aosta.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -210,7 +139,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Re Amedeo I di Savoia-Aosta"
 	desc = "POLITICS_ITA_AUTHMON_DESC"
-	picture = "Portrait_Amadeo_Aosta.tga"
+	picture = "gfx/leaders/ITA/Portrait_Amadeo_Aosta.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -220,7 +149,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Segretario Alfredo Ildefonso Schuster"
 	desc = "POLITICS_ITA_THEOC_DESC"
-	picture = "Portrait_Alfredo_Schuster.tga"
+	picture = "gfx/leaders/ITA/Portrait_Alfredo_Schuster.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -230,9 +159,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Gian Galeazzo Ciano, Duce del Fascismo, Conte di Cortellazzo e Buccari"
 	desc = "POLITICS_ITA_REPFASH_DESC"
-	picture = "Portrait_Galeazzo_Cianno.tga"
+	picture = "gfx/leaders/ITA/Portrait_Galeazzo_Cianno.tga"
 	expire = "1965.1.1"
-	ideology = repfash
+	ideology = rep_italian_fascism
 	traits = {
 	}
 }

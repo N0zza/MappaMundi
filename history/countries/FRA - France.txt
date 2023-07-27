@@ -1,18 +1,15 @@
 ﻿capital = 16
 
-oob = "FRA_1936"
+set_country_flag = has_secondary_leader
 
 set_popularities = {
-	vanguardism
-		= 3
-	socialism_ideology
-		= 26
-	liberal_republic
-		= 36
-	democratic
-		= 31
-	neutrality
-		= 4
+	vanguardism = 2
+	communism = 21
+	socialism_ideology = 32
+	liberal_republic = 2
+	centrist_republic = 12
+	democratic = 21
+	anocratic_republic = 10
 }
 
 set_politics = { 
@@ -25,19 +22,18 @@ set_politics = {
 create_country_leader = {
 	name = "Président Albert François Lebrun"
 	desc = "POLITICS_LEBRUN_DESC"
-	picture = "Portrait_Albert_Lebrun.dds"
+	picture = "gfx/leaders/FRA/Portrait_Albert_Lebrun.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = liberal_conservatism
 	traits = {
 	}
 }
 
 
-
 create_country_leader = {
 	name = "Secrétaire Général Maurice Thorez"
-	desc = "POLITICS_THOREZ_DESC"
-	picture = "FRA_Thorez.tga"
+	desc = ""
+	picture = "gfx/leaders/FRA/FRA_Thorez.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -47,7 +43,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Marceau Pivert"
 	desc = "POLITICS_PIVERT_DESC"
-	picture = "FRA_Pivert.tga"
+	picture = "gfx/leaders/FRA/FRA_Pivert.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -57,7 +53,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président André Léon Blum"
 	desc = "POLITICS_BLUM_DESC"
-	picture = "FRA_Blum.tga"
+	picture = "gfx/leaders/FRA/FRA_Blum.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -67,7 +63,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Roi Jean III Pierre Clément Marie d'Orléans de Chartres, Duc de Guise"
 	desc = "POLITICS_JEANIII_DESC"
-	picture = "FRA_JeanIII.tga"
+	picture = "gfx/leaders/FRA/FRA_JeanIII.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -75,19 +71,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Premier Ministre Édouard Daladier"
+	name = "Président Édouard Daladier"
 	desc = "POLITICS_DALADIER_DESC"
-	picture = "FRA_Daladier.tga"
+	picture = "gfx/leaders/FRA/FRA_Daladier.tga"
 	expire = "1965.1.1"
-	ideology = socdem
+	ideology = liberalism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Roi Jean III de Orléans"
-	desc = ""
-	picture = "FRA_JeanIII.tga"
+	name = "Roi Jean III d'Orléans"
+	desc = "POLITICS_JEANIII_DESC"
+	picture = "gfx/leaders/FRA/FRA_JeanIII.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -96,8 +92,8 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Empereur Napoleon VI de Bonaparte"
-	desc = ""
-	picture = "FRA_NapoleonVI.tga"
+	desc = "POLITICS_NAPOLEONVI_DESC"
+	picture = "gfx/leaders/FRA/FRA_NapoleonVI.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -106,8 +102,28 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Chancelier Suprême François de La Rocque, Seigneur d'Alsace-Lorraine"
+	desc = "POLITICS_ROCQUE_DESC"
+	picture = "gfx/leaders/FRA/FRA_Rocque.tga"
+	expire = "1965.1.1"
+	ideology = national_conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Empereur Jean III d'Orléans"
+	desc = "POLITICS_JEANIII_DESC"
+	picture = "gfx/leaders/FRA/FRA_JeanIII.tga"
+	expire = "1965.1.1"
+	ideology = anocmon_national_conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Jean Jules Marie Auguste Champetier de Ribes"
 	desc = ""
-	picture = "FRA_Rocque.tga"
+	picture = "gfx/leaders/FRA/FRA_Ribes.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -117,7 +133,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Roi Charles XII de Bourbon"
 	desc = ""
-	picture = "FRA_CharlesXII.tga"
+	picture = "gfx/leaders/FRA/FRA_CharlesXII.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -125,11 +141,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Président Charles André Marie de Gaulle"
+	name = "Président du Comité National Français Charles André Marie de Gaulle"
 	desc = ""
-	picture = "FRA_DeGaulle.tga"
+	picture = "gfx/leaders/FRA/FRA_DeGaulle.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = provisional_government
 	traits = {
 	}
 }
@@ -137,17 +153,17 @@ create_country_leader = {
 create_country_leader = {
 	name = "Commandant en Chef Maurice Gustave Gamelin"
 	desc = ""
-	picture = "FRA_Gamelin.tga"
+	picture = "gfx/leaders/FRA/FRA_Gamelin.tga"
 	expire = "1965.1.1"
-	ideology = militarism
+	ideology = military_junta
 	traits = {
 	}
 }
 
 create_country_leader = {
 	name = "Empereur Napoleon VI de Bonaparte"
-	desc = ""
-	picture = "FRA_NapoleonVI.tga"
+	desc = "POLITICS_NAPOLEONVI_DESC"
+	picture = "gfx/leaders/FRA/FRA_NapoleonVI.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -157,7 +173,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Roi Charles XII de Bourbon"
 	desc = ""
-	picture = "FRA_CharlesXII.tga"
+	picture = "gfx/leaders/FRA/FRA_CharlesXII.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -167,7 +183,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Roi Charles XII & V de Bourbon"
 	desc = ""
-	picture = "FRA_CharlesXII.tga"
+	picture = "gfx/leaders/FRA/FRA_CharlesXII.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -177,17 +193,17 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prince-Primat Jean Verdier"
 	desc = ""
-	picture = "FRA_Verdier.tga"
+	picture = "gfx/leaders/FRA/FRA_Verdier.tga"
 	expire = "1965.1.1"
-	ideology = christian
+	ideology = christian_theocracy
 	traits = {
 	}
 }
 
 create_country_leader = {
 	name = "Empereur Napoleon VI de Bonaparte"
-	desc = ""
-	picture = "FRA_NapoleonVI.tga"
+	desc = "POLITICS_NAPOLEONVI_DESC"
+	picture = "gfx/leaders/FRA/FRA_NapoleonVI.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -195,9 +211,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Président Henri Philippe Benoni Pétain"
+	name = "Chef de l'État Henri Philippe Benoni Pétain"
 	desc = ""
-	picture = "FRA_Petain.tga"
+	picture = "gfx/leaders/FRA/FRA_Petain.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -207,7 +223,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Réalisateur Jacques Doriot"
 	desc = ""
-	picture = "FRA_Doriot.tga"
+	picture = "gfx/leaders/FRA/FRA_Doriot.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

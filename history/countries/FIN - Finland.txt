@@ -1,19 +1,16 @@
 ﻿capital = 111
 
-oob = "FIN_1936"
+set_country_flag = has_secondary_leader
 
-	set_popularities = {
-		neutrality 
-			 = 10
-		fascism
-			 = 10
-		communism
-			 = 1
-		democratic
-			 = 79
-		}
-	set_politics = { 
- ruling_party = democratic
+set_popularities = {
+	socialism_ideology = 39
+	liberal_republic = 5.5
+	centrist_republic = 39.5
+	democratic = 16
+}
+
+set_politics = { 
+	ruling_party = democratic
 	last_election = "1933.7.1"
 	election_frequency = 36
 	elections_allowed = yes
@@ -22,9 +19,9 @@ oob = "FIN_1936"
 create_country_leader = {
 	name = "Presidentti Pehr Evind Svinhufvud af Qvalstad"
 	desc = ""
-	picture = "Portrait_Pehr_Evind_Svinhufvud.dds"
+	picture = "gfx/leaders/FIN/Portrait_Pehr_Evind_Svinhufvud.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = conrep_national_conservatism
 	traits = {
 	}
 }
@@ -32,62 +29,57 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kung Frederik Kaarle Hessen-Kasselista"
 	desc = ""
-	picture = "FIN_Kaarle.tga"
+	picture = "gfx/leaders/FIN/FIN_Kaarle.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
 	}
 }
 
-
 create_country_leader = {
 	name = "Velikiy Knyaz Boris Romanovista"
 	desc = ""
-	picture = "FIN_Boris.tga"
+	picture = "gfx/leaders/FIN/FIN_Boris.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
 	name = "Velikiy Gertsog Boris Romanovista"
 	desc = ""
-	picture = "FIN_Boris.tga"
+	picture = "gfx/leaders/FIN/FIN_Boris.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
 	name = "Presidentti Vilho Annala"
 	desc = ""
-	picture = "FIN_Annala.tga"
+	picture = "gfx/leaders/FIN/FIN_Annala.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
 	name = "Pääsihteeri Arvo Tuominen"
 	desc = ""
-	picture = "FIN_Tuominen.tga"
+	picture = "gfx/leaders/FIN/FIN_Tuominen.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
 	name = "Puheenjohtaja Otto Wilhelm Kuusinen"
 	desc = ""
-	picture = "FIN_Kuusinen.tga"
+	picture = "gfx/leaders/FIN/FIN_Kuusinen.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -97,7 +89,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ensimmäinen Kansalainen Kullervo Achilles Manner"
 	desc = ""
-	picture = "FIN_Manner.tga"
+	picture = "gfx/leaders/FIN/FIN_Manner.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -107,7 +99,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kung Wolfgang Hessen-Kasselista"
 	desc = ""
-	picture = "FIN_Wolfgang.tga"
+	picture = "gfx/leaders/FIN/FIN_Wolfgang.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -117,9 +109,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidentti Kaarlo Juho Ståhlberg"
 	desc = ""
-	picture = "FIN_Stahlberg.tga"
+	picture = "gfx/leaders/FIN/FIN_Stahlberg.tga"
 	expire = "1965.1.1"
-	ideology = socdem
+	ideology = liberalism
 	traits = {
 	}
 }
@@ -127,7 +119,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kung Frederik Kaarle Hessen-Kasselista"
 	desc = ""
-	picture = "FIN_Kaarle.tga"
+	picture = "gfx/leaders/FIN/FIN_Kaarle.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -137,7 +129,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidentti Kyösti Kallio"	
 	desc = ""
-	picture = "FIN_Kallio.tga"
+	picture = "gfx/leaders/FIN/FIN_Kallio.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -147,7 +139,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Småkung Carl XIII av Bernadotte"	
 	desc = ""
-	picture = "Portrait_Carl_Bernadotte_Finland.tga"
+	picture = "gfx/leaders/FIN/Portrait_Carl_Bernadotte_Finland.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -157,9 +149,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Komentaja Paroni Carl Gustaf Emil Mannerheim"
 	desc = ""
-	picture = "FIN_Mannerheim.tga"
+	picture = "gfx/leaders/FIN/FIN_Mannerheim.tga"
 	expire = "1965.1.1"
-	ideology = militarism
+	ideology = military_junta
 	traits = {
 	}
 }
@@ -167,7 +159,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Valtionhoitaja Paroni Carl Gustaf Emil Mannerheim"
 	desc = ""
-	picture = "FIN_Mannerheim.tga"
+	picture = "gfx/leaders/FIN/FIN_Mannerheim.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -177,7 +169,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prinssi-Arkkipiispa Erkki Kaila"
 	desc = ""
-	picture = "FIN_Kaila.tga"
+	picture = "gfx/leaders/FIN/FIN_Kaila.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -187,7 +179,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Keisari Frederik Kaarle Hessen-Kasselista"
 	desc = ""
-	picture = "FIN_Kaarle.tga"
+	picture = "gfx/leaders/FIN/FIN_Kaarle.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -197,7 +189,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Johtaja Iisakki Vihtori Kosola"
 	desc = ""
-	picture = "FIN_Kosola.tga"
+	picture = "gfx/leaders/FIN/FIN_Kosola.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -207,7 +199,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Eduard Wohlrat Christian Dietl"
 	desc = ""
-	picture = "FIN_Dietl.tga"
+	picture = "gfx/leaders/FIN/FIN_Dietl.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

@@ -1,24 +1,19 @@
 ﻿capital = 1030
 
-oob = "ALA_1936"
-
-set_research_slots = 3
-
-set_convoys = 30
 set_cosmetic_tag = ALA_USA
 
+set_popularities = {
+	vanguardism = 1
+	socialist_monarchy = 3
+	liberal_republic  = 62
+	centrist_monarchism = 2
+	democratic = 27
+	conservative_monarchism = 3
+	stratocratic = 1
+	right_anarchism = 1
+}
 
-
-	set_popularities = {
-		liberal_republic 
-			 = 80
-		fascism
-			 = 0
-		democratic 
-			 = 20
-		neutrality = 0
-		}
-	set_politics = { 
+set_politics = { 
  ruling_party = liberal_republic
 	last_election = "1932.11.8"
 	election_frequency = 48
@@ -28,7 +23,7 @@ set_cosmetic_tag = ALA_USA
 create_country_leader = {
 	name = "Chairman Harris Laning"
 	desc = ""
-	picture = "ALA_Laning.tga"
+	picture = "gfx/leaders/ALA/ALA_Laning.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -38,19 +33,19 @@ create_country_leader = {
 create_country_leader = {
 	name = "Fleet Admiral Harris Laning"
 	desc = ""
-	picture = "ALA_Laning.tga"
+	picture = "gfx/leaders/ALA/ALA_Laning.tga"
 	expire = "1965.1.1"
-	ideology = militarism
+	ideology = military_junta
 	traits = {
 	}
 }
 
 create_country_leader = {
 	name = "Governor John Weir Troy"
-	desc = "POLITICS_ALA_LIBREP_DESC"
-	picture = "Portrait_Alaska_John_Weir_Troy.dds"
+	desc = "POLITICS_ALA_liberalism_DESC"
+	picture = "gfx/leaders/ALA/Portrait_Alaska_John_Weir_Troy.dds"
 	expire = "1950.1.1"
-	ideology = socdem
+	ideology = social_liberalism
 	traits = {
 	}
 }
@@ -58,18 +53,17 @@ create_country_leader = {
 create_country_leader = {
 	name = "Predsedátel' Andréj Január'evič Vyšínskij"
 	desc = ""
-	picture = "ALA_Vyshinsky_vanguard.tga"
+	picture = "gfx/leaders/ALA/ALA_Vyshinsky_vanguard.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
 	name = "Gubernátor Sergéj Platónovič Obolénskij Nelédinskij-Meléckij"
 	desc = ""
-	picture = "ALA_Sergei.tga"
+	picture = "gfx/leaders/ALA/ALA_Sergei.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -79,7 +73,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President George Alexander Parks"
 	desc = ""
-	picture = "ALA_Parks_dem.tga"
+	picture = "gfx/leaders/ALA/ALA_Parks_dem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -87,9 +81,29 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Velikiy Regent Antón Ivánovič Deníkin"
+	desc = ""
+	picture = "gfx/leaders/Russia/Portrait_Anton_Denikin.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prinz Franz I von Liechtenstein"
+	desc = ""
+	picture = "gfx/leaders/LIE/Portrait_Liechtenstein_franz.dds"
+	expire = "1965.1.1"
+	ideology = socmon_social_democracy
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Chiji Tsunejiro Ishii"
 	desc = ""
-	picture = "ALA_Ishii_stratmon.tga"
+	picture = "gfx/leaders/ALA/ALA_Ishii_stratmon.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -99,7 +113,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gubernátor Sergéj Platónovič Obolénskij Nelédinskij-Meléckij"
 	desc = ""
-	picture = "ALA_Sergei.tga"
+	picture = "gfx/leaders/ALA/ALA_Sergei.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {

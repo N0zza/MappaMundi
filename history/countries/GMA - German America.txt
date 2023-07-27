@@ -1,28 +1,15 @@
 ﻿capital = 389
 
-oob = "GMA_1936"
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-	early_fighter = 1
-}
-
-
-set_convoys = 10
-
 set_popularities = {
-	        democratic = 10
-        communism = 5
-        fascism = 70
-        neutrality = 15
-
+	communism = 5
+	democratic = 35
+	liberal_republic = 42
+	neutrality = 15
+	national_socialism = 3
 }
 
 set_politics = {
-	
-	ruling_party = national_socialism
+	ruling_party = liberal_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -41,7 +28,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Führer Fritz Julius Kuhn"
 	desc = ""
-	picture = "GMA_Kuhn.tga"
+	picture = "gfx/leaders/GMA/GMA_Kuhn.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -51,7 +38,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsführer John Smith"
 	desc = ""
-	picture = "GMA_Smith.tga"
+	picture = "gfx/leaders/GMA/GMA_Smith.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -61,7 +48,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Commander George Lincoln Rockwell"
 	desc = ""
-	picture = "GMA_Rockwell.tga"
+	picture = "gfx/leaders/GMA/GMA_Rockwell.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -69,11 +56,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Reichsprotektor Ferdinand Schörner"
+	name = "Ausschussvorsitzender Johann Ferdinand Schörner"
 	desc = ""
-	picture = "GMA_Schorner.tga"
+	picture = "gfx/leaders/GMA/GMA_Schorner.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = provisional_government
 	traits = {
 	}
 }
@@ -81,7 +68,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Feldmarschall William Luther Pierce III"
 	desc = ""
-	picture = "GMA_Pierce.tga"
+	picture = "gfx/leaders/GMA/GMA_Pierce.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -89,11 +76,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Vizekönig Wilhelm III Von Hohenzollern"
+	desc = ""
+	picture = "gfx/leaders/GMA/GMA_Wilhelm.tga"
+	expire = "1965.1.1"
+	ideology = conmon_christian_democracy
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Kronprinz und Gouverneur Karl I Von Habsburg"
 	desc = ""
-	picture = "GMA_Karl.tga"
+	picture = "gfx/leaders/GMA/GMA_Karl.tga"
 	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
+	ideology = anocmon
 	traits = {
 	}
 }
@@ -101,7 +98,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Militärgouverneur August Von Mackensen"
 	desc = ""
-	picture = "GMA_Mackensen.tga"
+	picture = "gfx/leaders/GMA/GMA_Mackensen.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -111,7 +108,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "König Wilhelm III Von Hohenzollern"
 	desc = ""
-	picture = "GMA_Wilhelm.tga"
+	picture = "gfx/leaders/GMA/GMA_Wilhelm.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -121,7 +118,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "König Wilhelm III Von Hohenzollern"
 	desc = ""
-	picture = "GMA_Wilhelm.tga"
+	picture = "gfx/leaders/GMA/GMA_Wilhelm.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -131,7 +128,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "König Wilhelm III Von Hohenzollern"
 	desc = ""
-	picture = "GMA_Wilhelm.tga"
+	picture = "gfx/leaders/GMA/GMA_Wilhelm.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -141,7 +138,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Commander Dwight David Eisenhower"
 	desc = ""
-	picture = "GMA_Eisenhower.tga"
+	picture = "gfx/leaders/GMA/GMA_Eisenhower.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -151,7 +148,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President John Moses"
 	desc = ""
-	picture = "GMA_Moses.tga"
+	picture = "gfx/leaders/GMA/GMA_Moses.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -161,9 +158,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chancellor Julius Peter Heil"
 	desc = ""
-	picture = "GMA_Heil.tga"
+	picture = "gfx/leaders/GMA/GMA_Heil.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = liberal_conservatism
 	traits = {
 	}
 }
@@ -171,9 +168,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Hjalmar Petersen"
 	desc = ""
-	picture = "GMA_Petersen.tga"
+	picture = "gfx/leaders/GMA/GMA_Petersen.tga"
 	expire = "1965.1.1"
-	ideology = socdem
+	ideology = liberalism
 	traits = {
 	}
 }
@@ -181,7 +178,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "People's President Norman Pattoon Thomas"
 	desc = ""
-	picture = "GMA_Thomas.tga"
+	picture = "gfx/leaders/GMA/GMA_Thomas.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -191,7 +188,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President John Silias Reed"
 	desc = ""
-	picture = "GMA_Reed.tga"
+	picture = "gfx/leaders/GMA/GMA_Reed.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -201,7 +198,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Commander Earl Russell Browder"
 	desc = ""
-	picture = "GMA_Browder.tga"
+	picture = "gfx/leaders/GMA/GMA_Browder.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -211,7 +208,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "People's Leader William Z Foster"
 	desc = ""
-	picture = "GMA_Foster.tga"
+	picture = "gfx/leaders/GMA/GMA_Foster.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -231,7 +228,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Holy Minister Kathryn Kuhlman"
 	desc = ""
-	picture = "GMA_Kuhlman.tga"
+	picture = "gfx/leaders/GMA/GMA_Kuhlman.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -241,7 +238,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chairman John Davison Rockefeller Sr."
 	desc = ""
-	picture = "GMA_Rockefeller.tga"
+	picture = "gfx/leaders/GMA/GMA_Rockefeller.tga"
 	expire = "1965.1.1"
 	ideology = ancap
 	traits = {

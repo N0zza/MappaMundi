@@ -1,14 +1,8 @@
 ﻿capital = 361	
 
-oob = "USA_1936"
-
 set_popularities = {
-	liberal_republic
-		= 72
-	democratic
-		= 26
-	socialism_ideology
-		= 2
+	liberal_republic = 75
+	democratic = 25
 }
 
 set_politics = { 
@@ -18,46 +12,30 @@ set_politics = {
 	elections_allowed = yes
 }
 
-
-#if = {
-#	limit = {
-#		has_dlc = "Together for Victory"
-#	}
-#	set_autonomy = {
-#		target = PHI
-#		autonomous_state = autonomy_puppet
-#	}
-#	else = {
-#		puppet = PHI
-#	}
-#}
-
 create_country_leader = {
 	name = "President Franklin Delano Roosevelt"
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-	picture = "USA_FDR.tga"
+	picture = "gfx/leaders/USA/USA_FDR.tga"
 	expire = "1947.1.1"
-	ideology = socdem
+	ideology = social_liberalism
 	traits = {
-		dislikes_germany
 	}
 }
 
 create_country_leader = {
 	name = "Gouverneur Hans-Heinrich Dieckhoff"
 	desc = ""
-	picture = "USA_Dieckhoff.tga"
+	picture = "gfx/leaders/USA/USA_Dieckhoff.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
 	name = "Queen Wallis I of Simpson"
 	desc = ""
-	picture = "USA_Wallis.tga"
+	picture = "gfx/leaders/USA/USA_Wallis.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -65,9 +43,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "President Alf Landon"
+	name = "President Alfred Mossman Landon"
 	desc = ""
-	picture = "USA_Landon.tga"
+	picture = "gfx/leaders/USA/USA_Landon.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -77,7 +55,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tribal Leadership"
 	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
-	picture = ""
+	picture = "gfx/leaders/To_be_added.tga"
 	expire = "1965.1.1"
 	ideology = total_anarchist
 	traits = {
@@ -97,7 +75,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Director Earl Russell Browder"
 	desc = ""
-	picture = "USA_Browder.tga"
+	picture = "gfx/leaders/USA/USA_Browder.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -107,7 +85,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chairman James Patrick Cannon"
 	desc = ""
-	picture = "USA_Cannon.tga"
+	picture = "gfx/leaders/USA/USA_Cannon.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -117,7 +95,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Norman Mattoon Thomas"
 	desc = ""
-	picture = "USA_Thomas.tga"
+	picture = "gfx/leaders/USA/USA_Thomas.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -127,7 +105,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "King John III of Washington"
 	desc = ""
-	picture = "USA_JohnWashington.tga"
+	picture = "gfx/leaders/USA/USA_JohnWashington.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -137,7 +115,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister Alfred Emanuel Smith"
 	desc = ""
-	picture = "USA_Smith.tga"
+	picture = "gfx/leaders/USA/USA_Smith.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -147,7 +125,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister Frederick Steiwer"
 	desc = ""
-	picture = "USA_Steiwar.tga"
+	picture = "gfx/leaders/USA/USA_Steiwar.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -157,7 +135,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chancellor William Frederick Lemke"
 	desc = ""
-	picture = "USA_Lemke.tga"
+	picture = "gfx/leaders/USA/USA_Lemke.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -167,7 +145,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "King Lee I of Washington"
 	desc = ""
-	picture = "USA_LeeWashington.tga"
+	picture = "gfx/leaders/USA/USA_LeeWashington.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -177,9 +155,29 @@ create_country_leader = {
 create_country_leader = {
 	name = "President David Leigh Colvin"
 	desc = ""
-	picture = "USA_Colvin.tga"
+	picture = "gfx/leaders/USA/USA_Colvin.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = right_wing_populism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Charles Augustus Lindbergh"
+	desc = ""
+	picture = "gfx/leaders/USA/USA_Lindbergh.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prime Minister Winston Leonard Spencer Churchill"
+	desc = ""
+	picture = "gfx/leaders/NEG/NEG_Churchill.tga"
+	expire = "1965.1.1"
+	ideology = anocmon
 	traits = {
 	}
 }
@@ -187,9 +185,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Commander-in-Chief John Joseph Pershing"
 	desc = ""
-	picture = "USA_Pershing.tga"
+	picture = "gfx/leaders/USA/USA_Pershing.tga"
 	expire = "1965.1.1"
-	ideology = militarism
+	ideology = military_junta
 	traits = {
 	}
 }
@@ -197,9 +195,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Sir John Greer Dill"
 	desc = ""
-	picture = "USA_Dill.tga"
+	picture = "gfx/leaders/USA/USA_Dill.tga"
 	expire = "1965.1.1"
-	ideology = stratmon
+	ideology = stratmon_colonialism
 	traits = {
 	}
 }
@@ -207,9 +205,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor-General Edward Frederick Lindley Wood, Viscount Halifax"
 	desc = ""
-	picture = "USA_Halifax.tga"
+	picture = "gfx/leaders/USA/USA_Halifax.tga"
 	expire = "1965.1.1"
-	ideology = authmon
+	ideology = authmon_colonialism
 	traits = {
 	}
 }
@@ -217,7 +215,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Divine President Michael Joseph Curley"
 	desc = ""
-	picture = "USA_Curley.tga"
+	picture = "gfx/leaders/USA/USA_Curley.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -227,7 +225,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Emperor George IV of Lee"
 	desc = ""
-	picture = "USA_GeorgeLee.tga"
+	picture = "gfx/leaders/USA/USA_GeorgeLee.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -237,7 +235,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Princeps-President William Dudley Pelley, Supreme Protector of Congress"
 	desc = ""
-	picture = "USA_Pelley.tga"
+	picture = "gfx/leaders/USA/USA_Pelley.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -247,7 +245,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chairman Smedley Darlington Butler"
 	desc = ""
-	picture = "USA_Butler.tga"
+	picture = "gfx/leaders/USA/USA_Butler.tga"
 	expire = "1965.1.1"
 	ideology = ancap
 	traits = {

@@ -1,15 +1,20 @@
 ﻿capital = 1123
 
-oob = "SWI_1936"
+set_country_flag = has_secondary_leader
+set_country_flag = has_tertiary_leader
 
-	set_popularities = {
-		centrist_republic 
-			 = 55
-		democratic
-			 = 45
-		}
-	set_politics = { 
- ruling_party = centrist_republic
+set_popularities = {
+	communism = 1
+	socialism_ideology = 29
+	liberal_republic = 7
+	centrist_republic = 25
+	democratic = 35
+	republican_fascism = 1
+	national_socialism = 2
+}
+
+set_politics = { 
+	ruling_party = centrist_republic
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
@@ -18,9 +23,9 @@ oob = "SWI_1936"
 create_country_leader = {
 	name = "Präsident Albert Meyer"
 	desc = ""
-	picture = "SWI_albert_meyer.tga"
+	picture = "gfx/leaders/SWI/SWI_albert_meyer.tga"
 	expire = "1965.1.1"
-	ideology = cenrep
+	ideology = directorial_republic
 	traits = {
 	}
 }
@@ -28,18 +33,17 @@ create_country_leader = {
 create_country_leader = {
 	name = "Präsident Rudolf Minger"
 	desc = ""
-	picture = "Portrait_Rudolf_Minger.dds"
+	picture = "gfx/leaders/SWI/Portrait_Rudolf_Minger.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
 	}
 }
 
-
 create_country_leader = {
 	name = "Generalsekretär Fritz Platten"
 	desc = ""
-	picture = "SWI_Platten.tga"
+	picture = "gfx/leaders/SWI/SWI_Platten.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -49,7 +53,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Vorsitzende Fritz Platten"
 	desc = ""
-	picture = "SWI_Platten.tga"
+	picture = "gfx/leaders/SWI/SWI_Platten.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -59,7 +63,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Präsident Ernst Nobs"
 	desc = ""
-	picture = "SWI_Nobs.tga"
+	picture = "gfx/leaders/SWI/SWI_Nobs.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -69,9 +73,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Königin Adelheid von Habsburg-Lothringen"
 	desc = ""
-	picture = "SWI_Adelheid.tga"
+	picture = "gfx/leaders/SWI/SWI_Adelheid.tga"
 	expire = "1965.1.1"
-	ideology = monsoc
+	ideology = monarcho_communism
 	traits = {
 	}
 }
@@ -79,9 +83,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Präsident Ernst Nobs"
 	desc = ""
-	picture = "SWI_Nobs.tga"
+	picture = "gfx/leaders/SWI/SWI_Nobs.tga"
 	expire = "1965.1.1"
-	ideology = socdem
+	ideology = liberalism
 	traits = {
 	}
 }
@@ -89,7 +93,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "König Robert von Habsburg-Lothringen"
 	desc = ""
-	picture = "SWI_Robert_Habsburg.tga"
+	picture = "gfx/leaders/SWI/SWI_Robert_Habsburg.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -99,7 +103,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "König Robert von Habsburg-Lothringen"
 	desc = ""
-	picture = "SWI_Robert_Habsburg.tga"
+	picture = "gfx/leaders/SWI/SWI_Robert_Habsburg.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -109,7 +113,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Königin Adelheid von Habsburg-Lothringen"
 	desc = ""
-	picture = "SWI_Adelheid.tga"
+	picture = "gfx/leaders/SWI/SWI_Adelheid.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -119,7 +123,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Präsident Eugen Bircher"
 	desc = ""
-	picture = "SWI_Bircher.tga"
+	picture = "gfx/leaders/SWI/SWI_Bircher.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -129,9 +133,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Général Henri Guisan"
 	desc = ""
-	picture = "SWI_Guisan.tga"
+	picture = "gfx/leaders/SWI/SWI_Guisan.tga"
 	expire = "1965.1.1"
-	ideology = militarism
+	ideology = military_junta
 	traits = {
 	}
 }
@@ -139,7 +143,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Großherzogin Adelheid von Habsburg-Lothringen"
 	desc = ""
-	picture = "SWI_Adelheid.tga"
+	picture = "gfx/leaders/SWI/SWI_Adelheid.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -149,7 +153,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prinz Robert von Habsburg-Lothringen"
 	desc = ""
-	picture = "SWI_Robert_Habsburg.tga"
+	picture = "gfx/leaders/SWI/SWI_Robert_Habsburg.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -159,7 +163,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Herzog Robert von Habsburg-Lothringen"
 	desc = ""
-	picture = "SWI_Robert_Habsburg.tga"
+	picture = "gfx/leaders/SWI/SWI_Robert_Habsburg.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -169,7 +173,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Minister-Primata Maurice Tornay"
 	desc = ""
-	picture = "SWI_Tornay.tga"
+	picture = "gfx/leaders/SWI/SWI_Tornay.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -179,9 +183,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Re Vittorio Emanuele di Savoia-Aosta"
 	desc = ""
-	picture = "SWI_Vittorio.tga"
+	picture = "gfx/leaders/SWI/SWI_Vittorio.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = corpmon_colonialism
 	traits = {
 	}
 }
@@ -189,7 +193,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Oberbefehlshaber Arthur Fonjallaz"
 	desc = ""
-	picture = "SWI_Fonjallaz.tga"
+	picture = "gfx/leaders/SWI/SWI_Fonjallaz.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -199,7 +203,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Wilhelm Gustloff"
 	desc = ""
-	picture = "SWI_Gustloff.tga"
+	picture = "gfx/leaders/SWI/SWI_Gustloff.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -229,7 +233,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Geschäftsführer Jakob Vontobel"
 	desc = ""
-	picture = "SWI_Vontobel.tga"
+	picture = "gfx/leaders/SWI/SWI_Vontobel.tga"
 	expire = "1965.1.1"
 	ideology = ancap
 	traits = {

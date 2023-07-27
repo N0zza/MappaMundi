@@ -1,31 +1,23 @@
 ﻿capital = 647
 
-oob = "PAC_1936"
-
 set_cosmetic_tag = JAP_COLONY
 
-	set_popularities = {
-		democratic 
-			 = 5
-		fascism
-			 = 30
-		communism
-			 = 5
-		authoritarian_monarchism 
-			 = 60
-		}
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+set_popularities = {
+	authoritarian_monarchism = 100
+}
+
+set_politics = { 
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Hisao Hayashi"
+	name = "Chiji Hayashi Hisao"
 	desc = ""
-	picture = "Portrait_Hisao_Hayashi.dds"
-	ideology = authmon
+	picture = "gfx/leaders/PAC/Portrait_Hisao_Hayashi.dds"
+	ideology = authmon_colonialism
 	expire = "1963.12.21"
 	traits = {
 		#
@@ -33,10 +25,10 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Hisao Hayashi"
+	name = "Chiji Hayashi Hisao"
 	desc = ""
-	picture = "Portrait_Hisao_Hayashi.dds"
-	ideology = fascism_ideology
+	picture = "gfx/leaders/PAC/Portrait_Hisao_Hayashi.dds"
+	ideology = corpmon_colonialism
 	expire = "1963.12.21"
 	traits = {
 		#

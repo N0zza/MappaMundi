@@ -1,41 +1,21 @@
 ﻿capital = 10028
 
-oob = "COG_1936"
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	tech_mountaineers = 1
-}
-
-set_convoys = 5
-
 set_cosmetic_tag = COG_BEL
 
+set_popularities = {
+	authoritarian_monarchism = 100
+}
 
-
-	set_popularities = {
-		democratic 
-			 = 0
-		fascism
-			 = 0
-		communism
-			 = 0
-			
-		authoritarian_monarchism 
-			 = 100
-		}
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+set_politics = { 
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	
 	name = "Gouverneur Général Pierre Ryckmans"
-	picture = "Portrait_Pierre_Ryckmans.dds"
+	picture = "gfx/leaders/COG/Portrait_Pierre_Ryckmans.dds"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -43,31 +23,28 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	
-	name = "Reichsprotektor Hermann Wilhelm von Göring"
-	picture = "Portrait_von_Goering.dds"
+	name = "Reichsprotektor Hermann Wilhelm Göring"
+	picture = "gfx/leaders/COG/Portrait_von_Goering.dds"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
-		
 	}
 }
 
 create_country_leader = {
 	name = "Président Joseph Kasa-Vubu"
 	desc = ""
-	picture = "COG_Vubu_authrep.tga"
+	picture = "gfx/leaders/COG/COG_Vubu_authrep.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
-		#
 	}
 }
 
 create_country_leader = {
 	name = "Governor-General Sir George James Giffard"
 	desc = ""
-	picture = "COG_Giffard_conmon.tga"
+	picture = "gfx/leaders/COG/COG_Giffard_conmon.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -77,7 +54,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mwenekongo Pedro VIII de Água Rosada"
 	desc = ""
-	picture = "COG_Pedro_cenmon.tga"
+	picture = "gfx/leaders/COG/COG_Pedro_cenmon.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -87,7 +64,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Koning Leopold III der Belgen"
 	desc = ""
-	picture = "COG_Leopold_mon.tga"
+	picture = "gfx/leaders/COG/COG_Leopold_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -97,7 +74,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Patrice Émery Lumumba"
 	desc = ""
-	picture = "COG_Lumumba_dem.tga"
+	picture = "gfx/leaders/COG/COG_Lumumba_dem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -105,11 +82,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gouverneur Hermann Wilhelm von Göring"
+	name = "Gouverneur Hermann Wilhelm Göring"
 	desc = ""
-	picture = "Portrait_von_Goering.dds"
+	picture = "gfx/leaders/COG/Portrait_von_Goering.dds"
 	expire = "1965.1.1"
-	ideology = stratmon
+	ideology = stratmon_colonialism
 	traits = {
 	}
 }
@@ -127,7 +104,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Guvernör Sten Gustaf Fredrik Troil Ramel"
 	desc = ""
-	picture = "COG_Ramel_libmon.tga"
+	picture = "gfx/leaders/COG/COG_Ramel_libmon.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -137,7 +114,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kyvernítis Emmanouil Tsouderos"
 	desc = ""
-	picture = "COG_Tsouderos_strat.tga"
+	picture = "gfx/leaders/COG/COG_Tsouderos_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {

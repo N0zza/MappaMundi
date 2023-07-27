@@ -1,42 +1,23 @@
 ﻿capital = 9128
 
-oob = "ECU_1936"
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	early_fighter = 1
+set_popularities = {
+	communism = 50
+	stratocratic = 50
 }
-set_country_flag = monroe_doctrine
-set_war_support = 0.1
-set_convoys = 5
 
-
-
-	set_popularities = {
-		socialism_ideology 
-			 = 55
-		fascism
-			 = 0
-		communism
-			 = 5
-		democratic 
-			 = 40
-			
-		}
-	set_politics = { 
- ruling_party = socialism_ideology
+set_politics = { 
+	ruling_party = communism
 	last_election = "1933.12.15"
 	election_frequency = 84
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Presidente Federico Páez Chiriboga"
+	name = "Jefe supremo Federico Páez Chiriboga"
 	desc = "POLITICS_FEDERICO_PAEZ_DESC"
-	picture = "Portrait_ecuador_federico_paez.dds"
+	picture = "gfx/leaders/ECU/Portrait_ecuador_federico_paez.dds"
 	expire = "1965.1.1"
-	ideology = demsoc
+	ideology = authoritarian_socialism
 	traits = {
 		#
 	}
@@ -45,9 +26,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Isidro Ramon Antonio Ayora Cueva"
 	desc = ""
-	picture = "ECU_Ayora_libdem.tga"
+	picture = "gfx/leaders/ECU/ECU_Ayora_libdem.tga"
 	expire = "1965.1.1"
-	ideology = socdem 
+	ideology = liberalism 
 	traits = {
 		#
 	}
@@ -56,7 +37,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Jefe Supremo Gil Alberto Enríquez Gallo"
 	desc = ""
-	picture = "ECU_Gallo_authdem.tga"
+	picture = "gfx/leaders/ECU/ECU_Gallo_authdem.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -67,7 +48,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Secretario General Ricardo Paredes Romero"
 	desc = ""
-	picture = "ECU_Romero_commie.tga"
+	picture = "gfx/leaders/ECU/ECU_Romero_commie.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -78,9 +59,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Ricardo Paredes Romero"
 	desc = ""
-	picture = "ECU_Romero_commie.tga"
+	picture = "gfx/leaders/ECU/ECU_Romero_commie.tga"
 	expire = "1965.1.1"
-	ideology = marxism
+	ideology = demsoc
 	traits = {
 		#
 	}
@@ -89,7 +70,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reina Dolores I Cacuango, Mamá Doloreyuk"
 	desc = ""
-	picture = "ECU_Cacuango.tga"
+	picture = "gfx/leaders/ECU/ECU_Cacuango.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -99,7 +80,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rey Félix I de Borbón-Parma"
 	desc = ""
-	picture = "ECU_Felix.tga"
+	picture = "gfx/leaders/ECU/ECU_Felix.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -109,7 +90,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Duque Félix I de Borbón-Parma"
 	desc = ""
-	picture = "ECU_Felix.tga"
+	picture = "gfx/leaders/ECU/ECU_Felix.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -119,7 +100,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reina Dolores I Cacuango, Mamá Doloreyuk"
 	desc = ""
-	picture = "ECU_Cacuango.tga"
+	picture = "gfx/leaders/ECU/ECU_Cacuango.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -129,7 +110,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rey Félix I de Borbón-Parma"
 	desc = ""
-	picture = "ECU_Felix.tga"
+	picture = "gfx/leaders/ECU/ECU_Felix.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -139,7 +120,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chiji Nakamura Kamezaburō"
 	desc = ""
-	picture = "ECU_Nakamura_fash.tga"
+	picture = "gfx/leaders/ECU/ECU_Nakamura_fash.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -149,7 +130,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Antonio Pons Campuzano"
 	desc = ""
-	picture = "ECU_Pons_condem.tga"
+	picture = "gfx/leaders/ECU/ECU_Pons_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -159,7 +140,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gobernador Manuel Arturo Odría Amoretti"
 	desc = ""
-	picture = "ECU_Amoretti_cendem.tga"
+	picture = "gfx/leaders/ECU/ECU_Amoretti_cendem.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -169,7 +150,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Comandante en Jefe Luis Alberto Larrea Alba"
 	desc = ""
-	picture = "ECU_Alba_strat.tga"
+	picture = "gfx/leaders/ECU/ECU_Alba_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -179,7 +160,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gobernador Emilio Esteban-Infantes Martín"
 	desc = ""
-	picture = "ECU_Emilio_stratmon.tga"
+	picture = "gfx/leaders/ECU/ECU_Emilio_stratmon.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -189,7 +170,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor-General Sir Alfred Cyril Curtis"
 	desc = ""
-	picture = "ECU_Curtis_authmon.tga"
+	picture = "gfx/leaders/ECU/ECU_Curtis_authmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -199,7 +180,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Arzobispo Carlos María de la Torre"
 	desc = ""
-	picture = "ECU_Torre_theoc.tga"
+	picture = "gfx/leaders/ECU/ECU_Torre_theoc.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -209,7 +190,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Dictador Carlos Mancheno Cajas"
 	desc = ""
-	picture = "ECU_Cajas_repfash.tga"
+	picture = "gfx/leaders/ECU/ECU_Cajas_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -219,7 +200,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Walter Friedrich Schellenberg"
 	desc = ""
-	picture = "ECU_Walter_nazi.tga"
+	picture = "gfx/leaders/ECU/ECU_Walter_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

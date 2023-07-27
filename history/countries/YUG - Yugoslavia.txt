@@ -2,29 +2,25 @@
 
 oob = "YUG_1936"
 
-	set_popularities = {
-		democratic 
-			 = 15
-		fascism
-			 = 60
-		communism
-			 = 15
-		authoritarian_monarchism 
-			 = 10
-		}
-	set_politics = { 
- ruling_party = fascism
+set_country_flag = has_secondary_leader
+set_country_flag = has_tertiary_leader
+
+set_popularities = {
+	fascism = 82
+	centrist_monarchism = 18
+}
+
+set_politics = { 
+	ruling_party = fascism
 	last_election = "1935.5.3"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
-set_stability = 0.6
-
 create_country_leader = {
 	name = "Premijer Nikola Uzunović"
 	desc = ""
-	picture = "yug_uzunovic.tga"
+	picture = "gfx/leaders/YUG/yug_uzunovic.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -34,7 +30,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prvi Sekretar Milan Gorkić"
 	desc = ""
-	picture = "yug_gorkic.tga"
+	picture = "gfx/leaders/YUG/yug_gorkic.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -44,7 +40,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premijer Milan Gorkić"
 	desc = ""
-	picture = "yug_gorkic.tga"
+	picture = "gfx/leaders/YUG/yug_gorkic.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -54,7 +50,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premijer Josip Broz Tito"
 	desc = ""
-	picture = "yug_tito.tga"
+	picture = "gfx/leaders/YUG/yug_tito.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -64,7 +60,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premijer Josip Broz Tito"
 	desc = ""
-	picture = "yug_tito.tga"
+	picture = "gfx/leaders/YUG/yug_tito.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -74,17 +70,17 @@ create_country_leader = {
 create_country_leader = {
 	name = "Predsednik Svetozar Pribićević"
 	desc = ""
-	picture = "yug_pribicevic.tga"
+	picture = "gfx/leaders/YUG/yug_pribicevic.tga"
 	expire = "1965.1.1"
-	ideology = socdem
+	ideology = liberalism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Kralj Petar II Karađorđevića"
+	name = "Kralj Petar II Karađorđević"
 	desc = ""
-	picture = "Portrait_Peter_II.dds"
+	picture = "gfx/leaders/YUG/Portrait_Peter_II.dds"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -92,9 +88,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kralj Petar II Karađorđevića"
+	name = "Kralj Petar II Karađorđević"
 	desc = ""
-	picture = "Portrait_Peter_II.dds"
+	picture = "gfx/leaders/YUG/Portrait_Peter_II.dds"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -104,7 +100,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Predsednik Anton Korošec"
 	desc = ""
-	picture = "yug_korosec.tga"
+	picture = "gfx/leaders/YUG/yug_korosec.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -112,9 +108,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Princ-Regent Pavel Karađorđevića"
+	name = "Kralj Maksimilijana I Habsburški-Lothringen"
 	desc = ""
-	picture = "yug_paulkaradord.tga"
+	picture = "gfx/leaders/CRO/CRO_Maksimilijana.tga"
+	expire = "1965.1.1"
+	ideology = anocmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Knez Namesnik Pavle Karađorđević"
+	desc = ""
+	picture = "gfx/leaders/YUG/yug_paulkaradord.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -124,7 +130,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premijer Milan Stojadinović"
 	desc = ""
-	picture = "yug_stojadinovic.tga"
+	picture = "gfx/leaders/YUG/yug_stojadinovic.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -134,9 +140,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Komandant Vojvoda Ljubomir Marić"
 	desc = ""
-	picture = "yug_maric.tga"
+	picture = "gfx/leaders/YUG/yug_maric.tga"
 	expire = "1965.1.1"
-	ideology = militarism
+	ideology = military_junta
 	traits = {
 	}
 }
@@ -152,9 +158,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kralj Petar II Karađorđevića"
+	name = "Kralj Petar II Karađorđević"
 	desc = ""
-	picture = "Portrait_Peter_II.dds"
+	picture = "gfx/leaders/YUG/Portrait_Peter_II.dds"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -164,7 +170,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kralj Aleksandar I Obrenovića"
 	desc = ""
-	picture = "Portrait_Alexander_Obrenovic.tga"
+	picture = "gfx/leaders/YUG/Portrait_Alexander_Obrenovic.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -174,7 +180,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Patrijarh Varnava Rosić"
 	desc = ""
-	picture = "yug_rosic.tga"
+	picture = "gfx/leaders/YUG/yug_rosic.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -182,9 +188,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Imperator Aleksandar I Karađorđevića"
+	name = "Imperator Aleksandar I Karađorđević"
 	desc = ""
-	picture = "yug_alexkaradord.tga"
+	picture = "gfx/leaders/YUG/yug_alexkaradord.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -194,7 +200,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premijer Dimitrije Ljotić"
 	desc = ""
-	picture = "yug_ljotic.tga"
+	picture = "gfx/leaders/YUG/yug_ljotic.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -204,7 +210,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premijer Ante Pavelić"
 	desc = ""
-	picture = "yug_pavelic.tga"
+	picture = "gfx/leaders/YUG/yug_pavelic.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
