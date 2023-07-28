@@ -4490,6 +4490,17 @@ defined_text = {
 		localization_key = "GFX_Xavier_Espot_Zamora"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = PHI
+				has_government = democratic
+				has_start_date > 1935.01.01
+				has_start_date < 1945.01.01
+			}
+		}
+		localization_key = "High Commissioner William Francis Murphy"
+	}
+	text = {
 		localization_key = "GFX_leader_unknown"
 	}
 }
