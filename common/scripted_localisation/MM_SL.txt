@@ -24,6 +24,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ENG
+				has_government = democratic_monarchism
+				has_start_date > 1914.01.01
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "First Lord of the Treasury Herbert Henry Asquith"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
 				has_government = conservative_monarchism
 			}
 		}
@@ -479,24 +490,6 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = JAP
-				has_government = stratocratic_monarchism
-			}
-		}
-		localization_key = "Naikakusōri daijin Okada Keisuke"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = JAP
-				has_government = fascism
-			}
-		}
-		localization_key = "Naikakusōri daijin Tōjō Hideki"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = JAP
 				has_government = conservative_monarchism
 				has_start_date > 2022.01.01
 			}
@@ -532,6 +525,35 @@ defined_text = {
 			}
 		}
 		localization_key = "Naikaku Sōri-Daijin Kazuo Shii"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JAP
+				has_government = centrist_monarchism
+				has_start_date > 1914.01.01
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "Naikaku Sōri-Daijin Ōkuma Shigenobu"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JAP
+				has_government = stratocratic_monarchism
+			}
+		}
+		localization_key = "Naikaku Sōri-Daijin Okada Keisuke"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JAP
+				has_government = fascism
+			}
+		}
+		localization_key = "Naikaku Sōri-Daijin Tōjō Hideki"
 	}
 	text = {
 		trigger = {
@@ -595,7 +617,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = PAK
-				has_government = democratic
+				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -668,6 +690,16 @@ defined_text = {
 			}
 		}
 		localization_key = "Premiére Ministre Élizabeth Borne"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				has_government = democratic
+				has_start_date < 1935.01.01
+			}
+		}
+		localization_key = "Premier Ministre Jean Raphaël Adrien René Viviani"
 	}
 	text = {
 		trigger = {
@@ -914,7 +946,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ISR
-				has_government = anocratic_republic
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -2079,6 +2111,17 @@ defined_text = {
 			AND = {
 				tag = ENG
 				has_government = democratic_monarchism
+				has_start_date > 1914.01.01
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "GFX_HH_Asquith"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = democratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -2444,24 +2487,6 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = JAP
-				has_government = stratocratic_monarchism
-			}
-		}
-		localization_key = "GFX_Okada_Keisuke"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = JAP
-				has_government = fascism
-			}
-		}
-		localization_key = "GFX_Tojo_Hideki"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = JAP
 				has_government = conservative_monarchism
 				has_start_date > 2022.01.01
 			}
@@ -2497,6 +2522,35 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Kazuo_Shii"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JAP
+				has_government = centrist_monarchism
+				has_start_date > 1914.01.01
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "GFX_Okuma_Shigenobu"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JAP
+				has_government = stratocratic_monarchism
+			}
+		}
+		localization_key = "GFX_Okada_Keisuke"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JAP
+				has_government = fascism
+			}
+		}
+		localization_key = "GFX_Tojo_Hideki"
 	}
 	text = {
 		trigger = {
@@ -2554,7 +2608,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = PAK
-				has_government = democratic
+				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -2627,6 +2681,15 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Elizabeth_Borne"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				has_government = democratic
+			}
+		}
+		localization_key = "GFX_Rene_Viviani"
 	}
 	text = {
 		trigger = {
@@ -2873,7 +2936,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ISR
-				has_government = anocratic_republic
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -3859,7 +3922,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Lotay_tshering"
+		localization_key = "GFX_Lotay_Tshering"
 	}
 	text = {
 		trigger = {

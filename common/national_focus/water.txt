@@ -964,9 +964,6 @@ focus_tree = {
 							ruling_party = authoritarian_monarchism
 						}
 					}
-					ENG = {
-						set_cosmetic_tag = BRIT
-					}
 					AUS = {
 						transfer_state = 932
 						transfer_state = 5928
@@ -8820,14 +8817,40 @@ focus_tree = {
 					}
 				}
 				ENG = {
+					set_politics = {
+						ruling_party = democratic_monarchism
+					}
+					set_party_name = {
+						ideology = democratic_monarchism
+						name = ENG_democratic_monarchism_1914_party
+						long_name = ENG_democratic_monarchism_1914_party_long
+					}
+					set_cosmetic_tag = BRIT
+					set_popularities = {
+						socialist_monarchy = 6
+						democratic_monarchism = 40
+						centrist_monarchism = 13
+						conservative_monarchism = 41
+					}
+				}
+				ENG = {
 					create_country_leader = {
 						name = "King George V of Saxe-Coburg and Gotha"
 						desc = ""
 						picture = "gfx/leaders/ENG/1914_ENG_George_V.tga"
 						expire = "1965.1.1"
-						ideology = conservative_constitutionalism
+						ideology = libmon_social_liberalism
 						traits = {
 						}
+					}
+				}
+				FRA = {
+					set_popularities = {
+						communism = 17
+						socialism_ideology = 36
+						centrist_republic = 11
+						liberal_republic = 13
+						democratic = 23
 					}
 				}
 				FRA = {
@@ -8976,6 +8999,12 @@ focus_tree = {
 					}
 				}
 				USA = {
+					set_popularities = {
+						liberal_republic = 82
+						democratic = 18
+					}
+				}
+				USA = {
 					create_country_leader = {
 						name = "President Thomas Woodrow Wilson"
 						desc = ""
@@ -8987,12 +9016,22 @@ focus_tree = {
 					}
 				}
 				JAP = {
+					set_politics = {
+						ruling_party = centrist_monarchism
+					}
+					set_cosmetic_tag = JAP_1914
+					set_popularities = {
+						centrist_monarchism = 45
+						conservative_monarchism = 55
+					}
+				}
+				JAP = {
 					create_country_leader = {
 						name = "Ten'nō Yoshihito"
 						desc = ""
 						picture = "gfx/leaders/JAP/1914_JAP_Yoshihito.tga"
 						expire = "1965.1.1"
-						ideology = stratmon
+						ideology = cenmon
 						traits = {
 						}
 					}
@@ -18794,7 +18833,7 @@ focus_tree = {
 					}
 					SUD = {
 						create_country_leader = {
-							name = "Raʾīs ʿAbd al-Fattāḥ ʿAbd ar-Raḥman al-Burhān"
+							name = "Raʾīs Maǧls al-Siyādaẗ al-Intaqālī ʿAbd al-Fattāḥ ʿAbd ar-Raḥman al-Burhān"
 							desc = ""
 							picture = "gfx/leaders/SUD/SUD_Burhan.tga"
 							expire = "1965.1.1"

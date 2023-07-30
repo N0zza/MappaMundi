@@ -13,16 +13,27 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 			factor = 0
 		}
 		hidden_effect = {
-					GUA = {
-						set_politics = {
-							ruling_party = democratic
-						}
-						set_party_name = {
-							ideology = democratic
-							name = GUA_democratic_2023_party
-							long_name = GUA_democratic_2023_party_long
-						}
+			JAP = {
+				set_politics = {
+					ruling_party = centrist_monarchism
+				}
+				set_cosmetic_tag = JAP_1914
+				set_popularities = {
+					centrist_monarchism = 45
+					conservative_monarchism = 55
+				}
+			}
+			JAP = {
+				create_country_leader = {
+					name = "Ten'nō Yoshihito"
+					desc = ""
+					picture = "gfx/leaders/JAP/1914_JAP_Yoshihito.tga"
+					expire = "1965.1.1"
+					ideology = cenmon
+					traits = {
 					}
+				}
+			}
 		}
 	}
 	option = { #reject
