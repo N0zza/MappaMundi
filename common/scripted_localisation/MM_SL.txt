@@ -884,9 +884,20 @@ defined_text = {
 			AND = {
 				tag = EUR
 				has_government = democratic
+				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "Président du Conseil européen Charles Yves Jean Ghislaine Michel"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = EUR
+				has_government = liberal_republic
+				has_start_date < 2022.01.01
+			}
+		}
+		localization_key = "Präsident des Europäischen Kongresses Konrad Hermann Joseph Adenauer"
 	}
 	text = {
 		trigger = {
@@ -2878,9 +2889,20 @@ defined_text = {
 			AND = {
 				tag = EUR
 				has_government = democratic
+				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "GFX_Charles_Michel"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = EUR
+				has_government = liberal_republic
+				has_start_date < 2022.01.01
+			}
+		}
+		localization_key = "GFX_Konrad_Adenauer"
 	}
 	text = {
 		trigger = {
