@@ -87,50 +87,13 @@ do_tno_german_civil_war = {
 	}
 	
 	SSC = {
-		if = {
+		every_state = {
 			limit = {
-				OR = {
-					137 = {owner = NZG}
-					137 = {owner = GER}
-				}
+				is_core_of = CRM
 			}
-			transfer_state = 137
-		}
-		if = {
-			limit = {
-				OR = {
-					2480 = {owner = NZG}
-					2480 = {owner = GER}
-				}
+			SSC = {
+				transfer_state = PREV
 			}
-			transfer_state = 2480
-		}
-		if = {
-			limit = {
-				OR = {
-					2481 = {owner = NZG}
-					2481 = {owner = GER}
-				}
-			}
-			transfer_state = 2481
-		}
-		if = {
-			limit = {
-				OR = {
-					2482 = {owner = NZG}
-					2482 = {owner = GER}
-				}
-			}
-			transfer_state = 2482
-		}
-		if = {
-			limit = {
-				OR = {
-					9092 = {owner = NZG}
-					9092 = {owner = GER}
-				}
-			}
-			transfer_state = 9092
 		}
 		
 		set_cosmetic_tag = CRM_TNO
@@ -147,49 +110,50 @@ do_tno_german_civil_war = {
 	BRL = {
 		every_state = {
 			limit = {
-				is_core_of = BRL	
+				OR = {
+					is_core_of = BRL
+					state = 774
+					state = 775
+					state = 1805
+					state = 2523
+					state = 3914
+					state = 3923
+					state = 4831
+					state = 5089
+					state = 5092
+					state = 5093
+					state = 5098
+					state = 5099
+					state = 5101
+					state = 5102
+					state = 7465
+					state = 8224
+					state = 8226
+					state = 8227
+					state = 8228
+					state = 8229
+					state = 8230
+					state = 8231
+					state = 8232
+					state = 8233
+					state = 8234
+					state = 8235
+					state = 8236
+					state = 8237
+					state = 8238
+					state = 8239
+					state = 8240
+					state = 8241
+					state = 8242
+					state = 8243
+					state = 8302
+					state = 8303
+				}				
 			}
 			BRL = {
 				transfer_state = PREV
 			}
 		}
-		
-		transfer_state = 774
-		transfer_state = 775
-		transfer_state = 1805
-		transfer_state = 2523
-		transfer_state = 3914
-		transfer_state = 3923
-		transfer_state = 4831
-		transfer_state = 5089
-		transfer_state = 5092
-		transfer_state = 5093
-		transfer_state = 5098
-		transfer_state = 5099
-		transfer_state = 5101
-		transfer_state = 5102
-		transfer_state = 7465
-		transfer_state = 8224
-		transfer_state = 8226
-		transfer_state = 8227
-		transfer_state = 8228
-		transfer_state = 8229
-		transfer_state = 8230
-		transfer_state = 8231
-		transfer_state = 8232
-		transfer_state = 8233
-		transfer_state = 8234
-		transfer_state = 8235
-		transfer_state = 8236
-		transfer_state = 8237
-		transfer_state = 8238
-		transfer_state = 8239
-		transfer_state = 8240
-		transfer_state = 8241
-		transfer_state = 8242
-		transfer_state = 8243
-		transfer_state = 8302
-		transfer_state = 8303
 		
 		set_politics = {
 			ruling_party = stratocratic
