@@ -7011,51 +7011,10 @@ focus_tree = {
 								state = 5937
 							}
 						}
-						FIU = {
+						HUN = {
 							transfer_state = PREV
 							add_state_core = PREV
 						}
-					}
-					
-					AUS = {
-						set_cosmetic_tag = AUS_1914
-					}
-					HUN = {
-						set_politics = {
-							ruling_party = authoritarian_monarchism
-						}
-						set_cosmetic_tag = HUN_1914
-					}
-					BOS = {
-						set_politics = {
-							ruling_party = stratocratic_monarchism
-						}
-						set_cosmetic_tag = BOS_1914
-					}
-					CRO = {
-						set_politics = {
-							ruling_party = authoritarian_monarchism
-						}
-						set_cosmetic_tag = CRO_1914
-					}
-					GAL = {
-						set_politics = {
-							ruling_party = monarchism
-						}
-						set_cosmetic_tag = GAL_1914
-						
-						set_capital = { 
-							state = 61
-						}
-					}
-					FIU = {
-						set_politics = {
-							ruling_party = authoritarian_monarchism
-						}
-						set_popularities = {
-							authoritarian_monarchism = 100
-						}
-						set_cosmetic_tag = FIU_1914
 					}
 					every_state = {
 						limit = {
@@ -7343,7 +7302,62 @@ focus_tree = {
 		}
 		SPR = {
 			set_politics = {
-				ruling_party = authoritarian_monarchism
+				ruling_party = anocratic_monarchism
+			}
+			set_cosmetic_tag = SPR_1914
+			set_party_name = {
+				ideology = anocratic_monarchism
+				name = SPR_anocratic_monarchism_1914_party
+				long_name = SPR_anocratic_monarchism_1914_party_long
+			}
+			set_popularities = {
+				socialism_ideology = 4
+				liberal_republic = 4
+				democratic_monarchism = 29
+				centrist_monarchism = 2
+				conservative_monarchism = 3
+				anocratic_monarchism = 56
+				authoritarian_monarchism = 2
+			}
+		}
+		SPR = {
+			create_country_leader = {
+				name = "Rey Alfonso XIII de Borbón"
+				desc = "POLITICS_ALFONSO_XIII_DESC"
+				picture = "gfx/leaders/SPR/SPR_AlfonsoXIII.tga"
+				expire = "1965.1.1"
+				ideology = anocmon
+				traits = {
+				}
+			}
+		}
+		POR = {
+			set_politics = {
+				ruling_party = socialism_ideology
+			}
+			set_cosmetic_tag = POR_2023
+			set_party_name = {
+				ideology = socialism_ideology
+				name = POR_socialism_ideology_1914_party
+				long_name = POR_socialism_ideology_1914_party_long
+			}
+			set_popularities = {
+				communism = 1
+				socialism_ideology = 44
+				liberal_republic = 27
+				centrist_republic = 4
+				democratic = 24
+			}
+		}
+		POR = {
+			create_country_leader = {
+				name = "Presidente Manuel José de Arriaga Brum da Silveira e Peyrelongue"
+				desc = ""
+				picture = "gfx/leaders/POR/POR_Arriaga.tga"
+				expire = "1965.1.1"
+				ideology = social_democracy
+				traits = {
+				}
 			}
 		}
 		ITA = {
@@ -8871,18 +8885,30 @@ focus_tree = {
 					}
 				}
 				RUS = {
-					every_owned_state = {do_russian_renames = yes}
-						
-					set_popularities = {
-						monarchism = 100
+					every_owned_state = {
+						do_russian_renames = yes
 					}
-						
+					drop_cosmetic_tag = yes
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+					}
+					set_popularities = {
+						communism = 1
+						socialist_monarchy = 4
+						democratic_monarchism = 6
+						centrist_monarchism = 3
+						conservative_monarchism = 14
+						anocratic_monarchism = 5
+						authoritarian_monarchism = 67
+					}
+				}
+				RUS = {	
 					create_country_leader = {
 						name = "Car' Nikoláj II Romanóvskij"
 						desc = ""
 						picture = "gfx/leaders/Russia/1914_RUS_Nicholas_II.tga"
 						expire = "1965.1.1"
-						ideology = absolutism
+						ideology = authmon
 						traits = {
 						}
 					}
@@ -8891,11 +8917,19 @@ focus_tree = {
 					set_politics = {
 						ruling_party = authoritarian_monarchism
 					}
-						
 					set_popularities = {
-						authoritarian_monarchism = 100
+						socialist_monarchy = 9
+						democratic_monarchism = 5
+						centrist_monarchism = 5
+						conservative_monarchism = 10
+						anocratic_monarchism = 4
+						authoritarian_monarchism = 67
 					}
-						
+					set_party_name = {
+						ideology = authoritarian_monarchism
+						name = GER_authoritarian_monarchism_1914_party
+						long_name = GER_authoritarian_monarchism_1914_party_long
+					}
 					create_country_leader = {
 						name = "Kaiser Wilhelm II von Hohenzollern"
 						desc = ""
@@ -8919,24 +8953,22 @@ focus_tree = {
 					}
 				}
 				AUS = {
-					create_country_leader = {
-						name = "Kaiser Franz Josef I von Habsburg-Lothringen"
-						desc = ""
-						picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
-						expire = "1965.1.1"
-						ideology = conservative_constitutionalism
-						traits = {
-						}
+					set_politics = {
+						ruling_party = authoritarian_monarchism
 					}
-						
+					set_cosmetic_tag = AUS_1914
 					set_popularities = {
-						conservative_monarchism = 100
+						socialist_monarchy = 8
+						democratic_monarchism = 6
+						centrist_monarchism = 3
+						conservative_monarchism = 10
+						anocratic_monarchism = 6
+						authoritarian_monarchism = 67
 					}
-					
 				}
-				HUN = {
+				AUS = {
 					create_country_leader = {
-						name = "Magyar Király I. Ferenc József Habsburg-Lotaringia"
+						name = "Kaiser Franz Joseph von Habsburg-Lothringen"
 						desc = ""
 						picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
 						expire = "1965.1.1"
@@ -8944,15 +8976,108 @@ focus_tree = {
 						traits = {
 						}
 					}
-					
-					set_popularities = {
-						authoritarian_monarchism = 100
+				}
+				HUN = {
+					set_politics = {
+						ruling_party = democratic_monarchism
 					}
-					
+					set_cosmetic_tag = HUN_1914
+					set_popularities = {
+						democratic_monarchism = 62
+						centrist_monarchism = 12
+						conservative_monarchism = 26
+					}
+					set_party_name = {
+						ideology = democratic_monarchism
+						name = HUN_democratic_monarchism_1914_party
+						long_name = HUN_democratic_monarchism_1914_party_long
+					}
+					create_country_leader = {
+						name = "Király Habsburg–Lotaringiai Ferenc József"
+						desc = ""
+						picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+						expire = "1965.1.1"
+						ideology = liberal_constitutionalism
+						traits = {
+						}
+					}
+				}
+				CRO = {
+					set_politics = {
+						ruling_party = conservative_monarchism
+					}
+					set_cosmetic_tag = CRO_1914
+					set_popularities = {
+						centrist_monarchism = 16
+						conservative_monarchism = 68
+						anocratic_monarchism = 16
+					}
+					set_party_name = {
+						ideology = conservative_monarchism
+						name = CRO_conservative_monarchism_1914_party
+						long_name = CRO_conservative_monarchism_1914_party_long
+					}
 				}
 				CRO = {
 					create_country_leader = {
-						name = "Kralj Hrvatske i Slavonije Franjo Josip I."
+						name = "Kralj Franjo Josip Habsburški"
+						desc = ""
+						picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+						expire = "1965.1.1"
+						ideology = conmon_conservative_liberalism
+						traits = {
+						}
+					}
+					
+				}
+				BOS = {
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+					}
+					set_cosmetic_tag = BOS_1914
+					set_popularities = {
+						conservative_monarchism = 16
+						anocratic_monarchism = 17
+						authoritarian_monarchism = 67
+					}
+					set_party_name = {
+						ideology = authoritarian_monarchism
+						name = BOS_authoritarian_monarchism_1914_party
+						long_name = BOS_authoritarian_monarchism_1914_party_long
+					}
+				}
+				BOS = {
+					create_country_leader = {
+						name = "Vojni Guverner Stjepan barun Sarkotić Lovćenski"
+						desc = ""
+						picture = "gfx/leaders/BOS/BOS_Lovcen_stratmon.tga"
+						expire = "1989.1.1"
+						ideology = authmon
+						traits = {
+						}
+					}
+				}
+				GAL = {
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+					}
+					set_cosmetic_tag = GAL_1914
+					set_popularities = {
+						socialist_monarchy = 4
+						democratic_monarchism = 6
+						centrist_monarchism = 2
+						conservative_monarchism = 17
+						anocratic_monarchism = 4
+						authoritarian_monarchism = 67
+					}
+					set_capital = { 
+						state = 91
+						remember_old_capital = no
+					}
+				}
+				GAL = {
+					create_country_leader = {
+						name = "Kralj Franciszek Józef z Habsburga"
 						desc = ""
 						picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
 						expire = "1965.1.1"
@@ -8960,27 +9085,6 @@ focus_tree = {
 						traits = {
 						}
 					}
-					
-					set_popularities = {
-						authoritarian_monarchism = 100
-					}
-					
-				}
-				GAL = {
-					create_country_leader = {
-						name = "Kralj Galicije i Lodomerije Franciszek Józef I"
-						desc = ""
-						picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
-						expire = "1965.1.1"
-						ideology = absolutism
-						traits = {
-						}
-					}
-					
-					set_popularities = {
-						monarchism = 100
-					}
-					
 				}
 				TUR = {
 					create_country_leader = {

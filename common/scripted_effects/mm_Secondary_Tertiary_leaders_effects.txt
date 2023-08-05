@@ -161,7 +161,7 @@ secondary_leader_enabled_effect = {
 				tag = AUS
 				OR = {
 					AND = {
-						has_government = conservative_monarchism
+						has_government = authoritarian_monarchism
 						OR = {
 							has_start_date < 1915.01.01
 							has_start_date > 2022.01.01
@@ -196,7 +196,7 @@ secondary_leader_enabled_effect = {
 				tag = HUN
 				OR = {
 					AND = {
-						has_government = authoritarian_monarchism
+						has_government = democratic_monarchism
 						has_start_date < 1915.01.01
 					}
 					AND = {
@@ -216,24 +216,10 @@ secondary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
-				tag = CRO
-				OR = {
-					AND = {
-						has_government = authoritarian_monarchism
-						has_start_date < 1915.01.01
-					}
-				}
-			}
-		}
-		set_country_flag = has_secondary_leader
-	}
-	else_if = {
-		limit = {
-			AND = {
 				tag = GAL
 				OR = {
 					AND = {
-						has_government = monarchism
+						has_government = authoritarian_monarchism
 						has_start_date < 1915.01.01
 					}
 				}
@@ -628,7 +614,15 @@ secondary_leader_enabled_effect = {
 			AND = {
 				tag = RUS
 				OR = {
-					has_government = vanguardism
+					AND = {
+						has_government = authoritarian_monarchism
+						has_start_date < 1915.01.01
+					}
+					AND = {
+						has_government = vanguardism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
 					AND = {
 						has_government = neutrality
 						has_start_date > 2022.01.01
@@ -1429,8 +1423,16 @@ secondary_leader_enabled_effect = {
 		limit = {
 			AND = {
 				tag = CRO
-				has_government = democratic
-				has_start_date > 2022.01.01
+				OR = {
+					AND = {
+						has_government = conservative_monarchism
+						has_start_date < 1915.01.01
+					}
+					AND = {
+						has_government = democratic
+						has_start_date > 2022.01.01
+					}
+				}
 			}
 		}
 		set_country_flag = has_secondary_leader
@@ -1439,8 +1441,16 @@ secondary_leader_enabled_effect = {
 		limit = {
 			AND = {
 				tag = BOS
-				has_government = anocratic_republic
-				has_start_date > 2022.01.01
+				OR = {
+					AND = {
+						has_government = authoritarian_monarchism
+						has_start_date < 1915.01.01
+					}
+					AND = {
+						has_government = anocratic_republic
+						has_start_date > 2022.01.01
+					}
+				}
 			}
 		}
 		set_country_flag = has_secondary_leader
