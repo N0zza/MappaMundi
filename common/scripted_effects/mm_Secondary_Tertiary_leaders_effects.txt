@@ -376,7 +376,7 @@ secondary_leader_enabled_effect = {
 				tag = GRE
 				OR = {
 					AND = {
-						has_government = conservative_monarchism
+						has_government = anocratic_monarchism
 						has_start_date > 1935.01.01
 						has_start_date < 1937.01.01
 					}
@@ -1738,6 +1738,186 @@ secondary_leader_enabled_effect = {
 					AND = {
 						has_government = democratic
 						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = XSM
+				OR = {
+					AND = {
+						has_government = stratocratic
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = AFG
+				OR = {
+					AND = {
+						has_government = authoritarian_monarchism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = KUW
+				OR = {
+					AND = {
+						has_government = monarchism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = BHR
+				OR = {
+					AND = {
+						has_government = monarchism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = QAT
+				OR = {
+					AND = {
+						has_government = monarchism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = ABD
+				OR = {
+					AND = {
+						has_government = monarchism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = DUB
+				OR = {
+					AND = {
+						has_government = monarchism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = SHJ
+				OR = {
+					AND = {
+						has_government = monarchism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = UAQ
+				OR = {
+					AND = {
+						has_government = monarchism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = AJM
+				OR = {
+					AND = {
+						has_government = monarchism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = RAK
+				OR = {
+					AND = {
+						has_government = monarchism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = OMN
+				OR = {
+					AND = {
+						has_government = monarchism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
 					}
 				}
 			}

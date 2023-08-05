@@ -2,19 +2,27 @@
 
 set_country_flag = has_secondary_leader
 
-	set_popularities = {
-		fascism 
-			 = 30
-		conservative_monarchism
-			 = 20
-		stratocratic_monarchism 
-			 = 50
-		}
-	set_politics = { 
- ruling_party = conservative_monarchism
+set_popularities = {
+	conservative_monarchism = 2
+	anocratic_monarchism = 96
+	authoritarian_monarchism = 2
+}
+
+set_politics = { 
+	ruling_party = conservative_monarchism
 	last_election = "1935.6.9"
 	election_frequency = 12
 	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Vasiliás Geórgios II tou Glýxmpournk"
+	desc = ""
+	picture = "gfx/leaders/GRE/Portrait_George_II.dds"
+	expire = "1965.1.1"
+	ideology = anocmon_caretaker_government
+	traits = {
+	}
 }
 
 create_country_leader = {

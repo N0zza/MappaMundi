@@ -2,18 +2,17 @@
 
 set_country_flag = has_secondary_leader
 
-	set_popularities = {
-		centrist_republic 
-			 = 65
-		neutrality 
-			 = 20
-		fascism
-			 = 5
-		communism
-			 = 10
-		}
-	set_politics = { 
- ruling_party = centrist_republic
+set_popularities = {
+	communism = 10
+	socialism_ideology = 25
+	centrist_republic = 6
+	democratic = 26
+	anocratic_republic = 9
+	republican_fascism = 9
+	national_socialism = 15
+}
+set_politics = { 
+	ruling_party = centrist_republic
 	last_election = "1935.5.19"
 	election_frequency = 60
 	elections_allowed = yes
@@ -24,7 +23,7 @@ create_country_leader = {
 	desc = "POLITICS_EDVARD_BENES_DESC"
 	picture = "gfx/leaders/Czechia/Portrait_Czech_Edvard_Benes.dds"
 	expire = "1965.1.1"
-	ideology = cenrep
+	ideology = big_tent
 	traits = {
 		#
 	}

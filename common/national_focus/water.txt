@@ -8820,11 +8820,6 @@ focus_tree = {
 					set_politics = {
 						ruling_party = democratic_monarchism
 					}
-					set_party_name = {
-						ideology = democratic_monarchism
-						name = ENG_democratic_monarchism_1914_party
-						long_name = ENG_democratic_monarchism_1914_party_long
-					}
 					set_cosmetic_tag = BRIT
 					set_popularities = {
 						socialist_monarchy = 6
@@ -16279,6 +16274,11 @@ focus_tree = {
 							conservative_monarchism = 55
 							anocratic_monarchism = 1
 						}
+						set_party_name = {
+							ideology = democratic_monarchism
+							name = ENG_democratic_monarchism_2023_party
+							long_name = ENG_democratic_monarchism_2023_party_long
+						}
 						puppet = GSY
 						puppet = JSY
 						puppet = MNX
@@ -16298,6 +16298,14 @@ focus_tree = {
 							picture = "gfx/leaders/ENG/ENG_Sunak.tga"
 							expire = "1965.1.1"
 							ideology = paternalistic_conservatism
+						}
+						
+						create_country_leader = {
+							name = "Prime Minister Sir Keir Rodney Starmer"
+							desc = ""
+							picture = "gfx/leaders/ENG/ENG_Starmer.tga"
+							expire = "1965.1.1"
+							ideology = third_way
 						}
 						
 						create_country_leader = {
