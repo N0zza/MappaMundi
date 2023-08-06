@@ -569,12 +569,22 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TUR
-				has_government = anocratic_republic
+				has_government = neutrality
 				has_start_date > 2022.01.01
 				has_global_flag = non_hog_secondary_leaders
 			}
 		}
 		localization_key = "Cumhurbaşkanı Yardımcıs Fuat Oktay"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUR
+				has_government = authoritarian_monarchism
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "Vazīr-i A‘ẓam Meḥmed Sa‘īd Ḥalīm Pāşā"
 	}
 	text = {
 		trigger = {
@@ -786,6 +796,16 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = CHI
+				has_government = neutrality
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "Hsingcheng Yüan Yüanch'ang Hsü Shih-ch'ang"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CHI
 				has_government = liberal_republic
 				has_start_date > 2022.01.01
 			}
@@ -914,10 +934,10 @@ defined_text = {
 			AND = {
 				tag = POR
 				has_government = socialism_ideology
-				has_start_date > 2022.01.01
+				has_start_date < 1915.01.01
 			}
 		}
-		localization_key = "Primeiro-Ministro António Luís Santos da Costa"
+		localization_key = "Presidente do Ministério Bernardino Luís Machado Guimarães"
 	}
 	text = {
 		trigger = {
@@ -927,6 +947,16 @@ defined_text = {
 			}
 		}
 		localization_key = "Primeiro-Ministro António de Oliveira Salazar"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SPR
+				has_government = anocratic_monarchism
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "Presidente del Gobierno Eduardo Dato e Iradier"
 	}
 	text = {
 		trigger = {
@@ -2600,12 +2630,22 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TUR
-				has_government = anocratic_republic
+				has_government = neutrality
 				has_start_date > 2022.01.01
 				has_global_flag = non_hog_secondary_leaders
 			}
 		}
 		localization_key = "GFX_Fuat_Oktay"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUR
+				has_government = authoritarian_monarchism
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "GFX_Said_Halim_Pasha"
 	}
 	text = {
 		trigger = {
@@ -2812,6 +2852,16 @@ defined_text = {
 			AND = {
 				tag = CHI
 				has_government = neutrality
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "GFX_Xu_Shichang"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CHI
+				has_government = neutrality
 			}
 		}
 		localization_key = "GFX_Chiang_Kaishek"
@@ -2939,6 +2989,16 @@ defined_text = {
 			AND = {
 				tag = POR
 				has_government = socialism_ideology
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "GFX_Bernandino_Machado"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = POR
+				has_government = socialism_ideology
 				has_start_date > 2022.01.01
 			}
 		}
@@ -2952,6 +3012,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Antonio_Salazar"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SPR
+				has_government = anocratic_monarchism
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "GFX_Eduardo_Dato"
 	}
 	text = {
 		trigger = {

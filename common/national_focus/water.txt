@@ -7370,10 +7370,31 @@ focus_tree = {
 			transfer_state = 12085
 			transfer_state = 12086
 			set_politics = {
-				ruling_party = authoritarian_monarchism
+				ruling_party = anocratic_monarchism
+			}
+			set_cosmetic_tag = ITA_1914
+			set_party_name = {
+				ideology = anocratic_monarchism
+				name = ITA_anocratic_monarchism_1914_party
+				long_name = ITA_anocratic_monarchism_1914_party_long
 			}
 			set_popularities = {
-				authoritarian_monarchism = 100
+				socialist_monarchy = 16
+				democratic_monarchism = 22
+				centrist_monarchism = 3
+				conservative_monarchism = 6
+				anocratic_monarchism = 53
+			}
+		}
+		ITA = {
+			create_country_leader = {
+				name = "Re Vittorio Emanuele III di Savoia"
+				desc = ""
+				picture = "gfx/leaders/ITA/1914_ITA_Victor_Emmannuel_III.tga"
+				expire = "1965.1.1"
+				ideology = anocmon_social_authoritarianism
+				traits = {
+				}
 			}
 		}
 		FRA = {
@@ -7515,21 +7536,6 @@ focus_tree = {
 					add_state_core = PREV
 				}
 			}
-		TUR = {
-			set_cosmetic_tag = OTTO
-			set_politics = {
-				ruling_party = monarchism
-			}
-			set_popularities = {
-				monarchism = 100
-			}
-			transfer_state = 2333
-			transfer_state = 3356
-			transfer_state = 9395
-			transfer_state = 9871
-			transfer_state = 12780
-			transfer_state = 12781
-		}
 		every_state = {
 			limit = {
 				OR = {
@@ -9087,12 +9093,35 @@ focus_tree = {
 					}
 				}
 				TUR = {
+					set_cosmetic_tag = OTTO
+					set_politics = {
+						ruling_party = authoritarian_monarchism
+					}
+					set_popularities = {
+						communism = 2
+						democratic_monarchism = 4
+						anocratic_monarchism = 61
+						authoritarian_monarchism = 33
+					}
+					set_party_name = {
+						ideology = authoritarian_monarchism
+						name = TUR_authoritarian_monarchism_1914_party
+						long_name = TUR_authoritarian_monarchism_1914_party_long
+					}
+					transfer_state = 2333
+					transfer_state = 3356
+					transfer_state = 9395
+					transfer_state = 9871
+					transfer_state = 12780
+					transfer_state = 12781
+				}
+				TUR = {
 					create_country_leader = {
-						name = "Padişah Mehmed V Reşâd"
+						name = "Padişah Meḥmed-i V Reşâd"
 						desc = ""
 						picture = "gfx/leaders/TUR/1914_TUR_Mehmed_V.tga"
 						expire = "1965.1.1"
-						ideology = absolutism
+						ideology = authmon
 						traits = {
 						}
 					}

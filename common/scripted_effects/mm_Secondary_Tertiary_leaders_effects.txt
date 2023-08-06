@@ -669,10 +669,14 @@ secondary_leader_enabled_effect = {
 				tag = SPR
 				OR = {
 					AND = {
-						has_government = anocratic_republic
-						has_start_date < 2022.01.01
+						has_government = anocratic_monarchism
+						has_start_date < 1915.01.01
 					}
-					
+					AND = {
+						has_government = anocratic_republic
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
 					AND = {
 						has_government = socialist_monarchy
 						has_start_date > 2022.01.01
@@ -722,10 +726,14 @@ secondary_leader_enabled_effect = {
 				tag = POR
 				OR = {
 					AND = {
-						has_government = republican_fascism
-						has_start_date < 2022.01.01
+						has_government = socialism_ideology
+						has_start_date < 1915.01.01
 					}
-					
+					AND = {
+						has_government = republican_fascism
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
 					AND = {
 						has_government = socialism_ideology
 						has_start_date > 2022.01.01
@@ -1065,7 +1073,6 @@ secondary_leader_enabled_effect = {
 					AND = {
 						has_government = neutrality
 						has_start_date < 2022.01.01
-						has_start_date > 1915.01.01
 					}
 					AND = {
 						has_government = liberal_republic
@@ -1296,6 +1303,10 @@ secondary_leader_enabled_effect = {
 			AND = {
 				tag = TUR
 				OR = {
+					AND = {
+						has_government = authoritarian_monarchism
+						has_start_date < 1915.01.01
+					}
 					AND = {
 						has_government = neutrality
 						has_start_date < 2022.01.01

@@ -13,17 +13,14 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 			factor = 0
 		}
 		hidden_effect = {
-				BOS = {
-					create_country_leader = {
-						name = "Vojni Guverner Stjepan barun Sarkotić Lovćenski"
-						desc = ""
-						picture = "gfx/leaders/BOS/BOS_Lovcen_stratmon.tga"
-						expire = "1989.1.1"
-						ideology = authmon
-						traits = {
-						}
-					}
+			TUR = {
+				set_popularities = {
+					communism = 2
+					democratic_monarchism = 4
+					anocratic_monarchism = 61
+					authoritarian_monarchism = 33
 				}
+			}
 		}
 	}
 	option = { #reject
