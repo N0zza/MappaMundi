@@ -1,18 +1,26 @@
 ﻿capital = 1991
 
 set_popularities = {
-        liberal_republic = 97
-        democratic = 1
-        centrist_republic = 2
-
+	liberal_republic = 94
+	democratic = 2
+	centrist_republic = 2
+	socialism_ideology = 2
 }
 
 set_politics = {
-	
 	ruling_party = liberal_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "President Henry Agard Wallace"
+	picture = "gfx/leaders/IOW/Portrait_Henry_Wallace.dds"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
 }
 
 create_country_leader = {
