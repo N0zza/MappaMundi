@@ -113,9 +113,22 @@ defined_text = {
 			AND = {
 				tag = CAN
 				has_government = democratic_monarchism
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
 			}
 		}
 		localization_key = "Prime Minister William Lyon Mackenzie King"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CAN
+				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Prime Minister Sir Robert Laird Borden"
 	}
 	text = {
 		trigger = {
@@ -2299,9 +2312,22 @@ defined_text = {
 			AND = {
 				tag = CAN
 				has_government = democratic_monarchism
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
 			}
 		}
 		localization_key = "GFX_William_Mackenzie"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CAN
+				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Prime Minister Sir Robert Laird Borden"
 	}
 	text = {
 		trigger = {
