@@ -1440,9 +1440,22 @@ defined_text = {
 			AND = {
 				tag = SAF
 				has_government = centrist_monarchism
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
 			}
 		}
 		localization_key = "Prime Minister James Barry Munnik Hertzog"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SAF
+				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Prime Minister Louis Botha"
 	}
 	text = {
 		trigger = {
@@ -3289,9 +3302,22 @@ defined_text = {
 			AND = {
 				tag = SAF
 				has_government = centrist_monarchism
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
 			}
 		}
 		localization_key = "GFX_Barry_Hertzog"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SAF
+				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Louis_Botha"
 	}
 	text = {
 		trigger = {
