@@ -16329,7 +16329,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/PAK/PAK_Alvi.tga"
 							expire = "1965.1.1"
-							ideology = anocrep
+							ideology = authoritarian_democracy
 						}
 					}
 					add_victory_points = { #Naypyidaw
@@ -16747,7 +16747,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/UAE/UAE_MBZ.tga"
 							expire = "1965.1.1"
-							ideology = authmon
+							ideology = authmon_semi_constitutional_monarchy
 						}
 					}
 					17388 = {
@@ -16835,7 +16835,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/JOR/JOR_Abdullah.tga"
 							expire = "1965.1.1"
-							ideology = authmon
+							ideology = authmon_semi_constitutional_monarchy
 						}
 					} 
 					BHR = {
@@ -16856,7 +16856,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/BHR/BHR_Hamad.tga"
 							expire = "1965.1.1"
-							ideology = authmon
+							ideology = authmon_semi_constitutional_monarchy
 						}
 					}
 					QAT = {
@@ -16875,7 +16875,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/QAT/QAT_Thani.tga"
 							expire = "1965.1.1"
-							ideology = authmon
+							ideology = authmon_semi_constitutional_monarchy
 						}
 					}
 					KUW = {
@@ -16899,7 +16899,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/KUW/KUW_Nawaf.tga"
 							expire = "1965.1.1"
-							ideology = anocmon
+							ideology = semi_constitutional_monarchy
 						}
 					}
 					every_state = {
@@ -17406,6 +17406,11 @@ focus_tree = {
 							long_name = TUR_vanguardism_2023_party_long
 						}
 						set_party_name = {
+							ideology = communism
+							name = TUR_communism_2023_party
+							long_name = TUR_communism_2023_party_long
+						}
+						set_party_name = {
 							ideology = liberal_republic
 							name = TUR_liberal_republic_2023_party
 							long_name = TUR_liberal_republic_2023_party_long
@@ -17454,11 +17459,11 @@ focus_tree = {
 							ideology = totsoc
 						}
 						create_country_leader = {
-							name = "Cumhurbaşkanı Kemal Okuyan"
+							name = "Cumhurbaşkanı Selahattin Demirtaş"
 							desc = ""
-							picture = "gfx/leaders/TUR/TUR_Okuyan.tga"
+							picture = "gfx/leaders/TUR/TUR_Demirtaş.tga"
 							expire = "1965.1.1"
-							ideology = marxism
+							ideology = left_wing_nationalism
 						}
 						create_country_leader = {
 							name = "Cumhurbaşkanı Kemal Kılıçdaroğlu"
@@ -19212,10 +19217,11 @@ focus_tree = {
 							long_name = MOR_anocratic_monarchism_2023_party_long
 						}
 						set_popularities = {
-							socialist_monarchy = 16
-							anocratic_monarchism = 48
-							centrist_monarchism = 13
-							conservative_monarchism = 23
+							socialist_monarchy = 8
+							democratic_monarchism = 11
+							centrist_monarchism = 6
+							conservative_monarchism = 12
+							anocratic_monarchism = 63
 						}
 					}
 					MOR = {
@@ -19224,7 +19230,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/MOR/MOR_Mohammed.tga"
 							expire = "1965.1.1"
-							ideology = anocmon
+							ideology = semi_constitutional_monarchy
 						}
 					}
 					WES = {
@@ -19944,7 +19950,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/GAM/GAM_Adama_Barrow.tga"
 							expire = "1965.1.1"
-							ideology = anocrep
+							ideology = authoritarian_democracy
 						}
 					}
 					GNB = {
@@ -20057,10 +20063,11 @@ focus_tree = {
 							long_name = NGA_anocratic_republic_2023_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 10
+							socialism_ideology = 8
 							liberal_republic = 2
 							anocratic_republic = 49
-							centrist_republic = 33
+							centrist_republic = 2
+							democratic = 33
 							neutrality = 1
 							republican_fascism = 5
 						}
@@ -20071,7 +20078,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/NGA/NGA_Tinubu.tga"
 							expire = "1965.1.1"
-							ideology = anocrep
+							ideology = authoritarian_democracy
 						}
 					}
 					EQG = {
@@ -20305,16 +20312,16 @@ focus_tree = {
 					NMB = {
 						set_cosmetic_tag = NMB_2023
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = socialism_ideology
 						}
 						set_popularities = {
 							vanguardism = 2
-							socialism_ideology = 7
-							liberal_republic = 16
-							centrist_republic = 2
+							communism = 5
+							socialism_ideology = 61
+							liberal_republic = 5
+							centrist_republic = 15
+							democratic = 5
 							anocratic_republic = 7
-							democratic = 60
-							neutrality = 6
 						}
 						set_party_name = {
 							ideology = democratic
@@ -20328,27 +20335,28 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/NMB/NMB_Geingob.tga"
 							expire = "1965.1.1"
-							ideology = paternalistic_conservatism
+							ideology = social_democracy
 						}
 					}
 					SAF = {
 						set_cosmetic_tag = SAF_2023
 						transfer_state = 10870
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = socialism_ideology
 						}
 						set_popularities = {
-							vanguardism = 11
-							socialism_ideology = 1.75
-							liberal_republic = 0.5
-							centrist_republic = 21
-							anocratic_republic = 5.5
-							democratic = 60.25
+							vanguardism = 44
+							communism = 7
+							socialism_ideology = 230
+							liberal_republic = 19
+							centrist_republic = 67
+							democratic = 22
+							anocratic_republic = 11
 						}
 						set_party_name = {
-							ideology = democratic
-							name = SAF_democratic_2023_party
-							long_name = SAF_democratic_2023_party_long
+							ideology = socialism_ideology
+							name = SAF_socialism_ideology_2023_party
+							long_name = SAF_socialism_ideology_2023_party_long
 						}
 					}
 					SAF = {
@@ -20357,24 +20365,25 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/SAF/SAF_Ramaphosa.tga"
 							expire = "1965.1.1"
-							ideology = paternalistic_conservatism
+							ideology = socrep_third_way
 						}
 					}
 					LES = {
 						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = democratic_monarchism
+							ruling_party = centrist_monarchism
 						}
 						set_party_name = {
-							ideology = democratic_monarchism
-							name = LES_democratic_monarchism_2023_party
-							long_name = LES_democratic_monarchism_2023_party_long
+							ideology = centrist_monarchism
+							name = LES_centrist_monarchism_2023_party
+							long_name = LES_centrist_monarchism_2023_party_long
 						}
 						set_popularities = {
-							socialist_monarchy = 39
-							democratic_monarchism = 57
-							democratic = 2
-							conservative_monarchism = 2
+							socialist_monarchy = 35
+							democratic_monarchism = 9
+							centrist_monarchism = 50
+							conservative_monarchism = 5
+							anocratic_monarchism = 1
 						}
 					}
 					LES = {
@@ -20383,7 +20392,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/LES/LES_Letsie_III.tga"
 							expire = "1965.1.1"
-							ideology = libmon_social_liberalism
+							ideology = cenmon_populism
 						}
 					}
 					SWZ = {
@@ -20397,7 +20406,7 @@ focus_tree = {
 					}
 					SWZ = {
 						create_country_leader = {
-							name = "Ngwenyama Mswati III"
+							name = "Ngwenyama Mswati III Dlamini"
 							desc = ""
 							picture = "gfx/leaders/SWZ/SWZ_Mswati_III.tga"
 							expire = "1965.1.1"
@@ -21087,7 +21096,7 @@ focus_tree = {
 							socialist_monarchy = 3
 							democratic_monarchism = 51
 							centrist_monarchism = 1
-							conservative_monarchism = 37
+							conservative_monarchism = 36
 							anocratic_monarchism = 8
 							authoritarian_monarchism = 1
 						}
@@ -21368,8 +21377,8 @@ focus_tree = {
 						set_popularities = {
 							communism = 4
 							socialism_ideology = 22
-							liberal_republic = 44
-							centrist_republic = 8
+							liberal_republic = 17
+							centrist_republic = 35
 							democratic = 7
 							anocratic_republic = 15
 						}
@@ -21418,9 +21427,9 @@ focus_tree = {
 							ideology = liberal_constitutionalism
 						}
 						create_country_leader = {
-							name = "Présidente Valérie Anne Émilie Pécresse"
+							name = "Président Emmanuel Jean-Michel Frédéric Macron"
 							desc = ""
-							picture = "gfx/leaders/FRA/FRA_Pécresse.tga"
+							picture = "gfx/leaders/FRA/FRA_Emmanuel_Macron.tga"
 							expire = "1965.1.1"
 							ideology = cenrep
 						}

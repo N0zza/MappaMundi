@@ -718,7 +718,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = FRA
-				has_government = liberal_republic
+				has_government = centrist_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -977,6 +977,16 @@ defined_text = {
 			}
 		}
 		localization_key = "Presidente do Ministério Bernardino Luís Machado Guimarães"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = POR
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Primeiro-Ministro António Luís Santos da Costa"
 	}
 	text = {
 		trigger = {
@@ -2159,6 +2169,16 @@ defined_text = {
 		localization_key = "Baş nazir Əli Hidayət oğlu Əsədov"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = ATC
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Secretario Ejecutivo del Sistema del Tratado Antártico Albert Alexander Lluberas Bonaba"
+	}
+	text = {
 		localization_key = "To Be Added"
 	}
 }
@@ -2825,7 +2845,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = FRA
-				has_government = liberal_republic
+				has_government = centrist_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -4275,6 +4295,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Ali_Asadov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ATC
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Albert_Lluberas"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
