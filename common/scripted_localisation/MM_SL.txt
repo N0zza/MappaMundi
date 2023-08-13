@@ -2248,6 +2248,16 @@ defined_text = {
 		localization_key = "T'äqəlayə minisətərə ʾÄbiyə ʾÄhəmädə ʾÄli"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = TMS
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Türkmen halkynyň Milli Lideri, Türkmenistanyň Halk Maslahatynyň Başlygy Gurbanguly Mälikgulyýewiç Berdimuhamedow"
+	}
+	text = {
 		localization_key = "To Be Added"
 	}
 }
@@ -4443,6 +4453,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Abiy_Ahmed"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TMS
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Gurbanguly_Berdimuhamedow"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
