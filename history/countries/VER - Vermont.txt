@@ -1,16 +1,12 @@
 ﻿capital = 911
 
-	set_popularities = {
-		democratic 
-			 = 80
-		fascism
-			 = 0
-		communism
-			 = 0
-		neutrality = 20
-		}
-	set_politics = { 
- ruling_party = democratic
+set_popularities = {
+	democratic = 80
+	neutrality = 20
+}
+
+set_politics = { 
+	ruling_party = democratic
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -72,6 +68,16 @@ create_country_leader = {
 	picture = "gfx/leaders/VER/VER_Wallace_authmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor-General David Euan Wallace"
+	desc = ""
+	picture = "gfx/leaders/VER/VER_Wallace_authmon.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
 	traits = {
 	}
 }
