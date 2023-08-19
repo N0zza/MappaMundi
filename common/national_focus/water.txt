@@ -16777,9 +16777,8 @@ focus_tree = {
 							long_name = SYR_neutrality_2023_party_long
 						}
 						set_popularities = {
-							vanguardism = 1
-							communism = 1
-							socialism_ideology = 4
+							vanguardism = 2
+							communism = 4
 							anocratic_republic = 27
 							neutrality = 66
 							republican_fascism = 1
@@ -16839,7 +16838,7 @@ focus_tree = {
 					
 					JOR = {
 						create_country_leader = {
-							name = "Milk ʿAbd ul-llāh al-Ṯānī bin al-Ḥussayn al-Hāšimī"
+							name = "Milk ʿAbd ul-llāh II bin al-Ḥussayn al-Hāšimī"
 							desc = ""
 							picture = "gfx/leaders/JOR/JOR_Abdullah.tga"
 							expire = "1965.1.1"
@@ -22499,25 +22498,24 @@ focus_tree = {
 					}
 					URG = {
 						create_country_leader = {
-							name = "PresidentE Luis Alberto Aparicio Alejandro Lacalle Pou"
+							name = "Presidente Luis Alberto Aparicio Alejandro Lacalle Pou"
 							desc = ""
 							picture = "gfx/leaders/URG/URG_Luis_Lacalle_Pou.tga"
 							expire = "1965.1.1"
-							ideology = conservatism
+							ideology = liberal_conservatism
 						}
 					}
 					BOL = {
-						set_cosmetic_tag = BOL_2023
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = socialism_ideology
 						}
 						set_party_name = {
-							ideology = anocratic_republic
-							name = BOL_anocratic_republic_2023_party
-							long_name = BOL_anocratic_republic_2023_party_long
+							ideology = socialism_ideology
+							name = BOL_socialism_ideology_2023_party
+							long_name = BOL_socialism_ideology_2023_party_long
 						}
 						set_popularities = {
-							anocratic_republic = 58
+							socialism_ideology = 58
 							liberal_republic = 30
 							democratic = 12
 						}
@@ -22528,7 +22526,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/BOL/BOL_Arce.tga"
 							expire = "1965.1.1"
-							ideology = social_nationalism
+							ideology = left_wing_populism
 						}
 					}
 					CHL = {
@@ -22541,13 +22539,22 @@ focus_tree = {
 							long_name = CHL_socialism_ideology_2023_party_long
 						}
 						set_popularities = {
-							vanguardism = 8
-							socialism_ideology = 22
+							vanguardism = 13
+							communism = 6
+							socialism_ideology = 43
 							liberal_republic = 11
-							centrist_republic = 14
-							democratic = 34
+							centrist_republic = 15
+							democratic = 53
+							anocratic_republic = 15
+						}
+						set_popularities = {
+							vanguardism = 8
+							communism = 4
+							socialism_ideology = 29
+							liberal_republic = 7
+							centrist_republic = 10
+							democratic = 33
 							anocratic_republic = 9
-							neutrality = 2
 						}
 					}
 					CHL = {
@@ -22634,7 +22641,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/PRU/PRU_Boluarte.tga"
 							expire = "1965.1.1"
-							ideology = right_wing_populism
+							ideology = anocrep_authoritarian_capitalism
 						}
 					}
 					VEN = {
@@ -22742,18 +22749,14 @@ focus_tree = {
 						name = Brasília
 					}	
 					BRA = {
-						
 						set_capital = {
 							state = 1646
 							remember_old_capital = no
 						}
-						
 						set_politics = {
 							ruling_party = socialism_ideology
 						}
-						
 						set_cosmetic_tag = BRA_2023
-						
 						set_popularities = {
 							vanguardism = 1
 							socialism_ideology = 22
@@ -22762,19 +22765,16 @@ focus_tree = {
 							democratic = 20
 							anocratic_republic = 18
 						}
-						
 						set_party_name = {
 							ideology = socialism_ideology
 							name = BRA_socialism_ideology_2023_party
 							long_name = BRA_socialism_ideology_2023_party_long
 						}
-						
 						set_party_name = {
 							ideology = centrist_republic
 							name = BRA_centrist_republic_2023_party
 							long_name = BRA_centrist_republic_2023_party_long
 						}
-						
 						set_party_name = {
 							ideology = democratic
 							name = BRA_democratic_2023_party
@@ -22800,10 +22800,11 @@ focus_tree = {
 							long_name = PAR_democratic_2023_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 19
-							liberal_republic = 21
-							centrist_republic = 7
-							democratic = 53
+							socialism_ideology = 2.5
+							liberal_republic = 27.5
+							centrist_republic = 5
+							democratic = 60
+							anocratic_republic = 5
 						}
 					}
 					PAR = {
@@ -22812,7 +22813,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/PAR/PAR_Mario_Abdo_Benitez.tga"
 							expire = "1965.1.1"
-							ideology = paternalistic_conservatism
+							ideology = conrep_national_conservatism
 						}
 					}
 					TRI = {
