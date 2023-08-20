@@ -1,19 +1,15 @@
 ﻿capital = 7371
 
+set_popularities = {
+	democratic = 70
+	communism = 30
+}
 
-	set_popularities = {
-		democratic 
-			 = 70
-		neutrality
-			 = 0
-		communism
-			 = 30
-		}
-	set_politics = { 
- ruling_party = democratic
+set_politics = { 
+	ruling_party = democratic
 	last_election = "1960.1.1"
 	election_frequency = 20
-	elections_allowed = no # none after offset 1
+	elections_allowed = no
 }
 
 create_country_leader = {
@@ -42,6 +38,16 @@ create_country_leader = {
 	picture = "gfx/leaders/SLV/SLV_Kidric_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kranjski Kralj Franc Jožef II Habsburško-Lotarinški"
+	desc = ""
+	picture = "gfx/leaders/EUR/EUR_Portrait_Otto_Habsburg.dds"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
 	traits = {
 	}
 }
