@@ -1958,8 +1958,19 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SYR
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Raʾīs al-Maǧlis al-Wuzarāʾ Ḥusayn ʿArnūs"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SYR
 				has_government = centrist_republic
-				has_start_date > 1936.01.01
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
 			}
 		}
 		localization_key = "Rayiys alwuzara' Taj al-Din al-Hasani"
@@ -2336,6 +2347,36 @@ defined_text = {
 			}
 		}
 		localization_key = "Türkmen halkynyň Milli Lideri, Türkmenistanyň Halk Maslahatynyň Başlygy Gurbanguly Mälikgulyýewiç Berdimuhamedow"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RJV
+				has_government = left_anarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Raʾīs Mušārik li-Masad Riyāḍ Ḥammūd Darār"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SR2
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Raʾīs ʿAbd ur-Raḥman Muḥammad Fahmī Muṣṭafaỳ"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SR3
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Raʾīs al-Wuzarāʾ ʿAlī ʿAbd ur-Raḥman Kidah"
 	}
 	text = {
 		localization_key = "To Be Added"
@@ -3990,8 +4031,19 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SYR
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Hussein_Arnous"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SYR
 				has_government = centrist_republic
-				has_start_date > 1936.01.01
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
 			}
 		}
 		localization_key = "GFX_Taj_Hasani"
@@ -4625,6 +4677,36 @@ defined_text = {
 		localization_key = "GFX_Gurbanguly_Berdimuhamedow"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = RJV
+				has_government = left_anarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Riad_Darar"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SR2
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Abdurrahman_Mustafa"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SR3
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Ali_Keda"
+	}
+	text = {
 		localization_key = "GFX_leader_unknown"
 	}
 }
@@ -4785,7 +4867,7 @@ defined_text = {
 				has_start_date > 1936.01.01
 			}
 		}
-		localization_key = "Haut-Commissaire Comte Damien de Martel"
+		localization_key = "Haut-Commissaire Damien Joseph Alfred Charles Comte de Martel"
 	}
 	text = {
 		trigger = {
@@ -4885,6 +4967,26 @@ defined_text = {
 			}
 		}
 		localization_key = "Raʾīs al-Maktab al-Siyāsī li-Ḥamās Abū al-ʿAbd Ismāʿīl ʿAbd us-Salām Aḥmad Haniyyaẗ"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RJV
+				has_government = left_anarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Raʾīsaẗ Mušārikaẗ li-Masad Amīnaẗ ʿUmar"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SR3
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Qāʾid al-ʿĀm li-Taḥrīr aš-Šām ʾAḥmad Ḥusayn aš-Šarʿ"
 	}
 	text = {
 		localization_key = "To be Added"
@@ -5162,6 +5264,26 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Ismail_Haniyeh"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RJV
+				has_government = left_anarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Amina_Omar"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SR3
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Abu_Muhammad_Jolani"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"

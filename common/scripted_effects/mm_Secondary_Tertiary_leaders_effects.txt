@@ -593,6 +593,10 @@ secondary_leader_enabled_effect = {
 						has_start_date > 1935.01.01
 						has_start_date < 1937.01.01
 					}
+					AND = {
+						has_government = neutrality
+						has_start_date > 2022.01.01
+					}
 				}
 			}
 		}
@@ -2223,6 +2227,48 @@ secondary_leader_enabled_effect = {
 		}
 		set_country_flag = has_secondary_leader
 	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = RJV
+				OR = {
+					AND = {
+						has_government = left_anarchism
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = SR2
+				OR = {
+					AND = {
+						has_government = neutrality
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = SR3
+				OR = {
+					AND = {
+						has_government = neutrality
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
 	else = {
 		clr_country_flag = has_secondary_leader
 	}
@@ -2479,6 +2525,34 @@ tertiary_leader_enabled_effect = {
 				OR = {
 					AND = {
 						has_government = theocratic
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_tertiary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = RJV
+				OR = {
+					AND = {
+						has_government = left_anarchism
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_tertiary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = SR3
+				OR = {
+					AND = {
+						has_government = neutrality
 						has_start_date > 2022.01.01
 					}
 				}
