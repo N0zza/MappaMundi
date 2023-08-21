@@ -193,6 +193,23 @@ secondary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
+				tag = EAS
+				OR = {
+					AND = {
+						has_government = monarchism
+						OR = {
+							has_start_date < 1937.01.01
+							has_start_date > 1935.01.01
+						}
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
 				tag = HUN
 				OR = {
 					AND = {
