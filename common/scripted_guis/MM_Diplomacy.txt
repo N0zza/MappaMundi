@@ -8,38 +8,22 @@ scripted_gui = {
 			always = yes
 		}
 	}
-	MM_SG_Secondary_Leader_Button = {
+	
+	MM_SG_Secondary_Leader_Container = {
 		context_type = selected_country_context
 		parent_window_token = selected_country_view_diplomacy
-		window_name = "MM_SG_Secondary_Leader_Button_Container"
+		window_name = "MM_SG_Secondary_Leader_Container"
 		visible = {
 			THIS = {
-				AND = {
-					has_country_flag = has_secondary_leader
-					NOT = {
-						has_country_flag = has_tertiary_leader
-					}
-				}
+				has_country_flag = has_secondary_leader
 			}
 		}
 	}
-	MM_SG_Secondary_Leader_Button_Alt = {
+	
+	MM_SG_Tertiary_Leader_Container = {
 		context_type = selected_country_context
 		parent_window_token = selected_country_view_diplomacy
-		window_name = "MM_SG_Secondary_Leader_Button_Container_Alt"
-		visible = {
-			THIS = {
-				AND = {
-					has_country_flag = has_secondary_leader
-					has_country_flag = has_tertiary_leader
-				}
-			}
-		}
-	}
-	MM_SG_Tertiary_Leader_Button = {
-		context_type = selected_country_context
-		parent_window_token = selected_country_view_diplomacy
-		window_name = "MM_SG_Tertiary_Leader_Button_Container"
+		window_name = "MM_SG_Tertiary_Leader_Container"
 		visible = {
 			THIS = {
 				has_country_flag = has_tertiary_leader

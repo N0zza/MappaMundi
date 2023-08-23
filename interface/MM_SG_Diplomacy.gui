@@ -7,7 +7,7 @@ guiTypes = {
 			name = "ideology"
 			position = { x = 203 y = 198 }
 			font = "hoi_24header"
-			text = "[GetSubIdeologyLoc]"
+			text = [GetSubIdeologyLoc]
 			alwaystransparent = yes
 			maxWidth = 345
 			maxHeight = 20
@@ -16,48 +16,83 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "MM_SG_Secondary_Leader_Button_Container"
-		position = { x = 0 y = 0 }
-		show_position = { x = 0 y = 0 }
-		size = { width=100 height=100 }
+		name = "MM_SG_Secondary_Leader_Container"
+		position = { x = -300 y = 355 }
+		show_position = { x = 0 y = 355 }
+		size = { width=300 height=365 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+		
+		instantTextboxType = {
+			name = "secondary_leader_name"
+			position = { x = 25 y = 250 }
+			font = "hoi_24header"
+			text = "[GetSecondaryLeaderName]"
+			maxWidth = 250
+			maxHeight = 100
+			format = center			
+			pdx_tooltip = SECONDARYLEADERTT
+		}
 		
 		iconType = {
-			name = "secondary_leader_button"
-			position = { x = 120 y = 200 }
-			quadTextureSprite ="GFX_Secondary_Leaders_Button"
-			Orientation = "CENTER"
-			scale = 0.39
-			pdx_tooltip = "SECONDARYLEADERPORTRAIT"
+			name = "secondary_leader_portrait"
+			position = { x = 72 y = 25 }
+			spriteType = ""
+			scale = 1
+			pdx_tooltip = SECONDARYLEADERTT
+		}
+		
+		iconType = {
+			name = "diplo_secondary_leader_frame"
+			position = { x = 60 y = 17 }
+			spriteType = "GFX_diplo_leader_frame"
+			alwaystransparent = yes
+			scale = 1.35
 		}
 	}
 	containerWindowType = {
-		name = "MM_SG_Secondary_Leader_Button_Container_Alt"
-		position = { x = 0 y = 0 }
-		show_position = { x = 0 y = 0 }
-		size = { width=100 height=100 }
+		name = "MM_SG_Tertiary_Leader_Container"
+		position = { x = -300 y = 355 }
+		show_position = { x = 282 y = 355 }
+		size = { width=300 height=365 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
 		
-		iconType = {
-			name = "secondary_leader_button_alt"
-			position = { x = 120 y = 180 }
-			quadTextureSprite ="GFX_Secondary_Leaders_Button"
-			Orientation = "CENTER"
-			scale = 0.39
-			pdx_tooltip = "SECONDARYLEADERPORTRAIT"
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_bg"
 		}
-	}
-	containerWindowType = {
-		name = "MM_SG_Tertiary_Leader_Button_Container"
-		position = { x = 0 y = 0 }
-		show_position = { x = 0 y = 0 }
-		size = { width=100 height=100 }
+		
+		instantTextboxType = {
+			name = "tertiary_leader_name"
+			position = { x = 25 y = 250 }
+			font = "hoi_20bs"
+			text = "[GetTertiaryLeaderName]"
+			maxWidth = 250
+			maxHeight = 100
+			format = center				
+		}
 		
 		iconType = {
-			name = "tertiary_leader_button"
-			position = { x = 120 y = 220 }
-			quadTextureSprite ="GFX_Secondary_Leaders_Button"
-			Orientation = "CENTER"
-			scale = 0.39
-			pdx_tooltip = "TERTIARYLEADERPORTRAIT"
+			name = "tertiary_leader_portrait"
+			position = { x = 72 y = 25 }
+			spriteType = ""
+			scale = 1
+		}
+		
+		iconType = {
+			name = "diplo_tertiary_leader_frame"
+			position = { x = 60 y = 17 }
+			spriteType = "GFX_diplo_leader_frame"
+			alwaystransparent = yes
+			scale = 1.35
 		}
 	}
 }
