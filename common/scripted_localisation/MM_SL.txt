@@ -5307,3 +5307,18 @@ defined_text = {
 		localization_key = "GFX_leader_unknown"
 	}
 }
+defined_text = {
+	name = GetTertiaryLeaderNameTT
+	text = {
+		trigger = {
+			AND = {
+				tag = SWI
+				has_country_flag = has_tertiary_leader
+			}
+		}
+		localization_key = "Bundesrat, Conseil fédéral, Consiglio federale, Cussegl federal"
+	}
+	text = {
+		localization_key = "[GetTertiaryLeaderName]"
+	}
+}
