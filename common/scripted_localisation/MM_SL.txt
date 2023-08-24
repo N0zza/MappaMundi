@@ -446,6 +446,32 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = AUS
+				has_government = conservative_monarchism
+				OR = {
+					has_start_date < 1937.01.01
+					has_start_date > 1935.01.01
+				}
+			}
+		}
+		localization_key = "Ministerpräsident Karl Josef Seitz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = democratic_monarchism
+				OR = {
+					has_start_date < 1937.01.01
+					has_start_date > 1935.01.01
+				}
+			}
+		}
+		localization_key = "Ministerpräsident Carl Vaugoin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
 				has_government = republican_fascism
 			}
 		}
@@ -465,9 +491,39 @@ defined_text = {
 			AND = {
 				tag = EAS
 				has_government = monarchism
+				OR = {
+					has_start_date < 1937.01.01
+					has_start_date > 1935.01.01
+				}
 			}
 		}
 		localization_key = "Provisorischer Reichsrat"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WAS
+				has_government = conservative_monarchism
+				OR = {
+					has_start_date < 1937.01.01
+					has_start_date > 1935.01.01
+				}
+			}
+		}
+		localization_key = "Ministerpräsident Carl Vaugoin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WAS
+				has_government = democratic_monarchism
+				OR = {
+					has_start_date < 1937.01.01
+					has_start_date > 1935.01.01
+				}
+			}
+		}
+		localization_key = "Ministerpräsident Karl Josef Seitz"
 	}
 	text = {
 		trigger = {
@@ -2875,11 +2931,67 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = AUS
+				has_government = conservative_monarchism
+				OR = {
+					has_start_date < 1937.01.01
+					has_start_date > 1935.01.01
+				}
+			}
+		}
+		localization_key = "GFX_Carl_Vaugoin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = democratic_monarchism
+				OR = {
+					has_start_date < 1937.01.01
+					has_start_date > 1935.01.01
+				}
+			}
+		}
+		localization_key = "GFX_Karl_Seitz"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = EAS
 				has_government = monarchism
+				OR = {
+					has_start_date < 1937.01.01
+					has_start_date > 1935.01.01
+				}
 			}
 		}
 		localization_key = "GFX_Reichsrat"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WAS
+				has_government = conservative_monarchism
+				OR = {
+					has_start_date < 1937.01.01
+					has_start_date > 1935.01.01
+				}
+			}
+		}
+		localization_key = "GFX_Carl_Vaugoin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WAS
+				has_government = democratic_monarchism
+				OR = {
+					has_start_date < 1937.01.01
+					has_start_date > 1935.01.01
+				}
+			}
+		}
+		localization_key = "GFX_Karl_Seitz"
 	}
 	text = {
 		trigger = {
