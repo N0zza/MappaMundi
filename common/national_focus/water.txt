@@ -7326,7 +7326,7 @@ focus_tree = {
 				desc = "POLITICS_ALFONSO_XIII_DESC"
 				picture = "gfx/leaders/SPR/SPR_AlfonsoXIII.tga"
 				expire = "1965.1.1"
-				ideology = anocmon
+				ideology = anocmon_oilgarchism
 				traits = {
 				}
 			}
@@ -13833,20 +13833,25 @@ focus_tree = {
 							remember_old_capital = no
 						}
 						set_politics = {
-							ruling_party = liberal_republic
+							ruling_party = democratic
 						}
-						set_cosmetic_tag = MOL_2023
 						set_party_name = {
 							ideology = liberal_republic
-							name = MOL_liberal_republic_2023_party
-							long_name = MOL_liberal_republic_2023_party_long
+							name = MOL_liberal_republic_party
+							long_name = MOL_liberal_republic_party_long
+						}
+						set_party_name = {
+							ideology = democratic
+							name = MOL_democratic_2023_party
+							long_name = MOL_democratic_2023_party_long
 						}
 						set_popularities = {
-							vanguardism = 10
-							socialism_ideology = 20
-							liberal_republic = 62
-							democratic = 6
-							anocratic_republic = 2
+							vanguardism = 8
+							communism = 4
+							socialism_ideology = 1
+							democratic = 63
+							centrist_republic = 5
+							anocratic_republic = 19
 						}
 					}
 					
@@ -13856,7 +13861,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/MOL/MOL_Maia_Sandu.tga"
 							expire = "1965.1.1"
-							ideology = liberalism
+							ideology = conservative_liberalism
 						}
 					}
 					TRN = {
@@ -15953,27 +15958,27 @@ focus_tree = {
 						transfer_state = 9000
 						transfer_state = 9001
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = neutrality
 						}	
 						set_cosmetic_tag = KPK_2023
 						set_party_name = {
-							ideology = anocratic_republic
-							name = KPK_anocratic_republic_2023_party
-							long_name = KPK_anocratic_republic_2023_party_long
+							ideology = neutrality
+							name = KPK_neutrality_2023_party
+							long_name = KPK_neutrality_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 34
 							centrist_republic = 15
-							anocratic_republic = 51
+							neutrality = 51
 						}
 					}
 					KPK = {
 						create_country_leader = {
-								name = "Prezident Murat Kallibekovich Kamalov"
-								desc = ""
-								picture = "gfx/leaders/KPK/KPK_Murat_Kamalov.tga"
-								expire = "1965.1.1"
-								ideology = anocrep_authoritarian_capitalism
+							name = "Joqarǵı Keńesiniń Baslıǵı Amanbay Tilewbay ulı Orınbaev"
+							desc = ""
+							picture = "gfx/leaders/KPK/KPK_Orynbaev.tga"
+							expire = "1965.1.1"
+							ideology = authoritarian_capitalism
 						}
 					}
 					UZB = {
@@ -15990,27 +15995,27 @@ focus_tree = {
 						transfer_state = 18299
 						transfer_state = 18332
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = neutrality
 						}	
 						set_cosmetic_tag = UZB_2023
 						set_party_name = {
-							ideology = anocratic_republic
-							name = UZB_anocratic_republic_2023_party
-							long_name = UZB_anocratic_republic_2023_party_long
+							ideology = neutrality
+							name = UZB_neutrality_2023_party
+							long_name = UZB_neutrality_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 31
 							centrist_republic = 10
-							anocratic_republic = 59
+							neutrality = 59
 						}
 					}
 					UZB = {
 						create_country_leader = {
-								name = "Prezident Shavkat Miromon o'g'li Mirziyoyev"
-								desc = ""
-								picture = "gfx/leaders/UZB/UZB_Mirziyoyev.tga"
-								expire = "1965.1.1"
-								ideology = anocrep_authoritarian_capitalism
+							name = "Prezident Shavkat Miromon o'g'li Mirziyoyev"
+							desc = ""
+							picture = "gfx/leaders/UZB/UZB_Mirziyoyev.tga"
+							expire = "1965.1.1"
+							ideology = authoritarian_capitalism
 						}
 					}
 					TAJ = {
@@ -16057,11 +16062,11 @@ focus_tree = {
 					}
 					TMS = {
 						create_country_leader = {
-							name = "Prezident Serdar Gurbangulyýewiç Berdimuhamedow"
+							name = "Prezident we Ministrler Kabinetiniň başlygy Serdar Gurbangulyýewiç Berdimuhamedow"
 							desc = ""
 							picture = "gfx/leaders/TMS/TMS_Berdimuhamedow.tga"
 							expire = "1965.1.1"
-							ideology = despotism
+							ideology = hereditary_dictatorship
 						}
 					}
 					KAZ = {
@@ -16081,21 +16086,22 @@ focus_tree = {
 						transfer_state = 18381
 						set_capital = {
 							state = 590
+							remember_old_capital = no
 						}
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = neutrality
 						}
 						set_cosmetic_tag = KAZ_2023
 						set_party_name = {
-							ideology = anocratic_republic
-							name = KAZ_anocratic_republic_2023_party
-							long_name = KAZ_anocratic_republic_2023_party_long
+							ideology = neutrality
+							name = KAZ_neutrality_2023_party
+							long_name = KAZ_neutrality_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 18
 							centrist_republic = 13
 							democratic = 6
-							anocratic_republic = 63
+							neutrality = 63
 						}
 					}
 					KAZ = {
@@ -16104,7 +16110,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/KAZ/KAZ_Tokayev.tga"
 							expire = "1965.1.1"
-							ideology = anocrep_authoritarian_capitalism
+							ideology = authoritarian_capitalism
 						}
 					}
 					KYR = {
@@ -16113,20 +16119,21 @@ focus_tree = {
 						transfer_state = 18315
 						drop_cosmetic_tag = yes	
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = neutrality
 						}
 						set_cosmetic_tag = KYR_2023
 						set_party_name = {
-							ideology = anocratic_republic
-							name = KYR_anocratic_republic_2023_party
-							long_name = KYR_anocratic_republic_2023_party_long
+							ideology = neutrality
+							name = KYR_neutrality_2023_party
+							long_name = KYR_neutrality_2023_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 1
 							liberal_republic = 8
 							centrist_republic = 24
 							democratic = 24
-							anocratic_republic = 43
+							anocratic_republic = 6
+							neutrality = 37
 						}
 					}
 					KYR = {
@@ -16135,7 +16142,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/KYR/KYR_Japarov.tga"
 							expire = "1965.1.1"
-							ideology = right_wing_populism
+							ideology = despotism
 						}
 					}
 					every_state = {
@@ -16549,7 +16556,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/ENG/ENG_Charles_III.tga"
 							expire = "1965.1.1"
-							ideology = conmon_paternalistic_conservatism
+							ideology = conservative_constitutionalism
 						}
 						
 						create_country_leader = {
@@ -16557,7 +16564,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/ENG/ENG_Sunak.tga"
 							expire = "1965.1.1"
-							ideology = paternalistic_conservatism
+							ideology = conservatism
 						}
 						
 						create_country_leader = {
@@ -16573,8 +16580,8 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/ENG/ENG_Prince_William.tga"
 							expire = "1965.1.1"
-							ideology = liberal_constitutionalism
-							}
+							ideology = libmon_third_way
+						}
 					}
 					GSY = {
 						set_politics = {
@@ -16694,6 +16701,16 @@ focus_tree = {
 						}
 					}
 					RJV = {
+						set_popularities = {
+							left_anarchism = 16
+							communism = 12
+							socialism_ideology = 9
+							liberal_republic = 16
+							anocratic_republic = 44
+							neutrality = 3
+						}
+					}
+					RJV = {
 						create_country_leader = {
 							name = "Encûmena Rêvebir a Federaliyê"
 							desc = ""
@@ -16790,7 +16807,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/SYR/SYR_Assad.tga"
 							expire = "1965.1.1"
-							ideology = despotism
+							ideology = hereditary_dictatorship
 						}
 					}
 					LEB = {
@@ -16819,7 +16836,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/LEB/LEB_Council.tga"
 							expire = "1965.1.1"
-							ideology = anocrep
+							ideology = anocrep_oilgarchism
 						}
 					}
 					JOR = {
@@ -17175,12 +17192,14 @@ focus_tree = {
 							long_name = ISR_democratic_2023_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 8
-							liberal_republic = 20
-							centrist_republic = 10
-							anocratic_republic = 18
-							democratic = 32
-							republican_fascism = 12
+							communism = 2
+							socialism_ideology = 4
+							liberal_republic = 6
+							centrist_republic = 26
+							democratic = 44
+							anocratic_republic = 6
+							neutrality = 1
+							republican_fascism = 11
 						}
 					}
 					ISR = {
@@ -18597,14 +18616,14 @@ focus_tree = {
 					}
 					GAU = {
 						set_party_name = {
-							ideology = socialism_ideology
-							name = GAU_socialism_ideology_2023_party
-							long_name = GAU_socialism_ideology_2023_party_long
+							ideology = anocratic_republic
+							name = GAU_anocratic_republic_2023_party
+							long_name = GAU_anocratic_republic_2023_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 23
 							liberal_republic = 3
-							anocratic_republic = 74
+							anocratic_republic = 23
+							neutrality = 74
 						}
 					}
 					GAU = {
@@ -18613,7 +18632,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/GAU/GAU_Vlah.tga"
 							expire = "1965.1.1"
-							ideology = demsoc
+							ideology = social_nationalism
 						}
 					}
 					every_state = {
@@ -19061,11 +19080,13 @@ focus_tree = {
 							long_name = EGY_neutrality_2023_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 2
-							liberal_republic = 5
-							centrist_republic = 6
-							anocratic_republic = 33
-							neutrality = 53
+							socialism_ideology = 1
+							liberal_republic = 3
+							centrist_republic = 4
+							democratic = 3
+							anocratic_republic = 19
+							neutrality = 36
+							stratocratic = 33
 							republican_fascism = 1
 						}
 					}
@@ -19709,7 +19730,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/RCG/RCG_Nguesso.tga"
 							expire = "1965.1.1"
-							ideology = despotism
+							ideology = one_party_dictatorship
 						}
 					}
 					GNA = {
@@ -19757,7 +19778,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/GAB/GAB_Bongo.tga"
 							expire = "1965.1.1"
-							ideology = despotism
+							ideology = hereditary_dictatorship
 						}
 					}
 					CMR = {
@@ -19853,7 +19874,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/TOG/TOG_Faure_Gnassingbe.tga"
 							expire = "1965.1.1"
-							ideology = authoritarian_capitalism
+							ideology = hereditary_dictatorship
 						}
 					}
 					SEN = {
@@ -20105,7 +20126,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/EQG/EQG_Teodoro_Obiang.tga"
 							expire = "1965.1.1"
-							ideology = despotism
+							ideology = hereditary_dictatorship
 						}
 					}
 					SAO = {
