@@ -1905,6 +1905,15 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = KUW
+				has_government = anocratic_monarchism
+			}
+		}
+		localization_key = "Raʾīs Maǧlis al-Wuzarāʾ Šayẖ Aḥmad an-Nawwāf al-Aḥmad aṣ-Ṣabāḥ"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = KUW
 				has_government = monarchism
 			}
 		}
@@ -1914,10 +1923,30 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = BHR
+				has_government = authoritarian_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Raʾīs al-Wuzarāʾ Šayẖ Salmān bin Ḥamad bin ʿĪsaỳ al-H̱alīfaẗ"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BHR
 				has_government = monarchism
 			}
 		}
 		localization_key = "Political Agent Percy Gordon Loch"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = QAT
+				has_government = authoritarian_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Raʾīs al-Wuzarāʾ Šayẖ Muḥammad bin ʿAbd ur-Raḥman bin Ǧāssim al-Ṯānī"
 	}
 	text = {
 		trigger = {
@@ -2037,7 +2066,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Raʾīs al-Maǧlis al-Wuzarāʾ Ḥusayn ʿArnūs"
+		localization_key = "Raʾīs Maǧlis al-Wuzarāʾ Ḥusayn ʿArnūs"
 	}
 	text = {
 		trigger = {
@@ -2058,7 +2087,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Raʾīs al-Maǧlis al-Wuzarāʾ Muḥammad Naǧīb ʿAzmī Mīqātī"
+		localization_key = "Raʾīs Maǧlis al-Wuzarāʾ Muḥammad Naǧīb ʿAzmī Mīqātī"
 	}
 	text = {
 		trigger = {
@@ -2311,7 +2340,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Raʾīs Wuzarāʾ wa Walī ʿAhd Muḥammad bin Salmān bin ʿAbd ul-ʿAzīz Āl-Suʿūd"
+		localization_key = "Raʾīs Maǧlis al-Wuzarāʾ wa Walī ʿAhd Muḥammad bin Salmān bin ʿAbd ul-ʿAzīz Āl-Suʿūd"
 	}
 	text = {
 		trigger = {
@@ -2512,6 +2541,66 @@ defined_text = {
 			}
 		}
 		localization_key = "Sarvazir Abduqohir Abdurasulovich Nazirov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = YEM
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Raʾīs al-Wuzarāʾ Maʿīin ʿAbd ul-Malik Saʿīd aṣ-Ṣabrī"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = YM1
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Raʾīs Maǧlis al-Wuzarāʾ ʿAbd ul-ʿAzīz Ṣāliḥ bin Ḥabtūr"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BEI
+				has_government = monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Menteri Kanan di Pejabat Perdana Menteri Pengiran Muda Haji Al-Muhtadee Billah ibni Paduka Seri Baginda Sultan Haji Hassanal Bolkiah Mu'izzaddin Waddaulah"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RMM
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Punong Ministro Ahod Balawag Ebrahim"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ETM
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Primeiro-Ministro José Alexandre Gusmão"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PNG
+				has_government = conservative_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Prime Minister James Marape"
 	}
 	text = {
 		localization_key = "To Be Added"
@@ -4113,6 +4202,15 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = KUW
+				has_government = anocratic_monarchism
+			}
+		}
+		localization_key = "GFX_Ahmed_Nawaf"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = KUW
 				has_government = monarchism
 			}
 		}
@@ -4122,10 +4220,30 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = BHR
+				has_government = authoritarian_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Salman_bin_Hamad"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BHR
 				has_government = monarchism
 			}
 		}
 		localization_key = "GFX_Percy_Loch"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = QAT
+				has_government = authoritarian_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Muhammad_bin_Abdul_Rahman"
 	}
 	text = {
 		trigger = {
@@ -4987,6 +5105,66 @@ defined_text = {
 		localization_key = "GFX_Qohir_Rasulzoda"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = YEM
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Maeen_Saeed"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = YM1
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Abdelaziz_Habtour"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BEI
+				has_government = monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Muhtadee_Billah"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RMM
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Murad_Ebrahim"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ETM
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Xanana_Gusmao"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PNG
+				has_government = conservative_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_James_Marape"
+	}
+	text = {
 		localization_key = "GFX_leader_unknown"
 	}
 }
@@ -5267,6 +5445,16 @@ defined_text = {
 			}
 		}
 		localization_key = "Qāʾid al-ʿĀm li-Taḥrīr aš-Šām ʾAḥmad Ḥusayn aš-Šarʿ"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = YM1
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Zaʿīm Ḥarakaẗ Anṣār Allāh ʿAbd ul-Malik bin Badr ud-Dīn al-Ḥūṯī"
 	}
 	text = {
 		localization_key = "To be Added"
@@ -5564,6 +5752,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Abu_Muhammad_Jolani"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = YM1
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Abdulmalik_Houthi"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"

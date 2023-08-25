@@ -15641,7 +15641,7 @@ focus_tree = {
 					}
 					BEI = {
 						create_country_leader = {
-							name = "Sultan Haji Hassanal Bolkiah Mu'izzaddin Waddaulah ibni Al-Marhum Sultan Haji Omar 'Ali Saifuddien Sa'adul Khairi Waddien"
+							name = "Sultan, Yang Di-Pertuan dan Pertana Menteri Haji Hassanal Bolkiah Mu'izzaddin Waddaulah ibni Al-Marhum Sultan Haji Omar 'Ali Saifuddien Sa'adul Khairi Waddien"
 							desc = ""
 							picture = "gfx/leaders/BEI/BEI_Bolkiah.tga"
 							expire = "1965.1.1"
@@ -15683,7 +15683,7 @@ focus_tree = {
 						create_country_leader = {
 							name = "Wali Said Zamahsari Salendab"
 							desc = ""
-							picture = "gfx/leaders/PHI/RMM_Salendab.tga"
+							picture = "gfx/leaders/RMM/RMM_Salendab.tga"
 							expire = "1965.1.1"
 							ideology = islamic_democracy
 						}
@@ -16703,12 +16703,13 @@ focus_tree = {
 					}
 					RJV = {
 						set_popularities = {
-							left_anarchism = 16
+							left_anarchism = 27
 							communism = 12
 							socialism_ideology = 9
 							liberal_republic = 16
-							anocratic_republic = 44
+							anocratic_republic = 22
 							neutrality = 3
+							stratocratic = 11
 						}
 					}
 					RJV = {
@@ -16877,7 +16878,7 @@ focus_tree = {
 					}
 					BHR = {
 						create_country_leader = {
-							name = "Milk Ḥamad bin ʿĪsaỳ bin Salmān al-H̱alīfaẗ"
+							name = "Milk Šayẖ Ḥamad bin ʿĪsaỳ bin Salmān al-H̱alīfaẗ"
 							desc = ""
 							picture = "gfx/leaders/BHR/BHR_Hamad.tga"
 							expire = "1965.1.1"
@@ -16955,14 +16956,14 @@ focus_tree = {
 							anocratic_republic = 18
 							neutrality = 68
 						}
-					}  
+					}
 					YEM = {
 						create_country_leader = {
-							name = "Raʾīs Rašād Muḥammad al-ʿAlīmī"
+							name = "Raʾīs Maǧlis al-Qiyādaẗ ar-Riʾāsiyy Rašād Muḥammad al-ʿAlīmī"
 							desc = ""
 							picture = "gfx/leaders/YEM/YEM_Alimi.tga"
 							expire = "1965.1.1"
-							ideology = one_party_dictatorship
+							ideology = provisional_government
 						}
 					}
 					OMA = {
@@ -16977,10 +16978,9 @@ focus_tree = {
 						}
 						drop_cosmetic_tag = yes
 					}
-					
 					OMA = {
 						create_country_leader = {
-							name = "Sulṭān Hayṯam bin Ṭāriq bin Taymūr as-Saʿīd"
+							name = "Sulṭān wa Raʾīs Maǧlis al-Wuzarāʾ Hayṯam bin Ṭāriq bin Taymūr as-Saʿīd"
 							desc = ""
 							picture = "gfx/leaders/OMA/OMA_Haitham.tga"
 							expire = "1965.1.1"
@@ -18235,7 +18235,7 @@ focus_tree = {
 					}
 					AQ4 = {
 						create_country_leader = {
-							name = "Amīr H̱ālid Saʿīd Bāṭarfī"
+							name = "Qāʾid H̱ālid ʾUmar Saʿīd ʾUmar Bāṭarfī al-Kindī"
 							desc = ""
 							picture = "gfx/leaders/AQ4/AQ4_Batarfi.tga"
 							expire = "1965.1.1"
@@ -20770,18 +20770,18 @@ focus_tree = {
 					PNG = {
 						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = conservative_monarchism
 						}	
 						set_party_name = {
-							ideology = democratic
-							name = PNG_democratic_2023_party
-							long_name = PNG_democratic_2023_party_long
+							ideology = conservative_monarchism
+							name = PNG_conservative_monarchism_2023_party
+							long_name = PNG_conservative_monarchism_2023_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 11
-							liberal_republic = 21
-							democratic = 56
-							centrist_republic = 12
+							socialist_monarchy = 11
+							democratic_monarchism = 21
+							centrist_monarchism = 12
+							conservative_monarchism = 56
 						}
 					}
 					PNG = {
@@ -20790,7 +20790,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/PNG/PNG_Dadae.tga"
 							expire = "1965.1.1"
-							ideology = christian_democracy
+							ideology = conmon_christian_democracy
 						}
 					}
 					SBT = {
@@ -22207,6 +22207,10 @@ focus_tree = {
 						set_politics = {
 							ruling_party = conservative_monarchism
 						}
+						set_popularities = {
+							socialist_monarchy = 22
+							conservative_monarchism = 78
+						}
 					}
 					JAM = {
 						create_country_leader = {
@@ -22218,10 +22222,21 @@ focus_tree = {
 						}
 					}
 					PUE = {
-						drop_cosmetic_tag = yes
 						set_cosmetic_tag = PUE_USA
 						set_politics = {
-							ruling_party = liberal_republic
+							ruling_party = centrist_republic
+						}
+						set_party_name = {
+							ideology = centrist_republic
+							name = PUE_centrist_republic_2023_party
+							long_name = PUE_centrist_republic_2023_party_long
+						}
+						set_popularities = {
+							socialism_ideology = 6
+							liberal_republic = 47
+							centrist_republic = 43
+							democratic = 2
+							anocratic_republic = 1
 						}
 					}
 					PUE = {
@@ -22230,7 +22245,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/PUE/PUE_Pedro_Pierluisi.tga"
 							expire = "1965.1.1"
-							ideology = liberalism
+							ideology = cenrep
 						}
 					}
 					WVI = {

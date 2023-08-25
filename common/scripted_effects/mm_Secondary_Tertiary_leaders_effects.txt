@@ -1976,6 +1976,10 @@ secondary_leader_enabled_effect = {
 						has_start_date > 1935.01.01
 						has_start_date < 1937.01.01
 					}
+					AND = {
+						has_government = anocratic_monarchism
+						has_start_date > 2022.01.01
+					}
 				}
 			}
 		}
@@ -1991,6 +1995,10 @@ secondary_leader_enabled_effect = {
 						has_start_date > 1935.01.01
 						has_start_date < 1937.01.01
 					}
+					AND = {
+						has_government = authoritarian_monarchism
+						has_start_date > 2022.01.01
+					}
 				}
 			}
 		}
@@ -2005,6 +2013,38 @@ secondary_leader_enabled_effect = {
 						has_government = monarchism
 						has_start_date > 1935.01.01
 						has_start_date < 1937.01.01
+					}
+					AND = {
+						has_government = authoritarian_monarchism
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = YEM
+				OR = {
+					AND = {
+						has_government = neutrality
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = YM1
+				OR = {
+					AND = {
+						has_government = neutrality
+						has_start_date > 2022.01.01
 					}
 				}
 			}
@@ -2387,6 +2427,62 @@ secondary_leader_enabled_effect = {
 		}
 		set_country_flag = has_secondary_leader
 	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = RMM
+				OR = {
+					AND = {
+						has_government = democratic
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = ETM
+				OR = {
+					AND = {
+						has_government = socialism_ideology
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = BEI
+				OR = {
+					AND = {
+						has_government = monarchism
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = PNG
+				OR = {
+					AND = {
+						has_government = conservative_monarchism
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
 	else = {
 		clr_country_flag = has_secondary_leader
 	}
@@ -2668,6 +2764,20 @@ tertiary_leader_enabled_effect = {
 		limit = {
 			AND = {
 				tag = SR3
+				OR = {
+					AND = {
+						has_government = neutrality
+						has_start_date > 2022.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_tertiary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = YM1
 				OR = {
 					AND = {
 						has_government = neutrality
