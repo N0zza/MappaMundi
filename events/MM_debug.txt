@@ -13,10 +13,25 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 			factor = 0
 		}
 		hidden_effect = {
-			JAM = {
+			ARU = {
+				transfer_state = 695
+				set_cosmetic_tag = HOL_ORANGE
+				set_politics = {
+					ruling_party = socialist_monarchy
+				}
 				set_popularities = {
-					socialist_monarchy = 22
-					conservative_monarchism = 78
+					socialist_monarchy = 62
+					democratic_monarchism = 5
+					conservative_monarchism = 33
+				}
+			}
+			ARU = {
+				create_country_leader = {
+					name = "Gouverneur Juan Alfonso Boekhoudt"
+					desc = ""
+					picture = "gfx/leaders/ARU/ARU_Alfonso_Boekhoudt.tga"
+					expire = "1965.1.1"
+					ideology = socmon_social_democracy
 				}
 			}
 		}

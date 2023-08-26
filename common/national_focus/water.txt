@@ -20794,9 +20794,15 @@ focus_tree = {
 						}
 					}
 					SBT = {
+						transfer_state = 2393
 						set_cosmetic_tag = FRA_BLUE
 						set_politics = {
 							ruling_party = democratic
+						}
+						set_popularities = {
+							liberal_republic = 10
+							centrist_republic = 16
+							democratic = 74
 						}
 					}
 					SBT = {
@@ -20812,16 +20818,20 @@ focus_tree = {
 						transfer_state = 694
 						set_cosmetic_tag = FRA_BLUE
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = centrist_republic
+						}
+						set_popularities = {
+							centrist_republic = 70
+							democratic = 30
 						}
 					}
 					NSM = {
 						create_country_leader = {
-							name = "Préfète Sylvie Feucher"
+							name = "Préfèt Vincent Berton"
 							desc = ""
-							picture = "gfx/leaders/NSM/NSM_Sylvie_Feucher.tga"
+							picture = "gfx/leaders/NSM/NSM_Berton.tga"
 							expire = "1965.1.1"
-							ideology = liberal_conservatism
+							ideology = cenrep
 						}
 					}
 					WAF = {
@@ -20854,9 +20864,9 @@ focus_tree = {
 					}
 					SPM = {
 						create_country_leader = {
-							name = "Préfèt Thierry_Devimeux"
+							name = "Préfèt Christian Pouget"
 							desc = ""
-							picture = "gfx/leaders/SPM/SPM_Thierry_Devimeux.tga"
+							picture = "gfx/leaders/SPM/SPM_Pouget.tga"
 							expire = "1965.1.1"
 							ideology = christian_democracy
 						}
@@ -21987,33 +21997,43 @@ focus_tree = {
 						id = 13826 name = "Sankt-Peterbúrg"
 					}
 					TAC = {
-						set_cosmetic_tag = TAC_ENG
+						set_cosmetic_tag = UK_RED
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = socialist_monarchy
+						}
+						set_popularities = {
+							socialist_monarchy = 67
+							conservative_monarchism = 5
+							anocratic_monarchism = 9
+							authoritarian_monarchism = 19
 						}
 					}
 					TAC = {
 						create_country_leader = {
-							name = "Governor-General Nigel John Dakin"
+							name = "Governor Dileeni Daniel-Selvaratnam"
 							desc = ""
-							picture = "gfx/leaders/TAC/TAC_Nigel_Dakin.tga"
+							picture = "gfx/leaders/TAC/TAC_Selvaratnam.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = socmon_social_democracy
 						}
 					}
 					CYM = {
-						set_cosmetic_tag = CYM_ENG
+						set_cosmetic_tag = UK_RED
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = centrist_monarchism
+						}
+						set_popularities = {
+							socialist_monarchy = 33
+							centrist_monarchism = 67
 						}
 					}
 					CYM = {
 						create_country_leader = {
-							name = "Governor-General Martyn John Roper"
+							name = "Governor Jane Caroline Owen"
 							desc = ""
-							picture = "gfx/leaders/CYM/CYM_Martyn_Roper.tga"
+							picture = "gfx/leaders/CYM/CYM_Owen.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = cenmon
 						}
 					}
 					BLZ = {
@@ -22190,7 +22210,11 @@ focus_tree = {
 					BAH = {
 						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = democratic_monarchism
+						}
+						set_popularities = {
+							democratic_monarchism = 82
+							conservative_monarchism = 18
 						}
 					}
 					BAH = {
@@ -22199,7 +22223,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/BAH/BAH_Cornelius_Smith.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = libmon_social_liberalism
 						}
 					}
 					JAM = {
@@ -22234,7 +22258,7 @@ focus_tree = {
 						set_popularities = {
 							socialism_ideology = 6
 							liberal_republic = 47
-							centrist_republic = 43
+							centrist_republic = 44
 							democratic = 2
 							anocratic_republic = 1
 						}
@@ -22249,6 +22273,15 @@ focus_tree = {
 						}
 					}
 					WVI = {
+						set_politics = {
+							ruling_party = liberal_republic
+						}
+						set_popularities = {
+							liberal_republic = 73
+							centrist_republic = 27
+						}
+					}
+					WVI = {
 						create_country_leader = {
 							name = "Governor Albert Bryan Jr."
 							desc = ""
@@ -22260,7 +22293,7 @@ focus_tree = {
 					DMC = {
 						transfer_state = 2042
 						set_politics = {
-							ruling_party = liberal_republic
+							ruling_party = socialism_ideology
 						}
 					}
 					DMC = {
@@ -22269,7 +22302,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/DMC/DMC_Charles_Savarin.tga"
 							expire = "1965.1.1"
-							ideology = liberalism
+							ideology = social_democracy
 						}
 					}
 					every_state = {
@@ -22284,7 +22317,12 @@ focus_tree = {
 					STL = {
 						transfer_state = 2039
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = socialist_monarchy
+						}
+						set_popularities = {
+							socialist_monarchy = 76
+							centrist_monarchism = 12
+							conservative_monarchism = 12
 						}
 					}
 					STL = {
@@ -22293,13 +22331,20 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/STL/STL_Charles.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = socmon_social_democracy
 						}
 					}
 					EVI = {
-						set_cosmetic_tag = EVI_ENG
+						set_cosmetic_tag = UK_RED
 						set_politics = {
 							ruling_party = conservative_monarchism
+						}
+						set_popularities = {
+							socialist_monarchy = 7
+							democratic_monarchism = 20
+							centrist_monarchism = 13
+							conservative_monarchism = 47
+							anocratic_monarchism = 13
 						}
 					}
 					EVI = {
@@ -22314,7 +22359,10 @@ focus_tree = {
 					BAR = {
 						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = socialism_ideology
+						}
+						set_popularities = {
+							socialism_ideology = 100
 						}
 					}
 					BAR = {
@@ -22323,14 +22371,17 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/BAR/BAR_Sandra_Mason.tga"
 							expire = "1965.1.1"
-							ideology = conservatism
+							ideology = social_democracy
 						}
 					}
 					SVC = {
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = socialist_monarchy
 						}
-						set_cosmetic_tag = SVC_ENG
+						set_popularities = {
+							socialist_monarchy = 64
+							conservative_monarchism = 36
+						}
 					}
 					SVC = {
 						create_country_leader = {
@@ -22338,14 +22389,17 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/SVC/SVC_Susan_Dougan.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = monsoc
 						}
 					}
 					GDA = {
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = democratic_monarchism
 						}
-						set_cosmetic_tag = GDA_ENG
+						set_popularities = {
+							democratic_monarchism = 69
+							conservative_monarchism = 31
+						}
 					}
 					GDA = {
 						create_country_leader = {
@@ -22353,14 +22407,14 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/GDA/GDA_Cecile_La_Grenade.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = libmon_social_liberalism
 						}
 					}
 					SKT = {
 						transfer_state = 2315
 						transfer_state = 2316
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = socialist_monarchy
 						}
 					}
 					SKT = {
@@ -22369,12 +22423,12 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/SKT/SKT_Liburd.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = socmon_social_democracy
 						}
 					}
 					ANB = {
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = socialist_monarchy
 						}
 					}
 					ANB = {
@@ -22383,46 +22437,63 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/ANB/ANB_Rodney_Williams.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = socmon_social_democracy
 						}
 					}
 					MSR = {
 						transfer_state = 308
-						set_cosmetic_tag = MSR_ENG
+						set_cosmetic_tag = UK_RED
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = democratic_monarchism
+						}
+						set_popularities = {
+							socialist_monarchy = 27
+							centrist_monarchism = 9
+							democratic_monarchism = 46
+							anocratic_monarchism = 18
 						}
 					}
 					MSR = {
 						create_country_leader = {
-							name = "Governor Andrew John Pearce"
+							name = "Governor Sarah Georgina Tucker"
 							desc = ""
-							picture = "gfx/leaders/MSR/MSR_Andrew_Pearce.tga"
+							picture = "gfx/leaders/MSR/MSR_Tucker.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = liberal_constitutionalism
 						}
 					}
 					SSM = {
 						transfer_state = 2314
 						set_cosmetic_tag = HOL_ORANGE
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = socialist_monarchy
+						}
+						set_popularities = {
+							socialist_monarchy = 47
+							democratic_monarchism = 13
+							centrist_monarchism = 13
+							conservative_monarchism = 27
 						}
 					}
 					SSM = {
 						create_country_leader = {
-							name = "Gouverneur Eugene Bernard Holiday"
+							name = "Gouverneur Ajamu G. Daly"
 							desc = ""
-							picture = "gfx/leaders/SSM/SSM_Eugene_Holiday.tga"
+							picture = "gfx/leaders/SSM/SSM_Daly.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = socmon_social_democracy
 						}
 					}
 					CRC = {
-						drop_cosmetic_tag = yes
 						set_cosmetic_tag = HOL_ORANGE
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = centrist_monarchism
+						}
+						set_popularities = {
+							socialist_monarchy = 14
+							democratic_monarchism = 24
+							centrist_monarchism = 43
+							conservative_monarchism = 19
 						}
 					}
 					CRC = {
@@ -22431,14 +22502,19 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/CRC/CRC_Lucille_George-Wout.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = cenmon_populism
 						}
 					}
 					ARU = {
 						transfer_state = 695
 						set_cosmetic_tag = HOL_ORANGE
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = socialist_monarchy
+						}
+						set_popularities = {
+							socialist_monarchy = 62
+							democratic_monarchism = 5
+							conservative_monarchism = 33
 						}
 					}
 					ARU = {
@@ -22447,7 +22523,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/ARU/ARU_Alfonso_Boekhoudt.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = socmon_social_democracy
 						}
 					}
 					HOL = {
@@ -22457,17 +22533,23 @@ focus_tree = {
 					}
 					AGL = {
 						transfer_state = 2392
+						set_cosmetic_tag = UK_RED
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = democratic_monarchism
+						}
+						set_popularities = {
+							democratic_monarchism = 54
+							conservative_monarchism = 31
+							anocratic_monarchism = 15
 						}
 					}
 					AGL = {
 						create_country_leader = {
-							name = "Governor Dileeni Daniel-Selvaratnam"
+							name = "Governor Paul Chandler"
 							desc = ""
-							picture = "gfx/leaders/AGL/AGL_Dileeni_Daniel-Selvaratnam.tga"
+							picture = "gfx/leaders/DGC/DGC_Paul_Chandler.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = liberal_constitutionalism
 						}
 					}
 					every_state = {
@@ -22857,7 +22939,11 @@ focus_tree = {
 					TRI = {
 						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = liberal_republic
+						}
+						set_popularities = {
+							socialism_ideology = 46
+							liberal_republic = 54
 						}
 					}
 					TRI = {
@@ -22866,7 +22952,7 @@ focus_tree = {
 							desc = ""
 							picture = "gfx/leaders/TRI/TRI_Kangaloo.tga"
 							expire = "1965.1.1"
-							ideology = liberal_conservatism
+							ideology = social_liberalism
 						}
 					}
 					##MISC 2023
