@@ -937,6 +937,18 @@ secondary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
+				tag = OHI
+				AND = {
+					has_government = democratic_monarchism
+					has_global_flag = non_hog_secondary_leaders
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
 				tag = CAN
 				OR = {
 					AND = {
