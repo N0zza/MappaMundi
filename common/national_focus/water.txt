@@ -11237,19 +11237,6 @@ focus_tree = {
 						transfer_state = 10534
 						transfer_state = 72
 						transfer_state = 3933
-					}
-					every_state = {
-						limit = {
-							is_core_of = DDR
-							NOT = {
-								is_owned_by = POL
-							}
-						}
-						transfer_state_to = DDR
-					}
-					set_province_name = {
-						id = 6521
-						name = "Ost-Berlin"
 					}	
 					every_state = {
 						limit = {
@@ -11292,6 +11279,7 @@ focus_tree = {
 						set_cosmetic_tag = MOL_1950
 					}
 					HUN = {
+						set_cosmetic_tag = HUN_1950
 						set_politics = {
 							ruling_party = vanguardism
 						}
@@ -11314,11 +11302,12 @@ focus_tree = {
 							expire = "1965.1.1"
 							ideology = totsoc
 							traits = {
-								#
 							}
 						}
 					}
 					POL = {
+						set_cosmetic_tag = POL_1950
+						
 						set_politics = {
 							ruling_party = vanguardism
 						}
@@ -11336,16 +11325,31 @@ focus_tree = {
 							expire = "1965.1.1"
 							ideology = totsoc
 							traits = {
-								#
 							}
 						}
+					}
+					DDR = {
+						set_cosmetic_tag = DDR_1950
+					}
+					every_state = {
+						limit = {
+							is_core_of = DDR
+							NOT = {
+								is_owned_by = POL
+							}
+						}
+						transfer_state_to = DDR
+					}
+					set_province_name = {
+						id = 6521
+						name = "Ost-Berlin"
 					}
 					LIE = {
 						release = CZE
 					}
 					CZE = {
 						set_politics = {
-							ideology = vanguardism
+							ruling_party = vanguardism
 						}
 						set_cosmetic_tag = CZE_1950
 						set_popularities = {
@@ -11362,7 +11366,6 @@ focus_tree = {
 							expire = "1965.1.1"
 							ideology = totsoc
 							traits = {
-								#
 							}
 						}
 					}
