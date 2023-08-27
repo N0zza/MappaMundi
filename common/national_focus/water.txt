@@ -11513,7 +11513,10 @@ focus_tree = {
 							transfer_state = PREV
 							set_cosmetic_tag = FRA_BLUE
 							set_politics = {
-							ruling_party = stratocratic_monarchism
+								ruling_party = stratocratic_monarchism
+							}
+							set_popularities = {
+								stratocratic_monarchism = 100
 							}
 							
 							create_country_leader = {
@@ -11529,11 +11532,17 @@ focus_tree = {
 						set_politics = {
 							ruling_party = stratocratic
 						}
+						set_popularities = {
+							stratocratic = 100
+						}
 						set_cosmetic_tag = RUS_RED
 					}
 					SLZ = {
 						transfer_state = 8010
 						transfer_state = 1386
+						set_popularities = {
+							stratocratic_monarchism = 100
+						}
 					}
 					STY = {
 						transfer_state = 8402
@@ -11541,6 +11550,9 @@ focus_tree = {
 						transfer_state = 8400
 						transfer_state = 5946
 						transfer_state = 1387
+						set_popularities = {
+							stratocratic_monarchism = 100
+						}
 					}
 					TYR = {
 						transfer_state = 1385
