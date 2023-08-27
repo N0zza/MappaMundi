@@ -781,7 +781,7 @@ secondary_leader_enabled_effect = {
 					AND = {
 						has_government = vanguardism
 						has_start_date > 1935.01.01
-						has_start_date < 1937.01.01
+						has_start_date < 1951.01.01
 					}
 					AND = {
 						has_government = neutrality
@@ -2532,16 +2532,18 @@ secondary_leader_enabled_effect = {
 tertiary_leader_enabled_effect = {
 	if = {
 		limit = {
-			OR = {
-				tag = SOV
-				tag = RUS
-				tag = UKR
-				tag = BLR
-			}
-			OR = {
-				AND = {
-					has_government = vanguardism
-					has_start_date < 2022.01.01
+			AND = {
+				OR = {
+					tag = SOV
+					tag = RUS
+					tag = UKR
+					tag = BLR
+				}
+				OR = {
+					AND = {
+						has_government = vanguardism
+						has_start_date < 2022.01.01
+					}
 				}
 			}
 		}
