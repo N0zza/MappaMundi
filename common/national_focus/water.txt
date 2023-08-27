@@ -11247,6 +11247,10 @@ focus_tree = {
 						}
 						transfer_state_to = DDR
 					}
+					set_province_name = {
+						id = 6521
+						name = "Ost-Berlin"
+					}	
 					every_state = {
 						limit = {
 							is_core_of = BUL
@@ -11290,15 +11294,77 @@ focus_tree = {
 					HUN = {
 						set_politics = {
 							ruling_party = vanguardism
+						}
+						set_popularities = {
+							vanguardism = 71
+							communism = 25
+							neutrality = 4
+						}
+						set_party_name = {
+							ideology = vanguardism
+							name = HUN_vanguardism_1950_party
+							long_name = HUN_vanguardism_1950_party_long
+						}
+					}
+					HUN = {
+						create_country_leader = {
+							name = "Elnöki Tanács elnöke Szakasits Árpád Ferenc"
+							desc = ""
+							picture = "gfx/leaders/HUN/HUN_Szakasits.tga"
+							expire = "1965.1.1"
+							ideology = totsoc
+							traits = {
+								#
 							}
 						}
+					}
 					POL = {
 						set_politics = {
 							ruling_party = vanguardism
 						}
+						set_popularities = {
+							vanguardism = 79.5
+							communism = 20
+							neutrality = 0.5
+						}
+					}
+					POL = {
+						create_country_leader = {
+							name = "Prezydent i Przewodniczącego KC PZPR Bolesław Bierut"
+							desc = ""
+							picture = "gfx/leaders/POL/POL_Bierut_1950.tga"
+							expire = "1965.1.1"
+							ideology = totsoc
+							traits = {
+								#
+							}
+						}
 					}
 					LIE = {
 						release = CZE
+					}
+					CZE = {
+						set_politics = {
+							ideology = vanguardism
+						}
+						set_cosmetic_tag = CZE_1950
+						set_popularities = {
+							vanguardism = 71
+							communism = 23
+							neutrality = 6
+						}
+					}
+					CZE = {
+						create_country_leader = {
+							name = "Prezident i Předseda ÚV KSČ Klement Gottwald"
+							desc = ""
+							picture = "gfx/leaders/Czechia/CZE_Gottwald_1950.tga"
+							expire = "1965.1.1"
+							ideology = totsoc
+							traits = {
+								#
+							}
+						}
 					}
 					every_state = {
 						limit = {

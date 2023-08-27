@@ -382,6 +382,15 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = DDR
+				has_government = vanguardism
+			}
+		}
+		localization_key = "Ministerpräsident und Co-Vorsitzender der SED Otto Emil Franz Grotewohl"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = AUS
 				has_government = authoritarian_monarchism
 				has_start_date < 1915.01.01
@@ -534,6 +543,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Miniszterelnök Borosjenői és szegedi gróf Tisza István Imre Lajos Pál"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HUN
+				has_government = vanguardism
+				has_start_date > 1935.01.01
+				has_start_date > 1937.01.01
+			}
+		}
+		localization_key = "Minisztertanács elnöke Dobi István"
 	}
 	text = {
 		trigger = {
@@ -1537,6 +1557,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = CZE
+				has_government = vanguardism
+				has_start_date > 1939.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Předseda vlády Antonín Zápotocký"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CZE
 				has_government = centrist_republic
 			}
 		}
@@ -1610,6 +1641,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Predseda vlády Ľudovít Ódor"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = POL
+				has_government = vanguardism
+				has_start_date > 1939.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Prezes Rady Ministrów Józef Adam Zygmunt Cyrankiewicz"
 	}
 	text = {
 		trigger = {
@@ -2952,6 +2994,15 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = DDR
+				has_government = vanguardism
+			}
+		}
+		localization_key = "GFX_Otto_Grotewohl"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = AUS
 				has_government = authoritarian_monarchism
 				has_start_date < 1915.01.01
@@ -3091,6 +3142,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Istvan_Tisza"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HUN
+				has_government = vanguardism
+				has_start_date > 1935.01.01
+				has_start_date > 1937.01.01
+			}
+		}
+		localization_key = "GFX_Istvan_Dobi"
 	}
 	text = {
 		trigger = {
@@ -3773,6 +3835,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = CZE
+				has_government = vanguardism
+				has_start_date > 1939.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Antonin_Zapotocky"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CZE
 				has_government = centrist_republic
 			}
 		}
@@ -3846,6 +3919,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Ludovit_Odor"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = POL
+				has_government = vanguardism
+				has_start_date > 1939.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Jozef_Cyrankiewicz"
 	}
 	text = {
 		trigger = {
@@ -5457,6 +5541,17 @@ defined_text = {
 		localization_key = "Zaʿīm Ḥarakaẗ Anṣār Allāh ʿAbd ul-Malik bin Badr ud-Dīn al-Ḥūṯī"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = HUN
+				has_government = vanguardism
+				has_start_date > 1939.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Az MDP Központi Bizottságának főtitkára Rákosi Mátyás"
+	}
+	text = {
 		localization_key = "To be Added"
 	}
 }
@@ -5762,6 +5857,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Abdulmalik_Houthi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HUN
+				has_government = vanguardism
+				has_start_date > 1939.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Matyas_Rakosi"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
