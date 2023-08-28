@@ -253,6 +253,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
+				has_government = democratic
+				has_start_date < 1951.01.01
+				has_start_date > 1940.01.01
+			}
+		}
+		localization_key = "Presidente del Consiglio dei ministri Alcide Amedeo Francesco De Gasperi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
 				has_government = fascism
 			}
 		}
@@ -2931,6 +2942,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Giorgia_Meloni"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
+				has_government = democratic
+				has_start_date < 1951.01.01
+				has_start_date > 1940.01.01
+			}
+		}
+		localization_key = "GFX_Alcide_Gasperi"
 	}
 	text = {
 		trigger = {

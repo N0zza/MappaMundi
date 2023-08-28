@@ -923,7 +923,15 @@ secondary_leader_enabled_effect = {
 					
 					AND = {
 						has_government = democratic
-						has_start_date > 2022.01.01
+						OR = {
+							AND = {
+								has_start_date > 2022.01.01
+							}
+							AND = {
+								has_start_date < 1951.01.01
+								has_start_date > 1940.01.01
+							}
+						}
 					}
 				}
 			}

@@ -11221,12 +11221,32 @@ focus_tree = {
 						}
 					}
 					ITA = {
+						set_cosmetic_tag = ITA_1950
 						create_country_leader = {
 							name = "Presidente Luigi Numa Lorenzo Einaudi"
 							desc = ""
 							picture = "gfx/leaders/ITA/Portrait_Luigi_Einaudi.tga"
 							expire = "1965.1.1"
-							ideology = liberalism
+							ideology = christian_democracy
+						}
+						set_popularities = {
+							democratic = 49
+							communism = 31
+							socialism_ideology = 7
+							liberal_republic = 5
+							conservative_monarchism = 3
+							centrist_republic = 3
+							republican_fascism = 2
+						}
+						set_party_name = {
+							ideology = democratic
+							name = ITA_democratic_1950_party
+							long_name = ITA_democratic_1950_party_long
+						}
+						set_party_name = {
+							ideology = communism
+							name = ITA_communism_1950_party
+							long_name = ITA_communism_1950_party_long
 						}
 					}
 					USA = {
@@ -11680,8 +11700,9 @@ focus_tree = {
 					}
 					ALB = {
 						set_politics = {
-						ruling_party = vanguardism
+							ruling_party = vanguardism
 						}
+						set_cosmetic_tag = ALB_1950
 					}
 						
 					every_state = {
