@@ -11814,6 +11814,24 @@ focus_tree = {
 							transfer_state = PREV
 						}
 					}
+					
+					CYR = {
+						set_cosmetic_tag = CYR_1950
+						create_country_leader = {
+							name = "Emir Muhammad Idris bin Muhammad al-Mahdi as-Senussi"
+							desc = ""
+							picture = "gfx/leaders/LBA/Portrait_King_Idris.dds"
+							expire = "1965.1.1"
+							ideology = authmon
+						}
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+						set_popularities = {
+							authoritarian_monarchism = 100
+						}
+					}
+					
 					every_state = {
 						limit = {
 							is_core_of = VOL
