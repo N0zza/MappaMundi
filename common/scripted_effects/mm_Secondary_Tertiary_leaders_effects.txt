@@ -11,8 +11,16 @@ secondary_leader_enabled_effect = {
 				OR = {
 					AND = {
 						has_government = democratic_monarchism
-						has_start_date > 1914.01.01
-						has_start_date < 1915.01.01
+						OR = {
+							AND = {
+								has_start_date > 1914.01.01
+								has_start_date < 1915.01.01
+							}
+							AND = {
+								has_start_date > 1940.01.01
+								has_start_date < 1951.01.01
+							}
+						}
 					}
 					AND = {
 						OR = {

@@ -11181,12 +11181,26 @@ focus_tree = {
 						set_cosmetic_tag = YKT_1939
 					}
 					ENG = {
+						set_cosmetic_tag = ENG_1950
+						set_politics = {
+							ruling_party = democratic_monarchism
+						}
 						create_country_leader = {
 							name = "King George VI of Windsor"
 							desc = ""
 							picture = "gfx/leaders/ENG/ENG_George_VI_2.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = liberal_constitutionalism
+						}
+						set_party_name = {
+							ideology = democratic_monarchism
+							name = ENG_democratic_monarchism_2023_party
+							long_name = ENG_democratic_monarchism_2023_party_long
+						}
+						set_popularities = {
+							democratic_monarchism = 61
+							conservative_monarchism = 31
+							centrist_monarchism = 8
 						}
 					}
 					HOL = {
