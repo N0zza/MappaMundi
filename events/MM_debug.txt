@@ -13,17 +13,13 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 			factor = 0
 		}
 		hidden_effect = {
-			SPR = {
-				create_country_leader = {
-					name = "Caudillo y Presidente del Gobierno Francisco Franco Bahamonde "
-					desc = ""
-					picture = "gfx/leaders/SPR/SPR_Franco_1950.tga"
-					expire = "1965.1.1"
-					ideology = fascism_ideology
-					traits = {
+					USA = {
+						set_popularities = {
+							liberal_republic = 60
+							democratic = 39
+							anocratic_republic = 1
+						}
 					}
-				}
-			}
 		}
 	}
 	option = { #reject

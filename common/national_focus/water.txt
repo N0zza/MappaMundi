@@ -11084,6 +11084,10 @@ focus_tree = {
 				}
 				SOV = {
 					set_cosmetic_tag = SOV_1950
+					set_popularities = {
+						vanguardism = 84.5
+						neutrality = 15.5
+					}
 				}
 				RUS = {
 					create_country_leader = {
@@ -11295,10 +11299,14 @@ focus_tree = {
 						}
 						transfer_state = 5940
 					}
+					SWI = {
+						transfer_state = 19313
+					}
 					USA = {
 						set_popularities = {
-							liberal_republic = 51
-							democratic = 49
+							liberal_republic = 60
+							democratic = 39
+							anocratic_republic = 1
 						}
 						create_country_leader = {
 							name = "President Harry S. Truman"
@@ -11306,6 +11314,24 @@ focus_tree = {
 							picture = "gfx/leaders/USA/USA_Truman.tga"
 							expire = "1965.1.1"
 							ideology = social_liberalism
+						}
+					}
+					ERH = {
+						transfer_state = 19307
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+						set_popularities = {
+							anocratic_republic = 100
+						}
+					}
+					ERH = {
+						create_country_leader = {
+							name = "Secretary-General Trygve Halvdan Lie"
+							desc = ""
+							picture = "gfx/leaders/ERH/ERH_Lie.tga"
+							expire = "1965.1.1"
+							ideology = anocrep
 						}
 					}
 					PRC = {
@@ -11687,8 +11713,38 @@ focus_tree = {
 					TYR = {
 						transfer_state = 1385
 					}
-					INN = {
+					9815 = {
+						set_state_name = "Ballhausplatz"
+					}
+					AUS = {
 						transfer_state = 9815
+						set_capital = {
+							state = 9815
+						}
+						set_politics = {
+							ruling_party = centrist_republic
+						}
+						set_cosmetic_tag = AUS_1950
+						set_party_name = {
+							ideology = centrist_republic
+							name = AUS_centrist_republic_1950_party
+							long_name = AUS_centrist_republic_1950_party_long
+						}
+						set_popularities = {
+							communism = 3
+							socialism_ideology = 40
+							centrist_republic = 47
+							anocratic_republic = 10
+						}
+					}
+					AUS = {
+						create_country_leader = {
+							name = "Bundespräsident Karl Renner"
+							desc = ""
+							picture = "gfx/leaders/AUS/AUS_Renner.tga"
+							expire = "1965.1.1"
+							ideology = cenrep_christian_democracy
+						}
 					}
 					YUG = {
 						set_politics = {

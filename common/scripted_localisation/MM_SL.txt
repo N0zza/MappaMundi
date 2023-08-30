@@ -424,6 +424,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = AUS
+				has_government = centrist_republic
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Bundeskanzler Leopold Figl"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
 				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
@@ -2737,6 +2748,28 @@ defined_text = {
 		localization_key = "Prime Minister James Marape"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = TRS
+				has_government = neutrality
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Guverner Mirko Lenac"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TRS
+				has_government = stratocratic
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Vojni guverner Mirko Lenac"
+	}
+	text = {
 		localization_key = "To Be Added"
 	}
 }
@@ -3123,6 +3156,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Karl_Sturgkh"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = centrist_republic
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Leopold_Figl"
 	}
 	text = {
 		trigger = {
@@ -5450,6 +5494,20 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_James_Marape"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TRS
+				OR = {
+					has_government = neutrality
+					has_government = stratocratic
+				}
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Mirko_Lenac"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
