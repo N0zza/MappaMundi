@@ -901,6 +901,19 @@ defined_text = {
 		}
 		localization_key = "Prime Minister Joseph Aloysius Lyon"
 	}
+	
+	text = {
+		trigger = {
+			AND = {
+				tag = AST
+				has_government = centrist_monarchism
+				has_start_date < 1970.01.01
+				has_start_date > 1939.01.01
+			}
+		}
+		localization_key = "Prime Minister Sir Robert Gordon Menzies"
+	}
+	
 	text = {
 		trigger = {
 			AND = {
@@ -3613,6 +3626,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Anthony_Albanese"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AST
+				has_government = centrist_monarchism
+				has_start_date < 1970.01.01
+				has_start_date > 1939.01.01
+			}
+		}
+		localization_key = "GFX_Robert_Menzies"
 	}
 	text = {
 		trigger = {

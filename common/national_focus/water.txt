@@ -11247,7 +11247,7 @@ focus_tree = {
 						set_politics = {
 							ruling_party = centrist_republic
 						}
-						set_cosmetic_tag = FRA_1950
+						set_cosmetic_tag = FRA_REPUBLIC
 						set_party_name = {
 							ideology = centrist_republic
 							name = FRA_centrist_republic_1950_party
@@ -11255,8 +11255,9 @@ focus_tree = {
 						}
 						set_popularities = {
 							vanguardism = 31
-							socialism_ideology = 17
-							liberal_republic = 10
+							communism = 18
+							socialism_ideology = 2
+							liberal_republic = 7
 							centrist_republic = 29
 							democratic = 13
 						}
@@ -12293,6 +12294,38 @@ focus_tree = {
 					TKL = {
 						set_politics = {
 							ruling_party = centrist_monarchism
+						}
+					}
+					
+					AST = {
+						create_country_leader = {
+							name = "Governor-General William John McKell"
+							desc = ""
+							picture = "gfx/leaders/AST/AST_McKell.dds"
+							expire = "1965.1.1"
+							ideology = cenmon
+						}
+						
+						set_politics = { #horsecock
+							ruling_party = centrist_monarchism
+							
+							set_party_name = {
+								ideology = centrist_monarchism
+								name = AST_centrist_monarchism_1950_party
+								long_name = AST_centrist_monarchism_1950_party_long
+							}
+							
+							set_party_name = {
+								ideology = conservative_monarchism
+								name = AST_conservative_monarchism_1950_party
+								long_name = AST_conservative_monarchism_1950_party_long
+							}
+							
+							set_popularities = {
+								centrist_monarchism = 45
+								conservative_monarchism = 15
+								socialist_monarchy = 40
+							}
 						}
 					}
 				}

@@ -1009,7 +1009,13 @@ secondary_leader_enabled_effect = {
 				OR = {
 					AND = {
 						has_government = conservative_monarchism
-						has_start_date < 2022.01.01
+						has_start_date < 1939.01.01
+						has_start_date > 1932.01.01
+					}
+					AND = {
+						has_government = centrist_monarchism
+						has_start_date < 1970.01.01
+						has_start_date > 1939.01.01
 					}
 					AND = {
 						has_government = democratic_monarchism
