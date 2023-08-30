@@ -721,6 +721,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TUR
+				has_government = anocratic_republic
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Başbakan Mehmet Şemsettin Günaltay"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUR
 				has_government = neutrality
 			}
 		}
@@ -730,7 +741,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = NOC
-				has_government = anocratic_republic
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -1619,16 +1630,6 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				tag = GRE
-				has_government = democratic
-				has_start_date > 2022.01.01
-			}
-		}
-		localization_key = "Prothypourgós Kyriákos Konstantínou Mitsotákis"
-	}
-	text = {
-		trigger = {
-			AND = {
 				tag = CZC
 				has_government = democratic
 				has_start_date > 2022.01.01
@@ -2474,11 +2475,32 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = GRE
+				has_government = centrist_monarchism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Próedros tou Ypourgikoú Symvoulíou Aléxandros Nikoláou Diomídis"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GRE
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Prothypourgós Kyriákos Konstantínou Mitsotákis"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GRE
 				has_government = anocratic_monarchism
 				has_start_date > 1936.01.01
 			}
 		}
-		localization_key = "Prothypourgós Konstantínos Alexándrou Demertzís"
+		localization_key = "Próedros tou Ypourgikoú Symvoulíou Konstantínos Alexándrou Demertzís"
 	}
 	text = {
 		trigger = {
@@ -3458,6 +3480,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TUR
+				has_government = anocratic_republic
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Semsettin_Gunaltay"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUR
 				has_government = neutrality
 			}
 		}
@@ -3467,7 +3500,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = NOC
-				has_government = anocratic_republic
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -4027,16 +4060,6 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Xavier_Bettel"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = GRE
-				has_government = democratic
-				has_start_date > 2022.01.01
-			}
-		}
-		localization_key = "GFX_Kyriakos_Mitsotakis"
 	}
 	text = {
 		trigger = {
@@ -4952,6 +4975,27 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Nathaniel_Lerotholi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GRE
+				has_government = centrist_monarchism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Alexandros_Diomidis"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GRE
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Kyriakos_Mitsotakis"
 	}
 	text = {
 		trigger = {

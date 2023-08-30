@@ -445,6 +445,15 @@ secondary_leader_enabled_effect = {
 						has_start_date > 1935.01.01
 						has_start_date < 1937.01.01
 					}
+					AND = {
+						has_government = centrist_monarchism
+						has_start_date > 1940.01.01
+						has_start_date < 1951.01.01
+					}
+					AND = {
+						has_government = democratic
+						has_start_date > 2022.01.01
+					}
 				}
 			}
 		}
@@ -1555,11 +1564,17 @@ secondary_leader_enabled_effect = {
 					}
 					AND = {
 						has_government = neutrality
-						has_start_date < 2022.01.01
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+					AND = {
+						has_government = anocratic_republic
+						has_start_date > 1940.01.01
+						has_start_date < 1951.01.01
 					}
 					AND = {
 						has_global_flag = non_hog_secondary_leaders
-						has_government = anocratic_republic
+						has_government = neutrality
 						has_start_date > 2022.01.01
 					}
 				}
@@ -1573,7 +1588,7 @@ secondary_leader_enabled_effect = {
 				tag = NOC
 				OR = {
 					AND = {
-						has_government = anocratic_republic
+						has_government = democratic
 						has_start_date > 2022.01.01
 					}
 				}
@@ -1755,16 +1770,6 @@ secondary_leader_enabled_effect = {
 			AND = {
 				tag = MAC
 				has_government = socialism_ideology
-				has_start_date > 2022.01.01
-			}
-		}
-		set_country_flag = has_secondary_leader
-	}
-	else_if = {
-		limit = {
-			AND = {
-				tag = GRE
-				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
