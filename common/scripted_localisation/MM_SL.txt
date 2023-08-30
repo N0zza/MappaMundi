@@ -11,16 +11,6 @@ defined_text = {
 		localization_key = "First Lord of the Treasury Rishi Sunak"
 	}
 	text = {
-	trigger = {
-			AND = {
-				tag = ENG
-				has_government = democratic_monarchism
-				has_start_date > 2022.01.01
-			}
-		}
-		localization_key = "First Lord of the Treasury Sir Keir Rodney Starmer"
-	}
-	text = {
 		trigger = {
 			AND = {
 				tag = ENG
@@ -30,6 +20,27 @@ defined_text = {
 			}
 		}
 		localization_key = "First Lord of the Treasury Herbert Henry Asquith"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = socialist_monarchy
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "First Lord of the Treasury Clement Richard Attlee, 1st Earl Attlee"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = democratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "First Lord of the Treasury Sir Keir Rodney Starmer"
 	}
 	text = {
 		trigger = {
@@ -67,17 +78,6 @@ defined_text = {
 			}
 		}
 		localization_key = "First Lord of the Treasury Sir Barry Edward Domvile"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = ENG
-				has_government = democratic_monarchism
-				has_start_date < 1951.01.01
-				has_start_date > 1940.01.01
-			}
-		}
-		localization_key = "First Lord of the Treasury Clement Richard Attlee, 1st Earl Attlee"
 	}
 	text = {
 		trigger = {
@@ -243,22 +243,22 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = democratic
-				has_start_date > 2022.01.01
+				has_government = centrist_republic
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
 			}
 		}
-		localization_key = "Presidentessa del Consiglio dei ministri Giorgia Meloni"
+		localization_key = "Presidente del Consiglio dei ministri Alcide Amedeo Francesco De Gasperi"
 	}
 	text = {
 		trigger = {
 			AND = {
 				tag = ITA
 				has_government = democratic
-				has_start_date < 1951.01.01
-				has_start_date > 1940.01.01
+				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Presidente del Consiglio dei ministri Alcide Amedeo Francesco De Gasperi"
+		localization_key = "Presidentessa del Consiglio dei ministri Giorgia Meloni"
 	}
 	text = {
 		trigger = {
@@ -730,6 +730,17 @@ defined_text = {
 			AND = {
 				tag = IRE
 				has_government = democratic
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Taoiseach Seán Alabhaois Mac Coisdealbha"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = IRE
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -739,19 +750,13 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = IRE
-				has_government = centrist_monarchism
+				OR = {
+					has_government = centrist_republic
+					has_government = centrist_monarchism
+				}
 			}
 		}
 		localization_key = "Uachtarán Éamon de Valera"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = IRE
-				has_government = centrist_republic
-			}
-		}
-		localization_key = "Taoiseach Éamon de Valera"
 	}
 	text = {
 		trigger = {
@@ -840,7 +845,7 @@ defined_text = {
 				has_start_date > 1913.01.01
 			}
 		}
-		localization_key = "Premier Ministre Jean Raphaël Adrien René Viviani"
+		localization_key = "Président du Conseil des ministres Jean Raphaël Adrien René Viviani"
 	}
 	text = {
 		trigger = {
@@ -851,18 +856,18 @@ defined_text = {
 				has_start_date > 1935.01.01
 			}
 		}
-		localization_key = "Premier Ministre Pierre Jean Marie Laval"
+		localization_key = "Président du Conseil des ministres Pierre Jean Marie Laval"
 	}
 	text = {
 		trigger = {
 			AND = {
 				tag = FRA
-				has_government = democratic
+				has_government = centrist_republic
 				has_start_date < 1951.01.01
 				has_start_date > 1940.01.01
 			}
 		}
-		localization_key = "Premier Ministre Georges-Augustin Bidault"
+		localization_key = "Président du Conseil des ministres Georges-Augustin Bidault"
 	}
 	text = {
 		trigger = {
@@ -1269,6 +1274,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Regierungschef Franz Josef Hoop"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ROM
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Președintele Consiliului de Miniștri Petru Groza"
 	}
 	text = {
 		trigger = {
@@ -1833,6 +1849,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = YUG
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Predsjednik Saveznog izvršnog vijeća i Generalni Sekretar CK SKJ Josip Broz Tito"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = YUG
 				has_government = fascism
 			}
 		}
@@ -2354,6 +2381,27 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = BUL
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Ministar-predsedatel Nikolai Denkov Denkov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BUL
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Predsedatel na Ministerskiya sŭvet Vasil Petrov Kolarov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BUL
 				has_government = authoritarian_monarchism
 			}
 		}
@@ -2362,12 +2410,13 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				tag = BUL
-				has_government = liberal_republic
-				has_start_date > 2022.01.01
+				tag = ALB
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
 			}
 		}
-		localization_key = "Ministar-predsedatel Nikolai Denkov Denkov"
+		localization_key = "Kryeministr dhe Sekretar i Parë i KQ të PPSh Enver Halil Hoxha"
 	}
 	text = {
 		trigger = {
@@ -2766,22 +2815,22 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ENG
-				has_government = democratic_monarchism
-				has_start_date > 2022.01.01
+				has_government = socialist_monarchy
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
 			}
 		}
-		localization_key = "GFX_Keir_Starmer"
+		localization_key = "GFX_Clement_Attlee"
 	}
 	text = {
 		trigger = {
 			AND = {
 				tag = ENG
 				has_government = democratic_monarchism
-				has_start_date < 1951.01.01
-				has_start_date > 1940.01.01
+				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Clement_Attlee"
+		localization_key = "GFX_Keir_Starmer"
 	}
 	text = {
 		trigger = {
@@ -2937,22 +2986,22 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = democratic
-				has_start_date > 2022.01.01
+				has_government = centrist_republic
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
 			}
 		}
-		localization_key = "GFX_Giorgia_Meloni"
+		localization_key = "GFX_Alcide_Gasperi"
 	}
 	text = {
 		trigger = {
 			AND = {
 				tag = ITA
 				has_government = democratic
-				has_start_date < 1951.01.01
-				has_start_date > 1940.01.01
+				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Alcide_Gasperi"
+		localization_key = "GFX_Giorgia_Meloni"
 	}
 	text = {
 		trigger = {
@@ -3371,13 +3420,12 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = IRE
-				OR = {
-					has_government = centrist_monarchism
-					has_government = centrist_republic
-				}
+				has_government = democratic
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
 			}
 		}
-		localization_key = "GFX_Eamon_de_Valera"
+		localization_key = "GFX_John_Costello"
 	}
 	text = {
 		trigger = {
@@ -3388,6 +3436,18 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Leo_Varadkar"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = IRE
+				OR = {
+					has_government = centrist_monarchism
+					has_government = centrist_republic
+				}
+			}
+		}
+		localization_key = "GFX_Eamon_de_Valera"
 	}
 	text = {
 		trigger = {
@@ -3493,7 +3553,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = FRA
-				has_government = democratic
+				has_government = centrist_republic
 				has_start_date < 1951.01.01
 				has_start_date > 1940.01.01
 			}
@@ -3757,9 +3817,22 @@ defined_text = {
 			AND = {
 				tag = POR
 				has_government = republican_fascism
+				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
 			}
 		}
 		localization_key = "GFX_Antonio_Salazar"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = POR
+				has_government = republican_fascism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Antonio_Salazar_1950"
 	}
 	text = {
 		trigger = {
@@ -4090,6 +4163,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Josef_Hoop"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ROM
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Petru_Groza"
 	}
 	text = {
 		trigger = {
@@ -4736,10 +4820,12 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = BUL
-				has_government = authoritarian_monarchism
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
 			}
 		}
-		localization_key = "GFX_Georgi_Kyoseivanov"
+		localization_key = "GFX_Vasil_Kolarov"
 	}
 	text = {
 		trigger = {
@@ -4750,6 +4836,26 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Nikolai_Denkov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BUL
+				has_government = authoritarian_monarchism
+			}
+		}
+		localization_key = "GFX_Georgi_Kyoseivanov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ALB
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Enver_Hoxha"
 	}
 	text = {
 		trigger = {
@@ -4904,6 +5010,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Lee_Hsien_Loong"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = YUG
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Josip_Broz_Tito"
 	}
 	text = {
 		trigger = {
@@ -5638,6 +5755,28 @@ defined_text = {
 		localization_key = "Az MDP Központi Bizottságának főtitkára Rákosi Mátyás"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = ROM
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Secretar general al CC al PMR Gheorghe Gheorghiu-Dej"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BUL
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Generalen Sekretar na TSK na BKP Valko Velyov Chervenkov"
+	}
+	text = {
 		localization_key = "To be Added"
 	}
 }
@@ -5954,6 +6093,28 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Matyas_Rakosi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ROM
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Gheorghe_Gheorghiu"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BUL
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Valko_Chervenkov"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"

@@ -9709,7 +9709,38 @@ focus_tree = {
 					}
 					SPR = {
 						set_politics = {
-							ruling_party = stratocratic_monarchism
+							ruling_party = fascism
+						}
+						set_cosmetic_tag = SPR_1950
+						set_popularities = {
+							fascism = 100
+						}
+						set_party_name = {
+							ideology = fascism
+							name = SPR_fascism_1950_party
+							long_name = SPR_fascism_1950_party_long
+						}
+					}
+					SPR = {
+						create_country_leader = {
+							name = "Caudillo y Presidente del Gobierno Francisco Franco Bahamonde "
+							desc = ""
+							picture = "gfx/leaders/SPR/SPR_Franco_1950.tga"
+							expire = "1965.1.1"
+							ideology = fascism_ideology
+							traits = {
+							}
+						}
+					}
+					POR = {
+						create_country_leader = {
+							name = "Presidente António Óscar Fragoso Carmona "
+							desc = ""
+							picture = "gfx/leaders/POR/POR_Carmona_1950.tga"
+							expire = "1965.1.1"
+							ideology = repfash
+							traits = {
+							}
 						}
 					}
 					every_state = {
@@ -11181,26 +11212,23 @@ focus_tree = {
 						set_cosmetic_tag = YKT_1939
 					}
 					ENG = {
-						set_cosmetic_tag = ENG_1950
 						set_politics = {
-							ruling_party = democratic_monarchism
+							ruling_party = socialist_monarchy
 						}
-						create_country_leader = {
-							name = "King George VI of Windsor"
-							desc = ""
-							picture = "gfx/leaders/ENG/ENG_George_VI_2.tga"
-							expire = "1965.1.1"
-							ideology = liberal_constitutionalism
-						}
-						set_party_name = {
-							ideology = democratic_monarchism
-							name = ENG_democratic_monarchism_2023_party
-							long_name = ENG_democratic_monarchism_2023_party_long
-						}
+						set_cosmetic_tag = ENG_1950
 						set_popularities = {
 							democratic_monarchism = 61
 							conservative_monarchism = 31
 							centrist_monarchism = 8
+						}
+					}
+					ENG = {
+						create_country_leader = {
+							name = "King George VI of Windsor "
+							desc = ""
+							picture = "gfx/leaders/ENG/ENG_George_VI_2.tga"
+							expire = "1965.1.1"
+							ideology = monsoc
 						}
 					}
 					HOL = {
@@ -11210,41 +11238,51 @@ focus_tree = {
 						
 						set_cosmetic_tag = HOL_KINGDOM
 					}
-						
+					FRA = {
+						set_politics = {
+							ruling_party = centrist_republic
+						}
+						set_cosmetic_tag = FRA_1950
+						set_party_name = {
+							ideology = centrist_republic
+							name = FRA_centrist_republic_1950_party
+							long_name = FRA_centrist_republic_1950_party_long
+						}
+						set_popularities = {
+							vanguardism = 31
+							communism = 18
+							socialism_ideology = 2
+							liberal_republic = 7
+							centrist_republic = 29
+							democratic = 13
+						}
+					}
 					FRA = {
 						create_country_leader = {
 							name = "Président Vincent Jules Auriol"
 							desc = ""
 							picture = "gfx/leaders/FRA/FRA_Auriol.tga"
 							expire = "1965.1.1"
-							ideology = liberal_conservatism
+							ideology = cenrep_christian_democracy
 						}
 					}
 					ITA = {
 						set_cosmetic_tag = ITA_1950
-						set_politics = {
-							ruling_party = democratic
-						}
 						create_country_leader = {
 							name = "Presidente Luigi Numa Lorenzo Einaudi"
 							desc = ""
 							picture = "gfx/leaders/ITA/Portrait_Luigi_Einaudi.tga"
 							expire = "1965.1.1"
-							ideology = christian_democracy
+							ideology = cenrep_christian_democracy
 						}
 						set_popularities = {
-							democratic = 49
-							communism = 31
-							socialism_ideology = 7
-							liberal_republic = 5
+							communism = 23
+							socialism_ideology = 15
+							liberal_republic = 2
+							centrist_republic = 54
+							democratic = 2
 							conservative_monarchism = 3
-							centrist_republic = 3
-							republican_fascism = 2
-						}
-						set_party_name = {
-							ideology = democratic
-							name = ITA_democratic_1950_party
-							long_name = ITA_democratic_1950_party_long
+							republican_fascism = 1
 						}
 						set_party_name = {
 							ideology = communism
@@ -11309,6 +11347,22 @@ focus_tree = {
 						set_politics = {
 							ruling_party = vanguardism
 						}
+						set_popularities = {
+							vanguardism = 76
+							communism = 22
+							neutrality = 2
+						}
+					}
+					ROM = {
+						create_country_leader = {
+							name = "Președinte al Prezidiului Marii Adunări Naționale Constantin Ion Parhon"
+							desc = ""
+							picture = "gfx/leaders/ROM/ROM_Parhon.tga"
+							expire = "1965.1.1"
+							ideology = totsoc
+							traits = {
+							}
+						}
 					}
 					ALB = {
 						transfer_state = 4139
@@ -11317,6 +11371,20 @@ focus_tree = {
 						set_cosmetic_tag = BUL_1950
 						set_politics = {
 							ruling_party = vanguardism
+						}
+						set_popularities = {
+							vanguardism = 100
+						}
+					}
+					BUL = {
+						create_country_leader = {
+							name = "Predsedatel na Prezidiuma na Narodnoto sŭbranie Mincho Kolev Neychev"
+							desc = ""
+							picture = "gfx/leaders/BUL/BUL_Neychev.tga"
+							expire = "1965.1.1"
+							ideology = totsoc
+							traits = {
+							}
 						}
 					}
 					MOL = {
@@ -11441,7 +11509,19 @@ focus_tree = {
 					IRE = {
 						transfer_state = 3205
 						set_politics = {
-							ruling_party = centrist_republic
+							ruling_party = democratic
+						}
+						set_cosmetic_tag = IRE_2023
+					}
+					IRE = {
+						create_country_leader = {
+							name = "Uachtarán Seán Tomás Ó Ceallaigh"
+							desc = ""
+							picture = "gfx/leaders/IRE/IRE_Kelly.tga"
+							expire = "1965.1.1"
+							ideology = christian_democracy
+							traits = {
+							}
 						}
 					}
 					every_state = {
@@ -11554,23 +11634,22 @@ focus_tree = {
 								is_core_of = ITA
 							}
 						}
-						TYR = {
-							transfer_state = PREV
-							set_cosmetic_tag = FRA_BLUE
-							set_politics = {
-								ruling_party = stratocratic_monarchism
-							}
-							set_popularities = {
-								stratocratic_monarchism = 100
-							}
-							
-							create_country_leader = {
-								name = "High Commissioner for France in Austria Marie Émile Antoine Béthouart"
-								desc = ""
-								picture = "gfx/leaders/TYR/Portrait_TYR_Bethouart.dds"
-								expire = "1965.1.1"
-								ideology = stratmon
-							}
+						transfer_state_to = TYR
+					}
+					TYR = {
+						set_cosmetic_tag = FRA_BLUE
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+						}
+						set_popularities = {
+							stratocratic_monarchism = 100
+						}
+						create_country_leader = {
+							name = "High Commissioner for France in Austria Marie Émile Antoine Béthouart"
+							desc = ""
+							picture = "gfx/leaders/TYR/Portrait_TYR_Bethouart.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
 						}
 					}
 					EAS = {
@@ -11625,6 +11704,20 @@ focus_tree = {
 						}
 						YUG = {
 							transfer_state = PREV
+						}
+					}
+					YUG = {
+						set_popularities = {
+							vanguardism = 100
+						}
+					}
+					YUG = {
+						create_country_leader = {
+							name = "Predsjednik Predsjedništva Narodne Skupštine Ivan Ribar"
+							desc = ""
+							picture = "gfx/leaders/YUG/YUG_Ribar.tga"
+							expire = "1965.1.1"
+							ideology = totsoc
 						}
 					}
 					every_state = {
@@ -11700,8 +11793,24 @@ focus_tree = {
 							ruling_party = vanguardism
 						}
 						set_cosmetic_tag = ALB_1950
+						set_popularities = {
+							vanguardism = 100
+						}
+						set_party_name = {
+							ideology = vanguardism
+							name = ALB_vanguardism_1950_party
+							long_name = ALB_vanguardism_1950_party_long
+						}
 					}
-						
+					ALB = {
+						create_country_leader = {
+							name = "Kryetar i Presidiumit të Kuvendit Popullor Omer Nishani"
+							desc = ""
+							picture = "gfx/leaders/ALB/ALB_Nishani.tga"
+							expire = "1965.1.1"
+							ideology = totsoc
+						}
+					}
 					every_state = {
 						limit = {
 								is_core_of = CSK
