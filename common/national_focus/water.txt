@@ -10357,7 +10357,14 @@ focus_tree = {
 					DPK = {
 						transfer_state = PREV
 					}
-					do_korean_renames = yes
+					do_north_korean_renames = yes
+				}
+				DPK = {
+					set_popularities = {
+						vanguardism = 48
+						communism = 33
+						neutrality = 19
+					}
 				}
 				every_state = {
 					limit = {
@@ -10367,6 +10374,47 @@ focus_tree = {
 						transfer_state = PREV
 					}
 					do_korean_renames = yes
+				}
+				ROK = {
+					set_politics = {
+						ruling_party = neutrality
+					}
+					set_cosmetic_tag = ROK_1950
+					set_popularities = {
+						democratic = 6.5
+						anocratic_republic = 2.5
+						neutrality = 91
+					}
+					set_party_name = {
+						ideology = neutrality
+						name = ROK_neutrality_1950_party
+						long_name = ROK_neutrality_1950_party_long
+					}
+					set_party_name = {
+						ideology = republican_fascism
+						name = ROK_republican_fascism_1950_party
+						long_name = ROK_republican_fascism_1950_party_long
+					}
+				}
+				ROK = {
+					create_country_leader = {
+						name = "Daetongnyeong Ri Seung-man "
+						desc = ""
+						picture = "gfx/leaders/ROK/ROK_Rhee_1950.tga"
+						expire = "1965.1.1"
+						ideology = authoritarian_conservatism
+						traits = {
+						}
+					}
+					create_country_leader = {
+						name = "Daetongnyeong Ri Seung-man "
+						desc = ""
+						picture = "gfx/leaders/ROK/ROK_Rhee_1950.tga"
+						expire = "1965.1.1"
+						ideology = repfash
+						traits = {
+						}
+					}
 				}
 				every_state = {
 					limit = {
@@ -10532,13 +10580,32 @@ focus_tree = {
 					set_cosmetic_tag = CHI_BLUE
 				}
 				JAP = {
+					set_cosmetic_tag = JAP_USA_1950
+					set_party_name = {
+						ideology = stratocratic_monarchism
+						name = JAP_stratocratic_monarchism_1950_party
+						long_name = JAP_stratocratic_monarchism_1950_party_long
+					}
 					set_popularities = {
-						neutrality = 100
+						communism = 3
+						socialist_monarchy = 4
+						democratic_monarchism = 1
+						centrist_monarchism = 5
+						conservative_monarchism = 19
+						anocratic_monarchism = 1
+						stratocratic_monarchism = 67
 					}
-					set_politics = {
-						ruling_party = neutrality
+				}
+				JAP = {
+					create_country_leader = {
+						name = "Ten'nō Hirohito "
+						desc = "POLITICS_Hirohito_DESC"
+						picture = "gfx/leaders/JAP/JAP_Hirohito_1950.tga"
+						expire = "1989.1.1"
+						ideology = stratmon_military_junta
+						traits = {
+						}
 					}
-					set_cosmetic_tag = USA_BLUE
 				}
 				RUS = {
 					transfer_state = 555

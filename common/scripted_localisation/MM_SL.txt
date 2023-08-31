@@ -683,6 +683,8 @@ defined_text = {
 			AND = {
 				tag = JAP
 				has_government = stratocratic_monarchism
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
 			}
 		}
 		localization_key = "Naikaku Sōri-Daijin Okada Keisuke"
@@ -692,9 +694,22 @@ defined_text = {
 			AND = {
 				tag = JAP
 				has_government = fascism
+				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
 			}
 		}
 		localization_key = "Naikaku Sōri-Daijin Tōjō Hideki"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JAP
+				has_government = stratocratic_monarchism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Naikaku Sōri-Daijin Yoshida Shigeru"
 	}
 	text = {
 		trigger = {
@@ -1056,6 +1071,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Naegak Ch'ongni Kim Tŏkhun"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = DPK
+				has_government = vanguardism
+				has_start_date > 1935.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Naegak Ch'ongni Kim Tŏkhun kyŏm kyŏm Chosŏn Rodongdang Chungangwiwŏnhoe Wiwŏnjang Kim Ilsŏng"
 	}
 	text = {
 		trigger = {
@@ -3442,6 +3468,19 @@ defined_text = {
 			AND = {
 				tag = JAP
 				has_government = stratocratic_monarchism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Shigeru_Yoshida"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JAP
+				has_government = stratocratic_monarchism
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
 			}
 		}
 		localization_key = "GFX_Okada_Keisuke"
@@ -3451,6 +3490,8 @@ defined_text = {
 			AND = {
 				tag = JAP
 				has_government = fascism
+				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
 			}
 		}
 		localization_key = "GFX_Tojo_Hideki"
@@ -3803,6 +3844,28 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Zhang_Wentian"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = DPK
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Kim_Ilsung_1950"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = DPK
+				has_government = vanguardism
+				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
+			}
+		}
+		localization_key = "GFX_Kim_Ilsung"
 	}
 	text = {
 		trigger = {
@@ -5903,6 +5966,17 @@ defined_text = {
 		localization_key = "Generalen Sekretar na TSK na BKP Valko Velyov Chervenkov"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = JAP
+				has_government = stratocratic_monarchism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Supreme Commander for the Allied Powers Douglas MacArthur"
+	}
+	text = {
 		localization_key = "To be Added"
 	}
 }
@@ -6241,6 +6315,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Valko_Chervenkov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JAP
+				has_government = stratocratic_monarchism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Douglas_Macarthur"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
