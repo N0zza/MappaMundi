@@ -2831,6 +2831,17 @@ defined_text = {
 		localization_key = "Vojni guverner Mirko Lenac"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = PHI
+				has_government = anocratic_republic
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
+			}
+		}
+		localization_key = "High Commissioner to the Philippines William Francis Murphy"
+	}
+	text = {
 		localization_key = "To Be Added"
 	}
 }
@@ -5639,6 +5650,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Mirko_Lenac"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PHI
+				has_government = anocratic_republic
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
+			}
+		}
+		localization_key = "GFX_Frank_Murphy"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
