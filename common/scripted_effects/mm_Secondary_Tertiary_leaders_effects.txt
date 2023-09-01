@@ -27,7 +27,7 @@ secondary_leader_enabled_effect = {
 							}
 						}
 						has_start_date > 1935.01.01
-						has_start_date < 1937.01.01
+						has_start_date < 1940.01.01
 					}
 					AND = {
 						has_government = socialist_monarchy
@@ -94,9 +94,12 @@ secondary_leader_enabled_effect = {
 				tag = IRE
 				OR = {
 					AND = {
-						has_government = centrist_monarchism
+						OR = {
+							has_government = centrist_republic
+							has_government = centrist_monarchism
+						}
 						has_start_date > 1935.01.01
-						has_start_date < 1937.01.01
+						has_start_date < 1940.01.01
 					}
 					AND = {
 						has_government = democratic
@@ -308,6 +311,11 @@ secondary_leader_enabled_effect = {
 				OR = {
 					AND = {
 						has_government = democratic
+						has_start_date < 1937.01.01
+					}
+					AND = {
+						has_government = liberal_republic
+						has_start_date > 1937.01.01
 						has_start_date < 1940.01.01
 					}
 					AND = {
@@ -1519,8 +1527,17 @@ secondary_leader_enabled_effect = {
 		limit = {
 			AND = {
 				tag = CZC
-				has_government = democratic
-				has_start_date > 2022.01.01
+				OR = {
+					AND = {
+						has_government = national_socialism
+						has_start_date > 1935.01.01
+						has_start_date < 1940.01.01
+					}
+					AND = {
+						has_government = democratic
+						has_start_date > 2022.01.01
+					}
+				}
 			}
 		}
 		set_country_flag = has_secondary_leader
@@ -1570,7 +1587,7 @@ secondary_leader_enabled_effect = {
 					AND = {
 						has_government = neutrality
 						has_start_date > 1935.01.01
-						has_start_date < 1937.01.01
+						has_start_date < 1940.01.01
 					}
 					AND = {
 						has_government = anocratic_republic
@@ -2974,6 +2991,21 @@ tertiary_leader_enabled_effect = {
 						has_government = stratocratic_monarchism
 						has_start_date > 1940.01.01
 						has_start_date < 1951.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_tertiary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = CZC
+				OR = {
+					AND = {
+						has_government = national_socialism
+						has_start_date > 1935.01.01
+						has_start_date < 1940.01.01
 					}
 				}
 			}

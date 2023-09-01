@@ -47,6 +47,17 @@ defined_text = {
 			AND = {
 				tag = ENG
 				has_government = conservative_monarchism
+				has_start_date > 1937.01.01
+				has_start_date < 1940.01.01
+			}
+		}
+		localization_key = "First Lord of the Treasury Arthur Neville Chamberlain"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = conservative_monarchism
 			}
 		}
 		localization_key = "First Lord of the Treasury Stanley Baldwin"
@@ -693,6 +704,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = JAP
+				has_government = stratocratic_monarchism
+				has_start_date > 1937.01.01
+				has_start_date < 1940.01.01
+			}
+		}
+		localization_key = "Naikaku Sōri-Daijin Abe Nobuyuki"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JAP
 				has_government = fascism
 				has_start_date > 1935.01.01
 				has_start_date < 1940.01.01
@@ -736,6 +758,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TUR
+				has_government = neutrality
+				has_start_date > 1937.01.01
+				has_start_date < 1940.01.01
+			}
+		}
+		localization_key = "Başbakan İbrahim Refik Saydam"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUR
 				has_government = anocratic_republic
 				has_start_date > 1940.01.01
 				has_start_date < 1951.01.01
@@ -748,6 +781,8 @@ defined_text = {
 			AND = {
 				tag = TUR
 				has_government = neutrality
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
 			}
 		}
 		localization_key = "Başbakan Mustafa İsmet İnönü"
@@ -787,13 +822,23 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = IRE
-				OR = {
-					has_government = centrist_republic
-					has_government = centrist_monarchism
-				}
+				has_government = centrist_monarchism
+				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
 			}
 		}
 		localization_key = "Uachtarán Éamon de Valera"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = IRE
+				has_government = centrist_republic
+				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
+			}
+		}
+		localization_key = "Taoiseach Éamon de Valera"
 	}
 	text = {
 		trigger = {
@@ -894,6 +939,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Président du Conseil des ministres Pierre Jean Marie Laval"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				has_government = liberal_republic
+				has_start_date < 1940.01.01
+				has_start_date > 1937.01.01
+			}
+		}
+		localization_key = "Président du Conseil des ministres Edouard Daladier"
 	}
 	text = {
 		trigger = {
@@ -1662,6 +1718,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Předseda vlády Petr Fiala"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CZC
+				has_government = national_socialism
+				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
+			}
+		}
+		localization_key = "Státní prezident Emil Dominik Josef Hácha"
 	}
 	text = {
 		trigger = {
@@ -2942,6 +3009,17 @@ defined_text = {
 			AND = {
 				tag = ENG
 				has_government = conservative_monarchism
+				has_start_date > 1937.01.01
+				has_start_date < 1940.01.01
+			}
+		}
+		localization_key = "GFX_Neville_Chamberlain"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = conservative_monarchism
 			}
 		}
 		localization_key = "GFX_Stanley_Baldwin"
@@ -3500,6 +3578,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = JAP
+				has_government = stratocratic_monarchism
+				has_start_date > 1937.01.01
+				has_start_date < 1940.01.01
+			}
+		}
+		localization_key = "GFX_Nobuyuku_Abe"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JAP
 				has_government = fascism
 				has_start_date > 1935.01.01
 				has_start_date < 1940.01.01
@@ -3532,6 +3621,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TUR
+				has_government = neutrality
+				has_start_date > 1937.01.01
+				has_start_date < 1940.01.01
+			}
+		}
+		localization_key = "GFX_Refik_Saydam"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUR
 				has_government = anocratic_republic
 				has_start_date > 1940.01.01
 				has_start_date < 1951.01.01
@@ -3544,6 +3644,8 @@ defined_text = {
 			AND = {
 				tag = TUR
 				has_government = neutrality
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
 			}
 		}
 		localization_key = "GFX_Ismet_Inonu"
@@ -3690,6 +3792,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Pierre_Laval"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = FRA
+				has_government = liberal_republic
+				has_start_date < 1940.01.01
+				has_start_date > 1937.01.01
+			}
+		}
+		localization_key = "GFX_Edouard_Daladier"
 	}
 	text = {
 		trigger = {
@@ -4154,6 +4267,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Petr_Fiala"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CZC
+				has_government = national_socialism
+				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
+			}
+		}
+		localization_key = "GFX_Emil_Hacha"
 	}
 	text = {
 		trigger = {
@@ -5999,6 +6123,17 @@ defined_text = {
 		localization_key = "Supreme Commander for the Allied Powers Douglas MacArthur"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = CZC
+				has_government = national_socialism
+				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
+			}
+		}
+		localization_key = "Předseda vlády Alois Josef Eliáš"
+	}
+	text = {
 		localization_key = "To be Added"
 	}
 }
@@ -6348,6 +6483,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Douglas_Macarthur"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CZC
+				has_government = national_socialism
+				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
+			}
+		}
+		localization_key = "GFX_Alois_Elias"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
