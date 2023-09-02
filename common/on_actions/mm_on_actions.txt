@@ -4741,9 +4741,16 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
+									has_government = left_anarchism
+								}
+							}
+							set_cosmetic_tag = GER_ANCOM
+						}
+						if = {
+							limit = {
+								OR = {
 									has_government = vanguardism
 									has_government = communism
-									has_government = left_anarchism
 								}
 							}
 							set_cosmetic_tag = GER_SOCIALIST
