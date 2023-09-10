@@ -3,11 +3,11 @@
 set_country_flag = has_secondary_leader
 
 set_popularities = {
-	socialist_monarchy = 9
-	democratic_monarchism = 45
-	conservative_monarchism = 30
-	centrist_monarchism = 9
-	neutrality = 7
+	socialist_monarchy = 3
+	democratic_monarchism = 71
+	centrist_monarchism = 2
+	conservative_monarchism = 17
+	anocratic_monarchism = 7
 }
 
 set_politics = { 
@@ -22,7 +22,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/CAN/Portrait_John_Buchan.dds"
 	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
+	ideology = libmon_social_liberalism
 	traits = {
 		#
 	}
@@ -56,6 +56,28 @@ create_country_leader = {
 	picture = "gfx/leaders/CAN/Portrait_John_Buchan.dds"
 	expire = "1965.1.1"
 	ideology = authmon_colonialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Governor John Buchan, Baron Tweedsmuir"
+	desc = ""
+	picture = "gfx/leaders/CAN/Portrait_John_Buchan.dds"
+	expire = "1965.1.1"
+	ideology = anocmon_oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "President John Horne Blackmore"
+	desc = ""
+	picture = "gfx/leaders/CAN/Portrait_John_Blackmore.dds"
+	expire = "1965.1.1"
+	ideology = right_wing_populism
 	traits = {
 		#
 	}

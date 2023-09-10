@@ -135,11 +135,22 @@ defined_text = {
 			AND = {
 				tag = CAN
 				has_government = democratic_monarchism
-				has_start_date < 1937.01.01
 				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
 			}
 		}
 		localization_key = "Prime Minister William Lyon Mackenzie King"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CAN
+				has_government = democratic_monarchism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Prime Minister Louis Stephen St. Laurent"
 	}
 	text = {
 		trigger = {
@@ -151,6 +162,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Prime Minister Sir Robert Laird Borden"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SOV
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Sovéta Minístrov i Generálʹnyy sekretárʹ TsK VKP(b) Iósif Vissariónovich Stálin"
 	}
 	text = {
 		trigger = {
@@ -170,6 +192,8 @@ defined_text = {
 			AND = {
 				tag = SOV
 				has_government = vanguardism
+				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
 			}
 		}
 		localization_key = "Predsedátelʹ Sovnarkóma Vyachesláv Mikháylovich Mólotov"
@@ -193,6 +217,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Predsedátelʹ Pravítelʹstva Mikhaíl Vladímirovich Mishústin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Sovnarkóma Borís Nikoláyevich Chernoúsov"
 	}
 	text = {
 		trigger = {
@@ -1095,9 +1130,20 @@ defined_text = {
 			AND = {
 				tag = CHI
 				has_government = neutrality
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
 			}
 		}
-		localization_key = "Hsingcheng Yüan Yüanch'ang Chiang Chieh-shih"
+		localization_key = "Chungkuo Kuomintang Tsungts'ai Chiag Chung-cheng"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CHI
+				has_government = neutrality
+			}
+		}
+		localization_key = "Hsingcheng Yüan Yüanch'ang Chiang Chung-cheng"
 	}
 	text = {
 		trigger = {
@@ -1108,6 +1154,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Guówùyuàn Zǒnglǐ Lǐ Qiáng"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PRC
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Chungyang Jenmin Chengfu Chengwuyüan Tsungli Chou Ên-lai"
 	}
 	text = {
 		trigger = {
@@ -3097,8 +3154,19 @@ defined_text = {
 			AND = {
 				tag = CAN
 				has_government = democratic_monarchism
-				has_start_date < 1937.01.01
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Louis_St_Laurent"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CAN
+				has_government = democratic_monarchism
 				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
 			}
 		}
 		localization_key = "GFX_William_Mackenzie"
@@ -3113,6 +3181,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Robert_Borden"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SOV
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Jospeh_Stalin_1950"
 	}
 	text = {
 		trigger = {
@@ -3132,6 +3211,8 @@ defined_text = {
 			AND = {
 				tag = SOV
 				has_government = vanguardism
+				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
 			}
 		}
 		localization_key = "GFX_Vyacheslav_Molotov"
@@ -3155,6 +3236,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Mikhail_Mishtusin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Boris_Chernausov"
 	}
 	text = {
 		trigger = {
@@ -3936,6 +4028,19 @@ defined_text = {
 			AND = {
 				tag = CHI
 				has_government = neutrality
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Chiang_Kaishek_1950"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CHI
+				has_government = neutrality
+				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
 			}
 		}
 		localization_key = "GFX_Chiang_Kaishek"
@@ -3959,6 +4064,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Li_Qiang"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = PRC
+				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "GFX_Zhou_Enlai"
 	}
 	text = {
 		trigger = {
@@ -5793,13 +5909,12 @@ defined_text = {
 defined_text = {
 	name = GetTertiaryLeaderName
 	text = {
-	trigger = {
+		trigger = {
 			AND = {
-				OR = {
-					tag = SOV
-					tag = RUS
-				}
+				tag = RUS
 				has_government = vanguardism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
 			}
 		}
 		localization_key = "Generálʹnyy sekretárʹ TsK VKP(b) Iósif Vissariónovich Stálin"
@@ -6147,7 +6262,8 @@ defined_text = {
 					tag = RUS
 				}
 				has_government = vanguardism
-				has_start_date < 1949.01.01
+				has_start_date > 1935.01.01
+				has_start_date < 1940.01.01
 			}
 		}
 		localization_key = "GFX_Jospeh_Stalin"
@@ -6155,13 +6271,10 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				OR = {
-					tag = SOV
-					tag = RUS
-				}
+				tag = RUS
 				has_government = vanguardism
-				has_start_date > 1949.01.01
-				has_start_date < 2022.01.01
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
 			}
 		}
 		localization_key = "GFX_Jospeh_Stalin_1950"

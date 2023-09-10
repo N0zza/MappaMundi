@@ -9528,6 +9528,17 @@
 							}
 						}
 					}
+					RAJ = {
+						create_country_leader = {
+							name = "Viceroy and Governor-General Victor Alexander John Hope, 2nd Marquess of Linlithgow"
+							desc = ""
+							picture = "gfx/leaders/India/RAJ_Linlithgow.tga"
+							expire = "1965.1.1"
+							ideology = authmon_colonialism
+							traits = {
+							}
+						}
+					}
 					every_state = {
 						limit = {
 							is_core_of = BRM
@@ -10152,7 +10163,10 @@
 					}
 					BRA = {
 						set_politics = {
-								ruling_party = neutrality
+							ruling_party = neutrality
+						}
+						set_popularities = {
+							neutrality = 100
 						}
 					}
 					KBA = {
@@ -11203,7 +11217,7 @@
 				}
 				RUS = {
 					create_country_leader = {
-						name = "Predsedátelʹ Iván Alekséevič Vlásov"
+						name = "Predsedátelʹ Prezídiuma Verkhóvnogo Sovéta Iván Alekséyevich Vlásov"
 						desc = ""
 						picture = "gfx/leaders/Russia/Portrait_Ivan_Vlasov.tga"
 						expire = "1965.1.1"
@@ -11212,7 +11226,7 @@
 				}
 				SOV = {
 					create_country_leader = {
-						name = "Predsedátelʹ Nikoláj Mixájlovič Švérnik"
+						name = "Predsedátelʹ Prezídiuma Verkhóvnogo Sovéta Nikoláy Mikháilovich Shvérnik"
 						desc = ""
 						picture = "gfx/leaders/Russia/Portrait_Nikolai_Shvernik.tga"
 						expire = "1965.1.1"
@@ -11471,6 +11485,50 @@
 							ideology = social_liberalism
 						}
 					}
+					CAN = {
+						set_popularities = {
+							socialist_monarchy = 5
+							democratic_monarchism = 74
+							centrist_monarchism = 1
+							conservative_monarchism = 16
+							anocratic_monarchism = 4
+						}
+						create_country_leader = {
+							name = "Governor General Harold Rupert Leofric George Alexander, Earl Alexander of Tunis"
+							desc = ""
+							picture = "gfx/leaders/CAN/CAN_Tunis.tga"
+							expire = "1965.1.1"
+							ideology = libmon_social_liberalism
+						}
+					}
+					BRA = {
+						set_politics = {
+							ruling_party = centrist_republic
+						}
+						set_cosmetic_tag = BRA_1950
+						set_popularities = {
+							communism = 5
+							socialism_ideology = 8
+							liberal_republic = 3
+							centrist_republic = 53
+							democratic = 30
+							anocratic_republic = 1
+						}
+						set_party_name = {
+							ideology = centrist_republic
+							name = BRA_centrist_republic_1950_party
+							long_name = BRA_centrist_republic_1950_party_long
+						}
+					}
+					BRA = {
+						create_country_leader = {
+							name = "Presidente Eurico Gaspar Dutra"
+							desc = ""
+							picture = "gfx/leaders/BRA/BRA_Dutra.tga"
+							expire = "1965.1.1"
+							ideology = cenrep
+						}
+					}
 					ERH = {
 						transfer_state = 19307
 						set_politics = {
@@ -11491,11 +11549,29 @@
 					}
 					PRC = {
 						create_country_leader = {
-							name = "Chuhsi Mao Tse-tung"
+							name = "Chuhsi Mao Tse-tung "
 							desc = ""
 							picture = "gfx/leaders/PRC/PRC_Mao.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
+						}
+					}
+					CHI = {
+						set_popularities = {
+							anocratic_republic = 10
+							neutrality = 45
+							stratocratic = 45
+						}
+					}
+					CHI = {
+						create_country_leader = {
+							name = "Tsungtung ho Hsingcheng Yüan Yüanch'ang Yen Hsi-shan"
+							desc = "POLITICS_YAN XISHAN_DESC"
+							picture = "gfx/leaders/SHX/Portrait_Shanxi_Yan_Xishan.dds"
+							expire = "1965.1.1"
+							ideology = tridemism
+							traits = {
+							}
 						}
 					}
 					CZE = {
@@ -12460,24 +12536,21 @@
 						}
 						set_politics = { #horsecock
 							ruling_party = centrist_monarchism
-							
-							set_party_name = {
-								ideology = centrist_monarchism
-								name = AST_centrist_monarchism_1950_party
-								long_name = AST_centrist_monarchism_1950_party_long
-							}
-							
-							set_party_name = {
-								ideology = conservative_monarchism
-								name = AST_conservative_monarchism_1950_party
-								long_name = AST_conservative_monarchism_1950_party_long
-							}
-							
-							set_popularities = {
-								centrist_monarchism = 45
-								conservative_monarchism = 15
-								socialist_monarchy = 40
-							}
+						}
+						set_party_name = {
+							ideology = centrist_monarchism
+							name = AST_centrist_monarchism_1950_party
+							long_name = AST_centrist_monarchism_1950_party_long
+						}
+						set_party_name = {
+							ideology = conservative_monarchism
+							name = AST_conservative_monarchism_1950_party
+							long_name = AST_conservative_monarchism_1950_party_long
+						}
+						set_popularities = {
+							centrist_monarchism = 45
+							conservative_monarchism = 15
+							socialist_monarchy = 40
 						}
 					}
 				}

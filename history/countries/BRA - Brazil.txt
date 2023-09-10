@@ -1,13 +1,13 @@
 ﻿capital = 500
 
 set_popularities = {
-	fascism = 15
-	liberal_republic = 45
-	neutrality = 40
+	democratic = 24
+	anocratic_republic = 71
+	neutrality = 5
 }
 
 set_politics = { 
-	ruling_party = liberal_republic
+	ruling_party = anocratic_republic
 	last_election = "1934.7.17"
 	election_frequency = 48
 	elections_allowed = no
@@ -18,7 +18,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/BRA/BRA_Oliveria.tga"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = liberalism
 	traits = {
 	}
 }
@@ -64,11 +64,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Presidente Antônio Augusto Borges de Medeiros"
+	desc = ""
+	picture = "gfx/leaders/BRA/BRA_Borges_de_Medeiros.tga"
+	expire = "1965.1.1"
+	ideology = national_conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Presidente Getúlio Dornelles Vargas"
 	desc = ""
 	picture = "gfx/leaders/BRA/Portrait_Brazil_Getulio_Vargas.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = social_authoritarianism
 	traits = {
 	}
 }
@@ -149,6 +159,16 @@ create_country_leader = {
 	picture = "gfx/leaders/BRA/BRA_PedroHenrique.tga"
 	expire = "1965.1.1"
 	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Imperador Pedro III de Orleans-Bragança"
+	desc = ""
+	picture = "gfx/leaders/BRA/BRA_PedroHenrique.tga"
+	expire = "1965.1.1"
+	ideology = anocmon
 	traits = {
 	}
 }
