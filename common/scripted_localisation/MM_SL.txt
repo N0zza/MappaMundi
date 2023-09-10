@@ -260,6 +260,16 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				has_government = democratic_monarchism
+				has_start_date > 1915.01.01
+				has_start_date < 1937.01.01
+			}
+		}
+		localization_key = "Reichskanzler Hermann Robert Dietrich"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = GER
 				has_government = anocratic_monarchism
 			}
@@ -284,6 +294,18 @@ defined_text = {
 			}
 		}
 		localization_key = "Reichskanzler Theobald Theodor Friedrich Alfred von Bethmann Hollweg"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = KON
+				OR = {
+					has_government = anocratic_republic
+					has_government = centrist_monarchism
+				}
+			}
+		}
+		localization_key = "Reichskanzler Carl Friedrich Goerdeler"
 	}
 	text = {
 		trigger = {
@@ -2994,6 +3016,16 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				has_government = democratic_monarchism
+				has_start_date > 1915.01.01
+				has_start_date < 1937.01.01
+			}
+		}
+		localization_key = "GFX_Hermann_Dietrich"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = GER
 				has_government = anocratic_monarchism
 			}
@@ -3018,6 +3050,18 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Theobald_Hollweg"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = KON
+				OR = {
+					has_government = anocratic_republic
+					has_government = centrist_monarchism
+				}
+			}
+		}
+		localization_key = "GFX_Carl_Goerdeler"
 	}
 	text = {
 		trigger = {
@@ -5971,12 +6015,23 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				tag = SWI
-				has_government = centrist_republic
-				has_start_date > 2022.01.01
+				tag = GER
+				has_government = socialist_monarchy
+				has_start_date < 2022.01.01
 			}
 		}
-		localization_key = "SWI_FEDERAL_COUNCIL_CHARACTER"
+		localization_key = "Konföderaler Kongress der Deutschen Königreiches"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = conservative_monarchism
+				has_start_date < 1950.01.01
+				has_start_date > 1935.01.01
+			}
+		}
+		localization_key = "Miniszterelnök Elnök Tildy Zoltán"
 	}
 	text = {
 		trigger = {
@@ -6331,12 +6386,12 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				tag = SWI
-				has_government = centrist_republic
-				has_start_date > 2022.01.01
+				tag = GER
+				has_government = socialist_monarchy
+				has_start_date < 2022.01.01
 			}
 		}
-		localization_key = "GFX_Federal_Council"
+		localization_key = "GFX_HRE_Reichsadler"
 	}
 	text = {
 		trigger = {
@@ -6454,6 +6509,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Reichsrat"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = conservative_monarchism
+				has_start_date < 1950.01.01
+				has_start_date > 1935.01.01
+			}
+		}
+		localization_key = "GFX_Zoltan_Tildy"
 	}
 	text = {
 		trigger = {
