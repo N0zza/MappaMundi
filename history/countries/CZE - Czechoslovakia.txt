@@ -1,7 +1,5 @@
 ﻿capital = 9
 
-set_country_flag = has_secondary_leader
-
 set_popularities = {
 	communism = 10
 	socialism_ideology = 12
@@ -12,6 +10,7 @@ set_popularities = {
 	republican_fascism = 9
 	national_socialism = 15
 }
+
 set_politics = { 
 	ruling_party = centrist_republic
 	last_election = "1935.5.19"
@@ -26,7 +25,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = big_tent
 	traits = {
-		#
 	}
 }
 
@@ -146,6 +144,16 @@ create_country_leader = {
 	picture = "gfx/leaders/Czechia/CZE_Elias.tga"
 	expire = "1965.1.1"
 	ideology = military_junta
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Král František Josef II z Habsburgů-Těšín"
+	desc = ""
+	picture = "gfx/leaders/AUS/Portrait_Otto_Habsburg.dds"
+	expire = "1965.1.1"
+	ideology = anocmon
 	traits = {
 	}
 }
