@@ -9378,6 +9378,31 @@
 							}
 						}
 					}
+					SPR = {
+						set_politics = {
+							ruling_party = fascism
+						}
+						set_cosmetic_tag = SPR_1939
+						set_popularities = {
+							fascism = 100
+						}
+						set_party_name = {
+							ideology = fascism
+							name = SPR_fascism_1950_party
+							long_name = SPR_fascism_1950_party_long
+						}
+					}
+					SPR = {
+						create_country_leader = {
+							name = "Caudillo y Presidente del Gobierno Francisco Franco Bahamonde"
+							desc = ""
+							picture = "gfx/leaders/SPR/Portrait_Francisco_Franco.dds"
+							expire = "1965.1.1"
+							ideology = fascism_subideology
+							traits = {
+							}
+						}
+					}
 					every_state = {
 						limit = {
 							is_core_of = POL
@@ -16050,9 +16075,9 @@
 						set_popularities = {
 							socialism_ideology = 22
 							liberal_republic = 10
-							centrist_republic = 26
-							democratic = 20
-							anocratic_republic = 22
+							centrist_republic = 10
+							democratic = 32
+							anocratic_republic = 26
 						}
 					}
 					IDS = {
@@ -16061,7 +16086,7 @@
 							desc = ""
 							picture = "gfx/leaders/IDS/IDS_Widodo.tga"
 							expire = "1965.1.1"
-							ideology = pancasila
+							ideology = cenrep_populism
 						}
 					}
 					every_state = {
@@ -21043,20 +21068,19 @@
 						}
 					}
 					MAD = {
-						set_cosmetic_tag = MAD_2023
 						set_politics = {
-							ruling_party = socialism_ideology
+							ruling_party = anocratic_republic
 						}
+						set_cosmetic_tag = MAD_2023
 						set_party_name = {
-							ideology = socialism_ideology
-							name = MAD_socialism_ideology_2023_party
-							long_name = MAD_socialism_ideology_2023_party_long
+							ideology = anocratic_republic
+							name = MAD_anocratic_republic_2023_party
+							long_name = MAD_anocratic_republic_2023_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 56
-							liberal_republic = 2
-							democratic = 11
 							centrist_republic = 31
+							democratic = 13
+							anocratic_republic = 56
 						}
 					}
 					MAD = {
@@ -21065,7 +21089,7 @@
 							desc = ""
 							picture = "gfx/leaders/MAD/MAD_Rajoelina.tga"
 							expire = "1965.1.1"
-							ideology = social_democracy
+							ideology = social_authoritarianism
 						}
 					}
 					MRS = {
@@ -22757,7 +22781,7 @@
 							desc = ""
 							picture = "gfx/leaders/GUA/GUA_Alejandro_Giammattei.tga"
 							expire = "1965.1.1"
-							ideology = anocrep
+							ideology = authoritarian_democracy
 						}
 					}
 					NIC = {
@@ -22870,6 +22894,11 @@
 						transfer_state = 2042
 						set_politics = {
 							ruling_party = socialism_ideology
+						}
+						set_popularities = {
+							socialism_ideology = 75
+							centrist_republic = 18.75
+							anocratic_republic = 6.25
 						}
 					}
 					DMC = {
