@@ -13,13 +13,34 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 			factor = 0
 		}
 		hidden_effect = {
-			ANB = {
-				set_popularities = {
-					socialism_ideology = 53
-					liberal_republic = 41
-					centrist_republic = 6
-				}
-			}
+					BUL = {
+						set_politics = {
+							ruling_party = centrist_republic
+						}
+						set_cosmetic_tag = BUL_2023
+						set_party_name = {
+							ideology = centrist_republic
+							name = BUL_centrist_republic_2023_party
+							long_name = BUL_centrist_republic_2023_party_long
+						}
+						set_popularities = {
+							socialism_ideology = 9
+							liberal_republic = 17
+							centrist_republic = 25
+							democratic = 33
+							anocratic_republic = 1
+							republican_fascism = 15
+						}
+					}
+					BUL = {
+						create_country_leader = {
+							name = "Prezident Rumen Georgiev Radev"
+							desc = ""
+							picture = "gfx/leaders/BUL/BUL_modern.tga"
+							expire = "1965.1.1"
+							ideology = cenrep_populism
+						}
+					}
 		}
 	}
 	option = { #reject
