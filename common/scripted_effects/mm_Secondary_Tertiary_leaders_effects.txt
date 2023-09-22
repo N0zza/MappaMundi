@@ -228,7 +228,10 @@ secondary_leader_enabled_effect = {
 						has_start_date < 1937.01.01
 					}
 					AND = {
-						has_government = centrist_republic
+						OR = {
+							has_government = centrist_republic
+							has_government = centrist_monarchism
+						}
 						has_start_date > 1940.01.01
 						has_start_date < 1951.01.01
 					}

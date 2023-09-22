@@ -11981,9 +11981,19 @@
 						}
 						set_cosmetic_tag = AUS_1950
 						set_party_name = {
+							ideology = democratic_monarchism
+							name = AUS_2023_democratic_monarchism_party
+							long_name = AUS_2023_democratic_monarchism_party_long
+						}
+						set_party_name = {
 							ideology = centrist_republic
 							name = AUS_centrist_republic_1950_party
 							long_name = AUS_centrist_republic_1950_party_long
+						}
+						set_party_name = {
+							ideology = centrist_monarchism
+							name = AUS_centrist_monarchism_1950_party
+							long_name = AUS_centrist_monarchism_1950_party_long
 						}
 						set_popularities = {
 							communism = 3
@@ -11999,6 +12009,20 @@
 							picture = "gfx/leaders/AUS/AUS_Renner.tga"
 							expire = "1965.1.1"
 							ideology = cenrep_christian_democracy
+						}
+						create_country_leader = {
+							name = "Kaiser Franz Joseph II von Habsburg-Lothringen"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_Otto_Habsburg_1950.dds"
+							expire = "1965.1.1"
+							ideology = cenmon
+						}
+						create_country_leader = {
+							name = "Bundeskönig Franz Joseph II von Habsburg-Lothringen"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_Otto_Habsburg_1950.dds"
+							expire = "1965.1.1"
+							ideology = liberal_constitutionalism
 						}
 					}
 					YUG = {

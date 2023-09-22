@@ -504,6 +504,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = AUS
+				has_government = centrist_monarchism
+				has_start_date > 1940.01.01
+				has_start_date < 1951.01.01
+			}
+		}
+		localization_key = "Ministerpräsident Leopold Figl"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
 				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
@@ -3449,7 +3460,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = AUS
-				has_government = centrist_republic
+				OR = {
+					has_government = centrist_republic
+					has_government = centrist_monarchism
+				}
 				has_start_date > 1940.01.01
 				has_start_date < 1951.01.01
 			}
