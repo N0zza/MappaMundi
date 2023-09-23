@@ -11544,6 +11544,10 @@
 							name = BRA_centrist_republic_1950_party
 							long_name = BRA_centrist_republic_1950_party_long
 						}
+						transfer_state = 10524
+						transfer_state = 10526
+						transfer_state = 10527
+						transfer_state = 1715
 					}
 					BRA = {
 						create_country_leader = {
@@ -11981,6 +11985,16 @@
 						}
 						set_cosmetic_tag = AUS_1950
 						set_party_name = {
+							ideology = socialism_ideology
+							name = AUS_2023_socialism_ideology_party
+							long_name = AUS_2023_socialism_ideology_party_long
+						}
+						set_party_name = {
+							ideology = socialist_monarchy
+							name = AUS_2023_socialism_ideology_party
+							long_name = AUS_2023_socialism_ideology_party_long
+						}
+						set_party_name = {
 							ideology = democratic_monarchism
 							name = AUS_2023_democratic_monarchism_party
 							long_name = AUS_2023_democratic_monarchism_party_long
@@ -12008,21 +12022,70 @@
 							desc = ""
 							picture = "gfx/leaders/AUS/AUS_Renner.tga"
 							expire = "1965.1.1"
+							ideology = social_democracy
+						}
+						create_country_leader = {
+							name = "Kaiser Franz Joseph II von Habsburg-Lothringen"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1950_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = socmon_social_democracy
+						}
+						create_country_leader = {
+							name = "Bundeskönig Franz Joseph II von Habsburg-Lothringen"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1950_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = liberal_constitutionalism
+						}
+						create_country_leader = {
+							name = "Kaiser Franz Joseph II von Habsburg-Lothringen"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1950_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+						}
+						create_country_leader = {
+							name = "Bundespräsident Karl Renner"
+							desc = ""
+							picture = "gfx/leaders/AUS/AUS_Renner.tga"
+							expire = "1965.1.1"
 							ideology = cenrep_christian_democracy
 						}
 						create_country_leader = {
 							name = "Kaiser Franz Joseph II von Habsburg-Lothringen"
 							desc = ""
-							picture = "gfx/leaders/AUS/Portrait_Otto_Habsburg_1950.dds"
+							picture = "gfx/leaders/AUS/Portrait_1950_Otto_Habsburg.dds"
 							expire = "1965.1.1"
 							ideology = cenmon
 						}
 						create_country_leader = {
-							name = "Bundeskönig Franz Joseph II von Habsburg-Lothringen"
+							name = "König Franz Joseph II von Habsburg-Lothringen"
 							desc = ""
-							picture = "gfx/leaders/AUS/Portrait_Otto_Habsburg_1950.dds"
+							picture = "gfx/leaders/AUS/Portrait_1950_Otto_Habsburg.dds"
 							expire = "1965.1.1"
-							ideology = liberal_constitutionalism
+							ideology = semi_constitutional_monarchy
+						}
+						create_country_leader = {
+							name = "Kaiser Franz Joseph II von Habsburg-Lothringen"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1950_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = authmon_semi_constitutional_monarchy
+						}
+						create_country_leader = {
+							name = "Kaiser Franz Joseph II von Habsburg-Lothringen"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1950_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = absolutism
+						}
+						create_country_leader = {
+							name = "Kaiser Franz Joseph II von Habsburg-Lothringen"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1950_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = fascism_subideology
 						}
 					}
 					YUG = {
@@ -12403,15 +12466,6 @@
 						transfer_state = 2421
 						transfer_state = 2423
 						transfer_state = 9540
-					}
-					BRA = {
-						transfer_state = 10524
-						transfer_state = 10526
-						transfer_state = 10527
-						transfer_state = 1715
-						set_politics = {
-							ruling_party = neutrality
-						}
 					}
 					##1950 OCEANIA##
 					every_state = {
