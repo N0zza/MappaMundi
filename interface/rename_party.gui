@@ -3,7 +3,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "rename_party_opener_container"
-		position = { x = 88 y = 305 }
+		position = { x = 158 y = 327 }
 		buttonType = {
 			name = "rename_party_open"
 			position = { x = 141 y = -3 }
@@ -14,48 +14,52 @@ guiTypes = {
 	}
 	
 	containerWindowType = {
+		name = "close_button_container"
+		position = { x = 158 y = 327 }
+		buttonType = {
+			name = "close"
+			quadTextureSprite = "GFX_closebutton_small"
+			shortcut = "ESCAPE"
+			position = { x= 141 y = -3 }
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			scale = 0.9
+		}
+	}
+	
+	containerWindowType = {
 		name = "rename_party_container"
-		position = { x=0 y=25 }	
-		show_position = { x=0 y =25 }
+		position = { x=-1000 y=260 }	
+		show_position = { x=-230 y=260 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 200		
-		size = { width=270 height=100 }
+		size = { width=320 height=100 }
 		orientation = center_right
 		origo = center_right
 
-		fade_time = 200
+		fade_time = 500
 		fade_type = linear
 		
 		background = {
 			name = "Background"
-			spriteType = "GFX_tiled_plain_bg"
+			spriteType = "GFX_tiled_window_thin_border"
 		}
 
 		instantTextboxType = {
 			name = "title"
-			position = {x=14 y=6}
+			position = {x=14 y=9}
 			font = "hoi_16mbs"
 			text = "RENAME_PARTY_TOPBAR"
 			maxWidth = 270
 			maxHeight = 32
 			format = left
 		}
-		
-		buttonType = {
-			name = "close"
-			quadTextureSprite = "GFX_closebutton_small"
-			shortcut = "ESCAPE"
-			position = { x= 240 y = 2 }
-			clicksound = click_close
-			pdx_tooltip = "CLOSE"
-			scale = 0.9
-		}
 
 		buttonType = {
 			name = "lang"
 			quadTextureSprite = "GFX_flag_lang"
-			position = { x = 210 y = 7 }
+			position = { x = 260 y = 10 }
 			pdx_tooltip = "CHANGE_LANGUAGE_TT"
 			frame = 1
 			scale = 0.333333
@@ -67,13 +71,13 @@ guiTypes = {
 			font = "hoi_16mbs"
 			text = "RENAME_PARTY_DISPLAY"
 			maxWidth = 235
-			maxHeight = 32
+			maxHeight = 40
 			format = left
 		}
 
 		buttonType = {
 			name = "rename_party_button" 
-			position = {x=240 y=38}
+			position = {x=287 y=7}
 			spriteType = "GFX_checkbox_small_green"
 			shortcut = "RETURN"
 			pdx_tooltip = "RENAME_PARTY_BUTTON_TT"

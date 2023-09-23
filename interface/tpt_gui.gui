@@ -79,7 +79,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "tpt_ideology_tab"
-			position = { x = -79 y = 252 }
+			position = { x = -29 y = 252 }
 			font = "hoi_20b"
 			text = "TPT_IDEOLOGY_TEXT"
 			maxWidth = 281
@@ -89,21 +89,21 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_1b"
-			position = { x = 114 y = 245 }
+			position = { x = 8114 y = 245 }
 			spriteType = "GFX_tpt_tab_frame_2"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_2b"
-			position = { x = 112 y = 245 }
+			position = { x = 8112 y = 245 }
 			spriteType = "GFX_tpt_tab_frame_1"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		instantTextboxType = {
 			name = "tpt_diplomacy_tab"
-			position = { x = 30 y = 252 }
+			position = { x = 830 y = 252 }
 			font = "hoi_20b"
 			text = "TPT_DIPLOMACY_TEXT"
 			maxWidth = 281
@@ -113,21 +113,21 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_1c"
-			position = { x = 222 y = 245 }
+			position = { x = 262 y = 245 }
 			spriteType = "GFX_tpt_tab_frame_2"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_2c"
-			position = { x = 220 y = 245 }
+			position = { x = 260 y = 245 }
 			spriteType = "GFX_tpt_tab_frame_1"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		instantTextboxType = {
 			name = "tpt_stance_tab"
-			position = { x = 138 y = 252 }
+			position = { x = 228 y = 252 }
 			font = "hoi_20b"
 			text = "TPT_STANCE_TEXT"
 			maxWidth = 281
@@ -137,21 +137,21 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_1d"
-			position = { x = 330 y = 245 }
+			position = { x = 8330 y = 245 }
 			spriteType = "GFX_tpt_tab_frame_2"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_2d"
-			position = { x = 328 y = 245 }
+			position = { x = 8328 y = 245 }
 			spriteType = "GFX_tpt_tab_frame_1"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		instantTextboxType = {
 			name = "tpt_country_tab"
-			position = { x = 246 y = 252 }
+			position = { x = 8246 y = 252 }
 			font = "hoi_20b"
 			text = "TPT_COUNTRY_TEXT"
 			maxWidth = 281
@@ -161,14 +161,14 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_1e"
-			position = { x = 441 y = 251 }
+			position = { x = 8441 y = 251 }
 			spriteType = "GFX_tpt_tab_frame_2_short"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_2e"
-			position = { x = 441 y = 251 }
+			position = { x = 8441 y = 251 }
 			spriteType = "GFX_tpt_tab_frame_1_short"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
@@ -176,7 +176,7 @@ guiTypes = {
 		iconType ={
 			name ="tpt_research_tab_icon"
 			spriteType = "GFX_tpt_research_tab_icon"
-			position = { x = 455 y = 254 }
+			position = { x = 8455 y = 254 }
 			Orientation = "UPPER_LEFT"
 			allwaystransparent = yes
 			scale = 0.6
@@ -1071,83 +1071,31 @@ guiTypes = {
 
 		buttonType = {
 			name = "tpt_war_button" 
-			position = { x = 240 y = 110 }
+			position = { x = 310 y = 110 }
 			spriteType = "GFX_tpt_war_orange"
 			pdx_tooltip = "TPT_WAR_TT"
 			scale = 1
 		}
 		buttonType = {
 			name = "tpt_peace_button" 
-			position = { x = 295 y = 110 }
+			position = { x = 365 y = 110 }
 			spriteType = "GFX_tpt_major_green"
 			pdx_tooltip = "TPT_PEACE_TT"
 			scale = 1
 		}
 		buttonType = {
 			name = "tpt_truce_button" 
-			position = { x = 295 y = 170 }
+			position = { x = 365 y = 170 }
 			spriteType = "GFX_tpt_major_blue"
 			pdx_tooltip = "TPT_TRUCE_TT"
 			scale = 1
 		}
 		buttonType = {
 			name = "tpt_cw_button" 
-			position = { x = 240 y = 170 }
+			position = { x = 310 y = 170 }
 			spriteType = "GFX_tpt_war_red"
 			pdx_tooltip = "TPT_CW_TT"
 			shortcut = "shift+c"
-		}
-		instantTextboxType = {
-			name = "tpt_threat_text"
-			position = { x = 322 y = 75 }
-			font = "hoi_18mbs"
-			text = "TPT_WORLD_TENSION_TEXT"
-			maxWidth = 201
-			maxHeight = 23
-			format = center
-			alwaystransparent = yes
-		}
-		buttonType = {
-			name = "tpt_add_threat_1" 
-			position = { x = 390 y = 105 }
-			spriteType = "GFX_tp_add_1"
-			pdx_tooltip = "TPT_THREAT_1"
-			scale = 1
-		}
-		buttonType = {
-			name = "tpt_add_threat_5" 
-			position = { x = 390 y = 140 }
-			spriteType = "GFX_tp_add_5"
-			pdx_tooltip = "TPT_THREAT_5"
-			scale = 1
-		}
-		buttonType = {
-			name = "tpt_add_threat_20" 
-			position = { x = 390 y = 175 }
-			spriteType = "GFX_tp_add_20"
-			pdx_tooltip = "TPT_THREAT_20"
-			scale = 1
-		}
-		buttonType = {
-			name = "tpt_sub_threat_1" 
-			position = { x = 430 y = 105 }
-			spriteType = "GFX_tp_sub_1"
-			pdx_tooltip = "TPT_THREAT_SUB_1"
-			scale = 1
-		}
-		buttonType = {
-			name = "tpt_sub_threat_5" 
-			position = { x = 430 y = 140 }
-			spriteType = "GFX_tp_sub_5"
-			pdx_tooltip = "TPT_THREAT_SUB_5"
-			scale = 1
-		}
-		buttonType = {
-			name = "tpt_sub_threat_20" 
-			position = { x = 430 y = 175 }
-			spriteType = "GFX_tp_sub_20"
-			pdx_tooltip = "TPT_THREAT_SUB_20"
-			scale = 1
 		}
 		buttonType = {
 			name = "tpt_create_faction" 
@@ -1375,127 +1323,6 @@ guiTypes = {
 			spriteType = "GFX_tpt_reset_slot_amount_icon"
 			pdx_tooltip = "TPT_RESET_RS_SLOTS"
 			scale = 0.7
-		}
-	}
-
-	containerWindowType = {
-		name = "tpt_cw_window"
-		position = { x = -380 y = 473 }
-		size = { width = 494 height = 255 }
-		orientation = UPPER_RIGHT
-		origo = upper_right
-
-		fade_time = 300
-		fade_type = linear
-		moveable = yes
-
-		background = {
-			name = "Background"
-			spriteType = "GFX_sst_convoy_bg"
-		}
-		buttonType = {
-			name = "tpt_cw_close_window"
-			position = { x = 109 y = 2 }
-			shortcut = "shift+ctrl+r"			
-			spriteType = "GFX_closebutton"
-			pdx_tooltip = "TPT_CLOSE_WINDOW"
-			scale = 0.7
-		}
-		buttonType = {
-			name = "tpt_cw_fascist_on"
-			position = { x = 18 y = 25 }
-			spriteType = "GFX_cat_button_off"
-			pdx_tooltip = "TPT_CW_EN_FASCIST"
-			scale = 0.7
-		}
-		buttonType = {
-			name = "tpt_cw_fascist_off" 
-			position = { x = 18 y = 25 }
-			spriteType = "GFX_cat_button_on"
-			pdx_tooltip = "TPT_CW_EN_FASCIST"
-			scale = 0.7
-		}
-		instantTextboxType = {
-			name = "tpt_cw_fascist_text"
-			position = { x = 45 y = 26 }
-			font = "hoi_16mbs"
-			text = "TPT_FASCIST"
-			maxWidth = 140
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-		buttonType = {
-			name = "tpt_cw_communist_on"
-			position = { x = 18 y = 60 }
-			spriteType = "GFX_cat_button_off"
-			pdx_tooltip = "TPT_CW_EN_COMMUNIST"
-			scale = 0.7
-		}
-		buttonType = {
-			name = "tpt_cw_communist_off" 
-			position = { x = 18 y = 60 }
-			spriteType = "GFX_cat_button_on"
-			pdx_tooltip = "TPT_CW_EN_COMMUNIST"
-			scale = 0.7
-		}
-		instantTextboxType = {
-			name = "tpt_cw_communist_text"
-			position = { x = 45 y = 61 }
-			font = "hoi_16mbs"
-			text = "TPT_COMMUNIST"
-			maxWidth = 140
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-		buttonType = {
-			name = "tpt_cw_democratic_on"
-			position = { x = 18 y = 95 }			
-			spriteType = "GFX_cat_button_off"
-			pdx_tooltip = "TPT_CW_EN_DEMOCRATIC"
-			scale = 0.7
-		}
-		buttonType = {
-			name = "tpt_cw_democratic_off" 
-			position = { x = 18 y = 95 }
-			spriteType = "GFX_cat_button_on"
-			pdx_tooltip = "TPT_CW_EN_DEMOCRATIC"
-			scale = 0.7
-		}
-		instantTextboxType = {
-			name = "tpt_cw_democratic_text"
-			position = { x = 45 y = 96 }
-			font = "hoi_16mbs"
-			text = "TPT_DEMOCRATIC"
-			maxWidth = 140
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
-		}
-		buttonType = {
-			name = "tpt_cw_neutral_on"
-			position = { x = 18 y = 130 }
-			spriteType = "GFX_cat_button_off"
-			pdx_tooltip = "TPT_CW_EN_NEUTRAL"
-			scale = 0.7
-		}
-		buttonType = {
-			name = "tpt_cw_neutral_off" 
-			position = { x = 18 y = 130 }
-			spriteType = "GFX_cat_button_on"
-			pdx_tooltip = "TPT_CW_EN_NEUTRAL"
-			scale = 0.7
-		}
-		instantTextboxType = {
-			name = "tpt_cw_neutral_text"
-			position = { x = 45 y = 131 }
-			font = "hoi_16mbs"
-			text = "TPT_NEUTRAL"
-			maxWidth = 140
-			maxHeight = 23
-			format = left
-			alwaystransparent = yes
 		}
 	}
 }

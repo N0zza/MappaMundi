@@ -3,7 +3,10 @@ scripted_gui = {
 		context_type = player_context
 		parent_window_token = politics_tab
 		window_name = "rename_party_opener_container"
-		visible = { is_ai = no }
+		visible = { 
+			is_ai = no
+			check_variable = { rename_party_open = 0 } 
+		}
 		effects = {
 			rename_party_open_click = {
 				if = {
@@ -16,6 +19,25 @@ scripted_gui = {
 						set_variable = { ROOT.rename_language = 1 }
 					}
 				}
+			}
+		}
+	}
+	
+	close_rename_button = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "close_button_container"
+		
+		visible = {
+			is_ai = no
+			check_variable = { rename_party_open = 1 }
+		}
+		
+		effects = {
+			close_click = {
+				clear_array = chars
+				clear_variable = current_char
+				clear_variable = rename_party_open
 			}
 		}
 	}
@@ -38,11 +60,6 @@ scripted_gui = {
 		}
 
 		effects = {
-			close_click = {
-				clear_array = chars
-				clear_variable = current_char
-				clear_variable = rename_party_open
-			}
 			
 			lang_click = {
 				add_to_variable = { ROOT.rename_language = 1 }
