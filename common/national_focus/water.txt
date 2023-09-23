@@ -18919,7 +18919,7 @@
 					}
 					LRA = {
 						create_country_leader = {
-							name = "General Joseph Rao Kony"
+							name = "Canon Joseph Rao Kony"
 							desc = ""
 							picture = "gfx/leaders/LRA/LRA_Kony.tga"
 							expire = "1965.1.1"
@@ -19769,6 +19769,10 @@
 							ideology = despotism
 						}
 					}
+					set_victory_points = {
+						province = 12806
+						value = 25
+					}
 					SUD = {
 						transfer_state = 1628
 						transfer_state = 1629
@@ -19786,14 +19790,6 @@
 							long_name = SUD_stratocratic_2023_party_long
 						}
 					}
-				every_state = {
-						limit = {
-							is_core_of = RSF
-						}
-						RSF = {
-							transfer_state = PREV
-						}
-					}
 					SUD = {
 						create_country_leader = {
 							name = "Raʾīs Maǧls al-Siyādaẗ al-Intaqālī ʿAbd al-Fattāḥ ʿAbd ar-Raḥman al-Burhān"
@@ -19801,6 +19797,14 @@
 							picture = "gfx/leaders/SUD/SUD_Burhan.tga"
 							expire = "1965.1.1"
 							ideology = military_junta
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = RSF
+						}
+						RSF = {
+							transfer_state = PREV
 						}
 					}
 					SSU = {
@@ -20049,7 +20053,15 @@
 							ideology = oligarchism
 						}
 					}
+					add_victory_points = {
+						province = 5068
+						value = 5
+					}
 					SML = {
+						set_capital = {
+							state = 1552
+							remember_old_capital = no
+						}
 						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = anocratic_republic
@@ -20122,7 +20134,15 @@
 							ideology = liberal_conservatism
 						}
 					}
+					add_victory_points = {
+						province = 3854
+						value = 25
+					}
 					UGA = {
+						set_capital = {
+							state = 548
+							remember_old_capital = no
+						}
 						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = neutrality
@@ -20151,10 +20171,14 @@
 							ideology = one_party_dictatorship
 						}
 					}
+					add_victory_points = {
+						province = 12911
+						value = 25
+					}
 					TZN = {
 						drop_cosmetic_tag = yes
 						set_capital = {
-							state = 546
+							state = 5006
 							remember_old_capital = no
 						}
 						set_politics = {
@@ -20693,9 +20717,8 @@
 							ruling_party = liberal_republic
 						}
 						set_popularities = {
-							socialism_ideology = 49
-							liberal_republic = 39
-							centrist_republic = 2
+							socialism_ideology = 36
+							liberal_republic = 54
 							anocratic_republic = 10
 						}
 					}
@@ -20708,7 +20731,15 @@
 							ideology = third_way
 						}
 					}
+					add_victory_points = {
+						province = 8122
+						value = 5
+					}
 					GHA = {
+						set_capital = {
+							state = 6945
+							remember_old_capital = no
+						}
 						set_politics = {
 							ruling_party = democratic
 						}
@@ -22529,8 +22560,8 @@
 							expire = "1965.1.1"
 							ideology = liberal_constitutionalism
 							traits = {
+							}
 						}
-					}
 					}
 					USA = {
 						create_country_leader = {
@@ -22540,8 +22571,8 @@
 							expire = "1965.1.1"
 							ideology = ancap
 							traits = {
+							}
 						}
-					}
 					}
 					add_victory_points = {
 						province = 3691

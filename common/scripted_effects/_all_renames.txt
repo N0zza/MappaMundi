@@ -941,6 +941,7 @@ do_all_renames = {
 					tag = MOR
 					tag = WES
 					tag = HJZ
+					tag = MRT
 					AND = {
 						tag = ADU
 						OR = {
@@ -1695,5 +1696,24 @@ do_all_renames = {
 			}
 		}
 		do_yiddish_renames = yes
+	}
+	### Post-Colonial Africa ###
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = COG
+					tag = EQG
+					tag = BRD
+					tag = TZN
+					tag = SOM
+					tag = SML
+					tag = ERI
+					tag = MZB
+					tag = MAD
+				}
+			}
+		}
+		do_postcolonial_african_renames = yes
 	}
 }
