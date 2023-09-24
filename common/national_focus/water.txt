@@ -17745,30 +17745,30 @@
 					every_state = { 
 						limit = { 
 							OR = {
-							is_owned_by = OMA
-							is_owned_by = YEM
-							is_owned_by = SAU
-							is_owned_by = UAE
-							is_owned_by = QAT
-							is_owned_by = BHR
-							is_owned_by = KUW
-							is_owned_by = IRQ
-							is_owned_by = JOR
-							is_owned_by = PAL
-							is_owned_by = SYR
-							is_owned_by = SR1
-							is_owned_by = SR2
-							is_owned_by = SR3
-							is_owned_by = LEB
-							is_owned_by = EGY
-							is_owned_by = SUD
-							is_owned_by = LIB
-							is_owned_by = TUN
-							is_owned_by = ALG
-							is_owned_by = MOR
-							is_owned_by = WES
+								is_owned_by = OMA
+								is_owned_by = YEM
+								is_owned_by = SAU
+								is_owned_by = UAE
+								is_owned_by = QAT
+								is_owned_by = BHR
+								is_owned_by = KUW
+								is_owned_by = IRQ
+								is_owned_by = JOR
+								is_owned_by = PAL
+								is_owned_by = SYR
+								is_owned_by = SR1
+								is_owned_by = SR2
+								is_owned_by = SR3
+								is_owned_by = LEB
+								is_owned_by = EGY
+								is_owned_by = SUD
+								is_owned_by = LBA
+								is_owned_by = TUN
+								is_owned_by = ALG
+								is_owned_by = MOR
+								is_owned_by = WES
+							}
 						}
-					}
 						do_standard_arabic_renames = yes
 					}
 					every_state = { 
@@ -19838,12 +19838,12 @@
 						}
 						set_cosmetic_tag = LBA_2023
 						set_party_name = {
-						ideology = neutrality
-						name = LBA_neutrality_2023_party
-						long_name = LBA_neutrality_2023_party_long
+							ideology = neutrality
+							name = LBA_neutrality_2023_party
+							long_name = LBA_neutrality_2023_party_long
 						}
 						set_popularities = {
-						neutrality = 100
+							neutrality = 100
 						}
 					}
 					LBA = {
@@ -19898,6 +19898,9 @@
 							democratic = 27
 							anocratic_republic = 13
 							neutrality = 45
+						}
+						every_owned_state = {
+							do_standard_arabic_renames = yes
 						}
 					}
 					ALG = {
@@ -20310,6 +20313,10 @@
 						}
 					}
 					IVO = {
+						set_capital = {
+							state = 6945
+							remember_old_capital = no
+						}
 						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = democratic
@@ -20788,7 +20795,23 @@
 							ideology = cenrep_populism
 						}
 					}
+					set_victory_points = {
+						province = 2050
+						value = 25
+					}
+					set_victory_points = {
+						province = 1969
+						value = 25
+					}
+					set_victory_points = {
+						province = 2025 
+						value = 25
+					}
 					NGA = {
+						set_capital = {
+							state = 6714
+							remember_old_capital = no
+						}
 						transfer_state = 17742
 						set_cosmetic_tag = NGA_2023
 						set_politics = {
