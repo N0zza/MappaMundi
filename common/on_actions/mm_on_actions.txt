@@ -6069,6 +6069,81 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							tag = GMA
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = left_anarchism
+									has_government = vanguardism
+									has_government = communism
+									has_government = socialism_ideology
+									has_government = socialist_monarchy
+								}
+							}
+							set_cosmetic_tag = GMA_SOCIALIST
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = anocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = AUSTRIA_WHITE
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = democratic_monarchism
+								}
+							}
+							set_cosmetic_tag = GMA_LIBMON
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = neutrality
+									has_government = stratocratic
+								}
+							}
+							set_cosmetic_tag = GREY_GER1
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = authoritarian_monarchism
+									has_government = stratocratic_monarchism
+									has_government = monarchism
+								}
+							}
+							set_cosmetic_tag = GREY_GER2
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = fascism
+									has_government = national_socialism
+								}
+							}
+							set_cosmetic_tag = GREY_GER3
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = liberal_republic
+									has_government = centrist_republic
+									has_government = centrist_monarchism
+									has_government = democratic
+									has_government = conservative_monarchism
+									has_government = anocratic_republic
+									has_government = right_anarchism
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
 							tag = CAN
 						}
 						if = {

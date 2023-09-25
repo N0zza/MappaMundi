@@ -32,7 +32,7 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
-			text = "Country Politics View"
+			text = "Internal Politics"
 			maxWidth = 400
 			maxHeight = 20
 			fixedsize = yes
@@ -55,25 +55,31 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "chart_explanation"
-			position = { x = 300 y = 296 }
-			size = { width = 245 height = 256 }
+			position = { x = 300 y = 56 }
+			size = { width = 245 height = 325 }
+			clipping = yes
 			verticalScrollbar = "right_vertical_slider"
-			margin = { top = 3 bottom = 2}
+			margin = { top = 0 bottom = 5}
+			
+			background = {
+				name = "Background"
+				spriteType =""
+				position = { x = 0 y = 0 }
+			}
 			
 			gridBoxType = {
 				name = "parties_grid"
-				position = { x = -20 y = -240 }
+				position = { x = -20 y = -250 }
 				size = { width = 230 height = 80 }
-				slotsize = { width = 230 height = 14 }
+				slotsize = { width = 200 height = 14 }
 				format = "UPPER_LEFT"
 			}
-			
 		}
 
 		
 		containerWindowType = {
 			name = "political_pie_chart"
-			position = { x= 270 y = 304 }
+			position = { x= 265 y = 304 }
 			size = { width=100 height=100 }
 			clipping = no
 
@@ -86,7 +92,7 @@ guiTypes = {
 			iconType ={
 				name ="pol_view_bg"
 				spriteType = "GFX_pol_piechart_overlay_63x63"
-				position = { x = -84 y = -198 }
+				position = { x = -85 y = -198 }
 			}
 		}
 
@@ -1006,7 +1012,7 @@ guiTypes = {
 			font = "hoi_16mbs"
 			text = "party name"
 			fixedsize = yes
-			maxWidth = 175
+			maxWidth = 150
 			maxHeight = 18
 		}
 	}
