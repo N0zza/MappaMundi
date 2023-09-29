@@ -13,6 +13,37 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 			factor = 0
 		}
 		hidden_effect = {
+					IVO = {
+						set_capital = {
+							state = 6945
+							remember_old_capital = no
+						}
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+						set_party_name = {
+							ideology = anocratic_republic
+							name = IVO_anocratic_republic_2023_party
+							long_name = IVO_anocratic_republic_2023_party_long
+						}
+						set_popularities = {
+							socialism_ideology = 8
+							liberal_republic = 3
+							centrist_republic = 10
+							democratic = 25
+							anocratic_republic = 54
+						}
+					}
+					IVO = {
+						create_country_leader = {
+							name = "Président Alassane Dramane Ouattara"
+							desc = ""
+							picture = "gfx/leaders/IVO/IVO_Ouattara.tga"
+							expire = "1965.1.1"
+							ideology = authoritarian_democracy
+						}
+					}
 		}
 	}
 	option = { #reject
