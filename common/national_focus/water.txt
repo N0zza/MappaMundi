@@ -13816,7 +13816,10 @@
 							long_name = EUR_neutrality_2023_party_long
 						}
 					}
-					set_province_name = { id = 15986 name = "Giżycko"}
+					set_province_name = { 
+						id = 15986 
+						name = "Giżycko"
+					}
 					POL = {
 						transfer_state = 7444
 						transfer_state = 8046
@@ -17851,15 +17854,40 @@
 							ruling_party = democratic
 						}
 						set_party_name = {
+							ideology = communism
+							name = ISR_communism_2023_party
+							long_name = ISR_communism_2023_party_long
+						}
+						set_party_name = {
+							ideology = socialism_ideology
+							name = ISR_socialism_ideology_2023_party
+							long_name = ISR_socialism_ideology_2023_party_long
+						}
+						set_party_name = {
+							ideology = liberal_republic
+							name = ISR_liberal_republic_2023_party
+							long_name = ISR_liberal_republic_2023_party_long
+						}
+						set_party_name = {
+							ideology = centrist_republic
+							name = ISR_centrist_republic_2023_party
+							long_name = ISR_centrist_republic_2023_party_long
+						}
+						set_party_name = {
 							ideology = democratic
 							name = ISR_democratic_2023_party
 							long_name = ISR_democratic_2023_party_long
 						}
+						set_party_name = {
+							ideology = anocratic_republic
+							name = ISR_anocratic_republic_2023_party
+							long_name = ISR_anocratic_republic_2023_party_long
+						}
 						set_popularities = {
 							communism = 2
 							socialism_ideology = 4
-							liberal_republic = 6
-							centrist_republic = 26
+							centrist_republic = 6
+							liberal_republic = 26
 							democratic = 44
 							anocratic_republic = 6
 							neutrality = 1
@@ -18003,7 +18031,10 @@
 								transfer_state = PREV
 								}
 							}
-						set_province_name = { id = 1530 name = "Cxinvál"}
+						set_province_name = { 
+							id = 1530 
+							name = "Cxinvál"
+						}
 						every_state = {
 							limit = {
 								is_core_of = GEO
@@ -19749,10 +19780,10 @@
 						set_popularities = {
 							communism = 1
 							socialism_ideology = 1
-							liberal_republic = 2
+							liberal_republic = 4
 							centrist_republic = 5
 							democratic = 4
-							anocratic_republic = 12
+							anocratic_republic = 10
 							neutrality = 48
 							stratocratic = 27
 						}
@@ -21233,8 +21264,8 @@
 							long_name = MRS_socialism_ideology_2023_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 94
-							democratic = 6
+							socialism_ideology = 93
+							democratic = 5
 							centrist_republic = 2
 						}
 					}
@@ -21244,8 +21275,12 @@
 							desc = ""
 							picture = "gfx/leaders/MRS/MRS_Prithvirajsing_Roopun.tga"
 							expire = "1965.1.1"
-							ideology = liberalism
+							ideology = demsoc
 						}
+					}
+					set_province_name = {
+						id = 14131
+						name = "Mamoudzou"
 					}
 					COM = {
 						set_politics = {

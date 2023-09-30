@@ -3000,6 +3000,36 @@ defined_text = {
 		localization_key = "High Commissioner to the Philippines William Francis Murphy"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = RCG
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Premier Ministre Anatole Collinet Makosso"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = COG
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Premier Ministre Jean-Michel Sama Lukonde Kyenge"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SOM
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Ra'iisul wasaaraha Xamse Cabdi Barre"
+	}
+	text = {
 		localization_key = "To Be Added"
 	}
 }
@@ -5962,6 +5992,36 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Frank_Murphy"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RCG
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Anatole_Collinet_Makosso"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = COG
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Sama_Lukonde"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SOM
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Hamza_Abdi_Barre"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"

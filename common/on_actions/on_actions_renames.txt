@@ -39,4 +39,16 @@ on_actions = {
 			}
 		}
 	}
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_start_date > 2022.01.01
+				}
+				every_state = {
+					do_postcolonial_african_renames = yes
+				}
+			}
+		}
+	}
 }
