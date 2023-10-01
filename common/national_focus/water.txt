@@ -8085,52 +8085,40 @@
 			}
 			TIB = {
 				transfer_state = 11605
-		}
-				RAJ = {
-						set_capital = {
-							state = 431
-							remember_old_capital = no
-						}
-					}
-			RUS = {
-				transfer_state = 1479
-				transfer_state = 11061
-				transfer_state = 17266
-				drop_cosmetic_tag = yes
+			}
+			RAJ = {
 				set_capital = {
-					state = 195
-				}
-				set_politics = {
-					ruling_party = monarchism
+					state = 431
+					remember_old_capital = no
 				}
 			}
-				every_state = {
-					limit = {
-						OR = {
-						is_core_of = YKT
-						is_core_of = BYA
-						is_owned_by = RUS
-						}
-						NOT = {
-						is_core_of = CHI
-						}
+			every_state = {
+				limit = {
+					OR = {
+					is_core_of = YKT
+					is_core_of = BYA
+					is_owned_by = RUS
 					}
-					RUS = {
-						transfer_state = PREV
-						add_state_core = PREV
-						}
+					NOT = {
+					is_core_of = CHI
 					}
-				every_state = {
-					limit = {
-						is_owned_by = HJZ
-						NOT = {
-						is_owned_by = TUR
-						}
-					}
-					SAU = {
-						transfer_state = PREV
-						}
 				}
+				RUS = {
+					transfer_state = PREV
+					add_state_core = PREV
+					}
+				}
+			every_state = {
+				limit = {
+					is_owned_by = HJZ
+					NOT = {
+					is_owned_by = TUR
+					}
+				}
+				SAU = {
+					transfer_state = PREV
+					}
+			}
 			SAU = {
 				transfer_state = 3273
 				transfer_state = 9094
@@ -8976,6 +8964,7 @@
 						}
 					}
 					RUS = {
+						set_cosmetic_tag = RUS_1914
 						every_owned_state = {
 							do_russian_renames = yes
 						}
@@ -8991,6 +8980,12 @@
 							conservative_monarchism = 14
 							anocratic_monarchism = 5
 							authoritarian_monarchism = 67
+						}
+						transfer_state = 1479
+						transfer_state = 11061
+						transfer_state = 17266
+						set_capital = {
+							state = 195
 						}
 					}
 					RUS = {	
