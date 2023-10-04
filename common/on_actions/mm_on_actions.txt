@@ -6197,6 +6197,12 @@ on_actions = {
 								OR = {
 									has_government = vanguardism
 								}
+								NOT = {
+									OR = {
+										has_cosmetic_tag = RUS_1914
+										has_cosmetic_tag = RUS_2023
+									}
+								}
 							}
 						}
 						set_cosmetic_tag = RUS_RED

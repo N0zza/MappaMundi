@@ -7938,6 +7938,10 @@
 							traits = {
 							}
 						}
+						set_popularities = {
+							stratocratic_monarchism = 50
+							authoritarian_monarchism = 50
+						}
 					}
 				}
 				every_country = {
@@ -8981,9 +8985,29 @@
 							authoritarian_monarchism = 67
 						}
 						set_party_name = {
+							ideology = vanguardism
+							name = RUS_communism_1914_party
+							long_name = RUS_communism_1914_party_long
+						}
+						set_party_name = {
+							ideology = communism
+							name = RUS_communism_1914_party
+							long_name = RUS_communism_1914_party_long
+						}
+						set_party_name = {
+							ideology = socialism_ideology
+							name = RUS_socialism_ideology_1914_party
+							long_name = RUS_socialism_ideology_1914_party_long
+						}
+						set_party_name = {
 							ideology = socialist_monarchy
 							name = RUS_socialist_monarchy_1914_party
 							long_name = RUS_socialist_monarchy_1914_party_long
+						}
+						set_party_name = {
+							ideology = liberal_republic
+							name = RUS_liberal_republic_1914_party
+							long_name = RUS_liberal_republic_1914_party_long
 						}
 						transfer_state = 1479
 						transfer_state = 11061
@@ -8994,11 +9018,29 @@
 					}
 					RUS = {
 						create_country_leader = {
+							name = "Minístr-Prezidént Aleksándr Fyodorovich Kérenskiy"
+							desc = ""
+							picture = "gfx/leaders/Russia/Portrait_Alexander_Kerensky_1914.dds"
+							expire = "1965.1.1"
+							ideology = demsoc
+							traits = {
+							}
+						}
+						create_country_leader = {
 							name = "Car' Nikoláj II Romanóvskij"
 							desc = ""
 							picture = "gfx/leaders/Russia/1914_RUS_Nicholas_II.tga"
 							expire = "1965.1.1"
 							ideology = monarcho_communism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Minístr-Prezidént Aleksándr Fyodorovich Kérenskiy"
+							desc = ""
+							picture = "gfx/leaders/Russia/Portrait_Alexander_Kerensky_1914.dds"
+							expire = "1965.1.1"
+							ideology = liberalism
 							traits = {
 							}
 						}
