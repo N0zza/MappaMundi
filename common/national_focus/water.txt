@@ -2281,6 +2281,15 @@
                     
                     ## 1836 AFRICA ##
                     
+					TRB = {
+						transfer_state = 6947
+						transfer_state = 274
+						transfer_state = 8962
+						transfer_state = 6670
+						transfer_state = 2507
+						transfer_state = 871
+					}
+						
                     MOR = {
                         drop_cosmetic_tag = yes
                         set_politics = {
@@ -6787,6 +6796,42 @@
 							}
 						}
 					}
+					
+					AST = {
+						release = WAT
+						release = TAS
+					}
+					
+					every_state = {
+						limit = {
+							is_owned_by = AST
+						}
+						NSW = {
+							transfer_state = PREV
+						}
+					}
+					
+					TAS = {
+						set_cosmetic_tag = UK_RED
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+					}
+					
+					WAT = {
+						set_cosmetic_tag = UK_RED
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+					}
+					
+					NSW = {
+						set_cosmetic_tag = UK_RED
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+					}
+					
 					every_country = {
 						secondary_tertiary_leader_enabled_effect = yes
 					}
