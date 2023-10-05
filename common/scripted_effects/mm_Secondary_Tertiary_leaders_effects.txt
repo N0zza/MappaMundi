@@ -123,7 +123,6 @@ secondary_leader_enabled_effect = {
 					AND = {
 						OR = {
 							has_government = socialist_monarchy
-							has_government = anocratic_monarchism
 							has_government = centrist_monarchism
 						}
 						has_start_date > 1915.01.01
@@ -138,6 +137,10 @@ secondary_leader_enabled_effect = {
 					AND = {
 						has_government = authoritarian_monarchism
 						has_start_date < 1915.01.01
+					}
+					AND = {
+						has_government = anocratic_monarchism
+						has_start_date > 1913.01.01
 					}
 				}
 			}

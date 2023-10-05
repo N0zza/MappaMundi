@@ -273,9 +273,22 @@ defined_text = {
 			AND = {
 				tag = GER
 				has_government = anocratic_monarchism
+				has_start_date < 1949.01.01
+				has_start_date > 1915.01.01
 			}
 		}
 		localization_key = "Archipincerna Franciscus Iosephus II de Habsburgum, Rex Bohemiae"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GER
+				has_government = anocratic_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Archipincerna Franciscus Iosephus I de Habsburgum, Rex Bohemiae"
 	}
 	text = {
 		trigger = {
@@ -3071,9 +3084,22 @@ defined_text = {
 			AND = {
 				tag = GER
 				has_government = anocratic_monarchism
+				has_start_date < 1949.01.01
+				has_start_date > 1915.01.01
 			}
 		}
 		localization_key = "GFX_Otto_Habsburg"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GER
+				has_government = anocratic_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Franz_Josef"
 	}
 	text = {
 		trigger = {

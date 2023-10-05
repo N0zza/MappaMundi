@@ -4702,7 +4702,22 @@ on_actions = {
 									has_government = democratic_monarchism
 								}
 							}
-							set_cosmetic_tag = GREY_GER2
+							if = {
+								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = GREY_GER3
+							}
+							if = {
+								limit = {
+									NOT = {
+										has_start_date < 1915.01.01
+										has_start_date > 1913.01.01
+									}
+								}
+								set_cosmetic_tag = GREY_GER2
+							}
 						}
 						if = {
 							limit = {
@@ -6206,6 +6221,36 @@ on_actions = {
 							}
 						}
 						set_cosmetic_tag = RUS_RED
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = RUS
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+								OR = {
+									has_government = vanguardism
+									has_government = communism
+								}
+							}
+						}
+						set_cosmetic_tag = RUS_SOCIALIST_1914
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = RUS
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+								NOT = {
+									OR = {
+										has_government = vanguardism
+										has_government = communism
+									}
+								}
+							}
+						}
+						set_cosmetic_tag = RUS_1914
 					}
 					if = {
 						limit = {
