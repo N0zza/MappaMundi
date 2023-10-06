@@ -1,18 +1,12 @@
 ﻿capital = 166
 	
 set_popularities = {
-	socialism_ideology
-		= 17
-	democratic
-		= 31
-	conservative_monarchism
-		= 8
-	neutrality
-		= 34
-	authoritarian_monarchism
-		= 5
-	monarchism
-		= 5
+	socialism_ideology = 17
+	democratic = 31
+	conservative_monarchism = 8
+	stratocratic_monarchism = 34
+	authoritarian_monarchism = 5
+	monarchism = 5
 }
 
 set_politics = { 
@@ -21,24 +15,6 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = no
 }
-
-#if = {
-#	limit = {
-#		has_dlc = "Together for Victory"
-#	}
-#	set_autonomy = {
-#		target = EQG
-#		autonomous_state = autonomy_colony
-#	}
-#	set_autonomy = {
-#		target = RIF
-#		autonomous_state = autonomy_colony
-#	}
-#	else = {
-#		puppet = EQG
-#		puppet = RIF
-#	}
-#}
 
 create_country_leader = {
 	name = "Presidente Niceto Alcalá-Zamora y Torres"
@@ -183,7 +159,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Caudillo Francisco Franco Bahamonde"
 	desc = "POLITICS_SPR_STRATMON_DESC"
-	picture = "gfx/leaders/SP2/Portrait_Francisco_Franco.dds"
+	picture = "gfx/leaders/SPR/Portrait_Francisco_Franco.dds"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -193,7 +169,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rey Carlos VIII de Habsburgo"
 	desc = "POLITICS_SPR_AUTHMON_DESC"
-	picture = "gfx/leaders/SP2/Portrait/Carlos_VIII.tga"
+	picture = "gfx/leaders/SP2/Portrait_Carlos_VIII.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {

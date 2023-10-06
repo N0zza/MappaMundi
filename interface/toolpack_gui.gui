@@ -43,11 +43,11 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "toolpack_main_container"
-		position = { x = 100 y = -69 }
+		position = { x = 100 y = 115 }
 		size = { width = 255 height = 355 }
 		orientation = CENTER_RIGHT
 
-		show_position = { x = -250 y = -69 }
+		show_position = { x = -250 y = 115 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -59,21 +59,13 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "toolpack_close"
-			quadTextureSprite = "GFX_toolpack_expand_right"
-			position = { x = 0 y = 190 }
+			quadTextureSprite = "GFX_closebutton"
+			position = { x = 223 y = 0 }
 			shortcut = "ctrl+shift+alt+t"
 			pdx_tooltip = "[toolpack_OPENING]"
 			clicksound = click_ok
 			oversound = ui_menu_over
-		}
-		buttonType = {
-			name = "toolpack_close_at_right"
-			quadTextureSprite = "GFX_toolpack_expand_right"
-			position = { x = 229 y = 329 }
-			shortcut = "ctrl+shift+alt+t"
-			pdx_tooltip = "[toolpack_OPENING]"
-			clicksound = click_ok
-			oversound = ui_menu_over
+			scale = 0.8
 		}
 		buttonType = {
 			name = "toolpack_prev_page"
@@ -130,7 +122,7 @@ guiTypes = {
 		buttonType = {
 			name = "smt_open"
 			quadTextureSprite = "GFX_generic_text_bg_203"
-			position = { x = 25 y = 220 }
+			position = { x = 25 y = 25 }
 			shortcut = "ctrl+alt+t"
 			pdx_tooltip = "[SMT_TOOLTIP]"
 			clicksound = click_ok
@@ -139,7 +131,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "smt_title"
-			position = { x = 0 y = 224 }
+			position = { x = 0 y = 29 }
 			font = "hoi_18mbs"
 			text = "[smt_tooltip]"
 			maxWidth = 250
@@ -178,7 +170,7 @@ guiTypes = {
 		buttonType = {
 			name = "cpt_open"
 			quadTextureSprite = "GFX_generic_text_bg_203"
-			position = { x = 25 y = 255 }
+			position = { x = 25 y = 70 }
 			shortcut = "shift+ctrl+c"
 			pdx_tooltip = "[CPT_OPENING]"
 			clicksound = click_ok
@@ -187,7 +179,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "cpt_title"
-			position = {x = 0 y = 259 }
+			position = {x = 0 y = 74 }
 			font = "hoi_18mbs"
 			text = "[CPT_ACTIVITY]"
 			maxWidth = 250
@@ -202,7 +194,7 @@ guiTypes = {
 		buttonType = {
 			name = "tpt_open"
 			quadTextureSprite = "GFX_generic_text_bg_203"
-			position = { x = 25 y = 290 }
+			position = { x = 25 y = 115 }
 			shortcut = "ctrl+alt+a"
 			pdx_tooltip = "[TPT_OPENING]"
 			clicksound = click_ok
@@ -211,7 +203,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "tpt_title"
-			position = {x = 0 y = 294 }
+			position = {x = 0 y = 119 }
 			font = "hoi_18mbs"
 			text = "[TPT_ACTIVITY]"
 			maxWidth = 250
