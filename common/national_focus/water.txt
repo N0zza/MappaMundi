@@ -1165,6 +1165,14 @@
 						set_politics = {
 							ruling_party = theocratic
 						}
+						
+						create_country_leader = {
+							name = "Vladika Petar II Petrović-Njegoš"
+							desc = ""
+							picture = "gfx/leaders/MNT/Portrait_Njegos.dds"
+							expire = "1965.1.1"
+							ideology = christian_theocracy
+						}
 					}
 					SER = {
 						transfer_state = 4980
@@ -1288,7 +1296,7 @@
 							desc = ""
 							picture = "gfx/leaders/SWE/Pehr_Gotrek_1836_MM.tga"
 							expire = "1965.1.1"
-							ideology = communism
+							ideology = marxism
 						}
 					}
 	
@@ -1426,7 +1434,7 @@
 						create_country_leader = {
 							name = "Reina Isabel II de Borbón"
 							desc = ""
-							picture = "1836_SPR_Isabella_II.png"
+							picture = "gfx/leaders/SPR/1836_SPR_Isabella_II.dds"
 							expire = "1965.1.1"
 							ideology = liberal_constitutionalism
 						}
@@ -3532,53 +3540,51 @@
 							transfer_state = PREV
 						}
 					}
-					every_state = {
-						limit = {
-							OR = {
-								state = 551
-								state = 643
-								state = 1037
-								state = 1561
-								state = 3867
-								state = 8106
-								state = 9093
-								state = 10361
-								state = 10472
-								state = 10473
-								state = 10474
-								state = 10475
-								state = 10478
-								state = 10479
-								state = 10480
-								state = 10488
-								state = 10500
-								state = 12108
-								state = 12112
-								state = 12114
-								state = 12124
-								state = 12126
-								state = 12162
-								state = 12163
-								state = 12164
-								state = 12165
-								state = 12166
-								state = 12167
-								state = 12175
-								state = 12176
-								state = 12177
-								state = 12178
-								state = 12179
-								state = 12180
-								state = 12181
-								state = 12200
-								state = 12205
-							}
-						}
-						EGY = {
-							transfer_state = PREV
-							set_cosmetic_tag = EGY_OTTO
+				
+					EGY = {
+						transfer_state = 551
+						transfer_state = 643
+						transfer_state = 1037
+						transfer_state = 1561
+						transfer_state = 3867
+						transfer_state = 8106
+						transfer_state = 9093
+						transfer_state = 10361
+						transfer_state = 10472
+						transfer_state = 10473
+						transfer_state = 10474
+						transfer_state = 10475
+						transfer_state = 10478
+						transfer_state = 10479
+						transfer_state = 10480
+						transfer_state = 10488
+						transfer_state = 10500
+						transfer_state = 12108
+						transfer_state = 12112
+						transfer_state = 12114
+						transfer_state = 12124
+						transfer_state = 12126
+						transfer_state = 12162
+						transfer_state = 12163
+						transfer_state = 12164
+						transfer_state = 12165
+						transfer_state = 12166
+						transfer_state = 12167
+						transfer_state = 12175
+						transfer_state = 12176
+						transfer_state = 12177
+						transfer_state = 12178
+						transfer_state = 12179
+						transfer_state = 12180
+						transfer_state = 12181
+						transfer_state = 12200
+						transfer_state = 12205
+						set_cosmetic_tag = EGY_OTTO
+						set_politics = {
+							ruling_party = conservative_monarchism
 						}
 					}
+					
 					FRA = {
 						transfer_state = 13591
 					}
