@@ -7,6 +7,7 @@ historic_claims_effect = {
 	german_empire_claims = yes
 	neukamerun_claims = yes
 	mittelafrika_claims = yes
+	wabanaki_claims = yes
 }
 
 french_louisiana_claims = {
@@ -672,6 +673,51 @@ mittelafrika_claims = {
 			}
 		}
 		MAF = {
+			add_state_claim = PREV
+		}
+	}
+}
+wabanaki_claims = {
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = PEI
+				is_core_of = NBK
+				is_core_of = NVS
+				is_claimed_by = NVS
+				AND = {
+					OR = {
+						is_core_of = VER
+						is_core_of = NHM
+					}
+					NOT = {
+						state = 1956
+						state = 4157
+						state = 4158
+						state = 4159
+						state = 4160
+						state = 4645
+						state = 7613
+						state = 9667
+						state = 14873
+						state = 14874
+					}
+				}
+				state = 331
+				state = 927
+				state = 2985
+				state = 2986
+				state = 2987
+				state = 2988
+				state = 4513
+				state = 4514
+				state = 4724
+				state = 7614
+				state = 7615
+				state = 13549
+			}
+		}
+		MNE = {
 			add_state_claim = PREV
 		}
 	}

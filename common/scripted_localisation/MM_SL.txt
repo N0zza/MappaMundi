@@ -1147,10 +1147,27 @@ defined_text = {
 			AND = {
 				tag = OHI
 				has_government = democratic_monarchism
-				has_global_flag = non_hog_secondary_leaders
 			}
 		}
 		localization_key = "Representative of the British Crown in the Grand Council, James Arthur Salter"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MNE
+				has_government = democratic_monarchism
+			}
+		}
+		localization_key = "British Resident in the lands of the Wabanaki, Sir Alexander Fleming"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MNE
+				has_government = neutrality
+			}
+		}
+		localization_key = "Leader of the Allied Forces in America, Dwight David Eisenhower"
 	}
 	text = {
 		trigger = {
@@ -4124,10 +4141,27 @@ defined_text = {
 			AND = {
 				tag = OHI
 				has_government = democratic_monarchism
-				has_global_flag = non_hog_secondary_leaders
 			}
 		}
 		localization_key = "GFX_James_Salter"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MNE
+				has_government = democratic_monarchism
+			}
+		}
+		localization_key = "GFX_Alexander_Fleming"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MNE
+				has_government = neutrality
+			}
+		}
+		localization_key = "GFX_Dwight_Eisenhower"
 	}
 	text = {
 		trigger = {

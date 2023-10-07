@@ -1015,9 +1015,18 @@ secondary_leader_enabled_effect = {
 		limit = {
 			AND = {
 				tag = OHI
-				AND = {
+				has_government = democratic_monarchism
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = MNE
+				OR = {
 					has_government = democratic_monarchism
-					has_global_flag = non_hog_secondary_leaders
+					has_government = neutrality
 				}
 			}
 		}
@@ -1056,7 +1065,7 @@ secondary_leader_enabled_effect = {
 					AND = {
 						has_government = conservative_monarchism
 						has_start_date < 1939.01.01
-						has_start_date > 1932.01.01
+						has_start_date > 1913.01.01
 					}
 					AND = {
 						has_government = centrist_monarchism
