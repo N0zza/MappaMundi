@@ -13,13 +13,24 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 			factor = 0
 		}
 		hidden_effect = {
-			MNE = {
+			IRO = {
+				set_popularities = {
+					centrist_monarchism = 100
+				}
+				
+				set_politics = {
+					ruling_party = centrist_monarchism
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				
 				create_country_leader = {
-					name = "Wičháša Wakȟáŋ Khąɣí"
+					name = "Grand Council of the Six Nations"
 					desc = ""
-					picture = "gfx/leaders/MNE/Portrait_Frank_Crow.dds"
+					picture = "gfx/leaders/IRO/Portrait_Haudenosaunee_Council.dds"
 					expire = "1965.1.1"
-					ideology = liberal_constitutionalism
+					ideology = cenmon
 					traits = {
 					}
 				}
