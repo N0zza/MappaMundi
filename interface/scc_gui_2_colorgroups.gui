@@ -6,7 +6,7 @@ guiTypes = {
 		position = { x = -625 y = -400 }
 		orientation = UPPER_RIGHT
 		
-		size = { width = 300 height = 350 }
+		size = { width = 255 height = 400 }
 
 		show_position = { x = -625 y = 40 }
 		show_animation_type = accelerated
@@ -16,34 +16,34 @@ guiTypes = {
 		
 		background = {
 			name = "Background"
-			spriteType = "GFX_window_bg"
+			spriteType = "GFX_tiled_window"
 		}
 		
 		buttonType = {
 			name = "scc_close"
 			quadTextureSprite = "GFX_drop_down_button_up"
-			position = { x = 5 y = 325 }
+			position = { x = 5 y = 375 }
 			clicksound = click_ok
 			oversound = ui_menu_over
 		}
 		buttonType = {
 			name = "scc_close_2"
 			quadTextureSprite = "GFX_drop_down_button_up"
-			position = { x = 227 y = 325 }
+			position = { x = 227 y = 375 }
 			clicksound = click_ok
 			oversound = ui_menu_over
 		}
         
 		instantTextboxType = {
 			name = "title"
-			position = { x = 68 y = 12 }
+			position = { x = 78 y = 14 }
 			
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
 			text = "title_colorgroups"
-			maxWidth = 240
+			maxWidth = 100
 			maxHeight = 20
-			format = left	
+			format = center	
 		}
 		
 		containerWindowType = {
@@ -205,6 +205,15 @@ guiTypes = {
 			pdx_tooltip = "CAT_MARKER"
 			scale = 1
 		}
+		instantTextboxType = {
+			name = "scc_marker_desc"
+			position = { x = 65 y = 250 }
+			font = "hoi_16mbs"
+			text = "scc_marker_desc"
+			maxWidth = 150
+			maxHeight = 20
+			format = left	
+		}
 		buttonType = {
 			name = "scc_unmarker"
 			position = { x = 30 y = 243 }
@@ -214,9 +223,18 @@ guiTypes = {
 			pdx_tooltip = "CAT_UNMARKER"
 			scale = 1
 		}
+		instantTextboxType = {
+			name = "scc_unmarker_desc"
+			position = { x = 65 y = 320 }
+			font = "hoi_16mbs"
+			text = "scc_unmarker_desc"
+			maxWidth = 200
+			maxHeight = 20
+			format = left	
+		}
 		buttonType = {
 			name = "scc_unmark_all"
-			position = { x = 70 y = 243 }
+			position = { x = 30 y = 313 }
 			shortcut = "shift+ctrl+r"			
 			spriteType = "GFX_close_button_small"
 			pdx_tooltip = "CAT_UNMARK_ALL"
@@ -225,7 +243,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "random_button"
-			position = { x = 20 y = 275 }
+			position = { x = 1020 y = 275 }
 			spriteType = "GFX_button_typeA_1"
 			frame = 1
 			
@@ -235,7 +253,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "random_desc"
-			position = { x = 82 y = 275 }
+			position = { x = 1082 y = 275 }
 			
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
@@ -247,22 +265,24 @@ guiTypes = {
 		
 		buttonType = {
 			name = "default_color_button"
-			position = { x = 35 y = 305 }
+			position = { x = 35 y = 355 }
 			spriteType = "GFX_button_typeB_83x29"
 			frame = 2
 			
 			buttonFont = "hoi_16mbs"
 			buttonText = "cg_default"
+			pdx_tooltip = "cg_default_tt"
 		}
 		
 		buttonType = {
 			name = "default_color_button_all"
-			position = { x = 135 y = 305 }
+			position = { x = 135 y = 355 }
 			spriteType = "GFX_button_typeB_83x29"
 			frame = 2
 			
 			buttonFont = "hoi_16mbs"
 			buttonText = "cg_reset"
+			pdx_tooltip = "cg_reset_tt"
 		}
 		
 		

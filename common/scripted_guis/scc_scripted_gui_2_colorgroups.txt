@@ -68,17 +68,11 @@ scripted_gui = {
 				set_variable = { global.scc_random = 0 }
 			}
 			
-			default_color_button_all_click = {
-				#
-				set_variable = { global.scc_random_loading = 1 }
-				#				
-				every_country = { 
-					limit = {
-						is_ai = yes
+			default_color_button_all_click = {		
+				ROOT = {
+					country_event = {
+						id = mm.981
 					}
-					country_event = { 
-						id = sccrandom.9001
-					} 
 				}
 			}
 			scc_marker_click = {

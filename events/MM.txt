@@ -4236,6 +4236,35 @@ country_event = { #Decolonise The Middle East
 	}
 }
 
+#Drop all CTs SCC Button
+country_event = {
+	id = mm.981
+	title = mm.981.t
+	desc = mm.981.d
+	is_triggered_only = yes
+
+	option = {#Sure
+		name = mm.981.a
+		ai_chance = {
+			base = 0
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_ai = yes
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	option = {#On Second thoughts....
+		name = mm.981.b
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
 #rename city
 country_event = {
 	id = mm.982

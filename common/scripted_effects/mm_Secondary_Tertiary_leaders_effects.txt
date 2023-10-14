@@ -1003,9 +1003,27 @@ secondary_leader_enabled_effect = {
 		limit = {
 			AND = {
 				tag = USA
-				AND = {
-					has_government = liberal_republic
-					has_global_flag = non_hog_secondary_leaders
+				OR = {
+					AND = {
+						has_government = liberal_republic
+						has_global_flag = non_hog_secondary_leaders
+						OR = {
+							AND = {
+								has_start_date > 1935.01.01
+								has_start_date < 1937.01.01
+							}
+							AND = {
+								has_start_date > 2022.01.01
+							}
+						}
+					}
+					AND = {
+						OR = {
+							has_government = democratic_monarchism
+							has_government = conservative_monarchism
+						}
+						has_start_date < 2022.01.01
+					}
 				}
 			}
 		}

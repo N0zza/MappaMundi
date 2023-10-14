@@ -1138,9 +1138,31 @@ defined_text = {
 				tag = USA
 				has_government = liberal_republic
 				has_global_flag = non_hog_secondary_leaders
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
 			}
 		}
 		localization_key = "Vice President John Nance Garner"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = USA
+				has_government = democratic_monarchism
+				has_start_date < 2022.01.01
+			}
+		}
+		localization_key = "Prime Minister Alfred Emanuel Smith"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = USA
+				has_government = conservative_monarchism
+				has_start_date < 2022.01.01
+			}
+		}
+		localization_key = "Prime Minister Frederick Steiwer"
 	}
 	text = {
 		trigger = {
@@ -4132,9 +4154,31 @@ defined_text = {
 				tag = USA
 				has_government = liberal_republic
 				has_global_flag = non_hog_secondary_leaders
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
 			}
 		}
 		localization_key = "GFX_John_Garner"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = USA
+				has_government = democratic_monarchism
+				has_start_date < 2022.01.01
+			}
+		}
+		localization_key = "GFX_Alfred_Smith"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = USA
+				has_government = conservative_monarchism
+				has_start_date < 2022.01.01
+			}
+		}
+		localization_key = "GFX_Frederick_Steiwer"
 	}
 	text = {
 		trigger = {
