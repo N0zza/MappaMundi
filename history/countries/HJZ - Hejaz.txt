@@ -1,22 +1,31 @@
 ﻿capital = 962
 
+oob = "HJZ_1936"
+
 set_cosmetic_tag = SAU_COLONY
 
-set_popularities = {
-	authoritarian_monarchism = 100
-}
-		
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+	set_popularities = {
+		democratic 
+			 = 0
+		fascism
+			 = 0
+		communism
+			 = 0
+			
+		authoritarian_monarchism 
+			 = 100
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Ḫādīmū Al-Ḥārāmayn aš-Šarīfāynī ʿAbd ul-ilāh bin al-Milk ʿAlīy bin aš-Šarīf Ḥusayn al-Hāšimī"
+	name = "Khadim al-Haramayn as-Sarifayn Abd al-Ilah of Hejaz"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Ilah_socmon.tga"
+	picture = "SAU_Ilah_socmon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -25,31 +34,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Šarīf Makkaẗ ʿAbd ul-ilāh bin al-Milk ʿAlīy bin aš-Šarīf Ḥusayn al-Hāšimī"
+	name = "Nayib Almalik wal'Amir Faisal bin Abdulaziz Al Saud"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Ilah_socmon.tga"
-	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Milk ʿAbd ul-ilāh bin al-Milk ʿAlīy bin aš-Šarīf Ḥusayn al-Hāšimī"
-	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Ilah_socmon.tga"
-	expire = "1965.1.1"
-	ideology = cenmon
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Nāʾib al-Milk wal-Amīr Fayṣal bin ʿAbd ul-ʿAzīz as-Saʿūd"
-	desc = ""
-	picture = "gfx/leaders/HJZ/HJZ_Faisal.tga"
+	picture = "HJZ_Faisal.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {

@@ -1,5 +1,6 @@
 ﻿capital = 1775
 
+#oob = "ALA_1936"
 
 
 	set_popularities = {
@@ -18,14 +19,19 @@
 	election_frequency = 48
 	elections_allowed = no
 }
-
+
+add_ideas = {
+	disarmed_nation
+	free_trade
+}
+
 
 create_country_leader = {
 	name = "Arthur Chéreau"
 	desc = ""
 	picture = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
 	expire = "1950.1.1"
-	ideology = liberal_conservatism
+	ideology = liberalism
 	traits = {
 	}
 }
@@ -33,19 +39,21 @@ create_country_leader = {
 create_country_leader = {
 	name = "Émile Bechard"
 	desc = "gfx/leaders/USA/Portrait_USA_Generic_3.dds"
-	picture = "gfx/leaders/To_be_added.tga"
+	picture = ""
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Joseph Le Fur"
 	desc = ""
-	picture = "gfx/leaders/TGR/Portrait_Joseph_Le_Fur.dds"
+	picture = "Portrait_Joseph_Le_Fur.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
+		
 	}
 }

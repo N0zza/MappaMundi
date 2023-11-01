@@ -2,13 +2,36 @@
 
 set_cosmetic_tag = KMT_KANSU
 
+oob = "KNM_1936"
+
 set_popularities = {
-	neutrality = 60
-	stratocratic = 20
-	stratocratic_monarchism = 20
+        anarchism_ideology = 0
+        monarchism = 0
+        neutrality = 60
+        democratic = 0
+        liberal_republic = 0
+        communism = 0
+        vanguardism = 0
+        fascism = 0
+        socialism_ideology = 0
+        democratic_monarchism = 0
+        conservative_monarchism = 0
+        stratocratic = 20
+        authoritarian_monarchism = 0
+        republican_fascism = 0
+        national_socialism = 0
+        theocratic = 0
+        left_anarchism = 0
+        right_anarchism = 0
+        socialist_monarchy = 0
+        centrist_republic = 0
+        centrist_monarchism = 0
+        stratocratic_monarchism = 20
+
 }
 
 set_politics = {
+	
 	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -18,9 +41,9 @@ set_politics = {
 create_country_leader = {
 	name = "Chou ch'ang Chu Shaoliang"
 	desc = ""
-	picture = "gfx/leaders/KNM/Portrait_Zhu_Shaoliang.tga"
+	picture = "Portrait_Zhu_Shaoliang.tga"
 	expire = "1965.1.1"
-	ideology = tridemism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -28,7 +51,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chou ch'ang Chu Shaoliang"
 	desc = ""
-	picture = "gfx/leaders/KNM/Portrait_Zhu_Shaoliang.tga"
+	picture = "Portrait_Zhu_Shaoliang.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -38,7 +61,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chou ch'ang Chu Shaoliang"
 	desc = ""
-	picture = "gfx/leaders/KNM/Portrait_Zhu_Shaoliang.tga"
+	picture = "Portrait_Zhu_Shaoliang.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {

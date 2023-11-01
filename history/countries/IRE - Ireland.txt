@@ -1,17 +1,17 @@
 ﻿capital = 1831
 
-set_country_flag = has_secondary_leader
-recruit_character = IRE_Eamon_de_Valera
+oob = "IRE_1936"
 
-set_popularities = {
-	socialist_monarchy = 6
-	centrist_monarchism = 50
-	conservative_monarchism = 40
-	anocratic_monarchism = 4
-}
-
-set_politics = { 
-	ruling_party = centrist_monarchism
+	set_popularities = {
+		centrist_monarchism 
+			 = 98
+		fascism
+			 = 1
+		communism
+			 = 1
+		}
+	set_politics = { 
+ ruling_party = centrist_monarchism
 	last_election = "1933.1.24"
 	election_frequency = 48
 	elections_allowed = yes
@@ -20,7 +20,7 @@ set_politics = {
 create_country_leader = {
 	name = "Seanascal Domhnall Ua Buachalla"
 	desc = ""
-	picture = "gfx/leaders/IRE/Portrait_Domhnall_Ua_Buachalla.dds"
+	picture = "Portrait_Domhnall_Ua_Buachalla.dds"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -30,9 +30,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor-General Daniel Richard Donal Buckley"
 	desc = ""
-	picture = "gfx/leaders/IRE/Portrait_Domhnall_Ua_Buachalla.dds"
+	picture = "Portrait_Domhnall_Ua_Buachalla.dds"
 	expire = "1965.1.1"
-	ideology = authmon_colonialism
+	ideology = authmon
 	traits = {
 	}
 }
@@ -40,7 +40,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rí Ard Ioaichím I de Hohenzollern"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Joachim.tga"
+	picture = "IRE_Joachim.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -48,19 +48,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Éamon de Valera"
-	desc = ""
-	picture = "gfx/leaders/IRE/Portrait_Eamon_De_Valera.dds"
-	expire = "1965.1.1"
-	ideology = cenrep_christian_democracy
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Príomh Seán Russell"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Russell.tga"
+	picture = "IRE_Russell.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -70,7 +60,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "King George V of Windsor"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_GeorgeV.tga"
+	picture = "IRE_GeorgeV.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -80,7 +70,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Uachtarán Liam Tomás Mac Cosgair"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Cosgrave.tga"
+	picture = "IRE_Cosgrave.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -90,7 +80,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ard-Rúnaí Seán Murray"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Murray.tga"
+	picture = "IRE_Murray.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -100,7 +90,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Cathaoirleach Peadar Ó Domhnaill"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Donnell.tga"
+	picture = "IRE_Donnell.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -110,7 +100,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Uachtarán Liam Ó Neachtain"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Norton.tga"
+	picture = "IRE_Norton.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -120,7 +110,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rí Hugo O'Neill"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_HugoI.tga"
+	picture = "IRE_HugoI.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -130,9 +120,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Uachtarán Brian Ó hUigínn"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Huiginn.tga"
+	picture = "IRE_Huiginn.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -140,7 +130,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Taoiseach Brian O'Higgins"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Huiginn.tga"
+	picture = "IRE_Huiginn.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -148,11 +138,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Uachtarán Dubhghlas de hÍde"
+	name = "Taoiseach Éamon de Valera"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Hyde.tga"
+	picture = "Portrait_Eamon_De_Valera.dds"
 	expire = "1965.1.1"
-	ideology = dominant_party_democracy
+	ideology = cenrep
 	traits = {
 	}
 }
@@ -160,7 +150,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Uachtarán Mícheál Ó Coileáin"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Coileain.tga"
+	picture = "IRE_Coileain.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -168,11 +158,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ceannasaí go Príomha Eoin Ó Dubhthaigh"
+	name = "Ceannasaí go Príomha Eoin O'Duffy"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Duffy.tga"
+	picture = "IRE_Duffy.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
@@ -180,7 +170,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Miles Christopher Dempsey"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Dempsey.tga"
+	picture = "IRE_Dempsey.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -188,9 +178,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Príomháidh Seosamh Mac Ruairí, Ardeaspag Armagh"
+	name = "Primate Seosamh Mac Ruairí, Ardeaspag Armagh"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Ruairi.tga"
+	picture = "IRE_Ruari.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -200,7 +190,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rí Ard Gearóid Ó Cuinneagáin"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Cuinneagain.tga"
+	picture = "IRE_Cuinneagain.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -208,9 +198,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ceannaire Uachtarach Gearóid Ó Cuinneagáin"
+	name = "Ceannaire Gearóid Ó Cuinneagáin"
 	desc = ""
-	picture = "gfx/leaders/IRE/IRE_Cuinneagain.tga"
+	picture = "IRE_Cuinneagain.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {

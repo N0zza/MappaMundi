@@ -1,15 +1,23 @@
 ﻿capital = 1205
 
+
 set_cosmetic_tag = UK_RED
 
-set_popularities = {
-	democratic  = 10
-	neutrality = 20
-	authoritarian_monarchism = 70
-}
 
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+
+	set_popularities = {
+		democratic 
+			 = 10
+		fascism
+			 = 0
+	        neutrality
+		         = 20
+			
+		authoritarian_monarchism
+			 = 70
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -18,56 +26,50 @@ set_politics = {
 create_country_leader = {
 	name = "High Commissioner Arthur Grenfell Wauchope"
 	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Arthur_Grenfell_Wauchope.dds"
-	ideology = authmon_colonialism
+	picture = "Portrait_Arthur_Grenfell_Wauchope.dds"
+	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Rayiys Hassan Sidqi al-Dajani"
 	desc = ""
-	picture = "gfx/leaders/PAL/PAL_Dajani_libdem.tga"
+	picture = "PAL_Dajani_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism 
+	ideology = socdem 
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Rayiys Abd al-Rahim al-Hajj Muhammad"
 	desc = ""
-	picture = "gfx/leaders/PAL/PAL_Muhammad_authrep.tga"
+	picture = "PAL_Muhammad_authrep.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Rayiys Abd al-Rahim al-Hajj Muhammad"
-	desc = ""
-	picture = "gfx/leaders/PAL/PAL_Muhammad_authrep.tga"
-	expire = "1965.1.1"
-	ideology = social_authoritarianism
-	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Al-Mufawad Muhammad Najati Sidqi"
 	desc = ""
-	picture = "gfx/leaders/PAL/PAL_Sidqi_commie.tga"
+	picture = "PAL_Sidqi_commie.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Melek Zeid I bin Hussein"
 	desc = ""
-	picture = "gfx/leaders/PAL/PAL_Zeid_mon.tga"
+	picture = "PAL_Zeid_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -77,9 +79,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governatore Roberto Farinacci"
 	desc = ""
-	picture = "gfx/leaders/PAL/PAL_Farinacci_fash.tga"
+	picture = "PAL_Farinacci_fash.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -87,7 +89,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rayiys Raghib al-Nashashibi"
 	desc = ""
-	picture = "gfx/leaders/PAL/PAL_Nashashibi_condem.tga"
+	picture = "PAL_Nashashibi_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -95,31 +97,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Qaid Wajih Al-Madani"
-	desc = ""
-	picture = "gfx/leaders/PAL/PAL_Madani_strat.tga"
-	expire = "1965.1.1"
-	ideology = military_junta
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Governor-General Edmund Henry Hynman Allenby"
 	desc = ""
-	picture = "gfx/leaders/PAL/PAL_Allenby.tga"
+	picture = "PAL_Allenby.tga"
 	expire = "1965.1.1"
-	ideology = stratmon_colonialism
+	ideology = stratmon
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Governor Edmund Henry Hynman Allenby"
+	name = "Mufti Mohammed Amin Al-Husseini"
 	desc = ""
-	picture = "gfx/leaders/PAL/PAL_Allenby.tga"
+	picture = "PAL_Husseini_theoc.tga"
 	expire = "1965.1.1"
-	ideology = anocmon
+	ideology = christian
 	traits = {
 	}
 }
@@ -127,7 +119,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Ludwig Crüwell"
 	desc = ""
-	picture = "gfx/leaders/PAL/PAL_Cruwell_nazi.tga"
+	picture = "PAL_Cruwell_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -147,7 +139,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gubernator Anatoly Ivanov Skuratov"
 	desc = ""
-	picture = "gfx/leaders/PAL/PAL_Skuratov"
+	picture = "PAL_Skuratov"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {

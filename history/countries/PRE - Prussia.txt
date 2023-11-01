@@ -1,7 +1,10 @@
 ﻿capital = 64
 
+oob = "PRE_1936"
+
 set_popularities = {
-	monarchism = 100
+	monarchism
+		= 100
 }
 
 set_politics = { 
@@ -12,7 +15,7 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "König Wilhelm II von Hohenzollern"
+	name = "Kaiser Wilhelm II von Hohenzollern"
 	desc = ""
 	picture = "gfx/leaders/Misc/Prussia.dds"
 	expire = "1965.1.1"
@@ -22,9 +25,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Generalsekretär Ernst Johannes Fritz Thalmann"
+	name = "Generalsekretär Ernst Thalmann"
 	desc = ""
-	picture = "gfx/leaders/PRE/PRE_Thalmann.tga"
+	picture = "PRE_Thalmann.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -32,9 +35,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Vorsitzende Karl Heinrich Otto Rühle"
+	name = "Vorsitzende Otto Rühle"
 	desc = ""
-	picture = "gfx/leaders/PRE/PRE_Ruhle.tga"
+	picture = "PRE_Ruhle.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -42,9 +45,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Präsident Otto Wels"
+	name = "Ministerpräsident Otto Wels"
 	desc = ""
-	picture = "gfx/leaders/PRE/PRE_Wels.tga"
+	picture = "PRE_Wels.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -52,19 +55,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Präsident Friedrich Neumann"
+	name = "MinisterpräsidentFriedrich Neumann"
 	desc = ""
-	picture = "gfx/leaders/PRE/PRE_Neumann.tga"
+	picture = "PRE_Neumann.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Präsident Franz Joseph Hermann Michael Maria von Papen, Erbsälzer zu Werl und Neuwerk"
+	name = "Ministerpräsident Franz Von Papen"
 	desc = ""
-	picture = "gfx/leaders/PRE/PRE_Papen.tga"
+	picture = "PRE_Papen.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -72,9 +75,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Königin Victoria I Von Hohenzollern"
+	name = "Kaiserin Victoria I Von Hohenzollern"
 	desc = ""
-	picture = "gfx/leaders/PRE/PRE_Victoria.tga"
+	picture = "PRE_Victoria.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -82,9 +85,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "König Wilhelm III Von Hohenzollern"
+	name = "Kaiser Wilhelm III Von Hohenzollern"
 	desc = ""
-	picture = "gfx/leaders/PRE/PRE_WilhelmIII.tga"
+	picture = "PRE_WilhelmIII.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -92,7 +95,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "König Wilhelm II Von Hohenzollern"
+	name = "Kaiser Wilhelm II Von Hohenzollern"
 	desc = ""
 	picture = "gfx/leaders/Misc/Prussia.dds"
 	expire = "1965.1.1"
@@ -102,9 +105,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Präsident Gustav Ernst Stresemann"
+	name = "Ministerpräsident Gustav Stresemann"
 	desc = ""
-	picture = "gfx/leaders/PRE/PRE_Stresemann.tga"
+	picture = "PRE_Stresemann.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -112,9 +115,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Kaiser August IV Von Hohenzollern"
+	desc = ""
+	picture = "PRE_August.tga"
+	expire = "1965.1.1"
+	ideology = conmon
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Führer Anton Drexler"
 	desc = ""
-	picture = "gfx/leaders/PRE/PRE_Drexler.tga"
+	picture = "PRE_Drexler.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -122,9 +135,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Oberbefehlshaber Werner Eduard Fritz von Blomberg"
+	name = "Generalfeldmarschall Werner Eduard Fritz von Blomberg"
 	desc = ""
-	picture = "gfx/leaders/PRE/PRE_Blomberg.tga"
+	picture = "PRE_Blomberg.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -132,9 +145,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Herrscher Anton Ludwig Friedrich August von Mackensen"
+	name = "Generalfeldmarschall August Von Mackensen"
 	desc = ""
-	picture = "gfx/leaders/GMA/GMA_Mackensen.tga"
+	picture = "PRE_Mackensen.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -152,9 +165,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Großmeister Friedrich-Werner Erdmann Matthias Johann Bernhard Erich Graf von der Schulenburg"
+	name = "Praeses Friedrich Werner"
 	desc = ""
-	picture = "gfx/leaders/PRE/PRE_Werner.tga"
+	picture = "PRE_Werner.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -172,9 +185,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Reichsführer Alfred Hugenberg"
+	name = "Reichspräsident Alfred Hugenberg"
 	desc = ""
-	picture = "gfx/leaders/PRE/PRE_Hugenberg.tga"
+	picture = "PRE_Hugenberg.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -184,19 +197,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ministerpräsident Hermann Wilhelm Göring"
 	desc = ""
-	picture = "gfx/leaders/PRE/PRE_Goering.tga"
+	picture = "PRE_Goering.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Company Leadership"
-	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = ancap
 	traits = {
 	}
 }
@@ -217,6 +220,47 @@ create_country_leader = {
 	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
 	expire = "1965.1.1"
 	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
+}}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
 	traits = {
 	}
 }

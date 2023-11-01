@@ -1,18 +1,19 @@
 ﻿capital = 46
 
-set_country_flag = has_secondary_leader
+oob = "ROM_1936"
 
-set_popularities = {
-	socialist_monarchy = 2
-	democratic_monarchism = 1
-	centrist_monarchism = 24
-	conservative_monarchism = 8
-	anocratic_monarchism = 52
-	fascism = 8
-	national_socialism = 5
-}
-set_politics = { 
-	ruling_party = anocratic_monarchism
+	set_popularities = {
+		authoritarian_monarchism 
+			 = 60
+		fascism
+			 = 18
+		communism
+			 = 2
+		neutrality 
+			 = 20
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1933.12.20"
 	election_frequency = 48
 	elections_allowed = yes
@@ -21,15 +22,7 @@ set_politics = {
 create_country_leader = {
 	name = "Rege Carol II de Hohenzollern-Sigmaringen"
 	desc = ""
-	picture = "gfx/leaders/ROM/Portrait_Carol_II.dds"
-	expire = "1945.1.1"
-	ideology = anocmon_national_liberalism
-}
-
-create_country_leader = {
-	name = "Rege Carol II de Hohenzollern-Sigmaringen"
-	desc = ""
-	picture = "gfx/leaders/ROM/Portrait_Carol_II.dds"
+	picture = "Portrait_Carol_II.dds"
 	expire = "1945.1.1"
 	ideology = authmon
 }
@@ -37,7 +30,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rege Mihai de Hohenzollern-Sigmaringen"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_Mihail.tga"
+	picture = "ROM_MihaI.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -47,17 +40,18 @@ create_country_leader = {
 create_country_leader = {
 	name = "Conducător Octavian Goga"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_Goga.tga"
+	picture = "ROM_Goga.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Împărat Carol II de Hohenzollern-Sigmaringen"
 	desc = ""
-	picture = "gfx/leaders/ROM/Portrait_Carol_II.dds"
+	picture = "Portrait_Carol_II.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -67,7 +61,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Președinte Armand Călinescu"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_Calinescu.tga"
+	picture = "ROM_Calinescu.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -77,7 +71,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Secretar General Gheorghe Gheorghiu-Dej"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_Dej.tga"
+	picture = "ROM_Dej.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -87,7 +81,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Conducător Nicolae Ceaușescu"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_Ceausescu.tga"
+	picture = "ROM_Ceausescu.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -97,7 +91,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Președinte Constantin Titel Petrescu"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_Petrescu.tga"
+	picture = "ROM_Petrescu.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -107,7 +101,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rege Carol III de Hohenzollern-Sigmaringen"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_CarolIII.tga"
+	picture = "ROM_CarolIII.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -117,9 +111,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Președinte Alexandru Vaida-Voevod"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_Vievod.tga"
+	picture = "ROM_Vievod.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -127,7 +121,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rege Frederic de Hohenzollern-Sigmaringen"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_FredericI.tga"
+	picture = "ROM_FredericI.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -137,7 +131,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Cancelar Gheorghe Tătăresc"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_Tatarescu.tga"
+	picture = "ROM_Tataresci.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -147,7 +141,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prinţ-Regent Nicolae de Hohenzollern-Sigmaringen"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_NicolaeI.tga"
+	picture = "ROM_NicolaeI.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -157,7 +151,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Președinte Alexandru Averescu"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_Averescu.tga"
+	picture = "ROM_Averescu.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -165,21 +159,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Președinte Alexandru Averescu"
-	desc = ""
-	picture = "gfx/leaders/ROM/ROM_Averescu.tga"
-	expire = "1965.1.1"
-	ideology = anocrep
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Comandant șef Alexandru Averescu"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_Averescu.tga"
+	picture = "ROM_Averescu.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
@@ -187,9 +171,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Conducător Ion Antonescu"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_Antonescu.tga"
+	picture = "ROM_Antonescu.tga"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = stratmon
 	traits = {
 	}
 }
@@ -197,7 +181,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Patriarh Miron I, Arhiepiscop de București"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_MironI.tga"
+	picture = "ROM_MironI.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -207,9 +191,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rege Mihai de Hohenzollern-Sigmaringen"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_Mihail.tga"
+	picture = "ROM_MihaiI.tga"
 	expire = "1965.1.1"
-	ideology = stratmon
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -217,7 +201,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Conducător Corneliu Zelea Codreanu"
 	desc = ""
-	picture = "gfx/leaders/ROM/ROM_Cordreanu.tga"
+	picture = "ROM_Codreanu.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {

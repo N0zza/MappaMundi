@@ -1,5 +1,19 @@
 ﻿capital = 5080
-
+
+oob = "MBV_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	tech_support = 1		
+	tech_engineers = 1
+	early_fighter = 1
+}
+set_war_support = 0.1
+set_stability = 0.8
+
 
 	set_popularities = {
 		democratic 
@@ -11,7 +25,7 @@
 		}
 	set_politics = { 
  ruling_party = democratic
-	last_election = "1934.6.3.12"
+	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = yes
 }
@@ -19,9 +33,9 @@
 create_country_leader = {
 	name = "Julian"
 	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
+	picture = "To_be_added.dds"
 	expire = ""
-	ideology = liberal_conservatism
+	ideology = liberalism
 	traits = {
 	}
 }

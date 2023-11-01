@@ -1,24 +1,37 @@
 ﻿capital = 908
 
-set_popularities = {
-	democratic = 92
-	fascism = 5
-	communism = 3
-}
+oob = "NEG_1936"
 
-set_politics = { 
-	ruling_party = democratic
+set_convoys = 30
+
+
+
+	set_popularities = {
+		democratic 
+			 = 92
+		fascism
+			 = 5
+		communism
+			 = 3
+		}
+	set_politics = { 
+ ruling_party = democratic
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+add_ideas = {
+	disarmed_nation
+	free_trade
+}
+
 create_country_leader = {
 	name = "President Raymond Earl Baldwin"
 	desc = ""
-	picture = "gfx/leaders/NEG/NEG_Baldwin.tga"
+	picture = "NEG_Baldwin.tga"
 	expire = "1950.1.1"
-	ideology = liberal_conservatism
+	ideology = liberalism
 	traits = {
 	}
 }
@@ -26,7 +39,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chief William Dudley Pelley"
 	desc = ""
-	picture = "gfx/leaders/NEG/NEG_Pelley.tga"
+	picture = "NEG_Pelley.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -36,7 +49,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chairman William Z. Foster"
 	desc = ""
-	picture = "gfx/leaders/NEG/NEG_Foster.tga"
+	picture = "NEG_Foster.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -56,7 +69,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichskommissar Alfred Josef Ferdinand Jodl"
 	desc = ""
-	picture = "gfx/leaders/NEG/NEG_Jodl.tga"
+	picture = "NEG_Jodl.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -66,7 +79,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President James Francis Carey"
 	desc = ""
-	picture = "gfx/leaders/NEG/NEG_Carey.tga"
+	picture = "NEG_Carey.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -74,9 +87,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Governor-General Winston Leonard Spencer Churchill"
+	name = "General Governor Winston Leonard Spencer Churchill"
 	desc = ""
-	picture = "gfx/leaders/NEG/NEG_Churchill.tga"
+	picture = "NEG_Churchill.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -86,7 +99,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "General Secretary William Z. Foster"
 	desc = ""
-	picture = "gfx/leaders/NEG/NEG_Foster.tga"
+	picture = "NEG_Foster.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -96,9 +109,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Louis Jefferson Brann"
 	desc = ""
-	picture = "gfx/leaders/NEG/Portrait_New_England_Louis_Brann.dds"
+	picture = "Portrait_New_England_Louis_Brann.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -106,7 +119,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister Joseph Patrick Kennedy"
 	desc = ""
-	picture = "gfx/leaders/NEG/NEG_Kennedy.tga"
+	picture = "NEG_Kennedy.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -116,7 +129,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister Joseph William Martin Jr"
 	desc = ""
-	picture = "gfx/leaders/NEG/NEG_Martin.tga"
+	picture = "NEG_Martin.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -126,7 +139,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Charles F. Hurley"
 	desc = ""
-	picture = "gfx/leaders/NEG/NEG_Hurley.tga"
+	picture = "NEG_Hurley.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -136,7 +149,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Clement Armitage"
 	desc = ""
-	picture = "gfx/leaders/NEG/NEG_Armitage.tga"
+	picture = "NEG_Armitage.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -146,7 +159,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "King Edward VIII of Winsdor"
 	desc = ""
-	picture = "gfx/leaders/NEG/NEG_Edward.tga"
+	picture = "NEG_Edward.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {

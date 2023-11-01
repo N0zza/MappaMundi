@@ -1,5 +1,18 @@
 ﻿capital = 316
 
+oob = "COS_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+set_country_flag = monroe_doctrine
+
+set_war_support = 0.1
+
+set_convoys = 10
+
+
 
 	set_popularities = {
 		democratic 
@@ -20,9 +33,9 @@
 create_country_leader = {
 	name = "Presidente Romualdo Ricardo Jiménez Oreamuno"
 	desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
-	picture = "gfx/leaders/COS/Portrait_costa_rica_ricardo_jiminez_oreamuno.dds"
+	picture = "Portrait_costa_rica_ricardo_jiminez_oreamuno.dds"
 	expire = "1965.1.1"
-	ideology = liberal_conservatism
+	ideology = liberalism
 	traits = {
 		#
 	}
@@ -31,9 +44,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Cleto de Jesús González Víquez"
 	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
-	picture = "gfx/leaders/COS/COS_Cleto_libdem.tga"
+	picture = "COS_Cleto_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism 
+	ideology = socdem 
 	traits = {
 		#
 	}
@@ -42,7 +55,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente León Cortés Castro"
 	desc = ""
-	picture = "gfx/leaders/COS/COS_Castro_authdem.tga"
+	picture = "COS_Castro_authdem.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -53,7 +66,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Secretario General Manuel Mora Valverde"
 	desc = ""
-	picture = "gfx/leaders/COS/COS_Manuel_vanguard.tga"
+	picture = "COS_Manuel_vanguard.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -64,7 +77,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Carmen Lyra"
 	desc = ""
-	picture = "gfx/leaders/COS/COS_Carmen_commie.tga"
+	picture = "COS_Carmen_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -75,7 +88,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente José María Hipólito Figueres Ferrer"
 	desc = ""
-	picture = "gfx/leaders/COS/COS_Jose_demsoc.tga"
+	picture = "COS_Jose_demsoc.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -85,7 +98,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rey Friedrich Franz I de Hohenlohe-Waldenburg"
 	desc = ""
-	picture = "gfx/leaders/COS/COS_Friedrich_mon.tga"
+	picture = "COS_Friedrich_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -95,7 +108,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gobernador José María de la Blanca Finat y Escrivá de Romaní"
 	desc = ""
-	picture = "gfx/leaders/COS/COS_Romani_stratmon.tga"
+	picture = "COS_Romani_stratmon.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -105,7 +118,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Duque Cristóbal III Colón de Carvajal"
 	desc = ""
-	picture = "gfx/leaders/COS/COS_Columbus_authmon.tga"
+	picture = "COS_Columbus_authmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {

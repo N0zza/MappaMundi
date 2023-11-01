@@ -1,31 +1,38 @@
 ﻿capital = 2736
+
+oob = "NFL_1936"
 set_cosmetic_tag = UK_RED
- set_popularities = {
-	authoritarian_monarchism = 80
-	democratic_monarchism = 10
-	conservative_monarchism = 10	
- }
- set_politics = { 
-	ruling_party = authoritarian_monarchism
+	set_popularities = {
+		authoritarian_monarchism 
+			 = 80
+		democratic_monarchism
+			 = 10
+		conservative_monarchism
+			 = 10
+			
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1935.10.14"
 	election_frequency = 60
 	elections_allowed = yes
- }
+}
 
 create_country_leader = {
-	name = "Governor Sir David Murray Anderson"
+	name = "Commission Governor Sir Humphrey Thomas Walwyn"
 	desc = ""
-	picture = "gfx/leaders/NFL/NFL_Anderson.tga"
+	picture = "Portrait_Humphrey_Walwyn.dds"
 	expire = "1965.1.1"
-	ideology = authmon_colonialism
+	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Governor Sir Humphrey Thomas Walwyn"
 	desc = ""
-	picture = "gfx/leaders/NFL/Portrait_Humphrey_Walwyn.dds"
+	picture = "Portrait_Humphrey_Walwyn.dds"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -36,7 +43,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governador José Mendes Cabeçadas Júnior"
 	desc = ""
-	picture = "gfx/leaders/NFL/NFL_Cabecadas.tga"
+	picture = "NFL_Cabecadas.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -46,9 +53,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Joseph Roberts Smallwood"
 	desc = ""
-	picture = "gfx/leaders/NFL/NFL_Smallwood.tga"
+	picture = "NFL_Smallwood.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -56,7 +63,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premier Joseph Roberts Smallwood"
 	desc = ""
-	picture = "gfx/leaders/NFL/NFL_Smallwood.tga"
+	picture = "NFL_Smallwood.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -66,7 +73,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chairman Joseph Roberts Smallwood"
 	desc = ""
-	picture = "gfx/leaders/NFL/NFL_Smallwood.tga"
+	picture = "NFL_Smallwood.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -76,7 +83,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Minister-President Frederick Charles Alderdice"
 	desc = ""
-	picture = "gfx/leaders/NFL/NFL_Alderdice.tga"
+	picture = "NFL_Alderdice.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -86,7 +93,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premier Frederick Charles Alderdice"
 	desc = ""
-	picture = "gfx/leaders/NFL/NFL_Alderdice.tga"
+	picture = "NFL_Alderdice.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -96,7 +103,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "King Frederick I of Alderdice"
 	desc = ""
-	picture = "gfx/leaders/NFL/NFL_Alderdice.tga"
+	picture = "NFL_Alderdice.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {

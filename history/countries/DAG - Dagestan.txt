@@ -1,32 +1,62 @@
 ﻿capital = 10136
 
-set_popularities = {
-	vanguardism = 100	
+oob = "DAG_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
 }
+
+
+set_convoys = 10
+
+
+
+	set_popularities = {
+        neutrality = 0
+        monarchism = 0
+        democratic = 10
+        liberal_republic = 0
+        communism = 0
+        vanguardism = 90
+        fascism = 0
+        anarchism_ideology = 0
+        socialism_ideology = 0
+        democratic_monarchism = 0
+        conservative_monarchism = 0
+        stratocratic = 0
+        authoritarian_monarchism = 0
+        republican_fascism = 0
+        national_socialism = 0
+        theocratic = 0
+	}
 	
-set_cosmetic_tag = RUS_RED
+set_cosmetic_tag = DAG_SOV
 	
-set_politics = { 
-	ruling_party = vanguardism
+	set_politics = { 
+ ruling_party = vanguardism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Predsedátelʹ Dagestánskogo obkóma VKP(b) Nažmutdín Panaxovič Samurskij"
+	name = "Predsedátel' Nažmutdín Panaxovič Samurskij"
 	desc = ""
-	picture = "gfx/leaders/DAG/Nazhmutdin_Panakhovich_Samurskiy.tga"
+	picture = "Nazhmutdin_Panakhovich_Samurskiy.tga"
 	expire = "1960.1.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Predsedatel Rashid Khan Zavid oglu Gaplanov"
 	desc = ""
-	picture = "gfx/leaders/DAG/DAG_Gaplanov_dem.tga"
+	picture = "DAG_Gaplanov_dem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {

@@ -1,7 +1,15 @@
 ﻿capital = 17404
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+}
 set_cosmetic_tag = FRA_COLONY
-set_country_flag = has_secondary_leader
-set_country_flag = has_tertiary_leader
+set_convoys = 5
+
+
+
 
 	set_popularities = {
 		liberal_republic 
@@ -17,9 +25,9 @@ set_country_flag = has_tertiary_leader
 }
 
 create_country_leader = {
-	name = "Rayiys Habib Pacha es-Saad"
+	name = "Rayiys Habib Pacha El-Saad"
 	desc = ""
-	picture = "gfx/leaders/LEB/LEB_Habib_cenrep.tga"
+	picture = "LEB_Habib_cenrep.tga"
 	ideology = cenrep
 	traits = {
 		#
@@ -29,8 +37,8 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Émile Ibrahim Eddé"
 	desc = ""
-	picture = "gfx/leaders/LEB/Portrait_Emile_Eddie.dds"
-	ideology = liberalism
+	picture = "Portrait_Emile_Eddie.dds"
+	ideology = socdem
 	traits = {
 		#
 	}
@@ -49,7 +57,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premier Ministre Bechara Khalil El Khoury"
 	desc = ""
-	picture = "gfx/leaders/LEB/LEB_Khalil_authrep.tga"
+	picture = "LEB_Khalil_authrep.tga"
 	ideology = despotism
 	traits = {
 		#
@@ -69,7 +77,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Milk Ahmad I El-Assaad"
 	desc = ""
-	picture = "gfx/leaders/LEB/LEB_Asaad_mon.tga"
+	picture = "LEB_Asaad_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -79,7 +87,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Zaeim Pierre Gemayel"
 	desc = ""
-	picture = "gfx/leaders/LEB/LEB_Pierre_repfash.tga"
+	picture = "LEB_Pierre_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {

@@ -1,16 +1,36 @@
 ﻿capital = 1565
 
-set_cosmetic_tag = UK_RED
+oob = "ENG_gen"
 
-set_popularities = {
-	democratic = 10
-	liberal_republic = 10
-	neutrality = 10
-	authoritarian_monarchism = 70
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
 }
 
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+set_cosmetic_tag = UK_RED
+
+set_convoys = 20
+
+
+
+	set_popularities = {
+		democratic
+			 = 10
+			
+		
+		
+		liberal_republic
+			 = 10
+		
+		
+		neutrality
+			 = 10
+		authoritarian_monarchism 
+			 = 70
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -19,17 +39,18 @@ set_politics = {
 create_country_leader = {
 	name = "Governor Sir Bernard Henry Bourdillon"
 	desc = ""
-	picture = "gfx/leaders/NGA/Portrait_Bernard_Henry_Bourdillon.dds" 
+	picture = "Portrait_Bernard_Henry_Bourdillon.dds" 
 	ideology = authmon
 	expire = "1948.2.6"
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Reichsprotektor Otto Maximilian Hitzfeld"
 	desc = ""
-	picture = "gfx/leaders/NGA/NGA_Hitzfeld.tga"
+	picture = "NGA_Hitzfeld.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -39,7 +60,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "King Siddiq Abubakar III"
 	desc = ""
-	picture = "gfx/leaders/NGA/NGA_Abubakar.tga"
+	picture = "NGA_Abubakar.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -49,7 +70,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Khalifa Siddiq Abubakar III"
 	desc = ""
-	picture = "gfx/leaders/NGA/NGA_Abubakar.tga"
+	picture = "NGA_Abubakar.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -59,9 +80,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister Obafemi Jeremiah Oyeniyi Awolowo"
 	desc = ""
-	picture = "gfx/leaders/NGA/NGA_Awolowo_libdem.tga"
+	picture = "NGA_Awolowo_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -69,7 +90,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Nnamdi Benjamin Azikiwe"
 	desc = ""
-	picture = "gfx/leaders/NGA/NGA_Azikiwe_condem.tga"
+	picture = "NGA_Azikiwe_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -79,19 +100,20 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chairman Samuel Akisanya"
 	desc = ""
-	picture = "gfx/leaders/NGA/NGA_Akisanya_demsoc.tga"
+	picture = "NGA_Akisanya_demsoc.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Gouverneur Otto Maximilian Hitzfeld"
 	desc = ""
-	picture = "gfx/leaders/NGA/NGA_Hitzfeld.tga"
+	picture = "NGA_Hitzfeld.tga"
 	expire = "1989.1.1"
-	ideology = stratmon_colonialism
+	ideology = stratmon
 	traits = {
 	}
 }
@@ -99,7 +121,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Olayinka Herbert Macaulay"
 	desc = ""
-	picture = "gfx/leaders/NGA/NGA_Macaulay.tga"
+	picture = "NGA_Macaulay.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {

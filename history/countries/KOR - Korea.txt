@@ -1,42 +1,63 @@
-﻿capital = 525 #Keijō (Seoul)
+﻿capital = 525 #South Korea - Seoul
 
-set_cosmetic_tag = JAP_COLONY
+oob = "KOR_1936"
 
-set_popularities = {
-	stratocratic_monarchism = 100
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
 }
 
-set_politics = { 
-	ruling_party = stratocratic_monarchism
+set_convoys = 5
+set_cosmetic_tag = KOR_JAP
+
+
+	set_popularities = {
+		democratic 
+			 = 10
+		fascism
+			 = 10
+		communism
+			 = 5
+		stratocratic_monarchism
+			 = 55
+		neutrality
+			 = 20
+		
+	}
+	set_politics = { 
+ ruling_party = stratocratic_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Sotoku Kazushige Ugaki"
+	name = "Chosen Sotoku Kazushige Ugaki"
 	desc = ""
-	picture = "gfx/leaders/KOR/Kazushige_Ugaki.dds"
+	picture = "Kazushige_Ugaki.dds"
 	expire = "1965.1.1"
-	ideology = stratmon_colonialism
+	ideology = stratmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Samu Chongjang Kim Il-sung"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Kim_Il-sung.tga"
+	picture = "KOR_Kim_Il-sung.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Daetonglyeong Ho Hon"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Ho_Hon.tga"
+	picture = "KOR_Ho_Hon.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -46,7 +67,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Daetonglyeong Cho Man-sik"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Cho_Man-Sik.tga"
+	picture = "KOR_Cho_Man-Sik.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -56,7 +77,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Wang Kim Il-sung"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Kim_Il-sung.tga"
+	picture = "KOR_Kim_Il-sung.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -66,9 +87,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chongli Lyuh Woon-hyung"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Lyuh_Woon-hyung.tga"
+	picture = "KOR_Lyuh_Woon-hyung.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -76,7 +97,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Daetonglyeong Kim Gu"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Kim_Gu.tga"
+	picture = "KOR_Kim_Gu.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -86,7 +107,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Wang Yi Kang"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Kang.tga"
+	picture = "KOR_Kang.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -96,7 +117,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gongjag Yi Kang"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Kang.tga"
+	picture = "KOR_Kang.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -106,7 +127,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Jang-gwan Kim Kyu-sik"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Kim_Kyu-Sik.tga"
+	picture = "KOR_Kim_Kyu-Sik.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -116,7 +137,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chiji Saito Makoto"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Saito_Makoto.tga"
+	picture = "KOR_Saito_Makoto.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -126,7 +147,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Daetongnyeong Syngman Rhee"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Syngman_Rhee.tga"
+	picture = "KOR_Syngman_Rhee.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -136,7 +157,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chongsalyeong-gwan Ji Cheong-cheon"
 	desc = ""
-	picture = "gfx/leaders/KOR/Portrait/Ji_Cheong-cheon.tga"
+	picture = "Ji_Cheong-cheon.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -146,7 +167,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Wang Yi Un"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Yi_Un.tga"
+	picture = "KOR_Yi_Un.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -156,17 +177,18 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hwangje Yi Un"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Yi_Un.tga"
+	picture = "KOR_Yi_Un.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
 	}
 }
 
+
 create_country_leader = {
 	name = "Gajang Kang Ryang-uk"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Kang_Ryang-Uk.tga"
+	picture = "KOR_Kang_Ryang-Uk.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -176,7 +198,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hwangje Yi Un"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Yi_Un.tga"
+	picture = "KOR_Yi_Un.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -186,7 +208,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Jidoja Yeom Dong-jin"
 	desc = ""
-	picture = "gfx/leaders/KOR/KOR_Yeom Dong-jin.tga"
+	picture = "KOR_Yeom Dong-jin.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -196,7 +218,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Eugen Ott"
 	desc = ""
-	picture = "gfx/leaders/ROK/ROK_Eugen_Ott.tga"
+	picture = "ROK_Eugen_Ott.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

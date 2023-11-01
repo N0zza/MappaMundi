@@ -1,12 +1,23 @@
 ﻿capital = 597
 
-set_popularities = {
-	stratocratic = 60			
-	neutrality = 40		
-}
+oob = "SHD_1936"
 
-set_politics = { 
-	ruling_party = stratocratic
+
+
+	set_popularities = {
+		democratic
+			 = 0
+		fascism
+			 = 0
+		stratocratic
+			 = 60
+			
+		neutrality
+			 = 40
+		
+	}
+	set_politics = { 
+ ruling_party = stratocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -15,20 +26,22 @@ set_politics = {
 create_country_leader = {
 	name = "Chou ch'ang Han Fuchu"
 	desc = ""
-	picture = "gfx/leaders/SHG/Portrait_Han_Fuju.tga"
+	picture = "Portrait_Han_Fuju.tga"
 	expire = "1975.7.1"
-	ideology = warlordism
+	ideology = militarism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Chou ch'ang Han Fuchu"
 	desc = ""
-	picture = "gfx/leaders/SHG/Portrait_Han_Fuju.tga"
+	picture = "Portrait_Han_Fuju.tga"
 	expire = "1975.7.1"
 	ideology = oligarchism
 	traits = {
+		#
 	}
 }
 

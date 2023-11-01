@@ -1,33 +1,33 @@
 ﻿capital = 4732
 
-set_country_flag = has_secondary_leader
+oob = "IND_1936"
 
-set_popularities = {
-	socialist_monarchy = 53
-	conservative_monarchism = 19
-	centrist_monarchism = 4
-	authoritarian_monarchism = 24
-}
-
-set_politics = { 
-	ruling_party = socialist_monarchy
-	last_election = "1935.11.14"
-	election_frequency = 48
-	elections_allowed = no
+	set_popularities = {
+		democratic = 17
+		fascism = 2
+		communism = 1
+		authoritarian_monarchism = 80
+		}
+	set_politics = { 
+		ruling_party = authoritarian_monarchism
+		last_election = "1935.11.14"
+		election_frequency = 48
+		elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Adhyakṣ Āyilyatt Kuṯṯyār Gōpālan Nampyār"
+	name = "Mahaasachiv Ayillyath Kuttiari Gopalan"
 	desc = ""
 	picture = "gfx/leaders/India/RAJ_Gopalan.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
-	name = "Shāhanshāhān Xayr-ud-Din I"
+	name = "Khan Muhammad Fayazuddin Mirza"
 	desc = ""
 	picture = "gfx/leaders/India/IND_Fayazuddin.tga"
 	expire = "1989.1.1"
@@ -37,19 +37,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Adhināyak Vināyak Dāmōdar Sāvarakar"
+	name = "Adhyaksh Vinayak Damodar Savarkar"
 	desc = ""
 	picture = "gfx/leaders/India/RAJ_Savarkar.tga"
 	expire = "1965.1.1"
-	ideology = authoritarian_conservatism
+	ideology = oligarchism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Rāṣṭrapati Rājēndra Prasād"
+	name = "Pradhaan Mantree Jawaharlal Nehru"
 	desc = ""
-	picture = "gfx/leaders/India/RAJ_Prasad.tga"
+	picture = "gfx/leaders/India/nehru.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -57,7 +57,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Adhināyak Ācārya Narēndra Dēv"
+	name = "Pradhaan Acharya Narendra Deva"
 	desc = ""
 	picture = "gfx/leaders/India/RAJ_Deva.tga"
 	expire = "1965.1.1"
@@ -67,27 +67,27 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Rāja Kr̥ṣṇarāja IV Oḍeyaru"
+	name = "Maharaja Krishnaraja Wadiyar"
 	desc = ""
 	picture = "gfx/leaders/India/IND_Krishnaraja.dds"
 	expire = "1965.1.1"
-	ideology = authmon_authoritarian_conservatism
+	ideology = monsoc
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Rāṣṭrapati Mōhandās Karamacand Gāndhī"
+	name = "Kulaadhipati Mohandas Karamchand Gandhi"
 	desc = ""
 	picture = "gfx/leaders/India/RAJ_Gandhi.tga"
 	expire = "1965.1.1"
-	ideology = social_liberalism
+	ideology = socdem
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Rāṣṭrapati Kēśav Balirām Hēḍgēvār"
+	name = "Adhyaksh Keshav Baliram Hedgewar"
 	desc = ""
 	picture = "gfx/leaders/India/RAJ_Hedgewar.tga"
 	expire = "1965.1.1"
@@ -97,17 +97,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Chatrapati Rājārām III"
+	name = "Maharaja Madhavrao III"
 	desc = ""
-	picture = "gfx/leaders/Princely/holhapur.dds"
+	picture = "gfx/leaders/India/Madhavrao_Standin.dds"
 	expire = "1965.1.1"
-	ideology = libmon_conservative_liberalism
+	ideology = liberal_constitutionalism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Soltān Ebrāhim Xān Ludi II"
+	name = "Sulataan Ibrahim Khan Lodi II"
 	desc = ""
 	picture = "gfx/leaders/India/Lodi_Standin.dds"
 	expire = "1965.1.1"
@@ -117,31 +117,31 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Rāṣṭrapati Bhōgarāju Paṭṭābhi Sītārāmayya"
+	name = "Adhyaksh Bhogaraju Pattabhi Sitaramayya"
 	desc = ""
 	picture = "gfx/leaders/India/RAJ_Sitaramayya.tga"
 	expire = "1965.1.1"
-	ideology = national_liberalism
+	ideology = cenrep
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Niẓām ul-Mulk Mīr ʻOs̱mān ʻAlī K͟hān, Āsaf Jāh VII"
+	name = "Nizam-al-Mulk Osman Ali Khan"
 	desc = ""
 	picture = "gfx/leaders/India/IND_Khan.tga"
 	expire = "1965.1.1"
-	ideology = cenmon_national_conservatism
+	ideology = cenmon
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Mukhya Sēnādhyakṣ Koṭantera Mātappā Kāriyappā"
+	name = "Pramukh Kamaandar Kodandera Madappa Cariappa"
 	desc = ""
 	picture = "gfx/leaders/India/IND_Cariappa.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
@@ -151,13 +151,13 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/India/IND_Mountbatten.tga"
 	expire = "1965.1.1"
-	ideology = monsoc
+	ideology = authmon
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Mahārāja Kr̥ṣṇarāja IV Oḍeyaru"
+	name = "Maharaja Krishnaraja Wadiyar"
 	desc = ""
 	picture = "gfx/leaders/India/IND_Krishnaraja.dds"
 	expire = "1965.1.1"
@@ -167,7 +167,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Guru Arvind Ghōṣ"
+	name = "Guru Sri Aurobindo"
 	desc = ""
 	picture = "gfx/leaders/India/IND_Aurobindo.tga"
 	expire = "1965.1.1"
@@ -177,17 +177,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Mahārājā Jīvājīrāv Sindhiyā"
+	name = "Maharaja Jiwajirao Scindia"
 	desc = ""
 	picture = "gfx/leaders/India/IND_Scindia.dds"
 	expire = "1965.1.1"
-	ideology = ultranationalism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Rāṣṭrapati Subhāṣ Candra Bōs"
+	name = "Adhyaksh Subhas Chandra Bose"
 	desc = ""
 	picture = "gfx/leaders/India/RAJ_Bose.tga"
 	expire = "1965.1.1"
@@ -197,7 +197,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Rāṣṭrapati, Pradhānmantrī tathā Sēnādhyakṣ Subhāṣ Candra Bōs"
+	name = "Adhyaksh Subhas Chandra Bose"
 	desc = ""
 	picture = "gfx/leaders/India/RAJ_Bose.tga"
 	expire = "1965.1.1"

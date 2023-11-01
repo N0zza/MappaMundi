@@ -1,34 +1,28 @@
 ﻿capital = 202 #Kiev
 
-set_cosmetic_tag = RUS_RED
-set_country_flag = has_secondary_leader
-set_country_flag = has_tertiary_leader
+oob = "UKR_1936"
 
-set_popularities = {
-	vanguardism = 100	
-}
+set_cosmetic_tag = UKR_SOV
 
-set_politics = { 
-	ruling_party = vanguardism
+	set_popularities = {
+		democratic 
+			 = 20
+		fascism
+			 = 30
+		vanguardism
+			 = 50
+		}
+	set_politics = { 
+ ruling_party = vanguardism
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Predsedátelʹ VUTsIK Grigóriy Ivánovich Petróvskiy"
+	name = "Velykyy Knyaz Danylo Skoropadśkyj"
 	desc = ""
-	picture = "gfx/leaders/UKR/Petrovskiy.dds"
-	expire = "1965.1.1"
-	ideology = totsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Velýkyy Knyaz' Danýlo Pávlovych Skoropáds'kyy"
-	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Skoropadsky.tga"
+	picture = "UKR_Skoropadsky.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -38,17 +32,18 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichskommissar Erich Koch"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Koch.tga"
+	picture = "UKR_Koch.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
-	name = "Velíkij Gércog Andréj I Romanóvskij"
+	name = "Velikiy Gertsog Andrei I Romanovskiy"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_AndreiI.tga"
+	picture = "UKR_AndreiI.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -56,9 +51,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prezydént Stepán Porfýrovych Výtvyts'kyy"
+	name = "Prezydent Stepan Vytvyts'kyy"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Vytvytskyi.tga"
+	picture = "UKR_Vytvytskyi.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -66,19 +61,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Henerál'nyy Sekretár ‎Andríy Mykoláyovych Livýts'kyy"
+	name = "Holova Hryhoryy Ivanovych Petrovs'kyy"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Livyski.tga"
+	picture = "Petrovskiy.dds"
 	expire = "1965.1.1"
-	ideology = demsoc
+	ideology = totsoc
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Prem'yér Mykýta Serhíyovych Khrushchóv"
+	name = "Heneral'nyy Sekretar Andriy Mykolayovych Livyts'kyy"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Khrushchev.tga"
+	picture = "UKR_Livyski.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -86,9 +81,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Hét'man Danýlo Pávlovych Skoropáds'kyy"
+	name = "Prem'yer Mykýta Serhíyovych Khrushchóv"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Skoropadsky.tga"
+	picture = "UKR_Khrushchev.tga"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Hetman Danylo Skoropadśkyj"
+	desc = ""
+	picture = "UKR_Skoropadsky.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -96,19 +101,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prezydént ‎Andríy Mykoláyovych Livýts'kyy"
+	name = "Prezydent Andriy Mykolayovych Livyts'kyy"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Livyski.tga"
+	picture = "UKR_Livyski.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Koról' Danýlo I Skoropáds'kyy"
+	name = "Korol Danylo Skoropadśkyj"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Skoropadsky.tga"
+	picture = "UKR_Skoropadsky.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -116,9 +121,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kántsler ‎Mykolá Andríyovych Livýts'kyy"
+	name = "Kantsler Mykola Andriyovych Livyts'kyy"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Levytsky.tga"
+	picture = "UKR_Levytsky.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -126,9 +131,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Knyaz' Pavló Petróvych Skoropáds'kyy"
+	name = "Prynts Pavlo Petrovyč Skoropadśkyj"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Skoropadskyi.tga"
+	picture = "UKR_Skoropadskyi.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -136,9 +141,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prezydént Dmytró Ivánovych Dóroshenko"
+	name = "Prezydent Dmytro Ivanovych Doroshenko"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Doroshenko.tga"
+	picture = "UKR_Doroshenko.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -146,19 +151,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Voyenachál'nyk Volodýmyr Oleksándrovych Antónov-Ovsíyenko"
+	name = "Voyenachal'nyk Volodymyr Oleksandrovych Antonov-Ovsyeyenko"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Ovseenko.tga"
+	picture = "UKR_Ovseenko.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Hét'man Pavló Petróvych Skoropáds'kyy"
+	name = "Hetman Pavlo Petrovyč Skoropadśkyj"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Skoropadskyi.tga"
+	picture = "UKR_Skoropadskyi.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -166,9 +171,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Koról' Vasýlʹ Vyshývanyy Hábsburhy-Lotarýnz'ki"
+	name = "Korol Vasyl I Vyshyvani"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Vasyl.tga"
+	picture = "UKR_Vasyl.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -176,9 +181,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Arkhiyepýskop Kostyantýn III Ekzárkh Ukrayíny"
+	name = "Arkhiyepyskop Kostyantyn III Ekzarkh Ukrayiny"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Constantine.tga"
+	picture = "UKR_Constantine.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -186,9 +191,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Imperátor Pavló I Skoropáds'kyy"
+	name = "Imperator Pavlo Petrovyč Skoropadśkyj"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Skoropadskyi.tga"
+	picture = "UKR_Skoropadskyi.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -196,11 +201,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Vozhd' Stepán Andríyovych Bandéra"
+	name = "Posibnyk Stepan Andriyovych Bandera"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Bandera.tga"
+	picture = "UKR_Bandera.tga"
 	expire = "1965.1.1"
-	ideology = repcorp_ultranationalism
+	ideology = repfash
 	traits = {
 	}
 }
@@ -216,9 +221,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Pérshyy Hromadyányn Néstor Ivánovych Makhnó"
+	name = "Pershyy Hromadyanyn Néstor Ivánovych Makhnó"
 	desc = ""
-	picture = "gfx/leaders/UKR/UKR_Makhno.tga"
+	picture = "UKR_Makhno.tga"
 	expire = "1965.1.1"
 	ideology = ancom
 	traits = {

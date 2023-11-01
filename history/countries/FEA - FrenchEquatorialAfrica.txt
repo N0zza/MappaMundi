@@ -1,14 +1,29 @@
 ﻿capital = 10024
 
+oob = "FEA_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+set_convoys = 10
+
 set_cosmetic_tag = FRA_COLONY
 
-set_popularities = {
-	neutrality =  90 
-	democratic =  10 
-}
+
+	set_popularities = {
+        neutrality =  90 
+        communism =  0 
+        democratic =  10 
+        
+
+	}
 	
-set_politics = { 
-	ruling_party = neutrality
+	set_politics = { 
+ ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -17,19 +32,20 @@ set_politics = {
 create_country_leader = {
 	name = "Gouverneur Général Joseph-François Reste de Roca"
 	desc = ""
-	picture = "gfx/leaders/FEA/Portrait_Dieudonne_Reste.dds"
-	ideology = colonialism
+	picture = "Portrait_Dieudonne_Reste.dds"
+	ideology = despotism
 	expire = "1978.10.27"
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Gouverneur Hans Krebs"
 	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Krebs.tga"
+	picture = "FEA_Krebs.tga"
 	expire = "1989.1.1"
-	ideology = stratmon_colonialism
+	ideology = stratmon
 	traits = {
 	}
 }
@@ -37,7 +53,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kuvernööri Aarne Sihvo"
 	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Sihvo_socmon.tga"
+	picture = "FEA_Sihvo_socmon.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -47,7 +63,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Henri Guissou"
 	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Guissou_condem.tga"
+	picture = "FEA_Guissou_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -57,7 +73,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sotoku Korechika Anami"
 	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Anami_libmon.tga"
+	picture = "FEA_Anami_libmon.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -67,7 +83,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Guverneru Aleksandar Cincar-Marković"
 	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Markovic_conmon.tga"
+	picture = "FEA_Markovic_conmon.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -77,7 +93,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Guvernér Alois Musil"
 	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Musil_cenrep.tga"
+	picture = "FEA_Musil_cenrep.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -87,7 +103,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "General-Gubernator Anatoly Nikolayevich Pepelyayev"
 	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Pepelyayev_cenmon.tga"
+	picture = "FEA_Pepelyayev_cenmon.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -97,7 +113,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Walter Bedell Smith"
 	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Smith_strat.tga"
+	picture = "FEA_Smith_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -107,7 +123,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor-General Sir Alexander Frank Philip Christison"
 	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Christison_authmon.tga"
+	picture = "FEA_Christison_authmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -117,7 +133,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Général Joseph-François Reste de Roca"
 	desc = ""
-	picture = "gfx/leaders/FEA/Portrait_Dieudonne_Reste.dds"
+	picture = "Portrait_Dieudonne_Reste.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -127,9 +143,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governatore Giovanni Giuriati"
 	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Giuriati_fash.tga"
+	picture = "FEA_Giuriati_fash.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -137,7 +153,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Hans Krebs"
 	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Krebs.tga"
+	picture = "FEA_Krebs.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

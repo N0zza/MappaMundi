@@ -1,36 +1,52 @@
 ﻿capital = 546
 
-set_cosmetic_tag = UK_RED
+oob = "ENG_gen"
 
-set_popularities = {
-	democratic = 10
-	socialism_ideology = 5
-	stratocratic = 5
-	authoritarian_monarchism = 80
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
 }
 
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+set_cosmetic_tag = UK_RED
+
+set_convoys = 5
+
+
+
+	set_popularities = {
+		democratic 
+			 = 10
+		socialism_ideology
+			 = 5
+		stratocratic
+			 = 5
+			
+		authoritarian_monarchism 
+			 = 80
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
+	
 	name = "Governor Sir Harold Alfred MacMichael"
 	picture = "gfx/leaders/TZN/Portrait_Harold_MacMichael.dds"
 	expire = "1969.2.19"
-	ideology = authmon_colonialism
-	traits = { 
-	}
+	ideology = authmon
+	traits = { }
 }
 
 create_country_leader = {
 	name = "Gouverneur Paul Emil von Lettow-Vorbeck"
 	desc = ""
-	picture = "gfx/leaders/TZN/TZN_Lettow.tga"
+	picture = "TZN_Lettow.tga"
 	expire = "1989.1.1"
-	ideology = stratmon_colonialism
+	ideology = stratmon
 	traits = {
 	}
 }
@@ -38,7 +54,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Louis Félix Franchet d'Espèrey"
 	desc = ""
-	picture = "gfx/leaders/TZN/TZN_Esperey_authrep.tga"
+	picture = "TZN_Esperey_authrep.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -48,17 +64,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Julius Kambarage Nyerere"
 	desc = ""
-	picture = "gfx/leaders/TZN/TZN_Nyerere_demsoc.tga"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "President Julius Kambarage Nyerere"
-	desc = ""
-	picture = "gfx/leaders/TZN/TZN_Nyerere_demsoc.tga"
+	picture = "TZN_Nyerere_demsoc.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -68,7 +74,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister Shaaban bin Robert"
 	desc = ""
-	picture = "gfx/leaders/TZN/TZN_Robert_condem.tga"
+	picture = "TZN_Robert_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -76,19 +82,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prime Minister Shaaban bin Robert"
-	desc = ""
-	picture = "gfx/leaders/TZN/TZN_Robert_condem.tga"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Commander-in-Chief David Bugozi Musuguri"
 	desc = ""
-	picture = "gfx/leaders/TZN/TZN_Musuguri_srtat.tga"
+	picture = "TZN_Musuguri_srtat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -98,7 +94,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mangi Mkuu Thomas Marealle II"
 	desc = ""
-	picture = "gfx/leaders/TZN/TZN_Marealle_mon.tga"
+	picture = "TZN_Marealle_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -106,19 +102,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Führer Hermann Wilhelm Göring"
-	desc = ""
-	picture = "gfx/leaders/COG/Portrait_von_Goering.dds"
-	expire = "1965.1.1"
-	ideology = repfash
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Reichsprotektor Paul Emil von Lettow-Vorbeck"
 	desc = ""
-	picture = "gfx/leaders/TZN/TZN_Lettow.tga"
+	picture = "TZN_Lettow.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -128,7 +114,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Paul Emil von Lettow-Vorbeck"
 	desc = ""
-	picture = "gfx/leaders/TZN/TZN_Lettow.tga"
+	picture = "TZN_Lettow.tga"
 	expire = "1965.1.1"
 	ideology = ancap
 	traits = {

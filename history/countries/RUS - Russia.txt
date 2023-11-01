@@ -1,35 +1,37 @@
 ﻿capital = 219
 
-set_cosmetic_tag = RUS_RED
+oob = "RUS_1936"
 
-# Secondary Leader Setup #
-set_country_flag = has_secondary_leader
-set_country_flag = has_tertiary_leader
-recruit_character = RUS_Daniil_Sulimov
+set_cosmetic_tag = RUS_SOV
 
-set_popularities = {
-	vanguardism = 100
-}
-
-set_politics = { 
-	ruling_party = vanguardism
+	set_popularities = {
+		democratic 
+			 = 15 #shared between all set_popularities, should add to 100
+		fascism
+			 = 5
+		vanguardism
+			 = 80
+		}
+	set_politics = { 
+ ruling_party = vanguardism
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Predsedátelʹ VTsIK Mikhaíl Ivánovich Kalínin"
+	name = "Predsedátel' Mixaˊil Ivánovič Kal'inin"
 	desc = ""
 	picture = "gfx/leaders/Russia/Mikhail_Kalinin.dds"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
-	name = "Verkhóvnyy Vozhdʹ Aleksándr Vasílʹyevich Kolchák"
+	name = "Verxóvnyj Vožd' Aleksándr Vasíl'evič Kolčák"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Alexander_Kolchak.tga"
 	expire = "1989.1.1"
@@ -39,17 +41,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prezidént Nikoláy Dmítriyevich Avkséntʹyev"
+	name = "Prezidént Nikoláj Dmítrievič Avksént'ev"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Nikolai_Avksentiev.tga"
 	expire = "1965.1.1"
-	ideology = provisional_government
+	ideology = oligarchism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Prezidént Fyodor Ilʹích Dan"
+	name = "Prezidént Fëdor Il'íč Dan"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Fyodor_Dan.tga"
 	expire = "1965.1.1"
@@ -59,7 +61,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Predsedátelʹ Maríya Aleksándrovna Spiridónova"
+	name = "Predsedátel' Maríja Aleksándrovna Spiridónova"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_RUS_Maria.tga"
 	expire = "1965.1.1"
@@ -69,7 +71,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Korólʹ Kiríll Romanóvskiy"
+	name = "Koról' Kiríll Romanóvskij"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Kirill_Romanov.tga"
 	expire = "1965.1.1"
@@ -79,17 +81,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Minístr-Prezidént Aleksándr Fyodorovich Kérenskiy"
+	name = "Minístr-Prezidént Aleksándr Fëdorovič Kérenskij"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Alexander_Kerensky.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Minístr-Prezidént Nikoláy Dimitriyevich Avkséntʹyev"
+	name = "Minístr-Prezidént Nikoláj Dimitrovič Avksént'ev"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Nikolai_Avksentiev.tga"
 	expire = "1965.1.1"
@@ -99,7 +101,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Tsarʹ Dmitriy Romanovskiy"
+	name = "Car' Dmitrij Romanovskij"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Dmitry_Romanov.tga"
 	expire = "1965.1.1"
@@ -109,7 +111,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Tsarʹ Dmitriy Romanovskiy"
+	name = "Car' Dmitrij Romanovskij"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Dmitry_Romanov.tga"
 	expire = "1965.1.1"
@@ -119,7 +121,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prezidént Pável Nikoláyevich Milyukóv"
+	name = "Prezidént Pável Nikoláevič Miljukóv"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Pavel_Milyukov.tga"
 	expire = "1965.1.1"
@@ -129,7 +131,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Tsarʹ Vladímir IV Romanóvskiy"
+	name = "Car' Vladímir IV Romanóvskij"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Vladimir_Romanov.tga"
 	expire = "1965.1.1"
@@ -139,17 +141,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Verkhóvnyy Glavnokománduyushchiy Antón Ivánovich Deníkin"
+	name = "Verxóvnyj Glavnokomándujuščij Antón Ivánovič Deníkin"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Anton_Denikin.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Imperátor Vladímir IV Romanóvskiy"
+	name = "Imperátor Vladímir IV Romanóvskij"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Vladimir_Romanov.tga"
 	expire = "1965.1.1"
@@ -159,7 +161,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Imperátor Kiríll Romanóvskiy"
+	name = "Imperátor Kiríll Romanóvskij"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Kirill_Romanov.tga"
 	expire = "1965.1.1"
@@ -169,7 +171,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Patriárkh Pyotr Fyodorovich Polyánskiy"
+	name = "Patriárx Pëtr Fëdorovič Poljánskij"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Pyotr_Polyansky.tga"
 	expire = "1965.1.1"
@@ -179,7 +181,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Imperátor Vserossíyskiy Kiríll Romanóvskiy"
+	name = "Imperátor Vserossíjskij Kiríll Romanóvskij"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Kirill_Romanov.tga"
 	expire = "1965.1.1"
@@ -189,7 +191,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Vozhdʹ Borís Víktorovich Sávinkov"
+	name = "Vožd' Borís Víktorovič Sávinkov"
 	desc = ""
 	picture = "gfx/leaders/Russia/Portrait_Boris_Savinkov.tga"
 	expire = "1965.1.1"
@@ -219,7 +221,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Colletstive Leadership"
+	name = "Collective Leadership"
 	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
 	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
 	expire = "1965.1.1"

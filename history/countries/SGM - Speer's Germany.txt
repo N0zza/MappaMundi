@@ -1,5 +1,7 @@
 ﻿capital = 5123
 
+oob = "SGM_1936"
+
 set_cosmetic_tag = SGM_GCW
 
 set_popularities = {
@@ -28,6 +30,16 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichkanzler Berthold Konrad Hermann Albert Speer"
 	desc = ""
+	picture = "gfx/leaders/NZG/NZG_Speer_NATSOC.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichkanzler Berthold Konrad Hermann Albert Speer"
+	desc = ""
 	picture = "gfx/leaders/NZG/NZG_Speer.tga"
 	expire = "1965.1.1"
 	ideology = repfash
@@ -38,9 +50,19 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichkanzler Berthold Konrad Hermann Albert Speer"
 	desc = ""
-	picture = "gfx/leaders/NZG/NZG_Speer.tga"
+	picture = "gfx/leaders/NZG/NZG_Speer_REPFASH.tga"
 	expire = "1965.1.1"
-	ideology = anocrep
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichkanzler Berthold Konrad Hermann Albert Speer"
+	desc = ""
+	picture = "gfx/leaders/NZG/NZG_Speer_AUTHREP.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
 	traits = {
 	}
 }
@@ -66,31 +88,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Großregent Dietrich Friedrich Wilhelm Eduard Kasimir von Saucken"
-	desc = ""
-	picture = "gfx/leaders/TNOWarlords/PTG_Saucken.tga"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Bundeskaiser Albert I von Speer"
+	name = "Bundeskaiser Albert von Speer"
 	desc = ""
 	picture = "gfx/leaders/NZG/NZG_Speer_SOCMON.tga"
 	expire = "1965.1.1"
-	ideology = monsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Bundespräsident Willy Brandt"
-	desc = ""
-	picture = "gfx/leaders/SGM/SGM_Brandt.tga"
-	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socmon
 	traits = {
 	}
 }

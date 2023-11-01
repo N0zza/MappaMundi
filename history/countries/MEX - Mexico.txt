@@ -1,44 +1,69 @@
 ﻿capital = 277
 
-set_popularities = {
-	vanguardism = 1
-	communism = 98
-	socialism_ideology = 1
+oob = "MEX_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
 }
+set_country_flag = monroe_doctrine
+
+set_convoys = 45
+
+set_popularities = {
+	democratic 
+		= 2
+	fascism
+		= 0
+	communism
+		= 1
+	socialism_ideology 
+		= 97
+	monarchism
+		= 0
+	}
 
 set_politics = { 
-	ruling_party = communism
+	ruling_party = socialism_ideology
 	last_election = "1934.7.1"
 	election_frequency = 72
 	elections_allowed = yes
 }
 
+set_stability = 0.75
+
 create_country_leader = {
 	name = "Presidente Plutarco Elías Calles"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Plutarco_Elias_Calles.tga"
+	picture = "MEX_Plutarco_Elias_Calles.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Secretario General León Davídovich Bronstéin"
+	name = "Secretario General León Trotski"
 	desc = ""
-	picture = "gfx/leaders/MEX/Portrait_Leon_Trotsky.dds"
+	picture = "Portrait_Leon_Trotsky.dds"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Presidente Vicente Lombardo Toledano"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Vicente_Lombardo_Toledano.tga"
+	picture = "MEX_Vicente_Lombardo_Toledano.tga"
 	expire = "1965.1.1"
-	ideology = demsoc
+	ideology = marxism
 	traits = {
 	}
 }
@@ -46,9 +71,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Lázaro Cárdenas del Río"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Cardenas.tga"
+	picture = "MEX_Cardenas.tga"
 	expire = "1965.1.1"
-	ideology = left_wing_nationalism
+	ideology = demsoc
 	traits = {
 	}
 }
@@ -56,7 +81,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gobernador General Saturnino Cedillo Martínez"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Saturnino_Cedillo_Martinez.tga"
+	picture = "MEX_Saturnino_Cedillo_Martinez.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -66,9 +91,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Primer Ministro Manuel Ávila Camacho"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Manuel_Avila_Camacho.tga"
+	picture = "MEX_Manuel_Avila_Camacho.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -76,7 +101,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Juan Andreu Almazán"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Juan_Andreu_Almazan.tga"
+	picture = "MEX_Juan_Andreu_Almazan.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -86,7 +111,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reina Maria I de Iturbide"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_MariaI.tga"
+	picture = "MEX_MariaI.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -96,7 +121,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Emperatriz Maria I de Habsburgo-Iturbide"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_MariaI.tga"
+	picture = "MEX_MariaI.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -106,7 +131,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Canciller José Vasconcelos Calderón"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Jose_Vasconcelos_Calderon.tga"
+	picture = "MEX_Jose_Vasconcelos_Calderon.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -116,7 +141,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Huehuetlatoani Moctezuma XVI"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Moctezuma.tga"
+	picture = "MEX_Moctezuma.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -126,9 +151,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Comandante en Jefe Manuel Ávila Camacho"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Manuel_Avila_Camacho.tga"
+	picture = "MEX_Manuel_Avila_Camacho.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
@@ -136,7 +161,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Virrey Manuel Fal Conde, Duque de Quintillo"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Manuel_Fal_Conde.tga"
+	picture = "MEX_Manuel_Fal_Conde.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -146,7 +171,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Emperador Felix I de Habsburgo-Lorena"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Felix_I_de_Habsburgo_Lorena.tga"
+	picture = "MEX_Felix_I_de_Habsburgo_Lorena.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -156,7 +181,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Príncipe-Gobernador Felix de Habsburgo-Lorena"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Felix_I_de_Habsburgo_Lorena.tga"
+	picture = "MEX_Felix_I_de_Habsburgo_Lorena.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -166,7 +191,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ministro-Presidente Victoriano Ramírez López"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Vicente_Lombardo_Toledano.tga"
+	picture = "MEX_Vicente_Lombardo_Toledano.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -176,7 +201,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Emperatriz Maria I de Iturbide"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_MariaI.tga"
+	picture = "MEX_MariaI.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -186,7 +211,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Líder Salvador Abascal"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Salvador_Abascal.tga"
+	picture = "MEX_Salvador_Abascal.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -196,7 +221,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Líder Enrique Barón Rüdt de Collenberg-Bödigheim"
 	desc = ""
-	picture = "gfx/leaders/MEX/MEX_Heinrich_Collenberg-Bodigheim.tga"
+	picture = "MEX_Heinrich_Collenberg-Bodigheim.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -226,7 +251,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chairman Weetman John Pearson, Viscount Cowdray"
 	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
-	picture = "gfx/leaders/MEX/MEX_Weetman_Pearson.tga"
+	picture = "MEX_Weetman_Pearson.tga"
 	expire = "1965.1.1"
 	ideology = ancap
 	traits = {

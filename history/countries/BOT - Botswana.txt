@@ -1,34 +1,41 @@
 ﻿capital = 14802
-set_cosmetic_tag = UK_RED
-set_country_flag = has_secondary_leader
-set_country_flag = has_tertiary_leader
 
- set_popularities = {
-	democratic  = 10
-	monarchism = 5
-	authoritarian_monarchism  = 85
- }
- 
- set_politics = { 
-	ruling_party = authoritarian_monarchism
+oob = "BOT_1936"
+set_cosmetic_tag = UK_RED
+
+
+	set_popularities = {
+		democratic 
+			 = 10
+		monarchism
+			 = 5
+		communism
+			 = 0
+			
+		authoritarian_monarchism 
+			 = 85
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
- } 
+}
 
 create_country_leader = {
 	name = "Resident Commissioner Sir Charles Ferdinand Rey"
-	picture = "gfx/leaders/BOT/Portrait_Sir_Charles_Fernand_Rey.dds"
+	picture = "Portrait_Sir_Charles_Fernand_Rey.dds"
 	expire = "1965.1.1"
-	ideology = authmon_colonialism
+	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Goewerneur Hendrik Balzazar Klopper"
 	desc = ""
-	picture = "gfx/leaders/BOT/BOT_Klopper_stratmon.tga"
+	picture = "BOT_Klopper_stratmon.tga"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {
@@ -38,7 +45,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Nicolaas Christiaan Havenga"
 	desc = ""
-	picture = "gfx/leaders/BOT/BOT_Havenga_authrep.tga"
+	picture = "BOT_Havenga_authrep.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -48,7 +55,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Josiah Gondo"
 	desc = ""
-	picture = "gfx/leaders/BOT/BOT_Gondo_conrep.tga"
+	picture = "BOT_Gondo_conrep.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -58,7 +65,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "King-Regent Tshekedi I Khama"
 	desc = ""
-	picture = "gfx/leaders/BOT/BOT_Tshekedi_libmon.tga"
+	picture = "BOT_Tshekedi_libmon.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -68,7 +75,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kgosi Seretse II Khama"
 	desc = ""
-	picture = "gfx/leaders/BOT/BOT_Seretse_mon.tga"
+	picture = "BOT_Seretse_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {

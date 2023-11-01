@@ -1,85 +1,72 @@
 ﻿capital = 765
 
-set_country_flag = has_secondary_leader
+oob = "LIE_1936"
 
-set_popularities = {
-	anocratic_monarchism = 87
-	conservative_monarchism = 13
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	early_fighter = 1
+	CAS1 = 1
 }
 
-set_politics = { 
-	ruling_party = anocratic_monarchism
+
+
+	set_popularities = {
+		democratic 
+			 = 0
+		conservative_monarchism
+			 = 100
+		}
+	set_politics = { 
+ ruling_party = conservative_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+add_ideas = {
+	neutrality_idea	
+	limited_conscription
+}
+
+set_stability = 0.75
+
 create_country_leader = {
-	name = "Fürst Franz von Liechtenstein"
+	name = "Prinz Franz von Liechtenstein"
 	desc = ""
-	picture = "gfx/leaders/LIE/Portrait_Liechtenstein_franz.dds"
+	picture = "Portrait_Liechtenstein_franz.dds"
 	expire = "1965.1.1"
-	ideology = anocmon_national_conservatism
+	ideology = conservative_constitutionalism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Fürst Franz von Liechtenstein"
+	name = "Paul Hasler"
 	desc = ""
-	picture = "gfx/leaders/LIE/Portrait_Liechtenstein_franz.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
-	ideology = conmon_liberal_conservatism
+	ideology = marxism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Fürst Franz von Liechtenstein"
+	name = "Macro Frick"
 	desc = ""
-	picture = "gfx/leaders/LIE/Portrait_Liechtenstein_franz.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds" 
 	expire = "1965.1.1"
-	ideology = authmon
+	ideology = nazism
 	traits = {
+		#
 	}
 }
 
-create_country_leader = {
-	name = "Fürst Franz von Liechtenstein"
-	desc = ""
-	picture = "gfx/leaders/LIE/Portrait_Liechtenstein_franz.dds"
-	expire = "1965.1.1"
-	ideology = cenmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Fürst Franz von Liechtenstein"
-	desc = ""
-	picture = "gfx/leaders/LIE/Portrait_Liechtenstein_franz.dds"
-	expire = "1965.1.1"
-	ideology = libmon_social_liberalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "König Franz von Liechtenstein"
-	desc = ""
-	picture = "gfx/leaders/LIE/Portrait_Liechtenstein_franz.dds"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Kaiser Franz von Liechtenstein"
-	desc = ""
-	picture = "gfx/leaders/LIE/Portrait_Liechtenstein_franz.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	}
-}

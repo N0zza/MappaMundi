@@ -1,10 +1,24 @@
 ﻿capital = 1433
 
+oob = "NYC_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+
+set_convoys = 10
+
 set_popularities = {
-	liberal_republic = 100	        
+        liberal_republic = 100	        
+
 }
 
 set_politics = {
+	
 	ruling_party = liberal_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -12,9 +26,20 @@ set_politics = {
 }
 
 create_country_leader = {
+	name = "Oberkommando Erich Johann Albert Raeder"
+	desc = ""
+	picture = "NYC_Raeder.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
 	name = "Grand Mayor Frederick Christ Trump"
 	desc = ""
-	picture = "gfx/leaders/NYC/NYC_Trump.tga"
+	picture = "NYC_Trump.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -24,7 +49,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Emperor Fred I of Trump"
 	desc = ""
-	picture = "gfx/leaders/NYC/NYC_Trump.tga"
+	picture = "NYC_Trump.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -34,7 +59,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chairman Benjamin Jefferson Davis Jr."
 	desc = ""
-	picture = "gfx/leaders/NWY/NWY_Davis_commie.tga"
+	picture = "NWY_Davis_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -44,9 +69,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Major Fiorello Henry La Guardia"
 	desc = ""
-	picture = "gfx/leaders/NYC/NYC_Guardia.tga"
+	picture = "NYC_Guardia.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -54,7 +79,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Louis Joseph Maria Beel"
 	desc = ""
-	picture = "gfx/leaders/NYC/NYC_Beel.tga"
+	picture = "NYC_Beel.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -64,7 +89,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Louis Joseph Maria Beel"
 	desc = ""
-	picture = "gfx/leaders/NYC/NYC_Beel.tga"
+	picture = "NYC_Beel.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -74,7 +99,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Secretary-General Hubert Miles Gladwyn Jebb"
 	desc = ""
-	picture = "gfx/leaders/NYC/NYC_Jebb.tga"
+	picture = "NYC_Jebb.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -84,7 +109,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Secretary-General Hubert Miles Gladwyn Jebb"
 	desc = ""
-	picture = "gfx/leaders/NYC/NYC_Jebb.tga"
+	picture = "NYC_Jebb.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -92,19 +117,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "President James Aloysius Farley"
-	desc = ""
-	picture = "gfx/leaders/NYC/Portrait_James_Farley.dds"
-	expire = "1965.1.1"
-	ideology = anocrep
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Police Commissioner Lewis Joseph Valentine"
 	desc = ""
-	picture = "gfx/leaders/NYC/NYC_Valentine_strat.tga"
+	picture = "NYC_Valentine_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -114,7 +129,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Commissioner Matthew Bunker Ridgway"
 	desc = ""
-	picture = "gfx/leaders/NYC/NYC_Ridgeway.tga"
+	picture = "NYC_Ridgeway.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -122,19 +137,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "National President Fritz Julius Kuhn"
-	desc = ""
-	picture = "gfx/leaders/GMA/GMA_Kuhn.tga"
-	expire = "1965.1.1"
-	ideology = natsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Chairman Lepke Buchalter"
 	desc = ""
-	picture = "gfx/leaders/NYC/NYC_Buchalter_ancap.tga"
+	picture = "NYC_Buchalter_ancap.tga"
 	expire = "1965.1.1"
 	ideology = ancap
 	traits = {

@@ -1,24 +1,28 @@
 ﻿capital = 745
 
+oob = "DLN_1936"
+
 set_cosmetic_tag = JAP_COLONY
 
-set_popularities = {
-	authoritarian_monarchism = 100
-}
 
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+	set_popularities = {
+		authoritarian_monarchism
+			 = 100
+		
+	}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Chiji Minami Jirō"
+	name = "Jirō Minami"
 	desc = ""
-	picture = "gfx/leaders/DLN/DLN_Jiro.tga"
+	picture = "DLN_Jiro.tga"
 	expire = "1965.1.1"
-	ideology = authmon_colonialism
+	ideology = authmon
 	traits = {
 	}
 }

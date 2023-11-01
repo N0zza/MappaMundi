@@ -2,13 +2,20 @@
 
 set_cosmetic_tag = FRA_COLONY
 
-set_popularities = {
-	liberal_republic = 20
-	neutrality  = 80
-}
 
-set_politics = { 
-	ruling_party = neutrality
+
+	set_popularities = {
+		democratic 
+			 = 0
+		fascism
+			 = 0
+		liberal_republic
+			 = 20
+		neutrality 
+			 = 80
+		}
+	set_politics = { 
+ ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -17,19 +24,9 @@ set_politics = {
 create_country_leader = {
 	name = "Gouverneur Joseph Urbain Court"
 	desc = ""
-	picture = "gfx/leaders/NGR/NGR_Chazelas.tga"
+	picture = "NGR_Chazelas.tga"
 	expire = "1965.1.1"
-	ideology = colonialism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = strat_colonialism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -37,7 +34,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Arthur Liebehenschel"
 	desc = ""
-	picture = "gfx/leaders/NGR/NGR_Liebehenschel_nazi.tga"
+	picture = "NGR_Liebehenschel_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -47,9 +44,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governatore Rino Corso Fougier"
 	desc = ""
-	picture = "gfx/leaders/NGR/NGR_Fougier_fash.tga"
+	picture = "NGR_Fougier_fash.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -57,17 +54,18 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premier Ministre Hamani Diori"
 	desc = ""
-	picture = "gfx/leaders/NGR/NGR_Diori_libdem.tga"
+	picture = "NGR_Diori_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
 
+
 create_country_leader = {
 	name = "Governor Sir William George Shedden Dobbie"
 	desc = ""
-	picture = "gfx/leaders/NGR/NGR_William_Dobbie.tga"
+	picture = "NGR_William_Dobbie.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {

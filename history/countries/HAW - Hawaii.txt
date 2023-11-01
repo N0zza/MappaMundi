@@ -1,6 +1,13 @@
 ﻿capital = 2170 #LA
 
+oob = "CAL_1936"
+
+set_research_slots = 3
+
+
+set_convoys = 30
 set_cosmetic_tag = HAW_USA
+
 
 
 	set_popularities = {
@@ -19,14 +26,19 @@ set_cosmetic_tag = HAW_USA
 	election_frequency = 48
 	elections_allowed = no
 }
-
+
+add_ideas = {
+	disarmed_nation
+	free_trade
+}
+
 
 create_country_leader = {
 	name = "Governor Joseph Boyd Poindexter"
 	desc = ""
-	picture = "gfx/leaders/HAW/Portrait_Hawaii_Joseph_Poindexter.dds"
+	picture = "Portrait_Hawaii_Joseph_Poindexter.dds"
 	expire = "1950.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -34,7 +46,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chairman Jack Wayne Hall"
 	desc = ""
-	picture = "gfx/leaders/HAW/HAW_Hall_commie.tga"
+	picture = "HAW_Hall_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -45,7 +57,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President James Drummond Dole"
 	desc = ""
-	picture = "gfx/leaders/HAW/HAW_Dole_dem.tga"
+	picture = "HAW_Dole_dem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -55,7 +67,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Walter Campbell Short"
 	desc = ""
-	picture = "gfx/leaders/HAW/HAW_Short_strat.tga"
+	picture = "HAW_Short_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -65,7 +77,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chiji Chuichi Nagumo"
 	desc = ""
-	picture = "gfx/leaders/HAW/HAW_Nagumo_stratmon.tga"
+	picture = "HAW_Nagumo_stratmon.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -75,7 +87,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kine Edward Abnel Keli'iahonui Kawananakoa"
 	desc = ""
-	picture = "gfx/leaders/HAW/HAW_Kawananakoa.tga"
+	picture = "HAW_Kawananakoa.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {

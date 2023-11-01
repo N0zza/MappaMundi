@@ -1,6 +1,15 @@
 ﻿capital = 692
 
+#oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 5
 set_cosmetic_tag = UK_RED
+
 
 	set_popularities = {
 		democratic 
@@ -23,7 +32,7 @@ set_cosmetic_tag = UK_RED
 	create_country_leader = {
 	name = "Sir Mark Aitchison Young"
 	desc = ""
-	picture = "gfx/leaders/BAR/Portrait_Mark_Aitchison_Young.dds"
+	picture = "Portrait_Mark_Aitchison_Young.dds"
 	expire = "1961.11.22"
 	ideology = authmon
 	traits = {
@@ -34,10 +43,11 @@ set_cosmetic_tag = UK_RED
 create_country_leader = {
 	name = "President Grantley Herbert Adams"
 	desc = ""
-	picture = "gfx/leaders/WIF/WIF_Adams.tga"
+	picture = "WIF_Adams.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
 	}
 }
+
 

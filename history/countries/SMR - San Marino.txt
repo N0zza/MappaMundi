@@ -1,25 +1,28 @@
 ﻿capital = 766
 
-set_country_flag = has_secondary_leader
-set_country_flag = has_tertiary_leader
+oob = "SMR_1936"
 
-set_popularities = {
-	republican_fascism = 100
-}
-
-set_politics = { 
-	ruling_party = republican_fascism
+	set_popularities = {
+		republican_fascism 
+			 = 90
+		
+		democratic
+			 = 10
+		}
+	set_politics = { 
+ ruling_party = republican_fascism
 	last_election = "1936.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Capitano Reggente Pompeo Righi"
+	name = "Capitani Reggenti Pompeo Righi"
 	desc = ""
-	picture = "gfx/leaders/SMR/SMR_Boyardee.tga"
+	picture = "Portrait_Gino_Gozi.dds"
 	expire = "1960.1.1"
-	ideology = rep_italian_fascism
+	ideology = repfash
 	traits = {
+		
 	}
 }

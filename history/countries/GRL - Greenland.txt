@@ -1,6 +1,29 @@
 ﻿capital = 10913
 
-set_cosmetic_tag = GRL_DEN
+oob = "GRL_1936"
+
+set_cosmetic_tag = GRL_DEN
+set_research_slots = 3
+
+add_ideas = {
+	disarmed_nation
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	early_fighter = 1
+	early_bomber = 1
+	early_destroyer = 1
+	early_submarine = 1
+	early_heavy_cruiser = 1
+	tech_recon = 1
+}
+
+
+set_convoys = 10
 
 
 
@@ -22,7 +45,7 @@ set_cosmetic_tag = GRL_DEN
 create_country_leader = {
 	name = "Guvernør Aksel Svane"
 	desc = ""
-	picture = "gfx/leaders/SG1/SG1_Svane.tga"
+	picture = "SG1_Svane.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -32,7 +55,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Sir Arthur Francis Eric Palliser"
 	desc = ""
-	picture = "gfx/leaders/GRL/GRL_Palliser.tga"
+	picture = "GRL_Palliser.tga"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {
@@ -42,9 +65,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Siulittaasuat Pitseolak Ashoona"
 	desc = ""
-	picture = "gfx/leaders/GRL/GRL_Ashoona.tga"
+	picture = "GRL_Ashoona.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -52,7 +75,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Siulittaasuat Knud Johan Victor Rasmussen"
 	desc = ""
-	picture = "gfx/leaders/GRL/GRL_Rasmussen.tga"
+	picture = "GRL_Rasmussen.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -62,7 +85,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor John Matthew Devine"
 	desc = ""
-	picture = "gfx/leaders/GRL/GRL_Devine.tga"
+	picture = "GRL_Devine.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -72,7 +95,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Kurt Fricke"
 	desc = ""
-	picture = "gfx/leaders/GRL/GRL_Fricke.tga"
+	picture = "GRL_Fricke.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

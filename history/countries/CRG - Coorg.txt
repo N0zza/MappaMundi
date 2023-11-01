@@ -1,44 +1,19 @@
 ﻿capital = 10387
 
+oob = "CRG_1936"
+
 set_popularities = {
-	authoritarian_monarchism = 100
+        monarchism = 0
+        neutrality = 70
+        democratic = 20
+        communism = 5
+        fascism = 5
 }
 
 set_politics = {
-	ruling_party = authoritarian_monarchism
+	
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
-}
-
-set_cosmetic_tag = RAJ_RED
-
-create_country_leader = {
-	name = "Chief Commissioner Leonard Glyde Lavington Evans"
-	desc = ""
-	picture = "gfx/leaders/CRG/CRG_Evans.tga"
-	expire = "1965.1.1"
-	ideology = authmon_colonialism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Raja Muckatira Mandanna Chengappa"
-	desc = ""
-	picture = "gfx/leaders/CRG/CRG_Chengappa.tga"
-	expire = "1965.1.1"
-	ideology = stratmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Raja Muckatira Mandanna Chengappa"
-	desc = ""
-	picture = "gfx/leaders/CRG/CRG_Chengappa.tga"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-	}
 }

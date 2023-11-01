@@ -1,52 +1,69 @@
 ﻿capital = 592
 
-set_popularities = {
-	democratic = 4
-	liberal_republic = 3	
-	stratocratic = 93
-}
+oob = "GUD_1936"
 
-set_politics = { 
-	ruling_party = stratocratic
+
+
+
+	set_popularities = {
+		democratic 
+			 = 4
+		liberal_republic
+			 = 3
+		communism
+			 = 0
+			
+		stratocratic 
+			 = 93
+		
+	}
+
+	set_politics = { 
+ ruling_party = stratocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+
 }
+
 
 create_country_leader = {
 	name = "Chou ch'ang Chen Chitang"
 	desc = "POLITICS_CHEN_JITANG_DESC"
-	picture = "gfx/leaders/GND/Portrait_Guangdong_Chen_Jitang.dds"
+	picture = "Portrait_Guangdong_Chen_Jitang.dds"
 	expire = "1954.11.3"
-	ideology = warlordism
+	ideology = militarism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Chou ch'ang Chen Chitang"
 	desc = "POLITICS_CHEN_JITANG_DESC"
-	picture = "gfx/leaders/GND/Portrait_Guangdong_Chen_Jitang.dds"
+	picture = "Portrait_Guangdong_Chen_Jitang.dds"
 	expire = "1954.11.3"
 	ideology = oligarchism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Chou ch'ang Chen Chitang"
 	desc = "POLITICS_CHEN_JITANG_DESC"
-	picture = "gfx/leaders/GND/Portrait_Guangdong_Chen_Jitang.dds"
+	picture = "Portrait_Guangdong_Chen_Jitang.dds"
 	expire = "1954.11.3"
 	ideology = stratmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Huang ti Huanzhang"
 	desc = ""
-	picture = "gfx/leaders/GXC/GXC_Yuxiang.tga"
+	picture = "GXC_Yuxiang.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -54,21 +71,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Chiji Suzuki Teiichi"
+	name = "Saiko keiei sekininsha Teiichi Suzuki"
 	desc = ""
-	picture = "gfx/leaders/GXC/GXC_Suzuki.tga"
+	picture = "GXC_Suzuki.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Saikō Keiei Sekininsha Teiichi Suzuki"
-	desc = ""
-	picture = "gfx/leaders/GXC/GXC_Suzuki.tga"
-	expire = "1965.1.1"
-	ideology = corporatocracy
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -76,7 +83,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chu hsi Deng Xiaoping"
 	desc = ""
-	picture = "gfx/leaders/GXC/GXC_Deng.tga"
+	picture = "GXC_Deng.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
@@ -86,9 +93,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tsung t'ung Hu Shih"
 	desc = ""
-	picture = "gfx/leaders/GXC/GXC_Shih.tga"
+	picture = "GXC_Shih.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -96,7 +103,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tsung t'ung Feng Yuxiang"
 	desc = ""
-	picture = "gfx/leaders/GXC/GXC_Yuxiang.tga"
+	picture = "GXC_Yuxiang.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {

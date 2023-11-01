@@ -1,29 +1,30 @@
 ﻿capital = 5610
 
-set_country_flag = has_secondary_leader
+oob = "HUN_1936"
 
-set_popularities = {
-	socialist_monarchy = 4
-	democratic_monarchism = 3
-	centrist_monarchism = 9
-	conservative_monarchism = 2
-	anocratic_monarchism = 6
-	authoritarian_monarchism = 5
-	fascism = 70
-	national_socialism = 1
-}
-
-set_politics = { 
-	ruling_party = fascism
+	set_popularities = {
+		democratic 
+			 = 24
+		fascism
+			 = 45
+		authoritarian_monarchism
+			 = 20
+		socialism_ideology 
+			= 7
+		national_socialism
+			 = 4
+		}
+	set_politics = { 
+ ruling_party = fascism
 	last_election = "1935.3.31"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Miniszterelnöke Vitéz Ómoraviczai Imrédy Béla Kornél Kálmán"
+	name = "Miniszterelnöke Vitéz Béla Imrédy de Ómoravicza"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_HUN_Bela_Imredy_de_Omoravicza.tga"
+	picture = "Portrait_HUN_Bela_Imredy_de_Omoravicza.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -32,9 +33,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Főtitkár Rákosi Mátyás"
+	name = "Főtitkár Mátyás Rákosi"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_HUN_Matyas_Rakosi.tga"
+	picture = "Portrait_HUN_Matyas_Rakosi.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -43,9 +44,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Népbiztos Kun Béla"
+	name = "Népbiztos Béla Kun"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_HUN_Bela_Kun.tga"
+	picture = "Portrait_HUN_Bela_Kun.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -53,9 +54,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Elnök Szakasits Árpád Ferenc"
+	name = "Elnök Árpád Szakasits"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_HUN_Arpad_Szakasits.tga"
+	picture = "Portrait_HUN_Arpad_Szakasits.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -65,7 +66,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Király Ferenc József II de Habsburg"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_Otto_Habsburg.dds"
+	picture = "Portrait_Otto_Habsburg.dds"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -73,19 +74,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Elnök Gróf Nagykárolyi Károlyi Mihály Ádám György Miklós"
+	name = "Elnök Számol Mihály Ádám György Miklós Károlyi de Nagykároly"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_HUN_Mihaly_Adam_Gyorgy_Miklos_Karolyi_de_Nagykaroly.tga"
+	picture = "Portrait_HUN_Mihaly_Adam_Gyorgy_Miklos_Karolyi_de_Nagykaroly.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Elnök Tildy Zoltán"
+	name = "Elnök Zoltán Tildy"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_HUN_Zoltan_Tildy.tga"
+	picture = "Portrait_HUN_Zoltan_Tildy.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -95,7 +96,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Király Károly IV de Habsburg"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_Karl_Habsburg_2.dds"
+	picture = "Portrait_Karl_Habsburg_2.dds"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -105,7 +106,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Király Ferenc József II de Habsburg"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_Otto_Habsburg.dds"
+	picture = "Portrait_Otto_Habsburg.dds"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -113,9 +114,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Elnök Vitéz Lófő Dálnoki Miklós Béla"
+	name = "Elnök Vitéz Béla Miklós de Dálnok"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_HUN_Bela_Miklos_de_Dalnok.tga"
+	picture = "Portrait_HUN_Bela_Miklos_de_Dalnok.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -125,7 +126,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Király József III de Habsburg"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_HUN_Jozsef_III_von_Habsburg.tga"
+	picture = "Portrait_HUN_Jozsef_III_von_Habsburg.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -133,19 +134,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Főparancsnok Vitéz Nagylaki Rátz Jenő"
+	name = "Főparancsnok Jenő Rátz de Nagylak"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_HUN_Jeno_Ratz_de_Nagylak.tga"
+	picture = "Portrait_HUN_Jeno_Ratz_de_Nagylak.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Kormányzó Vitéz Nagybányai Horthy István"
+	name = "Kormányzó Vitéz István Horthy de Nagybánya"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_Istvan_Horthy.dds"
+	picture = "Portrait_Istvan_Horthy.dds"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -153,9 +154,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kormányzó Vitéz Nagybányai Horthy Miklós"
+	name = "Kormányzó Vitéz Miklós Horthy de Nagybánya"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_Hungary_Miklos_Horthy.dds"
+	picture = "Portrait_Hungary_Miklos_Horthy.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -165,7 +166,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Császár Ferenc József II de Habsburg"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_Otto_Habsburg.dds"
+	picture = "Portrait_Otto_Habsburg.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -173,9 +174,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Herceg-Érsek Serédi Jusztinián György"
+	name = "Herceg-Érsek Jusztinián György Serédi"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_HUN_Jusztinian_Gyorgy_Seredi.tga"
+	picture = "Portrait_HUN_Jusztinian_Gyorgy_Seredi.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -185,7 +186,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Király József III de Habsburg"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_HUN_Jozsef_III_von_Habsburg.tga"
+	picture = "Portrait_HUN_Jozsef_III_von_Habsburg.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -193,9 +194,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Nemzetvezető Szálasi Ferenc"
+	name = "Nemzetvezető Ferenc Szálasi"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_HUN_Ferenc_Szalasi.tga"
+	picture = "Portrait_HUN_Ferenc_Szalasi.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -203,9 +204,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Vezető Felsőkubini Meskó Zoltán"
+	name = "Vezető Zoltán Meskó de Széplak"
 	desc = ""
-	picture = "gfx/leaders/HUN/Portrait_HUN_Zoltan_Mesko_de_Szeplak.tga"
+	picture = "Portrait_HUN_Zoltan_Mesko_de_Szeplak.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

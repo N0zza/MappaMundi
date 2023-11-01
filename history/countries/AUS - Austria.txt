@@ -1,31 +1,56 @@
 ﻿capital = 1385
-set_popularities = {
-	republican_fascism = 100
+
+oob = "AUS_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+	early_fighter = 1
 }
 
-set_country_flag = has_secondary_leader
 
-set_politics = { 
-	ruling_party = republican_fascism
+
+	set_popularities = {
+		republican_fascism
+			 = 50
+		democratic
+			 = 10
+		liberal_republic
+			 = 10
+		national_socialism
+			 = 30
+		}
+	set_politics = { 
+ ruling_party = republican_fascism
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+set_stability = 0.50
+
+
 create_country_leader = {
 	name = "Präsident Wilhelm Miklas"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Wilhelm_Miklas.dds"
+	picture = "Portrait_Wilhelm_Miklas.dds"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Reichsstatthalter Josef Bürckel"
+	name = "Reichskanzler Josef Bürckel"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Josef_Burckel.dds"
+	picture = "Portrait_Josef_Burckel.dds"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -35,7 +60,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kaiser Franz Joseph II von Habsburg-Lothringen"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Otto_Habsburg.dds"
+	picture = "Portrait_Otto_Habsburg.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -45,7 +70,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Präsident Carl Vaugoin"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Carl_Vaugoin.dds"
+	picture = "Portrait_Carl_Vaugoin.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -55,7 +80,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Generalsekretär Johann Koplenig"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Johann_Koplenig.dds"
+	picture = "Portrait_Johann_Koplenig.dds"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -65,7 +90,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Vorsitzende Ruth Fischer"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Ruth_Fischer.dds"
+	picture = "Portrait_Ruth_Fischer.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -73,9 +98,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Vorsitzende Karl Josef Seitz"
+	name = "Vorsitzende Karl Seitz"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Karl_Seitz.dds"
+	picture = "Portrait_Karl_Seitz.dds"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -85,7 +110,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsherzog Franz Joseph II von Habsburg-Lothringen"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Otto_Habsburg.dds"
+	picture = "Portrait_Otto_Habsburg.dds"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -93,11 +118,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Präsident Karl Josef Seitz"
+	name = "Präsident Karl Seitz"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Karl_Seitz.dds"
+	picture = "Portrait_Karl_Seitz.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -105,7 +130,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Bundeskönig Franz Joseph II von Habsburg-Lothringen"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Otto_Habsburg.dds"
+	picture = "Portrait_Otto_Habsburg.dds"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -115,7 +140,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kaiser Franz Joseph II von Habsburg-Lothringen"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Otto_Habsburg.dds"
+	picture = "Portrait_Otto_Habsburg.dds"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -125,7 +150,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichspräsident Franz Winkler"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Franz_Winkler.dds"
+	picture = "Portrait_Franz_Winkler.dds"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -135,7 +160,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsherzog Franz Joseph II von Habsburg-Lothringen"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Otto_Habsburg.dds"
+	picture = "Portrait_Otto_Habsburg.dds"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -145,7 +170,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsdiktator und Reichskanzler Michael Arthur Josef Jakob Hainisch"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Michael_Hainisch.dds"
+	picture = "Portrait_Michael_Hainisch.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -153,11 +178,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Oberster General Alfred Johann Theophil Janša Edler von Tannenau"
+	name = "Oberster General Alfred Edler von Tannenau"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Alfred_Jansa.dds"
+	picture = "Portrait_Alfred_Jansa.dds"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
@@ -165,7 +190,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Erzherzog Felix I von Habsburg-Lothringen"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Felix_Habsburg.dds"
+	picture = "Portrait_Felix_Habsburg.dds"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -175,7 +200,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "König Karl I von Habsburg-Lothringen"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Karl_Habsburg_2.dds"
+	picture = "Portrait_Karl_Habsburg_2.dds"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -185,7 +210,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Fürsterzbischof Sigismund Waitz"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Sigismund_Waitz.dds"
+	picture = "Portrait_Sigismund_Waitz.dds"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -193,9 +218,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kaiser Franz Joseph II von Habsburg-Lothringen"
+	name = "Reichskaiser Franz Joseph II von Habsburg-Lothringen"
 	desc = ""
-	picture = "gfx/leaders/AUS/Portrait_Otto_Habsburg.dds"
+	picture = "Portrait_Otto_Habsburg.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

@@ -1,13 +1,28 @@
 ﻿capital = 448
 
-set_cosmetic_tag = ITA_GREEN
-
-set_popularities = {
-	fascism = 100
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
 }
- 
-set_politics = { 
-	ruling_party = fascism
+set_cosmetic_tag = ITA_GREEN
+set_convoys = 20
+
+
+
+	set_popularities = {
+		democratic 
+			 = 0
+		fascism
+			 = 100
+		communism
+			 = 0
+			
+		neutrality 
+			 = 0
+		}
+	set_politics = { 
+ ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -16,46 +31,39 @@ set_politics = {
 create_country_leader = {
 	name = "Governatore Italo Balbo"
 	desc = ""
-	picture = "gfx/leaders/LBA/Portrait_Italo_Balbo.dds"
-	ideology = corpmon_colonialism
+	picture = "Portrait_Italo_Balbo.dds"
+	ideology = fascism_ideology
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Gouverneur Raymond Delange"
 	desc = ""
-	picture = "gfx/leaders/LBA/LBA_Delange_authdem.tga"
+	picture = "LBA_Delange_authdem.tga"
 	expire = "1965.1.1"
-	ideology = colonialism
+	ideology = oligarchism
 	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Gouverneur Raymond Delange"
-	desc = ""
-	picture = "gfx/leaders/LBA/LBA_Delange_authdem.tga"
-	expire = "1965.1.1"
-	ideology = strat_colonialism
-	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Raisa Khalifa Mohammed Tillisi"
 	desc = ""
-	picture = "gfx/leaders/LBA/LBA_Tillisi_commie.tga"
+	picture = "LBA_Tillisi_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Raisa Hussein Yousef Maziq"
 	desc = ""
-	picture = "gfx/leaders/LBA/LBA_Maziq_demsoc.tga"
+	picture = "LBA_Maziq_demsoc.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -65,7 +73,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Malak Idris I bin Muhammad al-Mahdi as-Senussi"
 	desc = ""
-	picture = "gfx/leaders/LBA/LBA_Idris_mon.tga"
+	picture = "LBA_Idris_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -73,19 +81,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = strat_colonialism
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Al-Rais Sulayman al-Baruni"
 	desc = ""
-	picture = "gfx/leaders/LBA/LBA_Baruni_condem.tga"
+	picture = "LBA_Baruni_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -95,7 +93,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Wali Osman Fuad"
 	desc = ""
-	picture = "gfx/leaders/LBA/LBA_Osman_stratmon.tga"
+	picture = "LBA_Osman_stratmon.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -105,17 +103,18 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Richard Nugent O'Connor"
 	desc = ""
-	picture = "gfx/leaders/LBA/LBA_Richard_authmon.tga"
+	picture = "LBA_Richard_authmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
 	}
 }
 
+
 create_country_leader = {
 	name = "Governatore Italo Balbo"
 	desc = ""
-	picture = "gfx/leaders/LBA/Portrait_Italo_Balbo.dds"
+	picture = "Portrait_Italo_Balbo.dds"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -125,7 +124,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Walter Kurt Josef Nehring"
 	desc = ""
-	picture = "gfx/leaders/LBA/LBA_Nehring_nazi.tga"
+	picture = "LBA_Nehring_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

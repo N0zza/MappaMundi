@@ -1,42 +1,57 @@
 ﻿capital = 1135
 
-set_country_flag = has_secondary_leader
+oob = "LAT_1936"
 
-set_popularities = {
-	republican_fascism = 100
+add_ideas = {
+	limited_conscription
 }
 
-set_politics = { 
-	ruling_party = republican_fascism
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_fighter = 1
+	early_submarine = 1
+}
+
+set_research_slots = 3
+
+set_convoys = 10
+
+
+
+
+	set_popularities = {
+		democratic 
+			 = 40
+		fascism
+			 = 5
+		communism
+			 = 5
+		neutrality 
+			 = 50
+		}
+	set_politics = { 
+ ruling_party = democratic
 	last_election = "1931.10.3"
 	election_frequency = 108
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Prezidents Alberts Kviesis"
+	name = "Prezidents Kārlis Augusts Vilhelms Ulmanis"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Albert_Kviesis.dds"
+	picture = "Portrait_Karlis_Ulmanis.tga"
 	expire = "1965.1.1"
-	ideology = repfash
+	ideology = oligarchism
 	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Prezidents Alberts Kviesis"
-	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Albert_Kviesis.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Pirmais Sekretārs Jānis Kalnbērziņš"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Janis_Kalnberzins.tga"
+	picture = "Portrait_Janis_Kalnberzins.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -47,7 +62,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Pirmais Sekretārs Jūlijs Kārlis Daniševskis"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Julijs_Karlis_Danisevskis.tga"
+	picture = "Portrait_Julijs_Karlis_Danisevskis.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -57,7 +72,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prezidents Pauls Kalniņš"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Pauls_Kalnins.tga"
+	picture = "Portrait_Pauls_Kalnins.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -67,7 +82,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Lielhercogs Luijs I no Talleyrandist-Perigord"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Luijs_I_no_Talleyrandist-Perigord.tga"
+	picture = "Portrait_Luijs_I_no_Talleyrandist-Perigord.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -77,9 +92,19 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prezidents Ādolfs Bļodnieks"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Adolfs_Blodnieks.tga"
+	picture = "Portrait_Adolfs_Blodnieks.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prezidents Alberts Kviesis"
+	desc = ""
+	picture = "Portrait_Albert_Kviesis.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
 	}
 }
@@ -87,7 +112,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hercogs Luijs I no Talleyrandist-Perigord"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Luijs_I_no_Talleyrandist-Perigord.tga"
+	picture = "Portrait_Luijs_I_no_Talleyrandist-Perigord.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -97,7 +122,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hercogs Luijs I no Talleyrandist-Perigord"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Luijs_I_no_Talleyrandist-Perigord.tga"
+	picture = "Portrait_Luijs_I_no_Talleyrandist-Perigord.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -107,7 +132,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prezidents Gustavs Zemgals"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Gustavs_Zemgals.tga"
+	picture = "Portrait_Gustavs_Zemgals.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -117,7 +142,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Karalis Luijs I no Talleyrandist-Perigord"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Luijs_I_no_Talleyrandist-Perigord.tga"
+	picture = "Portrait_Luijs_I_no_Talleyrandist-Perigord.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -127,9 +152,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Virspavēlnieks Jānis Balodis"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Janis_Balodis.tga"
+	picture = "Portrait_Janis_Balodis.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
@@ -137,7 +162,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Herzog Alfred von Fletcher"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Alfred_Fletcher.tga"
+	picture = "Portrait_Alfred_Fletcher.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -147,7 +172,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Großherzog Adolf Friedrich I von Mecklenburg-Schwerin"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Adolf Friedrich_I_von_Mecklenburg-Schwerin.tga"
+	picture = "Portrait_Adolf Friedrich_I_von_Mecklenburg-Schwerin.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -157,7 +182,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Roi Louis I de Talleyrand-Périgord"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Luijs_I_no_Talleyrandist-Perigord.tga"
+	picture = "Portrait_Luijs_I_no_Talleyrandist-Perigord.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -167,7 +192,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Princis-Arhibīskaps Antonijs Springovičs"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Antonijs_Springovics.tga"
+	picture = "Portrait_Antonijs_Springovics.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -177,7 +202,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Karalis Luijs I no Talleyrandist-Perigord"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Luijs_I_no_Talleyrandist-Perigord.tga"
+	picture = "Portrait_Luijs_I_no_Talleyrandist-Perigord.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -187,9 +212,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Vadītājs Gustavs Celmiņš"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Gustavs_Celmins.tga"
+	picture = "Portrait_Gustavs_Celmins.tga"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = repfash
 	traits = {
 	}
 }
@@ -197,7 +222,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichskommissar Hinrich Lohse"
 	desc = ""
-	picture = "gfx/leaders/LAT/Portrait_Hinrich_Lohse.tga"
+	picture = "Portrait_Hinrich_Lohse.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

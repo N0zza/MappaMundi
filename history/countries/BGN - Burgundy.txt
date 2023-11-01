@@ -1,10 +1,11 @@
 ﻿capital = 1757
 
+oob = "BGN_1936"
+
 set_popularities = {
-    monarchism = 60
-    conservative_monarchism = 25
-    national_socialism = 5
-	theocratic = 10
+    monarchism = 80
+    stratocratic_monarchism = 10
+    national_socialism = 10
 }
 
 set_politics = { 
@@ -17,19 +18,19 @@ set_politics = {
 create_country_leader = {
 	name = "Reichsführer-SS Heinrich Luitpold Himmler"
 	desc = ""
-	picture = "gfx/leaders/BGN/BGN_Himmler_nazi.tga"
+	picture = "BGN_Himmler_nazi.tga"
 	expire = "1965.1.1"
-	ideology = esoteric_nazism
+	ideology = natsoc
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Duc Otto II de Bismarck"
+	name = "Roi Otto II de Bismarck"
 	desc = ""
-	picture = "gfx/leaders/BGN/BGN_Bismarck_stratmon.tga"
+	picture = "BGN_Bismarck_stratmon.tga"
 	expire = "1989.1.1"
-	ideology = conservative_constitutionalism
+	ideology = stratmon
 	traits = {
 	}
 }
@@ -37,7 +38,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Roi Alexandre I de Cambridge"
 	desc = ""
-	picture = "gfx/leaders/BGN/BGN_Cambridge_mon.tga"
+	picture = "BGN_Cambridge_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -45,11 +46,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Reichsstatthalter Josef Harpe"
+	name = "Duc Alexandre I de Cambridge"
 	desc = ""
-	picture = "gfx/leaders/BGN/BGN_Josef_Harpe.tga"
+	picture = "BGN_Cambridge_mon.tga"
 	expire = "1965.1.1"
-	ideology = natsoc
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gauleiter Josef Harpe"
+	desc = ""
+	picture = "BGN_Josef_Harpe.tga"
+	expire = "1965.1.1"
+	ideology = repfash
 	traits = {
 	}
 }

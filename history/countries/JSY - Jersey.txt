@@ -1,33 +1,48 @@
 ﻿capital = 3147
 
-set_cosmetic_tag = UK_RED
+oob = "JSY_1936"
 
-set_popularities = {
-    centrist_monarchism =  90
-    authoritarian_monarchism =  10
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
 }
+
+set_cosmetic_tag = UK_RED
+set_convoys = 10
+
+
+
+	set_popularities = {
+        conservative_monarchism =  90
+        communism =  5
+        fascism =  1
+        neutrality =  4
+
+	}
 	
-set_politics = { 
-	ruling_party = centrist_monarchism
+	set_politics = { 
+ ruling_party = conservative_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Bailiff Alexander Moncrieff Coutanche, Baron Coutanche"
+	name = "Alexander Coutanche"
 	desc = ""
-	picture = "gfx/leaders/JSY/Coutanche.dds"
+	picture = "Coutanche.dds"
 	expire = "1965.1.1"
-	ideology = cenmon
+	ideology = conservative_constitutionalism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Gerichtsvollzieher Rudolf Bernhard Gottfried Karl Graf von Schmettow"
+	name = "Rudolf Graf von Schmettow"
 	desc = ""
-	picture = "gfx/leaders/JSY/JSY_Rudolf_Schmettow.tga"
+	picture = "JSY_Rudolf_Schmettow.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

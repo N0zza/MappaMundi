@@ -1,5 +1,17 @@
 ﻿capital = 318
 
+oob = "HAI_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+set_country_flag = monroe_doctrine
+set_war_support = 0.1
+set_convoys = 5
+
+
+
 
 	set_popularities = {
 		neutrality 
@@ -20,7 +32,7 @@
 create_country_leader = {
 	name = "Président Sténio Vincent"
 	desc = "POLITICS_STENIO_VINCENT_DESC"
-	picture = "gfx/leaders/HAI/Portrait_haiti_stenio_vincent.dds"
+	picture = "portrait_haiti_stenio_vincent.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -31,7 +43,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Jacques Roumain"
 	desc = "POLITICS_JACQUES_ROUMAIN_DESC"
-	picture = "gfx/leaders/HAI/HAI_Roumain.tga"
+	picture = "HAI_Roumain.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -42,9 +54,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Antoine Louis Léocardie Élie Lescot"
 	desc = ""
-	picture = "gfx/leaders/HAI/HAI_Lescot.tga"
+	picture = "HAI_Lescot.tga"
 	expire = "1965.1.1"
-	ideology = liberalism 
+	ideology = socdem 
 	traits = {
 		#
 	}
@@ -53,7 +65,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Empereur François I Duvalier"
 	desc = ""
-	picture = "gfx/leaders/HAI/HAI_Duvalier.tga"
+	picture = "HAI_Duvalier.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -63,7 +75,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président François Duvalier"
 	desc = ""
-	picture = "gfx/leaders/HAI/HAI_Duvalier.tga"
+	picture = "HAI_Duvalier.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -73,7 +85,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gobernador José Enrique Varela Iglesias, 1st Marquis of San Fernando de Varela"
 	desc = ""
-	picture = "gfx/leaders/HAI/HAI_Varela.tga"
+	picture = "HAI_Varela.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -83,7 +95,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Auguste Marie Émile Laure"
 	desc = ""
-	picture = "gfx/leaders/HAI/HAI_Laure.tga"
+	picture = "HAI_Laure.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -93,7 +105,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Gerald Carthrae Thomas"
 	desc = ""
-	picture = "gfx/leaders/HAI/HAI_Thomas.tga"
+	picture = "HAI_Thomas.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {

@@ -1,12 +1,28 @@
 ﻿capital = 384
 
-set_popularities = {
-   neutrality = 90
-   national_socialism = 10
+oob = "ABS_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
 }
+
+
+set_convoys = 10
+
+
+
+	set_popularities = {
+
+        national_socialism = 10
+        neutrality = 90
+
+	}
 	
-set_politics = { 
-	ruling_party = neutrality
+	set_politics = { 
+ ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -15,7 +31,7 @@ set_politics = {
 create_country_leader = {
 	name = "Reichskommissar Friedrich Olbricht"
 	desc = ""
-	picture = "gfx/leaders/ABS/ABS_Olbricht.tga"
+	picture = "ABS_Olbricht.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -23,21 +39,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Itȟáŋčhaŋ Zitkala-Ša"
+	name = "President Gertrude Bonnin"
 	desc = ""
-	picture = "gfx/leaders/NDA/NDA_Sa.tga"
+	picture = "NDA_Sa.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Itȟáŋčhaŋ Zitkala-Ša"
-	desc = ""
-	picture = "gfx/leaders/NDA/NDA_Sa.tga"
-	expire = "1965.1.1"
-	ideology = socmon_social_democracy
 	traits = {
 	}
 }

@@ -1,12 +1,19 @@
 ﻿capital = 206 #Minsk
 
-set_cosmetic_tag = RUS_RED
-set_country_flag = has_secondary_leader
-set_country_flag = has_tertiary_leader
+oob = "BLR_1936"
 
-set_popularities = {
-	vanguardism = 100	
-}
+set_cosmetic_tag = BLR_SOV
+
+	set_popularities = {
+		democratic 
+			 = 15
+		neutrality
+			 = 20
+		vanguardism
+			 = 60
+		fascism 
+			 = 5
+		}
 	set_politics = { 
  ruling_party = vanguardism
 	last_election = "1933.7.1"
@@ -15,9 +22,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-    name = "Staršyniá CVK Aliaksándr Ryhóravič Čarviakóŭ"
+    name = "Staršynia Aliaksandr Ryhoravič Čarviakoŭ"
     desc = ""
-    picture = "gfx/leaders/BLR/Chervyakov.dds"
+    picture = "Chervyakov.dds"
     expire = "1965.1.1"
     ideology = totsoc
     traits = {
@@ -26,9 +33,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Pieršy Sakratár Vasiĺ Ivánavič Zacharka"
+	name = "Pieršy Sakratar Vasiĺ Zacharka"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Zacharka.tga"
+	picture = "BLR_Zacharka.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -36,9 +43,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prezidént Vasiĺ Ivánavič Zacharka"
+	name = "Prezident Vasiĺ Zacharka"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Zacharka.tga"
+	picture = "BLR_Zacharka.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -46,19 +53,20 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prezidént Usiévalad Filarétavič Rodźka"
-	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Rodko.tga"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-	}
+    name = "Prezident Troch Ivanavič Lukashenka"
+    desc = ""
+    picture = "BLR_Lukashenko.tga"
+    expire = "1965.1.1"
+    ideology = despotism
+    traits = {
+        #
+    }
 }
 
 create_country_leader = {
-	name = "Reichskommissar Wilhelm Richard Paul Kube"
+	name = "Reichskommissar Wilhelm Kube"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Kube.tga"
+	picture = "BLR_Kube.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -66,9 +74,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Velíkij Gércog Mixaíl I Romanóvskij"
+	name = "Velikiy Gertsog Mikhail I Romanovskiy"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Mikhail.tga"
+	picture = "BLR_Mikhail.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -76,9 +84,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prezidént Víncent Jánavič Hadléŭski"
+	name = "Prezident Vincent Hadleŭski"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Hadleuski.tga"
+	picture = "BLR_Hadleuski.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -86,9 +94,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Karoĺ Uladzímir I Hohiencoĺernaŭski"
+	name = "Karoĺ Uladzimir I Hohiencoliernaŭ"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Uladzimir.tga"
+	picture = "BLR_Uladzimir.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -96,19 +104,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prezidént Mikaláj Siamiónavič Abrámchyk"
+	name = "Prezident Mikola Abramchyk"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Abramchyk.tga"
+	picture = "BLR_Abramchyk.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Karoĺ Uladzímir I Hohiencoĺernaŭski"
+	name = "Karoĺ Uladzimir I Hohiencoliernaŭ"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Uladzimir.tga"
+	picture = "BLR_Uladzimir.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -116,9 +124,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Karoĺ Žyhimont I Hohiencoĺernaŭski"
+	name = "Karoĺ Žyhimont I Hohiencoliernaŭ"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Zyhimont.tga"
+	picture = "BLR_Zyhimont.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -126,9 +134,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Káncĺer Víncent Jánavič Hadléŭski"
+	name = "Kanclier Vincent Hadleŭski"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Hadleuski.tga"
+	picture = "BLR_Hadleuski.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -136,9 +144,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kniaź Uladzímir I Hohiencoĺernaŭski"
+	name = "Kniaź Uladzimir I Hohiencoliernaŭ"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Uladzimir.tga"
+	picture = "BLR_Uladzimir.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -146,19 +154,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Haloŭnakamándujučy Stanisláŭ Nikadzímavič Bulák-Balachóvič"
+	name = "Haloŭnakamandujučy Stanisław Bułak-Bałachowicz"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Balachowicz.tga"
+	picture = "BLR_Balachowicz.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Karoĺ Žyhimont I Hohiencoĺernaŭski"
+	name = "Karoĺ Žyhimont I Hohiencoliernaŭ"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Zyhimont.tga"
+	picture = "BLR_Zyhimont.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -166,9 +174,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Karoĺ Mixaíl I Ramanoŭski"
+	name = "Karoĺ Majkl I Ramanavych"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Mikhail.tga"
+	picture = "BLR_Mikhail.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -178,7 +186,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Patryjarch Filaret, Biskup Bobruisk"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Filaret.tga"
+	picture = "BLR_Filaret.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -186,9 +194,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Impieratar Mixaíl I Ramanoŭski"
+	name = "Impieratar Majkl I Ramanavych"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Mikhail.tga"
+	picture = "BLR_Mikhail.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -196,9 +204,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Pravadýr Radasláŭ Kazímiravič Astróŭski"
+	name = "Pravadyr Radasłaŭ Kazimiravič Astroŭski"
 	desc = ""
-	picture = "gfx/leaders/BLR/BLR_Astrouski.tga"
+	picture = "BLR_Astrouski.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {

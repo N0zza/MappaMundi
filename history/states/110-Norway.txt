@@ -1,20 +1,37 @@
+
 state={
 	id=110
 	name="STATE_110"
+	resources={
+		aluminium=5.000
+	}
+
 	history={
 		victory_points = {
 			6115 15 
 		}
 		owner = NOR
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 4
+			6115 = {
+				naval_base = 6
+				coastal_bunker = 3
+
+			}
+
+		}
 		add_core_of = NOR
-		add_core_of = NR2
+
 	}
 
 	provinces={
-		6115
+		14 3171 6115 11184 
 	}
-	manpower=1
+	manpower=910115
 	buildings_max_level_factor=1.000
 	state_category=large_town
-	local_supplies=0.0 
 }

@@ -1,19 +1,18 @@
 ﻿capital = 51
 
-set_country_flag = has_secondary_leader
 
-set_popularities = {
-    vanguardism = 6
-    socialism_ideology = 29
-    liberal_republic = 13
-	democratic = 35
-    centrist_republic = 12
-    neutrality = 5
-}
+	set_popularities = {
+		democratic 
+			 = 80
+		fascism
+			 = 10
+		communism
+			 = 10
 
+		}
 
-set_politics = { 
-	ruling_party = democratic
+	set_politics = { 
+ ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -21,19 +20,9 @@ set_politics = {
 }
 
 create_country_leader = {
-    name = "Bundespräsident Theodor Heuss"
-    desc = ""
-    picture = "gfx/leaders/WGR/WGR_Heuss.tga"
-    expire = "1939.1.16"
-    ideology = christian_democracy
-    traits = {
-    }
-}
-
-create_country_leader = {
     name = "Reichsprotector Joachim Peiper"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Peiper.tga"
+    picture = "WGR_Peiper.tga"
     expire = "1965.1.1"
     ideology = fascism_ideology
     traits = {
@@ -43,7 +32,7 @@ create_country_leader = {
 create_country_leader = { 
     name = "Bundeskanzler Kurt Ernst Carl Schumacher"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Schumacher.tga"
+    picture = "WGR_Schumacher.tga"
     expire = "1965.1.1"
     ideology = demsoc
     traits = {
@@ -53,7 +42,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Vorsitzende Bertha Thalheimer"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Thalheimer.tga"
+    picture = "WGR_Thalheimer.tga"
     expire = "1965.1.1"
     ideology = marxism
     traits = {
@@ -61,11 +50,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Bundeskanzler Franz Blücher"
+    name = "Bundeskanzler Konrad Hermann Joseph Adenauer"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Blucher.tga"
-    expire = "1939.1.16"
-    ideology = liberalism
+    picture = "gfx/leaders/WGR/Portrait_WGR_Konrad_Adenauer.dds"
+    expire = "1965.1.1"
+    ideology = conservatism
     traits = {
     }
 }
@@ -73,7 +62,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Generalsekretär Erich Fritz Emil Mielke"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Mielke.tga"
+    picture = "WGR_Mielke.tga"
     expire = "1965.1.1"
     ideology = totsoc
     traits = {
@@ -81,18 +70,29 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Bundespräsident Wilhelm Rudolf Konrad Amelunxen"
+    name = "Bundeskanzler Theodor Heuss"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Amelunxen.tga"
+    picture = "WGR_Heuss.tga"
+    expire = "1939.1.16"
+    ideology = socdem
+    traits = {
+    }
+}
+
+create_country_leader = {
+    name = "Bundespräsident Rudolf Amelunxen"
+    desc = ""
+    picture = "WGR_Amelunxen.tga"
     expire = "1956.1.1"
     ideology = cenrep
     traits = {
 }
+}
 
 create_country_leader = {
-    name = "König Ferdinand I von Hohenzollern"
+    name = "Köenig Louis I Von Hohenzollern"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Louis.tga"
+    picture = "WGR_Louis.tga"
     expire = "1956.1.1"
     ideology = monsoc
     traits = {
@@ -100,19 +100,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Generalinspekteur Adolf Bruno Heinrich Ernst Heusinger"
+    name = "Generalinspekteur Adolf Heusiner"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Heusinger.tga"
+    picture = "WGR_Heusinger.tga"
     expire = "1956.1.1"
-    ideology = military_junta
+    ideology = militarism
     traits = {
     }
 }
 
 create_country_leader = {
-    name = "Bundeskanzler Gustav Walter Heinemann"
+    name = "Bundeskanzler Gustav Heinemann"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Heinenmann.tga"
+    picture = "WGR_Heinenmann.tga"
     expire = "1956.1.1"
     ideology = despotism
     traits = {
@@ -120,9 +120,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Oberster Führer Karl Waldemar Schütz"
+    name = "Oberster Kanzler Waldemar Schutz"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Schutz.tga"
+    picture = "WGR_Schutz.tga"
     expire = "1956.1.1"
     ideology = repfash
     traits = {
@@ -130,9 +130,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Führer und Reichskanzler Otto Ernst Remer"
+    name = "Bundeskanzlerin und Führer Otto Ernst Remer"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Remer.tga"
+    picture = "WGR_Remer.tga"
     expire = "1956.1.1"
     ideology = natsoc
     traits = {
@@ -140,9 +140,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Oberbefehlshaber Wilhelm Josef Franz Ritter von Leeb"
+    name = "Oberster Befehlshaber der Armee Wilhelm Von Leeb"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Leeb.tga"
+    picture = "WGR_Leeb.tga"
     expire = "1956.1.1"
     ideology = stratmon
     traits = {
@@ -150,9 +150,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Präses Friedrich Carl Nicolaus Constantin von Dietze"
+    name = "Präsidien der Synode Constantin von Dietze"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Dietze.tga"
+    picture = "WGR_Dietze.tga"
     expire = "1956.1.1"
     ideology = christian
     traits = {
@@ -160,19 +160,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "König Ferdinand I von Hohenzollern"
+    name = "Köenig Louis I Von Hohenzollern"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Louis.tga"
+    picture = "WGR_Louis.tga"
     expire = "1956.1.1"
-    ideology = conservative_constitutionalism
+    ideology = cenmon
     traits = {
     }
 }
 
 create_country_leader = {
-    name = "König Ferdinand I von Hohenzollern"
+    name = "Köenig Louis I Von Hohenzollern"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Louis.tga"
+    picture = "WGR_Louis.tga"
     expire = "1956.1.1"
     ideology = authmon
     traits = {
@@ -180,9 +180,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "König Ferdinand I von Hohenzollern"
+    name = "Kaiser Louis I Von Hohenzollern"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Louis.tga"
+    picture = "WGR_Louis.tga"
     expire = "1956.1.1"
     ideology = absolutism
     traits = {
@@ -190,9 +190,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "König Ferdinand I von Hohenzollern"
+    name = "Köenig Louis I Von Hohenzollern"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Louis.tga"
+    picture = "WGR_Louis.tga"
     expire = "1956.1.1"
     ideology = liberal_constitutionalism
     traits = {
@@ -200,11 +200,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Kaiser Franz Joseph II Von Habsburg"
+    name = "Kaiser Otto Von Habsburg"
     desc = ""
-    picture = "gfx/leaders/WGR/WGR_Otto.tga"
+    picture = "WGR_Otto.tga"
     expire = "1956.1.1"
-    ideology = cenmon
+    ideology = conservative_constitutionalism
     traits = {
     }
 }

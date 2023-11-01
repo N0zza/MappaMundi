@@ -1,9 +1,11 @@
 ﻿capital = 13591
 
+oob = "ALG_1936"
+
 set_popularities = {
 	stratocratic= 60
 	communism = 30
-	centrist_republic = 10	
+	liberal_republic = 10	
 }
 
 set_cosmetic_tag = FRA_BLUE
@@ -18,7 +20,7 @@ set_politics = {
 create_country_leader = {
 	name = "Governor-General Sir John Henry D'Albiac"
 	desc = ""
-	picture = "gfx/leaders/ALG/ALG_Albiac_stratmon.tga"
+	picture = "ALG_Albiac_stratmon.tga"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {
@@ -28,7 +30,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gobernador José Moscardó e Ituarte"
 	desc = ""
-	picture = "gfx/leaders/ALG/ALG_Moscardo_authrep.tga"
+	picture = "ALG_Moscardo_authrep.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -38,7 +40,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mufawad Belkacem Radjef"
 	desc = ""
-	picture = "gfx/leaders/ALG/ALG_Radjef_commie.tga"
+	picture = "ALG_Radjef_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -48,7 +50,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Général Maxime Weygand"
 	desc = ""
-	picture = "gfx/leaders/ALG/ALG_Weygand_strat.tga"
+	picture = "ALG_Weygand_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -56,19 +58,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gouverneur Général Maxime Weygand"
-	desc = ""
-	picture = "gfx/leaders/ALG/ALG_Weygand_strat.tga"
-	expire = "1965.1.1"
-	ideology = cenrep
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Dey Ali Fuat Cebesoy"
 	desc = ""
-	picture = "gfx/leaders/ALG/ALG_Cebesoy_authmon.tga"
+	picture = "ALG_Cebesoy_authmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -78,9 +70,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governatore Annibale Bergonzoli"
 	desc = ""
-	picture = "gfx/leaders/ALG/ALG_Bergonzoli_fash.tga"
+	picture = "ALG_Bergonzoli_fash.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -88,9 +80,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Mohammed Saleh Bendjelloul"
 	desc = ""
-	picture = "gfx/leaders/ALG/ALG_Saleh_libdem.tga"
+	picture = "ALG_Saleh_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism 
+	ideology = socdem 
 	traits = {
 	}
 }

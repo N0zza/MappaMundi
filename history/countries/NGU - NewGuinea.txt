@@ -1,16 +1,30 @@
 ﻿capital = 737
 
+oob = "NGU_1936"
 set_cosmetic_tag = NGU_AST
-
-set_popularities = {
-	authoritarian_monarchism =  80
-	neutrality =  10
-	democratic =  8
-	liberal_republic = 2
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
 }
+
+
+set_convoys = 10
+
+
+
+	set_popularities = {
+        authoritarian_monarchism =  80
+        neutrality =  10
+        democratic =  8
+        liberal_republic = 2
+        
+
+	}
 	
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -19,18 +33,19 @@ set_politics = {
 create_country_leader = {
 	name = "Governor Sir Walter Ramsay McNicoll"
 	desc = ""
-	picture = "gfx/leaders/NGU/Portrait_Walter_McNicoll.dds"
+	picture = "Portrait_Walter_McNicoll.dds"
 	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Gouverneur August Wilhelm Heye"
 	desc = ""
-	picture = "gfx/leaders/NGU/NGU_Heye.tga"
+	picture = "NGU_Heye.tga"
 	expire = "1989.1.1"
-	ideology = stratmon_colonialism
+	ideology = stratmon
 	traits = {
 	}
 }
@@ -38,7 +53,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor August Wilhelm Heye"
 	desc = ""
-	picture = "gfx/leaders/NGU/NGU_Heye.tga"
+	picture = "NGU_Heye.tga"
 	expire = "1989.1.1"
 	ideology = natsoc
 	traits = {
@@ -48,7 +63,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur August Wilhelm Heye"
 	desc = ""
-	picture = "gfx/leaders/NGU/NGU_Heye.tga"
+	picture = "NGU_Heye.tga"
 	expire = "1989.1.1"
 	ideology = ancap
 	traits = {
@@ -58,7 +73,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Koriam Michael Urekit"
 	desc = ""
-	picture = "gfx/leaders/NGU/NGU_Urekit_authrep.tga"
+	picture = "NGU_Urekit_authrep.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -68,7 +83,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Pita Simogun"
 	desc = ""
-	picture = "gfx/leaders/NGU/NGU_Simogun_condem.tga"
+	picture = "NGU_Simogun_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -78,7 +93,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister Donald Barrett"
 	desc = ""
-	picture = "gfx/leaders/NGU/NGU_Barrett_libdem.tga"
+	picture = "NGU_Barrett_libdem.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -88,7 +103,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chiji Tomitaro Horii"
 	desc = ""
-	picture = "gfx/leaders/NGU/NGU_Horii_fash.tga"
+	picture = "NGU_Horii_fash.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -98,7 +113,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Guvernér Jan Havlasa"
 	desc = ""
-	picture = "gfx/leaders/NGU/NGU_Havlasa_cendem.tga"
+	picture = "NGU_Havlasa_cendem.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {

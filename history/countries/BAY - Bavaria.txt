@@ -1,11 +1,35 @@
 ﻿capital = 52
 
-set_popularities = {
-	monarchism = 50
-	national_socialism = 30
-	democratic = 10
-	vanguardism = 10
+set_research_slots = 3
+
+oob = "BAY_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1
+	tech_recon = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	transport = 1
 }
+
+set_popularities = {
+	democratic 
+		= 10
+	fascism
+		= 30
+	communism
+		= 10
+	neutrality
+		= 0
+	monarchism
+		= 50
+	}
 	
 set_politics = { 
 	ruling_party = monarchism
@@ -15,19 +39,19 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Präsident Friedrich Hermann Schäffer"
+	name = "Ministerpräsident Friedrich Hermann Schäffer"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Schaffer.tga"
+	picture = "BAY_Schaffer.tga"
 	expire = "1950.1.1"
-	ideology = liberal_conservatism
+	ideology = liberalism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Reichsführer Ernst Julius Röhm"
+	name = "Führer Ernst Julius Röhm"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Rohm.tga"
+	picture = "BAY_Rohm.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -35,9 +59,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Volksführerin Rosa Luxemburg"
+	name = "Volksführer Rosa Luxemburg"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Luxembourg.tga"
+	picture = "BAY_Luxembourg.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -47,7 +71,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ministerpräsident Franz Xaver Ritter von Epp"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAV_Epp.tga"
+	picture = "BAV_Epp.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -55,9 +79,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Führer und Reichskanzler Adolf Hitler"
+	name = "Führer Und Reichskanzler Adolf Hitler"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Hitler20s.tga"
+	picture = "BAY_Hitler20s.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -67,7 +91,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Dwight David Eisenhower"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Eisenhower.tga"
+	picture = "BAY_Eisenhower.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -75,9 +99,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Präsident Ernst Toller"
+	name = "Präsident Ernst Troller"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Toller.tga"
+	picture = "BAY_Toller.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -85,9 +109,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Herzog Oskar Georg Wilhelm Ritter und Edler Xylander"
+	name = "General der Infanterie Oskar Ritter und Edler von Xylander"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Oskar.tga"
+	picture = "BAY_Oskar.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -97,7 +121,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Generalsekretär Eugen Leviné"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Levine.tga"
+	picture = "BAY_Levine.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -107,7 +131,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "König Heinrich I von Wittelsbach"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Heinrich.tga"
+	picture = "BAY_Heinrich.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -115,11 +139,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Präsident Kurt Riezler"
+	name = "Ministerpräsident Kurt Riezler"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Riezler.tga"
+	picture = "BAY_Riezler.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -127,7 +151,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "König Albrecht I von Wittelsbach"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Albrecht.tga"
+	picture = "BAY_Albrecht.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -137,7 +161,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "König Rupprecht I von Wittelsbach"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAV_Rupprecht.tga"
+	picture = "BAV_Rupprecht.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -147,7 +171,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ministerpräsident Jakob Fischbacher"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Fischbacher.tga"
+	picture = "BAY_Fischbacher.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -155,9 +179,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kurfürst Franz I von Wittelsbach"
+	name = "König Franz I von Wittelsbach"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Franz.tga"
+	picture = "BAY_Franz.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -167,7 +191,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "König Rupprecht I von Wittelsbach"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAV_Rupprecht.tga"
+	picture = "BAV_Rupprecht.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -177,7 +201,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Landesbischof Hans Meiser"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Meiser.tga"
+	picture = "BAY_Meiser.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -197,7 +221,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kommandant Gustav Landauer"
 	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
-	picture = "gfx/leaders/BAY/BAY_Landauer.tga"
+	picture = "BAY_Landauer.tga"
 	expire = "1965.1.1"
 	ideology = ancom
 	traits = {
@@ -215,9 +239,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Präsident Josef Müller"
+	name = "Ministerpräsident Josef Müller"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAY_Muller.tga"
+	picture = "BAY_Muller.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -227,7 +251,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kaiser Rupprecht I von Wittelsbach"
 	desc = ""
-	picture = "gfx/leaders/BAY/BAV_Rupprecht.tga"
+	picture = "BAV_Rupprecht.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {

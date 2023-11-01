@@ -1,21 +1,35 @@
 ﻿capital = 11618
 
-set_popularities = {	
-	stratocratic = 40	
-	neutrality = 60
-}
+oob = "SIC_1936"
 
-set_politics = { 
-	ruling_party = neutrality
+
+
+	set_popularities = {
+		democratic
+			 = 0
+			
+		stratocratic
+			 = 40
+		communism
+			 = 0
+			
+		neutrality
+			 = 60
+		
+	}
+
+	set_politics = { 
+ ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+
 create_country_leader = {
 	name = "Chou ch'ang Liu Hsiang"
 	desc = "POLITICS_LIU_XIANG_DESC"
-	picture = "gfx/leaders/SHC/Portrait_Sichuan_Liu_Xiang.dds"
+	picture = "Portrait_Sichuan_Liu_Xiang.dds"
 	expire = "1938.1.20"
 	ideology = despotism
 }
@@ -23,29 +37,29 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chou ch'ang Liu Hsiang"
 	desc = "POLITICS_LIU_XIANG_DESC"
-	picture = "gfx/leaders/SHC/Portrait_Sichuan_Liu_Xiang.dds"
+	picture = "Portrait_Sichuan_Liu_Xiang.dds"
 	expire = "1938.1.20"
-	ideology = warlordism
+	ideology = militarism
 }
 
 create_country_leader = {
 	name = "Wang Lingchi"
 	desc = "#"
-	picture = "gfx/leaders/SHC/Portrait_Sichuan_Wang_Lingji.dds"
+	picture = "Portrait_Sichuan_Wang_Lingji.dds"
 	expire = "1938.1.20"
 	ideology = fascism_ideology
 }
 create_country_leader = {
 	name = "Teng Hsihou"
 	desc = "#"
-	picture = "gfx/leaders/SHC/Portrait_Sichuan_Deng_Xihou.dds"
+	picture = "Portrait_Sichuan_Deng_Xihou.dds"
 	expire = "1938.1.20"
 	ideology = marxism
 }
 create_country_leader = {
 	name = "Hsiung Kowu"
 	desc = "#"
-	picture = "gfx/leaders/SHC/Portrait_Sichuan_Xiong_Kewu.dds"
+	picture = "Portrait_Sichuan_Xiong_Kewu.dds"
 	expire = "1938.1.20"
 	ideology = conservatism
 }

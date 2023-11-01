@@ -1,15 +1,22 @@
-﻿capital = 1828
+﻿capital = 1829
 
-set_popularities = {
-	authoritarian_monarchism  = 5
-	theocratic = 5
-	conservative_monarchism = 70
-	liberal_republic = 12
-	socialism_ideology = 8
-}
+oob = "NIR_1936"
 
-set_politics = { 
-	ruling_party = conservative_monarchism
+
+	set_popularities = {
+		authoritarian_monarchism 
+			 = 5
+		theocratic
+			 = 5
+		conservative_monarchism
+			 = 70
+		liberal_republic
+			 = 12
+		socialism_ideology
+			 = 8
+		}
+	set_politics = { 
+ ruling_party = conservative_monarchism
 	last_election = "1933.1.24"
 	election_frequency = 48
 	elections_allowed = no
@@ -18,27 +25,18 @@ set_politics = {
 create_country_leader = {
 	name = "Earl Henry of Windsor"
 	desc = ""
-	picture = "gfx/leaders/NIR/Portrait_Prince_Henry.dds"
+	picture = "Portrait_Prince_Henry.dds"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Óglaigh na hÉireann"
-	desc = ""
-	picture = "gfx/leaders/NIR/Portrait_IRA.dds"
-	expire = "1989.1.1"
-	ideology = military_junta
-	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Chairman Basil Stanlake Brooke"
 	desc = ""
-	picture = "gfx/leaders/NIR/NIR_Brooke_stratmon.tga"
+	picture = "NIR_Brooke_stratmon.tga"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {
@@ -48,7 +46,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Provisional President Peadar O'Donnell"
 	desc = ""
-	picture = "gfx/leaders/NIR/NIR_Donnell_demsoc.tga"
+	picture = "NIR_Donnell_demsoc.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -58,9 +56,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Robert Lindsay Crawford"
 	desc = ""
-	picture = "gfx/leaders/NIR/NIR_Crawford_libdem.tga"
+	picture = "NIR_Crawford_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -68,7 +66,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister James Craig"
 	desc = ""
-	picture = "gfx/leaders/NIR/NIR_Craig.tga"
+	picture = "NIR_Craig.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -78,7 +76,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Administrator James Craig"
 	desc = ""
-	picture = "gfx/leaders/NIR/NIR_Craig.tga"
+	picture = "NIR_Craig.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -88,7 +86,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rí Forga X ó Ulaidh"
 	desc = ""
-	picture = "gfx/leaders/NIR/NIR_Forga.tga"
+	picture = "NIR_Forga.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -98,7 +96,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Grand Master James Craig"
 	desc = ""
-	picture = "gfx/leaders/NIR/NIR_Craig.tga"
+	picture = "NIR_Craig.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -108,7 +106,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ceannasaí Dorothy Grace Waring"
 	desc = ""
-	picture = "gfx/leaders/NIR/NIR_Dorothy_repfash.tga"
+	picture = "NIR_Dorothy_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {

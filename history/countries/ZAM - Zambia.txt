@@ -1,15 +1,30 @@
 ﻿capital = 5008
 
-set_cosmetic_tag = UK_RED
+oob = "ZAM_1936"
 
-set_popularities = {
-	liberal_republic= 15
-	conservative_monarchism = 10	
-	authoritarian_monarchism  = 75
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
 }
 
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+set_convoys = 5
+set_cosmetic_tag = UK_RED
+
+
+	set_popularities = {
+		liberal_republic
+			 = 15
+		conservative_monarchism
+			 = 10
+		communism
+			 = 0
+			
+		authoritarian_monarchism 
+			 = 75
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -20,17 +35,18 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ZAM/Portrait_Hubert_Winthrop_Young.dds"
 	expire = "1965.1.1"
-	ideology = authmon_colonialism
+	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Gouverneur Hans Benno Hüttig"
+	name = "Gouverneur Hans Hüttig"
 	desc = ""
-	picture = "gfx/leaders/ZAM/ZAM_Huttig.tga"
+	picture = "ZAM_Huttig.tga"
 	expire = "1989.1.1"
-	ideology = stratmon_colonialism
+	ideology = stratmon
 	traits = {
 	}
 }
@@ -38,7 +54,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governador-Geral Vasco Lopes Alves"
 	desc = ""
-	picture = "gfx/leaders/ZAM/ZAM_Vascudo.tga"
+	picture = "ZAM_Vascudo.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -48,9 +64,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Godwin Lewanika"
 	desc = ""
-	picture = "gfx/leaders/ZAM/ZAM_Lewanika_libdem.tga"
+	picture = "ZAM_Lewanika_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -58,7 +74,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governador-Geral Vasco Lopes Alves"
 	desc = ""
-	picture = "gfx/leaders/ZAM/ZAM_Vascudo.tga"
+	picture = "ZAM_Vascudo.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -68,7 +84,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor General Sir John Jestyn Llewellin"
 	desc = ""
-	picture = "gfx/leaders/ZAM/ZAM_Llewellin.tga"
+	picture = "ZAM_Llewellin.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -78,7 +94,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister Sir Stewart Gore-Browne"
 	desc = ""
-	picture = "gfx/leaders/ZAM/ZAM_Browne_cendem.tga"
+	picture = "ZAM_Browne_cendem.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -88,7 +104,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Sir John Jestyn Llewellin"
 	desc = ""
-	picture = "gfx/leaders/ZAM/ZAM_Llewellin.tga"
+	picture = "ZAM_Llewellin.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -96,9 +112,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Reichsprotektor Hans Benno Hüttig"
+	name = "Reichsprotektor Hans Hüttig"
 	desc = ""
-	picture = "gfx/leaders/ZAM/ZAM_Huttig.tga"
+	picture = "ZAM_Huttig.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

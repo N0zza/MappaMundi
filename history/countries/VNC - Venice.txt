@@ -1,44 +1,63 @@
 ﻿capital = 160
 
-set_popularities = {
-	democratic = 40
-	liberal_republic = 30
-	centrist_republic = 25
-	authoritarian_monarchism = 5
+oob = "VNC_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	early_fighter = 1
+	CAS1 = 1
 }
 
-set_politics = { 
-	ruling_party = democratic
+
+
+	set_popularities = {
+		democratic 
+			 = 40
+		liberal_republic
+			 = 30
+		centrist_republic
+			 = 25
+		authoritarian_monarchism
+			 = 5
+		}
+	set_politics = { 
+ ruling_party = democratic
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
-}
+}
+
+add_ideas = {
+	neutrality_idea	
+	limited_conscription
+}
+
+set_stability = 0.85
+
 create_country_leader = {
 	name = "Venice City Council"
 	desc = ""
-	picture = "gfx/leaders/VNC/Portrait_Venice_City_Council.dds"
+	picture = "Portrait_Venice_City_Council.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Presidente Giovanni Battista Gianquinto"
 	desc = ""
-	picture = "gfx/leaders/VNC/VNC_Gianquinto_libdem.tga"
+	picture = "VNC_Gianquinto_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Viceré Pietro Ferdinando d'Asburgo-Lorena"
-	desc = ""
-	picture = "gfx/leaders/VNC/VNC_Ferdinando.tga"
-	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -46,17 +65,18 @@ create_country_leader = {
 create_country_leader = {
 	name = "Doge Giuseppe Volpi"
 	desc = ""
-	picture = "gfx/leaders/VNC/VNC_Volpi_condem.tga"
+	picture = "VNC_Volpi_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
 	}
 }
 
+
 create_country_leader = {
 	name = "Doge Giuseppe Volpi"
 	desc = ""
-	picture = "gfx/leaders/VNC/VNC_Volpi_condem.tga"
+	picture = "VNC_Volpi_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -66,7 +86,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Umberto Merlin"
 	desc = ""
-	picture = "gfx/leaders/VNC/VNC_Merlin_cenrep.tga"
+	picture = "VNC_Merlin_cenrep.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -76,7 +96,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Viceré Pietro Ferdinando d'Asburgo-Lorena"
 	desc = ""
-	picture = "gfx/leaders/VNC/VNC_Ferdinando.tga"
+	picture = "VNC_Ferdinando.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {

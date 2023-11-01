@@ -2,13 +2,19 @@
 
 set_cosmetic_tag = FRA_COLONY
 
-set_popularities = {
-	democratic = 10
-	neutrality = 90
-}
 
-set_politics = { 
-	ruling_party = neutrality
+	set_popularities = {
+		democratic 
+			 = 10
+		fascism
+			 = 0
+		liberal_republic
+			 = 0
+		neutrality 
+			 = 90
+		}
+	set_politics = { 
+ ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -17,9 +23,9 @@ set_politics = {
 create_country_leader = {
 	name = "Gouverneur Adolphe Deitte"
 	desc = ""
-	picture = "gfx/leaders/IVO/IVO_Deitte.tga"
+	picture = "IVO_Deitte.tga"
 	expire = "1965.1.1"
-	ideology = colonialism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -27,7 +33,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Sir Robert Lindsay Burnett"
 	desc = ""
-	picture = "gfx/leaders/IVO/IVO_Burnett_authmon.tga"
+	picture = "IVO_Burnett_authmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -37,19 +43,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Félix Houphouët-Boigny"
 	desc = ""
-	picture = "gfx/leaders/IVO/IVO_Boigny_condem.tga"
+	picture = "IVO_Boigny_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = stratmon_colonialism
 	traits = {
 	}
 }

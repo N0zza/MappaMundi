@@ -2,15 +2,20 @@
 
 set_cosmetic_tag = FRA_COLONY
 
-set_popularities = {
-	monarchism = 10
-	stratocratic = 10
-	centrist_republic = 10
-	neutrality = 70
-}
 
-set_politics = { 
-	ruling_party = neutrality
+
+	set_popularities = {
+		monarchism 
+			 = 10
+		stratocratic
+			 = 10
+		centrist_republic
+			 = 10
+		neutrality 
+			 = 70
+		}
+	set_politics = { 
+ ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -19,9 +24,9 @@ set_politics = {
 create_country_leader = {
 	name = "Gouverneur Maurice-Léon Bourgine"
 	desc = ""
-	picture = "gfx/leaders/DAH/DAH_Bourgine.tga"
+	picture = "DAH_Bourgine.tga"
 	expire = "1965.1.1"
-	ideology = colonialism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -29,7 +34,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Sourou-Migan Marcellin Joseph Apithy"
 	desc = ""
-	picture = "gfx/leaders/DAH/DAH_Apithy_cendem.tga"
+	picture = "DAH_Apithy_cendem.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -39,7 +44,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Christophe Soglo"
 	desc = ""
-	picture = "gfx/leaders/DAH/DAH_Soglo_strat.tga"
+	picture = "DAH_Soglo_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -49,7 +54,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Roi Agoli-Agbo"
 	desc = ""
-	picture = "gfx/leaders/DAH/DAH_Agbo_mon.tga"
+	picture = "DAH_Agbo_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -59,19 +64,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ahosu Koulery Ouibro"
 	desc = ""
-	picture = "gfx/leaders/DAH/DAH_Koulery_Ouibro.tga"
+	picture = "DAH_Koulery_Ouibro.tga"
 	expire = "1965.1.1"
 	ideology = authmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = stratmon_colonialism
 	traits = {
 	}
 }

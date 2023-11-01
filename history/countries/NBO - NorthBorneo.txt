@@ -1,5 +1,17 @@
 ﻿capital = 2465
+
+oob = "NBO_1936"
 set_cosmetic_tag = UK_RED
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+set_convoys = 10
+
+
 
 	set_popularities = {
         
@@ -19,7 +31,7 @@ set_cosmetic_tag = UK_RED
 create_country_leader = {
 	name = "Governor Douglas James Jardine"
 	desc = ""
-	picture = "gfx/leaders/NBO/Portrait_Douglas_James_Jardine.dds"
+	picture = "Portrait_Douglas_James_Jardine.dds"
 	ideology = authmon
 	expire = "1963.6.16"
 	traits = {
@@ -30,7 +42,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Zenpan-teki Masao Baba"
 	desc = ""
-	picture = "gfx/leaders/BEO/BEO_Baba.tga"
+	picture = "BEO_Baba.tga"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {
@@ -40,7 +52,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Lily Eberwein Abdullah"
 	desc = ""
-	picture = "gfx/leaders/BEO/BEO_Lily.tga"
+	picture = "BEO_Lily.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {

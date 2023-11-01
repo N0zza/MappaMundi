@@ -1,47 +1,58 @@
 ﻿capital = 1537
 
+oob = "KEN_1936"
+
 set_cosmetic_tag = UK_RED
 
-set_popularities = {
-	democratic = 10
-	liberal_republic = 5
-	republican_fascism = 5
-	stratocratic = 5	
-	authoritarian_monarchism = 75
-}
-
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+	set_popularities = {
+		democratic 
+			 = 10
+		liberal_republic
+			 = 5
+		republican_fascism
+			 = 5
+		stratocratic
+			 = 5
+			
+		authoritarian_monarchism 
+			 = 75
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 create_country_leader = {
+	
+	
 	name = "Governor Sir Joseph Aloysius Byrne"
-	picture = "gfx/leaders/KEN/Portrait_Sir_Joseph_Aloysius_Byrne.dds"
+	picture = "Portrait_Sir_Joseph_Aloysius_Byrne.dds"
 	expire = "1965.1.1"
-	ideology = authmon_colonialism
+	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "First Secretary Hussein Onyango Obama"
 	desc = ""
-	picture = "gfx/leaders/KEN/KEN_Obama_commie.tga"
+	picture = "KEN_Obama_commie.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Prime Minister Ramogi Achieng Oneko"
 	desc = ""
-	picture = "gfx/leaders/KEN/KEN_Oneko_libdem.tga"
+	picture = "KEN_Oneko_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -49,27 +60,18 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Jomo Kenyatta"
 	desc = ""
-	picture = "gfx/leaders/KEN/KEN_Kenyatta_condem.tga"
+	picture = "KEN_Kenyatta_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
 	}
 }
 
-create_country_leader = {
-	name = "Governor Richard Meinertzhagen"
-	desc = ""
-	picture = "gfx/leaders/KEN/Portrait_Richard_Meinertzhagen.dds"
-	expire = "1965.1.1"
-	ideology = cenmon
-	traits = {
-	}
-}
 
 create_country_leader = {
 	name = "Prime Minister John Malcolm Churchill"
 	desc = ""
-	picture = "gfx/leaders/KEN/KEN_Churchill_conmon.tga"
+	picture = "KEN_Churchill_conmon.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -79,7 +81,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Commander Dedan Kimathi Waciuri"
 	desc = ""
-	picture = "gfx/leaders/KEN/KEN_Waciuri_strat.tga"
+	picture = "KEN_Waciuri_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -89,7 +91,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Leader Stanley Mathenge wa Mirugi"
 	desc = ""
-	picture = "gfx/leaders/KEN/KEN_Mirugi_repfash.tga"
+	picture = "KEN_Mirugi_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -99,9 +101,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governatore Enzo Emilio Galbiati"
 	desc = ""
-	picture = "gfx/leaders/KEN/KEN_Galbiati_fash.tga"
+	picture = "KEN_Galbiati_fash.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
 	}
 }

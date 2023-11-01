@@ -1,8 +1,19 @@
 ﻿capital = 2377
 
+oob = "RSI_1936"
+
+set_convoys = 20
+
 set_popularities = {
-	republican_fascism = 100
-}
+	republican_fascism
+		= 80
+	national_socialism
+		= 10
+	communism
+		= 5
+	conservative_monarchism
+		= 5
+	}
 
 set_politics = { 
 	ruling_party = republican_fascism
@@ -12,69 +23,20 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Company Leadership"
-	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = ancap
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = christian
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Reichsprotektor Joachim Hermann August Lemelsen"
-	desc = ""
-	picture = "gfx/leaders/RSI/RSI_Lemelsen_nazi.tga"
-	expire = "1965.1.1"
-	ideology = natsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Re Umberto II di Savoia"
-	desc = ""
-	picture = "gfx/leaders/RSI/Portrait_Umberto_II.tga"
-	expire = "1965.1.1"
-	ideology = italian_fascism
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Duce Benito Amilcare Andrea Mussolini"
 	desc = ""
-	picture = "gfx/leaders/RSI/Benito_Mussolini.dds"
+	picture = "Benito_Mussolini.dds"
 	expire = "1965.1.1"
-	ideology = rep_italian_fascism
+	ideology = repfash
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Viceré Sergio Giorgio d'Beauharnais"
 	desc = ""
-	picture = "gfx/leaders/RSI/RSI_Sergio_stratmon.tga"
+	picture = "RSI_Sergio_stratmon.tga"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {
@@ -82,138 +44,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ministro Della Difesa Nazionale Rodolfo Graziani"
-	picture = "gfx/leaders/SOM/Portrait_Rodolfo_Graziani.dds"
-	expire = "1965.1.1"
-	ideology = military_junta
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Re Umberto II di Savoia"
-	desc = ""
-	picture = "gfx/leaders/RSI/Portrait_Umberto_II.tga"
-	expire = "1965.1.1"
-	ideology = authmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = anocmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = anocrep
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = cenmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Direttore Adone Zoli"
-	desc = ""
-	picture = "gfx/leaders/RSI/RSI_Zoli_cenrep.tga"
-	expire = "1965.1.1"
-	ideology = cenrep
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Comandante Pietro Badoglio"
-	desc = ""
-	picture = "gfx/leaders/RSI/RSI_Badoglio_conmon.tga"
-	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Presidente Ferruccio Parri"
-	desc = ""
-	picture = "gfx/leaders/RSI/RSI_Parri_libdem.tga"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = monsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = demsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Commissario Palmiro Michele Nicola Togliatti"
 	desc = ""
-	picture = "gfx/leaders/RSI/Portrait_Alcide_De_Gasperi.tga"
+	picture = "Portrait_Alcide_De_Gasperi.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -221,31 +54,52 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "To Be Added"
+	name = "Presidente Ferruccio Parri"
 	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
+	picture = "RSI_Parri_libdem.tga"
 	expire = "1965.1.1"
-	ideology = totsoc
+	ideology = socdem
+	traits = {
+	}
+}
+
+
+create_country_leader = {
+	name = "Comandante Pietro Badoglio"
+	desc = ""
+	picture = "RSI_Badoglio_conmon.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Collective Leadership"
-	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	name = "Direttore Adone Zoli"
+	desc = ""
+	picture = "RSI_Zoli_cenrep.tga"
 	expire = "1965.1.1"
-	ideology = ancom
+	ideology = cenrep
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Tribal Leadership"
-	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	name = "Re Umberto II di Savoia"
+	desc = ""
+	picture = "Portrait_Umberto_II.tga"
 	expire = "1965.1.1"
-	ideology = total_anarchist
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Joachim Lemelsen"
+	desc = ""
+	picture = "RSI_Lemelsen_nazi.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
 	traits = {
 	}
 }

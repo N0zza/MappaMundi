@@ -1,80 +1,103 @@
 ﻿capital = 271
 
-set_popularities = {
-	monarchism = 100
+oob = "ETH_1936"
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
 }
 
-set_politics = { 
-	ruling_party = monarchism
+set_convoys = 5
+
+
+	set_popularities = {
+		democratic 
+			 = 0
+		fascism
+			 = 0
+		communism
+			 = 0
+			
+		authoritarian_monarchism 
+			 = 100
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Negusa Nagast Haile Selassie la Salomonawiwi"
+	name = "Negusa Nagast Haile Selassie I la Salomonawiwi"
 	desc = "POLITICS_HAILE_SELASSIE_DESC"
-	picture = "gfx/leaders/ETH/Portrait_Ethiopia_Haile_Selassie.dds"
+	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Negusa Nagast Haile Selassie la Salomonawiwi"
+	name = "Negusa Nagast Haile Selassie I la Salomonawiwi"
 	desc = "POLITICS_HAILE_SELASSIE_DESC"
-	picture = "gfx/leaders/ETH/Portrait_Ethiopia_Haile_Selassie.dds"
+	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Parezidanata Jagama Kello"
 	desc = ""
-	picture = "gfx/leaders/ETH/ETH_Jagama_libdem.tga"
+	picture = "ETH_Jagama_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism 
+	ideology = socdem 
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "t'Aqalaya Minisatara Mekonnen Endelkachew"
 	desc = ""
-	picture = "gfx/leaders/ETH/ETH_Endelkachew_authdem.tga"
+	picture = "ETH_Endelkachew_authdem.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Aməbaganana Parezidanata Yilma Deressa"
 	desc = ""
-	picture = "gfx/leaders/ETH/ETH_Yilma_commie.tga"
+	picture = "ETH_Yilma_commie.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Parezidanata Yilma Deressa"
 	desc = ""
-	picture = "gfx/leaders/ETH/ETH_Yilma_commie.tga"
+	picture = "ETH_Yilma_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Parezidanata Yilma Deressa"
 	desc = ""
-	picture = "gfx/leaders/ETH/ETH_Yilma_commie.tga"
+	picture = "ETH_Yilma_commie.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -82,9 +105,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Negesta Nagastat Tsehai Selassie"
+	name = "Negesta Nagastat Tsehai Selassie I"
 	desc = ""
-	picture = "gfx/leaders/ETH/ETH_Tsehai_socmon.tga"
+	picture = "ETH_Tsehai_socmon.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -92,9 +115,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Negusa Nagast Haile Selassie la Salomonawiwi"
+	name = "Negusa Nagast Haile Selassie I la Salomonawiwi"
 	desc = ""
-	picture = "gfx/leaders/ETH/Portrait_Ethiopia_Haile_Selassie.dds"
+	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -102,9 +125,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Negusa Nagast Amha Selassie"
+	name = "Negusa Nagast Amha Selassie I"
 	desc = ""
-	picture = "gfx/leaders/To_Be_Added.tga"
+	picture = "Amha_Selassie_I.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -112,9 +135,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Negusa Nagast Kassa Haile Darge"
+	name = "Negusa Nagast Kassa Haile Darge I"
 	desc = ""
-	picture = "gfx/leaders/ETH/ETH_Kassa_cenmon.tga"
+	picture = "ETH_Kassa_cenmon.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -124,9 +147,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Viceré Pietro Badoglio"
 	desc = ""
-	picture = "gfx/leaders/ETH/ETH_Badoglio_fascism.tga"
+	picture = "ETH_Badoglio_fascism.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -134,7 +157,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Parezidanata Abebe Aregai"
 	desc = ""
-	picture = "gfx/leaders/ETH/ETH_Abebe_condem.tga"
+	picture = "ETH_Abebe_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -144,7 +167,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Orde Wingate"
 	desc = ""
-	picture = "gfx/leaders/ETH/ETH_Orde_cendem.tga"
+	picture = "ETH_Orde_cendem.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -154,9 +177,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Azaza Mulugeta Yeggazu"
 	desc = ""
-	picture = "gfx/leaders/ETH/ETH_Mulugeta_strat.tga"
+	picture = "ETH_Mulugeta_strat.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
@@ -172,9 +195,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Negus Haile Selassie la Salomonawiwi"
+	name = "Negus Haile Selassie I la Salomonawiwi"
 	desc = ""
-	picture = "gfx/leaders/ETH/Portrait_Ethiopia_Haile_Selassie.dds"
+	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -184,7 +207,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Viceré Amedeo Guillet"
 	desc = ""
-	picture = "gfx/leaders/ETH/ETH_Guillet_repfash.tga"
+	picture = "ETH_Guillet_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -194,7 +217,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Walter Heitz"
 	desc = ""
-	picture = "gfx/leaders/ETH/ETH_Walter_nazi.tga"
+	picture = "ETH_Walter_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

@@ -1,13 +1,21 @@
 ﻿capital = 49
 
-set_country_flag = has_secondary_leader
-recruit_character = TUR_Ismet_Inonu
+oob = "TUR_1936"
 
-set_popularities = {
-	neutrality = 100
-}
 
-set_politics = { 
+
+	set_popularities = {
+		democratic 
+			 = 0
+		fascism
+			 = 0
+			
+		communism
+			 = 0
+		neutrality
+			 = 100
+		}
+	set_politics = { 
  ruling_party = neutrality
 	last_election = "1935.2.8"
 	election_frequency = 48
@@ -17,7 +25,7 @@ set_politics = {
 create_country_leader = {
 	name = "Cumhurbaşkani Mustafa Fevzi Çakmak"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Mustafa_Fevzi_Cakmak.tga"
+	picture = "Portrait_Turkey_Mustafa_Fevzi_Cakmak.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -27,7 +35,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Başkan Şefik Hüsnü"
 	desc = ""
-	picture = "gfx/leaders/TUR/TUR_Husnu.tga"
+	picture = "TUR_Husnu.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -37,7 +45,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Cumhurbaşkani Şefik Hüsnü"
 	desc = ""
-	picture = "gfx/leaders/TUR/TUR_Husnu.tga"
+	picture = "TUR_Husnu.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -47,7 +55,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Cumhurbaşkani Mustafa İsmet İnönü"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Mustafa_ismet_inonu.tga"
+	picture = "Portrait_Turkey_Mustafa_ismet_inonu.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -55,9 +63,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kral Ahmed IV Osmanoğlu"
+	name = "Kral Ahmed IV"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Ahmed_Nihad.tga"
+	picture = "Portrait_Turkey_Ahmed_Nihad.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -67,17 +75,17 @@ create_country_leader = {
 create_country_leader = {
 	name = "Cumhurbaşkani Nuri Demirağ"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Nuri_Demirag.dds"
+	picture = "Portrait_Turkey_Nuri_Demirag.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Kral Mehmed VII Osmanoğlu"
+	name = "Kral Mehmed VII"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Mehmed_Sabahaddin.tga"
+	picture = "Portrait_Turkey_Mehmed_Sabahaddin.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -87,7 +95,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sultan Ahmed IV"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Ahmed_Nihad.tga"
+	picture = "Portrait_Turkey_Ahmed_Nihad.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -97,7 +105,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Cumhurbaşkani Mahmut Celâl Bayar"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Mahmut_Celal_Bayar.tga"
+	picture = "Portrait_Turkey_Mahmut_Celal_Bayar.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -107,7 +115,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sultan Mehmed VII"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Sehzade_Mehmed Ziyaeddin.tga"
+	picture = "Portrait_Turkey_Sehzade_Mehmed Ziyaeddin.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -115,21 +123,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Cumhurbaşkani Kamâl Atatürk"
+	name = "Cumhurbaşkani Mustafa Kemal Atatürk"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Mustafa_Kemal_Ataturk.dds"
+	picture = "Portrait_Turkey_Mustafa_Kemal_Ataturk.dds"
 	expire = "1965.1.1"
-	ideology = kemalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Büyük Millet Meclisi başkanı Mustafa Kemal Paşa"
-	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Mustafa_Kemal_Ataturk.dds"
-	expire = "1965.1.1"
-	ideology = anocrep
+	ideology = despotism
 	traits = {
 	}
 }
@@ -137,9 +135,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Başkomutan Mustafa Fevzi Çakmak"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Mustafa_Fevzi_Cakmak.tga"
+	picture = "Portrait_Turkey_Mustafa_Fevzi_Cakmak.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
@@ -147,7 +145,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Halife Faruk I"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Sehzade_Omer_Faruk.tga"
+	picture = "Portrait_Turkey_Sehzade_Omer_Faruk.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -157,7 +155,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Halife Mehmed VII"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Sehzade_Mehmed_Selim.tga"
+	picture = "Portrait_Turkey_Sehzade_Mehmed_Selim.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -167,7 +165,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Halife Abdülmecit II"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Abdulmecit_II.dds"
+	picture = "Portrait_Turkey_Abdulmecit_II.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -175,21 +173,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Padişah Abdülmecit II"
+	name = "Yüce Lider Mehmet Rifat Börekçi"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Abdulmecit_II.dds"
+	picture = "Portrait_Turkey_Mehmet_Rifat_Borekci.tga"
 	expire = "1965.1.1"
-	ideology = anocmon_national_conservatism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Baş Müftü Mehmet Rifat Börekçi"
-	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Mehmet_Rifat_Borekci.tga"
-	expire = "1965.1.1"
-	ideology = islamic_theocracy
+	ideology = christian
 	traits = {
 	}
 }
@@ -197,7 +185,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Halife Abdülmecit II"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Abdulmecit_II.dds"
+	picture = "Portrait_Turkey_Abdulmecit_II.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -207,7 +195,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Cumhurbaşkani Hüseyin Nihâl Atsız"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Huseyin_Nihal_Atsız.tga"
+	picture = "Portrait_Turkey_Huseyin_Nihal_Atsız.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -217,7 +205,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Başkan Hüseyin Hüsnü Emir Erkilet"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Huseyin_Husnu_Emir_Erkilet.dds"
+	picture = "Portrait_Turkey_Huseyin_Husnu_Emir_Erkilet.dds"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

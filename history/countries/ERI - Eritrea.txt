@@ -1,5 +1,16 @@
 ﻿capital = 550
+
+oob = "ERI_1936"
 set_cosmetic_tag = ITA_GREEN
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+
+set_convoys = 5
+
+
 
 
 	set_popularities = {
@@ -20,11 +31,12 @@ set_cosmetic_tag = ITA_GREEN
 	elections_allowed = no
 }
 
+
 create_country_leader = {
 	name = "Governatore Pietro Badoglio"
-	picture = "gfx/leaders/ERI/Portrait_Pietro_Badoglio.dds"
+	picture = "Portrait_Pietro_Badoglio.dds"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
 		#
 	}
@@ -33,7 +45,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Military Administrator Sir William Platt"
 	desc = ""
-	picture = "gfx/leaders/ERI/ERI_Platt_authmon.tga"
+	picture = "ERI_Platt_authmon.tga"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {
@@ -43,7 +55,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Tedla Bairu"
 	desc = ""
-	picture = "gfx/leaders/ERI/ERI_Bairu_authrep.tga"
+	picture = "ERI_Bairu_authrep.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -53,9 +65,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Woldeab Woldemariam"
 	desc = ""
-	picture = "gfx/leaders/ERI/ERI_Woldemariam_liberalism.tga"
+	picture = "ERI_Woldemariam_librep.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -63,7 +75,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Comandante Domenico Mondelli"
 	desc = ""
-	picture = "gfx/leaders/ERI/ERI_Mondelli_strat.tga"
+	picture = "ERI_Mondelli_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {

@@ -1,10 +1,39 @@
 ﻿capital = 7009
 
-set_popularities = {
-	vanguardism = 100	
+oob = "CHE_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
 }
+
+set_convoys = 10
+
+
+
+	set_popularities = {
+        neutrality = 0
+        monarchism = 0
+        democratic = 10
+        liberal_republic = 0
+        communism = 0
+        vanguardism = 90
+        fascism = 0
+        anarchism_ideology = 0
+        socialism_ideology = 0
+        democratic_monarchism = 0
+        conservative_monarchism = 0
+        stratocratic = 0
+        authoritarian_monarchism = 0
+        republican_fascism = 0
+        national_socialism = 0
+        theocratic = 0
+
+	}
 	
-set_cosmetic_tag = RUS_RED
+set_cosmetic_tag = CHE_SOV
 	
 	set_politics = { 
  ruling_party = vanguardism
@@ -16,17 +45,18 @@ set_cosmetic_tag = RUS_RED
 create_country_leader = {
 	name = "Predsedatel Ali Gorchkhanov"
 	desc = ""
-	picture = "gfx/leaders/CHE/CHE_Ali_Gorchkhanov_commie.tga"
+	picture = "CHE_Ali_Gorchkhanov_commie.tga"
 	expire = "1960.1.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Premieres-Minister Abdul Medjid Bey Ortsa Tchermoeff"
 	desc = ""
-	picture = "gfx/leaders/CHE/CHE_Tchermoeff_dem.tga"
+	picture = "CHE_Tchermoeff_dem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {

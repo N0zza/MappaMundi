@@ -1,11 +1,10 @@
 ﻿capital = 64
 
-# Secondary Leader Setup #
-recruit_character = GER_Rudolf_Hess
-recruit_character = GER_Kurt_Schumacher
+oob = "GER_1936"
 
 set_popularities = {
-	national_socialism = 100
+	national_socialism
+		= 100
 }
 
 set_politics = { 
@@ -15,20 +14,32 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = {
+	sour_loser
+	general_staff
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+}
+add_ideas = GER_mefo_bills_1
+
+activate_mission = GER_mefo_bills_mission
+
 create_country_leader = {
 	name = "Führer und Reichskanzler Adolf Hitler"
 	desc = "POLITICS_GER_NATSOC_DESC"
-	picture = "gfx/leaders/GER/Portrait_Germany_Adolf_Hitler.dds"
+	picture = "Portrait_Germany_Adolf_Hitler.dds"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
+		dictator
 	}
 }
 
 create_country_leader = {
 	name = "Kaiser Wilhelm II von Hohenzollern"
 	desc = "POLITICS_GER_ABSMON_DESC"
-	picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_II.dds"
+	picture = "Portrait_Germany_Wilhelm_II.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -38,7 +49,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichspräsident Hermann Drewitz"
 	desc = "POLITICS_GER_CONREP_DESC"
-	picture = "gfx/leaders/GER/Portrait_Hermann_Drewitz.dds"
+	picture = "Portrait_Hermann_Drewitz.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -48,7 +59,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Generalsekretär Ernst Johannes Fritz Thälmann"
 	desc = "POLITICS_GER_VAN_DESC"
-	picture = "gfx/leaders/GER/Portrait_Ernst_Thalmann.dds"
+	picture = "Portrait_Ernst_Thalmann.dds"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -58,7 +69,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Vorsitzende Karl Heinrich Otto Rühle"
 	desc = "POLITICS_GER_COM_DESC"
-	picture = "gfx/leaders/GER/Portrait_Otto_Ruhle.dds"
+	picture = "Portrait_Otto_Ruhle.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -68,9 +79,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichspräsident Otto Wels"
 	desc = "POLITICS_GER_SOC_DESC"
-	picture = "gfx/leaders/GER/Portrait_Otto_Wels.dds"
+	picture = "Portrait_Otto_Wels.dds"
 	expire = "1965.1.1"
-	ideology = social_democracy
+	ideology = demsoc
 	traits = {
 	}
 }
@@ -78,29 +89,29 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kaiserin Viktoria von Hohenzollern"
 	desc = "POLITICS_GER_MONSOC_DESC"
-	picture = "gfx/leaders/GER/Portrait_Victoria_Hohenzollern.dds"
+	picture = "Portrait_Victoria_Hohenzollern.dds"
 	expire = "1965.1.1"
-	ideology = socmon_social_democracy
+	ideology = monsoc
 	traits = {
 	}
 }
 
 create_country_leader = {
 	name = "Bundespräsident Hermann Robert Dietrich"
-	desc = "POLITICS_GER_liberalism_DESC"
-	picture = "gfx/leaders/GER/Portrait_Hermann_Dietrich.dds"
+	desc = "POLITICS_GER_LIBREP_DESC"
+	picture = "Portrait_Hermann_Dietrich.dds"
 	expire = "1965.1.1"
-	ideology = social_liberalism
+	ideology = socdem
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Bundeskönig Wilhelm III von Hohenzollern"
+	name = "Imperator Romanorum Gulielmus de Hohenzollern"
 	desc = "POLITICS_GER_LIBMON_DESC"
-	picture = "gfx/leaders/GER/Portrait_Wilhelm3_Hohenzollern.dds"
+	picture = "Portrait_Wilhelm3_Hohenzollern.dds"
 	expire = "1965.1.1"
-	ideology = libmon_conservative_liberalism
+	ideology = liberal_constitutionalism
 	traits = {
 	}
 }
@@ -108,9 +119,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kaiser Wilhelm III von Hohenzollern"
 	desc = "POLITICS_GER_CONMON_DESC"
-	picture = "gfx/leaders/GER/Portrait_Wilhelm3_Hohenzollern.dds"
+	picture = "Portrait_Wilhelm3_Hohenzollern.dds"
 	expire = "1965.1.1"
-	ideology = conmon_christian_democracy
+	ideology = conservative_constitutionalism
 	traits = {
 	}
 }
@@ -118,7 +129,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premierminister Ludwig Kaas"
 	desc = "POLITICS_GER_CENREP_DESC"
-	picture = "gfx/leaders/GER/Portrait_Ludwig_Kaas.dds"
+	picture = "Portrait_Ludwig_Kaas.dds"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -128,7 +139,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kaiser und Bundespräsident August Wilhelm von Hohenzollern"
 	desc = "POLITICS_GER_CENMON_DESC"
-	picture = "gfx/leaders/GER/Portrait_August_Hohenzollern.dds"
+	picture = "Portrait_August_Hohenzollern.dds"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -136,51 +147,31 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Präsident Kuno Friedrich Viktor Graf von Westarp"
+	name = "Reichskanzler Kuno Friedrich Viktor von Westarp"
 	desc = "POLITICS_GER_AUTHREP_DESC"
-	picture = "gfx/leaders/GER/Portrait_Kuno_von_Westarp.dds"
+	picture = "Portrait_Kuno_von_Westarp.dds"
 	expire = "1965.1.1"
-	ideology = authoritarian_conservatism
+	ideology = despotism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Reichspräsident Alfred Ernst Christian Alexander Hugenberg"
-	desc = "POLITICS_GER_ANOCREP_DESC"
-	picture = "gfx/leaders/GER/GER_Hugenberg.tga"
-	expire = "1965.1.1"
-	ideology = national_conservatism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Imperator Romanorum Gulielmus de Hohenzollern"
-	desc = "POLITICS_GER_ANOCMON_DESC"
-	picture = "gfx/leaders/GER/Portrait_Wilhelm3_Hohenzollern.dds"
-	expire = "1965.1.1"
-	ideology = anocmon_national_conservatism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Oberbefehlshaber Walther Karl Friedrich Ernst Emil Freiherr von Lüttwitz"
+	name = "Oberbefehlshaber Walther Karl Freiherr von Lüttwitz"
 	desc = "POLITICS_GER_STRAT_DESC"
-	picture = "gfx/leaders/GER/Portrait_Walther_von_Luttwitz.dds"
+	picture = "Portrait_Walther_von_Luttwitz.dds"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Herrscher Ludwig August Theodor Beck"
+	name = "Regent Ludwig August Theodor Beck"
 	desc = "POLITICS_GER_STRATMON_DESC"
-	picture = "gfx/leaders/GER/Portrait_Ludwig_Beck.dds"
+	picture = "Portrait_Ludwig_Beck.dds"
 	expire = "1965.1.1"
-	ideology = stratmon_military_junta
+	ideology = stratmon
 	traits = {
 	}
 }
@@ -188,9 +179,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kaiser Wilhelm II von Hohenzollern"
 	desc = "POLITICS_GER_AUTHMON_DESC"
-	picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_II.dds"
+	picture = "Portrait_Germany_Wilhelm_II.dds"
 	expire = "1965.1.1"
-	ideology = authmon_authoritarian_conservatism
+	ideology = authmon
 	traits = {
 	}
 }
@@ -198,9 +189,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Oberster Führer Heinrich Luitpold Himmler"
 	desc = "POLITICS_GER_THEOC_DESC"
-	picture = "gfx/leaders/GER/Portrait_Heinrich_Himmler.dds"
+	picture = "Portrait_Heinrich_Himmler.dds"
 	expire = "1965.1.1"
-	ideology = esoteric_nazism
+	ideology = christian
 	traits = {
 	}
 }
@@ -208,7 +199,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kaiser August Wilhelm von Hohenzollern"
 	desc = "POLITICS_GER_FASCISM_DESC"
-	picture = "gfx/leaders/GER/Portrait_August_Hohenzollern.dds"
+	picture = "Portrait_August_Hohenzollern.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -216,11 +207,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Führer Otto Johann Maximilian Straßer"
+	name = "Führer Otto Strasser"
 	desc = "POLITICS_GER_REPFASH_DESC"
-	picture = "gfx/leaders/GER/Portrait_Otto_Strasser.dds"
+	picture = "Portrait_Otto_Strasser.dds"
 	expire = "1965.1.1"
-	ideology = strasserism
+	ideology = repfash
 	traits = {
 	}
 }

@@ -1,33 +1,51 @@
 ﻿capital = 523
 
+oob = "ENG_gen"
+
 set_cosmetic_tag = PNG_AST
 
-set_popularities = {
-	democratic = 10
-	neutrality = 10
-	authoritarian_monarchism = 80
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
 }
 
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+set_convoys = 5
+
+
+
+	set_popularities = {
+		democratic 
+			 = 10
+		neutrality
+			 = 10
+		communism
+			 = 0
+		authoritarian_monarchism 
+			 = 80
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
+	
 	name = "Governor Sir John Hubert Plunkett Murray"
-	picture = "gfx/leaders/PNG/Portrait_Sir_Hubert_Murray.tga"
+	picture = "Portrait_Sir_Hubert_Murray.tga"
 	expire = "1947.12.24"
 	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "President Koriam Michael Urekit"
 	desc = ""
-	picture = "gfx/leaders/NGU/NGU_Urekit_authrep.tga"
+	picture = "NGU_Urekit_authrep.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -37,7 +55,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Pita Simogun"
 	desc = ""
-	picture = "gfx/leaders/NGU/NGU_Simogun_condem.tga"
+	picture = "NGU_Simogun_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -45,31 +63,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "President Pita Simogun"
-	desc = ""
-	picture = "gfx/leaders/NGU/NGU_Simogun_condem.tga"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Chiji Tomitaro Horii"
 	desc = ""
-	picture = "gfx/leaders/NGU/NGU_Horii_fash.tga"
+	picture = "NGU_Horii_fash.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Gouverneur August Wilhelm Heye"
-	desc = ""
-	picture = "gfx/leaders/NGU/NGU_Heye.tga"
-	expire = "1989.1.1"
-	ideology = stratmon_colonialism
 	traits = {
 	}
 }

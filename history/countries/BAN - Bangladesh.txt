@@ -1,12 +1,21 @@
 ﻿capital = 430
 
+oob = "BAN_1936"
+
 set_cosmetic_tag = RAJ_RED
 
-set_popularities = {
-	anocratic_monarchism = 100
-}
+	set_popularities = {
+		authoritarian_monarchism 
+			 = 60
+		centrist_monarchism
+			 = 20
+		centrist_republic
+			 = 20
+		neutrality
+			 = 0
+		}
 	set_politics = { 
- ruling_party = anocratic_monarchism
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -15,17 +24,18 @@ set_popularities = {
 create_country_leader = {
 	name = "Prathama Saciba Muzaffar Ahmad"
 	desc = ""
-	picture = "gfx/leaders/BAN/BAN_Ahmad_vanguard.tga"
+	picture = "BEN_Ahmad_vanguard.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Chiji Higashikuni Naruhikok"
 	desc = ""
-	picture = "gfx/leaders/BAN/BAN_Naruhiko_stratmon.tga"
+	picture = "BEN_Naruhiko_stratmon.tga"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {
@@ -35,7 +45,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rastrapati Abul Kasem Fazlul Huq"
 	desc = ""
-	picture = "gfx/leaders/BAN/BAN_Huq_demsoc.tga"
+	picture = "BEN_Huq_demsoc.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -45,9 +55,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rastrapati Ataur Rahman Khan"
 	desc = ""
-	picture = "gfx/leaders/BAN/BAN_Khan_libdem.tga"
+	picture = "BEN_Khan_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -55,7 +65,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rastrapati Huseyn Shaheed Suhrawardy"
 	desc = ""
-	picture = "gfx/leaders/BAN/BAN_Suhrawardy_cendem.tga"
+	picture = "BEN_Suhrawardy_cendem.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -65,7 +75,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Sir Khwaja Nazimuddin"
 	desc = ""
-	picture = "gfx/leaders/BAN/BAN_Nazimuddin_cenmon.tga"
+	picture = "BEN_Nazimuddin_cenmon.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -75,9 +85,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Sir John Anderson"
 	desc = ""
-	picture = "gfx/leaders/BAN/BAN_Anderson_authmon.tga"
+	picture = "BEN_Anderson_authmon.tga"
 	expire = "1965.1.1"
-	ideology = anocmon
+	ideology = authmon
 	traits = {
 	}
 }
@@ -85,7 +95,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Neta Abul A'la Maududi"
 	desc = ""
-	picture = "gfx/leaders/BAN/BAN_Maududi_theoc.tga"
+	picture = "BEN_Maududi_theoc.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {

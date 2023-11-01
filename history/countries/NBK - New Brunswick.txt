@@ -1,5 +1,17 @@
 ﻿capital = 465
 
+oob = "NBK_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+
+set_convoys = 10
+
 set_popularities = {
 	democratic_monarchism
 		= 90
@@ -17,9 +29,9 @@ set_politics = {
 create_country_leader = {
 	name = "President Albert Allison Dysart"
 	desc = ""
-	picture = "gfx/leaders/NBK/NBK_Dysart.tga"
+	picture = "NBK_Dysart.tga"
 	expire = "1950.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -27,7 +39,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premier Albert Allison Dysart"
 	desc = ""
-	picture = "gfx/leaders/NBK/NBK_Dysart.tga"
+	picture = "NBK_Dysart.tga"
 	expire = "1950.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -37,7 +49,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister William Joseph Parnell MacMillan"
 	desc = ""
-	picture = "gfx/leaders/NBK/NBK_Parnell.tga"
+	picture = "NBK_Parnell.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -47,7 +59,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premier William Joseph Parnell MacMillan"
 	desc = ""
-	picture = "gfx/leaders/NBK/NBK_Parnell.tga"
+	picture = "NBK_Parnell.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -57,7 +69,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Peter John Veniot"
 	desc = ""
-	picture = "gfx/leaders/NBK/NBK_Veniot.tga"
+	picture = "NBK_Veniot.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -67,10 +79,11 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Peter John Veniot"
 	desc = ""
-	picture = "gfx/leaders/NBK/NBK_Veniot.tga"
+	picture = "NBK_Veniot.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
 	}
 }
+
 

@@ -1,36 +1,53 @@
-﻿capital = 9972
+﻿capital = 660
+
+oob = "FRA_gen"
 
 set_cosmetic_tag = FRA_COLONY
 
-set_popularities = {
-	neutrality = 80
-	stratocratic = 10
-	liberal_republic = 10
-}
+set_convoys = 20
 
-set_politics = { 
-	ruling_party = neutrality
+
+
+	set_popularities = {
+		stratocratic
+			 = 10
+			
+		
+		
+		liberal_republic
+			 = 10
+		
+		
+		democratic 
+			 = 0
+		neutrality 
+			 = 80
+		}
+	set_politics = { 
+ ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
+
 create_country_leader = {
-	name = "Empereur Bokassa I de Bokassa"
+	name = "Empereur Bokassa I"
 	desc = ""
-	picture = "gfx/leaders/CAR/CAR_Bokassa.tga"
+	picture = "CAR_Bokassa.tga"
 	ideology = stratmon
 	expire = "1996.11.3"
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Gouverneur-Délégué Max Masson de Saint-Félix"
 	desc = ""
-	picture = "gfx/leaders/CAR/CAR_Felix.tga"
+	picture = "CAR_Felix.tga"
 	expire = "1965.1.1"
-	ideology = colonialism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -38,9 +55,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Barthélemy Boganda"
 	desc = ""
-	picture = "gfx/leaders/CAR/CAR_Boganda_libdem.tga"
+	picture = "CAR_Boganda_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -48,29 +65,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Jean-Bédel Bokassa"
 	desc = ""
-	picture = "gfx/leaders/CAR/CAR_Bokassa.tga"
+	picture = "CAR_Bokassa.tga"
 	expire = "1965.1.1"
 	ideology = militarism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = absmon_colonialism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Governatore Giovanni Giuriati"
-	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Giuriati_fash.tga"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
 	traits = {
 	}
 }

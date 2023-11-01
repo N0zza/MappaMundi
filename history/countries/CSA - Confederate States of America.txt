@@ -1,24 +1,35 @@
 ﻿capital = 362
 
-set_popularities = {
-	democratic = 92
-	fascism = 5
-	communism = 3
-}
+oob = "CSA_1936"
 
-set_politics = { 
-	ruling_party = democratic
+
+	set_popularities = {
+		democratic 
+			 = 92
+		fascism
+			 = 5
+		communism
+			 = 3
+		}
+	set_politics = { 
+ ruling_party = democratic
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+add_ideas = {
+	disarmed_nation
+	free_trade
+}
+
+
 create_country_leader = {
 	name = "President George Peery"
 	desc = ""
-	picture = "gfx/leaders/CSA/Portrait_CSA_George_Peery.dds"
+	picture = "Portrait_CSA_George_Peery.dds"
 	expire = "1950.1.1"
-	ideology = liberal_conservatism
+	ideology = liberalism
 	traits = {
 	}
 }
@@ -26,7 +37,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Jacob Jake Featherston"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Featherston.tga"
+	picture = "CSA_Featherston.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -36,7 +47,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chairman James W Jim Ford"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Ford.tga"
+	picture = "CSA_Ford.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -46,7 +57,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Supreme President William Willy Knight"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Knight.tga"
+	picture = "CSA_Knight.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -56,7 +67,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichskommissar Felix Martin Julius Steiner"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Steiner.tga"
+	picture = "CSA_Steiner.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -66,7 +77,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Commander in Chief James Ewell Brown Stuart Jr"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_StuartJr.tga"
+	picture = "CSA_StuartJr.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -76,7 +87,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Huey Pierce Long"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Long.tga"
+	picture = "CSA_Long.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -86,7 +97,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chief of Staff Nathan Bedford Forrest III"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_ForrestIII.tga"
+	picture = "CSA_ForrestIII.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -96,7 +107,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "General Secretary James W Jim Ford"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Ford.tga"
+	picture = "CSA_Ford.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -106,7 +117,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister Huey Pierce Long"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Long.tga"
+	picture = "CSA_Long.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -116,9 +127,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Kenneth Douglass McKellar"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_McKellar.tga"
+	picture = "CSA_McKellar.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -126,7 +137,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister James Burr V Allred"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Allred.tga"
+	picture = "CSA_Allred.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -136,7 +147,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister James Strom Thurmond"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Thurdmond.tga"
+	picture = "CSA_Thurdmond.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -146,19 +157,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Huey Pierce Long"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Long.tga"
+	picture = "CSA_Long.tga"
 	expire = "1965.1.1"
-	ideology = social_authoritarianism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "King Huey I of Long"
-	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Long.tga"
-	expire = "1965.1.1"
-	ideology = anocmon_social_authoritarianism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -166,7 +167,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "General Governor Arthur Neville Chamberlain"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Chamberlain.tga"
+	picture = "CSA_Chamberlain.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -176,7 +177,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Queen Anne I of Lee"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Anne.tga"
+	picture = "CSA_Anne.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -186,7 +187,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Holy President John Richard Sampey"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Sampey.tga"
+	picture = "CSA_Sampey.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -226,7 +227,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Robert Edward Lee"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Lee.tga"
+	picture = "CSA_Lee.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -236,7 +237,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Nathan Bedford Forrest"
 	desc = ""
-	picture = "gfx/leaders/CSA/CSA_Forrest.tga"
+	picture = "CSA_Forrest.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {

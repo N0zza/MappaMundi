@@ -1,13 +1,19 @@
 ﻿capital = 11
 
-set_country_flag = has_secondary_leader
+oob = "LIT_1936"
 
-set_popularities = {
-	republican_fascism = 100
-}
-
-set_politics = { 
-	ruling_party = republican_fascism
+	set_popularities = {
+		neutrality 
+			 = 30
+		fascism
+			 = 10
+		communism
+			 = 10
+		republican_fascism
+			 = 50
+		}
+	set_politics = { 
+ ruling_party = republican_fascism
 	last_election = "1926.5.8"
 	election_frequency = 120
 	elections_allowed = no
@@ -16,27 +22,29 @@ set_politics = {
 create_country_leader = {
 	name = "Prezidentas Juozas Tūbelis"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Lithuania_Juozas_Tubelis.tga"
+	picture = "Portrait_Lithuania_Juozas_Tubelis.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Pirmasis Sekretorius Justas Paleckis"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Lithuania_Justas_Paleckis.tga"
+	picture = "Portrait_Lithuania_Justas_Paleckis.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Pirmasis Sekretorius Antanas Sniečkus"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Lithuania_Antanas _Snieckus.tga"
+	picture = "Portrait_Lithuania_Antanas _Snieckus.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -46,7 +54,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prezidentas Juozas Paplauskas"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Lithuania_Juozas_Paplauskas.tga"
+	picture = "Portrait_Lithuania_Juozas_Paplauskas.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -56,7 +64,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hercogas Mindaugus III apie Viurtembergas"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Mendog_Wurttemberg.tga"
+	picture = "Portrait_Mendog_Wurttemberg.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -66,9 +74,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prezidentas Kazys Grinius"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Lithuania_kazys_grinius.tga"
+	picture = "Portrait_Lithuania_kazys_grinius.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -76,7 +84,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prezidentas Leonas Bistras"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Lithuania_Leonas _Bistras.tga"
+	picture = "Portrait_Lithuania_Leonas _Bistras.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -86,7 +94,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Didysis Hercogas Friedrichas Christianas I apie Wettin"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Lithuania_Friedrichas_Christianas_I_apie_Wettin.tga"
+	picture = "Portrait_Lithuania_Friedrichas_Christianas_I_apie_Wettin.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -96,7 +104,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Didysis Hercogas Friedrichas Christianas I apie Wettin"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Lithuania_Friedrichas_Christianas_I_apie_Wettin.tga"
+	picture = "Portrait_Lithuania_Friedrichas_Christianas_I_apie_Wettin.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -106,7 +114,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prezidentas Aleksandras Stulginskis"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Lithuania_Aleksandras_Stulginskis.tga"
+	picture = "Portrait_Lithuania_Aleksandras_Stulginskis.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -116,7 +124,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Karalius Mindaugus III apie Viurtembergas"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Mendog_Wurttemberg.tga"
+	picture = "Portrait_Mendog_Wurttemberg.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -126,9 +134,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Vyriausiasis Vadas Stasys Raštikis"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Lithuania_Stasys_Rastikis.tga"
+	picture = "Portrait_Lithuania_Stasys_Rastikis.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
@@ -136,7 +144,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gubernátor Pável Rafalíovič Bérmont-Aválov"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Lithuania_Pavel_Rafalovich_Bermondt_Avalov.tga"
+	picture = "Portrait_Lithuania_Pavel_Rafalovich_Bermondt_Avalov.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -146,7 +154,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Didysis Hercogas Mindaugus III apie Viurtembergas"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Mendog_Wurttemberg.tga"
+	picture = "Portrait_Mendog_Wurttemberg.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -156,7 +164,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Didysis Hercogas ir Karalius Mindaugus III ir I apie Viurtembergas"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Mendog_Wurttemberg.tga"
+	picture = "Portrait_Mendog_Wurttemberg.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -166,7 +174,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Princas-Arkivyskupas Juozapas Skvireckas"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Lithuania_Juozapas_Skvireckas.tga"
+	picture = "Portrait_Lithuania_Juozapas_Skvireckas.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -176,7 +184,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Karalius Mindaugus III apie Viurtembergas"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Mendog_Wurttemberg.tga"
+	picture = "Portrait_Mendog_Wurttemberg.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -186,7 +194,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prezidentas Antanas Smetona"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_lithuania_antanas_smetona.dds"
+	picture = "Portrait_lithuania_antanas_smetona.dds"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -196,7 +204,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Vyriausiasis Augustinas Voldemaras"
 	desc = ""
-	picture = "gfx/leaders/LIT/Portrait_Lithuania_Augustinas_Voldemaras.tga"
+	picture = "Portrait_Lithuania_Augustinas_Voldemaras.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

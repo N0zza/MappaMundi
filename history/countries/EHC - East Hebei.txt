@@ -1,33 +1,46 @@
 ﻿capital = 609
 
-set_cosmetic_tag = JAP_COLONY
-
-set_popularities = {
-	neutrality = 100
+set_technology = {
+	infantry_weapons = 1
+	
 }
-		
-set_politics = { 
-	ruling_party = neutrality
+set_cosmetic_tag = EHC_JAP
+
+
+	set_popularities = {
+		democratic 
+			 = 0
+			
+		fascism
+			 = 20
+		communism
+			 = 0
+			
+		neutrality
+			 = 80
+		}
+	set_politics = { 
+ ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Chuhsi Yin Chu-keng"
+	name = "Chu hsi Yin Chu-keng"
 	desc = ""
-	picture = "gfx/leaders/EHC/Portrait_Yin_Ju-Keng.dds"
+	picture = "Portrait_Yin_Ju-Keng.dds"
 	expire = "1965.1.1"
-	ideology = repcorp
+	ideology = rexism
 	traits = {
 	}
 }
 create_country_leader = {
-	name = "Chuhsi Yin Chu-keng"
+	name = "Chu hsi Yin Chu-keng"
 	desc = ""
-	picture = "gfx/leaders/EHC/Portrait_Yin_Ju-Keng.dds"
+	picture = "Portrait_Yin_Ju-Keng.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = oligarchism
 	traits = {
 	}
 }
@@ -35,7 +48,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Yüan shuai Wu Pei-fu"
 	desc = ""
-	picture = "gfx/leaders/RGC/RGC_Pei-fu.tga"
+	picture = "RGC_Pei-fu.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {

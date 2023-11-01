@@ -1,17 +1,25 @@
 ﻿capital = 446
 
-set_country_flag = has_secondary_leader
-set_country_flag = has_tertiary_leader
-
 set_cosmetic_tag = UK_RED
+set_convoys = 20
 
-set_popularities = {
-	conservative_monarchism = 25
-	authoritarian_monarchism = 75
-}
 
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+
+
+
+	set_popularities = {
+		conservative_monarchism 
+			 = 25
+		fascism
+			 = 0
+		communism
+			 = 0
+			
+		authoritarian_monarchism 
+			 = 75
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -20,16 +28,17 @@ set_politics = {
 create_country_leader = {
 	name = "Malik Fuad al-Alawiyya"
 	desc = ""
-	picture = "gfx/leaders/EGY/Portrait_Fuad_I.dds"
+	picture = "Portrait_Fuad_I.dds"
 	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Rais al-Wazra Mustafa el-Nahhas Pasha"
 	desc = ""
-	picture = "gfx/leaders/EGY/EGY_Mustafa_el-Nahhas_Pasha_condem.tga"
+	picture = "EGY_Mustafa_el-Nahhas_Pasha_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -39,7 +48,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Komsar Henri Curiel"
 	desc = ""
-	picture = "gfx/leaders/EGY/EGY_Henri_Curiel_communist.tga"
+	picture = "EGY_Henri_Curiel_communist.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -49,7 +58,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Komsar Henri Curiel"
 	desc = ""
-	picture = "gfx/leaders/EGY/EGY_Henri_Curiel_communist.tga"
+	picture = "EGY_Henri_Curiel_communist.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -59,7 +68,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rais Gamal Abdel Nasser Hussein"
 	desc = ""
-	picture = "gfx/leaders/EGY/EGY_Nasser.tga"
+	picture = "EGY_Nasser.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -69,7 +78,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "King Farouk I of Muhammad Ali"
 	desc = ""
-	picture = "gfx/leaders/EGY/Portrait_Farouk_I.dds"
+	picture = "Portrait_Farouk_I.dds"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -79,7 +88,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Zuaim Gamal Abdel Nasser Hussein"
 	desc = ""
-	picture = "gfx/leaders/EGY/EGY_Nasser.tga"
+	picture = "EGY_Nasser.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -89,7 +98,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Wāli Fuad I of Muhammad Ali"
 	desc = ""
-	picture = "gfx/leaders/EGY/Portrait_Fuad_I.dds"
+	picture = "Portrait_Fuad_I.dds"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -99,9 +108,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rais al-Wazra Muhammad Mahmoud Pasha"
 	desc = ""
-	picture = "gfx/leaders/EGY/EGY_Muhammad_Mahmoud_Pasha_libdem.tga"
+	picture = "EGY_Muhammad_Mahmoud_Pasha_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -109,7 +118,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Khedive Tewfik I of Muhammad Ali"
 	desc = ""
-	picture = "gfx/leaders/EGY/EGY_Mohammed_Ali_Tewfik_conmon.tga"
+	picture = "EGY_Mohammed_Ali_Tewfik_conmon.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -119,7 +128,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hegemon Makram Ebeid Pasha"
 	desc = ""
-	picture = "gfx/leaders/EGY/EGY_Makram_Ebeid_Pasha_cendem.tga"
+	picture = "EGY_Makram_Ebeid_Pasha_cendem.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -129,7 +138,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Archon Taha Hussain"
 	desc = ""
-	picture = "gfx/leaders/EGY/EGY_Taha_Hussain.tga"
+	picture = "EGY_Taha_Hussain.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -139,7 +148,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rais Ali Mahir Pasha"
 	desc = ""
-	picture = "gfx/leaders/TUR/Portrait_Turkey_Mustafa_Kemal_Ataturk.dds"
+	picture = "Portrait_Turkey_Mustafa_Kemal_Ataturk.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -149,7 +158,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mushir Mohamed Bey Naguib Youssef Qutb El-Qashlan"
 	desc = ""
-	picture = "gfx/leaders/EGY/EGY_Mohamed_Naguib_strat.tga"
+	picture = "EGY_Mohamed_Naguib_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -159,7 +168,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Sir Ronald Henry Amherst Storrs"
 	desc = ""
-	picture = "gfx/leaders/EGY/EGY_Ronald_Henry_Amherst_Storrs_stratmon.tga"
+	picture = "EGY_Ronald_Henry_Amherst_Storrs_stratmon.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -169,7 +178,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sultan Farouk I of Muhammad Ali"
 	desc = ""
-	picture = "gfx/leaders/EGY/Portrait_Farouk_I.dds"
+	picture = "Portrait_Farouk_I.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -179,7 +188,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sheikh Hassan Ahmed Abdel Rahman Muhammed al-Banna"
 	desc = ""
-	picture = "gfx/leaders/EGY/EGY_Hassan_Ahmed_Muhammed_al-Banna_theoc.tga"
+	picture = "EGY_Hassan_Ahmed_Muhammed_al-Banna_theoc.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -189,9 +198,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governatore Ettore Bastico"
 	desc = ""
-	picture = "gfx/leaders/EGY/EGY_Ettore_Bastico_fash.tga"
+	picture = "EGY_Ettore_Bastico_fash.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -199,7 +208,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Johannes Erwin Eugen Rommel"
 	desc = ""
-	picture = "gfx/leaders/EGY/EGY_Rommel.tga"
+	picture = "EGY_Rommel.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

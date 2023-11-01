@@ -1,5 +1,17 @@
 ﻿capital = 1132
 
+oob = "SCN_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+set_convoys = 10
+
+
 
 	set_popularities = {
 
@@ -18,7 +30,7 @@
 create_country_leader = {
 	name = "President Gunnar Cederschiöld"
 	desc = ""
-	picture = "gfx/leaders/SCN/SCN_Gunnar.tga"
+	picture = "SCN_Gunnar.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -28,10 +40,11 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichskomissar Birger Furugård"
 	desc = ""
-	picture = "gfx/leaders/SCN/Portrait_Birger_Furugard.tga"
+	picture = "Portrait_Birger_Furugard.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
+		
 	}
 }
 

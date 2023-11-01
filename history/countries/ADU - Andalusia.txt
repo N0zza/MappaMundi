@@ -1,12 +1,15 @@
-﻿capital = 2882
+﻿capital = 169
 
-set_popularities = {
-    left_anarchism = 20
-    liberal_republic = 80
-}
+oob = "SPR_gen"
 
-set_politics = { 
-	ruling_party = liberal_republic
+
+	set_popularities = {
+        left_anarchism = 20
+        liberal_republic = 80
+
+		}
+	set_politics = { 
+ ruling_party = liberal_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -15,9 +18,9 @@ set_politics = {
 create_country_leader = {
 	name = "Presidente Blas Infante Pérez de Vargas"
 	desc = ""
-	picture = "gfx/leaders/ADU/ADU_Vargas_libdem.tga"
+	picture = "ADU_Vargas_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -25,7 +28,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Amir Muhammad XIII al-Munsif"
 	desc = ""
-	picture = "gfx/leaders/ADU/ADU_Moncef.tga"
+	picture = "ADU_Moncef.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -35,7 +38,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Khalifa Muhammad XIII al-Munsif"
 	desc = ""
-	picture = "gfx/leaders/ADU/ADU_Moncef.tga"
+	picture = "ADU_Moncef.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -53,9 +56,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Reichskommissar Harald Siegwart Hans Lutze von Hirschfeld"
+	name = "Reichskommissar Harald von Hirschfeld"
 	desc = ""
-	picture = "gfx/leaders/ADU/ADU_Hirschfeld.png"
+	picture = "ADU_Hirschfeld.png"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -65,7 +68,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "General Gonzalo Queipo de Llano y Sierra"
 	desc = ""
-	picture = "gfx/leaders/ADU/ADU_Llano.tga"
+	picture = "ADU_Llano.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {

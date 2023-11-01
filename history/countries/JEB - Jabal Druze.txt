@@ -1,6 +1,17 @@
 ﻿capital = 2030
 
+oob = "JEB_1936"
+
 set_cosmetic_tag = FRA_COLONY
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+set_convoys = 10
+
+
 
 	set_popularities = {
         democratic =  8
@@ -17,10 +28,11 @@ set_cosmetic_tag = FRA_COLONY
 	elections_allowed = no
 }
 
+
 create_country_leader = {
 	name = "Gouverneur Pierre-Joseph-François Tarrit"
 	desc = ""
-	picture = "gfx/leaders/JEB/Portrait_Pierre-Joseph-François_Tarrit.dds"
+	picture = "Portrait_Pierre-Joseph-François_Tarrit.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {	
@@ -34,13 +46,14 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Sultan Pasha al-Atrash"
 	desc = ""
-	picture = "gfx/leaders/JEB/JEB_Atrash.tga"
+	picture = "JEB_Atrash.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -50,7 +63,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rayiys Pasha al-Atrash"
 	desc = ""
-	picture = "gfx/leaders/JEB/JEB_Atrash.tga"
+	picture = "JEB_Atrash.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {

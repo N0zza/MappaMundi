@@ -1,33 +1,38 @@
 ﻿capital = 9880 #Tbilisi
 
-set_popularities = {
-	vanguardism = 100	
-}
-	
-set_cosmetic_tag = RUS_RED
+oob = "GEO_1936"
 
-set_politics = { 
-	ruling_party = vanguardism
+set_cosmetic_tag = GEO_SOV
+	set_popularities = {
+		democratic 
+			 = 0
+		vanguardism
+			 = 100
+		}
+	set_politics = { 
+ ruling_party = vanguardism
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 
+
 create_country_leader = {
-	name = "Tsak’ tavmjdomare Pilip’e Ieses dze Makharadze"
+	name = "P'irveli Mdivani Lavrent'i P'avlovich Beria"
 	desc = ""
-	picture = "gfx/leaders/GEO/GEO_Makharadze.tga"
+	picture = "Pcoler.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "P’irveli Mdivani Ioseb Besarionis dzе Jughashvili"
 	desc = ""
-	picture = "gfx/leaders/GEO/GEO_Stalin.tga"
+	picture = "GEO_Stalin.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -38,7 +43,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "P'rezident'i Noe Nik’olozis dze Zhordania"
 	desc = ""
-	picture = "gfx/leaders/GEO/GEO_Noe_soc.tga"
+	picture = "GEO_Noe_soc.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -48,7 +53,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mepe Giorgi IX Bagration-Mukhraneli"
 	desc = ""
-	picture = "gfx/leaders/GEO/GEO_George_mon.tga"
+	picture = "GEO_George_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -58,7 +63,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mepe Ioseb I Besarionis dzе Jughashvili"
 	desc = ""
-	picture = "gfx/leaders/GEO/GEO_Stalin.tga"
+	picture = "GEO_Stalin.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -68,7 +73,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "P'rezident'i Ekvtime Simonis dze Taq’aishvili"
 	desc = ""
-	picture = "gfx/leaders/GEO/GEO_Ekvtime_dem.tga"
+	picture = "GEO_Ekvtime_dem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -78,7 +83,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Bat’onishvili Osk’ari I dze Hoentsolerni"
 	desc = ""
-	picture = "gfx/leaders/GEO/GEO_Oskar_stratmon.tga"
+	picture = "GEO_Oskar_stratmon.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -88,7 +93,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Egzarkosi K’alist’rat’e Tsintsadze"
 	desc = ""
-	picture = "gfx/leaders/GEO/GEO_Kalistrate.tga"
+	picture = "GEO_Kalistrate.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -98,7 +103,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "P'rezident'i Shalva Anekt’ozi dze Loladze"
 	desc = ""
-	picture = "gfx/leaders/GEO/GEO_Shalva_repfash.tga"
+	picture = "GEO_Shalva_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -108,7 +113,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Generalkommissar Gerhard Klopfer"
 	desc = ""
-	picture = "gfx/leaders/GEO/GEO_Gerhard_nazi.tga"
+	picture = "GEO_Gerhard_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

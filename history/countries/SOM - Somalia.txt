@@ -1,34 +1,48 @@
 ﻿capital = 559
 
+oob = "SOM_1936"
 set_cosmetic_tag = ITA_GREEN
-
-set_popularities = {
-	liberal_republic = 5
-	fascism = 80
-	republican_fascism = 5
-	monarchism = 10
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
 }
 
-set_politics = { 
-	ruling_party = fascism
+
+
+	set_popularities = {
+		liberal_republic 
+			 = 5
+		fascism
+			 = 80
+		republican_fascism
+			 = 5
+			
+		monarchism 
+			 = 10
+		}
+	set_politics = { 
+ ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+
 create_country_leader = {
 	name = "Governatore Rodolfo Graziani"
-	picture = "gfx/leaders/SOM/Portrait_Rodolfo_Graziani.dds"
+	picture = "Portrait_Rodolfo_Graziani.dds"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Taliye Haaji Mahammad Husseen"
 	desc = ""
-	picture = "gfx/leaders/SOM/SOM_Husseen_repfash.tga"
+	picture = "SOM_Husseen_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -38,7 +52,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Suldaan Mohamoud Ali Shire"
 	desc = ""
-	picture = "gfx/leaders/SOM/SOM_Shire_mon.tga"
+	picture = "SOM_Shire_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -48,9 +62,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Madaxweyne Aden Abdulle Osman Daar"
 	desc = ""
-	picture = "gfx/leaders/SOM/SOM_Daar_libdem.tga"
+	picture = "SOM_Daar_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -58,17 +72,18 @@ create_country_leader = {
 create_country_leader = {
 	name = "Xoghayaha Koowaad Mohamed Siad Barre"
 	desc = ""
-	picture = "gfx/leaders/SOM/SOM_Barre_commie.tga"
+	picture = "SOM_Barre_commie.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Chief Administrator Sir James Andrew Harcourt Gammell"
 	desc = ""
-	picture = "gfx/leaders/SOM/SOM_Gammell_stratmon.tga"
+	picture = "SOM_Gammell_stratmon.tga"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {

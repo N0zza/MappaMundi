@@ -1,30 +1,38 @@
 ﻿capital = 229 #Baku
-set_cosmetic_tag = RUS_RED
 
-set_popularities = {
-	vanguardism = 100	
-}
-set_politics = { 
-	ruling_party = vanguardism
+oob = "AZR_1936"
+set_cosmetic_tag = AZR_SOV
+
+	set_popularities = {
+		democratic 
+			 = 15
+		vanguardism
+			 = 70
+		neutrality
+			 = 15
+		}
+	set_politics = { 
+ ruling_party = vanguardism
 	last_election = "1933.7.1"
 	election_frequency = 48  
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "MİK Sədri Sultan Məcid Məcid oğlu Əfəndiyev"
+	name = "Birinci Katib Mir Cəfər Abbas oğlu Bağırov"
 	desc = ""
-	picture = "gfx/leaders/AZR/AZR_Efendiyev.tga"
+	picture = "AZR_Jafar_Baghirov.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Prezident Məmməd Yusif Hacıbaba oğlu Cəfərov"
 	desc = ""
-	picture = "gfx/leaders/AZR/AZR_Jafarov_dem.tga"
+	picture = "AZB_Jafarov_dem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -35,7 +43,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Qubernator Xosrov bəy Paşa bəy oğlu Sultanov"
 	desc = ""
-	picture = "gfx/leaders/AZR/AZR_Sultanov_stratmon.tga"
+	picture = "AZB_Sultanov_stratmon.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -46,7 +54,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rəhbər Əbdürrəhman bəy Əli bəy oğlu Fətəlibəyli-Düdənginski"
 	desc = ""
-	picture = "gfx/leaders/AZR/AZR_Fatalibeyli_repfash.tga"
+	picture = "AZB_Fatalibeyli_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -57,9 +65,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prezident Məhəmməd Əmin Axund Hacı Molla Ələkbər oğlu Rəsulzadə"
 	desc = ""
-	picture = "gfx/leaders/AZR/AZR_Rasulzade_libdem.tga"
+	picture = "AZB_Rasulzade_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 		#
 	}
@@ -68,7 +76,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Generalkommissar Rudolf Schmundt"
 	desc = ""
-	picture = "gfx/leaders/AZR/AZR_Schmundt_nazi.tga"
+	picture = "AZB_Schmundt_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -78,7 +86,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prezident Qara Əbülfəz oğlu Qarayev"
 	desc = ""
-	picture = "gfx/leaders/AZR/AZR_Garayev_authrep.tga"
+	picture = "AZB_Garayev_authrep.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -89,29 +97,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Vali Osman Nuri Koptagel"	
 	desc = ""
-	picture = "gfx/leaders/AZR/AZR_Koptagel_authmon.tga"
+	picture = "AZB_Koptagel_authmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Məlik Bala I Aşurbeyov"	
-	desc = ""
-	picture = "gfx/leaders/AZR/AZR_Balabey_absmon.tga"
-	expire = "1965.1.1"
-	ideology = cenmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Bala Xan I Aşurbeyov"	
-	desc = ""
-	picture = "gfx/leaders/AZR/AZR_Balabey_absmon.tga"
-	expire = "1965.1.1"
-	ideology = absolutism
 	traits = {
 	}
 }

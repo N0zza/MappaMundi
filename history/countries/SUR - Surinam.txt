@@ -1,5 +1,15 @@
 ﻿capital = 309
+
+oob = "SUR_1936"
 set_cosmetic_tag = HOL_ORANGE
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 5
+
+
 
 	set_popularities = {
 		conservative_monarchism
@@ -23,7 +33,7 @@ set_cosmetic_tag = HOL_ORANGE
 create_country_leader = {
 	name = "Koningin Wilhelmina van Oranje-Nassau"
 	desc = ""
-	picture = "gfx/leaders/SUR/Portrait_Wilhelmina.dds"
+	picture = "Portrait_Wilhelmina.dds"
 	expire = "1947.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -33,7 +43,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Johannes Cornelis Brons"
 	desc = ""
-	picture = "gfx/leaders/SUR/Portrait_Johannes_Cornelis_Brons.dds"
+	picture = "Portrait_Johannes_Cornelis_Brons.dds"
 	expire = "1942.1.1"
 	ideology = authmon
 	traits = {
@@ -44,7 +54,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Jan van Tilburg"
 	desc = ""
-	picture = "gfx/leaders/SUR/SUR_Tilburg.tga"
+	picture = "SUR_Tilburg.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -54,10 +64,11 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Johan Henri Eliza Ferrier"
 	desc = ""
-	picture = "gfx/leaders/SUR/SUR_Ferrier.tga"
+	picture = "SUR_Ferrier.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
+
 

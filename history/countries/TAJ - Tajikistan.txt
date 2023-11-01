@@ -1,9 +1,17 @@
 ﻿capital = 1380
-set_cosmetic_tag = RUS_RED
 
-set_popularities = {
-	vanguardism = 100	
-}
+oob = "TAJ_1936"
+set_cosmetic_tag = TAJ_SOV
+	set_popularities = {
+		communism 
+			 = 30
+		vanguardism
+			 = 60
+		
+        neutrality 
+			 = 10
+			
+	}
 	
 	set_politics = { 
  ruling_party = vanguardism
@@ -13,12 +21,13 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Raisi KIM Şirinşoh Şohtemur"
+	name = "Kotibi Generali Inirinşo Şotemur"
 	desc = ""
-	picture = "gfx/leaders/TAJ/Shirinsho.dds"
+	picture = "Shirinsho.dds"
 	expire = "1960.1.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
@@ -45,7 +54,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prezident Buriniso Berdieva"
 	desc = ""
-	picture = "gfx/leaders/TAJ/TAJ_Berdieva.tga"
+	picture = "TAJ_Berdieva.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -55,7 +64,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sayyid Qori Muhammadçon Valadi Mullo Rustami Xuqandi"
 	desc = ""
-	picture = "gfx/leaders/TAJ/TAJ_Hindustoni.tga"
+	picture = "TAJ_Hindustoni.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {

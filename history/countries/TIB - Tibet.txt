@@ -1,5 +1,13 @@
 ﻿capital = 10832
 
+oob = "TIB_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+
 
 	set_popularities = {
 		neutrality 
@@ -22,7 +30,7 @@
 create_country_leader = {
 	name = "Gyaltsab Jamphel Yeshe Gyaltsen, Reting Rinpoche"
 	desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
-	picture = "gfx/leaders/TIB/Portrait_Tibet_Jamphel_Yeshe_Gyaltsen.dds"
+	picture = "Portrait_Tibet_Jamphel_Yeshe_Gyaltsen.dds"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -33,7 +41,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gyaltsab Jamphel Yeshe Gyaltsen, Reting Rinpoche"
 	desc = "POLITICS_JAMPHEL_YESHE_GYALTSEN_DESC"
-	picture = "gfx/leaders/TIB/Portrait_Tibet_Jamphel_Yeshe_Gyaltsen.dds"
+	picture = "Portrait_Tibet_Jamphel_Yeshe_Gyaltsen.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -44,27 +52,29 @@ create_country_leader = {
 create_country_leader = {
 	name = "Zhuxí Phüntsok Wangyal Goranangpa"
 	desc = ""
-	picture = "gfx/leaders/TIB/TIB_Goranangpa.tga"
+	picture = "TIB_Goranangpa.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Zhuxí Phüntsok Wangyal Goranangpa"
 	desc = ""
-	picture = "gfx/leaders/TIB/TIB_Goranangpa.tga"
+	picture = "TIB_Goranangpa.tga"
 	expire = "1953.3.1"
 	ideology = marxism
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Zǒngtǒng Gendun Chompel"
 	desc = ""
-	picture = "gfx/leaders/TIB/TIB_Chompel.tga"
+	picture = "TIB_Chompel.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -74,9 +84,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sikyong Liu Manqing"
 	desc = ""
-	picture = "gfx/leaders/TIB/TIB_Manqing.tga"
+	picture = "TIB_Manqing.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -84,19 +94,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor William Norman Herbert"
 	desc = ""
-	picture = "gfx/leaders/TIB/TIB_Herbert.tga"
+	picture = "TIB_Herbert.tga"
 	expire = "1965.1.1"
-	ideology = authmon_colonialism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Governor William Norman Herbert"
-	desc = ""
-	picture = "gfx/leaders/TIB/TIB_Herbert.tga"
-	expire = "1965.1.1"
-	ideology = cenmon
+	ideology = authmon
 	traits = {
 	}
 }
@@ -104,7 +104,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chiji Kantarō Suzuki"
 	desc = ""
-	picture = "gfx/leaders/TIB/TIB_Suzuki.tga"
+	picture = "TIB_Suzuki.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -114,7 +114,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Ernst Schäfer"
 	desc = ""
-	picture = "gfx/leaders/TIB/TIB_Schafer.tga"
+	picture = "TIB_Schafer.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -124,7 +124,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sikyong Gompo Tashi Andrugtsang"
 	desc = ""
-	picture = "gfx/leaders/TIB/TIB_Andrugtsang.tga"
+	picture = "TIB_Andrugtsang.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -134,7 +134,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sikyong Gompo Tashi Andrugtsang"
 	desc = ""
-	picture = "gfx/leaders/TIB/TIB_Andrugtsang.tga"
+	picture = "TIB_Andrugtsang.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {

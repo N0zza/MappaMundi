@@ -1,54 +1,34 @@
 ﻿capital = 3262
 
+oob = "TML_1936"
+
+set_convoys = 10
+
 set_popularities = {
-	anocratic_monarchism = 100
+        democratic = 25
+        communism = 25
+        fascism = 25
+        neutrality = 25
+
 }
 
 set_politics = {
-	ruling_party = anocratic_monarchism
+	
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
 set_cosmetic_tag = RAJ_RED
-
-create_country_leader = {
-	name = "Governor John Francis Ashley Erskine, Lord Erskine"
-	desc = ""
-	picture = "gfx/leaders/TML/TML_Erskine.tga"
-	expire = "1965.1.1"
-	ideology = anocmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Talaivar Īrōṭu Veṅkaṭappā Irāmacāmi"
-	desc = ""
-	picture = "gfx/leaders/TML/TML_Periyar.tga"
-	expire = "1965.1.1"
-	ideology = left_wing_populism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Sotoku Shimada Shigetarō"
-	desc = ""
-	picture = "gfx/leaders/TML/TML_Shimada.tga"
-	expire = "1965.1.1"
-	ideology = corpmon_colonialism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Reichsprotektor Wilhelm Rudolf Dommes"
-	desc = ""
-	picture = "gfx/leaders/TML/TML_Dommes.tga"
-	expire = "1965.1.1"
-	ideology = natsoc
-	traits = {
-	}
-}

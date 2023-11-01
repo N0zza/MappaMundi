@@ -1,10 +1,28 @@
 ﻿capital = 12015
 
+oob = "YKT_1936"
+
 set_popularities = {
-	vanguardism = 100
+        neutrality = 0
+        monarchism = 0
+        democratic = 0
+        liberal_republic = 20
+        communism = 0
+        vanguardism = 80
+        fascism = 0
+        anarchism_ideology = 0
+        socialism_ideology = 0
+        democratic_monarchism = 0
+        conservative_monarchism = 0
+        stratocratic = 0
+        authoritarian_monarchism = 0
+        republican_fascism = 0
+        national_socialism = 0
+        theocratic = 0
+
 }
 	
-set_cosmetic_tag = RUS_RED
+set_cosmetic_tag = YKT_SOV
 
 set_politics = {
 	
@@ -15,21 +33,22 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Predsedátelʹ Jakútskogo obkóma VKP(b) Pável Matvéevič Pevzniak"
+	name = "Predsedátel' Pável Matvéevič Pevzniak"
 	desc = ""
-	picture = "gfx/leaders/YKT/Pavel_Matveyevich_Pevznyak.tga"
+	picture = "Pavel_Matveyevich_Pevznyak.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
 	}
 }
 
+
 create_country_leader = {
 	name = "Prezidént Geórgij Prokóp'evič Bašárin"
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/YKT_Basharin.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }

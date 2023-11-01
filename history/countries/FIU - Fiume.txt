@@ -1,15 +1,27 @@
 ﻿capital = 807
 
+oob = "FIU_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+
+set_convoys = 10
+
 set_popularities = {
-	democratic = 51
-	republican_fascism = 34
-	theocratic = 5
-	national_socialism = 3
-	stratocratic_monarchism = 3
-	stratocratic = 4
+        democratic = 60
+        communism = 0
+        fascism = 0
+        republican_fascism = 40
+
 }
 
 set_politics = {
+	
 	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -19,7 +31,7 @@ set_politics = {
 create_country_leader = {
 	name = "Presidente Riccardo Zanella"
 	desc = ""
-	picture = "gfx/leaders/FIU/FIU_Zanella_conrep.tga"
+	picture = "FIU_Zanella_conrep.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -27,51 +39,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = militarism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = stratmon
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Comandante Gabriele D'Annunzio"
 	desc = ""
-	picture = "gfx/leaders/FIU/FIU_Annunzio_repfash.tga"
+	picture = "FIU_Annunzio_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = natsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Comandante Gabriele D'Annunzio"
-	desc = ""
-	picture = "gfx/leaders/FIU/FIU_Annunzio_repfash.tga"
-	expire = "1965.1.1"
-	ideology = christian
 	traits = {
 	}
 }

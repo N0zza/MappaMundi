@@ -1,38 +1,49 @@
 ﻿capital = 3886
 
-set_cosmetic_tag = UK_RED 
+oob = "HKG_1936"
 
-set_popularities = {
-	democratic = 1
-	communism = 15
-	authoritarian_monarchism = 84
-}
 
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+set_cosmetic_tag = UK_RED # British Hong Kong
+
+	set_popularities = {
+		democratic 
+			 = 1
+		fascism
+			 = 0
+		communism
+			 = 15
+			
+		authoritarian_monarchism
+			 = 84
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1935.12.12"	
 	election_frequency = 48
 	elections_allowed = no
 }
 
+
 # Became Governor and Commander-in-Chief of Hong Kong in 1937
 create_country_leader = {
 	name = "Geoffry Northcote"
 	desc = "POLITICS_GEOFFRY_NORTHCOTE_DESC"
-	picture = "gfx/leaders/HKG/Portrait_HKO_Northcote.dds"
+	picture = "Portrait_HKO_Northcote.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Sir Andrew Caldecott"
 	desc = "POLITICS_ANDREW_CALDECOTT_DESC"
-	picture = "gfx/leaders/HKG/Portrait_Sir_Andrew_Caldecott.dds"
+	picture = "Portrait_Sir_Andrew_Caldecott.dds"
 	expire = "1937.4.16"
 	ideology = authmon
 	traits = {
+		#
 	}
 }
 
@@ -43,6 +54,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
+		#
 	}
 }
 
@@ -51,8 +63,9 @@ create_country_leader = {
 	desc = "POLITICS_CHAN_LIM_PAK_DESC"
 	picture = "gfx/leaders/HKO/Portrait_HKO_Chanlimpak.dds"
 	expire = "1965.1.1"
-	ideology = showa_statism
+	ideology = fascism_ideology
 	traits = {
+		#
 	}
 }
 
@@ -63,5 +76,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
+		#
 	}
 }

@@ -2,19 +2,28 @@
 state={
 	id=329
 	name="STATE_329"
-	manpower = 1
+	manpower = 85000
+	resources={
+		chromium=2 # was: 2
+	}
+	
 	state_category = rural
+
 	history={
 		owner = TAN
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
 		victory_points = {
 			10627 3
 		}
 		add_core_of = TAN
 		add_core_of = SOV
-		add_core_of = M38
 	}
+
 	provinces={
-		10627
+		1877 4680 10597 10627 12610 1676
 	}
-	local_supplies=0.0 
 }

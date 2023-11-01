@@ -1,10 +1,18 @@
 ﻿capital = 3319
 
-set_cosmetic_tag = RUS_RED
+oob = "KYR_1936"
 
-set_popularities = {
-	vanguardism = 100	
-}
+set_cosmetic_tag = KYR_SOV
+
+	set_popularities = {
+		communism 
+			 = 30
+		vanguardism
+			 = 60
+		democratic
+			 = 10
+		
+	}
 
 	set_politics = { 
  ruling_party = vanguardism
@@ -14,12 +22,13 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Predsedátelʹ Kirgízskogo obkóma VKP(b) Morís Lʹvóvič Belóckij"
+	name = "Baski Katçi Moris Lvoviç Belotskiy"
 	desc = ""
 	picture = "gfx/leaders/KYR/Moris_L'vovich_Belotskiy.tga"
 	expire = "1960.1.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
@@ -46,7 +55,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prezident Togolok Moldo"
 	desc = ""
-	picture = "gfx/leaders/KYR/KYR_Moldo.tga"
+	picture = "KYR_Moldo.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -56,10 +65,11 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sayyid Turdakun Usubaliev"
 	desc = ""
-	picture = "gfx/leaders/KYR/KYR_Usubaliev.tga"
+	picture = "KYR_Usubaliev.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
 	}
 }
+
 

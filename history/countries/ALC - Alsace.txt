@@ -1,5 +1,24 @@
 ﻿capital = 28
 
+set_research_slots = 3
+
+oob = "ALC_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1
+	tech_recon = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	transport = 1
+}
+
+
 
 	set_popularities = {
         centrist_republic = 80
@@ -16,7 +35,7 @@
 create_country_leader = {
 	name = "Premierminister Camille Dahlet"
 	desc = ""
-	picture = "gfx/leaders/ALC/ALC_Dahlet_cendem.tga"
+	picture = "ALC_Dahlet_cendem.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -24,9 +43,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Landgräfin Adelheide Mathilde Marie I von Sachsen-Coburg und Gotha"
+	name = "Landgraf Alice I von Sachsen-Coburg und Gotha"
 	desc = ""
-	picture = "gfx/leaders/ALC/ALC_Alice.tga"
+	picture = "ALC_Alice.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -36,7 +55,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Vorsitzende Jean-Pierre Mourer"
 	desc = ""
-	picture = "gfx/leaders/ALC/ALC_Mourer_commie.tga"
+	picture = "ALC_Mourer_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {

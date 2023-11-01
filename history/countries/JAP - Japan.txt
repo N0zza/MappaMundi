@@ -1,14 +1,13 @@
 ﻿capital = 2192
 
-set_country_flag = has_secondary_leader
-recruit_character = JAP_Okada_Keisuke
+oob = "JAP_1936"
 
-set_popularities = {
-	stratocratic_monarchism = 100	
-}
-
-set_politics = { 
-	ruling_party = stratocratic_monarchism
+	set_popularities = {
+		stratocratic_monarchism
+			 = 100	
+		}
+	set_politics = { 
+ ruling_party = stratocratic_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -17,37 +16,38 @@ set_politics = {
 create_country_leader = {
 	name = "Ten'nō Hirohito"
 	desc = "POLITICS_Hirohito_DESC"
-	picture = "gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
+	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1989.1.1"
-	ideology = stratmon_military_junta
+	ideology = stratmon
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Supreme Commander for the Allied Powers Douglas MacArthur"
+	name = "Supreme Commander Douglas MacArthur"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Douglas_Macarthur.tga"
+	picture = "Portrait_Douglas_Macarthur.tga"
 	expire = "1965.1.1"
-	ideology = provisional_government
+	ideology = oligarchism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Iin-chō Tokuda Kyūichi"
+	name = "Kaichō Kyūichi Tokuda"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Tokuda_Kyuichi.tga"
+	picture = "Portrait_Tokuda_Kyuichi.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Iin-chō Arahata Kanson"
+	name = "Shokichō Kanson Arahata"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Arahata_Katsuzo.tga"
+	picture = "Portrait_Arahata_Katsuzo.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -55,51 +55,41 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Daitōryō Abe Isoo"
+	name = "Daitōryō Isoo Abe"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Abe_Isoo.tga"
+	picture = "Portrait_Abe_Isoo.tga"
 	expire = "1965.1.1"
-	ideology = social_democracy
+	ideology = demsoc
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Kokuō Nobuhito"
+	name = "Ō Nobuhito"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Nobuhito.tga"
+	picture = "Portrait_Nobuhito.tga"
 	expire = "1965.1.1"
-	ideology = socmon_social_democracy
+	ideology = monsoc
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Daitōryō Machida Chūji"
+	name = "Daitōryō Chūji Machida"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Machida_Chuji.tga"
+	picture = "Portrait_Machida_Chuji.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Daitōryō Suzuki Kisaburō"
+	name = "Daitōryō Kisaburō Suzuki"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Suzuki_kisaburo.tga"
+	picture = "Portrait_Suzuki_kisaburo.tga"
 	expire = "1965.1.1"
-	ideology = liberal_conservatism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Daitōryō Suzuki Kisaburō"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Suzuki_kisaburo.tga"
-	expire = "1965.1.1"
-	ideology = cenrep
+	ideology = conservatism
 	traits = {
 	}
 }
@@ -107,7 +97,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ten'nō Hirohito no Yamato"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
+	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -117,27 +107,27 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ten'nō Hirohito II"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
+	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1965.1.1"
-	ideology = conmon_liberal_conservatism
+	ideology = conservative_constitutionalism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Daitōryō Uchida Shin'ya"
+	name = "Daitōryō Shinya Uchida"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Shinya_Uchida.tga"
+	picture = "Portrait_Shinya_Uchida.tga"
 	expire = "1965.1.1"
-	ideology = anocrep
+	ideology = cenrep
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Shōgun Tokugawa Iemasa"
+	name = "Shōgun Iemasa Tokugawa"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Iemasa_Tokugawa.tga"
+	picture = "Portrait_Iemasa_Tokugawa.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -145,11 +135,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Saikō Shirei-kan Kan'in-no-miya Kotohito-shinnō"
+	name = "Saikō Shirei-kan Ōji Kan'in Kotohito"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Kotohito.tga"
+	picture = "Portrait_Kotohito.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
@@ -157,9 +147,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ten'nō Yasuhito"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Yasuhito.tga"
+	picture = "Portrait_Yasuhito.tga"
 	expire = "1965.1.1"
-	ideology = anocmon
+	ideology = authmon
 	traits = {
 	}
 }
@@ -167,7 +157,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ten'nō Hirohito"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
+	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -177,7 +167,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ten'nō Hirohito"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
+	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -187,37 +177,17 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ten'nō Shōwa"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
+	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1965.1.1"
-	ideology = showa_statism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Ten'nō Shōwa"
+	name = "Adachi Kenzō"
 	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
-	expire = "1965.1.1"
-	ideology = showa_statism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Ten'nō Shōwa"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
-	expire = "1965.1.1"
-	ideology = authmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Sōtō Adachi Kenzō"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Adachi_Kenzo.tga"
+	picture = "Portrait_Adachi_Kenzo.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -225,9 +195,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Saikōshidō-sha Nakano Seigō"
+	name = "Uchida Ryōhei"
 	desc = ""
-	picture = "gfx/leaders/JAP/JAP_Nakano.tga"
+	picture = "Portrait_Uchida_Ryohei.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -259,7 +229,7 @@ create_country_leader = {
 	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
 	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
 	expire = "1965.1.1"
-	ideology = corporatocracy
+	ideology = ancap
 	traits = {
 	}
 }

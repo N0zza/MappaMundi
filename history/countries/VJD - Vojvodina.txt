@@ -1,13 +1,32 @@
 ﻿capital = 45
 
-set_popularities = {
-	democratic = 50
-	vanguardism = 20
-	neutrality = 30
+oob = "TUS_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	early_fighter = 1
+	CAS1 = 1
 }
 
-set_politics = { 
-	ruling_party = democratic
+
+
+	set_popularities = {
+		democratic 
+			 = 50
+		vanguardism
+			 = 20
+		neutrality
+			 = 30
+		}
+	set_politics = { 
+ ruling_party = democratic
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = yes
@@ -16,27 +35,29 @@ set_politics = {
 create_country_leader = {
 	name = "Predsedavajući Jovan Veselinov Zarko"
 	desc = ""
-	picture = "gfx/leaders/VDJ/VDJ_Zarko.tga"
+	picture = "VDJ_Zarko.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Predsedavajući Jovan Veselinov Zarko"
 	desc = ""
-	picture = "gfx/leaders/VDJ/VDJ_Zarko.tga"
+	picture = "VDJ_Zarko.tga"
 	expire = "1953.3.1"
 	ideology = marxism
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Elnok David Popović"
 	desc = ""
-	picture = "gfx/leaders/VJD/VJD_Popovic.tga"
+	picture = "VJD_Popovic.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -46,7 +67,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ban David Popović"
 	desc = ""
-	picture = "gfx/leaders/VJD/VJD_Popovic.tga"
+	picture = "VJD_Popovic.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -54,22 +75,13 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kralj Maximilian I Hohenberg"
-	desc = ""
-	picture = "gfx/leaders/ALM/ALM_Maximilian.tga"
-	expire = "1965.1.1"
-	ideology = authmon
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Király Daka I of Popović"
 	desc = ""
-	picture = "gfx/leaders/VJD/VJD_Popovic.tga"
+	picture = "VJD_Popovic.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
 	}
 }
+
 

@@ -1,5 +1,19 @@
 ﻿capital = 1796
-
+
+oob = "RUM_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	tech_support = 1		
+	tech_engineers = 1
+	early_fighter = 1
+}
+set_war_support = 0.1
+set_stability = 0.8
+
 
 	set_popularities = {
 		democratic 
@@ -19,9 +33,9 @@
 create_country_leader = {
 	name = "Governatore Cesare Maria De Vecchi"
 	desc = ""
-	picture = "gfx/leaders/RUM/RUM_Vecchi.tga"
+	picture = "RUM_Vecchi.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -29,7 +43,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichskommissar Julius Lippert"
 	desc = ""
-	picture = "gfx/leaders/RUM/RUM_Lippert.png"
+	picture = "RUM_Lippert.png"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

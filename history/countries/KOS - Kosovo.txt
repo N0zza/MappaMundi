@@ -1,5 +1,24 @@
 ﻿capital = 812
 
+set_research_slots = 3
+
+oob = "KOS_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1
+	tech_recon = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	transport = 1
+}
+
+
 
 	set_popularities = {
 		liberal_republic
@@ -19,29 +38,31 @@
 create_country_leader = {
 	name = "Kryetari Fadil Hoxha"
 	desc = ""
-	picture = "gfx/leaders/KOS/KOS_Hoxha.tga"
+	picture = "KOS_Hoxha.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Predsedavajući Fadil Hoxha"
 	desc = ""
-	picture = "gfx/leaders/KOS/KOS_Hoxha.tga"
+	picture = "KOS_Hoxha.tga"
 	expire = "1953.3.1"
 	ideology = marxism
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "President Hasan Prishtina"
 	desc = ""
-	picture = "gfx/leaders/KOS/KOS_Prishtina.tga"
+	picture = "KOS_Prishtina.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -49,7 +70,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kryetari Hasan Prishtina"
 	desc = ""
-	picture = "gfx/leaders/KOS/KOS_Prishtina.tga"
+	picture = "KOS_Prishtina.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -59,7 +80,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Shefi Mid'hat Frasheri"
 	desc = ""
-	picture = "gfx/leaders/KOS/KOS_Frasheri.tga"
+	picture = "KOS_Frasheri.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -69,10 +90,11 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kosovar Council"
 	desc = ""
-	picture = "gfx/leaders/KOS/KOS_Council.tga"
+	picture = "KOS_Council.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
 	}
 }
+
 

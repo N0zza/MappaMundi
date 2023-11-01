@@ -1,9 +1,17 @@
 ﻿capital = 1365
-set_cosmetic_tag = RUS_RED
 
-set_popularities = {
-	vanguardism = 100	
-}
+oob = "TMS_1936"
+set_cosmetic_tag = TMS_SOV
+
+	set_popularities = {
+		communism 
+			 = 35
+		vanguardism
+			 = 60
+		
+                stratocratic
+			 = 5	
+	}
 	
 	set_politics = { 
  ruling_party = vanguardism
@@ -13,12 +21,13 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "MIK Başlygy Nedirbaý Aýtakow"
+	name = "Başlygy Nedirbaý Aýtakow"
 	desc = ""
-	picture = "gfx/leaders/TMS/Aytakov.dds"
+	picture = "Aytakov.dds"
 	expire = "1960.1.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
@@ -35,7 +44,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Josef Dietrich"
 	desc = ""
-	picture = "gfx/leaders/TMS/TMS_Sepp_Dietrich.tga"
+	picture = "TMS_Sepp_Dietrich.tga"
 	expire = "1960.1.1"
 	ideology = natsoc
 	traits = {
@@ -57,9 +66,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prezident Berdi Muradovich Kerbabayev"
 	desc = ""
-	picture = "gfx/leaders/TMS/TMS_Kerbabayev.tga"
+	picture = "TMS_Kerbabayev.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -67,7 +76,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Baslyk Sarry Karryev"
 	desc = ""
-	picture = "gfx/leaders/TMS/TMS_Karryev.tga"
+	picture = "TMS_Karryev.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {

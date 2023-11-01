@@ -1,11 +1,33 @@
 ﻿capital = 313
 
-set_popularities = {
-	stratocratic = 100
-}
+oob = "GUA_1936"
 
-set_politics = { 
-	ruling_party = stratocratic
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+set_country_flag = monroe_doctrine
+set_war_support = 0.1
+set_convoys = 5
+
+
+
+
+	set_popularities = {
+		democratic 
+			 = 0
+		fascism
+			 = 0
+		communism
+			 = 0
+			
+		stratocratic
+			 = 100
+		}
+	set_politics = { 
+ ruling_party = stratocratic
 	last_election = "1931.2.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -14,27 +36,29 @@ set_politics = {
 create_country_leader = {
 	name = "Presidente Jorge Ubico Castañeda"
 	desc = "POLITICS_JORGE_UBICO_DESC"
-	picture = "gfx/leaders/GUA/Portrait_jorge_ubico.dds"
+	picture = "Portrait_jorge_ubico.dds"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Presidente María Chinchilla Recinos"
 	desc = ""
-	picture = "gfx/leaders/GUA/GUA_Recinos_commie.tga"
+	picture = "GUA_Recinos_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Presidente Juan José Arévalo"
 	desc = ""
-	picture = "gfx/leaders/GUA/GUA_Juan_socialist.tga"
+	picture = "GUA_Juan_socialist.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -44,7 +68,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Emperador Jorge I Ubico"
 	desc = ""
-	picture = "gfx/leaders/GUA/Portrait_jorge_ubico.dds"
+	picture = "Portrait_jorge_ubico.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -54,7 +78,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Adrián Recinos"
 	desc = ""
-	picture = "gfx/leaders/GUA/GUA_Adrian_condem.tga"
+	picture = "GUA_Adrian_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -64,7 +88,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gobernador Carlos Asensio Cabanillas"
 	desc = ""
-	picture = "gfx/leaders/GUA/GUA_Cabanillas_stratmon.tga"
+	picture = "GUA_Cabanillas_stratmon.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {

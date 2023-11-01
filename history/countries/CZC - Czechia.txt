@@ -1,14 +1,17 @@
 ﻿capital = 9
 
-set_popularities = {
-	democratic =  25
-	communism =  25
-	fascism =  25
-	neutrality =  25
-}
+oob = "CZC_1936"
+
+	set_popularities = {
+        democratic =  25
+        communism =  25
+        fascism =  25
+        neutrality =  25
+
+	}
 	
-set_politics = { 
-	ruling_party = democratic
+	set_politics = { 
+ ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -21,6 +24,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
+		#
 	}
 }
 
@@ -31,11 +35,12 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
-	name = "Regent Sergej Nikolajevič Voitsekhovskij"
+	name = "Regent Sergej Nikolajevič Vojcechovský"
 	desc = ""
 	picture = "gfx/leaders/Czechia/CZC_Vojcechovsky.tga"
 	expire = "1989.1.1"
@@ -89,7 +94,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Czechia/CZE_Hampl.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -139,7 +144,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/Czechia/CZC_Tesarik.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
@@ -155,7 +160,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Král Bedřich II z Habsburgů-Těšín"
+	name = "Král Fridrich II z Habsburgů-Těšín"
 	desc = ""
 	picture = "gfx/leaders/Czechia/CZE_Fridrich.tga"
 	expire = "1965.1.1"
@@ -175,7 +180,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Císař Bedřich II z Habsburgů-Těšín"
+	name = "Císař Fridrich II z Habsburgů-Těšín"
 	desc = ""
 	picture = "gfx/leaders/Czechia/CZE_Fridrich.tga"
 	expire = "1965.1.1"

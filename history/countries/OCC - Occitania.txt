@@ -1,5 +1,17 @@
 ﻿capital = 31
 
+oob = "OCC_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+
+set_convoys = 10
+
 set_popularities = {
         liberal_republic = 80
         vanguardism = 20
@@ -14,9 +26,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Reichsprotektor Eckhard Christian"
+	name = "Reichsprotektor Karl Koller"
 	desc = ""
-	picture = "gfx/leaders/OCC/OCC_Koller_nazi.tga"
+	picture = "OCC_Koller_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -26,9 +38,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governatore Dino Grandi"
 	desc = ""
-	picture = "gfx/leaders/OCC/OCC_Grandi_fash.tga"
+	picture = "OCC_Grandi_fash.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -36,7 +48,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rei Jean I de Broglie"
 	desc = ""
-	picture = "gfx/leaders/OCC/OCC_Jean_mon.tga"
+	picture = "OCC_Jean_mon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -46,9 +58,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premier Ministre Edgar Jean Faure"
 	desc = ""
-	picture = "gfx/leaders/OCC/OCC_Faure_libdem.tga"
+	picture = "OCC_Faure_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -56,10 +68,11 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premier Secrétaire Jean Pierre Moulin"
 	desc = ""
-	picture = "gfx/leaders/OCC/OCC_Moulin_commie.tga"
+	picture = "OCC_Moulin_commie.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 

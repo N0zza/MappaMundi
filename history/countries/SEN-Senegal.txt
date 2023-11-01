@@ -2,15 +2,28 @@
 
 set_cosmetic_tag = FRA_COLONY
 
-set_popularities = {
-	socialism_ideology = 10
-	liberal_republic = 10
-	democratic = 10
-	neutrality = 70
-}
+set_convoys = 20
 
-set_politics = { 
-	ruling_party = neutrality
+	
+
+
+
+
+	set_popularities = {
+		socialism_ideology
+			 = 10
+			
+		
+		liberal_republic
+			 = 10
+		
+		democratic 
+			 = 10
+		neutrality 
+			 = 70
+		}
+	set_politics = { 
+ ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -19,9 +32,9 @@ set_politics = {
 create_country_leader = {
 	name = "Gouverneur Maurice Beurnier"
 	desc = ""
-	picture = "gfx/leaders/SEN/SEN_Beurnier.tga"
+	picture = "SEN_Beurnier.tga"
 	expire = "1965.1.1"
-	ideology = colonialism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -29,7 +42,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor-General Douglas Povah Dickinson"
 	desc = ""
-	picture = "gfx/leaders/SEN/SEN_Dickinson_authmon.tga"
+	picture = "SEN_Dickinson_authmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -39,7 +52,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Adrianus Antonius van Nijnatten"
 	desc = ""
-	picture = "gfx/leaders/SEN/SEN_Nijnatten_conmon.tga"
+	picture = "SEN_Nijnatten_conmon.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -49,9 +62,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Léopold Sédar Senghor"
 	desc = ""
-	picture = "gfx/leaders/SEN/SEN_Senghor_libdem.tga"
+	picture = "SEN_Senghor_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -59,7 +72,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Ngalandou Diouf"
 	desc = ""
-	picture = "gfx/leaders/SEN/SEN_Diouf_condem.tga"
+	picture = "SEN_Diouf_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -69,19 +82,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premier Ministre Amadou Lamine-Guèye"
 	desc = ""
-	picture = "gfx/leaders/SEN/SEN_Gueye_demsoc.tga"
+	picture = "SEN_Gueye_demsoc.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = stratmon_colonialism
 	traits = {
 	}
 }

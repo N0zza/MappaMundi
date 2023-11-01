@@ -1,33 +1,42 @@
 ﻿capital = 296
 
-set_cosmetic_tag = POR_GREEN
+oob = "POR_gen"
 
-set_popularities = {
-	republican_fascism = 70
-	socialism_ideology = 10
-	neutrality = 20
-}
+set_cosmetic_tag =   POR_GREEN
 
-set_politics = { 
-	ruling_party = republican_fascism
+	set_popularities = {
+		democratic 
+			 = 0
+		republican_fascism
+			 = 70
+		socialism_ideology
+			 = 10
+		neutrality 
+			 = 20
+		}
+	set_politics = { 
+ ruling_party = republican_fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+
 create_country_leader = {
+	
 	name = "Governador Luís António de Carvalho Viegas"
-	picture = "gfx/leaders/GNB/viegas.dds"
+	picture = "viegas.dds"
 	expire = "1975.11.22"
 	ideology = repfash
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Presidente Amílcar Lopes da Costa Cabral"
 	desc = ""
-	picture = "gfx/leaders/GNB/GNB_Cabral.tga"
+	picture = "GNB_Cabral.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -37,19 +46,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governador Luís António de Carvalho Viegas"
 	desc = ""
-	picture = "gfx/leaders/GNB/Portrait/viegas.dds"
+	picture = "viegas.dds"
 	expire = "1965.1.1"
 	ideology = authmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = stratmon_colonialism
 	traits = {
 	}
 }

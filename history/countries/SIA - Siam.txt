@@ -1,23 +1,32 @@
 ﻿capital = 289
 
-set_country_flag = has_secondary_leader
-set_country_flag = has_tertiary_leader
+oob = "SIA_1936"
 	
 set_politics = { 
-    ruling_party = stratocratic_monarchism
+        ruling_party = stratocratic_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+
 set_popularities = {
-	stratocratic_monarchism = 100
-}
+		democratic 
+			 = 0
+		fascism
+			 = 0
+		communism
+			 = 0
+			
+		stratocratic_monarchism
+			 = 100
+		
+	}
 
 create_country_leader = {
 	name = "Râat Rama VIII Cāk Chakkri"
 	desc = ""
-	picture = "gfx/leaders/SIA/Portrait_Rama_VIII.tga"
+	picture = "Portrait_Rama_VIII.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -28,27 +37,29 @@ create_country_leader = {
 create_country_leader = {
 	name = "Râat Rama VII Cāk Chakkri"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Rama_VII.tga"
+	picture = "SIA_Rama_VII.tga"
 	expire = "1938.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Jàk-Grà-Pát Rama VII Cāk Chakkri"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Rama_VII.tga"
+	picture = "SIA_Rama_VII.tga"
 	expire = "1938.1.1"
 	ideology = absolutism
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Naa-Yók Phraya Phahonphonphayuhasena"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Phahonphonphayuhasena_authdem.tga"
+	picture = "SIA_Phahonphonphayuhasena_authdem.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -59,7 +70,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "À-Tí-Gaan Phayom Chulanont"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Phayom_Chulanont_commie.tga"
+	picture = "SIA_Phayom_Chulanont_commie.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -70,7 +81,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Lay-kăa Phayom Chulanont"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Phayom_Chulanont_commie.tga"
+	picture = "SIA_Phayom_Chulanont_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -81,7 +92,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Lay-kăa Sarit Thanarat"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Sarit_Thanarat_liberalism.tga"
+	picture = "SIA_Sarit_Thanarat_socdem.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -89,9 +100,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Phū Samret Rātchakān Thǣn Phra`ong Phračhao Wǭrawongthœ̄ Phraongčhao Āthitthipāphā"
+	name = "Cêāchāy-Rīcênth Aditya Dibabha Cāk Chakkri"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Aditya_Dibabha.tga"
+	picture = "SIA_Aditya_Dibabha.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -101,7 +112,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Naa-Yók Thawan Thamrongnawasawat"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Thamrongnawasawat_condem.tga"
+	picture = "SIA_Thamrongnawasawat_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -111,7 +122,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Râat Rama IX Cāk Chakkri"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Rama_IX.tga"
+	picture = "SIA_Rama_IX.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -121,7 +132,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Pôo Nam Thawi Bunyaket"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Thawi_Bunyaket_cendem.tga"
+	picture = "SIA_Thawi_Bunyaket_cendem.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -131,7 +142,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tay-Wee Rambai Barni Cāk Chakkri"	
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Rambai_Barni_cenmon.tga"
+	picture = "SIA_Rambai_Barni_cenmon.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -141,7 +152,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mâe Táp Jarun Rattanakuln"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Jarun_Rattanakuln_strat.tga"
+	picture = "SIA_Jarun_Rattanakuln_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -151,7 +162,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor John Henry Godfrey"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_John_Godfrey_stratmon.tga"
+	picture = "SIA_John_Godfrey_stratmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -161,7 +172,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chinnawon Siriwat, Jinavorn Sirivaddhana"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Chinnawon_Siriwat_theoc.tga"
+	picture = "SIA_Chinnawon_Siriwat_theoc.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -171,7 +182,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chiji Terauchi Hisaichi"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Terauchi_Hisaichi_fash.tga"
+	picture = "SIA_Terauchi_Hisaichi_fash.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -181,7 +192,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Naa-Yók Plaek Phibunsongkhram"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Plaek_Phibunsongkhrami_repfash.tga"
+	picture = "SIA_Plaek_Phibunsongkhrami_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -191,7 +202,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichprotektor Hans Baur"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Hans_Baur_nazi.tga"
+	picture = "SIA_Hans_Baur_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -221,7 +232,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Ludolph Hendrik van Oyen"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Ludolph_van_Oyen_ancap.tga"
+	picture = "SIA_Ludolph_van_Oyen_ancap.tga"
 	expire = "1965.1.1"
 	ideology = ancap
 	traits = {
@@ -231,9 +242,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Naa-Yók Pridi Banomyong"
 	desc = ""
-	picture = "gfx/leaders/SIA/SIA_Pridi_Banomyong_libdem.tga"
+	picture = "SIA_Pridi_Banomyong_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }

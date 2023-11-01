@@ -1,8 +1,19 @@
 ﻿capital = 5
 
+oob = "KON_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+
+set_convoys = 10
+
 set_popularities = {
-	fascism = 70
-	anocratic_republic = 30
+	fascism = 100
 }
 	
 set_politics = { 
@@ -13,22 +24,13 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Reichskanzler Carl Friedrich Goerdeler"
-	desc = ""
-	picture = "gfx/leaders/KON/KON_Goerdeler.tga"
-	expire = "1965.1.1"
-	ideology = anocrep_provisional_government
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Erich Koch"
 	desc = ""
-	picture = "gfx/leaders/KON/KON_Koch.tga"
+	picture = "KON_Koch.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
 	}
 }
+
 

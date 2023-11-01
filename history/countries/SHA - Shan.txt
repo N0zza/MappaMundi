@@ -1,5 +1,17 @@
 ﻿capital = 2217
+
+oob = "SHA_1936"
 set_cosmetic_tag = RAJ_RED
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+set_convoys = 10
+
+
 
 	set_popularities = {
         democratic =  0
@@ -17,10 +29,11 @@ set_cosmetic_tag = RAJ_RED
 	elections_allowed = no
 }
 
+
 create_country_leader = {
 	name = "Governor-General John Clague"
 	desc = ""
-	picture = "gfx/leaders/SHA/John_Clague.dds"
+	picture = "John_Clague.dds"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -28,9 +41,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gouverneur Otto Johann Anton Skorzeny"
+	name = "Gouverneur Otto Skorzeny"
 	desc = ""
-	picture = "gfx/leaders/SHA/Otto_Skorzeny.tga"
+	picture = "Otto_Skorzeny.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -40,7 +53,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Saopha Kawng Kiao Intaleng"
 	desc = ""
-	picture = "gfx/leaders/SHA/Sao_Kawng_Kiao_Intaleng.tga"
+	picture = "Sao_Kawng_Kiao_Intaleng.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -51,7 +64,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sōtoku Teiichi Suzuki"
 	desc = ""
-	picture = "gfx/leaders/SHA/Teiichi_Suzuki.tga"
+	picture = "Teiichi_Suzuki.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

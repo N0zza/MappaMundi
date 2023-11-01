@@ -1,7 +1,16 @@
 ﻿capital = 635
 
+oob = "FRA_gen"
 
 set_cosmetic_tag = FRA_COLONY
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+
+set_convoys = 5
 
 set_popularities = {
 	democratic 
@@ -23,9 +32,9 @@ set_politics = {
 
 create_country_leader = {
 	name = "Bernard Jacques Victorin Siadous"
-	picture = "gfx/leaders/NCL/NCL_Siadous.tga"
+	picture = "NCL_Siadous.tga"
 	expire = "1975.3.17"
-	ideology = colonialism
+	ideology = despotism
 	traits = {
 		#
 	}

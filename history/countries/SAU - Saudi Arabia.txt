@@ -1,6 +1,13 @@
 ﻿capital = 2215
 
+oob = "SAU_1936"
+
+set_convoys = 5
+
 set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
 	monarchism = 100
 }
 
@@ -14,69 +21,75 @@ set_politics = {
 create_country_leader = {
 	name = "Milk ʿAbd ul-ʿAzīz bin ʿAbd ar-Raḥman bin Fayṣal as-Saʿūd"
 	desc = "POLITICS_ABDULAZIZ_DESC"
-	picture = "gfx/leaders/SAU/Portrait_Saudi_Arabia_Abdulazis_Ibn_Saud.dds"
+	picture = "Portrait_Saudi_Arabia_Abdulazis_Ibn_Saud.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Raʾīs Ǧabrā Niqūlā"
 	desc = "POLITICS_FEDERICO_PAEZ_DESC"
-	picture = "gfx/leaders/SAU/SAU_Nicola_commie.tga"
+	picture = "SAU_Nicola_commie.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Wazīr Rašād bin Maḥmūd Firʿawn"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Pharaon_libdem.tga"
+	picture = "SAU_Pharaon_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism 
+	ideology = socdem 
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Gouverneur Joseph Vuillemin"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Joseph_authdem.tga"
+	picture = "SAU_Joseph_authdem.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "As-Sikritīr al-Awwal Ǧabrā Niqūlā"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Nicola_commie.tga"
+	picture = "SAU_Nicola_commie.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Raʾīs Ǧabrā Niqūlā"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Nicola_commie.tga"
+	picture = "SAU_Nicola_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Ḫādīmū Al-Ḥārāmayn aš-Šarīfāynī ʿAbd ul-ilāh bin al-Milk ʿAlīy bin aš-Šarīf Ḥusayn al-Hāšimī"
+	name = "Ḫādīmū Al-Ḥārāmayn aš-Šarīfāynī ʿAbd ul-ilāh bin al-Milk ʿAliyy bin aš-Šarīf Ḥusayn al-Hāšimī"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Ilah_socmon.tga"
+	picture = "SAU_Ilah_socmon.tga"
 	expire = "1965.1.1"
-	ideology = monsoc
+	ideology = liberal_constitutionalism
 	traits = {
 	}
 }
@@ -84,7 +97,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Milk Fayṣal bin ʿAbd ul-ʿAzīz as-Saʿūd"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Faisal_libmon.tga"
+	picture = "SAU_Faisal_libmon.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -94,7 +107,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ḫādīm al-Ḥārāmayn aš-Šarīfāynī Muḥammad bin ʿAbd ur-Raḥman bin Fayṣal as-Saʿūd"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Abdul_conmon.tga"
+	picture = "SAU_Abdul_conmon.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -104,7 +117,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Milk Muḥammad bin Ṭalāl bin Nāyif ar-Rašīd"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Rashidi_cenmon.tga"
+	picture = "SAU_Rashidi_cenmon.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -114,7 +127,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ḫalīfaẗ Muḥammad bin ʿAwaḍ bin Lādin"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Laden_fash.tga"
+	picture = "SAU_Laden_fash.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -124,7 +137,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Raʾīs ʿAbd ul-llāh bin Sulaymān al-Ḥamdān"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Hamdan_condem.tga"
+	picture = "SAU_Hamdan_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -132,9 +145,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Raʾīs Fuʾād bin Amīn bin ʿAlīy Ḥamzaẗ"
+	name = "Raʾīs Fuʾād bin Amīn bin ʿAliyy Ḥamzaẗ"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Hamza_cendem.tga"
+	picture = "SAU_Hamza_cendem.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -144,7 +157,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Qāʾid al-ʿĀm Muḥammad Ṭāriq ʿAbd ul-Qādir al-Ṭarābulusī"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Tarek_strat.tga"
+	picture = "SAU_Tarek_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -154,7 +167,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Pasha İsmail Cevat Çobanlı"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Cobanlı_stratmon.tga"
+	picture = "SAU_Cobanlı_stratmon.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -164,7 +177,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor-General Sir Clarence August Bird"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Bird_authmon.tga"
+	picture = "SAU_Bird_authmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -174,9 +187,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ḫalīfaẗ Šayẖ Muḥammad bin Ibrāhīm bin ʿAbd ul-Laṭīf bin ʿAbd ur-Raḥman bin Ḥasan bin Muḥammad bin ʿAbd ul-Wahhāb"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Ibrahim_theoc.tga"
+	picture = "SAU_Ibrahim_theoc.tga"
 	expire = "1965.1.1"
-	ideology = islamic_theocracy
+	ideology = christian
 	traits = {
 	}
 }
@@ -184,7 +197,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governatore Giacomo Appiotti"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Appiotti_repfash.tga"
+	picture = "SAU_Appiotti_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -194,7 +207,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Heinrich Gottfried Otto Richard von Vietinghoff"
 	desc = ""
-	picture = "gfx/leaders/SAU/SAU_Vietinghoff_nazi.tga"
+	picture = "SAU_Vietinghoff_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

@@ -1,43 +1,52 @@
 ﻿capital = 1610
 
-set_cosmetic_tag = POR_GREEN
+oob = "ANG_1936"
 
-set_popularities = {
-	democratic = 10
-	vanguardism = 5
-	neutrality = 85
-}
+set_cosmetic_tag =   POR_GREEN
 
-set_politics = { 
-	ruling_party = republican_fascism
+	set_popularities = {
+		democratic 
+			 = 10
+		republican_fascism
+			 = 0
+		vanguardism
+			 = 5
+		neutrality 
+			 = 85
+		}
+	set_politics = { 
+ ruling_party = republican_fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+
 create_country_leader = {
 	name = "Governador-Geral António Lopes Mateus"
-	picture = "gfx/leaders/ANG/mateus.dds"
+	picture = "mateus.dds"
 	expire = "1975.11.22"
 	ideology = repfash
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Primeiro Secretário Agostinho Neto"
 	desc = ""
-	picture = "gfx/leaders/ANG/ANG_Neto_commie.tga"
+	picture = "ANG_Neto_commie.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Presidente Agostinho Neto"
 	desc = ""
-	picture = "gfx/leaders/ANG/ANG_Neto_commie.tga"
+	picture = "ANG_Neto_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -47,9 +56,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governador Manuel Rabelo Mendes"
 	desc = ""
-	picture = "gfx/leaders/ANG/ANG_Mendes.tga"
+	picture = "ANG_Mendes.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -57,7 +66,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Holden Roberto"
 	desc = ""
-	picture = "gfx/leaders/ANG/ANG_Roberto_condem.tga"
+	picture = "ANG_Roberto_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -67,7 +76,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governador Manuel Rabelo Mendes"
 	desc = ""
-	picture = "gfx/leaders/ANG/ANG_Mendes.tga"
+	picture = "ANG_Mendes.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -77,7 +86,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Sir Henry Harwood Harwood"
 	desc = ""
-	picture = "gfx/leaders/ANG/ANG_Harwood_conmon.tga"
+	picture = "ANG_Harwood_conmon.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -87,7 +96,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Alphonse Pierre Juin"
 	desc = ""
-	picture = "gfx/leaders/ANG/ANG_Juin_strat.tga"
+	picture = "ANG_Juin_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -97,19 +106,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governador-Geral António Lopes Mateus"
 	desc = ""
-	picture = "gfx/leaders/ANG/Portrait/mateus.dds"
+	picture = "mateus.dds"
 	expire = "1965.1.1"
 	ideology = authmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = stratmon_colonialism
 	traits = {
 	}
 }

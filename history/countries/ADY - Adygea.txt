@@ -1,13 +1,31 @@
 ﻿capital = 4979
 
-set_cosmetic_tag = RUS_RED
+oob = "ADY_1936"
 
-set_popularities = {
-	vanguardism = 100	
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
 }
+
+
+set_cosmetic_tag = ADY_SOV
+
+set_convoys = 10
+
+
+
+	set_popularities = {
+        democratic = 0
+        communism =  0
+        fascism =  0
+        neutrality =  100
+
+	}
 	
-set_politics = { 
-	ruling_party = vanguardism
+	set_politics = { 
+ ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -16,7 +34,7 @@ set_politics = {
 create_country_leader = {
 	name = "Premieres-Minister Pshemakho Kotsev"
 	desc = ""
-	picture = "gfx/leaders/ADY/ADY_Kotsev_authrep.tga"
+	picture = "ADY_Kotsev_authrep.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {

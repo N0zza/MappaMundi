@@ -1,30 +1,46 @@
 ﻿capital = 835
 
-set_popularities = {
-	democratic = 100
+set_research_slots = 3
+
+oob = "BAV_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1
+	tech_recon = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	transport = 1
 }
 
-set_politics = { 
-	ruling_party = democratic
+
+
+	set_popularities = {
+		democratic 
+			 = 100
+		fascism
+			 = 0
+		communism
+			 = 0
+		neutrality
+			 = 0
+		}
+	set_politics = { 
+ ruling_party = democratic
 	last_election = "1960.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Président Henri Marie Joseph Grouès"
-	desc = ""
-	picture = "gfx/leaders/NND/NND_Groues.tga"
-	expire = "1965.1.1"
-	ideology = demsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Président Camille Blaisot"
 	desc = ""
-	picture = "gfx/leaders/NND/NND_Blaisot_condem.tga"
+	picture = "NND_Blaisot_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -34,7 +50,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Duc Edward I de Cavendish"
 	desc = ""
-	picture = "gfx/leaders/NND/NND_Cavendish_authmon.tga"
+	picture = "NND_Cavendish_authmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -42,21 +58,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Commander of the Supreme Headquarters Allied Expeditionary Force David Dwight Eisenhower"
+	name = "Reichsprotektor Nikolaus von Falkenhorst"
 	desc = ""
-	picture = "gfx/leaders/USA/USA_Eisenhower.tga"
+	picture = "NND_Falkenhorst_nazi.tga"
 	expire = "1965.1.1"
-	ideology = military_organisation
+	ideology = natsoc
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Reichsprotektor Paul Nikolaus von Falkenhorst"
+	name = "Président Henri Marie Joseph Grouès"
 	desc = ""
-	picture = "gfx/leaders/NND/NND_Falkenhorst_nazi.tga"
+	picture = "NND_Groues.tga"
 	expire = "1965.1.1"
-	ideology = natsoc
+	ideology = socrep
 	traits = {
 	}
 }

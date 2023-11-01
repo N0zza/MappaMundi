@@ -1,73 +1,84 @@
 ﻿capital = 17464
 
-set_country_flag = has_secondary_leader
+oob = "IRQ_1936"
 
-set_popularities = {
-	republican_fascism = 20
-	authoritarian_monarchism = 80
-}
-
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+	set_popularities = {
+		democratic 
+			 = 0
+		republican_fascism
+			 = 20
+		communism
+			 = 0
+		authoritarian_monarchism 
+			 = 80
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Milk Ġāzī bin Fayṣal I bin Ḥusayn bin ʿAlīy al-Hāšimī"
+	name = "Malik Ghazi I bin Faisal al-Hashimiyun"
 	desc = "POLITICS_GHAZI_I_DESC"
-	picture = "gfx/leaders/IRQ/Portrait_Ghazi_I.dds"
+	picture = "Portrait_Ghazi_I.dds"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Milk Ġāzī bin Fayṣal I bin Ḥusayn bin ʿAlīy al-Hāšimī"
+	name = "Malik Ghazi I bin Faisal al-Hashimiyun"
 	desc = "POLITICS_GHAZI_I_DESC"
-	picture = "gfx/leaders/IRQ/Portrait_Ghazi_I.dds"
+	picture = "Portrait_Ghazi_I.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Imbirāṭūriyaẗ Ġāzī bin Fayṣal I bin Ḥusayn bin ʿAlīy al-Hāšimī"
+	name = "Iimbiraturia Ghazi I bin Faisal al-Hashimiyun"
 	desc = "POLITICS_GHAZI_I_DESC"
-	picture = "gfx/leaders/IRQ/Portrait_Ghazi_I.dds"
+	picture = "Portrait_Ghazi_I.dds"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Governatore Attilio Teruzzi"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Teruzzi_fash.tga"
+	picture = "IRQ_Teruzzi_fash.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
-	name = "As-Sikritīr al-Awwal Yūsuf Salmān Yūsuf"
+	name = "Rayiys Yusuf Salman Yusuf"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Yusuf_commie.tga"
+	picture = "IRQ_Yusuf_commie.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
+
 create_country_leader = {
-	name = "Raʾīs Yūsuf Salmān Yūsuf"
+	name = "Rayiys Yusuf Salman Yusuf"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Yusuf_commie.tga"
+	picture = "IRQ_Yusuf_commie.tga"
 	expire = "1953.3.1"
 	ideology = marxism
 	traits = {		
@@ -75,9 +86,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Raʾīs Ḫayr ul-llāh Ṭalfāḥ al-Musallaṭ"
+	name = "Rayiys Khairallah Talfah"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Talfah_demsoc.tga"
+	picture = "IRQ_Talfah_demsoc.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -85,19 +96,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Raʾīs ul-Wuzarāʾ Nūrī Saʿīd Ṣāliḥ Mullā Ṭaha al-Qarġūlī"
+	name = "Prime Minister Nuri Pasha al-Said"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Nuri_libdem.tga"
+	picture = "IRQ_Nuri_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Raʾīs ul-Wuzarāʾ Yasin al-Hashimi"
+	name = "Rayiys Alwuzara' Yasin al-Hashimi"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Hashimi_condem.tga"
+	picture = "IRQ_Hashimi_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -105,9 +116,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Raʾīs Yāsīn Ḥilmī bin Salmān bin Aḥmad al-Hāšimī"
+	name = "Rayiys Yasin al-Hashimi"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Hashimi_condem.tga"
+	picture = "IRQ_Hashimi_condem.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -117,7 +128,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Administrator Sir Arnold Talbot Wilson"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Wilson_libmon.tga"
+	picture = "IRQ_Wilson_libmon.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -125,9 +136,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Waṣī ul-ʿArš al-Amīr ʿAbd al-Ilah bin al-Malik ʿAlīy bin aš-Šarīf Ḥusayn al-Hāšimī"
+	name = "Rijint 'Abd al-Ilah of Hejaz"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Ilah_conmon.tga"
+	picture = "IRQ_Ilah_conmon.tga"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -135,9 +146,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Raʾīs Muḥammad Nāǧī Šawkat Bik"
+	name = "Rayiys Muhammad Naji Shawkat Bey"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Bey_cenrep.tga"
+	picture = "IRQ_Bey_cenrep.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -147,7 +158,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Vali Mehmet Esat Bülkat"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Bulkat_cenmon.tga"
+	picture = "IRQ_Bulkat_cenmon.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -155,9 +166,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Al-Qāʾid al-ʿĀm Ṣalāḥ ud-Dīn bin ʿAlīy bin Ibrāhīm aṣ-Ṣabbāġ"
+	name = "Alqayid Aleamu Salah al-Din al-Sabbagh"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Sabbagh_strat.tga"
+	picture = "IRQ_Sabbagh_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -167,7 +178,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Sir Percy Zachariah Cox"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Cox_stratmon.tga"
+	picture = "IRQ_Cox_stratmon.tga"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {
@@ -175,19 +186,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Muftī ad-Diyār al-ʿAlāmaẗ aš-Šayḫ ʿAbd ul-Karīm bin Muḥammad bin Fātiḥ bin Sulaymān al-Mudarris"
+	name = "Mufti Abdul Karim Mudarris"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Mudarris.tga"
+	picture = "IRQ_Mudarris.tga"
 	expire = "1965.1.1"
-	ideology = islamic_theocracy
+	ideology = christian
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Al-Qāʾid al-Aʿlaỳ Rašīd ʿAlīy al-Kīlānī"
+	name = "Zaeim Rashid Ali al-Gaylani"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Gaylani_repfash.tga"
+	picture = "IRQ_Gaylani_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -197,7 +208,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Fritz Konrad Ferdinand Grobba"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Grobba_nazi.tga"
+	picture = "IRQ_Grobba_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -227,7 +238,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chairman Calouste Sarkis Gulbenkian"
 	desc = ""
-	picture = "gfx/leaders/IRQ/IRQ_Gulbenkian_ancap.tga"
+	picture = "IRQ_Gulbenkian_ancap.tga"
 	expire = "1965.1.1"
 	ideology = ancap
 	traits = {

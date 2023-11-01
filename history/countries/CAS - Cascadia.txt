@@ -1,5 +1,8 @@
 ﻿capital = 2996 #LA
 
+oob = "CAL_1936"
+
+
 	set_popularities = {
 		democratic 
 			 = 92
@@ -14,14 +17,19 @@
 	election_frequency = 48
 	elections_allowed = no
 }
-
+
+add_ideas = {
+	disarmed_nation
+	free_trade
+}
+
 
 create_country_leader = {
 	name = "President Charles Henry Martin"
 	desc = ""
 	picture = "gfx/leaders/ORG/ORG_Martin.tga"
 	expire = "1950.1.1"
-	ideology = liberal_conservatism
+	ideology = liberalism
 	traits = {
 	}
 }
@@ -29,20 +37,22 @@ create_country_leader = {
 create_country_leader = {
 	name = "King George VI of Winsdor"
 	desc = ""
-	picture = "gfx/leaders/CAS/CAS_George.tga"
+	picture = "CAS_George.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "General Secretary Francis Xavier Waldron"
 	desc = ""
-	picture = "gfx/leaders/CAS/CAS_Waldron.tga"
+	picture = "CAS_Waldron.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
@@ -51,50 +61,58 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/WSH/WSH_Martin.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "President Duff Pattullo"
 	desc = ""
-	picture = "gfx/leaders/CAS/CAS_Pattullo.tga"
+	picture = "CAS_Pattullo.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "President Simon Fraser Tolmie"
 	desc = ""
-	picture = "gfx/leaders/CAS/CAS_Tolmie.tga"
+	picture = "CAS_Tolmie.tga"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
+		
 	}
 }
+
 
 create_country_leader = {
 	name = "Führer Harold Armstead Covington"
 	desc = ""
-	picture = "gfx/leaders/CAS/CAS_Covington.tga"
+	picture = "CAS_Covington.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
+		
 	}
 }
+
 
 create_country_leader = {
 	name = "King George VI of Winsdor"
 	desc = ""
-	picture = "gfx/leaders/CAS/CAS_Tolmie.tga"
+	picture = "CAS_Tolmie.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
+		
 	}
 }
+
 
 create_country_leader = {
 	name = "Governor General John Buchan"
@@ -103,6 +121,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
+		
 	}
 }
 

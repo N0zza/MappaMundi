@@ -1,23 +1,32 @@
 ﻿capital = 64
 
-set_popularities = {
-	democratic = 30
-	fascism= 10
-	vanguardism = 60
-}
+# Starting tech
 
-set_politics = { 
-	ruling_party = vanguardism
+
+	set_popularities = {
+		democratic 
+			 = 30
+		fascism
+			 = 10
+		vanguardism
+			 = 60
+		}
+	set_politics = { 
+ ruling_party = vanguardism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 
 }
 
+
+add_ideas = {
+}
+
 create_country_leader = {
-	name = "König Wilhelm III von Hohenzollern"
+	name = "Kaiser Wilhelm III von Hohenzollern"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Wilhelm.tga"
+	picture = "DDR_Wilhelm.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -27,7 +36,7 @@ create_country_leader = {
 create_country_leader = { 
 	name = "Präsident Ernst Goldenbaum"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Goldenbaum.tga"
+	picture = "DDR_Goldenbaum.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -47,7 +56,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Präsident Lothar Bolz"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Bolz.tga"
+	picture = "DDR_Bolz.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -56,28 +65,30 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Präsident Friedrich Wilhelm Reinhold Pieck"
-	desc = "POLITICS_WILHELM_PIECK_DESC"
+	desc = "POLITICS_WILHELM_PIECK_DESC"	 
 	picture = "gfx/leaders/DDR/Portrait_DDR_Wilhelm_Pieck.dds"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
+		#stalins_puppet # This will now be added in on_actions if SOV releases the country as a puppet via action or war conference
+		exiled # He left in 1933 so he should still be exiled
 	}
 }
 
 create_country_leader = {
 	name = "Präsident Waldemar Koch"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Koch.tga"
+	picture = "DDR_Koch.tga"
 	expire = "1939.1.16"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Bundespräsident Andreas Hermes"
+	name = "Präsident Andreas Hermes"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Hermes.tga"
+	picture = "DDR_Hermes.tga"
 	expire = "1956.1.1"
 	ideology = cenrep
 	traits = {
@@ -85,9 +96,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Voénnyj Gubernátor Vasílij Danílovič Sokolóvskij"
+	name = "Voyennyy gubernator Vasily Danilovich Sokolovsky"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Sokolovsky.tga"
+	picture = "DDR_Sokolovsky.tga"
 	expire = "1956.1.1"
 	ideology = monsoc
 	traits = {
@@ -95,9 +106,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Oberbefehlshaber Wilhelm Stoph"
+	name = "Verteidigungsminister Wilhelm Stoph"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Stoph.tga"
+	picture = "DDR_Stoph.tga"
 	expire = "1956.1.1"
 	ideology = militarism
 	traits = {
@@ -105,9 +116,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Herrscher Georg Alexander Michael Friedrich Wilhelm Albert Theodor Franz Herzog zu Mecklenburg, Graf von Carlow"
+	name = "Regent Georg Von Mecklenburg"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Georg.tga"
+	picture = "DDR_Georg.tga"
 	expire = "1956.1.1"
 	ideology = despotism
 	traits = {
@@ -117,7 +128,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Stabschef Wilhelm Adam"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Adams.tga"
+	picture = "DDR_Adams.tga"
 	expire = "1956.1.1"
 	ideology = repfash
 	traits = {
@@ -125,9 +136,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Reichsführer Josef "Sepp" Dietrich"
+	name = "Reichsführer Josef Sepp Dietrich"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Dietrich.tga"
+	picture = "DDR_Dietrich.tga"
 	expire = "1956.1.1"
 	ideology = natsoc
 	traits = {
@@ -135,9 +146,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Herrscher Paul Emil von Lettow-Vorbeck"
+	name = "Großer Generalstab Paul von Lettow-Vorbeck"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Vorbeck.tga"
+	picture = "DDR_Vorbeck.tga"
 	expire = "1956.1.1"
 	ideology = stratmon
 	traits = {
@@ -145,9 +156,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Fürsterzbischof Lothar Kreyssig"
+	name = "Praeses Lothar Kreyssig"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Kreyssig.tga"
+	picture = "DDR_Kreyssig.tga"
 	expire = "1956.1.1"
 	ideology = christian
 	traits = {
@@ -157,7 +168,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kaiser Wilhelm III von Hohenzollern"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Wilhelm.tga"
+	picture = "DDR_Wilhelm.tga"
 	expire = "1956.1.1"
 	ideology = cenmon
 	traits = {
@@ -167,7 +178,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kaiser Wilhelm III von Hohenzollern"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Wilhelm.tga"
+	picture = "DDR_Wilhelm.tga"
 	expire = "1956.1.1"
 	ideology = authmon
 	traits = {
@@ -175,9 +186,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "König Wilhelm III von Hohenzollern"
+	name = "Kaiser Wilhelm III von Hohenzollern"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Wilhelm.tga"
+	picture = "DDR_Wilhelm.tga"
 	expire = "1956.1.1"
 	ideology = absolutism
 	traits = {
@@ -185,9 +196,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "König Wilhelm III von Hohenzollern"
+	name = "Kaiser Wilhelm III von Hohenzollern"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Wilhelm.tga"
+	picture = "DDR_Wilhelm.tga"
 	expire = "1956.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -195,9 +206,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "König Wilhelm III von Hohenzollern"
+	name = "Kaiser Wilhelm III von Hohenzollern"
 	desc = ""
-	picture = "gfx/leaders/DDR/DDR_Wilhelm.tga"
+	picture = "DDR_Wilhelm.tga"
 	expire = "1956.1.1"
 	ideology = conservative_constitutionalism
 	traits = {

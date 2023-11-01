@@ -1,13 +1,29 @@
 ﻿capital = 3078
 
+oob = "AZR_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+
+set_convoys = 10
+
 set_popularities = {
-	republican_fascism = 75
-	communism = 10
-	fascism = 5
-	neutrality = 10
+        republican_fascism = 80
+        communism = 10
+        fascism = 0
+        neutrality = 10
+
 }
 
 set_politics = {
+	
 	ruling_party = republican_fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -19,7 +35,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/OMS_Karbyshev.tga"
 	expire = "1965.1.1"
-	ideology = repcorp_revanchism
+	ideology = repfash
 	traits = {
 	}
 }
@@ -35,7 +51,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Pervosvjaščénnik Abaddón"
+	name = "Pervosvjaščénnik Sataný Abaddón"
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/OMS_Abaddon.tga"
 	expire = "1965.1.1"

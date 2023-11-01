@@ -1,5 +1,19 @@
 ﻿capital = 16252
 
+oob = "AZR_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+
+set_convoys = 10
+
 set_popularities = {
         vanguardism = 100
         communism = 0
@@ -21,8 +35,9 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/TYU_Kaganovich.tga"
 	expire = "1953.3.1"
-	ideology = ml_stalinism
+	ideology = totsoc
 	traits = {
+		
 	}
 }
 
@@ -31,15 +46,16 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/TYU_Khrushchev.tga"
 	expire = "1953.3.1"
-	ideology = stalinism
+	ideology = leninism
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Reichskommissar Georg Heinrich Lindemann"
 	desc = ""
-	picture = "gfx/leaders/TYU/TYU_Lindemann_nazi.tga"
+	picture = "TYU_Lindemann_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

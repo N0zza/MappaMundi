@@ -1,13 +1,36 @@
 ﻿capital = 306
 
-set_popularities = {
-	communism = 1
-	socialism_ideology = 98
-	liberal_republic = 1
+oob = "COL_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_destroyer = 1
 }
+set_country_flag = monroe_doctrine
+
+set_convoys = 15
+
+
+
+	set_popularities = {
+		socialism_ideology 
+			 = 61
+		fascism
+			 = 0
+		communism
+			 = 1
+                democratic
+			 = 38
+		}
 
 set_politics = { 
-    ruling_party = socialism_ideology
+        ruling_party = socialism_ideology
 	last_election = "1934.2.11"
 	election_frequency = 48
 	elections_allowed = yes
@@ -16,40 +39,44 @@ set_politics = {
 create_country_leader = {
 	name = "Presidente Alfonso López Pumarejo"
 	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
-	picture = "gfx/leaders/COL/Portrait_alfonso_lopez_Pumarejo.dds"
+	picture = "Portrait_alfonso_lopez_Pumarejo.dds"
 	expire = "1965.1.1"
-	ideology = social_democracy
+	ideology = demsoc
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Primer Ministro Mariano Ospina Pérez"
 	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
-	picture = "gfx/leaders/COL/COL_Mariano_Ospinna_Perez_condem.dds"
+	picture = "COL_Mariano_Ospinna_Perez_condem.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Primer Secretario María de los Ángeles Cano Márquez"
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Maria_Cano_com.tga"
+	picture = "COL_Maria_Cano_com.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Comisario Ignacio Torres Giraldo"
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Ignacio_Torres_Giraldo_vanguard.tga"
+	picture = "COL_Ignacio_Torres_Giraldo_vanguard.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
+		#
 	}
 }
 
@@ -76,7 +103,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Fedecafe Council"
 	desc = ""
-	picture = "gfx/leaders/COL/COL_fedecafe_ancap.tga"
+	picture = "COL_fedecafe_ancap.tga"
 	expire = "1965.1.1"
 	ideology = ancap
 	traits = {
@@ -86,7 +113,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichprotektor Franz Alfred Six"
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Franz_Alfred_Six_nazi.tga"
+	picture = "COL_Franz_Alfred_Six_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -96,7 +123,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Arzobispo Ismael Perdomo Borrero"
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Borrero.tga"
+	picture = "COL_Borrero.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -106,9 +133,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "General Gustavo Rojas Pinilla"
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Gustavo_Rojas_Pinilla_strat.tga"
+	picture = "COL_Gustavo_Rojas_Pinilla_strat.tga"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = militarism
 	traits = {
 	}
 }
@@ -116,47 +143,51 @@ create_country_leader = {
 create_country_leader = {
 	name = "Council President Bradley Webster Palmer"
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Bradley_Webster_Palmer_United_Fruit.tga"
+	picture = "COL_Bradley_Webster_Palmer_United_Fruit.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Gobernador Emilio Mola y Vidal, 1st Duke of Mola, Grandee of Spain"
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Mola.tga"
+	picture = "COL_Mola.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Presidente Eduardo Santos Montejo"
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Eduardo_Santos_Montejo_liberalism.dds"
+	picture = "COL_Eduardo_Santos_Montejo_librep.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Presidente Laureano Eleuterio Gómez Castro"
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Laureano_Eleuterio_Gomez_Castro_authdem.tga"
+	picture = "COL_Laureano_Eleuterio_Gomez_Castro_authdem.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Canciller Alberto Lleras Camargo"
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Alberto_Lleras_Camargo_cendem.tga"
+	picture = "COL_Alberto_Lleras_Camargo_cendem.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -166,7 +197,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor-General Sir Lionel Vivian Bond"	
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Sir_Lionel_Vivian_Bond_authmon.tga"
+	picture = "COL_Sir_Lionel_Vivian_Bond_authmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -176,7 +207,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rey Alfonso I de Borbón-Battenberg"	
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Alfonso_de_Borbon-Battenberg.dds"
+	picture = "COL_Alfonso_de_Borbon-Battenberg.dds"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -186,7 +217,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Alfonso de Borbón-Battenberg, Prince of Asturias"	
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Alfonso_de_Borbon-Battenberg.dds"
+	picture = "COL_Alfonso_de_Borbon-Battenberg.dds"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -196,7 +227,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rey Alfonso I de Borbón-Battenberg"	
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Alfonso_de_Borbon-Battenberg.dds"
+	picture = "COL_Alfonso_de_Borbon-Battenberg.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -206,7 +237,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Jorge Eliécer Gaitán Ayala"	
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Jorge_Eliecer_Gaitan_Ayala.tga"
+	picture = "COL_Jorge_Eliecer_Gaitan_Ayala.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -216,7 +247,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rey Friedrich Heinrich Albrecht de Hohenzollern"	
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Friedrich_Heinrich_Albrecht_de_Hohenzollern.dds"
+	picture = "COL_Friedrich_Heinrich_Albrecht_de_Hohenzollern.dds"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -226,7 +257,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "König Friedrich Heinrich Albrecht de Hohenzollern"	
 	desc = ""
-	picture = "gfx/leaders/COL/COL_Friedrich_Heinrich_Albrecht_de_Hohenzollern.dds"
+	picture = "COL_Friedrich_Heinrich_Albrecht_de_Hohenzollern.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

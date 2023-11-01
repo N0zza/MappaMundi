@@ -1,59 +1,84 @@
 ﻿capital = 767
 
-set_popularities = {
-	theocratic = 100
+oob = "VCT_1936"
+
+
+set_research_slots = 3
+
+set_technology = {
 }
 
-set_politics = { 
-	ruling_party = theocratic
+
+
+	set_popularities = {
+		democratic 
+			 = 0
+		theocratic
+			 = 100
+		}
+	set_politics = { 
+ ruling_party = theocratic
 	last_election = "1932.2.6"
 	election_frequency = 60
 	elections_allowed = yes
-}
+}
+
+add_ideas = {
+	neutrality_idea	
+	disarmed_nation
+}
+
+set_stability = 0.75
+set_war_support = 0.1
+
 create_country_leader = {
 	name = "Papa Pius XI"
 	desc = ""
-	picture = "gfx/leaders/VCT/Portrait_Vatican_Pope.dds"
+	picture = "Portrait_Vatican_Pope.dds"
 	expire = "1939.2.11"
-	ideology = christian_theocracy
+	ideology = christian
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Papa Pius XI"
 	desc = ""
-	picture = "gfx/leaders/VCT/Portrait_Vatican_Pope.dds"
+	picture = "Portrait_Vatican_Pope.dds"
 	expire = "1939.2.11"
 	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Papa Pius XI"
 	desc = ""
-	picture = "gfx/leaders/VCT/Portrait_Vatican_Pope.dds"
+	picture = "Portrait_Vatican_Pope.dds"
 	expire = "1939.2.11"
 	ideology = oligarchism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Papa Pius XI"
 	desc = ""
-	picture = "gfx/leaders/VCT/Portrait_Vatican_Pope.dds"
+	picture = "Portrait_Vatican_Pope.dds"
 	expire = "1939.2.11"
 	ideology = absolutism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Caesar Alphonsus XIII av Borbonius"
 	desc = ""
-	picture = "gfx/leaders/SPR/SPR_AlfonsoXIII.tga"
+	picture = "SPR_AlfonsoXIII.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -63,7 +88,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Presidente Umberto Tupini"
 	desc = ""
-	picture = "gfx/leaders/VCT/VCT_Tupini_condem.tga"
+	picture = "VCT_Tupini_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {

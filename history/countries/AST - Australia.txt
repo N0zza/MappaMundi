@@ -1,16 +1,19 @@
 ﻿capital = 2025
 
-set_country_flag = has_secondary_leader
+oob = "AST_1936"
 
-set_popularities = {
-	communism = 2
-	conservative_monarchism = 52
-	democratic_monarchism = 44
-	liberal_republic = 2
-}
-
-set_politics = { 
-	ruling_party = conservative_monarchism
+	set_popularities = {
+		communism
+			 = 2
+		conservative_monarchism 
+			= 52
+		democratic_monarchism
+			= 44
+		liberal_republic
+			= 2
+		}
+	set_politics = { 
+ ruling_party = conservative_monarchism
 	last_election = "1934.9.15"
 	election_frequency = 36
 	elections_allowed = yes
@@ -19,40 +22,44 @@ set_politics = {
 create_country_leader = {
 	name = "Governor-General Sir Isaac Alfred Isaacs"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Sir_Isaac_Isaacs.dds"
+	picture = "Portrait_Sir_Isaac_Isaacs.dds"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Governor-General Prince Henry of Windsor, Duke of Gloucester"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Prince_Henry.dds"
+	picture = "Portrait_Prince_Henry.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Governor Sir Isaac Alfred Isaacs"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Sir_Isaac_Isaacs.dds"
+	picture = "Portrait_Sir_Isaac_Isaacs.dds"
 	expire = "1965.1.1"
-	ideology = authmon_colonialism
+	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "First Minister Charles Frederic John North"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Charles_Frederic_John_North.dds"
+	picture = "Portrait_Charles_Frederic_John_North.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
+		#
 	}
 }
 
@@ -79,17 +86,18 @@ create_country_leader = {
 create_country_leader = {
 	name = "General Secretary Jack Miles"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Jack_Miles.dds"
+	picture = "Portrait_Jack_Miles.dds"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Chairman Jack Miles"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Jack_Miles.dds"
+	picture = "Portrait_Jack_Miles.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -99,7 +107,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chancellor John Curtin"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_John_Curtin.dds"
+	picture = "Portrait_John_Curtin.dds"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -109,7 +117,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister John Curtin"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_John_Curtin.dds"
+	picture = "Portrait_John_Curtin.dds"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -117,11 +125,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "President John Thomas Lang"
+	name = "President Jack Lang"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Jack_Lang.dds"
+	picture = "Portrait_Jack_Lang.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -129,7 +137,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Joseph Alysius Lyons"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Joseph_Lyons.tga"
+	picture = "Portrait_Joseph_Lyons.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -139,7 +147,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister John Curtin"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_John_Curtin.dds"
+	picture = "Portrait_John_Curtin.dds"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -149,7 +157,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Richard Layton Butler"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Richard_Layton_Butler.dds"
+	picture = "Portrait_Richard_Layton_Butler.dds"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -159,7 +167,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister Earle Christmas Grafton Page"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Earle_Page.dds"
+	picture = "Portrait_Earle_Page.dds"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -167,19 +175,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Australasian Regency Council"
-	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Oceanian_Council.dds"
-	expire = "1965.1.1"
-	ideology = anocmon
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Commander-in-Chief Sir Thomas Blamey"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Sir_Thomas_Blamey.dds"
+	picture = "Portrait_Sir_Thomas_Blamey.dds"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -189,7 +187,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor-General Sir William Riddell Birdwood, Baronet of Anzac and Totnes"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Sir_William_Riddell_Birdwood.dds"
+	picture = "Portrait_Sir_William_Riddell_Birdwood.dds"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -199,7 +197,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prince-Archbishop Norman Thomas Gilroy"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Norman_Thomas_Gilroy.dds"
+	picture = "Portrait_Norman_Thomas_Gilroy.dds"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -209,7 +207,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prime Minister Eric Campbell"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Eric_Campbell.dds"
+	picture = "Portrait_Eric_Campbell.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -219,7 +217,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Supreme Leader Percy Reginald Stephensen"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Percy_Reginald_Stephensen.dds"
+	picture = "Portrait_Percy_Reginald_Stephensen.dds"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -229,7 +227,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur William John Miles"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_William_John_Miles.dds"
+	picture = "Portrait_William_John_Miles.dds"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -239,7 +237,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chief Executive Officer Leslie Bradford"
 	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Leslie_Bradford.dds"
+	picture = "Portrait_Leslie_Bradford.dds"
 	expire = "1965.1.1"
 	ideology = ancap
 	traits = {

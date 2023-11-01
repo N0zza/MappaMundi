@@ -1,11 +1,29 @@
 ﻿capital = 1168
 
-set_popularities = {
-       centrist_republic =  100
+oob = "NOC_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
 }
+
+
+set_convoys = 10
+
+
+
+	set_popularities = {
+        democratic =  100
+        communism =  0
+        fascism =  0
+        neutrality =  0
+
+	}
 	
-set_politics = { 
-	ruling_party = centrist_republic
+	set_politics = { 
+ ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -14,9 +32,9 @@ set_politics = {
 create_country_leader = {
 	name = "Baskan Fazil Kücük"
 	desc = ""
-	picture = "gfx/leaders/NOC/NOC_Kucuk.tga"
+	picture = "NOC_Kucuk.tga"
 	expire = "1965.1.1"
-	ideology = national_conservatism
+	ideology = conservatism
 	traits = {
 	}
 }

@@ -1,13 +1,18 @@
 ﻿capital = 5219
 
+oob = "NMB_1936"
 set_cosmetic_tag = SAF_COLONY
 
-set_popularities = {
-	authoritarian_monarchism  = 80
-	conservative_monarchism = 20
-}
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+	set_popularities = {
+		authoritarian_monarchism 
+			 = 80
+		conservative_monarchism
+			 = 20
+		neutrality 
+			 = 0
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -19,13 +24,14 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
-	name = "President Adolf Hitler Uunona"
+	name = "Funny Man Adolf Hitler Uunona"
 	desc = ""
-	picture = "gfx/leaders/NMB/Namibian_Hitler.tga"
+	picture = "Namibian_Hitler.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -35,7 +41,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chairman Theophilus Hamutumbangela"
 	desc = ""
-	picture = "gfx/leaders/NMB/NMB_Hamutumbangela_commie.tga"
+	picture = "NMB_Hamutumbangela_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -45,9 +51,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "President Hosea Komombumbi Kutako"
 	desc = ""
-	picture = "gfx/leaders/NMB/NMB_Kutako_libdem.tga"
+	picture = "NMB_Kutako_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -55,9 +61,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Gotthard Fedor August Heinrici"
 	desc = ""
-	picture = "gfx/leaders/NMB/NMB_Heinrici.tga"
+	picture = "NMB_Heinrici.tga"
 	expire = "1989.1.1"
-	ideology = stratmon_colonialism
+	ideology = stratmon
 	traits = {
 	}
 }
@@ -65,7 +71,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichskommissar Gotthard Fedor August Heinrici"
 	desc = ""
-	picture = "gfx/leaders/NMB/NMB_Heinrici.tga"
+	picture = "NMB_Heinrici.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -75,7 +81,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Präsident Gustav Adolf Schatz"
 	desc = ""
-	picture = "gfx/leaders/NMB/NMB_Schatz_authrep.tga"
+	picture = "NMB_Schatz_authrep.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -85,9 +91,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gouverneur Lucien Lamoureux"
 	desc = ""
-	picture = "gfx/leaders/NMB/NMB_Lamoureux_strat.tga"
+	picture = "NMB_Lamoureux_strat.tga"
 	expire = "1965.1.1"
-	ideology = strat_colonialism
+	ideology = militarism
 	traits = {
 	}
 }
@@ -95,7 +101,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "King Friedrich I of Maharero"
 	desc = ""
-	picture = "gfx/leaders/NMB/NMB_Maharero_mon.tga"
+	picture = "NMB_Maharero_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {

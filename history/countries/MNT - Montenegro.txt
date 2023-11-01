@@ -1,6 +1,26 @@
 ﻿capital = 3654 # Montenegro
 
+oob = "MON_1936"
+
+set_research_slots = 3
+
+# Starting tech
 # clone of Yugoslavia
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	early_fighter = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_submarine = 1
+}
+
+
 
 	set_popularities = {
 		democratic 
@@ -10,6 +30,7 @@
 	        stratocratic_monarchism 
                          = 20
 		}
+
 
 	set_politics = { 
  ruling_party = neutrality
@@ -21,17 +42,18 @@
 create_country_leader = {
 	name = "Premijer Blazo Jovanović"
 	desc = ""
-	picture = "gfx/leaders/MNT/MNT_Jovanovic_commie.tga"
+	picture = "MNT_Jovanovic_commie.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Kralj Michael I Petrović-Njegoši"
 	desc = ""
-	picture = "gfx/leaders/MNT/MNT_Michael.tga"
+	picture = "MNT_Michael.tga"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {
@@ -41,7 +63,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premijer Sekula Drljević"
 	desc = ""
-	picture = "gfx/leaders/MNT/MNT_Drljevic_authrep.tga"
+	picture = "MNT_Drljevic_authrep.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -51,7 +73,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prvi Sekretar Blazo Jovanović"
 	desc = ""
-	picture = "gfx/leaders/MNT/MNT_Jovanovic_commie.tga"
+	picture = "MNT_Jovanovic_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -61,7 +83,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Predsednik Jovan Simonov Plamenac"
 	desc = ""
-	picture = "gfx/leaders/MNT/MNT_Plamenac_condem.tga"
+	picture = "MNT_Plamenac_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -71,7 +93,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Knez Michael I Petrović-Njegoši"
 	desc = ""
-	picture = "gfx/leaders/MNT/MNT_Michael.tga"
+	picture = "MNT_Michael.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -81,7 +103,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Knez-Episkop Gavrilo V Dozic"
 	desc = ""
-	picture = "gfx/leaders/MNT/MNT_Dozic_theoc.tga"
+	picture = "MNT_Dozic_theoc.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -91,9 +113,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governatore Alessandro Pirzio Biroli"
 	desc = ""
-	picture = "gfx/leaders/MNT/MNT_Biroli_fash.tga"
+	picture = "MNT_Biroli_fash.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -101,7 +123,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Premijer Blazo Dukanović"
 	desc = ""
-	picture = "gfx/leaders/MNT/MNT_Blazoi_repfash.tga"
+	picture = "MNT_Blazoi_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {

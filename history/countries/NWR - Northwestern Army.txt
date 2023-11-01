@@ -1,5 +1,15 @@
 ﻿capital = 12757
-
+
+oob = "NWR_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+set_stability = 0.6
+set_war_support = 0.7
+
 	set_popularities = {
 		democratic 
 			 = 0
@@ -17,10 +27,16 @@
 }
 
 
+add_ideas = {
+	closed_economy
+	service_by_requirement
+	partial_economic_mobilisation
+}
+
 create_country_leader = {
 	name = "Chou ch'ang Yang Hu-ch'eng"
 	desc = ""
-	picture = "gfx/leaders/NWR/Portrait_Yang_Hucheng.tga"
+	picture = "Portrait_Yang_Hucheng.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -30,7 +46,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chou ch'ang Yang Hu-ch'eng"
 	desc = ""
-	picture = "gfx/leaders/NWR/Portrait_Yang_Hucheng.tga"
+	picture = "Portrait_Yang_Hucheng.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {

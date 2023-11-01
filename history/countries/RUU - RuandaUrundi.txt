@@ -1,7 +1,17 @@
 ﻿capital = 888
-set_country_flag = has_secondary_leader
-set_country_flag = has_tertiary_leader
+
+oob = "RUU_1936"
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+set_convoys = 10
+
 set_cosmetic_tag = RUU_BEL
+
 
 	set_popularities = {
         
@@ -22,7 +32,7 @@ set_cosmetic_tag = RUU_BEL
 create_country_leader = {
 	
 	name = "Gouverneur Eugène Jungers"
-	picture = "gfx/leaders/RUU/Portrait_Eugene_Jungers.dds"
+	picture = "Portrait_Eugene_Jungers.dds"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -32,7 +42,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président André Muhirwa"
 	desc = ""
-	picture = "gfx/leaders/BRD/BRD_Muhirwa_condem.tga"
+	picture = "BRD_Muhirwa_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -42,7 +52,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Roi Mutara III Rudahigwa"
 	desc = ""
-	picture = "gfx/leaders/RWA/RWA_Mutara_mon.tga"
+	picture = "RWA_Mutara_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -52,7 +62,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chef Suprême Dominique Mbonyumutwa"
 	desc = ""
-	picture = "gfx/leaders/RWA/RWA_Mbonyumutwa_repfash.tga"
+	picture = "RWA_Mbonyumutwa_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {

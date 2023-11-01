@@ -1,17 +1,18 @@
 ﻿capital = 4732
 
-set_popularities = {
-	socialist_monarchy = 29
-	centrist_monarchism = 2
-	conservative_monarchism = 8
-	anocratic_monarchism = 61
-}
+oob = "RAJ_1936"
 
-set_politics = { 
-	ruling_party = anocratic_monarchism
-	last_election = "1935.11.14"
-	election_frequency = 48
-	elections_allowed = no
+	set_popularities = {
+		democratic = 17
+		fascism = 2
+		communism = 1
+		authoritarian_monarchism = 80
+		}
+	set_politics = { 
+		ruling_party = authoritarian_monarchism
+		last_election = "1935.11.14"
+		election_frequency = 48
+		elections_allowed = no
 }
 
 create_country_leader = {
@@ -21,6 +22,7 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
@@ -79,7 +81,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/India/RAJ_Gandhi.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -149,17 +151,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/India/Portrait_Freeman_Freeman-Thomas.dds"
 	expire = "1965.1.1"
-	ideology = authmon_colonialism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Viceroy and Governor-General Freeman Freeman-Thomas, Earl of Willingdon"
-	desc = ""
-	picture = "gfx/leaders/India/Portrait_Freeman_Freeman-Thomas.dds"
-	expire = "1965.1.1"
-	ideology = anocmon
+	ideology = authmon
 	traits = {
 	}
 }
@@ -205,7 +197,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gouverneur Albert Konrad Kesselring"
+	name = "Gouverneur Albert Kesselring"
 	desc = ""
 	picture = "gfx/leaders/India/RAJ_Kesselring.tga"
 	expire = "1965.1.1"

@@ -1,7 +1,20 @@
 ﻿capital = 183
 
+oob = "ENG_gen"
 
 set_cosmetic_tag = UK_RED
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	trench_warfare = 1
+	
+}
+
 
 
 	set_popularities = {
@@ -24,7 +37,7 @@ set_cosmetic_tag = UK_RED
 	create_country_leader = {
 	name = "Governor Herbert Richmond Palmer"
 	desc = ""
-	picture = "gfx/leaders/CYP/Portrait_Herbert_Richmond_Palmer.dds"
+	picture = "Portrait_Herbert_Richmond_Palmer.dds"
 	expire = "1958.5.22"
 	ideology = authmon
 	traits = {
@@ -35,9 +48,9 @@ set_cosmetic_tag = UK_RED
 create_country_leader = {
 	name = "Próedros Fazil Kücük"
 	desc = ""
-	picture = "gfx/leaders/NOC/NOC_Kucuk.tga"
+	picture = "NOC_Kucuk.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -45,7 +58,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Próedros Georgios Grivas"
 	desc = ""
-	picture = "gfx/leaders/CYP/CYP_Grivas.tga"
+	picture = "CYP_Grivas.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -55,7 +68,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Mársal Georgios Grivas"
 	desc = ""
-	picture = "gfx/leaders/CYP/CYP_Grivas.tga"
+	picture = "CYP_Grivas.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -65,7 +78,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Antivasiléas Leontios II"
 	desc = ""
-	picture = "gfx/leaders/CYP/CYP_Leontios.tga"
+	picture = "CYP_Leontios.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -75,7 +88,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Archiepískopos Leontios II"
 	desc = ""
-	picture = "gfx/leaders/CYP/CYP_Leontios.tga"
+	picture = "CYP_Leontios.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {
@@ -85,9 +98,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governatore Francesco Pricolo"
 	desc = ""
-	picture = "gfx/leaders/CYP/CYP_Pricolo.tga"
+	picture = "CYP_Pricolo.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -95,7 +108,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Hans Ferdinand Geisler"
 	desc = ""
-	picture = "gfx/leaders/CYP/CYP_Geisler.tga"
+	picture = "CYP_Geisler.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

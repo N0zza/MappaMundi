@@ -1,27 +1,45 @@
 ﻿capital = 2281
 
-set_cosmetic_tag = UK_RED
+oob = "ENG_gen"
 
-set_popularities = {
-	authoritarian_monarchism = 100
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
 }
 
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+set_cosmetic_tag = UK_RED
+
+
+
+	set_popularities = {
+		democratic 
+			 = 0
+		fascism
+			 = 0
+		communism
+			 = 0
+		authoritarian_monarchism 
+			 = 100
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Raʾīs Qaḥṭān Muḥammad aš-Šaʿbī"
+	name = "Qahtan Muhammad al-Shaabi"
 	desc = ""
 	picture = "gfx/leaders/Middle East/Qahtan_al-Shaabi.dds"
 	ideology = marxism
 	expire = "1981.7.7"
 	traits = {
+		#
 	}
 }
+
 
 create_country_leader = {
 	name = "Abdullah al Asnag"
@@ -30,15 +48,18 @@ create_country_leader = {
 	ideology = fascism_ideology
 	expire = "1975.4.13"
 	traits = {
+		#
 	}
 }
+
 
 create_country_leader = {
 	name = "Governor Ernest Leslie Gossage"
 	desc = ""
-	picture = "gfx/leaders/ADN/Portrait_Ernest_Leslie_Gossage.dds"
-	ideology = authmon_colonialism
+	picture = "Portrait_Ernest_Leslie_Gossage.dds"
+	ideology = authmon
 	expire = "1966.3.25"
 	traits = {
+		#
 	}
 }

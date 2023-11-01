@@ -1,5 +1,8 @@
 ﻿capital = 14
 
+oob = "BRI_1936"
+
+
 set_popularities = {
 	socialism_ideology = 20
 	republican_fascism = 40
@@ -13,12 +16,15 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-
+
+add_ideas = {
+	limited_conscription
+}
 
 create_country_leader = {
 	name = "Prezidant Yann Fouéré"
 	desc = ""
-	picture = "gfx/leaders/BRI/BRI_Fouere_liberalism.tga"
+	picture = "BRI_Fouere_socdem.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -28,7 +34,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Duc Arthur I Russell"
 	desc = ""
-	picture = "gfx/leaders/BRI/BRI_Russell_authmon.tga"
+	picture = "BRI_Russell_authmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -38,7 +44,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prezidant Olier Mordrel"
 	desc = ""
-	picture = "gfx/leaders/BRI/BRI_Mordrel_repfash.tga"
+	picture = "BRI_Mordrel_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -48,7 +54,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Max Bastian"
 	desc = ""
-	picture = "gfx/leaders/BRI/BRI_Bastian_nazi.tga"
+	picture = "BRI_Bastian_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

@@ -1,12 +1,37 @@
 ﻿capital = 16
 
-set_cosmetic_tag = GREY_GER3
+oob = "OFR_1936"
 
 set_popularities = {
-	national_socialism = 100
+        neutrality = 4
+        monarchism = 4
+        democratic = 4
+        liberal_republic = 4
+        communism = 4
+        vanguardism = 4
+        fascism = 4
+        anarchism_ideology = 4
+        socialism_ideology = 4
+        democratic_monarchism = 4
+        conservative_monarchism = 4
+        stratocratic = 4
+        authoritarian_monarchism = 4
+        republican_fascism = 4
+        national_socialism = 16
+        theocratic = 4
+        left_anarchism = 4
+        right_anarchism = 4
+        socialist_monarchy = 4
+        centrist_republic = 4
+        centrist_monarchism = 4
+        stratocratic_monarchism = 4
+
 }
 
+set_cosmetic_tag = GREY_GER3
+
 set_politics = {
+	
 	ruling_party = national_socialism
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -14,61 +39,47 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Company Leadership"
-	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	name = "To Be Added"
+	desc = ""
+	picture = "To_be_added.dds"
 	expire = "1965.1.1"
-	ideology = ancap
+	ideology = liberalism
 	traits = {
 	}
 }
-
 create_country_leader = {
 	name = "To Be Added"
 	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = christian
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Militärbefehlshaber Otto Edwin von Stülpnagel"
-	desc = ""
-	picture = "gfx/leaders/OFR/OFR_Otto.tga"
-	expire = "1965.1.1"
-	ideology = natsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
+	picture = "To_be_added.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
 	}
 }
-
 create_country_leader = {
 	name = "To Be Added"
 	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
+	picture = "To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "To_be_added.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
 	}
 }
-
 create_country_leader = {
-	name = "Chef National Marcel Bucard"
+	name = "To Be Added"
 	desc = ""
-	picture = "gfx/leaders/OFR/OFR_Bucard.tga"
+	picture = "To_be_added.dds"
 	expire = "1965.1.1"
-	ideology = repfash
+	ideology = despotism
 	traits = {
 	}
 }
@@ -76,7 +87,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Bernard Law Montgomery"
 	desc = ""
-	picture = "gfx/leaders/OFR/OFR_Montgomery.tga"
+	picture = "OFR_Montgomery.tga"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {
@@ -84,19 +95,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = militarism
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Protector Gerald Wellesley, 7th Duke of Wellington"
 	desc = ""
-	picture = "gfx/leaders/OFR/OFR_Duke.png"
+	picture = "OFR_Duke.png"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -104,151 +105,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Président Charles André Joseph Marie de Gaulle"
+	name = "Militärischer Befehlshaber Otto von Stülpnagel"
 	desc = ""
-	picture = "gfx/leaders/FRA/FRA_DeGaulle.tga"
+	picture = "OFR_Otto.tga"
 	expire = "1965.1.1"
-	ideology = provisional_government
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = anocmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = anocrep
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = cenmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = cenrep
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Viceroy and Governor-General Gerald Wellesley, 7th Duke of Wellington"
-	desc = ""
-	picture = "gfx/leaders/OFR/OFR_Duke.png"
-	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = monsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = demsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = totsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Collective Leadership"
-	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = ancom
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Tribal Leadership"
-	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = total_anarchist
+	ideology = natsoc
 	traits = {
 	}
 }

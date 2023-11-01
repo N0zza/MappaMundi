@@ -1,11 +1,28 @@
 ﻿capital = 1003
 
-set_popularities = {
-	anocratic_monarchism = 100
+oob = "ASM_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
 }
+
+
+set_convoys = 10
+
+ set_popularities = {
+        democratic =  25
+        communism =  25
+        fascism =  25
+        neutrality =  25
+
+	}
 	
  set_politics = { 
-    ruling_party = anocratic_monarchism
+	
+    ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -13,14 +30,4 @@ set_popularities = {
 }
 
 set_cosmetic_tag = RAJ_RED
-
-create_country_leader = {
-	name = "Governor Sir Michael Keane"
-	desc = ""
-	picture = "gfx/leaders/ASA/ASA_Keane.tga"
-	expire = "1965.1.1"
-	ideology = anocmon
-	traits = {
-	}
-}
 

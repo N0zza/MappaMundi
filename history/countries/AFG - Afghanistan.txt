@@ -1,15 +1,28 @@
 ﻿capital = 3089
 
-set_country_flag = has_secondary_leader
+oob = "AFG_1936"
 
-set_popularities = {
-	fascism = 15
-	communism = 10
-	authoritarian_monarchism = 75
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	basic_light_tank = 1
 }
 
-set_politics = { 
-	ruling_party = authoritarian_monarchism
+
+
+	set_popularities = {
+		democratic 
+			 = 0
+		fascism
+			 = 15
+		communism
+			 = 10
+			
+		authoritarian_monarchism 
+			 = 75
+		}
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -18,57 +31,62 @@ set_politics = {
 create_country_leader = {
 	name = "Peadshah Mohammed Zahir Shah"
 	desc = "POLITICS_AFG_AUTHMON_DESC"
-	picture = "gfx/leaders/AFG/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+	picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "R'eys Jmhwr Mohammed Daoud Khan"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Daoud_libdem.tga"
+	picture = "AFG_Daoud_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism 
+	ideology = socdem 
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Nkhst Wzar Ghulam Mohammad Farhad"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Ghulam_authdem.tga"
+	picture = "AFG_Ghulam_authdem.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Pervy Secretary Alexander Ilyich Yegorov"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Yegorov_vanguardism.tga"
+	picture = "AFG_Yegorov_vanguardism.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Mnsha Abdulhadi Mahmudi"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Mahmudi_commie.tga"
+	picture = "AFG_Mahmudi_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "R'eys Jmhwr Abdulhadi Mahmudi"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Mahmudi_commie.tga"
+	picture = "AFG_Mahmudi_commie.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -78,7 +96,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Peadshah Inayatullah Khan"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Inayatullah_socmon.tga"
+	picture = "AFG_Inayatullah_socmon.tga"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -88,7 +106,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Peadshah Muhammad Nadir Shah"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Nadir_libmon.tga"
+	picture = "AFG_Nadir_libmon.tga"
 	expire = "1965.1.1"
 	ideology = liberal_constitutionalism
 	traits = {
@@ -98,7 +116,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Emir Mohammed Zahir Shah"
 	desc = ""
-	picture = "gfx/leaders/AFG/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
+	picture = "Portrait_Afghanistan_Mohammed_Zahir_Shah.dds"
 	expire = "1965.1.1"
 	ideology = conservative_constitutionalism
 	traits = {
@@ -108,7 +126,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Peadshah Ghazi Amanullah Khan"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Ghazi.tga"
+	picture = "AFG_Ghazi.tga"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -118,7 +136,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Emir Ghazi Amanullah Khan"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Ghazi.tga"
+	picture = "AFG_Ghazi.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -128,7 +146,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Emir Habibullah Kalakani"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Kalakani_fash.tga"
+	picture = "AFG_Kalakani_fash.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -138,7 +156,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Nkhst Wzar Mohammad Hashim Khan"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Hashim_condem.tga"
+	picture = "AFG_Hashim_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -148,7 +166,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sdra'ezm Shah Wali Khan"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Wali_cendem.tga"
+	picture = "AFG_Wali_cendem.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {
@@ -158,7 +176,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "'Emwma Mir Ahmad Shah Rizwani"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Rizwani_strat.tga"
+	picture = "AFG_Rizwani_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -168,7 +186,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor-General Sir Archibald Percival Wavell, 1st Earl Wavell"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Archibald_stratmon.tga"
+	picture = "AFG_Archibald_stratmon.tga"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
@@ -178,9 +196,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ayatollah Sayyed Abdullah Al-Musawi Al-Shirazi"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Abdullah_theoc.tga"
+	picture = "AFG_Abdullah_theoc.tga"
 	expire = "1965.1.1"
-	ideology = islamic_theocracy
+	ideology = christian
 	traits = {
 	}
 }
@@ -188,7 +206,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "R'eas Mazrak Khan Zadran"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Mazrak_repfash.tga"
+	picture = "AFG_Mazrak_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -198,7 +216,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichsprotektor Lothar Rendulic"
 	desc = ""
-	picture = "gfx/leaders/AFG/AFG_Lothar_nazi.tga"
+	picture = "AFG_Lothar_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {

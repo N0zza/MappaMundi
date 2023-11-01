@@ -1,11 +1,35 @@
 ﻿capital = 46
 
+oob = "BLK_1936"
+
 set_popularities = {
-	liberal_republic = 60
-	national_socialism = 40
+        neutrality = 0
+        monarchism = 0
+        democratic = 0
+        liberal_republic = 60
+        communism = 0
+        vanguardism = 0
+        fascism = 0
+        anarchism_ideology = 0
+        socialism_ideology = 0
+        democratic_monarchism = 0
+        conservative_monarchism = 0
+        stratocratic = 0
+        authoritarian_monarchism = 0
+        republican_fascism = 0
+        national_socialism = 40
+        theocratic = 0
+        left_anarchism = 0
+        right_anarchism = 0
+        socialist_monarchy = 0
+        centrist_republic = 0
+        centrist_monarchism = 0
+        stratocratic_monarchism = 0
+
 }
 
 set_politics = {
+	
 	ruling_party = liberal_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -13,27 +37,7 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Company Leadership"
-	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = ancap
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = christian
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Reichskommissar Karl August Hanke"
+	name = "Reichsprotektor Karl August Hanke"
 	desc = ""
 	picture = "gfx/leaders/ILY/ILY_Hanke_nazi.tga"
 	expire = "1965.1.1"
@@ -43,211 +47,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = repfash
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = stratmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = militarism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = authmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = anocmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = anocrep
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = cenmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = cenrep
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Predsednik Svetozar Pribićević"
 	desc = ""
 	picture = "gfx/leaders/SER/yug_pribicevic.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = monsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Premijer Josip Broz Tito"
-	desc = ""
-	picture = "gfx/leaders/YUG/yug_tito.tga"
-	expire = "1965.1.1"
-	ideology = demsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "To Be Added"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = "1965.1.1"
-	ideology = totsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Collective Leadership"
-	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = ancom
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Tribal Leadership"
-	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = total_anarchist
+	ideology = socdem
 	traits = {
 	}
 }

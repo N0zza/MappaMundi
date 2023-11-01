@@ -1,24 +1,55 @@
 ﻿capital = 950
 
-set_popularities = {
-    vanguardism = 100
+oob = "ABK_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
 }
+
+
+set_convoys = 10
+
+
+
+	set_popularities = {
+        neutrality = 0
+        monarchism = 0
+        democratic = 0
+        liberal_republic = 0
+        communism = 15
+        vanguardism = 80
+        fascism = 0
+        anarchism_ideology = 0
+        socialism_ideology = 5
+        democratic_monarchism = 0
+        conservative_monarchism = 0
+        stratocratic = 0
+        authoritarian_monarchism = 0
+        republican_fascism = 0
+        national_socialism = 0
+        theocratic = 0
+
+	}
 	
-set_cosmetic_tag = RUS_RED
+set_cosmetic_tag = ABK_SOV
 	
-set_politics = { 
-	ruling_party = vanguardism
+	set_politics = { 
+ ruling_party = vanguardism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "SK’P’(b) apkhazetis regionaluri k’omit’et’i P’irveli Mdivani Vladimer K’onst’ant’ines dze Ladaria"
+	name = "Pérvyj Sekretár' Vladímir Konstantínovič Ladarija"
 	desc = ""
-	picture = "gfx/leaders/ABK/Vladimir_Konstantinovich_Ladariya.tga"
+	picture = "Vladimir_Konstantinovich_Ladariya.tga"
 	expire = "1960.1.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }

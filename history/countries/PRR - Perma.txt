@@ -1,13 +1,29 @@
 ﻿capital = 398
 
+oob = "AZR_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+
+set_convoys = 10
+
 set_popularities = {
-	democratic = 50
-	communism = 17
-	vanguardism = 17
-	stratocratic = 16
+	        democratic = 10
+        communism = 20
+        fascism = 15
+        neutrality = 55
+
 }
 
 set_politics = {
+	
 	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -21,6 +37,7 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = stalinism
 	traits = {
+		
 	}
 }
 
@@ -31,16 +48,18 @@ create_country_leader = {
 	expire = "1953.3.1"
 	ideology = conservatism
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Zach Vaughn"
 	desc = ""
-	picture = "gfx/leaders/SOV/PortrRUS_REDiet_Generic_3.dds"
+	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
 	expire = "1953.3.1"
 	ideology = moderatism
 	traits = {
+		
 	}
 }
 

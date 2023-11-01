@@ -1,11 +1,17 @@
 ﻿capital = 261
 
+oob = "OHI_1936"
+
 set_popularities = {
-	democratic = 21
-	centrist_republic = 79
+	democratic = 2
+        communism = 0
+        fascism = 0
+        centrist_republic = 98
+
 }
 
 set_politics = {
+	
 	ruling_party = centrist_republic
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -15,7 +21,7 @@ set_politics = {
 create_country_leader = {
 	name = "Governor Martin Luther Davey"
 	desc = ""
-	picture = "gfx/leaders/OHI/OHI_Davey.tga"
+	picture = "OHI_Davey.tga"
 	expire = "1947.1.1"
 	ideology = cenrep
 	traits = {
@@ -23,19 +29,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Governor Martin Luther Davey"
-	desc = ""
-	picture = "gfx/leaders/OHI/OHI_Davey.tga"
-	expire = "1947.1.1"
-	ideology = cenmon
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Reichskommissar Wilhelm Schepmann"
 	desc = ""
-	picture = "gfx/leaders/OHI/OHI_Schepmann.tga"
+	picture = "OHI_Schepmann.tga"
 	expire = "1947.1.1"
 	ideology = natsoc
 	traits = {
@@ -45,7 +41,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "General George Smith Patton Jr."
 	desc = ""
-	picture = "gfx/leaders/OHI/OHI_Patton.tga"
+	picture = "OHI_Patton.tga"
 	expire = "1947.1.1"
 	ideology = militarism
 	traits = {
@@ -55,17 +51,18 @@ create_country_leader = {
 create_country_leader = {
 	name = "Emperor George I of Patton"
 	desc = ""
-	picture = "gfx/leaders/OHI/OHI_Patton.tga"
+	picture = "OHI_Patton.tga"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {
 	}
 }
 
+
 create_country_leader = {
 	name = "National Commander George Smith Patton Jr."
 	desc = ""
-	picture = "gfx/leaders/OHI/OHI_Patton.tga"
+	picture = "OHI_Patton.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -75,7 +72,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Commissioner George Smith Patton Jr."
 	desc = ""
-	picture = "gfx/leaders/OHI/OHI_Patton.tga"
+	picture = "OHI_Patton.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -85,7 +82,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President James Hudson Maurer"
 	desc = ""
-	picture = "gfx/leaders/OHI/OHI_Maurer.tga"
+	picture = "OHI_Maurer.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -95,7 +92,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "President John William Bricker"
 	desc = ""
-	picture = "gfx/leaders/OHI/OHI_Bricker.tga"
+	picture = "OHI_Bricker.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -103,21 +100,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Governor-General James Arthur Salter"
-	desc = ""
-	picture = "gfx/leaders/OHI/OHI_Salter.tga"
-	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Grand Liberator Charles Birger"
 	desc = ""
-	picture = "gfx/leaders/OHI/OHI_Birger.tga"
+	picture = "OHI_Birger.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -125,7 +112,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor James Arthur Salter"
 	desc = ""
-	picture = "gfx/leaders/OHI/OHI_Salter.tga"
+	picture = "OHI_Salter.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -135,7 +122,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Chairman James Arthur Salter"
 	desc = ""
-	picture = "gfx/leaders/OHI/OHI_Salter.tga"
+	picture = "OHI_Salter.tga"
 	expire = "1965.1.1"
 	ideology = ancap
 	traits = {

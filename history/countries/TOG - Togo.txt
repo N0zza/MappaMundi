@@ -1,15 +1,26 @@
 ﻿capital = 3598
 
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
 set_cosmetic_tag = FRA_COLONY
 
-set_popularities = {
-	liberal_republic = 10
-	stratocratic = 10
-	neutrality = 80	
-}
 
-set_politics = { 
-	ruling_party = neutrality
+	set_popularities = {
+		democratic 
+			 = 0
+		liberal_republic
+			 = 10
+		stratocratic
+			 = 10
+		neutrality 
+			 = 80
+		
+	}
+	set_politics = { 
+ ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -19,17 +30,18 @@ create_country_leader = {
 	name = "Gouverneur Leon Geismar"
 	picture = "gfx/leaders/TOG/Portrait_Leon_Geismar.dds"
 	expire = "1965.1.1"
-	ideology = colonialism
+	ideology = moderatism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Gouverneur Wilhelm Friedrich Ferdinand Olof von Lindequist"
 	desc = ""
-	picture = "gfx/leaders/TOG/TOG_Lindequist.tga"
+	picture = "TOG_Lindequist.tga"
 	expire = "1989.1.1"
-	ideology = stratmon_colonialism
+	ideology = stratmon
 	traits = {
 	}
 }
@@ -37,9 +49,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Sylvanus Épiphanio Olympio"
 	desc = ""
-	picture = "gfx/leaders/TOG/TOG_Olympio_libdem.tga"
+	picture = "TOG_Olympio_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -47,7 +59,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Président Kléber Dadjo"
 	desc = ""
-	picture = "gfx/leaders/TOG/TOG_Dadjo_strat.tga"
+	picture = "TOG_Dadjo_strat.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {
@@ -57,7 +69,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Sir Arnold Wienholt Hodson"
 	desc = ""
-	picture = "gfx/leaders/TOG/Portrait_Arnold_Hodson.dds"
+	picture = "Portrait_Arnold_Hodson.dds"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -65,9 +77,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Reichsprotektor Wilhelm Friedrich Ferdinand Olof von Lindequist"
+	name = "Reichsprotektor Friedrich von Lindequist"
 	desc = ""
-	picture = "gfx/leaders/TOG/TOG_Lindequist.tga"
+	picture = "TOG_Lindequist.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
@@ -77,7 +89,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Guvernér Jan Garrigue Masaryk"
 	desc = ""
-	picture = "gfx/leaders/TOG/TOG_Masaryk_cendem.tga"
+	picture = "TOG_Masaryk_cendem.tga"
 	expire = "1965.1.1"
 	ideology = cenrep
 	traits = {

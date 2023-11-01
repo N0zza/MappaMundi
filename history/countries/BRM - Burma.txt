@@ -1,22 +1,50 @@
 ﻿capital = 288
 
-set_cosmetic_tag = RAJ_RED
+oob = "BRM_1936"
 
-set_popularities = {
-	anocratic_monarchism = 100
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	transport = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	CAS1 = 1
+	
 }
 
-set_politics = { 
-	ruling_party = anocratic_monarchism
+set_convoys = 10
+
+set_cosmetic_tag = RAJ_RED
+
+
+
+	set_popularities = {
+		authoritarian_monarchism
+			 = 90
+		
+		communism
+			 = 0
+		neutrality
+			 = 10
+		
+	}
+
+	set_politics = { 
+ ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Bhuraiṅm Mratʻ Bhuyā'' Latʻ"
+	name = "Queen Myat Phaya Lat"
 	desc = ""
-	picture = "gfx/leaders/BRM/BRM_Myat_mon.tga"
+	picture = "BRM_Myat_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -25,31 +53,20 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Governor Sir Hugh Landsowne Stephenson"
+	name = "Governor-General Sir Archibald Douglas Cochrane"
 	desc = ""
-	picture = "gfx/leaders/BRM/BRM_Stephenson.tga"
+	picture = "BRM_Cochrane_authmon.tga"
 	expire = "1965.1.1"
-	ideology = anocmon
+	ideology = authmon
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Governor Sir Archibald Douglas Cochrane"
+	name = "President Galon U Saw"
 	desc = ""
-	picture = "gfx/leaders/BRM/BRM_Cochrane_authmon.tga"
-	expire = "1965.1.1"
-	ideology = stratmon_colonialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Sammata Gaḍunʻ Ñī'' Co"
-	desc = ""
-	picture = "gfx/leaders/BRM/BRM_Saw_authdem.tga"
+	picture = "BRM_Saw_authdem.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -58,9 +75,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "'Atvetve 'Atvaṅʻ''re''mhū'' 'Aoṅʻ'' Chanʻ''"
+	name = "Chairman Bogyoke Aung San"
 	desc = ""
-	picture = "gfx/leaders/BRM/BRM_Bogyoke_commie.tga"
+	picture = "BRM_Bogyoke_commie.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -68,19 +85,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "'Atvetve 'Atvaṅʻ''re''mhū'' 'Aoṅʻ'' Chanʻ''"
+	name = "President Thakin Kodaw Hmaing"
 	desc = ""
-	picture = "gfx/leaders/BRM/BRM_Bogyoke_commie.tga"
-	expire = "1965.1.1"
-	ideology = totsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Sammata Sakhaṅai Kuitaiyaitoʻ Mhaiṅai"
-	desc = ""
-	picture = "gfx/leaders/BRM/BRM_Hmaing_condem.tga"
+	picture = "BRM_Hmaing_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -88,9 +95,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Chiji Sugiyama Hajime"
+	name = "Chiji Hajime Sugiyama"
 	desc = ""
-	picture = "gfx/leaders/BRM/BRM_Sugiyama_fash.tga"
+	picture = "BRM_Sugiyama_fash.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -98,9 +105,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Nuiṅaiṅito' 'Adhipati Bha Mo'"
+	name = "Head of State Ba Maw"
 	desc = ""
-	picture = "gfx/leaders/BRM/BRM_Maw_repfash.tga"
+	picture = "BRM_Maw_repfash.tga"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
@@ -108,31 +115,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Sammata Khyicai Lhuiṅai"
+	name = "President Chit Hlaing"
 	desc = ""
-	picture = "gfx/leaders/BRM/BRM_Hlaing_libdem.tga"
+	picture = "BRM_Hlaing_libdem.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Sammata Cavʻ Rvhe Suikʻ"
-	desc = ""
-	picture = "gfx/leaders/BRM/BRM_Thaik_cenrep.tga"
-	expire = "1965.1.1"
-	ideology = cenrep
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Reichskommissar Otto Johann Anton Skorzeny"
-	desc = ""
-	picture = "gfx/leaders/BRM/Otto_Skorzeny.tga"
-	expire = "1965.1.1"
-	ideology = natsoc
+	ideology = socdem
 	traits = {
 	}
 }

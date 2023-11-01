@@ -1,12 +1,36 @@
 ﻿capital = 325
+oob = "YUN_1936"
 
-set_popularities = {
-	fascism = 20	
-	stratocratic = 80
+set_technology = {
+	infantry_weapons = 1
 }
 
-set_politics = { 
-	ruling_party = stratocratic
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+	}
+}
+
+
+
+
+	set_popularities = {
+		democratic 
+			 = 0
+		fascism
+			 = 20
+		communism
+			 = 0
+			
+		stratocratic
+			 = 80
+		}
+	set_politics = { 
+ ruling_party = stratocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -15,69 +39,75 @@ set_politics = {
 create_country_leader = {
 	name = "Chou ch'ang Lung Yun"
 	desc = "POLITICS_LONG_YUN_DESC"
-	picture = "gfx/leaders/YUN/Portrait_Yunnan_Long_Yun.dds"
+	picture = "Portrait_Yunnan_Long_Yun.dds"
 	expire = "1965.1.1"
-	ideology = warlordism
+	ideology = militarism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Chou ch'ang Lung Yun"
 	desc = "POLITICS_LONG_YUN_DESC"
-	picture = "gfx/leaders/YUN/Portrait_Yunnan_Long_Yun.dds"
+	picture = "Portrait_Yunnan_Long_Yun.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Chu hsi Lung Yun"
 	desc = "POLITICS_LONG_YUN_DESC"
-	picture = "gfx/leaders/YUN/Portrait_Yunnan_Long_Yun.dds"
+	picture = "Portrait_Yunnan_Long_Yun.dds"
 	expire = "1965.1.1"
 	ideology = repfash
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Huang ti Lung"
 	desc = "POLITICS_LONG_YUN_DESC"
-	picture = "gfx/leaders/YUN/Portrait_Yunnan_Long_Yun.dds"
+	picture = "Portrait_Yunnan_Long_Yun.dds"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Kuo wang Lung Yun"
 	desc = "POLITICS_LONG_YUN_DESC"
-	picture = "gfx/leaders/YUN/Portrait_Yunnan_Long_Yun.dds"
+	picture = "Portrait_Yunnan_Long_Yun.dds"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Chu hsi Tan Furen"
 	desc = ""
-	picture = "gfx/leaders/YUN/YUN_Furen.tga"
+	picture = "YUN_Furen.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Tsung t'ung Tang Jiyao"
 	desc = ""
-	picture = "gfx/leaders/YUN/YUN_Tang.tga"
+	picture = "YUN_Tang.tga"
 	expire = "1965.1.1"
-	ideology = cenrep
+	ideology = demsoc
 	traits = {
 	}
 }
@@ -85,9 +115,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Tsung t'ung Tang Jiyao"
 	desc = ""
-	picture = "gfx/leaders/YUN/YUN_Tang.tga"
+	picture = "YUN_Tang.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }

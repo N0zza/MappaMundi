@@ -1,21 +1,40 @@
 ﻿capital = 4925
 
-set_popularities = {
-	stratocratic = 55
-	vanguardism = 45
+oob = "2RA_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
 }
-		
-set_politics = { 
-	ruling_party = stratocratic
+set_stability = 0.6
+set_war_support = 0.7
+
+	set_popularities = {
+		stratocratic
+			 = 55
+		vanguardism
+			 = 45
+			
+		}
+	set_politics = { 
+ ruling_party = stratocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+
+add_ideas = {
+	closed_economy
+	service_by_requirement
+	partial_economic_mobilisation
+}
+
 create_country_leader = {
 	name = "Shiangjiang Ho Lung"
 	desc = "POLITICS_2RA_VAN_DESC"
-	picture = "gfx/leaders/2RA/Portrait_He_Long.tga"
+	picture = "Portrait_He_Long.tga"
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
@@ -25,7 +44,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Shiangjiang Ho Lung"
 	desc = "POLITICS_2RA_STRAT_DESC"
-	picture = "gfx/leaders/2RA/Portrait_He_Long.tga"
+	picture = "Portrait_He_Long.tga"
 	expire = "1965.1.1"
 	ideology = militarism
 	traits = {

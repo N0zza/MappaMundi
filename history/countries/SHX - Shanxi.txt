@@ -1,61 +1,95 @@
 ﻿capital = 615
 
-set_politics = { 
-	ruling_party = stratocratic
+oob = "SHX_1936"
+
+set_stability = 0.7
+set_war_support = 0.4
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		PRC_government_corruption
+		CHI_ineffective_bureaucracy_warlord
+	}
+}
+
+
+
+
+	set_politics = { 
+ ruling_party = stratocratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-set_popularities = {
-	democratic = 5
-	stratocratic = 95
-}
+	set_popularities = {
+		democratic 
+			 = 5
+		fascism
+			 = 0
+		communism
+			 = 0
+			
+		stratocratic 
+			 = 95
+		
+	}
 
 create_country_leader = {
 	name = "Chou ch'ang Yan Hsishan"
 	desc = "POLITICS_YAN XISHAN_DESC"
-	picture = "gfx/leaders/SHX/Portrait_Shanxi_Yan_Xishan.dds"
+	picture = "Portrait_Shanxi_Yan_Xishan.dds"
 	expire = "1965.1.1"
-	ideology = warlordism
+	ideology = militarism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Chou ch'ang Yan Hsishan"
 	desc = "POLITICS_YAN XISHAN_DESC"
-	picture = "gfx/leaders/SHX/Portrait_Shanxi_Yan_Xishan.dds"
+	picture = "Portrait_Shanxi_Yan_Xishan.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Kuo wang Yan Hsishan"
 	desc = "POLITICS_YAN XISHAN_DESC"
-	picture = "gfx/leaders/SHX/Portrait_Shanxi_Yan_Xishan.dds"
+	picture = "Portrait_Shanxi_Yan_Xishan.dds"
 	expire = "1965.1.1"
 	ideology = stratmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Huang ti Yan Hsishan"
 	desc = "POLITICS_YAN XISHAN_DESC"
-	picture = "gfx/leaders/SHX/Portrait_Shanxi_Yan_Xishan.dds"
+	picture = "Portrait_Shanxi_Yan_Xishan.dds"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
+		#
 	}
 }
 
 create_country_leader = {
 	name = "Tsung t'ung Fu Zuoyi"
 	desc = ""
-	picture = "gfx/leaders/SHX/SHX_Zuoyi.tga"
+	picture = "SHX_Zuoyi.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -65,7 +99,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Shih tsun Chang T'ien jan"
 	desc = ""
-	picture = "gfx/leaders/SHX/SHX_Chang.tga"
+	picture = "SHX_Chang.tga"
 	expire = "1965.1.1"
 	ideology = christian
 	traits = {

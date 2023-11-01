@@ -1,5 +1,7 @@
 ﻿capital = 16278
 
+oob = "MRT_1936"
+
 set_cosmetic_tag = FRA_COLONY
 
 	set_popularities = {
@@ -20,12 +22,13 @@ set_cosmetic_tag = FRA_COLONY
 	elections_allowed = yes
 }
 
+
 create_country_leader = {
 	name = "Gouverneur Jules Marcel de Coppet"
 	desc = ""
-	picture = "gfx/leaders/MRT/MRT_Coppet.tga"
+	picture = "MRT_Coppet.tga"
 	expire = "1965.1.1"
-	ideology = colonialism
+	ideology = despotism
 	traits = {
 	}
 }
@@ -33,7 +36,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Rayiys Moktar Ould Daddah"
 	desc = ""
-	picture = "gfx/leaders/MRT/MRT_Daddah_demsoc.tga"
+	picture = "MRT_Daddah_demsoc.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -43,7 +46,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Sultan Ibrahim I ibn 'Umaru"
 	desc = ""
-	picture = "gfx/leaders/MRT/MRT_Umaru_mon.tga"
+	picture = "MRT_Umaru_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -53,9 +56,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governatore Bruno Malaguti"
 	desc = ""
-	picture = "gfx/leaders/MRT/MRT_Malaguti_fash.tga"
+	picture = "MRT_Malaguti_fash.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -63,7 +66,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Henry David Reginald Margesson"
 	desc = ""
-	picture = "gfx/leaders/MRT/MRT_David_Margesson.tga"
+	picture = "MRT_David_Margesson.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {

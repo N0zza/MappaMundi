@@ -1,21 +1,38 @@
 ﻿capital = 293
 
-set_popularities = {
-	monarchism = 90
-	democratic = 10
-}
+oob = "YEM_1936"
 
-set_politics = { 
-	ruling_party = monarchism
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+set_war_support = 0.1
+set_stability = 0.8
+set_convoys = 5
+
+
+	set_popularities = {
+		democratic 
+			 = 10
+		fascism
+			 = 0
+		communism
+			 = 0
+			
+		monarchism 
+			 = 90
+		}
+	set_politics = { 
+ ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Al-Milk wal-Imām Yaḥyaỳ Muḥammad Ḥamīd ad-Dīn Muḥammad al-Mutawakkil"
+	name = "Majesteleri Yahya Hamididdin al-Rashid"
 	desc = "POLITICS_IMAM_YAHYA_DESC"
-	picture = "gfx/leaders/YEM/Portrait_yemen_imam_yahya.dds"
+	picture = "Portrait_yemen_imam_yahya.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
@@ -24,19 +41,20 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "As-Sikritīr al-Awwal Qaḥṭān Muḥammad aš-Šaʿbī"
+	name = "al-Sikrtir al-Awl Qahtan Muhammad al-Shaabi"
 	desc = ""
-	picture = "gfx/leaders/YEM/YEM_Shaabil_vanguard.tga"
+	picture = "YEM_Shaabil_vanguard.tga"
 	expire = "1953.3.1"
 	ideology = totsoc
 	traits = {
+		
 	}
 }
 
 create_country_leader = {
 	name = "Vali Abdurrahman Nafiz Gürman"
 	desc = ""
-	picture = "gfx/leaders/YEM/YEM_Gurman_stratmon.tga"
+	picture = "YEM_Gurman_stratmon.tga"
 	expire = "1989.1.1"
 	ideology = stratmon
 	traits = {
@@ -44,9 +62,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Raʾīs Ḥasan ʿAlīy Naṣār al-ʿAmirī"
+	name = "Rayiys Hassal al-Amiri"
 	desc = ""
-	picture = "gfx/leaders/YEM/YEM_Amiri_authrep.tga"
+	picture = "YEM_Amiri_authrep.tga"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -54,19 +72,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Raʾīs Ḥasan ʿAlīy Naṣār al-ʿAmirī"
+	name = "Rayiys Abdullah al-Sallal"
 	desc = ""
-	picture = "gfx/leaders/YEM/YEM_Amiri_authrep.tga"
-	expire = "1965.1.1"
-	ideology = cenrep
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Raʾīs ʿAbd ul-llāh Yaḥyaỳ as-Sallāl"
-	desc = ""
-	picture = "gfx/leaders/YEM/YEM_Sallal_demsoc.tga"
+	picture = "YEM_Sallal_demsoc.tga"
 	expire = "1965.1.1"
 	ideology = demsoc
 	traits = {
@@ -74,9 +82,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Raʾīs ʿAbd ur-Raḥman bin Yaḥyaỳ bin Muḥammad bn ʿAbd ul-llāh bin ʿAlīy bin ʿAlīy bin Ḥusayn bin Ǧābir bin ʿAbd ul-Wāḥid bin Muḥammad aṣ-Ṣadīqī al-Iriyānī as-Sayifī al-Yaḥṣabī"
+	name = "Rayiys Abdul Rahman al-Eryani"
 	desc = ""
-	picture = "gfx/leaders/YEM/YEM_Eryanil_condem.tga"
+	picture = "YEM_Eryanil_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -86,7 +94,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governor Sir Thomas Ralph Eastwood"
 	desc = ""
-	picture = "gfx/leaders/YEM/YEM_Eastwood_authmon.tga"
+	picture = "YEM_Eastwood_authmon.tga"
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
@@ -96,9 +104,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Governatore Giuseppe Izzo"
 	desc = ""
-	picture = "gfx/leaders/YEM/YEM_Izzo_fash.tga"
+	picture = "YEM_Izzo_fash.tga"
 	expire = "1965.1.1"
-	ideology = corpmon_colonialism
+	ideology = fascism_ideology
 	traits = {
 	}
 }

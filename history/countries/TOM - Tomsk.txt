@@ -1,5 +1,19 @@
 ﻿capital = 11965
 
+oob = "AZR_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+
+set_convoys = 10
+
 set_popularities = {
         democratic = 40
         liberal_republic = 20
@@ -31,7 +45,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/TOM_Pasternak.tga"
 	expire = "1965.1.1"
-	ideology = liberal_conservatism
+	ideology = liberalism
 	traits = {
 	}
 }
@@ -41,7 +55,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/TNOWarlords/TOM_Sakharov.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = socdem
 	traits = {
 	}
 }
@@ -69,7 +83,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Reichskommissar Johannes Frießner"
 	desc = ""
-	picture = "gfx/leaders/TOM/TOM_Friebner_nazi.tga"
+	picture = "TOM_Friebner_nazi.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
 	traits = {
