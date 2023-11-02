@@ -1053,6 +1053,30 @@ secondary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
+				tag = NAF
+				OR = {
+					has_government = democratic_monarchism
+					has_government = centrist_monarchism
+					has_government = conservative_monarchism
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = LOU
+				OR = {
+					has_government = democratic_monarchism
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
 				tag = CAN
 				OR = {
 					AND = {
