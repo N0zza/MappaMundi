@@ -722,3 +722,518 @@ wabanaki_claims = {
 		}
 	}
 }
+
+kx_mittelafrika_collapse = {
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = LPV
+				AND = {
+					is_owned_by = COG
+					is_core_of = KKG
+				}
+				state = 1498
+				state = 6447
+				state = 6448
+				state = 6449
+				state = 6452
+				state = 19514
+			}
+		}
+		LPV = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = stratocratic
+			}
+			set_popularities = {
+				stratocratic = 100
+			}
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				state = 538
+				state = 1517
+				state = 5011
+				state = 6687
+				state = 10050
+				state = 10067
+				state = 10087
+				state = 10091
+				state = 10093
+				state = 10094
+			}
+		}
+		UBI = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = stratocratic
+			}
+			set_popularities = {
+				stratocratic = 100
+			}
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				AND = {
+					is_core_of = KZM
+					NOT = {
+						is_core_of = ZAM
+					}
+				}
+				state = 6482
+				state = 6485
+			}
+		}
+		KZM = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = stratocratic
+			}
+			set_popularities = {
+				stratocratic = 100
+			}
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				state = 1855
+				state = 1857
+				state = 6456
+				state = 6546
+				state = 6836
+				state = 6837
+				state = 10057
+				state = 10072
+				state = 10078
+				state = 10082
+				state = 10084
+				state = 10085
+				state = 10088
+				state = 10092
+				is_core_of = C09
+				is_core_of = C12
+				is_core_of = C16
+			}
+		}
+		KSI = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = stratocratic
+			}
+			set_popularities = {
+				stratocratic = 100
+			}
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_owned_by = COG
+			}
+		}
+		ULE = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = anocratic_monarchism
+			}
+			set_popularities = {
+				anocratic_monarchism = 100
+			}
+			set_cosmetic_tag = SILVER
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = MMB
+				is_owned_by = ZAN
+				state = 5217
+				state = 9367
+				state = 9368
+				state = 9370
+			}
+		}
+		MMB = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = republican_fascism
+			}
+			set_popularities = {
+				republican_fascism = 100
+			}
+			drop_cosmetic_tag = yes
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = UGA
+			}
+		}
+		BUG = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = stratocratic_monarchism
+			}
+			set_popularities = {
+				stratocratic_monarchism = 100
+			}
+			drop_cosmetic_tag = yes
+		}
+	}
+	KEN = {
+		set_politics = {
+			ruling_party = centrist_monarchism
+		}
+		set_popularities = {
+			centrist_monarchism = 100
+		}
+		drop_cosmetic_tag = yes
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = MLW
+				state = 1504
+				state = 6510
+				state = 6515
+				state = 6816
+				state = 6817
+			}
+		}
+		MLW = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = stratocratic
+			}
+			set_popularities = {
+				stratocratic = 100
+			}
+			drop_cosmetic_tag = yes
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				AND = {
+					is_core_of = BSL
+					is_owned_by = ZAM
+				}
+			}
+		}
+		BSL = {
+			transfer_state = PREV
+		}
+	}
+	ZAM = {
+		set_politics = {
+			ruling_party = centrist_monarchism
+		}
+		set_popularities = {
+			centrist_monarchism = 100
+		}
+		set_cosmetic_tag = SILVER
+	}
+	ZIM = {
+		drop_cosmetic_tag = yes
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = TZN
+			}
+		}
+		TZN = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = republican_fascism
+			}
+			set_popularities = {
+				republican_fascism = 100
+			}
+			set_cosmetic_tag = GREY_GER3
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = BRD
+			}
+		}
+		BRD = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = RWA
+			}
+		}
+		RWA = {
+			transfer_state = PREV
+		}
+	}
+	BOT = {
+		set_politics = {
+			ruling_party = stratocratic_monarchism
+		}
+		set_popularities = {
+			stratocratic_monarchism = 100
+		}
+		set_cosmetic_tag = SAF_COLONY
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = DML
+				is_core_of = OVM
+				is_core_of = KKV
+				is_core_of = KVN
+				is_core_of = CPV
+				is_core_of = BSM
+				is_core_of = HRR
+				state = 1591
+				state = 5034
+				state = 5231
+				state = 5232
+				state = 6089
+				state = 7692
+				state = 7694
+				state = 7695
+				state = 7697	
+				state = 13077
+			}
+		}
+		DML = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = stratocratic
+			}
+			set_popularities = {
+				stratocratic = 100
+			}
+			drop_cosmetic_tag = yes
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_owned_by = NMB
+			}
+		}
+		NML = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = stratocratic_monarchism
+			}
+			set_popularities = {
+				stratocratic_monarchism = 100
+			}
+			set_cosmetic_tag = GREY_GER1
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				state = 882
+				state = 1583
+				state = 1584
+				state = 5262
+				state = 5294
+				state = 6425
+				state = 6438
+				state = 6439
+				state = 6451
+				state = 10024
+				state = 10025
+				state = 10026
+				state = 10102
+			}
+		}
+		KKG = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				AND = {
+					is_core_of = GAB
+					NOT = {
+						state = 1585
+						state = 5295
+						state = 6440
+					}
+				}
+				state = 10017
+			}
+		}
+		GAB = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = democratic
+			}
+			set_popularities = {
+				democratic = 100
+			}
+			drop_cosmetic_tag = yes
+		}
+	}
+	RCG = {
+		country_event = {
+			id = slp_menu.57
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				state = 878
+				state = 6440
+				AND = {
+					is_owned_by = FEA
+					is_core_of = NKM
+				}
+			}
+		}
+		CMR = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = socialism_ideology
+			}
+			set_popularities = {
+				socialism_ideology = 100
+			}
+			drop_cosmetic_tag = yes
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = SNI
+				is_core_of = SCM
+				is_owned_by = NGA
+				state = 958
+				state = 5278
+				state = 5279
+				state = 7914
+			}
+		}
+		SNI = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = conservative_monarchism
+			}
+			set_popularities = {
+				conservative_monarchism = 100
+			}
+			set_cosmetic_tag = SILVER
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				AND = {
+					is_core_of = BOR
+					is_owned_by = CMR
+				}
+				state = 1609
+				state = 7912
+				state = 18656
+				is_owned_by = NCM
+			}
+		}
+		BOR = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = BCH
+				is_core_of = ZZZ
+				is_core_of = GBR
+				AND = {
+					OR = {
+						is_core_of = DGR
+						is_core_of = KNN
+					}
+					is_owned_by = SNI
+				}
+				state = 6717
+				state = 6718
+				state = 6719
+				state = 6721
+				state = 6726
+				state = 6729
+				state = 7877
+				state = 7879
+				state = 7882
+				state = 7884
+				state = 7885
+				state = 7886
+			}
+		}
+		SOK = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				AND = {
+					is_core_of = CAR
+					NOT = {
+						is_owned_by = CMR
+					}
+				}
+				AND = {
+					is_core_of = CHA
+					NOT = {
+						OR = {
+							is_owned_by = CMR
+							is_core_of = SD0
+						}
+					}
+				}
+			}
+		}
+		CAR = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = stratocratic
+			}
+			set_popularities = {
+				stratocratic = 100
+			}
+			drop_cosmetic_tag = yes
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				state = 2375
+				state = 3606
+				state = 3607
+				state = 3608
+				state = 3609
+				state = 5270
+			}
+		}
+		NKM = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = stratocratic
+			}
+			set_popularities = {
+				stratocratic = 100
+			}
+			set_cosmetic_tag = GREY_GER1
+		}
+	}
+}
