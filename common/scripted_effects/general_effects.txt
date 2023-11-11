@@ -1085,9 +1085,27 @@ kx_mittelafrika_collapse = {
 			drop_cosmetic_tag = yes
 		}
 	}
-	RCG = {
-		country_event = {
-			id = slp_menu.57
+	every_state = {
+		limit = {
+			OR = {
+				AND = {
+					is_core_of = RCG
+					NOT = {
+						OR = {
+							is_owned_by = GAB
+							is_owned_by = KKG
+						}
+					}
+				}
+				state = 1585
+				state = 5295
+			}
+		}
+		RCG = {
+			transfer_state = PREV
+			country_event = {
+				id = slp_menu.57
+			}
 		}
 	}
 	every_state = {
