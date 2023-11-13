@@ -19240,6 +19240,14 @@
 					}
 					every_state = {
 						limit = {
+							is_core_of = IQK
+						}
+						IQK = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
 							is_core_of = AQ1
 						}
 						AQ1 = {
@@ -20047,6 +20055,15 @@
 							picture = "gfx/leaders/UNC/UNC_2023.tga"
 							expire = "1965.1.1"
 							ideology = total_anarchist
+						}
+					}
+					IQK = {
+						create_country_leader = {
+							name = "Serok Nêçîrvan Barzanî"
+							desc = ""
+							picture = "gfx/leaders/IQK/IQK_Barzani.tga"
+							expire = "1965.1.1"
+							ideology = anocrep
 						}
 					}
 					SAU = {
