@@ -41,6 +41,13 @@ do_tno_normal_warlord_russia = {
 		}
 		MC2 = {
 			transfer_state = PREV
+			transfer_state = 13601
+			transfer_state = 13871
+			transfer_state = 16328
+			transfer_state = 16327
+			transfer_state = 16326
+			transfer_state = 16329
+			transfer_state = 13872
 		}
 	}
 	
@@ -166,12 +173,6 @@ do_tno_normal_warlord_russia = {
 	}
 	
 	KAZ = {
-		release = ATY
-		release = KST
-		release = ATB
-		release = KSU
-		release = PAV
-		release = ATU
 		release = KYZ
 	}
 	
@@ -194,20 +195,37 @@ do_tno_normal_warlord_russia = {
 	
 	KYZ = {
 		annex_country = {target = KAZ}
+		transfer_state = 12234
+		transfer_state = 12233
+		transfer_state = 12225
+		transfer_state = 17268
+		transfer_state = 17270
+		transfer_state = 3373
+		transfer_state = 12470
 	}
-	
+	IND = {
+		annex_country = {target = MLD}
+	}
+	SWZ = {
+		set_cosmetic_tag = SAF_COLONY
+	}
 	KYR = {
 		set_politics = {
 			ruling_party = communism
 		}
 	}
-	
 	TAJ = {
 		set_politics = {
 			ruling_party = communism
 		}
 	}
 	
+	every_state = {
+		limit = {
+			is_core_of = PMR
+		}
+		transfer_state_to = AFG
+	}
 	ARH = {
 		transfer_state = 4874
 		transfer_state = 13639
@@ -380,6 +398,7 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 12661
 		transfer_state = 652
 		transfer_state = 12660
+		transfer_state = 10294
 		set_cosmetic_tag = ORN_TNO
 		set_politics = {
 			ruling_party = left_anarchism
@@ -495,6 +514,8 @@ do_tno_normal_warlord_russia = {
 	ALI = {
 		transfer_state = 12624
 		transfer_state = 1394
+		transfer_state = 19490
+		transfer_state = 19489
 		transfer_state = 11962
 		set_cosmetic_tag = ALI_TNO
 		set_politics = {
@@ -568,12 +589,16 @@ do_tno_normal_warlord_russia = {
 		add_state_claim = 8701
 		add_state_claim = 8697
 		add_state_claim = 8695
+		transfer_state = 10375
+		transfer_state = 10330
+		transfer_state = 8683
+		transfer_state = 8813
+		transfer_state = 8681
 		set_cosmetic_tag = TAN_TNO
 		set_politics = {
 			ruling_party = stratocratic
 		}
 	}
-	
 	SIK = {
 		transfer_state = 11815
 		transfer_state = 11816
@@ -619,6 +644,7 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 1931
 		transfer_state = 657
 		transfer_state = 5851
+		transfer_state = 14386
 		transfer_state = 12519
 		transfer_state = 12526
 		transfer_state = 12521
@@ -629,6 +655,7 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 12525
 		transfer_state = 12522
 		transfer_state = 12527
+		transfer_state = 18503
 		transfer_state = 12495
 	}
 	
@@ -898,8 +925,6 @@ do_tno_normal_warlord_russia = {
 	}
 
 	ATY = {
-		transfer_state = 17268
-		transfer_state = 17270
 		set_capital = {
 			state = 3306
 		}
@@ -1050,6 +1075,7 @@ do_tno_normal_warlord_russia = {
 			transfer_state = 17860
 			transfer_state = 17861
 			transfer_state = 17862
+			transfer_state = 19680
 			set_capital = {
 				state = 516
 			}
@@ -1181,10 +1207,12 @@ do_tno_normal_warlord_russia = {
 				is_owned_by = MC2
 				is_owned_by = TUR
 				is_owned_by = ATY
+				is_owned_by = KYZ
 			}
 		}
 		KC2 = {
 			transfer_state = PREV
+			transfer_state = 12854
 			annex_country = {target = AZR}
 			annex_country = {target = NGK}
 			annex_country = {target = GEO}
@@ -1194,7 +1222,13 @@ do_tno_normal_warlord_russia = {
 			}
 		}
 	}
-	
+	UA2 = {
+			transfer_state = 11107
+			transfer_state = 11111
+			transfer_state = 218
+			transfer_state = 19193
+			transfer_state = 19182
+	}
 	UA2 = {
 		set_cosmetic_tag = UA2_TNO
 	}
@@ -1212,7 +1246,7 @@ do_tno_normal_warlord_russia = {
 			is_core_of = KAZ
 			is_core_of = UZB
 		}
-		TKS = {
+		UZB = {
 			transfer_state = PREV
 			transfer_state = 12238
 			transfer_state = 12412
@@ -1220,18 +1254,72 @@ do_tno_normal_warlord_russia = {
 			transfer_state = 12826
 			transfer_state = 12822
 			transfer_state = 10120
+			transfer_state = 12469
+			transfer_state = 10115
+			transfer_state = 405
 			transfer_state = 12827
-			annex_country = {target = UZB}
 			set_capital = {
 				state = 405
+			}
+			set_cosmetic_tag = UZB
+			set_politics = {
+				ruling_party = communism
+			}
+		}
+	}
+	TKS = {
+			set_capital = {
+				state = 11891
 			}
 			set_cosmetic_tag = TKS_TNO
 			set_politics = {
 				ruling_party = republican_fascism
 			}
-		}
+			transfer_state = 12403
+			transfer_state = 18413
+			transfer_state = 18388
+			transfer_state = 12405
+			transfer_state = 18401
+			transfer_state = 18402
+			transfer_state = 18274
+			transfer_state = 18400
+			transfer_state = 18403
+			transfer_state = 6480
+			transfer_state = 6260
+			transfer_state = 18399
+			transfer_state = 18398
+			transfer_state = 11136
+			transfer_state = 11891
+			transfer_state = 12404
+			transfer_state = 18395
+			transfer_state = 18397
+			transfer_state = 18396
+			transfer_state = 12437
+			transfer_state = 12821
+			transfer_state = 18389
+			transfer_state = 18390
+			transfer_state = 1378
+			transfer_state = 18399
+			transfer_state = 11892
+			transfer_state = 18470
+			transfer_state = 1366
+			transfer_state = 12817
+			transfer_state = 12816
+			transfer_state = 18360
+			transfer_state = 18361
+			transfer_state = 18363
+			transfer_state = 18364
+			transfer_state = 12402
+			transfer_state = 18365
+			transfer_state = 18366
+			transfer_state = 18367
+			transfer_state = 18362
+			transfer_state = 18368
+			transfer_state = 18369
+			transfer_state = 12815
+			
+			
 	}
-
 	every_state = {
 		limit = {
 			is_core_of = AMD
@@ -1239,7 +1327,7 @@ do_tno_normal_warlord_russia = {
 				is_core_of = KHW
 			}
 		}
-		TKS = {
+		UZB = {
 			transfer_state = PREV
 		}
 	}
@@ -1248,15 +1336,55 @@ do_tno_normal_warlord_russia = {
 		
 		set_cosmetic_tag = TMS_TNO
 		set_politics = {
-			ruling_party = neutrality
+			ruling_party = communism
 		}
 	}
-
+	PER = {
+		transfer_state = 12467
+		transfer_state = 12589
+		transfer_state = 11868
+		transfer_state = 12431
+		transfer_state = 13993
+		transfer_state = 542
+		transfer_state = 7062
+		transfer_state = 18320
+		transfer_state = 10121
+	}
 	KPK = {
 		set_cosmetic_tag = KPK_TNO
 		set_politics = {
 			ruling_party = democratic
 		}
+		transfer_state = 18293
+		transfer_state = 18292
+		transfer_state = 18291
+		transfer_state = 12240
+		transfer_state = 18325
+		transfer_state = 18323
+		transfer_state = 18324
+		transfer_state = 14361
+		transfer_state = 18467
+		transfer_state = 14362
+		transfer_state = 12823
+		transfer_state = 18376
+		transfer_state = 11865
+		transfer_state = 12681
+		
+	}
+	every_state = {
+		limit = {
+			is_core_of = KHW
+		}
+		transfer_state_to = KPK
+	}
+	every_state = {
+		limit = {
+			is_core_of = UST
+			NOT = {
+				is_core_of = TMS
+			}
+		}
+		transfer_state_to = KYZ
 	}
 
 	TAJ = {
@@ -1265,6 +1393,25 @@ do_tno_normal_warlord_russia = {
 
 	KYR = {
 		set_cosmetic_tag = KYR_TNO
+		set_politics = {
+			ruling_party = communism
+		}
+		transfer_state = 3091
+		transfer_state = 18315
+		transfer_state = 18313
+		transfer_state = 18458
+		transfer_state = 18314
+		transfer_state = 18312
+	}
+	
+	every_state = {
+		limit = {
+			is_core_of = KOK
+			NOT = {
+			is_core_of = PMR
+		}
+		}
+		transfer_state_to = KYR
 	}
 
 	SLB = {
@@ -1460,6 +1607,25 @@ do_tno_normal_warlord_russia = {
 		province = 17695
 		value = 5
 	}
+	every_state = {
+		limit = {
+			is_core_of = KVO
+			is_owned_by = RUS
+		}
+		transfer_state_to = KMR
+		
+	}
+	every_state = {
+		limit = {
+			is_core_of = VLG
+			is_owned_by = RUS
+		}
+		NOT = {
+			is_core_of = TIK
+		}
+		transfer_state_to = VLG
+		
+	}
 
 }
 
@@ -1480,6 +1646,130 @@ do_tno_einheitspakt_setup = {
 		}
 		set_demilitarized_zone = no
 		transfer_state_to = NZG
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_owned_by = MOR
+				is_owned_by = TGR
+			}
+		}
+		transfer_state_to = RIF
+	}
+	every_state = {
+		limit = {
+			is_claimed_by = HUN
+		}
+		transfer_state_to = HUN
+	}
+	GRE = {
+		set_politics = {
+			ruling_party = republican_fascism
+		}
+	}
+	every_state = {
+		limit = {
+			is_owned_by = GRE
+			is_core_of = BUL
+		}
+		transfer_state_to = TUR
+	}
+	every_state = {
+		limit = {
+			is_core_of = NAE
+		}
+		transfer_state_to = TUR
+	}
+	every_state = {
+		set_demilitarized_zone = no
+	}
+	ETH = {
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_cosmetic_tag = ITA_GREEN
+		annex_country = {target = TNA}
+		annex_country = {target = SEY}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = SOM
+				is_core_of = ERI
+				is_core_of = DJI
+				is_core_of = ETH
+				is_core_of = KEN
+			}
+			NOT = {
+				is_owned_by TZN
+			}
+		}
+		transfer_state_to = ETH
+	}
+	every_state = {
+		limit = {
+			is_core_of = YEM
+			NOT = {
+				is_core_of = SAU
+			}
+		}
+		transfer_state_to = YEM
+	}
+	every_state = {
+		limit = {
+			is_core_of = CYP
+		}
+		transfer_state_to = GRE
+	}
+	every_state = {
+		limit = {
+			is_claimed_by = OMN
+			NOT = {
+				is_core_of = PAK
+			}
+		}
+		transfer_state_to = OMN
+	}
+	every_state = {
+		limit = {
+			is_core_of = OMN
+			NOT = {
+				is_core_of = PAK
+			}
+		}
+		transfer_state_to = OMN
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = UAE
+				is_core_of = QAT
+				is_core_of = BHR
+			}
+			
+		}
+		transfer_state_to = UAE
+	}
+	every_state = {
+		limit = {
+			is_core_of = KUW
+			
+		}
+		transfer_state_to = IRQ
+	}
+	UAE = {
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_cosmetic_tag = ITA_GREEN
+		transfer_state = 8070
+		transfer_state = 8073
+		annex_country = {
+			target = KUW
+		}
+		annex_country = {
+			target = ABD
+		}
 	}
 	NZG = {
 		change_tag_from = GER
@@ -1508,6 +1798,9 @@ do_tno_einheitspakt_setup = {
 		}
 		transfer_state_to = UA2
 	}
+	SLO = {
+		set_cosmetic_tag = GREY_GER2
+	}
 	every_state = {
 		limit = {
 			OR = {
@@ -1516,6 +1809,9 @@ do_tno_einheitspakt_setup = {
 				is_owned_by = POL
 			}
 			is_core_of = SLO
+		}
+		NOT = {
+			is_claimed_by = HUN
 		}
 		transfer_state_to = SLO
 	}
@@ -1536,6 +1832,14 @@ do_tno_einheitspakt_setup = {
 	PL2 = {
 		annex_country = {
 			target = POL
+		}
+	}
+	CAN = {
+		annex_country = {
+			target = NFL
+		}
+		annex_country = {
+			target = SPM
 		}
 	}
 	every_state = {
@@ -1664,28 +1968,6 @@ do_tno_einheitspakt_setup = {
 		}
 		set_cosmetic_tag = IRE_GREEN
 	}
-	every_state = {
-		limit = {
-			is_core_of = SCO
-		}
-		transfer_state_to = SCO
-	}
-	SCO = {
-		set_politics = {
-			ruling_party = democratic
-		}
-	}
-	every_state = {
-		limit = {
-			is_core_of = WLS
-		}
-		transfer_state_to = WLS
-	}
-	WLS = {
-		set_politics = {
-			ruling_party = democratic
-		}
-	}
 	CRN = {
 		transfer_state = 986
 		annex_country = {
@@ -1705,31 +1987,38 @@ do_tno_einheitspakt_setup = {
 		}
 		set_cosmetic_tag = GREY_GER3
 	}
-	EGL = {
+	ENG = {
 		annex_country = {
 			target = MNX
 		}
-		annex_country = {
-			target = ENG
-		}
 		set_politics = {
-			ruling_party = authoritarian_monarchism
+			ruling_party = fascism
 		}
+		set_cosmetic_tag = ENG_TNO
 	}
 	every_state = {
 		limit = {
-			OR = {
-				AND = {
-					is_core_of = CRN
-					NOT = {
-						is_owned_by = CRN
-					}
-				}
-				state = 4937
-				state = 5157
+			is_claimed_by = CRN
+			NOT = {
+				is_owned_by = CRN
 			}
 		}
 		set_demilitarized_zone = yes
+	}
+	every_state = {
+		limit = {
+			is_core_of = CRN
+			NOT = {
+				is_owned_by = CRN
+			}
+		}
+		set_demilitarized_zone = yes
+	}
+	every_state = {
+		limit = {
+			is_core_of = SZ2
+		}
+		transfer_state_to = ITA
 	}
 	every_state = {
 		limit = {
@@ -1741,7 +2030,110 @@ do_tno_einheitspakt_setup = {
 		set_politics = {
 			ruling_party = republican_fascism
 		}
-		set_cosmetic_tag = VICHY_BLUE
+		set_cosmetic_tag = FRA_TNO
+	}
+	ITA = {
+	annex_country = {target = MLT}
+	}
+	every_state = {
+		limit = {
+			is_owned_by = YUG
+			is_core_of = CRO
+			NOT = {
+				is_claimed_by = ITA
+			}
+		}
+		transfer_state_to = CRO
+	}
+	every_state = {
+		limit = {
+			is_owned_by = YUG
+			is_core_of = BOS
+			NOT = {
+				is_claimed_by = ITA
+			}
+		}
+		transfer_state_to = CRO
+	}
+	every_state = {
+		limit = {
+			is_owned_by = YUG
+			is_core_of = SVA
+			NOT = {
+				is_claimed_by = ITA
+			}
+		}
+		transfer_state_to = CRO
+	}
+	every_state = {
+		limit = {
+			OR = { 
+				is_owned_by = COP
+			}
+		}
+		MAN = {
+			transfer_state = PREV
+		}
+	}
+	CRO = {
+		set_politics = {
+			ruling_party = national_socialism
+		}
+		set_cosmetic_tag = CRO_AUTH
+	}
+	SER = {
+		set_politics = {
+			ruling_party = republican_fascism
+		}
+		set_cosmetic_tag = GREY_GER2
+	}
+	every_country = {
+		limit = {
+			has_cosmetic_tag = UK_RED
+		}
+		set_cosmetic_tag = CAN_RED
+	}
+	every_state = {
+		limit = {
+			is_owned_by = YUG
+			is_core_of = MNT
+			NOT = {
+				is_claimed_by = ALB
+			}
+		}
+		transfer_state_to = MNT
+	}
+	MNT = {
+		set_politics = {
+			ruling_party = stratocratic_monarchism	
+		}
+	}
+	ALB = {
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_cosmetic_tag = ITA_GREEN
+		transfer_state = 4139
+	}
+	every_state = {
+		limit = {
+			is_owned_by = YUG
+			is_core_of = SER
+			NOT = {
+				is_core_of = BOS
+				is_core_of = MNT
+				is_claimed_by = ALB
+				is_core_of = SVA
+			}
+		}
+		transfer_state_to = SER
+	}
+	every_state = {
+		limit = {
+			is_owned_by = YUG
+			is_claimed_by = ALB
+		}
+		transfer_state_to = ALB
 	}
 	every_state = {
 		limit = {
@@ -1789,5 +2181,1259 @@ do_tno_einheitspakt_setup = {
 			}
 		}
 		set_demilitarized_zone = yes
+	}
+	every_state = {
+		limit = {
+			is_core_of = SYR
+		}
+		NOT = {
+			is_core_of = WTC
+		}
+		transfer_state_to = WTC
+	}
+	every_state = {
+		limit = {
+			is_core_of = WTC
+		}
+		transfer_state_to = TUR
+	}
+	WTC = {
+		annex_country = {target = JEB}
+		transfer_state = 5690
+		transfer_state = 5687
+		transfer_state = 17352
+		transfer_state = 17380
+		transfer_state = 6992
+		set_cosmetic_tag = TUR_COLONY
+		set_politics = {
+			ruling_party = stratocratic
+		}
+	}
+	TUR = {
+		transfer_state = 14179
+		transfer_state = 6987
+		transfer_state = 14180
+		transfer_state = 5699
+		transfer_state = 3618
+		annex_country = {target = ALW}
+	}
+	every_state = {
+		limit = {
+			is_core_of = ALW
+		}
+		transfer_state_to = TUR
+	}
+	NG1 = {
+		annex_country = {target = SG1}
+		set_politics = {ruling_party = stratocratic}
+		set_cosmetic_tag = USA_BLUE
+	}
+	ICE = {
+		set_politics = {ruling_party = centrist_republic}
+	}
+}
+do_tno_co_prosperity_setup = {
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = GUM
+				is_core_of = NAU
+				is_core_of = KIR
+				is_core_of = SOL
+				is_core_of = VAN
+				is_core_of = NFI
+				is_core_of = FIJ
+				is_core_of = TON
+				is_core_of = NIU
+				is_core_of = SAM
+				is_core_of = ESM
+				is_core_of = WAF
+				is_core_of = CKI
+				is_core_of = TAH
+				is_core_of = PTC
+				is_core_of = AUI
+				is_core_of = TKL
+				is_core_of = NCL
+			}
+		}
+		transfer_state_to = PAC
+	}
+	every_state = {
+		limit = {
+			is_core_of = PNG
+		}
+		transfer_state_to = PNG
+	}
+	PAC = {
+		transfer_state = 2541
+		set_cosmetic_tag = PAC_TNO
+	}
+	HAW = {
+		set_cosmetic_tag = JAP_COLONY
+		set_politics = {
+			ruling_party = stratocratic_monarchism
+		}
+	}
+	PNG = {
+		set_cosmetic_tag = JAP_COLONY
+		set_politics = {
+			ruling_party = fascism
+		}
+	}
+	every_state = {
+		limit = {
+			is_core_of = TNT
+		}
+		transfer_state_to = HB2
+	}
+	every_state = {
+		limit = {
+			is_core_of = PKG
+		}
+		transfer_state_to = HB2
+	}
+	every_state = {
+		limit = {
+			is_core_of = PIL
+		}
+		transfer_state_to = MEN
+	}
+	every_state = {
+		limit = {
+			is_owned_by = MON
+		}
+		transfer_state_to = MEN
+	}
+	every_state = {
+		limit = {
+			is_core_of = MEN
+		}
+		transfer_state_to = MEN
+	}
+	MEN = {
+		set_politics = {
+			ruling_party = fascism
+		}
+		annex_country = {
+			target = SB4
+		}
+		annex_country = {
+			target = CH3
+		}
+		set_cosmetic_tag = JAP_COLONY
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = SIN
+				is_core_of = JOR
+				is_core_of = LEB
+			}
+			NOT = {
+				is_core_of = SZ2
+			}
+			
+		}
+		transfer_state_to = PAL
+	}
+	PAL = {
+		set_cosmetic_tag = ITA_GREEN
+		set_politics = {
+			ruling_party = fascism
+		}
+	}
+	every_state = {
+		limit = {
+			is_owned_by = IRQ
+			is_core_of = KUR
+			
+		}
+		transfer_state_to = ETC
+	}
+	IRQ = {
+		set_politics = {ruling_party = neutrality}
+	}
+	ETC = {
+		set_politics = {
+			ruling_party = stratocratic
+		}
+		set_cosmetic_tag = TUR_COLONY
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = PAK
+				is_core_of = IND
+				is_core_of = SKM
+				is_core_of = BRM
+			}
+			NOT = {
+				is_core_of = ASM
+			}
+			
+		}
+		transfer_state_to = IND
+	}
+	every_state = {
+		limit = {
+			is_core_of = BRM
+			
+		}
+		transfer_state_to = BRM
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = BAN
+				is_core_of = ASM
+				is_core_of = WBG
+				is_core_of = JHR
+				is_core_of = BHI
+			}
+			NOT = {
+				is_core_of = TIB
+			}
+			
+		}
+		transfer_state_to = RAJ
+	}
+	RAJ = {
+		set_politics = {
+			ruling_party = republican_fascism
+		}
+		transfer_state = 14042
+		transfer_state = 11788
+		transfer_state = 14635
+		transfer_state = 17041
+		transfer_state = 3266
+		transfer_state = 14046
+		transfer_state = 14047
+		transfer_state = 14048
+		transfer_state = 6335
+		transfer_state = 18493
+		transfer_state = 14043
+		transfer_state = 6333
+		transfer_state = 6332
+		transfer_state = 6334
+		transfer_state = 18492
+		transfer_state = 18491
+		transfer_state = 14050
+		transfer_state = 14049
+		transfer_state = 18490
+		transfer_state = 6330
+		transfer_state = 18489
+		transfer_state = 14051
+		transfer_state = 14052
+		transfer_state = 14053
+		transfer_state = 14054
+		transfer_state = 14055
+		transfer_state = 11787
+		transfer_state = 18488
+		transfer_state = 6323
+		transfer_state = 6325
+		transfer_state = 6324
+		transfer_state = 14038
+		transfer_state = 426
+		transfer_state = 4235
+		transfer_state = 17033
+		transfer_state = 14641
+		transfer_state = 16904
+		transfer_state = 16902
+		transfer_state = 16903
+		transfer_state = 14640
+		transfer_state = 18499
+		transfer_state = 4234
+		transfer_state = 16931
+		transfer_state = 16934
+		transfer_state = 14645
+		transfer_state = 16932
+		transfer_state = 18500
+		transfer_state = 16933
+		transfer_state = 17036
+		transfer_state = 17038
+		transfer_state = 17037
+		transfer_state = 14636
+		transfer_state = 17040
+		transfer_state = 17039
+		transfer_state = 17030
+		transfer_state = 16920
+		transfer_state = 16922
+		transfer_state = 16923
+		transfer_state = 17032
+		transfer_state = 17013
+		transfer_state = 17014
+		transfer_state = 17031
+		transfer_state = 17009
+		transfer_state = 16921
+		transfer_state = 16917
+		transfer_state = 17017
+		transfer_state = 17018
+		transfer_state = 17011
+		transfer_state = 17019
+		transfer_state = 17020
+		transfer_state = 17015
+		transfer_state = 17016
+		transfer_state = 14633
+		transfer_state = 17012
+		transfer_state = 17007
+		transfer_state = 17008
+		transfer_state = 16916
+		transfer_state = 16918
+		transfer_state = 1001
+		transfer_state = 16914
+		transfer_state = 16912
+		transfer_state = 16915
+		transfer_state = 14632
+		transfer_state = 16909
+	}
+	IND = {
+		set_politics = {
+			ruling_party = democratic
+		}
+		set_cosmetic_tag = IND_TNO
+	}
+	BHU = {
+		set_cosmetic_tag = BHU
+	}
+	every_state = {
+		limit = {
+			is_core_of = SIA
+		}
+		transfer_state_to = SIA
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = S14
+				is_core_of S43
+			}
+		}
+		transfer_state_to = SIA
+	}
+	TIB = {
+		transfer_state = 10742
+		transfer_state = 10744
+		transfer_state = 10743
+	}
+	JAP = {
+		annex_country = {target = ANN}
+	}
+	SIA = {
+		transfer_state = 5858
+		transfer_state = 1147
+		transfer_state = 5856
+		transfer_state = 5855
+		transfer_state = 5857
+		transfer_state = 13728
+		transfer_state = 13727
+		transfer_state = 12908
+		transfer_state = 1149
+		transfer_state = 10403
+		transfer_state = 10401
+		transfer_state = 9932
+		transfer_state = 13726
+		transfer_state = 13742
+		transfer_state = 1146
+		transfer_state = 12919
+		transfer_state = 9916
+		transfer_state = 10229
+		transfer_state = 10229
+		transfer_state = 19540
+		transfer_state = 7079
+		transfer_state = 8752
+		transfer_state = 7077
+		transfer_state = 19537
+		transfer_state = 8623
+		transfer_state = 19590
+		transfer_state = 19572
+		transfer_state = 8669
+	}
+	every_state = {
+		limit = {
+			is_core_of = YUN
+		}
+		NOT = {
+			is_core_of = BRM
+		}
+		transfer_state_to = YUN
+	}
+	BRM = {
+		set_politics = {
+			ruling_party = republican_fascism
+		}
+		set_cosmetic_tag = BRM
+		transfer_state = 8662
+		transfer_state = 19571
+		transfer_state = 7079
+		transfer_state = 8752
+	}
+	SRL = {
+		set_cosmetic_tag = SRL
+		set_politics = {ruling_party = democratic}
+	}
+	GND = {
+		annex_country = {target = MCU}
+		annex_country = {target = HKG}
+		transfer_state = 592
+		transfer_state = 4138
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_cosmetic_tag = JAP_COLONY
+	}
+	every_state = {
+		limit = {
+			is_core_of = HIN
+		}
+		transfer_state_to = KT2
+	}
+	KT2 = {
+		set_cosmetic_tag = JAP_COLONY
+		set_politics = {
+			ruling_party = fascism
+		}
+		transfer_state = 2128
+		transfer_state = 11547
+		transfer_state = 728
+		transfer_state = 11545
+		transfer_state = 2129
+		transfer_state = 11546
+		transfer_state = 2128
+		transfer_state = 11556
+		transfer_state = 11546
+		transfer_state = 3290
+	}
+	PRC = {
+		annex_country = {target = NEA}
+		annex_country = {target = YLN}
+		annex_country = {target = SHX}
+		set_cosmetic_tag = POL_SCC
+		set_politics = {
+			ruling_party = neutrality
+		}
+	}
+	YUN = {
+		set_cosmetic_tag = POL_SCC
+		set_politics = {
+			ruling_party = neutrality
+		}
+	}
+	KWC = {
+		set_cosmetic_tag = POL_SCC
+		set_cosmetic_tag = POL_SCC
+	}
+	GXC = {
+		set_cosmetic_tag = POL_SCC
+	}
+	CHI = {
+		annex_country = {target = SHG}
+		annex_country = {target = HB2}
+		annex_country = {target = EHC}
+		annex_country = {target = HNN}
+		transfer_state = 4136
+		transfer_state = 11063
+		transfer_state = 11059
+		transfer_state = 11058
+		transfer_state = 11057
+		transfer_state = 11066
+		transfer_state = 11060
+		transfer_state = 3171
+		annex_country = {target = SHH}
+		annex_country = {target = ISK}
+		set_cosmetic_tag = POL_SCC
+	}
+	TIB = {
+		annex_country = {target = HOR}
+		annex_country = {target = CHG}
+		annex_country = {target = NGH}
+		annex_country = {target = SGY}
+	}
+	every_state = {
+		limit = {
+			is_core_of = XIG
+		}
+		transfer_state_to = XIG
+	}
+	every_state = {
+		limit = {
+			is_core_of = SHC
+		}
+		transfer_state_to = CHI
+	}
+	XSM = {
+		annex_country = {target = WGS}
+		annex_country = {target = GKS}
+		annex_country = {target = SKK}
+		annex_country = {target = NWA}
+	}
+	SIK = {
+		annex_country = {target = HMI}
+		annex_country = {target = TUG}
+		annex_country = {target = NMN}
+		annex_country = {target = KRE}
+		annex_country = {target = XJK}
+		set_cosmetic_tag = SIK
+		set_politics = {
+			ruling_party = stratocratic
+		}
+	}
+
+	every_state = {
+		limit = {
+			is_core_of = YSH
+		}
+		transfer_state_to = TIB
+	}
+	NIX = {
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_cosmetic_tag = JAP_COLONY
+		annex_country = {target = KNM}
+		annex_country = {target = NWR}
+		annex_country = {target = CHN}
+		annex_country = {target = LBG}
+		annex_country = {target = TRR}
+		annex_country = {target = TGN}
+		annex_country = {target = TLG}
+		annex_country = {target = LMU}
+		transfer_state = 11335
+		transfer_state = 11681
+		transfer_state = 11682
+		transfer_state = 11683
+		transfer_state = 11684
+		transfer_state = 9118
+		transfer_state = 1279
+		transfer_state = 11686
+		transfer_state = 11685
+		transfer_state = 11286
+		transfer_state = 11289
+		transfer_state = 10538
+	}
+	every_state = {
+		limit {
+			is_core_of = IDS
+		}
+		transfer_state_to = IDS
+	}
+	IDS = {
+		set_politics = {
+			ruling_party = neutrality
+		}
+		annex_country = {target = ETM}
+	}
+	NBO = {
+		set_politics = {
+			ruling_party = stratocratic_monarchism
+		}
+		annex_country = {target = BEI}
+		annex_country = {target = SRW}
+		set_cosmetic_tag = JAP_COLONY
+	}
+	FMS = {
+		annex_country = {target = STR}
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_cosmetic_tag = JAP_COLONY
+	}
+	every_state = {
+		limit = {
+			is_core_of = VIN
+		}
+		transfer_state_to = VIN
+	}
+	every_state = {
+		limit = {
+			is_core_of = FMS
+		}
+		NOT = {
+			is_core_of = KED
+		}
+		transfer_state_to = FMS
+	}
+	CAM = {
+		set_cosmetic_tag = CAM
+		set_politics = {
+			ruling_party = democratic
+		}
+	}
+	VIN = {
+		set_politics = {
+			ruling_party = fascism
+		}
+	}
+	PHI = {
+		set_cosmetic_tag = JAP_COLONY
+		set_politics = {
+			ruling_party = republican_fascism
+		}
+	}
+	LAO = {
+		set_cosmetic_tag = LAO
+		set_politics = {
+			ruling_party = fascism
+		}
+	}
+	MAL = {
+		set_politics = {
+			ruling_party = communism
+		}
+		annex_country = {target = KED}
+		transfer_state = 3883
+		transfer_state = 3877
+		transfer_state = 5565
+		transfer_state = 1930
+		transfer_state = 1928
+		transfer_state = 15347
+		transfer_state = 15348
+	}
+	every_country = {
+		limit = {
+			OR = {
+				has_cosmetic_tag = POR_GREEN
+				has_cosmetic_tag = SPR_YELLOW
+			}
+		}
+		set_cosmetic_tag = IBER_COLONY
+	}
+	SPR = {
+		annex_country = {target = POR}
+		set_politics = {
+			ruling_party = neutrality
+		}
+		set_cosmetic_tag = IBER
+		transfer_state = 118
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = KHR
+				is_core_of = KLA
+				is_core_of = MKN
+				is_core_of = LBE
+			}
+			NOT = {
+				is_owned_by = PER
+			}
+		}
+		transfer_state_to = KLA
+	}
+	KLA = {
+		transfer_state = 10738
+		transfer_state = 8468
+		transfer_state = 18472
+		transfer_state = 8591
+		transfer_state = 9071
+		transfer_state = 8476
+		transfer_state = 8626
+		transfer_state = 14663
+		transfer_state = 1914
+		transfer_state = 8451
+		transfer_state = 8591
+		transfer_state = 8480
+		transfer_state = 4290
+		set_cosmetic_tag = AFG_COLONY
+	}
+	every_state = {
+		limit = {
+			is_core_of = NEP
+		}
+		transfer_state_to = NEP
+	}
+	every_state = {
+		limit = {
+			is_core_of = PSH
+		}
+		transfer_state_to = PSH
+	}
+	PSH = {
+		transfer_state = 3324
+		transfer_state = 18483
+		set_cosmetic_tag = AFG_COLONY
+	}
+	AFG = {
+		transfer_state = 3179
+		transfer_state = 14664
+		transfer_state = 4004
+		transfer_state = 3178
+		transfer_state = 445
+		transfer_state = 10340
+		transfer_state = 14660
+		transfer_state = 14662
+		transfer_state = 4289
+		transfer_state = 8491
+		transfer_state = 18473
+		transfer_state = 18475
+		transfer_state = 14661
+		transfer_state = 8491
+		transfer_state = 4290
+		transfer_state = 18407
+		transfer_state = 12672
+		transfer_state = 18408
+		transfer_state = 12462
+		transfer_state = 10454
+		transfer_state = 18463
+		transfer_state = 18422
+		transfer_state = 12674
+		transfer_state = 18421
+		transfer_state = 18420
+		transfer_state = 12674
+		transfer_state = 18419
+		
+	}
+	every_state = {
+		limit = {
+			is_core_of = PMR
+		}
+		NOT = {
+			is_core_of = PAK
+		}
+		transfer_state = AFG
+	}
+	UZB = {
+		transfer_state = 405
+	}
+	XIG = {
+		
+	}
+
+	
+}
+do_africa_tno_setup = {
+	every_state = {
+		limit = {
+			is_owned_by = NGR
+			is_core_of = VOL
+		}
+		transfer_state_to = SOK
+	}
+	every_state = {
+		limit = {
+			is_owned_by = MLI
+			is_core_of = VOL
+		}
+		transfer_state_to = SOK
+	}
+	OMN = {
+		set_cosmetic_tag = OMA_SCC
+	}
+	EGY = {
+		set_politics = {
+			ruling_party = authoritarian_monarchism
+		}
+		annex_country = {
+			target = SUD
+		}
+		annex_country = {
+			target = DGI
+		}
+		annex_country = {
+			target = TAQ
+		}
+		set_cosmetic_tag = ITA_GREEN
+	}
+	TUN = {
+		set_cosmetic_tag = ITA_GREEN
+		set_politics = {
+			ruling_party = fascism
+		}
+	}
+	ALG = {
+		set_cosmetic_tag = FRA_BLUE
+		set_politics = {
+			ruling_party = neutrality
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = UGA
+				is_core_of = RUU
+				is_core_of = ZAM
+				is_core_of = MZB
+				is_core_of = MLW
+				is_core_of = ZIM
+				is_core_of = ZAN
+			}
+		}
+		transfer_state_to = TZN
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = GAB
+				is_core_of = RCG
+				is_core_of = CAB
+			}
+		}
+		transfer_state_to = COG
+	}
+	NMB = {
+		set_cosmetic_tag = GREY_GER3
+		set_politics = {
+			ruling_party = national_socialism
+		}
+		annex_country = {
+			target = ANG
+		}
+	}
+	every_state = {
+		limit = {
+			is_owned_by = ENG
+			is_core_of = SAF
+		}
+		transfer_state_to = SAF
+	}
+	BOT = {
+		set_cosmetic_tag = SAF_COLONY
+	}
+	LES = {
+		set_cosmetic_tag = SAF_COLONY
+	}
+	MAD = {
+		annex_country = {target = REU}
+		annex_country = {target = MRS}
+	}
+	TZN = {
+		set_cosmetic_tag = GREY_GER3
+		set_politics = {
+			ruling_party = national_socialism
+		}
+		transfer_state = 5004
+		transfer_state = 5005
+		transfer_state = 1533
+		transfer_state = 6855
+		transfer_state = 4737
+		transfer_state = 6854
+		transfer_state = 9800
+		transfer_state = 9796
+		transfer_state = 547
+		transfer_state = 9370
+		transfer_state = 9369
+		transfer_state = 9366
+		transfer_state = 9365
+		transfer_state = 9368
+		transfer_state = 9367
+		transfer_state = 5217
+		transfer_state = 1539
+		transfer_state = 1537
+		transfer_state = 1538
+		transfer_state = 6698
+	}
+	CMR = {
+		set_cosmetic_tag = CMR_TNO
+		set_politics = {ruling_party = communism}
+		annex_country = {target = NCM}
+		annex_country = {target = SCM}
+		annex_country = {target = NGA}
+	}
+	ORV = {
+		set_politics = {ruling_party = liberal_republic}
+		set_cosmetic_tag = FIN_SCC
+		transfer_state = 6708
+		transfer_state = 6697
+		transfer_state = 6712
+		transfer_state = 3601
+		transfer_state = 6700
+		transfer_state = 6706
+		transfer_state = 6193
+		transfer_state = 6695
+		transfer_state = 6696
+		transfer_state = 3602
+		transfer_state = 6699
+		transfer_state = 1566
+		transfer_state = 6698
+		transfer_state = 6704
+		transfer_state = 6709
+		transfer_state = 7918
+		transfer_state = 7919
+		transfer_state = 6710
+		transfer_state = 7917
+		transfer_state = 6711
+		transfer_state = 6708
+		transfer_state = 7976
+		transfer_state = 6703
+		transfer_state = 10621
+		transfer_state = 7976
+		transfer_state = 1565
+		transfer_state = 3600
+		transfer_state = 6705
+		transfer_state = 6676
+		transfer_state = 6706
+		transfer_state = 1567
+		transfer_state = 6680
+		transfer_state = 6679
+		
+	}
+	every_state = {
+		limit = {
+			is_owned_by = FEA
+		}
+		NOT = {
+			is_core_of = SD0
+		}
+		transfer_state_to = CMR
+	}
+	SD0 = {
+		set_politics = {
+			ruling_party = republican_fascism
+		}
+		annex_country = {target = FEA}
+		transfer_state = 10012
+		transfer_state = 6401
+		transfer_state = 7840
+		transfer_state = 10014
+		transfer_state = 10010
+		transfer_state = 876
+		transfer_state = 9221
+		transfer_state = 3123
+		transfer_state = 9968
+		transfer_state = 6405
+		transfer_state = 10099
+		transfer_state = 10021
+		transfer_state = 3873
+		transfer_state = 10019
+	}
+	AGD = {
+		annex_country = {target = NGR}
+		transfer_state = 7887
+		transfer_state = 19341
+		transfer_state = 17653
+		transfer_state = 7888
+		transfer_state = 17237
+		transfer_state = 19329
+		transfer_state = 17652
+		transfer_state = 19332
+		transfer_state = 17651
+		transfer_state = 17650
+		transfer_state = 19331
+		transfer_state = 17649
+		transfer_state = 17654
+		transfer_state = 17655
+		
+	}
+	COG = {
+		set_cosmetic_tag = GREY_GER3
+		set_politics = {
+			ruling_party = national_socialism
+		}
+		transfer_state = 3607
+		transfer_state = 2375
+		transfer_state = 3336
+		transfer_state = 6428
+		transfer_state = 5271
+		transfer_state = 1608
+		transfer_state = 10003
+		transfer_state = 9240
+		transfer_state = 6437
+		transfer_state = 7815
+		transfer_state = 660
+		transfer_state = 880
+		transfer_state = 1617
+		transfer_state = 3609
+		transfer_state = 9909
+		transfer_state = 5260
+		transfer_state = 5287
+		transfer_state = 5288
+		transfer_state = 6419
+		transfer_state = 6420
+		transfer_state = 6421
+		transfer_state = 6424
+		transfer_state = 6426
+		transfer_state = 6429
+		transfer_state = 7818
+		transfer_state = 8519
+		transfer_state = 8521
+		transfer_state = 8523
+		transfer_state = 8528
+		transfer_state = 8529
+		transfer_state = 8535
+		transfer_state = 8536
+		transfer_state = 8537
+		transfer_state = 8538
+		transfer_state = 8539
+		transfer_state = 8543
+		transfer_state = 8551
+		transfer_state = 8552
+		transfer_state = 8553
+		transfer_state = 8554
+		transfer_state = 8556
+		transfer_state = 8558
+		transfer_state = 8607
+		transfer_state = 8608
+		transfer_state = 8609
+		transfer_state = 8611
+		transfer_state = 9087
+		transfer_state = 9088
+		transfer_state = 9416
+		transfer_state = 9418
+		transfer_state = 9428
+		transfer_state = 9825
+		transfer_state = 9826
+		transfer_state = 9827
+		transfer_state = 9828
+		transfer_state = 9829
+		transfer_state = 9831
+		transfer_state = 9845
+		transfer_state = 9885
+		transfer_state = 9962
+		transfer_state = 9890
+		transfer_state = 9964
+		transfer_state = 9966
+		transfer_state = 9976
+		transfer_state = 9969
+		transfer_state = 10001
+		transfer_state = 10098
+		transfer_state = 10338
+		transfer_state = 10758
+		transfer_state = 10988
+		transfer_state = 9417
+		transfer_state = 9972
+		transfer_state = 9965
+		transfer_state = 8524
+		transfer_state = 8555
+		transfer_state = 9967
+	}
+	every_state = {
+		limit = {
+			is_core_of = SD0
+			is_core_of = CHA
+		}
+		NOT = {
+			is_core_of = LBA
+		}
+		transfer_state_to = SD0
+	}
+	every_state = {
+		limit = {
+			is_owned_by = MLI
+			is_core_of = SD0
+		}
+		transfer_state_to = AZW
+	}
+	MLI = {
+		set_politics = {ruling_party = socialism_ideology}
+		set_cosmetic_tag = MLI
+		transfer_state = 6665
+		transfer_state = 17635
+		transfer_state = 15997
+		transfer_state = 17636
+		transfer_state = 6666
+		transfer_state = 17664
+		transfer_state = 7895
+		transfer_state = 7894
+		transfer_state = 6664
+		transfer_state = 10245
+		transfer_state = 10243
+		transfer_state = 10244
+	}
+	WES = {
+		annex_country = {target = MRT}
+	}
+	AZW = {
+		transfer_state = 13062
+		transfer_state = 13063
+		transfer_state = 10002
+		transfer_state = 6394
+		transfer_state = 557
+		transfer_state = 9874
+		transfer_state = 6026
+		transfer_state = 6751
+		transfer_state = 7666
+		transfer_state = 6748
+		transfer_state = 6750
+		transfer_state = 6749
+		transfer_state = 6790
+		transfer_state = 7668
+		transfer_state = 5338
+	}
+	TRZ = {
+		set_politics = {ruling_party = neutrality}
+		transfer_state = 6879
+		transfer_state = 7924
+		transfer_state = 9995
+		transfer_state = 5853
+		transfer_state = 7923
+		transfer_state = 2366
+		transfer_state = 7922
+		transfer_state = 863
+		transfer_state = 7921
+		
+	}
+	GNA = {
+		set_politics = {ruling_party = socialism_ideology}
+		set_cosmetic_tag = GNA
+		
+	}
+	every_state = {
+		limit = {
+			is_core_of = GHA
+		}
+		transfer_state_to = GHA
+	}
+	DAH = {
+		set_politics = {ruling_party = centrist_republic}
+		set_cosmetic_tag = DAH
+		annex_country = {target = TOG}
+		transfer_state = 6671
+		transfer_state = 2507
+		transfer_state = 871
+	}
+	GHA = {
+		set_politics = {ruling_party = democratic}
+		set_cosmetic_tag = GHA
+		transfer_state = 6039
+	}
+	SOK = {
+		transfer_state = 5340
+		transfer_state = 6678
+		transfer_state = 7873
+		transfer_state = 7874
+		transfer_state = 7872
+		transfer_state = 1602
+		transfer_state = 4736
+		transfer_state = 1577
+		transfer_state = 6663
+		transfer_state = 6662
+		transfer_state = 17658
+		transfer_state = 17657
+		transfer_state = 17228
+		transfer_state = 17659
+		transfer_state = 17668
+		transfer_state = 17238
+		transfer_state = 17238
+		transfer_state = 17656
+		transfer_state = 7889
+		transfer_state = 7875
+		transfer_state = 1596
+		transfer_state = 7876
+		transfer_state = 9561
+		transfer_state = 9560
+		transfer_state = 9558
+		transfer_state = 9559
+		transfer_state = 9557
+		transfer_state = 17667
+		transfer_state = 17666
+		transfer_state = 9434
+		transfer_state = 4997
+		transfer_state = 17227
+		transfer_state = 17648
+		transfer_state = 17647
+		transfer_state = 8649
+		transfer_state = 17660
+		transfer_state = 9437
+		transfer_state = 17661
+		transfer_state = 9435
+		transfer_state = 17662
+		transfer_state = 17236
+		transfer_state = 17663
+		transfer_state = 6669
+		transfer_state = 1598
+		transfer_state = 6668
+		transfer_state = 7677
+		transfer_state = 17234
+		transfer_state = 7675
+		transfer_state = 17645
+		transfer_state = 17226
+		transfer_state = 17235
+		transfer_state = 17646
+		transfer_state = 9588
+	}
+	FR2 = {
+		set_politics = {ruling_party = neutrality}
+		annex_country = {target = IVO}
+		annex_country = {target = SNW}
+		set_cosmetic_tag = FRA_BLUE
+		set_capital = 867
+		transfer_state = 713
+		transfer_state = 2692
+		transfer_state = 7712
+		transfer_state = 7711
+		transfer_state = 2691
+		transfer_state = 
+	}
+	SIE = {
+		set_politics = {ruling_party = stratocratic}
+		annex_country = {target = HSL}
+		set_cosmetic_tag = SIE
+	}
+	every_state = {
+		limit = {
+			is_owned_by = IVO
+			is_core_of = VOL
+		}
+		transfer_state_to = VOL
+	}
+	every_state = {
+		limit = {
+			is_owned_by = FR2
+			is_core_of = VOL
+		}
+		transfer_state_to = VOL
+	}
+	CSM = {
+		transfer_state = 1573
+		transfer_state = 6033
+		transfer_state = 6032
+		transfer_state = 701
+		transfer_state = 6195
+		set_politics = {ruling_party = liberal_republic}
+	}
+	SEN= {
+		set_cosmetic_tag = SEN
+		transfer_state = 6029
+		transfer_state = 7925
+		transfer_state = 272
+		set_politics = {ruling_party = liberal_republic}
+	}
+	every_country = {
+		limit = {
+			has_cosmetic_tag = FRA_BLUE
+		}
+		set_cosmetic_tag = FRA_TNO
+	}
+	every_country = {
+		limit = {
+			has_cosmetic_tag = FRA_AUTH
+		}
+		set_cosmetic_tag = FRA_TNO
+	}
+}
+do_tno_america_setup = {
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = WIF
+				is_core_of = MTQ
+				is_core_of = GDL
+			}
+		}
+		transfer_state_to = WIF
+	}
+	HOL = {
+		annex_country = {target = SUR}
+		annex_country = {target = CRC}
+		set_capital = 309
+	}
+	CAY = {
+		annex_country = {target = INI}
+		set_cosmetic_tag = BRA_GREEN
+		set_politics = {ruling_party = stratocratic_monarchism}
+	}
+	GYA = {
+		set_cosmetic_tag = GYA
+		set_politics = {ruling_party = liberal_republic}
+	}
+	DOM = {
+		transfer_state = 10606
+		transfer_state = 10605
+	}
+	BLZ = {
+		set_cosmetic_tag = BLZ
+		set_politics = {ruling_party = liberal_republic}
+	}
+	USA = {
+		annex_country = {target = ALA}
 	}
 }

@@ -56,6 +56,54 @@ on_actions = {
 			}
 		}
 	}
+	on_startup = {
+		#Set up the Co Prosperity Sphere.
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_asia_options
+						option = CO_PROSPERITY_SPHERE_SETUP
+					}
+				}
+				GER = {
+					do_tno_co_prosperity_setup = yes
+				}
+			}
+		}
+	}
+	on_startup = {
+		#Set up TNO Africa.
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_africa_options
+						option = AFRICA_TNO_SETUP
+					}
+				}
+				GER = {
+					do_africa_tno_setup = yes
+				}
+			}
+		}
+	}
+	on_startup = {
+		#Set up TNO USA.
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_tno_america_options
+						option = AMERICA_TNO_SETUP
+					}
+				}
+				GER = {
+					do_tno_america_setup = yes
+				}
+			}
+		}
+	}
 	
 	on_startup = {
 		#Set up Non HoG Secondary Leaders.
@@ -7027,7 +7075,10 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						has_government = socialism_ideology
+						OR = {
+							has_government = socialism_ideology
+							has_government = communism
+						}
 					}
 					set_cosmetic_tag = MC2_SOCREP
 				}
