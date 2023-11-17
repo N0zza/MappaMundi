@@ -312,6 +312,18 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = SGM
+				OR = {
+					has_government = neutrality
+					has_government = anocratic_republic
+				}
+			}
+		}
+		localization_key = "Reichspräsident Helmut Heinrich Waldemar Schmidt"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = KON
 				OR = {
 					has_government = anocratic_republic
@@ -3194,6 +3206,18 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Theobald_Hollweg"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SGM
+				OR = {
+					has_government = neutrality
+					has_government = anocratic_republic
+				}
+			}
+		}
+		localization_key = "GFX_Helmut_Schmidt"
 	}
 	text = {
 		trigger = {

@@ -150,6 +150,18 @@ secondary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
+				tag = SGM
+				OR = {
+					has_government = neutrality
+					has_government = anocratic_republic
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
 				tag = KON
 				OR = {
 					AND = {
