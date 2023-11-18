@@ -6582,6 +6582,16 @@ defined_text = {
 		localization_key = "Předseda vlády Alois Josef Eliáš"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = ALG
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Raʾīs ʾArkān al-Ǧayš al-Waṭanī aš-Šaʿbī Saʿīd Šanqrīḥaẗ"
+	}
+	text = {
 		localization_key = "To be Added"
 	}
 }
@@ -6951,6 +6961,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Alois_Elias"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ALG
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Said_Chengriha"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
