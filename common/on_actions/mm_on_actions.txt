@@ -82,8 +82,40 @@ on_actions = {
 						option = AFRICA_TNO_SETUP
 					}
 				}
-				GER = {
+				ICE = {
 					do_africa_tno_setup = yes
+				}
+			}
+		}
+	}
+	on_startup = {
+		#Set up KX Africa Collapse.
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_africa_options
+						option = AFRICA_KX_SETUP
+					}
+				}
+				ICE = {
+					kx_mittelafrika_collapse = yes
+				}
+			}
+		}
+	}
+	on_startup = {
+		#Set up KX Africa.
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_africa_options
+						option = AFRICA_KX_UNITED_SETUP
+					}
+				}
+				ICE = {
+					kx_mittelafrika_collapse = yes
 				}
 			}
 		}
@@ -6381,7 +6413,7 @@ on_actions = {
 									has_government = democratic
 									has_government = centrist_republic
 									has_government = liberal_republic
-									has_government = socialism_ideology
+									has_government = communism
 								}
 							}
 							drop_cosmetic_tag = yes
@@ -6396,7 +6428,7 @@ on_actions = {
 							limit = {
 								OR = {
 									has_government = socialist_monarchy
-									has_government = communism
+									has_government = socialism_ideology
 									has_government = vanguardism
 									has_government = left_anarchism
 								}
@@ -7222,6 +7254,7 @@ on_actions = {
 						OR = {
 							has_government = neutrality
 							has_government = authoritarian_monarchism
+							has_government = monarchism
 						}
 					}
 					set_cosmetic_tag = UA2_AUTHREP
@@ -7229,11 +7262,11 @@ on_actions = {
 				if = {
 					limit = {
 						OR = {
-							has_government = democratic
-							has_government = conservative_monarchism
+							has_government = socialism_ideology
 							has_government = liberal_republic
 							has_government = democratic_monarchism
-							has_government = socialism_ideology
+							has_government = democratic
+							has_government = conservative_monarchism
 						}
 					}
 					set_cosmetic_tag = UA2_CONREP
@@ -7243,6 +7276,7 @@ on_actions = {
 						OR = {
 							has_government = vanguardism
 							has_government = communism
+							has_government = socialist_monarchy
 						}
 					}
 					set_cosmetic_tag = UA2_SOCIALIST
@@ -7275,23 +7309,7 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						NOT = {
-							has_government = left_anarchism
-							has_government = vanguardism
-							has_government = communism
-							has_government = socialism_ideology
-							has_government = liberal_republic
-							has_government = democratic_monarchism
-							has_government = democratic
-							has_government = conservative_monarchism
-							has_government = neutrality
-							has_government = authoritarian_monarchism
-							has_government = stratocratic
-							has_government = stratocratic_monarchism
-							has_government = republican_fascism
-							has_government = theocratic
-							has_government = right_anarchism
-						}
+						has_government = national_socialism
 					}
 					set_cosmetic_tag = UA2_TNO
 				}

@@ -664,6 +664,13 @@ mittelafrika_claims = {
 				is_core_of = TOG
 				is_core_of = GHA
 				is_core_of = MAD
+				is_core_of = IVO
+				is_core_of = SNW
+				is_core_of = REU
+				is_core_of = COM
+				is_claimed_by = COM
+				state = 6038
+				state = 7920
 				AND = {
 					is_core_of = CHA
 					NOT = {
@@ -1252,6 +1259,136 @@ kx_mittelafrika_collapse = {
 				stratocratic = 100
 			}
 			set_cosmetic_tag = GREY_GER1
+		}
+	}
+}
+
+kx_mittelafrika_united = {
+	MAF = {
+		mittelafrika_claims = yes
+	}
+	every_state = {
+		limit = {
+			is_claimed_by = MAF
+		}
+		MAF = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			AND = {
+				is_owned_by = MAF
+				OR = {
+					is_core_of = ZAM
+					is_core_of = MLW
+				}
+			}
+		}
+		ZAM = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = centrist_monarchism
+			}
+			set_cosmetic_tag = GREY_GER2
+		}
+	}
+	every_state = {
+		limit = {
+			AND = {
+				is_owned_by = MAF
+				OR = {
+					is_core_of = UGA
+					is_core_of = KEN
+				}
+			}
+		}
+		KEN = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = centrist_monarchism
+			}
+			set_cosmetic_tag = GREY_GER2
+		}
+	}
+	every_state = {
+		limit = {
+			AND = {
+				is_owned_by = MAF
+				OR = {
+					is_core_of = COG
+				}
+			}
+		}
+		ULE = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = anocratic_monarchism
+			}
+			set_cosmetic_tag = GREY_GER2
+		}
+	}
+	every_state = {
+		limit = {
+			AND = {
+				is_owned_by = MAF
+				NOT = {
+					is_core_of = NKM
+				}
+				OR = {
+					is_core_of = NGA
+				}
+			}
+		}
+		SNI = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = conservative_monarchism
+			}
+			set_cosmetic_tag = GREY_GER2
+		}
+	}
+	every_state = {
+		limit = {
+			AND = {
+				is_owned_by = MAF
+				OR = {
+					is_core_of = GHA
+					is_core_of = TOG
+					is_core_of = DAH
+					is_core_of = IVO
+					is_core_of = SNW
+					state = 6038
+					state = 7920
+				}
+			}
+		}
+		AHI = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = anocratic_monarchism
+			}
+			set_cosmetic_tag = GREY_GER2
+		}
+	}
+	every_state = {
+		limit = {
+			AND = {
+				is_owned_by = MAF
+				OR = {
+					is_core_of = MAD
+					is_core_of = COM
+					is_claimed_by = COM
+					is_core_of = REU
+				}
+			}
+		}
+		MAD = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = stratocratic_monarchism
+			}
+			set_cosmetic_tag = GREY_GER2
 		}
 	}
 }

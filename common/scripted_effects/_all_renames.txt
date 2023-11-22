@@ -796,17 +796,14 @@ do_all_renames = {
 					}
 					AND = {
 						tag = UA2
-						OR = {
-							has_government = left_anarchism
-							has_government = vanguardism
-							has_government = communism
-							has_government = socialism_ideology
-							has_government = liberal_republic
-							has_government = democratic_monarchism
-							has_government = democratic
-							has_government = conservative_monarchism
-							has_government = neutrality
-							has_government = authoritarian_monarchism
+						NOT = {
+							OR = {
+								has_government = stratocratic
+								has_government = republican_fascism
+								has_government = national_socialism
+								has_government = theocratic
+								has_government = right_anarchism
+							}
 						}
 					}
 				}
@@ -1231,7 +1228,19 @@ do_all_renames = {
 	if = {
 		limit = {
 			ROOT = {
-				tag = DEN
+				OR = {
+					tag = DEN
+					DN2 = {
+						NOT = {
+							OR = {
+								has_government = stratocratic
+								has_government = republican_fascism
+								has_government = national_socialism
+								has_government = theocratic
+							}
+						}
+					}
+				}
 			}
 		}
 		do_danish_renames = yes

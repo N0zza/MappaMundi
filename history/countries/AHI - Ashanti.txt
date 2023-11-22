@@ -1,19 +1,14 @@
 ﻿capital = 6948
 
 set_cosmetic_tag = UK_RED
-	set_popularities = {
-		democratic 
-			 = 0
-		fascism
-			 = 0
-		monarchism
-			 = 40
-			
-		authoritarian_monarchism 
-			 = 60
-		}
-	set_politics = { 
- ruling_party = authoritarian_monarchism
+
+set_popularities = {
+	monarchism = 40
+	authoritarian_monarchism = 60
+}
+
+set_politics = { 
+	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -26,7 +21,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = authmon
 	traits = {
-		#
 	}
 }
 
@@ -86,6 +80,16 @@ create_country_leader = {
 	picture = "gfx/leaders/GHA/GHA_Prempeh_mon.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Gouverneur Erich Friedrich Wilhelm Ludendorff"
+	desc = ""
+	picture = "gfx/leaders/FWA/FWA_Ludendorff.tga"
+	expire = "1989.1.1"
+	ideology = anocmon
 	traits = {
 	}
 }
