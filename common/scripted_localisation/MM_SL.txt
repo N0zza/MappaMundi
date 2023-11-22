@@ -1170,11 +1170,31 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = USA
+				has_government = democratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Prime Minister Carla Hanson"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = USA
 				has_government = conservative_monarchism
 				has_start_date < 2022.01.01
 			}
 		}
 		localization_key = "Prime Minister Frederick Steiwer"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = USA
+				has_government = conservative_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Prime Minister Roy-Charles Aquila Coulombe"
 	}
 	text = {
 		trigger = {
@@ -4254,11 +4274,31 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = USA
+				has_government = democratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Carla_Hanson"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = USA
 				has_government = conservative_monarchism
 				has_start_date < 2022.01.01
 			}
 		}
 		localization_key = "GFX_Frederick_Steiwer"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = USA
+				has_government = conservative_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Charles_Coulombe"
 	}
 	text = {
 		trigger = {
