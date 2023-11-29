@@ -1,20 +1,18 @@
-﻿capital = 533 #Sendai
+﻿capital = 533
 
+set_popularities = {
+	vanguardism = 55
+	communism = 20
+	socialism_ideology = 20
+	stratocratic = 5
+}
 
-
-	set_popularities = {
-		vanguardism 
-			 = 90
-		stratocratic
-			 = 10
-		}
-	set_politics = { 
- ruling_party = vanguardism
+set_politics = { 
+	ruling_party = vanguardism
 	last_election = "1936.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
-
 
 create_country_leader = {
 	name = "Ten'nō Hirohito"
@@ -43,7 +41,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
-		#
 	}
 }
 

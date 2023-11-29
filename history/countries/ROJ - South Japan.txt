@@ -1,20 +1,20 @@
-﻿capital = 2192 #Tokyo
+﻿capital = 2192
 
+set_popularities = {
+	left_anarchism = 2
+	vanguardism = 5
+	communism = 3
+	centrist_monarchism = 35
+	conservative_monarchism = 25
+	neutrality = 30
+}
 
-
-	set_popularities = {
-		democratic 
-			 = 70
-		neutrality
-			 = 30
-		}
-	set_politics = { 
- ruling_party = democratic
+set_politics = { 
+	ruling_party = centrist_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 50
 	elections_allowed = no
 }
-
 
 create_country_leader = {
 	name = "Ten'nō Hirohito"
@@ -43,7 +43,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = totsoc
 	traits = {
-		#
 	}
 }
 
@@ -128,9 +127,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Shōgun Iemasa Tokugawa"
+	name = "Ten'nō Hirohito"
 	desc = ""
-	picture = "gfx/leaders/ROJ/Portrait_Iemasa_Tokugawa.tga"
+	picture = "gfx/leaders/ROJ/Portrait_Japan_Hirohito.dds"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
@@ -218,9 +217,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Collective Leadership"
+	name = "Kuro-gun Shirei-bu"
 	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	picture = "gfx/leaders/ROJ/Portrait_Black_Army.dds"
 	expire = "1965.1.1"
 	ideology = ancom
 	traits = {
