@@ -16314,6 +16314,48 @@
 					}
 					JAP = {
 						create_country_leader = {
+							name = "Naikaku Sōri-Daijin Kazuo Shii"
+							desc = ""
+							picture = "gfx/leaders/JAP/JAP_Shii.tga"
+							expire = "1965.1.1"
+							ideology = totsoc
+						}
+						create_country_leader = {
+							name = "Naikaku Sōri-Daijin Kazuo Shii"
+							desc = ""
+							picture = "gfx/leaders/JAP/JAP_Shii.tga"
+							expire = "1965.1.1"
+							ideology = marxism
+						}
+						create_country_leader = {
+							name = "Naikaku Sōri-Daijin Kazuo Shii"
+							desc = ""
+							picture = "gfx/leaders/JAP/JAP_Shii.tga"
+							expire = "1965.1.1"
+							ideology = demsoc
+						}
+						create_country_leader = {
+							name = "Ten'nō Naruhito"
+							desc = ""
+							picture = "gfx/leaders/JAP/JAP_Naruhito.tga"
+							expire = "1965.1.1"
+							ideology = monsoc
+						}
+						create_country_leader = {
+							name = "Ten'nō Naruhito"
+							desc = ""
+							picture = "gfx/leaders/JAP/JAP_Naruhito.tga"
+							expire = "1965.1.1"
+							ideology = liberal_constitutionalism
+						}
+						create_country_leader = {
+							name = "Sei-i Taishōgun Iehiro Tokugawa"
+							desc = ""
+							picture = "gfx/leaders/JAP/JAP_Iehiro_Tokugawa.tga"
+							expire = "1965.1.1"
+							ideology = cenmon
+						}
+						create_country_leader = {
 							name = "Ten'nō Naruhito"
 							desc = ""
 							picture = "gfx/leaders/JAP/JAP_Naruhito.tga"
@@ -16328,25 +16370,11 @@
 							ideology = anocmon
 						}
 						create_country_leader = {
-							name = "Sei-i Taishōgun Iehiro Tokugawa"
-							desc = ""
-							picture = "gfx/leaders/JAP/JAP_Iehiro_Tokugawa.tga"
-							expire = "1965.1.1"
-							ideology = cenmon
-						}
-						create_country_leader = {
 							name = "Ten'nō Naruhito"
 							desc = ""
 							picture = "gfx/leaders/JAP/JAP_Naruhito.tga"
 							expire = "1965.1.1"
-							ideology = liberal_constitutionalism
-						}
-						create_country_leader = {
-							name = "Ten'nō Naruhito"
-							desc = ""
-							picture = "gfx/leaders/JAP/JAP_Naruhito.tga"
-							expire = "1965.1.1"
-							ideology = monsoc
+							ideology = absolutism
 						}
 					}
 					ROK = {
@@ -18983,9 +19011,19 @@
 					PER = {
 						transfer_state = 3396
 						transfer_state = 3395
-						drop_cosmetic_tag = yes
+						set_cosmetic_tag = PER_2023
 						set_politics = {
 							ruling_party = theocratic
+						}
+						set_party_name = {
+							ideology = democratic
+							name = PER_democratic_2023_party
+							long_name = PER_democratic_2023_party_long
+						}
+						set_party_name = {
+							ideology = conservative_monarchism
+							name = PER_conservative_monarchism_2023_party
+							long_name = PER_conservative_monarchism_2023_party_long
 						}
 						set_party_name = {
 							ideology = theocratic
@@ -24341,6 +24379,11 @@
 							name = PRU_anocratic_republic_2023_party
 							long_name = PRU_anocratic_republic_2023_party_long
 						}
+						set_party_name = {
+							ideology = national_socialism
+							name = PRU_national_socialism_2023_party
+							long_name = PRU_national_socialism_2023_party_long
+						}
 						set_popularities = {
 							communism = 20
 							socialism_ideology = 8
@@ -24357,6 +24400,13 @@
 							picture = "gfx/leaders/PRU/PRU_Boluarte.tga"
 							expire = "1965.1.1"
 							ideology = anocrep
+						}
+						create_country_leader = {
+							name = "Presidenta Eben Nanauq Hopson"
+							desc = ""
+							picture = "gfx/leaders/PRU/Portrait_Eben_Hopson.dds"
+							expire = "1965.1.1"
+							ideology = natsoc
 						}
 					}
 					VEN = {
