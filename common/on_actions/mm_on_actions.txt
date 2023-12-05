@@ -6593,10 +6593,18 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
-									has_government = centrist_monarchism
+									has_government = liberal_republic
 								}
 							}
-							set_cosmetic_tag = ALA_CENMON
+							set_cosmetic_tag = USA_BLUE
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = democratic_monarchism
+								}
+							}
+							set_cosmetic_tag = CAN_RED
 						}
 						if = {
 							limit = {
@@ -6609,6 +6617,14 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
+									has_government = anocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = ALA_CENMON
+						}
+						if = {
+							limit = {
+								OR = {
 									has_government = stratocratic_monarchism
 								}
 							}
@@ -6617,10 +6633,10 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
-									has_government = liberal_republic
+									has_government = right_anarchism
 								}
 							}
-							set_cosmetic_tag = USA_BLUE
+							set_cosmetic_tag = UK_RED
 						}
 						if = {
 							limit = {
@@ -6628,10 +6644,12 @@ on_actions = {
 									OR = {
 										has_government = vanguardism
 										has_government = socialist_monarchy
-										has_government = centrist_monarchism
-										has_government = conservative_monarchism
-										has_government = stratocratic_monarchism
 										has_government = liberal_republic
+										has_government = democratic_monarchism
+										has_government = conservative_monarchism
+										has_government = anocratic_monarchism
+										has_government = stratocratic_monarchism
+										has_government = right_anarchism
 									}
 								}
 							}
