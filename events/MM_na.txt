@@ -328,6 +328,69 @@ country_event = {
 				release = ESM
 				release = GUM
 			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ALM
+						is_core_of = ALA
+						is_core_of = ARZ
+						is_core_of = AKS
+						is_core_of = CAL
+						is_core_of = CLR
+						is_core_of = CNC
+						is_core_of = DEL
+						is_core_of = FLO
+						is_core_of = GRG
+						is_core_of = HAW
+						is_core_of = IDH
+						is_core_of = ILL
+						is_core_of = INA
+						is_core_of = IOW
+						is_core_of = KAN
+						is_core_of = KNT
+						is_core_of = LOU
+						is_core_of = MNE
+						is_core_of = MRY
+						is_core_of = MAS
+						is_core_of = MCH
+						is_core_of = MNS
+						is_core_of = MSS
+						is_core_of = MSI
+						is_core_of = MNA
+						is_core_of = NEB
+						is_core_of = NVA
+						is_core_of = NHM
+						is_core_of = NJR
+						is_core_of = NMX
+						is_core_of = NWY
+						is_core_of = NCR
+						is_core_of = NDA
+						is_core_of = OHI
+						is_core_of = OKH
+						is_core_of = ORG
+						is_core_of = PEN
+						is_core_of = RHO
+						is_core_of = SCR
+						is_core_of = SDA
+						is_core_of = TNS
+						is_core_of = TEX
+						is_core_of = UTH
+						is_core_of = VER
+						is_core_of = VIR
+						is_core_of = WSH
+						is_core_of = WDC
+						is_core_of = WVR
+						is_core_of = WSC
+						is_core_of = WYO
+						is_core_of = PUE
+						is_core_of = ESM
+						is_core_of = GUM
+					}
+				}
+				USA = {
+					add_state_core = PREV
+				}
+			}
 		}
 	}
 	option = { #more options
@@ -415,10 +478,73 @@ country_event = { #more options for the us state release event
 				release = ESM
 				release = GUM
 			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ALM
+						is_core_of = ALA
+						is_core_of = ARZ
+						is_core_of = AKS
+						is_core_of = CAL
+						is_core_of = CLR
+						is_core_of = CNC
+						is_core_of = DEL
+						is_core_of = FLO
+						is_core_of = GRG
+						is_core_of = HAW
+						is_core_of = IDH
+						is_core_of = ILL
+						is_core_of = INA
+						is_core_of = IOW
+						is_core_of = KAN
+						is_core_of = KNT
+						is_core_of = LOU
+						is_core_of = MNE
+						is_core_of = MRY
+						is_core_of = MAS
+						is_core_of = MCH
+						is_core_of = MNS
+						is_core_of = MSS
+						is_core_of = MSI
+						is_core_of = MNA
+						is_core_of = NEB
+						is_core_of = NVA
+						is_core_of = NHM
+						is_core_of = NJR
+						is_core_of = NMX
+						is_core_of = NWY
+						is_core_of = NCR
+						is_core_of = NDA
+						is_core_of = OHI
+						is_core_of = OKH
+						is_core_of = ORG
+						is_core_of = PEN
+						is_core_of = RHO
+						is_core_of = SCR
+						is_core_of = SDA
+						is_core_of = TNS
+						is_core_of = TEX
+						is_core_of = UTH
+						is_core_of = VER
+						is_core_of = VIR
+						is_core_of = WSH
+						is_core_of = WDC
+						is_core_of = WVR
+						is_core_of = WSC
+						is_core_of = WYO
+						is_core_of = PUE
+						is_core_of = ESM
+						is_core_of = GUM
+					}
+				}
+				USA = {
+					add_state_core = PREV
+				}
+			}
 			if = {
 				limit = {
 					PHI = {
-						has_cosmetic_tag = PHI_USA
+						has_cosmetic_tag = USA_BLUE
 					}
 				}
 				PHI = {
@@ -558,10 +684,145 @@ country_event = { #more options for the us state release event
 				release = ESM
 				release = GUM
 			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ALM
+						is_core_of = ALA
+						is_core_of = ARZ
+						is_core_of = AKS
+						is_core_of = CAL
+						is_core_of = CLR
+						is_core_of = CNC
+						is_core_of = DEL
+						is_core_of = FLO
+						is_core_of = GRG
+						is_core_of = HAW
+						is_core_of = IDH
+						is_core_of = ILL
+						is_core_of = INA
+						is_core_of = IOW
+						is_core_of = KAN
+						is_core_of = KNT
+						is_core_of = LOU
+						is_core_of = MNE
+						is_core_of = MRY
+						is_core_of = MAS
+						is_core_of = MCH
+						is_core_of = MNS
+						is_core_of = MSS
+						is_core_of = MSI
+						is_core_of = MNA
+						is_core_of = NEB
+						is_core_of = NVA
+						is_core_of = NHM
+						is_core_of = NJR
+						is_core_of = NMX
+						is_core_of = NWY
+						is_core_of = NCR
+						is_core_of = NDA
+						is_core_of = OHI
+						is_core_of = OKH
+						is_core_of = ORG
+						is_core_of = PEN
+						is_core_of = RHO
+						is_core_of = SCR
+						is_core_of = SDA
+						is_core_of = TNS
+						is_core_of = TEX
+						is_core_of = UTH
+						is_core_of = VER
+						is_core_of = VIR
+						is_core_of = WSH
+						is_core_of = WDC
+						is_core_of = WVR
+						is_core_of = WSC
+						is_core_of = WYO
+						is_core_of = PUE
+						is_core_of = ESM
+						is_core_of = GUM
+					}
+				}
+				USA = {
+					add_state_core = PREV
+				}
+			}
+		}
+	}
+	option = { #Reunite
+		name = "Reunite the US"
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ALM
+						is_core_of = ALA
+						is_core_of = ARZ
+						is_core_of = AKS
+						is_core_of = CAL
+						is_core_of = CLR
+						is_core_of = CNC
+						is_core_of = DEL
+						is_core_of = FLO
+						is_core_of = GRG
+						is_core_of = HAW
+						is_core_of = IDH
+						is_core_of = ILL
+						is_core_of = INA
+						is_core_of = IOW
+						is_core_of = KAN
+						is_core_of = KNT
+						is_core_of = LOU
+						is_core_of = MNE
+						is_core_of = MRY
+						is_core_of = MAS
+						is_core_of = MCH
+						is_core_of = MNS
+						is_core_of = MSS
+						is_core_of = MSI
+						is_core_of = MNA
+						is_core_of = NEB
+						is_core_of = NVA
+						is_core_of = NHM
+						is_core_of = NJR
+						is_core_of = NMX
+						is_core_of = NWY
+						is_core_of = NCR
+						is_core_of = NDA
+						is_core_of = OHI
+						is_core_of = OKH
+						is_core_of = ORG
+						is_core_of = PEN
+						is_core_of = RHO
+						is_core_of = SCR
+						is_core_of = SDA
+						is_core_of = TNS
+						is_core_of = TEX
+						is_core_of = UTH
+						is_core_of = VER
+						is_core_of = VIR
+						is_core_of = WSH
+						is_core_of = WDC
+						is_core_of = WVR
+						is_core_of = WSC
+						is_core_of = WYO
+						is_core_of = PUE
+						is_core_of = ESM
+						is_core_of = GUM
+					}
+				}
+				USA = {
+					add_state_core = PREV
+					transfer_state = PREV
+				}
+			}
 		}
 	}
 	option = { #Back
-		name = "Head Back"
+		name = "Back"
 		ai_chance = {
 			factor = 100
 		}
