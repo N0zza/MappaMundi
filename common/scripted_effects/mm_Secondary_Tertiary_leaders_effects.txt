@@ -1044,6 +1044,19 @@ secondary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
+				tag = CSA
+				OR = {
+					has_government = socialist_monarchy
+					has_government = democratic_monarchism
+					has_government = conservative_monarchism
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
 				tag = OHI
 				has_government = democratic_monarchism
 			}
