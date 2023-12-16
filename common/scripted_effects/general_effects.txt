@@ -1392,3 +1392,30 @@ kx_mittelafrika_united = {
 		}
 	}
 }
+
+unite_1936_yemen = {
+	every_state = {
+		limit = {
+			AND = {
+				AND = {
+					is_core_of = YEM
+					NOT = {
+						is_owned_by = YEM
+					}
+				}
+				NOT = {
+					OR = {
+						is_owned_by = SAU
+						is_owned_by = IMO
+					}
+				}
+			}
+		}
+		ADE = {
+			transfer_state = PREV
+			set_politics = {
+				ruling_party = stratocratic_monarchism
+			}
+		}
+	}
+}

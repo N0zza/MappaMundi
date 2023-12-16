@@ -340,4 +340,37 @@ do_soviet_cosmetic_tag = {
 			set_cosmetic_tag = IRE_SOV
 		}
 	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = USA
+				has_government = vanguardism
+			}
+		}
+		ROOT = {
+			set_cosmetic_tag = USA_SOV
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = HAW
+				has_government = vanguardism
+			}
+		}
+		ROOT = {
+			set_cosmetic_tag = HAW_SOV
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = CAN
+				has_government = vanguardism
+			}
+		}
+		ROOT = {
+			set_cosmetic_tag = CAN_SOV
+		}
+	}
 }

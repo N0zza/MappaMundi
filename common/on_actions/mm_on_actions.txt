@@ -136,7 +136,22 @@ on_actions = {
 			}
 		}
 	}
-	
+	on_startup = {
+		#Set up united Yemen.
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_yemen_options
+						option = YEMEN_UNITED_SETUP
+					}
+				}
+				ICE = {
+					unite_1936_yemen = yes
+				}
+			}
+		}
+	}
 	on_startup = {
 		#Set up Non HoG Secondary Leaders.
 		effect = {
