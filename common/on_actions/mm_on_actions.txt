@@ -1421,51 +1421,55 @@ on_actions = {
 				}
 			every_state = {
 				limit = {
-					OR = {
-						is_core_of = RAJ
-						is_core_of = BRM
+					AND = {
+						OR = {
+							is_core_of = RAJ
+							is_core_of = BRM
+							is_core_of = IND
+							is_core_of = PAK
 						}
-					NOT = {
-						is_core_of = GOA
-						is_core_of = FND
-						is_core_of = NEP
-						is_owned_by = TIB
-						is_owned_by = TUG
+						NOT = {
+							is_core_of = GOA
+							is_core_of = FND
+							is_core_of = NEP
+							is_owned_by = TIB
+							is_owned_by = TUG
 						}
 					}
+				}
 				RAJ = {
 				 	transfer_state = PREV
-						}
-					}
+				}
+			}
 			every_state = {
 				limit = {
 					is_core_of = TIB
 					OR = {
 						is_core_of = ARN
-						}
 					}
+				}
 				TIB = {
 				 	transfer_state = PREV
-						}
-					}
+				}
+			}
 			every_state = {
 				limit = {
 					is_core_of = FND
-					}
+				}
 				FND = {
 				 	transfer_state = PREV
-						}
-					}
+				}
+			}
 			every_state = {
 				limit = {
 					is_core_of = GOA
-					}
+				}
 				GOA = {
 				 	transfer_state = PREV
-						}
-					}
-		SKM = {
-			transfer_state = 996
+				}
+			}
+			SKM = {
+				transfer_state = 996
 			}
 			}
 		}
