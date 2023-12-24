@@ -14327,16 +14327,17 @@
 					}
 					POL = {
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = centrist_republic
 						}
 						set_cosmetic_tag = POL_2023
 						set_popularities = {
-							socialism_ideology = 11
-							liberal_republic = 25
-							centrist_republic = 4
-							democratic = 50
-							anocratic_republic = 9
-							republican_fascism = 1
+       							socialism_ideology = 5
+							liberal_republic = 14
+							centrist_republic = 34
+							democratic = 41
+       							conservative_monarchism = 2
+							anocratic_republic = 2
+							right_anarchism = 2
 						}
 					}
 					POL = {
@@ -14480,13 +14481,6 @@
 							ideology = liberal_constitutionalism
 						}
 						create_country_leader = {
-							name = "Prezydent Szymon Franciszek Hołownia"
-							desc = ""
-							picture = "gfx/leaders/POL/POL_Hołownia.tga"
-							expire = "1965.1.1"
-							ideology = cenrep
-						}
-						create_country_leader = {
 							name = "Król Krzysztof z Piłsudskich"
 							desc = ""
 							picture = "gfx/leaders/POL/POL_Krzysztof.tga"
@@ -14514,7 +14508,7 @@
 							desc = ""
 							picture = "gfx/leaders/POL/POL_Andrzej_Duda.tga"
 							expire = "1965.1.1"
-							ideology = anocrep
+							ideology = cenrep
 						}
 						create_country_leader = {
 							name = "Książę Adam IV z Czartoryskich"
@@ -16837,10 +16831,13 @@
 					}
 					PHI = {
 						set_cosmetic_tag = PHI_2023
+						set_politics = {
+							ruling_party = democratic
+						}
 						set_party_name = {
-							ideology = anocratic_republic
-							name = PHI_anocratic_republic_2023_party
-							long_name = PHI_anocratic_republic_2023_party_long
+							ideology = democratic
+							name = PHI_democratic_2023_party
+							long_name = PHI_democratic_2023_party_long
 						}
 						set_popularities = {
 							communism = 1
@@ -16857,7 +16854,7 @@
 							desc = ""
 							picture = "gfx/leaders/PHI/PHI_Bongbong.tga"
 							expire = "1965.1.1"
-							ideology = anocrep
+							ideology = conservatism
 						}
 					}
 					RMM = {
@@ -18105,9 +18102,9 @@
 					
 					KUW = {
 						create_country_leader = {
-							name = "Amīr Nawwāf al-Aḥmad al-Ǧābir al-Mubārak aṣ-Ṣubāḥ"
+							name = "Amīr Mishʻal al-ʾAḥmad al-Jābir aṣ-Ṣabāḥ"
 							desc = ""
-							picture = "gfx/leaders/KUW/KUW_Nawaf.tga"
+							picture = "gfx/leaders/KUW/KUW_Mishal.tga"
 							expire = "1965.1.1"
 							ideology = anocmon
 						}
@@ -22614,12 +22611,12 @@
 					FIJ = {
 						set_cosmetic_tag = FIJ_2023
 						set_politics = {
-							ruling_party = anocratic_republic
+							ruling_party = democratic
 						}
 						set_party_name = {
-							ideology = anocratic_republic
-							name = FIJ_anocratic_republic_2023_party
-							long_name = FIJ_anocratic_republic_2023_party_long
+							ideology = democratic
+							name = FIJ_democratic_2023_party
+							long_name = FIJ_democratic_2023_party_long
 						}
 					}
 					FIJ = {
@@ -22628,7 +22625,7 @@
 							desc = ""
 							picture = "gfx/leaders/FIJ/FIJ_Katonivere.tga"
 							expire = "1965.1.1"
-							ideology = anocrep
+							ideology = conservatism
 						}
 					}
 					NMI = {
@@ -24213,30 +24210,30 @@
 					}
 					ARG = {
 						set_politics = {
-							ruling_party = socialism_ideology
+							ruling_party = right_anarchism
 						}
 						set_cosmetic_tag = ARG_2023
 						set_party_name = {
-							ideology = socialism_ideology
-							name = ARG_socialism_ideology_2023_party
-							long_name = ARG_socialism_ideology_2023_party_long
+							ideology = right_anarchism
+							name = ARG_right_anarchism_2023_party
+							long_name = ARG_right_anarchism_2023_party_long
 						}
 						set_popularities = {
-							communism = 3
-							socialism_ideology = 40
-							liberal_republic = 18
-							centrist_republic = 15
-							democratic = 22
-							right_anarchism = 2
+							communism = 2
+							socialism_ideology = 6
+							liberal_republic = 35
+							centrist_republic = 22
+							democratic = 19
+							right_anarchism = 16
 						}
 					}
 					ARG = {
 						create_country_leader = {
-							name = "Presidente Alberto Ángel Fernández Pérez"
+							name = "Presidente Javier Gerardo Milei"
 							desc = ""
-							picture = "gfx/leaders/ARG/ARG_Fernandez.tga"
+							picture = "gfx/leaders/ARG/ARG_Milei.tga"
 							expire = "1965.1.1"
-							ideology = demsoc
+							ideology = ancap
 						}
 					}
 					URG = {
