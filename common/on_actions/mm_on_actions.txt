@@ -375,6 +375,16 @@ on_actions = {
 					every_state = {
 						limit = {
 							OR = {
+								is_core_of = BRM
+							}
+						}
+						BRM = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
 								is_owned_by = ACH
 							}
 						}
