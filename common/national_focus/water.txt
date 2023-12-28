@@ -15287,14 +15287,24 @@
 							ruling_party = democratic
 						}
 						set_party_name = {
-							ideology = democratic
-							name = ITA_democratic_2023_party
-							long_name = ITA_democratic_2023_party_long
+							ideology = socialism_ideology
+							name = ITA_socialism_ideology_2023_party
+							long_name = ITA_socialism_ideology_2023_party_long
 						}
 						set_party_name = {
 							ideology = democratic_monarchism
 							name = ITA_democratic_monarchism_2023_party
 							long_name = ITA_democratic_monarchism_2023_party_long
+						}
+						set_party_name = {
+							ideology = centrist_republic
+							name = ITA_centrist_republic_2023_party
+							long_name = ITA_centrist_republic_2023_party_long
+						}
+						set_party_name = {
+							ideology = democratic
+							name = ITA_democratic_2023_party
+							long_name = ITA_democratic_2023_party_long
 						}
 						set_party_name = {
 							ideology = conservative_monarchism
@@ -15320,7 +15330,7 @@
 							desc = ""
 							picture = "gfx/leaders/ITA/ITA_Mattarella.tga"
 							expire = "1965.1.1"
-							ideology = conservatism
+							ideology = demsoc
 						}
 						create_country_leader = {
 							name = "Re Aimone del Savoia"
@@ -15330,11 +15340,46 @@
 							ideology = liberal_constitutionalism
 						}
 						create_country_leader = {
+							name = "Presidente Sergio Mattarella"
+							desc = ""
+							picture = "gfx/leaders/ITA/ITA_Mattarella.tga"
+							expire = "1965.1.1"
+							ideology = cenrep
+						}
+						create_country_leader = {
+							name = "Re Aimone del Savoia"
+							desc = ""
+							picture = "gfx/leaders/ITA/ITA_Aimone.tga"
+							expire = "1965.1.1"
+							ideology = cenmon
+						}
+						create_country_leader = {
+							name = "Presidente Sergio Mattarella"
+							desc = ""
+							picture = "gfx/leaders/ITA/ITA_Mattarella.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
+						create_country_leader = {
 							name = "Re Aimone del Savoia"
 							desc = ""
 							picture = "gfx/leaders/ITA/ITA_Aimone.tga"
 							expire = "1965.1.1"
 							ideology = conservative_constitutionalism
+						}
+						create_country_leader = {
+							name = "Re Aimone del Savoia"
+							desc = ""
+							picture = "gfx/leaders/ITA/ITA_Aimone.tga"
+							expire = "1965.1.1"
+							ideology = stratmon
+						}
+						create_country_leader = {
+							name = "Re Aimone del Savoia"
+							desc = ""
+							picture = "gfx/leaders/ITA/ITA_Aimone.tga"
+							expire = "1965.1.1"
+							ideology = fascism_ideology
 						}
 					}
 					OML = {
@@ -18355,7 +18400,7 @@
 							desc = ""
 							picture = "gfx/leaders/GZS/GZS_Sinwar.tga"
 							expire = "1965.1.1"
-							ideology = stratmon_militarism
+							ideology = stratmon
 							traits = {
 							}
 						}

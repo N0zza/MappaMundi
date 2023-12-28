@@ -5563,6 +5563,23 @@ on_actions = {
 								}
 								set_cosmetic_tag = ITA_GREEN
 							}
+							if = {
+								limit = {
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = ITA_2023_KINGDOM
+								every_country = {
+									limit = {
+										OR = {
+											has_cosmetic_tag = ITA_REPUBLIC
+											has_cosmetic_tag = ITA_SOCIALIST
+											has_cosmetic_tag = ITA_GREEN
+											has_cosmetic_tag = ITA_AUTH
+										}
+									}
+									set_cosmetic_tag = ITA_GREEN
+								}
+							}
 						}
 						if = {
 							limit = {
@@ -5586,13 +5603,34 @@ on_actions = {
 								}
 								set_cosmetic_tag = ITA_AUTH
 							}
+							if = {
+								limit = {
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = ITA_2023_AUTH
+								every_country = {
+									limit = {
+										OR = {
+											has_cosmetic_tag = ITA_REPUBLIC
+											has_cosmetic_tag = ITA_SOCIALIST
+											has_cosmetic_tag = ITA_GREEN
+											has_cosmetic_tag = ITA_AUTH
+										}
+									}
+									set_cosmetic_tag = ITA_AUTH
+								}
+							}
 						}
 						if = {
 							limit = {
 								OR = {
-								has_government = democratic
-								has_government = liberal_republic
-								has_government = centrist_republic
+									AND = {
+										has_government = socialism_ideology
+										has_start_date > 2022.01.01
+									}
+									has_government = liberal_republic
+									has_government = centrist_republic
+									has_government = democratic
 								}
 							}
 							set_cosmetic_tag = ITA_REPUBLIC
@@ -5607,15 +5645,35 @@ on_actions = {
 								}
 								set_cosmetic_tag = ITA_REPUBLIC
 							}
+							if = {
+								limit = {
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = ITA_2023_REPUBLIC
+								every_country = {
+									limit = {
+										OR = {
+											has_cosmetic_tag = ITA_REPUBLIC
+											has_cosmetic_tag = ITA_SOCIALIST
+											has_cosmetic_tag = ITA_GREEN
+											has_cosmetic_tag = ITA_AUTH
+										}
+									}
+									set_cosmetic_tag = ITA_REPUBLIC
+								}
+							}
 						}
 						if = {
 							limit = {
 								OR = {
-								has_government = left_anarchism
-								has_government = socialism_ideology
-								has_government = socialist_monarchy
-								has_government = communism
-								has_government = vanguardism
+									has_government = left_anarchism
+									AND = {
+										has_government = socialism_ideology
+										has_start_date < 2022.01.01
+									}
+									has_government = socialist_monarchy
+									has_government = communism
+									has_government = vanguardism
 								}
 							}
 							set_cosmetic_tag = ITA_SOCIALIST
