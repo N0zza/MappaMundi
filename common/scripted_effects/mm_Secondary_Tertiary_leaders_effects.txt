@@ -1363,14 +1363,32 @@ secondary_leader_enabled_effect = {
 				tag = SAF
 				OR = {
 					AND = {
+						has_government = democratic_monarchism
+						has_start_date > 2022.01.01
+					}
+					AND = {
 						has_government = centrist_monarchism
-						has_start_date < 1937.01.01
-						has_start_date > 1935.01.01
+						OR = {
+							AND = {
+								has_start_date < 1937.01.01
+								has_start_date > 1935.01.01
+							}
+							AND = {
+								has_start_date > 2022.01.01
+							}
+						}
 					}
 					AND = {
 						has_government = conservative_monarchism
-						has_start_date < 1915.01.01
-						has_start_date > 1913.01.01
+						OR = {
+							AND = {
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+							}
+							AND = {
+								has_start_date > 2022.01.01
+							}
+						}
 					}
 				}
 			}
