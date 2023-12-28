@@ -3223,6 +3223,16 @@ tertiary_leader_enabled_effect = {
 		}
 		set_country_flag = has_tertiary_leader
 	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = CAM
+				has_government = authoritarian_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		set_country_flag = has_tertiary_leader
+	}
 	else = {
 		clr_country_flag = has_tertiary_leader
 	}
