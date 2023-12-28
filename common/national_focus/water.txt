@@ -13122,7 +13122,7 @@
 							expire = "1965.1.1"
 							ideology = cenmon
 						}
-						set_politics = { #horsecock
+						set_politics = {
 							ruling_party = centrist_monarchism
 						}
 						set_party_name = {
@@ -22395,23 +22395,22 @@
 						transfer_state_to = PLU
 					}
 					NIU = {
-						set_cosmetic_tag = NZL_PURPLE
 						set_politics = {
-							ruling_party = liberal_republic
+							ruling_party = centrist_monarchism
 						}
 					}
 					NIU = {
 						create_country_leader = {
-							name = "Governor-General Dame Alcyion Cynthia Kiro"
+							name = "King's Representative Dame Alcyion Cynthia Kiro"
 							desc = ""
 							picture = "gfx/leaders/NZL/NZL_Kiro.tga"
 							expire = "1965.1.1"
-							ideology = liberalism
+							ideology = cenmon
 						}
 					}
 					TKL = {
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = centrist_monarchism
 						}
 					}
 					TKL = {
@@ -22420,13 +22419,16 @@
 							desc = ""
 							picture = "gfx/leaders/TKL/TKL_Higgins.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = cenmon
 						}
 					}
 					CKI = {
-						set_cosmetic_tag = NZL_PURPLE
 						set_politics = {
 							ruling_party = conservative_monarchism
+						}
+						set_popularities = {
+							conservative_monarchism = 58
+							democratic_monarchism = 42
 						}
 					}
 					CKI = {
@@ -22624,16 +22626,16 @@
 					}
 					TUV = {
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = centrist_monarchism
 						}
 					}
 					TUV = {
 						create_country_leader = {
-							name = "Governor-General Reverend Tofiga Vaevalu Falani"
+							name = "Governor-General Sir Tofiga Vaevalu Falani"
 							desc = ""
 							picture = "gfx/leaders/TUV/TUV_Falani.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = cenmon
 						}
 					}
 					NAU = {
@@ -22664,7 +22666,7 @@
 					SOL = {
 						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = centrist_monarchism
 						}
 					}
 					SOL = {
@@ -22673,7 +22675,7 @@
 							desc = ""
 							picture = "gfx/leaders/SOL/SOL_David_Vunagi.tga"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = cenmon
 						}
 					}
 					VAN = {
@@ -24134,6 +24136,11 @@
 						transfer_state = 2316
 						set_politics = {
 							ruling_party = socialist_monarchy
+						}
+						set_popularities = {
+							socialist_monarchy = 57
+							conservative_monarchism = 36
+							democratic_monarchism = 7
 						}
 					}
 					SKT = {
