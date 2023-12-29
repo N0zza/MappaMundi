@@ -1922,6 +1922,26 @@ secondary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
+				tag = MRS
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = BAR
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
 				tag = POL
 				OR = {
 					AND = {
@@ -2088,6 +2108,16 @@ secondary_leader_enabled_effect = {
 	}
 	else_if = {
 		limit = {
+			AND = {
+				tag = GNP
+				has_government = anocratic_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
 			OR = {
 				AND = {
 					tag = YUG
@@ -2107,6 +2137,16 @@ secondary_leader_enabled_effect = {
 		limit = {
 			AND = {
 				tag = SLV
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = TRI
 				has_government = liberal_republic
 				has_start_date > 2022.01.01
 			}
@@ -2153,6 +2193,16 @@ secondary_leader_enabled_effect = {
 		limit = {
 			AND = {
 				tag = SER
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = CVD
 				has_government = centrist_republic
 				has_start_date > 2022.01.01
 			}
