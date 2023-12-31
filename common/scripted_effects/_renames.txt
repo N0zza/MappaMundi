@@ -8987,19 +8987,26 @@ do_german_renames = {
 			state = 64
 			ROOT = {
 				OR = {
-					tag = NZG
-					tag = BGM
 					AND = {
-						tag = SGM
-						NOT = {
-							OR = {
-								has_government = communism
-								has_government = vanguardism
-							}
+						OR = {
+							tag = NZG
+							tag = HGM
+							tag = SGM
+							tag = GGM
+							tag = BGM
+						}
+						OR = {
+							has_government = anocratic_republic
+							has_government = neutrality
+							has_government = authoritarian_monarchism
+							has_government = stratocratic
+							has_government = stratocratic_monarchism
+							has_government = republican_fascism
+							has_government = fascism
+							has_government = national_socialism
+							has_government = theocratic
 						}
 					}
-					tag = GGM
-					tag = HGM
 					AND = {
 						tag = BRL
 						has_government = stratocratic
@@ -9019,7 +9026,10 @@ do_german_renames = {
 			ROOT = {
 				OR = {
 					AND = {
-						tag = SGM
+						OR = {
+							tag = SGM
+							tag = NZG
+						}
 						OR = {
 							has_government = communism
 							has_government = vanguardism
