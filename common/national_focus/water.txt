@@ -18579,16 +18579,6 @@
 					}
 						every_state = {
 							limit = {
-								OR = {
-									is_core_of = NGK
-								}
-							}
-							NGK = {
-								transfer_state = PREV
-								}
-							}
-						every_state = {
-							limit = {
 								is_core_of = SOS
 							}
 							SOS = {
@@ -18630,21 +18620,12 @@
 						every_state = {
 							limit = {
 								is_core_of = AZR
-								NOT = {
-									is_core_of = NGK
-								}
 							}
 							AZR = {
 								transfer_state = PREV
 								}
 							do_azerbaijani_renames = yes
 							}
-						every_state = {
-							limit = {
-								is_owned_by = NGK
-							}
-							do_armenian_renames = yes
-						}
 					AZR = {
 						transfer_state = 4143
 						transfer_state = 8085
@@ -19041,9 +19022,6 @@
 							expire = "1965.1.1"
 							ideology = despotism
 						}
-					}
-					10107 = {
-						set_demilitarized_zone = yes
 					}
 					PER = {
 						transfer_state = 3396
