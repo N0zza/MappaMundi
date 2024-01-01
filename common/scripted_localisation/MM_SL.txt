@@ -2409,19 +2409,19 @@ defined_text = {
 			AND = {
 				tag = SWI
 				has_government = centrist_republic
-				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Vizepräsidentin des Bundesrates Viola Patricia Amherd"
+		localization_key = "Bundespräsident Albert Meyer"
 	}
 	text = {
 		trigger = {
 			AND = {
 				tag = SWI
 				has_government = centrist_republic
+				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Vicepresidente della Confederazione Giuseppe Motta"
+		localization_key = "Bundespräsident Viola Patricia Amherd"
 	}
 	text = {
 		trigger = {
@@ -2918,6 +2918,56 @@ defined_text = {
 			}
 		}
 		localization_key = "Raʾīs al-Wuzarāʾ ʿUṯmān Ḥusayn ʿUṯmān"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NGR
+				has_government = stratocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Premier Ministre Ali Mahamane Lamine Zeine"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = VOL
+				has_government = stratocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Premier Ministre Apollinaire Joachim Kyélem de Tambèla"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GNA
+				has_government = stratocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Premier Ministre Bernard Goumou"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CHA
+				has_government = stratocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Premier Ministre Saleh Kebzabo"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GAB
+				has_government = stratocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Premier Ministre Raymond Ndong Sima"
 	}
 	text = {
 		trigger = {
@@ -6095,6 +6145,56 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = NGR
+				has_government = stratocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Ali_Zeine"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = VOL
+				has_government = stratocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Apollinaire_Tambela"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GNA
+				has_government = stratocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Bernard_Goumou"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CHA
+				has_government = stratocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Saleh_Kebzabo"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GAB
+				has_government = stratocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Raymond_Sima"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = EGY
 				has_government = neutrality
 				has_start_date > 2022.01.01
@@ -6361,19 +6461,19 @@ defined_text = {
 			AND = {
 				tag = SWI
 				has_government = centrist_republic
-				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Viola_Amherd"
+		localization_key = "GFX_Albert_Meyer"
 	}
 	text = {
 		trigger = {
 			AND = {
 				tag = SWI
 				has_government = centrist_republic
+				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Giuseppe_Motta"
+		localization_key = "GFX_Viola_Amherd"
 	}
 	text = {
 		trigger = {
@@ -7019,16 +7119,6 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				tag = SWI
-				has_government = centrist_republic
-				has_start_date > 1936.01.01
-			}
-		}
-		localization_key = "SWI_FEDERAL_COUNCIL_CHARACTER"
-	}
-	text = {
-		trigger = {
-			AND = {
 				tag = GER
 				has_government = socialist_monarchy
 				has_start_date < 2022.01.01
@@ -7105,6 +7195,16 @@ defined_text = {
 			}
 		}
 		localization_key = "Segretario di Stato per gli Affari Esteri e Politici Giuliano Gozi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SWZ
+				has_government = monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Ndvunankhulu Russell Mmemo Dlamini"
 	}
 	text = {
 		trigger = {
@@ -7421,16 +7521,6 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				tag = SWI
-				has_government = centrist_republic
-				has_start_date > 1936.01.01
-			}
-		}
-		localization_key = "GFX_Federal_Council"
-	}
-	text = {
-		trigger = {
-			AND = {
 				tag = GER
 				has_government = socialist_monarchy
 				has_start_date < 2022.01.01
@@ -7457,6 +7547,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Giuliano_Gozi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SWZ
+				has_government = monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Russell_Dlamini"
 	}
 	text = {
 		trigger = {
@@ -7751,20 +7851,5 @@ defined_text = {
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
-	}
-}
-defined_text = {
-	name = GetTertiaryLeaderNameTT
-	text = {
-		trigger = {
-			AND = {
-				tag = SWI
-				has_country_flag = has_tertiary_leader
-			}
-		}
-		localization_key = "Bundesrat, Conseil fédéral, Consiglio federale, Cussegl federal"
-	}
-	text = {
-		localization_key = "[GetTertiaryLeaderName]"
 	}
 }
