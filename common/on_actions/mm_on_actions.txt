@@ -4332,7 +4332,6 @@ on_actions = {
 								tag = UKR
 								tag = WTO
 								tag = TOG
-								tag = PL2
 								tag = CZC
 								tag = CZE
 								tag = LIT
@@ -7601,7 +7600,72 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						has_government = stratocratic
+						OR = {
+							has_government = vanguardism
+						}
+					}
+					set_cosmetic_tag = RUS_RED
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = communism
+						}
+					}
+					set_cosmetic_tag = POL_SOCIALIST
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = socialist_monarchy
+						}
+					}
+					set_cosmetic_tag = USA_BLUE
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = centrist_monarchism
+						}
+					}
+					set_cosmetic_tag = SWE_BLUE
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = socialism_ideology
+							has_government = liberal_republic
+							has_government = centrist_republic
+							has_government = democratic
+						}
+					}
+					set_cosmetic_tag = PL2_CONREP
+				}
+				if = {
+					limit = {
+						has_government = anocratic_monarchism
+					}
+					set_cosmetic_tag = RUS_GREEN
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = democratic_monarchism
+							has_government = conservative_monarchism
+							has_government = neutrality
+							has_government = authoritarian_monarchism
+							has_government = stratocratic_monarchism
+							has_government = theocratic
+						}
+					}
+					set_cosmetic_tag = PL2_AUTHREP
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = anocratic_republic
+							has_government = stratocratic
+						}
 					}
 					set_cosmetic_tag = PL2_STRAT
 				}
@@ -7614,33 +7678,54 @@ on_actions = {
 				if = {
 					limit = {
 						OR = {
-							has_government = neutrality
-							has_government = authoritarian_monarchism
+							has_government = fascism
+							has_government = national_socialism
 						}
 					}
-					set_cosmetic_tag = PL2_AUTHREP
+					set_cosmetic_tag = PL2_TNO
+				}
+			}
+			if = {
+				limit = {
+					tag = PL3
 				}
 				if = {
 					limit = {
 						OR = {
-							has_government = liberal_republic
-							has_government = democratic
+							has_government = vanguardism
+							has_government = communism
 						}
 					}
-					set_cosmetic_tag = PL2_DEMOCRATIC
+					set_cosmetic_tag = POL_SOCIALIST
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = national_socialism
+						}
+					}
+					set_cosmetic_tag = PL2_TNO
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = theocratic
+						}
+					}
+					set_cosmetic_tag = SS_STATE_GENERIC
 				}
 				if = {
 					limit = {
 						NOT = {
-							has_government = stratocratic
-							has_government = republican_fascism
-							has_government = neutrality
-							has_government = authoritarian_monarchism
-							has_government = liberal_republic
-							has_government = democratic
+							OR = {
+								has_government = vanguardism
+								has_government = communism
+								has_government = national_socialism
+								has_government = theocratic
+							}
 						}
 					}
-					set_cosmetic_tag = PL2_TNO
+					drop_cosmetic_tag = yes
 				}
 			}
 			if = {
