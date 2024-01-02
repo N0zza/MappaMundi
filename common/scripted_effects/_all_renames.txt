@@ -346,7 +346,15 @@ do_all_renames = {
 					tag = UA2
 					tag = LV2
 					tag = WR2
-					tag = BL2
+					AND = {
+						tag = BL2
+						OR = {
+							has_government = stratocratic
+							has_government = republican_fascism
+							has_government = national_socialism
+							has_government = theocratic
+						}
+					}
 					tag = KC2
 					tag = CZ2
 					tag = DN2
@@ -616,7 +624,7 @@ do_all_renames = {
 		limit = {
 			ROOT = {
 				tag = LUX
-				}
+			}
 		}
 		do_luxembourgish_renames = yes
 	}
@@ -638,7 +646,18 @@ do_all_renames = {
 	if = {
 		limit = {
 			ROOT = {
-				tag = BEL
+				OR = {
+					tag = BEL
+					AND = {
+						tag = BL2
+						NOT = {
+							has_government = stratocratic
+							has_government = republican_fascism
+							has_government = national_socialism
+							has_government = theocratic
+						}
+					}
+				}
 			}
 		}
 		do_belgian_renames = yes
@@ -678,8 +697,8 @@ do_all_renames = {
 	if = {
 		limit = {
 			ROOT = {
-				tag = ALB}
-				
+				tag = ALB
+			}
 		}
 		do_albanian_renames = yes
 	}
@@ -689,7 +708,7 @@ do_all_renames = {
 		limit = {
 			ROOT = {
 				tag = ISR
-				}
+			}
 		}
 		do_hebrew_renames = yes
 	}
