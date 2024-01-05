@@ -1648,6 +1648,12 @@ secondary_leader_enabled_effect = {
 					}
 					AND = {
 						OR = {
+							has_government = national_socialism
+						}
+						has_start_date < 1949.01.01
+					}
+					AND = {
+						OR = {
 							has_government = socialist_monarchy
 						}
 						has_start_date > 2022.01.01

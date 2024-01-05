@@ -7827,7 +7827,10 @@ on_actions = {
 				}
 				else_if = {
 					limit = {
-						has_government = national_socialism
+						OR = {
+							has_government = fascism
+							has_government = national_socialism
+						}
 					}
 					set_cosmetic_tag = NOR_TNO
 				}
@@ -7880,6 +7883,12 @@ on_actions = {
 						}
 					}
 					set_cosmetic_tag = UTR_TNO
+				}
+				else_if = {
+					limit = {
+						has_government = theocratic
+					}
+					set_cosmetic_tag = SS_STATE_GENERIC
 				}
 				else = {
 					drop_cosmetic_tag = yes

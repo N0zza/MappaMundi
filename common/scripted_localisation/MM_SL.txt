@@ -1906,9 +1906,21 @@ defined_text = {
 			AND = {
 				tag = NOR
 				has_government = democratic_monarchism
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
 			}
 		}
 		localization_key = "Statsminister Johan Nygaardsvold"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NOR
+				has_government = national_socialism
+				has_start_date < 1949.01.01
+			}
+		}
+		localization_key = "Reichskommissar Josef Antonius Heinrich Terboven"
 	}
 	text = {
 		trigger = {
@@ -6456,9 +6468,21 @@ defined_text = {
 			AND = {
 				tag = NOR
 				has_government = democratic_monarchism
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
 			}
 		}
 		localization_key = "GFX_Johan_Nygaardsvold"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NOR
+				has_government = national_socialism
+				has_start_date < 1949.01.01
+			}
+		}
+		localization_key = "GFX_Josef_Terboven"
 	}
 	text = {
 		trigger = {
