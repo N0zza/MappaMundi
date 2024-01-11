@@ -743,7 +743,18 @@ commonwealth_cores_claims = {
 				is_core_of = TZN
 				is_core_of = SAF
 				is_core_of = NMB
+				is_owned_by = LES
 				is_core_of = KEN
+				is_core_of = ZAM
+				is_core_of = ZIM
+				is_core_of = BOT
+				is_core_of = MLW
+				is_core_of = SML
+				is_core_of = NGA
+				is_core_of = SCM
+				is_core_of = GHA
+				is_core_of = SIE
+				is_core_of = GAM
 				is_core_of = WIF
 				is_core_of = BAH
 				is_core_of = BER
@@ -752,9 +763,27 @@ commonwealth_cores_claims = {
 				is_core_of = EVI
 				is_core_of = FAL
 				is_core_of = SOL
-				is_core_of = FIG
+				is_core_of = FIJ
+				is_core_of = PNG
 				is_owned_by = BWP
 				is_owned_by = UGA
+				AND = {
+					is_core_of = BRM
+					NOT = {
+						OR = {
+							is_core_of = SHA
+						}
+					}
+				}
+				AND = {
+					is_core_of = SUD
+					NOT = {
+						OR = {
+							is_owned_by = DGI
+							is_core_of = TAQ
+						}
+					}
+				}
 			}
 		}
 		BCM = {
@@ -764,6 +793,11 @@ commonwealth_cores_claims = {
 	every_state = {
 		limit = {
 			OR = {
+				is_core_of = VAN
+				is_core_of = TON
+				is_core_of = DGI
+				is_core_of = TAQ
+				is_core_of = SHA
 				is_claimed_by = RAJ
 				is_owned_by = BNY
 				is_owned_by = BUG
@@ -771,8 +805,8 @@ commonwealth_cores_claims = {
 				is_owned_by = TOR
 				is_owned_by = ANK
 				is_owned_by = ZAN
-				is_core_of = VAN
-				is_core_of = TON
+				is_owned_by = EGY
+				is_owned_by = SWZ
 				AND = {
 					is_owned_by = FAL
 					NOT = {
@@ -789,6 +823,15 @@ commonwealth_cores_claims = {
 					is_owned_by = NZL
 					NOT = {
 						is_core_of = NZL
+					}
+				}
+				AND = {
+					is_core_of = ADN
+					NOT = {
+						OR = {
+							is_owned_by = SAU
+							is_core_of = BCM
+						}
 					}
 				}
 			}
