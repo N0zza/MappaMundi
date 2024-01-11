@@ -1,4 +1,4 @@
-historic_claims_effect = {
+extended_claims_effect = {
 	french_louisiana_claims = yes
 	greater_mexico_claims = yes
 	cisleithania_claims = yes
@@ -8,6 +8,7 @@ historic_claims_effect = {
 	neukamerun_claims = yes
 	mittelafrika_claims = yes
 	wabanaki_claims = yes
+	commonwealth_cores_claims = yes
 }
 
 french_louisiana_claims = {
@@ -725,6 +726,74 @@ wabanaki_claims = {
 			}
 		}
 		MNE = {
+			add_state_claim = PREV
+		}
+	}
+}
+
+commonwealth_cores_claims = {
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = RAJ
+				is_core_of = AST
+				is_core_of = NZL
+				is_core_of = CAN
+				is_core_of = ENG
+				is_core_of = TZN
+				is_core_of = SAF
+				is_core_of = NMB
+				is_core_of = KEN
+				is_core_of = WIF
+				is_core_of = BAH
+				is_core_of = BER
+				is_core_of = BLZ
+				is_core_of = GYA
+				is_core_of = EVI
+				is_core_of = FAL
+				is_core_of = SOL
+				is_core_of = FIG
+				is_owned_by = BWP
+				is_owned_by = UGA
+			}
+		}
+		BCM = {
+			add_state_core = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_claimed_by = RAJ
+				is_owned_by = BNY
+				is_owned_by = BUG
+				is_owned_by = BSG
+				is_owned_by = TOR
+				is_owned_by = ANK
+				is_owned_by = ZAN
+				is_core_of = VAN
+				is_core_of = TON
+				AND = {
+					is_owned_by = FAL
+					NOT = {
+						is_core_of = FAL
+					}
+				}
+				AND = {
+					is_owned_by = AST
+					NOT = {
+						is_core_of = AST
+					}
+				}
+				AND = {
+					is_owned_by = NZL
+					NOT = {
+						is_core_of = NZL
+					}
+				}
+			}
+		}
+		BCM = {
 			add_state_claim = PREV
 		}
 	}

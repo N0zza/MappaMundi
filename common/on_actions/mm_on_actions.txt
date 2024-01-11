@@ -350,7 +350,7 @@ on_actions = {
 							transfer_state = PREV
 						}
 					}
-					every_state = { # +100000 social credit
+					every_state = {
 						limit = {
 							OR = {
 								is_owned_by = CHI
@@ -571,17 +571,17 @@ on_actions = {
 		}
 	}
 	on_startup = {
-		#Set up Historical Claims.
+		#Set up Extended Claims.
 		effect = {
 			if = {
 				limit = {
 					has_game_rule = {
-						rule = MM_historic_claims
-						option = HISTORICAL_CLAIMS
+						rule = MM_extended_claims
+						option = EXTENDED_CLAIMS
 					}
 				}
 				ICE = {
-					historic_claims_effect = yes
+					extended_claims_effect = yes
 				}
 			}
 		}
