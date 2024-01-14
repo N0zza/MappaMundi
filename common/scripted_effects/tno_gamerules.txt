@@ -1862,39 +1862,49 @@ do_tno_einheitspakt_setup = {
 		}
 		transfer_state_to = BUL
 	}
-	DEN = {
-		set_politics = {
-			ruling_party = national_socialism
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = NR2
+				is_core_of = JMY
+			}
 		}
-		every_owned_state = {
-			do_german_renames = yes
+		NR2 = {
+			transfer_state = PREV
+			set_cosmetic_tag = NOR_TNO
 		}
-		set_cosmetic_tag = DEN_TNO
 	}
-	NOR = {
-		set_politics = {
-			ruling_party = national_socialism
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = DN2
+				is_core_of = FAR
+			}
 		}
-		every_owned_state = {
-			do_german_renames = yes
+		DN2 = {
+			transfer_state = PREV
+			set_cosmetic_tag = DEN_TNO
+			every_owned_state = {
+				do_german_renames = yes
+			}
 		}
-		set_cosmetic_tag = NOR_TNO
 	}
-	UTR = {
-		annex_country = {
-			target = HOL
+	every_state = {
+		limit = {
+			AND = {
+				is_core_of = HL2
+				NOT = {
+					is_claimed_by = GER
+				}
+			}
 		}
-		set_capital = {
-			state = 7
-			remember_old_capital = no
+		HL2 = {
+			transfer_state = PREV
+			set_cosmetic_tag = UTR_TNO
+			every_owned_state = {
+				do_german_renames = yes
+			}
 		}
-		set_politics = {
-			ruling_party = national_socialism
-		}
-		every_owned_state = {
-			do_german_renames = yes
-		}
-		set_cosmetic_tag = UTR_TNO
 	}
 	every_state = {
 		limit = {
