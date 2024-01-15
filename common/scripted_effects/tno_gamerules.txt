@@ -1786,7 +1786,12 @@ do_tno_einheitspakt_setup = {
 				}
 			}
 		}
-		transfer_state_to = LV2
+		LV2 = {
+			transfer_state = PREV
+		}
+	}
+	LV2 = {
+		set_cosmetic_tag = LV2_TNO
 	}
 	every_state = {
 		limit = {
@@ -1796,10 +1801,12 @@ do_tno_einheitspakt_setup = {
 				is_claimed_by = ROM
 			}
 		}
-		transfer_state_to = UA2
+		UA2 = {
+			transfer_state = PREV
+		}
 	}
-	SLO = {
-		set_cosmetic_tag = GREY_GER2
+	UA2 = {
+		set_cosmetic_tag = UA2_TNO
 	}
 	every_state = {
 		limit = {
@@ -1813,7 +1820,12 @@ do_tno_einheitspakt_setup = {
 		NOT = {
 			is_claimed_by = HUN
 		}
-		transfer_state_to = SLO
+		SLO = {
+			transfer_state = PREV
+		}
+	}
+	SLO = {
+		set_cosmetic_tag = GREY_GER2
 	}
 	every_state = {
 		limit = {
@@ -1830,6 +1842,7 @@ do_tno_einheitspakt_setup = {
 		transfer_state_to = HUN
 	}
 	PL2 = {
+		set_cosmetic_tag = PL2_TNO
 		annex_country = {
 			target = POL
 		}
@@ -1841,6 +1854,15 @@ do_tno_einheitspakt_setup = {
 		annex_country = {
 			target = SPM
 		}
+	}
+	BAH = {
+		set_cosmetic_tag = CAN_RED
+	}
+	BAS = {
+		set_cosmetic_tag = CAN_RED
+	}
+	FAL = {
+		set_cosmetic_tag = CAN_RED
 	}
 	every_state = {
 		limit = {
@@ -1938,20 +1960,20 @@ do_tno_einheitspakt_setup = {
 				state = 1749
 			}
 		}
-		transfer_state_to = BGN
-	}
-	BGN = {
-		set_capital = {
-			state = 831
-			remember_old_capital = no
+		BGN = {
+			transfer_state = PREV
+			set_capital = {
+				state = 831
+				remember_old_capital = no
+			}
+			set_politics = {
+				ruling_party = theocratic
+			}
+			every_owned_state = {
+				do_german_renames = yes
+			}
+			set_cosmetic_tag = BRG_TNO
 		}
-		set_politics = {
-			ruling_party = theocratic
-		}
-		every_owned_state = {
-			do_german_renames = yes
-		}
-		set_cosmetic_tag = BRG_TNO
 	}
 	IRE = {
 		set_politics = {
@@ -2040,10 +2062,16 @@ do_tno_einheitspakt_setup = {
 		set_politics = {
 			ruling_party = republican_fascism
 		}
-		set_cosmetic_tag = FRA_TNO
+		set_cosmetic_tag = FRA_AUTH
+	}
+	SGR = {
+		set_cosmetic_tag = FRA_AUTH
+	}
+	KGG = {
+		set_cosmetic_tag = FRA_AUTH
 	}
 	ITA = {
-	annex_country = {target = MLT}
+		annex_country = {target = MLT}
 	}
 	every_state = {
 		limit = {
@@ -3400,12 +3428,6 @@ do_africa_tno_setup = {
 	every_country = {
 		limit = {
 			has_cosmetic_tag = FRA_BLUE
-		}
-		set_cosmetic_tag = FRA_TNO
-	}
-	every_country = {
-		limit = {
-			has_cosmetic_tag = FRA_AUTH
 		}
 		set_cosmetic_tag = FRA_TNO
 	}
