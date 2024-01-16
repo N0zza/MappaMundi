@@ -8558,6 +8558,218 @@ on_actions = {
 						}
 						set_cosmetic_tag = VLG_NATIONAL_STRAT
 					}
+					else_if = {
+						limit = {
+							has_government = right_anarchism
+						}
+						set_cosmetic_tag = VLG_NATIONAL_PostMid
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = HYP
+						controls_west_russia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = vanguardism
+							}
+						}
+						set_cosmetic_tag = HYP_REGIONAL_VAN
+					}
+					else_if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = HYP_REGIONAL_SOCREP
+					}
+					else_if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = HYP_REGIONAL_NATSOC
+					}
+					else_if = {
+						limit = {
+							has_government = theocratic
+						}
+						set_cosmetic_tag = HYP_REGIONAL_THEO
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = HYP
+						controls_western_russia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = vanguardism
+							}
+						}
+						set_cosmetic_tag = HYP_SUPERREGIONAL_VAN
+					}
+					else_if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = HYP_SUPERREGIONAL_SOCREP
+					}
+					else_if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = HYP_SUPERREGIONAL_NATSOC
+					}
+					else_if = {
+						limit = {
+							has_government = theocratic
+						}
+						set_cosmetic_tag = HYP_SUPERREGIONAL_THEO
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = HYP
+						controls_russia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = vanguardism
+							}
+						}
+						set_cosmetic_tag = HYP_NATIONAL_VAN
+					}
+					else_if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = HYP_NATIONAL_SOCREP
+					}
+					else_if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = HYP_NATIONAL_NATSOC
+					}
+					else_if = {
+						limit = {
+							has_government = theocratic
+						}
+						set_cosmetic_tag = HYP_NATIONAL_THEO
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = SMM
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = republican_fascism
+								has_government = stratocratic
+								has_government = neutrality
+								has_government = right_anarchism
+							}
+						}
+						set_cosmetic_tag = SMM_TNO
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = SMM
+						controls_west_russia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = republican_fascism
+								has_government = stratocratic
+								has_government = neutrality
+								has_government = right_anarchism
+							}
+						}
+						set_cosmetic_tag = SMM_REGIONAL_STRAT
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = SMM
+						controls_western_russia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = republican_fascism
+								has_government = stratocratic
+								has_government = neutrality
+							}
+						}
+						set_cosmetic_tag = SMM_SUPERREGIONAL_STRAT
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = right_anarchism
+							}
+						}
+						set_cosmetic_tag = SMM_SUPERREGIONAL_ANCAP
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = SMM
+						controls_russia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = republican_fascism
+								has_government = stratocratic
+								has_government = neutrality
+							}
+						}
+						set_cosmetic_tag = SMM_NATIONAL_STRAT
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = right_anarchism
+							}
+						}
+						set_cosmetic_tag = SMM_NATIONAL_ANCAP
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = theocratic
+							}
+						}
+						set_cosmetic_tag = SMM_NATIONAL_PostMid
+					}
 					else = {
 						drop_cosmetic_tag = yes
 					}
@@ -9150,6 +9362,66 @@ on_actions = {
 							controls_russia = yes
 						}
 						set_cosmetic_tag = SMM_NATIONAL_ANCAP
+					}
+				}
+				if = {
+					limit = {
+						tag = SMM
+						has_government = theocratic
+					}
+					if = {
+						limit = {
+							controls_russia = yes
+						}
+						set_cosmetic_tag = SMM_NATIONAL_PostMid
+					}
+				}
+				if = {
+					limit = {
+						tag = HYP
+						has_government = vanguardism
+					}
+					if = {
+						limit = {
+							controls_west_russia = yes
+						}
+						set_cosmetic_tag = HYP_REGIONAL_VAN
+					}
+					if = {
+						limit = {
+							controls_western_russia = yes
+						}
+						set_cosmetic_tag = HYP_SUPERREGIONAL_VAN
+					}
+					if = {
+						limit = {
+							controls_russia = yes
+						}
+						set_cosmetic_tag = HYP_NATIONAL_VAN
+					}
+				}
+				if = {
+					limit = {
+						tag = HYP
+						has_government = communism
+					}
+					if = {
+						limit = {
+							controls_west_russia = yes
+						}
+						set_cosmetic_tag = HYP_REGIONAL_SOCREP
+					}
+					if = {
+						limit = {
+							controls_western_russia = yes
+						}
+						set_cosmetic_tag = HYP_SUPERREGIONAL_SOCREP
+					}
+					if = {
+						limit = {
+							controls_russia = yes
+						}
+						set_cosmetic_tag = HYP_NATIONAL_SOCREP
 					}
 				}
 				if = {
