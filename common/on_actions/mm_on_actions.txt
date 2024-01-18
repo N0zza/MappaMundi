@@ -6890,6 +6890,31 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							tag = CRO
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = republican_fascism
+									has_government = national_socialism
+								}
+							}
+							set_cosmetic_tag = CRO_AUTH
+						}
+						if = {
+							limit = {
+								OR = {
+									NOT = {
+										has_government = republican_fascism
+										has_government = national_socialism
+									}
+								}
+							}
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
 							tag = GUA
 						}
 						if = {
@@ -8360,6 +8385,161 @@ on_actions = {
 				}
 				if = {
 					limit = {
+						tag = TOM
+						controls_central_siberia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = vanguardism
+							}
+						}
+						set_cosmetic_tag = TOM_REGIONAL_VAN
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = socialism_ideology
+							}
+						}
+						set_cosmetic_tag = TOM_REGIONAL_SOCREP
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = liberal_republic
+							}
+						}
+						set_cosmetic_tag = TOM_REGIONAL_LIBREP
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = democratic
+							}
+						}
+						set_cosmetic_tag = TOM_REGIONAL_DEM
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = neutrality
+							}
+						}
+						set_cosmetic_tag = TOM_REGIONAL_AUTHREP
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = TOM
+						controls_siberia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = vanguardism
+							}
+						}
+						set_cosmetic_tag = TOM_SUPERREGIONAL_VAN
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = socialism_ideology
+							}
+						}
+						set_cosmetic_tag = TOM_SUPERREGIONAL_SOCREP
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = liberal_republic
+							}
+						}
+						set_cosmetic_tag = TOM_SUPERREGIONAL_LIBREP
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = democratic
+							}
+						}
+						set_cosmetic_tag = TOM_SUPERREGIONAL_DEM
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = neutrality
+							}
+						}
+						set_cosmetic_tag = TOM_SUPERREGIONAL_AUTHREP
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = TOM
+						controls_russia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = vanguardism
+							}
+						}
+						set_cosmetic_tag = TOM_NATIONAL_VAN
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = socialism_ideology
+							}
+						}
+						set_cosmetic_tag = TOM_NATIONAL_SOCREP
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = liberal_republic
+							}
+						}
+						set_cosmetic_tag = TOM_NATIONAL_LIBREP
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = democratic
+							}
+						}
+						set_cosmetic_tag = TOM_NATIONAL_DEM
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = neutrality
+							}
+						}
+						set_cosmetic_tag = TOM_NATIONAL_AUTHREP
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = stratocratic
+							}
+						}
+						set_cosmetic_tag = TOM_NATIONAL_PostMid
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
 						tag = ARH
 					}
 					if = {
@@ -8769,6 +8949,65 @@ on_actions = {
 							}
 						}
 						set_cosmetic_tag = SMM_NATIONAL_PostMid
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = SUG
+						controls_western_siberia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = stratocratic
+							}
+						}
+						set_cosmetic_tag = SUG_REGIONAL
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = SUG
+						controls_siberia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = stratocratic
+							}
+						}
+						set_cosmetic_tag = SUG_SUPERREGIONAL
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = SUG
+						controls_russia = yes
+					}
+					if = {
+						limit = {
+							OR = {
+								has_government = stratocratic
+							}
+						}
+						set_cosmetic_tag = SUG_NATIONAL
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_government = left_anarchism
+							}
+						}
+						set_cosmetic_tag = SUG_NATIONAL_PostMid
 					}
 					else = {
 						drop_cosmetic_tag = yes
@@ -9634,6 +9873,42 @@ on_actions = {
 				}
 				if = {
 					limit = {
+						tag = SUG
+						has_government = stratocratic
+					}
+					if = {
+						limit = {
+							controls_western_siberia = yes
+						}
+						set_cosmetic_tag = SUG_REGIONAL
+					}
+					if = {
+						limit = {
+							controls_siberia = yes
+						}
+						set_cosmetic_tag = SUG_SUPERREGIONAL
+					}
+					if = {
+						limit = {
+							controls_russia = yes
+						}
+						set_cosmetic_tag = SUG_NATIONAL
+					}
+				}
+				if = {
+					limit = {
+						tag = SUG
+						has_government = left_anarchism
+					}
+					if = {
+						limit = {
+							controls_russia = yes
+						}
+						set_cosmetic_tag = SUG_NATIONAL_PostMid
+					}
+				}
+				if = {
+					limit = {
 						tag = SVR
 						OR = {
 							has_government = stratocratic
@@ -9686,49 +9961,25 @@ on_actions = {
 				if = {
 					limit = {
 						tag = TOM
-						has_government = democratic
+						has_government = vanguardism
 					}
 					if = {
 						limit = {
 							controls_central_siberia = yes
 						}
-						set_cosmetic_tag = TOM_REGIONAL_DEM
+						set_cosmetic_tag = TOM_REGIONAL_VAN
 					}
 					if = {
 						limit = {
 							controls_siberia = yes
 						}
-						set_cosmetic_tag = TOM_SUPERREGIONAL_DEM
+						set_cosmetic_tag = TOM_SUPERREGIONAL_VAN
 					}
 					if = {
 						limit = {
 							controls_russia = yes
 						}
-						set_cosmetic_tag = TOM_NATIONAL_DEM
-					}
-				}
-				if = {
-					limit = {
-						tag = TOM
-						has_government = liberal_republic
-					}
-					if = {
-						limit = {
-							controls_central_siberia = yes
-						}
-						set_cosmetic_tag = TOM_REGIONAL_LIBREP
-					}
-					if = {
-						limit = {
-							controls_siberia = yes
-						}
-						set_cosmetic_tag = TOM_SUPERREGIONAL_LIBREP
-					}
-					if = {
-						limit = {
-							controls_russia = yes
-						}
-						set_cosmetic_tag = TOM_NATIONAL_LIBREP
+						set_cosmetic_tag = TOM_NATIONAL_VAN
 					}
 				}
 				if = {
@@ -9758,6 +10009,54 @@ on_actions = {
 				if = {
 					limit = {
 						tag = TOM
+						has_government = liberal_republic
+					}
+					if = {
+						limit = {
+							controls_central_siberia = yes
+						}
+						set_cosmetic_tag = TOM_REGIONAL_LIBREP
+					}
+					if = {
+						limit = {
+							controls_siberia = yes
+						}
+						set_cosmetic_tag = TOM_SUPERREGIONAL_LIBREP
+					}
+					if = {
+						limit = {
+							controls_russia = yes
+						}
+						set_cosmetic_tag = TOM_NATIONAL_LIBREP
+					}
+				}
+				if = {
+					limit = {
+						tag = TOM
+						has_government = democratic
+					}
+					if = {
+						limit = {
+							controls_central_siberia = yes
+						}
+						set_cosmetic_tag = TOM_REGIONAL_DEM
+					}
+					if = {
+						limit = {
+							controls_siberia = yes
+						}
+						set_cosmetic_tag = TOM_SUPERREGIONAL_DEM
+					}
+					if = {
+						limit = {
+							controls_russia = yes
+						}
+						set_cosmetic_tag = TOM_NATIONAL_DEM
+					}
+				}
+				if = {
+					limit = {
+						tag = TOM
 						has_government = neutrality
 					}
 					if = {
@@ -9777,6 +10076,18 @@ on_actions = {
 							controls_russia = yes
 						}
 						set_cosmetic_tag = TOM_NATIONAL_AUTHREP
+					}
+				}
+				if = {
+					limit = {
+						tag = TOM
+						has_government = stratocratic
+					}
+					if = {
+						limit = {
+							controls_russia = yes
+						}
+						set_cosmetic_tag = TOM_NATIONAL_PostMid
 					}
 				}
 				if = {

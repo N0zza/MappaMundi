@@ -1,33 +1,13 @@
 ﻿capital = 10913
-set_cosmetic_tag = SG1_DEN
-set_popularities = {
-        anarchism_ideology = 0
-        monarchism = 0
-        neutrality = 0
-        democratic = 0
-        liberal_republic = 0
-        communism = 0
-        vanguardism = 0
-        fascism = 0
-        socialism_ideology = 0
-        democratic_monarchism = 0
-        conservative_monarchism = 0
-        stratocratic = 0
-        authoritarian_monarchism = 90
-        republican_fascism = 0
-        national_socialism = 0
-        theocratic = 0
-        left_anarchism = 0
-        right_anarchism = 0
-        socialist_monarchy = 0
-        centrist_republic = 10
-        centrist_monarchism = 0
-        stratocratic_monarchism = 0
 
+set_cosmetic_tag = SG1_DEN
+
+set_popularities = {
+	authoritarian_monarchism = 90
+	centrist_republic = 10
 }
 
 set_politics = {
-	
 	ruling_party = authoritarian_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -35,11 +15,61 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Guvernør Aksel Svane"
-	desc = ""
-	picture = "gfx/leaders/SG1/SG1_Svane.tga"
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
 	expire = "1965.1.1"
-	ideology = authmon
+	ideology = ancap
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Kurt Fricke"
+	desc = ""
+	picture = "gfx/leaders/GRL/GRL_Fricke.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = repfash
 	traits = {
 	}
 }
@@ -55,11 +85,61 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Siulittaasuat Pitseolak Ashoona"
+	name = "Governor John Matthew Devine"
 	desc = ""
-	picture = "gfx/leaders/GRL/GRL_Ashoona.tga"
+	picture = "gfx/leaders/GRL/GRL_Devine.tga"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = militarism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Guvernør Aksel Svane"
+	desc = ""
+	picture = "gfx/leaders/SG1/SG1_Svane.tga"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Konge Christian X af Glücksburg"
+	desc = ""
+	picture = "gfx/leaders/DEN/Portrait_Christian_X.dds"
+	expire = "1965.1.1"
+	ideology = anocmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = anocrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = cenmon
 	traits = {
 	}
 }
@@ -75,21 +155,101 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Governor John Matthew Devine"
+	name = "To Be Added"
 	desc = ""
-	picture = "gfx/leaders/GRL/GRL_Devine.tga"
+	picture = "gfx/leaders/To_be_added.dds"
 	expire = "1965.1.1"
-	ideology = militarism
+	ideology = conservative_constitutionalism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Reichsprotektor Kurt Fricke"
+	name = "To Be Added"
 	desc = ""
-	picture = "gfx/leaders/GRL/GRL_Fricke.tga"
+	picture = "gfx/leaders/To_be_added.dds"
 	expire = "1965.1.1"
-	ideology = natsoc
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Siulittaasuat Pitseolak Ashoona"
+	desc = ""
+	picture = "gfx/leaders/GRL/GRL_Ashoona.tga"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = totsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Collective Leadership"
+	desc = "POLITICS_COLLECTIVE_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
 	traits = {
 	}
 }
