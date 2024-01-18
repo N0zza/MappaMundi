@@ -278,17 +278,6 @@ do_tno_normal_warlord_russia = {
 		value = 25
 	}
 	
-	KMR = {
-		transfer_state = 10424
-		transfer_state = 11936
-		transfer_state = 13655
-		transfer_state = 13656
-		transfer_state = 10422
-		transfer_state = 11916
-		transfer_state = 13651
-		set_cosmetic_tag = KMR_DEM
-	}
-	
 	set_victory_points = {
 		province = 99
 		value = 25
@@ -828,42 +817,6 @@ do_tno_normal_warlord_russia = {
 			transfer_state = 17257
 			transfer_state = 17258
 			transfer_state = 17265
-			add_state_claim = 252
-			add_state_claim = 10426
-			add_state_claim = 17254
-			add_state_claim = 10413
-			add_state_claim = 10414
-			add_state_claim = 256
-			add_state_claim = 13650
-			add_state_claim = 1726
-			add_state_claim = 1725
-			add_state_claim = 13646
-			add_state_claim = 351
-			add_state_claim = 13652
-			add_state_claim = 11927
-			add_state_claim = 11926
-			add_state_claim = 11915
-			add_state_claim = 11914
-			add_state_claim = 13639
-			add_state_claim = 4874
-			add_state_claim = 2834
-			add_state_claim = 4883
-			add_state_claim = 13828
-			add_state_claim = 4884
-			add_state_claim = 13829
-			add_state_claim = 16315
-			add_state_claim = 16316
-			add_state_claim = 16317
-			add_state_claim = 16318
-			add_state_claim = 16321
-			add_state_claim = 16322
-			add_state_claim = 16330
-			add_state_claim = 16332
-			add_state_claim = 16333
-			add_state_claim = 16334
-			add_state_claim = 16335
-			add_state_claim = 17333
-			add_state_claim = 14127
 		}
 	}
 	
@@ -1603,11 +1556,12 @@ do_tno_normal_warlord_russia = {
 	}
 	every_state = {
 		limit = {
-			is_core_of = KVO
-			is_owned_by = RUS
+			is_core_of = KMR
 		}
-		transfer_state_to = KMR
-		
+		KMR = {
+			set_cosmetic_tag = KMR_DEM
+			transfer_state = PREV
+		}
 	}
 	every_state = {
 		limit = {
@@ -3461,5 +3415,154 @@ do_tno_america_setup = {
 	}
 	USA = {
 		annex_country = {target = ALA}
+	}
+}
+
+give_moskowien_states = {
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = PTG
+				is_core_of = TIK
+			}
+		}
+		MC2 = {
+			transfer_state = PREV
+		}
+	}
+	
+	every_state = {
+		limit = {
+			is_core_of = MRD
+			NOT = {
+				is_core_of = SMM
+			}
+		}
+		MC2 = {
+			transfer_state = PREV
+		}
+	}
+	
+	every_state = {
+		limit = {
+			is_core_of = PNZ
+			NOT = {
+				is_core_of = SMM
+			}
+		}
+		MC2 = {
+			transfer_state = PREV
+		}
+	}
+	
+	every_state = {
+		limit = {
+			is_core_of = SRT
+			NOT = {
+				is_core_of = SMM
+				is_state = 17268
+				is_state = 17270
+			}
+		}
+		MC2 = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = VGR
+				is_core_of = SMO
+				is_core_of = VLD
+				is_core_of = ASK
+			}
+		}
+		MC2 = {
+			transfer_state = PREV
+			transfer_state = 17313
+			transfer_state = 13597
+			transfer_state = 17753
+			transfer_state = 2488
+			transfer_state = 11110
+			transfer_state = 14336
+			transfer_state = 14326
+			transfer_state = 14335
+			transfer_state = 14333
+			transfer_state = 14337
+			transfer_state = 11109
+			transfer_state = 14332
+			transfer_state = 14331
+			transfer_state = 14334
+			transfer_state = 237
+			transfer_state = 14329
+			transfer_state = 14325
+			transfer_state = 14323
+			transfer_state = 238
+			transfer_state = 11108
+			transfer_state = 14327
+			transfer_state = 14328
+			transfer_state = 14330
+			transfer_state = 1740
+			transfer_state = 14324
+			transfer_state = 14268
+			transfer_state = 245
+			transfer_state = 14322
+			transfer_state = 14321
+			transfer_state = 14319
+			transfer_state = 14320
+			transfer_state = 1329
+			transfer_state = 14318
+			transfer_state = 14317
+			transfer_state = 11112
+			transfer_state = 14121
+			transfer_state = 14123
+			transfer_state = 14122
+			transfer_state = 14119
+			transfer_state = 14117
+			transfer_state = 14113
+			transfer_state = 14118
+			transfer_state = 14120
+			transfer_state = 14124
+			transfer_state = 14125
+			transfer_state = 14126
+			transfer_state = 14129
+			transfer_state = 253
+			transfer_state = 14128
+			transfer_state = 13871
+			transfer_state = 13601
+			transfer_state = 13872
+			transfer_state = 12836
+			transfer_state = 12799
+			transfer_state = 16326
+			transfer_state = 16327
+			transfer_state = 16328
+			transfer_state = 16329
+			transfer_state = 16331
+			transfer_state = 16336
+			transfer_state = 16337
+			transfer_state = 16339
+			transfer_state = 16343
+			transfer_state = 16344
+			transfer_state = 16345
+			transfer_state = 16368
+			transfer_state = 16369
+			transfer_state = 17266
+			transfer_state = 17309
+			transfer_state = 17324
+			transfer_state = 17325
+			transfer_state = 17276
+			transfer_state = 17330
+			transfer_state = 17331
+			transfer_state = 17277
+			transfer_state = 17278
+			transfer_state = 17313
+			transfer_state = 17299
+			transfer_state = 17329
+			transfer_state = 17255
+			transfer_state = 17256
+			transfer_state = 17257
+			transfer_state = 17258
+			transfer_state = 17265
+		}
 	}
 }
