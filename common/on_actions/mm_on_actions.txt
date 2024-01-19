@@ -34,7 +34,7 @@ on_actions = {
 					}
 				}
 				RUS = {
-					do_tno_normal_warlord_russia = yes
+					do_tno_full_warlord_russia = yes
 				}
 			}
 		}
@@ -52,6 +52,22 @@ on_actions = {
 				}
 				GER = {
 					do_tno_einheitspakt_setup = yes
+				}
+			}
+		}
+	}
+	on_startup = {
+		#Set up the Collapsed Einheitspakt.
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_germany
+						option = EINHEITSPAKT_COLLAPSE
+					}
+				}
+				GER = {
+					do_tno_einheitspakt_collapse = yes
 				}
 			}
 		}
@@ -9111,6 +9127,21 @@ on_actions = {
 				}
 				if = {
 					limit = {
+						tag = YKT
+						controls_russia = yes
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = YKT_NATIONAL_PostMid
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
 						tag = VRN
 						controls_moskowien = yes
 					}
@@ -9119,6 +9150,21 @@ on_actions = {
 							has_government = vanguardism
 						}
 						set_cosmetic_tag = VRN_MOSKOWIEN
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = VRN
+						controls_european_russia = yes
+					}
+					if = {
+						limit = {
+							has_government = vanguardism
+						}
+						set_cosmetic_tag = VRN_SUPERREGIONAL
 					}
 					else = {
 						drop_cosmetic_tag = yes
@@ -9275,6 +9321,177 @@ on_actions = {
 							has_government = national_socialism
 						}
 						set_cosmetic_tag = TIK_SUPERREGIONAL
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = ASK
+						controls_moskowien = yes
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = ASK_MOSKOWIEN
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = ASK
+						controls_european_russia = yes
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = ASK_SUPERREGIONAL
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = NVG
+						controls_moskowien = yes
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = NVG_MOSKOWIEN
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = NVG
+						controls_european_russia = yes
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = NVG_SUPERREGIONAL
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = PTG
+						controls_moskowien = yes
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = PTG_MOSKOWIEN
+					}
+					else_if = {
+						limit = {
+							has_government = stratocratic_monarchism
+						}
+						set_cosmetic_tag = PTG_MOSKOWIEN_STRATMON
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = TVE
+						controls_moskowien = yes
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = TVE_MOSKOWIEN
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = BYS
+						controls_moskowien = yes
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = BYS_MOSKOWIEN
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = TAM
+						controls_moskowien = yes
+					}
+					if = {
+						limit = {
+							has_government = right_anarchism
+						}
+						set_cosmetic_tag = TAM_MOSKOWIEN
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = DON
+						controls_moskowien = yes
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = DON_MOSKOWIEN
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = IGR
+						controls_moskowien = yes
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = IGR_MOSKOWIEN
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = CPT
+						controls_moskowien = yes
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = CPT_MOSKOWIEN
 					}
 					else = {
 						drop_cosmetic_tag = yes
@@ -10771,6 +10988,30 @@ on_actions = {
 				}
 				if = {
 					limit = {
+						tag = YKT
+						OR = {
+							has_government = communism
+							has_government = liberal_republic
+						}
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = YKT_PostMid
+					}
+					else_if = {
+						limit = {
+							has_government = liberal_republic
+						}
+						set_cosmetic_tag = YKT_TNO
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
 						tag = VRN
 						has_government = vanguardism
 					}
@@ -10795,7 +11036,7 @@ on_actions = {
 						tag = ORO
 						OR = {
 							has_government = socialism_ideology
-							has_government = democratic
+							has_government = neutrality
 						}
 					}
 					if = {
@@ -10803,6 +11044,13 @@ on_actions = {
 							controls_moskowien = yes
 						}
 						set_cosmetic_tag = ORO_MOSKOWIEN
+						
+						every_state = {
+							limit = {
+								is_owned_by = ORO
+							}
+							do_russian_renames = yes
+						}
 					}
 					else_if = {
 						limit = {
@@ -10824,6 +11072,12 @@ on_actions = {
 							controls_moskowien = yes
 						}
 						set_cosmetic_tag = SRT_MOSKOWIEN
+						every_state = {
+							limit = {
+								is_owned_by = SRT
+							}
+							do_german_renames = yes
+						}
 					}
 					else_if = {
 						limit = {
@@ -10885,6 +11139,12 @@ on_actions = {
 							controls_moskowien = yes
 						}
 						set_cosmetic_tag = PSK_MOSKOWIEN
+						every_state = {
+							limit = {
+								is_owned_by = PSK
+							}
+							do_german_renames = yes
+						}
 					}
 					else_if = {
 						limit = {
@@ -10910,6 +11170,12 @@ on_actions = {
 							controls_moskowien = yes
 						}
 						set_cosmetic_tag = VLD_MOSKOWIEN
+						every_state = {
+							limit = {
+								is_owned_by = VLD
+							}
+							do_german_renames = yes
+						}
 					}
 					else_if = {
 						limit = {
@@ -10924,6 +11190,12 @@ on_actions = {
 							controls_moskowien = yes
 						}
 						set_cosmetic_tag = VLD_MOSKOWIEN_SOCDEM
+						every_state = {
+							limit = {
+								is_owned_by = VLD
+							}
+							do_russian_renames = yes
+						}
 					}
 					else = {
 						set_cosmetic_tag = VLD_TNO
@@ -10939,6 +11211,12 @@ on_actions = {
 							controls_moskowien = yes
 						}
 						set_cosmetic_tag = TIK_MOSKOWIEN
+						every_state = {
+							limit = {
+								is_owned_by = TIK
+							}
+							do_german_renames = yes
+						}
 					}
 					else_if = {
 						limit = {
@@ -10948,6 +11226,224 @@ on_actions = {
 					}
 					else = {
 						set_cosmetic_tag = TIK_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = ASK
+						has_government = stratocratic
+					}
+					if = {
+						limit = {
+							controls_moskowien = yes
+						}
+						set_cosmetic_tag = ASK_MOSKOWIEN
+						every_state = {
+							limit = {
+								is_owned_by = ASK
+							}
+							do_german_renames = yes
+						}
+					}
+					else_if = {
+						limit = {
+							controls_european_russia = yes
+						}
+						set_cosmetic_tag = ASK_SUPERREGIONAL
+					}
+					else = {
+						set_cosmetic_tag = ASK_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = NVG
+						has_government = stratocratic
+					}
+					if = {
+						limit = {
+							controls_moskowien = yes
+						}
+						set_cosmetic_tag = NVG_MOSKOWIEN
+						every_state = {
+							limit = {
+								is_owned_by = NVG
+							}
+							do_german_renames = yes
+						}
+					}
+					else_if = {
+						limit = {
+							controls_european_russia = yes
+						}
+						set_cosmetic_tag = NVG_SUPERREGIONAL
+					}
+					else = {
+						set_cosmetic_tag = NVG_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = PTG
+						OR = {
+							has_government = stratocratic
+							has_government = stratocratic_monarchism
+						}
+					}
+					if = {
+						limit = {
+							controls_moskowien = yes
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = PTG_MOSKOWIEN
+						every_state = {
+							limit = {
+								is_owned_by = PTG
+							}
+							do_german_renames = yes
+						}
+					}
+					else_if = {
+						limit = {
+							controls_moskowien = yes
+							has_government = stratocratic_monarchism
+						}
+						set_cosmetic_tag = PTG_MOSKOWIEN_STRATMON
+						every_state = {
+							limit = {
+								is_owned_by = PTG
+							}
+							do_german_renames = yes
+						}
+					}
+					else = {
+						set_cosmetic_tag = PTG_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = TVE
+						has_government = stratocratic
+					}
+					if = {
+						limit = {
+							controls_moskowien = yes
+						}
+						set_cosmetic_tag = TVE_MOSKOWIEN
+						every_state = {
+							limit = {
+								is_owned_by = TVE
+							}
+							do_russian_renames = yes
+						}
+					}
+					else = {
+						set_cosmetic_tag = TVE_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = BYS
+						has_government = stratocratic
+					}
+					if = {
+						limit = {
+							controls_moskowien = yes
+						}
+						set_cosmetic_tag = BYS_MOSKOWIEN
+						every_state = {
+							limit = {
+								is_owned_by = BYS
+							}
+							do_german_renames = yes
+						}
+					}
+					else = {
+						set_cosmetic_tag = BYS_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = TAM
+						has_government = right_anarchism
+					}
+					if = {
+						limit = {
+							controls_moskowien = yes
+						}
+						set_cosmetic_tag = TAM_MOSKOWIEN
+						every_state = {
+							limit = {
+								is_owned_by = TAM
+							}
+							do_german_renames = yes
+						}
+					}
+					else = {
+						set_cosmetic_tag = TAM_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = DON
+						has_government = stratocratic
+					}
+					if = {
+						limit = {
+							controls_moskowien = yes
+						}
+						set_cosmetic_tag = DON_MOSKOWIEN
+						every_state = {
+							limit = {
+								is_owned_by = DON
+							}
+							do_german_renames = yes
+						}
+					}
+					else = {
+						set_cosmetic_tag = DON_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = IGR
+						has_government = stratocratic
+					}
+					if = {
+						limit = {
+							controls_moskowien = yes
+						}
+						set_cosmetic_tag = IGR_MOSKOWIEN
+						every_state = {
+							limit = {
+								is_owned_by = IGR
+							}
+							do_russian_renames = yes
+						}
+					}
+					else = {
+						set_cosmetic_tag = IGR_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = CPT
+						has_government = stratocratic
+					}
+					if = {
+						limit = {
+							controls_moskowien = yes
+						}
+						set_cosmetic_tag = CPT_MOSKOWIEN
+						every_state = {
+							limit = {
+								is_owned_by = CPT
+							}
+							do_russian_renames = yes
+						}
+					}
+					else = {
+						set_cosmetic_tag = CPT_TNO
 					}
 				}
 			}
