@@ -3594,18 +3594,7 @@ do_tno_moskowien_civil_war = {
 			UA2 = {
 				transfer_state = PREV
 			}
-		}
-		
-		set_cosmetic_tag = UA2_TNO
-		
-		set_popularities = {
-			democratic = 100
-		}
-		
-		set_politics = {
-			ruling_party = democratic
-		}
-		
+		}	
 	}
 	
 	ASK = {
@@ -4723,6 +4712,20 @@ do_tno_outer_einheitspakt_civil_wars = {
 			transfer_state = PREV
 		}
 	}
+	every_state = {
+		limit = {
+			AND = {
+				OR = {
+					is_owned_by = GER
+					is_owned_by = NZG
+				}
+				is_core_of = UKR
+			}
+		}
+		UA2 = {
+			transfer_state = PREV
+		}
+	}
 	LON = {
 		set_cosmetic_tag = LON_BCW
 		set_politics = {
@@ -4750,6 +4753,11 @@ do_tno_outer_einheitspakt_civil_wars = {
 	KC2 = {
 		set_politics = {
 			ruling_party = stratocratic
+		}
+	}
+	UA2 = {
+		set_politics = {
+			ruling_party = neutrality
 		}
 	}
 }
