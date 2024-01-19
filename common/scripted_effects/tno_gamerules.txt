@@ -4699,13 +4699,18 @@ do_tno_outer_einheitspakt_civil_wars = {
 	}
 	every_state = {
 		limit = {
-			OR = {
-				is_core_of = YOR
-				is_core_of = LCS
-				is_core_of = NUD
-				is_core_of = SCO
-				is_core_of = FAR
-				is_core_of = MNX
+			AND = {
+				OR = {
+					is_core_of = YOR
+					is_core_of = LCS
+					is_core_of = NUD
+					is_core_of = SCO
+					is_core_of = FAR
+					is_core_of = MNX
+				}
+				NOT = {
+					is_owned_by = CRN
+				}
 			}
 		}
 		LON = {
