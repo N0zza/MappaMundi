@@ -18,6 +18,7 @@ controls_west_russia = {
 		owns_state = 251
 	}
 }
+
 controls_western_siberia = { 
 	AND = {
 		owns_state = 10874
@@ -30,6 +31,7 @@ controls_western_siberia = {
 		owns_state = 3078
 	}
 }
+
 controls_central_siberia = { 
 	AND = {
 		owns_state = 11965
@@ -42,6 +44,7 @@ controls_central_siberia = {
 		owns_state = 329
 	}
 }
+
 controls_far_east = { 
 	AND = {
 		owns_state = 566
@@ -54,6 +57,7 @@ controls_far_east = {
 		owns_state = 12516
 	}
 }
+
 controls_southern_urals = { 
 	AND = {
 		owns_state = 12573
@@ -62,6 +66,7 @@ controls_southern_urals = {
 		owns_state = 10897
 	}
 }
+
 controls_western_russia = { 
 	AND = {
 		owns_state = 4884
@@ -94,6 +99,7 @@ controls_western_russia = {
 		owns_state = 10897
 	}
 }
+
 controls_siberia = { 
 	AND = {
 		owns_state = 11965
@@ -114,6 +120,7 @@ controls_siberia = {
 		owns_state = 12516
 	}
 }
+
 controls_russia = { 
 	AND = {
 		owns_state = 4884
@@ -162,6 +169,7 @@ controls_russia = {
 		owns_state = 12516
 	}
 }
+
 controls_kazakhstan = { 
 	AND = {
 		owns_state = 12450
@@ -174,6 +182,7 @@ controls_kazakhstan = {
 		owns_state = 3306
 	}
 }
+
 controls_moskowien = { 
 	AND = {
 		owns_state = 195
@@ -197,6 +206,7 @@ controls_moskowien = {
 		owns_state = 14324
 	}
 }
+
 controls_european_russia = { 
 	AND = {
 		owns_state = 195
@@ -235,187 +245,31 @@ controls_european_russia = {
 		owns_state = 251
 	}
 }
-is_russian_warlord = {
-	OR = {
-		tag = ONG
-		tag = ARH
-		tag = PSS
-		tag = UKH
-		tag = KMR
-		tag = GYY
-		tag = BRZ
-		tag = VLG
-		tag = KSA
-		tag = VYA
-		tag = GRK
-		tag = HYP
-		tag = SMM
-		tag = ORN
-		tag = MGN
-		tag = UR2
-		tag = CHY
-		tag = VRK
-		tag = SUG
-		tag = YGR
-		tag = SVR
-		tag = TYU
-		tag = OMS
-		tag = ZLO
-		tag = TOM
-		tag = NVO
-		tag = KRV
-		tag = KNY
-		tag = ALI
-		tag = TAN
-		tag = KKS
-		tag = IRK
-		tag = BML
-		tag = CTA
-		tag = AMU
-		tag = MGD
-		tag = YKT
-		tag = ALD
-		tag = OMO
-		tag = KMC
-		AND = {
-			tag = BSH
-			NOT = {
-				has_government = stratocratic
-			}
-		}
+
+controls_great_britain = {
+	AND = {
+		owns_state = 121
+		owns_state = 986
+		owns_state = 1835
+		owns_state = 2188
 	}
 }
-is_russian_communist_warlord = {
-	OR = {
-		AND = {
-			tag = ARH
-			OR = {
-				has_government = vanguardism
-				has_government = communism
-				has_government = stratocratic
-				has_government = neutrality
-			}
-		}
-		AND = {
-			tag = PSS
-			has_government = stratocratic
-		}
-		AND = {
-			tag = UKH
-			has_government = stratocratic
-		}
-		AND = {
-			tag = KMR
-			OR = {
-				has_government = vanguardism
-				has_government = communism
-				has_government = socialism_ideology
-			}
-		}
-		AND = {
-			tag = GRK
-			has_government = stratocratic
-		}
-		AND = {
-			tag = ORN
-			OR = {
-				has_government = vanguardism
-				has_government = communism
-				has_government = socialism_ideology
-				has_government = left_anarchism
-			}
-		}
-		AND = {
-			tag = MGN
-			has_government = neutrality
-		}
-		AND = {
-			tag = SUG
-			OR = {
-				has_government = stratocratic
-				has_government = left_anarchism
-			}
-		}
-		AND = {
-			tag = SVR
-			OR = {
-				has_government = stratocratic
-				has_government = neutrality
-			}
-		}
-		AND = {
-			tag = TYU
-			OR = {
-				has_government = vanguardism
-				has_government = communism
-			}
-		}
-		AND = {
-			tag = TAN
-			has_government = stratocratic
-		}
-		AND = {
-			tag = IRK
-			has_government = vanguardism
-		}
-		AND = {
-			tag = BML
-			has_government = communism
-		}
-		AND = {
-			tag = KMC
-			has_government = centrist_republic
-		}
+
+controls_batlics = {
+	AND = {
+		owns_state = 11
+		owns_state = 991
+		owns_state = 1135
+		owns_state = 3542
+		owns_state = 17772
 	}
 }
-is_russian_monarchist_warlord = {
-	OR = {
-		AND = {
-			tag = VYA
-			has_government = conservative_monarchism
-		}
-		AND = {
-			tag = BRZ
-			has_government = authoritarian_monarchism
-		}
-		AND = {
-			tag = KMR
-			OR = {
-				has_government = theocratic
-				has_government = monarchism
-			}
-		}
-		AND = {
-			tag = VLG
-			has_government = right_anarchism
-		}
-		AND = {
-			tag = BSH
-			has_government = stratocratic
-		}
-		AND = {
-			tag = BYA
-			has_government = fascism
-		}
-		AND = {
-			tag = YGR
-			has_government = stratocratic
-		}
-		AND = {
-			tag = KRV
-			OR = {
-				has_government = authoritarian_monarchism
-				has_government = stratocratic_monarchism
-				has_government = conservative_monarchism
-				has_government = centrist_monarchism
-			}
-		}
-		AND = {
-			tag = CTA
-			OR = {
-				has_government = stratocratic_monarchism
-				has_government = centrist_monarchism
-			}
-		}
+
+controls_belarus = {
+	AND = {
+		owns_state = 96
+		owns_state = 206
+		owns_state = 5999
+		owns_state = 17930
 	}
 }

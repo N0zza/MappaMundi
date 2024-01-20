@@ -9414,6 +9414,18 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							has_government = socialism_ideology
+						}
+						set_cosmetic_tag = TVE_MOSKOWIEN_SOCREP
+					}
+					else_if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = TVE_MOSKOWIEN_AUTHREP
+					}
+					else_if = {
+						limit = {
 							has_government = stratocratic
 						}
 						set_cosmetic_tag = TVE_MOSKOWIEN
@@ -9492,6 +9504,237 @@ on_actions = {
 							has_government = stratocratic
 						}
 						set_cosmetic_tag = CPT_MOSKOWIEN
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = LON
+						controls_great_britain = yes
+					}
+					if = {
+						limit = {
+							has_government = stratocratic_monarchism
+						}
+						set_cosmetic_tag = LON_BCW_UNITED
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = RIG
+						AND = {
+							controls_batlics = yes
+							controls_belarus = yes
+						}
+					}
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = RIG_OCW_UNITED
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = RIG
+						AND = {
+							controls_batlics = yes
+							controls_belarus = no
+						}
+					}
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = RIG_OCW_BALTIC
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = SUV
+						AND = {
+							controls_batlics = yes
+							controls_belarus = yes
+						}
+					}
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = SUV_OCW_UNITED
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = SUV
+						AND = {
+							controls_batlics = yes
+							controls_belarus = no
+						}
+					}
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = SUV_OCW_BALTIC
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = LTG
+						AND = {
+							controls_batlics = yes
+							controls_belarus = yes
+						}
+					}
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = LTG_OCW_UNITED
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = LTG
+						AND = {
+							controls_batlics = yes
+							controls_belarus = no
+						}
+					}
+					if = {
+						limit = {
+							has_government = national_socialism
+						}
+						set_cosmetic_tag = LTG_OCW_BALTIC
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = WLN
+						AND = {
+							controls_batlics = yes
+							controls_belarus = yes
+						}
+					}
+					if = {
+						limit = {
+							has_government = liberal_republic
+						}
+						set_cosmetic_tag = WLN_OCW_UNITED
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = WLN
+						AND = {
+							controls_batlics = yes
+							controls_belarus = no
+						}
+					}
+					if = {
+						limit = {
+							has_government = liberal_republic
+						}
+						set_cosmetic_tag = WLN_OCW_BALTIC
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = NOW
+						AND = {
+							controls_batlics = yes
+							controls_belarus = yes
+						}
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = NOW_OCW_UNITED
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = NOW
+						AND = {
+							controls_batlics = no
+							controls_belarus = yes
+						}
+					}
+					if = {
+						limit = {
+							has_government = republican_fascism
+						}
+						set_cosmetic_tag = NOW_OCW_BELARUS
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = AUK
+						AND = {
+							controls_batlics = yes
+							controls_belarus = yes
+						}
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = AUK_OCW_UNITED
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = AUK
+						AND = {
+							controls_batlics = yes
+							controls_belarus = no
+						}
+					}
+					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = AUK_OCW_BALTIC
 					}
 					else = {
 						drop_cosmetic_tag = yes
@@ -11323,6 +11566,42 @@ on_actions = {
 				if = {
 					limit = {
 						tag = TVE
+						has_government = socialism_ideology
+					}
+					if = {
+						limit = {
+							controls_moskowien = yes
+						}
+						set_cosmetic_tag = TVE_MOSKOWIEN_SOCREP
+					}
+					else = {
+						set_cosmetic_tag = TVE_SOCREP
+					}
+				}
+				if = {
+					limit = {
+						tag = TVE
+						has_government = neutrality
+					}
+					if = {
+						limit = {
+							controls_moskowien = yes
+						}
+						set_cosmetic_tag = TVE_MOSKOWIEN_AUTHREP
+						every_state = {
+							limit = {
+								is_owned_by = TVE
+							}
+							do_russian_renames = yes
+						}
+					}
+					else = {
+						set_cosmetic_tag = TVE_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = TVE
 						has_government = stratocratic
 					}
 					if = {
@@ -11444,6 +11723,258 @@ on_actions = {
 					}
 					else = {
 						set_cosmetic_tag = CPT_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = LON
+						has_government = stratocratic_monarchism
+					}
+					if = {
+						limit = {
+							controls_great_britain = yes
+						}
+						set_cosmetic_tag = LON_BCW_UNITED
+					}
+					else_if = {
+						limit = {
+							has_government = stratocratic_monarchism
+							NOT = {
+								controls_great_britain = yes
+							}
+						}
+						set_cosmetic_tag = LON_BCW
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = CRN
+						has_government = stratocratic
+					}
+					if = {
+						limit = {
+							controls_great_britain = yes
+						}
+						set_cosmetic_tag = CRN_BCW_UNITED
+						every_state = {
+							limit = {
+								is_owned_by = CRN
+							}
+							do_german_renames = yes
+						}
+					}
+					else_if = {
+						limit = {
+							has_government = stratocratic
+							NOT = {
+								controls_great_britain = yes
+							}
+						}
+						set_cosmetic_tag = GREY_GER3
+					}
+					else = {
+						drop_cosmetic_tag = yes
+					}
+				}
+				if = {
+					limit = {
+						tag = RIG
+						has_government = national_socialism
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = yes
+							}
+						}
+						set_cosmetic_tag = RIG_OCW_UNITED
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = no
+							}
+						}
+						set_cosmetic_tag = RIG_OCW_BALTIC
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_belarus = no
+								controls_batlics = no
+							}
+						}
+						set_cosmetic_tag = RIG_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = SUV
+						has_government = national_socialism
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = yes
+							}
+						}
+						set_cosmetic_tag = SUV_OCW_UNITED
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = no
+							}
+						}
+						set_cosmetic_tag = SUV_OCW_BALTIC
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_belarus = no
+								controls_batlics = no
+							}
+						}
+						set_cosmetic_tag = SUV_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = LTG
+						has_government = national_socialism
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = yes
+							}
+						}
+						set_cosmetic_tag = LTG_OCW_UNITED
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = no
+							}
+						}
+						set_cosmetic_tag = LTG_OCW_BALTIC
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_belarus = no
+								controls_batlics = no
+							}
+						}
+						set_cosmetic_tag = LTG_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = WLN
+						has_government = liberal_republic
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = yes
+							}
+						}
+						set_cosmetic_tag = WLN_OCW_UNITED
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = no
+							}
+						}
+						set_cosmetic_tag = WLN_OCW_BALTIC
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_belarus = no
+								controls_batlics = no
+							}
+						}
+						set_cosmetic_tag = WLN_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = NOW
+						has_government = republican_fascism
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = yes
+							}
+						}
+						set_cosmetic_tag = NOW_OCW_UNITED
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = no
+								controls_belarus = yes
+							}
+						}
+						set_cosmetic_tag = NOW_OCW_BELARUS
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_belarus = no
+								controls_batlics = no
+							}
+						}
+						set_cosmetic_tag = NOW_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = AUK
+						has_government = stratocratic
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = yes
+							}
+						}
+						set_cosmetic_tag = AUK_OCW_UNITED
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = no
+								controls_belarus = yes
+							}
+						}
+						set_cosmetic_tag = AUK_OCW_BALTIC
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_belarus = no
+								controls_batlics = no
+							}
+						}
+						set_cosmetic_tag = AUK_TNO
 					}
 				}
 			}

@@ -4137,7 +4137,6 @@ do_tno_ostland_civil_war = {
 					state = 6000
 					state = 11001
 					state = 17902
-					state = 17904
 					state = 17838
 					state = 17804
 					state = 17805
@@ -4171,7 +4170,7 @@ do_tno_ostland_civil_war = {
 					state = 3234
 					state = 17803
 					state = 17804
-					state = 17903
+					state = 17904
 					state = 17911
 					state = 17912
 					state = 17917
@@ -4646,6 +4645,27 @@ do_tno_german_civil_war = {
 			transfer_state = PREV
 		}
 	}
+	
+	every_state = {
+		limit = {
+			AND = {
+				OR = {
+					is_owned_by = GER
+					is_owned_by = NZG
+				}
+				is_core_of = UKR
+			}
+		}
+		UA2 = {
+			transfer_state = PREV
+		}
+	}
+	
+	UA2 = {
+		set_politics = {
+			ruling_party = neutrality
+		}
+	}
 }
 
 do_tno_outer_einheitspakt_civil_wars = {
@@ -4683,7 +4703,12 @@ do_tno_outer_einheitspakt_civil_wars = {
 	}
 	every_state = {
 		limit = {
-			is_core_of = FAR
+			OR = {
+				is_core_of = SCO
+				is_core_of = WLS
+				is_core_of = EGL
+				is_core_of = MNX
+			}
 		}
 		ENG = {
 			transfer_state = PREV
@@ -4719,6 +4744,18 @@ do_tno_outer_einheitspakt_civil_wars = {
 	}
 	every_state = {
 		limit = {
+			OR = {
+				is_core_of = JSY
+				is_core_of = GSY
+				state = 986
+			}
+		}
+		CRN = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
 			AND = {
 				OR = {
 					is_owned_by = GER
@@ -4738,6 +4775,12 @@ do_tno_outer_einheitspakt_civil_wars = {
 		}
 		set_popularities = {
 			stratocratic_monarchism = 100
+		}
+	}
+	CRN = {
+		set_cosmetic_tag = GREY_GER3
+		set_politics = {
+			ruling_party = stratocratic
 		}
 	}
 	HL2 = {
