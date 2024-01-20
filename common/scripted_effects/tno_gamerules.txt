@@ -2,12 +2,14 @@ do_tno_full_warlord_russia = {
 	do_tno_normal_warlord_russia = yes
 	do_tno_moskowien_civil_war = yes
 	do_tno_ostland_civil_war = yes
+	do_tno_ukrainian_civil_war = yes
 }
 
 do_tno_einheitspakt_collapse = {
 	do_tno_einheitspakt_setup = yes
 	do_tno_german_civil_war = yes
 	do_tno_ostland_civil_war = yes
+	do_tno_ukrainian_civil_war = yes
 	do_tno_outer_einheitspakt_civil_wars = yes
 }
 
@@ -16,7 +18,6 @@ do_tno_normal_warlord_russia = {
 	RUS = {
 		release = GYY
 		release = VYA
-		release = GRK
 		release = VRK
 		release = ORS
 		release = YGR
@@ -32,7 +33,6 @@ do_tno_normal_warlord_russia = {
 			OR = {
 				is_core_of = GYY
 				is_core_of = VYA
-				is_core_of = GRK
 				is_core_of = VRK
 				is_core_of = ORS
 				is_core_of = YGR
@@ -343,6 +343,15 @@ do_tno_normal_warlord_russia = {
 		VLG = {
 			transfer_state = PREV
 			add_state_core = PREV
+		}
+	}
+	
+	every_state = {
+		limit = {
+			is_core_of = GRK
+		}
+		GRK = {
+			transfer_state = PREV
 		}
 	}
 	
@@ -3556,47 +3565,6 @@ do_tno_moskowien_civil_war = {
 		set_cosmetic_tag = TAM_TNO
 	}
 	
-	UA2 = {
-		every_state = {
-			limit = {
-				OR = {
-					is_core_of = UA2
-					is_core_of = UKR
-					state = 240
-					state = 14227
-					state = 3780
-					state = 2190
-					state = 11107
-					state = 11111
-					state = 218
-					state = 17279
-					state = 17303
-					state = 14253
-					state = 17282
-					state = 17283
-					state = 14250
-					state = 17292
-					state = 17293
-					state = 17295
-					state = 17297
-				}
-				NOT = {
-					is_claimed_by = ROM
-					is_owned_by = ROM
-					is_core_of = CZE
-					is_owned_by = POL
-					is_owned_by = Pl2
-					is_owned_by = Pl3
-					is_owned_by = HUN
-				}
-			}
-			
-			UA2 = {
-				transfer_state = PREV
-			}
-		}	
-	}
-	
 	ASK = {
 		every_state = {
 			limit = {
@@ -4077,7 +4045,12 @@ do_tno_moskowien_civil_war = {
 	TVE = {
 		every_state = {
 			limit = {
-				is_owned_by = MC2
+				AND = {
+					is_owned_by = MC2
+					NOT = {
+						is_claimed_by = UA2
+					}
+				}
 			}
 			TVE = {
 				transfer_state = PREV
@@ -4107,6 +4080,15 @@ do_tno_moskowien_civil_war = {
 	
 	ASK = {
 		transfer_state = 17309
+	}
+	
+	every_state = {
+		limit = {
+			is_owned_by = MC2
+		}
+		UA2 = {
+			transfer_state = PREV
+		}
 	}
 }
 
@@ -4668,6 +4650,241 @@ do_tno_german_civil_war = {
 	}
 }
 
+do_tno_ukrainian_civil_war = {
+	ICE = {
+		give_tno_ukraine_states = yes
+	}
+	every_state = {
+		limit = {
+			AND = {
+				OR = {
+					is_owned_by = GER
+					is_owned_by = NZG
+				}
+				is_core_of = UKR
+			}
+		}
+		UA2 = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				AND = {
+					is_owned_by = UA2
+					is_core_of = VRN
+					NOT = {
+						state = 14250
+					}
+				}
+				is_core_of = DNK
+				is_core_of = LUH
+				state = 218
+				state = 2190
+				state = 11107
+				state = 11111
+				state = 17279
+				state = 17303
+				state = 19182
+				state = 19193
+			}
+		}
+		KHK = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = ZAP
+				is_core_of = CRM
+				AND = {
+					is_core_of = KHE
+					NOT = {
+						state = 14110
+						state = 14111
+						state = 17864
+						state = 17866
+					}
+				}
+			}
+		}
+		SSC = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = VLH
+				is_core_of = RCT
+				is_core_of = KME
+				AND = {
+					is_core_of = ZHY
+					NOT = {
+						state = 201
+						state = 8030
+						state = 11073
+						state = 11075
+						state = 18943
+						state = 18944
+					}
+				}
+				AND = {
+					is_core_of = UA2
+					OR = {
+						is_core_of = MZY
+						is_core_of = BOB
+					}
+				}
+				state = 194
+				state = 2227
+				state = 3238
+				state = 8050
+				state = 17615
+				state = 17616
+				state = 17905
+				state = 17908
+				state = 17939
+				state = 18962
+				state = 18963
+				state = 18964
+			}
+		}
+		VLH = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				AND = {
+					OR = {
+						is_core_of = PSE
+						is_core_of = BIY
+					}
+					is_core_of = UA2
+					NOT = {
+						is_owned_by = VLH
+					}
+				}
+			}
+		}
+		PSE = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_owned_by = UA2
+			}
+		}
+		KIV = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = SUY
+				is_core_of = PLV
+				AND = {
+					is_core_of = KHK
+					NOT = {
+						is_owned_by = KHK
+					}
+				}
+				AND = {
+					is_core_of = SMO
+					is_owned_by = KIV
+				}
+				AND = {
+					is_core_of = CHV
+					NOT = {
+						state = 193
+						state = 3232
+						state = 19228
+						state = 19229
+						state = 19230
+						state = 19231
+						state = 19232
+						state = 19233
+					}
+				}
+				state = 240
+				state = 3780
+				state = 13264
+				state = 14227
+				state = 14250
+				state = 19190
+				state = 19192
+				state = 19194
+				state = 19195
+				state = 19196
+			}
+		}
+		UA2 = {
+			transfer_state = PREV
+		}
+	}
+	UA2 = {
+		set_politics = {
+			ruling_party = right_anarchism
+		}
+		set_popularities = {
+			right_anarchism = 100
+		}
+		set_cosmetic_tag = UA2_UCW
+	}
+	KIV = {
+		set_politics = {
+			ruling_party = national_socialism
+		}
+		set_popularities = {
+			national_socialism = 100
+		}
+		set_cosmetic_tag = KIV_UCW
+	}
+	KHK = {
+		set_politics = {
+			ruling_party = vanguardism
+		}
+		set_popularities = {
+			vanguardism = 100
+		}
+		set_cosmetic_tag = KHK_UCW
+	}
+	SSC = {
+		set_politics = {
+			ruling_party = stratocratic
+		}
+		set_popularities = {
+			stratocratic = 100
+		}
+		set_cosmetic_tag = CRM_TNO
+	}
+	VLH = {
+		set_politics = {
+			ruling_party = republican_fascism
+		}
+		set_popularities = {
+			republican_fascism = 100
+		}
+		set_cosmetic_tag = VLH_UCW
+	}
+	PSE = {
+		set_politics = {
+			ruling_party = liberal_republic
+		}
+		set_popularities = {
+			liberal_republic = 100
+		}
+		set_cosmetic_tag = PSE_UCW
+	}
+}
+
 do_tno_outer_einheitspakt_civil_wars = {
 	ICE = {
 		give_tno_burgundy_states = yes
@@ -4754,20 +4971,6 @@ do_tno_outer_einheitspakt_civil_wars = {
 			transfer_state = PREV
 		}
 	}
-	every_state = {
-		limit = {
-			AND = {
-				OR = {
-					is_owned_by = GER
-					is_owned_by = NZG
-				}
-				is_core_of = UKR
-			}
-		}
-		UA2 = {
-			transfer_state = PREV
-		}
-	}
 	LON = {
 		set_cosmetic_tag = LON_BCW
 		set_politics = {
@@ -4801,11 +5004,6 @@ do_tno_outer_einheitspakt_civil_wars = {
 	KC2 = {
 		set_politics = {
 			ruling_party = stratocratic
-		}
-	}
-	UA2 = {
-		set_politics = {
-			ruling_party = neutrality
 		}
 	}
 }

@@ -1143,7 +1143,57 @@ give_tno_burgundy_states = {
 	}
 }
 
+give_tno_ukraine_states = {
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = UA2
+				is_core_of = UKR
+				state = 240
+				state = 14227
+				state = 3780
+				state = 2190
+				state = 11107
+				state = 11111
+				state = 218
+				state = 8050
+				state = 17279
+				state = 17303
+				state = 14253
+				state = 17282
+				state = 17283
+				state = 14250
+				state = 17292
+				state = 17293
+				state = 17295
+				state = 17297
+				state = 17615
+				state = 17616
+				state = 19182
+				state = 19193
+			}
+			NOT = {
+				is_claimed_by = ROM
+				is_owned_by = ROM
+				is_core_of = CZE
+				is_owned_by = POL
+				is_owned_by = Pl2
+				is_owned_by = Pl3
+				is_owned_by = HUN
+			}
+		}
+		
+		UA2 = {
+			transfer_state = PREV
+		}
+	}
+}
+
 do_tno_explode_everything = {
-	do_tno_einheitspakt_collapse = yes
-	do_tno_full_warlord_russia = yes
+	do_tno_normal_warlord_russia = yes
+	do_tno_einheitspakt_setup = yes
+	do_tno_moskowien_civil_war = yes
+	do_tno_ostland_civil_war = yes
+	do_tno_german_civil_war = yes
+	do_tno_outer_einheitspakt_civil_wars = yes
 }
