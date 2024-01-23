@@ -7518,16 +7518,35 @@ on_actions = {
 						}
 					}
 					set_cosmetic_tag = CZ2_DEMOCRATIC
+					every_state = {
+						limit = {
+							is_owned_by = ROOT
+						}
+						do_czech_renames = yes
+					}
 				}
-				if = {
+				else_if = {
 					limit = {
-						NOT = {
-							has_government = liberal_republic
-							has_government = centrist_republic
-							has_government = democratic
+						OR = {
+							has_government = socialism_ideology
 						}
 					}
+					set_cosmetic_tag = CZ2_SOCREP
+					every_state = {
+						limit = {
+							is_owned_by = ROOT
+						}
+						do_czech_renames = yes
+					}
+				}
+				else = {
 					set_cosmetic_tag = CZC_TNO
+					every_state = {
+						limit = {
+							is_owned_by = ROOT
+						}
+						do_german_renames = yes
+					}
 				}
 			}
 			if = {
@@ -7540,19 +7559,19 @@ on_actions = {
 					}
 					set_cosmetic_tag = DN2_THEO
 				}
-				if = {
+				else_if = {
 					limit = {
 						has_government = national_socialism
 					}
 					set_cosmetic_tag = DN2_TNO
 				}
-				if = {
+				else_if = {
 					limit = {
 						has_government = neutrality
 					}
 					set_cosmetic_tag = DN2_AUTHREP
 				}
-				if = {
+				else_if = {
 					limit = {
 						OR = {
 							has_government = democratic
@@ -7561,7 +7580,7 @@ on_actions = {
 					}
 					set_cosmetic_tag = DN2_DEMOCRATIC
 				}
-				if = {
+				else_if = {
 					limit = {
 						OR = {
 							has_government = communism
@@ -7570,18 +7589,8 @@ on_actions = {
 					}
 					set_cosmetic_tag = DN2_COMMUNISM
 				}
-				if = {
-					limit = {
-						NOT = {
-							has_government = theocratic
-							has_government = neutrality
-							has_government = democratic
-							has_government = socialist_monarchy
-							has_government = communism
-							has_government = vanguardism
-						}
-					}
-					set_cosmetic_tag = DN2_TNO
+				else = {
+					set_cosmetic_tag = DEN_TNO
 				}
 			}
 			if = {
@@ -9526,6 +9535,12 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							has_government = vanguardism
+						}
+						set_cosmetic_tag = TVE_SUPERREGIONAL_VAN
+					}
+					else_if = {
+						limit = {
 							has_government = socialism_ideology
 						}
 						set_cosmetic_tag = TVE_SUPERREGIONAL_SOCREP
@@ -9721,6 +9736,18 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = SUV_OCW_UNITED_STRAT
+						every_state = {
+							limit = {
+								is_owned_by = ROOT
+							}
+							do_lithuanian_renames = yes
+						}
+					}
+					else_if = {
+						limit = {
 							has_government = national_socialism
 						}
 						set_cosmetic_tag = SUV_OCW_UNITED
@@ -9738,6 +9765,18 @@ on_actions = {
 						}
 					}
 					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = SUV_OCW_BALTIC_STRAT
+						every_state = {
+							limit = {
+								is_owned_by = ROOT
+							}
+							do_lithuanian_renames = yes
+						}
+					}
+					else_if = {
 						limit = {
 							has_government = national_socialism
 						}
@@ -9757,6 +9796,12 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = LTG_OCW_UNITED_STRAT
+					}
+					else_if = {
+						limit = {
 							has_government = national_socialism
 						}
 						set_cosmetic_tag = LTG_OCW_UNITED
@@ -9774,6 +9819,12 @@ on_actions = {
 						}
 					}
 					if = {
+						limit = {
+							has_government = stratocratic
+						}
+						set_cosmetic_tag = LTG_OCW_UNITED_STRAT
+					}
+					else_if = {
 						limit = {
 							has_government = national_socialism
 						}
@@ -9793,6 +9844,12 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							has_government = vanguardism
+						}
+						set_cosmetic_tag = WLN_OCW_UNITED_VAN
+					}
+					else_if = {
+						limit = {
 							has_government = liberal_republic
 						}
 						set_cosmetic_tag = WLN_OCW_UNITED
@@ -9810,6 +9867,12 @@ on_actions = {
 						}
 					}
 					if = {
+						limit = {
+							has_government = vanguardism
+						}
+						set_cosmetic_tag = WLN_OCW_UNITED_VAN
+					}
+					else_if = {
 						limit = {
 							has_government = liberal_republic
 						}
@@ -11864,6 +11927,12 @@ on_actions = {
 							}
 						}
 						set_cosmetic_tag = TVE_MOSKOWIEN_VAN
+						every_state = {
+							limit = {
+								is_owned_by = TVE
+							}
+							do_russian_renames = yes
+						}
 					}
 					else_if = {
 						limit = {
@@ -11873,6 +11942,12 @@ on_actions = {
 							}
 						}
 						set_cosmetic_tag = TVE_SUPERREGIONAL_VAN
+						every_state = {
+							limit = {
+								is_owned_by = TVE
+							}
+							do_russian_renames = yes
+						}
 					}
 					else = {
 						set_cosmetic_tag = TVE_VAN
@@ -12312,6 +12387,51 @@ on_actions = {
 				if = {
 					limit = {
 						tag = SUV
+						has_government = stratocratic
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = yes
+							}
+						}
+						set_cosmetic_tag = SUV_OCW_UNITED_STRAT
+						every_state = {
+							limit = {
+								is_owned_by = ROOT
+							}
+							do_lithuanian_renames = yes
+						}
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = no
+							}
+						}
+						set_cosmetic_tag = SUV_OCW_BALTIC_STRAT
+						every_state = {
+							limit = {
+								is_owned_by = ROOT
+							}
+							do_lithuanian_renames = yes
+						}
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_belarus = no
+								controls_batlics = no
+							}
+						}
+						set_cosmetic_tag = SUV_STRAT
+					}
+				}
+				if = {
+					limit = {
+						tag = SUV
 						has_government = national_socialism
 					}
 					if = {
@@ -12345,6 +12465,39 @@ on_actions = {
 				if = {
 					limit = {
 						tag = LTG
+						has_government = stratocratic
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = yes
+							}
+						}
+						set_cosmetic_tag = LTG_OCW_UNITED_STRAT
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = no
+							}
+						}
+						set_cosmetic_tag = LTG_OCW_BALTIC_STRAT
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_belarus = no
+								controls_batlics = no
+							}
+						}
+						set_cosmetic_tag = LTG_STRAT
+					}
+				}
+				if = {
+					limit = {
+						tag = LTG
 						has_government = national_socialism
 					}
 					if = {
@@ -12373,6 +12526,39 @@ on_actions = {
 							}
 						}
 						set_cosmetic_tag = LTG_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = WLN
+						has_government = vanguardism
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = yes
+							}
+						}
+						set_cosmetic_tag = WLN_OCW_UNITED_VAN
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = no
+							}
+						}
+						set_cosmetic_tag = WLN_OCW_BALTIC_VAN
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_belarus = no
+								controls_batlics = no
+							}
+						}
+						set_cosmetic_tag = WLN_VAN
 					}
 				}
 				if = {
