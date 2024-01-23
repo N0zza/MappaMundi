@@ -1,0 +1,61 @@
+bookmarks = {
+	bookmark = {
+		name = "End of the Cold War (UNFINSIHED)"
+		desc = "MM_1992_DESC"
+		date = 1992.1.1.12
+		picture = "GFX_select_date_1950"
+		default_country = "ICE"
+		
+		"ICE"={
+			history = "ICE_MM_BOOKMARK_DESC"
+			ideology = centrist_republic
+		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = vanguardism
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = conservative_monarchism
+		}
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+		"WGR"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = democratic
+		}
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = stratocratic_monarchism
+		}
+		"PRC"={
+			history = "PRC_GATHERING_STORM_DESC"
+			ideology = vanguardism
+		}
+		"---"={
+			history = "OTHER_MM_BOOKMARK_DESC"
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+			set_global_flag = startdate_1992_select
+
+			clr_global_flag = startdate_1836_select
+			clr_global_flag = startdate_1936_select
+			clr_global_flag = startdate_1939_select
+			clr_global_flag = startdate_1914_select
+			clr_global_flag = startdate_1950_select
+			clr_global_flag = startdate_modern_day_select
+			clr_global_flag = startdate_blank_select
+			
+			WTR = { complete_national_focus = WTR_1992_start }
+		}
+	}
+}

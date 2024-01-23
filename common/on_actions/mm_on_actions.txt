@@ -7898,23 +7898,42 @@ on_actions = {
 				if = {
 					limit = {
 						OR = {
+							has_government = liberal_republic
 							has_government = democratic
 							has_government = conservative_monarchism
 						}
 					}
 					set_cosmetic_tag = HL2_CONREP
+					every_state = {
+						limit = {
+							is_owned_by = ROOT
+						}
+						do_dutch_renames = yes
+					}
 				}
 				else_if = {
 					limit = {
 						has_government = neutrality
 					}
 					set_cosmetic_tag = HL2_AUTH
+					every_state = {
+						limit = {
+							is_owned_by = ROOT
+						}
+						do_dutch_renames = yes
+					}
 				}
 				else_if = {
 					limit = {
 						has_government = stratocratic
 					}
 					set_cosmetic_tag = GREY_GER1
+					every_state = {
+						limit = {
+							is_owned_by = ROOT
+						}
+						do_german_renames = yes
+					}
 				}
 				else_if = {
 					limit = {
@@ -7930,12 +7949,24 @@ on_actions = {
 						}
 					}
 					set_cosmetic_tag = UTR_TNO
+					every_state = {
+						limit = {
+							is_owned_by = ROOT
+						}
+						do_german_renames = yes
+					}
 				}
 				else_if = {
 					limit = {
 						has_government = theocratic
 					}
 					set_cosmetic_tag = SS_STATE_GENERIC
+					every_state = {
+						limit = {
+							is_owned_by = ROOT
+						}
+						do_german_renames = yes
+					}
 				}
 				else = {
 					drop_cosmetic_tag = yes

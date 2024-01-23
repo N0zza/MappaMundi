@@ -13133,6 +13133,95 @@
 		}
 	}
 	focus = {
+		id = WTR_1992_start
+		icon = GFX_goal_anschluss
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			has_global_flag = startdate_1992_select
+		}
+		bypass = {
+			NOT = {
+				has_global_flag = startdate_1992_select
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {
+			FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER
+		}
+		
+		completion_reward = {
+			#tooltip
+			effect_tooltip ={
+				release_puppet = SLV
+				SLV = {
+					custom_effect_tooltip = create_two_units_tt
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						UCL = {
+							exists = no 
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+							is_owned_by = GER
+							is_owned_by = NOR
+							is_owned_by = SWE
+							is_owned_by = TUR
+							is_owned_by = GRE
+							}
+						}
+						set_demilitarized_zone = no
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = DDR
+								is_core_of = WGR
+							}
+						}
+						WGR = {
+							transfer_state = PREV
+						}
+					}
+					WGR = {
+						set_politics = {
+							ruling_party = democratic
+						}
+					}
+					RUS = {
+						set_politics = {
+							ruling_party = democratic
+						}
+						set_cosmetic_tag = RUS_1992_TEST
+					}
+					USA = {
+						set_cosmetic_tag = USA_1992
+						set_politics = {
+							ruling_party = democratic
+						}
+						create_country_leader = {
+							name = "President George Herbert Walker Bush"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Bush_Father.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
+					}
+			}
+		}
+	}
+	focus = {
 		id = WTR_2023_start
 		icon = GFX_goal_anschluss
 		x = 0
