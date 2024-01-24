@@ -13174,23 +13174,134 @@
 					every_state = {
 						limit = {
 							OR = {
-							is_owned_by = GER
-							is_owned_by = NOR
-							is_owned_by = SWE
-							is_owned_by = TUR
-							is_owned_by = GRE
-							}
-						}
-						set_demilitarized_zone = no
-					}
-					every_state = {
-						limit = {
-							OR = {
 								is_core_of = DDR
 								is_core_of = WGR
 							}
 						}
 						WGR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = BLR
+						}
+						BLR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = UKR
+								is_core_of = CRM
+							}
+						}
+						UKR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								AND = {
+									is_core_of = POL
+									NOT = {
+										is_owned_by = UKR
+										is_owned_by = BLR
+									}
+								}
+								AND = {
+									is_claimed_by = POL
+									is_owned_by = GER
+								}
+							}
+						}
+						POL = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = IND
+						}
+						IND = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = PAK
+						}
+						PAK = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = LIT
+						}
+						LIT = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								AND = {
+									is_core_of = RUS
+									NOT = {
+										is_owned_by = UKR
+										is_owned_by = BLR
+									}
+								}
+								AND = {
+									is_core_of = KON
+									is_owned_by = GER
+								}
+							}
+						}
+						RUS = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								AND = {
+									is_core_of = PRC
+									NOT = {
+										is_core_of = MON
+										is_core_of = RUS
+										is_core_of = TWN
+										is_owned_by = HKG
+										is_owned_by = MCU
+									}
+								}
+								is_core_of = TIB
+							}
+						}
+						PRC = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = TWN
+								state = 2647
+								state = 15376
+							}
+						}
+						CHI = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = AST
+						}
+						AST = {
 							transfer_state = PREV
 						}
 					}
@@ -13203,7 +13314,22 @@
 						set_politics = {
 							ruling_party = democratic
 						}
-						set_cosmetic_tag = RUS_1992_TEST
+						set_cosmetic_tag = RUS_1992
+					}
+					UKR = {
+						set_politics = {
+							ruling_party = democratic
+						}
+						set_cosmetic_tag = UKR_1992
+					}
+					BLR = {
+						set_politics = {
+							ruling_party = democratic
+						}
+						set_cosmetic_tag = BLR_1992
+					}
+					PRC = {
+						set_cosmetic_tag = PRC_2023
 					}
 					USA = {
 						set_cosmetic_tag = USA_1992
@@ -13217,6 +13343,19 @@
 							expire = "1965.1.1"
 							ideology = conservatism
 						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = WGR
+								is_owned_by = NOR
+								is_owned_by = SWE
+								is_owned_by = TUR
+								is_owned_by = GRE
+								is_owned_by = PRC
+							}
+						}
+						set_demilitarized_zone = no
 					}
 			}
 		}
