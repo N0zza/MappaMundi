@@ -13295,10 +13295,55 @@
 							transfer_state = PREV
 						}
 					}
+					every_state = {
+						limit = {
+							is_core_of = YUG
+						}
+						YUG = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SLV
+						}
+						SLV = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							AND = {
+								is_core_of = CRO
+								is_owned_by = YUG
+							}
+						}
+						CRO = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							AND = {
+								is_core_of = MAC
+								is_owned_by = YUG
+							}
+						}
+						MAC = {
+							transfer_state = PREV
+						}
+					}
 					ITA = {
-						set_cosmetic_tag = ITA_2023_REPUBLIC
+						set_cosmetic_tag = ITA_1992
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = centrist_republic
+						}
+						create_country_leader = {
+							name = "Presidente Francesco Maurizio Cossiga"
+							desc = ""
+							picture = "gfx/leaders/ITA/Portrait_Francesco_Cossiga.dds"
+							expire = "1965.1.1"
+							ideology = cenrep
 						}
 					}
 					WGR = {
@@ -13333,6 +13378,28 @@
 						}
 						drop_cosmetic_tag = yes
 					}
+					YUG = {
+						set_cosmetic_tag = YUG_1992
+						set_politics = {
+							ruling_party = democratic
+						}
+					}
+					SLV = {
+						set_politics = {
+							ruling_party = liberal_republic
+						}
+					}
+					CRO = {
+						set_politics = {
+							ruling_party = democratic
+						}
+					}
+					MAC = {
+						set_cosmetic_tag = MAC_1992
+						set_politics = {
+							ruling_party = democratic
+						}
+					}
 					EST = {
 						set_politics = {
 							ruling_party = centrist_republic
@@ -13355,10 +13422,15 @@
 						drop_cosmetic_tag = yes
 					}	
 					RUS = {
+						set_cosmetic_tag = RUS_1992
 						set_politics = {
 							ruling_party = democratic
 						}
-						set_cosmetic_tag = RUS_1992
+						set_party_name = {
+							ideology = democratic
+							name = RUS_democratic_1992_party
+							long_name = RUS_democratic_1992_party_long
+						}
 					}
 					UKR = {
 						set_politics = {
@@ -13374,13 +13446,13 @@
 					}
 					KAZ = {
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = neutrality
 						}
 						set_cosmetic_tag = KAZ_1992
 						set_party_name = {
-							ideology = democratic
-							name = KAZ_democratic_1992_party
-							long_name = KAZ_democratic_1992_party
+							ideology = neutrality
+							name = KAZ_neutrality_1992_party
+							long_name = KAZ_neutrality_1992_party_long
 						}
 					}
 					TAJ = {
@@ -13427,15 +13499,33 @@
 					}
 					### AFRICA 1992 ###
 					LBA = {
-						drop_cosmetic_tag = yes
+						set_cosmetic_tag = LBA_1992
 						set_politics = {
-							ruling_party = socialism_ideology
+							ruling_party = communism
 						}
 					}
 					COG = {
-						drop_cosmetic_tag = yes
+						set_cosmetic_tag = COG_1992
 						set_politics = {
-							ruling_party = republican_fascism
+							ruling_party = neutrality
+						}
+					}
+					IRQ = {
+						set_cosmetic_tag = IRQ_1992
+						set_politics = {
+							ruling_party = communism
+						}
+						set_party_name = {
+							ideology = communism
+							name = IRQ_communism_1992_party
+							long_name = IRQ_communism_1992_party_long
+						}
+						create_country_leader = {
+							name = "Raiys Jumhuriat al-Iraq Saddam Hussein Abd al-Majid al-Tikriti"
+							desc = ""
+							picture = "gfx/leaders/IRQ/Portrait_Saddam_Hussein.dds"
+							expire = "1965.1.1"
+							ideology = marxism
 						}
 					}
 					### ASIA AND OCEANIA 1992 ###
@@ -13517,6 +13607,12 @@
 							transfer_state = PREV
 						}
 					}
+					AFG = {
+						set_cosmetic_tag = AFG_1992
+						set_politics = {
+							ruling_party = neutrality
+						}
+					}
 					IND = {
 						set_cosmetic_tag = IND_2023
 						set_politics = {
@@ -13551,17 +13647,6 @@
 						set_cosmetic_tag = PHI_202
 						set_politics = {
 							ruling_party = democratic
-						}
-					}
-					IRQ = {
-						set_cosmetic_tag = IRQ_1992
-						set_politics = {
-							ruling_party = stratocratic
-						}
-						set_party_name = {
-							ideology = stratocratic
-							name = IRQ_stratocratic_1992_party
-							long_name = IRQ_stratocratic_1992_party_long
 						}
 					}
 					### NORTH AMERICA 1992 ###
