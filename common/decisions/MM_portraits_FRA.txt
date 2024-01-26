@@ -22,9 +22,69 @@ MM_PORTRAITS_FRA_OTL_CATEGORY = {
 			create_country_leader = {
 			name = "Président Charles André Joseph Marie de Gaulle"
 			desc = ""
-			picture = "gfx/leaders/FRA/FRA_DeGaulle.tga"
+			picture = "gfx/leaders/FRA/FRA_DeGaulle_old.dds"
 			expire = "1965.1.1"
 			ideology = conservatism
+			}
+		}
+	}
+	
+	FRA_OTL_POMPIDOU = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			OR = {
+				tag = FRA
+				tag = FR2
+			}
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = democratic
+			create_country_leader = {
+			name = "Président Georges Jean Raymond Pompidou"
+			desc = ""
+			picture = "gfx/leaders/FRA/FRA_Pompidou.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			}
+		}
+	}
+	
+	FRA_OTL_VGE = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			OR = {
+				tag = FRA
+				tag = FR2
+			}
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = centrist_republic
+			create_country_leader = {
+			name = "Président Valéry René Marie Georges Giscard d'Estaing"
+			desc = ""
+			picture = "gfx/leaders/FRA/FRA_vge.dds"
+			expire = "1965.1.1"
+			ideology = cenrep
 			}
 		}
 	}
