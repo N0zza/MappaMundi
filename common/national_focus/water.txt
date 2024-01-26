@@ -13379,6 +13379,14 @@
 					}
 					every_state = {
 						limit = {
+							is_core_of = KBK
+						}
+						KBK = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
 							is_core_of = NOS
 						}
 						NOS = {
@@ -13574,6 +13582,18 @@
 					BUL = {
 						set_politics = {
 							ruling_party = centrist_republic
+						}
+						drop_cosmetic_tag = yes
+					}
+					GRE = {
+						set_politics = {
+							ruling_party = liberal_republic
+						}
+						drop_cosmetic_tag = yes
+					}
+					ALB = {
+						set_politics = {
+							ruling_party = democratic
 						}
 						drop_cosmetic_tag = yes
 					}
@@ -13853,6 +13873,49 @@
 							transfer_state = PREV
 						}
 					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = TZN
+								is_core_of = ZAN
+							}
+						}
+						TZN = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = CAR
+						}
+						CAR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = CHA
+						}
+						CHA = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = GAB
+						}
+						GAB = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = RCG
+						}
+						RCG = {
+							transfer_state = PREV
+						}
+					}
 					LBA = {
 						set_cosmetic_tag = LBA_1992
 						set_politics = {
@@ -13881,6 +13944,84 @@
 						set_cosmetic_tag = COG_1992
 						set_politics = {
 							ruling_party = neutrality
+						}
+					}
+					SAF = {
+						set_cosmetic_tag = SAF_1992
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+					}
+					NMB = {
+						set_cosmetic_tag = NMB_2023
+						set_politics = {
+							ruling_party = socialism_ideology
+						}
+					}
+					ANG = {
+						set_cosmetic_tag = ANG_1992
+						set_politics = {
+							ruling_party = communism
+						}
+					}
+					BOT = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = democratic
+						}
+					}
+					ZAM = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = liberal_republic
+						}
+					}
+					ZIM = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = socialism_ideology
+						}
+					}
+					MZB = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = socialism_ideology
+						}
+					}
+					MLW = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = democratic
+						}
+					}
+					TZN = {
+						set_cosmetic_tag = TZN_1992
+						set_politics = {
+							ruling_party = communism
+						}
+					}
+					CHA = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = democratic
+						}
+					}
+					CAR = {
+						set_cosmetic_tag = CAR_1992
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+					}
+					GAB = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+					}
+					RCG = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = communism
 						}
 					}
 					IRQ = {
@@ -13977,14 +14118,27 @@
 								AND = {
 									is_claimed_by = PRC
 									is_owned_by = IND
-									NOT = {
-										is_core_of = ARN
-									}
 								}
 								is_core_of = TIB
 							}
 						}
 						PRC = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = ARN
+						}
+						IND = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = MON
+						}
+						MON = {
 							transfer_state = PREV
 						}
 					}
