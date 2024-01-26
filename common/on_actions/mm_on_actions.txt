@@ -4440,6 +4440,7 @@ on_actions = {
 								
 								NOT = {
 									OR = {
+										has_cosmetic_tag = RUS_1992
 										has_cosmetic_tag = RUS_2023
 										has_cosmetic_tag = POL_2023
 									}
@@ -6101,7 +6102,10 @@ on_actions = {
 							tag = USA
 							
 							NOT = {
-								has_cosmetic_tag = USA_2023
+								OR = {
+									has_cosmetic_tag = USA_1992
+									has_cosmetic_tag = USA_2023
+								}
 							}
 						}
 						if = {
@@ -6418,6 +6422,7 @@ on_actions = {
 								NOT = {
 									OR = {
 										has_cosmetic_tag = RUS_1914
+										has_cosmetic_tag = RUS_1992
 										has_cosmetic_tag = RUS_2023
 									}
 								}
