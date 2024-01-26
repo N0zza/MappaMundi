@@ -3,16 +3,16 @@
 set_country_flag = has_secondary_leader
 
 set_popularities = {
-	vanguardism = 2
-	communism = 23
-	socialism_ideology = 7
+	vanguardism = 3
+	communism = 22
+	socialism_ideology = 5
 	liberal_republic = 26
-	centrist_republic = 12
-	democratic = 30
+	centrist_republic = 31
+	democratic = 13
 }
 
 set_politics = { 
-	ruling_party = democratic
+	ruling_party = centrist_republic
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -23,7 +23,7 @@ create_country_leader = {
 	desc = "POLITICS_LEBRUN_DESC"
 	picture = "gfx/leaders/FRA/Portrait_Albert_Lebrun.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = cenrep
 	traits = {
 	}
 }
@@ -120,11 +120,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Président Jean Jules Marie Auguste Champetier de Ribes"
+	name = "Président Louis Marin"
 	desc = ""
-	picture = "gfx/leaders/FRA/FRA_Ribes.tga"
+	picture = "gfx/leaders/FRA/FRA_Marin.dds"
 	expire = "1965.1.1"
-	ideology = cenrep
+	ideology = conservatism
 	traits = {
 	}
 }
