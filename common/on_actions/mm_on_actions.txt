@@ -583,6 +583,47 @@ on_actions = {
 						}
 					}
 				}
+				if = {
+					limit = {
+						AND = {
+							has_start_date > 1949.01.01
+							has_start_date < 1951.01.01
+						}
+					}
+					immediate = { log = "1950 De Jure Borders" }
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = WGR
+								is_core_of = DDR
+							}
+						}
+						WGR = {
+							transfer_state = PREV
+						}
+					}
+					WGR = {
+						set_cosmetic_tag = WGR_1950_DE_JURE
+						set_politics = {
+							ruling_party = centrist_republic
+						}
+						set_popularities = {
+							centrist_republic = 100
+						}
+						set_party_name = {
+							ideology = centrist_republic
+							name = WGR_centrist_republic_de_jure_party
+							long_name = WGR_centrist_republic_de_jure_party_long
+						}
+						create_country_leader = {
+							name = "The Authority of the International Occupation of Germany"
+							desc = ""
+							picture = "gfx/leaders/WGR/Portrait_German_Occupation.dds"
+							expire = "1965.1.1"
+							ideology = cenrep
+						}
+					}
+				}
 			}
 		}
 	}

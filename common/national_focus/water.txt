@@ -13835,12 +13835,31 @@
 						}
 						drop_cosmetic_tag = yes
 					}
+					SPR = {
+						set_cosmetic_tag = SPR_1992
+						set_politics = {
+							ruling_party = conservative_monarchism
+						}
+					}
 					### AFRICA 1992 ###
 					every_state = {
 						limit = {
 							is_core_of = ALG
 						}
 						ALG = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							AND = {
+								is_core_of = MOR
+								NOT = {
+									is_core_of = SPR
+								}
+							}
+						}
+						MOR = {
 							transfer_state = PREV
 						}
 					}
@@ -13913,6 +13932,188 @@
 							is_core_of = RCG
 						}
 						RCG = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = KEN
+						}
+						KEN = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = UGA
+						}
+						UGA = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = ETH
+								is_core_of = ERI
+							}
+						}
+						ETH = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SOM
+						}
+						SOM = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = RWA
+						}
+						RWA = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = BRD
+						}
+						BRD = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = CMR
+						}
+						CMR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = NGA
+						}
+						NGA = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = GHA
+						}
+						GHA = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = MLI
+						}
+						MLI = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = IVO
+						}
+						IVO = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = VOL
+						}
+						VOL = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SIE
+						}
+						SIE = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = LB2
+						}
+						LB2 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = MBW
+								is_core_of = CKW
+								is_core_of = KSJ
+								AND = {
+									OR = {
+										is_core_of = BSL
+										is_claimed_by = KKG
+										is_core_of = KKG
+									}
+									is_core_of = ANG
+								}
+								state = 540
+								state = 1508
+								state = 1512
+								state = 1513
+								state = 1514
+								state = 6082
+								state = 6813
+								state = 7808
+								state = 8121
+								state = 10149
+								state = 15979
+								state = 15982
+							}
+						}
+						MBW = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								state = 6657
+								state = 1916
+							}
+						}
+						HSL = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = GAM
+						}
+						GAM = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SEN
+						}
+						SEN = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = CSM
+						}
+						CSM = {
 							transfer_state = PREV
 						}
 					}
@@ -14024,26 +14225,202 @@
 							ruling_party = communism
 						}
 					}
-					IRQ = {
-						set_cosmetic_tag = IRQ_1992
+					KEN = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = democratic
+						}
+					}
+					UGA = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = democratic
+						}
+					}
+					ETH = {
+						set_cosmetic_tag = ETH_1992
 						set_politics = {
 							ruling_party = communism
 						}
-						set_party_name = {
-							ideology = communism
-							name = IRQ_communism_1992_party
-							long_name = IRQ_communism_1992_party_long
+					}
+					SOM = {
+						set_cosmetic_tag = SOM_1992
+						set_politics = {
+							ruling_party = anocratic_republic
 						}
-						create_country_leader = {
-							name = "Raiys Jumhuriat al-Iraq Saddam Hussein Abd al-Majid al-Tikriti"
-							desc = ""
-							picture = "gfx/leaders/IRQ/Portrait_Saddam_Hussein.dds"
-							expire = "1965.1.1"
-							ideology = marxism
+					}
+					DJI = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = democratic
+						}
+					}
+					BRD = {
+						set_cosmetic_tag = BRD_1992
+						set_politics = {
+							ruling_party = stratocratic
+						}
+					}
+					RWA = {
+						set_cosmetic_tag = RWA_1992
+						set_politics = {
+							ruling_party = neutrality
 						}
 					}
 					ALG = {
 						set_cosmetic_tag = ALG_1992
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+					}
+					MOR = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = conservative_monarchism
+						}
+					}
+					LES = {
+						set_cosmetic_tag = LES_1992
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+						}
+					}
+					SWZ = {
+						set_cosmetic_tag = SWZ_1992
+						set_politics = {
+							ruling_party = monarchism
+						}
+					}
+					CMR = {
+						set_cosmetic_tag = CMR_1992
+						set_politics = {
+							ruling_party = centrist_republic
+						}
+						set_party_name = {
+							ideology = centrist_republic
+							name = CMR_centrist_republic_1992_party
+							long_name = CMR_centrist_republic_1992_party_long
+						}
+					}
+					NGA = {
+						set_cosmetic_tag = NGA_1992
+						set_politics = {
+							ruling_party = stratocratic
+						}
+					}
+					NGR = {
+						set_cosmetic_tag = NGR_1992
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+					}
+					GHA = {
+						set_cosmetic_tag = GHA_1992
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+					}
+					TOG = {
+						set_cosmetic_tag = TOG_1992
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+					}
+					DAH = {
+						set_cosmetic_tag = DAH_1992
+						set_politics = {
+							ruling_party = liberal_republic
+						}
+					}
+					MLI = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = democratic
+						}
+					}
+					IVO = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = democratic
+						}
+					}
+					LIB = {
+						set_cosmetic_tag = LIB_1992
+						set_politics = {
+							ruling_party = stratocratic
+						}
+					}
+					LB2 = {
+						set_politics = {
+							ruling_party = stratocratic
+						}
+					}
+					VOL = {
+						set_cosmetic_tag = VOL_1992
+						set_politics = {
+							ruling_party = neutrality
+						}
+					}
+					SIE = {
+						set_cosmetic_tag = SIE_1992
+						set_politics = {
+							ruling_party = communism
+						}
+					}
+					MBW = {
+						set_politics = {
+							ruling_party = communism
+						}
+					}
+					EQG = {
+						set_cosmetic_tag = EQG_2023
+						set_politics = {
+							ruling_party = neutrality
+						}
+					}
+					HSL = {
+						set_cosmetic_tag = HSL_1992
+						set_politics = {
+							ruling_party = stratocratic
+						}
+						set_party_name = {
+							ideology = stratocratic
+							name = HSL_stratocratic_1992_party
+							long_name = HSL_stratocratic_1992_party_long
+						}
+					}
+					GNA = {
+						set_cosmetic_tag = GNA_1992
+						set_politics = {
+							ruling_party = neutrality
+						}
+					}
+					GNB = {
+						set_cosmetic_tag = GNB_1992
+						set_politics = {
+							ruling_party = communism
+						}
+					}
+					SEN = {
+						set_cosmetic_tag = SEN_1992
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+					}
+					CSM = {
+						set_cosmetic_tag = CSM_1992
+						set_politics = {
+							ruling_party = stratocratic
+						}
+					}
+					GAM = {
+						set_cosmetic_tag = GAM_1992
+						set_politics = {
+							ruling_party = neutrality
+						}
+					}
+					MRT = {
+						set_cosmetic_tag = MRT_1992
 						set_politics = {
 							ruling_party = anocratic_republic
 						}
@@ -14217,6 +14594,14 @@
 							transfer_state = PREV
 						}
 					}
+					every_state = {
+						limit = {
+							is_core_of = YEM
+						}
+						YEM = {
+							transfer_state = PREV
+						}
+					}
 					AFG = {
 						set_cosmetic_tag = AFG_1992
 						set_politics = {
@@ -14298,6 +14683,30 @@
 							ruling_party = centrist_republic
 						}
 					}
+					IRQ = {
+						set_cosmetic_tag = IRQ_1992
+						set_politics = {
+							ruling_party = communism
+						}
+						set_party_name = {
+							ideology = communism
+							name = IRQ_communism_1992_party
+							long_name = IRQ_communism_1992_party_long
+						}
+						create_country_leader = {
+							name = "Raiys Jumhuriat al-Iraq Saddam Hussein Abd al-Majid al-Tikriti"
+							desc = ""
+							picture = "gfx/leaders/IRQ/Portrait_Saddam_Hussein.dds"
+							expire = "1965.1.1"
+							ideology = marxism
+						}
+					}
+					YEM = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = democratic
+						}
+					}
 					### NORTH AMERICA 1992 ###
 					every_state = {
 						limit = {
@@ -14312,6 +14721,14 @@
 							is_owned_by = NFL
 						}
 						CAN = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = GRL
+						}
+						GRL = {
 							transfer_state = PREV
 						}
 					}
@@ -14335,6 +14752,46 @@
 					CAN = {
 						set_cosmetic_tag = CAN_2023
 					}
+					GRL = {
+						set_politics = {
+							ruling_party = socialist_monarchy
+						}
+						set_cosmetic_tag = DEN_BROWN
+					}
+					### SOUTH AMERICA 1992 ###
+					every_state = {
+						limit = {
+							is_core_of = BRA
+						}
+						BRA = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							AND = {
+								is_core_of = VEN
+								NOT = {
+									is_core_of = GYA
+								}
+							}
+						}
+						VEN = {
+							transfer_state = PREV
+						}
+					}
+					BRA = {
+						set_cosmetic_tag = BRA_1992
+						set_party_name = {
+							ideology = democratic
+							name = BRA_democratic_1992_party
+							long_name = BRA_democratic_1992_party_long
+						}
+						set_politics = {
+							ruling_party = democratic
+						}
+					}
+					### OTHER STUFF 1992 ###
 					every_state = {
 						limit = {
 							OR = {
@@ -14344,6 +14801,7 @@
 								is_owned_by = TUR
 								is_owned_by = GRE
 								is_owned_by = PRC
+								is_owned_by = MOR
 							}
 						}
 						set_demilitarized_zone = no
