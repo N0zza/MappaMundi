@@ -20651,6 +20651,14 @@
 					}
 					every_state = {
 						limit = {
+							is_core_of = AMF
+						}
+						AMF = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
 							is_core_of = LRA
 						}
 						LRA = {
@@ -20899,6 +20907,15 @@
 							name = "Ajajaa Olaanaa Kumsa Diriba"
 							desc = ""
 							picture = "gfx/leaders/OM2/OM2_Diriba.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					AMF = {
+						create_country_leader = {
+							name = "Decentralised Militias"
+							desc = ""
+							picture = "gfx/leaders/AMF/AMF_Fano.tga"
 							expire = "1965.1.1"
 							ideology = militarism
 						}
