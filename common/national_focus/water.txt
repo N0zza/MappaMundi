@@ -20530,6 +20530,30 @@
 					}
 					every_state = {
 						limit = {
+							is_core_of = HG1
+						}
+						HG1 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = HG2
+						}
+						HG2 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = HG3
+						}
+						HG3 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
 							is_core_of = AQ1
 						}
 						AQ1 = {
@@ -20753,6 +20777,33 @@
 							transfer_state = PREV
 						}
 					}
+					HG1 = {
+						create_country_leader = {
+							name = "Patron Jimmy Chérizier"
+							desc = ""
+							picture = "gfx/leaders/HAI/HG1_BBQ.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					HG2 = {
+						create_country_leader = {
+							name = "Patron Vitel'Homme Innocent"
+							desc = ""
+							picture = "gfx/leaders/HAI/HG2_Innocent.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					HG3 = {
+						create_country_leader = {
+							name = "Patron Jeff"
+							desc = ""
+							picture = "gfx/leaders/HAI/HG3_Jeff.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
 					AQ1 = {
 						create_country_leader = {
 							name = "Raʾīs Īyād Aġ Ġālī"
@@ -20858,7 +20909,7 @@
 							desc = ""
 							picture = "gfx/leaders/LRA/LRA_Kony.tga"
 							expire = "1965.1.1"
-							ideology = militarism
+							ideology = christian
 						}
 					}
 					S58 = {
