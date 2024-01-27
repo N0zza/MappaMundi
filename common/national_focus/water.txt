@@ -14602,6 +14602,69 @@
 							transfer_state = PREV
 						}
 					}
+					every_state = {
+						limit = {
+							AND = {
+								is_core_of = SAU
+								NOT = {
+									is_core_of = JOR
+									is_core_of = IRQ
+									is_core_of = YEM
+								}
+							}
+						}
+						SAU = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = UAE
+						}
+						UAE = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = QAT
+						}
+						QAT = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SYR
+						}
+						SYR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = OMN
+						}
+						OMN = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = JOR
+						}
+						JOR = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = ISR
+						}
+						ISR = {
+							transfer_state = PREV
+						}
+					}
 					AFG = {
 						set_cosmetic_tag = AFG_1992
 						set_politics = {
@@ -14706,6 +14769,21 @@
 						set_politics = {
 							ruling_party = democratic
 						}
+					}
+					PAL = {
+						set_cosmetic_tag = PAL_1992
+						set_politics = {
+							ruling_party = communism
+						}
+					}
+					SYR = {
+						set_cosmetic_tag = SYR_1992
+						set_politics = {
+							ruling_party = communism
+						}
+					}
+					JOR = {
+						set_cosmetic_tag = JOR_2023
 					}
 					### NORTH AMERICA 1992 ###
 					every_state = {
