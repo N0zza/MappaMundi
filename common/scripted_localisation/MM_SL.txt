@@ -533,9 +533,21 @@ defined_text = {
 			AND = {
 				tag = WGR
 				has_government = democratic
+				has_start_date < 1991.01.01
 			}
 		}
 		localization_key = "Bundeskanzler Konrad Hermann Joseph Adenauer"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = democratic
+				has_start_date > 1991.01.01
+				has_start_date < 2022.01.01
+			}
+		}
+		localization_key = "Bundeskanzler Helmut Josef Michael Kohl"
 	}
 	text = {
 		trigger = {
@@ -4073,9 +4085,21 @@ defined_text = {
 			AND = {
 				tag = WGR
 				has_government = democratic
+				has_start_date < 1991.01.01
 			}
 		}
 		localization_key = "GFX_Konrad_Adenauer"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = democratic
+				has_start_date > 1991.01.01
+				has_start_date < 2022.01.01
+			}
+		}
+		localization_key = "GFX_Helmut_Kohl"
 	}
 	text = {
 		trigger = {

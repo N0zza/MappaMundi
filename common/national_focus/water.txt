@@ -13174,7 +13174,14 @@
 					### EUROPE 1992 ###
 					ICE = {
 						set_politics = {
-							ruling_party = centrist_republic
+							ruling_party = liberal_republic
+						}
+						create_country_leader = {
+							name = "Forseti Vigdís Finnbogadóttir"
+							desc = ""
+							picture = "gfx/leaders/ICE/Portrait_Vigdis_Finnbogadottir.dds"
+							expire = "1965.1.1"
+							ideology = liberalism
 						}
 					}
 					WTR = {
@@ -13539,6 +13546,13 @@
 						set_politics = {
 							ruling_party = centrist_republic
 						}
+						set_popularities = {
+							centrist_republic = 44.4
+							communism = 28.6
+							socialism_ideology = 17.3
+							republican_fascism = 6
+							liberal_republic = 3.7
+						}
 						create_country_leader = {
 							name = "Presidente Francesco Maurizio Cossiga"
 							desc = ""
@@ -13550,6 +13564,20 @@
 					WGR = {
 						set_politics = {
 							ruling_party = democratic
+						}
+						create_country_leader = {
+							name = "Bundespräsident Richard Karl Freiherr von Weizsäcker"
+							desc = ""
+							picture = "gfx/leaders/WGR/Portrait_Richard_Weizsacker.dds"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
+						set_popularities = {
+							democratic = 43.8
+							socialism_ideology = 33.5
+							liberal_republic = 11.0
+							communism = 2.4
+							centrist_republic = 9.3
 						}
 					}
 					AUS = {
@@ -13654,6 +13682,20 @@
 							ideology = democratic
 							name = RUS_democratic_1992_party
 							long_name = RUS_democratic_1992_party_long
+						}
+						create_country_leader = {
+							name = "Prezident Boris Nikolayevich Yeltsin"
+							desc = ""
+							picture = "gfx/leaders/Russia/Portrait_Boris_Yeltsin.dds"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
+						create_country_leader = {
+							name = "Prezident Boris Nikolayevich Yeltsin"
+							desc = ""
+							picture = "gfx/leaders/Russia/Portrait_Boris_Yeltsin.dds"
+							expire = "1965.1.1"
+							ideology = anocrep
 						}
 					}
 					TTR = {
@@ -13839,6 +13881,39 @@
 						set_cosmetic_tag = SPR_1992
 						set_politics = {
 							ruling_party = conservative_monarchism
+						}
+					}
+					ENG = {
+						set_popularities = {
+							conservative_monarchism = 35
+							democratic_monarchism = 38
+							centrist_monarchism = 27
+						}
+						set_party_name = {
+							ideology = democratic_monarchism
+							name = ENG_democratic_monarchism_2023_party
+							long_name = ENG_democratic_monarchism_2023_party
+						}
+						create_country_leader = {
+							name = "Queen Elizabeth II of Windsor"
+							desc = ""
+							picture = "gfx/leaders/ENG/Portrait_Elizabeth_II.dds"
+							expire = "1965.1.1"
+							ideology = liberal_constitutionalism
+						}
+						create_country_leader = {
+							name = "Queen Elizabeth II of Windsor"
+							desc = ""
+							picture = "gfx/leaders/ENG/Portrait_Elizabeth_II.dds"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+						}
+						create_country_leader = {
+							name = "Queen Elizabeth II of Windsor"
+							desc = ""
+							picture = "gfx/leaders/ENG/Portrait_Elizabeth_II.dds"
+							expire = "1965.1.1"
+							ideology = monsoc
 						}
 					}
 					### AFRICA 1992 ###
@@ -14111,7 +14186,11 @@
 					}
 					every_state = {
 						limit = {
-							is_core_of = CSM
+							OR = {
+								is_core_of = CSM
+								state = 6032
+								state = 6033
+							}
 						}
 						CSM = {
 							transfer_state = PREV
@@ -14121,6 +14200,13 @@
 						set_cosmetic_tag = LBA_1992
 						set_politics = {
 							ruling_party = communism
+						}
+						create_country_leader = {
+							name = "Mǧls Qyādẗ Ālṯwrẗ Muʿammar Muḥammad ʾAbū Minyār al-Qaḏḏāfī"
+							desc = ""
+							picture = "gfx/leaders/LBA/Portrait_Muammar_Gaddafi.dds"
+							expire = "1965.1.1"
+							ideology = marxism
 						}
 					}
 					TUN = {
@@ -14353,6 +14439,9 @@
 					LB2 = {
 						set_politics = {
 							ruling_party = stratocratic
+						}
+						set_popularities = {
+							stratocratic = 100
 						}
 					}
 					VOL = {
@@ -14705,6 +14794,13 @@
 					}
 					PRC = {
 						set_cosmetic_tag = PRC_2023
+						create_country_leader = {
+							name = "Guójiā Zhǔxí, Zhōnggòng Zhōngyāng Jiāng Zémín"
+							desc = ""
+							picture = "gfx/leaders/PRC/Portrait_Jiang_Zemin.dds"
+							expire = "1965.1.1"
+							ideology = totsoc
+						}
 					}
 					MON = {
 						set_cosmetic_tag = MON_1992
@@ -14825,6 +14921,20 @@
 							picture = "gfx/leaders/USA/USA_Bush_Father.tga"
 							expire = "1965.1.1"
 							ideology = conservatism
+						}
+						create_country_leader = {
+							name = "President Henry Ross Perot Sr."
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Ross_Perot.dds"
+							expire = "1965.1.1"
+							ideology = cenrep
+						}
+						create_country_leader = {
+							name = "President William Jefferson Clinton"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Clinton.tga"
+							expire = "1965.1.1"
+							ideology = liberalism
 						}
 					}
 					CAN = {
