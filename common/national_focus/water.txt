@@ -21382,6 +21382,22 @@
 					}
 					every_state = {
 						limit = {
+							is_core_of = SD1
+						}
+						SD1 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = SD2
+						}
+						SD2 = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
 							is_core_of = LRA
 						}
 						LRA = {
@@ -21639,6 +21655,24 @@
 							name = "Decentralised Militias"
 							desc = ""
 							picture = "gfx/leaders/AMF/AMF_Fano.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					SD1 = {
+						create_country_leader = {
+							name = "Rais ʿAbd al-Wāḥid Muḥammad Nūr"
+							desc = ""
+							picture = "gfx/leaders/SD1/SD1_Abdul.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					SD2 = {
+						create_country_leader = {
+							name = "Rais Abdelaziz Adam al-Hilu"
+							desc = ""
+							picture = "gfx/leaders/SD2/SD2_Abdul.tga"
 							expire = "1965.1.1"
 							ideology = militarism
 						}
