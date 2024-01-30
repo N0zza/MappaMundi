@@ -35,6 +35,11 @@ secondary_leader_enabled_effect = {
 						has_start_date < 1951.01.01
 					}
 					AND = {
+						has_government = conservative_monarchism
+						has_start_date > 1990.01.01
+						has_start_date < 2000.01.01
+					}
+					AND = {
 						OR = {
 							has_government = democratic_monarchism
 							has_government = conservative_monarchism
@@ -555,6 +560,16 @@ secondary_leader_enabled_effect = {
 					AND = {
 						has_government = centrist_republic
 						has_start_date > 1940.01.01
+						has_start_date < 1960.01.01
+					}
+					AND = {
+						has_government = socialism_ideology
+						has_start_date > 1990.01.01
+						has_start_date < 2000.01.01
+					}
+					AND = {
+						has_government = centrist_republic
+						has_start_date > 2023.01.01
 					}
 				}
 			}
@@ -1324,7 +1339,7 @@ secondary_leader_enabled_effect = {
 					AND = {
 						has_government = centrist_republic
 						has_start_date > 1940.01.01
-						has_start_date < 1951.01.01
+						has_start_date < 2000.01.01
 					}
 					AND = {
 						OR = {
@@ -1751,6 +1766,11 @@ secondary_leader_enabled_effect = {
 								has_start_date < 1940.01.01
 							}
 						}
+					}
+					AND = {
+						has_government = conservative_monarchism
+						has_start_date > 1990.01.01
+						has_start_date < 2000.01.01
 					}
 					AND = {
 						OR = {
@@ -3289,6 +3309,17 @@ tertiary_leader_enabled_effect = {
 						has_start_date < 1937.01.01
 					}
 				}
+			}
+		}
+		set_country_flag = has_tertiary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = PRC
+				has_government = vanguardism
+				has_start_date > 1992.01.01
+				has_start_date < 2000.01.01
 			}
 		}
 		set_country_flag = has_tertiary_leader
