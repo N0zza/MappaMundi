@@ -1725,12 +1725,34 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = HOL
+				has_government = conservative_monarchism
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "Minister-president Rudolphus Franciscus Marie Lubbers"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = BEL
 				has_government = conservative_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "Eerste minister Alexander Francis Herman De Croo"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BEL
+				has_government = conservative_monarchism
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "Eerste Jean Luc Joseph Marie Dehaene"
 	}
 	text = {
 		trigger = {
@@ -5360,12 +5382,34 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = HOL
+				has_government = conservative_monarchism
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "GFX_Ruud_Lubbers"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = BEL
 				has_government = conservative_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "GFX_Alexander_De_Croo"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BEL
+				has_government = conservative_monarchism
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "GFX_Jean_Luc_Dehaene"
 	}
 	text = {
 		trigger = {
