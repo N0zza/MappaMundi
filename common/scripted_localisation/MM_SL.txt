@@ -2032,6 +2032,17 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = DEN
+				has_government = conservative_monarchism
+				has_start_date < 2022.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "Statsminister Poul Holmskov Schlüter"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = SWE
 				has_government = conservative_monarchism
 				has_start_date > 2022.01.01
@@ -2465,9 +2476,20 @@ defined_text = {
 			AND = {
 				tag = LUX
 				has_government = conservative_monarchism
+				has_start_date < 1950.01.01
 			}
 		}
 		localization_key = "Premier Minister Joseph Bech"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LUX
+				has_government = conservative_monarchism
+				has_start_date > 1950.01.01
+			}
+		}
+		localization_key = "Premier Minister Jacques Santer"
 	}
 	text = {
 		trigger = {
@@ -5720,9 +5742,20 @@ defined_text = {
 			AND = {
 				tag = LUX
 				has_government = conservative_monarchism
+				has_start_date < 1950.01.01
 			}
 		}
 		localization_key = "GFX_Joseph_Bech"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LUX
+				has_government = conservative_monarchism
+				has_start_date > 1950.01.01
+			}
+		}
+		localization_key = "GFX_Jacques_Santer"
 	}
 	text = {
 		trigger = {
@@ -5857,6 +5890,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Thorvald_Stauning"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = DEN
+				has_government = conservative_monarchism
+				has_start_date < 2022.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "GFX_Poul_Schluter"
 	}
 	text = {
 		trigger = {

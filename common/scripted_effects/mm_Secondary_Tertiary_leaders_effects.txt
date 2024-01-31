@@ -1621,6 +1621,13 @@ secondary_leader_enabled_effect = {
 						}
 						has_start_date > 2022.01.01
 					}
+					AND = {
+						OR = {
+							has_government = conservative_monarchism
+						}
+						has_start_date < 2000.01.01
+						has_start_date > 1991.01.01
+					}
 				}
 			}
 		}
@@ -3265,7 +3272,7 @@ tertiary_leader_enabled_effect = {
 				OR = {
 					AND = {
 						has_government = vanguardism
-						has_start_date < 2022.01.01
+						has_start_date < 1951.01.01
 						has_start_date > 1915.01.01
 					}
 				}

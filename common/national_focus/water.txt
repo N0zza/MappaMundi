@@ -13634,14 +13634,80 @@
 							liberal_republic = 11.9
 						}
 					}
+					LIE = {
+						set_politics = {
+							ruling_party = centrist_monarchism
+						}
+						create_country_leader = {
+							name = "Fürst Hans-Adam II von Liechtenstein"
+							desc = ""
+							picture = "gfx/leaders/LIE/LIE_Adam_1992.tga"
+							expire = "1965.1.1"
+							ideology = cenmon
+						}
+					}
+					DEN = {
+						set_cosmetic_tag = DEN_1992
+						set_politics = {
+							ruling_party = conservative_monarchism
+						}
+						set_popularities = {
+							socialist_monarchy = 45
+							conservative_monarchism = 40
+							anocratic_monarchism = 7
+							centrist_monarchism = 5
+							democratic_monarchism = 3
+						}
+						create_country_leader = {
+							name = "Dronning Margrethe II af Glücksburg"
+							desc = ""
+							picture = "gfx/leaders/DEN/DEN_Margrethe_1992.tga"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+						}
+					}
+					LUX = {
+						create_country_leader = {
+							name = "Groussherzog vu Lëtzebuerg Jean Benoît Guillaume Robert Antoine Louis Marie Adolphe Marc d'Aviano"
+							desc = ""
+							picture = "gfx/leaders/LUX/Portrait_Jean.dds"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+						}
+					}
 					HUN = {
 						set_politics = {
 							ruling_party = democratic
 						}
 					}
 					POL = {
+						set_cosmetic_tag = POL_1992
 						set_politics = {
-							ruling_party = liberal_republic
+							ruling_party = centrist_republic
+						}
+						set_party_name = {
+							ideology = anocratic_republic
+							name = POL_anocratic_republic_1992_party
+							long_name = POL_anocratic_republic_1992_party_long
+						}
+						set_party_name = {
+							ideology = centrist_republic
+							name = POL_centrist_republic_1992_party
+							long_name = POL_centrist_republic_1992_party_long
+						}
+						create_country_leader = {
+							name = "Prezydent Lech Wałęsa"
+							desc = ""
+							picture = "gfx/leaders/POL/Portrait_Lech_Walesa.dds"
+							expire = "1965.1.1"
+							ideology = cenrep
+						}
+						create_country_leader = {
+							name = "Prezydent Lech Wałęsa"
+							desc = ""
+							picture = "gfx/leaders/POL/Portrait_Lech_Walesa.dds"
+							expire = "1965.1.1"
+							ideology = anocrep
 						}
 					}
 					ROM = {
@@ -15161,7 +15227,10 @@
 						}
 					}
 					CAN = {
-						set_cosmetic_tag = CAN_2023
+						set_cosmetic_tag = CAN_1992
+						set_politics = {
+							ruling_party = centrist_monarchism
+						}
 						set_popularities = {
 							socialist_monarchy = 15
 							democratic_monarchism = 28
@@ -15239,6 +15308,22 @@
 						}
 					}
 					### OTHER STUFF 1992 ###
+					every_state = {
+						limit = {
+							is_core_of = ATC
+						}
+						ATC = {
+							transfer_state = PREV
+						}
+					}
+					ATC = {
+						set_politics = {
+							ruling_party = neutrality
+						}
+						set_popularities = {
+							neutrality = 100
+						}
+					}
 					every_state = {
 						limit = {
 							OR = {
