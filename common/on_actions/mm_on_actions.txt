@@ -4937,6 +4937,22 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							tag = WGR
+							has_start_date < 2000.01.01
+							has_start_date > 1991.01.01
+						}
+						if = {
+							limit = {
+								has_government = anocratic_monarchism
+							}
+							set_cosmetic_tag = WGR_1992_HRE
+						}
+						else = {
+							set_cosmetic_tag = WGR_1992
+						}
+					}
+					if = {
+						limit = {
 							tag = FRA
 						}
 						if = {
@@ -6550,8 +6566,20 @@ on_actions = {
 								tag = RUS
 								has_start_date < 2000.01.01
 								has_start_date > 1991.01.01
+								has_government = vanguardism
+							}
+						}
+						set_cosmetic_tag = RUS_1992_VAN
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = RUS
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
 								NOT = {
 									has_government = socialism_ideology
+									has_government = vanguardism
 								}
 							}
 						}
@@ -6574,8 +6602,20 @@ on_actions = {
 								tag = UKR
 								has_start_date < 2000.01.01
 								has_start_date > 1991.01.01
+								has_government = vanguardism
+							}
+						}
+						set_cosmetic_tag = UKR_1992_VAN
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = UKR
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
 								NOT = {
 									has_government = socialism_ideology
+									has_government = vanguardism
 								}
 							}
 						}
@@ -6598,8 +6638,20 @@ on_actions = {
 								tag = BLR
 								has_start_date < 2000.01.01
 								has_start_date > 1991.01.01
+								has_government = vanguardism
+							}
+						}
+						set_cosmetic_tag = BLR_1992_VAN
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = BLR
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
 								NOT = {
 									has_government = socialism_ideology
+									has_government = vanguardism
 								}
 							}
 						}
@@ -6622,12 +6674,96 @@ on_actions = {
 								tag = KAZ
 								has_start_date < 2000.01.01
 								has_start_date > 1991.01.01
+								has_government = vanguardism
+							}
+						}
+						set_cosmetic_tag = KAZ_1992_VAN
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = KAZ
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								NOT = {
+									has_government = socialism_ideology
+									has_government = vanguardism
+								}
+							}
+						}
+						set_cosmetic_tag = KAZ_1992
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = LIT
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								has_government = socialism_ideology
+							}
+						}
+						set_cosmetic_tag = LIT_1992_SOCREP
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = LIT
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
 								NOT = {
 									has_government = socialism_ideology
 								}
 							}
 						}
-						set_cosmetic_tag = KAZ_1992
+						set_cosmetic_tag = LIT_1992
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = LAT
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								has_government = socialism_ideology
+							}
+						}
+						set_cosmetic_tag = LAT_1992_SOCREP
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = LAT
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								NOT = {
+									has_government = socialism_ideology
+								}
+							}
+						}
+						set_cosmetic_tag = LAT_1992
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = EST
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								has_government = socialism_ideology
+							}
+						}
+						set_cosmetic_tag = EST_1992_SOCREP
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = EST
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								NOT = {
+									has_government = socialism_ideology
+								}
+							}
+						}
+						set_cosmetic_tag = EST_1992
 					}
 					if = {
 						limit = {
