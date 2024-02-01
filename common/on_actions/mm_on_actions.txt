@@ -5231,7 +5231,15 @@ on_actions = {
 					}
 					if = {
 						limit = {
-							tag = SPR
+							AND = {
+								tag = SPR
+								NOT = {
+									OR = {
+										has_cosmetic_tag = SPR_1992
+										has_cosmetic_tag = SPR_2023
+									}
+								}
+							}
 						}
 						if = {
 							limit = {
@@ -6500,6 +6508,126 @@ on_actions = {
 							}
 						}
 						set_cosmetic_tag = RUS_1914
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = SOV
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								has_government = socialism_ideology
+							}
+						}
+						set_cosmetic_tag = SOV_1992_SOCREP
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = SOV
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								NOT = {
+									has_government = socialism_ideology
+								}
+							}
+						}
+						set_cosmetic_tag = SOV_1992
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = RUS
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								has_government = socialism_ideology
+							}
+						}
+						set_cosmetic_tag = RUS_1992_SOCREP
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = RUS
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								NOT = {
+									has_government = socialism_ideology
+								}
+							}
+						}
+						set_cosmetic_tag = RUS_1992
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = UKR
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								has_government = socialism_ideology
+							}
+						}
+						set_cosmetic_tag = UKR_1992_SOCREP
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = UKR
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								NOT = {
+									has_government = socialism_ideology
+								}
+							}
+						}
+						set_cosmetic_tag = UKR_1992
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = BLR
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								has_government = socialism_ideology
+							}
+						}
+						set_cosmetic_tag = BLR_1992_SOCREP
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = BLR
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								NOT = {
+									has_government = socialism_ideology
+								}
+							}
+						}
+						set_cosmetic_tag = BLR_1992
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = KAZ
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								has_government = socialism_ideology
+							}
+						}
+						set_cosmetic_tag = KAZ_1992_SOCREP
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = KAZ
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								NOT = {
+									has_government = socialism_ideology
+								}
+							}
+						}
+						set_cosmetic_tag = KAZ_1992
 					}
 					if = {
 						limit = {

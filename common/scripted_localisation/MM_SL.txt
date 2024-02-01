@@ -1640,6 +1640,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SPR
+				has_government = socialist_monarchy
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "Presidente del Gobierno Felipe González Márquez"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SPR
 				has_government = anocratic_republic
 			}
 		}
@@ -5292,6 +5303,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Pedro_Sanchez"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SPR
+				has_government = socialist_monarchy
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "GFX_Felipe_Gonzalez"
 	}
 	text = {
 		trigger = {

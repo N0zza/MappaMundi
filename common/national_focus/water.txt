@@ -13564,17 +13564,41 @@
 							ideology = cenrep
 						}
 					}
+					SPR = {
+						set_cosmetic_tag = SPR_1992
+						set_politics = {
+							ruling_party = socialist_monarchy
+						}
+						set_popularities = {
+							socialist_monarchy = 53
+							conservative_monarchism = 35
+							democratic_monarchism = 10
+							centrist_monarchism = 2
+						}
+						set_party_name = {
+							ideology = anocratic_monarchism
+							name = SPR_anocratic_monarchism_1992_party
+							long_name = SPR_anocratic_monarchism_1992_party_long
+						}
+						create_country_leader = {
+							name = "Rey Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias"
+							desc = ""
+							picture = "gfx/leaders/SPR/Portrait_Carlos_I.dds"
+							expire = "1965.1.1"
+							ideology = monsoc
+						}
+						create_country_leader = {
+							name = "Rey Juan Carlos Alfonso Víctor María de Borbón y Borbón-Dos Sicilias"
+							desc = ""
+							picture = "gfx/leaders/SPR/Portrait_Carlos_I.dds"
+							expire = "1965.1.1"
+							ideology = anocmon
+						}
+					}
 					WGR = {
 						set_cosmetic_tag = WGR_1992
 						set_politics = {
 							ruling_party = democratic
-						}
-						create_country_leader = {
-							name = "Bundespräsident Richard Karl Freiherr von Weizsäcker"
-							desc = ""
-							picture = "gfx/leaders/WGR/Portrait_Richard_Weizsacker.dds"
-							expire = "1965.1.1"
-							ideology = conservatism
 						}
 						set_popularities = {
 							democratic = 43.8
@@ -13583,6 +13607,19 @@
 							communism = 2.4
 							centrist_republic = 9.3
 						}
+						create_country_leader = {
+							name = "Bundespräsident Richard Karl Freiherr von Weizsäcker"
+							desc = ""
+							picture = "gfx/leaders/WGR/Portrait_Richard_Weizsacker.dds"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
+						create_country_leader = {
+							name = "Bundespräsident Richard Karl Freiherr von Weizsäcker"
+							desc = ""
+							picture = "gfx/leaders/WGR/Portrait_Richard_Weizsacker.dds"
+							expire = "1965.1.1"
+							ideology = anocrep
 					}
 					AUS = {
 						set_politics = {
@@ -13594,11 +13631,60 @@
 							long_name = AUS_2023_democratic_party
 						}
 						create_country_leader = {
+							name = "Kaiser Franz Joseph II von Habsburg-Lothringen "
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1992_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = monsoc
+						}
+						create_country_leader = {
+							name = "Kaiser Franz Joseph II von Habsburg-Lothringen "
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1992_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = liberal_constitutionalism
+						}
+						create_country_leader = {
+							name = "Kaiser Franz Joseph II von Habsburg-Lothringen "
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1992_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = cenmon
+						}
+						create_country_leader = {
 							name = "Bundespräsident Kurt Josef Waldheim"
 							desc = ""
 							picture = "gfx/leaders/AUS/Portrait_Kurt_Waldheim.dds"
 							expire = "1965.1.1"
 							ideology = conservatism
+						}
+						create_country_leader = {
+							name = "Kaiser Franz Joseph II von Habsburg-Lothringen "
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1992_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+						}
+						create_country_leader = {
+							name = "Kaiser Franz Joseph II von Habsburg-Lothringen "
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1992_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = anocmon
+						}
+						create_country_leader = {
+							name = "Kaiser Franz Joseph II von Habsburg-Lothringen "
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1992_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = authmon
+						}
+						create_country_leader = {
+							name = "Kaiser Franz Joseph II von Habsburg-Lothringen "
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1992_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = absolutism
 						}
 					}
 					FRA = {
@@ -13810,7 +13896,10 @@
 					}
 					TRN = {
 						drop_cosmetic_tag = yes
-					}	
+					}
+					SOV = {
+						set_cosmetic_tag = SOV_1992
+					}
 					RUS = {
 						set_cosmetic_tag = RUS_1992
 						set_politics = {
@@ -14024,12 +14113,6 @@
 							ruling_party = democratic
 						}
 						drop_cosmetic_tag = yes
-					}
-					SPR = {
-						set_cosmetic_tag = SPR_1992
-						set_politics = {
-							ruling_party = conservative_monarchism
-						}
 					}
 					ENG = {
 						set_popularities = {
@@ -15227,6 +15310,11 @@
 							liberal_republic = 62
 							democratic = 38
 						}
+						set_party_name = {
+							ideology = centrist_republic
+							name = USA_centrist_republic_1992_party
+							long_name = USA_centrist_republic_1992_party_long
+						}
 						create_country_leader = {
 							name = "President George Herbert Walker Bush"
 							desc = ""
@@ -15237,7 +15325,7 @@
 						create_country_leader = {
 							name = "President Henry Ross Perot Sr."
 							desc = ""
-							picture = "gfx/leaders/USA/USA_Ross_Perot.dds"
+							picture = "gfx/leaders/USA/Portrait_Ross_Perot.dds"
 							expire = "1965.1.1"
 							ideology = cenrep
 						}
