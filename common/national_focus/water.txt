@@ -13831,6 +13831,17 @@
 						}
 						drop_cosmetic_tag = yes
 					}
+					GAU = {
+						every_state = {
+							limit = {
+								OR = {
+									is_core_of = PREV
+									is_claimed_by = PREV
+								}
+							}
+							transfer_state_to = PREV
+						}
+					}
 					BUL = {
 						set_politics = {
 							ruling_party = centrist_republic
@@ -13857,12 +13868,59 @@
 					}
 					SLV = {
 						set_politics = {
-							ruling_party = liberal_republic
+							ruling_party = democratic
+						}
+						set_cosmetic_tag = SLV_1992
+						set_party_name = {
+							ideology = democratic
+							name = SLV_democratic_1992_party
+							long_name = SLV_democratic_1992_party_long
+						}
+						set_popularities = {
+							vanguardism = 10
+							communism = 16
+							socialism_ideology = 8
+							liberal_republic = 4
+							centrist_republic = 5
+							democratic = 43
+							anocratic_republic = 14
+						}
+					}
+					SLV = {
+						create_country_leader = {
+							name = "Predsednik Milan Kučan"
+							desc = ""
+							picture = "gfx/leaders/SLV/SLV_Kucan.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
 						}
 					}
 					CRO = {
 						set_politics = {
 							ruling_party = democratic
+						}
+						set_popularities = {
+							vanguardism = 31
+							communism = 2
+							socialism_ideology = 2
+							liberal_republic = 2
+							centrist_republic = 4
+							democratic = 58
+							anocratic_republic = 1
+						}
+						set_party_name = {
+							ideology = democratic
+							name = CRO_democratic_2023_party
+							long_name = CRO_democratic_2023_party_long
+						}
+					}
+					CRO = {
+						create_country_leader = {
+							name = "Predsjednik Franjo Tuđman"
+							desc = ""
+							picture = "gfx/leaders/CRO/CRO_Tudjman.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
 						}
 					}
 					MAC = {
@@ -13870,10 +13928,48 @@
 						set_politics = {
 							ruling_party = democratic
 						}
+						set_party_name = {
+							ideology = democratic
+							name = MAC_democratic_1992_party
+							long_name = MAC_democratic_1992_party_long
+						}
+						set_popularities = {
+							vanguardism = 26
+							communism = 4
+							socialism_ideology = 3
+							liberal_republic = 5
+							centrist_republic = 30
+							democratic = 32
+						}
+					}
+					MAC = {
+						create_country_leader = {
+							name = "Predsedatel Kiro Gligorov"
+							desc = ""
+							picture = "gfx/leaders/MAC/MAC_Gligorov.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
+					}
+					add_victory_points = {
+						province = 3974
+						value = 5
 					}
 					SKR = {
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = anocratic_republic
+						}
+						set_capital = {
+							state = 7363
+						}
+					}
+					SKR = {
+						create_country_leader = {
+							name = "Predsednik Milan Babić"
+							desc = ""
+							picture = "gfx/leaders/SKR/SKR_Babic.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
 						}
 					}
 					EST = {
@@ -14053,13 +14149,64 @@
 						set_politics = {
 							ruling_party = democratic
 						}
+						set_party_name = {
+							ideology = democratic
+							name = UKR_democratic_1992_party
+							long_name = UKR_democratic_1992_party_long
+						}
+						set_popularities = {
+							vanguardism = 13
+							communism = 13
+							socialism_ideology = 9
+							liberal_republic = 4
+							centrist_republic = 5
+							democratic = 26
+							anocratic_republic = 13
+							neutrality = 17
+						}
 						set_cosmetic_tag = UKR_1992
+						every_owned_state = {
+							do_ukrainian_renames = yes
+						}
+					}
+					UKR = {
+						create_country_leader = {
+							name = "Prezydént Leoníd Makárovych Kravchúk"
+							desc = ""
+							picture = "gfx/leaders/UKR/UKR_Kravchuk.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
 					}
 					BLR = {
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = communism
+						}
+						set_party_name = {
+							ideology = communism
+							name = BLR_communism_1992_party
+							long_name = BLR_communism_1992_party_long
+						}
+						set_popularities = {
+							vanguardism = 15
+							communism = 30
+							socialism_ideology = 5
+							liberal_republic = 3
+							centrist_republic = 7
+							democratic = 10
+							anocratic_republic = 20
+							neutrality = 10
 						}
 						set_cosmetic_tag = BLR_1992
+					}
+					BLR = {
+						create_country_leader = {
+							name = "Staršyniá Viarchóŭnaha Saviéta Stanisláŭ Stanislávavič Šuškiévič"
+							desc = ""
+							picture = "gfx/leaders/BLR/BLR_Shushkevich.tga"
+							expire = "1965.1.1"
+							ideology = marxism
+						}
 					}
 					KAZ = {
 						set_politics = {
@@ -22089,6 +22236,13 @@
 							picture = "gfx/leaders/BRM/Warlords/S60_Leader.tga"
 							expire = "1965.1.1"
 							ideology = militarism
+						}
+					}
+					S61 = {
+						set_popularities = {
+							anocratic_republic = 33
+							neutrality = 33
+							stratocratic = 34
 						}
 					}
 					S61 = {
