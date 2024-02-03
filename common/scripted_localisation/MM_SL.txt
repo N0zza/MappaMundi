@@ -2371,6 +2371,28 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = CZE
+				has_government = liberal_republic
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "Predseda vlády Marián Čalfa"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CZE
+				has_government = democratic_monarchism
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "Ministerský predseda Marián Čalfa"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = ZIM
 				has_government = centrist_monarchism
 			}
@@ -5742,6 +5764,20 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Milan_Hodza"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CZE
+				OR = {
+					has_government = liberal_republic
+					has_government = democratic_monarchism
+				}
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "GFX_Marian_Calfa"
 	}
 	text = {
 		trigger = {
