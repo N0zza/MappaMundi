@@ -13607,6 +13607,16 @@
 							communism = 2.4
 							centrist_republic = 9.3
 						}
+						set_party_name = {
+							ideology = conservative_monarchism
+							name = WGR_conservative_monarchism_2023_party
+							long_name = WGR_conservative_monarchism_2023_party_long
+						}
+						set_party_name = {
+							ideology = anocratic_monarchism
+							name = WGR_anocratic_monarchism_1992_party
+							long_name = WGR_anocratic_monarchism_1992_party_long
+						}
 						create_country_leader = {
 							name = "Bundespräsident Richard Karl Freiherr von Weizsäcker"
 							desc = ""
@@ -13615,20 +13625,67 @@
 							ideology = conservatism
 						}
 						create_country_leader = {
+							name = "Kaiser Louis Ferdinand von Hohenzollern"
+							desc = ""
+							picture = "gfx/leaders/WGR/Portrait_Louis_Ferdinand.dds"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+						}
+						create_country_leader = {
 							name = "Bundespräsident Richard Karl Freiherr von Weizsäcker"
 							desc = ""
 							picture = "gfx/leaders/WGR/Portrait_Richard_Weizsacker.dds"
 							expire = "1965.1.1"
 							ideology = anocrep
+						}
+						create_country_leader = {
+							name = "Imperator Romanorum Ludovicus Ferdinandus, Princeps Borussiae"
+							desc = ""
+							picture = "gfx/leaders/WGR/Portrait_Louis_Ferdinand.dds"
+							expire = "1965.1.1"
+							ideology = anocmon
+						}
 					}
 					AUS = {
+						set_cosmetic_tag = AUS_1992
 						set_politics = {
 							ruling_party = democratic
+						}
+						set_popularities = {
+							socialism_ideology = 43
+							democratic = 34
+							liberal_republic = 18
+							centrist_republic = 5
+						}
+						set_party_name = {
+							ideology = socialism_ideology
+							name = AUS_2023_socialism_ideology_party
+							long_name = AUS_2023_socialism_ideology_party_long
+						}
+						set_party_name = {
+							ideology = liberal_republic
+							name = AUS_1992_liberal_republic_party
+							long_name = AUS_1992_liberal_republic_party_long
+						}
+						set_party_name = {
+							ideology = centrist_republic
+							name = AUS_1992_centrist_republic_party
+							long_name = AUS_1992_centrist_republic_party_long
+						}
+						set_party_name = {
+							ideology = centrist_monarchism
+							name = AUS_1992_centrist_monarchism_party
+							long_name = AUS_1992_centrist_monarchism_party_long
 						}
 						set_party_name = {
 							ideology = democratic
 							name = AUS_2023_democratic_party
-							long_name = AUS_2023_democratic_party
+							long_name = AUS_2023_democratic_party_long
+						}
+						set_party_name = {
+							ideology = conservative_monarchism
+							name = AUS_1992_conservative_monarchism_party
+							long_name = AUS_1992_conservative_monarchism_party_long
 						}
 						create_country_leader = {
 							name = "Kaiser Franz Joseph II von Habsburg-Lothringen "
@@ -13687,6 +13744,56 @@
 							ideology = absolutism
 						}
 					}
+					
+					HUN = {
+						set_cosmetic_tag = HUN_1992
+						set_politics = {
+							ruling_party = democratic
+						}
+						set_party_name = {
+							ideology = liberal_republic
+							name = HUN_liberal_republic_1992_party
+							long_name = HUN_liberal_republic_1992_party_long
+						}
+						set_party_name = {
+							ideology = democratic
+							name = HUN_democratic_1992_party
+							long_name = HUN_democratic_1992_party_long
+						}
+						set_party_name = {
+							ideology = conservative_monarchism
+							name = HUN_conservative_monarchism_1992_party
+							long_name = HUN_conservative_monarchism_1992_party_long
+						}
+						set_popularities = {
+							democratic = 44
+							liberal_republic = 23.8
+							anocratic_republic = 23.4
+							socialism_ideology = 8.8
+						}
+						create_country_leader = {
+							name = "Elnöke Árpád Göncz"
+							desc = ""
+							picture = "gfx/leaders/HUN/Portrait_Arpad_Goncz.dds"
+							expire = "1965.1.1"
+							ideology = liberalism
+						}
+						create_country_leader = {
+							name = "Elnöke Árpád Göncz"
+							desc = ""
+							picture = "gfx/leaders/HUN/Portrait_Arpad_Goncz.dds"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
+						create_country_leader = {
+							name = "Király Ferenc József II de Habsburg "
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1992_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+						}
+					}
+					
 					FRA = {
 						set_cosmetic_tag = FRA_1992
 						set_politics = {
@@ -13778,11 +13885,6 @@
 							picture = "gfx/leaders/HOL/Portrait_Beatrix.dds"
 							expire = "1965.1.1"
 							ideology = conservative_constitutionalism
-						}
-					}
-					HUN = {
-						set_politics = {
-							ruling_party = democratic
 						}
 					}
 					POL = {
@@ -14654,6 +14756,12 @@
 							ideology = anocrep
 							traits = {
 							}
+						}
+					}
+					MAD = {
+						set_cosmetic_tag = MAD_1992
+						set_politics = {
+							ruling_party = vanguardism
 						}
 					}
 					NMB = {

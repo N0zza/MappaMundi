@@ -544,6 +544,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = WGR
+				has_government = anocratic_monarchism
+				has_start_date < 2000.01.01
+				has_start_date > 1990.01.01
+			}
+		}
+		localization_key = "Archipincerna Franciscus Iosephus II de Habsburgum, Rex Bohemiae"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
 				has_government = authoritarian_monarchism
 				has_start_date > 2022.01.01
 			}
@@ -768,6 +779,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Minisztertanács elnöke Dobi István"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HUN
+				has_government = democratic
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "Miniszterelnök József Tihamér Antall Jr."
 	}
 	text = {
 		trigger = {
@@ -4283,6 +4305,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = WGR
+				has_government = anocratic_monarchism
+				has_start_date < 2000.01.01
+				has_start_date > 1990.01.01
+			}
+		}
+		localization_key = "GFX_Otto_Habsburg_1992"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
 				has_government = democratic
 				has_start_date < 1991.01.01
 			}
@@ -4476,6 +4509,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Istvan_Dobi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HUN
+				has_government = democratic
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "GFX_Jozsef_Antall"
 	}
 	text = {
 		trigger = {

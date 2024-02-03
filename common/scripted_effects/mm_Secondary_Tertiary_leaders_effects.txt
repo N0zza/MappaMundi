@@ -393,6 +393,10 @@ secondary_leader_enabled_effect = {
 						has_start_date > 2022.01.01
 					}
 					AND = {
+						has_government = anocratic_monarchism
+						has_start_date > 1991.01.01
+					}
+					AND = {
 						has_government = democratic
 						has_start_date < 2022.01.01
 					}
@@ -519,6 +523,11 @@ secondary_leader_enabled_effect = {
 						has_government = vanguardism
 						has_start_date > 1940.01.01
 						has_start_date < 1951.01.01
+					}
+					AND = {
+						has_government = democratic
+						has_start_date < 2000.01.01
+						has_start_date > 1991.01.01
 					}
 					AND = {
 						has_government = anocratic_republic
