@@ -13772,6 +13772,13 @@
 							socialism_ideology = 8.8
 						}
 						create_country_leader = {
+							name = "Király Ferenc József II de Habsburg "
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_1992_Otto_Habsburg.dds"
+							expire = "1965.1.1"
+							ideology = monsoc
+						}
+						create_country_leader = {
 							name = "Elnöke Árpád Göncz"
 							desc = ""
 							picture = "gfx/leaders/HUN/Portrait_Arpad_Goncz.dds"
@@ -13958,10 +13965,51 @@
 						}
 					}
 					ROM = {
+						set_cosmetic_tag = ROM_1992
 						set_politics = {
-							ruling_party = centrist_republic
+							ruling_party = socialism_ideology
 						}
-						set_cosmetic_tag = ROM_2023
+						set_party_name = {
+							ideology = vanguardism
+							name = ROM_vanguardism_1992_party
+							long_name = ROM_vanguardism_1992_party_long
+						}
+						set_party_name = {
+							ideology = communism
+							name = ROM_communism_1992_party
+							long_name = ROM_communism_1992_party_long
+						}
+						set_party_name = {
+							ideology = socialism_ideology
+							name = ROM_socialism_ideology_1992_party
+							long_name = ROM_socialism_ideology_1992_party_long
+						}
+						set_popularities = {
+							socialism_ideology = 85
+							liberal_republic = 10
+							democratic = 5
+						}
+						create_country_leader = {
+							name = "Președintele Nicolae Ceaușescu"
+							desc = ""
+							picture = "gfx/leaders/ROM/Portrait_Nicolae_Ceausescu.dds"
+							expire = "1965.1.1"
+							ideology = totsoc
+						}
+						create_country_leader = {
+							name = "Președintele Ion Iliescu"
+							desc = ""
+							picture = "gfx/leaders/ROM/Portrait_Ion_Iliescu.dds"
+							expire = "1965.1.1"
+							ideology = marxism
+						}
+						create_country_leader = {
+							name = "Președintele Ion Iliescu"
+							desc = ""
+							picture = "gfx/leaders/ROM/Portrait_Ion_Iliescu.dds"
+							expire = "1965.1.1"
+							ideology = demsoc
+						}
 					}
 					MOL = {
 						set_politics = {

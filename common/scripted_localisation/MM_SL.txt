@@ -1982,6 +1982,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ROM
+				has_government = socialism_ideology
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "Prim-ministru Theodor Dumitru Stolojan"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ROM
 				has_government = centrist_republic
 				has_start_date > 2022.01.01
 			}
@@ -6034,6 +6045,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Petru_Groza"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ROM
+				has_government = socialism_ideology
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "GFX_Theodor_Stolojan"
 	}
 	text = {
 		trigger = {
