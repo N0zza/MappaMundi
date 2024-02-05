@@ -37290,6 +37290,25 @@ do_indian_renames = {
 
 	if = {
 		limit = {
+			state = 324
+		}
+		set_province_name = {
+			id = 8010
+			name = "Thim-phug"
+		}
+		if = {
+			limit = {
+				has_start_date < 1990.01.01
+			}
+			set_province_name = {
+				id = 8010
+				name = "Spu-na-kha"
+			}
+		}
+	}
+
+	if = {
+		limit = {
 			state = 8477
 		}		
 		set_province_name = {

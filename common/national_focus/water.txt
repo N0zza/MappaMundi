@@ -15370,14 +15370,49 @@
 						}
 					}
 					IND = {
-						set_cosmetic_tag = IND_2023
+						set_cosmetic_tag = IND_1992
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = centrist_republic
+						}
+						set_popularities = {
+							vanguardism = 6
+							communism = 4
+							socialism_ideology = 27
+							liberal_republic = 6
+							centrist_republic = 38
+							democratic = 18
+							anocratic_republic = 1
+						}
+					}
+					IND = {
+						create_country_leader = {
+							name = "Rāṣṭrapati Irāmacuvāmi Veṅkaṭrāmaṉ"
+							desc = ""
+							picture = "gfx/leaders/India/IND_Venkataraman.tga"
+							expire = "1965.1.1"
+							ideology = cenrep
 						}
 					}
 					PAK = {
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = anocratic_republic
+						}
+						set_cosmetic_tag = PAK_2023
+						set_popularities = {
+							socialism_ideology = 24
+							liberal_republic = 7
+							centrist_republic = 15
+							democratic = 5
+							anocratic_republic = 49
+						}
+					}
+					PAK = {
+						create_country_leader = {
+							name = "S̤adr Ġulām Ish̤āq K͟hān"
+							desc = ""
+							picture = "gfx/leaders/PAK/PAK_GIK.tga"
+							expire = "1965.1.1"
+							ideology = anocrep
 						}
 					}
 					BRM = {
@@ -15387,18 +15422,61 @@
 						}
 					}
 					BAN = {
-						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = socialism_ideology
+							ruling_party = centrist_republic
+						}
+						set_cosmetic_tag = BAN_1992
+						set_popularities = {
+							communism = 2
+							socialism_ideology = 28
+							liberal_republic = 2
+							centrist_republic = 51
+							democratic = 7
+							anocratic_republic = 10
+						}
+					}
+					BAN = {
+						create_country_leader = {
+							name = "Rāṣṭrapati Ābdur Rahmān Biśvās"
+							desc = ""
+							picture = "gfx/leaders/BAN/BAN_Biswas.tga"
+							expire = "1965.1.1"
+							ideology = cenrep
 						}
 					}
 					BHU = {
-						drop_cosmetic_tag = yes
+						set_cosmetic_tag = BHU_1992
+					}
+					BHU = {
+						create_country_leader = {
+							name = "'Brug Rgyal-po Jigs-med Seng-ge Dbang-phyug"
+							desc = ""
+							picture = "gfx/leaders/BHU/BHU_Jigme_Singye.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+						}
 					}
 					NEP = {
 						set_cosmetic_tag = NEP_1992
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = socialist_monarchy
+						}
+						set_popularities = {
+							vanguardism = 5
+							communism = 34
+							socialist_monarchy = 54
+							democratic_monarchism = 3
+							centrist_monarchism = 3
+							conservative_monarchism = 1
+						}
+					}
+					NEP = {
+						create_country_leader = {
+							name = "Mahārājādhirāja Vīrēndra Vīr Vikram Śāh Dēv"
+							desc = ""
+							picture = "gfx/leaders/NEP/NEP_Birendra.tga"
+							expire = "1965.1.1"
+							ideology = monsoc
 						}
 					}
 					PRC = {
@@ -20136,20 +20214,20 @@
 					}
 					SRL = {
 						set_politics = {
-							ruling_party = socialism_ideology
+							ruling_party = democratic
 						}
 						set_cosmetic_tag = SRL_2023
 						set_party_name = {
-							ideology = socialism_ideology
-							name = SRL_socialism_ideology_2023_party
-							long_name = SRL_socialism_ideology_2023_party_long
+							ideology = democratic
+							name = SRL_democratic_2023_party
+							long_name = SRL_democratic_2023_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 60
-							democratic = 25
-							centrist_republic = 8
-							liberal_republic = 6
 							communism = 1
+							socialism_ideology = 5
+							liberal_republic = 27
+							centrist_republic = 18
+							democratic = 49
 						}
 					}
 					SRL = {
@@ -20158,7 +20236,7 @@
 							desc = ""
 							picture = "gfx/leaders/SRL/SRL_Wickremsinghe.tga"
 							expire = "1965.1.1"
-							ideology = demsoc
+							ideology = conservatism
 						}
 					}
 					MLD = {
@@ -20303,7 +20381,7 @@
 					}
 					BHU = {
 						create_country_leader = {
-							name = "Druk Gyalpo Jigsmed Gesar Rnamrgyal Dbangphyug"
+							name = "'Brug Rgyal-po Jigs-med Ges-ar Rnam-rgyal Dbang-phyug"
 							desc = ""
 							picture = "gfx/leaders/BHU/BHU_Jigme.tga"
 							expire = "1965.1.1"

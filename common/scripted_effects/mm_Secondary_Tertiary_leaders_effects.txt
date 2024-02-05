@@ -1964,7 +1964,16 @@ secondary_leader_enabled_effect = {
 			AND = {
 				tag = IND
 				OR = {
-					has_government = socialist_monarchy
+					AND = {
+						has_government = socialist_monarchy
+						has_start_date > 1935.01.01
+						has_start_date < 1951.01.01
+					}
+					AND = {
+						has_government = centrist_republic
+						has_start_date > 1990.01.01
+						has_start_date < 2000.01.01
+					}
 					AND = {
 						has_start_date > 2022.01.01
 						OR = {
@@ -1988,7 +1997,7 @@ secondary_leader_enabled_effect = {
 					}
 					AND = {
 						has_government = anocratic_republic
-						has_start_date > 2022.01.01
+						has_start_date > 1992.01.01
 					}
 				}
 			}
@@ -2000,6 +2009,11 @@ secondary_leader_enabled_effect = {
 			AND = {
 				tag = BAN
 				OR = {
+					AND = {
+						has_government = centrist_republic
+						has_start_date > 1990.01.01
+						has_start_date < 2000.01.01
+					}
 					AND = {
 						has_government = anocratic_republic
 						has_start_date > 2022.01.01
@@ -2028,6 +2042,11 @@ secondary_leader_enabled_effect = {
 			AND = {
 				tag = NEP
 				OR = {
+					AND = {
+						has_government = socialist_monarchy
+						has_start_date > 1990.01.01
+						has_start_date < 2000.01.01
+					}
 					AND = {
 						has_government = communism
 						has_start_date > 2022.01.01
