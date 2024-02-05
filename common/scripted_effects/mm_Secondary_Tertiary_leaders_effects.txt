@@ -2073,6 +2073,20 @@ secondary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
+				tag = SRI
+				OR = {
+					AND = {
+						has_government = democratic
+						has_start_date > 1990.01.01
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
 				tag = PER
 				OR = {
 					AND = {

@@ -15479,6 +15479,57 @@
 							ideology = monsoc
 						}
 					}
+					SRL = {
+						set_cosmetic_tag = SRL_2023
+						set_politics = {
+							ruling_party = democratic
+						}
+						set_party_name = {
+							ideology = democratic
+							name = SRL_democratic_1992_party
+							long_name = SRL_democratic_1992_party_long
+						}
+						set_popularities = {
+							vanguardism = 3
+							communism = 6
+							socialism_ideology = 30
+							liberal_republic = 4
+							centrist_republic = 2
+							democratic = 55
+						}
+					}
+					SRL = {
+						create_country_leader = {
+							name = "Janādhipati Raṇasiṁha Prēmadāsa"
+							desc = ""
+							picture = "gfx/leaders/SRL/SRL_Premadasa.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
+					}
+					MLD = {
+						set_cosmetic_tag = MLD_2023
+						set_politics = {
+							ruling_party = neutrality
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = MLD_neutrality_1992_party
+							long_name = MLD_neutrality_1992_party_long
+						}
+						set_popularities = {
+							neutrality = 100
+						}
+					}
+					MLD = {
+						create_country_leader = {
+							name = "Raīs Maumūn ‘Abdul Qayyyūm"
+							desc = ""
+							picture = "gfx/leaders/MLD/MLD_Maumoon.tga"
+							expire = "1965.1.1"
+							ideology = despotism
+						}
+					}
 					PRC = {
 						transfer_state = 1007
 						transfer_state = 1319
@@ -20240,10 +20291,10 @@
 						}
 					}
 					MLD = {
-						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = democratic
 						}
+						set_cosmetic_tag = MLD_2023
 						set_party_name = {
 							ideology = democratic
 							name = MLD_democratic_2023_party
