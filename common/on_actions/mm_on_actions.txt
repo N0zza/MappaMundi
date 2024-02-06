@@ -4946,6 +4946,12 @@ on_actions = {
 								has_government = anocratic_monarchism
 							}
 							set_cosmetic_tag = WGR_1992_HRE
+							every_state = {
+								limit = {
+									is_owned_by = WGR
+								}
+								
+							}
 						}
 						else = {
 							set_cosmetic_tag = WGR_1992
@@ -6300,6 +6306,59 @@ on_actions = {
 									has_start_date > 2022.01.01
 								}
 								set_cosmetic_tag = ROM_2023
+							}
+						}
+					}
+					if = {
+						limit = {
+							tag = BUL
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = vanguardism
+									has_government = communism
+								}
+							}
+							set_cosmetic_tag = BUL_SOCIALIST
+							if = {
+								limit = {
+									AND = {
+										has_start_date < 1951.01.01
+										has_start_date > 1949.01.01
+									}
+								}
+								set_cosmetic_tag = BUL_1950
+							}
+							if = {
+								limit = {
+									has_start_date < 2000.01.01
+									has_start_date > 1991.01.01
+								}
+								set_cosmetic_tag = BUL_1992_VAN
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = centrist_republic
+									has_government = democratic
+								}
+							}
+							drop_cosmetic_tag = yes
+							if = {
+								limit = {
+									has_start_date < 2000.01.01
+									has_start_date > 1991.01.01
+								}
+								set_cosmetic_tag = BUL_1992
+							}
+							if = {
+								limit = {
+									has_start_date < 2025.01.01
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = BUL_2023
 							}
 						}
 					}

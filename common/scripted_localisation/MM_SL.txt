@@ -3432,6 +3432,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = BUL
+				has_government = democratic
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "Ministar-predsedatel Philip Dimitrov Dimitrov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BUL
 				has_government = vanguardism
 				has_start_date > 1940.01.01
 				has_start_date < 1951.01.01
@@ -6898,6 +6909,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Vasil_Kolarov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BUL
+				has_government = democratic
+				has_start_date < 2000.01.01
+				has_start_date > 1991.01.01
+			}
+		}
+		localization_key = "GFX_Philip_Dimitrov"
 	}
 	text = {
 		trigger = {

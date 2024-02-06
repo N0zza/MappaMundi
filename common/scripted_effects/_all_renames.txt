@@ -788,8 +788,11 @@ do_all_renames = {
 							AND = {
 								tag = WGR
 								OR = {
-									has_start_date = 2023.01.01
-									has_cosmetic_tag = WGR_2023
+									has_start_date > 1991.01.01
+									OR = {
+										has_cosmetic_tag = WGR_2023
+										has_cosmetic_tag = WGR_HRE_1992
+									}
 								}
 							}
 						}
