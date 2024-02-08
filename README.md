@@ -31,3 +31,4 @@
  - Special thanks to Yan Xishan, ainsley, and the Gigamap team for their resources in China.
  - Special thanks to the Kaiserreich team for allowing us to use the code for their States and Victory Point Renaming System.
  - Special thanks to the Southern Victory mod team for letting us use some of their portraits. 
+ - Special thanks to the Kaiserredux team for letting us use some of their flags.
