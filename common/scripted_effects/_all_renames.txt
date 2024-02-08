@@ -1725,6 +1725,22 @@ do_all_renames = {
 		}
 		do_indian_renames = yes
 	}
+	### Sri Lanka (Sinhalese) ###
+	if = {
+		limit = {
+			ROOT = {
+				tag = SRL
+				NOT = {
+					has_government = conservative_monarchism
+					has_government = anocratic_monarchism
+					has_government = authoritarian_monarchism
+					has_government = stratocratic_monarchism
+					has_government = fascism
+				}
+			}
+		}
+		do_sinhalese_renames = yes
+	}
 	### Yiddish ###
 	if = {
 		limit = {

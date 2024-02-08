@@ -1505,6 +1505,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = CHI
+				has_government = democratic
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Hsingcheng Yüan Yüanch'ang Hao Po-tsʻun"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CHI
 				has_government = neutrality
 			}
 		}
@@ -1572,7 +1583,18 @@ defined_text = {
 				has_start_date < 1951.01.01
 			}
 		}
-		localization_key = "Naegak Ch'ongni Kim Tŏkhun kyŏm kyŏm Chosŏn Rodongdang Chungangwiwŏnhoe Wiwŏnjang Kim Ilsŏng"
+		localization_key = "Naegak Ch'ongni-kwa Chosŏn Rodongdang Chungangwiwŏnhoe Wiwŏnjang Kim Ilsŏng"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = DPK
+				has_government = vanguardism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Naegak Ch'ongni Yŏn Hyŏngmuk"
 	}
 	text = {
 		trigger = {
@@ -5333,6 +5355,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = CHI
+				has_government = democratic
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Hau_Peitsun"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CHI
 				has_government = liberal_republic
 				has_start_date > 2022.01.01
 			}
@@ -5403,6 +5436,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Kim_Ilsung"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = DPK
+				has_government = vanguardism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Yon_Hyongmuk"
 	}
 	text = {
 		trigger = {

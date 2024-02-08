@@ -10957,7 +10957,7 @@
 				}
 				ROK = {
 					create_country_leader = {
-						name = "Daetongnyeong Ri Seung-man "
+						name = "Daetonglyeong Ri Seung-man "
 						desc = ""
 						picture = "gfx/leaders/ROK/ROK_Rhee_1950.tga"
 						expire = "1965.1.1"
@@ -10966,7 +10966,7 @@
 						}
 					}
 					create_country_leader = {
-						name = "Daetongnyeong Ri Seung-man "
+						name = "Daetonglyeong Ri Seung-man "
 						desc = ""
 						picture = "gfx/leaders/ROK/ROK_Rhee_1950.tga"
 						expire = "1965.1.1"
@@ -14650,10 +14650,15 @@
 					}
 					every_state = {
 						limit = {
-							OR = {
-								is_core_of = ETH
-								is_core_of = ERI
-							}
+							is_core_of = ERI
+						}
+						ERI = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = ETH
 						}
 						ETH = {
 							transfer_state = PREV
@@ -14816,6 +14821,44 @@
 						}
 						CSM = {
 							transfer_state = PREV
+						}
+					}
+					ETH = {
+						transfer_state = 4098
+						transfer_state = 4100
+						transfer_state = 4102
+						transfer_state = 4103
+						transfer_state = 4105
+						transfer_state = 17115
+						set_politics = {
+							ruling_party = neutrality
+						}
+						set_cosmetic_tag = ETH_1992
+						set_party_name = {
+							ideology = neutrality
+							name = ETH_neutrality_1992_party
+							long_name = ETH_neutrality_1992_party_long
+						}
+						set_popularities = {
+							neutrality = 100
+						}
+					}
+					ERI = {
+						set_politics = {
+							ruling_party = communism
+						}
+						set_cosmetic_tag = ERI_1992
+						set_popularities = {
+							communism = 100
+						}
+					}
+					ERI = {
+						create_country_leader = {
+							name = "Wana S'ähafi Həzəbawi Gənəbarə Harənätə ʾErətəra ʼIsayəyasə ʼAfəwärəqi"
+							desc = ""
+							picture = "gfx/leaders/ERI/ERI_Afwerki_1992.tga"
+							expire = "1965.1.1"
+							ideology = marxism
 						}
 					}
 					LBA = {
@@ -15663,6 +15706,40 @@
 							ideology = anocmon
 						}
 					}
+					MCU = {
+						create_country_leader = {
+							name = "Governador Carlos Montez Melancia" 
+							desc = ""
+							picture = "gfx/leaders/MCU/MCU_Melancia.tga"
+							expire = "1965.1.1"
+							ideology = repfash
+						}
+					}
+					CHI = {
+						set_politics = {
+							ruling_party = democratic
+						}
+						set_cosmetic_tag = CHI_1992
+						set_party_name = {
+							ideology = democratic
+							name = CHI_democratic_1992_party
+							long_name = CHI_democratic_1992_party_long
+						}
+						set_popularities = {
+							liberal_republic = 16
+							centrist_republic = 11
+							democratic = 73
+						}
+					}
+					CHI = {
+						create_country_leader = {
+							name = "Tsungtung Li Têng-hui"
+							desc = ""
+							picture = "gfx/leaders/CHI/CHI_Lee.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
+					}
 					MON = {
 						set_cosmetic_tag = MON_1992
 						set_politics = {
@@ -15727,10 +15804,43 @@
 						set_politics = {
 							ruling_party = vanguardism
 						}
+						set_popularities = {
+							vanguardism = 87
+							communism = 10
+							neutrality = 3
+						}
+					}
+					DPK = {
+						create_country_leader = {
+							name = "Chusŏk-kwa Chosŏllodongdang chungangwiwŏnhoe ch'ongbisŏ Kim Ilsŏng"
+							desc = ""
+							picture = "gfx/leaders/DPK/DPK_Kim_1992.tga"
+							expire = "1965.1.1"
+							ideology = totsoc
+						}
 					}
 					ROK = {
 						set_politics = {
 							ruling_party = democratic
+						}
+						set_party_name = {
+							ideology = democratic
+							name = ROK_democratic_1992_party
+							long_name = ROK_democratic_1992_party_long
+						}
+						set_popularities = {
+							liberal_republic = 4
+							centrist_republic = 43
+							democratic = 53
+						}
+					}
+					ROK = {
+						create_country_leader = {
+							name = "Daetonglyeong No Tae-u"
+							desc = ""
+							picture = "gfx/leaders/ROK/ROK_Roh.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
 						}
 					}
 					PHI = {
