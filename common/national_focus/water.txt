@@ -14878,10 +14878,15 @@
 						set_popularities = {
 							communism = 100
 						}
+						set_party_name = {
+							ideology = communism
+							name = LBA_communism_1992_party
+							long_name = LBA_communism_1992_party_long
+						}
 						create_country_leader = {
-							name = "Aẖ al-Qāʾid wa Muršid aṯ-Ṯawraẗ Muʿammar Muḥammad ʾAbū Minyār al-Qaḏḏāfī"
+							name = "Amīn al-ʿĀm li-Muʾtamar aš-Šaʿb al-ʿĀm ʿAbd ur-Razāq aṣ-Ṣawṣāʿ"
 							desc = ""
-							picture = "gfx/leaders/LBA/Portrait_Muammar_Gaddafi.dds"
+							picture = "gfx/leaders/LBA/LBA_Sawsa_Placeholder.tga"
 							expire = "1965.1.1"
 							ideology = marxism
 						}
@@ -15042,12 +15047,6 @@
 						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = democratic
-						}
-					}
-					ETH = {
-						set_cosmetic_tag = ETH_1992
-						set_politics = {
-							ruling_party = communism
 						}
 					}
 					SOM = {
@@ -15234,6 +15233,9 @@
 						set_politics = {
 							ruling_party = anocratic_republic
 						}
+					}
+					every_state = {
+						do_postcolonial_african_renames = yes
 					}
 					### ASIA AND OCEANIA 1992 ###
 					every_state = {
@@ -15459,21 +15461,67 @@
 							transfer_state = PREV
 						}
 					}
-					every_state = {
-						limit = {
-							is_core_of = JOR
+					JOR = {
+						transfer_state = 1175
+						transfer_state = 1177
+						transfer_state = 3352
+						transfer_state = 14409
+						transfer_state = 17501
+						transfer_state = 17513
+						set_cosmetic_tag = JOR_1992
+						set_popularities = {
+							anocratic_monarchism = 28
+							authoritarian_monarchism = 72
 						}
-						JOR = {
-							transfer_state = PREV
-						}
+					}
+					SAU = {
+						transfer_state = 1176
+						transfer_state = 3353
+						transfer_state = 5884
+						transfer_state = 14392
 					}
 					every_state = {
 						limit = {
-							is_core_of = ISR
+							OR = {
+								is_core_of = PAL
+								state = 1208
+							}
 						}
-						ISR = {
-							transfer_state = PREV
+						transfer_state_to = ISR
+						do_hebrew_renames = yes
+					}
+					ISR = {
+						set_politics = {
+							ruling_party = democratic
 						}
+						set_cosmetic_tag = ISR_2023
+						set_party_name = {
+							ideology = democratic
+							name = ISR_democratic_2023_party
+							long_name = ISR_democratic_2023_party_long
+						}
+						set_popularities = {
+							communism = 4
+							socialism_ideology = 32
+							liberal_republic = 8
+							centrist_republic = 4
+							democratic = 36
+							anocratic_republic = 5
+							neutrality = 7
+							republican_fascism = 4
+						}
+					}
+					ISR = {
+						create_country_leader = {
+							name = "Nāśiyʾ Ḥayiym Herṣōg"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Chaim_Herzog.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
+					}
+					LEB = {
+						set_cosmetic_tag = LEB_2023
 					}
 					AFG = {
 						set_cosmetic_tag = AFG_1992
@@ -15923,20 +15971,11 @@
 							ruling_party = democratic
 						}
 					}
-					PAL = {
-						set_cosmetic_tag = PAL_1992
-						set_politics = {
-							ruling_party = communism
-						}
-					}
 					SYR = {
 						set_cosmetic_tag = SYR_1992
 						set_politics = {
 							ruling_party = communism
 						}
-					}
-					JOR = {
-						set_cosmetic_tag = JOR_2023
 					}
 					### NORTH AMERICA 1992 ###
 					every_state = {
