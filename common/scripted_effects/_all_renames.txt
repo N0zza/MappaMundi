@@ -356,7 +356,16 @@ do_all_renames = {
 						}
 					}
 					tag = KC2
-					tag = CZ2
+					AND = {
+						tag = CZ2
+						NOT = {
+							has_government = vanguardism
+							has_government = socialism_ideology
+							has_government = liberal_republic
+							has_government = centrist_republic
+							has_government = monarchism
+						}
+					}
 					tag = DN2
 					tag = NR2
 					tag = GGM

@@ -6717,6 +6717,13 @@ on_actions = {
 							drop_cosmetic_tag = yes
 							if = {
 								limit = {
+									has_start_date < 2000.01.01
+									has_start_date > 1990.01.01
+								}
+								set_cosmetic_tag = CAN_1992
+							}
+							if = {
+								limit = {
 									has_start_date > 2022.01.01
 								}
 								set_cosmetic_tag = CAN_2023
@@ -8111,6 +8118,34 @@ on_actions = {
 						}
 					}
 					set_cosmetic_tag = CZ2_SOCREP
+					every_state = {
+						limit = {
+							is_owned_by = ROOT
+						}
+						do_czech_renames = yes
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_government = vanguardism
+						}
+					}
+					set_cosmetic_tag = CZE_SOCIALIST
+					every_state = {
+						limit = {
+							is_owned_by = ROOT
+						}
+						do_czech_renames = yes
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_government = monarchism
+						}
+					}
+					drop_cosmetic_tag = yes
 					every_state = {
 						limit = {
 							is_owned_by = ROOT
