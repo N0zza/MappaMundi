@@ -15948,6 +15948,8 @@
 						}
 					}
 					IRQ = {
+						transfer_state = 12035
+						transfer_state = 14418
 						set_cosmetic_tag = IRQ_1992
 						set_politics = {
 							ruling_party = communism
@@ -15970,10 +15972,48 @@
 						}
 					}
 					SYR = {
-						set_cosmetic_tag = SYR_1992
+						drop_cosmetic_tag = yes
 						set_politics = {
-							ruling_party = communism
+							ruling_party = neutrality
 						}
+						set_party_name = {
+							ideology = neutrality
+							name = SYR_neutrality_2023_party
+							long_name = SYR_neutrality_2023_party_long
+						}
+						set_popularities = {
+							vanguardism = 3
+							communism = 10
+							anocratic_republic = 33
+							neutrality = 54
+						}
+					}
+					SYR = {
+						create_country_leader = {
+							name = "Raʾīs Ḥāfiẓ ʿAliyy al-Assad"
+							desc = ""
+							picture = "gfx/leaders/SYR/SYR_Megamind.tga"
+							expire = "1965.1.1"
+							ideology = despotism
+						}
+					}
+					SAU = {
+						transfer_state = 3358
+					}
+					KUW = {
+						transfer_state = 1173
+						transfer_state = 1174
+						transfer_state = 9095
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = IRQ
+								is_owned_by = KUW
+								is_owned_by = SAU
+							}
+						}
+						set_demilitarized_zone = no
 					}
 					### NORTH AMERICA 1992 ###
 					every_state = {
