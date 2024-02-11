@@ -5254,6 +5254,39 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							tag = SGR
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = socialist_monarchy
+								}
+							}
+							set_cosmetic_tag = FRA_NAPOLEON
+						}
+						else_if = {
+							limit = {
+								OR = {
+									has_government = neutrality
+									has_government = stratocratic
+								}
+							}
+							set_cosmetic_tag = FRA_BLUE
+						}
+						else_if = {
+							limit = {
+								OR = {
+									has_government = fascism
+								}
+							}
+							set_cosmetic_tag = FRA_AUTH
+						}
+						else = {
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
 							AND = {
 								tag = SPR
 								NOT = {
@@ -5413,6 +5446,22 @@ on_actions = {
 								}
 								set_cosmetic_tag = SPR_YELLOW
 							}
+						}
+					}
+					if = {
+						limit = {
+							tag = SP2
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = monarchism
+								}
+							}
+							set_cosmetic_tag = FRA_NAPOLEON
+						}
+						else = {
+							drop_cosmetic_tag = yes
 						}
 					}
 					if = {
@@ -6460,6 +6509,7 @@ on_actions = {
 										has_cosmetic_tag = USA_BRITISH
 										has_cosmetic_tag = USA_MONARCHIST
 										has_cosmetic_tag = USA_BLUE
+										has_cosmetic_tag = USA_TRIBAL
 										has_cosmetic_tag = ALA_USA
 										has_cosmetic_tag = HAW_USA
 										has_cosmetic_tag = PUE_USA
@@ -6489,6 +6539,7 @@ on_actions = {
 										has_cosmetic_tag = USA_BRITISH
 										has_cosmetic_tag = USA_MONARCHIST
 										has_cosmetic_tag = USA_BLUE
+										has_cosmetic_tag = USA_TRIBAL
 										has_cosmetic_tag = ALA_USA
 										has_cosmetic_tag = HAW_USA
 										has_cosmetic_tag = PUE_USA
@@ -6498,6 +6549,33 @@ on_actions = {
 									}
 								}
 								set_cosmetic_tag = USA_SOCIALIST
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = anarchism_ideology
+								}
+							}
+							set_cosmetic_tag = USA_TRIBAL
+							every_country = {
+								limit = {
+									OR = {
+										has_cosmetic_tag = USA_AUTH
+										has_cosmetic_tag = USA_SOCIALIST
+										has_cosmetic_tag = USA_BRITISH
+										has_cosmetic_tag = USA_MONARCHIST
+										has_cosmetic_tag = USA_BLUE
+										has_cosmetic_tag = USA_TRIBAL
+										has_cosmetic_tag = ALA_USA
+										has_cosmetic_tag = HAW_USA
+										has_cosmetic_tag = PUE_USA
+										has_cosmetic_tag = PCZ_USA
+										has_cosmetic_tag = PHI_USA
+										has_cosmetic_tag = ESM_USA
+									}
+								}
+								set_cosmetic_tag = USA_TRIBAL
 							}
 						}
 						if = {
@@ -6520,6 +6598,7 @@ on_actions = {
 										has_cosmetic_tag = USA_BRITISH
 										has_cosmetic_tag = USA_MONARCHIST
 										has_cosmetic_tag = USA_BLUE
+										has_cosmetic_tag = USA_TRIBAL
 										has_cosmetic_tag = ALA_USA
 										has_cosmetic_tag = HAW_USA
 										has_cosmetic_tag = PUE_USA
@@ -6547,6 +6626,7 @@ on_actions = {
 										has_cosmetic_tag = USA_BRITISH
 										has_cosmetic_tag = USA_MONARCHIST
 										has_cosmetic_tag = USA_BLUE
+										has_cosmetic_tag = USA_TRIBAL
 										has_cosmetic_tag = ALA_USA
 										has_cosmetic_tag = HAW_USA
 										has_cosmetic_tag = PUE_USA
@@ -6582,6 +6662,7 @@ on_actions = {
 										has_cosmetic_tag = USA_BRITISH
 										has_cosmetic_tag = USA_MONARCHIST
 										has_cosmetic_tag = USA_BLUE
+										has_cosmetic_tag = USA_TRIBAL
 										has_cosmetic_tag = ALA_USA
 										has_cosmetic_tag = HAW_USA
 										has_cosmetic_tag = PUE_USA
