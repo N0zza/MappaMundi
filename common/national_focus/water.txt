@@ -22990,7 +22990,34 @@
 					}
 					CA9 = {
 						create_country_leader = {
-							name = "Disorganised Militias"
+							name = "Decentralised Militias"
+							desc = ""
+							picture = "gfx/leaders/CA9/CA9_balaka.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					SD3 = {
+						create_country_leader = {
+							name = "Decentralised Militias"
+							desc = ""
+							picture = "gfx/leaders/CA9/CA9_balaka.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					SD4 = {
+						create_country_leader = {
+							name = "Président Ismaïl Abdoulaye"
+							desc = ""
+							picture = "gfx/leaders/SD4/SD4_Abdoulaye.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					SD5 = {
+						create_country_leader = {
+							name = "Decentralised Militias"
 							desc = ""
 							picture = "gfx/leaders/CA9/CA9_balaka.tga"
 							expire = "1965.1.1"
@@ -23398,6 +23425,24 @@
 							is_core_of = CA9
 						}
 						transfer_state_to = CA9
+					}
+					every_state = {
+						limit = {
+							is_core_of = SD3
+						}
+						transfer_state_to = SD3
+					}
+					every_state = {
+						limit = {
+							is_core_of = SD4
+						}
+						transfer_state_to = SD4
+					}
+					every_state = {
+						limit = {
+							is_core_of = SD5
+						}
+						transfer_state_to = SD5
 					}
 					every_state = {
 						limit = {
