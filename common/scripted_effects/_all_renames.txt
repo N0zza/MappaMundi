@@ -219,8 +219,9 @@ do_all_renames = {
 					AND = {
 						tag = ILY
 						NOT = {
-							has_government = national_socialism
+							has_government = socialist_monarchy
 							has_government = republican_fascism
+							has_government = national_socialism
 						}
 					}
 				}
@@ -501,7 +502,12 @@ do_all_renames = {
 			ROOT = {
 				OR = { 
 					tag = POL 
-					tag = GAL 
+					AND = {
+						tag = GAL 
+						NOT = {
+							has_government = centrist_monarchism
+						}
+					}
 					AND = {
 						tag = PL3
 						NOT = {
