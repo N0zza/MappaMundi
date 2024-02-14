@@ -13601,11 +13601,11 @@
 							ruling_party = democratic
 						}
 						set_popularities = {
-							democratic = 43.8
-							socialism_ideology = 33.5
-							liberal_republic = 11.0
-							communism = 2.4
-							centrist_republic = 9.3
+							communism = 3
+							socialism_ideology = 36
+							liberal_republic = 1
+							centrist_republic = 12
+							democratic = 48
 						}
 						set_party_name = {
 							ideology = democratic_monarchism
@@ -13948,8 +13948,11 @@
 							ruling_party = centrist_republic
 						}
 						set_popularities = {
-							centrist_republic = 74.3
-							democratic = 25.7
+							socialism_ideology = 14
+							liberal_republic = 9
+							centrist_republic = 36
+							democratic = 30
+							anocratic_republic = 11
 						}
 						set_party_name = {
 							ideology = anocratic_republic
@@ -14065,20 +14068,80 @@
 					}
 					GRE = {
 						set_politics = {
-							ruling_party = liberal_republic
+							ruling_party = democratic
 						}
-						drop_cosmetic_tag = yes
+						set_cosmetic_tag = GRE_2023
+						set_party_name = {
+							ideology = democratic
+							name = GRE_democratic_2023_party
+							long_name = GRE_democratic_2023_party_long
+						}
+						set_popularities = {
+							communism = 6
+							socialism_ideology = 41
+							liberal_republic = 1
+							centrist_republic = 1
+							democratic = 51
+						}
+					}
+					GRE = {
+						create_country_leader = {
+							name = "Próedros Konstantínos Georgíou Karamanlís"
+							desc = ""
+							picture = "gfx/leaders/GRE/GRE_Karamanlis.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
 					}
 					ALB = {
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = socialism_ideology
 						}
-						drop_cosmetic_tag = yes
+						set_cosmetic_tag = ALB_1992
+						set_party_name = {
+							ideology = socialism_ideology
+							name = ALB_socialism_ideology_2023_party
+							long_name = ALB_socialism_ideology_2023_party_long
+						}
+						set_popularities = {
+							socialism_ideology = 68
+							democratic = 32
+						}
+					}
+					ALB = {
+						create_country_leader = {
+							name = "Presidenti Ramiz Alia"
+							desc = ""
+							picture = "gfx/leaders/ALB/ALB_Alia.tga"
+							expire = "1965.1.1"
+							ideology = demsoc
+						}
 					}
 					YUG = {
 						set_cosmetic_tag = YUG_1992
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = neutrality
+						}
+						set_popularities = {
+							vanguardism = 10
+							communism = 5
+							anocratic_republic = 5
+							neutrality = 60
+							republican_fascism = 20
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = YUG_neutrality_1992_party
+							long_name = YUG_neutrality_1992_party_long
+						}
+					}
+					YUG = {
+						create_country_leader = {
+							name = "Pretsedatel na Pretsedatelstvoto Branko Kostić"
+							desc = ""
+							picture = "gfx/leaders/YUG/YUG_Kostic.tga"
+							expire = "1965.1.1"
+							ideology = neutrality
 						}
 					}
 					SLV = {
@@ -14174,6 +14237,14 @@
 						set_politics = {
 							ruling_party = anocratic_republic
 						}
+						set_cosmetic_tag = YUG_BLUE
+						set_popularities = {
+							communism = 6
+							democratic = 11
+							anocratic_republic = 39
+							neutrality = 27
+							republican_fascism = 17
+						}
 						set_capital = {
 							state = 7363
 						}
@@ -14185,6 +14256,24 @@
 							picture = "gfx/leaders/SKR/SKR_Babic.tga"
 							expire = "1965.1.1"
 							ideology = anocrep
+						}
+					}
+					GRE = {
+						set_politics = {
+							ruling_party = democratic
+						}
+						set_cosmetic_tag = GRE_2023
+						set_party_name = {
+							ideology = democratic
+							name = GRE_democratic_2023_party
+							long_name = GRE_democratic_2023_party_long
+						}
+						set_popularities = {
+							communism = 6
+							socialism_ideology = 41
+							liberal_republic = 1
+							centrist_republic = 1
+							democratic = 51
 						}
 					}
 					EST = {
@@ -14901,6 +14990,16 @@
 						set_cosmetic_tag = EGY_2023
 						set_politics = {
 							ruling_party = neutrality
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = EGY_neutrality_1992_party
+							long_name = EGY_neutrality_1992_party_long
+						}
+						set_popularities = {
+							communism = 1
+							anocratic_republic = 20
+							neutrality = 79
 						}
 					}
 					SUD = {
