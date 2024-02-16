@@ -13595,6 +13595,33 @@
 							ideology = anocmon
 						}
 					}
+					POR = {
+						set_politics = {
+							ruling_party = democratic
+						}
+						set_cosmetic_tag = POR_1992
+						set_party_name = {
+							ideology = democratic
+							name = POR_democratic_1992_party
+							long_name = POR_democratic_1992_party_long
+						}
+						set_popularities = {
+							communism = 7
+							socialism_ideology = 31
+							liberal_republic = 1
+							centrist_republic = 2
+							democratic = 59
+						}
+					}
+					POR = {
+						create_country_leader = {
+							name = "Presidente Mário Alberto Nobre Lopes Soares"
+							desc = ""
+							picture = "gfx/leaders/POR/POR_Soares.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
+					}
 					WGR = {
 						set_cosmetic_tag = WGR_1992
 						set_politics = {
@@ -14067,6 +14094,12 @@
 						}
 					}
 					GRE = {
+						every_state = {
+							limit = { 
+								is_owned_by = DDO
+							}
+							transfer_state_to = PREV
+						}
 						set_politics = {
 							ruling_party = democratic
 						}
@@ -14141,7 +14174,7 @@
 							desc = ""
 							picture = "gfx/leaders/YUG/YUG_Kostic.tga"
 							expire = "1965.1.1"
-							ideology = neutrality
+							ideology = despotism
 						}
 					}
 					SLV = {
@@ -14336,97 +14369,97 @@
 						}
 					}
 					TTR = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					UDM = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
-					MRE = {
-						set_cosmetic_tag = RUS_GREEN
+					CVS = {
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					BSH = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					MRD = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					KMI = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					ALI = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					KKS = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					TAN = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					BYA = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					YKT = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					ADY = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					KRC = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					KBK = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					NOS = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					ING = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
@@ -14438,13 +14471,13 @@
 						}
 					}
 					DAG = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
 					}
 					KAR = {
-						set_cosmetic_tag = RUS_GREEN
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = centrist_republic
 						}
@@ -14512,11 +14545,104 @@
 							ideology = marxism
 						}
 					}
-					KAZ = {
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = KAZ
+							}
+							NOT = {
+								is_core_of = UZB
+								is_claimed_by = UZB
+								is_core_of = RUS
+							}
+						}
+						transfer_state_to = KAZ
+					}
+					every_state = {
+						limit = {
+							is_core_of = UZB
+							NOT = {
+								is_core_of = TAJ
+							}
+						}
+						transfer_state_to = UZB
+					}
+					every_state = {
+						limit = {
+							is_claimed_by = UZB
+							NOT = {
+								is_core_of = TAJ
+								is_core_of = KYR
+							}
+						}
+						transfer_state_to = UZB
+					}
+					every_state = {
+						limit = {
+							is_core_of = TAJ
+							NOT = {
+								is_core_of = PRC
+							}
+						}
+						transfer_state_to = TAJ
+					}
+					every_state = {
+						limit = {
+							is_core_of = TMS
+							NOT = {
+								is_claimed_by = KAZ
+								is_claimed_by = KPK
+							}
+						}
+						transfer_state_to = TMS
+					}
+					every_state = {
+						limit = {
+							is_core_of = KPK
+						}
+						transfer_state_to = KPK
+					}
+					every_state = {
+						limit = {
+							is_core_of = KYR
+							NOT = {
+								is_core_of = UZB
+								is_core_of = TAJ
+							}
+						}
+						transfer_state_to = KYR
+					}
+					UZB = {
+						puppet = KPK
+					}
+					KPK = {
+						transfer_state = 8996
+						transfer_state = 8997
 						set_politics = {
 							ruling_party = neutrality
+						}	
+						set_cosmetic_tag = KPK_2023
+					}
+					KAZ = {
+						transfer_state = 8646
+						transfer_state = 9244
+						transfer_state = 9245
+						transfer_state = 9587
+						transfer_state = 12224
+						transfer_state = 12250
+						transfer_state = 10132
+						transfer_state = 12375
+						transfer_state = 12377
+						transfer_state = 18381
+						set_politics = {
+							ruling_party = communism
 						}
 						set_cosmetic_tag = KAZ_1992
+						set_popularities = {
+							vanguardism = 20
+							communism = 60
+							neutrality = 20
+						}
 						set_party_name = {
 							ideology = neutrality
 							name = KAZ_neutrality_1992_party
@@ -14536,6 +14662,18 @@
 						set_cosmetic_tag = KYR_1992
 					}
 					UZB = {
+						transfer_state = 585
+						transfer_state = 1372
+						transfer_state = 12238
+						transfer_state = 12411
+						transfer_state = 12416
+						transfer_state = 12417
+						transfer_state = 12466
+						transfer_state = 12595
+						transfer_state = 18297
+						transfer_state = 18298
+						transfer_state = 18299
+						transfer_state = 18332
 						set_politics = {
 							ruling_party = democratic
 						}
@@ -14625,6 +14763,31 @@
 							picture = "gfx/leaders/ENG/Portrait_Elizabeth_II.dds"
 							expire = "1965.1.1"
 							ideology = absolutism
+						}
+					}
+					IRE = {
+						set_politics = {
+							ruling_party = centrist_republic
+						}
+						set_cosmetic_tag = IRE_1939
+						set_popularities = {
+							vanguardism = 4
+							communism = 1
+							socialism_ideology = 9
+							liberal_republic = 4
+							centrist_republic = 46
+							democratic = 36
+						}
+					}
+					IRE = { 
+						create_country_leader = {
+							name = "Uachtarán Máire Treasa Úna Mhic Róibín"
+							desc = ""
+							picture = "gfx/leaders/IRE/IRE_Robinson.tga"
+							expire = "1965.1.1"
+							ideology = cenrep
+							traits = {
+							}
 						}
 					}
 					### AFRICA 1992 ###
@@ -15852,10 +16015,6 @@
 						transfer_state = 12382
 						transfer_state = 12383
 						transfer_state = 12384
-						transfer_state = 18387
-						transfer_state = 18388
-						transfer_state = 18390
-						transfer_state = 18391
 						set_cosmetic_tag = PRC_2023
 						set_party_name = {
 							ideology = vanguardism
@@ -15910,12 +16069,21 @@
 						}
 					}
 					MCU = {
+						set_politics = {
+							ruling_party = neutrality
+						}
+						set_popularities = {
+							neutrality = 100
+						}
+						set_cosmetic_tag = MCU_POR
+					}
+					MCU = {
 						create_country_leader = {
 							name = "Governador Carlos Montez Melancia" 
 							desc = ""
 							picture = "gfx/leaders/MCU/MCU_Melancia.tga"
 							expire = "1965.1.1"
-							ideology = repfash
+							ideology = despotism
 						}
 					}
 					CHI = {

@@ -64,7 +64,26 @@ scripted_gui = {
             }
 			
 			default_color_button_click = {
-				drop_cosmetic_tag = yes
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						clr_country_flag = scc_actor
+					}
+				}
 				set_variable = { global.scc_random = 0 }
 			}
 			

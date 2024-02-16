@@ -13,13 +13,29 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 			factor = 0
 		}
 		hidden_effect = {
-			MRT = {
-				every_state = {
-					limit = {
-						is_core_of = PREV
-						is_owned_by = MLI
+			IRE = {
+				set_politics = {
+					ruling_party = centrist_republic
+				}
+				set_cosmetic_tag = IRE_1939
+				set_popularities = {
+					vanguardism = 4
+					communism = 1
+					socialism_ideology = 9
+					liberal_republic = 4
+					centrist_republic = 46
+					democratic = 36
+				}
+			}
+			IRE = { 
+				create_country_leader = {
+					name = "Uachtarán Máire Treasa Úna Mhic Róibín"
+					desc = ""
+					picture = "gfx/leaders/IRE/IRE_Robinson.tga"
+					expire = "1965.1.1"
+					ideology = cenrep
+					traits = {
 					}
-					transfer_state_to = PREV
 				}
 			}
 		}
