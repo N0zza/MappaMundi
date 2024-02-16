@@ -15002,10 +15002,54 @@
 							neutrality = 79
 						}
 					}
+					EGY = {
+						create_country_leader = {
+							name = "Raʾīs Muḥammad Ḥusnī as-Sayyid as-Sayyid Ibrāhīm Mubārak"
+							desc = ""
+							picture = "gfx/leaders/EGY/EGY_Mubarak.tga"
+							expire = "1965.1.1"
+							ideology = despotism
+							traits = {
+							}
+						}
+					}
 					SUD = {
+						transfer_state = 891
+						transfer_state = 12109
 						set_cosmetic_tag = SUD_2023
 						set_politics = {
 							ruling_party = stratocratic
+						}
+						set_party_name = {
+							ideology = stratocratic
+							name = SUD_stratocratic_2023_party
+							long_name = SUD_stratocratic_2023_party_long
+						}
+						set_popularities = {
+							stratocratic = 100
+						}
+					}
+					SUD = {
+						create_country_leader = {
+							name = "Raʾīs Maǧlis Qiyādaẗ aṯ-Ṯawraẗ lil-Inqāḏ al-Waṭanī ʿUmar Ḥasan ʾAḥmad al-Bašīr"
+							desc = ""
+							picture = "gfx/leaders/SUD/SUD_Bashir.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+							traits = {
+							}
+						}
+					}
+					NGR = {
+						transfer_state = 2745
+					}
+					MRT = {
+						every_state = {
+							limit = {
+								is_core_of = PREV
+								is_owned_by = MLI
+							}
+							transfer_state_to = PREV
 						}
 					}
 					COG = {
@@ -16064,12 +16108,6 @@
 							ideology = marxism
 						}
 					}
-					YEM = {
-						drop_cosmetic_tag = yes
-						set_politics = {
-							ruling_party = democratic
-						}
-					}
 					SYR = {
 						drop_cosmetic_tag = yes
 						set_politics = {
@@ -16097,7 +16135,20 @@
 						}
 					}
 					SAU = {
+						transfer_state = 1172
+						transfer_state = 2863
+						transfer_state = 2864
+						transfer_state = 2865
+						transfer_state = 2866
+						transfer_state = 2867
 						transfer_state = 3358
+						transfer_state = 5649
+						transfer_state = 5650
+						transfer_state = 5827
+						transfer_state = 8070
+						transfer_state = 9385
+						transfer_state = 9386
+						transfer_state = 9387
 					}
 					KUW = {
 						transfer_state = 1173
@@ -16110,9 +16161,52 @@
 								is_owned_by = IRQ
 								is_owned_by = KUW
 								is_owned_by = SAU
+								is_owned_by = UAE
 							}
 						}
 						set_demilitarized_zone = no
+					}
+					YEM = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = neutrality
+						}
+					}
+					KUW = {
+						set_politics = {
+							ruling_party = anocratic_monarchism
+						}
+						drop_cosmetic_tag = yes
+					}
+					BHR = {
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+						drop_cosmetic_tag = yes
+					}
+					QAT = {
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+						drop_cosmetic_tag = yes
+					}
+					UAE = {
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+						drop_cosmetic_tag = yes
+					}
+					OMA = {
+						every_state = {
+							limit = {
+								is_owned_by = OMN
+							}
+							transfer_state_to = PREV
+						}
+						set_politics = {
+							ruling_party = monarchism
+						}
+						drop_cosmetic_tag = yes
 					}
 					### NORTH AMERICA 1992 ###
 					every_state = {
@@ -20624,13 +20718,12 @@
 							long_name = NEP_communism_2023_party_long
 						}
 						set_popularities = {
-							vanguardism = 33
-							communism = 11
-							socialism_ideology = 42
-							liberal_republic = 7
-							centrist_republic = 1
+							vanguardism = 29
+							communism = 20
+							socialism_ideology = 33
+							liberal_republic = 5
+							centrist_republic = 8
 							democratic = 5
-							anocratic_republic = 1
 						}
 					}
 					NEP = {
@@ -20725,7 +20818,15 @@
 						}
 						set_popularities = {
 							anocratic_republic = 100
-						}
+						}	
+						#set_popularities = { #2024 Election Results so far
+						#	socialism_ideology = 17
+						#	liberal_republic = 5
+						#	centrist_republic = 31
+						#	democratic = 3
+						#	anocratic_republic = 22
+						#	neutrality = 22
+						#}
 					}
 					PAK = {
 						create_country_leader = {
@@ -20803,6 +20904,9 @@
 						set_cosmetic_tag = BHU_2023
 						set_politics = {
 							ruling_party = anocratic_monarchism
+						}
+						every_owned_state = {
+							do_indian_renames = yes
 						}
 						set_popularities = {
 							conservative_monarchism = 18
