@@ -7681,14 +7681,6 @@
 					socialist_monarchy = 11
 				}
 			}
-			FRA = {
-				set_politics = {
-					ruling_party = democratic
-				}
-				transfer_state = 4495
-				transfer_state = 4496
-				transfer_state = 4497
-			}	
 			MRN = {
 				transfer_state = 3212
 			}
@@ -8246,6 +8238,9 @@
 				set_cosmetic_tag = CHI_1914
 				set_popularities = {
 					stratocratic = 100
+				}
+				set_politics = {
+					ruling_party = stratocratic
 				}
 				set_party_name = {
 					ideology = stratocratic
@@ -9190,6 +9185,13 @@
 						}
 					}
 					FRA = {
+						transfer_state = 4495
+						transfer_state = 4496
+						transfer_state = 4497
+						set_cosmetic_tag = FRA_1914
+						set_politics = {
+							ruling_party = democratic
+						}
 						set_popularities = {
 							communism = 17
 							socialism_ideology = 36
@@ -9197,8 +9199,6 @@
 							liberal_republic = 13
 							democratic = 23
 						}
-					}
-					FRA = {
 						create_country_leader = {
 							name = "Président Raymond Nicolas Landry Poincaré"
 							desc = ""
