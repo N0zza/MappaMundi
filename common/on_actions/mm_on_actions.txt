@@ -4960,6 +4960,40 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							tag = TUR
+							has_start_date < 1990.01.01
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = conservative_monarchism
+									has_government = anocratic_monarchism
+									has_government = authoritarian_monarchism
+									has_government = stratocratic_monarchism
+									has_government = monarchism
+									has_government = fascism
+								}
+							}
+							set_cosmetic_tag = OTTO_COLONY
+							every_state = {
+								limit = {
+									is_owned_by = TUR
+								}
+								do_ottoman_renames = yes
+							}
+						}
+						else = {
+							drop_cosmetic_tag = yes
+							every_state = {
+								limit = {
+									is_owned_by = TUR
+								}
+								do_non_ottoman_turkish_renames = yes
+							}
+						}
+					}
+					if = {
+						limit = {
 							tag = FRA
 						}
 						if = {
