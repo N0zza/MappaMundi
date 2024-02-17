@@ -5172,6 +5172,13 @@ on_actions = {
 							drop_cosmetic_tag = yes
 							if = {
 								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = FRA_1914
+							}
+							if = {
+								limit = {
 									has_start_date > 2022.01.01
 								}
 								set_cosmetic_tag = FRA_2023
@@ -6565,6 +6572,13 @@ on_actions = {
 								}
 							}
 							set_cosmetic_tag = USA_SOCIALIST
+							if = {
+								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = USA_SOCIALIST_1914
+							}
 							every_country = {
 								limit = {
 									OR = {

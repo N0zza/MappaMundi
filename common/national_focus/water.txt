@@ -7511,6 +7511,25 @@
 					}
 				}
 			}
+			BRA = {
+				set_popularities = {
+					anocratic_republic = 100
+				}
+				set_party_name = {
+					ideology = anocratic_republic
+					name = BRA_anocratic_republic_1914_party
+					long_name = BRA_anocratic_republic_1914_party_long
+				}
+				create_country_leader = {
+					name = "Presidente Hermes Rodrigues da Fonseca"
+					desc = ""
+					picture = "gfx/leaders/BRA/Portrait_Hermes_Fonseca.dds"
+					expire = "1965.1.1"
+					ideology = anocrep
+					traits = {
+					}
+				}
+			}
 			ITA = {
 				transfer_state = 767
 				transfer_state = 2501
@@ -7663,6 +7682,9 @@
 				}
 			}
 			FRA = {
+				set_politics = {
+					ruling_party = democratic
+				}
 				transfer_state = 4495
 				transfer_state = 4496
 				transfer_state = 4497
@@ -7677,15 +7699,15 @@
 					ruling_party = conservative_monarchism
 				}
 			}
-			ICE ={
+			ICE = {
 				set_politics = {
 					ruling_party = authoritarian_monarchism
 				}
 				set_cosmetic_tag = DEN_COLONY
-		}
+			}
 			WTR = {
 				transfer_state = 3186
-		}
+			}
 			JBL = {
 				transfer_state = 1176
 				transfer_state = 6802
@@ -7766,40 +7788,40 @@
 				transfer_state = 17755
 				transfer_state = 17408
 			}
-				AH2 = {
-					transfer_state = 13882
-				}
-				every_state = {
-					limit = {
-						OR = {
-						is_core_of = JBL
-						is_owned_by = JBL
-						}
-					}
-					JBL = {
-						transfer_state = PREV
-						add_state_core = PREV
-						}
-					}
-				every_state = {
-					limit = {
-						OR = {
-						is_core_of = KAZ
-						is_core_of = TSC
-						is_core_of = UZB
-						is_core_of = TAJ
-						is_core_of = KYR
-						is_core_of = TMS
-						is_core_of = KSR
-						state = 19130
-						state = 19131
-						}
-					}
-					RUS = {
-						transfer_state = PREV
-						add_state_core = PREV
+			AH2 = {
+				transfer_state = 13882
+			}
+			every_state = {
+				limit = {
+					OR = {
+					is_core_of = JBL
+					is_owned_by = JBL
 					}
 				}
+				JBL = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					OR = {
+					is_core_of = KAZ
+					is_core_of = TSC
+					is_core_of = UZB
+					is_core_of = TAJ
+					is_core_of = KYR
+					is_core_of = TMS
+					is_core_of = KSR
+					state = 19130
+					state = 19131
+					}
+				}
+				RUS = {
+					transfer_state = PREV
+					add_state_core = PREV
+				}
+			}
 			every_state = {
 				limit = {
 					OR = {
@@ -7913,7 +7935,6 @@
 					}
 				}
 			}
-					
 			every_state = {
 				limit = {
 					is_core_of = LGQ
@@ -7925,47 +7946,47 @@
 					}
 				}
 			}
-				every_state = {
-					limit = {
+			every_state = {
+				limit = {
 						is_core_of = CGB
-					}
-					CGB = {
-						transfer_state = PREV
-						set_politics = {
-								ruling_party = centrist_monarchism
+				}
+				CGB = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
 					}
 				}
 			}
-				every_state = {
-					limit = {
-						is_core_of = LGB
-					}
-					LGB = {
-						transfer_state = PREV
-						set_politics = {
-								ruling_party = centrist_monarchism
+			every_state = {
+				limit = {
+					is_core_of = LGB
+				}
+				LGB = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
 					}
 				}
 			}
-				every_state = {
-					limit = {
-						is_core_of = BA2
-					}
-					BA2 = {
-						transfer_state = PREV
-						set_politics = {
-								ruling_party = centrist_monarchism
+			every_state = {
+				limit = {
+					is_core_of = BA2
+				}
+				BA2 = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
 					}
 				}
 			}
-				every_state = {
-					limit = {
-						is_core_of = BWG
-					}
-					BWG = {
-						transfer_state = PREV
-						set_politics = {
-								ruling_party = centrist_monarchism
+			every_state = {
+				limit = {
+					is_core_of = BWG
+				}
+				BWG = {
+					transfer_state = PREV
+					set_politics = {
+						ruling_party = centrist_monarchism
 					}
 				}
 			}
@@ -8096,6 +8117,10 @@
 						set_politics = {
 							ruling_party = stratocratic_monarchism
 						}
+						set_popularities = {
+							stratocratic_monarchism = 50
+							authoritarian_monarchism = 50
+						}
 						set_cosmetic_tag = GREY_GER3
 						create_country_leader = {
 							name = "Gouverneur Alfred Meyer-Waldeck"
@@ -8115,9 +8140,17 @@
 							traits = {
 							}
 						}
-						set_popularities = {
-							stratocratic_monarchism = 50
-							authoritarian_monarchism = 50
+					}
+				}
+				SHH = {
+					set_cosmetic_tag = SHH_1914
+					create_country_leader = {
+						name = "Chairman Sir Edward Charles Pearce"
+						desc = ""
+						picture = "gfx/leaders/SHH/Portrait_Edward_Pearce.dds"
+						expire = "1965.1.1"
+						ideology = despotism
+						traits = {
 						}
 					}
 				}
@@ -8210,8 +8243,48 @@
 				set_capital = {
 					state = 608
 				}
-				set_cosmetic_tag = CHI_YELLOW
-		}
+				set_cosmetic_tag = CHI_1914
+				set_popularities = {
+					stratocratic = 100
+				}
+				set_party_name = {
+					ideology = stratocratic
+					name = CHI_stratocratic_1914_party
+					long_name = CHI_stratocratic_1914_party_long
+				}
+				set_party_name = {
+					ideology = monarchism
+					name = CHI_monarchism_1914_party
+					long_name = CHI_monarchism_1914_party_long
+				}
+				create_country_leader = {
+					name = "Tsungt'ung Yüan Shih-k'ai"
+					desc = ""
+					picture = "gfx/leaders/CHI/1914_CHI_Yuan_Shikai.tga"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+					}
+				}
+				create_country_leader = {
+					name = "Tsungt'ung Yüan Shih-k'ai"
+					desc = ""
+					picture = "gfx/leaders/CHI/1914_CHI_Yuan_Shikai.tga"
+					expire = "1965.1.1"
+					ideology = militarism
+					traits = {
+					}
+				}
+				create_country_leader = {
+					name = "Huángdì Hóngxiàn"
+					desc = ""
+					picture = "gfx/leaders/CHI/1914_CHI_Yuan_Shikai.tga"
+					expire = "1965.1.1"
+					ideology = absolutism
+					traits = {
+					}
+				}
+			}
 			MON = {
 				transfer_state = 14777
 				transfer_state = 11823
@@ -8732,6 +8805,9 @@
 				}
 				set_politics = {
 					ruling_party = authoritarian_monarchism
+				}
+				set_popularities = {
+					authoritarian_monarchism = 100
 				}
 			}
 			COG = {
@@ -9685,14 +9761,44 @@
 							liberal_republic = 82
 							democratic = 18
 						}
-					}
-					USA = {
+						set_party_name = {
+							ideology = centrist_republic
+							name = USA_centrist_republic_1914_party
+							long_name = USA_centrist_republic_1914_party_long
+						}
+						create_country_leader = {
+							name = "President Eugene Victor Debs"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Debs.tga"
+							expire = "1965.1.1"
+							ideology = demsoc
+							traits = {
+							}
+						}
 						create_country_leader = {
 							name = "President Thomas Woodrow Wilson"
 							desc = ""
 							picture = "gfx/leaders/USA/1914_USA_Woodrow_Wilson.tga"
 							expire = "1965.1.1"
 							ideology = liberalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "President Theodore Roosevelt Jr."
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Roosevelt.tga"
+							expire = "1965.1.1"
+							ideology = cenrep
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "President William Howard Taft"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Taft.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
 							traits = {
 							}
 						}
@@ -9706,8 +9812,6 @@
 							centrist_monarchism = 45
 							conservative_monarchism = 55
 						}
-					}
-					JAP = {
 						create_country_leader = {
 							name = "Ten'nō Yoshihito"
 							desc = ""
@@ -9717,21 +9821,6 @@
 							traits = {
 							}
 						}
-					}
-					CHI = {
-						create_country_leader = {
-							name = "Tsungt'ung Yüan Shih-k'ai"
-							desc = ""
-							picture = "gfx/leaders/CHI/1914_CHI_Yuan_Shikai.tga"
-							expire = "1965.1.1"
-							ideology = despotism
-							traits = {
-							}
-						}
-					}
-					
-					every_country = {
-						secondary_tertiary_leader_enabled_effect = yes
 					}
 				}
 			}
