@@ -4037,6 +4037,17 @@ defined_text = {
 		localization_key = "Serokwezîr Mesrûr Mesûd Barzanî"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = VEN
+				has_government = stratocratic
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "General Juan Vicente Gómez Chacón"
+	}
+	text = {
 		localization_key = "To Be Added"
 	}
 }
@@ -8027,6 +8038,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Masrur_Barzani"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = VEN
+				has_government = stratocratic
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Juan_Gomez"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"

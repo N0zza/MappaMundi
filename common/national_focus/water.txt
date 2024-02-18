@@ -7530,6 +7530,45 @@
 					}
 				}
 			}
+			ARG = {
+				set_cosmetic_tag = ARG_1914
+				set_politics = {
+					ruling_party = anocratic_republic
+				}
+				set_popularities = {
+					anocratic_republic = 99
+					democratic = 1
+				}
+				set_party_name = {
+					ideology = anocratic_republic
+					name = ARG_anocratic_republic_1914_party
+					long_name = ARG_anocratic_republic_1914_party_long
+				}
+				create_country_leader = {
+					name = "Presidente Roque José Antonio del Sagrado Corazón de Jesús Sáenz Peña Lahitte"
+					desc = ""
+					picture = "gfx/leaders/ARG/Portrait_Roque_Pena.dds"
+					expire = "1965.1.1"
+					ideology = anocrep
+					traits = {
+					}
+				}
+			}
+			VEN = {
+				set_cosmetic_tag = VEN_1914
+				set_popularities = {
+					stratocratic = 100
+				}
+				create_country_leader = {
+					name = "Presidente Victorino Márquez Bustillos"
+					desc = ""
+					picture = "gfx/leaders/VEN/Portrait_Victorino_Bustillos.dds"
+					expire = "1965.1.1"
+					ideology = militarism
+					traits = {
+					}
+				}
+			}
 			ITA = {
 				transfer_state = 767
 				transfer_state = 2501
@@ -7539,10 +7578,10 @@
 				transfer_state = 12084
 				transfer_state = 12085
 				transfer_state = 12086
+				set_cosmetic_tag = ITA_1914
 				set_politics = {
 					ruling_party = anocratic_monarchism
 				}
-				set_cosmetic_tag = ITA_1914
 				set_party_name = {
 					ideology = anocratic_monarchism
 					name = ITA_anocratic_monarchism_1914_party
@@ -7555,8 +7594,6 @@
 					conservative_monarchism = 6
 					anocratic_monarchism = 53
 				}
-			}
-			ITA = {
 				create_country_leader = {
 					name = "Re Vittorio Emanuele III di Savoia"
 					desc = ""
@@ -8805,6 +8842,35 @@
 					authoritarian_monarchism = 100
 				}
 			}
+			EGY = {
+				set_cosmetic_tag = EGY_1914
+				set_party_name = {
+					ideology = authoritarian_monarchism
+					name = EGY_authoritarian_monarchism_1914_party
+					long_name = EGY_authoritarian_monarchism_1914_party_long
+				}
+				create_country_leader = {
+					name = "Khudaywī Abbās II"
+					desc = ""
+					picture = "gfx/leaders/EGY/Portrait_Abbas_II.dds"
+					expire = "1965.1.1"
+					ideology = authmon
+					traits = {
+					}
+				}
+			}
+			SUD = {
+				set_cosmetic_tag = SUD_1914
+				create_country_leader = {
+					name = "Governor-General Sir Francis Reginald Wingate, 1st Baronet"
+					desc = ""
+					picture = "gfx/leaders/SUD/Portrait_Reginald_Wingate.dds"
+					expire = "1965.1.1"
+					ideology = authmon
+					traits = {
+					}
+				}
+			}
 			COG = {
 				set_capital = {
 					state = 1498
@@ -9014,11 +9080,6 @@
 							transfer_state = 10612
 							transfer_state = 10597
 						}
-						ARG = {
-							set_politics = {
-								ruling_party = liberal_republic
-							}
-						}
 						every_state = {
 							limit = {
 								is_core_of = ATC
@@ -9205,17 +9266,6 @@
 							picture = "gfx/leaders/FRA/1914_FRA_Raymond_Poincare.tga"
 							expire = "1965.1.1"
 							ideology = conservatism
-							traits = {
-							}
-						}
-					}
-					ITA = {
-						create_country_leader = {
-							name = "Re Vittorio Emanuele III di Savoia"
-							desc = ""
-							picture = "gfx/leaders/ITA/1914_ITA_Victor_Emmannuel_III.tga"
-							expire = "1965.1.1"
-							ideology = authmon
 							traits = {
 							}
 						}
