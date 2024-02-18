@@ -4960,8 +4960,13 @@ on_actions = {
 					}
 					if = {
 						limit = {
-							tag = TUR
-							has_start_date < 1990.01.01
+							AND = {
+								tag = TUR
+								has_start_date < 1990.01.01
+								NOT = {
+									has_cosmetic_tag = OTTO
+								}
+							}
 						}
 						if = {
 							limit = {

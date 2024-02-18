@@ -9726,10 +9726,14 @@
 						}
 					}
 					GAL = {
+						set_cosmetic_tag = GAL_1914
+						set_capital = { 
+							state = 91
+							remember_old_capital = no
+						}
 						set_politics = {
 							ruling_party = authoritarian_monarchism
 						}
-						set_cosmetic_tag = GAL_1914
 						set_popularities = {
 							socialist_monarchy = 4
 							democratic_monarchism = 6
@@ -9738,12 +9742,6 @@
 							anocratic_monarchism = 4
 							authoritarian_monarchism = 67
 						}
-						set_capital = { 
-							state = 91
-							remember_old_capital = no
-						}
-					}
-					GAL = {
 						create_country_leader = {
 							name = "Kralj Franciszek Karol z Habsburga"
 							desc = ""
@@ -9773,6 +9771,12 @@
 						}
 					}
 					TUR = {
+						transfer_state = 2333
+						transfer_state = 3356
+						transfer_state = 9395
+						transfer_state = 9871
+						transfer_state = 12780
+						transfer_state = 12781
 						set_cosmetic_tag = OTTO
 						set_politics = {
 							ruling_party = authoritarian_monarchism
@@ -9788,20 +9792,80 @@
 							name = TUR_authoritarian_monarchism_1914_party
 							long_name = TUR_authoritarian_monarchism_1914_party_long
 						}
-						transfer_state = 2333
-						transfer_state = 3356
-						transfer_state = 9395
-						transfer_state = 9871
-						transfer_state = 12780
-						transfer_state = 12781
-					}
-					TUR = {
 						create_country_leader = {
 							name = "Padişah Meḥmed-i V Reşâd"
 							desc = ""
 							picture = "gfx/leaders/TUR/1914_TUR_Mehmed_V.tga"
 							expire = "1965.1.1"
 							ideology = authmon
+							traits = {
+							}
+						}
+					}
+					COG = {
+						create_country_leader = {
+							name = "Gouverneur Général Félix Alexandre Fuchs"
+							desc = ""
+							picture = "gfx/leaders/COG/Portrait_Felix_Fuchs.dds"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+					}
+					TRP = {
+						set_cosmetic_tag = TRP_1914
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+						set_popularities = {
+							authoritarian_monarchism = 100
+						}
+						set_party_name = {
+							ideology = authoritarian_monarchism
+							name = TRP_authoritarian_monarchism_1914_party
+							long_name = TRP_authoritarian_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Governatore Vincenzo Garioni"
+							desc = ""
+							picture = "gfx/leaders/LBA/Portrait_Vincenzo_Garioni.dds"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+					}
+					LBA = {
+						set_cosmetic_tag = LBA_1914
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+						set_popularities = {
+							authoritarian_monarchism = 100
+						}
+						set_party_name = {
+							ideology = authoritarian_monarchism
+							name = LBA_authoritarian_monarchism_1914_party
+							long_name = LBA_authoritarian_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Governatore Giovanni Battista Ameglio"
+							desc = ""
+							picture = "gfx/leaders/LBA/Portrait_Giovanni_Ameglio.dds"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+					}
+					ETH = {
+						create_country_leader = {
+							name = "Negusa Nagast Lij Iyasu la Salomonawiwi"
+							desc = ""
+							picture = "gfx/leaders/ETH/Portrait_Lij_Iyasu.dds"
+							expire = "1965.1.1"
+							ideology = absolutism
 							traits = {
 							}
 						}
