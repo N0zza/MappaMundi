@@ -3614,6 +3614,17 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = ALB
+				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Kryeministri Turhan Pasha Përmeti"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = LES
 				has_government = authoritarian_monarchism
 			}
@@ -7267,6 +7278,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Mehdi_Frasheri"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ALB
+				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Turhan_Permeti"
 	}
 	text = {
 		trigger = {

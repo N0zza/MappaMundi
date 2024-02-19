@@ -7625,6 +7625,29 @@
 					centrist_monarchism = 3
 				}
 			}
+			NGU = {
+				set_cosmetic_tag = GREY_GER3
+				set_popularities = {
+					stratocratic_monarchism = 100
+				}
+				set_politics = {
+					ruling_party = stratocratic_monarchism
+				}
+				set_party_name = {
+					ideology = stratocratic_monarchism
+					name = NGU_stratocratic_monarchism_1914_party
+					long_name = NGU_stratocratic_monarchism_1914_party_long
+				}
+				create_country_leader = {
+					name = "Amtierender Gouverneur Johann Karl Emil Eduard Haber"
+					desc = ""
+					picture = "gfx/leaders/To_be_added.dds"
+					expire = "1965.1.1"
+					ideology = stratmon
+					traits = {
+					}
+				}
+			}
 			NZL = {
 				set_cosmetic_tag = NZL_1914
 				create_country_leader = {
@@ -8143,31 +8166,37 @@
 					}
 					KTO = {
 						transfer_state = PREV
-						set_politics = {
-							ruling_party = stratocratic_monarchism
+					}
+				}
+				KTO = {
+					set_cosmetic_tag = GREY_GER3
+					set_politics = {
+						ruling_party = stratocratic_monarchism
+					}
+					set_popularities = {
+						stratocratic_monarchism = 100
+					}
+					set_party_name = {
+						ideology = stratocratic_monarchism
+						name = KTO_stratocratic_monarchism_1914_party
+						long_name = KTO_stratocratic_monarchism_1914_party_long
+					}
+					create_country_leader = {
+						name = "Gouverneur Alfred Meyer-Waldeck"
+						desc = ""
+						picture = "gfx/leaders/KTO/KTO_Waldeck.tga"
+						expire = "1965.1.1"
+						ideology = stratmon
+						traits = {
 						}
-						set_popularities = {
-							stratocratic_monarchism = 50
-							authoritarian_monarchism = 50
-						}
-						set_cosmetic_tag = GREY_GER3
-						create_country_leader = {
-							name = "Gouverneur Alfred Meyer-Waldeck"
-							desc = ""
-							picture = "gfx/leaders/KTO/KTO_Waldeck.tga"
-							expire = "1965.1.1"
-							ideology = stratmon
-							traits = {
-							}
-						}
-						create_country_leader = {
-							name = "Gouverneur Alfred Meyer-Waldeck"
-							desc = ""
-							picture = "gfx/leaders/KTO/KTO_Waldeck.tga"
-							expire = "1965.1.1"
-							ideology = authmon
-							traits = {
-							}
+					}
+					create_country_leader = {
+						name = "Gouverneur Alfred Meyer-Waldeck"
+						desc = ""
+						picture = "gfx/leaders/KTO/KTO_Waldeck.tga"
+						expire = "1965.1.1"
+						ideology = authmon
+						traits = {
 						}
 					}
 				}
@@ -8313,6 +8342,25 @@
 					picture = "gfx/leaders/CHI/1914_CHI_Yuan_Shikai.tga"
 					expire = "1965.1.1"
 					ideology = absolutism
+					traits = {
+					}
+				}
+			}
+			JAP = {
+				set_politics = {
+					ruling_party = centrist_monarchism
+				}
+				set_cosmetic_tag = JAP_1914
+				set_popularities = {
+					centrist_monarchism = 45
+					conservative_monarchism = 55
+				}
+				create_country_leader = {
+					name = "Ten'nō Yoshihito"
+					desc = ""
+					picture = "gfx/leaders/JAP/1914_JAP_Yoshihito.tga"
+					expire = "1965.1.1"
+					ideology = cenmon
 					traits = {
 					}
 				}
@@ -8639,17 +8687,6 @@
 			HOB = {
 				set_cosmetic_tag = ITA_GREEN
 			}
-			CMR = {
-				set_cosmetic_tag = GREY_GER3
-				
-				set_politics = {
-					ruling_party = stratocratic_monarchism
-				}
-				
-				set_popularities = {
-					stratocratic_monarchism = 100
-				}
-			}
 			every_state = {
 				limit = {
 					is_core_of = WTO
@@ -8675,25 +8712,6 @@
 					set_politics = {
 						ruling_party = conservative_monarchism
 				}
-				}
-			}
-			TOG = {
-				set_cosmetic_tag = GREY_GER3
-				set_politics = {
-					ruling_party = stratocratic_monarchism
-				}
-			}
-			TZN = {
-				transfer_state = 1491
-				set_cosmetic_tag = GREY_GER3
-				set_politics = {
-					ruling_party = stratocratic_monarchism
-				}
-			}
-			NMB = {
-				set_cosmetic_tag = GREY_GER3
-				set_politics = {
-					ruling_party = stratocratic_monarchism
 				}
 			}
 			SAF = {
@@ -9031,14 +9049,6 @@
 						NIC = {
 							set_cosmetic_tag = USA_BLUE
 						}
-						VRC = {
-							transfer_state = 477
-							transfer_state = 3665
-							set_cosmetic_tag = USA_BLUE
-							set_politics = {
-								ruling_party = stratocratic
-							}
-						}
 						WVI = {
 							set_politics = {
 								ruling_party = authoritarian_monarchism
@@ -9048,15 +9058,11 @@
 						every_state = {
 							limit = {
 								is_core_of = MRL
-						}
+							}
 							MRL = {
 								transfer_state = PREV
-								set_cosmetic_tag = SOV_RED
-								set_politics = {
-								ruling_party = socialism_ideology
-									}
-								}
 							}
+						}
 						CHL = {
 							transfer_state = 1673
 						}
@@ -9179,37 +9185,31 @@
 								transfer_state = PREV
 							}
 						}
-						every_state = {
-							limit = {
-								is_core_of = TI2
+					every_state = {
+						limit = {
+							is_core_of = TI2
 						}
-							TI2 = {
-								transfer_state = PREV
-								set_cosmetic_tag = TRIBAL_BROWN
-								set_politics = {
+						TI2 = {
+							transfer_state = PREV
+							set_cosmetic_tag = TRIBAL_BROWN
+							set_politics = {
 								ruling_party = anarchism_ideology
 							}
 						}
 					}
-						AST = {
-							transfer_state = 8994
-							transfer_state = 15279
-							transfer_state = 15280
+					AST = {
+						transfer_state = 8994
+						transfer_state = 15279
+						transfer_state = 15280
 					}
-						NGU = {
-							set_cosmetic_tag = GREY_GER3
-							set_politics = {
-								ruling_party = stratocratic_monarchism
-							}
+					SAM = {
+						set_cosmetic_tag = GREY_GER3
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+						}
 					}
-						SAM = {
-							set_cosmetic_tag = GREY_GER3
-							set_politics = {
-								ruling_party = stratocratic_monarchism
-							}
-					}
-						NFI = {
-							set_cosmetic_tag = NFI_ENG
+					NFI = {
+						set_cosmetic_tag = NFI_ENG
 					}
 					ICE = {
 						create_country_leader = {
@@ -9802,6 +9802,15 @@
 							}
 						}
 					}
+					ALB = {
+						set_cosmetic_tag = ALB_1914
+						set_politics = {
+							ruling_party = conservative_monarchism
+						}
+						set_popularities = {
+							conservative_monarchism = 100
+						}
+					}
 					COG = {
 						create_country_leader = {
 							name = "Gouverneur Général Félix Alexandre Fuchs"
@@ -9870,6 +9879,99 @@
 							}
 						}
 					}
+					NMB = {
+						set_cosmetic_tag = GREY_GER3
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+						}
+						set_popularities = {
+							stratocratic_monarchism = 100
+						}
+						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = NMB_stratocratic_monarchism_1914_party
+							long_name = NMB_stratocratic_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Gouverneur Hermann Wilhelm Göring"
+							desc = ""
+							picture = "gfx/leaders/NMB/Portrait_Albert_Goring_1914.dds"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Gouverneur Theodor Seitz"
+							desc = ""
+							picture = "gfx/leaders/NMB/Portrait_Theodor_Seitz.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
+							traits = {
+							}
+						}
+					}
+					TZN = {
+						transfer_state = 1491
+						set_cosmetic_tag = GREY_GER3
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+						}
+						set_popularities = {
+							stratocratic_monarchism = 100
+						}
+						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = TZN_stratocratic_monarchism_1914_party
+							long_name = TZN_stratocratic_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Gouverneur Albert Hermann Heinrich Schnee"
+							desc = ""
+							picture = "gfx/leaders/TZN/Portrait_Heinrich_Schnee.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
+							traits = {
+							}
+						}
+					}
+					TOG = {
+						set_cosmetic_tag = GREY_GER3
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+						}
+						set_popularities = {
+							stratocratic_monarchism = 100
+						}
+						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = TOG_stratocratic_monarchism_1914_party
+							long_name = TOG_stratocratic_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Gouverneur Adolf Friedrich Albrecht Heinrich, Herzog zu Mecklenburg-Schwerin"
+							desc = ""
+							picture = "gfx/leaders/TOG/Portrait_Adolf_Friedrich.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
+							traits = {
+							}
+						}
+					}
+					CMR = {
+						set_cosmetic_tag = GREY_GER3
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+						}
+						set_popularities = {
+							stratocratic_monarchism = 100
+						}
+						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = CMR_stratocratic_monarchism_1914_party
+							long_name = CMR_stratocratic_monarchism_1914_party_long
+						}
+					}
 					USA = {
 						set_popularities = {
 							liberal_republic = 82
@@ -9917,21 +10019,72 @@
 							}
 						}
 					}
-					JAP = {
+					VRC = {
+						transfer_state = 477
+						transfer_state = 3665
+						set_cosmetic_tag = USA_BLUE
 						set_politics = {
-							ruling_party = centrist_monarchism
+							ruling_party = stratocratic
 						}
-						set_cosmetic_tag = JAP_1914
 						set_popularities = {
-							centrist_monarchism = 45
-							conservative_monarchism = 55
+							stratocratic = 100
+						}
+					}
+					MRL = {
+						set_cosmetic_tag = SOV_RED
+						set_politics = {
+							ruling_party = communism
+						}
+						set_popularities = {
+							communism = 100
 						}
 						create_country_leader = {
-							name = "Ten'nō Yoshihito"
+							name = "Caudillo Emiliano Zapata Salazar"
 							desc = ""
-							picture = "gfx/leaders/JAP/1914_JAP_Yoshihito.tga"
+							picture = "gfx/leaders/MEX/Portrait_Emiliano_Zapata.dds"
 							expire = "1965.1.1"
-							ideology = cenmon
+							ideology = militarism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Caudillo Emiliano Zapata Salazar"
+							desc = ""
+							picture = "gfx/leaders/MEX/Portrait_Emiliano_Zapata.dds"
+							expire = "1965.1.1"
+							ideology = demsoc
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Caudillo Emiliano Zapata Salazar"
+							desc = ""
+							picture = "gfx/leaders/MEX/Portrait_Emiliano_Zapata.dds"
+							expire = "1965.1.1"
+							ideology = marxism
+							traits = {
+							}
+						}
+					}
+					MEX = {
+						set_cosmetic_tag = MEX_1914
+						set_politics = {
+							ruling_party = neutrality
+						}
+						set_popularities = {
+							neutrality = 100
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = MEX_neutrality_1914_party
+							long_name = MEX_neutrality_1914_party_long
+						}
+						create_country_leader = {
+							name = "Presidente Francisco Sebastián Carvajal y Gual"
+							desc = ""
+							picture = "gfx/leaders/MEX/Portrait_Francisco_Carvajal.dds"
+							expire = "1965.1.1"
+							ideology = despotism
 							traits = {
 							}
 						}
