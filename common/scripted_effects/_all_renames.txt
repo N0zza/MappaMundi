@@ -329,7 +329,14 @@ do_all_renames = {
 					AND = {
 						tag = GER
 						NOT = {
-							has_government = anocratic_monarchism
+							OR = {
+								has_government = anocratic_monarchism
+								AND = {
+									has_government = theocratic
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+							}
 						}
 					}
 					is_subject_of = GER
@@ -811,7 +818,17 @@ do_all_renames = {
 								}
 							}
 						}
-						has_government = anocratic_monarchism
+						OR = {
+							AND = {
+								has_government = anocratic_monarchism
+							}
+							AND = {
+								tag = GER
+								has_government = theocratic
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+							}
+						}
 					}
 				}
 			}

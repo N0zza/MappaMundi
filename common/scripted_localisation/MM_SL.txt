@@ -315,7 +315,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = GER
-				has_government = anocratic_monarchism
+				OR = {
+					has_government = anocratic_monarchism
+					has_government = theocratic
+				}
 				has_start_date < 1915.01.01
 				has_start_date > 1913.01.01
 			}
@@ -337,9 +340,21 @@ defined_text = {
 				tag = GER
 				has_government = authoritarian_monarchism
 				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
 			}
 		}
 		localization_key = "Reichskanzler Theobald Theodor Friedrich Alfred von Bethmann Hollweg"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GER
+				has_government = stratocratic_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Oberster Befehlshaber des Heeres Helmuth Johannes Ludwig Graf von Moltke"
 	}
 	text = {
 		trigger = {
@@ -4110,7 +4125,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = GER
-				has_government = anocratic_monarchism
+				OR = {
+					has_government = anocratic_monarchism
+					has_government = theocratic
+				}
 				has_start_date < 1915.01.01
 				has_start_date > 1913.01.01
 			}
@@ -4132,9 +4150,21 @@ defined_text = {
 				tag = GER
 				has_government = authoritarian_monarchism
 				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
 			}
 		}
 		localization_key = "GFX_Theobald_Hollweg"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GER
+				has_government = stratocratic_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Moltke_Younger"
 	}
 	text = {
 		trigger = {

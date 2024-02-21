@@ -8705,13 +8705,13 @@
 			}
 			every_state = {
 				limit = {
-					is_owned_by = KEN
+					OR = {
+						is_owned_by = KEN
+						is_owned_by = MMB
+					}
 				}
-				MMB = {
+				KEN = {
 					transfer_state = PREV
-					set_politics = {
-						ruling_party = conservative_monarchism
-				}
 				}
 			}
 			SAF = {
@@ -8889,6 +8889,18 @@
 					}
 				}
 			}
+			KEN = {
+				set_cosmetic_tag = KEN_1914
+				create_country_leader = {
+					name = "Governor Sir Henry Conway Belfield"
+					desc = ""
+					picture = "gfx/leaders/KEN/Portrait_Henry_Belfield.dds"
+					expire = "1965.1.1"
+					ideology = authmon
+					traits = {
+					}
+				}
+			}
 			COG = {
 				set_capital = {
 					state = 1498
@@ -9035,12 +9047,6 @@
 						GAB = {
 						transfer_state = 5262
 						transfer_state = 5294
-						}
-						TRP = {
-							set_politics = {
-								ruling_party = fascism
-						}
-						set_cosmetic_tag = TRP_ITA
 						}
 						PAN = {
 							set_cosmetic_tag = USA_BLUE
@@ -9430,6 +9436,7 @@
 						}
 					}
 					GER = {
+						set_cosmetic_tag = GER_1914
 						set_politics = {
 							ruling_party = authoritarian_monarchism
 						}
@@ -9442,6 +9449,21 @@
 							authoritarian_monarchism = 67
 						}
 						set_party_name = {
+							ideology = vanguardism
+							name = GER_vanguardism_1914_party
+							long_name = GER_vanguardism_1914_party
+						}
+						set_party_name = {
+							ideology = communism
+							name = GER_communism_1914_party
+							long_name = GER_communism_1914_party_long
+						}
+						set_party_name = {
+							ideology = socialism_ideology
+							name = GER_socialism_ideology_1914_party
+							long_name = GER_socialism_ideology_1914_party_long
+						}
+						set_party_name = {
 							ideology = democratic_monarchism
 							name = GER_democratic_monarchism_1914_party
 							long_name = GER_democratic_monarchism_1914_party_long
@@ -9452,9 +9474,24 @@
 							long_name = GER_centrist_monarchism_1914_party_long
 						}
 						set_party_name = {
+							ideology = anocratic_republic
+							name = GER_anocratic_republic_1914_party
+							long_name = GER_anocratic_republic_1914_party_long
+						}
+						set_party_name = {
 							ideology = authoritarian_monarchism
 							name = GER_authoritarian_monarchism_1914_party
 							long_name = GER_authoritarian_monarchism_1914_party_long
+						}
+						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = GER_stratocratic_monarchism_1914_party
+							long_name = GER_stratocratic_monarchism_1914_party_long
+						}
+						set_party_name = {
+							ideology = theocratic
+							name = GER_theocratic_1914_party
+							long_name = GER_theocratic_1914_party_long
 						}
 						create_country_leader = {
 							name = "Bundskaiser Frederick III von Hohenzollern "
@@ -9493,6 +9530,15 @@
 							}
 						}
 						create_country_leader = {
+							name = "Reichstag"
+							desc = ""
+							picture = "gfx/leaders/GER/Portrait_Reichstag.dds"
+							expire = "1965.1.1"
+							ideology = anocrep
+							traits = {
+							}
+						}
+						create_country_leader = {
 							name = "Imperator Romanorum Wilhelmus I de Hohenzollern"
 							desc = ""
 							picture = "gfx/leaders/GER/1914_GER_Wilhelm_II.tga"
@@ -9515,7 +9561,25 @@
 							desc = ""
 							picture = "gfx/leaders/GER/1914_GER_Wilhelm_II.tga"
 							expire = "1965.1.1"
+							ideology = stratmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kaiser Wilhelm II von Hohenzollern "
+							desc = ""
+							picture = "gfx/leaders/GER/1914_GER_Wilhelm_II.tga"
+							expire = "1965.1.1"
 							ideology = absolutism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Imperator Romanorum Wilhelmus I de Hohenzollern"
+							desc = ""
+							picture = "gfx/leaders/GER/1914_GER_Wilhelm_II.tga"
+							expire = "1965.1.1"
+							ideology = christian
 							traits = {
 							}
 						}
@@ -9862,6 +9926,52 @@
 							name = "Governatore Giovanni Battista Ameglio"
 							desc = ""
 							picture = "gfx/leaders/LBA/Portrait_Giovanni_Ameglio.dds"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+					}
+					SOM = {
+						set_cosmetic_tag = SOM_1914
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+						set_popularities = {
+							authoritarian_monarchism = 100
+						}
+						set_party_name = {
+							ideology = authoritarian_monarchism
+							name = SOM_authoritarian_monarchism_1914_party
+							long_name = SOM_authoritarian_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Governatore Giacomo De Martino"
+							desc = ""
+							picture = "gfx/leaders/SOM/Portrait_Giacomo_Martino.dds"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+					}
+					ERI = {
+						set_cosmetic_tag = ERI_1914
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+						set_popularities = {
+							authoritarian_monarchism = 100
+						}
+						set_party_name = {
+							ideology = authoritarian_monarchism
+							name = ERI_authoritarian_monarchism_1914_party
+							long_name = ERI_authoritarian_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Governatore Giuseppe Salvago Raggi"
+							desc = ""
+							picture = "gfx/leaders/ERI/Portrait_Giuseppe_Raggi.dds"
 							expire = "1965.1.1"
 							ideology = authmon
 							traits = {
