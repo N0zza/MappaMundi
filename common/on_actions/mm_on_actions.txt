@@ -4965,6 +4965,15 @@ on_actions = {
 								}
 							}
 							drop_cosmetic_tag = yes
+							if = {
+								limit = {
+									AND = {
+										has_start_date < 1915.01.01
+										has_start_date > 1913.01.01
+									}
+								}
+								set_cosmetic_tag = GER_1914
+							}
 						}
 						if = {
 							limit = {
