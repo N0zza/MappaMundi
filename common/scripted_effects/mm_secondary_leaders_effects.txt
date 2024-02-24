@@ -443,11 +443,12 @@ secondary_leader_enabled_effect = {
 				tag = AUS
 				OR = {
 					AND = {
-						has_government = authoritarian_monarchism
 						OR = {
-							has_start_date < 1915.01.01
-							has_start_date > 2022.01.01
+							has_government = conservative_monarchism
+							has_government = authoritarian_monarchism
 						}
+						has_start_date < 1915.01.01
+						has_start_date > 1913.01.01
 					}
 					AND = {
 						OR = {
@@ -2483,8 +2484,20 @@ secondary_leader_enabled_effect = {
 		limit = {
 			AND = {
 				tag = SER
-				has_government = centrist_republic
-				has_start_date > 2022.01.01
+				OR = {
+					AND = {
+						has_government = centrist_republic
+						has_start_date > 2022.01.01
+					}
+					AND = {
+						OR = {
+							has_government = centrist_monarchism
+							has_government = conservative_monarchism
+						}
+						has_start_date < 1915.01.01
+						has_start_date > 1913.01.01
+					}
+				}
 			}
 		}
 		set_country_flag = has_secondary_leader

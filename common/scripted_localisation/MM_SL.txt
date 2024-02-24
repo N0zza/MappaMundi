@@ -610,8 +610,12 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = AUS
-				has_government = authoritarian_monarchism
+				OR = {
+					has_government = conservative_monarchism
+					has_government = authoritarian_monarchism
+				}
 				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
 			}
 		}
 		localization_key = "Ministerpräsident Karl Maria Josef Graf von Stürgkh, Freiherr zu Plankenwarth und Vasoldsberg"
@@ -780,6 +784,7 @@ defined_text = {
 				tag = HUN
 				has_government = democratic_monarchism
 				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
 			}
 		}
 		localization_key = "Miniszterelnök Borosjenői és szegedi gróf Tisza István Imre Lajos Pál"
@@ -2990,6 +2995,20 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = SER
+				OR = {
+					has_government = centrist_monarchism
+					has_government = conservative_monarchism
+				}
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Namesnik Aleksandar I Karađorđević"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = CVD
 				has_government = centrist_republic
 				has_start_date > 2022.01.01
@@ -4651,8 +4670,12 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = AUS
-				has_government = authoritarian_monarchism
+				OR = {
+					has_government = conservative_monarchism
+					has_government = authoritarian_monarchism
+				}
 				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
 			}
 		}
 		localization_key = "GFX_Karl_Sturgkh"
@@ -4800,6 +4823,7 @@ defined_text = {
 				tag = HUN
 				has_government = democratic_monarchism
 				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
 			}
 		}
 		localization_key = "GFX_Istvan_Tisza"
@@ -7633,6 +7657,20 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Ana_Brnabaic"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SER
+				OR = {
+					has_government = centrist_monarchism
+					has_government = conservative_monarchism
+				}
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Alexander_I"
 	}
 	text = {
 		trigger = {

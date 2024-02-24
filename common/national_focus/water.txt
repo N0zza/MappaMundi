@@ -7403,11 +7403,6 @@
 							state = 2791
 						}
 					}
-					SER = {
-						set_politics = {
-							ruling_party = authoritarian_monarchism
-						}
-					}
 					LIE = {
 						transfer_state = 11056
 					}
@@ -9292,12 +9287,35 @@
 							liberal_republic = 13
 							democratic = 23
 						}
+						set_party_name = {
+							ideology = communism
+							name = FRA_communism_1914_party
+							long_name = FRA_communism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Confédération Générale du Travail"
+							desc = ""
+							picture = "gfx/leaders/FRA/Portrait_CGT.dds"
+							expire = "1965.1.1"
+							ideology = marxism
+							traits = {
+							}
+						}
 						create_country_leader = {
 							name = "Président Raymond Nicolas Landry Poincaré"
 							desc = ""
 							picture = "gfx/leaders/FRA/1914_FRA_Raymond_Poincare.tga"
 							expire = "1965.1.1"
 							ideology = conservatism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Président Charles-Marie-Photius Maurras"
+							desc = ""
+							picture = "gfx/leaders/FRA/Portrait_Charles_Maurras.dds"
+							expire = "1965.1.1"
+							ideology = repfash
 							traits = {
 							}
 						}
@@ -9622,10 +9640,15 @@
 						}
 					}
 					AUS = {
+						set_cosmetic_tag = AUS_1914
 						set_politics = {
 							ruling_party = authoritarian_monarchism
 						}
-						set_cosmetic_tag = AUS_1914
+						set_party_name = {
+							ideology = anocratic_monarchism
+							name = AUS_1914_anocratic_monarchism_party
+							long_name = AUS_1914_anocratic_monarchism_party_long
+						}
 						set_popularities = {
 							socialist_monarchy = 8
 							democratic_monarchism = 6
@@ -9673,9 +9696,9 @@
 							}
 						}
 						create_country_leader = {
-							name = "Kaiser Franz Joseph von Habsburg-Lothringen"
+							name = "Kaiser Karl I von Habsburg-Lothringen"
 							desc = ""
-							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+							picture = "gfx/leaders/AUS/Portrait_Karl_Habsburg_2_1914.dds"
 							expire = "1965.1.1"
 							ideology = anocmon
 							traits = {
@@ -9696,6 +9719,15 @@
 							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
 							expire = "1965.1.1"
 							ideology = absolutism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kaiser Franz Joseph von Habsburg-Lothringen"
+							desc = ""
+							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+							expire = "1965.1.1"
+							ideology = fascism_ideology
 							traits = {
 							}
 						}
@@ -9874,8 +9906,8 @@
 						set_popularities = {
 							communism = 2
 							democratic_monarchism = 4
-							anocratic_monarchism = 61
-							authoritarian_monarchism = 33
+							anocratic_monarchism = 33
+							authoritarian_monarchism = 61
 						}
 						set_party_name = {
 							ideology = authoritarian_monarchism
@@ -9899,6 +9931,51 @@
 						}
 						set_popularities = {
 							conservative_monarchism = 100
+						}
+					}
+					SER = {
+						set_cosmetic_tag = SER_1914
+						set_politics = {
+							ruling_party = conservative_monarchism
+						}
+						set_popularities = {
+							conservative_monarchism = 100
+						}
+						create_country_leader = {
+							name = "Kralj Petar I Karadordevica"
+							desc = ""
+							picture = "gfx/leaders/SER/Portrait_Peter_I.dds"
+							expire = "1965.1.1"
+							ideology = cenmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kralj Petar I Karadordevica"
+							desc = ""
+							picture = "gfx/leaders/SER/Portrait_Peter_I.dds"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kralj Petar I Karadordevica"
+							desc = ""
+							picture = "gfx/leaders/SER/Portrait_Peter_I.dds"
+							expire = "1965.1.1"
+							ideology = anocratic_monarchism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kralj Petar I Karadordevica"
+							desc = ""
+							picture = "gfx/leaders/SER/Portrait_Peter_I.dds"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
 						}
 					}
 					COG = {

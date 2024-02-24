@@ -76,6 +76,17 @@ defined_text = {
 			AND = {
 				tag = AUS
 				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Miniszterelnök Borosjenői és szegedi gróf Tisza István Imre Lajos Pál"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = conservative_monarchism
 				has_start_date < 1950.01.01
 				has_start_date > 1935.01.01
 			}
@@ -631,6 +642,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Reichsrat"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Istvan_Tisza"
 	}
 	text = {
 		trigger = {
