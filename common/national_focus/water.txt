@@ -9239,35 +9239,15 @@
 						set_cosmetic_tag = NFI_ENG
 					}
 					ICE = {
+						set_popularities = {
+							authoritarian_monarchism = 100
+						}
 						create_country_leader = {
 							name = "Guvernor Hannes Þórður Pétursson Hafstein"
 							desc = ""
 							picture = "gfx/leaders/ICE/1914_ICE_Hannes_Hafstein.tga"
 							expire = "1965.1.1"
 							ideology = authmon
-							traits = {
-							}
-						}
-					}
-					ENG = {
-						set_politics = {
-							ruling_party = democratic_monarchism
-						}
-						set_cosmetic_tag = BRIT
-						set_popularities = {
-							socialist_monarchy = 6
-							democratic_monarchism = 40
-							centrist_monarchism = 13
-							conservative_monarchism = 41
-						}
-					}
-					ENG = {
-						create_country_leader = {
-							name = "King George V of Saxe-Coburg and Gotha"
-							desc = ""
-							picture = "gfx/leaders/ENG/1914_ENG_George_V.tga"
-							expire = "1965.1.1"
-							ideology = liberal_constitutionalism
 							traits = {
 							}
 						}
@@ -9291,6 +9271,16 @@
 							ideology = communism
 							name = FRA_communism_1914_party
 							long_name = FRA_communism_1914_party_long
+						}
+						set_party_name = {
+							ideology = republican_fascism
+							name = FRA_republican_fascism_1914_party
+							long_name = FRA_republican_fascism_1914_party_long
+						}
+						set_party_name = {
+							ideology = fascism
+							name = FRA_fascism_1914_party
+							long_name = FRA_fascism_1914_party_long
 						}
 						create_country_leader = {
 							name = "Confédération Générale du Travail"
@@ -9316,6 +9306,63 @@
 							picture = "gfx/leaders/FRA/Portrait_Charles_Maurras.dds"
 							expire = "1965.1.1"
 							ideology = repfash
+							traits = {
+							}
+						}
+					}
+					ENG = {
+						set_cosmetic_tag = ENG_1914
+						set_politics = {
+							ruling_party = democratic_monarchism
+						}
+						set_popularities = {
+							socialist_monarchy = 6
+							democratic_monarchism = 40
+							centrist_monarchism = 13
+							conservative_monarchism = 41
+						}
+						create_country_leader = {
+							name = "King George V of Saxe-Coburg and Gotha"
+							desc = ""
+							picture = "gfx/leaders/ENG/1914_ENG_George_V.tga"
+							expire = "1965.1.1"
+							ideology = monsoc
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "King George V of Saxe-Coburg and Gotha"
+							desc = ""
+							picture = "gfx/leaders/ENG/1914_ENG_George_V.tga"
+							expire = "1965.1.1"
+							ideology = liberal_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "King George V of Saxe-Coburg and Gotha"
+							desc = ""
+							picture = "gfx/leaders/ENG/1914_ENG_George_V.tga"
+							expire = "1965.1.1"
+							ideology = cenmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "King George V of Saxe-Coburg and Gotha"
+							desc = ""
+							picture = "gfx/leaders/ENG/1914_ENG_George_V.tga"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Emperor George V of Saxe-Coburg and Gotha"
+							desc = ""
+							picture = "gfx/leaders/ENG/1914_ENG_George_V.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
 							traits = {
 							}
 						}
@@ -9480,6 +9527,17 @@
 						}
 					}
 					GER = {
+						every_state = {
+							limit = {
+								NOT = {
+									is_owned_by = GER
+								}
+							}
+							GER = {
+								remove_state_claim = PREV
+								remove_state_core = PREV 
+							}
+						}
 						set_cosmetic_tag = GER_1914
 						set_politics = {
 							ruling_party = authoritarian_monarchism
@@ -9626,17 +9684,6 @@
 							ideology = christian
 							traits = {
 							}
-						}
-					}
-					every_state = {
-						limit = {
-							NOT = {
-								is_owned_by = GER
-							}
-						}
-						GER = {
-							remove_state_claim = PREV
-							remove_state_core = PREV 
 						}
 					}
 					AUS = {
@@ -9892,6 +9939,185 @@
 							}
 						}
 					}
+					POL = {
+						every_state = {
+							limit = {
+								AND = {
+									OR = {
+										is_core_of = GER
+										is_core_of = AUS
+										is_core_of = GAL
+										is_core_of = HUN
+										is_core_of = BLR
+										is_core_of = UKR
+										is_core_of = LIT
+										is_core_of = POS
+										AND = {
+											is_core_of = BIY
+											NOT = {
+												is_core_of = SUV
+											}
+										}
+									}
+									is_core_of = POL
+								}
+							}
+							POL = {
+								remove_state_core = PREV
+								add_state_claim = PREV
+							}
+						}
+						every_state = {
+							limit = {
+								OR = {
+									AND = {
+										is_core_of = GER
+										NOT = {
+											OR = {
+												is_core_of = WGR
+												is_core_of = DDR
+											}
+										}
+									}
+								}
+							}
+							POL = {
+								remove_state_claim = PREV
+							}
+						}
+						every_state = {
+							limit = {
+								OR = {
+									AND = {
+										is_core_of = SUV
+										NOT = {
+											state = 11
+										}
+									}
+									AND = {
+										is_core_of = MSV
+										NOT = {
+											state = 2136
+											state = 3491
+										}
+									}
+									state = 5542
+									state = 7410
+									state = 17826
+								}
+							}
+							POL = {
+								add_state_core = PREV
+							}
+						}
+						every_state = {
+							limit = {
+								OR = {
+									is_core_of = POS
+									AND = {
+										is_core_of = BIY
+										NOT = {
+											is_core_of = POL
+										}
+									}
+								}
+							}
+							POL = {
+								add_state_claim = PREV
+							}
+						}
+						set_cosmetic_tag = POL_1914
+						set_politics = {
+							ruling_party = monarchism
+						}
+						set_popularities = {
+							monarchism = 100
+						}
+						secondary_tertiary_leader_enabled_effect = yes
+						set_party_name = {
+							ideology = anocratic_monarchism
+							name = POL_anocratic_monarchism_1914_party
+							long_name = POL_anocratic_monarchism_1914_party_long
+						}
+						set_party_name = {
+							ideology = monarchism
+							name = POL_monarchism_1914_party
+							long_name = POL_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Rada Regencyjna"
+							desc = ""
+							picture = "gfx/leaders/POL/Portrait_Regency_Council.dds"
+							expire = "1965.1.1"
+							ideology = anocmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Car Mikołaj II z Romanowów"
+							desc = ""
+							picture = "gfx/leaders/Russia/1914_RUS_Nicholas_II.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+							traits = {
+							}
+						}
+					}
+					LIT = {
+						set_cosmetic_tag = LIT_1914
+						set_politics = {
+							ruling_party = monarchism
+						}
+						set_popularities = {
+							monarchism = 100
+						}
+						secondary_tertiary_leader_enabled_effect = yes
+						create_country_leader = {
+							name = "Karalius Mindaugas II iš Uracho"
+							desc = ""
+							picture = "gfx/leaders/LIT/Portrait_Wilhelm_Karl.dds"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Oberbefehlshaber Paul Ludwig Hans Anton von Beneckendorff und von Hindenburg"
+							desc = ""
+							picture = "gfx/leaders/GER/Portrait_Paul_Hindenburg.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Caras Nikolajus II Romonovskis"
+							desc = ""
+							picture = "gfx/leaders/Russia/1914_RUS_Nicholas_II.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+							traits = {
+							}
+						}
+					}
+					LV2 = {
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+						}
+						set_popularities = {
+							stratocratic_monarchism = 100
+						}
+						secondary_tertiary_leader_enabled_effect = yes
+						create_country_leader = {
+							name = "Oberbefehlshaber Paul Ludwig Hans Anton von Beneckendorff und von Hindenburg"
+							desc = ""
+							picture = "gfx/leaders/GER/Portrait_Paul_Hindenburg.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
+							traits = {
+							}
+						}
+					}
 					TUR = {
 						transfer_state = 2333
 						transfer_state = 3356
@@ -9964,7 +10190,7 @@
 							desc = ""
 							picture = "gfx/leaders/SER/Portrait_Peter_I.dds"
 							expire = "1965.1.1"
-							ideology = anocratic_monarchism
+							ideology = anocmon
 							traits = {
 							}
 						}

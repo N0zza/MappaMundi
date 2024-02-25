@@ -382,6 +382,19 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = LV2
+				AND = {
+					has_government = stratocratic_monarchism
+					has_start_date < 1915.01.01
+					has_start_date > 1913.01.01
+				}
+			}
+		}
+		localization_key = "Quartiermeister von Großer Generalstab Erich Friedrich Wilhelm Ludendorff"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = KON
 				OR = {
 					has_government = anocratic_republic
@@ -4207,6 +4220,19 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Helmut_Schmidt"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LV2
+				AND = {
+					has_government = stratocratic_monarchism
+					has_start_date < 1915.01.01
+					has_start_date > 1913.01.01
+				}
+			}
+		}
+		localization_key = "GFX_Erich_Ludendorff"
 	}
 	text = {
 		trigger = {

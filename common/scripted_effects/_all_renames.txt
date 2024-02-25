@@ -352,7 +352,16 @@ do_all_renames = {
 					tag = BAY
 					tag = PL2
 					tag = UA2
-					tag = LV2
+					AND = {
+						tag = LV2
+						NOT = {
+							AND = {
+								has_government = stratocratic_monarchism
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+							}
+						}
+					}
 					tag = WR2
 					AND = {
 						tag = BL2

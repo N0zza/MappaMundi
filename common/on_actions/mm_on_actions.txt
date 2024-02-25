@@ -5703,6 +5703,13 @@ on_actions = {
 								}
 							}
 							drop_cosmetic_tag = yes
+							if = {
+								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = ENG_1914
+							}
 							every_country = {
 								limit = {
 									OR = {
@@ -5728,6 +5735,13 @@ on_actions = {
 								}
 							}
 							set_cosmetic_tag = ENG_AUTH
+							if = {
+								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = ENG_1914_AUTH
+							}
 							every_country = {
 								limit = {
 									OR = {
@@ -5750,6 +5764,13 @@ on_actions = {
 								}
 							}
 							set_cosmetic_tag = ENG_REPUBLIC
+							if = {
+								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = ENG_1914_REPUBLIC
+							}
 							every_country = {
 								limit = {
 									OR = {
@@ -5773,6 +5794,13 @@ on_actions = {
 								}
 							}
 							set_cosmetic_tag = ENG_SOCIALIST
+							if = {
+								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = ENG_1914_SOCIALIST
+							}
 							every_country = {
 								limit = {
 									OR = {
@@ -6376,6 +6404,51 @@ on_actions = {
 								}
 								set_cosmetic_tag = POL_2023
 							}
+						}
+					}
+					if = {
+						limit = {
+							tag = LIT
+						}
+						if = {
+							limit = {
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								has_government = socialism_ideology
+							}
+							set_cosmetic_tag = LIT_1992_SOCREP
+						}
+						else_if = {
+							limit = {
+								has_start_date < 2000.01.01
+								has_start_date > 1991.01.01
+								NOT = {
+									has_government = socialism_ideology
+								}
+							}
+							set_cosmetic_tag = LIT_1992
+						}
+						else_if = {
+							limit = {
+								has_government = stratocratic_monarchism
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+							}
+							set_cosmetic_tag = LIT_GER_1914
+						}
+						else_if = {
+							limit = {
+								OR = {
+									has_government = authoritarian_monarchism
+									has_government = monarchism
+								}
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+							}
+							set_cosmetic_tag = LIT_1914
+						}
+						else = {
+							drop_cosmetic_tag = yes
 						}
 					}
 					if = {
@@ -7172,30 +7245,6 @@ on_actions = {
 							}
 						}
 						set_cosmetic_tag = KAZ_1992
-					}
-					if = {
-						limit = {
-							AND = {
-								tag = LIT
-								has_start_date < 2000.01.01
-								has_start_date > 1991.01.01
-								has_government = socialism_ideology
-							}
-						}
-						set_cosmetic_tag = LIT_1992_SOCREP
-					}
-					if = {
-						limit = {
-							AND = {
-								tag = LIT
-								has_start_date < 2000.01.01
-								has_start_date > 1991.01.01
-								NOT = {
-									has_government = socialism_ideology
-								}
-							}
-						}
-						set_cosmetic_tag = LIT_1992
 					}
 					if = {
 						limit = {
