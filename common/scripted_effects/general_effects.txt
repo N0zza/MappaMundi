@@ -2713,3 +2713,133 @@ unite_1936_yemen = {
 		}
 	}
 }
+
+do_1914_septemberprogramm = {
+	every_state = {
+		limit = {
+			is_core_of = POL
+		}
+		POL = {
+			transfer_state = PREV
+		}
+	}
+	POL = {
+		set_popularities = {
+			anocratic_monarchism = 100
+		}
+		set_politics = {
+			ruling_party = anocratic_monarchism
+		}
+	}
+	every_state = {
+		limit = {
+			is_core_of = LIT
+		}
+		LIT = {
+			transfer_state = PREV
+		}
+	}
+	LIT = {
+		set_popularities = {
+			authoritarian_monarchism = 100
+		}
+		set_politics = {
+			ruling_party = authoritarian_monarchism
+		}
+	}
+	LIT = {
+		set_popularities = {
+			authoritarian_monarchism = 100
+		}
+		set_politics = {
+			ruling_party = authoritarian_monarchism
+		}
+	}
+	every_state = {
+		limit = {
+			AND = {
+				OR = {
+					is_core_of = BLR
+					is_claimed_by = BLR
+				}
+				NOT = {
+					OR = {
+						is_core_of = LIT
+						is_core_of = POL
+						state = 1293
+					}
+				}
+			}
+		}
+		BLR = {
+			transfer_state = PREV
+		}
+	}
+	BLR = {
+		drop_cosmetic_tag = yes
+		set_popularities = {
+			democratic_monarchism = 100
+		}
+		set_politics = {
+			ruling_party = democratic_monarchism
+		}
+	}
+	every_state = {
+		limit = {
+			AND = {
+				OR = {
+					is_core_of = MOL
+					is_core_of = UKR
+					is_claimed_by = UKR
+					state = 14153
+				}
+				NOT = {
+					OR = {
+						is_core_of = VRN
+						is_core_of = KC2
+						is_core_of = CSK
+						is_core_of = AUS
+						is_core_of = GAL
+						is_core_of = HUN
+						is_core_of = POL
+						is_core_of = TSC
+						is_core_of = ORO
+						state = 3227
+					}
+				}
+			}
+		}
+		UKR = {
+			transfer_state = PREV
+		}
+	}
+	UKR = {
+		drop_cosmetic_tag = yes
+		set_popularities = {
+			stratocratic_monarchism = 100
+		}
+		set_politics = {
+			ruling_party = stratocratic_monarchism
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = EST
+				is_core_of = LAT
+			}
+		}
+		LIV = {
+			transfer_state = PREV
+		}
+	}
+	LIV = {
+		set_cosmetic_tag = LIV_1914
+		set_popularities = {
+			authoritarian_monarchism = 100
+		}
+		set_politics = {
+			ruling_party = authoritarian_monarchism
+		}
+	}
+}

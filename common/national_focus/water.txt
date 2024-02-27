@@ -10064,6 +10064,59 @@
 						}
 					}
 					LIT = {
+						every_state = {
+							limit = {
+								AND = {
+									is_core_of = GER
+									is_core_of = LIT
+								}
+							}
+							LIT = {
+								remove_state_core = PREV
+							}
+						}
+						every_state = {
+							limit = {
+								OR = {
+									AND = {
+										OR = {
+											AND = {
+												is_core_of = BIY
+												NOT = {
+													is_core_of = MSV
+												}
+											}
+											is_core_of = AUK
+											is_core_of = CLI
+										}
+										NOT = {
+											is_core_of = LIT
+										}
+									}
+									AND = {
+										is_core_of = NOW
+										NOT = {
+											state = 95
+											state = 3239
+											state = 4841
+											state = 5563
+											state = 18966
+											state = 18970
+											state = 18971
+											state = 18972
+										}
+									}
+									state = 2136
+									state = 3491
+									state = 6008
+									state = 8039
+									state = 8044
+								}
+							}
+							LIT = {
+								add_state_core = PREV
+							}
+						}
 						set_cosmetic_tag = LIT_1914
 						set_politics = {
 							ruling_party = monarchism
@@ -10096,6 +10149,18 @@
 							picture = "gfx/leaders/Russia/1914_RUS_Nicholas_II.tga"
 							expire = "1965.1.1"
 							ideology = absolutism
+							traits = {
+							}
+						}
+					}
+					LIV = {
+						set_cosmetic_tag = LIV_1914
+						create_country_leader = {
+							name = "Herzog des Baltikums Adolf Friedrich Albrecht Heinrich, Herzog zu Mecklenburg-Schwerin"
+							desc = ""
+							picture = "gfx/leaders/TOG/Portrait_Adolf_Friedrich.dds"
+							expire = "1965.1.1"
+							ideology = authmon
 							traits = {
 							}
 						}
