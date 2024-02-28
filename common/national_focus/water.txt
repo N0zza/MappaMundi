@@ -9538,6 +9538,48 @@
 								remove_state_core = PREV 
 							}
 						}
+						every_state = {
+							limit = {
+								OR = {
+									is_core_of = WLX
+									is_core_of = LUX
+									AND = {
+										is_core_of = LEG
+										NOT = {
+											state = 2096
+											state = 2460
+										}
+									}
+									AND = {
+										is_core_of = NMR
+										NOT = {
+											state = 2097
+											state = 2453
+											state = 16606
+										}
+									}
+									AND = {
+										is_core_of = LOR
+										NOT = {
+											state = 836
+											state = 5575
+											state = 7476
+											state = 16627
+											state = 16628
+											state = 16630
+											state = 16631
+											state = 16689
+										}
+									}
+									state = 1357
+									state = 2432
+									state = 2433
+								}
+							}
+							GER = {
+								add_state_claim = PREV
+							}
+						}
 						set_cosmetic_tag = GER_1914
 						set_politics = {
 							ruling_party = authoritarian_monarchism
@@ -10118,6 +10160,16 @@
 							}
 						}
 						set_cosmetic_tag = LIT_1914
+						set_party_name = {
+							ideology = authoritarian_monarchism
+							name = LIT_authoritarian_monarchism_1914_party
+							long_name = LIT_authoritarian_monarchism_1914_party_long
+						}
+						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = LIT_stratocratic_monarchism_1914_party
+							long_name = LIT_stratocratic_monarchism_1914_party_long
+						}
 						set_politics = {
 							ruling_party = monarchism
 						}
@@ -10155,6 +10207,16 @@
 					}
 					LIV = {
 						set_cosmetic_tag = LIV_1914
+						set_party_name = {
+							ideology = authoritarian_monarchism
+							name = LIV_authoritarian_monarchism_1914_party
+							long_name = LIV_authoritarian_monarchism_1914_party_long
+						}
+						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = LIV_stratocratic_monarchism_1914_party
+							long_name = LIV_stratocratic_monarchism_1914_party_long
+						}
 						create_country_leader = {
 							name = "Herzog des Baltikums Adolf Friedrich Albrecht Heinrich, Herzog zu Mecklenburg-Schwerin"
 							desc = ""
@@ -10164,6 +10226,21 @@
 							traits = {
 							}
 						}
+						create_country_leader = {
+							name = "Kommandant Gustav Adolf Joachim Rüdiger Graf von der Goltz"
+							desc = ""
+							picture = "gfx/leaders/LIV/Portrait_Rudiger_Goltz.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
+							traits = {
+							}
+						}
+					}
+					BLR = {
+						set_cosmetic_tag = BLR_1914
+					}
+					UKR = {
+						set_cosmetic_tag = UKR_1914
 					}
 					LV2 = {
 						set_politics = {

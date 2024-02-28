@@ -2776,12 +2776,12 @@ do_1914_septemberprogramm = {
 		}
 	}
 	BLR = {
-		drop_cosmetic_tag = yes
+		set_cosmetic_tag = BLR_1914
 		set_popularities = {
-			democratic_monarchism = 100
+			neutrality = 100
 		}
 		set_politics = {
-			ruling_party = democratic_monarchism
+			ruling_party = neutrality
 		}
 	}
 	every_state = {
@@ -2814,7 +2814,7 @@ do_1914_septemberprogramm = {
 		}
 	}
 	UKR = {
-		drop_cosmetic_tag = yes
+		set_cosmetic_tag = UKR_1914
 		set_popularities = {
 			stratocratic_monarchism = 100
 		}
@@ -2836,10 +2836,47 @@ do_1914_septemberprogramm = {
 	LIV = {
 		set_cosmetic_tag = LIV_1914
 		set_popularities = {
+			authoritarian_monarchism = 50
+			stratocratic_monarchism = 50
+		}
+		set_politics = {
+			ruling_party = authoritarian_monarchism
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_claimed_by = GER
+			}
+		}
+		GER = {
+			transfer_state = PREV
+		}
+	}
+	BEL = {
+		set_cosmetic_tag = BEL_1914
+		set_popularities = {
 			authoritarian_monarchism = 100
 		}
 		set_politics = {
 			ruling_party = authoritarian_monarchism
+		}
+	}
+	every_state = {
+		limit = {
+			AND = {
+				is_core_of = BL2
+				is_core_of = FRA
+				NOT = {
+					is_core_of = PIC
+					is_core_of = ART
+					state = 2091
+					state = 16622
+				}
+			}
+		}
+		BEL = {
+			transfer_state = PREV
 		}
 	}
 }

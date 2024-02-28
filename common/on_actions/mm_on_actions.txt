@@ -73,6 +73,22 @@ on_actions = {
 		}
 	}
 	on_startup = {
+		#Set up the Septemberprogramm.
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = MM_germany
+						option = SEPTEMBERPROGRAMM_SETUP
+					}
+				}
+				GER = {
+					do_1914_septemberprogramm = yes
+				}
+			}
+		}
+	}
+	on_startup = {
 		#Set up the Co Prosperity Sphere.
 		effect = {
 			if = {
