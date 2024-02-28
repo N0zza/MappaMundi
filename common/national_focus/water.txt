@@ -9367,6 +9367,25 @@
 							}
 						}
 					}
+					IRE = {
+						set_cosmetic_tag = IRE_1914
+						set_party_name = {
+							ideology = socialism_ideology
+							name = IRE_socialism_ideology_1914_party
+							long_name = IRE_socialism_ideology_1914_party_long
+						}
+						set_party_name = {
+							ideology = anocratic_republic
+							name = IRE_anocratic_republic_1914_party
+							long_name = IRE_anocratic_republic_1914_party_long
+						}
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+						set_popularities = {
+							anocratic_republic = 100
+						}
+					}
 					RUS = {
 						set_cosmetic_tag = RUS_1914
 						every_owned_state = {
@@ -10149,10 +10168,15 @@
 										}
 									}
 									state = 2136
+									state = 2382
 									state = 3491
+									state = 5502
+									state = 5503
+									state = 5904
 									state = 6008
 									state = 8039
 									state = 8044
+									state = 8052
 								}
 							}
 							LIT = {
@@ -10238,6 +10262,62 @@
 					}
 					BLR = {
 						set_cosmetic_tag = BLR_1914
+						set_party_name = {
+							ideology = democratic
+							name = BLR_democratic_1914_party
+							long_name = BLR_democratic_1914_party_long
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = BLR_neutrality_1914_party
+							long_name = BLR_neutrality_1914_party_long
+						}
+						set_party_name = {
+							ideology = authoritarian_monarchism
+							name = BLR_authoritarian_monarchism_1914_party
+							long_name = BLR_authoritarian_monarchism_1914_party_long
+						}
+						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = BLR_stratocratic_monarchism_1914_party
+							long_name = BLR_stratocratic_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Prezident Ivan Mikitavič Sierada"
+							desc = ""
+							picture = "gfx/leaders/BLR/Portrait_Jan_Sierada.dds"
+							expire = "1965.1.1"
+							ideology = conservatism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Prezident Ivan Mikitavič Sierada"
+							desc = ""
+							picture = "gfx/leaders/BLR/Portrait_Jan_Sierada.dds"
+							expire = "1965.1.1"
+							ideology = despotism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Rehiencki Ŭrad Bielaj Rusi"
+							desc = ""
+							picture = "gfx/leaders/BLR/Portrait_Regency.dds"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Oberbefehlshaber Paul Ludwig Hans Anton von Beneckendorff und von Hindenburg"
+							desc = ""
+							picture = "gfx/leaders/GER/Portrait_Paul_Hindenburg.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
+							traits = {
+							}
+						}
 					}
 					UKR = {
 						set_cosmetic_tag = UKR_1914

@@ -2747,14 +2747,6 @@ do_1914_septemberprogramm = {
 			ruling_party = authoritarian_monarchism
 		}
 	}
-	LIT = {
-		set_popularities = {
-			authoritarian_monarchism = 100
-		}
-		set_politics = {
-			ruling_party = authoritarian_monarchism
-		}
-	}
 	every_state = {
 		limit = {
 			AND = {
@@ -2766,7 +2758,30 @@ do_1914_septemberprogramm = {
 					OR = {
 						is_core_of = LIT
 						is_core_of = POL
+						is_core_of = PSK
+						is_core_of = LTG
+						is_core_of = MSC
+						AND = {
+							is_core_of = VTB
+							NOT = {
+								state = 17949
+								state = 17963
+								state = 17969
+							}
+						}
+						AND = {
+							is_core_of = SMO
+							NOT = {
+								state = 17299
+							}
+						}
 						state = 1293
+						state = 8034
+						state = 17965
+						state = 17966
+						state = 17971
+						state = 17974
+						state = 17975
 					}
 				}
 			}
@@ -2797,14 +2812,30 @@ do_1914_septemberprogramm = {
 					OR = {
 						is_core_of = VRN
 						is_core_of = KC2
-						is_core_of = CSK
 						is_core_of = AUS
 						is_core_of = GAL
 						is_core_of = HUN
 						is_core_of = POL
 						is_core_of = TSC
 						is_core_of = ORO
-						state = 3227
+						is_core_of = MZY
+						is_core_of = RCT
+						is_claimed_by = RCT
+						AND = {
+							is_core_of = PSE
+							NOT = {
+								state = 3238
+								state = 4023
+								state = 5985
+								state = 7446
+								state = 8053
+								state = 9842
+								state = 17611
+								state = 17612
+								state = 17613
+								state = 18961
+							}
+						}
 					}
 				}
 			}
@@ -2824,13 +2855,26 @@ do_1914_septemberprogramm = {
 	}
 	every_state = {
 		limit = {
-			OR = {
-				is_core_of = EST
-				is_core_of = LAT
+			AND = {
+				OR = {
+					is_core_of = EST
+					is_core_of = LAT
+				}
+				NOT = {
+					is_core_of = LTG
+				}
 			}
 		}
 		LIV = {
 			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			is_core_of = LTG
+		}
+		LIV = {
+			add_state_claim = PREV
 		}
 	}
 	LIV = {
@@ -2877,6 +2921,15 @@ do_1914_septemberprogramm = {
 		}
 		BEL = {
 			transfer_state = PREV
+		}
+	}
+	FIN = {
+		set_cosmetic_tag = FIN_1914
+		set_popularities = {
+			conservative_monarchism = 100
+		}
+		set_politics = {
+			ruling_party = conservative_monarchism
 		}
 	}
 }
