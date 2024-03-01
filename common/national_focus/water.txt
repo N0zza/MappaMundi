@@ -9385,6 +9385,25 @@
 						set_popularities = {
 							anocratic_republic = 100
 						}
+						secondary_tertiary_leader_enabled_effect = yes
+						create_country_leader = {
+							name = "Príomh Aire James Larkin"
+							desc = ""
+							picture = "gfx/leaders/IRE/Portrait_James_Larkin.dds"
+							expire = "1965.1.1"
+							ideology = demsoc
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Príomh Aire Éamon de Valera"
+							desc = ""
+							picture = "gfx/leaders/IRE/Portrait_Eamon_De_Valera_1914.dds"
+							expire = "1965.1.1"
+							ideology = anocrep
+							traits = {
+							}
+						}
 					}
 					RUS = {
 						set_cosmetic_tag = RUS_1914
@@ -10101,6 +10120,11 @@
 							long_name = POL_anocratic_monarchism_1914_party_long
 						}
 						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = POL_stratocratic_monarchism_1914_party
+							long_name = POL_stratocratic_monarchism_1914_party_long
+						}
+						set_party_name = {
 							ideology = monarchism
 							name = POL_monarchism_1914_party
 							long_name = POL_monarchism_1914_party_long
@@ -10111,6 +10135,15 @@
 							picture = "gfx/leaders/POL/Portrait_Regency_Council.dds"
 							expire = "1965.1.1"
 							ideology = anocmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Oberbefehlshaber Paul Ludwig Hans Anton von Beneckendorff und von Hindenburg"
+							desc = ""
+							picture = "gfx/leaders/GER/Portrait_Paul_Hindenburg.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
 							traits = {
 							}
 						}
@@ -10172,7 +10205,7 @@
 									state = 3491
 									state = 5502
 									state = 5503
-									state = 5904
+									state = 5984
 									state = 6008
 									state = 8039
 									state = 8044
