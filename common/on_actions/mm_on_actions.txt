@@ -4106,7 +4106,6 @@ on_actions = {
 						limit = {
 							OR = {
 								tag = WTO
-								tag = TOG
 							}
 						}
 						if = {
@@ -4128,9 +4127,52 @@ on_actions = {
 						}
 						if = {
 							limit = {
+								has_government = centrist_republic
+							}
+							set_cosmetic_tag = CZE_BLUE
+						}
+						else_if = {
+							limit = {
+								OR = {
+									has_government = conservative_monarchism
+									has_government = anocratic_monarchism
+								}
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+							}
+							set_cosmetic_tag = TOG_LIV_1914
+						}
+						else_if = {
+							limit = {
 								has_government = neutrality
 							}
 							set_cosmetic_tag = FRA_COLONY
+						}
+						else_if = {
+							limit = {
+								has_government = authoritarian_monarchism
+							}
+							set_cosmetic_tag = UK_RED
+							if = {
+								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = TOG_GER_1914
+							}
+						}
+						else_if = {
+							limit = {
+								has_government = stratocratic_monarchism
+							}
+							set_cosmetic_tag = GREY_GER3
+							if = {
+								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = TOG_GER_1914
+							}
 						}
 					}
 					if = {
@@ -4258,7 +4300,6 @@ on_actions = {
 								tag = SEN
 								tag = DAH
 								tag = GNA
-								tag = TOG
 								tag = CHA
 								tag = CAR
 								tag = RCG
@@ -4406,7 +4447,6 @@ on_actions = {
 								tag = POL
 								tag = UKR
 								tag = WTO
-								tag = TOG
 								tag = CZC
 								tag = CZE
 								tag = LIT
@@ -4642,7 +4682,7 @@ on_actions = {
 								has_government = stratocratic_monarchism
 								NOT = {
 									OR = {
-										has_cosmetic_tag = TOG_1914
+										has_cosmetic_tag = TOG_GER_1914
 										has_cosmetic_tag = CMR_1914
 										has_cosmetic_tag = TZN_1914
 										has_cosmetic_tag = NMB_GER_1914
@@ -6473,11 +6513,21 @@ on_actions = {
 						else_if = {
 							limit = {
 								AND = {
+									has_government = monarchism
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+							}
+							set_cosmetic_tag = POL_RUS_1914
+						}
+						else_if = {
+							limit = {
+								AND = {
 									OR = {
 										has_government = centrist_republic
+										has_government = centrist_monarchism
 										has_government = anocratic_monarchism
 										has_government = authoritarian_monarchism
-										has_government = monarchism
 									}
 									has_start_date < 1915.01.01
 									has_start_date > 1913.01.01
@@ -6535,9 +6585,16 @@ on_actions = {
 						}
 						else_if = {
 							limit = {
+								has_government = monarchism
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+							}
+							set_cosmetic_tag = LIT_RUS_1914
+						}
+						else_if = {
+							limit = {
 								OR = {
 									has_government = authoritarian_monarchism
-									has_government = monarchism
 								}
 								has_start_date < 1915.01.01
 								has_start_date > 1913.01.01

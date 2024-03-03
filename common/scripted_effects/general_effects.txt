@@ -1823,39 +1823,44 @@ neukamerun_claims = {
 mittelafrika_claims = {
 	every_state = {
 		limit = {
-			OR = {
-				is_core_of = NCM
-				is_core_of = NKM
-				is_core_of = CMR
-				is_core_of = KEN
-				is_core_of = TZN
-				is_core_of = ZAN
-				is_core_of = UGA
-				is_core_of = RUU
-				is_core_of = MLW
-				is_core_of = ZAM
-				is_core_of = NMB
-				is_core_of = COG
-				is_core_of = GAB
-				is_core_of = RCG
-				is_core_of = CAR
-				is_core_of = NGA
-				is_core_of = DAH
-				is_core_of = TOG
-				is_core_of = GHA
-				is_core_of = MAD
-				is_core_of = IVO
-				is_core_of = SNW
-				is_core_of = REU
-				is_core_of = COM
-				is_claimed_by = COM
-				state = 6038
-				state = 7920
-				AND = {
-					is_core_of = CHA
-					NOT = {
-						is_core_of = SD0
+			AND = {
+				OR = {
+					is_core_of = NCM
+					is_core_of = NKM
+					is_core_of = CMR
+					is_core_of = KEN
+					is_core_of = TZN
+					is_core_of = ZAN
+					is_core_of = UGA
+					is_core_of = RUU
+					is_core_of = MLW
+					is_core_of = ZAM
+					is_core_of = NMB
+					is_core_of = COG
+					is_core_of = GAB
+					is_core_of = RCG
+					is_core_of = CAR
+					is_core_of = NGA
+					is_core_of = DAH
+					is_core_of = TOG
+					is_core_of = GHA
+					is_core_of = MAD
+					is_core_of = IVO
+					is_core_of = SNW
+					is_core_of = REU
+					is_core_of = COM
+					is_claimed_by = COM
+					state = 6038
+					state = 7920
+					AND = {
+						is_core_of = CHA
+						NOT = {
+							is_core_of = SD0
+						}
 					}
+				}
+				NOT = {
+					is_core_of = MAF
 				}
 			}
 		}
@@ -2560,7 +2565,10 @@ kx_mittelafrika_united = {
 	}
 	every_state = {
 		limit = {
-			is_claimed_by = MAF
+			OR = {
+				is_claimed_by = MAF
+				is_core_of = MAF
+			}
 		}
 		MAF = {
 			transfer_state = PREV
@@ -2728,7 +2736,8 @@ do_1914_septemberprogramm = {
 	}
 	POL = {
 		set_popularities = {
-			anocratic_monarchism = 100
+			anocratic_monarchism = 50
+			authoritarian_monarchism = 50
 		}
 		set_politics = {
 			ruling_party = anocratic_monarchism
@@ -2752,23 +2761,7 @@ do_1914_septemberprogramm = {
 	}
 	every_state = {
 		limit = {
-			AND = {
-				OR = {
-					is_core_of = BLR
-					is_claimed_by = BLR
-				}
-				NOT = {
-					OR = {
-						is_core_of = LIT
-						is_owned_by = POL
-						is_core_of = POL
-						is_core_of = EST
-						is_core_of = LAT
-						state = 13830
-						state = 14153
-					}
-				}
-			}
+			is_core_of = BLR
 		}
 		BLR = {
 			transfer_state = PREV
@@ -2788,59 +2781,7 @@ do_1914_septemberprogramm = {
 	}
 	every_state = {
 		limit = {
-			AND = {
-				OR = {
-					is_core_of = UKR
-					is_core_of = MZY
-					is_claimed_by = UKR
-					AND = {
-						is_core_of = PSE
-						NOT = {
-							state = 8039
-							state = 17814
-						}
-					}
-					state = 4836
-				}
-				NOT = {
-					OR = {
-						is_core_of = KC2
-						is_core_of = AUS
-						is_core_of = GAL
-						is_core_of = HUN
-						is_core_of = TSC
-						AND = {
-							is_core_of = MOL
-							NOT = {
-								is_core_of = TRN
-								is_claimed_by = TRN
-							}
-						}
-						AND = {
-							is_core_of = ORO
-							NOT = {
-								state = 1327
-							}
-						}
-						AND = {
-							is_core_of = BOB
-							NOT = {
-								state = 17906
-							}
-						}
-						state = 1328
-						state = 3188
-						state = 3226
-						state = 3778
-						state = 5378
-						state = 5379
-						state = 14255
-						state = 16216
-						state = 17319
-						state = 17909
-					}
-				}
-			}
+			is_core_of = UKR
 		}
 		UKR = {
 			transfer_state = PREV
@@ -3035,5 +2976,127 @@ do_1914_septemberprogramm = {
 		set_politics = {
 			ruling_party = centrist_republic
 		}
+	}
+}
+do_extended_1914_septemberprogramm = {
+	do_1914_septemberprogramm = yes
+	mittelafrika_claims = yes
+	every_state = {
+		limit = {
+			is_core_of = IRE
+		}
+		IRE = {
+			transfer_state = PREV
+		}
+	}
+	ENG = {
+		set_cosmetic_tag = ENG_SCO
+	}
+	every_state = {
+		limit = {
+			is_claimed_by = BUL
+		}
+		BUL = {
+			transfer_state = PREV
+		}
+	}
+	BUL = {
+		set_politics = {
+			ruling_party = centrist_monarchism
+		}
+	}
+	SER = {
+		set_politics = {
+			ruling_party = stratocratic_monarchism
+		}
+		set_popularities = {
+			stratocratic_monarchism = 100
+		}
+	}
+	MOR = {
+		drop_cosmetic_tag = yes
+		set_politics = {
+			ruling_party = conservative_monarchism
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = COG
+				AND = {
+					is_core_of = RCG
+					NOT = {
+						OR = {
+							is_core_of = NKM
+							is_core_of = CMR
+						}
+					}
+				}
+				state = 5218
+				state = 5238
+				state = 6552
+			}
+		}
+		RCG = {
+			transfer_state = PREV
+		}
+	}
+	RCG = {
+		set_politics = {
+			ruling_party = stratocratic_monarchism
+		}
+		set_cosmetic_tag = GREY_GER3
+	}
+	CAR = {
+		set_politics = {
+			ruling_party = monarchism
+		}
+		set_cosmetic_tag = GREY_GER3
+	}
+	GAB = {
+		set_politics = {
+			ruling_party = stratocratic_monarchism
+		}
+		set_cosmetic_tag = GREY_GER3
+	}
+	every_state = {
+		limit = {
+			is_core_of = MLW
+		}
+		ZAM = {
+			transfer_state = PREV
+		}
+	}
+	ZAM = {
+		set_politics = {
+			ruling_party = stratocratic_monarchism
+		}
+		set_cosmetic_tag = GREY_GER3
+	}
+	every_state = {
+		limit = {
+			is_owned_by = UGA
+		}
+		KEN = {
+			transfer_state = PREV
+		}
+	}
+	KEN = {
+		set_politics = {
+			ruling_party = stratocratic_monarchism
+		}
+		set_cosmetic_tag = KEN_GER_1914
+	}
+	every_country = {
+		limit = {
+			OR = {
+				tag = ANK
+				tag = BUG
+				tag = TOR
+				tag = BNY
+				tag = BSG
+			}
+		}
+		set_cosmetic_tag = GREY_GER3
 	}
 }

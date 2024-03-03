@@ -9451,6 +9451,12 @@
 						}
 					}
 					RUS = {
+						transfer_state = 1479
+						transfer_state = 11061
+						transfer_state = 17266
+						set_capital = {
+							state = 195
+						}
 						set_cosmetic_tag = RUS_1914
 						every_owned_state = {
 							do_russian_renames = yes
@@ -9492,14 +9498,11 @@
 							name = RUS_liberal_republic_1914_party
 							long_name = RUS_liberal_republic_1914_party_long
 						}
-						transfer_state = 1479
-						transfer_state = 11061
-						transfer_state = 17266
-						set_capital = {
-							state = 195
+						set_party_name = {
+							ideology = anocratic_republic
+							name = RUS_anocratic_republic_1914_party
+							long_name = RUS_anocratic_republic_1914_party_long
 						}
-					}
-					RUS = {
 						create_country_leader = {
 							name = "Predsedatel' Vladimir Ilyich Ulyanov"
 							desc = ""
@@ -9573,11 +9576,29 @@
 							}
 						}
 						create_country_leader = {
+							name = "Minístr-Prezidént Aleksándr Fyodorovich Kérenskiy "
+							desc = ""
+							picture = "gfx/leaders/Russia/Portrait_Alexander_Kerensky_1914.dds"
+							expire = "1965.1.1"
+							ideology = anocrep
+							traits = {
+							}
+						}
+						create_country_leader = {
 							name = "Car' Nikoláj II Romanóvskij"
 							desc = ""
 							picture = "gfx/leaders/Russia/1914_RUS_Nicholas_II.tga"
 							expire = "1965.1.1"
 							ideology = anocmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Minístr-Prezidént Aleksándr Fyodorovich Kérenskiy "
+							desc = ""
+							picture = "gfx/leaders/Russia/Portrait_Alexander_Kerensky_1914.dds"
+							expire = "1965.1.1"
+							ideology = despotism
 							traits = {
 							}
 						}
@@ -9977,10 +9998,10 @@
 					BOS = {
 						transfer_state = 2289
 						transfer_state = 7343
+						set_cosmetic_tag = BOS_1914
 						set_politics = {
 							ruling_party = authoritarian_monarchism
 						}
-						set_cosmetic_tag = BOS_1914
 						set_popularities = {
 							conservative_monarchism = 16
 							anocratic_monarchism = 17
@@ -9991,8 +10012,11 @@
 							name = BOS_authoritarian_monarchism_1914_party
 							long_name = BOS_authoritarian_monarchism_1914_party_long
 						}
-					}
-					BOS = {
+						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = BOS_stratocratic_monarchism_1914_party
+							long_name = BOS_stratocratic_monarchism_1914_party_long
+						}
 						create_country_leader = {
 							name = "Kralj Karlo I od Habsburg-Lothringena"
 							desc = ""
@@ -10048,6 +10072,33 @@
 							}
 						}
 						create_country_leader = {
+							name = "Kralj Franciszek Karol z Habsburga"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_Karl_Habsburg_2_1914.dds"
+							expire = "1965.1.1"
+							ideology = liberal_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kralj Franciszek Karol z Habsburga"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_Karl_Habsburg_2_1914.dds"
+							expire = "1965.1.1"
+							ideology = cenmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kralj Franciszek Józef z Habsburga"
+							desc = ""
+							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
 							name = "Król Zapadosławii Franciszek Karol I Habsburg-Lothringen"
 							desc = ""
 							picture = "gfx/leaders/AUS/Portrait_Karl_Habsburg_2_1914.dds"
@@ -10062,6 +10113,15 @@
 							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
 							expire = "1965.1.1"
 							ideology = authmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kralj Franciszek Józef z Habsburga"
+							desc = ""
+							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
 							traits = {
 							}
 						}
@@ -10153,7 +10213,7 @@
 								add_state_claim = PREV
 							}
 						}
-						set_cosmetic_tag = POL_1914
+						set_cosmetic_tag = POL_RUS_1914
 						set_politics = {
 							ruling_party = monarchism
 						}
@@ -10161,6 +10221,11 @@
 							monarchism = 100
 						}
 						secondary_tertiary_leader_enabled_effect = yes
+						set_party_name = {
+							ideology = centrist_monarchism
+							name = POL_centrist_monarchism_1914_party
+							long_name = POL_centrist_monarchism_1914_party_long
+						}
 						set_party_name = {
 							ideology = anocratic_monarchism
 							name = POL_anocratic_monarchism_1914_party
@@ -10180,6 +10245,15 @@
 							ideology = monarchism
 							name = POL_monarchism_1914_party
 							long_name = POL_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Karalius Mindaugas II ir I iš Uracho"
+							desc = ""
+							picture = "gfx/leaders/LIT/Portrait_Wilhelm_Karl.dds"
+							expire = "1965.1.1"
+							ideology = cenmon
+							traits = {
+							}
 						}
 						create_country_leader = {
 							name = "Rada Regencyjna"
@@ -10221,9 +10295,12 @@
 					LIT = {
 						every_state = {
 							limit = {
-								AND = {
-									is_core_of = GER
-									is_core_of = LIT
+								OR = {
+									AND = {
+										is_core_of = GER
+										is_core_of = LIT
+									}
+									state = 3491
 								}
 							}
 							LIT = {
@@ -10344,6 +10421,17 @@
 						}
 					}
 					LIV = {
+						every_state = {
+							limit = {
+								OR = {
+									is_core_of = EST
+									is_core_of = LAT
+								}
+							}
+							LIV = {
+								add_state_core = PREV
+							}
+						}
 						set_cosmetic_tag = LIV_1914
 						set_party_name = {
 							ideology = authoritarian_monarchism
@@ -10374,81 +10462,96 @@
 							}
 						}
 					}
-					BLR = {
-						set_cosmetic_tag = BLR_RUS_1914
-						set_politics = {
-							ruling_party = monarchism
-						}
-						set_popularities = {
-							monarchism = 100
-						}
-						set_party_name = {
-							ideology = democratic
-							name = BLR_democratic_1914_party
-							long_name = BLR_democratic_1914_party_long
-						}
-						set_party_name = {
-							ideology = neutrality
-							name = BLR_neutrality_1914_party
-							long_name = BLR_neutrality_1914_party_long
-						}
-						set_party_name = {
-							ideology = authoritarian_monarchism
-							name = BLR_authoritarian_monarchism_1914_party
-							long_name = BLR_authoritarian_monarchism_1914_party_long
-						}
-						set_party_name = {
-							ideology = stratocratic_monarchism
-							name = BLR_stratocratic_monarchism_1914_party
-							long_name = BLR_stratocratic_monarchism_1914_party_long
-						}
-						create_country_leader = {
-							name = "Prezident Ivan Mikitavič Sierada"
-							desc = ""
-							picture = "gfx/leaders/BLR/Portrait_Jan_Sierada.dds"
-							expire = "1965.1.1"
-							ideology = conservatism
-							traits = {
-							}
-						}
-						create_country_leader = {
-							name = "Prezident Ivan Mikitavič Sierada"
-							desc = ""
-							picture = "gfx/leaders/BLR/Portrait_Jan_Sierada.dds"
-							expire = "1965.1.1"
-							ideology = despotism
-							traits = {
-							}
-						}
-						create_country_leader = {
-							name = "Rehiencki Ŭrad Bielaj Rusi"
-							desc = ""
-							picture = "gfx/leaders/BLR/Portrait_Regency.dds"
-							expire = "1965.1.1"
-							ideology = authmon
-							traits = {
-							}
-						}
-						create_country_leader = {
-							name = "Oberbefehlshaber Paul Ludwig Hans Anton von Beneckendorff und von Hindenburg"
-							desc = ""
-							picture = "gfx/leaders/GER/Portrait_Paul_Hindenburg.dds"
-							expire = "1965.1.1"
-							ideology = stratmon
-							traits = {
-							}
-						}
-						create_country_leader = {
-							name = "Car Mikalaj II Romanóvskij"
-							desc = ""
-							picture = "gfx/leaders/Russia/1914_RUS_Nicholas_II.tga"
-							expire = "1965.1.1"
-							ideology = absolutism
-							traits = {
-							}
-						}
-					}
 					UKR = {
+						every_state = {
+							limit = {
+								AND = {
+									OR = {
+										is_core_of = UKR
+										is_core_of = MZY
+										is_claimed_by = UKR
+										AND = {
+											is_core_of = PSE
+											NOT = {
+												state = 8039
+												state = 17814
+											}
+										}
+										state = 4836
+									}
+									NOT = {
+										OR = {
+											is_core_of = KC2
+											is_core_of = AUS
+											is_core_of = GAL
+											is_core_of = HUN
+											is_core_of = SLO
+											is_core_of = TSC
+											AND = {
+												is_core_of = MOL
+												NOT = {
+													is_core_of = TRN
+													is_claimed_by = TRN
+												}
+											}
+											AND = {
+												is_core_of = ORO
+												NOT = {
+													state = 1327
+												}
+											}
+											AND = {
+												is_core_of = BOB
+												NOT = {
+													state = 17906
+												}
+											}
+											state = 1328
+											state = 3188
+											state = 3226
+											state = 3778
+											state = 5378
+											state = 5379
+											state = 14255
+											state = 16216
+											state = 17319
+											state = 17909
+										}
+									}
+								}
+							}
+							UKR = {
+								add_state_core = PREV
+							}
+						}
+						every_state = {
+							limit = {
+								OR = {
+									AND = {
+										is_core_of = UKR
+										OR = {
+											is_core_of = GAL
+											is_core_of = HUN
+										}
+									}
+									AND = {
+										is_core_of = MOL
+										NOT = {
+											OR = {
+												is_core_of = TRN
+												is_claimed_by = TRN
+												is_core_of = HUN
+												is_core_of = GAL
+											}
+										}
+									}
+								}
+							}
+							UKR = {
+								remove_state_core = PREV
+								add_state_claim = PREV
+							}
+						}
 						set_cosmetic_tag = UKR_RUS_1914
 						set_politics = {
 							ruling_party = monarchism
@@ -10564,6 +10667,121 @@
 							}
 						}
 					}
+					BLR = {
+						every_state = {
+							limit = {
+								AND = {
+									OR = {
+										is_core_of = BLR
+										is_claimed_by = BLR
+									}
+									NOT = {
+										OR = {
+											is_core_of = LIT
+											is_claimed_by = LIT
+											is_owned_by = POL
+											is_core_of = POL
+											is_core_of = EST
+											is_core_of = LAT
+											state = 13830
+											state = 14153
+										}
+									}
+								}
+							}
+							BLR = {
+								add_state_core = PREV
+							}
+						}
+						every_state = {
+							limit = {
+								AND = {
+									is_core_of = BLR
+									OR = {
+										is_core_of = POL
+										is_core_of = LIT
+										is_core_of = UKR
+									}
+								}
+							}
+							BLR = {
+								remove_state_core = PREV
+								add_state_claim = PREV
+							}
+						}
+						set_cosmetic_tag = BLR_RUS_1914
+						set_politics = {
+							ruling_party = monarchism
+						}
+						set_popularities = {
+							monarchism = 100
+						}
+						set_party_name = {
+							ideology = democratic
+							name = BLR_democratic_1914_party
+							long_name = BLR_democratic_1914_party_long
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = BLR_neutrality_1914_party
+							long_name = BLR_neutrality_1914_party_long
+						}
+						set_party_name = {
+							ideology = authoritarian_monarchism
+							name = BLR_authoritarian_monarchism_1914_party
+							long_name = BLR_authoritarian_monarchism_1914_party_long
+						}
+						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = BLR_stratocratic_monarchism_1914_party
+							long_name = BLR_stratocratic_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Prezident Ivan Mikitavič Sierada"
+							desc = ""
+							picture = "gfx/leaders/BLR/Portrait_Jan_Sierada.dds"
+							expire = "1965.1.1"
+							ideology = conservatism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Prezident Ivan Mikitavič Sierada"
+							desc = ""
+							picture = "gfx/leaders/BLR/Portrait_Jan_Sierada.dds"
+							expire = "1965.1.1"
+							ideology = despotism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Rehiencki Ŭrad Bielaj Rusi"
+							desc = ""
+							picture = "gfx/leaders/BLR/Portrait_Regency.dds"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Oberbefehlshaber Paul Ludwig Hans Anton von Beneckendorff und von Hindenburg"
+							desc = ""
+							picture = "gfx/leaders/GER/Portrait_Paul_Hindenburg.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Car Mikalaj II Romanóvskij"
+							desc = ""
+							picture = "gfx/leaders/Russia/1914_RUS_Nicholas_II.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+							traits = {
+							}
+						}
+					}
 					LV2 = {
 						set_politics = {
 							ruling_party = stratocratic_monarchism
@@ -10624,6 +10842,136 @@
 							conservative_monarchism = 100
 						}
 						transfer_state = 7631
+					}
+					BUL = {
+						every_state = {
+							limit = {
+								AND = {
+									is_core_of = BUL
+									AND = {
+										OR = {
+											is_core_of = TUR
+											is_core_of = GRE
+										}
+										NOT = {
+											is_owned_by = BUL
+										}
+									}
+								}
+							}
+							BUL = {
+								remove_state_core = PREV
+							}
+						}
+						every_state = {
+							limit = {
+								OR = {
+									is_core_of = MAC
+									state = 815
+									state = 816
+									state = 823
+									state = 1234
+									state = 1237
+									state = 1731
+									state = 1732
+									state = 2201
+									state = 3314
+									state = 3614
+									state = 3647
+									state = 3648
+									state = 4039
+									state = 5214
+									state = 5918
+									state = 5920
+									state = 7234
+									state = 7235
+									state = 7236
+									state = 7332
+									state = 7333
+									state = 7334
+									state = 7337
+									state = 7635
+									state = 7636
+									state = 18900
+									state = 18901
+								}
+							}
+							BUL = {
+								add_state_claim = PREV
+							}
+						}
+						set_cosmetic_tag = BUL_1914
+						set_politics = {
+							ruling_party = democratic_monarchism
+						}
+						set_popularities = {
+							democratic_monarchism = 48
+							socialist_monarchy = 10
+							communism = 10
+							conservative_monarchism = 5
+							centrist_monarchism = 21
+							liberal_republic = 4
+							anocratic_republic = 2
+						}
+						set_party_name = {
+							ideology = democratic_monarchism
+							name = BUL_democratic_monarchism_1914_party
+							long_name = BUL_democratic_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Knyaz Ferdinand ot Sakskoburggotski i Gota-Kokhari"
+							desc = ""
+							picture = "gfx/leaders/BUL/Portrait_Ferdinand_I.dds"
+							expire = "1965.1.1"
+							ideology = monsoc
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Tsar Ferdinand ot Sakskoburggotski i Gota-Kokhari"
+							desc = ""
+							picture = "gfx/leaders/BUL/Portrait_Ferdinand_I.dds"
+							expire = "1965.1.1"
+							ideology = liberal_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Tsar Ferdinand ot Sakskoburggotski i Gota-Kokhari"
+							desc = ""
+							picture = "gfx/leaders/BUL/Portrait_Ferdinand_I.dds"
+							expire = "1965.1.1"
+							ideology = cenmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Tsar Ferdinand ot Sakskoburggotski i Gota-Kokhari"
+							desc = ""
+							picture = "gfx/leaders/BUL/Portrait_Ferdinand_I.dds"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Tsar Ferdinand ot Sakskoburggotski i Gota-Kokhari"
+							desc = ""
+							picture = "gfx/leaders/BUL/Portrait_Ferdinand_I.dds"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kral Ferdinand ot Sakskoburggotski i Gota-Kokhari"
+							desc = ""
+							picture = "gfx/leaders/BUL/Portrait_Ferdinand_I.dds"
+							expire = "1965.1.1"
+							ideology = absolutism
+							traits = {
+							}
+						}
 					}
 					SER = {
 						set_cosmetic_tag = SER_1914
@@ -10846,7 +11194,7 @@
 						}
 					}
 					TOG = {
-						set_cosmetic_tag = GREY_GER3
+						set_cosmetic_tag = TOG_GER_1914
 						set_politics = {
 							ruling_party = stratocratic_monarchism
 						}
@@ -10854,9 +11202,51 @@
 							stratocratic_monarchism = 100
 						}
 						set_party_name = {
+							ideology = conservative_monarchism
+							name = TOG_conservative_monarchism_1914_party
+							long_name = TOG_conservative_monarchism_1914_party_long
+						}
+						set_party_name = {
+							ideology = anocratic_monarchism
+							name = TOG_anocratic_monarchism_1914_party
+							long_name = TOG_anocratic_monarchism_1914_party_long
+						}
+						set_party_name = {
+							ideology = authoritarian_monarchism
+							name = TOG_authoritarian_monarchism_1914_party
+							long_name = TOG_authoritarian_monarchism_1914_party_long
+						}
+						set_party_name = {
 							ideology = stratocratic_monarchism
 							name = TOG_stratocratic_monarchism_1914_party
 							long_name = TOG_stratocratic_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Kaiser und Gouverneur Adolf I von Mecklenburg-Schwerin"
+							desc = ""
+							picture = "gfx/leaders/TOG/Portrait_Adolf_Friedrich.dds"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kaiser Adolf I von Mecklenburg-Schwerin"
+							desc = ""
+							picture = "gfx/leaders/TOG/Portrait_Adolf_Friedrich.dds"
+							expire = "1965.1.1"
+							ideology = anocmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Gouverneur Adolf Friedrich Albrecht Heinrich, Herzog zu Mecklenburg-Schwerin"
+							desc = ""
+							picture = "gfx/leaders/TOG/Portrait_Adolf_Friedrich.dds"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
 						}
 						create_country_leader = {
 							name = "Gouverneur Adolf Friedrich Albrecht Heinrich, Herzog zu Mecklenburg-Schwerin"
