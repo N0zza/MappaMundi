@@ -2717,7 +2717,10 @@ unite_1936_yemen = {
 do_1914_septemberprogramm = {
 	every_state = {
 		limit = {
-			is_core_of = POL
+			OR = {
+				is_core_of = POL
+				state = 3491
+			}
 		}
 		POL = {
 			transfer_state = PREV
@@ -2757,31 +2760,12 @@ do_1914_septemberprogramm = {
 				NOT = {
 					OR = {
 						is_core_of = LIT
+						is_owned_by = POL
 						is_core_of = POL
-						is_core_of = PSK
-						is_core_of = LTG
-						is_core_of = MSC
-						AND = {
-							is_core_of = VTB
-							NOT = {
-								state = 17949
-								state = 17963
-								state = 17969
-							}
-						}
-						AND = {
-							is_core_of = SMO
-							NOT = {
-								state = 17299
-							}
-						}
-						state = 1293
-						state = 8034
-						state = 17965
-						state = 17966
-						state = 17971
-						state = 17974
-						state = 17975
+						is_core_of = EST
+						is_core_of = LAT
+						state = 13830
+						state = 14153
 					}
 				}
 			}
@@ -2793,7 +2777,10 @@ do_1914_septemberprogramm = {
 	BLR = {
 		set_cosmetic_tag = BLR_1914
 		set_popularities = {
-			neutrality = 100
+			neutrality = 67
+			democratic = 13
+			authoritarian_monarchism = 17
+			stratocratic_monarchism = 3
 		}
 		set_politics = {
 			ruling_party = neutrality
@@ -2803,39 +2790,54 @@ do_1914_septemberprogramm = {
 		limit = {
 			AND = {
 				OR = {
-					is_core_of = MOL
 					is_core_of = UKR
+					is_core_of = MZY
 					is_claimed_by = UKR
-					state = 14153
+					AND = {
+						is_core_of = PSE
+						NOT = {
+							state = 8039
+							state = 17814
+						}
+					}
+					state = 4836
 				}
 				NOT = {
 					OR = {
-						is_core_of = VRN
 						is_core_of = KC2
 						is_core_of = AUS
 						is_core_of = GAL
 						is_core_of = HUN
-						is_core_of = POL
 						is_core_of = TSC
-						is_core_of = ORO
-						is_core_of = MZY
-						is_core_of = RCT
-						is_claimed_by = RCT
 						AND = {
-							is_core_of = PSE
+							is_core_of = MOL
 							NOT = {
-								state = 3238
-								state = 4023
-								state = 5985
-								state = 7446
-								state = 8053
-								state = 9842
-								state = 17611
-								state = 17612
-								state = 17613
-								state = 18961
+								is_core_of = TRN
+								is_claimed_by = TRN
 							}
 						}
+						AND = {
+							is_core_of = ORO
+							NOT = {
+								state = 1327
+							}
+						}
+						AND = {
+							is_core_of = BOB
+							NOT = {
+								state = 17906
+							}
+						}
+						state = 1328
+						state = 3188
+						state = 3226
+						state = 3778
+						state = 5378
+						state = 5379
+						state = 14255
+						state = 16216
+						state = 17319
+						state = 17909
 					}
 				}
 			}
@@ -2847,10 +2849,30 @@ do_1914_septemberprogramm = {
 	UKR = {
 		set_cosmetic_tag = UKR_1914
 		set_popularities = {
-			stratocratic_monarchism = 100
+			stratocratic_monarchism = 67
+			conservative_monarchism = 7
+			centrist_monarchism = 1
+			democratic_monarchism = 5
+			anocratic_republic = 5
+			socialism_ideology = 8
+			communism = 5
+			vanguardism = 2
 		}
 		set_politics = {
 			ruling_party = stratocratic_monarchism
+		}
+	}
+	every_state = {
+		limit = {
+			AND = {
+				is_core_of = MOL
+				NOT = {
+					is_owned_by = UKR
+				}
+			}
+		}
+		ROM = {
+			transfer_state = PREV
 		}
 	}
 	every_state = {
@@ -2861,20 +2883,21 @@ do_1914_septemberprogramm = {
 					is_core_of = LAT
 				}
 				NOT = {
-					is_core_of = LTG
+					is_core_of = STS
+					AND = {
+						is_core_of = SOV
+						NOT = {
+							state = 13830
+						}
+					}
+					state = 1080
+					state = 2414
+					state = 17843
 				}
 			}
 		}
 		LIV = {
 			transfer_state = PREV
-		}
-	}
-	every_state = {
-		limit = {
-			is_core_of = LTG
-		}
-		LIV = {
-			add_state_claim = PREV
 		}
 	}
 	LIV = {
@@ -2912,10 +2935,11 @@ do_1914_septemberprogramm = {
 				is_core_of = BL2
 				is_core_of = FRA
 				NOT = {
-					is_core_of = PIC
-					is_core_of = ART
-					state = 2091
-					state = 16622
+					state = 4496
+					state = 11912
+					state = 16618
+					state = 16621
+					state = 16748
 				}
 			}
 		}
@@ -2930,6 +2954,86 @@ do_1914_septemberprogramm = {
 		}
 		set_politics = {
 			ruling_party = conservative_monarchism
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = KSR
+				state = 2358
+				state = 7046
+				state = 7047
+				state = 7049
+				state = 7050
+				state = 12322
+				state = 12323
+				state = 12324
+				state = 12326
+				state = 12327
+				state = 12846
+			}
+		}
+		TUR = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				AND = {
+					is_core_of = AZR
+					NOT = {
+						is_core_of = KSR
+					}
+				}
+				AND = {
+					OR = {
+						is_core_of = ARM
+					}
+					NOT = {
+						is_owned_by = TUR
+						is_core_of = GEO
+					}
+				}
+				state = 10138
+				state = 13439
+			}
+		}
+		AZR = {
+			transfer_state = PREV
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+				AND = {
+					is_core_of = GEO
+					NOT = {
+						OR = {
+							is_owned_by = TUR
+							is_owned_by = AZR
+						}
+					}
+				}
+				state = 1283
+				state = 7018
+				state = 7019
+			}
+		}
+		GEO = {
+			transfer_state = PREV
+		}
+	}
+	GEO = {
+		drop_cosmetic_tag = yes
+		set_politics = {
+			ruling_party = socialism_ideology
+		}
+	}
+	AZR = {
+		set_cosmetic_tag = AZR_1914
+		set_politics = {
+			ruling_party = centrist_republic
 		}
 	}
 }

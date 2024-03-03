@@ -8287,15 +8287,25 @@
 				}
 				every_state = {
 					limit = {
-						OR = {
-							is_core_of = BUK
-							is_claimed_by = BUK
+						AND = {
+							OR = {
+								is_core_of = BUK
+								is_claimed_by = BUK
+								is_core_of = HSR
+								is_core_of = KLB
+								is_core_of = DVZ
+								is_core_of = ROS
+								is_core_of = SHN
+							}
+							NOT = {
+								is_core_of = AFG
+							}
 						}
 					}
 					BUK = {
 						transfer_state = PREV
-						}
 					}
+				}
 				every_state = {
 					limit = {
 						OR = {
@@ -8424,6 +8434,18 @@
 				set_cosmetic_tag = RUS_GREEN
 				set_politics = {
 					ruling_party = neutrality
+				}
+				set_popularities = {
+					neutrality = 100
+				}
+				create_country_leader = {
+					name = "Amban Noyan Oyun Ölzey-Ochur oglu Kombu-Dorzhu"
+					desc = ""
+					picture = "gfx/leaders/To_be_added.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+					}
 				}
 			}
 			TIB = {
@@ -8912,12 +8934,26 @@
 			}
 			KEN = {
 				set_cosmetic_tag = KEN_1914
+				set_party_name = {
+					ideology = stratocratic_monarchism
+					name = KEN_stratocratic_monarchism_1914_party
+					long_name = KEN_stratocratic_monarchism_1914_party_long
+				}
 				create_country_leader = {
 					name = "Governor Sir Henry Conway Belfield"
 					desc = ""
 					picture = "gfx/leaders/KEN/Portrait_Henry_Belfield.dds"
 					expire = "1965.1.1"
 					ideology = authmon
+					traits = {
+					}
+				}
+				create_country_leader = {
+					name = "Gouverneur Albert Hermann Heinrich Schnee"
+					desc = ""
+					picture = "gfx/leaders/TZN/Portrait_Heinrich_Schnee.dds"
+					expire = "1965.1.1"
+					ideology = stratmon
 					traits = {
 					}
 				}
@@ -9392,6 +9428,15 @@
 							picture = "gfx/leaders/IRE/Portrait_James_Larkin.dds"
 							expire = "1965.1.1"
 							ideology = demsoc
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Príomh Aire Éamon de Valera "
+							desc = ""
+							picture = "gfx/leaders/IRE/Portrait_Eamon_De_Valera_1914.dds"
+							expire = "1965.1.1"
+							ideology = cenrep
 							traits = {
 							}
 						}
@@ -9930,6 +9975,8 @@
 						}
 					}
 					BOS = {
+						transfer_state = 2289
+						transfer_state = 7343
 						set_politics = {
 							ruling_party = authoritarian_monarchism
 						}
@@ -10120,6 +10167,11 @@
 							long_name = POL_anocratic_monarchism_1914_party_long
 						}
 						set_party_name = {
+							ideology = authoritarian_monarchism
+							name = POL_authoritarian_monarchism_1914_party
+							long_name = POL_authoritarian_monarchism_1914_party_long
+						}
+						set_party_name = {
 							ideology = stratocratic_monarchism
 							name = POL_stratocratic_monarchism_1914_party
 							long_name = POL_stratocratic_monarchism_1914_party_long
@@ -10135,6 +10187,15 @@
 							picture = "gfx/leaders/POL/Portrait_Regency_Council.dds"
 							expire = "1965.1.1"
 							ideology = anocmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Rada Regencyjna"
+							desc = ""
+							picture = "gfx/leaders/POL/Portrait_Regency_Council.dds"
+							expire = "1965.1.1"
+							ideology = authmon
 							traits = {
 							}
 						}
@@ -10167,6 +10228,7 @@
 							}
 							LIT = {
 								remove_state_core = PREV
+								add_state_claim = PREV
 							}
 						}
 						every_state = {
@@ -10177,23 +10239,49 @@
 											AND = {
 												is_core_of = BIY
 												NOT = {
-													is_core_of = MSV
+													OR = {
+														is_core_of = MSV
+														state = 5542
+													}
 												}
 											}
-											is_core_of = AUK
-											is_core_of = CLI
+											AND = {
+												is_core_of = AUK
+												NOT = {
+													state = 6003
+													state = 17790
+													state = 17800
+													state = 17801
+												}
+											}
+											AND = {
+												is_core_of = CLI
+												NOT = {
+													is_core_of = BLR
+												}
+											}
 										}
 										NOT = {
-											is_core_of = LIT
+											OR = {
+												is_core_of = LIT
+												state = 4075
+												state = 6008
+												state = 17801
+											}
 										}
 									}
 									AND = {
 										is_core_of = NOW
 										NOT = {
 											state = 95
+											state = 1763
 											state = 3239
 											state = 4841
+											state = 5562
 											state = 5563
+											state = 5990
+											state = 17805
+											state = 17863
 											state = 18966
 											state = 18970
 											state = 18971
@@ -10201,14 +10289,7 @@
 										}
 									}
 									state = 2136
-									state = 2382
-									state = 3491
-									state = 5502
-									state = 5503
-									state = 5984
-									state = 6008
 									state = 8039
-									state = 8044
 									state = 8052
 								}
 							}
@@ -10294,7 +10375,13 @@
 						}
 					}
 					BLR = {
-						set_cosmetic_tag = BLR_1914
+						set_cosmetic_tag = BLR_RUS_1914
+						set_politics = {
+							ruling_party = monarchism
+						}
+						set_popularities = {
+							monarchism = 100
+						}
 						set_party_name = {
 							ideology = democratic
 							name = BLR_democratic_1914_party
@@ -10351,9 +10438,131 @@
 							traits = {
 							}
 						}
+						create_country_leader = {
+							name = "Car Mikalaj II Romanóvskij"
+							desc = ""
+							picture = "gfx/leaders/Russia/1914_RUS_Nicholas_II.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+							traits = {
+							}
+						}
 					}
 					UKR = {
-						set_cosmetic_tag = UKR_1914
+						set_cosmetic_tag = UKR_RUS_1914
+						set_politics = {
+							ruling_party = monarchism
+						}
+						set_popularities = {
+							monarchism = 100
+						}
+						set_party_name = {
+							ideology = vanguardism
+							name = UKR_vanguardism_1914_party
+							long_name = UKR_vanguardism_1914_party_long
+						}
+						set_party_name = {
+							ideology = communism
+							name = UKR_communism_1914_party
+							long_name = UKR_communism_1914_party_long
+						}
+						set_party_name = {
+							ideology = democratic_monarchism
+							name = UKR_democratic_monarchism_1914_party
+							long_name = UKR_democratic_monarchism_1914_party_long
+						}
+						set_party_name = {
+							ideology = centrist_republic
+							name = UKR_centrist_republic_1914_party
+							long_name = UKR_centrist_republic_1914_party_long
+						}
+						set_party_name = {
+							ideology = conservative_monarchism
+							name = UKR_conservative_monarchism_1914_party
+							long_name = UKR_conservative_monarchism_1914_party_long
+						}
+						set_party_name = {
+							ideology = anocratic_republic
+							name = UKR_anocratic_republic_1914_party
+							long_name = UKR_anocratic_republic_1914_party_long
+						}
+						set_party_name = {
+							ideology = anocratic_monarchism
+							name = UKR_anocratic_monarchism_1914_party
+							long_name = UKR_anocratic_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Prezydent Mykhailo Serhiiovych Hrushevskyi"
+							desc = ""
+							picture = "gfx/leaders/UKR/Portrait_Mykhailo_Hrushevsky.dds"
+							expire = "1965.1.1"
+							ideology = marxism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Holova Volodymyr Kyrylovych Vynnychenko"
+							desc = ""
+							picture = "gfx/leaders/UKR/Portrait_Volodymyr_Vynnychenko.dds"
+							expire = "1965.1.1"
+							ideology = demsoc
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Holova Volodymyr Musiiovych Chekhivskyi"
+							desc = ""
+							picture = "gfx/leaders/UKR/Portrait_Volodymyr_Chekhivskyi.dds"
+							expire = "1965.1.1"
+							ideology = cenrep
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Hét'man Pavló Petróvych Skoropáds'kyy"
+							desc = ""
+							picture = "gfx/leaders/UKR/UKR_Skoropadskyi.tga"
+							expire = "1965.1.1"
+							ideology = liberal_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Hét'man Pavló Petróvych Skoropáds'kyy"
+							desc = ""
+							picture = "gfx/leaders/UKR/UKR_Skoropadskyi.tga"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Holova Symon Vasylyovych Petliura"
+							desc = ""
+							picture = "gfx/leaders/UKR/Portrait_Symon_Petliura.dds"
+							expire = "1965.1.1"
+							ideology = anocrep
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Oberbefehlshaber Paul Ludwig Hans Anton von Beneckendorff und von Hindenburg"
+							desc = ""
+							picture = "gfx/leaders/GER/Portrait_Paul_Hindenburg.dds"
+							expire = "1965.1.1"
+							ideology = anocmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Tsar Mykola II Romanov"
+							desc = ""
+							picture = "gfx/leaders/Russia/1914_RUS_Nicholas_II.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+							traits = {
+							}
+						}
 					}
 					LV2 = {
 						set_politics = {
@@ -10376,6 +10585,7 @@
 					TUR = {
 						transfer_state = 2333
 						transfer_state = 3356
+						transfer_state = 4383
 						transfer_state = 9395
 						transfer_state = 9871
 						transfer_state = 12780
@@ -10413,6 +10623,7 @@
 						set_popularities = {
 							conservative_monarchism = 100
 						}
+						transfer_state = 7631
 					}
 					SER = {
 						set_cosmetic_tag = SER_1914
@@ -10574,7 +10785,7 @@
 						}
 					}
 					NMB = {
-						set_cosmetic_tag = GREY_GER3
+						set_cosmetic_tag = NMB_GER_1914
 						set_politics = {
 							ruling_party = stratocratic_monarchism
 						}
@@ -10585,6 +10796,11 @@
 							ideology = stratocratic_monarchism
 							name = NMB_stratocratic_monarchism_1914_party
 							long_name = NMB_stratocratic_monarchism_1914_party_long
+						}
+						set_party_name = {
+							ideology = authoritarian_monarchism
+							name = NMB_authoritarian_monarchism_1914_party
+							long_name = NMB_authoritarian_monarchism_1914_party_long
 						}
 						create_country_leader = {
 							name = "Gouverneur Hermann Wilhelm Göring"
@@ -13023,6 +13239,25 @@
 							liberal_republic = 60
 							democratic = 39
 							anocratic_republic = 1
+						}
+						set_party_name = {
+							ideology = anocratic_republic
+							name = USA_anocratic_republic_1950_party
+							long_name = USA_anocratic_republic_1950_party_long
+						}
+						create_country_leader = {
+							name = "President James Strom Thurmond Sr."
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Thurmond.tga"
+							expire = "1965.1.1"
+							ideology = anocrep
+						}
+						create_country_leader = {
+							name = "President Thomas Edmund Dewey"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Dewey.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
 						}
 						create_country_leader = {
 							name = "President Harry S. Truman"

@@ -1874,6 +1874,44 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = UKR
+				OR = {
+					has_government = socialism_ideology
+					has_government = anocratic_republic
+				}
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Holova Rady Narodnykh Ministriv Volodymyr Musiiovych Chekhivskyi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = UKR
+				OR = {
+					has_government = democratic_monarchism
+				}
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Prem'yér-minístr Volodymyr Musiiovych Chekhivskyi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = UKR
+				has_government = stratocratic_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Prem'yér-minístr Mykola Prokopovych Vasylenko"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = UKR
 				has_government = democratic
 				has_start_date > 1992.01.01
 				has_start_date < 2000.01.01
@@ -5935,6 +5973,32 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Panas_Lyubchenko"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = UKR
+				OR = {
+					has_government = socialism_ideology
+					has_government = democratic_monarchism
+					has_government = anocratic_republic
+				}
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Volodymyr_Chekhivskyi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = UKR
+				has_government = stratocratic_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Mykola_Vasylenko"
 	}
 	text = {
 		trigger = {
