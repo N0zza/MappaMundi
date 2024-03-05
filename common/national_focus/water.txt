@@ -9983,14 +9983,39 @@
 							name = CRO_conservative_monarchism_1914_party
 							long_name = CRO_conservative_monarchism_1914_party_long
 						}
-					}
-					CRO = {
 						create_country_leader = {
 							name = "Kralj Franjo Josip Habsburški"
 							desc = ""
 							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
 							expire = "1965.1.1"
 							ideology = conservative_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kralj Franjo Josip Habsburški"
+							desc = ""
+							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+							expire = "1965.1.1"
+							ideology = anocmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kralj Franjo Josip Habsburški"
+							desc = ""
+							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kralj Franjo Josip Habsburški"
+							desc = ""
+							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
 							traits = {
 							}
 						}
@@ -10008,6 +10033,11 @@
 							authoritarian_monarchism = 67
 						}
 						set_party_name = {
+							ideology = centrist_monarchism
+							name = BOS_centrist_monarchism_1914_party
+							long_name = BOS_centrist_monarchism_1914_party_long
+						}
+						set_party_name = {
 							ideology = authoritarian_monarchism
 							name = BOS_authoritarian_monarchism_1914_party
 							long_name = BOS_authoritarian_monarchism_1914_party_long
@@ -10016,6 +10046,15 @@
 							ideology = stratocratic_monarchism
 							name = BOS_stratocratic_monarchism_1914_party
 							long_name = BOS_stratocratic_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Kralj Karlo I od Habsburg-Lothringena"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_Karl_Habsburg_2_1914.dds"
+							expire = "1989.1.1"
+							ideology = cenmon
+							traits = {
+							}
 						}
 						create_country_leader = {
 							name = "Kralj Karlo I od Habsburg-Lothringena"
@@ -10545,6 +10584,10 @@
 											}
 										}
 									}
+									state = 3226
+									state = 3778
+									state = 5379
+									state = 16216
 								}
 							}
 							UKR = {
@@ -10846,15 +10889,17 @@
 					BUL = {
 						every_state = {
 							limit = {
-								AND = {
-									is_core_of = BUL
+								OR = {
 									AND = {
-										OR = {
-											is_core_of = TUR
-											is_core_of = GRE
-										}
-										NOT = {
-											is_owned_by = BUL
+										is_core_of = BUL
+										AND = {
+											OR = {
+												is_core_of = TUR
+												is_core_of = GRE
+											}
+											NOT = {
+												is_owned_by = BUL
+											}
 										}
 									}
 								}
@@ -10865,12 +10910,27 @@
 						}
 						every_state = {
 							limit = {
+								AND = {
+									is_claimed_by = BUL
+									is_core_of = GRE
+									NOT = {
+										is_core_of = BUL
+									}
+								}
+							}
+							BUL = {
+								remove_state_claim = PREV
+							}
+						}
+						every_state = {
+							limit = {
 								OR = {
 									is_core_of = MAC
 									state = 815
 									state = 816
 									state = 823
 									state = 1234
+									state = 1238
 									state = 1237
 									state = 1731
 									state = 1732
@@ -10886,6 +10946,7 @@
 									state = 7234
 									state = 7235
 									state = 7236
+									state = 7237
 									state = 7332
 									state = 7333
 									state = 7334
@@ -10981,6 +11042,16 @@
 						set_popularities = {
 							conservative_monarchism = 100
 						}
+						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = SER_stratocratic_monarchism_1914_party
+							long_name = SER_stratocratic_monarchism_1914_party_long
+						}
+						set_party_name = {
+							ideology = monarchism
+							name = SER_monarchism_1914_party
+							long_name = SER_monarchism_1914_party_long
+						}
 						create_country_leader = {
 							name = "Kralj Petar I Karadordevica"
 							desc = ""
@@ -11014,6 +11085,24 @@
 							picture = "gfx/leaders/SER/Portrait_Peter_I.dds"
 							expire = "1965.1.1"
 							ideology = authmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kralj Johann I Salis-Seewis"
+							desc = ""
+							picture = "gfx/leaders/SER/Portrait_Salis_Seewis.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Militärgouverneur in Serbien Johann Ulrich Graf von Salis-Seewis"
+							desc = ""
+							picture = "gfx/leaders/SER/Portrait_Salis_Seewis.dds"
+							expire = "1965.1.1"
+							ideology = absolutism
 							traits = {
 							}
 						}
