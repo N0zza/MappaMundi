@@ -808,12 +808,40 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = HUN
-				has_government = democratic_monarchism
+				OR = {
+					has_government = centrist_monarchism
+					has_government = democratic_monarchism
+				}
 				has_start_date < 1915.01.01
 				has_start_date > 1913.01.01
 			}
 		}
 		localization_key = "Miniszterelnök Borosjenői és szegedi gróf Tisza István Imre Lajos Pál"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HUN
+				has_government = socialist_monarchy
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Miniszterelnök Borosjenői és gróf nagykárolyi Károlyi Mihály Ádám György Miklós"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HUN
+				OR = {
+					has_government = vanguardism
+					has_government = communism
+				}
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Külügyi népbiztos Béla Kun"
 	}
 	text = {
 		trigger = {
@@ -4911,12 +4939,40 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = HUN
-				has_government = democratic_monarchism
+				OR = {
+					has_government = centrist_monarchism
+					has_government = democratic_monarchism
+				}
 				has_start_date < 1915.01.01
 				has_start_date > 1913.01.01
 			}
 		}
 		localization_key = "GFX_Istvan_Tisza"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HUN
+				has_government = socialist_monarchy
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Mihaly_Karolyi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HUN
+				OR = {
+					has_government = vanguardism
+					has_government = communism
+				}
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Bela_Kun"
 	}
 	text = {
 		trigger = {

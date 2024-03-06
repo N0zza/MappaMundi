@@ -9880,6 +9880,15 @@
 							}
 						}
 						create_country_leader = {
+							name = "Kaiser des Großdeutschen Volkes Wilhelm II von Hohenzollern "
+							desc = ""
+							picture = "gfx/leaders/GER/1914_GER_Wilhelm_II.tga"
+							expire = "1965.1.1"
+							ideology = fascism_ideology
+							traits = {
+							}
+						}
+						create_country_leader = {
 							name = "Imperator Romanorum Wilhelmus I de Hohenzollern"
 							desc = ""
 							picture = "gfx/leaders/GER/1914_GER_Wilhelm_II.tga"
@@ -9993,9 +10002,65 @@
 							conservative_monarchism = 26
 						}
 						set_party_name = {
+							ideology = vanguardism
+							name = HUN_vanguardism_1914_party
+							long_name = HUN_vanguardism_1914_party_long
+						}
+						set_party_name = {
+							ideology = communism
+							name = HUN_communism_1914_party
+							long_name = HUN_communism_1914_party_long
+						}
+						set_party_name = {
+							ideology = socialism_ideology
+							name = HUN_socialism_ideology_1914_party
+							long_name = HUN_socialism_ideology_1914_party_long
+						}
+						set_party_name = {
 							ideology = democratic_monarchism
 							name = HUN_democratic_monarchism_1914_party
 							long_name = HUN_democratic_monarchism_1914_party_long
+						}
+						set_party_name = {
+							ideology = authoritarian_monarchism
+							name = HUN_authoritarian_monarchism_1914_party
+							long_name = HUN_authoritarian_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "A Központi Végrehajtó Tanács elnöke Sándor Garbai"
+							desc = ""
+							picture = "gfx/leaders/HUN/Portrait_Sandor_Garbai.dds"
+							expire = "1965.1.1"
+							ideology = totsoc
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "A Központi Végrehajtó Tanács elnöke Sándor Garbai"
+							desc = ""
+							picture = "gfx/leaders/HUN/Portrait_Sandor_Garbai.dds"
+							expire = "1965.1.1"
+							ideology = marxism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Elnök Gróf Nagykárolyi Károlyi Mihály Ádám György Miklós "
+							desc = ""
+							picture = "gfx/leaders/HUN/Portrait_Mihaly_Karolyi.dds"
+							expire = "1965.1.1"
+							ideology = demsoc
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Király Habsburg–Lotaringiai Károly IV"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_Karl_Habsburg_2_1914.dds"
+							expire = "1965.1.1"
+							ideology = monsoc
+							traits = {
+							}
 						}
 						create_country_leader = {
 							name = "Király Habsburg–Lotaringiai Ferenc József"
@@ -10021,6 +10086,24 @@
 							picture = "gfx/leaders/AUS/Portrait_Karl_Habsburg_2_1914.dds"
 							expire = "1965.1.1"
 							ideology = conservative_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Király Habsburg–Lotaringiai Ferenc József"
+							desc = ""
+							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kormányzó Vitéz Nagybányai Horthy Miklós "
+							desc = ""
+							picture = "gfx/leaders/AHN/Portrait_Admiral_Horthy.dds"
+							expire = "1965.1.1"
+							ideology = fascism_ideology
 							traits = {
 							}
 						}
@@ -11030,9 +11113,6 @@
 									is_claimed_by = BUL
 									NOT = {
 										is_core_of = BUL
-										state = 1476
-										state = 2198
-										state = 7239
 									}
 								}
 							}
@@ -11074,6 +11154,7 @@
 									state = 7337
 									state = 7635
 									state = 7636
+									state = 14440
 									state = 18900
 									state = 18901
 								}
