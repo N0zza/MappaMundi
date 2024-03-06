@@ -7596,6 +7596,21 @@
 					name = ITA_anocratic_monarchism_1914_party
 					long_name = ITA_anocratic_monarchism_1914_party_long
 				}
+				set_party_name = {
+					ideology = authoritarian_monarchism
+					name = ITA_authoritarian_monarchism_1914_party
+					long_name = ITA_authoritarian_monarchism_1914_party_long
+				}
+				set_party_name = {
+					ideology = republican_fascism
+					name = ITA_republican_fascism_1914_party
+					long_name = ITA_republican_fascism_1914_party_long
+				}
+				set_party_name = {
+					ideology = fascism
+					name = ITA_fascism_1914_party
+					long_name = ITA_fascism_1914_party_long
+				}
 				set_popularities = {
 					socialist_monarchy = 16
 					democratic_monarchism = 22
@@ -7609,6 +7624,33 @@
 					picture = "gfx/leaders/ITA/1914_ITA_Victor_Emmannuel_III.tga"
 					expire = "1965.1.1"
 					ideology = anocmon
+					traits = {
+					}
+				}
+				create_country_leader = {
+					name = "Congresso di Roma e Stato italiano"
+					desc = ""
+					picture = "gfx/leaders/ITA/Portrait_Congress_Rome.dds"
+					expire = "1965.1.1"
+					ideology = authmon
+					traits = {
+					}
+				}
+				create_country_leader = {
+					name = "Comandante Gabriele D'Annunzio, Prince of Montenevoso"
+					desc = ""
+					picture = "gfx/leaders/ITA/Portrait_Gabriele_Annunzio.dds"
+					expire = "1965.1.1"
+					ideology = repfash
+					traits = {
+					}
+				}
+				create_country_leader = {
+					name = "Re Vittorio Emanuele III di Savoia"
+					desc = ""
+					picture = "gfx/leaders/ITA/1914_ITA_Victor_Emmannuel_III.tga"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
 					traits = {
 					}
 				}
@@ -9737,6 +9779,21 @@
 							long_name = GER_stratocratic_monarchism_1914_party_long
 						}
 						set_party_name = {
+							ideology = republican_fascism
+							name = GER_republican_fascism_1914_party
+							long_name = GER_republican_fascism_1914_party_long
+						}
+						set_party_name = {
+							ideology = fascism
+							name = GER_fascism_1914_party
+							long_name = GER_fascism_1914_party_long
+						}
+						set_party_name = {
+							ideology = national_socialism
+							name = GER_national_socialism_1914_party
+							long_name = GER_national_socialism_1914_party_long
+						}
+						set_party_name = {
 							ideology = theocratic
 							name = GER_theocratic_1914_party
 							long_name = GER_theocratic_1914_party_long
@@ -10047,6 +10104,11 @@
 							name = BOS_stratocratic_monarchism_1914_party
 							long_name = BOS_stratocratic_monarchism_1914_party_long
 						}
+						set_party_name = {
+							ideology = monarchism
+							name = BOS_monarchism_1914_party
+							long_name = BOS_monarchism_1914_party_long
+						}
 						create_country_leader = {
 							name = "Kralj Karlo I od Habsburg-Lothringena"
 							desc = ""
@@ -10080,6 +10142,15 @@
 							picture = "gfx/leaders/BOS/BOS_Lovcen_stratmon.tga"
 							expire = "1989.1.1"
 							ideology = authmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kralj Franjo Josip od Habsburg-Lothringena"
+							desc = ""
+							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+							expire = "1989.1.1"
+							ideology = absolutism
 							traits = {
 							}
 						}
@@ -10871,7 +10942,52 @@
 							desc = ""
 							picture = "gfx/leaders/TUR/1914_TUR_Mehmed_V.tga"
 							expire = "1965.1.1"
+							ideology = monsoc
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Padişah Meḥmed-i V Reşâd"
+							desc = ""
+							picture = "gfx/leaders/TUR/1914_TUR_Mehmed_V.tga"
+							expire = "1965.1.1"
+							ideology = liberal_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Padişah Meḥmed-i V Reşâd"
+							desc = ""
+							picture = "gfx/leaders/TUR/1914_TUR_Mehmed_V.tga"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Padişah Meḥmed-i V Reşâd"
+							desc = ""
+							picture = "gfx/leaders/TUR/1914_TUR_Mehmed_V.tga"
+							expire = "1965.1.1"
+							ideology = anocratic_monarchism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Padişah Meḥmed-i V Reşâd"
+							desc = ""
+							picture = "gfx/leaders/TUR/1914_TUR_Mehmed_V.tga"
+							expire = "1965.1.1"
 							ideology = authmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Padişah Meḥmed-i V Reşâd"
+							desc = ""
+							picture = "gfx/leaders/TUR/1914_TUR_Mehmed_V.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
 							traits = {
 							}
 						}
@@ -10912,9 +11028,11 @@
 							limit = {
 								AND = {
 									is_claimed_by = BUL
-									is_core_of = GRE
 									NOT = {
 										is_core_of = BUL
+										state = 1476
+										state = 2198
+										state = 7239
 									}
 								}
 							}
@@ -10935,12 +11053,15 @@
 									state = 1731
 									state = 1732
 									state = 2201
+									state = 2202
+									state = 2203
 									state = 3314
 									state = 3614
 									state = 3647
 									state = 3648
 									state = 4039
 									state = 5214
+									state = 5911
 									state = 5918
 									state = 5920
 									state = 7234
@@ -18660,9 +18781,10 @@
 					every_state = {
 						limit = {
 							is_core_of = SER
-								NOT = {
-									is_core_of = KOS
-									is_core_of = MAC
+							NOT = {
+								is_core_of = KOS
+								is_core_of = MAC
+								state = 8437
 							}
 						}
 						SER = {
