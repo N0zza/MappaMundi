@@ -2994,7 +2994,10 @@ do_extended_1914_septemberprogramm = {
 	}
 	every_state = {
 		limit = {
-			is_claimed_by = BUL
+			OR = {
+				is_claimed_by = BUL
+				is_core_of = BUL
+			}
 		}
 		BUL = {
 			transfer_state = PREV
@@ -3006,6 +3009,7 @@ do_extended_1914_septemberprogramm = {
 		}
 	}
 	SER = {
+		set_cosmetic_tag = SER_AUS_1914
 		set_politics = {
 			ruling_party = stratocratic_monarchism
 		}

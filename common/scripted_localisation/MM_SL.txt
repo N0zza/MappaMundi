@@ -451,9 +451,22 @@ defined_text = {
 			AND = {
 				tag = ITA
 				has_government = fascism
+				has_start_date < 1940.01.01
+				has_start_date > 1915.01.01
 			}
 		}
 		localization_key = "Capo del Governo, Primo Ministro Segretario di Stato Benito Amilcare Andrea Mussolini"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
+				has_government = fascism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Presidente del Consiglio Gabriele D'Annunzio, Prince of Montenevoso"
 	}
 	text = {
 		trigger = {
@@ -4601,9 +4614,22 @@ defined_text = {
 			AND = {
 				tag = ITA
 				has_government = fascism
+				has_start_date < 1940.01.01
+				has_start_date > 1915.01.01
 			}
 		}
 		localization_key = "GFX_Benito_Mussolini"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
+				has_government = fascism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Gabriele_Annunzio"
 	}
 	text = {
 		trigger = {
