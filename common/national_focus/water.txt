@@ -7619,7 +7619,7 @@
 					anocratic_monarchism = 53
 				}
 				create_country_leader = {
-					name = "Re Vittorio Emanuele III di Savoia"
+					name = "Re Vittorio Emanuele III di Savoia "
 					desc = ""
 					picture = "gfx/leaders/ITA/1914_ITA_Victor_Emmannuel_III.tga"
 					expire = "1965.1.1"
@@ -7646,7 +7646,7 @@
 					}
 				}
 				create_country_leader = {
-					name = "Re Vittorio Emanuele III di Savoia"
+					name = "Re Vittorio Emanuele III di Savoia "
 					desc = ""
 					picture = "gfx/leaders/ITA/1914_ITA_Victor_Emmannuel_III.tga"
 					expire = "1965.1.1"
@@ -11005,6 +11005,142 @@
 							name = "Oberbefehlshaber Paul Ludwig Hans Anton von Beneckendorff und von Hindenburg"
 							desc = ""
 							picture = "gfx/leaders/GER/Portrait_Paul_Hindenburg.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
+							traits = {
+							}
+						}
+					}
+					OFR = {
+						every_state = {
+							limit = {
+								is_core_of = OFR
+							}
+							OFR = {
+								remove_state_core = PREV
+							}
+						}
+						every_state = {
+							limit = {
+								OR = {
+									AND = {
+										is_core_of = PIC
+										NOT = {
+											AND = {
+												is_core_of = BL2
+												NOT = {
+													state = 1747
+													state = 2091
+													state = 16620
+													state = 16621
+													state = 16622
+													state = 16624
+												}
+											}
+											state = 834
+											state = 8423
+											state = 5570
+											state = 11910
+											state = 16637
+										}
+									}
+									is_core_of = RTH
+									state = 985
+									state = 1357
+									state = 3509
+									state = 4032
+									state = 4034
+									state = 4145
+									state = 4146
+									state = 4147
+									state = 5588
+									state = 16623
+									state = 16627
+								}
+							}
+							OFR = {
+								add_state_core = PREV
+							}
+						}
+						set_cosmetic_tag = GREY_GER3
+						set_politics = {
+							ruling_party = monarchism
+						}
+						set_popularities = {
+							monarchism = 100
+						}
+					}
+					BEL = {
+						every_state = {
+							limit = {
+								AND = {
+									is_core_of = BEL
+									OR = {
+										is_core_of = GER
+										is_core_of = MRN
+									}
+								}
+							}
+							BEL = {
+								remove_state_core = PREV
+								add_state_claim = PREV
+							}
+						}
+						set_cosmetic_tag = BEL_1914
+						create_country_leader = {
+							name = "Geschäftsführender Generalgouverneur Moritz Ferdinand Freiherr von Bissing"
+							desc = ""
+							picture = "gfx/leaders/BL2/Portrait_Moritz_Bissing.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
+							traits = {
+							}
+						}
+					}
+					BL2 = {
+						every_state = {
+							limit = {
+								AND = {
+									is_core_of = BL2
+									NOT = {
+										AND = {
+											is_core_of = BL2
+											NOT = {
+												is_core_of = FRA
+												state = 3195
+												state = 5390
+											}
+										}
+									}
+								}
+							}
+							BL2 = {
+								remove_state_core = PREV
+								add_state_claim = PREV
+							}
+						}
+						every_state = {
+							limit = {
+								AND = {
+									is_core_of = FRA
+									is_claimed_by = BL2
+								}
+							}
+							BL2 = {
+								remove_state_claim = PREV
+							}
+						}
+						set_cosmetic_tag = BL2_1914
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+						}
+						set_popularities = {
+							stratocratic_monarchism = 100
+						}
+						create_country_leader = {
+							name = "Generalgouverneur Moritz Ferdinand Freiherr von Bissing"
+							desc = ""
+							picture = "gfx/leaders/BL2/Portrait_Moritz_Bissing.dds"
 							expire = "1965.1.1"
 							ideology = stratmon
 							traits = {
@@ -28930,22 +29066,6 @@
 							picture = "gfx/leaders/FRA/FRA_Louis_XX.tga"
 							expire = "1965.1.1"
 							ideology = absolutism
-						}
-					}
-					every_state = {
-						limit = {
-							OR = {
-								NOT = {
-									is_owned_by = WTR
-									is_owned_by = WES
-									is_owned_by = VCT
-									is_owned_by = OML
-									is_owned_by = PAL
-								}
-							}
-						}
-						ERH = {
-							add_state_core = PREV
 						}
 					}
 					USA = {
