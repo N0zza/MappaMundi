@@ -383,7 +383,15 @@ do_all_renames = {
 							has_government = monarchism
 						}
 					}
-					tag = DN2
+					AND = {
+						tag = DN2
+						OR = {
+							has_government = stratocratic
+							has_government = republican_fascism
+							has_government = national_socialism
+							has_government = theocratic
+						}
+					}
 					tag = NR2
 					tag = GGM
 					tag = SGM
@@ -392,8 +400,11 @@ do_all_renames = {
 					AND = {
 						tag = MC2
 						NOT = {
-							has_government = fascism
+							has_government = vanguardism
+							has_government = communism
+							has_government = socialism_ideology
 							has_government = democratic
+							has_government = fascism
 						}
 					}
 					AND = {
@@ -1293,7 +1304,8 @@ do_all_renames = {
 			ROOT = {
 				OR = {
 					tag = DEN
-					DN2 = {
+					AND = {
+						tag = DN2
 						NOT = {
 							OR = {
 								has_government = stratocratic

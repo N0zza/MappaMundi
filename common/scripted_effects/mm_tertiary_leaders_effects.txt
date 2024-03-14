@@ -487,6 +487,22 @@ tertiary_leader_enabled_effect = {
 		}
 		set_country_flag = has_tertiary_leader
 	}
+	else_if = {
+		limit = {
+			AND = {
+				OR = {
+					tag = DN2
+					tag = NR2
+				}
+				OR = {
+					AND = {
+						has_government = anocratic_monarchism
+					}
+				}
+			}
+		}
+		set_country_flag = has_tertiary_leader
+	}
 	else = {
 		clr_country_flag = has_tertiary_leader
 	}

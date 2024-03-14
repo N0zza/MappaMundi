@@ -1741,6 +1741,22 @@ secondary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
+				OR = {
+					tag = DN2
+					tag = NR2
+				}
+				OR = {
+					AND = {
+						has_government = anocratic_monarchism
+					}
+				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
 				tag = SWE
 				OR = {
 					AND = {

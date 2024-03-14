@@ -2292,11 +2292,17 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			AND = {
-				tag = NOR
-				has_government = democratic_monarchism
-				has_start_date < 1937.01.01
-				has_start_date > 1935.01.01
+			OR = {
+				AND = {
+					tag = NOR
+					has_government = democratic_monarchism
+					has_start_date < 1937.01.01
+					has_start_date > 1935.01.01
+				}
+				AND = {
+					tag = NR2
+					has_government = anocratic_monarchism
+				}
 			}
 		}
 		localization_key = "Statsminister Johan Nygaardsvold"
@@ -2342,9 +2348,15 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			AND = {
-				tag = DEN
-				has_government = socialist_monarchy
+			OR = {
+				AND = {
+					tag = DEN
+					has_government = socialist_monarchy
+				}
+				AND = {
+					tag = DN2
+					has_government = anocratic_monarchism
+				}
 			}
 		}
 		localization_key = "Statsminister Thorvald Stauning"
@@ -6727,9 +6739,15 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			AND = {
-				tag = DEN
-				has_government = socialist_monarchy
+			OR = {
+				AND = {
+					tag = DEN
+					has_government = socialist_monarchy
+				}
+				AND = {
+					tag = DN2
+					has_government = anocratic_monarchism
+				}
 			}
 		}
 		localization_key = "GFX_Thorvald_Stauning"
@@ -7589,11 +7607,17 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			AND = {
-				tag = NOR
-				has_government = democratic_monarchism
-				has_start_date < 1937.01.01
-				has_start_date > 1935.01.01
+			OR = {
+				AND = {
+					tag = NOR
+					has_government = democratic_monarchism
+					has_start_date < 1937.01.01
+					has_start_date > 1935.01.01
+				}
+				AND = {
+					tag = NR2
+					has_government = anocratic_monarchism
+				}
 			}
 		}
 		localization_key = "GFX_Johan_Nygaardsvold"

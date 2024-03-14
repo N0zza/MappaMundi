@@ -416,9 +416,28 @@ defined_text = {
 		localization_key = "Aẖ al-Qāʾid wa Muršid aṯ-Ṯawraẗ Muʿammar Muḥammad ʾAbū Minyār al-Qaḏḏāfī"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = DN2
+				has_government = anocratic_monarchism
+			}
+		}
+		localization_key = "Reichsbevollmächtigter Karl Rudolf Werner Best"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NR2
+				has_government = anocratic_monarchism
+			}
+		}
+		localization_key = "Reichsbevollmächtigter Josef Antonius Heinrich Terboven"
+	}
+	text = {
 		localization_key = "To be Added"
 	}
 }
+
 defined_text = {
 	name = get_tertiary_leader_portrait
 	text = {
@@ -848,6 +867,24 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Muammar_Ghaddafi"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = DN2
+				has_government = anocratic_monarchism
+			}
+		}
+		localization_key = "GFX_Werner_Best"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NR2
+				has_government = anocratic_monarchism
+			}
+		}
+		localization_key = "GFX_Josef_Terboven"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
