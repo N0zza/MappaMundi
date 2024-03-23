@@ -14065,6 +14065,19 @@
 							}
 						}
 					}
+					ERH = {
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+						set_popularities = {
+							anocratic_republic = 100
+						}
+						transfer_state = 8580
+						set_province_name = {
+							id = 8918
+							name = "Headquarters of the United Nations"
+						}
+					}
 					USA = {
 						set_popularities = {
 							liberal_republic = 60
@@ -14147,21 +14160,27 @@
 						}
 					}
 					ERH = {
-						transfer_state = 19307
 						set_politics = {
 							ruling_party = anocratic_republic
 						}
 						set_popularities = {
 							anocratic_republic = 100
 						}
-					}
-					ERH = {
 						create_country_leader = {
 							name = "Secretary-General Trygve Halvdan Lie"
 							desc = ""
 							picture = "gfx/leaders/ERH/ERH_Lie.tga"
 							expire = "1965.1.1"
 							ideology = anocrep
+						}
+						transfer_state = 8580
+						add_victory_points = {
+							province = 8918
+							value = 30
+						}
+						set_province_name = {
+							id = 8918
+							name = "Headquarters of the United Nations"
 						}
 					}
 					PRC = {
@@ -28093,14 +28112,20 @@
 						set_popularities = {
 							anocratic_republic = 100
 						}
-					}
-					ERH = {
 						create_country_leader = {
 							name = "Secretary-General António Manuel de Oliveira Guterres"
 							desc = ""
 							picture = "gfx/leaders/ERH/ERH_Guterres.tga"
 							expire = "1965.1.1"
 							ideology = anocrep
+						}
+						add_victory_points = {
+							province = 19631
+							value = 30
+						}
+						set_province_name = {
+							id = 19631
+							name = "Headquarters of the United Nations"
 						}
 					}
 					every_state = {
@@ -29069,10 +29094,10 @@
 						}
 					}
 					USA = {
+						set_cosmetic_tag = USA_2023
 						set_politics = {
 							ruling_party = liberal_republic
 						}
-						set_cosmetic_tag = USA_2023
 						set_popularities = {
 							liberal_republic = 49
 							democratic = 51
@@ -29117,125 +29142,6 @@
 							name = USA_right_anarchism_2023_party
 							long_name = USA_right_anarchism_2023_party_long
 						}
-					}
-					USA = {
-						create_country_leader = {
-							name = "President Joseph Robinette Biden Jr."
-							desc = ""
-							picture = "gfx/leaders/USA/USA_Biden.tga"
-							expire = "1965.1.1"
-							ideology = liberalism
-						}
-					}
-					USA = {
-						create_country_leader = {
-							name = "President Donald John Trump"
-							desc = ""
-							picture = "gfx/leaders/USA/USA_Trump.tga"
-							expire = "1965.1.1"
-							ideology = conservatism
-						}
-					}
-					USA = {
-						create_country_leader = {
-							name = "Chancellor Andrew Yang"
-							desc = ""
-							picture = "gfx/leaders/USA/USA_Yang.tga"
-							expire = "1965.1.1"
-							ideology = cenrep
-							traits = {
-							}
-						}
-					}
-					USA = {
-						create_country_leader = {
-							name = "Divine President William Edward Lori"
-							desc = ""
-							picture = "gfx/leaders/USA/USA_Lori.tga"
-							expire = "1965.1.1"
-							ideology = christian
-							traits = {
-							}
-						}
-					}
-					USA = {
-						create_country_leader = {
-							name = "President Bernard Sanders"
-							desc = ""
-							picture = "gfx/leaders/USA/USA_Sanders.tga"
-							expire = "1965.1.1"
-							ideology = demsoc
-							traits = {
-							}
-						}
-					}
-					USA = {
-						create_country_leader = {
-							name = "Commander-in-Chief Mark Alexander Milley"
-							desc = ""
-							picture = "gfx/leaders/USA/USA_Milley.tga"
-							expire = "1965.1.1"
-							ideology = militarism
-							traits = {
-							}
-						}
-					}
-					USA = {
-						create_country_leader = {
-							name = "President Donald Leon Blankenship"
-							desc = ""
-							picture = "gfx/leaders/USA/USA_Blankenship.tga"
-							expire = "1965.1.1"
-							ideology = despotism
-							traits = {
-							}
-						}
-					}
-					USA = {
-						create_country_leader = {
-							name = "Princeps-President William Daniel Johnson, Supreme Protector of Congress"
-							desc = ""
-							picture = "gfx/leaders/USA/USA_Johnson.tga"
-							expire = "1965.1.1"
-							ideology = repfash
-							traits = {
-							}
-						}
-					}
-					USA = {
-						create_country_leader = {
-							name = "Supreme Commander Burt Colucci"
-							desc = ""
-							picture = "gfx/leaders/USA/USA_Colucci.tga"
-							expire = "1965.1.1"
-							ideology = natsoc
-							traits = {
-							}
-						}
-					}
-					USA = {
-						create_country_leader = {
-							name = "Chairwoman Angela Yvonne Davis"
-							desc = ""
-							picture = "gfx/leaders/USA/USA_Davis.tga"
-							expire = "1965.1.1"
-							ideology = totsoc
-							traits = {
-							}
-						}
-					}
-					USA = {
-						create_country_leader = {
-							name = "Chairman Jack Whittier Barnes"
-							desc = ""
-							picture = "gfx/leaders/USA/USA_Barnes.tga"
-							expire = "1965.1.1"
-							ideology = marxism
-							traits = {
-							}
-						}
-					}
-					USA = {
 						create_country_leader = {
 							name = "Chairman James Riddle Hoffa"
 							desc = ""
@@ -29245,19 +29151,33 @@
 							traits = {
 							}
 						}
-					}
-					USA = {
 						create_country_leader = {
-							name = "Emperor Robert III of Lee"
+							name = "Chairwoman Angela Yvonne Davis"
 							desc = ""
-							picture = "gfx/leaders/USA/USA_Robert_III.tga"
+							picture = "gfx/leaders/USA/USA_Davis.tga"
 							expire = "1965.1.1"
-							ideology = fascism_ideology
+							ideology = totsoc
 							traits = {
 							}
 						}
-					}
-					USA = {
+						create_country_leader = {
+							name = "Chairman Jack Whittier Barnes"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Barnes.tga"
+							expire = "1965.1.1"
+							ideology = marxism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "President Bernard Sanders"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Sanders.tga"
+							expire = "1965.1.1"
+							ideology = demsoc
+							traits = {
+							}
+						}
 						create_country_leader = {
 							name = "King Lawrence II of Washington"
 							desc = ""
@@ -29267,8 +29187,31 @@
 							traits = {
 							}
 						}
-					}
-					USA = {
+						create_country_leader = {
+							name = "President Joseph Robinette Biden Jr."
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Biden.tga"
+							expire = "1965.1.1"
+							ideology = liberalism
+						}
+						create_country_leader = {
+							name = "Governor-General David Michael James Brudenell-Bruce, Earl of Cardigan"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Brudenell-Bruce.tga"
+							expire = "1965.1.1"
+							ideology = liberal_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Chancellor Andrew Yang"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Yang.tga"
+							expire = "1965.1.1"
+							ideology = cenrep
+							traits = {
+							}
+						}
 						create_country_leader = {
 							name = "Queen Brynda I of Washington"
 							desc = ""
@@ -29278,52 +29221,13 @@
 							traits = {
 							}
 						}
-					}
-					USA = {
 						create_country_leader = {
-							name = "Governor Prince Edward George Nicholas Paul Patrick of Windsor, Duke of Kent"
+							name = "President Donald John Trump"
 							desc = ""
-							picture = "gfx/leaders/USA/USA_Prince_Edward.tga"
+							picture = "gfx/leaders/USA/USA_Trump.tga"
 							expire = "1965.1.1"
-							ideology = stratmon
-							traits = {
-							}
+							ideology = conservatism
 						}
-					}
-					USA = {
-						create_country_leader = {
-							name = "Governor-General David Michael James Brudenell-Bruce, Earl of Cardigan"
-							desc = ""
-							picture = "gfx/leaders/USA/USA_Brudenell-Bruce.tga"
-							expire = "1965.1.1"
-							ideology = anocmon
-							traits = {
-							}
-						}
-					}
-					USA = {
-						create_country_leader = {
-							name = "Governor-General David Michael James Brudenell-Bruce, Earl of Cardigan"
-							desc = ""
-							picture = "gfx/leaders/USA/USA_Brudenell-Bruce.tga"
-							expire = "1965.1.1"
-							ideology = authmon
-							traits = {
-							}
-						}
-					}
-					USA = {
-						create_country_leader = {
-							name = "Queen Meghan I of Markle"
-							desc = ""
-							picture = "gfx/leaders/USA/USA_Markle.tga"
-							expire = "1965.1.1"
-							ideology = absolutism
-							traits = {
-							}
-						}
-					}
-					USA = {
 						create_country_leader = {
 							name = "Governor-General David Michael James Brudenell-Bruce, Earl of Cardigan"
 							desc = ""
@@ -29333,19 +29237,96 @@
 							traits = {
 							}
 						}
-					}
-					USA = {
 						create_country_leader = {
 							name = "Governor-General David Michael James Brudenell-Bruce, Earl of Cardigan"
 							desc = ""
 							picture = "gfx/leaders/USA/USA_Brudenell-Bruce.tga"
 							expire = "1965.1.1"
-							ideology = liberal_constitutionalism
+							ideology = anocmon
 							traits = {
 							}
 						}
-					}
-					USA = {
+						create_country_leader = {
+							name = "President Donald Leon Blankenship"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Blankenship.tga"
+							expire = "1965.1.1"
+							ideology = despotism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Governor-General David Michael James Brudenell-Bruce, Earl of Cardigan"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Brudenell-Bruce.tga"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Commander-in-Chief Mark Alexander Milley"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Milley.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Governor Prince Edward George Nicholas Paul Patrick of Windsor, Duke of Kent"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Prince_Edward.tga"
+							expire = "1965.1.1"
+							ideology = stratmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Queen Meghan I of Markle"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Markle.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Princeps-President William Daniel Johnson, Supreme Protector of Congress"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Johnson.tga"
+							expire = "1965.1.1"
+							ideology = repfash
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Emperor Robert III of Lee"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Robert_III.tga"
+							expire = "1965.1.1"
+							ideology = fascism_ideology
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Supreme Commander Burt Colucci"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Colucci.tga"
+							expire = "1965.1.1"
+							ideology = natsoc
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Divine President William Edward Lori"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Lori.tga"
+							expire = "1965.1.1"
+							ideology = christian
+							traits = {
+							}
+						}
 						create_country_leader = {
 							name = "Chairman Jeffrey Preston Bezos"
 							desc = ""
@@ -29355,28 +29336,18 @@
 							traits = {
 							}
 						}
-					}
-					add_victory_points = {
-						province = 3691
-						value = 5
-					}
-					set_province_name = {
-						id = 3691
-						name = Iqaluit
 					}	
 					CAN = {
+						set_cosmetic_tag = CAN_2023
 						set_politics = {
 							ruling_party = democratic_monarchism
 						}
-						set_cosmetic_tag = CAN_2023
 						set_popularities = {
 							democratic_monarchism = 49
 							conservative_monarchism = 35
 							socialism_ideology = 9
 							socialist_monarchy = 7
 						}
-					}
-					CAN = {
 						create_country_leader = {
 							name = "Governor General Mary Jeannie May Simon"
 							desc = ""
@@ -29384,10 +29355,14 @@
 							expire = "1965.1.1"
 							ideology = liberal_constitutionalism
 						}
-					}
-					set_province_name = {
-						id = 13544
-						name = "Lázaro Cárdenas"
+						add_victory_points = {
+							province = 3691
+							value = 5
+						}
+						set_province_name = {
+							id = 3691
+							name = Iqaluit
+						}
 					}
 					MEX = {
 						set_cosmetic_tag = MEX_2023
@@ -29411,6 +29386,10 @@
 							picture = "gfx/leaders/MEX/MEX_Obrador.tga"
 							expire = "1965.1.1"
 							ideology = demsoc
+						}
+						set_province_name = {
+							id = 13544
+							name = "Lázaro Cárdenas"
 						}
 					}
 					CUB = {
@@ -30380,19 +30359,7 @@
 							ideology = monsoc
 						}
 					}
-					add_victory_points = {
-						province = 13544
-						value = 25
-					}
-					set_province_name = {
-						id = 13544
-						name = Brasília
-					}	
 					BRA = {
-						set_capital = {
-							state = 1646
-							remember_old_capital = no
-						}
 						set_politics = {
 							ruling_party = socialism_ideology
 						}
@@ -30420,8 +30387,6 @@
 							name = BRA_democratic_2023_party
 							long_name = BRA_democratic_2023_party_long
 						}
-					}
-					BRA = {
 						create_country_leader = {
 							name = "Presidente Luiz Inácio Lula da Silva"
 							desc = ""
@@ -30429,6 +30394,18 @@
 							expire = "1965.1.1"
 							ideology = demsoc
 						}
+						set_capital = {
+							state = 1646
+							remember_old_capital = no
+						}
+						add_victory_points = {
+							province = 13544
+							value = 25
+						}
+						set_province_name = {
+							id = 13544
+							name = Brasília
+						}	
 					}
 					PAR = {
 						set_politics = {

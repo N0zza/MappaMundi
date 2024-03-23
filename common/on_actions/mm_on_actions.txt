@@ -7769,23 +7769,14 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
-									has_government = stratocratic
-									has_government = republican_fascism
 									has_government = fascism
-									has_government = national_socialism
 									has_government = theocratic
 									has_government = right_anarchism
 								}
 							}
-							set_cosmetic_tag = FRA_AUTH
-							every_state = {
-								limit = {
-									is_owned_by = ROOT
-								}
-								do_french_renames = yes
-							}
+							set_cosmetic_tag = FR2_AUTH
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = authoritarian_monarchism
@@ -7793,29 +7784,17 @@ on_actions = {
 									has_government = democratic_monarchism
 								}
 							}
-							set_cosmetic_tag = FRA_KINGDOM
-							every_state = {
-								limit = {
-									is_owned_by = ROOT
-								}
-								do_french_renames = yes
-							}
+							set_cosmetic_tag = FR2_KINGDOM
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = stratocratic_monarchism
 								}
 							}
 							set_cosmetic_tag = GREY_GER2
-							every_state = {
-								limit = {
-									is_owned_by = ROOT
-								}
-								do_german_renames = yes
-							}
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = neutrality
@@ -7825,15 +7804,9 @@ on_actions = {
 									has_government = liberal_republic
 								}
 							}
-							set_cosmetic_tag = FRA_BLUE
-							every_state = {
-								limit = {
-									is_owned_by = ROOT
-								}
-								do_french_renames = yes
-							}
+							set_cosmetic_tag = FR2_DEMOCRATIC
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = vanguardism
@@ -7842,13 +7815,10 @@ on_actions = {
 									has_government = socialist_monarchy
 								}
 							}
-							set_cosmetic_tag = FRA_SOCIALIST
-							every_state = {
-								limit = {
-									is_owned_by = ROOT
-								}
-								do_french_renames = yes
-							}
+							set_cosmetic_tag = FR2_SOCIALIST
+						}
+						else = {
+							drop_cosmetic_tag = yes
 						}
 					}
 					if = {
