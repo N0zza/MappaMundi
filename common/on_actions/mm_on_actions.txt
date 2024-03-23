@@ -10819,7 +10819,7 @@ on_actions = {
 						}
 						set_cosmetic_tag = TVE_MOSKOWIEN_VAN
 					}
-					if = {
+					else_if = {
 						limit = {
 							has_government = socialism_ideology
 						}
@@ -11182,6 +11182,12 @@ on_actions = {
 						}
 						set_cosmetic_tag = WLN_OCW_UNITED
 					}
+					else_if = {
+						limit = {
+							has_government = anocratic_republic
+						}
+						set_cosmetic_tag = WLN_OCW_UNITED_ANOCREP
+					}
 					else = {
 						drop_cosmetic_tag = yes
 					}
@@ -11205,6 +11211,12 @@ on_actions = {
 							has_government = liberal_republic
 						}
 						set_cosmetic_tag = WLN_OCW_BALTIC
+					}
+					else_if = {
+						limit = {
+							has_government = anocratic_republic
+						}
+						set_cosmetic_tag = WLN_OCW_BALTIC_ANOCREP
 					}
 					else = {
 						drop_cosmetic_tag = yes
@@ -13911,6 +13923,39 @@ on_actions = {
 							}
 						}
 						set_cosmetic_tag = WLN_OCW_BALTIC
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_belarus = no
+								controls_batlics = no
+							}
+						}
+						set_cosmetic_tag = WLN_TNO
+					}
+				}
+				if = {
+					limit = {
+						tag = WLN
+						has_government = anocratic_republic
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = yes
+							}
+						}
+						set_cosmetic_tag = WLN_OCW_UNITED_ANOCREP
+					}
+					if = {
+						limit = {
+							AND = {
+								controls_batlics = yes
+								controls_belarus = no
+							}
+						}
+						set_cosmetic_tag = WLN_OCW_BALTIC_ANOCREP
 					}
 					if = {
 						limit = {
