@@ -9,6 +9,7 @@ extended_claims_effect = {
 	mittelafrika_claims = yes
 	wabanaki_claims = yes
 	commonwealth_cores_claims = yes
+	european_claims = yes
 }
 
 tribal_australia = {
@@ -1773,31 +1774,36 @@ roman_empire_claims = {
 german_empire_claims = {
 	every_state = {
 		limit = {
-			OR = {
-				AND = {
-					OR = {
-						AND = {
-							is_core_of = RHI
-							is_core_of = BEL
+			AND = {
+				OR = {
+					AND = {
+						OR = {
+							AND = {
+								is_core_of = RHI
+								is_core_of = BEL
+							}
+							is_core_of = PRE
+							is_core_of = DDR
 						}
-						is_core_of = PRE
-						is_core_of = DDR
+						NOT = {
+							state = 3212
+						}
 					}
-					NOT = {
-						state = 3212
+					AND = {
+						OR = {
+							is_core_of = ALC
+							is_claimed_by = ALC
+						}
+						NOT = {
+							state = 12841
+							state = 12842
+						}
 					}
+					state = 3189
 				}
-				AND = {
-					OR = {
-						is_core_of = ALC
-						is_claimed_by = ALC
-					}
-					NOT = {
-						state = 12841
-						state = 12842
-					}
+				NOT = {
+					is_core_of = WGR
 				}
-				state = 3189
 			}
 		}
 		WGR = {
@@ -2021,6 +2027,22 @@ commonwealth_cores_claims = {
 			}
 		}
 		BCM = {
+			add_state_claim = PREV
+		}
+	}
+}
+
+european_claims = {
+	every_state = {
+		limit = {
+			AND = {
+				is_european_state = yes
+				NOT = {
+					is_core_of = EUR
+				}
+			}
+		}
+		EUR = {
 			add_state_claim = PREV
 		}
 	}
