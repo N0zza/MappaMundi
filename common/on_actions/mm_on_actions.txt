@@ -7044,7 +7044,6 @@ on_actions = {
 					if = {
 						limit = {
 							tag = USA
-							
 							NOT = {
 								OR = {
 									has_cosmetic_tag = USA_1992
@@ -7072,24 +7071,18 @@ on_actions = {
 										has_cosmetic_tag = USA_MONARCHIST
 										has_cosmetic_tag = USA_BLUE
 										has_cosmetic_tag = USA_TRIBAL
-										has_cosmetic_tag = ALA_USA
-										has_cosmetic_tag = HAW_USA
-										has_cosmetic_tag = PUE_USA
-										has_cosmetic_tag = PCZ_USA
-										has_cosmetic_tag = PHI_USA
-										has_cosmetic_tag = ESM_USA
+										has_cosmetic_tag = USA_ANCOM
 									}
 								}
 								set_cosmetic_tag = USA_AUTH
 							}
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = socialism_ideology
 									has_government = communism
 									has_government = vanguardism
-									has_government = left_anarchism
 								}
 							}
 							set_cosmetic_tag = USA_SOCIALIST
@@ -7109,18 +7102,35 @@ on_actions = {
 										has_cosmetic_tag = USA_MONARCHIST
 										has_cosmetic_tag = USA_BLUE
 										has_cosmetic_tag = USA_TRIBAL
-										has_cosmetic_tag = ALA_USA
-										has_cosmetic_tag = HAW_USA
-										has_cosmetic_tag = PUE_USA
-										has_cosmetic_tag = PCZ_USA
-										has_cosmetic_tag = PHI_USA
-										has_cosmetic_tag = ESM_USA
+										has_cosmetic_tag = USA_ANCOM
 									}
 								}
 								set_cosmetic_tag = USA_SOCIALIST
 							}
 						}
-						if = {
+						else_if = {
+							limit = {
+								OR = {
+									has_government = left_anarchism
+								}
+							}
+							set_cosmetic_tag = USA_ANCOM
+							every_country = {
+								limit = {
+									OR = {
+										has_cosmetic_tag = USA_AUTH
+										has_cosmetic_tag = USA_SOCIALIST
+										has_cosmetic_tag = USA_BRITISH
+										has_cosmetic_tag = USA_MONARCHIST
+										has_cosmetic_tag = USA_BLUE
+										has_cosmetic_tag = USA_TRIBAL
+										has_cosmetic_tag = USA_ANCOM
+									}
+								}
+								set_cosmetic_tag = USA_ANCOM
+							}
+						}
+						else_if = {
 							limit = {
 								OR = {
 									has_government = anarchism_ideology
@@ -7136,18 +7146,13 @@ on_actions = {
 										has_cosmetic_tag = USA_MONARCHIST
 										has_cosmetic_tag = USA_BLUE
 										has_cosmetic_tag = USA_TRIBAL
-										has_cosmetic_tag = ALA_USA
-										has_cosmetic_tag = HAW_USA
-										has_cosmetic_tag = PUE_USA
-										has_cosmetic_tag = PCZ_USA
-										has_cosmetic_tag = PHI_USA
-										has_cosmetic_tag = ESM_USA
+										has_cosmetic_tag = USA_ANCOM
 									}
 								}
 								set_cosmetic_tag = USA_TRIBAL
 							}
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = democratic_monarchism
@@ -7168,18 +7173,13 @@ on_actions = {
 										has_cosmetic_tag = USA_MONARCHIST
 										has_cosmetic_tag = USA_BLUE
 										has_cosmetic_tag = USA_TRIBAL
-										has_cosmetic_tag = ALA_USA
-										has_cosmetic_tag = HAW_USA
-										has_cosmetic_tag = PUE_USA
-										has_cosmetic_tag = PCZ_USA
-										has_cosmetic_tag = PHI_USA
-										has_cosmetic_tag = ESM_USA
+										has_cosmetic_tag = USA_ANCOM
 									}
 								}
 								set_cosmetic_tag = USA_BRITISH
 							}
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = centrist_monarchism
@@ -7196,18 +7196,13 @@ on_actions = {
 										has_cosmetic_tag = USA_MONARCHIST
 										has_cosmetic_tag = USA_BLUE
 										has_cosmetic_tag = USA_TRIBAL
-										has_cosmetic_tag = ALA_USA
-										has_cosmetic_tag = HAW_USA
-										has_cosmetic_tag = PUE_USA
-										has_cosmetic_tag = PCZ_USA
-										has_cosmetic_tag = PHI_USA
-										has_cosmetic_tag = ESM_USA
+										has_cosmetic_tag = USA_ANCOM
 									}
 								}
 								set_cosmetic_tag = USA_MONARCHIST
 							}
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = liberal_republic
@@ -7232,12 +7227,7 @@ on_actions = {
 										has_cosmetic_tag = USA_MONARCHIST
 										has_cosmetic_tag = USA_BLUE
 										has_cosmetic_tag = USA_TRIBAL
-										has_cosmetic_tag = ALA_USA
-										has_cosmetic_tag = HAW_USA
-										has_cosmetic_tag = PUE_USA
-										has_cosmetic_tag = PCZ_USA
-										has_cosmetic_tag = PHI_USA
-										has_cosmetic_tag = ESM_USA
+										has_cosmetic_tag = USA_ANCOM
 									}
 								}
 								set_cosmetic_tag = USA_BLUE

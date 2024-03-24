@@ -407,6 +407,18 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = DAN
+				OR = {
+					has_government = republican_fascism
+					has_government = national_socialism
+				}
+			}
+		}
+		localization_key = "High Commissioner Seán Lester"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = ITA
 				has_government = centrist_republic
 				has_start_date > 1940.01.01
@@ -1294,11 +1306,17 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			AND = {
-				tag = FRA
-				has_government = centrist_republic
-				has_start_date < 1937.01.01
-				has_start_date > 1935.01.01
+			OR = {
+				AND = {
+					tag = FRA
+					has_government = centrist_republic
+					has_start_date < 1937.01.01
+					has_start_date > 1935.01.01
+				}
+				AND = {
+					tag = FR2
+					has_government = republican_fascism
+				}
 			}
 		}
 		localization_key = "Président du Conseil des ministres Pierre Jean Marie Laval"
@@ -4340,6 +4358,18 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = DAN
+				OR = {
+					has_government = republican_fascism
+					has_government = national_socialism
+				}
+			}
+		}
+		localization_key = "GFX_Sean_Lester"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = ENG
 				has_government = conservative_monarchism
 				has_start_date > 2022.01.01
@@ -5427,11 +5457,17 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			AND = {
-				tag = FRA
-				has_government = centrist_republic
-				has_start_date < 1937.01.01
-				has_start_date > 1935.01.01
+			OR = {
+				AND = {
+					tag = FRA
+					has_government = centrist_republic
+					has_start_date < 1937.01.01
+					has_start_date > 1935.01.01
+				}
+				AND = {
+					tag = FR2
+					has_government = republican_fascism
+				}
 			}
 		}
 		localization_key = "GFX_Pierre_Laval"
