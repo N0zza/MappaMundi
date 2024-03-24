@@ -135,3 +135,80 @@ is_european_state = {
 		}
 	}
 }
+is_african_state = {
+	AND = {
+		OR = {
+			is_core_of = SAF
+			is_core_of = LES
+			is_core_of = SWZ
+			is_core_of = NMB
+			is_core_of = BOT
+			is_core_of = ZIM
+			is_core_of = MZB
+			is_core_of = MAD
+			is_core_of = COM
+			is_claimed_by = COM
+			is_core_of = ANG
+			is_core_of = ZAM
+			is_core_of = MLW
+			is_core_of = CAB
+			is_core_of = COG
+			is_core_of = RUU
+			is_core_of = TZN
+			is_core_of = ZAN
+			is_core_of = UGA
+			is_core_of = KEN
+			is_core_of = SOM
+			is_core_of = DJI
+			is_core_of = ERI
+			is_core_of = ETH
+			is_core_of = SUD
+			is_claimed_by = SUD
+			is_core_of = GAB
+			is_core_of = EQG
+			is_core_of = SAO
+			is_core_of = STH
+			is_core_of = RCG
+			is_core_of = CAR
+			is_core_of = CHA
+			is_core_of = CMR
+			is_core_of = NGA
+			is_core_of = DAH
+			is_core_of = TOG
+			is_core_of = GHA
+			is_core_of = IVO
+			is_core_of = LIB
+			is_core_of = SIE
+			is_core_of = GNA
+			is_core_of = GNB
+			is_core_of = CVD
+			is_core_of = SEN
+			is_core_of = GAM
+			is_core_of = MRT
+			is_core_of = MLI
+			is_core_of = WES
+			is_core_of = NGR
+			is_core_of = VOL
+			is_core_of = MOR
+			is_claimed_by = MOR
+			is_core_of = ALG
+			is_core_of = TUN
+			is_core_of = LBA
+			AND = {
+				is_core_of = EGY
+				NOT = {
+					is_core_of = SIN
+				}
+			}
+			AND = {
+				is_core_of = FAT
+				NOT = {
+					is_core_of = ATC
+				}
+			}
+		}
+		NOT = {
+			is_owned_by = WTR
+		}
+	}
+}

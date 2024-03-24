@@ -10,6 +10,8 @@ extended_claims_effect = {
 	wabanaki_claims = yes
 	commonwealth_cores_claims = yes
 	european_claims = yes
+	african_claims = yes
+	earth_claims = yes
 }
 
 tribal_australia = {
@@ -1233,7 +1235,6 @@ french_louisiana_claims = {
 						state = 9672
 					}
 				}
-				
 				state = 381
 				state = 391
 				state = 919
@@ -1301,6 +1302,7 @@ french_louisiana_claims = {
 				state = 15505
 				state = 15506
 				state = 15509
+				state = 19848
 			}
 		}
 		LOU = {
@@ -2043,6 +2045,38 @@ european_claims = {
 			}
 		}
 		EUR = {
+			add_state_claim = PREV
+		}
+	}
+}
+
+african_claims = {
+	every_state = {
+		limit = {
+			AND = {
+				is_african_state = yes
+				NOT = {
+					is_core_of = AFR
+				}
+			}
+		}
+		AFR = {
+			add_state_claim = PREV
+		}
+	}
+}
+
+earth_claims = {
+	every_state = {
+		limit = {
+			NOT = {
+				OR = {
+					is_core_of = WTR
+					is_owned_by = ERH
+				}
+			}
+		}
+		ERH = {
 			add_state_claim = PREV
 		}
 	}
