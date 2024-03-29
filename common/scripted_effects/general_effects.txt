@@ -11,7 +11,6 @@ extended_claims_effect = {
 	commonwealth_cores_claims = yes
 	european_claims = yes
 	african_claims = yes
-	earth_claims = yes
 }
 
 tribal_australia = {
@@ -2061,22 +2060,6 @@ african_claims = {
 			}
 		}
 		AFR = {
-			add_state_claim = PREV
-		}
-	}
-}
-
-earth_claims = {
-	every_state = {
-		limit = {
-			NOT = {
-				OR = {
-					is_core_of = WTR
-					is_owned_by = ERH
-				}
-			}
-		}
-		ERH = {
 			add_state_claim = PREV
 		}
 	}
