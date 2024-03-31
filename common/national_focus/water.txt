@@ -14079,6 +14079,7 @@
 						}
 					}
 					USA = {
+						set_cosmetic_tag = USA_1950
 						set_popularities = {
 							liberal_republic = 60
 							democratic = 39
@@ -14090,11 +14091,11 @@
 							long_name = USA_anocratic_republic_1950_party_long
 						}
 						create_country_leader = {
-							name = "President James Strom Thurmond Sr."
+							name = "President Harry S. Truman"
 							desc = ""
-							picture = "gfx/leaders/USA/USA_Thurmond.tga"
+							picture = "gfx/leaders/USA/USA_Truman.tga"
 							expire = "1965.1.1"
-							ideology = anocrep
+							ideology = liberalism
 						}
 						create_country_leader = {
 							name = "President Thomas Edmund Dewey"
@@ -14104,11 +14105,11 @@
 							ideology = conservatism
 						}
 						create_country_leader = {
-							name = "President Harry S. Truman"
+							name = "President James Strom Thurmond Sr."
 							desc = ""
-							picture = "gfx/leaders/USA/USA_Truman.tga"
+							picture = "gfx/leaders/USA/USA_Thurmond.tga"
 							expire = "1965.1.1"
-							ideology = liberalism
+							ideology = anocrep
 						}
 					}
 					CAN = {
@@ -14696,33 +14697,24 @@
 						}
 					}
 					YUG = {
+						every_state = {
+							limit = {
+								is_core_of = YUG
+								OR = {
+									is_core_of = ITA
+									is_owned_by = ITA
+								}
+							}
+							YUG = {
+								transfer_state = PREV
+							}
+						}
 						set_politics = {
 							ruling_party = vanguardism
 						}
-					}
-					HOL = {
-						transfer_state = 8090
-						transfer_state = 8328
-						transfer_state = 8067
-					}
-					every_state = {
-						limit = {
-							is_core_of = YUG
-							OR = {
-								is_core_of = ITA
-								is_owned_by = ITA
-							}
-						}
-						YUG = {
-							transfer_state = PREV
-						}
-					}
-					YUG = {
 						set_popularities = {
 							vanguardism = 100
 						}
-					}
-					YUG = {
 						create_country_leader = {
 							name = "Predsjednik Predsjedništva Narodne Skupštine Ivan Ribar"
 							desc = ""
@@ -14730,6 +14722,11 @@
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
+					}
+					HOL = {
+						transfer_state = 8090
+						transfer_state = 8328
+						transfer_state = 8067
 					}
 					every_state = {
 						limit = {
@@ -14800,10 +14797,10 @@
 						}
 					}
 					ALB = {
+						set_cosmetic_tag = ALB_1950
 						set_politics = {
 							ruling_party = vanguardism
 						}
-						set_cosmetic_tag = ALB_1950
 						set_popularities = {
 							vanguardism = 100
 						}
@@ -14812,12 +14809,26 @@
 							name = ALB_vanguardism_1950_party
 							long_name = ALB_vanguardism_1950_party_long
 						}
-					}
-					ALB = {
 						create_country_leader = {
 							name = "Kryetar i Presidiumit të Kuvendit Popullor Omer Nishani"
 							desc = ""
 							picture = "gfx/leaders/ALB/ALB_Nishani.tga"
+							expire = "1965.1.1"
+							ideology = totsoc
+						}
+					}
+					GRE = {
+						create_country_leader = {
+							name = "Genikós Grammatéas Nikos Zachariadis "
+							desc = ""
+							picture = "gfx/leaders/GRE/GRE_Zachariadis_1950.tga"
+							expire = "1965.1.1"
+							ideology = marxism
+						}
+						create_country_leader = {
+							name = "Genikós Grammatéas Nikos Zachariadis "
+							desc = ""
+							picture = "gfx/leaders/GRE/GRE_Zachariadis_1950.tga"
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -16251,8 +16262,6 @@
 							centrist_republic = 1
 							democratic = 51
 						}
-					}
-					GRE = {
 						create_country_leader = {
 							name = "Próedros Konstantínos Georgíou Karamanlís"
 							desc = ""

@@ -4236,7 +4236,6 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
-								tag = ALB
 								tag = MNT
 								tag = EGY
 								tag = SUD
@@ -4325,7 +4324,6 @@ on_actions = {
 						limit = {
 							OR = {
 								tag = SAU
-								tag = GRE
 								tag = MOR
 							}
 						}
@@ -6976,6 +6974,147 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							tag = ALB
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = vanguardism
+									has_government = communism
+								}
+							}
+							set_cosmetic_tag = ALB_SOCIALIST
+							if = {
+								limit = {
+									AND = {
+										has_start_date < 1951.01.01
+										has_start_date > 1949.01.01
+									}
+								}
+								set_cosmetic_tag = ALB_1950
+							}
+							if = {
+								limit = {
+									has_start_date < 2000.01.01
+									has_start_date > 1991.01.01
+								}
+								set_cosmetic_tag = ALB_1992_VAN
+							}
+						}
+						else_if = {
+							limit = {
+								has_government = fascism
+							}
+							set_cosmetic_tag = ITA_GREEN
+						}
+						else = {
+							if = {
+								limit = {
+									NOT = {
+										OR = {
+											AND = {
+												has_start_date < 2000.01.01
+												has_start_date > 1991.01.01
+											}
+											AND = {
+												has_start_date < 2025.01.01
+												has_start_date > 2022.01.01
+											}
+										}
+									}
+								}
+								drop_cosmetic_tag = yes
+							}
+							if = {
+								limit = {
+									has_start_date < 2000.01.01
+									has_start_date > 1991.01.01
+								}
+								set_cosmetic_tag = ALB_1992
+							}
+							if = {
+								limit = {
+									has_start_date < 2025.01.01
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = ALB_2023
+							}
+						}
+					}
+					if = {
+						limit = {
+							tag = GRE
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = vanguardism
+									has_government = communism
+								}
+							}
+							set_cosmetic_tag = GRE_SOCIALIST
+							if = {
+								limit = {
+									AND = {
+										has_start_date < 1951.01.01
+										has_start_date > 1949.01.01
+									}
+								}
+								set_cosmetic_tag = GRE_1950_VAN
+							}
+						}
+						else_if = {
+							limit = {
+								OR = {
+									has_government = republican_fascism
+									has_government = fascism
+								}
+							}
+							set_cosmetic_tag = ITA_GREEN
+						}
+						else = {
+							if = {
+								limit = {
+									NOT = {
+										OR = {
+											AND = {
+												has_start_date < 2000.01.01
+												has_start_date > 1991.01.01
+											}
+											AND = {
+												has_start_date < 2025.01.01
+												has_start_date > 2022.01.01
+											}
+										}
+									}
+								}
+								drop_cosmetic_tag = yes
+							}
+							if = {
+								limit = {
+									has_start_date < 1951.01.01
+									has_start_date > 1949.01.01
+								}
+								set_cosmetic_tag = GRE_1950
+							}
+							if = {
+								limit = {
+									has_start_date < 2000.01.01
+									has_start_date > 1991.01.01
+								}
+								set_cosmetic_tag = GRE_1992
+							}
+							if = {
+								limit = {
+									has_start_date < 2025.01.01
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = GRE_2023
+							}
+						}
+					}
+					if = {
+						limit = {
 							tag = MOL
 						}
 						if = {
@@ -7212,6 +7351,13 @@ on_actions = {
 								}
 							}
 							drop_cosmetic_tag = yes
+							if = {
+								limit = {
+									has_start_date < 1951.01.01
+									has_start_date > 1949.01.01
+								}
+								set_cosmetic_tag = USA_1950
+							}
 							if = {
 								limit = {
 									has_start_date > 2022.01.01
