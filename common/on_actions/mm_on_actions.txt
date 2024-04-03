@@ -6628,6 +6628,30 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							tag = FIU
+						}
+						if = {
+							limit = {
+								has_government = authoritarian_monarchism
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+							}
+							set_cosmetic_tag = FIU_1914
+						}
+						else_if = {
+							limit = {
+								has_government = republican_fascism
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+							}
+							set_cosmetic_tag = FIU_ITA_1914
+						}
+						else = {
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
 							tag = POL
 						}
 						if = {
@@ -6755,6 +6779,35 @@ on_actions = {
 								has_start_date > 1913.01.01
 							}
 							set_cosmetic_tag = LIT_1914
+						}
+						else = {
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
+							tag = LIV
+						}
+						if = {
+							limit = {
+								AND = {
+									OR = {
+										has_government = authoritarian_monarchism
+										has_government = stratocratic_monarchism
+									}
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+							}
+							set_cosmetic_tag = LIV_1914
+						}
+						else_if = {
+							limit = {
+								has_government = monarchism
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+							}
+							set_cosmetic_tag = LIV_RUS_1914
 						}
 						else = {
 							drop_cosmetic_tag = yes

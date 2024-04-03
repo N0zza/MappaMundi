@@ -7738,6 +7738,14 @@
 			}
 			CAN = {
 				set_cosmetic_tag = CAN_1914
+				set_politics = {
+					ruling_party = conservative_monarchism
+				}
+				set_popularities = {
+					conservative_monarchism = 49
+					democratic_monarchism = 46
+					centrist_monarchism = 5
+				}
 				create_country_leader = {
 					name = "Governor-General Prince Arthur, Duke of Connaught and Strathearn"
 					desc = ""
@@ -7747,28 +7755,57 @@
 					traits = {
 					}
 				}
+			}
+			NFL = {
+				set_cosmetic_tag = NFL_1914
 				set_politics = {
-					ruling_party = conservative_monarchism
+					ruling_party = anocratic_monarchism
 				}
 				set_popularities = {
-					conservative_monarchism = 49
-					democratic_monarchism = 46
-					centrist_monarchism = 5
+					anocratic_monarchism = 67
+					democratic_monarchism = 19
+					conservative_monarchism = 7
+					socialist_monarchy = 7
+				}
+				set_party_name = {
+					ideology = democratic_monarchism
+					name = NFL_democratic_monarchism_1914_party
+					long_name = NFL_democratic_monarchism_1914_party_long
+				}
+				set_party_name = {
+					ideology = anocratic_monarchism
+					name = NFL_anocratic_monarchism_1914_party
+					long_name = NFL_anocratic_monarchism_1914_party_long
+				}
+				create_country_leader = {
+					name = "Governor-General Sir Walter Edward Davidson"
+					desc = ""
+					picture = "gfx/leaders/NFL/Portrait_Walter_Davidson.dds"
+					expire = "1965.1.1"
+					ideology = liberal_constitutionalism
+					traits = {
+					}
+				}
+				create_country_leader = {
+					name = "Governor Sir Walter Edward Davidson"
+					desc = ""
+					picture = "gfx/leaders/NFL/Portrait_Walter_Davidson.dds"
+					expire = "1965.1.1"
+					ideology = anocmon
+					traits = {
+					}
 				}
 			}
 			SAF = {
 				set_cosmetic_tag = SAF_1914
-				create_country_leader = {
-					name = "Governor-General Herbert Gladstone, 1st Viscount Gladstone"
-					desc = ""
-					picture = "gfx/leaders/SAF/Portrait_Herbert_Gladstone.dds"
-					expire = "1965.1.1"
-					ideology = conservative_constitutionalism
-					traits = {
-					}
-				}
 				set_politics = {
 					ruling_party = conservative_monarchism
+				}
+				set_popularities = {
+					conservative_monarchism = 28
+					centrist_monarchism = 38
+					democratic_monarchism = 23
+					socialist_monarchy = 11
 				}
 				set_party_name = {
 					ideology = conservative_monarchism
@@ -7785,11 +7822,14 @@
 					name = SAF_socialist_monarchy_1914_party
 					long_name = SAF_socialist_monarchy_1914_party_long
 				}
-				set_popularities = {
-					conservative_monarchism = 28
-					centrist_monarchism = 38
-					democratic_monarchism = 23
-					socialist_monarchy = 11
+				create_country_leader = {
+					name = "Governor-General Herbert Gladstone, 1st Viscount Gladstone"
+					desc = ""
+					picture = "gfx/leaders/SAF/Portrait_Herbert_Gladstone.dds"
+					expire = "1965.1.1"
+					ideology = conservative_constitutionalism
+					traits = {
+					}
 				}
 			}
 			MRN = {
@@ -10122,6 +10162,38 @@
 							}
 						}
 					}
+					FIU = {
+						set_cosmetic_tag = FIU_1914
+						set_politics = {
+							ruling_party = authoritarian_monarchism
+						}
+						set_popularities = {
+							authoritarian_monarchism = 100
+						}
+						set_party_name = {
+							ideology = authoritarian_monarchism
+							name = FIU_authoritarian_monarchism_1914_party
+							long_name = FIU_authoritarian_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Király Habsburg–Lotaringiai Ferenc József"
+							desc = ""
+							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Comandante Gabriele D'Annunzio, Prince of Montenevoso"
+							desc = ""
+							picture = "gfx/leaders/ITA/Portrait_Gabriele_Annunzio.dds"
+							expire = "1965.1.1"
+							ideology = repfash
+							traits = {
+							}
+						}
+					}
 					CRO = {
 						set_politics = {
 							ruling_party = conservative_monarchism
@@ -10581,7 +10653,7 @@
 								add_state_core = PREV
 							}
 						}
-						set_cosmetic_tag = LIT_1914
+						set_cosmetic_tag = LIT_RUS_1914
 						set_party_name = {
 							ideology = authoritarian_monarchism
 							name = LIT_authoritarian_monarchism_1914_party
@@ -10639,7 +10711,7 @@
 								add_state_core = PREV
 							}
 						}
-						set_cosmetic_tag = LIV_1914
+						set_cosmetic_tag = LIV_RUS_1914
 						set_party_name = {
 							ideology = authoritarian_monarchism
 							name = LIV_authoritarian_monarchism_1914_party
@@ -10649,6 +10721,12 @@
 							ideology = stratocratic_monarchism
 							name = LIV_stratocratic_monarchism_1914_party
 							long_name = LIV_stratocratic_monarchism_1914_party_long
+						}
+						set_politics = {
+							ruling_party = monarchism
+						}
+						set_popularities = {
+							monarchism = 100
 						}
 						create_country_leader = {
 							name = "Herzog des Baltikums Adolf Friedrich Albrecht Heinrich, Herzog zu Mecklenburg-Schwerin"
@@ -10865,6 +10943,15 @@
 							picture = "gfx/leaders/GER/Portrait_Paul_Hindenburg.dds"
 							expire = "1965.1.1"
 							ideology = anocmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Koról' Vasýlʹ Vyshývanyy Hábsburhy-Lotarýnz'ki "
+							desc = ""
+							picture = "gfx/leaders/UKR/UKR_Vasyl_1914.tga"
+							expire = "1965.1.1"
+							ideology = authmon
 							traits = {
 							}
 						}
@@ -11221,6 +11308,29 @@
 							picture = "gfx/leaders/TUR/1914_TUR_Mehmed_V.tga"
 							expire = "1965.1.1"
 							ideology = absolutism
+							traits = {
+							}
+						}
+					}
+					DDO = {
+						set_cosmetic_tag = DDO_1914
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+						}
+						set_popularities = {
+							stratocratic_monarchism = 100
+						}
+						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = DDO_stratocratic_monarchism_1914_party
+							long_name = DDO_stratocratic_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Comandante provvisorio Giovanni Croce"
+							desc = ""
+							picture = "gfx/leaders/To_be_added.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
 							traits = {
 							}
 						}

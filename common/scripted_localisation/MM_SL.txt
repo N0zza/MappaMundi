@@ -198,6 +198,20 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = NFL
+				OR = {
+					has_government = democratic_monarchism
+					has_government = anocratic_monarchism
+				}
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Prime Minister Edward Patrick Morris, 1st Baron Morris"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = SOV
 				has_government = vanguardism
 				has_start_date > 1940.01.01
@@ -4561,6 +4575,20 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Robert_Borden"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = NFL
+				OR = {
+					has_government = democratic_monarchism
+					has_government = anocratic_monarchism
+				}
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Edward_Morris"
 	}
 	text = {
 		trigger = {
