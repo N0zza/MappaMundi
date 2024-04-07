@@ -29697,20 +29697,30 @@
 						}
 					}
 					HAI = {
+						set_cosmetic_tag = HAI_2024
 						set_politics = {
 							ruling_party = neutrality
 						}
 						set_popularities = {
 							neutrality = 100
 						}
-						set_cosmetic_tag = HAI_2024
+						set_party_name = {
+							ideology = anarchism_ideology
+							name = HAI_anarchism_ideology_2024_party
+							long_name = HAI_anarchism_ideology_2024_party_long
+						}
 						set_party_name = {
 							ideology = neutrality
 							name = HAI_neutrality_2024_party
 							long_name = HAI_neutrality_2024_party_long
 						}
-					}
-					HAI = {
+						create_country_leader = {
+							name = "No Centralized Authority"
+							desc = ""
+							picture = "gfx/leaders/HAI/No_Centralized_Authority.dds"
+							expire = "1965.1.1"
+							ideology = collapsed_government
+						}
 						create_country_leader = {
 							name = "Président Ariel Henry"
 							desc = ""

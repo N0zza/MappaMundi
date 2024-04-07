@@ -4075,6 +4075,13 @@ on_actions = {
 								tag = ONT
 								tag = USA
 								tag = JMY
+								AND = {
+									tag = HAI
+									OR = {
+										has_cosmetic_tag = HAI_2024
+										has_cosmetic_tag = HAI_2024_ANARCHY
+									}
+								}
 							}
 						}
 						set_cosmetic_tag = TRIBAL_BROWN
@@ -8560,6 +8567,27 @@ on_actions = {
 								}
 								do_russian_renames = yes
 							}
+						}
+					}
+					if = {
+						limit = {
+							tag = HAI
+						}
+						if = {
+							limit = {
+								has_start_date < 2049.01.01
+								has_start_date > 2022.01.01
+								has_government = anarchism_ideology
+							}
+							set_cosmetic_tag = HAI_2024_ANARCHY
+						}
+						if = {
+							limit = {
+								has_start_date < 2049.01.01
+								has_start_date > 2022.01.01
+								has_government = neutrality
+							}
+							set_cosmetic_tag = HAI_2024
 						}
 					}
 				}
