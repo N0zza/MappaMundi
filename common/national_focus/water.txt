@@ -25948,6 +25948,96 @@
 							ideology = militarism
 						}
 					}
+					CM0 = {
+						create_country_leader = {
+							name = "Pioneer Founder Princewill-Chimezie Richards"
+							desc = ""
+							picture = "gfx/leaders/SCM/CM0_Richards.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					CM1 = {
+						create_country_leader = {
+							name = "Commander-in-Chief Ayaba Cho Lucas"
+							desc = ""
+							picture = "gfx/leaders/SCM/CM1_Lucas.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					CM2 = {
+						create_country_leader = {
+							name = "General Jason"
+							desc = ""
+							picture = "gfx/leaders/SCM/CM2_Placeholder.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					CM3 = {
+						create_country_leader = {
+							name = "General Massacre"
+							desc = ""
+							picture = "gfx/leaders/SCM/CM3_Placeholder.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					CM4 = {
+						create_country_leader = {
+							name = "Commander Nchia Martin Achuo"
+							desc = ""
+							picture = "gfx/leaders/SCM/CM4_Placeholder.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					CM5 = {
+						create_country_leader = {
+							name = "Decentralised Militias"
+							desc = ""
+							picture = "gfx/leaders/CA9/CA9_balaka.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					CM6 = {
+						create_country_leader = {
+							name = "Field Marshal Nso Foncha Nkem"
+							desc = ""
+							picture = "gfx/leaders/SCM/CM6_Foncha.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					CM7 = {
+						create_country_leader = {
+							name = "Decentralised Militias"
+							desc = ""
+							picture = "gfx/leaders/CA9/CA9_balaka.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					CM8 = {
+						create_country_leader = {
+							name = "General Clement Mbashie"
+							desc = ""
+							picture = "gfx/leaders/SCM/CM8_Mbashie.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
+					CM9 = {
+						create_country_leader = {
+							name = "General Clement Mbashie"
+							desc = ""
+							picture = "gfx/leaders/SCM/CM8_Mbashie.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+					}
 					UNC = {
 						create_country_leader = {
 							name = "Terra Nullius"
@@ -26116,6 +26206,66 @@
 							is_core_of = SD5
 						}
 						transfer_state_to = SD5
+					}
+					every_state = {
+						limit = {
+							is_core_of = CM0
+						}
+						transfer_state_to = CM0
+					}
+					every_state = {
+						limit = {
+							is_core_of = CM1
+						}
+						transfer_state_to = CM1
+					}
+					every_state = {
+						limit = {
+							is_core_of = CM2
+						}
+						transfer_state_to = CM2
+					}
+					every_state = {
+						limit = {
+							is_core_of = CM3
+						}
+						transfer_state_to = CM3
+					}
+					every_state = {
+						limit = {
+							is_core_of = CM4
+						}
+						transfer_state_to = CM4
+					}
+					every_state = {
+						limit = {
+							is_core_of = CM5
+						}
+						transfer_state_to = CM5
+					}
+					every_state = {
+						limit = {
+							is_core_of = CM6
+						}
+						transfer_state_to = CM6
+					}
+					every_state = {
+						limit = {
+							is_core_of = CM7
+						}
+						transfer_state_to = CM7
+					}
+					every_state = {
+						limit = {
+							is_core_of = CM8
+						}
+						transfer_state_to = CM8
+					}
+					every_state = {
+						limit = {
+							is_core_of = CM9
+						}
+						transfer_state_to = CM9
 					}
 					every_state = {
 						limit = {
@@ -26328,14 +26478,6 @@
 								is_core_of = BRD
 						}
 						BRD = {
-							transfer_state = PREV
-						}
-					}
-					every_state = {
-						limit = {
-							is_core_of = SCM
-						}
-						CMR = {
 							transfer_state = PREV
 						}
 					}
@@ -27215,6 +27357,21 @@
 					}
 					CMR = {
 						transfer_state = 17738
+						transfer_state = 3605
+						transfer_state = 5275
+						transfer_state = 5276
+						transfer_state = 6688
+						transfer_state = 8830
+						transfer_state = 8835
+						transfer_state = 9107
+						transfer_state = 17634
+						transfer_state = 19698
+						transfer_state = 19707
+						transfer_state = 19710
+						transfer_state = 19722
+						transfer_state = 19732
+						transfer_state = 19734
+						transfer_state = 19798
 						set_cosmetic_tag = CMR_2023
 						set_party_name {
 							ideology = neutrality
@@ -28175,8 +28332,6 @@
 						}
 					}
 					SCM = {
-						transfer_state = 17633
-						transfer_state = 17634
 						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = neutrality
