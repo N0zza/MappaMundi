@@ -29692,8 +29692,6 @@
 							name = CUB_vanguardism_2024_party
 							long_name = CUB_vanguardism_2024_party_long
 						}
-					}
-					CUB = {
 						create_country_leader = {
 							name = "Presidente y Primer Secretario del CC del PCC Miguel Mario Díaz-Canel Bermúdez"
 							desc = ""
@@ -29716,6 +29714,11 @@
 							long_name = HAI_anarchism_ideology_2024_party_long
 						}
 						set_party_name = {
+							ideology = anocratic_republic
+							name = HAI_anocratic_republic_2024_party
+							long_name = HAI_anocratic_republic_2024_party_long
+						}
+						set_party_name = {
 							ideology = neutrality
 							name = HAI_neutrality_2024_party
 							long_name = HAI_neutrality_2024_party_long
@@ -29726,6 +29729,13 @@
 							picture = "gfx/leaders/HAI/No_Centralized_Authority.dds"
 							expire = "1965.1.1"
 							ideology = collapsed_government
+						}
+						create_country_leader = {
+							name = "Consejo de Transición de la República de Haití"
+							desc = ""
+							picture = "gfx/leaders/HAI/Portrait_Transitional_Council.dds"
+							expire = "1965.1.1"
+							ideology = anocrep
 						}
 						create_country_leader = {
 							name = "Président Ariel Henry"
@@ -30422,8 +30432,6 @@
 							liberal_republic = 30
 							democratic = 12
 						}
-					}
-					BOL = {
 						create_country_leader = {
 							name = "Presidente Luis Alberto Arce Catacora"
 							desc = ""
@@ -30433,23 +30441,14 @@
 						}
 					}
 					CHL = {
+						set_cosmetic_tag = CHL_2024
 						set_politics = {
 							ruling_party = socialism_ideology
 						}
-						set_cosmetic_tag = CHL_2024
 						set_party_name = {
 							ideology = socialism_ideology
 							name = CHL_socialism_ideology_2024_party
 							long_name = CHL_socialism_ideology_2024_party_long
-						}
-						set_popularities = {
-							vanguardism = 13
-							communism = 6
-							socialism_ideology = 43
-							liberal_republic = 11
-							centrist_republic = 15
-							democratic = 53
-							anocratic_republic = 15
 						}
 						set_popularities = {
 							vanguardism = 8
@@ -30460,8 +30459,6 @@
 							democratic = 33
 							anocratic_republic = 9
 						}
-					}
-					CHL = {
 						create_country_leader = {
 							name = "Presidente Gabriel Boric Font"
 							desc = ""
@@ -30484,8 +30481,6 @@
 							centrist_republic = 11
 							democratic = 33
 						}
-					}
-					COL = {
 						create_country_leader = {
 							name = "Presidente Gustavo Francisco Petro Urrego"
 							desc = ""
@@ -30495,10 +30490,10 @@
 						}
 					}
 					ECU = {
+						set_cosmetic_tag = ECU_2024
 						set_politics = {
 							ruling_party = liberal_republic
 						}
-						set_cosmetic_tag = ECU_2024
 						set_party_name = {
 							ideology = liberal_republic
 							name = ECU_liberal_republic_2024_party
@@ -30512,8 +30507,6 @@
 							centrist_republic = 24
 							democratic = 12
 						}
-					}
-					ECU = {
 						create_country_leader = {
 							name = "Presidente Daniel Roy Gilchrist Noboa Azín"
 							desc = ""
@@ -30523,10 +30516,10 @@
 						}
 					}
 					PRU = {
+						set_cosmetic_tag = PRU_2024
 						set_politics = {
 							ruling_party = anocratic_republic
 						}
-						set_cosmetic_tag = PRU_2024
 						set_party_name = {
 							ideology = anocratic_republic
 							name = PRU_anocratic_republic_2024_party
@@ -30545,8 +30538,6 @@
 							democratic = 23
 							anocratic_republic = 31
 						}
-					}
-					PRU = {
 						create_country_leader = {
 							name = "Presidenta Dina Ercilia Boluarte Zegarra"
 							desc = ""
@@ -30555,7 +30546,7 @@
 							ideology = anocrep
 						}
 						create_country_leader = {
-							name = "Presidenta Antauro Igor Humala Tasso"
+							name = "Presidente Antauro Igor Humala Tasso"
 							desc = ""
 							picture = "gfx/leaders/PRU/Portrait_Antauro_Humala.dds"
 							expire = "1965.1.1"
@@ -30563,10 +30554,10 @@
 						}
 					}
 					VEN = {
+						set_cosmetic_tag = VEN_2024
 						set_politics = {
 							ruling_party = communism
 						}
-						set_cosmetic_tag = VEN_2024
 						set_party_name = {
 							ideology = communism
 							name = VEN_communism_2024_party
@@ -30579,8 +30570,6 @@
 							liberal_republic = 2
 							centrist_republic = 2
 						}
-					}
-					VEN = {
 						create_country_leader = {
 							name = "Presidente Nicolás Maduro Moros"
 							desc = ""
@@ -30599,8 +30588,6 @@
 							socialism_ideology = 48
 							liberal_republic = 1
 						}
-					}
-					GYA = {
 						create_country_leader = {
 							name = "President Mohamed Irfaan Ali"
 							desc = ""
@@ -30623,8 +30610,6 @@
 							socialism_ideology = 37
 							liberal_republic = 63
 						}
-					}
-					SUR = {
 						create_country_leader = {
 							name = "President Chandrikapersad Santokhi"
 							desc = ""
@@ -30646,8 +30631,6 @@
 							socialist_monarchy = 86
 							conservative_monarchism = 14
 						}
-					}
-					BER = {
 						create_country_leader = {
 							name = "Governor Rena Lalgie"
 							desc = ""
@@ -30719,8 +30702,6 @@
 							centrist_republic = 35
 							democratic = 60
 						}
-					}
-					PAR = {
 						create_country_leader = {
 							name = "Presidente Santiago Peña Palacios"
 							desc = ""
@@ -30738,8 +30719,6 @@
 							socialism_ideology = 46
 							liberal_republic = 54
 						}
-					}
-					TRI = {
 						create_country_leader = {
 							name = "President Christine Carla Kangaloo"
 							desc = ""
@@ -30762,8 +30741,8 @@
 						WTR = {
 							transfer_state = PREV
 							add_state_core = PREV
-								}
 						}
+					}
 					every_state = {
 						limit = {
 							is_owned_by = UZB
@@ -30793,8 +30772,7 @@
 							is_owned_by = TAJ
 						}
 						do_tajik_renames = yes
-								}
-								
+					}		
 					every_state = {
 						limit = {
 							OR = {
@@ -30832,9 +30810,9 @@
 						EUR = {
 							add_state_core = PREV
 						}
-						every_country = {
-							secondary_tertiary_leader_enabled_effect = yes
-						}
+					}
+					every_country = {
+						secondary_tertiary_leader_enabled_effect = yes
 					}
 				}
 			}

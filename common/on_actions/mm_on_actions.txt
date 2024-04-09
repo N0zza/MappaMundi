@@ -7246,7 +7246,6 @@ on_actions = {
 							NOT = {
 								OR = {
 									has_cosmetic_tag = USA_1992
-									has_cosmetic_tag = USA_2024
 								}
 							}
 						}
@@ -7261,6 +7260,12 @@ on_actions = {
 								}
 							}
 							set_cosmetic_tag = USA_AUTH
+							if = {
+								limit = {
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = USA_2024_AUTH
+							}
 							every_country = {
 								limit = {
 									OR = {
@@ -7291,6 +7296,12 @@ on_actions = {
 									has_start_date > 1913.01.01
 								}
 								set_cosmetic_tag = USA_SOCIALIST_1914
+							}
+							if = {
+								limit = {
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = USA_2024_SOCIALIST
 							}
 							every_country = {
 								limit = {
@@ -7363,6 +7374,12 @@ on_actions = {
 								}
 							}
 							set_cosmetic_tag = USA_BRITISH
+							if = {
+								limit = {
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = USA_2024_BRITISH
+							}
 							every_country = {
 								limit = {
 									OR = {
