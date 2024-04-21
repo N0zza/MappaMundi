@@ -15798,6 +15798,17 @@
 							transfer_state = PREV
 						}
 					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = CAY
+								is_core_of = REU
+							}
+						}
+						FRA = {
+							transfer_state = PREV
+						}
+					}
 					ITA = {
 						set_cosmetic_tag = ITA_1992
 						set_politics = {
@@ -15853,14 +15864,9 @@
 						}
 					}
 					POR = {
+						set_cosmetic_tag = POR_1992
 						set_politics = {
 							ruling_party = democratic
-						}
-						set_cosmetic_tag = POR_1992
-						set_party_name = {
-							ideology = democratic
-							name = POR_democratic_1992_party
-							long_name = POR_democratic_1992_party_long
 						}
 						set_popularities = {
 							communism = 7
@@ -15869,8 +15875,11 @@
 							centrist_republic = 2
 							democratic = 59
 						}
-					}
-					POR = {
+						set_party_name = {
+							ideology = democratic
+							name = POR_democratic_1992_party
+							long_name = POR_democratic_1992_party_long
+						}
 						create_country_leader = {
 							name = "Presidente Mário Alberto Nobre Lopes Soares"
 							desc = ""
@@ -15921,7 +15930,7 @@
 							ideology = conservatism
 						}
 						create_country_leader = {
-							name = "Kaiser Louis Ferdinand von Hohenzollern"
+							name = "Kaiser Louis I von Hohenzollern"
 							desc = ""
 							picture = "gfx/leaders/WGR/Portrait_Louis_Ferdinand.dds"
 							expire = "1965.1.1"
@@ -15940,6 +15949,13 @@
 							picture = "gfx/leaders/WGR/Portrait_Louis_Ferdinand.dds"
 							expire = "1965.1.1"
 							ideology = anocmon
+						}
+						create_country_leader = {
+							name = "Kaiser Louis I von Hohenzollern"
+							desc = ""
+							picture = "gfx/leaders/WGR/Portrait_Louis_Ferdinand.dds"
+							expire = "1965.1.1"
+							ideology = absolutism
 						}
 					}
 					AUS = {
@@ -16040,7 +16056,6 @@
 							ideology = absolutism
 						}
 					}
-					
 					HUN = {
 						set_cosmetic_tag = HUN_1992
 						set_politics = {
@@ -16096,7 +16111,6 @@
 							ideology = conservative_constitutionalism
 						}
 					}
-					
 					CZE = {
 						set_cosmetic_tag = CZE_1992
 						set_politics = {
@@ -16132,7 +16146,6 @@
 							}
 						}
 					}
-					
 					FRA = {
 						set_cosmetic_tag = FRA_1992
 						set_politics = {
@@ -16166,6 +16179,7 @@
 							anocratic_republic = 23.8
 							liberal_republic = 11.9
 						}
+						transfer_state = 19313
 					}
 					LIE = {
 						set_politics = {
@@ -16239,14 +16253,14 @@
 							anocratic_republic = 11
 						}
 						set_party_name = {
-							ideology = anocratic_republic
-							name = POL_anocratic_republic_1992_party
-							long_name = POL_anocratic_republic_1992_party_long
-						}
-						set_party_name = {
 							ideology = centrist_republic
 							name = POL_centrist_republic_1992_party
 							long_name = POL_centrist_republic_1992_party_long
+						}
+						set_party_name = {
+							ideology = anocratic_republic
+							name = POL_anocratic_republic_1992_party
+							long_name = POL_anocratic_republic_1992_party_long
 						}
 						create_country_leader = {
 							name = "Prezydent Lech Wałęsa"
@@ -16268,6 +16282,11 @@
 						set_politics = {
 							ruling_party = socialism_ideology
 						}
+						set_popularities = {
+							socialism_ideology = 85
+							liberal_republic = 10
+							democratic = 5
+						}
 						set_party_name = {
 							ideology = vanguardism
 							name = ROM_vanguardism_1992_party
@@ -16282,11 +16301,6 @@
 							ideology = socialism_ideology
 							name = ROM_socialism_ideology_1992_party
 							long_name = ROM_socialism_ideology_1992_party_long
-						}
-						set_popularities = {
-							socialism_ideology = 85
-							liberal_republic = 10
-							democratic = 5
 						}
 						create_country_leader = {
 							name = "Președintele Nicolae Ceaușescu"
@@ -16422,8 +16436,6 @@
 							name = YUG_neutrality_1992_party
 							long_name = YUG_neutrality_1992_party_long
 						}
-					}
-					YUG = {
 						create_country_leader = {
 							name = "Pretsedatel na Pretsedatelstvoto Branko Kostić"
 							desc = ""
@@ -16451,8 +16463,6 @@
 							democratic = 43
 							anocratic_republic = 14
 						}
-					}
-					SLV = {
 						create_country_leader = {
 							name = "Predsednik Milan Kučan"
 							desc = ""
@@ -16479,8 +16489,6 @@
 							name = CRO_democratic_2024_party
 							long_name = CRO_democratic_2024_party_long
 						}
-					}
-					CRO = {
 						create_country_leader = {
 							name = "Predsjednik Franjo Tuđman"
 							desc = ""
@@ -16507,8 +16515,6 @@
 							centrist_republic = 30
 							democratic = 32
 						}
-					}
-					MAC = {
 						create_country_leader = {
 							name = "Predsedatel Kiro Gligorov"
 							desc = ""
@@ -16522,10 +16528,10 @@
 						value = 5
 					}
 					SKR = {
+						set_cosmetic_tag = YUG_BLUE
 						set_politics = {
 							ruling_party = anocratic_republic
 						}
-						set_cosmetic_tag = YUG_BLUE
 						set_popularities = {
 							communism = 6
 							democratic = 11
@@ -16533,17 +16539,15 @@
 							neutrality = 27
 							republican_fascism = 17
 						}
-						set_capital = {
-							state = 7363
-						}
-					}
-					SKR = {
 						create_country_leader = {
 							name = "Predsednik Milan Babić"
 							desc = ""
 							picture = "gfx/leaders/SKR/SKR_Babic.tga"
 							expire = "1965.1.1"
 							ideology = anocrep
+						}
+						set_capital = {
+							state = 7363
 						}
 					}
 					GRE = {
@@ -16587,6 +16591,13 @@
 					}
 					SOV = {
 						set_cosmetic_tag = SOV_1992
+						create_country_leader = {
+							name = "Generálʹnyy Sekretárʹ Mikhail Sergeyevich Gorbachyov"
+							desc = ""
+							picture = "gfx/leaders/Russia/Portrait_Mikhail_Gorbachev.dds"
+							expire = "1965.1.1"
+							ideology = totsoc
+						}
 					}
 					RUS = {
 						set_cosmetic_tag = RUS_1992
@@ -16608,6 +16619,25 @@
 							name = RUS_democratic_1992_party
 							long_name = RUS_democratic_1992_party_long
 						}
+						set_party_name = {
+							ideology = neutrality
+							name = RUS_neutrality_party_1992
+							long_name = RUS_neutrality_party_1992_long
+						}
+						create_country_leader = {
+							name = "Generálʹnyy Sekretárʹ Mikhail Sergeyevich Gorbachyov"
+							desc = ""
+							picture = "gfx/leaders/Russia/Portrait_Mikhail_Gorbachev.dds"
+							expire = "1965.1.1"
+							ideology = totsoc
+						}
+						create_country_leader = {
+							name = "Prézident i Predsedátelʹ Pravítelʹstva Mikhail Sergeyevich Gorbachyov"
+							desc = ""
+							picture = "gfx/leaders/Russia/Portrait_Mikhail_Gorbachev.dds"
+							expire = "1965.1.1"
+							ideology = demsoc
+						}
 						create_country_leader = {
 							name = "Prézident i Predsedátelʹ Pravítelʹstva Borís Nikoláyevich Yélʹtsin"
 							desc = ""
@@ -16621,6 +16651,13 @@
 							picture = "gfx/leaders/Russia/Portrait_Boris_Yeltsin.dds"
 							expire = "1965.1.1"
 							ideology = anocrep
+						}
+						create_country_leader = {
+							name = "Prézident i Predsedátelʹ Pravítelʹstva Vladimir Volfovich Zhirinovsky"
+							desc = ""
+							picture = "gfx/leaders/Russia/Portrait_Vladimir_Zhirinovsky.dds"
+							expire = "1965.1.1"
+							ideology = despotism
 						}
 					}
 					TTR = {
@@ -16889,10 +16926,10 @@
 						transfer_state = 12375
 						transfer_state = 12377
 						transfer_state = 18381
+						set_cosmetic_tag = KAZ_1992
 						set_politics = {
 							ruling_party = communism
 						}
-						set_cosmetic_tag = KAZ_1992
 						set_popularities = {
 							vanguardism = 20
 							communism = 60
@@ -18775,15 +18812,28 @@
 						}
 					}
 					### OTHER STUFF 1992 ###
-					every_state = {
-						limit = {
-							is_core_of = ATC
+					ERH = {
+						every_state = {
+							limit = {
+								state = 19307
+							}
+							ERH = {
+								transfer_state = PREV
+							}
 						}
-						ATC = {
-							transfer_state = PREV
+						set_politics = {
+							ruling_party = anocratic_republic
 						}
 					}
 					ATC = {
+						every_state = {
+							limit = {
+								is_core_of = ATC
+							}
+							ATC = {
+								transfer_state = PREV
+							}
+						}
 						set_politics = {
 							ruling_party = neutrality
 						}
