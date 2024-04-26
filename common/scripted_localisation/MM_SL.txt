@@ -1040,22 +1040,22 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TUR
-				has_government = neutrality
-				has_start_date > 2022.01.01
-				has_global_flag = non_hog_secondary_leaders
-			}
-		}
-		localization_key = "Cumhurbaşkanı Yardımcıs Cevdet Yılmaz"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = TUR
 				has_government = authoritarian_monarchism
 				has_start_date < 1915.01.01
 			}
 		}
 		localization_key = "Vazīr-i A‘ẓam Meḥmed Sa‘īd Ḥalīm Pāşā"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUR
+				has_government = neutrality
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
+			}
+		}
+		localization_key = "Başbakan Mustafa İsmet İnönü"
 	}
 	text = {
 		trigger = {
@@ -1083,12 +1083,23 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TUR
-				has_government = neutrality
-				has_start_date > 1935.01.01
-				has_start_date < 1937.01.01
+				has_government = democratic
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
 			}
 		}
-		localization_key = "Başbakan Mustafa İsmet İnönü"
+		localization_key = "Başbakan Sami Süleyman Gündoğdu Demirel"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUR
+				has_government = neutrality
+				has_start_date > 2022.01.01
+				has_global_flag = non_hog_secondary_leaders
+			}
+		}
+		localization_key = "Cumhurbaşkanı Yardımcıs Cevdet Yılmaz"
 	}
 	text = {
 		trigger = {
@@ -5215,22 +5226,22 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TUR
-				has_government = neutrality
-				has_start_date > 2022.01.01
-				has_global_flag = non_hog_secondary_leaders
-			}
-		}
-		localization_key = "GFX_Cevdet_Yilmaz"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = TUR
 				has_government = authoritarian_monarchism
 				has_start_date < 1915.01.01
 			}
 		}
 		localization_key = "GFX_Said_Halim_Pasha"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUR
+				has_government = neutrality
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
+			}
+		}
+		localization_key = "GFX_Ismet_Inonu"
 	}
 	text = {
 		trigger = {
@@ -5258,12 +5269,23 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TUR
-				has_government = neutrality
-				has_start_date > 1935.01.01
-				has_start_date < 1937.01.01
+				has_government = democratic
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
 			}
 		}
-		localization_key = "GFX_Ismet_Inonu"
+		localization_key = "GFX_Suleyman_Demirel"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = TUR
+				has_government = neutrality
+				has_start_date > 2022.01.01
+				has_global_flag = non_hog_secondary_leaders
+			}
+		}
+		localization_key = "GFX_Cevdet_Yilmaz"
 	}
 	text = {
 		trigger = {
