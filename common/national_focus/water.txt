@@ -8510,9 +8510,7 @@
 						is_owned_by = MON
 					}
 				}
-				MON = {
-					add_core_of = PREV
-				}
+				add_core_of = MON
 			}
 			TAN = {
 				transfer_state = 14007
@@ -12254,7 +12252,7 @@
 								is_core_of = SHA
 							}
 						}
-						transfer_state = BRM
+						transfer_state_to = BRM
 					}
 					BRM = {
 						set_politics = {
@@ -12580,7 +12578,7 @@
 						create_country_leader = {
 							name = "Predsedátel' Kurbanbaj Xalikéev"
 							desc = ""
-							picture = 
+							picture = ""
 							expire = "1965.1.1"
 							ideology = totsoc
 						}
@@ -16371,7 +16369,7 @@
 						create_country_leader = {
 							name = "Cumhurbaşkanı Halil Turgut Özal"
 							desc = ""
-							picture = "gfx/leaders/TUR/TUR_Ozal.tga
+							picture = "gfx/leaders/TUR/TUR_Ozal.tga"
 							expire = "1965.1.1"
 							ideology = conservatism
 						}
