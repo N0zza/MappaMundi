@@ -16348,6 +16348,7 @@
 						transfer_state = 5688
 						transfer_state = 898
 						transfer_state = 9848
+						transfer_state = 3618
 						set_politics = {
 							ruling_party = democratic
 						}
@@ -17554,7 +17555,7 @@
 							long_name = COG_neutrality_1992_party_long
 						}
 						create_country_leader = {
-							name = "Président Mobutu Sese Seko Kuku Ngbendu wa Za Banga "
+							name = "Président Mobutu Sese Seko Kuku Ngbendu wa za Banga "
 							desc = ""
 							picture = "gfx/leaders/COG/COG_Mobutu_1992.tga"
 							expire = "1965.1.1"
@@ -18079,6 +18080,9 @@
 					every_state = {
 						limit = {
 							is_core_of = SYR
+							NOT = {
+								is_owned_by = TUR
+							}
 						}
 						SYR = {
 							transfer_state = PREV
@@ -18925,6 +18929,13 @@
 						}
 						set_politics = {
 							ruling_party = democratic
+						}
+						set_popularities = {
+							communism = 2
+							socialism_ideology = 19
+							liberal_republic = 12
+							centrist_republic = 33
+							democratic = 34
 						}
 					}
 					### OTHER STUFF 1992 ###
