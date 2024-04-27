@@ -150,9 +150,17 @@ tertiary_leader_enabled_effect = {
 	}
 	else_if = {
 		limit = {
-			AND = {
-				tag = YUG
-				has_government = fascism
+			OR = {
+				AND = {
+					tag = YUG
+					has_government = fascism
+				}
+				AND = {
+					tag = YUG
+					has_government = neutrality
+					has_start_date > 1990.01.01
+					has_start_date < 2000.01.01
+				}
 			}
 		}
 		set_country_flag = has_tertiary_leader

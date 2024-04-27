@@ -1,7 +1,7 @@
-add_namespace = mmleaderdebug
+add_namespace = mmdebug
 
-country_event = { #Yeet the princely states 2 electric boogaloo
-	id = mm.69
+country_event = { 
+	id = mmdebug.456
 	title = "Debug Event ?"
 	desc = "Debug Event"
 	fire_only_once = yes
@@ -12,10 +12,14 @@ country_event = { #Yeet the princely states 2 electric boogaloo
 		ai_chance = {
 			factor = 0
 		}
-		effect = {
-			annex_country = {
-				target = RCG
-				transfer_troops = yes
+		PER = {
+			set_popularities = {
+				centrist_republic = 2
+				democratic = 9
+				anocratic_republic = 13
+				neutrality = 15
+				republican_fascism = 1
+				theocratic = 60
 			}
 		}
 	}

@@ -125,6 +125,17 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = YUG
+				has_government = neutrality
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Predsednik Republike Srbije Slobodan Milošević"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = TUN
 				has_government = authoritarian_monarchism
 				has_start_date > 1936.01.01
@@ -691,6 +702,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Petar_II_Karadordevic"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = YUG
+				has_government = neutrality
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Slobodan_Milosevic"
 	}
 	text = {
 		trigger = {
