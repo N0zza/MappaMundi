@@ -2228,11 +2228,11 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LIE
-				has_government = centrist_monarchism
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Prinzregent Alois von Liechtenstein"
+		localization_key = "Stellvertreter des Fürsten Alois Philipp Maria Erbprinz von und zu Liechtenstein, Graf zu Rietberg"
 	}
 	text = {
 		trigger = {
@@ -3302,6 +3302,16 @@ defined_text = {
 			}
 		}
 		localization_key = "Political Agent Harold Richard Patrick Dickson"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = KUW
+				has_government = anocratic_monarchism
+				has_start_date > 2023.01.01
+			}
+		}
+		localization_key = "Raʾīs Maǧlis al-Wuzarāʾ aš-Šayẖ Aḥmad Nawāf al-Aḥmad aṣ-Ṣabāḥ"
 	}
 	text = {
 		trigger = {
@@ -6751,7 +6761,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LIE
-				has_government = centrist_monarchism
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -7118,6 +7128,7 @@ defined_text = {
 			AND = {
 				tag = KUW
 				has_government = anocratic_monarchism
+				has_start_date > 2023.01.01
 			}
 		}
 		localization_key = "GFX_Ahmed_Nawaf"

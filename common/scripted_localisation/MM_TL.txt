@@ -167,7 +167,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LIE
-				has_government = centrist_monarchism
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -435,6 +435,16 @@ defined_text = {
 		localization_key = "Reichsbevollmächtigter Josef Antonius Heinrich Terboven"
 	}
 	text = {
+		trigger = {
+			AND = {
+				tag = SWI
+				has_government = centrist_republic
+				has_start_date > 2023.01.01
+			}
+		}
+		localization_key = "Vizepräsidentin des Bundesrates Karin Keller-Sutter"
+	}
+	text = {
 		localization_key = "To be Added"
 	}
 }
@@ -560,7 +570,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LIE
-				has_government = centrist_monarchism
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -887,6 +897,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Josef_Terboven"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SWI
+				has_government = centrist_republic
+				has_start_date > 2023.01.01
+			}
+		}
+		localization_key = "GFX_Karin_Keller_Sutter"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
