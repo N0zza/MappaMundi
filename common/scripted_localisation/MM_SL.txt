@@ -166,6 +166,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = CAN
+				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Prime Minister Sir Robert Laird Borden"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CAN
 				has_government = democratic_monarchism
 				has_start_date > 1935.01.01
 				has_start_date < 1940.01.01
@@ -188,12 +199,12 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = CAN
-				has_government = conservative_monarchism
-				has_start_date < 1915.01.01
-				has_start_date > 1913.01.01
+				has_government = centrist_monarchism
+				has_start_date < 2000.01.01
+				has_start_date > 1990.01.01
 			}
 		}
-		localization_key = "Prime Minister Sir Robert Laird Borden"
+		localization_key = "Prime Minister Martin Brian Mulroney"
 	}
 	text = {
 		trigger = {
@@ -3419,6 +3430,17 @@ defined_text = {
 			AND = {
 				tag = JOR
 				has_government = authoritarian_monarchism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Raʾīs al-Wuzarāʾ Zayd bin Šākir bin Zayd bin Fawāz bin Nāṣir bin Fawāz bin ʿAwn, al-Amīr al-Hāšimī"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JOR
+				has_government = authoritarian_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -4629,6 +4651,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Robert_Borden"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = CAN
+				has_government = centrist_monarchism
+				has_start_date < 2000.01.01
+				has_start_date > 1990.01.01
+			}
+		}
+		localization_key = "GFX_Brian_Mulroney"
 	}
 	text = {
 		trigger = {
@@ -7242,6 +7275,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Muhmmad_bin_Rashid"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = JOR
+				has_government = authoritarian_monarchism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Zaid_bin_Shaker"
 	}
 	text = {
 		trigger = {

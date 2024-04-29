@@ -18108,16 +18108,38 @@
 							authoritarian_monarchism = 72
 						}
 					}
+					JOR = {
+						create_country_leader = {
+							name = "Malik al-Ḥusayn bin Ṭalāl al-Hāšimī"
+							desc = ""
+							picture = "gfx/leaders/JOR/JOR_Hussein.tga"
+							expire = "1965.1.1"
+							ideology = authmon
+						}
+					}
 					SAU = {
 						transfer_state = 1176
+						transfer_state = 2134
 						transfer_state = 3353
 						transfer_state = 5884
+						transfer_state = 6652
 						transfer_state = 8628
 						transfer_state = 9436
 						transfer_state = 9280
 						transfer_state = 14392
 						transfer_state = 19812
 						transfer_state = 19815
+						transfer_state = 19797
+						set_cosmetic_tag = SAU_2024
+					}
+					SAU = {
+						create_country_leader = {
+							name = "Malik wa Raʾīs Maǧlis al-Wuzarāʾ Fahd bin ʿAbd ul-ʿAzīz Āl Suʿūd"
+							desc = ""
+							picture = "gfx/leaders/SAU/SAU_Fahd.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+						}
 					}
 					every_state = {
 						limit = {
@@ -18573,7 +18595,7 @@
 						set_popularities = {
 							neutrality = 60
 							anocratic_republic = 8
-							theocratic = 12
+							republican_fascism = 12
 							stratocratic = 20
 						}
 						every_state = {
@@ -18590,6 +18612,30 @@
 							picture = "gfx/leaders/IDS/IDS_Suharto.tga"
 							expire = "1965.1.1"
 							ideology = despotism
+						}
+					}
+					AST = {
+						transfer_state = 711
+						transfer_state = 712
+						transfer_state = 2692
+						set_politics = {
+							ruling_party = democratic_monarchism
+						}
+						set_cosmetic_tag = AST_2024
+						set_popularities = {
+							democratic_monarchism = 53
+							centrist_monarchism = 1
+							conservative_monarchism = 46
+						}
+					}
+					NZL = {
+						set_politics = {
+							ruling_party = conservative_monarchism
+						}
+						set_cosmetic_tag = NZL_2024
+						set_popularities = {
+							socialist_monarchy = 31
+							conservative_monarchism = 69
 						}
 					}
 					IRQ = {
@@ -18868,6 +18914,15 @@
 							ideology = centrist_monarchism
 							name = CAN_centrist_monarchism_1992_party
 							long_name = CAN_centrist_monarchism_1992_party_long
+						}
+					}
+					CAN = {
+						create_country_leader = {
+							name = "Governor General Ramon John Hnatyshyn"
+							desc = ""
+							picture = "gfx/leaders/CAN/CAN_Hnatyshyn.tga"
+							expire = "1965.1.1"
+							ideology = cenmon
 						}
 					}
 					MEX = {
@@ -24231,7 +24286,7 @@
 						transfer_state = 19815
 						set_cosmetic_tag = SAU_2024
 						create_country_leader = {
-							name = "Malik Salmān bin ʿAbd al-ʿAzīz bin ʿAbd ar-Raḥman as- Suʿūd"
+							name = "Malik Salmān bin ʿAbd al-ʿAzīz bin ʿAbd ar-Raḥman Āl Suʿūd"
 							desc = ""
 							picture = "gfx/leaders/SAU/SAU_Salman.tga"
 							expire = "1965.1.1"

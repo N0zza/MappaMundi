@@ -1199,7 +1199,7 @@ secondary_leader_enabled_effect = {
 					}
 					AND = {
 						has_government = authoritarian_monarchism
-						has_start_date > 2022.01.01
+						has_start_date > 1990.01.01
 					}
 				}
 			}
@@ -1589,6 +1589,11 @@ secondary_leader_enabled_effect = {
 						has_government = conservative_monarchism
 						has_start_date < 1915.01.01
 						has_start_date > 1913.01.01
+					}
+					AND = {
+						has_government = centrist_monarchism
+						has_start_date < 2000.01.01
+						has_start_date > 1990.01.01
 					}
 				}
 			}
