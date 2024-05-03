@@ -33974,6 +33974,16 @@ do_arabic_renames = {
 }
 
 do_standard_arabic_renames = {
+	
+	if = {
+		limit = {
+			state = 17339
+		}		
+		set_province_name = {
+			id = 7023
+			name = "Madīnaẗ al-Baʿaṯ"
+		}
+	}
 
 	if = {
 		limit = {
@@ -57087,6 +57097,36 @@ do_latvian_renames = {
 
 	if = {
 		limit = {
+			state = 4860
+		}		
+		set_province_name = {
+			id = 6324
+			name = "Ostrova"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3010
+		}		
+		set_province_name = {
+			id = 11234
+			name = "Veļikije Luki"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1294
+		}		
+		set_province_name = {
+			id = 11259
+			name = "Sosnovijbora"
+		}
+	}
+
+	if = {
+		limit = {
 			state = 1294
 		}		
 		set_province_name = {
@@ -57506,6 +57546,76 @@ do_latvian_renames = {
 	}
 }
 do_estonian_renames = {
+
+	if = {
+		limit = {
+			state = 4860
+		}		
+		set_province_name = {
+			id = 6324
+			name = "Ostrov"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1878
+		}		
+		set_province_name = {
+			id = 9206
+			name = "Viiburi"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 195
+		}		
+		set_province_name = {
+			id = 3151
+			name = "Peterburi"
+		}
+    }
+
+	if = {
+		limit = {
+			state = 4869
+		}		
+		set_province_name = {
+			id = 117
+			name = "Uuslinn"
+		}
+    }
+
+	if = {
+		limit = {
+			state = 13836
+		}		
+		set_province_name = {
+			id = 6139
+			name = "Luuga"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 4860
+		}		
+		set_province_name = {
+			id = 6324
+			name = "Saar"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 4861
+		}		
+		set_province_name = {
+			id = 11202
+			name = "Pihkva"
+		}
+	}
 
 	if = {
 		limit = {
@@ -72559,7 +72669,7 @@ do_finnish_renames = {
 		}		
 		set_province_name = {
 			id = 9206
-			name = "Vilpuri"
+			name = "Viipuri"
 		}
 	}
 }
