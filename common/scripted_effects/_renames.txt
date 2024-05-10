@@ -33459,10 +33459,20 @@ do_arabic_renames = {
 	
 	if = {
 		limit = {
+			state = 15665
+		}		
+		set_province_name = {
+			id = 10073
+			name = "Fuadiyah"
+		}
+	}
+	
+	if = {
+		limit = {
 			state = 15799
 		}		
 		set_province_name = {
-			id = 3429
+			id = 3249
 			name = "Tanta"
 		}
 	}
@@ -35575,7 +35585,7 @@ do_standard_arabic_renames = {
 		}		
 		set_province_name = {
 			id = 3198
-			name = "Banī Swīf"
+			name = "Banī Suwīf"
 		}
 	}
 	
@@ -35611,10 +35621,29 @@ do_standard_arabic_renames = {
 	
 	if = {
 		limit = {
+			state = 15665
+		}
+		set_province_name = {
+			id = 10073
+			name = "Fūʾādiyyaẗ"
+		}
+		if = {
+			limit = {
+				has_start_date > 1955.01.01
+			}
+			set_province_name = {
+				id = 10073
+				name = "Kafr al-Šayḫ"
+			}
+		}
+	}
+	
+	if = {
+		limit = {
 			state = 15799
 		}		
 		set_province_name = {
-			id = 3429
+			id = 3249
 			name = "Ṭanṭā"
 		}
 	}
@@ -42664,10 +42693,20 @@ do_english_renames = {
 	
 	if = {
 		limit = {
+			state = 15665
+		}		
+		set_province_name = {
+			id = 10073
+			name = "Fuadiyah"
+		}
+	}
+	
+	if = {
+		limit = {
 			state = 15799
 		}		
 		set_province_name = {
-			id = 3429
+			id = 3249
 			name = "Tanta"
 		}
 	}
@@ -44075,10 +44114,20 @@ do_latin_renames = {
 	
 	if = {
 		limit = {
+			state = 15665
+		}		
+		set_province_name = {
+			id = 3428
+			name = "Fuadiya"
+		}
+	}
+	
+	if = {
+		limit = {
 			state = 15799
 		}		
 		set_province_name = {
-			id = 3429
+			id = 3249
 			name = "Tandata"
 		}
 	}
@@ -69095,10 +69144,20 @@ do_turkish_renames = {
 	
 	if = {
 		limit = {
+			state = 15665
+		}		
+		set_province_name = {
+			id = 10073
+			name = "Fuadiye"
+		}
+	}
+	
+	if = {
+		limit = {
 			state = 15799
 		}		
 		set_province_name = {
-			id = 3429
+			id = 3249
 			name = "Tanta"
 		}
 	}
@@ -76289,10 +76348,20 @@ do_italian_renames = {
 	
 	if = {
 		limit = {
+			state = 15665
+		}		
+		set_province_name = {
+			id = 10073
+			name = "Fuadiyah"
+		}
+	}
+	
+	if = {
+		limit = {
 			state = 15799
 		}		
 		set_province_name = {
-			id = 3429
+			id = 3249
 			name = "Tanta"
 		}
 	}
@@ -84873,10 +84942,20 @@ do_french_renames = {
 	
 	if = {
 		limit = {
+			state = 15665
+		}		
+		set_province_name = {
+			id = 10073
+			name = "Fouadiyah"
+		}
+	}
+	
+	if = {
+		limit = {
 			state = 15799
 		}		
 		set_province_name = {
-			id = 3429
+			id = 3249
 			name = "Tanta"
 		}
 	}
