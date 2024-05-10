@@ -6095,6 +6095,10 @@ on_actions = {
 									has_government = stratocratic
 									has_government = national_socialism
 									has_government = right_anarchism
+									AND = {
+										has_start_date > 2022.01.01
+										has_government = anocratic_republic
+									}
 								}
 							}
 							set_cosmetic_tag = ITA_AUTH
@@ -6221,6 +6225,23 @@ on_actions = {
 									}
 								}
 								set_cosmetic_tag = ITA_SOCIALIST
+							}
+							if = {
+								limit = {
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = ITA_2024_SOCIALIST
+								every_country = {
+									limit = {
+										OR = {
+											has_cosmetic_tag = ITA_REPUBLIC
+											has_cosmetic_tag = ITA_SOCIALIST
+											has_cosmetic_tag = ITA_GREEN
+											has_cosmetic_tag = ITA_AUTH
+										}
+									}
+									set_cosmetic_tag = ITA_2024_SOCIALIST
+								}
 							}
 						}
 					}

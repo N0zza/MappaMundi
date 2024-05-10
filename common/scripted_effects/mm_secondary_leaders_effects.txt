@@ -1472,8 +1472,12 @@ secondary_leader_enabled_effect = {
 					}
 					AND = {
 						OR = {
+							has_government = communism
 							has_government = socialism_ideology
+							has_government = liberal_republic
+							has_government = centrist_republic
 							has_government = democratic
+							has_government = anocratic_republic
 						}
 						has_start_date > 2022.01.01
 					}
