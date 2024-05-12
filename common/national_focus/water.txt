@@ -21322,6 +21322,11 @@
 							long_name = ITA_authoritarian_monarchism_2024_party_long
 						}
 						set_party_name = {
+							ideology = stratocratic
+							name = ITA_stratocratic_2024_party
+							long_name = ITA_stratocratic_2024_party_long
+						}
+						set_party_name = {
 							ideology = republican_fascism
 							name = ITA_republican_fascism_2024_party
 							long_name = ITA_republican_fascism_2024_party_long
@@ -21351,7 +21356,7 @@
 							desc = ""
 							picture = "gfx/leaders/ITA/ITA_Rizzo.tga"
 							expire = "1965.1.1"
-							ideology = vanguardism
+							ideology = totsoc
 						}
 						create_country_leader = {
 							name = "Presidente Luigi Manconi"
@@ -21417,11 +21422,32 @@
 							ideology = anocrep
 						}
 						create_country_leader = {
+							name = "Capo di Stato Carlo Fidanza"
+							desc = ""
+							picture = "gfx/leaders/ITA/ITA_Fidanza.tga"
+							expire = "1965.1.1"
+							ideology = despotism
+						}
+						create_country_leader = {
+							name = "Comandante in capo Giuseppe Cavo Dragone"
+							desc = ""
+							picture = "gfx/leaders/ITA/ITA_Dragone.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+						create_country_leader = {
 							name = "Re Aimone del Savoia"
 							desc = ""
 							picture = "gfx/leaders/ITA/ITA_Aimone.tga"
 							expire = "1965.1.1"
 							ideology = stratmon
+						}
+						create_country_leader = {
+							name = "Capo di Stato Francesco Condorelli Caff"
+							desc = ""
+							picture = "gfx/leaders/ITA/ITA_Condorelli.tga"
+							expire = "1965.1.1"
+							ideology = repfash
 						}
 						create_country_leader = {
 							name = "Re Aimone del Savoia"
@@ -24794,7 +24820,7 @@
 					TUR = {
 						set_cosmetic_tag = TUR_2024
 						set_politics = {
-							ruling_party = neutrality
+							ruling_party = anocratic_republic
 						}
 						set_party_name = {
 							ideology = vanguardism
@@ -24839,11 +24865,13 @@
 						set_popularities = {
 							vanguardism = 1
 							communism = 10
-							socialism_ideology = 28
-							liberal_republic = 7
-							anocratic_republic = 2
-							neutrality = 44
-							republican_fascism = 8
+							socialism_ideology = 21
+							liberal_republic = 6
+							centrist_republic = 4
+							democratic = 4
+							anocratic_republic = 44
+							neutrality = 3
+							republican_fascism = 7
 						}
 					}
 					TUR = {
@@ -24922,7 +24950,7 @@
 							desc = ""
 							picture = "gfx/leaders/TUR/TUR_Oğan.tga"
 							expire = "1965.1.1"
-							ideology = anocrep
+							ideology = despotism
 						}
 						create_country_leader = {
 							name = "Padişah Harun"
@@ -24936,7 +24964,7 @@
 							desc = ""
 							picture = "gfx/leaders/TUR/TUR_Erdogan.tga"
 							expire = "1965.1.1"
-							ideology = despotism
+							ideology = anocrep
 						}
 						create_country_leader = {
 							name = "Halife Harun"

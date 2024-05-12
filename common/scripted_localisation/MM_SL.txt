@@ -527,12 +527,32 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Capo del Governo Ignazio Benito Maria La Russa"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
+				has_government = republican_fascism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Capo del Governo Primo Ministro Segretario di Stato Luca Romagnoli"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
 				has_government = fascism
 				has_start_date < 1940.01.01
 				has_start_date > 1915.01.01
 			}
 		}
-		localization_key = "Capo del Governo, Primo Ministro Segretario di Stato Benito Amilcare Andrea Mussolini"
+		localization_key = "Capo del Governo Primo Ministro Segretario di Stato Benito Amilcare Andrea Mussolini"
 	}
 	text = {
 		trigger = {
@@ -1145,7 +1165,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TUR
-				has_government = neutrality
+				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 				has_global_flag = non_hog_secondary_leaders
 			}
@@ -4878,6 +4898,26 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Ignazio_La_Russa"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
+				has_government = republican_fascism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Luca_Romagnoli"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
 				has_government = fascism
 				has_start_date < 1940.01.01
 				has_start_date > 1915.01.01
@@ -5436,7 +5476,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TUR
-				has_government = neutrality
+				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 				has_global_flag = non_hog_secondary_leaders
 			}

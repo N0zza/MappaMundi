@@ -1478,6 +1478,8 @@ secondary_leader_enabled_effect = {
 							has_government = centrist_republic
 							has_government = democratic
 							has_government = anocratic_republic
+							has_government = neutrality
+							has_government = republican_fascism
 						}
 						has_start_date > 2022.01.01
 					}
@@ -2370,7 +2372,7 @@ secondary_leader_enabled_effect = {
 					}
 					AND = {
 						has_global_flag = non_hog_secondary_leaders
-						has_government = neutrality
+						has_government = anocratic_republic
 						has_start_date > 2022.01.01
 					}
 				}
