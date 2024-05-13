@@ -3464,7 +3464,56 @@ secondary_leader_enabled_effect = {
 						has_start_date > 1935.01.01
 						has_start_date < 1937.01.01
 					}
+					AND = {
+						has_government = democratic
+						has_start_date > 2022.01.01
+						has_global_flag = non_hog_secondary_leaders
+					}
 				}
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = IDS
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+				has_global_flag = non_hog_secondary_leaders
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = BRA
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+				has_global_flag = non_hog_secondary_leaders
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = ARG
+				has_government = right_anarchism
+				has_start_date > 2022.01.01
+				has_global_flag = non_hog_secondary_leaders
+			}
+		}
+		set_country_flag = has_secondary_leader
+	}
+	else_if = {
+		limit = {
+			AND = {
+				tag = PRU
+				has_government = anocratic_republic
+				has_start_date > 2022.01.01
+				has_global_flag = non_hog_secondary_leaders
 			}
 		}
 		set_country_flag = has_secondary_leader
