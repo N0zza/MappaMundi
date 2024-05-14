@@ -7147,11 +7147,63 @@ on_actions = {
 						else_if = {
 							limit = {
 								OR = {
+									has_government = stratocratic
+									AND = {
+										has_start_date < 2025.01.01
+										has_start_date > 2022.01.01
+										has_government = neutrality
+									}
+								}
+							}
+							set_cosmetic_tag = GRE_AUTH
+							if = {
+								limit = {
+									has_start_date < 2025.01.01
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = GRE_AUTH_2024
+							}
+						}
+						else_if = {
+							limit = {
+								OR = {
 									has_government = republican_fascism
 									has_government = fascism
 								}
 							}
 							set_cosmetic_tag = ITA_GREEN
+							if = {
+								limit = {
+									has_start_date < 2025.01.01
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = GRE_AUTH_2024
+								if = {
+									limit = {
+										AND = {
+											has_start_date < 2025.01.01
+											has_start_date > 2022.01.01
+											has_government = republican_fascism
+										}
+									}
+									set_cosmetic_tag = GRE_AUTH_2024_REPCORP
+								}
+							}
+						}
+						else_if = {
+							limit = {
+								OR = {
+									has_government = national_socialism
+								}
+							}
+							set_cosmetic_tag = GRE_AUTH
+							if = {
+								limit = {
+									has_start_date < 2025.01.01
+									has_start_date > 2022.01.01
+								}
+								set_cosmetic_tag = GRE_AUTH_2024
+							}
 						}
 						else = {
 							if = {

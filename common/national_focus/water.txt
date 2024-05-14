@@ -16584,24 +16584,6 @@
 							state = 7363
 						}
 					}
-					GRE = {
-						set_politics = {
-							ruling_party = democratic
-						}
-						set_cosmetic_tag = GRE_2024
-						set_party_name = {
-							ideology = democratic
-							name = GRE_democratic_2024_party
-							long_name = GRE_democratic_2024_party_long
-						}
-						set_popularities = {
-							communism = 6
-							socialism_ideology = 41
-							liberal_republic = 1
-							centrist_republic = 1
-							democratic = 51
-						}
-					}
 					EST = {
 						set_cosmetic_tag = EST_1992
 						set_politics = {
@@ -20855,14 +20837,29 @@
 						}
 					}
 					GRE = {
+						set_cosmetic_tag = GRE_2024
 						set_politics = {
 							ruling_party = democratic
 						}
-						set_cosmetic_tag = GRE_2024
+						set_party_name = {
+							ideology = socialism_ideology
+							name = GRE_socialism_ideology_2024_party
+							long_name = GRE_socialism_ideology_2024_party_long
+						}
 						set_party_name = {
 							ideology = democratic
 							name = GRE_democratic_2024_party
 							long_name = GRE_democratic_2024_party_long
+						}
+						set_party_name = {
+							ideology = republican_fascism
+							name = GRE_republican_fascism_2024_party
+							long_name = GRE_republican_fascism_2024_party_long
+						}
+						set_party_name = {
+							ideology = national_socialism
+							name = GRE_national_socialism_2024_party
+							long_name = GRE_national_socialism_2024_party_long
 						}
 						set_popularities = {
 							vanguardism = 7
@@ -20874,14 +20871,19 @@
 							neutrality = 3
 							republican_fascism = 4
 						}
-					}
-					GRE = {
 						create_country_leader = {
 							name = "Próedros Aikateríni Nikoláou Sakellaropoúlou"
 							desc = ""
 							picture = "gfx/leaders/GRE/GRE_Sakellaropoulou.tga"
 							expire = "1965.1.1"
 							ideology = conservatism
+						}
+						create_country_leader = {
+							name = "Arkhigós Nikólaos G. Mikhaloliákos"
+							desc = ""
+							picture = "gfx/leaders/GRE/Portrait_Nikolaos_Michaloliakos.dds"
+							expire = "1965.1.1"
+							ideology = natsoc
 						}
 					}
 					MAT = {
@@ -21341,6 +21343,11 @@
 							name = ITA_national_socialism_2024_party
 							long_name = ITA_national_socialism_2024_party_long
 						}
+						set_party_name = {
+							ideology = theocratic
+							name = ITA_theocratic_2024_party
+							long_name = ITA_theocratic_2024_party_long
+						}
 						set_popularities = {
 							communism = 3
 							socialism_ideology = 17
@@ -21349,8 +21356,6 @@
 							democratic = 43
 							anocratic_republic = 17
 						}
-					}
-					ITA = {
 						create_country_leader = {
 							name = "Presidente del Consiglio di Stato Marco Rizzo"
 							desc = ""
@@ -25194,6 +25199,21 @@
 							ideology = conservative_monarchism
 							name = PER_conservative_monarchism_2024_party
 							long_name = PER_conservative_monarchism_2024_party_long
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = PER_neutrality_2024_party
+							long_name = PER_neutrality_2024_party_long
+						}
+						set_party_name = {
+							ideology = stratocratic
+							name = PER_stratocratic_2024_party
+							long_name = PER_stratocratic_2024_party_long
+						}
+						set_party_name = {
+							ideology = republican_fascism
+							name = PER_republican_fascism_2024_party
+							long_name = PER_republican_fascism_2024_party_long
 						}
 						set_party_name = {
 							ideology = theocratic
