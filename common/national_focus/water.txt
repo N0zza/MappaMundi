@@ -19911,6 +19911,11 @@
 						province = 17695
 						value = 5
 					}
+					RUS = {
+						every_owned_state = {
+							do_russian_renames = yes
+						}
+					}
 					WGR = {
 						transfer_state = 5079
 						transfer_state = 8412
@@ -31255,6 +31260,7 @@
 						limit = {
 							OR = {
 								is_owned_by = POR
+								is_owned_by = SPR
 								is_owned_by = SPR
 								is_owned_by = MLT
 								is_owned_by = FRA
