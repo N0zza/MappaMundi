@@ -477,7 +477,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = socialism_ideology
+				OR = {
+					has_government = socialism_ideology
+					has_government = socialist_monarchy
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -487,7 +490,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = liberal_republic
+				OR = {
+					has_government = liberal_republic
+					has_government = democratic_monarchism
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -497,7 +503,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = centrist_republic
+				OR = {
+					has_government = centrist_republic
+					has_government = centrist_monarchism
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -507,7 +516,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = democratic
+				OR = {
+					has_government = democratic
+					has_government = conservative_monarchism
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -517,7 +529,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = anocratic_republic
+				OR = {
+					has_government = anocratic_republic
+					has_government = anocratic_monarchism
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -527,7 +542,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = neutrality
+				OR = {
+					has_government = neutrality
+					has_government = authoritarian_monarchism
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -537,7 +555,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = republican_fascism
+				OR = {
+					has_government = republican_fascism
+					has_government = fascism
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -4903,7 +4924,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = socialism_ideology
+				OR = {
+					has_government = socialism_ideology
+					has_government = socialist_monarchy
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -4913,7 +4937,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = liberal_republic
+				OR = {
+					has_government = liberal_republic
+					has_government = democratic_monarchism
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -4923,7 +4950,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = centrist_republic
+				OR = {
+					has_government = centrist_republic
+					has_government = centrist_monarchism
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -4933,7 +4963,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = democratic
+				OR = {
+					has_government = democratic
+					has_government = conservative_monarchism
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -4943,7 +4976,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = anocratic_republic
+				OR = {
+					has_government = anocratic_republic
+					has_government = anocratic_monarchism
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -4953,7 +4989,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = neutrality
+				OR = {
+					has_government = neutrality
+					has_government = authoritarian_monarchism
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -4963,7 +5002,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ITA
-				has_government = republican_fascism
+				OR = {
+					has_government = republican_fascism
+					has_government = fascism
+				}
 				has_start_date > 2022.01.01
 			}
 		}

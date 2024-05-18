@@ -1471,15 +1471,16 @@ secondary_leader_enabled_effect = {
 						has_start_date < 2000.01.01
 					}
 					AND = {
-						OR = {
-							has_government = communism
-							has_government = socialism_ideology
-							has_government = liberal_republic
-							has_government = centrist_republic
-							has_government = democratic
-							has_government = anocratic_republic
-							has_government = neutrality
-							has_government = republican_fascism
+						NOT = {
+							has_government = vanguardism
+							has_government = stratocratic
+							has_government = stratocratic_monarchism
+							has_government = national_socialism
+							has_government = monarchism
+							has_government = theocratic
+							has_government = right_anarchism
+							has_government = left_anarchism
+							has_government = anarchism_ideology
 						}
 						has_start_date > 2022.01.01
 					}
