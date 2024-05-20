@@ -21259,6 +21259,11 @@
 							ruling_party = democratic
 						}
 						set_party_name = {
+							ideology = left_anarchism
+							name = ITA_left_anarchism_2024_party
+							long_name = ITA_left_anarchism_2024_party_long
+						}
+						set_party_name = {
 							ideology = vanguardism
 							name = ITA_vanguardism_2024_party
 							long_name = ITA_vanguardism_2024_party_long
@@ -21352,6 +21357,11 @@
 							ideology = theocratic
 							name = ITA_theocratic_2024_party
 							long_name = ITA_theocratic_2024_party_long
+						}
+						set_party_name = {
+							ideology = right_anarchism
+							name = ITA_right_anarchism_2024_party
+							long_name = ITA_right_anarchism_2024_party_long
 						}
 						set_popularities = {
 							communism = 3
@@ -21493,6 +21503,20 @@
 							picture = "gfx/leaders/ITA/ITA_Iannona.tga"
 							expire = "1965.1.1"
 							ideology = natsoc
+						}
+						create_country_leader = {
+							name = "Imperatore Aimone di Savoia"
+							desc = ""
+							picture = "gfx/leaders/ITA/ITA_Aimone.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+						}
+						create_country_leader = {
+							name = "Capo Leonardo Facco"
+							desc = ""
+							picture = "gfx/leaders/ITA/ITA_Facco.tga"
+							expire = "1965.1.1"
+							ideology = ancap
 						}
 					}
 					OML = {
@@ -23629,6 +23653,9 @@
 							liberal_republic = 27
 							centrist_republic = 18
 							democratic = 49
+						}
+						every_owned_state = {
+							do_sinhalese_renames = yes
 						}
 					}
 					SRL = {

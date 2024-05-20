@@ -6206,10 +6206,12 @@ on_actions = {
 								OR = {
 									has_government = left_anarchism
 									AND = {
-										has_government = socialism_ideology
+										OR = {
+											has_government = socialism_ideology
+											has_government = socialist_monarchy
+										}
 										has_start_date < 2022.01.01
 									}
-									has_government = socialist_monarchy
 									has_government = communism
 									has_government = vanguardism
 								}
