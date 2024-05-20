@@ -2,17 +2,12 @@
 
 # clone of Yugoslavia
 
-	set_popularities = {
-		democratic 
-			 = 20
-		neutrality 
-			 = 60
-	        stratocratic_monarchism 
-                         = 20
-		}
+set_popularities = {
+	neutrality = 100
+}
 
-	set_politics = { 
- ruling_party = neutrality
+set_politics = { 
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -64,6 +59,16 @@ create_country_leader = {
 	picture = "gfx/leaders/MNT/MNT_Plamenac_condem.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Knez Michael I Petrović-Njegoši"
+	desc = ""
+	picture = "gfx/leaders/MNT/MNT_Michael.tga"
+	expire = "1965.1.1"
+	ideology = authmon
 	traits = {
 	}
 }
