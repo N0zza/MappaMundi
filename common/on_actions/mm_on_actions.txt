@@ -7088,6 +7088,14 @@ on_actions = {
 							}
 							set_cosmetic_tag = ITA_GREEN
 						}
+						else_if = {
+							limit = {
+								has_government = authoritarian_monarchism
+								has_start_date < 2025.01.01
+								has_start_date > 2022.01.01
+							}
+							set_cosmetic_tag = ALB_ITA_2024
+						}
 						else = {
 							if = {
 								limit = {
@@ -7247,6 +7255,28 @@ on_actions = {
 								}
 								set_cosmetic_tag = GRE_2024
 							}
+						}
+					}
+					if = {
+						limit = {
+							tag = MAC
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = monarchism
+									has_start_date < 2025.01.01
+									has_start_date > 2022.01.01
+								}
+							}
+							set_cosmetic_tag = MAC_2024_EMPIRE
+						}
+						else_if = {
+							limit = {
+								has_start_date < 2025.01.01
+								has_start_date > 2022.01.01
+							}
+							drop_cosmetic_tag = yes
 						}
 					}
 					if = {

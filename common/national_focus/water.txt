@@ -21627,6 +21627,7 @@
 					MNT = {
 						transfer_state = 2289
 						transfer_state = 7343
+						set_cosmetic_tag = MNT_2024
 						set_politics = {
 							ruling_party = centrist_republic
 						}
@@ -21642,8 +21643,6 @@
 							democratic = 21
 							anocratic_republic = 16
 						}
-					}
-					MNT = {
 						create_country_leader = {
 							name = "Predsjednik Jakov Milatović"
 							desc = ""
@@ -21679,15 +21678,19 @@
 						}
 					}
 					ALB = {
-						drop_cosmetic_tag = yes
+						set_cosmetic_tag = ALB_2024
 						set_politics = {
 							ruling_party = socialism_ideology
 						}
-						set_cosmetic_tag = ALB_2024
 						set_party_name = {
 							ideology = socialism_ideology
 							name = ALB_socialism_ideology_2024_party
 							long_name = ALB_socialism_ideology_2024_party_long
+						}
+						set_party_name = {
+							ideology = authoritarian_monarchism
+							name = ALB_authoritarian_monarchism_2024_party
+							long_name = ALB_authoritarian_monarchism_2024_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 57
@@ -21698,14 +21701,19 @@
 							anocratic_republic = 4
 							anocratic_monarchism = 2
 						}
-					}
-					ALB = {
 						create_country_leader = {
 							name = "Presidenti Bahram Begaj"
 							desc = ""
 							picture = "gfx/leaders/ALB/ALB_Begaj.tga"
 							expire = "1965.1.1"
 							ideology = demsoc
+						}
+						create_country_leader = {
+							name = "Re Aimone di Savoia"
+							desc = ""
+							picture = "gfx/leaders/ITA/ITA_Aimone.tga"
+							expire = "1965.1.1"
+							ideology = authmon
 						}
 					}
 					DEN = {

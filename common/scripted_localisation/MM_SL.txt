@@ -3890,6 +3890,39 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ALB
+				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Kryeministri Turhan Pasha Përmeti"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ALB
+				has_government = authoritarian_monarchism
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
+			}
+		}
+		localization_key = "Kryeministri Mehdi bey Frashëri"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ALB
+				has_government = fascism
+				has_start_date > 1935.01.01
+				has_start_date < 1949.01.01
+			}
+		}
+		localization_key = "Luogotenente del Re Alberto Pariani"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ALB
 				has_government = vanguardism
 				has_start_date > 1940.01.01
 				has_start_date < 1951.01.01
@@ -3917,26 +3950,6 @@ defined_text = {
 			}
 		}
 		localization_key = "Kryeministri Edi Kristaq Rama"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = ALB
-				has_government = authoritarian_monarchism
-			}
-		}
-		localization_key = "Kryeministri Mehdi bey Frashëri"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = ALB
-				has_government = conservative_monarchism
-				has_start_date < 1915.01.01
-				has_start_date > 1913.01.01
-			}
-		}
-		localization_key = "Kryeministri Turhan Pasha Përmeti"
 	}
 	text = {
 		trigger = {
@@ -7877,8 +7890,41 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ALB
+				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Turhan_Permeti"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ALB
+				has_government = authoritarian_monarchism
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
+			}
+		}
+		localization_key = "GFX_Mehdi_Frasheri"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ALB
+				has_government = fascism
+				has_start_date > 1935.01.01
+				has_start_date < 1949.01.01
+			}
+		}
+		localization_key = "GFX_Alberto_Pariani"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ALB
 				has_government = vanguardism
-				has_start_date > 1940.01.01
+				has_start_date > 1949.01.01
 				has_start_date < 1951.01.01
 			}
 		}
@@ -7904,26 +7950,6 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Edi_Rama"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = ALB
-				has_government = authoritarian_monarchism
-			}
-		}
-		localization_key = "GFX_Mehdi_Frasheri"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = ALB
-				has_government = conservative_monarchism
-				has_start_date < 1915.01.01
-				has_start_date > 1913.01.01
-			}
-		}
-		localization_key = "GFX_Turhan_Permeti"
 	}
 	text = {
 		trigger = {
