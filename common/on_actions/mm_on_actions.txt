@@ -7265,7 +7265,7 @@ on_actions = {
 						}
 						if = {
 							limit = {
-								OR = {
+								AND = {
 									has_government = monarchism
 									has_start_date < 2025.01.01
 									has_start_date > 2022.01.01
@@ -7278,7 +7278,7 @@ on_actions = {
 								has_start_date < 2025.01.01
 								has_start_date > 2022.01.01
 							}
-							drop_cosmetic_tag = yes
+							set_cosmetic_tag = MAC_2024
 						}
 					}
 					if = {

@@ -29489,10 +29489,10 @@
 						transfer_state = 711
 						transfer_state = 712
 						transfer_state = 2692
+						set_cosmetic_tag = AST_2024
 						set_politics = {
 							ruling_party = democratic_monarchism
 						}
-						set_cosmetic_tag = AST_2024
 						set_popularities = {
 							socialism_ideology = 6
 							socialist_monarchy = 24
@@ -29500,8 +29500,6 @@
 							centrist_monarchism = 11
 							conservative_monarchism = 31
 						}
-					}
-					AST = {
 						create_country_leader = {
 							name = "Governor-General David John Hurley"
 							desc = ""
@@ -29517,8 +29515,6 @@
 						set_politics = {
 							ruling_party = conservative_monarchism
 						}
-					}
-					STH = {
 						create_country_leader = {
 							name = "Governor Philip Edward Rushbrook"
 							desc = ""
@@ -29529,32 +29525,44 @@
 					}
 					FAL = {
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = centrist_monarchism
 						}
-					}
-					FAL = {
+						set_popularities = {
+							centrist_monarchism = 100
+						}
+						set_party_name = {
+							ideology = centrist_monarchism
+							name = FAL_centrist_monarchism_2024_party
+							long_name = FAL_centrist_monarchism_2024_party_long
+						}
 						create_country_leader = {
-							name = "Governor Nigel James Phillips"
+							name = "Governor Alison Mary Blake"
 							desc = ""
-							picture = "gfx/leaders/FAL/FAL_Nigel_Phillips.tga"
+							picture = "gfx/leaders/FAL/Portrait_Alison_Blake.dds"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = cenmon
 						}
 					}
 					SGE = {
 						transfer_state = 720
 						transfer_state = 2686
 						set_politics = {
-							ruling_party = conservative_monarchism
+							ruling_party = centrist_monarchism
 						}
-					}
-					SGE = {
+						set_popularities = {
+							centrist_monarchism = 100
+						}
+						set_party_name = {
+							ideology = centrist_monarchism
+							name = SGE_centrist_monarchism_2024_party
+							long_name = SGE_centrist_monarchism_2024_party_long
+						}
 						create_country_leader = {
-							name = "Governor Nigel James Phillips"
+							name = "Commissioner Alison Mary Blake"
 							desc = ""
-							picture = "gfx/leaders/SGE/SGE_Nigel_Phillips.tga"
+							picture = "gfx/leaders/FAL/Portrait_Alison_Blake.dds"
 							expire = "1965.1.1"
-							ideology = conservative_constitutionalism
+							ideology = cenmon
 						}
 					}
 					every_state = {
