@@ -15559,10 +15559,22 @@
 					}
 					every_state = {
 						limit = {
+							is_core_of = CVS
+						}
+						CVS = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
 							is_core_of = MRE
 						}
 						MRE = {
 							transfer_state = PREV
+							drop_cosmetic_tag = yes
+							set_politics = {
+								ruling_party = centrist_republic
+							}
 						}
 					}
 					every_state = {
@@ -15694,10 +15706,32 @@
 								AND = {
 									is_core_of = KAR
 									NOT = {
-										is_core_of = FIN
+										state = 150
+										state = 1878
+										state = 3854
+										state = 4758
+										state = 4886
+										state = 4888
+										state = 12028
+										state = 12303
+										state = 12304
+										state = 12308
+										state = 15054
+										state = 15055
+										state = 15056
+										state = 15411
+										state = 15412
+										state = 15413
+										state = 15414
+										state = 15419
+										state = 15420
+										state = 15421
+										state = 17313
 									}
 								}
 								is_core_of = VEP
+								state = 147
+								state = 4880
 								state = 13599
 								state = 13600
 								state = 13847
@@ -16616,6 +16650,29 @@
 						}
 					}
 					RUS = {
+						transfer_state = 722
+						transfer_state = 1878
+						transfer_state = 2118
+						transfer_state = 2777
+						transfer_state = 4758
+						transfer_state = 7610
+						transfer_state = 9270
+						transfer_state = 10589
+						transfer_state = 11142
+						transfer_state = 12028
+						transfer_state = 12303
+						transfer_state = 12304
+						transfer_state = 12308
+						transfer_state = 15054
+						transfer_state = 15055
+						transfer_state = 15056
+						transfer_state = 17313
+						transfer_state = 19131
+						every_owned_state = {
+							do_russian_renames = yes
+						}
+					}
+					RUS = {
 						set_cosmetic_tag = RUS_1992
 						set_politics = {
 							ruling_party = democratic
@@ -17118,6 +17175,31 @@
 						MOR = {
 							transfer_state = PREV
 						}
+					}
+					WES = {
+						transfer_state = 1844
+						transfer_state = 6782
+						transfer_state = 5488
+						transfer_state = 5489
+						transfer_state = 6786
+						transfer_state = 1633
+						transfer_state = 6759
+						set_capital = {
+							state = 1844
+						}
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = communism
+						}
+						set_popularities = {
+							communism = 100
+						}
+					}
+					ALG = {
+						transfer_state = 8139
+						transfer_state = 12367
+						transfer_state = 12366
+						transfer_state = 12368
 					}
 					every_state = {
 						limit = {
