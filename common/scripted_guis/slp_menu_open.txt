@@ -1,10 +1,8 @@
 scripted_gui = {
    slp = { 
-     window_name = "slp_container"
- 
+	   window_name = "slp_container"
        context_type = player_context
 	   parent_window_token = politics_tab
- 
        visible = {
             OR = {
 				tag = NZG
@@ -21,7 +19,6 @@ scripted_gui = {
 				tag = RCG
 			}
         }
- 
         effects = {
             slp_icon_click = {
 				if = {
@@ -208,7 +205,6 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = { show_menu_nzg > 0.0 }
-				is_ai = YES
 			}
 		}
 		
@@ -395,7 +391,6 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = { show_menu_sgm > 0.0 }
-				is_ai = YES
 			}
 		}
 		
@@ -498,7 +493,6 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = { show_menu_ua2 > 0.0 }
-				is_ai = YES
 			}
 		}
 		
@@ -601,7 +595,6 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = { show_menu_lv2 > 0.0 }
-				is_ai = YES
 			}
 		}
 		
@@ -716,7 +709,6 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = { show_menu_pl2 > 0.0 }
-				is_ai = YES
 			}
 		}
 		
@@ -831,7 +823,6 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = { show_menu_mc2 > 0.0 }
-				is_ai = YES
 			}
 		}
 		
@@ -934,268 +925,6 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = { show_menu_mc22 > 0.0 }
-				is_ai = YES
-			}
-		}
-		
-		effects = {
-           slp_MC22_close_click = {
-                subtract_from_temp_variable = { show = show_menu_mc22 }
-                set_variable = { show_menu_mc22 = show }
-            }
-			leader_frame1_MC22_click = {
-				subtract_from_temp_variable = { show = show_menu_mc22 }
-                set_variable = { show_menu_mc22 = show }
-				MC2 = {	country_event = { id = slp_menu.17 } }
-				add_to_variable = { mc22_port_1 = 1 }
-				set_variable = { mc22_port_2 = 0 }
-				set_variable = { mc22_port_3 = 0 }
-			}
-			leader_frame2_MC22_click = {
-				subtract_from_temp_variable = { show = show_menu_mc22 }
-                set_variable = { show_menu_mc22 = show }
-				MC2 = {	country_event = { id = slp_menu.18 } }
-				add_to_variable = { mc22_port_2 = 1 }
-				set_variable = { mc22_port_1 = 0 }
-				set_variable = { mc22_port_3 = 0 }
-			}
-			leader_frame3_MC22_click = {
-				subtract_from_temp_variable = { show = show_menu_mc22 }
-                set_variable = { show_menu_mc22 = show }
-				MC2 = {	country_event = { id = slp_menu.19 } }
-				add_to_variable = { mc22_port_3 = 1 }
-				set_variable = { mc22_port_1 = 0 }
-				set_variable = { mc22_port_2 = 0 }
-			}
-		}
-		
-		ai_enabled = {
-			tag = MC2
-		}
-		
-		ai_check = {
-			check_variable = { ROOT.mc22_port_2 < 0.99 }
-			check_variable = { ai_random > 0.4 }
-		}
-		
-		ai_test_interval = 24
-        ai_test_variance = 0.2
- 
-        ai_check = {
-            check_variable = { mc22_port_2 < 0.99 }
-        }
-		
-		ai_weights = {
-			leader_frame2_MC22_click = {
-				ai_will_do = {
-					factor = 20
-				}
-			}
-		}
-        triggers = {
-			slp_MC22_close_enabled = {
-				always = yes
-			}
-			leader_frame1_MC22_click_enabled = {
-				has_government = neutrality
-				check_variable = { mc22_port_1 < 0.99 }
-			}
-			leader_frame2_MC22_click_enabled = {
-				has_government = neutrality
-				check_variable = { mc22_port_2 < 0.99 }
-			}
-			leader_frame3_MC22_click_enabled = {
-				has_government = neutrality
-				check_variable = { mc22_port_3 < 0.99 }
-			}
-        }
-	}
-	
-	### MB Moskowien ###
-	slp_menu_MC22 = {
-		context_type = player_context
-		parent_window_token = politics_tab
-		
-		window_name = "slp_menu_MC22_container"
-		
-		visible = {
-			OR = {
-				check_variable = { show_menu_mc22 > 0.0 }
-				is_ai = YES
-			}
-		}
-		
-		effects = {
-           slp_MC22_close_click = {
-                subtract_from_temp_variable = { show = show_menu_mc22 }
-                set_variable = { show_menu_mc22 = show }
-            }
-			leader_frame1_MC22_click = {
-				subtract_from_temp_variable = { show = show_menu_mc22 }
-                set_variable = { show_menu_mc22 = show }
-				MC2 = {	country_event = { id = slp_menu.17 } }
-				add_to_variable = { mc22_port_1 = 1 }
-				set_variable = { mc22_port_2 = 0 }
-				set_variable = { mc22_port_3 = 0 }
-			}
-			leader_frame2_MC22_click = {
-				subtract_from_temp_variable = { show = show_menu_mc22 }
-                set_variable = { show_menu_mc22 = show }
-				MC2 = {	country_event = { id = slp_menu.18 } }
-				add_to_variable = { mc22_port_2 = 1 }
-				set_variable = { mc22_port_1 = 0 }
-				set_variable = { mc22_port_3 = 0 }
-			}
-			leader_frame3_MC22_click = {
-				subtract_from_temp_variable = { show = show_menu_mc22 }
-                set_variable = { show_menu_mc22 = show }
-				MC2 = {	country_event = { id = slp_menu.19 } }
-				add_to_variable = { mc22_port_3 = 1 }
-				set_variable = { mc22_port_1 = 0 }
-				set_variable = { mc22_port_2 = 0 }
-			}
-		}
-		
-		ai_enabled = {
-			tag = MC2
-		}
-		
-		ai_check = {
-			check_variable = { ROOT.mc22_port_2 < 0.99 }
-			check_variable = { ai_random > 0.4 }
-		}
-		
-		ai_test_interval = 24
-        ai_test_variance = 0.2
- 
-        ai_check = {
-            check_variable = { mc22_port_2 < 0.99 }
-        }
-		
-		ai_weights = {
-			leader_frame2_MC22_click = {
-				ai_will_do = {
-					factor = 20
-				}
-			}
-		}
-        triggers = {
-			slp_MC22_close_enabled = {
-				always = yes
-			}
-			leader_frame1_MC22_click_enabled = {
-				has_government = neutrality
-				check_variable = { mc22_port_1 < 0.99 }
-			}
-			leader_frame2_MC22_click_enabled = {
-				has_government = neutrality
-				check_variable = { mc22_port_2 < 0.99 }
-			}
-			leader_frame3_MC22_click_enabled = {
-				has_government = neutrality
-				check_variable = { mc22_port_3 < 0.99 }
-			}
-        }
-	}
-	
-	### MB Moskowien ###
-	slp_menu_MC22 = {
-		context_type = player_context
-		parent_window_token = politics_tab
-		
-		window_name = "slp_menu_MC22_container"
-		
-		visible = {
-			OR = {
-				check_variable = { show_menu_mc22 > 0.0 }
-				is_ai = YES
-			}
-		}
-		
-		effects = {
-           slp_MC22_close_click = {
-                subtract_from_temp_variable = { show = show_menu_mc22 }
-                set_variable = { show_menu_mc22 = show }
-            }
-			leader_frame1_MC22_click = {
-				subtract_from_temp_variable = { show = show_menu_mc22 }
-                set_variable = { show_menu_mc22 = show }
-				MC2 = {	country_event = { id = slp_menu.17 } }
-				add_to_variable = { mc22_port_1 = 1 }
-				set_variable = { mc22_port_2 = 0 }
-				set_variable = { mc22_port_3 = 0 }
-			}
-			leader_frame2_MC22_click = {
-				subtract_from_temp_variable = { show = show_menu_mc22 }
-                set_variable = { show_menu_mc22 = show }
-				MC2 = {	country_event = { id = slp_menu.18 } }
-				add_to_variable = { mc22_port_2 = 1 }
-				set_variable = { mc22_port_1 = 0 }
-				set_variable = { mc22_port_3 = 0 }
-			}
-			leader_frame3_MC22_click = {
-				subtract_from_temp_variable = { show = show_menu_mc22 }
-                set_variable = { show_menu_mc22 = show }
-				MC2 = {	country_event = { id = slp_menu.19 } }
-				add_to_variable = { mc22_port_3 = 1 }
-				set_variable = { mc22_port_1 = 0 }
-				set_variable = { mc22_port_2 = 0 }
-			}
-		}
-		
-		ai_enabled = {
-			tag = MC2
-		}
-		
-		ai_check = {
-			check_variable = { ROOT.mc22_port_2 < 0.99 }
-			check_variable = { ai_random > 0.4 }
-		}
-		
-		ai_test_interval = 24
-        ai_test_variance = 0.2
- 
-        ai_check = {
-            check_variable = { mc22_port_2 < 0.99 }
-        }
-		
-		ai_weights = {
-			leader_frame2_MC22_click = {
-				ai_will_do = {
-					factor = 20
-				}
-			}
-		}
-        triggers = {
-			slp_MC22_close_enabled = {
-				always = yes
-			}
-			leader_frame1_MC22_click_enabled = {
-				has_government = neutrality
-				check_variable = { mc22_port_1 < 0.99 }
-			}
-			leader_frame2_MC22_click_enabled = {
-				has_government = neutrality
-				check_variable = { mc22_port_2 < 0.99 }
-			}
-			leader_frame3_MC22_click_enabled = {
-				has_government = neutrality
-				check_variable = { mc22_port_3 < 0.99 }
-			}
-        }
-	}
-	
-	### MB Moskowien ###
-	slp_menu_MC22 = {
-		context_type = player_context
-		parent_window_token = politics_tab
-		
-		window_name = "slp_menu_MC22_container"
-		
-		visible = {
-			OR = {
-				check_variable = { show_menu_mc22 > 0.0 }
-				is_ai = YES
 			}
 		}
 		
@@ -1282,7 +1011,6 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = { show_menu_kc2 > 0.0 }
-				is_ai = YES
 			}
 		}
 		
@@ -1330,7 +1058,6 @@ scripted_gui = {
 		}
 		
 		ai_enabled = {
-			tag = KC2
 			tag = KC2
 		}
 		
@@ -1386,7 +1113,6 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = { show_menu_kc22 > 0.0 }
-				is_ai = YES
 			}
 		}
 		
@@ -1459,7 +1185,6 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = { show_menu_USA > 0.0 }
-				is_ai = YES
 			}
 		}
 		
@@ -1726,7 +1451,6 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = { show_menu_GMA > 0.0 }
-				is_ai = YES
 			}
 		}
 		
@@ -1801,7 +1525,6 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = { show_menu_COG > 0.0 }
-				is_ai = YES
 			}
 		}
 		
@@ -1887,7 +1610,6 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = { show_menu_RCG > 0.0 }
-				is_ai = YES
 			}
 		}
 		
@@ -1960,7 +1682,6 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = { show_menu_GER > 0.0 }
-				is_ai = YES
 			}
 		}
 		

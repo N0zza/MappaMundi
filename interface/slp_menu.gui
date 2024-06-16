@@ -1,16 +1,12 @@
 guiTypes = {
 	containerWindowType = {
 		name = "slp_container"
-		position = { x = -220 y = -177 }
+		position = { x = 0 y = 0 }
 		
 		buttonType = {
 			name ="slp_icon"
 			spriteType = "GFX_slp_icon"
-			position = { x= 435 y = 257 }
-			Orientation = "UPPER_LEFT"
-			
-			pdx_tooltip = "PORTRAIT_TOOLTIP"
-			pdx_tooltip_delayed = "PORTRAIT_TOOLTIP_DELAYED"
+			position = { x= 0 y = 0 }
 		}
 		
 		instantTextBoxType = {
@@ -2150,7 +2146,6 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
-		show_sound = open_sub_window
 		
 		background = {
 			name = "Background"
@@ -2160,12 +2155,12 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "slp_menu_GER_headline"
-			position = {x=145 y=15}
+			position = {x=130 y=15}
 			font = "hoi_18mbs"
 			text = "SELECT_PORTRAIT"
 			maxWidth = 125
 			maxHeight = 23
-			format = left
+			format = center
 		}
 		
 		containerWindowType = {
