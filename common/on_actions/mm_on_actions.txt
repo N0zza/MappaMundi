@@ -4285,6 +4285,7 @@ on_actions = {
 								tag = CRM
 								tag = LBA
 								tag = BOS
+								tag = SAU
 							}
 						}
 						if = {
@@ -4330,7 +4331,6 @@ on_actions = {
 					if = {
 						limit = {
 							OR = {
-								tag = SAU
 								tag = MOR
 							}
 						}
@@ -8356,10 +8356,9 @@ on_actions = {
 									}
 								}
 							}
-							set_cosmetic_tag = CYR
+							drop_cosmetic_tag = yes
 						}
 					}
-					
 					if = {
 						limit = {
 							tag = DJI
@@ -8396,10 +8395,9 @@ on_actions = {
 								}
 							}
 							set_cosmetic_tag = DJI_ANOCMON
-							
 							every_state = {
 								limit = {
-									is_owned_by = ROOT
+									is_owned_by = DJI
 								}
 								do_russian_renames = yes
 							}
