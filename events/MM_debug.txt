@@ -12,20 +12,29 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		MEX = {
-						set_popularities = {
-							communism = 48
-							socialism_ideology = 2
-							liberal_republic = 8
-							centrist_republic = 11
-							democratic = 31
-						}
-						}
+		BAN = {
+			set_party_name = {
+				ideology = neutrality
+				name = BAN_neutrality_2024_party
+				long_name = BAN_neutrality_2024_party_long
+			}
+		}
 	}
 	option = { #reject
 		name = "No"
 		ai_chance = {
 			factor = 100
+		}
+		IND = {	
+			set_popularities = {
+				vanguardism = 2
+				communism = 5
+				socialism_ideology = 7
+				liberal_republic = 30
+				centrist_republic = 9
+				democratic = 45
+				anocratic_republic = 2
+			}
 		}
 	}
 }
