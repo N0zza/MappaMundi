@@ -12,20 +12,31 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		MEX = {
-						set_popularities = {
-							communism = 48
-							socialism_ideology = 2
-							liberal_republic = 8
-							centrist_republic = 11
-							democratic = 31
-						}
-						}
+		POR = {
+			set_popularities = {
+				vanguardism = 1
+				communism = 4
+				socialism_ideology = 34
+				liberal_republic = 1
+				centrist_republic = 3
+				democratic = 35
+				anocratic_republic = 22
+			}
+		}
 	}
 	option = { #reject
 		name = "No"
 		ai_chance = {
 			factor = 100
+		}
+		POR = {
+			set_popularities = {
+				socialism_ideology = 55
+				democratic = 34
+				centrist_republic = 5
+				liberal_republic = 4
+				communism = 2
+			}
 		}
 	}
 }

@@ -1,14 +1,24 @@
 defined_text = {
 	name = GetSecondaryLeaderName
 	text = {
-	trigger = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = anocratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Prime Minister Rishi Sunak"
+	}
+	text = {
+		trigger = {
 			AND = {
 				tag = ENG
 				has_government = conservative_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "First Lord of the Treasury Rishi Sunak"
+		localization_key = "Prime Minister Rishi Sunak"
 	}
 	text = {
 		trigger = {
@@ -19,7 +29,7 @@ defined_text = {
 				has_start_date < 1915.01.01
 			}
 		}
-		localization_key = "First Lord of the Treasury Herbert Henry Asquith"
+		localization_key = "Prime Minister Herbert Henry Asquith"
 	}
 	text = {
 		trigger = {
@@ -30,7 +40,7 @@ defined_text = {
 				has_start_date < 1951.01.01
 			}
 		}
-		localization_key = "First Lord of the Treasury Clement Richard Attlee, 1st Earl Attlee"
+		localization_key = "Prime Minister Clement Richard Attlee, 1st Earl Attlee"
 	}
 	text = {
 		trigger = {
@@ -41,7 +51,7 @@ defined_text = {
 				has_start_date < 2000.01.01
 			}
 		}
-		localization_key = "First Lord of the Treasury John Major"
+		localization_key = "Prime Minister John Major"
 	}
 	text = {
 		trigger = {
@@ -51,7 +61,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "First Lord of the Treasury Sir Keir Rodney Starmer"
+		localization_key = "Prime Minister Sir Keir Rodney Starmer"
 	}
 	text = {
 		trigger = {
@@ -62,7 +72,7 @@ defined_text = {
 				has_start_date < 1940.01.01
 			}
 		}
-		localization_key = "First Lord of the Treasury Arthur Neville Chamberlain"
+		localization_key = "Prime Minister Arthur Neville Chamberlain"
 	}
 	text = {
 		trigger = {
@@ -71,7 +81,7 @@ defined_text = {
 				has_government = conservative_monarchism
 			}
 		}
-		localization_key = "First Lord of the Treasury Stanley Baldwin"
+		localization_key = "Prime Minister Stanley Baldwin"
 	}
 	text = {
 		trigger = {
@@ -99,7 +109,7 @@ defined_text = {
 				has_government = national_socialism
 			}
 		}
-		localization_key = "First Lord of the Treasury Sir Barry Edward Domvile"
+		localization_key = "Prime Minister Sir Barry Edward Domvile"
 	}
 	text = {
 		trigger = {
@@ -1233,7 +1243,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Taoiseach Leo Eric Varadkar"
+		localization_key = "Taoiseach Síomón Ó hEarchaí"
 	}
 	text = {
 		trigger = {
@@ -1272,11 +1282,11 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = PAK
-				has_government = anocratic_republic
+				has_government = neutrality
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Wazīri Aʻẓam Anwār ul-Haq Kākaṛ"
+		localization_key = "Wazīri Aʻẓam Miyān Muh̤ammad Śahbāz Śarīf"
 	}
 	text = {
 		trigger = {
@@ -1302,7 +1312,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = BAN
-				has_government = anocratic_republic
+				has_government = neutrality
 				has_start_date > 2022.01.01
 			}
 		}
@@ -1404,11 +1414,11 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = FRA
-				has_government = centrist_republic
+				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Premiére Ministre Élizabeth Borne"
+		localization_key = "Premiér Ministre Gabriel Nissim Attal de Couriss"
 	}
 	text = {
 		trigger = {
@@ -1730,7 +1740,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Hsingcheng Yüan Yüanch'ang Chen Chien-jen"
+		localization_key = "Hsingcheng Yüan Yüanch'ang Cho Jung-tʻai"
 	}
 	text = {
 		trigger = {
@@ -1886,7 +1896,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Raʾis Ebrāhim Raʾis ol-Sādāti"
+		localization_key = "Raʾis Moḥammad Moḵbar"
 	}
 	text = {
 		trigger = {
@@ -1942,11 +1952,11 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = POR
-				has_government = socialism_ideology
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Primeiro-Ministro António Luís Santos da Costa"
+		localization_key = "Primeiro-Ministro Luís Filipe Montenegro Cardoso de Morais Esteve"
 	}
 	text = {
 		trigger = {
@@ -2031,7 +2041,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ISR
-				has_government = democratic
+				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -2138,7 +2148,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = HOL
-				has_government = conservative_monarchism
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -2159,7 +2169,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = BEL
-				has_government = conservative_monarchism
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -2204,7 +2214,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Prime Minister Kausea Natano"
+		localization_key = "Ulu o te Malo Feleti Penitala Teo"
 	}
 	text = {
 		trigger = {
@@ -2214,7 +2224,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Prime Minister Manasseh Damukana Sogavare"
+		localization_key = "Prime Minister Jeremiah Manele"
 	}
 	text = {
 		trigger = {
@@ -2809,7 +2819,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Forsætisráðherra Katrín Jakobsdóttir"
+		localization_key = "Forsætisráðherra Bjarni Benediktsson"
 	}
 	text = {
 		trigger = {
@@ -3117,7 +3127,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Prime Minister Lee Hsieng Loong"
+		localization_key = "Prime Minister Lawrence Wong Shyun Tsai"
 	}
 	text = {
 		trigger = {
@@ -3247,11 +3257,11 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SER
-				has_government = centrist_republic
+				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Presednica Vlade Ana Brnabić"
+		localization_key = "Presednik Vlade Miloš Vučević"
 	}
 	text = {
 		trigger = {
@@ -3312,11 +3322,11 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = MAC
-				has_government = socialism_ideology
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Pretsedatel na Vladata Dimitar Kovačevski"
+		localization_key = "Pretsedatel na Vladata Hristijan Mickoski"
 	}
 	text = {
 		trigger = {
@@ -3326,7 +3336,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Capitano Reggente Gaetano Troina"
+		localization_key = "Capitano Reggente Alessandro Rossi"
 	}
 	text = {
 		trigger = {
@@ -3346,7 +3356,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Blon-po Khro-jal Dag-go Rijin"
+		localization_key = "Mgon-chen Tshe-ring Stobs-rgyas"
 	}
 	text = {
 		trigger = {
@@ -3685,17 +3695,17 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Premier Ministre Bernard Goumou"
+		localization_key = "Premier Ministre Bah Oury"
 	}
 	text = {
 		trigger = {
 			AND = {
 				tag = CHA
-				has_government = stratocratic
+				has_government = neutrality
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Premier Ministre Saleh Kebzabo"
+		localization_key = "Premier Ministre Allamaye Halina"
 	}
 	text = {
 		trigger = {
@@ -3849,11 +3859,11 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = BUL
-				has_government = centrist_republic
+				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Ministar-predsedatel Nikolai Denkov Denkov"
+		localization_key = "Ministar-predsedatel Dimitar Borisov Glavchev"
 	}
 	text = {
 		trigger = {
@@ -4060,7 +4070,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "P’remier-Minist’ri Irak’li T’arielis dze Gharibashvili"
+		localization_key = "P’remier-Minist’ri Irak’li Giorgis dze K’obakhidze"
 	}
 	text = {
 		trigger = {
@@ -4130,7 +4140,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Raʾīs al-Wuzārāʾ Abū Ibrāhīm Muḥammad Ibrāhīm Muḥammad Aštiyaẗ"
+		localization_key = "Raʾīs al-Wuzārāʾ Abū Muṣʿab Muḥammad ʿAbd ul-Lāh Muḥammad Muṣṭafaỳ as-Safārīnī"
 	}
 	text = {
 		trigger = {
@@ -4211,7 +4221,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Premʹer-Ministr Älihan Ashanūly Smaiylov"
+		localization_key = "Premʹer-Ministr Oljas Abaiūly Bektenov"
 	}
 	text = {
 		trigger = {
@@ -4261,7 +4271,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Raʾīs al-Wuzarāʾ Maʿīin ʿAbd ul-Malik Saʿīd aṣ-Ṣabrī"
+		localization_key = "Raʾīs al-Wuzarāʾ Aḥmad ʿAwaḍ bin Mubārak"
 	}
 	text = {
 		trigger = {
@@ -4420,7 +4430,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Premier Ministre Jean-Michel Sama Lukonde Kyenge"
+		localization_key = "Première Ministre Judith Suminwa Tuluka"
 	}
 	text = {
 		trigger = {
@@ -4452,6 +4462,16 @@ defined_text = {
 			}
 		}
 		localization_key = "General Juan Vicente Gómez Chacón"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SEN
+				has_government = communism
+				has_start_date > 2024.01.01
+			}
+		}
+		localization_key = "Premier ministre Ousmane Sonko"
 	}
 	text = {
 		localization_key = "To Be Added"
@@ -4605,6 +4625,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Sean_Lester"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = anocratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Rishi_Sunak"
 	}
 	text = {
 		trigger = {
@@ -5633,7 +5663,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Leo_Varadkar"
+		localization_key = "GFX_Simon_Harris"
 	}
 	text = {
 		trigger = {
@@ -5662,11 +5692,11 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = PAK
-				has_government = anocratic_republic
+				has_government = neutrality
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Pakistan_Kakar"
+		localization_key = "GFX_Shehbaz_Sharif"
 	}
 	text = {
 		trigger = {
@@ -5692,7 +5722,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = BAN
-				has_government = anocratic_republic
+				has_government = neutrality
 				has_start_date > 2022.01.01
 			}
 		}
@@ -5794,11 +5824,11 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = FRA
-				has_government = centrist_republic
+				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Elizabeth_Borne"
+		localization_key = "GFX_Gabriel_Attal"
 	}
 	text = {
 		trigger = {
@@ -6151,7 +6181,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Chen_Chienjen"
+		localization_key = "GFX_Cho_Jungtai"
 	}
 	text = {
 		trigger = {
@@ -6287,7 +6317,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Ebrahim_Raisi"
+		localization_key = "GFX_Mohammad_Mokhber"
 	}
 	text = {
 		trigger = {
@@ -6343,11 +6373,11 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = POR
-				has_government = socialism_ideology
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Antonio_Costa"
+		localization_key = "GFX_Luis_Montenegro"
 	}
 	text = {
 		trigger = {
@@ -6445,7 +6475,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ISR
-				has_government = democratic
+				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -6540,7 +6570,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = HOL
-				has_government = conservative_monarchism
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -6561,7 +6591,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = BEL
-				has_government = conservative_monarchism
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -6606,7 +6636,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Kausea_Natano"
+		localization_key = "GFX_Feleti_Teo"
 	}
 	text = {
 		trigger = {
@@ -6616,7 +6646,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Manasseh_Sogavare"
+		localization_key = "GFX_Jeremiah_Manele"
 	}
 	text = {
 		trigger = {
@@ -6800,7 +6830,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Katrin_Jakobsdottir"
+		localization_key = "GFX_Bjarni_Ben"
 	}
 	text = {
 		trigger = {
@@ -7685,17 +7715,17 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Bernard_Goumou"
+		localization_key = "GFX_Bah_Oury"
 	}
 	text = {
 		trigger = {
 			AND = {
 				tag = CHA
-				has_government = stratocratic
+				has_government = neutrality
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Saleh_Kebzabo"
+		localization_key = "GFX_Allamaye_Halina"
 	}
 	text = {
 		trigger = {
@@ -7871,11 +7901,11 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = BUL
-				has_government = centrist_republic
+				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Nikolai_Denkov"
+		localization_key = "GFX_Dimitar_Glavchev"
 	}
 	text = {
 		trigger = {
@@ -8157,7 +8187,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Lee_Hsien_Loong"
+		localization_key = "GFX_Lawrence_Wong"
 	}
 	text = {
 		trigger = {
@@ -8287,11 +8317,11 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SER
-				has_government = centrist_republic
+				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Ana_Brnabaic"
+		localization_key = "GFX_Milos_Vucevic"
 	}
 	text = {
 		trigger = {
@@ -8352,11 +8382,11 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = MAC
-				has_government = socialism_ideology
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Dimitar_Kovacevski"
+		localization_key = "GFX_Hristijan_Mickoski"
 	}
 	text = {
 		trigger = {
@@ -8366,7 +8396,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Gaetano_Troina"
+		localization_key = "GFX_Alessandro_Rossi"
 	}
 	text = {
 		trigger = {
@@ -8387,7 +8417,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Dago_Rigdzin"
+		localization_key = "GFX_Tshering_Tobgay"
 	}
 	text = {
 		trigger = {
@@ -8456,7 +8486,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Irakli_Garibashvili"
+		localization_key = "GFX_Irakli_Kobakhidze"
 	}
 	text = {
 		trigger = {
@@ -8526,7 +8556,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Albert_Lluberas"
+		localization_key = "GFX_Mohammad_Mustafa"
 	}
 	text = {
 		trigger = {
@@ -8607,7 +8637,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Alihan_Smayilov"
+		localization_key = "GFX_Oljas_Bektenov"
 	}
 	text = {
 		trigger = {
@@ -8657,7 +8687,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Maeen_Saeed"
+		localization_key = "GFX_Ahmad_Awad_bin_Mubarak"
 	}
 	text = {
 		trigger = {
@@ -8808,7 +8838,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Sama_Lukonde"
+		localization_key = "GFX_Judith_Suminwa"
 	}
 	text = {
 		trigger = {
@@ -8840,6 +8870,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Juan_Gomez"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SEN
+				has_government = communism
+				has_start_date > 2024.01.01
+			}
+		}
+		localization_key = "GFX_Ousmane_Sonko"
 	}
 	text = {
 		localization_key = "GFX_leader_unknown"
