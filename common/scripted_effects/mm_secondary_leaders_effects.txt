@@ -2405,8 +2405,13 @@ secondary_leader_enabled_effect = {
 						has_start_date < 2000.01.01
 					}
 					AND = {
-						has_global_flag = non_hog_secondary_leaders
-						has_government = anocratic_republic
+						OR = {
+							AND = {
+								has_global_flag = non_hog_secondary_leaders
+								has_government = anocratic_republic
+							}
+							has_government = socialism_ideology
+						}
 						has_start_date > 2022.01.01
 					}
 				}

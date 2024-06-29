@@ -12,15 +12,13 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		POR = {
-			set_popularities = {
-				vanguardism = 1
-				communism = 4
-				socialism_ideology = 34
-				liberal_republic = 1
-				centrist_republic = 3
-				democratic = 35
-				anocratic_republic = 22
+		TUR = {
+			create_country_leader = {
+				name = "Cumhurbaşkanı Ekrem İmamoğlu"
+				desc = ""
+				picture = "gfx/leaders/TUR/TUR_İmamoğlu.tga"
+				expire = "1965.1.1"
+				ideology = demsoc
 			}
 		}
 	}
@@ -28,15 +26,6 @@ country_event = {
 		name = "No"
 		ai_chance = {
 			factor = 100
-		}
-		POR = {
-			set_popularities = {
-				socialism_ideology = 55
-				democratic = 34
-				centrist_republic = 5
-				liberal_republic = 4
-				communism = 2
-			}
 		}
 	}
 }
