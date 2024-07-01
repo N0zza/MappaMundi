@@ -20892,13 +20892,17 @@
 						set_politics = {
 							ruling_party = centrist_republic
 						}
+						set_party_name = {
+							ideology = centrist_republic
+							name = ROM_centrist_republic_2024_party
+							long_name = ROM_centrist_republic_2024_party_long
+						}
 						set_cosmetic_tag = ROM_2024
 						set_popularities = {
-							socialism_ideology = 31
-							liberal_republic = 16
-							centrist_republic = 32
-							democratic = 12
-							anocratic_republic = 9
+							liberal_republic = 18
+							centrist_republic = 38
+							democratic = 30
+							anocratic_republic = 14
 						}
 					}
 					ROM = {
@@ -21888,12 +21892,11 @@
 							ruling_party = socialist_monarchy
 						}
 						set_popularities = {
-							socialism_ideology = 18
+							communism = 18
 							socialist_monarchy = 28
-							liberal_republic = 9
-							democratic_monarchism = 21
-							democratic = 18
-							conservative_monarchism = 6
+							democratic_monarchism = 9
+							centrist_monarchism = 21
+							conservative_monarchism = 24
 						}
 					}
 					FAR = {
@@ -21905,19 +21908,25 @@
 							ideology = monsoc
 						}
 					}
+					DEN = {
+						puppet = GRL
+					}
 					GRL = {
 						set_politics = {
-							ruling_party = socialist_monarchy
+							ruling_party = communism
 						}
+						set_cosmetic_tag = GRL_2024
 						set_party_name = {
-							ideology = socialist_monarchy
-							name = GRL_socialist_monarchy_2024_party
-							long_name = GRL_socialist_monarchy_2024_party_long
+							ideology = communism
+							name = GRL_communism_2024_party
+							long_name = GRL_communism_2024_party_long
 						}
 						set_popularities = {
-							socialist_monarchy = 71
+							communism = 39
+							socialist_monarchy = 32
 							democratic_monarchism = 10
-							conservative_monarchism = 19
+							centrist_monarchism = 13
+							conservative_monarchism = 6
 						}
 					}
 					GRL = {
@@ -21926,7 +21935,7 @@
 							desc = ""
 							picture = "gfx/leaders/GRL/GRL_Wilche.tga"
 							expire = "1965.1.1"
-							ideology = monsoc
+							ideology = marxism
 						}
 					}
 					NOR = {
