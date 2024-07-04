@@ -4556,7 +4556,6 @@ on_actions = {
 								tag = CRN
 								tag = CAP
 								tag = COG
-								tag = RCG
 								tag = TZN
 								tag = MAD
 								tag = SYR
@@ -4753,7 +4752,16 @@ on_actions = {
 									}
 								}
 							}
-							set_cosmetic_tag = GREY_GER2
+							if = {
+								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = GREY_GER3
+							}
+							else = {
+								set_cosmetic_tag = GREY_GER2
+							}
 							every_state = {
 								limit = {
 									is_owned_by = ROOT
@@ -4812,7 +4820,16 @@ on_actions = {
 							limit = {
 								has_government = monarchism
 							}
-							set_cosmetic_tag = GREY_GER2
+							if = {
+								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = GREY_GER3
+							}
+							else = {
+								set_cosmetic_tag = GREY_GER2
+							}
 							every_state = {
 								limit = {
 									is_owned_by = ROOT
@@ -6902,6 +6919,27 @@ on_actions = {
 						}
 						else = {
 							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
+							AND = {
+								tag = FIN
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = authoritarian_monarchism
+									has_government = monarchism
+								}
+							}
+							set_cosmetic_tag = FIN_RUS_1914
+						}
+						else = {
+							set_cosmetic_tag = FIN_1914
 						}
 					}
 					if = {

@@ -7228,23 +7228,6 @@
 							add_state_core = PREV
 						}
 					}
-					every_state = {
-						limit = {
-							is_core_of = ALN
-						}
-						FIN = {
-							transfer_state = PREV
-								
-							set_cosmetic_tag = FIN_RUS
-							set_politics = {
-								ruling_party = monarchism
-							}
-								
-							set_popularities = {
-								monarchism = 100
-							}
-						}
-					}
 					
 					every_state = {
 						limit = {
@@ -10312,9 +10295,9 @@
 							}
 						}
 						create_country_leader = {
-							name = "Vojni Guverner Stjepan barun Sarkotić Lovćenski"
+							name = "Vojni Guverner Oskar Potiorek"
 							desc = ""
-							picture = "gfx/leaders/BOS/BOS_Lovcen_stratmon.tga"
+							picture = "gfx/leaders/BOS/Portrait_Oskar_Potiorek.dds"
 							expire = "1989.1.1"
 							ideology = authmon
 							traits = {
@@ -10447,7 +10430,12 @@
 										NOT = {
 											OR = {
 												is_core_of = WGR
-												is_core_of = DDR
+												AND = {
+													is_core_of = DDR
+													NOT = {
+														state = 10954
+													}
+												}
 											}
 										}
 									}
@@ -11086,6 +11074,51 @@
 							}
 						}
 					}
+					FIN = {
+						every_state = {
+							limit = {
+								is_core_of = ALN
+							}
+							FIN = {
+								transfer_state = PREV
+							}
+						}
+						set_cosmetic_tag = FIN_RUS_1914
+						set_politics = {
+							ruling_party = monarchism
+						}
+							
+						set_popularities = {
+							monarchism = 100
+						}
+						create_country_leader = {
+							name = "Suomen Regentti Carl Gustaf Emil Mannerheim"
+							desc = ""
+							picture = "gfx/leaders/FIN/Portrait_Carl_Mannerheim.dds"
+							expire = "1965.1.1"
+							ideology = conservative_constitutionalism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Suomen Varakuningas Nikolai II"
+							desc = ""
+							picture = "gfx/leaders/Russia/1914_RUS_Nicholas_II.tga"
+							expire = "1965.1.1"
+							ideology = authmon
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Suomen Suuriruhtinas Nikolai II"
+							desc = ""
+							picture = "gfx/leaders/Russia/1914_RUS_Nicholas_II.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+							traits = {
+							}
+						}
+					}
 					LV2 = {
 						set_politics = {
 							ruling_party = stratocratic_monarchism
@@ -11426,7 +11459,10 @@
 								AND = {
 									is_claimed_by = BUL
 									NOT = {
-										is_core_of = BUL
+										OR = {
+											is_core_of = BUL
+											is_core_of = ROM
+										}
 									}
 								}
 							}
@@ -11621,6 +11657,15 @@
 							ideology = absolutism
 							traits = {
 							}
+						}
+					}
+					MNT = {
+						set_cosmetic_tag = MNT_1914
+						set_politics = {
+							ruling_party = stratocratic_monarchism
+						}
+						set_popularities = {
+							stratocratic_monarchism = 100
 						}
 					}
 					COG = {
