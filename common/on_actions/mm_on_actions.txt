@@ -6538,6 +6538,24 @@ on_actions = {
 					}
 					if = {
 						limit = {
+							AND = {
+								tag = AUS
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+							}
+						}
+						if = {
+							limit = {
+								has_government = national_socialism
+							}
+							set_cosmetic_tag = AUS_NATSOC_1914
+						}
+						else = {
+							set_cosmetic_tag = AUS_1914
+						}
+					}
+					if = {
+						limit = {
 							tag = HUN
 						}
 						if = {
