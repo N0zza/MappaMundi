@@ -12,15 +12,33 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		ENG = {
-			create_country_leader = {
-				name = "King Charles III of Windsor"
-				desc = ""
-				picture = "gfx/leaders/ENG/ENG_Charles_III.tga"
-				expire = "1965.1.1"
-				ideology = liberal_constitutionalism
-			}
-		}
+					CHL = {
+						set_politics = {
+							ruling_party = communism
+						}
+						set_cosmetic_tag = CHL_2024
+						set_party_name = {
+							ideology = communism
+							name = CHL_communism_2024_party
+							long_name = CHL_communism_2024_party_long
+						}
+						set_popularities = {
+							vanguardism = 7
+							communism = 17
+							socialism_ideology = 15
+							liberal_republic = 6
+							centrist_republic = 10
+							democratic = 18
+							national_conservative_republic = 27
+						}
+						create_country_leader = {
+							name = "Presidente Gabriel Boric Font"
+							desc = ""
+							picture = "gfx/leaders/CHL/CHL_Boric.tga"
+							expire = "1965.1.1"
+							ideology = marxism
+						}
+					}
 	}
 	option = { #reject
 		name = "No"

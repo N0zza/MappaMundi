@@ -150,9 +150,17 @@ tertiary_leader_enabled_effect = {
 	}
 	else_if = {
 		limit = {
-			AND = {
-				tag = SWI
-				has_government = centrist_republic
+			OR = {
+				AND = {
+					tag = SWI
+					has_government = centrist_republic
+					has_start_date < 2022.01.01
+				}
+				AND = {
+					tag = SWI
+					has_government = national_conservative_republic
+					has_start_date > 2022.01.01
+				}
 			}
 		}
 		set_country_flag = has_tertiary_leader

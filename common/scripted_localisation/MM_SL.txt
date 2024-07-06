@@ -533,6 +533,19 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
+		localization_key = "Presidente del Consiglio dei ministri Antonio Tajani"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
+				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
 		localization_key = "Presidentessa del Consiglio dei ministri Giorgia Meloni"
 	}
 	text = {
@@ -1217,7 +1230,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = NOC
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -2200,7 +2213,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LUX
-				has_government = centrist_monarchism
+				has_government = conservative_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -3017,7 +3030,8 @@ defined_text = {
 			AND = {
 				tag = LUX
 				has_government = conservative_monarchism
-				has_start_date > 1951.01.01
+				has_start_date > 1990.01.01
+				has_start_date < 200.01.01
 			}
 		}
 		localization_key = "Premier Minister Jacques Santer"
@@ -3074,7 +3088,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SWI
-				has_government = centrist_republic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -3332,7 +3346,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = MAC
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -3801,7 +3815,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LIT
-				has_government = centrist_republic
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -3820,7 +3834,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LAT
-				has_government = centrist_republic
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -5023,6 +5037,19 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
+		localization_key = "GFX_Antonio_Tajani"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
+				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
 		localization_key = "GFX_Giorgia_Meloni"
 	}
 	text = {
@@ -5647,7 +5674,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = NOC
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -6632,7 +6659,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LUX
-				has_government = centrist_monarchism
+				has_government = conservative_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -7038,7 +7065,8 @@ defined_text = {
 			AND = {
 				tag = LUX
 				has_government = conservative_monarchism
-				has_start_date > 1951.01.01
+				has_start_date > 1990.01.01
+				has_start_date < 200.01.01
 			}
 		}
 		localization_key = "GFX_Jacques_Santer"
@@ -7841,7 +7869,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LIT
-				has_government = centrist_republic
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -7860,7 +7888,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LAT
-				has_government = centrist_republic
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -8143,7 +8171,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SWI
-				has_government = centrist_republic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -8402,7 +8430,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = MAC
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
