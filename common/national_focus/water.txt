@@ -7827,6 +7827,25 @@
 			MRN = {
 				transfer_state = 3212
 			}
+			HOL = {
+				every_state = {
+					limit = {
+						is_core_of = MRN
+					}
+					HOL = {
+						remove_state_core = PREV
+					}
+				}
+				create_country_leader = {
+					name = "Koningin Wilhelmina van Oranje-Nassau "
+					desc = ""
+					picture = "gfx/leaders/HOL/Portrait_Wilhelmina_1914.dds"
+					expire = "1947.1.1"
+					ideology = conservative_constitutionalism
+					traits = {
+					}
+				}
+			}
 			GRE = {
 				drop_cosmetic_tag = yes
 				transfer_state = 3403
@@ -9928,6 +9947,15 @@
 							desc = ""
 							picture = "gfx/leaders/GER/1914_GER_Wilhelm_II.tga"
 							expire = "1965.1.1"
+							ideology = fascism_ideology
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kaiser des Großdeutschen Volkes Wilhelm II von Hohenzollern "
+							desc = ""
+							picture = "gfx/leaders/GER/1914_GER_Wilhelm_II.tga"
+							expire = "1965.1.1"
 							ideology = natsoc
 							traits = {
 							}
@@ -10035,6 +10063,15 @@
 							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
 							expire = "1965.1.1"
 							ideology = absolutism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kommandant Richard Steidle"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_Richard_Steidle.dds"
+							expire = "1965.1.1"
+							ideology = repfash
 							traits = {
 							}
 						}

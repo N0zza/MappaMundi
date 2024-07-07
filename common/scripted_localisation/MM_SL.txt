@@ -913,9 +913,22 @@ defined_text = {
 			AND = {
 				tag = AUS
 				has_government = fascism
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
 			}
 		}
 		localization_key = "Bundeskanzler Kurt Alois Josef Johann Edler von Schuschnigg"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = fascism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Ministerpräsident und Oberbefehlshaber Richard Steidle"
 	}
 	text = {
 		trigger = {
@@ -5333,9 +5346,22 @@ defined_text = {
 					has_government = republican_fascism
 					has_government = fascism
 				}
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
 			}
 		}
 		localization_key = "GFX_Kurt_von_Schuschnigg"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = fascism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Richard_Steidle"
 	}
 	text = {
 		trigger = {
