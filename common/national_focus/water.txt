@@ -7827,6 +7827,25 @@
 			MRN = {
 				transfer_state = 3212
 			}
+			HOL = {
+				every_state = {
+					limit = {
+						is_core_of = MRN
+					}
+					HOL = {
+						remove_state_core = PREV
+					}
+				}
+				create_country_leader = {
+					name = "Koningin Wilhelmina van Oranje-Nassau "
+					desc = ""
+					picture = "gfx/leaders/HOL/Portrait_Wilhelmina_1914.dds"
+					expire = "1947.1.1"
+					ideology = conservative_constitutionalism
+					traits = {
+					}
+				}
+			}
 			GRE = {
 				drop_cosmetic_tag = yes
 				transfer_state = 3403
@@ -9915,11 +9934,29 @@
 							}
 						}
 						create_country_leader = {
+							name = "Führer des Großdeutschen Volkes Wilhelm Lattmann"
+							desc = ""
+							picture = "gfx/leaders/GER/Portrait_Wilhelm_Lattmann.dds"
+							expire = "1965.1.1"
+							ideology = repfash
+							traits = {
+							}
+						}
+						create_country_leader = {
 							name = "Kaiser des Großdeutschen Volkes Wilhelm II von Hohenzollern "
 							desc = ""
 							picture = "gfx/leaders/GER/1914_GER_Wilhelm_II.tga"
 							expire = "1965.1.1"
 							ideology = fascism_ideology
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Kaiser des Großdeutschen Volkes Wilhelm II von Hohenzollern "
+							desc = ""
+							picture = "gfx/leaders/GER/1914_GER_Wilhelm_II.tga"
+							expire = "1965.1.1"
+							ideology = natsoc
 							traits = {
 							}
 						}
@@ -9940,8 +9977,8 @@
 						}
 						set_party_name = {
 							ideology = anocratic_monarchism
-							name = AUS_1914_anocratic_monarchism_party
-							long_name = AUS_1914_anocratic_monarchism_party_long
+							name = AUS_anocratic_monarchism_1914_party
+							long_name = AUS_anocratic_monarchism_1914_party_long
 						}
 						set_party_name = {
 							ideology = republican_fascism
@@ -9952,6 +9989,11 @@
 							ideology = fascism
 							name = AUS_fascism_1914_party
 							long_name = AUS_fascism_1914_party_long
+						}
+						set_party_name = {
+							ideology = national_socialism
+							name = AUS_national_socialism_1914_party
+							long_name = AUS_national_socialism_1914_party_long
 						}
 						set_popularities = {
 							socialist_monarchy = 8
@@ -10025,11 +10067,29 @@
 							}
 						}
 						create_country_leader = {
+							name = "Kommandant Richard Steidle"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_Richard_Steidle.dds"
+							expire = "1965.1.1"
+							ideology = repfash
+							traits = {
+							}
+						}
+						create_country_leader = {
 							name = "Kaiser Franz Joseph von Habsburg-Lothringen"
 							desc = ""
 							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
 							expire = "1965.1.1"
 							ideology = fascism_ideology
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Göttlicher Führer Adolf Josef Lanz"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_Jorg_Liebenfels.dds"
+							expire = "1965.1.1"
+							ideology = natsoc
 							traits = {
 							}
 						}

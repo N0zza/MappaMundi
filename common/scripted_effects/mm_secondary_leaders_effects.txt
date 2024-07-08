@@ -315,8 +315,15 @@ secondary_leader_enabled_effect = {
 				OR = {
 					AND = {
 						has_government = national_socialism
-						has_global_flag = non_hog_secondary_leaders
-						has_start_date > 1915.01.01
+						OR = {
+							AND = {
+								has_start_date < 1915.01.01
+							}
+							AND = {
+								has_global_flag = non_hog_secondary_leaders
+								has_start_date > 1915.01.01
+							}
+						}
 					}
 					AND = {
 						OR = {
@@ -336,6 +343,7 @@ secondary_leader_enabled_effect = {
 						OR = {
 							has_government = authoritarian_monarchism
 							has_government = stratocratic_monarchism
+							has_government = fascism
 							has_government = theocratic
 						}
 						has_start_date < 1915.01.01
@@ -475,6 +483,7 @@ secondary_leader_enabled_effect = {
 						OR = {
 							has_government = conservative_monarchism
 							has_government = authoritarian_monarchism
+							has_government = fascism
 						}
 						has_start_date < 1915.01.01
 						has_start_date > 1913.01.01

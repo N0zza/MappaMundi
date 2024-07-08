@@ -311,9 +311,33 @@ defined_text = {
 				tag = GER
 				has_government = national_socialism
 				has_global_flag = non_hog_secondary_leaders
+				has_start_date < 1949.01.01
+				has_start_date > 1937.01.01
 			}
 		}
 		localization_key = "Stellvertreter des Führers Rudolf Walter Richard Heß"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GER
+				has_government = national_socialism
+				has_start_date > 1913.01.01
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "Regierungschef Wilhelm Lattmann"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GER
+				has_government = fascism
+				has_start_date > 1913.01.01
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "Reichskanzler Wilhelm Lattmann"
 	}
 	text = {
 		trigger = {
@@ -902,9 +926,22 @@ defined_text = {
 			AND = {
 				tag = AUS
 				has_government = fascism
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
 			}
 		}
 		localization_key = "Bundeskanzler Kurt Alois Josef Johann Edler von Schuschnigg"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = fascism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Ministerpräsident und Oberbefehlshaber Richard Steidle"
 	}
 	text = {
 		trigger = {
@@ -4510,9 +4547,25 @@ defined_text = {
 				tag = GER
 				has_government = national_socialism
 				has_global_flag = non_hog_secondary_leaders
+				has_start_date < 1949.01.01
+				has_start_date > 1937.01.01
 			}
 		}
 		localization_key = "GFX_Rudolf_Hess"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = GER
+				OR = {
+					has_government = fascism
+					has_government = national_socialism
+				}
+				has_start_date > 1913.01.01
+				has_start_date < 1915.01.01
+			}
+		}
+		localization_key = "GFX_Wilhelm_Lattmann"
 	}
 	text = {
 		trigger = {
@@ -5320,9 +5373,22 @@ defined_text = {
 					has_government = republican_fascism
 					has_government = fascism
 				}
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
 			}
 		}
 		localization_key = "GFX_Kurt_von_Schuschnigg"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = fascism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Richard_Steidle"
 	}
 	text = {
 		trigger = {
