@@ -12,33 +12,19 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-					CHL = {
-						set_politics = {
-							ruling_party = communism
-						}
-						set_cosmetic_tag = CHL_2024
-						set_party_name = {
-							ideology = communism
-							name = CHL_communism_2024_party
-							long_name = CHL_communism_2024_party_long
-						}
-						set_popularities = {
-							vanguardism = 7
-							communism = 17
-							socialism_ideology = 15
-							liberal_republic = 6
-							centrist_republic = 10
-							democratic = 18
-							national_conservative_republic = 27
-						}
-						create_country_leader = {
-							name = "Presidente Gabriel Boric Font"
-							desc = ""
-							picture = "gfx/leaders/CHL/CHL_Boric.tga"
-							expire = "1965.1.1"
-							ideology = marxism
-						}
-					}
+		ARG = {
+			set_popularities = {
+				vanguardism = 2
+				communism = 1
+				socialism_ideology = 36
+				liberal_republic = 14
+				centrist_republic = 10
+				democratic = 21
+				national_conservative_republic = 6
+				republican_fascism = 1
+				right_anarchism = 9
+			}
+		}
 	}
 	option = { #reject
 		name = "No"
@@ -698,11 +684,11 @@ country_event = {
 		}
 		SLO = {
 			set_popularities = {
-				socialism_ideology = 18
+				socialism_ideology = 28
 				liberal_republic = 22
 				centrist_republic = 8
 				democratic = 18
-				national_conservative_republic = 28
+				national_conservative_republic = 18
 				anocratic_republic = 6
 			}
 		}
