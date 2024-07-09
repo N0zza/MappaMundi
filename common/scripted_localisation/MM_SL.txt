@@ -3091,7 +3091,19 @@ defined_text = {
 			AND = {
 				tag = SWI
 				has_government = centrist_republic
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Bundespräsident Arthur Hoffmann"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SWI
+				has_government = centrist_republic
 				has_start_date < 1940.01.01
+				has_start_date > 1915.01.01
 			}
 		}
 		localization_key = "Bundespräsident Albert Meyer"
@@ -8189,7 +8201,19 @@ defined_text = {
 			AND = {
 				tag = SWI
 				has_government = centrist_republic
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Arthur_Hoffmann"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SWI
+				has_government = centrist_republic
 				has_start_date < 1940.01.01
+				has_start_date > 1915.01.01
 			}
 		}
 		localization_key = "GFX_Albert_Meyer"

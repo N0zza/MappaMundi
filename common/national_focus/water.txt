@@ -9425,6 +9425,16 @@
 							long_name = FRA_communism_1914_party_long
 						}
 						set_party_name = {
+							ideology = socialism_ideology
+							name = FRA_socialism_ideology_1914_party
+							long_name = FRA_socialism_ideology_1914_party_long
+						}
+						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = FRA_stratocratic_monarchism_1914_party
+							long_name = FRA_stratocratic_monarchism_1914_party_long
+						}
+						set_party_name = {
 							ideology = republican_fascism
 							name = FRA_republican_fascism_1914_party
 							long_name = FRA_republican_fascism_1914_party_long
@@ -9444,11 +9454,29 @@
 							}
 						}
 						create_country_leader = {
+							name = "Président Auguste Marie Joseph Jean Léon Jaurès"
+							desc = ""
+							picture = "gfx/leaders/FRA/Portrait_Jean_Jaures.dds"
+							expire = "1965.1.1"
+							ideology = demsoc
+							traits = {
+							}
+						}
+						create_country_leader = {
 							name = "Président Raymond Nicolas Landry Poincaré"
 							desc = ""
 							picture = "gfx/leaders/FRA/1914_FRA_Raymond_Poincare.tga"
 							expire = "1965.1.1"
 							ideology = conservatism
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Geschäftsführender Generalgouverneur und Oberster Befehlshaber des Heeres Helmuth Johannes Ludwig Graf von Moltke"
+							desc = ""
+							picture = "gfx/leaders/GER/Portrait_Moltke_Younger.dds"
+							expire = "1965.1.1"
+							ideology = stratmon
 							traits = {
 							}
 						}
@@ -11247,27 +11275,21 @@
 									AND = {
 										is_core_of = PIC
 										NOT = {
-											AND = {
+											OR = {
 												is_core_of = BL2
-												NOT = {
-													state = 1747
-													state = 2091
-													state = 16620
-													state = 16621
-													state = 16622
-													state = 16624
-												}
+												state = 834
+												state = 8423
+												state = 5570
+												state = 11910
+												state = 16637
 											}
-											state = 834
-											state = 8423
-											state = 5570
-											state = 11910
-											state = 16637
 										}
 									}
 									is_core_of = RTH
 									state = 985
 									state = 1357
+									state = 1747
+									state = 2091
 									state = 3509
 									state = 4032
 									state = 4034
@@ -11275,7 +11297,11 @@
 									state = 4146
 									state = 4147
 									state = 5588
+									state = 16620
+									state = 16621
+									state = 16622
 									state = 16623
+									state = 16624
 									state = 16627
 								}
 							}
@@ -11289,6 +11315,20 @@
 						}
 						set_popularities = {
 							monarchism = 100
+						}
+						set_party_name = {
+							ideology = monarchism
+							name = OFR_monarchism_1914_party
+							long_name = OFR_monarchism_1914_party_long
+						}
+						create_country_leader = {
+							name = "Geschäftsführender Generalgouverneur und Oberster Befehlshaber des Heeres Helmuth Johannes Ludwig Graf von Moltke"
+							desc = ""
+							picture = "gfx/leaders/GER/Portrait_Moltke_Younger.dds"
+							expire = "1965.1.1"
+							ideology = absolutism
+							traits = {
+							}
 						}
 					}
 					BEL = {
