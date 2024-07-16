@@ -20160,13 +20160,13 @@
 							remember_old_capital = no
 						}
 						set_popularities = {
-							communism = 4
+							vanguardism = 4
+							communism = 1
 							socialism_ideology = 28
 							liberal_republic = 13
 							centrist_republic = 16
 							democratic = 27
 							national_conservative_republic = 11
-							anocratic_republic = 1
 						}
 						set_cosmetic_tag = WGR_2024
 						set_party_name = {
@@ -20427,6 +20427,11 @@
 							ideology = centrist_republic
 							name = EUR_centrist_republic_2024_party
 							long_name = EUR_centrist_republic_2024_party_long
+						}
+						set_party_name = {
+							ideology = national_conservative_republic
+							name = EUR_national_conservative_republic_2024_party
+							long_name = EUR_national_conservative_republic_2024_party_long
 						}
 						set_party_name = {
 							ideology = anocratic_republic
@@ -21091,9 +21096,10 @@
 						}
 						set_popularities = {
 							socialism_ideology = 8
-							liberal_republic = 20
-							centrist_republic = 16
-							democratic = 35
+							liberal_republic = 10
+							centrist_republic = 23
+							democratic = 30
+							national_conservative_republic = 8
 							anocratic_republic = 5
 							republican_fascism = 16
 						}
@@ -21134,13 +21140,14 @@
 						}
 						set_popularities = {
 							vanguardism = 7
-							socialism_ideology = 16
+							communism = 6
+							socialism_ideology = 12
 							liberal_republic = 10
-							centrist_republic = 3
-							democratic = 53
+							centrist_republic = 4
+							democratic = 52
+							national_conservative_republic = 3
 							anocratic_republic = 4
-							neutrality = 3
-							republican_fascism = 4
+							republican_fascism = 2
 						}
 						create_country_leader = {
 							name = "Próedros Aikateríni Nikoláou Sakellaropoúlou"
@@ -21651,7 +21658,7 @@
 							liberal_republic = 7
 							centrist_republic = 13
 							democratic = 13
-							national_conservative_monarchism = 30
+							national_conservative_republic = 30
 							anocratic_republic = 17
 						}
 						create_country_leader = {
@@ -21845,14 +21852,15 @@
 							long_name = SER_anocratic_republic_2024_party_long
 						}
 						set_popularities = {
-							communism = 5
+							communism = 1
 							socialism_ideology = 17
-							liberal_republic = 3
+							liberal_republic = 7
 							centrist_republic = 4
-							democratic = 19
+							democratic = 12
+							national_conservative_republic = 7
 							anocratic_republic = 42
-							neutrality = 8
-							republican_fascism = 2
+							neutrality = 5
+							republican_fascism = 5
 						}
 					}
 					SER = {
@@ -21931,12 +21939,13 @@
 							long_name = BOS_anocratic_republic_2024_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 17
-							liberal_republic = 14
-							centrist_republic = 12
-							democratic = 24
-							anocratic_republic = 31
-							republican_fascism = 2
+							socialism_ideology = 12
+							liberal_republic = 10
+							centrist_republic = 10
+							democratic = 14
+							national_conservative_republic = 35
+							anocratic_republic = 14
+							republican_fascism = 5
 						}
 					}
 					BOS = {
@@ -21961,11 +21970,11 @@
 							long_name = MNT_centrist_republic_2024_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 27
-							liberal_republic = 6
-							centrist_republic = 30
-							democratic = 21
-							anocratic_republic = 16
+							socialism_ideology = 28
+							liberal_republic = 11
+							centrist_republic = 26
+							democratic = 14
+							national_conservative_republic = 21
 						}
 						create_country_leader = {
 							name = "Predsjednik Jakov Milatović"
@@ -22024,13 +22033,11 @@
 							long_name = ALB_authoritarian_monarchism_2024_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 57
-							liberal_republic = 1
-							centrist_republic = 1
+							socialism_ideology = 55
+							liberal_republic = 4
+							centrist_republic = 4
 							democratic = 34
-							conservative_monarchism = 1
-							anocratic_republic = 4
-							anocratic_monarchism = 2
+							national_conservative_republic = 3
 						}
 						create_country_leader = {
 							name = "Presidenti Bahram Begaj"
@@ -22570,7 +22577,7 @@
 							liberal_republic = 5
 							centrist_republic = 15
 							democratic = 13
-							anocratic_republic = 20
+							national_conservative_republic = 20
 						}
 					}
 					KOS = {
@@ -23132,7 +23139,7 @@
 							liberal_republic = 3
 							centrist_republic = 7
 							democratic = 33
-							anocratic_republic = 3
+							national_conservative_republic = 3
 						}
 					}
 					MON = {
@@ -24267,14 +24274,39 @@
 						}
 						set_cosmetic_tag = ENG_2024
 						set_party_name = {
-							ideology = anocratic_monarchism
-							name = ENG_anocratic_monarchism_2024_party
-							long_name = ENG_anocratic_monarchism_2024_party_long
+							ideology = vanguardism
+							name = ENG_vanguardism_2024_party
+							long_name = ENG_vanguardism_2024_party_long
+						}
+						set_party_name = {
+							ideology = communism
+							name = ENG_communism_2024_party
+							long_name = ENG_communism_2024_party_long
+						}
+						set_party_name = {
+							ideology = socialist_monarchy
+							name = ENG_socialist_monarchy_2024_party
+							long_name = ENG_socialist_monarchy_2024_party_long
 						}
 						set_party_name = {
 							ideology = democratic_monarchism
 							name = ENG_democratic_monarchism_2024_party
 							long_name = ENG_democratic_monarchism_2024_party_long
+						}
+						set_party_name = {
+							ideology = centrist_monarchism
+							name = ENG_centrist_monarchism_2024_party
+							long_name = ENG_centrist_monarchism_2024_party_long
+						}
+						set_party_name = {
+							ideology = national_conservative_monarchism
+							name = ENG_national_conservative_monarchism_2024_party
+							long_name = ENG_national_conservative_monarchism_2024_party_long
+						}
+						set_party_name = {
+							ideology = anocratic_monarchism
+							name = ENG_anocratic_monarchism_2024_party
+							long_name = ENG_anocratic_monarchism_2024_party_long
 						}
 						puppet = GSY
 						puppet = JSY
@@ -24282,11 +24314,39 @@
 					}
 					ENG = {
 						create_country_leader = {
+							name = "President and General Secretary of the Central Committee of CPB Robert Griffiths"
+							desc = ""
+							picture = "gfx/leaders/ENG/ENG_Griffiths.tga"
+							expire = "1965.1.1"
+							ideology = vanguardism
+						}
+						create_country_leader = {
+							name = "President George Galloway"
+							desc = ""
+							picture = "gfx/leaders/ENG/ENG_Galloway.tga"
+							expire = "1965.1.1"
+							ideology = marxism
+						}
+						create_country_leader = {
 							name = "King Charles III of Windsor"
 							desc = ""
 							picture = "gfx/leaders/ENG/ENG_Charles_III.tga"
 							expire = "1965.1.1"
-							ideology = anocmon
+							ideology = monsoc
+						}
+						create_country_leader = {
+							name = "King Charles III of Windsor"
+							desc = ""
+							picture = "gfx/leaders/ENG/ENG_Charles_III.tga"
+							expire = "1965.1.1"
+							ideology = liberal_constitutionalism
+						}
+						create_country_leader = {
+							name = "King Charles III of Windsor"
+							desc = ""
+							picture = "gfx/leaders/ENG/ENG_Charles_III.tga"
+							expire = "1965.1.1"
+							ideology = cenmon
 						}
 						create_country_leader = {
 							name = "King Charles III of Windsor"
@@ -24300,28 +24360,14 @@
 							desc = ""
 							picture = "gfx/leaders/ENG/ENG_Charles_III.tga"
 							expire = "1965.1.1"
-							ideology = liberal_constitutionalism
+							ideology = natconmon
 						}
 						create_country_leader = {
-							name = "Prime Minister Rishi Sunak"
+							name = "King Charles III of Windsor"
 							desc = ""
-							picture = "gfx/leaders/ENG/ENG_Sunak.tga"
+							picture = "gfx/leaders/ENG/ENG_Charles_III.tga"
 							expire = "1965.1.1"
-							ideology = conservatism
-						}
-						create_country_leader = {
-							name = "Prime Minister Sir Keir Rodney Starmer"
-							desc = ""
-							picture = "gfx/leaders/ENG/ENG_Starmer.tga"
-							expire = "1965.1.1"
-							ideology = liberalism
-						}
-						create_country_leader = {
-							name = "King William V of Windsor"
-							desc = ""
-							picture = "gfx/leaders/ENG/ENG_Prince_William.tga"
-							expire = "1965.1.1"
-							ideology = monsoc
+							ideology = anocmon
 						}
 					}
 					GSY = {
@@ -24443,13 +24489,11 @@
 					}
 					RJV = {
 						set_popularities = {
-							left_anarchism = 27
-							communism = 12
-							socialism_ideology = 9
-							liberal_republic = 16
-							anocratic_republic = 22
-							neutrality = 3
-							stratocratic = 11
+							left_anarchism = 7
+							communism = 23
+							socialism_ideology = 2
+							liberal_republic = 20
+							anocratic_republic = 48
 						}
 					}
 					RJV = {
@@ -24579,13 +24623,14 @@
 							long_name = LEB_theocratic_2024_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 8
-							liberal_republic = 8
-							centrist_republic = 13
-							democratic = 25
-							anocratic_republic = 33
-							neutrality = 9
-							republican_fascism = 4
+							communism = 2
+							socialism_ideology = 6
+							liberal_republic = 9
+							centrist_republic = 15
+							democratic = 20
+							national_conservative_republic = 23
+							anocratic_republic = 13
+							neutrality = 12
 						}
 					}
 					LEB = {
@@ -24628,8 +24673,8 @@
 					JOR = {
 						set_cosmetic_tag = JOR_2024
 						set_popularities = {
-							centrist_monarchism = 1
-							conservative_monarchism = 4
+							conservative_monarchism = 1
+							national_conservative_monarchism = 4
 							anocratic_monarchism = 4
 							authoritarian_monarchism = 91
 						}
@@ -24785,11 +24830,13 @@
 							long_name = IRQ_neutrality_2024_party_long
 						}
 						set_popularities = {
-							liberal_republic = 19
-							centrist_republic = 21
-							democratic = 5
-							anocratic_republic = 27
-							neutrality = 28
+							socialism_ideology = 5
+							liberal_republic = 9
+							centrist_republic = 19
+							democratic = 12
+							national_conservative_republic = 10
+							anocratic_republic = 19
+							neutrality = 26
 						}
 					}
 					IRQ = {
@@ -25023,11 +25070,13 @@
 							long_name = ISR_republican_fascism_2024_party_long
 						}
 						set_popularities = {
-							communism = 4
+							vanguardism = 2
+							communism = 2
 							socialism_ideology = 3
 							liberal_republic = 20
-							centrist_republic = 11
-							democratic = 23
+							centrist_republic = 7
+							democratic = 12
+							national_conservative_republic = 15
 							anocratic_republic = 27
 							neutrality = 7
 							republican_fascism = 5
@@ -25269,6 +25318,21 @@
 							long_name = TUR_democratic_2024_party_long
 						}
 						set_party_name = {
+							ideology = conservative_monarchism
+							name = TUR_conservative_monarchism_2024_party
+							long_name = TUR_conservative_monarchism_2024_party_long
+						}
+						set_party_name = {
+							ideology = national_conservative_republic
+							name = TUR_national_conservative_republic_2024_party
+							long_name = TUR_national_conservative_republic_2024_party_long
+						}
+						set_party_name = {
+							ideology = national_conservative_monarchism
+							name = TUR_national_conservative_monarchism_2024_party
+							long_name = TUR_national_conservative_monarchism_2024_party_long
+						}
+						set_party_name = {
 							ideology = anocratic_republic
 							name = TUR_anocratic_republic_2024_party
 							long_name = TUR_anocratic_republic_2024_party_long
@@ -25289,7 +25353,8 @@
 							socialism_ideology = 21
 							liberal_republic = 6
 							centrist_republic = 4
-							democratic = 4
+							democratic = 2
+							national_conservative_republic = 2
 							anocratic_republic = 44
 							neutrality = 3
 							republican_fascism = 7
@@ -25336,6 +25401,13 @@
 							desc = ""
 							picture = "gfx/leaders/TUR/TUR_Harun.tga"
 							expire = "1965.1.1"
+							ideology = natconmon
+						}
+						create_country_leader = {
+							name = "Kral Harun Osmanoğlu"
+							desc = ""
+							picture = "gfx/leaders/TUR/TUR_Harun.tga"
+							expire = "1965.1.1"
 							ideology = liberal_constitutionalism
 						}
 						create_country_leader = {
@@ -25353,11 +25425,18 @@
 							ideology = cenmon
 						}
 						create_country_leader = {
+							name = "Cumhurbaşkanı Ahmet Davutoğlu"
+							desc = ""
+							picture = "gfx/leaders/TUR/TUR_Davutoğlu.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
+						create_country_leader = {
 							name = "Cumhurbaşkanı Temel Karamollaoğlu"
 							desc = ""
 							picture = "gfx/leaders/TUR/TUR_Karamollaoğlu.tga"
 							expire = "1965.1.1"
-							ideology = conservatism
+							ideology = natconrep
 						}
 						create_country_leader = {
 							name = "Sultan Harun"
@@ -25365,6 +25444,13 @@
 							picture = "gfx/leaders/TUR/TUR_Harun.tga"
 							expire = "1965.1.1"
 							ideology = conservative_constitutionalism
+						}
+						create_country_leader = {
+							name = "Sultan Harun"
+							desc = ""
+							picture = "gfx/leaders/TUR/TUR_Harun.tga"
+							expire = "1965.1.1"
+							ideology = natconmon
 						}
 						create_country_leader = {
 							name = "Cumhurbaşkanı Muhammed Ali Fatih Erbakan"
@@ -25526,12 +25612,14 @@
 							long_name = GEO_anocratic_republic_2024_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 4
-							liberal_republic = 3
-							centrist_republic = 14
-							democratic = 16
-							anocratic_republic = 56
+							socialism_ideology = 3
+							liberal_republic = 1
+							centrist_republic = 13
+							democratic = 18
+							national_conservative_republic = 6
+							anocratic_republic = 49
 							neutrality = 7
+							right_anarchism = 3
 						}
 					}
 					GEO = {
@@ -26947,7 +27035,8 @@
 							liberal_republic = 11
 							centrist_republic = 7
 							democratic = 6
-							anocratic_republic = 51
+							national_conservative_republic = 11
+							anocratic_republic = 40
 							neutrality = 5
 						}
 					}
@@ -27504,11 +27593,12 @@
 						set_popularities = {
 							communism = 1
 							socialism_ideology = 1
-							liberal_republic = 4
-							centrist_republic = 5
+							liberal_republic = 3
+							centrist_republic = 7
 							democratic = 4
-							anocratic_republic = 12
-							neutrality = 46
+							national_conservative_republic = 1
+							anocratic_republic = 9
+							neutrality = 47
 							stratocratic = 27
 						}
 					}
@@ -27651,11 +27741,10 @@
 							long_name = ALG_neutrality_2024_party_long
 						}
 						set_popularities = {
-							centrist_republic = 10
-							democratic = 18
-							anocratic_republic = 9
-							neutrality = 30
-							stratocratic = 33
+							neutrality = 23
+							anocratic_republic = 36
+							national_conservative_republic = 20
+							democratic = 21
 						}
 						every_owned_state = {
 							do_standard_arabic_renames = yes
@@ -27682,10 +27771,12 @@
 							long_name = MOR_anocratic_monarchism_2024_party_long
 						}
 						set_popularities = {
-							socialist_monarchy = 8
-							democratic_monarchism = 11
-							centrist_monarchism = 6
-							conservative_monarchism = 12
+							communism = 4
+							socialist_monarchy = 4
+							democratic_monarchism = 10
+							centrist_monarchism = 1
+							conservative_monarchism = 16
+							national_conservative_monarchism = 2
 							anocratic_monarchism = 63
 						}
 					}
@@ -28399,11 +28490,12 @@
 							long_name = MRT_democratic_2024_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 8
-							liberal_republic = 5
-							centrist_republic = 10
-							democratic = 64
-							anocratic_republic = 13
+							communism = 4
+							socialism_ideology = 6
+							liberal_republic = 11
+							centrist_republic = 8
+							democratic = 61
+							national_conservative_monarchism = 10
 						}
 					}
 					MRT = {
@@ -28453,9 +28545,10 @@
 						set_popularities = {
 							socialism_ideology = 3
 							liberal_republic = 26
-							centrist_republic = 16
-							anocratic_republic = 50
-							democratic = 5
+							centrist_republic = 21
+							democratic = 7
+							national_conservative_republic = 5
+							anocratic_republic = 38
 						}
 					}
 					GAM = {
@@ -28561,11 +28654,11 @@
 							long_name = LIB_centrist_republic_2024_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 11
-							liberal_republic = 10
-							centrist_republic = 46
-							democratic = 29
-							anocratic_republic = 4
+							socialism_ideology = 3
+							liberal_republic = 1
+							centrist_republic = 45
+							democratic = 44
+							national_conservative_republic = 7
 						}
 					}
 					LIB = {
@@ -28605,13 +28698,12 @@
 							long_name = NGA_anocratic_republic_2024_party_long
 						}
 						set_popularities = {
-							socialism_ideology = 8
-							liberal_republic = 2
-							anocratic_republic = 49
-							centrist_republic = 2
+							socialism_ideology = 11
+							liberal_republic = 1
+							centrist_republic = 1
 							democratic = 33
-							neutrality = 1
-							republican_fascism = 5
+							national_conservative_republic = 5
+							anocratic_republic = 49
 						}
 					}
 					NGA = {
@@ -28864,7 +28956,8 @@
 							liberal_republic = 3
 							centrist_republic = 4
 							democratic = 17
-							anocratic_republic = 9
+							national_conservative_republic = 1
+							anocratic_republic = 8
 						}
 						set_party_name = {
 							ideology = democratic
@@ -28894,7 +28987,7 @@
 							liberal_republic = 40
 							centrist_republic = 22
 							democratic = 7
-							anocratic_republic = 4
+							national_conservative_republic = 4
 						}
 						set_party_name = {
 							ideology = vanguardism

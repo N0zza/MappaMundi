@@ -41,8 +41,11 @@ secondary_leader_enabled_effect = {
 					}
 					AND = {
 						OR = {
+							has_government = socialist_monarchy
 							has_government = democratic_monarchism
+							has_government = centrist_monarchism
 							has_government = conservative_monarchism
+							has_government = national_conservative_monarchism
 							has_government = anocratic_monarchism
 						}
 						has_start_date > 2022.01.01

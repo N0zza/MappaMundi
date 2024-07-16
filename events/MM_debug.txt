@@ -12,25 +12,45 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		ARG = {
-			set_popularities = {
-				vanguardism = 2
-				communism = 1
-				socialism_ideology = 36
-				liberal_republic = 14
-				centrist_republic = 10
-				democratic = 21
-				national_conservative_republic = 6
-				republican_fascism = 1
-				right_anarchism = 9
-			}
-		}
 	}
 	option = { #reject
 		name = "No"
 		ai_chance = {
 			factor = 100
 		} 
+		GER = {
+			set_popularities = {
+				vanguardism = 12
+				socialism_ideology = 18
+				democratic = 16
+				national_conservative_republic = 1
+				republican_fascism = 8
+				national_socialism = 45
+			}
+		}
+		GER = {
+			set_popularities = {
+				vanguardism = 13
+				socialism_ideology = 25
+				centrist_republic = 3
+				democratic = 18
+				national_conservative_republic = 10
+				republican_fascism = 12
+				national_socialism = 19
+			}
+		}
+		FRA = {
+			set_popularities = {
+				vanguardism = 2
+				communism = 13
+				socialism_ideology = 19
+				liberal_republic = 18
+				centrist_republic = 9
+				democratic = 12
+				national_conservative_republic = 25
+				anocratic_republic = 2
+			}
+		}
 		MEX = {
 			set_popularities = {
 				vanguardism = 15
