@@ -667,11 +667,21 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = WGR
+				has_government = vanguardism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Vorsitzende der Ministerrats Janine Natalie Wißler"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
 				has_government = communism
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Bundeskanzlerin Janine Natalie Wißler"
+		localization_key = "Bundeskanzlerin Sahra Wagenknecht"
 	}
 	text = {
 		trigger = {
@@ -5242,11 +5252,21 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = WGR
-				has_government = communism
+				has_government = vanguardism
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "GFX_Janine_Wissler"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = communism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Sahra_Wagenknecht"
 	}
 	text = {
 		trigger = {
