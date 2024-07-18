@@ -5247,6 +5247,10 @@ on_actions = {
 										has_government = neutrality
 										has_start_date > 2022.01.01
 									}
+									AND = {
+										has_government = anocratic_republic
+										has_start_date < 2022.01.01
+									}
 								}
 							}
 							set_cosmetic_tag = FRA_AUTH
@@ -5443,7 +5447,6 @@ on_actions = {
 										has_government = vanguardism
 										has_government = socialism_ideology
 										has_government = left_anarchism
-										has_government = anocratic_republic
 										AND = {
 											has_government = neutrality
 											has_start_date > 2022.01.01
@@ -5945,8 +5948,6 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
-									has_government = national_conservative_republic
-									has_government = national_conservative_monarchism
 									has_government = neutrality
 									has_government = fascism
 									has_government = republican_fascism
@@ -5955,6 +5956,10 @@ on_actions = {
 									has_government = right_anarchism
 									AND = {
 										has_government = anocratic_monarchism
+										OR = {
+											has_government = national_conservative_republic
+											has_government = national_conservative_monarchism
+										}
 										NOT = {
 											has_start_date > 2024.01.01
 										}
@@ -7671,6 +7676,7 @@ on_actions = {
 									has_government = liberal_republic
 									has_government = centrist_republic
 									has_government = democratic
+									has_government = national_conservative_republic
 									has_government = anocratic_republic
 								}
 							}

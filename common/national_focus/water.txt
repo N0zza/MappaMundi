@@ -21561,7 +21561,8 @@
 							liberal_republic = 9
 							centrist_republic = 14
 							democratic = 39
-							national_conservative_republic = 16
+							national_conservative_republic = 13
+							anocratic_republic = 3
 						}		
 						set_party_name = {
 							ideology = socialism_ideology
@@ -21595,18 +21596,23 @@
 						}
 						set_party_name = {
 							ideology = democratic
-							name = AUS_2024_democratic_party
-							long_name = AUS_2024_democratic_party_long
+							name = AUS_democratic_2024_party
+							long_name = AUS_democratic_2024_party_long
 						}
 						set_party_name = {
 							ideology = conservative_monarchism
-							name = AUS_2024_conservative_monarchism_party
-							long_name = AUS_2024_conservative_monarchism_party_long
+							name = AUS_conservative_monarchism_2024_party
+							long_name = AUS_conservative_monarchism_2024_party_long
+						}
+						set_party_name = {
+							ideology = national_conservative_republic
+							name = AUS_national_conservative_republic_2024_party
+							long_name = AUS_national_conservative_republic_2024_party_long
 						}
 						set_party_name = {
 							ideology = anocratic_republic
-							name = AUS_2024_anocratic_republic_party
-							long_name = AUS_2024_anocratic_republic_party_long
+							name = AUS_anocratic_republic_2024_party
+							long_name = AUS_anocratic_republic_2024_party_long
 						}
 						set_party_name = {
 							ideology = anocratic_monarchism
@@ -21620,8 +21626,13 @@
 						}
 						set_party_name = {
 							ideology = stratocratic
-							name = AUS_2024_stratocratic_party
-							long_name = AUS_2024_stratocratic_party_long
+							name = AUS_stratocratic_2024_party
+							long_name = AUS_stratocratic_2024_party_long
+						}
+						set_party_name = {
+							ideology = republican_fascism
+							name = AUS_republican_fascism_2024_party
+							long_name = AUS_republican_fascism_2024_party_long
 						}
 						create_country_leader = {
 							name = "Kaiser Karl II von Habsburg-Lothringen"
@@ -21673,6 +21684,13 @@
 							ideology = conservative_constitutionalism
 						}
 						create_country_leader = {
+							name = "Kaiser Karl II von Habsburg-Lothringen"
+							desc = ""
+							picture = "gfx/leaders/AUS/AUS_Karl.tga"
+							expire = "1965.1.1"
+							ideology = natconmon
+						}
+						create_country_leader = {
 							name = "Bundespräsident Herbert Kickl"
 							desc = ""
 							picture = "gfx/leaders/AUS/Portrait_Herbert_Kickl.dds"
@@ -21685,6 +21703,13 @@
 							picture = "gfx/leaders/AUS/AUS_Karl.tga"
 							expire = "1965.1.1"
 							ideology = anocmon
+						}
+						create_country_leader = {
+							name = "Kaiser Karl II von Habsburg-Lothringen"
+							desc = ""
+							picture = "gfx/leaders/AUS/AUS_Karl.tga"
+							expire = "1965.1.1"
+							ideology = authmon
 						}
 						create_country_leader = {
 							name = "Verteidigungsminister Klaudia Tanner"
@@ -30646,6 +30671,22 @@
 							}
 						}
 						create_country_leader = {
+							name = "President Donald John Trump"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Trump.tga"
+							expire = "1965.1.1"
+							ideology = natconrep
+						}
+						create_country_leader = {
+							name = "Governor-General David Michael James Brudenell-Bruce, Earl of Cardigan"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Brudenell-Bruce.tga"
+							expire = "1965.1.1"
+							ideology = natconmon
+							traits = {
+							}
+						}
+						create_country_leader = {
 							name = "Governor-General David Michael James Brudenell-Bruce, Earl of Cardigan"
 							desc = ""
 							picture = "gfx/leaders/USA/USA_Brudenell-Bruce.tga"
@@ -30988,7 +31029,7 @@
 						set_party_name = {
 							ideology = national_conservative_republic
 							name = PAN_national_conservative_republic_2024_party
-							long_name = PAN_national_conservative_republic2024_party_long
+							long_name = PAN_national_conservative_republic_2024_party_long
 						}
 						set_popularities = {
 							socialism_ideology = 18
