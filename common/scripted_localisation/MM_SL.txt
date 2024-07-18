@@ -671,7 +671,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Vorsitzende der Ministerrats Janine Natalie Wißler"
+		localization_key = "Vorsitzende des Ministerrats Janine Natalie Wißler"
 	}
 	text = {
 		trigger = {
@@ -707,7 +707,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = WGR
-				has_government = liberal_republic
+				has_government = centrist_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -727,7 +727,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = WGR
-				has_government = centrist_republic
+				has_government = liberal_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -741,7 +741,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Reichskanzlerin Annalena Charlotte Alma Baerbock"
+		localization_key = "Reichskanzler Christian Wolfgang Lindner"
 	}
 	text = {
 		trigger = {
@@ -768,8 +768,20 @@ defined_text = {
 			AND = {
 				tag = WGR
 				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Kanzlerin Alice Weidel"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				OR = {
 					has_government = anocratic_republic
-					has_government = neutrality
 				}
 				has_start_date > 2022.01.01
 			}
@@ -790,22 +802,35 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = WGR
+				OR = {
+					has_government = neutrality
+					has_government = authoritarian_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Reichskanzler Björn Uwe Höcke"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = fascism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Reichskanzler und Reichsregierungschef Matthias Fischer"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
 				has_government = anocratic_monarchism
 				has_start_date < 2000.01.01
 				has_start_date > 1990.01.01
 			}
 		}
 		localization_key = "Archipincerna Franciscus Iosephus II de Habsburgum, Rex Bohemiae"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = WGR
-				has_government = authoritarian_monarchism
-				has_start_date > 2022.01.01
-			}
-		}
-		localization_key = "Reichskanzler Tino Chrupalla"
 	}
 	text = {
 		trigger = {
@@ -5289,7 +5314,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Wolfgang_Lindner"
+		localization_key = "GFX_Annalena_Baerbock"
 	}
 	text = {
 		trigger = {
@@ -5312,7 +5337,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Annalena_Baerbock"
+		localization_key = "GFX_Wolfgang_Lindner"
 	}
 	text = {
 		trigger = {
@@ -5332,15 +5357,49 @@ defined_text = {
 			AND = {
 				tag = WGR
 				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Alice_Weidel"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				OR = {
 					has_government = anocratic_republic
 					has_government = anocratic_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Tino_Chrupalla"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				OR = {
 					has_government = neutrality
 					has_government = authoritarian_monarchism
 				}
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Tino_Chrupalla"
+		localization_key = "GFX_Bjorn_Hocke"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = fascism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Matthias_Fischer"
 	}
 	text = {
 		trigger = {
