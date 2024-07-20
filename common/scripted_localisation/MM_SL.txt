@@ -902,11 +902,39 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = AUS
-				has_government = anocratic_republic
+				OR = {
+					has_government = national_conservative_republic
+					has_government = anocratic_republic
+				}
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Bundeskanzler Norbert Gerwald Hofer"
+		localization_key = "Bundeskanzler Herbert Kickl"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				OR = {
+					has_government = neutrality
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Staatskanzler Herbert Kickl"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				OR = {
+					has_government = national_conservative_monarchism
+					has_government = anocratic_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Ministerpräsident Herbert Kickl"
 	}
 	text = {
 		trigger = {
@@ -5474,11 +5502,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = AUS
-				has_government = anocratic_republic
+				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+					has_government = anocratic_republic
+					has_government = anocratic_monarchism
+					has_government = neutrality
+				}
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Norbert_Hofer"
+		localization_key = "GFX_Herbert_Kickl"
 	}
 	text = {
 		trigger = {

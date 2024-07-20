@@ -21686,6 +21686,13 @@
 							ideology = conservative_constitutionalism
 						}
 						create_country_leader = {
+							name = "Bundespräsident Alexander Van der Bellen"
+							desc = ""
+							picture = "gfx/leaders/AUS/AUS_Bellen.tga"
+							expire = "1965.1.1"
+							ideology = natconrep
+						}
+						create_country_leader = {
 							name = "Kaiser Karl II von Habsburg-Lothringen"
 							desc = ""
 							picture = "gfx/leaders/AUS/AUS_Karl.tga"
@@ -21693,9 +21700,9 @@
 							ideology = natconmon
 						}
 						create_country_leader = {
-							name = "Bundespräsident Herbert Kickl"
+							name = "Bundespräsident Walter Rosenkranz"
 							desc = ""
-							picture = "gfx/leaders/AUS/Portrait_Herbert_Kickl.dds"
+							picture = "gfx/leaders/AUS/Portrait_Walter_Rosenkranz.dds"
 							expire = "1965.1.1"
 							ideology = anocrep
 						}
@@ -21705,6 +21712,13 @@
 							picture = "gfx/leaders/AUS/AUS_Karl.tga"
 							expire = "1965.1.1"
 							ideology = anocmon
+						}
+						create_country_leader = {
+							name = "Staatspräsident Walter Rosenkranz"
+							desc = ""
+							picture = "gfx/leaders/AUS/Portrait_Walter_Rosenkranz.dds"
+							expire = "1965.1.1"
+							ideology = despotism
 						}
 						create_country_leader = {
 							name = "Kaiser Karl II von Habsburg-Lothringen"
@@ -21813,6 +21827,11 @@
 							ruling_party = anocratic_republic
 						}
 						set_party_name = {
+							ideology = democratic
+							name = HUN_democratic_2024_party
+							long_name = HUN_democratic_2024_party_long
+						}
+						set_party_name = {
 							ideology = anocratic_republic
 							name = HUN_anocratic_republic_2024_party
 							long_name = HUN_anocratic_republic_2024_party_long
@@ -21850,6 +21869,13 @@
 							ideology = liberal_constitutionalism
 							traits = {
 							}
+						}
+						create_country_leader = {
+							name = "Miniszterelnök Péter Magyar"
+							desc = ""
+							picture = "gfx/leaders/HUN/Portrait_Peter_Magyar.dds"
+							expire = "1965.1.1"
+							ideology = conservatism
 						}
 						create_country_leader = {
 							name = "Király Habsburg–Lotaringiai Károly V"
@@ -22933,24 +22959,31 @@
 							ideology = demsoc
 						}
 					}
-					WTR = {
-						release = SLD
-					}
 					SLD = {
+						every_state = {
+							limit = {
+								is_core_of = SLD
+							}
+							SLD = {
+								transfer_state = PREV
+							}
+						}
 						set_politics = {
 							ruling_party = authoritarian_monarchism
 						}
 						set_popularities = {
 							authoritarian_monarchism = 100
 						}
-					}
-					SLD = {
 						create_country_leader = {
 							name = "Prince Michael of Sealand"
 							desc = ""
 							picture = "gfx/leaders/SLD/SLD_Michael_Bates.tga"
 							expire = "1965.1.1"
 							ideology = authmon
+						}
+						add_victory_points = {
+							province = 18280
+							value = 50
 						}
 					}
 					IRE = {
@@ -24707,6 +24740,13 @@
 							picture = "gfx/leaders/ENG/ENG_Charles_III.tga"
 							expire = "1965.1.1"
 							ideology = anocmon
+						}
+						create_country_leader = {
+							name = "King Charles III of Windsor"
+							desc = ""
+							picture = "gfx/leaders/ENG/ENG_Charles_III.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
 						}
 						puppet = GSY
 						puppet = JSY
