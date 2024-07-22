@@ -2294,6 +2294,9 @@
 						transfer_state = 6670
 						transfer_state = 2507
 						transfer_state = 871
+						transfer_state = 297
+						transfer_state = 6442
+						transfer_state = 6444
 					}
 						
                     MOR = {
@@ -2475,6 +2478,14 @@
 							transfer_state = PREV
 						}
 					}
+					EQG = {
+						transfer_state = 3608
+						transfer_state = 3611
+						transfer_state = 5266
+						transfer_state = 19714
+						transfer_state = 6688
+						transfer_state = 3604
+					}
 					every_state = {
 						limit = {
 							is_core_of = BUE
@@ -2595,6 +2606,10 @@
 							transfer_state = PREV
 						}
 					}
+					RUU = {
+						release = RWA
+						release = BRD
+					}
 					every_state = {
 						limit = {
 							OR = {
@@ -2608,13 +2623,77 @@
 								is_owned_by = IVO
 								is_owned_by = FEA
 								is_owned_by = NGR
+								is_owned_by = NGA
+								is_owned_by = DAH
+								is_owned_by = TOG
+								is_owned_by = NCM
+								is_owned_by = SCM
+								is_owned_by = CMR
+								is_owned_by = COG
+								is_owned_by = KEN
+								is_owned_by = TZN
+								is_owned_by = ZAM
+								is_owned_by = MLW
+								
 							}
 						}
 						TRB = {
 							transfer_state = PREV
 						}
 					}
+					
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = MMB
+								is_owned_by = ZAN
+								
+							}
+						}
+						OMA = {
+							transfer_state = PREV
+						}
+					}
+					
+					OMA = {
+						transfer_state = 1526
+						transfer_state = 9111
+						transfer_state = 546
+						transfer_state = 10267
+						transfer_state = 2260
+						transfer_state = 10295
+					}
+					
 					SNW = {
+						drop_cosmetic_tag = yes
+					}
+					ANK = {
+						drop_cosmetic_tag = yes
+						transfer_state = 6552
+						transfer_state = 5218
+						transfer_state = 5238
+					}
+					UGA = {
+						set_politics = {
+							ruling_party = democratic_monarchism
+						}
+						drop_cosmetic_tag = yes
+						transfer_state = 6553
+						transfer_state = 6554
+						transfer_state = 5237
+						transfer_state = 1524
+						transfer_state = 1820
+					}
+					BUG = {
+						drop_cosmetic_tag = yes
+					}
+					BSG = {
+						drop_cosmetic_tag = yes
+					}
+					TOR = {
+						drop_cosmetic_tag = yes
+					}
+					BNY = {
 						drop_cosmetic_tag = yes
 					}
 					AHI = {
