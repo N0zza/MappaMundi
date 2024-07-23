@@ -2294,6 +2294,29 @@
 						transfer_state = 6670
 						transfer_state = 2507
 						transfer_state = 871
+						transfer_state = 297
+						transfer_state = 6442
+						transfer_state = 6444
+						transfer_state = 5329
+						transfer_state = 16584
+						transfer_state = 16585
+						transfer_state = 6080
+						transfer_state = 6081
+						transfer_state = 1515
+						transfer_state = 7803
+						transfer_state = 6813
+						transfer_state = 1509
+						transfer_state = 6468
+						transfer_state = 6471
+						transfer_state = 6469
+						transfer_state = 6470
+						transfer_state = 6474
+						transfer_state = 6476
+						transfer_state = 1516
+						transfer_state = 15982
+						transfer_state = 6082
+						transfer_state = 15979
+						transfer_state = 7807
 					}
 						
                     MOR = {
@@ -2475,6 +2498,14 @@
 							transfer_state = PREV
 						}
 					}
+					EQG = {
+						transfer_state = 3608
+						transfer_state = 3611
+						transfer_state = 5266
+						transfer_state = 19714
+						transfer_state = 6688
+						transfer_state = 3604
+					}
 					every_state = {
 						limit = {
 							is_core_of = BUE
@@ -2539,6 +2570,9 @@
 							transfer_state = PREV
 						}
 					}
+					BCH = {
+						set_cosmetic_tag = SOKOTO_GREEN
+					}
 					every_state = {
 						limit = {
 							is_core_of = DBO
@@ -2595,6 +2629,24 @@
 							transfer_state = PREV
 						}
 					}
+					RUU = {
+						release = RWA
+						release = BRD
+					}
+					ZAM = {
+						release = BSL
+					}
+					BSL = {
+						transfer_state = 5008
+						transfer_state = 6809
+						transfer_state = 6812
+					}
+					MAD = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = monarchism
+						}
+					}
 					every_state = {
 						limit = {
 							OR = {
@@ -2608,13 +2660,95 @@
 								is_owned_by = IVO
 								is_owned_by = FEA
 								is_owned_by = NGR
+								is_owned_by = NGA
+								is_owned_by = DAH
+								is_owned_by = TOG
+								is_owned_by = NCM
+								is_owned_by = SCM
+								is_owned_by = CMR
+								is_owned_by = COG
+								is_owned_by = KEN
+								is_owned_by = TZN
+								is_owned_by = ZAM
+								is_owned_by = MLW
+								is_owned_by = BOT
+								is_owned_by = NMB
+								is_owned_by = CAB
 							}
 						}
 						TRB = {
 							transfer_state = PREV
 						}
 					}
+					
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = MMB
+								is_owned_by = ZAN
+								
+							}
+						}
+						OMA = {
+							transfer_state = PREV
+						}
+					}
+					
+					every_state = {
+						limit = {
+							is_core_of = KDG
+						}
+						KDG = {
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = GWK
+						}
+						GWK = {
+							transfer_state = PREV
+						}
+					}
+					OMA = {
+						transfer_state = 1526
+						transfer_state = 9111
+						transfer_state = 546
+						transfer_state = 10267
+						transfer_state = 2260
+						transfer_state = 10295
+					}
+					
 					SNW = {
+						drop_cosmetic_tag = yes
+					}
+					ANK = {
+						drop_cosmetic_tag = yes
+						transfer_state = 6552
+						transfer_state = 5218
+						transfer_state = 5238
+					}
+					UGA = {
+						set_politics = {
+							ruling_party = democratic_monarchism
+						}
+						drop_cosmetic_tag = yes
+						transfer_state = 6553
+						transfer_state = 6554
+						transfer_state = 5237
+						transfer_state = 1524
+						transfer_state = 1820
+					}
+					BUG = {
+						drop_cosmetic_tag = yes
+					}
+					BSG = {
+						drop_cosmetic_tag = yes
+					}
+					TOR = {
+						drop_cosmetic_tag = yes
+					}
+					BNY = {
 						drop_cosmetic_tag = yes
 					}
 					AHI = {
@@ -3681,6 +3815,7 @@
 							NOT = {
 								is_core_of = E25
 								is_core_of = TNA
+								is_core_of = TZN
 								state = 5218
 								state = 5238
 								state = 6552
