@@ -8044,6 +8044,15 @@ on_actions = {
 							if = {
 								limit = {
 									AND = {
+										has_start_date < 2049.01.01
+										has_start_date > 2022.01.01
+									}
+								}
+								set_cosmetic_tag = UKR_2024
+							}
+							else_if = {
+								limit = {
+									AND = {
 										has_start_date < 2000.01.01
 										has_start_date > 1991.01.01
 									}
