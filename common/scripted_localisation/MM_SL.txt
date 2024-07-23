@@ -2262,7 +2262,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = UKR
-				has_government = neutrality
+				OR = {
+					has_government = liberal_republic
+					has_government = neutrality
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -6829,7 +6832,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = UKR
-				has_government = neutrality
+				OR = {
+					has_government = liberal_republic
+					has_government = neutrality
+				}
 				has_start_date > 2022.01.01
 			}
 		}
