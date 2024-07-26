@@ -7650,8 +7650,9 @@ on_actions = {
 						else_if = {
 							limit = {
 								OR = {
-									has_government = centrist_monarchism
 									has_government = socialist_monarchy
+									has_government = centrist_monarchism
+									has_government = national_conservative_monarchism
 								}
 							}
 							set_cosmetic_tag = USA_MONARCHIST
