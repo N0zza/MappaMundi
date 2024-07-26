@@ -110,7 +110,7 @@ tertiary_leader_enabled_effect = {
 				OR = {
 					AND = {
 						has_government = conservative_monarchism
-						has_start_date < 1950.01.01
+						has_start_date < 2049.01.01
 						has_start_date > 1913.01.01
 					}
 				}
@@ -150,10 +150,17 @@ tertiary_leader_enabled_effect = {
 	}
 	else_if = {
 		limit = {
-			AND = {
-				tag = SWI
-				has_government = centrist_republic
-				has_start_date > 2022.01.01
+			OR = {
+				AND = {
+					tag = SWI
+					has_government = centrist_republic
+					has_start_date > 2022.01.01
+				}
+				AND = {
+					tag = SWI
+					has_government = national_conservative_republic
+					has_start_date > 2022.01.01
+				}
 			}
 		}
 		set_country_flag = has_tertiary_leader

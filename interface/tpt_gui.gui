@@ -4,7 +4,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "tpt_main_container"
 		position = {x = -250 y = -100 }
-		size = { width = 494 height = 295 }
+		size = { width = 494 height = 320 }
 		orientation = CENTER_RIGHT
 		origo = center_right
 		moveable = yes
@@ -66,21 +66,21 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_1a"
-			position = { x = 6 y = 245 }
+			position = { x = 6 y = 270 }
 			spriteType = "GFX_tpt_tab_frame_2"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_2a"
-			position = { x = 5 y = 245 }
+			position = { x = 5 y = 270 }
 			spriteType = "GFX_tpt_tab_frame_1"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		instantTextboxType = {
 			name = "tpt_ideology_tab"
-			position = { x = -29 y = 252 }
+			position = { x = -29 y = 277 }
 			font = "hoi_20b"
 			text = "TPT_IDEOLOGY_TEXT"
 			maxWidth = 281
@@ -90,21 +90,21 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_1b"
-			position = { x = 8114 y = 245 }
+			position = { x = 8114 y = 270 }
 			spriteType = "GFX_tpt_tab_frame_2"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_2b"
-			position = { x = 8112 y = 245 }
+			position = { x = 8112 y = 270 }
 			spriteType = "GFX_tpt_tab_frame_1"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		instantTextboxType = {
 			name = "tpt_diplomacy_tab"
-			position = { x = 830 y = 252 }
+			position = { x = 830 y = 277 }
 			font = "hoi_20b"
 			text = "TPT_DIPLOMACY_TEXT"
 			maxWidth = 281
@@ -114,21 +114,21 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_1c"
-			position = { x = 262 y = 245 }
+			position = { x = 262 y = 270 }
 			spriteType = "GFX_tpt_tab_frame_2"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_2c"
-			position = { x = 260 y = 245 }
+			position = { x = 260 y = 270 }
 			spriteType = "GFX_tpt_tab_frame_1"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		instantTextboxType = {
 			name = "tpt_stance_tab"
-			position = { x = 228 y = 252 }
+			position = { x = 228 y = 277 }
 			font = "hoi_20b"
 			text = "TPT_STANCE_TEXT"
 			maxWidth = 281
@@ -138,21 +138,21 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_1d"
-			position = { x = 8330 y = 245 }
+			position = { x = 8330 y = 270 }
 			spriteType = "GFX_tpt_tab_frame_2"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		buttonType = {
 			name = "tpt_tab_button_frame_2d"
-			position = { x = 8328 y = 245 }
+			position = { x = 8328 y = 270 }
 			spriteType = "GFX_tpt_tab_frame_1"
 			scale = 1
 			pdx_tooltip = "TPT_TAB_SWITCHER_TT"
 		}
 		instantTextboxType = {
 			name = "tpt_country_tab"
-			position = { x = 8246 y = 252 }
+			position = { x = 8246 y = 277 }
 			font = "hoi_20b"
 			text = "TPT_COUNTRY_TEXT"
 			maxWidth = 281
@@ -449,6 +449,30 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		buttonType = {
+			name = "tpt_natconrep_on"
+			position = { x = 175 y = 245 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_NATCONREP"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_natconrep_off" 
+			position = { x = 175 y = 245 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_NATCONREP"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_natconrep_text"
+			position = { x = 205 y = 246 }
+			font = "hoi_16mbs"
+			text = "TPT_NATCONREP"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
 			name = "tpt_soc_on"
 			position = { x = 270 y = 20 }
 			spriteType = "GFX_cat_button_off"
@@ -659,6 +683,30 @@ guiTypes = {
 			position = { x = 300 y = 221 }
 			font = "hoi_16mbs"
 			text = "TPT_AUTHMON"
+			maxWidth = 140
+			maxHeight = 23
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "tpt_natconmon_on"
+			position = { x = 270 y = 245 }
+			spriteType = "GFX_cat_button_off"
+			pdx_tooltip = "TPT_EN_NATCONMON"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "tpt_natconmon_off" 
+			position = { x = 270 y = 245 }
+			spriteType = "GFX_cat_button_on"
+			pdx_tooltip = "TPT_DE_NATCONMON"
+			scale = 0.7
+		}
+		instantTextboxType = {
+			name = "tpt_natconmon_text"
+			position = { x = 300 y = 246 }
+			font = "hoi_16mbs"
+			text = "TPT_NATCONMON"
 			maxWidth = 140
 			maxHeight = 23
 			format = left

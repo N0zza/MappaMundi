@@ -57,11 +57,41 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ENG
+				has_government = socialist_monarchy
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Prime Minister Jeremy Bernard Corbyn"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = centrist_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Prime Minister Sir Edward Jonathan Davey"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
 				has_government = democratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "Prime Minister Sir Keir Rodney Starmer"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = national_conservative_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Prime Minister Nigel Paul Farage"
 	}
 	text = {
 		trigger = {
@@ -557,6 +587,19 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
+		localization_key = "Presidente del Consiglio dei ministri Antonio Tajani"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
+				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
 		localization_key = "Presidentessa del Consiglio dei ministri Giorgia Meloni"
 	}
 	text = {
@@ -624,11 +667,21 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = WGR
+				has_government = vanguardism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Vorsitzende des Ministerrats Janine Natalie Wißler"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
 				has_government = communism
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Bundeskanzlerin Janine Natalie Wißler"
+		localization_key = "Bundeskanzlerin Sahra Wagenknecht"
 	}
 	text = {
 		trigger = {
@@ -654,7 +707,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = WGR
-				has_government = liberal_republic
+				has_government = centrist_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -674,7 +727,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = WGR
-				has_government = centrist_republic
+				has_government = liberal_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -688,7 +741,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Reichskanzlerin Annalena Charlotte Alma Baerbock"
+		localization_key = "Reichskanzler Christian Wolfgang Lindner"
 	}
 	text = {
 		trigger = {
@@ -715,8 +768,20 @@ defined_text = {
 			AND = {
 				tag = WGR
 				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Kanzlerin Alice Weidel"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				OR = {
 					has_government = anocratic_republic
-					has_government = neutrality
 				}
 				has_start_date > 2022.01.01
 			}
@@ -737,22 +802,35 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = WGR
+				OR = {
+					has_government = neutrality
+					has_government = authoritarian_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Reichskanzler Björn Uwe Höcke"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = fascism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Reichskanzler und Reichsregierungschef Matthias Fischer"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
 				has_government = anocratic_monarchism
 				has_start_date < 2000.01.01
 				has_start_date > 1990.01.01
 			}
 		}
 		localization_key = "Archipincerna Franciscus Iosephus II de Habsburgum, Rex Bohemiae"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = WGR
-				has_government = authoritarian_monarchism
-				has_start_date > 2022.01.01
-			}
-		}
-		localization_key = "Reichskanzler Tino Chrupalla"
 	}
 	text = {
 		trigger = {
@@ -824,11 +902,39 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = AUS
-				has_government = anocratic_republic
+				OR = {
+					has_government = national_conservative_republic
+					has_government = anocratic_republic
+				}
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Bundeskanzler Norbert Gerwald Hofer"
+		localization_key = "Bundeskanzler Herbert Kickl"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				OR = {
+					has_government = neutrality
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Staatskanzler Herbert Kickl"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				OR = {
+					has_government = national_conservative_monarchism
+					has_government = anocratic_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Ministerpräsident Herbert Kickl"
 	}
 	text = {
 		trigger = {
@@ -1254,7 +1360,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = NOC
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -1411,7 +1517,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = IND
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -2156,7 +2262,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = UKR
-				has_government = neutrality
+				OR = {
+					has_government = liberal_republic
+					has_government = neutrality
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -2237,7 +2346,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LUX
-				has_government = centrist_monarchism
+				has_government = conservative_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -3054,7 +3163,8 @@ defined_text = {
 			AND = {
 				tag = LUX
 				has_government = conservative_monarchism
-				has_start_date > 1951.01.01
+				has_start_date > 1990.01.01
+				has_start_date < 200.01.01
 			}
 		}
 		localization_key = "Premier Minister Jacques Santer"
@@ -3123,7 +3233,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SWI
-				has_government = centrist_republic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -3143,7 +3253,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SIA
-				has_government = stratocratic_monarchism
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -3381,7 +3491,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = MAC
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -3850,7 +3960,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LIT
-				has_government = centrist_republic
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -3869,7 +3979,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LAT
-				has_government = centrist_republic
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -4758,11 +4868,41 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ENG
+				has_government = socialist_monarchy
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Jeremy_Corbyn"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = centrist_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Ed_Davey"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
 				has_government = democratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "GFX_Keir_Starmer"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ENG
+				has_government = national_conservative_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Nigel_Farage"
 	}
 	text = {
 		trigger = {
@@ -5088,6 +5228,19 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
+		localization_key = "GFX_Antonio_Tajani"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ITA
+				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
 		localization_key = "GFX_Giorgia_Meloni"
 	}
 	text = {
@@ -5155,11 +5308,21 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = WGR
-				has_government = communism
+				has_government = vanguardism
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "GFX_Janine_Wissler"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = communism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Sahra_Wagenknecht"
 	}
 	text = {
 		trigger = {
@@ -5182,7 +5345,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Wolfgang_Lindner"
+		localization_key = "GFX_Annalena_Baerbock"
 	}
 	text = {
 		trigger = {
@@ -5205,7 +5368,7 @@ defined_text = {
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Annalena_Baerbock"
+		localization_key = "GFX_Wolfgang_Lindner"
 	}
 	text = {
 		trigger = {
@@ -5225,15 +5388,49 @@ defined_text = {
 			AND = {
 				tag = WGR
 				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Alice_Weidel"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				OR = {
 					has_government = anocratic_republic
 					has_government = anocratic_monarchism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Tino_Chrupalla"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				OR = {
 					has_government = neutrality
 					has_government = authoritarian_monarchism
 				}
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Tino_Chrupalla"
+		localization_key = "GFX_Bjorn_Hocke"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = WGR
+				has_government = fascism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Matthias_Fischer"
 	}
 	text = {
 		trigger = {
@@ -5308,11 +5505,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = AUS
-				has_government = anocratic_republic
+				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+					has_government = anocratic_republic
+					has_government = anocratic_monarchism
+					has_government = neutrality
+				}
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "GFX_Norbert_Hofer"
+		localization_key = "GFX_Herbert_Kickl"
 	}
 	text = {
 		trigger = {
@@ -5725,7 +5928,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = NOC
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -5861,7 +6064,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = IND
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -6629,7 +6832,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = UKR
-				has_government = neutrality
+				OR = {
+					has_government = liberal_republic
+					has_government = neutrality
+				}
 				has_start_date > 2022.01.01
 			}
 		}
@@ -6710,7 +6916,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LUX
-				has_government = centrist_monarchism
+				has_government = conservative_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -7116,7 +7322,8 @@ defined_text = {
 			AND = {
 				tag = LUX
 				has_government = conservative_monarchism
-				has_start_date > 1951.01.01
+				has_start_date > 1990.01.01
+				has_start_date < 200.01.01
 			}
 		}
 		localization_key = "GFX_Jacques_Santer"
@@ -7919,7 +8126,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LIT
-				has_government = centrist_republic
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -7938,7 +8145,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LAT
-				has_government = centrist_republic
+				has_government = democratic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -8233,7 +8440,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SWI
-				has_government = centrist_republic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -8253,7 +8460,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SIA
-				has_government = stratocratic_monarchism
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -8492,7 +8699,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = MAC
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
