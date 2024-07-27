@@ -175,6 +175,40 @@ defined_text = {
 			FROM = {
 				OR = {
 					AND = {
+						has_government = national_conservative_republic
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_natconrep
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_national_conservative_republic_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_government = national_conservative_monarchism
+						tpt_selected_no_ideology = yes
+					}
+					AND = {
+						has_global_flag = tpt_natconmon
+						tpt_selected_one_ideology = yes
+					}
+				}
+			}
+		}
+		localization_key = "GFX_ideology_national_conservative_monarchism_group"
+	}
+	text = {
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
 						has_government = anocratic_republic
 						tpt_selected_no_ideology = yes
 					}

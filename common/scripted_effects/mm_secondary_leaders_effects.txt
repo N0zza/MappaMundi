@@ -41,8 +41,11 @@ secondary_leader_enabled_effect = {
 					}
 					AND = {
 						OR = {
+							has_government = socialist_monarchy
 							has_government = democratic_monarchism
+							has_government = centrist_monarchism
 							has_government = conservative_monarchism
+							has_government = national_conservative_monarchism
 							has_government = anocratic_monarchism
 						}
 						has_start_date > 2022.01.01
@@ -418,12 +421,10 @@ secondary_leader_enabled_effect = {
 						NOT = {
 							has_government = right_anarchism
 							has_government = national_socialism
-							has_government = fascism
 							has_government = republican_fascism
 							has_government = monarchism
 							has_government = stratocratic_monarchism
 							has_government = stratocratic
-							has_government = vanguardism
 							has_government = left_anarchism
 							has_government = anarchism_ideology
 						}
@@ -508,12 +509,16 @@ secondary_leader_enabled_effect = {
 					}
 					AND = {
 						OR = {
-							has_government = anocratic_republic
-							has_government = conservative_monarchism
-							has_government = democratic
+							has_government = democratic_monarchism
 							has_government = centrist_republic
 							has_government = centrist_monarchism
-							has_government = democratic_monarchism
+							has_government = democratic
+							has_government = conservative_monarchism
+							has_government = national_conservative_republic
+							has_government = national_conservative_monarchism
+							has_government = anocratic_republic
+							has_government = anocratic_monarchism
+							has_government = neutrality
 						}
 						has_start_date > 2022.01.01
 					}
@@ -1283,7 +1288,7 @@ secondary_leader_enabled_effect = {
 						has_start_date < 1937.01.01
 					}
 					AND = {
-						has_government = centrist_republic
+						has_government = democratic
 						has_start_date > 2022.01.01
 					}
 				}
@@ -1317,7 +1322,7 @@ secondary_leader_enabled_effect = {
 						has_start_date < 1937.01.01
 					}
 					AND = {
-						has_government = centrist_republic
+						has_government = democratic
 						has_start_date > 2022.01.01
 					}
 				}
@@ -1405,7 +1410,10 @@ secondary_leader_enabled_effect = {
 						has_start_date < 2000.01.01
 					}
 					AND = {
-						has_government = neutrality
+						OR = {
+							has_government = liberal_republic
+							has_government = neutrality
+						}
 						has_start_date > 2022.01.01
 					}
 				}
@@ -2174,7 +2182,7 @@ secondary_leader_enabled_effect = {
 					AND = {
 						has_start_date > 2022.01.01
 						OR = {
-							has_government = democratic
+							has_government = national_conservative_republic
 							has_government = liberal_republic
 						}
 					}
@@ -2434,7 +2442,7 @@ secondary_leader_enabled_effect = {
 				tag = NOC
 				OR = {
 					AND = {
-						has_government = democratic
+						has_government = national_conservative_republic
 						has_start_date > 2022.01.01
 					}
 				}
@@ -2447,16 +2455,24 @@ secondary_leader_enabled_effect = {
 			AND = {
 				tag = SOV
 				has_government = vanguardism
-					has_start_date > 1935.01.01
+				has_start_date > 1935.01.01
 			}
 		}
 		set_country_flag = has_secondary_leader
 	}
 	else_if = {
 		limit = {
-			AND = {
-				tag = SWI
-				has_government = centrist_republic
+			OR = {
+				AND = {
+					tag = SWI
+					has_government = centrist_republic
+					has_start_date < 2022.01.01
+				}
+				AND = {
+					tag = SWI
+					has_government = national_conservative_republic
+					has_start_date > 2022.01.01
+				}
 			}
 		}
 		set_country_flag = has_secondary_leader
@@ -2491,7 +2507,7 @@ secondary_leader_enabled_effect = {
 						has_start_date < 2022.01.01
 					}
 					AND = {
-						has_government = stratocratic_monarchism
+						has_government = anocratic_monarchism
 						has_start_date > 2022.01.01
 					}
 				}
@@ -2719,6 +2735,11 @@ secondary_leader_enabled_effect = {
 					AND = {
 						has_government = democratic
 						has_start_date > 1992.01.01
+						has_start_date < 2000.01.01
+					}
+					AND = {
+						has_government = national_conservative_republic
+						has_start_date > 2022.01.01
 					}
 				}
 			}

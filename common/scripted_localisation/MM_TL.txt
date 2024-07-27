@@ -96,6 +96,17 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = AUS
+				has_government = conservative_monarchism
+				has_start_date < 2049.01.01
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Miniszterelnök Péter Magyar"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = SIA
 				has_government = stratocratic_monarchism
 				has_start_date < 2022.01.01
@@ -438,7 +449,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SWI
-				has_government = centrist_republic
+				has_government = national_conservative_republic
 				has_start_date > 2023.01.01
 			}
 		}
@@ -688,6 +699,17 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = AUS
+				has_government = conservative_monarchism
+				has_start_date < 2049.01.01
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Peter_Magyar"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = SIA
 				has_government = stratocratic_monarchism
 			}
@@ -902,7 +924,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SWI
-				has_government = centrist_republic
+				has_government = national_conservative_republic
 				has_start_date > 2023.01.01
 			}
 		}
