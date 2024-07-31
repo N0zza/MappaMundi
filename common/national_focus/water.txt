@@ -30712,9 +30712,29 @@
 							anocratic_republic = 10
 						}
 						set_party_name = {
+							ideology = left_anarchism
+							name = USA_left_anarchism_2024_party
+							long_name = USA_left_anarchism_2024_party_long
+						}
+						set_party_name = {
+							ideology = communism
+							name = USA_communism_2024_party
+							long_name = USA_communism_2024_party_long
+						}
+						set_party_name = {
+							ideology = socialism_ideology
+							name = USA_socialism_ideology_2024_party
+							long_name = USA_socialism_ideology_2024_party_long
+						}
+						set_party_name = {
 							ideology = liberal_republic
 							name = USA_liberal_republic_2024_party
 							long_name = USA_liberal_republic_2024_party_long
+						}
+						set_party_name = {
+							ideology = centrist_republic
+							name = USA_centrist_republic_2024_party
+							long_name = USA_centrist_republic_2024_party_long
 						}
 						set_party_name = {
 							ideology = democratic
@@ -30725,21 +30745,6 @@
 							ideology = national_conservative_republic
 							name = USA_national_conservative_republic_2024_party
 							long_name = USA_national_conservative_republic_2024_party_long
-						}
-						set_party_name = {
-							ideology = national_conservative_monarchism
-							name = USA_national_conservative_monarchism_2024_party
-							long_name = USA_national_conservative_monarchism_2024_party_long
-						}
-						set_party_name = {
-							ideology = centrist_republic
-							name = USA_centrist_republic_2024_party
-							long_name = USA_centrist_republic_2024_party_long
-						}
-						set_party_name = {
-							ideology = socialism_ideology
-							name = USA_socialism_ideology_2024_party
-							long_name = USA_socialism_ideology_2024_party_long
 						}
 						set_party_name = {
 							ideology = anocratic_republic
@@ -30755,16 +30760,6 @@
 							ideology = national_socialism
 							name = USA_national_socialism_2024_party
 							long_name = USA_national_socialism_2024_party_long
-						}
-						set_party_name = {
-							ideology = communism
-							name = USA_communism_2024_party
-							long_name = USA_communism_2024_party_long
-						}
-						set_party_name = {
-							ideology = left_anarchism
-							name = USA_left_anarchism_2024_party
-							long_name = USA_left_anarchism_2024_party_long
 						}
 						set_party_name = {
 							ideology = right_anarchism
@@ -30788,8 +30783,7 @@
 							ideology = totsoc
 							traits = {
 							}
-						}
-						create_country_leader = {
+						}create_country_leader = {
 							name = "Chairman Jack Whittier Barnes"
 							desc = ""
 							picture = "gfx/leaders/USA/USA_Barnes.tga"
@@ -30874,13 +30868,20 @@
 							ideology = natconrep
 						}
 						create_country_leader = {
-							name = "Governor-General David Michael James Brudenell-Bruce, Earl of Cardigan"
+							name = "King Lawrence II of Washington"
 							desc = ""
-							picture = "gfx/leaders/USA/USA_Brudenell-Bruce.tga"
+							picture = "gfx/leaders/USA/USA_Lawrence_II.tga"
 							expire = "1965.1.1"
 							ideology = natconmon
 							traits = {
 							}
+						}
+						create_country_leader = {
+							name = "President Donald John Trump"
+							desc = ""
+							picture = "gfx/leaders/USA/USA_Trump.tga"
+							expire = "1965.1.1"
+							ideology = anocrep
 						}
 						create_country_leader = {
 							name = "Governor-General David Michael James Brudenell-Bruce, Earl of Cardigan"
