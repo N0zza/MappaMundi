@@ -31,6 +31,17 @@ tertiary_leader_enabled_effect = {
 		}
 		set_country_flag = has_tertiary_leader
 	}
+	if = {
+		limit = {
+			AND = {
+				tag = RUS
+				has_government = vanguardism
+				has_start_date < 2049.01.01
+				has_start_date > 2022.01.01
+			}
+		}
+		set_country_flag = has_tertiary_leader
+	}
 	else_if = {
 		limit = {
 			AND = {

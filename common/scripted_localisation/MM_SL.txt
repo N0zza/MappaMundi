@@ -280,6 +280,7 @@ defined_text = {
 				}
 				has_government = vanguardism
 				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
 			}
 		}
 		localization_key = "Premʹyér-Minístr Iván Ivánovich Mélʹnikov"
@@ -331,9 +332,22 @@ defined_text = {
 			AND = {
 			tag = RUS
 				has_government = vanguardism
+				has_start_date > 1935.01.01
+				has_start_date < 1939.01.01
 			}
 		}
 		localization_key = "Predsedátelʹ Sovnarkóma Daniíl Yegórovich Sulímov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = communism
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Premʹyér-Minístr Alexander Mikhailovich Babakov"
 	}
 	text = {
 		trigger = {
@@ -5091,6 +5105,7 @@ defined_text = {
 				}
 				has_government = vanguardism
 				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
 			}
 		}
 		localization_key = "GFX_Ivan_Melnikov"
@@ -5142,9 +5157,22 @@ defined_text = {
 			AND = {
 				tag = RUS
 				has_government = vanguardism
+				has_start_date > 1935.01.01
+				has_start_date < 1939.01.01
 			}
 		}
 		localization_key = "GFX_Daniil_Sulimov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = communism
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Alexander_Babakov"
 	}
 	text = {
 		trigger = {

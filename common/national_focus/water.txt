@@ -19889,6 +19889,9 @@
 						}
 					}
 					RUS = {
+						every_owned_state = {
+							do_russian_renames = yes
+						}
 						set_popularities = {
 							vanguardism = 13
 							communism = 6
@@ -19897,27 +19900,10 @@
 							republican_fascism = 5
 						}
 						set_cosmetic_tag = RUS_2024
-					}
-					RUS = {
 						set_party_name = {
-							ideology = centrist_republic
-							name = RUS_centrist_republic_2024_party
-							long_name = RUS_centrist_republic_2024_party_long
-						}
-						set_party_name = {
-							ideology = neutrality
-							name = RUS_neutrality_2024_party
-							long_name = RUS_neutrality_2024_party_long
-						}
-						set_party_name = {
-							ideology = democratic
-							name = RUS_democratic_2024_party
-							long_name = RUS_democratic_2024_party_long
-						}
-						set_party_name = {
-							ideology = socialism_ideology
-							name = RUS_socialism_ideology_2024_party
-							long_name = RUS_socialism_ideology_2024_party_long
+							ideology = vanguardism
+							name = RUS_vanguardism_2024_party
+							long_name = RUS_vanguardism_2024_party_long
 						}
 						set_party_name = {
 							ideology = communism
@@ -19925,9 +19911,14 @@
 							long_name = RUS_communism_2024_party_long
 						}
 						set_party_name = {
-							ideology = vanguardism
-							name = RUS_vanguardism_2024_party
-							long_name = RUS_vanguardism_2024_party_long
+							ideology = socialism_ideology
+							name = RUS_socialism_ideology_2024_party
+							long_name = RUS_socialism_ideology_2024_party_long
+						}
+						set_party_name = {
+							ideology = socialist_monarchy
+							name = RUS_socialist_monarchy_2024_party
+							long_name = RUS_socialist_monarchy_2024_party_long
 						}
 						set_party_name = {
 							ideology = liberal_republic
@@ -19935,29 +19926,29 @@
 							long_name = RUS_liberal_republic_2024_party_long
 						}
 						set_party_name = {
-							ideology = stratocratic
-							name = RUS_stratocratic_2024_party
-							long_name = RUS_stratocratic_2024_party_long
+							ideology = democratic_monarchism
+							name = RUS_democratic_monarchism_2024_party
+							long_name = RUS_democratic_monarchism_2024_party_long
 						}
 						set_party_name = {
-							ideology = republican_fascism
-							name = RUS_republican_fascism_2024_party
-							long_name = RUS_republican_fascism_2024_party_long
-						}
-						set_party_name = {
-							ideology = national_socialism
-							name = RUS_national_socialism_2024_party
-							long_name = RUS_national_socialism_2024_party_long
-						}
-						set_party_name = {
-							ideology = theocratic
-							name = RUS_theocratic_2024_party
-							long_name = RUS_theocratic_2024_party_long
+							ideology = centrist_republic
+							name = RUS_centrist_republic_2024_party
+							long_name = RUS_centrist_republic_2024_party_long
 						}
 						set_party_name = {
 							ideology = centrist_monarchism
 							name = RUS_centrist_monarchism_2024_party
 							long_name = RUS_centrist_monarchism_2024_party_long
+						}
+						set_party_name = {
+							ideology = democratic
+							name = RUS_democratic_2024_party
+							long_name = RUS_democratic_2024_party_long
+						}
+						set_party_name = {
+							ideology = conservative_monarchism
+							name = RUS_conservative_monarchism_2024_party
+							long_name = RUS_conservative_monarchism_2024_party_long
 						}
 						set_party_name = {
 							ideology = anocratic_republic
@@ -19970,14 +19961,19 @@
 							long_name = RUS_anocratic_monarchism_2024_party_long
 						}
 						set_party_name = {
+							ideology = neutrality
+							name = RUS_neutrality_2024_party
+							long_name = RUS_neutrality_2024_party_long
+						}
+						set_party_name = {
 							ideology = authoritarian_monarchism
 							name = RUS_authoritarian_monarchism_2024_party
 							long_name = RUS_authoritarian_monarchism_2024_party_long
 						}
 						set_party_name = {
-							ideology = socialist_monarchy
-							name = RUS_socialist_monarchy_2024_party
-							long_name = RUS_socialist_monarchy_2024_party_long
+							ideology = stratocratic
+							name = RUS_stratocratic_2024_party
+							long_name = RUS_stratocratic_2024_party_long
 						}
 						set_party_name = {
 							ideology = monarchism
@@ -19985,58 +19981,39 @@
 							long_name = RUS_monarchism_2024_party_long
 						}
 						set_party_name = {
+							ideology = republican_fascism
+							name = RUS_republican_fascism_2024_party
+							long_name = RUS_republican_fascism_2024_party_long
+						}
+						set_party_name = {
 							ideology = fascism
 							name = RUS_fascism_2024_party
 							long_name = RUS_fascism_2024_party_long
 						}
 						set_party_name = {
-							ideology = democratic_monarchism
-							name = RUS_democratic_monarchism_2024_party
-							long_name = RUS_democratic_monarchism_2024_party_long
+							ideology = national_socialism
+							name = RUS_national_socialism_2024_party
+							long_name = RUS_national_socialism_2024_party_long
 						}
 						set_party_name = {
-							ideology = conservative_monarchism
-							name = RUS_conservative_monarchism_2024_party
-							long_name = RUS_conservative_monarchism_2024_party_long
+							ideology = theocratic
+							name = RUS_theocratic_2024_party
+							long_name = RUS_theocratic_2024_party_long
 						}
-					}
-					RUS = {
 						create_country_leader = {
-							name = "Prezidént Vladímir Vladímirovich Pútin"
-							desc = "POLITICS_PUTIN_DESC"
-							picture = "gfx/leaders/Russia/RUS_Putin.tga"
-							expire = "1965.1.1"
-							ideology = despotism
-						}
-					}
-					RUS = {
-						create_country_leader = {
-							name = "Prezidént Dmítriy Anatólʹyevich Medvédev"
+							name = "Prezidént Nikolay Mikhailóvich Kharitonóv"
 							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Medvedev.tga"
+							picture = "gfx/leaders/Russia/Portrait_Nikolay_Kharitonov.dds"
 							expire = "1965.1.1"
-							ideology = cenrep
+							ideology = totsoc
 						}
-					}
-					RUS = {
 						create_country_leader = {
-							name = "Prezidént Alekséy Anatólʹyevich Naválʹnyy"
+							name = "Prezidént Sergéy Aleksándrovich Malinkóvich"
 							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Navalny.tga"
+							picture = "gfx/leaders/Russia/RUS_Malinkovich.tga"
 							expire = "1965.1.1"
-							ideology = anocrep
+							ideology = marxism
 						}
-					}
-					RUS = {
-						create_country_leader = {
-							name = "Prezidént Borís Yúrʹyevich Titóv"
-							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Titov2.tga"
-							expire = "1965.1.1"
-							ideology = conservatism
-						}
-					}
-					RUS = {
 						create_country_leader = {
 							name = "Prezidént Konstantín Alekséyevich Titóv"
 							desc = ""
@@ -20044,98 +20021,6 @@
 							expire = "1965.1.1"
 							ideology = demsoc
 						}
-					}
-					RUS = {
-						create_country_leader = {
-							name = "Generálʹnyy Sekretárʹ Sergéy Aleksándrovich Malinkóvich"
-							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Malinkovich.tga"
-							expire = "1965.1.1"
-							ideology = marxism
-						}
-					}
-					RUS = {
-						create_country_leader = {
-							name = "Generálʹnyy Sekretárʹ Gennádiy Andréyevich Zyugánov"
-							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Zyuganov.tga"
-							expire = "1965.1.1"
-							ideology = totsoc
-						}
-					}
-					RUS = {
-						create_country_leader = {
-							name = "Prezidént Nikoláy Ígorevich Rybakóv"
-							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Rybakov.tga"
-							expire = "1965.1.1"
-							ideology = liberalism
-						}
-					}
-					RUS = {
-						create_country_leader = {
-							name = "Verkhóvnyy Glavnokománduyushchiy Valériy Vasílʹyevich Gerásimov"
-							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Gerasimov.tga"
-							expire = "1965.1.1"
-							ideology = militarism
-						}
-					}
-					RUS = {
-						create_country_leader = {
-							name = "Vozhdʹ Alekséy Aleksándrovich Žuravlyov"
-							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Zhuravlyov.tga"
-							expire = "1965.1.1"
-							ideology = repfash
-						}
-					}
-					RUS = {
-						create_country_leader = {
-							name = "Verkhóvnyy Vozhdʹ Aleksándr Aleksándrovich Avérin"
-							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Averin.tga"
-							expire = "1965.1.1"
-							ideology = natsoc
-						}
-					}
-					RUS = {
-						create_country_leader = {
-							name = "Patriárkh Vladímir Mikháylovich Gundyáyev"
-							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Kirill.tga"
-							expire = "1965.1.1"
-							ideology = christian
-						}
-					}
-					RUS = {
-						create_country_leader = {
-							name = "Tsarítsa Maríya Romanóvskaya"
-							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Grand_Duchess_Maria.tga"
-							expire = "1965.1.1"
-							ideology = cenmon
-						}
-					}
-					RUS = {
-						create_country_leader = {
-							name = "Tsarítsa Maríya Romanóvskaya"
-							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Grand_Duchess_Maria.tga"
-							expire = "1965.1.1"
-							ideology = anocmon
-						}
-					}
-					RUS = {
-						create_country_leader = {
-							name = "Tsarítsa Maríya Romanóvskaya"
-							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Grand_Duchess_Maria.tga"
-							expire = "1965.1.1"
-							ideology = authmon
-						}
-					}
-					RUS = {
 						create_country_leader = {
 							name = "Korólʹ Nikoláy III Romanóvskiy"
 							desc = ""
@@ -20143,35 +20028,41 @@
 							expire = "1965.1.1"
 							ideology = monsoc
 						}
-					}
-					RUS = {
 						create_country_leader = {
-							name = "Imperátor Nikoláy III Romanóvskiy"
+							name = "Prezidént Nikoláy Ígorevich Rybakóv"
 							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Karl_Emich.tga"
+							picture = "gfx/leaders/Russia/RUS_Rybakov.tga"
 							expire = "1965.1.1"
-							ideology = absolutism
+							ideology = liberalism
 						}
-					}
-					RUS = {
 						create_country_leader = {
-							name = "Imperátor Vserossíyskiy Nikoláy III Romanóvskiy"
+							name = "Tsarʹ Alekséy III Romanóvskiy"
 							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Karl_Emich.tga"
+							picture = "gfx/leaders/Russia/RUS_Alexis_Andreevich.tga"
 							expire = "1965.1.1"
-							ideology = fascism_ideology
+							ideology = liberal_constitutionalism
 						}
-					}
-					RUS = {
 						create_country_leader = {
-							name = "Verkhóvnyy Vozhdʹ Antón Alekséyevich Bákov"
+							name = "Prezidént Dmítriy Anatólʹyevich Medvédev"
 							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Bakov.tga"
+							picture = "gfx/leaders/Russia/RUS_Medvedev.tga"
 							expire = "1965.1.1"
-							ideology = stratmon
+							ideology = cenrep
 						}
-					}
-					RUS = {
+						create_country_leader = {
+							name = "Tsarítsa Maríya Romanóvskaya"
+							desc = ""
+							picture = "gfx/leaders/Russia/RUS_Grand_Duchess_Maria.tga"
+							expire = "1965.1.1"
+							ideology = cenmon
+						}
+						create_country_leader = {
+							name = "Prezidént Borís Yúrʹyevich Titóv"
+							desc = ""
+							picture = "gfx/leaders/Russia/RUS_Titov2.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
 						create_country_leader = {
 							name = "Tsarʹ Alekséy III Romanóvskiy"
 							desc = ""
@@ -20179,14 +20070,82 @@
 							expire = "1965.1.1"
 							ideology = conservative_constitutionalism
 						}
-					}
-					RUS = {
 						create_country_leader = {
-							name = "Tsarʹ Alekséy III Romanóvskiy"
+							name = "Prezidént Alekséy Anatólʹyevich Naválʹnyy"
 							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Alexis_Andreevich.tga"
+							picture = "gfx/leaders/Russia/RUS_Navalny.tga"
 							expire = "1965.1.1"
-							ideology = liberal_constitutionalism
+							ideology = anocrep
+						}
+						create_country_leader = {
+							name = "Tsarítsa Maríya Romanóvskaya"
+							desc = ""
+							picture = "gfx/leaders/Russia/RUS_Grand_Duchess_Maria.tga"
+							expire = "1965.1.1"
+							ideology = anocmon
+						}
+						create_country_leader = {
+							name = "Prezidént Vladímir Vladímirovich Pútin"
+							desc = "POLITICS_PUTIN_DESC"
+							picture = "gfx/leaders/Russia/RUS_Putin.tga"
+							expire = "1965.1.1"
+							ideology = despotism
+						}
+						create_country_leader = {
+							name = "Tsarítsa Maríya Romanóvskaya"
+							desc = ""
+							picture = "gfx/leaders/Russia/RUS_Grand_Duchess_Maria.tga"
+							expire = "1965.1.1"
+							ideology = authmon
+						}
+						create_country_leader = {
+							name = "Verkhóvnyy Glavnokománduyushchiy Valériy Vasílʹyevich Gerásimov"
+							desc = ""
+							picture = "gfx/leaders/Russia/RUS_Gerasimov.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+						create_country_leader = {
+							name = "Verkhóvnyy Vozhdʹ Antón Alekséyevich Bákov"
+							desc = ""
+							picture = "gfx/leaders/Russia/RUS_Bakov.tga"
+							expire = "1965.1.1"
+							ideology = stratmon
+						}
+						create_country_leader = {
+							name = "Imperátor Nikoláy III Romanóvskiy"
+							desc = ""
+							picture = "gfx/leaders/Russia/RUS_Karl_Emich.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+						}
+						create_country_leader = {
+							name = "Vozhdʹ Alekséy Aleksándrovich Žuravlyov"
+							desc = ""
+							picture = "gfx/leaders/Russia/RUS_Zhuravlyov.tga"
+							expire = "1965.1.1"
+							ideology = repfash
+						}
+						create_country_leader = {
+							name = "Imperátor Vserossíyskiy Nikoláy III Romanóvskiy"
+							desc = ""
+							picture = "gfx/leaders/Russia/RUS_Karl_Emich.tga"
+							expire = "1965.1.1"
+							ideology = fascism_ideology
+						}
+						create_country_leader = {
+							name = "Verkhóvnyy Vozhdʹ Aleksándr Aleksándrovich Avérin"
+							desc = ""
+							picture = "gfx/leaders/Russia/RUS_Averin.tga"
+							expire = "1965.1.1"
+							ideology = natsoc
+						}
+						create_country_leader = {
+							name = "Patriárkh Vladímir Mikháylovich Gundyáyev"
+							desc = ""
+							picture = "gfx/leaders/Russia/RUS_Kirill.tga"
+							expire = "1965.1.1"
+							ideology = christian
 						}
 					}
 					SOV = {
@@ -20346,11 +20305,6 @@
 					add_victory_points = {
 						province = 17695
 						value = 5
-					}
-					RUS = {
-						every_owned_state = {
-							do_russian_renames = yes
-						}
 					}
 					WGR = {
 						transfer_state = 5079
