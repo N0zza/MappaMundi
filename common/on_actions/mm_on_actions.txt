@@ -14600,4 +14600,34 @@ on_actions = {
 			}
 		}
 	}
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = {
+					tag = RUS
+					has_start_date > 2022.01.01
+					ideology = vanguardism
+				}
+				set_party_name = {
+					ideology = vanguardism
+					name = RUS_vanguardism_2024_2_party
+					long_name = RUS_vanguardism_2024_2_party_long
+				}
+			}
+			if = {
+				limit = {
+					tag = RUS
+					has_start_date > 2022.01.01
+					NOT = {
+						ideology = vanguardism
+					}
+				}
+				set_party_name = {
+					ideology = vanguardism
+					name = RUS_vanguardism_2024_party
+					long_name = RUS_vanguardism_2024_party_long
+				}
+			}
+		}
+	}
 }
