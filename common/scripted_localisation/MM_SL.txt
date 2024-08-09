@@ -274,20 +274,6 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				OR = {
-					tag = RUS
-					tag = SOV
-				}
-				has_government = vanguardism
-				has_start_date > 2022.01.01
-				has_start_date < 2049.01.01
-			}
-		}
-		localization_key = "Premʹyér-Minístr Iván Ivánovich Mélʹnikov"
-	}
-	text = {
-		trigger = {
-			AND = {
 				tag = SOV
 				has_government = vanguardism
 				has_start_date > 1935.01.01
@@ -305,6 +291,97 @@ defined_text = {
 			}
 		}
 		localization_key = "Predsedátelʹ Sovéta Minístrov Iván Lógginovich Goremýkin"
+	}
+	text = {
+		trigger = {
+			AND = {
+				OR = {
+					tag = RUS
+					tag = SOV
+				}
+				has_government = vanguardism
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátel' Sovéta Minístrov Iván Ivánovich Mélʹnikov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = communism
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Alexander Mikhailovich Babakov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Nikoláy Yúr'yevich Kavkázskiy"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Nikoláy Ígorevich Rybakóv"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Leoníd Mikháylovich Vólkov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = democratic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Andréy Alekséevich Necháev"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = national_conservative_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Rifát Gabdulkhákovich Shaykhutdínov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = anocratic_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "Predsedátelʹ Pravítelʹstva Alekséy Gennád'yevich Necháev"
 	}
 	text = {
 		trigger = {
@@ -337,17 +414,6 @@ defined_text = {
 			}
 		}
 		localization_key = "Predsedátelʹ Sovnarkóma Daniíl Yegórovich Sulímov"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = RUS
-				has_government = communism
-				has_start_date > 2022.01.01
-				has_start_date < 2049.01.01
-			}
-		}
-		localization_key = "Premʹyér-Minístr Alexander Mikhailovich Babakov"
 	}
 	text = {
 		trigger = {
@@ -1571,7 +1637,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SRL
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}
@@ -5113,6 +5179,83 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = RUS
+				has_government = communism
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Alexander_Babakov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Nikolay_Kavkazsky"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Nikolai_Rybakov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Leonid_Volkov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = democratic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Andrey_Nechayev"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = national_conservative_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Rifat_Shaykhutdinov"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = RUS
+				has_government = anocratic_republic
+				has_start_date > 2022.01.01
+				has_start_date < 2049.01.01
+			}
+		}
+		localization_key = "GFX_Alexei_Nechayev"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = SOV
 				has_government = vanguardism
 				has_start_date > 1935.01.01
@@ -5162,17 +5305,6 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Daniil_Sulimov"
-	}
-	text = {
-		trigger = {
-			AND = {
-				tag = RUS
-				has_government = communism
-				has_start_date > 2022.01.01
-				has_start_date < 2049.01.01
-			}
-		}
-		localization_key = "GFX_Alexander_Babakov"
 	}
 	text = {
 		trigger = {
@@ -6143,7 +6275,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SRL
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 2022.01.01
 			}
 		}

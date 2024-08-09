@@ -12,15 +12,31 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		RUS = {
-						create_country_leader = {
-							name = "Prezidént Sergéy Mikháylovich Mirónov"
-							desc = ""
-							picture = "gfx/leaders/Russia/RUS_Mironov.tga"
-							expire = "1965.1.1"
-							ideology = marxism
+					MLD = {
+						set_politics = {
+							ruling_party = national_conservative_republic
 						}
-		}
+						set_cosmetic_tag = MLD_2024
+						set_party_name = {
+							ideology = national_conservative_republic
+							name = MLD_national_conservative_republic_2024_party
+							long_name = MLD_national_conservative_republic_2024_party_long
+						}
+						set_popularities = {
+							centrist_republic = 2
+							democratic = 17
+							national_conservative_republic = 81
+						}
+					}
+					MLD = {
+						create_country_leader = {
+							name = "Raīs Muh̤ammadu Muizzu"
+							desc = ""
+							picture = "gfx/leaders/MLD/MLD_Muizzu.tga"
+							expire = "1965.1.1"
+							ideology = natconrep
+						}
+					}
 	}
 	option = { #reject
 		name = "No"

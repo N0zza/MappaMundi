@@ -1356,15 +1356,9 @@ secondary_leader_enabled_effect = {
 					}
 					AND = {
 						has_government = vanguardism
-						OR = {
-							AND = {
-								has_start_date > 1935.01.01
-								has_start_date < 1951.01.01
-							}
-							AND = {
-								has_start_date > 2022.01.01
-								has_start_date < 2049.01.01
-							}
+						AND = {
+							has_start_date > 1935.01.01
+							has_start_date < 1951.01.01
 						}
 					}
 					AND = {
@@ -1373,7 +1367,16 @@ secondary_leader_enabled_effect = {
 						has_start_date < 2049.01.01
 					}
 					AND = {
-						has_government = neutrality
+						OR = {
+							has_government = vanguardism
+							has_government = socialism_ideology
+							has_government = liberal_republic
+							has_government = centrist_republic
+							has_government = democratic
+							has_government = national_conservative_republic
+							has_government = anocratic_republic
+							has_government = neutrality
+						}
 						has_start_date > 2022.01.01
 					}
 				}
@@ -2302,6 +2305,11 @@ secondary_leader_enabled_effect = {
 					AND = {
 						has_government = democratic
 						has_start_date > 1990.01.01
+						has_start_date < 2000.01.01
+					}
+					AND = {
+						has_government = national_conservative_republic
+						has_start_date > 2000.01.01
 					}
 				}
 			}
