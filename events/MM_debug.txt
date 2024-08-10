@@ -12,31 +12,17 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-					MLD = {
-						set_politics = {
-							ruling_party = national_conservative_republic
-						}
-						set_cosmetic_tag = MLD_2024
-						set_party_name = {
-							ideology = national_conservative_republic
-							name = MLD_national_conservative_republic_2024_party
-							long_name = MLD_national_conservative_republic_2024_party_long
-						}
-						set_popularities = {
-							centrist_republic = 2
-							democratic = 17
-							national_conservative_republic = 81
-						}
-					}
-					MLD = {
-						create_country_leader = {
-							name = "Raīs Muh̤ammadu Muizzu"
-							desc = ""
-							picture = "gfx/leaders/MLD/MLD_Muizzu.tga"
-							expire = "1965.1.1"
-							ideology = natconrep
-						}
-					}
+		FRA = {
+			set_popularities = {
+				vanguardism = 3
+				communism = 19
+				socialism_ideology = 13
+				liberal_republic = 15
+				centrist_republic = 10
+				democratic = 18
+				national_conservative_republic = 22
+			}
+		}
 	}
 	option = { #reject
 		name = "No"

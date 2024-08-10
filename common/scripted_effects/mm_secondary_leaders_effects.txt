@@ -652,7 +652,14 @@ secondary_leader_enabled_effect = {
 						has_start_date < 2000.01.01
 					}
 					AND = {
-						has_government = anocratic_republic
+						OR = {
+							has_government = socialism_ideology
+							has_government = liberal_republic
+							has_government = centrist_republic
+							has_government = democratic
+							has_government = national_conservative_republic
+							has_government = anocratic_republic
+						}
 						has_start_date > 2000.01.01
 					}
 				}
