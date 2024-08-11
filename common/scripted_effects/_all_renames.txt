@@ -638,20 +638,6 @@ do_all_renames = {
 		do_estonian_renames = yes
 	}
 
-	### FRA ###
-	if = {
-		limit = {
-			ROOT = {
-				OR = {
-					tag = FRA
-				  	is_subject_of = FRA
-					has_cosmetic_tag = FRA_COLONY
-				}
-			}
-		}
-		do_french_renames = yes
-	}
-
 	### YUG ###
 	if = {
 		limit = {
@@ -1057,12 +1043,16 @@ do_all_renames = {
 			limit = {
 				ROOT = {
 					OR = {
-						has_cosmetic_tag = FRA_BLUE
-						has_cosmetic_tag = FRA_COLONY
+						AND = {
+							has_cosmetic_tag = FRA_BLUE
+							NOT = {
+								tag = TUN
+							}
+						}
 					}
 				}
 			}
-			do_french_renames= yes
+			do_french_renames = yes
 		}
 	}
 		
@@ -1630,28 +1620,8 @@ do_all_renames = {
 		limit = {
 			ROOT = {
 				OR = {
-					has_cosmetic_tag = FRA_BLUE
-			        has_cosmetic_tag = MOR_FRA
-		            has_cosmetic_tag = TUN_FRA
-		            has_cosmetic_tag = ALG_FRA
-		            has_cosmetic_tag = FWA_FRA
-		            has_cosmetic_tag = FEA_FRA
-		            has_cosmetic_tag = DJI_FRA
-		            has_cosmetic_tag = MAD_FRA
-		            has_cosmetic_tag = TOG_FRA
-		            has_cosmetic_tag = EGY_FRA
-		            has_cosmetic_tag = SUD_FRA
-		            has_cosmetic_tag = CMR_FRA
-		            has_cosmetic_tag = NMB_FRA
-		            has_cosmetic_tag = SYR_FRA
-		            has_cosmetic_tag = LEB_FRA
-		            has_cosmetic_tag = INC_FRA
-		            has_cosmetic_tag = SAF_FRA
-		            has_cosmetic_tag = LEZ_FRA
-		            has_cosmetic_tag = SWZ_FRA
-		            has_cosmetic_tag = ETH_FRA
-		            has_cosmetic_tag = SOM_FRA
-		            has_cosmetic_tag = MZB_FRA
+					tag = FRA
+					is_subject_of = FRA
 				}
 			}
 		}
