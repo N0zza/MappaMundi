@@ -1,10 +1,9 @@
 ﻿capital = 10024
 
-set_cosmetic_tag = FRA_COLONY
+set_cosmetic_tag = FRA_BLUE
 
 set_popularities = {
-	neutrality =  90 
-	democratic =  10 
+	neutrality =  100
 }
 	
 set_politics = { 
@@ -15,11 +14,61 @@ set_politics = {
 }
 
 create_country_leader = {
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Reichsprotektor Hans Krebs"
+	desc = ""
+	picture = "gfx/leaders/FEA/FEA_Krebs.tga"
+	expire = "1965.1.1"
+	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Gouverneur Général Joseph-François Reste de Roca"
 	desc = ""
 	picture = "gfx/leaders/FEA/Portrait_Dieudonne_Reste.dds"
-	ideology = despotism
-	expire = "1978.10.27"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governatore Giovanni Giuriati"
+	desc = ""
+	picture = "gfx/leaders/FEA/FEA_Giuriati_fash.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = repfash
 	traits = {
 	}
 }
@@ -28,68 +77,8 @@ create_country_leader = {
 	name = "Gouverneur Hans Krebs"
 	desc = ""
 	picture = "gfx/leaders/FEA/FEA_Krebs.tga"
-	expire = "1989.1.1"
+	expire = "1965.1.1"
 	ideology = stratmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Kuvernööri Aarne Sihvo"
-	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Sihvo_socmon.tga"
-	expire = "1965.1.1"
-	ideology = monsoc
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Président Henri Guissou"
-	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Guissou_condem.tga"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Sotoku Korechika Anami"
-	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Anami_libmon.tga"
-	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Guverneru Aleksandar Cincar-Marković"
-	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Markovic_conmon.tga"
-	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Guvernér Alois Musil"
-	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Musil_cenrep.tga"
-	expire = "1965.1.1"
-	ideology = cenrep
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "General-Gubernator Anatoly Nikolayevich Pepelyayev"
-	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Pepelyayev_cenmon.tga"
-	expire = "1965.1.1"
-	ideology = cenmon
 	traits = {
 	}
 }
@@ -118,28 +107,148 @@ create_country_leader = {
 	name = "Gouverneur Général Joseph-François Reste de Roca"
 	desc = ""
 	picture = "gfx/leaders/FEA/Portrait_Dieudonne_Reste.dds"
+	ideology = despotism
 	expire = "1965.1.1"
-	ideology = absolutism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Governatore Giovanni Giuriati"
+	name = "To Be Added"
 	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Giuriati_fash.tga"
+	picture = "gfx/leaders/To_be_added.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = anocmon
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Reichsprotektor Hans Krebs"
+	name = "To Be Added"
 	desc = ""
-	picture = "gfx/leaders/FEA/FEA_Krebs.tga"
+	picture = "gfx/leaders/To_be_added.dds"
 	expire = "1965.1.1"
-	ideology = natsoc
+	ideology = anocrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = natconmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = natconrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Guverneru Aleksandar Cincar-Marković"
+	desc = ""
+	picture = "gfx/leaders/FEA/FEA_Markovic_conmon.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Président Henri Guissou"
+	desc = ""
+	picture = "gfx/leaders/FEA/FEA_Guissou_condem.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "General-Gubernator Anatoly Nikolayevich Pepelyayev"
+	desc = ""
+	picture = "gfx/leaders/FEA/FEA_Pepelyayev_cenmon.tga"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Guvernér Alois Musil"
+	desc = ""
+	picture = "gfx/leaders/FEA/FEA_Musil_cenrep.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Sotoku Korechika Anami"
+	desc = ""
+	picture = "gfx/leaders/FEA/FEA_Anami_libmon.tga"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Kuvernööri Aarne Sihvo"
+	desc = ""
+	picture = "gfx/leaders/FEA/FEA_Sihvo_socmon.tga"
+	expire = "1965.1.1"
+	ideology = monsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = demsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = totsoc
 	traits = {
 	}
 }
@@ -150,6 +259,16 @@ create_country_leader = {
 	picture = "gfx/leaders/Anarchy/Collective_Leadership.tga"
 	expire = "1965.1.1"
 	ideology = ancom
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
 	traits = {
 	}
 }
