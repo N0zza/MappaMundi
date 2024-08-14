@@ -257,27 +257,33 @@ do_all_renames = {
 		}
 		do_japanese_renames = yes
 	}
-	
-	### CHI ###
-	if = {
-		limit = {
-			ROOT = {
-				capital_scope = {
-					is_core_of = CHI
-				} 
-			}
-		}
-		do_chinese_renames = yes
-	}
 
-	### PRC ###
+	### PRC/CHI ###
 	if = {
 		limit = {
-			ROOT = {
-				has_country_leader_ideology = dengism
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = CHI
+						}
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+							has_government = vanguardism
+							has_start_date < 2049.01.01
+							has_start_date > 2022.01.01
+						}
+					}
+					do_pinyin_renames = yes
+				}
+				else = {
+					do_chinese_renames = yes
+				}
 			}
 		}
-		do_pinyin_renames = yes
 	}
 	
 	### MON ###
@@ -332,6 +338,24 @@ do_all_renames = {
 		limit = {
 			ROOT = {
 				OR = {
+					tag = WGR
+					tag = DDR
+					tag = AUS
+					tag = NZG
+					tag = PRE
+					tag = BAY
+					tag = GGM
+					tag = SGM
+					tag = BGM
+					tag = HGM
+					tag = WR2
+					tag = UA2
+					tag = VGR
+					is_subject_of = GER
+					is_subject_of = WGR
+					is_subject_of = DDR
+					is_subject_of = AUS
+					is_subject_of = NZG
 					AND = {
 						tag = GER
 						NOT = {
@@ -345,19 +369,6 @@ do_all_renames = {
 							}
 						}
 					}
-					is_subject_of = GER
-					tag = WGR
-					is_subject_of = WGR
-					tag = DDR
-					is_subject_of = DDR
-					tag = AUS
-					is_subject_of = AUS
-					tag = NZG
-					is_subject_of = NZG
-					tag = PRE
-					tag = BAY
-					tag = PL2
-					tag = UA2
 					AND = {
 						tag = LV2
 						NOT = {
@@ -368,7 +379,6 @@ do_all_renames = {
 							}
 						}
 					}
-					tag = WR2
 					AND = {
 						tag = BL2
 						OR = {
@@ -378,15 +388,15 @@ do_all_renames = {
 							has_government = theocratic
 						}
 					}
-					tag = KC2
 					AND = {
 						tag = CZ2
-						NOT = {
-							has_government = vanguardism
-							has_government = socialism_ideology
-							has_government = liberal_republic
-							has_government = centrist_republic
-							has_government = monarchism
+						OR = {
+							has_government = democratic
+							has_government = neutrality
+							has_government = stratocratic
+							has_government = fascism
+							has_government = national_socialism
+							has_government = theocratic
 						}
 					}
 					AND = {
@@ -398,20 +408,101 @@ do_all_renames = {
 							has_government = theocratic
 						}
 					}
-					tag = NR2
-					tag = GGM
-					tag = SGM
-					tag = BGM
-					tag = HGM
+					AND = {
+						tag = NR2
+						OR = {
+							has_government = stratocratic
+							has_government = fascism
+							has_government = national_socialism
+							has_government = theocratic
+						}
+					}
 					AND = {
 						tag = MC2
-						NOT = {
-							has_government = vanguardism
-							has_government = communism
-							has_government = socialism_ideology
-							has_government = democratic
-							has_government = fascism
+						OR = {
+							has_government = centrist_republic
+							has_government = anocratic_republic
+							has_government = neutrality
+							has_government = authoritarian_monarchism
+							has_government = stratocratic
+							has_government = stratocratic_monarchism
+							has_government = republican_fascism
+							has_government = national_socialism
+							has_government = theocratic
+							has_government = right_anarchism
 						}
+					}
+					AND = {
+						tag = KC2
+						OR = {
+							has_government = anocratic_republic
+							has_government = neutrality
+							has_government = stratocratic
+							has_government = republican_fascism
+							has_government = fascism
+							has_government = national_socialism
+							has_government = theocratic
+							has_government = right_anarchism
+						}
+					}
+					AND = {
+						tag = CZ2
+						OR = {
+							has_government = national_socialism
+							has_government = republican_fascism
+							has_government = stratocratic
+						}
+					}
+					AND = {
+						tag = PL2
+						OR = {
+							has_government = republican_fascism
+							has_government = fascism
+							has_government = national_socialism
+						}
+					}
+					AND = {
+						tag = PL3
+						has_government = national_socialism
+					}
+					AND = {
+						tag = SSC
+						OR = {
+							has_government = national_socialism
+							has_government = republican_fascism
+							has_government = stratocratic
+						}
+					}
+					AND = {
+						tag = WLN
+						has_government = liberal_republic
+					}
+					AND = {
+						tag = GMA
+						OR = {
+							has_government = national_socialism
+							has_government = fascism
+							has_government = monarchism
+							has_government = stratocratic_monarchism
+							has_government = stratocratic
+							has_government = authoritarian_monarchism
+							has_government = centrist_monarchism
+							has_government = conservative_monarchism
+						}
+					}
+					AND = {
+						tag = MAF
+						NOT = {
+							has_government = communism
+							has_government = vanguardism
+						}
+					}
+					AND = {
+						OR = {
+							tag = KHE
+							tag = BGN
+						}
+						has_government = republican_fascism
 					}
 					AND = {
 						OR = {
@@ -434,69 +525,8 @@ do_all_renames = {
 						has_government = national_socialism
 					}
 					AND = {
-						tag = WLN
-						has_government = liberal_republic
-					}
-					capital_scope = {
-						OR = {
-							is_core_of = GER
-							is_core_of = PRE
-						}
-					}
-					has_cosmetic_tag = GREY_GER3
-					AND = {
-						tag = KC2
-						NOT = {
-							has_government = centrist_monarchism
-						}
-					}
-					tag = VGR
-					AND = {
-						OR = {
-							tag = KHE
-							tag = BGN
-						}
-						has_government = republican_fascism
-					}
-					AND = {
-						tag = PL3
-						has_government  = national_socialism
-					}
-					AND = {
-						tag = CZ2
-						OR = {
-							has_government  = national_socialism
-							has_government = republican_fascism
-							has_government  = stratocratic
-						}
-					}
-					AND = {
-						tag = SSC
-						OR = {
-							has_government  = national_socialism
-							has_government = republican_fascism
-							has_government  = stratocratic
-						}
-					}
-					AND = {
-						tag = GMA
-						OR = {
-							has_government  = national_socialism
-							has_government = fascism
-							has_government = monarchism
-							has_government  = stratocratic_monarchism
-							has_government  = stratocratic
-							has_government = authoritarian_monarchism
-							has_government = centrist_monarchism
-							has_government = conservative_monarchism
-						}
-					}
-					AND = {
-						tag = MAF
-						NOT = {
-							has_government = communism
-							has_government = vanguardism
-						}
+						has_cosmetic_tag = GREY_GER3
+						has_government = national_socialism
 					}
 				}
 			}										
@@ -939,27 +969,52 @@ do_all_renames = {
 					tag = ABK 
 					tag = SOS
 					AND = {
-						tag = MSC
-						NOT = {
-							has_government = national_socialism
-						}
-					}
-					is_russian_warlord = yes
-					AND = {
-						tag = MC2
-						OR = {
-							has_government = fascism
-							has_government = democratic
-						}
-					}
-					AND = {
 						OR = {
 							tag = TSC
 							tag = UKR
 						}
 						has_government = vanguardism
 					}
-					has_country_leader_ideology = putinism
+					AND = {
+						tag = MSC
+						NOT = {
+							has_government = national_socialism
+						}
+					}
+					AND = {
+						tag = MC2
+						NOT = {
+							OR = {
+								has_government = centrist_republic
+								has_government = anocratic_republic
+								has_government = neutrality
+								has_government = authoritarian_monarchism
+								has_government = stratocratic
+								has_government = stratocratic_monarchism
+								has_government = republican_fascism
+								has_government = national_socialism
+								has_government = theocratic
+								has_government = right_anarchism
+							}
+						}
+					}
+					AND = {
+						tag = KC2
+						NOT = {
+							OR = {
+								has_government = anocratic_republic
+								has_government = neutrality
+								has_government = authoritarian_monarchism
+								has_government = stratocratic
+								has_government = republican_fascism
+								has_government = fascism
+								has_government = national_socialism
+								has_government = theocratic
+								has_government = right_anarchism
+							}
+						}
+					}
+					is_russian_warlord = yes
 				}
 			}
 		}
@@ -970,18 +1025,20 @@ do_all_renames = {
 	if = {
 		limit = {
 			ROOT = {
-				OR = { 
-					tag = SOV 
-					tag = RUS 
-					tag = ADJ 
-					tag = ABK 
-					tag = TSC 
-					tag = SOS
-				}
-				OR = { 
-					has_government = communism
-					has_government = vanguardism
-					has_government = socialism_ideology
+				AND = {
+					OR = {
+						tag = SOV 
+						tag = RUS 
+						tag = ADJ 
+						tag = ABK 
+						tag = TSC 
+						tag = SOS
+					}
+					OR = {
+						has_government = communism
+						has_government = vanguardism
+						has_government = socialism_ideology
+					}
 				}
 			}
 		}
@@ -1091,12 +1148,10 @@ do_all_renames = {
 		limit = {
 			ROOT = {
 				OR = {
+					has_cosmetic_tag = UK_RED
 					tag = ENG
 					tag = EGL
-					capital_scope = {
-						is_core_of = EGL
-					}
-					has_cosmetic_tag = UK_RED
+					tag = BCM
 					AND = {
 						tag = RAJ
 						OR = {
@@ -1146,11 +1201,11 @@ do_all_renames = {
 						tag = GMA
 						NOT = {
 							OR = {
-								has_government  = national_socialism
+								has_government = national_socialism
 								has_government = fascism
 								has_government = monarchism
-								has_government  = stratocratic_monarchism
-								has_government  = stratocratic
+								has_government = stratocratic_monarchism
+								has_government = stratocratic
 								has_government = authoritarian_monarchism
 								has_government = centrist_monarchism
 								has_government = conservative_monarchism
@@ -1212,15 +1267,17 @@ do_all_renames = {
 	if = {
 		limit = {
 			ROOT = {
-				has_cosmetic_tag = OTTO
-				AND = {
-					tag = TUR
-					OR = {
-						has_government = conservative_monarchism
-						has_government = authoritarian_monarchism
-						has_government = stratocratic_monarchism
-						has_government = monarchism
-						has_government = fascism
+				OR = {
+					has_cosmetic_tag = OTTO
+					AND = {
+						tag = TUR
+						OR = {
+							has_government = conservative_monarchism
+							has_government = authoritarian_monarchism
+							has_government = stratocratic_monarchism
+							has_government = monarchism
+							has_government = fascism
+						}
 					}
 				}
 			}
@@ -1399,76 +1456,6 @@ do_all_renames = {
 			}
 		}
 		do_livonian_renames = yes
-	}
-
-	### RKS ###
-	if = {
-		limit = {
-			ROOT = {
-				OR = {
-					has_cosmetic_tag = POL_GER
-		            has_cosmetic_tag = CZE_GER
-		            has_cosmetic_tag = IRE_GER
-		            has_cosmetic_tag = ITA_GER
-		            has_cosmetic_tag = TZN_GER
-		            has_cosmetic_tag = KEN_GER
-		            has_cosmetic_tag = TOG_GER
-		            has_cosmetic_tag = CMR_GER
-		            has_cosmetic_tag = NMB_GER
-		            has_cosmetic_tag = ZAM_GER
-		            has_cosmetic_tag = NGU_GER
-		            has_cosmetic_tag = INC_GER
-		            has_cosmetic_tag = SAF_GER
-		            has_cosmetic_tag = MZB_GER
-		            has_cosmetic_tag = COG_GER
-		            has_cosmetic_tag = FEA_GER
-		            has_cosmetic_tag = FWA_GER
-		            has_cosmetic_tag = FRA_GER
-		            has_cosmetic_tag = CRN_GER
-		            has_cosmetic_tag = NND_GER
-		            has_cosmetic_tag = BRI_GER
-		            has_cosmetic_tag = WLS_GER
-		            has_cosmetic_tag = SCO_GER
-		            has_cosmetic_tag = ENG_GER
-		            has_cosmetic_tag = URL_GER
-		            has_cosmetic_tag = SLO_GER
-			        has_cosmetic_tag = UKR_GER
-			        has_cosmetic_tag = BLR_GER
-			        has_cosmetic_tag = GEO_GER
-			        has_cosmetic_tag = RUS_GER
-			        has_cosmetic_tag = HOL_GER
-			        has_cosmetic_tag = ARH_GER
-			        has_cosmetic_tag = DON_GER
-			        has_cosmetic_tag = GRN_GER
-			        has_cosmetic_tag = ICE_GER
-			        has_cosmetic_tag = FIN_GER
-			        has_cosmetic_tag = NOR_GER
-			        has_cosmetic_tag = SWE_GER
-			        has_cosmetic_tag = DEN_GER
-			        has_cosmetic_tag = BEL_GER
-			        has_cosmetic_tag = BGN_GER
-			        has_cosmetic_tag = KAZ_GER
-			        has_cosmetic_tag = SBR_GER
-			        has_cosmetic_tag = EST_GER
-			        has_cosmetic_tag = LAT_GER
-			        has_cosmetic_tag = LIT_GER
-			        has_cosmetic_tag = SWI_GER
-			        has_cosmetic_tag = VNC_GER
-			        has_cosmetic_tag = NAP_GER
-			        has_cosmetic_tag = SPR_GER
-			        has_cosmetic_tag = POR_GER
-			        has_cosmetic_tag = HUN_GER
-			        has_cosmetic_tag = ROM_GER
-			        has_cosmetic_tag = SER_GER
-			        has_cosmetic_tag = ALB_GER
-			        has_cosmetic_tag = BUL_GER
-			        has_cosmetic_tag = GRE_GER
-			        has_cosmetic_tag = TUR_GER
-			        has_cosmetic_tag = GREY_GER3
-				}
-			}
-		}
-		do_german_renames = yes
 	}
 
 	### ITA ###
@@ -1662,7 +1649,7 @@ do_all_renames = {
 					tag = GEO
 					AND = {
 						tag = KC2
-						has_government = centrist_monarchism
+						has_government = authoritarian_monarchism
 					}
 				}
 			}
