@@ -82,8 +82,23 @@ on_actions = {
 						option = SEPTEMBERPROGRAMM_SETUP
 					}
 				}
-				GER = {
-					do_1914_septemberprogramm = yes
+				if = {
+					limit = {
+						has_start_date > 1913.01.01
+						has_start_date < 1915.01.01
+					}
+					GER = {
+						do_1914_septemberprogramm = yes
+					}
+				}
+				else_if = {
+					limit = {
+						has_start_date > 1935.01.01
+						has_start_date < 1940.01.01
+					}
+					GER = {
+						do_1936_septemberprogramm = yes
+					}
 				}
 			}
 		}
@@ -4751,8 +4766,15 @@ on_actions = {
 							}
 							if = {
 								limit = {
-									has_start_date < 1915.01.01
-									has_start_date > 1913.01.01
+									OR = {
+										AND = {
+											has_start_date < 1915.01.01
+											has_start_date > 1913.01.01
+										}
+										AND = {
+											has_global_flag = 1936_septemberprogramm
+										}
+									}
 								}
 								set_cosmetic_tag = GREY_GER3
 							}
@@ -5235,12 +5257,23 @@ on_actions = {
 							set_cosmetic_tag = GREY_GER2
 							if = {
 								limit = {
-									AND = {
-										has_start_date < 1915.01.01
-										has_start_date > 1913.01.01
+									OR = {
+										AND = {
+											has_start_date < 1915.01.01
+											has_start_date > 1913.01.01
+										}
+										AND = {
+											has_global_flag = 1936_septemberprogramm
+										}
 									}
 								}
 								set_cosmetic_tag = GER_1914
+								if = {
+									limit = {
+										has_global_flag = 1936_septemberprogramm
+									}
+									set_cosmetic_tag = GER_EMPIRE
+								}
 							}
 						}
 						if = {
@@ -6883,8 +6916,15 @@ on_actions = {
 									AND = {
 										has_government = socialist_monarchy
 										NOT = {
-											has_start_date < 1915.01.01
-											has_start_date > 1913.01.01
+											OR = {
+												AND = {
+													has_start_date < 1915.01.01
+													has_start_date > 1913.01.01
+												}
+												AND = {
+													has_global_flag = 1936_septemberprogramm
+												}
+											}
 										}
 									}
 								}
@@ -6934,8 +6974,15 @@ on_actions = {
 								OR = {
 									AND = {
 										has_government = socialist_monarchy
-										has_start_date < 1915.01.01
-										has_start_date > 1913.01.01
+										OR = {
+											AND = {
+												has_start_date < 1915.01.01
+												has_start_date > 1913.01.01
+											}
+											AND = {
+												has_global_flag = 1936_septemberprogramm
+											}
+										}
 									}
 									has_government = democratic_monarchism
 									has_government = centrist_monarchism
@@ -6948,12 +6995,23 @@ on_actions = {
 							set_cosmetic_tag = HUN_KINGDOM
 							if = {
 								limit = {
-									AND = {
-										has_start_date < 1915.01.01
-										has_start_date > 1913.01.01
+									OR = {
+										AND = {
+											has_start_date < 1915.01.01
+											has_start_date > 1913.01.01
+										}
+										AND = {
+											has_global_flag = 1936_septemberprogramm
+										}
 									}
 								}
 								set_cosmetic_tag = HUN_1914
+								if = {
+									limit = {
+										has_global_flag = 1936_septemberprogramm
+									}
+									set_cosmetic_tag = HUN_AUSTRIA_HUNGARY
+								}
 							}
 							if = {
 								limit = {
@@ -7164,11 +7222,24 @@ on_actions = {
 										has_government = authoritarian_monarchism
 										has_government = stratocratic_monarchism
 									}
-									has_start_date < 1915.01.01
-									has_start_date > 1913.01.01
+									OR = {
+										AND = {
+											has_start_date < 1915.01.01
+											has_start_date > 1913.01.01
+										}
+										AND = {
+											has_global_flag = 1936_septemberprogramm
+										}
+									}
 								}
 							}
 							set_cosmetic_tag = LIV_1914
+							if = {
+								limit = {
+									has_global_flag = 1936_septemberprogramm
+								}
+								set_cosmetic_tag = LIV_1914_SCC
+							}
 						}
 						else_if = {
 							limit = {
@@ -7241,6 +7312,12 @@ on_actions = {
 						}
 						else = {
 							drop_cosmetic_tag = yes
+							if = {
+								limit = {
+									has_global_flag = 1936_septemberprogramm
+								}
+								set_cosmetic_tag = BLR_1914_SCC
+							}
 						}
 					}
 					if = {
@@ -8282,6 +8359,12 @@ on_actions = {
 									}
 								}
 								set_cosmetic_tag = UKR_1914
+							}
+							else_if = {
+								limit = {
+									has_global_flag = 1936_septemberprogramm
+								}
+								set_cosmetic_tag = UKR_1914_SCC
 							}
 						}
 					}

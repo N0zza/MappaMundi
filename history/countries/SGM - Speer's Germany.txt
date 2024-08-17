@@ -3,9 +3,12 @@
 set_cosmetic_tag = SGM_GCW
 
 set_popularities = {
-	republican_fascism = 60
+	republican_fascism = 55
 	national_socialism = 15
-	centrist_republic = 25
+	anocratic_republic = 15
+	democratic = 4
+	centrist_republic = 5
+	liberal_republic = 6
 }
 
 set_politics = {	
@@ -140,17 +143,17 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/To_be_added.dds"
 	expire = "1965.1.1"
-	ideology = cenmon
+	ideology = natconmon
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Bundespräsident Helmut Heinrich Waldemar Schmidt"
+	name = "To Be Added"
 	desc = ""
-	picture = "gfx/leaders/NZG/NZG_Schmidt.tga"
+	picture = "gfx/leaders/To_be_added.dds"
 	expire = "1965.1.1"
-	ideology = cenrep
+	ideology = natconrep
 	traits = {
 	}
 }
@@ -166,11 +169,31 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Bundestag"
+	desc = ""
+	picture = "gfx/leaders/GER/Portrait_Bundestag.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "To Be Added"
 	desc = ""
 	picture = "gfx/leaders/To_be_added.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Bundespräsident Helmut Heinrich Waldemar Schmidt"
+	desc = ""
+	picture = "gfx/leaders/NZG/NZG_Schmidt.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
 	traits = {
 	}
 }
