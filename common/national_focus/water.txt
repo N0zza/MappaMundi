@@ -10016,6 +10016,11 @@
 							long_name = GER_authoritarian_monarchism_1914_party_long
 						}
 						set_party_name = {
+							ideology = stratocratic
+							name = GER_stratocratic_1914_party
+							long_name = GER_stratocratic_1914_party_long
+						}
+						set_party_name = {
 							ideology = stratocratic_monarchism
 							name = GER_stratocratic_monarchism_1914_party
 							long_name = GER_stratocratic_monarchism_1914_party_long
@@ -10039,6 +10044,24 @@
 							ideology = theocratic
 							name = GER_theocratic_1914_party
 							long_name = GER_theocratic_1914_party_long
+						}
+						create_country_leader = {
+							name = "Volkspräsident Karl Paul August Friedrich Liebknecht"
+							desc = ""
+							picture = "gfx/leaders/GER/Portrait_Karl_Liebknecht.dds"
+							expire = "1965.1.1"
+							ideology = totsoc
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Ratspräsident Karl Paul August Friedrich Liebknecht"
+							desc = ""
+							picture = "gfx/leaders/GER/Portrait_Karl_Liebknecht.dds"
+							expire = "1965.1.1"
+							ideology = marxism
+							traits = {
+							}
 						}
 						create_country_leader = {
 							name = "Reichspräsident Hugo Haase"
@@ -10169,6 +10192,10 @@
 					}
 					AUS = {
 						set_cosmetic_tag = AUS_1914
+						add_victory_points = {
+							province = 13424
+							value = 20
+						}
 						set_politics = {
 							ruling_party = authoritarian_monarchism
 						}
@@ -10237,6 +10264,15 @@
 							}
 						}
 						create_country_leader = {
+							name = "Kaiser Franz Joseph von Habsburg-Lothringen"
+							desc = ""
+							picture = "gfx/leaders/AUS/1914_AUS_Franz_Josef.tga"
+							expire = "1965.1.1"
+							ideology = natconmon
+							traits = {
+							}
+						}
+						create_country_leader = {
 							name = "Kaiser Karl I von Habsburg-Lothringen"
 							desc = ""
 							picture = "gfx/leaders/AUS/Portrait_Karl_Habsburg_2_1914.dds"
@@ -10292,10 +10328,14 @@
 						}
 					}
 					HUN = {
+						set_cosmetic_tag = HUN_1914
+						add_victory_points = {
+							province = 9660
+							value = 5
+						}
 						set_politics = {
 							ruling_party = democratic_monarchism
 						}
-						set_cosmetic_tag = HUN_1914
 						set_popularities = {
 							democratic_monarchism = 62
 							centrist_monarchism = 12
@@ -10418,7 +10458,6 @@
 						}
 					}
 					FIU = {
-						add_state_core = 5937
 						set_cosmetic_tag = FIU_1914
 						set_politics = {
 							ruling_party = authoritarian_monarchism
@@ -10585,6 +10624,10 @@
 						set_capital = { 
 							state = 91
 							remember_old_capital = no
+						}
+						add_victory_points = {
+							province = 11479
+							value = 5
 						}
 						set_politics = {
 							ruling_party = authoritarian_monarchism
@@ -10916,6 +10959,11 @@
 						}
 						set_cosmetic_tag = LIT_RUS_1914
 						set_party_name = {
+							ideology = anocratic_monarchism
+							name = LIT_anocratic_monarchism_1914_party
+							long_name = LIT_anocratic_monarchism_1914_party_long
+						}
+						set_party_name = {
 							ideology = authoritarian_monarchism
 							name = LIT_authoritarian_monarchism_1914_party
 							long_name = LIT_authoritarian_monarchism_1914_party_long
@@ -10932,6 +10980,15 @@
 							monarchism = 100
 						}
 						secondary_tertiary_leader_enabled_effect = yes
+						create_country_leader = {
+							name = "Karalius Mindaugas II iš Uracho"
+							desc = ""
+							picture = "gfx/leaders/LIT/Portrait_Wilhelm_Karl.dds"
+							expire = "1965.1.1"
+							ideology = anocmon
+							traits = {
+							}
+						}
 						create_country_leader = {
 							name = "Karalius Mindaugas II iš Uracho"
 							desc = ""
@@ -11611,6 +11668,10 @@
 						set_cosmetic_tag = OTTO
 						set_politics = {
 							ruling_party = authoritarian_monarchism
+						}
+						add_victory_points = {
+							province = 9833
+							value = 30
 						}
 						set_popularities = {
 							communism = 2
