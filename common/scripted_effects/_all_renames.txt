@@ -351,6 +351,7 @@ do_all_renames = {
 					tag = WR2
 					tag = UA2
 					tag = VGR
+					tag = LIE
 					is_subject_of = GER
 					is_subject_of = WGR
 					is_subject_of = DDR
@@ -368,6 +369,10 @@ do_all_renames = {
 								}
 							}
 						}
+					}
+					AND = {
+						tag = ALA
+						has_government = socialist_monarchy
 					}
 					AND = {
 						tag = LV2
@@ -1210,6 +1215,13 @@ do_all_renames = {
 								has_government = centrist_monarchism
 								has_government = conservative_monarchism
 							}
+						}
+					}
+					AND = {
+						tag = ALA
+						NOT = {
+							has_government = socialist_monarchy
+							has_cosmetic_tag = ALA_JAP
 						}
 					}
 				}

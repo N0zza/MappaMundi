@@ -4036,7 +4036,38 @@ do_lower_german_renames = {
     }
 }
 do_german_renames = {
+	#North America
+	#USA
+	#Alaska
+	if = {
+		limit = {
+			state = 2819
+		}		
+		set_province_name = {
+			id = 14229
+			name = "Sitka"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 463
+		}		
+		set_province_name = {
+			id = 13091
+			name = "Ankerplatz"
+		}
+	}
 
+	if = {
+		limit = {
+			state = 1030
+		}		
+		set_province_name = {
+			id = 13203
+			name = "Prinz-Johan-Stadt"
+		}
+	}
 	if = {
 		limit = {
 			state = 3780
