@@ -8186,6 +8186,7 @@ on_actions = {
 								has_start_date < 1915.01.01
 								has_start_date > 1913.01.01
 								OR = {
+									has_government = left_anarchism
 									has_government = vanguardism
 									has_government = communism
 								}
@@ -8201,6 +8202,7 @@ on_actions = {
 								has_start_date > 1913.01.01
 								NOT = {
 									OR = {
+										has_government = left_anarchism
 										has_government = vanguardism
 										has_government = communism
 									}
