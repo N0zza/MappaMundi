@@ -2,80 +2,18 @@
 
 set_country_flag = has_secondary_leader
 
-	set_popularities = {
-		democratic_monarchism 
-			 = 45
-		conservative_monarchism
-			 = 40
-		neutrality
-			 = 3
-		centrist_monarchism
-			 = 5
-		vanguardism
-			 = 2
-		socialist_monarchy
-			 = 5
-		}
-	set_politics = { 
- ruling_party = democratic_monarchism
+set_popularities = {
+	socialist_monarchy = 66
+	democratic_monarchism = 3
+	centrist_monarchism = 11
+	conservative_monarchism = 20
+}
+
+set_politics = { 
+	ruling_party = socialist_monarchy
 	last_election = "1935.11.27"
 	election_frequency = 36
 	elections_allowed = no
-}
-
-create_country_leader = {
-	name = "Governor-General George Vere Arundel Monckton-Arundell"
-	desc = ""
-	picture = "gfx/leaders/NZL/Portrait_George_Monckton_Arundell.dds"
-	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Prime Minister George Forbes"
-	desc = ""
-	picture = "gfx/leaders/NZL/Portrait_George_Forbes.dds"
-	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Governor-General Prince George of Windsor, Duke of Kent"
-	desc = ""
-	picture = "gfx/leaders/NZL/Portrait_Prince_George.dds"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Governor George Vere Arundel Monckton-Arundell"
-	desc = ""
-	picture = "gfx/leaders/NZL/Portrait_George_Monckton_Arundell.dds"
-	expire = "1965.1.1"
-	ideology = authmon
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Perehitini Eruera Tihema Te Aika Tirikatene"
-	desc = ""
-	picture = "gfx/leaders/NZL/Portrait_Eruera_Tirikatene.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
 }
 
 create_country_leader = {
@@ -99,7 +37,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "General Secretary Elsie Violet Freeman"
+	name = "Chairwoman of State Council and General Secretary of the CC of the CPNZ Elsie Violet Freeman"
 	desc = ""
 	picture = "gfx/leaders/NZL/Portrait_Elsie_Freeman.dds"
 	expire = "1965.1.1"
@@ -110,9 +48,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Chairman Elsie Violet Freeman"
+	name = "President John Alfred Alexander Lee"
 	desc = ""
-	picture = "gfx/leaders/NZL/Portrait_Elsie_Freeman.dds"
+	picture = "gfx/leaders/NZL/NZL_Lee.tga"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -130,9 +68,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Pirimia Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "gfx/leaders/NZL/NZL_michael_joseph_savage.dds"
+	name = "Governor-General George Vere Arundel Monckton-Arundell"
+	desc = ""
+	picture = "gfx/leaders/NZL/Portrait_George_Monckton_Arundell.dds"
 	expire = "1965.1.1"
 	ideology = monsoc
 	traits = {
@@ -150,12 +88,34 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Governor-General George Vere Arundel Monckton-Arundell"
+	desc = ""
+	picture = "gfx/leaders/NZL/Portrait_George_Monckton_Arundell.dds"
+	expire = "1965.1.1"
+	ideology = liberal_constitutionalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
 	name = "President George Forbes"
 	desc = ""
 	picture = "gfx/leaders/NZL/Portrait_George_Forbes.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor-General George Vere Arundel Monckton-Arundell"
+	desc = ""
+	picture = "gfx/leaders/NZL/Portrait_George_Monckton_Arundell.dds"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+		#
 	}
 }
 
@@ -170,12 +130,34 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Pirimia Harold Rushworth"
+	name = "Governor-General George Vere Arundel Monckton-Arundell"
 	desc = ""
-	picture = "gfx/leaders/NZL/Portrait_Harold_Rushworth.dds"
+	picture = "gfx/leaders/NZL/Portrait_George_Monckton_Arundell.dds"
 	expire = "1965.1.1"
 	ideology = cenmon
 	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Perehitini Eruera Tihema Te Aika Tirikatene"
+	desc = ""
+	picture = "gfx/leaders/NZL/Portrait_Eruera_Tirikatene.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Governor George Vere Arundel Monckton-Arundell"
+	desc = ""
+	picture = "gfx/leaders/NZL/Portrait_George_Monckton_Arundell.dds"
+	expire = "1965.1.1"
+	ideology = authmon
+	traits = {
+		#
 	}
 }
 
@@ -200,11 +182,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Tohunga Nui Tahupōtiki Wiremu Rātana"
+	name = "Supreme Leader Robert Campbell Begg"
 	desc = ""
-	picture = "gfx/leaders/NZL/Portrait_Ratana.dds"
+	picture = "gfx/leaders/NZL/Portrait_Robert_Campbell_Begg.dds"
 	expire = "1965.1.1"
-	ideology = christian
+	ideology = repfash
 	traits = {
 	}
 }
@@ -220,16 +202,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Supreme Leader Robert Campbell Begg"
-	desc = ""
-	picture = "gfx/leaders/NZL/Portrait_Robert_Campbell_Begg.dds"
-	expire = "1965.1.1"
-	ideology = repfash
-	traits = {
-	}
-}
-
-create_country_leader = {
 	name = "Gouverneur Oskar Kummetz"
 	desc = ""
 	picture = "gfx/leaders/NZL/Portrait_Oskar_Kummetz.dds"
@@ -237,6 +209,28 @@ create_country_leader = {
 	ideology = natsoc
 	traits = {
 	}
+}
+
+create_country_leader = {
+	name = "Tohunga Nui Tahupōtiki Wiremu Rātana"
+	desc = ""
+	picture = "gfx/leaders/NZL/Portrait_Ratana.dds"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Perehitini Eruera Tihema Te Aika Tirikatene"
+	desc = ""
+	picture = "gfx/leaders/NZL/Portrait_Eruera_Tirikatene.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
 }
 
 create_country_leader = {
