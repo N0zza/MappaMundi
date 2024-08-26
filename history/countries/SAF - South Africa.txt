@@ -3,80 +3,18 @@
 set_country_flag = has_secondary_leader
 
 set_popularities = {
-    neutrality = 10
-    vanguardism = 10
-    socialism_ideology = 10
-    democratic_monarchism = 20
-    centrist_republic = 10
-    republican_fascism = 10
-    centrist_monarchism = 30
+	socialist_monarchy = 4
+	democratic_monarchism = 1
+	conservative_monarchism = 4
+	national_conservative_monarchism = 77
+	anocratic_monarchism = 14
 }
 
 set_politics = { 
-	ruling_party = centrist_monarchism
+	ruling_party = national_conservative_monarchism
 	last_election = "1933.5.17"
 	election_frequency = 60
 	elections_allowed = no
-}
-
-create_country_leader = {
-	name = "Governor-General Prince Albert of Windsor, Duke of York"
-	desc = ""
-	picture = "gfx/leaders/SAF/Portrait_Prince_Albert.tga"
-	expire = "1965.1.1"
-	ideology = absolutism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "President James Barry Munnik Hertzog"
-	desc = ""
-	picture = "gfx/leaders/SAF/SAF_james_hertzog.dds"
-	expire = "1965.1.1"
-	ideology = cenrep
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Governor-General George Herbert Hyde Villiers, Earl of Clarendon"
-	desc = ""
-	picture = "gfx/leaders/SAF/Portrait_George_Villiers.dds"
-	expire = "1965.1.1"
-	ideology = cenmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Governor George Herbert Hyde Villiers, Earl of Clarendon"
-	desc = ""
-	picture = "gfx/leaders/SAF/Portrait_George_Villiers.dds"
-	expire = "1965.1.1"
-	ideology = authmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Governor George Herbert Hyde Villiers, Earl of Clarendon"
-	desc = ""
-	picture = "gfx/leaders/SAF/Portrait_George_Villiers.dds"
-	expire = "1965.1.1"
-	ideology = anocmon
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Koning Edward van Sakse-Koburg en Gotha"
-	desc = ""
-	picture = "gfx/leaders/SAF/Portrait_Prince_David.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	}
 }
 
 create_country_leader = {
@@ -100,28 +38,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prime Minister Charles Frampton Stallard"
-	desc = ""
-	picture = "gfx/leaders/SAF/SAF_Stallard.tga"
-	expire = "1965.1.1"
-	ideology = conservative_constitutionalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "President Daniel Francois Malan"
-	desc = ""
-	picture = "gfx/leaders/SAF/SAF_Malan.tga"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
 	name = "General Secretary Moses Mauane Kotane"
 	desc = ""
 	picture = "gfx/leaders/SAF/SAF_Katane.tga"
@@ -131,7 +47,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "Chairman Moses Mauane Kotane"
 	desc = ""
@@ -173,17 +88,27 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "President Josiah Tshangana Gumede"
+	name = "Prime Minister Jan Christian Smuts"
 	desc = ""
-	picture = "gfx/leaders/SAF/SAF_Gumede.tga"
+	picture = "gfx/leaders/SAF/SAF_Smurt.tga"
 	expire = "1965.1.1"
-	ideology = anocrep
+	ideology = liberal_constitutionalism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "President Daniel Francois Malan"
+	name = "President Pixley ka Isaka Seme"
+	desc = ""
+	picture = "gfx/leaders/SAF/SAF_Seme.tga"
+	expire = "1965.1.1"
+	ideology = cenrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Daniël François Malan"
 	desc = ""
 	picture = "gfx/leaders/SAF/SAF_Malan.tga"
 	expire = "1965.1.1"
@@ -193,11 +118,83 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prime Minister Jan Christian Smuts"
+	name = "Prime Minister Charles Frampton Stallard"
+	desc = ""
+	picture = "gfx/leaders/SAF/SAF_Stallard.tga"
+	expire = "1965.1.1"
+	ideology = conservative_constitutionalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Staatspresident Jan Christian Smuts"
 	desc = ""
 	picture = "gfx/leaders/SAF/SAF_Smurt.tga"
 	expire = "1965.1.1"
-	ideology = liberal_constitutionalism
+	ideology = natconrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor-General George Herbert Hyde Villiers, Earl of Clarendon"
+	desc = ""
+	picture = "gfx/leaders/SAF/Portrait_George_Villiers.dds"
+	expire = "1965.1.1"
+	ideology = natconmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor-General George Herbert Hyde Villiers, Earl of Clarendon"
+	desc = ""
+	picture = "gfx/leaders/SAF/Portrait_George_Villiers.dds"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Staatspresident James Barry Munnik Hertzog"
+	desc = ""
+	picture = "gfx/leaders/SAF/SAF_james_hertzog.dds"
+	expire = "1965.1.1"
+	ideology = anocrep
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor George Herbert Hyde Villiers, Earl of Clarendon"
+	desc = ""
+	picture = "gfx/leaders/SAF/Portrait_George_Villiers.dds"
+	expire = "1965.1.1"
+	ideology = anocmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "President Oswald Pirow"
+	desc = ""
+	picture = "gfx/leaders/SAF/SAF_Pirow.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Governor George Herbert Hyde Villiers, Earl of Clarendon"
+	desc = ""
+	picture = "gfx/leaders/SAF/Portrait_George_Villiers.dds"
+	expire = "1965.1.1"
+	ideology = authmon
 	traits = {
 	}
 }
@@ -223,21 +220,21 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prince-Archbishop William Marlborough Carter"
+	name = "Stadtholder Johannes Frederik Janse Van Rensburg"
 	desc = ""
-	picture = "gfx/leaders/SAF/SAF_Carter.tga"
+	picture = "gfx/leaders/SAF/SAF_Rensburg.tga"
 	expire = "1965.1.1"
-	ideology = christian
+	ideology = repfash
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "Stadtholder Johannes Van Rensburg"
+	name = "Koning Edward van Sakse-Koburg en Gotha"
 	desc = ""
-	picture = "gfx/leaders/SAF/SAF_Rensburg.tga"
+	picture = "gfx/leaders/SAF/Portrait_Prince_David.dds"
 	expire = "1965.1.1"
-	ideology = repfash
+	ideology = fascism_ideology
 	traits = {
 	}
 }
@@ -248,6 +245,26 @@ create_country_leader = {
 	picture = "gfx/leaders/SAF/SAF_Weichardt.tga"
 	expire = "1965.1.1"
 	ideology = natsoc
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Prince-Archbishop William Marlborough Carter"
+	desc = ""
+	picture = "gfx/leaders/SAF/SAF_Carter.tga"
+	expire = "1965.1.1"
+	ideology = christian
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor-General Prince Albert of Windsor, Duke of York"
+	desc = ""
+	picture = "gfx/leaders/SAF/Portrait_Prince_Albert.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
 	traits = {
 	}
 }

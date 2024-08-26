@@ -3155,12 +3155,29 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SAF
-				has_government = centrist_monarchism
+				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+				}
 				has_start_date < 1937.01.01
 				has_start_date > 1935.01.01
 			}
 		}
-		localization_key = "Prime Minister James Barry Munnik Hertzog"
+		localization_key = "Eerste Minister James Barry Munnik Hertzog"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SAF
+				OR = {
+					has_government = anocratic_republic
+					has_government = anocratic_monarchism
+				}
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
+			}
+		}
+		localization_key = "Eerste Minister Daniël François Malan"
 	}
 	text = {
 		trigger = {
@@ -7456,12 +7473,29 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SAF
-				has_government = centrist_monarchism
+				OR = {
+					has_government = national_conservative_republic
+					has_government = national_conservative_monarchism
+				}
 				has_start_date < 1937.01.01
 				has_start_date > 1935.01.01
 			}
 		}
 		localization_key = "GFX_Barry_Hertzog"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SAF
+				OR = {
+					has_government = anocratic_republic
+					has_government = anocratic_monarchism
+				}
+				has_start_date < 1937.01.01
+				has_start_date > 1935.01.01
+			}
+		}
+		localization_key = "GFX_DF_Malan"
 	}
 	text = {
 		trigger = {
