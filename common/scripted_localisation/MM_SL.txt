@@ -3110,6 +3110,8 @@ defined_text = {
 			AND = {
 				tag = CZE
 				has_government = centrist_republic
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
 			}
 		}
 		localization_key = "Předseda vlády Milan Hodža"
@@ -3118,7 +3120,10 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = CZE
-				has_government = liberal_republic
+				OR = {
+					has_government = centrist_republic
+					has_government = centrist_monarchism
+				}
 				has_start_date < 2000.01.01
 				has_start_date > 1991.01.01
 			}
@@ -7469,6 +7474,8 @@ defined_text = {
 			AND = {
 				tag = CZE
 				has_government = centrist_republic
+				has_start_date > 1935.01.01
+				has_start_date < 1937.01.01
 			}
 		}
 		localization_key = "GFX_Milan_Hodza"
@@ -7478,8 +7485,8 @@ defined_text = {
 			AND = {
 				tag = CZE
 				OR = {
-					has_government = liberal_republic
-					has_government = democratic_monarchism
+					has_government = centrist_republic
+					has_government = centrist_monarchism
 				}
 				has_start_date < 2000.01.01
 				has_start_date > 1991.01.01
