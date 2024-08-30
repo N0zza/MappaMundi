@@ -1,23 +1,34 @@
 ﻿capital = 279
 
-	set_popularities = {
-		liberal_republic 
-			 = 98
-		fascism
-			 = 0
-		communism
-			 = 2
-			
-		}
-	set_politics = { 
- ruling_party = liberal_republic
+set_popularities = {
+	communism = 13
+	socialism_ideology = 12
+	liberal_republic = 25
+	centrist_republic = 13
+	national_conservative_republic = 24
+	anocratic_republic = 13
+}
+
+set_politics = { 
+	ruling_party = anocratic_republic
 	last_election = "1932.10.30"
-	election_frequency = 72  #but 4 years after this one in 1938.
+	election_frequency = 72 
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Presidente Arturo Alessandri"
+	name = "Presidente Arturo Fortunato Alessandri Palma"
+	desc = "POLITICS_ARTURO_ALESSANDRI_DESC"
+	picture = "gfx/leaders/CHL/Portrait_arturo_alessandri.dds"
+	expire = "1965.1.1"
+	ideology = anocrep
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Presidente Arturo Fortunato Alessandri Palma"
 	desc = "POLITICS_ARTURO_ALESSANDRI_DESC"
 	picture = "gfx/leaders/CHL/Portrait_arturo_alessandri.dds"
 	expire = "1965.1.1"
@@ -28,7 +39,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Presidente Eduardo Frei Montalva"
+	name = "Presidente Eduardo Nicanor Frei Montalva"
 	desc = ""
 	picture = "gfx/leaders/CHL/CHL_Montalva_authdem.tga"
 	expire = "1965.1.1"
@@ -81,7 +92,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Rey Antoine III del Araucanía y Patagonia"
+	name = "Rey Antonio III del Araucanía y Patagonia"
 	desc = ""
 	picture = "gfx/leaders/CHL/CHL_Antoine.tga"
 	expire = "1965.1.1"
@@ -121,7 +132,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Chiji Nobumasa Suetsugu"
+	name = "Chiji Suetsugu Nobumasa"
 	desc = ""
 	picture = "gfx/leaders/CHL/CHL_Suetsugu_fash.tga"
 	expire = "1965.1.1"
@@ -141,7 +152,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Canciller Pedro Aguirre Cerda"
+	name = "Canciller Pedro Abelino Aguirre Cerda"
 	desc = ""
 	picture = "gfx/leaders/CHL/CHL_Cerda_libdem.tga"
 	expire = "1965.1.1"
@@ -191,7 +202,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Dictador Jorge González von Marées"
+	name = "Jefe Jorge González von Marées"
 	desc = ""
 	picture = "gfx/leaders/CHL/CHL_Jorge_repfash.tga"
 	expire = "1965.1.1"

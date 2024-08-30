@@ -1,23 +1,33 @@
 ﻿capital = 300
 
-
-
-	set_popularities = {
-        neutrality = 56
-        democratic = 37
-        liberal_republic = 3
-        communism = 2
-        socialism_ideology = 2
-		}
-	set_politics = { 
- ruling_party = neutrality
+set_politics = { 
+	ruling_party = anocratic_republic
 	last_election = "1934.4.19"
 	election_frequency = 48
 	elections_allowed = no
 }
 
+set_popularities = {
+	vanguardism = 1
+	communism = 2
+	socialism_ideology = 2
+	centrist_republic = 39
+	anocratic_republic = 56
+}
+
 create_country_leader = {
-	name = "Presidente Gabriel Terra Leivas"
+	name = "Presidente José Luis Gabriel Terra Leivas"
+	desc = "POLITICS_GABRIEL_TERRA_DESC"
+	picture = "gfx/leaders/URG/Portrait_uruguay_portrait_gabriel_terra.dds"
+	expire = "1965.1.1"
+	ideology = anocrep
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Presidente José Luis Gabriel Terra Leivas"
 	desc = "POLITICS_GABRIEL_TERRA_DESC"
 	picture = "gfx/leaders/URG/Portrait_uruguay_portrait_gabriel_terra.dds"
 	expire = "1965.1.1"
@@ -28,7 +38,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Secretario General Enrique Amorim"
+	name = "Secretario General Enrique Manuel Amorim Areta"
 	desc = ""
 	picture = "gfx/leaders/URG/URG_Amorim_commie.tga"
 	expire = "1965.1.1"
@@ -39,7 +49,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Presidente Enrique Amorim"
+	name = "Presidente Enrique Manuel Amorim Areta"
 	desc = ""
 	picture = "gfx/leaders/URG/URG_Amorim_commie.tga"
 	expire = "1965.1.1"
@@ -50,7 +60,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Presidente Emilio Frugoni"
+	name = "Presidente Emilio Frugoni Queirolo"
 	desc = ""
 	picture = "gfx/leaders/URG/URG_Frugoni_demsoc.tga"
 	expire = "1965.1.1"
@@ -150,7 +160,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Gobernador Arturo Rawson"
+	name = "Gobernador Arturo Franklin Rawson Corvalán"
 	desc = ""
 	picture = "gfx/leaders/URG/URG_Rawson_strat.tga"
 	expire = "1965.1.1"
@@ -190,7 +200,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Líder Miguel Reale"
+	name = "Líder Miguel Chiaradia Reale"
 	desc = ""
 	picture = "gfx/leaders/URG/URG_Reale_fash.tga"
 	expire = "1965.1.1"
