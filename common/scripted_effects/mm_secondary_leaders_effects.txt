@@ -1722,18 +1722,23 @@ secondary_leader_enabled_effect = {
 				tag = NZL
 				OR = {
 					AND = {
-						has_government = democratic_monarchism
-						has_start_date < 2022.01.01
+						has_government = conservative_monarchism
+						has_start_date > 1913.01.01
+						has_start_date < 1915.01.01
+					}
+					AND = {	
+						OR = {
+							has_government = socialist_monarchy
+							has_government = democratic_monarchism
+							has_government = centrist_monarchism
+							has_government = conservative_monarchism
+						}
 						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
 					}
 					AND = {
 						has_government = conservative_monarchism
 						has_start_date > 2022.01.01
-					}
-					AND = {
-						has_government = conservative_monarchism
-						has_start_date < 1915.01.01
-						has_start_date > 1913.01.01
 					}
 				}
 			}
@@ -1750,15 +1755,19 @@ secondary_leader_enabled_effect = {
 						has_start_date > 2022.01.01
 					}
 					AND = {
-						has_government = centrist_monarchism
 						OR = {
-							AND = {
-								has_start_date < 1937.01.01
-								has_start_date > 1935.01.01
-							}
-							AND = {
-								has_start_date > 2022.01.01
-							}
+							has_government = national_conservative_republic
+							has_government = national_conservative_monarchism
+							has_government = anocratic_republic
+							has_government = anocratic_monarchism
+						}
+						has_start_date > 1935.01.01
+						has_start_date < 1937.01.01
+					}
+					AND = {
+						has_government = centrist_monarchism
+						AND = {
+							has_start_date > 2022.01.01
 						}
 					}
 					AND = {
@@ -1990,8 +1999,8 @@ secondary_leader_enabled_effect = {
 					}
 					AND = {
 						OR = {
-							has_government = liberal_republic
-							has_government = democratic_monarchism
+							has_government = centrist_republic
+							has_government = centrist_monarchism
 						}
 						has_start_date < 2000.01.01
 						has_start_date > 1991.01.01

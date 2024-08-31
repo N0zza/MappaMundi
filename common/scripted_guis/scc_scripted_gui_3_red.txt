@@ -442,6 +442,78 @@ scripted_gui = {
 					}
 				}
 			}
+			RED19_button_click = {
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = UKR_SOCIALIST_1914_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = UKR_SOCIALIST_1914_SCC
+						clr_country_flag = scc_actor
+					}
+				}
+			}
+			RED20_button_click = {
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = DDR_SCC
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = DDR_SCC
+						clr_country_flag = scc_actor
+					}
+				}
+			}
+			RED21_button_click = {
+				if = {
+					limit = {
+						all_country = {
+							NOT = { has_country_flag = scc_actor }
+						}
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = POL_SOCIALIST
+				}
+				if = {
+					limit = {
+						any_country = { has_country_flag = scc_actor }
+					}
+					every_country = {
+						limit = {
+							has_country_flag = scc_actor
+						}
+						drop_cosmetic_tag = yes
+						set_cosmetic_tag = POL_SOCIALIST
+						clr_country_flag = scc_actor
+					}
+				}
+			}
         }
         
         triggers = {

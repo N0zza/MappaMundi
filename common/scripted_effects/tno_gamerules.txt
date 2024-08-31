@@ -664,11 +664,16 @@ do_tno_normal_warlord_russia = {
 		transfer_state = 12495
 	}
 	
-	JAP = {
-		transfer_state = 2191
-		transfer_state = 655
-		transfer_state = 14001
-		transfer_state = 14000
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = SKH
+				state = 2191
+			}
+		}
+		JAP = {
+			transfer_state = PREV
+		}
 	}
 	
 	KAM = {
@@ -732,25 +737,19 @@ do_tno_normal_warlord_russia = {
 	
 	every_state = {
 		limit = {
-			is_core_of = SRT
-			NOT = {
-				is_core_of = SMM
-				is_state = 17268
-				is_state = 17270
-			}
-		}
-		MC2 = {
-			transfer_state = PREV
-		}
-	}
-	
-	every_state = {
-		limit = {
 			OR = {
 				is_core_of = VGR
 				is_core_of = SMO
 				is_core_of = VLD
 				is_core_of = ASK
+				AND = {
+					is_core_of = SRT
+					NOT = {
+						is_core_of = SMM
+						is_state = 17268
+						is_state = 17270
+					}
+				}
 			}
 		}
 		MC2 = {
@@ -844,34 +843,27 @@ do_tno_normal_warlord_russia = {
 	
 	every_state = {
 		limit = {
-			is_core_of = MRM
-		}
-		FIN = {
-			transfer_state = PREV
-		}
-	}
-	
-	every_state = {
-		limit = {
-			is_core_of = KAR
-			NOT = {
-				is_core_of = ONG
-				state = 17313
+			OR = {
+				is_core_of = MRM
+				AND = {
+					is_core_of = KAR
+					NOT = {
+						is_core_of = ONG
+						state = 17313
+					}
+				}
 			}
 		}
 		FIN = {
 			transfer_state = PREV
+			transfer_state = 13600
+			transfer_state = 13854
+			transfer_state = 4753
+			transfer_state = 12302
+			transfer_state = 12029
+			transfer_state = 12290
+			transfer_state = 16246
 		}
-	}
-	
-	FIN = {
-		transfer_state = 13600
-		transfer_state = 13854
-		transfer_state = 4753
-		transfer_state = 12302
-		transfer_state = 12029
-		transfer_state = 12290
-		transfer_state = 16246
 	}
 
 	ATU = {
@@ -4816,13 +4808,14 @@ do_tno_ukrainian_civil_war = {
 				state = 240
 				state = 3780
 				state = 13264
-				state = 14227
 				state = 14250
 				state = 19190
 				state = 19192
 				state = 19194
 				state = 19195
 				state = 19196
+				state = 19865
+				state = 19892
 			}
 		}
 		UA2 = {

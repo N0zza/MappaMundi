@@ -6,6 +6,38 @@
 ###################################################################################################################################
 
 do_spanish_renames = {
+	#North America
+	#USA
+	#Alaska
+	if = {
+		limit = {
+			state = 2819
+		}		
+		set_province_name = {
+			id = 14229
+			name = "Siatca"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 463
+		}		
+		set_province_name = {
+			id = 13091
+			name = "Anclaje"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1030
+		}		
+		set_province_name = {
+			id = 13203
+			name = "Juneau"
+		}
+	}
 
 	if = {
 		limit = {
@@ -4004,7 +4036,38 @@ do_lower_german_renames = {
     }
 }
 do_german_renames = {
+	#North America
+	#USA
+	#Alaska
+	if = {
+		limit = {
+			state = 2819
+		}		
+		set_province_name = {
+			id = 14229
+			name = "Sitka"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 463
+		}		
+		set_province_name = {
+			id = 13091
+			name = "Ankerplatz"
+		}
+	}
 
+	if = {
+		limit = {
+			state = 1030
+		}		
+		set_province_name = {
+			id = 13203
+			name = "Prinz-Johan-Stadt"
+		}
+	}
 	if = {
 		limit = {
 			state = 3780
@@ -22202,17 +22265,9 @@ do_japanese_renames = {
 			name = "Attsu"
 		}
 	}
-
-	if = {
-		limit = {
-			state = 3108
-		}		
-		set_province_name = {
-			id = 13090
-			name = "Unarasuka"
-		}
-	}
-
+#North America
+#USA
+#Alaska
 	if = {
 		limit = {
 			state = 463
@@ -22220,6 +22275,16 @@ do_japanese_renames = {
 		set_province_name = {
 			id = 13091
 			name = "Ankarejji"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 2819
+		}		
+		set_province_name = {
+			id = 14229
+			name = "Sitoka"
 		}
 	}
 
@@ -30732,36 +30797,6 @@ do_russian_renames = {
 
 	if = {
 		limit = {
-			state = 3108
-		}		
-		set_province_name = {
-			id = 13090
-			name = "Unaláshka"
-		}
-	}
-
-	if = {
-		limit = {
-			state = 463
-		}		
-		set_province_name = {
-			id = 13091
-			name = "Ánkoridzh"
-		}
-	}
-
-	if = {
-		limit = {
-			state = 1030
-		}		
-		set_province_name = {
-			id = 13203
-			name = "Dzhúno"
-		}
-	}
-
-	if = {
-		limit = {
 			state = 7465
 		}		
 		set_province_name = {
@@ -32165,6 +32200,38 @@ do_russian_renames = {
 		}
 	}
 }
+#North America
+#USA
+#Alaska
+	if = {
+		limit = {
+			state = 2819
+		}		
+		set_province_name = {
+			id = 14229
+			name = "Nóvo-Arxángelʹsk"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 463
+		}		
+		set_province_name = {
+			id = 13091
+			name = "Ánkoridzh"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1030
+		}		
+		set_province_name = {
+			id = 13203
+			name = "Džúno"
+		}
+	}
 
 do_soviet_renames = {
 
@@ -32710,6 +32777,16 @@ do_hebrew_renames = {
 		set_province_name = {
 			id = 4206
 			name = "Tēl Āviv-Yāfo"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 9261
+		}		
+		set_province_name = {
+			id = 18405
+			name = "Cagallo"
 		}
 	}
 
@@ -33978,6 +34055,16 @@ do_arabic_renames = {
 		set_province_name = {
 			id = 11746
 			name = "Tarabizun"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 9261
+		}		
+		set_province_name = {
+			id = 18405
+			name = "Sāġlū"
 		}
 	}
 
@@ -43691,9 +43778,53 @@ do_english_renames = {
 		}
 		set_state_name = "Georgetown"
 	}
+	
+	if = {
+		limit = {
+			state = 1952
+		}		
+		set_province_name = {
+			id = 12381
+			name = "Cow Ford"
+		}
+		set_state_name = "Cow Ford"
+	}
 }
 
 do_american_renames = {
+	#North America
+	#USA
+	#Alaska
+	if = {
+		limit = {
+			state = 2819
+		}		
+		set_province_name = {
+			id = 14229
+			name = "Sitka"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 463
+		}		
+		set_province_name = {
+			id = 13091
+			name = "Anchorage"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1030
+		}		
+		set_province_name = {
+			id = 13203
+			name = "Juneau"
+		}
+	}
+	#Other
 	if = {
 		limit = {
 			state = 4395
@@ -43857,6 +43988,17 @@ do_american_renames = {
 			name = "Los Angeles"
 		}		
 		set_state_name = "Central Los Angeles"
+	}
+	
+	if = {
+		limit = {
+			state = 1952
+		}		
+		set_province_name = {
+			id = 12381
+			name = "Jacksonville"
+		}
+		set_state_name = "Jacksonville"
 	}
 }
 
@@ -90885,6 +91027,16 @@ do_french_renames = {
 		set_province_name = {
 			id = 9853
 			name = "Perpignan"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 9261
+		}		
+		set_province_name = {
+			id = 18405
+			name = "Sagallou"
 		}
 	}
 }

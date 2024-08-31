@@ -1,21 +1,27 @@
 ﻿capital = 302
 
+set_popularities = {
+	centrist_republic = 17
+	democratic = 30
+	national_conservative_republic = 53
+}
 
-	set_popularities = {
-		democratic 
-			 = 40
-		fascism
-			 = 0
-		communism
-			 = 0
-		liberal_republic 
-			 = 60
-		}
-	set_politics = { 
- ruling_party = liberal_republic
+set_politics = { 
+	ruling_party = democratic
 	last_election = "1934.11.11"
 	election_frequency = 72
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Presidente José Luis Tejada Sorzano"
+	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
+	picture = "gfx/leaders/BOL/Portrait_Bolivia_Jose_Luis_Tejada_Sorzano.dds"
+	expire = "1965.1.1"
+	ideology = democratic 
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {

@@ -1,7 +1,7 @@
 ﻿capital = 45
 
 set_popularities = {
-	fascism = 10
+	conservative_monarchism = 10
 	neutrality = 80
 	democratic_monarchism = 10
 }
@@ -11,6 +11,16 @@ set_politics = {
 	last_election = "1935.10.27"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Company Leadership"
+	desc = "POLITICS_COMPANY_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Company_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = ancap
+	traits = {
+	}
 }
 
 create_country_leader = {
@@ -138,7 +148,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/To_be_added.dds"
 	expire = "1965.1.1"
-	ideology = cenmon
+	ideology = natconmon
 	traits = {
 	}
 }
@@ -148,7 +158,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/To_be_added.dds"
 	expire = "1965.1.1"
-	ideology = cenrep
+	ideology = natconrep
 	traits = {
 	}
 }
@@ -169,6 +179,26 @@ create_country_leader = {
 	picture = "gfx/leaders/To_be_added.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = cenmon
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "To Be Added"
+	desc = ""
+	picture = "gfx/leaders/To_be_added.dds"
+	expire = "1965.1.1"
+	ideology = cenrep
 	traits = {
 	}
 }
