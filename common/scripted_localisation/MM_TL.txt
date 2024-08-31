@@ -3,7 +3,10 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
-				tag = RUS
+				OR = {
+					tag = RUS
+					tag = SOV
+				}
 				has_government = vanguardism
 				has_start_date > 1935.01.01
 				has_start_date < 1951.01.01

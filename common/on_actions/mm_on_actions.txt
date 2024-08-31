@@ -7064,19 +7064,18 @@ on_actions = {
 						}
 						if = {
 							limit = {
-								has_government = authoritarian_monarchism
 								has_start_date < 1915.01.01
 								has_start_date > 1913.01.01
 							}
 							set_cosmetic_tag = FIU_1914
-						}
-						else_if = {
-							limit = {
-								has_government = republican_fascism
-								has_start_date < 1915.01.01
-								has_start_date > 1913.01.01
+							if = {
+								limit = {
+									has_government = republican_fascism
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = FIU_ITA_1914
 							}
-							set_cosmetic_tag = FIU_ITA_1914
 						}
 						else = {
 							drop_cosmetic_tag = yes
@@ -8487,7 +8486,7 @@ on_actions = {
 									has_government = stratocratic_monarchism
 								}
 							}
-							set_cosmetic_tag = MEX_SPR
+							set_cosmetic_tag = SPR_YELLOW
 						}
 						if = {
 							limit = {
@@ -8841,7 +8840,7 @@ on_actions = {
 							}
 							set_cosmetic_tag = FRA_BLUE
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = centrist_monarchism
@@ -8849,7 +8848,7 @@ on_actions = {
 							}
 							set_cosmetic_tag = UK_RED
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = democratic_monarchism
@@ -8857,7 +8856,7 @@ on_actions = {
 							}
 							set_cosmetic_tag = AUSTRIA_WHITE
 						}
-						if = {
+						else_if = {
 							limit = {
 								OR = {
 									has_government = anocratic_monarchism
@@ -8871,18 +8870,7 @@ on_actions = {
 								do_russian_renames = yes
 							}
 						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = neutrality
-										has_government = stratocratic
-										has_government = centrist_monarchism
-										has_government = anocratic_monarchism
-										has_government = democratic_monarchism
-									}
-								}
-							}
+						else = {
 							drop_cosmetic_tag = yes
 						}
 					}
@@ -8922,30 +8910,16 @@ on_actions = {
 					}
 					if = {
 						limit = {
-							tag = GUA
-						}
-						if = {
-							limit = {
-								OR = {
-									has_government = stratocratic_monarchism
-								}
+							OR = {
+								tag = GUA
+								tag = BLZ
+								tag = HON
+								tag = ELS
+								tag = NIC
+								tag = COS
+								tag = COL
+								tag = FCA
 							}
-							set_cosmetic_tag = GUA_SPR
-						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = stratocratic_monarchism
-									}
-								}
-							}
-							drop_cosmetic_tag = yes
-						}
-					}
-					if = {
-						limit = {
-							tag = BLZ
 						}
 						if = {
 							limit = {
@@ -8955,129 +8929,7 @@ on_actions = {
 							}
 							set_cosmetic_tag = SPR_YELLOW
 						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = stratocratic_monarchism
-									}
-								}
-							}
-							drop_cosmetic_tag = yes
-						}
-					}
-					if = {
-						limit = {
-							tag = HON
-						}
-						if = {
-							limit = {
-								OR = {
-									has_government = stratocratic_monarchism
-								}
-							}
-							set_cosmetic_tag = SPR_YELLOW
-						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = stratocratic_monarchism
-									}
-								}
-							}
-							drop_cosmetic_tag = yes
-						}
-					}
-					if = {
-						limit = {
-							tag = ELS
-						}
-						if = {
-							limit = {
-								OR = {
-									has_government = stratocratic_monarchism
-								}
-							}
-							set_cosmetic_tag = SPR_YELLOW
-						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = stratocratic_monarchism
-									}
-								}
-							}
-							drop_cosmetic_tag = yes
-						}
-					}
-					if = {
-						limit = {
-							tag = NIC
-						}
-						if = {
-							limit = {
-								OR = {
-									has_government = stratocratic_monarchism
-								}
-							}
-							set_cosmetic_tag = SPR_YELLOW
-						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = stratocratic_monarchism
-									}
-								}
-							}
-							drop_cosmetic_tag = yes
-						}
-					}
-					if = {
-						limit = {
-							tag = COS
-						}
-						if = {
-							limit = {
-								OR = {
-									has_government = stratocratic_monarchism
-								}
-							}
-							set_cosmetic_tag = SPR_YELLOW
-						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = stratocratic_monarchism
-									}
-								}
-							}
-							drop_cosmetic_tag = yes
-						}
-					}
-					if = {
-						limit = {
-							tag = COL
-						}
-						if = {
-							limit = {
-								OR = {
-									has_government = stratocratic_monarchism
-								}
-							}
-							set_cosmetic_tag = COL_SPR
-						}
-						if = {
-							limit = {
-								OR = {
-									NOT = {
-										has_government = stratocratic_monarchism
-									}
-								}
-							}
+						else = {
 							drop_cosmetic_tag = yes
 						}
 					}
