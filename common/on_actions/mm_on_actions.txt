@@ -8511,12 +8511,18 @@ on_actions = {
 						if = {
 							limit = {
 								OR = {
-									has_government = neutrality
 									has_government = stratocratic
 									has_government = republican_fascism
 									has_government = fascism
 									has_government = national_socialism
 									has_government = right_anarchism
+									AND = {
+										has_government = neutrality
+										NOT = {
+											has_start_date < 1915.01.01
+											has_start_date > 1913.01.01
+										}
+									}
 								}
 							}
 							set_cosmetic_tag = MEX_AUTH
@@ -8548,7 +8554,18 @@ on_actions = {
 									has_government = democratic
 									has_government = centrist_republic
 									has_government = liberal_republic
-									has_government = communism
+									AND = {
+										has_government = communism
+										NOT = {
+											has_start_date < 1915.01.01
+											has_start_date > 1913.01.01
+										}
+									}
+									AND = {
+										has_government = neutrality
+										has_start_date < 1915.01.01
+										has_start_date > 1913.01.01
+									}
 								}
 							}
 							drop_cosmetic_tag = yes
@@ -8558,6 +8575,13 @@ on_actions = {
 								}
 								set_cosmetic_tag = MEX_2024
 							}
+							if = {
+								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = MEX_1914
+							}
 						}
 						if = {
 							limit = {
@@ -8566,9 +8590,21 @@ on_actions = {
 									has_government = socialism_ideology
 									has_government = vanguardism
 									has_government = left_anarchism
+									AND = {
+										has_government = communism
+										has_start_date < 1915.01.01
+										has_start_date > 1913.01.01
+									}
 								}
 							}
 							set_cosmetic_tag = MEX_SOCIALIST
+							if = {
+								limit = {
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+								set_cosmetic_tag = MEX_SOCIALIST_1914
+							}
 						}
 					}
 					if = {
@@ -8938,7 +8974,6 @@ on_actions = {
 								tag = NIC
 								tag = COS
 								tag = COL
-								tag = FCA
 							}
 						}
 						if = {
@@ -8948,6 +8983,38 @@ on_actions = {
 								}
 							}
 							set_cosmetic_tag = SPR_YELLOW
+						}
+						else = {
+							drop_cosmetic_tag = yes
+						}
+					}
+					if = {
+						limit = {
+							tag = FCA
+						}
+						if = {
+							limit = {
+								OR = {
+									has_government = stratocratic_monarchism
+								}
+							}
+							set_cosmetic_tag = SPR_YELLOW
+						}
+						else_if = {
+							limit = {
+								OR = {
+									has_government = stratocratic
+								}
+							}
+							set_cosmetic_tag = USA_BLUE
+						}
+						else_if = {
+							limit = {
+								OR = {
+									has_government = authoritarian_monarchism
+								}
+							}
+							set_cosmetic_tag = UK_RED
 						}
 						else = {
 							drop_cosmetic_tag = yes

@@ -12406,9 +12406,23 @@
 							neutrality = 100
 						}
 						set_party_name = {
+							ideology = communism
+							name = MEX_communism_1914_party
+							long_name = MEX_communism_1914_party_long
+						}
+						set_party_name = {
 							ideology = neutrality
 							name = MEX_neutrality_1914_party
 							long_name = MEX_neutrality_1914_party_long
+						}
+						create_country_leader = {
+							name = "Caudillo Emiliano Zapata Salazar"
+							desc = ""
+							picture = "gfx/leaders/MEX/Portrait_Emiliano_Zapata.dds"
+							expire = "1965.1.1"
+							ideology = marxism
+							traits = {
+							}
 						}
 						create_country_leader = {
 							name = "Presidente Francisco Sebastián Carvajal y Gual"
@@ -19718,11 +19732,6 @@
 						transfer_state = 10269
 						transfer_state = 10301
 						transfer_state = 10604
-						set_politics = {
-							ruling_party = neutrality
-						}
-						drop_cosmetic_tag = yes
-						set_cosmetic_tag = RUS_2024
 					}
 					every_state = {
 						limit = {
@@ -23411,11 +23420,6 @@
 						do_north_korean_renames = yes
 					}
 					RUS = {
-						transfer_state = 537
-						transfer_state = 6352
-						transfer_state = 6353
-						transfer_state = 6354
-						transfer_state = 6355
 						transfer_state = 3145
 						transfer_state = 3144
 						transfer_state = 555
