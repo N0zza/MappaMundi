@@ -2353,6 +2353,8 @@ defined_text = {
 			AND = {
 				tag = ISR
 				has_government = socialism_ideology
+				has_start_date > 1935.01.01
+				has_start_date < 1951.01.01
 			}
 		}
 		localization_key = "Roʾš HaMemšalah Dawid Ḃen-Gẇriyŵn"
@@ -2372,11 +2374,121 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ISR
+				has_government = vanguardism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Yŵšeb-Roʾš Məŵʿeṣet HaŚariym Ayman ʿAʾdel ʿŴdeh"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = communism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Saʾmiy Aḃẇ Šəḥaʾdah"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Yaʾiyr Gŵlan"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Yaʾiyr Laṗiyd"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Ḃinyamiyn Ganṣ"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Abiygdŵr Liyḃerman"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = national_conservative_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Yiṣḥaq Yiśaškar Gŵldqnŵpp"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
 				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Roʾš HaMemšalah Ḃinyamiyn Ntanyahẇ"
+		localization_key = "Roʾš HaMemšalah Ḃinyamiyn Nətanyahẇ"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Abiygdŵr Maʿŵz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = republican_fascism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Roʾš HaMemšalah Iytamar Ḃen Gəbiyr"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = national_socialism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Manhiyg WəRoʾš HaMemšalah Iytamar Ḃen Gəbiyr"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = theocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "Naśiyʾ HaMŵʿaṣah Yaʿaqob Rŵze'"
 	}
 	text = {
 		trigger = {
@@ -7132,6 +7244,8 @@ defined_text = {
 			AND = {
 				tag = ISR
 				has_government = socialism_ideology
+				has_start_date > 1935.01.01
+				has_start_date < 1951.01.01
 			}
 		}
 		localization_key = "GFX_David_Ben_Gurion"
@@ -7151,11 +7265,114 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = ISR
+				has_government = vanguardism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Aymen_Odeh"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = communism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Sami_Abu_Shehadeh"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = socialism_ideology
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Yair_Golan"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = liberal_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Yair_Lapid"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = centrist_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Benny_Gantz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = democratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Avigdor_Lieberman"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = national_conservative_republic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Yitzhak_Goldknopf"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
 				has_government = anocratic_republic
 				has_start_date > 2022.01.01
 			}
 		}
 		localization_key = "GFX_Benjamin_Netanyahu"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = neutrality
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Avi_Maoz"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				OR = {
+					has_government = republican_fascism
+					has_government = national_socialism
+				}
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Itamar_Ben_Gvir"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = ISR
+				has_government = theocratic
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Yaakov_Roja"
 	}
 	text = {
 		trigger = {

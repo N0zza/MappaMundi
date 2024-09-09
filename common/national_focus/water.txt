@@ -21643,8 +21643,7 @@
 							liberal_republic = 10
 							centrist_republic = 23
 							democratic = 30
-							national_conservative_republic = 8
-							anocratic_republic = 5
+							national_conservative_republic = 13
 							republican_fascism = 16
 						}
 					}
@@ -21690,8 +21689,8 @@
 							centrist_republic = 4
 							democratic = 52
 							national_conservative_republic = 3
-							anocratic_republic = 4
-							republican_fascism = 2
+							republican_fascism = 4
+							national_socialism = 2
 						}
 						create_country_leader = {
 							name = "Próedros Aikateríni Nikoláou Sakellaropoúlou"
@@ -25704,6 +25703,11 @@
 							ruling_party = anocratic_republic
 						}
 						set_party_name = {
+							ideology = left_anarchism
+							name = ISR_left_anarchism_2024_party
+							long_name = ISR_left_anarchism_2024_party_long
+						}
+						set_party_name = {
 							ideology = communism
 							name = ISR_communism_2024_party
 							long_name = ISR_communism_2024_party_long
@@ -25729,6 +25733,11 @@
 							long_name = ISR_democratic_2024_party_long
 						}
 						set_party_name = {
+							ideology = national_conservative_republic
+							name = ISR_national_conservative_republic_2024_party
+							long_name = ISR_national_conservative_republic_2024_party_long
+						}
+						set_party_name = {
 							ideology = anocratic_republic
 							name = ISR_anocratic_republic_2024_party
 							long_name = ISR_anocratic_republic_2024_party_long
@@ -25739,9 +25748,24 @@
 							long_name = ISR_neutrality_2024_party_long
 						}
 						set_party_name = {
+							ideology = stratocratic
+							name = ISR_stratocratic_2024_party
+							long_name = ISR_stratocratic_2024_party_long
+						}
+						set_party_name = {
 							ideology = republican_fascism
 							name = ISR_republican_fascism_2024_party
 							long_name = ISR_republican_fascism_2024_party_long
+						}
+						set_party_name = {
+							ideology = national_socialism
+							name = ISR_national_socialism_2024_party
+							long_name = ISR_national_socialism_2024_party_long
+						}
+						set_party_name = {
+							ideology = right_anarchism
+							name = ISR_right_anarchism_2024_party
+							long_name = ISR_right_anarchism_2024_party_long
 						}
 						set_popularities = {
 							vanguardism = 2
@@ -25758,11 +25782,116 @@
 					}
 					ISR = {
 						create_country_leader = {
+							name = "Collective Leadership"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Collective_Leadership.tga"
+							expire = "1965.1.1"
+							ideology = ancom
+						}
+						create_country_leader = {
+							name = "Yŵšeb-Roʾš Məŵʿeṣet HaMədiynah ʿOwper K̇asiyp"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Cassif.tga"
+							expire = "1965.1.1"
+							ideology = totsoc
+						}
+						create_country_leader = {
+							name = "Nāśiyʾ ʿOwper K̇asiyp"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Cassif.tga"
+							expire = "1965.1.1"
+							ideology = marxism
+						}
+						create_country_leader = {
+							name = "Nāśiyʾ Yiṣḥāq Herṣōg"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Herzog.tga"
+							expire = "1965.1.1"
+							ideology = demsoc
+						}
+						create_country_leader = {
+							name = "Nāśiyʾ Yiṣḥāq Herṣōg"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Herzog.tga"
+							expire = "1965.1.1"
+							ideology = liberalism
+						}
+						create_country_leader = {
+							name = "Nāśiyʾ Yiṣḥāq Herṣōg"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Herzog.tga"
+							expire = "1965.1.1"
+							ideology = cenrep
+						}
+						create_country_leader = {
+							name = "Nāśiyʾ Yiṣḥāq Herṣōg"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Herzog.tga"
+							expire = "1965.1.1"
+							ideology = conservatism
+						}
+						create_country_leader = {
+							name = "Nāśiyʾ Yiṣḥāq Herṣōg"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Herzog.tga"
+							expire = "1965.1.1"
+							ideology = natconrep
+						}
+						create_country_leader = {
 							name = "Nāśiyʾ Yiṣḥāq Herṣōg"
 							desc = ""
 							picture = "gfx/leaders/ISR/ISR_Herzog.tga"
 							expire = "1965.1.1"
 							ideology = anocrep
+						}
+						create_country_leader = {
+							name = "Nāśiyʾ Ḃəṣalʾel Yŵʾel Səmŵṭəriyṣ"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Smotrich.tga"
+							expire = "1965.1.1"
+							ideology = despotism
+						}
+						create_country_leader = {
+							name = "Alẇp Haṗiqẇd Herṣəl Halewiy"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Halevi.tga"
+							expire = "1965.1.1"
+							ideology = militarism
+						}
+						create_country_leader = {
+							name = "Nāśiyʾ Ḃəṣalʾel Yŵʾel Səmŵṭəriyṣ"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Smotrich.tga"
+							expire = "1965.1.1"
+							ideology = repfash
+						}
+						create_country_leader = {
+							name = "Roʾš HaMədiynah Ḃəṣalʾel Yŵʾel Səmŵṭəriyṣ"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Smotrich.tga"
+							expire = "1965.1.1"
+							ideology = natsoc
+						}
+						create_country_leader = {
+							name = "Nəśîʾ Bêt̲ Haddîn HaRabbānî HaʿElyôn Eliyʿezer Igaraʾ"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Igra.tga"
+							expire = "1965.1.1"
+							ideology = christian
+						}
+						create_country_leader = {
+							name = "Melek Yŵḥanan I Giynṣḃẇrg"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Jean.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+						}
+						create_country_leader = {
+							name = "Manhiyg Mošeh Zaləman Peygəliyn"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Feiglin.tga"
+							expire = "1965.1.1"
+							ideology = ancap
 						}
 					}
 					every_state = { 

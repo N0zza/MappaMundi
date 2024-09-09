@@ -2,19 +2,35 @@ add_namespace = mmdebug
 
 country_event = { 
 	id = mmdebug.456
-	title = "Debug Event ?"
-	desc = "Debug Event"
+	title = Debug Event ?
+	desc = Debug Event
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = { #Agree
-		name = "Sure"
+		name = Sure
 		ai_chance = {
 			factor = 0
 		}
+		ISR = {
+						create_country_leader = {
+							name = "Nəśîʾ Bêt̲ Haddîn HaRabbānî HaʿElyôn Eliyʿezer Igaraʾ"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Igra.tga"
+							expire = "1965.1.1"
+							ideology = christian
+						}
+						create_country_leader = {
+							name = "Melek Yŵḥanan I Giynṣḃẇrg"
+							desc = ""
+							picture = "gfx/leaders/ISR/ISR_Jean.tga"
+							expire = "1965.1.1"
+							ideology = absolutism
+						}
+					}
 	}
 	option = { #reject
-		name = "No"
+		name = No
 		ai_chance = {
 			factor = 100
 		}
