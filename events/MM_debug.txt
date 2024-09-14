@@ -12,22 +12,9 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		ISR = {
-						create_country_leader = {
-							name = "Nəśîʾ Bêt̲ Haddîn HaRabbānî HaʿElyôn Eliyʿezer Igaraʾ"
-							desc = ""
-							picture = "gfx/leaders/ISR/ISR_Igra.tga"
-							expire = "1965.1.1"
-							ideology = christian
-						}
-						create_country_leader = {
-							name = "Melek Yŵḥanan I Giynṣḃẇrg"
-							desc = ""
-							picture = "gfx/leaders/ISR/ISR_Jean.tga"
-							expire = "1965.1.1"
-							ideology = absolutism
-						}
-					}
+		19949 = {
+			set_state_name = "Ayn Siro"
+		}
 	}
 	option = { #reject
 		name = No
@@ -35,4 +22,15 @@ country_event = {
 			factor = 100
 		}
 	}
+		JOR = {
+			set_popularities = {
+				socialist_monarchy = 2
+				democratic_monarchism = 8
+				centrist_monarchism = 6
+				conservative_monarchism = 5
+				national_conservative_monarchism = 22
+				anocratic_monarchism = 29
+				authoritarian_monarchism = 28
+			}
+		}
 }
