@@ -1,3 +1,4 @@
+#OTL Presidents
 MM_PORTRAITS_USA_OTL_CATEGORY = {
 
 #	USA_OTL_GEORGE_WASHINGTON = {
@@ -1232,6 +1233,7 @@ MM_PORTRAITS_USA_OTL_CATEGORY = {
 	}
 }
 
+#USA Candidates 2000-
 MM_PORTRAITS_USA_CANDIDATES_ONE_CATEGORY = {
 	USA_CANDIONE_GORE = {
 		allowed = {
@@ -1261,9 +1263,127 @@ MM_PORTRAITS_USA_CANDIDATES_ONE_CATEGORY = {
 			}
 		}
 	}
+	
+	USA_CANDIONE_SANDERS = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = socialism_ideology
+			create_country_leader = {
+				name = "President Bernie Sanders"
+				desc = ""
+				picture = "gfx/leaders/USA/USA_Sanders.tga"
+				expire = "1965.1.1"
+				ideology = demsoc
+				traits = {
+				}
+			}
+		}
+	}
+	
+	USA_CANDIONE_YANG = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = centrist_republic
+			create_country_leader = {
+				name = "President Andrew Yang"
+				desc = ""
+				picture = "gfx/leaders/USA/USA_Yang.tga"
+				expire = "1965.1.1"
+				ideology = cenrep
+				traits = {
+				}
+			}
+		}
+	}
+	
+	USA_CANDIONE_RFK_JR = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = centrist_republic
+			create_country_leader = {
+				name = "President Robert Francis Kennedy Jr."
+				desc = ""
+				picture = "gfx/leaders/USA/USA_KENNEDY_RFKJR.dds"
+				expire = "1965.1.1"
+				ideology = cenrep
+				traits = {
+				}
+			}
+		}
+	}
 }
 
+#USA Candidates 1950-2000
 MM_PORTRAITS_USA_CANDIDATES_TWO_CATEGORY = {
+	
+	USA_CANDITWO_THURMOND = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = national_conservative_republic
+			create_country_leader = {
+				name = "President James Strom Thurmond Sr."
+				desc = ""
+				picture = "gfx/leaders/USA/USA_Thurmond.tga"
+				expire = "1965.1.1"
+				ideology = natconrep
+				traits = {
+				}
+			}
+		}
+	}
+	
 	USA_CANDITWO_HA_WALLACE = {
 		allowed = {
 			
@@ -1351,35 +1471,6 @@ MM_PORTRAITS_USA_CANDIDATES_TWO_CATEGORY = {
 		}
 	}
 	
-	USA_CANDITWO_HA_WALLACE = {
-		allowed = {
-			
-		}
-		available = {
-			
-		}
-		visible = {
-			tag = USA
-		}
-		cost = 0
-		days_re_enable = 0
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			kill_ideology_leader = socialism_ideology
-			create_country_leader = {
-				name = "President Henry Agard Wallace"
-				desc = ""
-				picture = "gfx/leaders/USA/USA_Wallace.dds"
-				expire = "1965.1.1"
-				ideology = demsoc
-				traits = {
-				}
-			}
-		}
-	}
-	
 	USA_CANDITWO_WALLACE = {
 		allowed = {
 			
@@ -1396,22 +1487,20 @@ MM_PORTRAITS_USA_CANDIDATES_TWO_CATEGORY = {
 			factor = 1
 		}
 		complete_effect = {
-			kill_ideology_leader = anocratic_republic
+			kill_ideology_leader = national_conservative_republic
 			create_country_leader = {
 				name = "President George Corley Wallace Jr."
 				desc = ""
 				picture = "gfx/leaders/USA/USA_George_Wallace.dds"
 				expire = "1965.1.1"
-				ideology = anocrep
+				ideology = natconrep
 				traits = {
 				}
 			}
 		}
 	}
-}
-
-MM_PORTRAITS_USA_CANDIDATES_THREE_CATEGORY = {
-	USA_CANDITHREE_BORAH = {
+	
+	USA_CANDITWO_RFK = {
 		allowed = {
 			
 		}
@@ -1429,9 +1518,38 @@ MM_PORTRAITS_USA_CANDIDATES_THREE_CATEGORY = {
 		complete_effect = {
 			kill_ideology_leader = liberal_republic
 			create_country_leader = {
-				name = "President William Edgar Borah"
+				name = "President Robert Francis Kennedy"
 				desc = ""
-				picture = "gfx/leaders/USA/USA_Borah.dds"
+				picture = "gfx/leaders/USA/USA_RobertKennedy.tga"
+				expire = "1965.1.1"
+				ideology = librep
+				traits = {
+				}
+			}
+		}
+	}
+	
+	USA_CANDITWO_YOUNG_BIDEN = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = liberal_republic
+			create_country_leader = {
+				name = "President Joseph Robinette Biden Jr."
+				desc = ""
+				picture = "gfx/leaders/USA/USA_George_Wallace.dds"
 				expire = "1965.1.1"
 				ideology = liberalism
 				traits = {
@@ -1439,6 +1557,67 @@ MM_PORTRAITS_USA_CANDIDATES_THREE_CATEGORY = {
 			}
 		}
 	}
+	
+	USA_CANDITWO_YOUNG_TRUMP = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = liberal_republic
+			create_country_leader = {
+				name = "President Donald John Trump"
+				desc = ""
+				picture = "gfx/leaders/USA/USA_Trump_young.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+				}
+			}
+		}
+	}
+	USA_CANDITWO_OLD_THURMOND = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = national_conservative_republic
+			create_country_leader = {
+				name = "President James Strom Thurmond Sr."
+				desc = ""
+				picture = "gfx/leaders/USA/USA_Thurmond_old.dds"
+				expire = "1965.1.1"
+				ideology = natconrep
+				traits = {
+				}
+			}
+		}
+	}
+}
+
+#USA Candidates 1900-1950
+MM_PORTRAITS_USA_CANDIDATES_THREE_CATEGORY = {
 	
 	USA_CANDITHREE_MCNUTT = {
 		allowed = {
@@ -1461,6 +1640,35 @@ MM_PORTRAITS_USA_CANDIDATES_THREE_CATEGORY = {
 				name = "President Paul Vories McNutt"
 				desc = ""
 				picture = "gfx/leaders/USA/USA_McNutt.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+				}
+			}
+		}
+	}
+	
+	USA_CANDITHREE_BORAH = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = liberal_republic
+			create_country_leader = {
+				name = "President William Edgar Borah"
+				desc = ""
+				picture = "gfx/leaders/USA/USA_Borah.dds"
 				expire = "1965.1.1"
 				ideology = liberalism
 				traits = {
