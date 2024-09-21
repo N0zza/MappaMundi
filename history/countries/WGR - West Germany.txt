@@ -3,12 +3,10 @@
 set_country_flag = has_secondary_leader
 
 set_popularities = {
-	communism = 3.75
-	socialism_ideology = 32.5
-	liberal_republic = 13.25
-	centrist_republic = 3.25
-	democratic = 38.75
-	anocratic_republic = 8.5
+	democratic = 45
+	socialist_ideology = 35
+	liberal_republic = 15
+	centrist_republic = 5
 }
 
 set_politics = { 
@@ -16,7 +14,6 @@ set_politics = {
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
-
 }
 
 create_country_leader = {
@@ -86,13 +83,14 @@ create_country_leader = {
     expire = "1956.1.1"
     ideology = cenrep
     traits = {
+	}
 }
 
 create_country_leader = {
-    name = "König Ferdinand I von Hohenzollern"
-    desc = ""
-    picture = "gfx/leaders/WGR/WGR_Louis.tga"
-    expire = "1956.1.1"
+	name = "Kaiser Wilhelm III von Hohenzollern"
+	desc = ""
+	picture = "gfx/leaders/GER/Portrait_Wilhelm3_Hohenzollern.dds"
+	expire = "1965.1.1"
     ideology = monsoc
     traits = {
     }
