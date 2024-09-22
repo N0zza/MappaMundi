@@ -26899,14 +26899,6 @@
 					}
 					every_state = {
 						limit = {
-							is_core_of = OM2
-						}
-						OM2 = {
-							transfer_state = PREV
-						}
-					}
-					every_state = {
-						limit = {
 							is_core_of = AMF
 						}
 						AMF = {
@@ -28700,6 +28692,16 @@
 							}
 					}
 					ETH = {
+						transfer_state = 4098
+						transfer_state = 4102
+						transfer_state = 4103
+						transfer_state = 4105
+						transfer_state = 17115
+					}
+					ETH = {
+						every_owned_state = {
+							add_core_of = ETH
+						}
 						set_politics = {
 							ruling_party = neutrality
 						}
