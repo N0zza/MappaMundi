@@ -1342,9 +1342,37 @@ MM_PORTRAITS_USA_CANDIDATES_ONE_CATEGORY = {
 			create_country_leader = {
 				name = "President Robert Francis Kennedy Jr."
 				desc = ""
-				picture = "gfx/leaders/USA/USA_KENNEDY_RFKJR.dds"
+				picture = "gfx/leaders/USA/USA_Kennedy_RFKJR.dds"
 				expire = "1965.1.1"
 				ideology = cenrep
+				traits = {
+				}
+			}
+		}
+	}
+	USA_CANDIONE_OLD_THURMOND = {
+		allowed = {
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		cost = 0
+		days_re_enable = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			kill_ideology_leader = national_conservative_republic
+			create_country_leader = {
+				name = "President James Strom Thurmond Sr."
+				desc = ""
+				picture = "gfx/leaders/USA/USA_Thurmond_old.dds"
+				expire = "1965.1.1"
+				ideology = natconrep
 				traits = {
 				}
 			}
@@ -1581,34 +1609,6 @@ MM_PORTRAITS_USA_CANDIDATES_TWO_CATEGORY = {
 				picture = "gfx/leaders/USA/USA_Trump_young.dds"
 				expire = "1965.1.1"
 				ideology = liberalism
-				traits = {
-				}
-			}
-		}
-	}
-	USA_CANDITWO_OLD_THURMOND = {
-		allowed = {
-			
-		}
-		available = {
-			
-		}
-		visible = {
-			tag = USA
-		}
-		cost = 0
-		days_re_enable = 0
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			kill_ideology_leader = national_conservative_republic
-			create_country_leader = {
-				name = "President James Strom Thurmond Sr."
-				desc = ""
-				picture = "gfx/leaders/USA/USA_Thurmond_old.dds"
-				expire = "1965.1.1"
-				ideology = natconrep
 				traits = {
 				}
 			}
