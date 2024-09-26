@@ -7603,8 +7603,6 @@
 					anocratic_monarchism = 56
 					authoritarian_monarchism = 2
 				}
-			}
-			SPR = {
 				create_country_leader = {
 					name = "Rey Alfonso XIII de Borbón"
 					desc = "POLITICS_ALFONSO_XIII_DESC"
@@ -7637,8 +7635,6 @@
 					centrist_republic = 4
 					democratic = 24
 				}
-			}
-			POR = {
 				create_country_leader = {
 					name = "Presidente Manuel José de Arriaga Brum da Silveira e Peyrelongue"
 					desc = ""
@@ -7830,15 +7826,6 @@
 			}
 			NZL = {
 				set_cosmetic_tag = NZL_1914
-				create_country_leader = {
-					name = "Governor-General Arthur William de Brito Savile Foljambe, 2nd Earl of Liverpool"
-					desc = ""
-					picture = "gfx/leaders/NZL/Portrait_Arthur_Foljambe.dds"
-					expire = "1965.1.1"
-					ideology = conservative_constitutionalism
-					traits = {
-					}
-				}
 				set_politics = {
 					ruling_party = conservative_monarchism
 				}
@@ -7863,6 +7850,15 @@
 					centrist_monarchism = 23
 					socialist_monarchy = 8
 					socialism_ideology = 2
+				}
+				create_country_leader = {
+					name = "Governor-General Arthur William de Brito Savile Foljambe, 2nd Earl of Liverpool"
+					desc = ""
+					picture = "gfx/leaders/NZL/Portrait_Arthur_Foljambe.dds"
+					expire = "1965.1.1"
+					ideology = conservative_constitutionalism
+					traits = {
+					}
 				}
 			}
 			CAN = {
@@ -7984,6 +7980,11 @@
 				}
 			}
 			LUX = {
+				set_party_name = {
+					ideology = conservative_monarchism
+					name = LUX_conservative_monarchism_1914_party
+					long_name = LUX_conservative_monarchism_1914_party_long
+				}
 				set_party_name = {
 					ideology = anocratic_monarchism
 					name = LUX_anocratic_monarchism_1914_party

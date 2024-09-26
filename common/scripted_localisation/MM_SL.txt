@@ -3464,8 +3464,23 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LUX
+				OR = {
+					has_government = conservative_monarchism
+					has_government = anocratic_monarchism
+				}
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Premier Minister Paul Eyschen"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LUX
 				has_government = conservative_monarchism
 				has_start_date < 1950.01.01
+				has_start_date > 1945.01.01
 			}
 		}
 		localization_key = "Premier Minister Joseph Bech"
@@ -3476,7 +3491,7 @@ defined_text = {
 				tag = LUX
 				has_government = conservative_monarchism
 				has_start_date > 1990.01.01
-				has_start_date < 200.01.01
+				has_start_date < 2000.01.01
 			}
 		}
 		localization_key = "Premier Minister Jacques Santer"
@@ -7922,8 +7937,23 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = LUX
+				OR = {
+					has_government = conservative_monarchism
+					has_government = anocratic_monarchism
+				}
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Paul_Eyschen"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = LUX
 				has_government = conservative_monarchism
 				has_start_date < 1950.01.01
+				has_start_date > 1945.01.01
 			}
 		}
 		localization_key = "GFX_Joseph_Bech"
@@ -7934,7 +7964,7 @@ defined_text = {
 				tag = LUX
 				has_government = conservative_monarchism
 				has_start_date > 1990.01.01
-				has_start_date < 200.01.01
+				has_start_date < 2000.01.01
 			}
 		}
 		localization_key = "GFX_Jacques_Santer"
