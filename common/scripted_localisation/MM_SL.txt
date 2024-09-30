@@ -746,6 +746,17 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = ITA
+				has_government = anocratic_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Presidente del Consiglio dei ministri Giovanni Giolitti"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = WGR
 				has_government = vanguardism
 				has_start_date > 2022.01.01
@@ -1722,7 +1733,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = FRA
-				has_government = democratic
+				has_government = socialism_ideology
 				has_start_date < 1915.01.01
 				has_start_date > 1913.01.01
 			}
@@ -2302,7 +2313,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SPR
-				has_government = anocratic_monarchism
+				has_government = authoritarian_monarchism
 				has_start_date < 1915.01.01
 			}
 		}
@@ -2614,6 +2625,17 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = HOL
+				has_government = centrist_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Minister-president Pieter Wilhelm Adrianus Cort van der Linden"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = BEL
 				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
@@ -2631,6 +2653,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Eerste Jean Luc Joseph Marie Dehaene"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BEL
+				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "Premiér Ministre Charles Marie Pierre Albert, 1er comte de Broqueville"
 	}
 	text = {
 		trigger = {
@@ -5714,6 +5747,17 @@ defined_text = {
 	text = {
 		trigger = {
 			AND = {
+				tag = ITA
+				has_government = anocratic_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Giovanni_Giolitti"
+	}
+	text = {
+		trigger = {
+			AND = {
 				tag = WGR
 				has_government = vanguardism
 				has_start_date > 2022.01.01
@@ -6604,7 +6648,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = FRA
-				has_government = democratic
+				has_government = socialism_ideology
 				has_start_date < 1915.01.01
 				has_start_date > 1913.01.01
 			}
@@ -7208,7 +7252,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SPR
-				has_government = anocratic_monarchism
+				has_government = authoritarian_monarchism
 				has_start_date < 1915.01.01
 			}
 		}
@@ -7491,6 +7535,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = HOL
+				has_government = centrist_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Pieter_Cort_van_der_Linden"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = HOL
 				has_government = conservative_monarchism
 				has_start_date < 2000.01.01
 				has_start_date > 1991.01.01
@@ -7518,6 +7573,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Jean_Luc_Dehaene"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = BEL
+				has_government = conservative_monarchism
+				has_start_date < 1915.01.01
+				has_start_date > 1913.01.01
+			}
+		}
+		localization_key = "GFX_Charles_de_Broqueville"
 	}
 	text = {
 		trigger = {

@@ -624,7 +624,7 @@ secondary_leader_enabled_effect = {
 				tag = FRA
 				OR = {
 					AND = {
-						has_government = democratic
+						has_government = socialism_ideology
 						has_start_date < 1915.01.01
 						has_start_date > 1913.01.01
 					}
@@ -755,6 +755,11 @@ secondary_leader_enabled_effect = {
 				OR = {
 					AND = {
 						has_government = conservative_monarchism
+						has_start_date > 1913.01.01
+						has_start_date < 1915.01.01
+					}
+					AND = {
+						has_government = conservative_monarchism
 						has_start_date > 1935.01.01
 						has_start_date < 2000.01.01
 					}
@@ -772,6 +777,11 @@ secondary_leader_enabled_effect = {
 			AND = {
 				tag = HOL
 				OR = {
+					AND = {
+						has_government = centrist_monarchism
+						has_start_date > 1913.01.01
+						has_start_date < 1915.01.01
+					}
 					AND = {
 						has_government = conservative_monarchism
 						has_start_date > 1935.01.01
@@ -1457,7 +1467,7 @@ secondary_leader_enabled_effect = {
 				tag = SPR
 				OR = {
 					AND = {
-						has_government = anocratic_monarchism
+						has_government = authoritarian_monarchism
 						has_start_date < 1915.01.01
 					}
 					AND = {
@@ -1536,6 +1546,11 @@ secondary_leader_enabled_effect = {
 			AND = {
 				tag = ITA
 				OR = {
+					AND = {
+						has_government = anocratic_monarchism
+						has_start_date > 1913.01.01
+						has_start_date < 1915.01.01
+					}
 					AND = {
 						has_government = fascism
 						has_start_date < 1940.01.01

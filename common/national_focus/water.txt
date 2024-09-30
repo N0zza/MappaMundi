@@ -7586,38 +7586,51 @@
 			}
 			SPR = {
 				set_politics = {
-					ruling_party = anocratic_monarchism
+					ruling_party = authoritarian_monarchism
 				}
-				set_cosmetic_tag = SPR_1914
+				set_cosmetic_tag = SPR_KINGDOM
 				set_party_name = {
 					ideology = anocratic_monarchism
 					name = SPR_anocratic_monarchism_1914_party
 					long_name = SPR_anocratic_monarchism_1914_party_long
 				}
+				set_party_name = {
+					ideology = authoritarian_monarchism
+					name = SPR_authoritarian_monarchism_1914_party
+					long_name = SPR_authoritarian_monarchism_1914_party_long
+				}
 				set_popularities = {
-					socialism_ideology = 4
-					liberal_republic = 4
-					democratic_monarchism = 29
-					centrist_monarchism = 2
+					socialist_monarchy = 6
+					democratic_monarchism = 8
+					centrist_monarchism = 5
 					conservative_monarchism = 3
-					anocratic_monarchism = 56
-					authoritarian_monarchism = 2
+					national_conservative_monarchism = 2
+					anocratic_monarchism = 21
+					authoritarian_monarchism = 55
 				}
 				create_country_leader = {
-					name = "Rey Alfonso XIII de Borbón"
+					name = "Rey Alfonso XIII de Borbón "
 					desc = "POLITICS_ALFONSO_XIII_DESC"
-					picture = "gfx/leaders/SPR/SPR_AlfonsoXIII.tga"
+					picture = "gfx/leaders/SPR/SPR_Alfonso_XIII_1914.tga"
 					expire = "1965.1.1"
-					ideology = anocmon
+					ideology = authmon
 					traits = {
 					}
 				}
 			}
+			every_country = {
+				limit = {
+					tag = RIF
+					tag = WES
+					tag = EQG
+				}
+				set_cosmetic_tag = SPR_KINGDOM
+			}
 			POR = {
 				set_politics = {
-					ruling_party = democratic
+					ruling_party = socialism_ideology
 				}
-				set_cosmetic_tag = POR_1992
+				set_cosmetic_tag = POR_1914
 				set_party_name = {
 					ideology = socialism_ideology
 					name = POR_socialism_ideology_1914_party
@@ -7631,16 +7644,16 @@
 				set_popularities = {
 					communism = 1
 					socialism_ideology = 44
-					liberal_republic = 27
 					centrist_republic = 4
-					democratic = 24
+					democratic = 27
+					national_conservative_republic = 24
 				}
 				create_country_leader = {
 					name = "Presidente Manuel José de Arriaga Brum da Silveira e Peyrelongue"
 					desc = ""
 					picture = "gfx/leaders/POR/POR_Arriaga.tga"
 					expire = "1965.1.1"
-					ideology = conservatism
+					ideology = demsoc
 					traits = {
 					}
 				}
@@ -7703,6 +7716,14 @@
 					}
 				}
 			}
+			SWI = {
+				set_popularities = {
+					socialism_ideology = 8
+					liberal_republic = 11
+					centrist_republic = 61
+					democratic = 20
+				}
+			}
 			ITA = {
 				transfer_state = 767
 				transfer_state = 2501
@@ -7740,7 +7761,8 @@
 					socialist_monarchy = 16
 					democratic_monarchism = 22
 					centrist_monarchism = 3
-					conservative_monarchism = 6
+					conservative_monarchism = 4
+					national_conservative_monarchism = 2
 					anocratic_monarchism = 53
 				}
 				create_country_leader = {
@@ -7969,10 +7991,42 @@
 						remove_state_core = PREV
 					}
 				}
+				set_politics = {
+					ruling_party = centrist_monarchism
+				}
+				set_cosmetic_tag = HOL_1914
+				set_popularities = {
+					socialist_monarchy = 16
+					democratic_monarchism = 7
+					centrist_monarchism = 10
+					conservative_monarchism = 42
+					national_conservative_monarchism = 25
+				}
+				set_party_name = {
+					ideology = centrist_monarchism
+					name = HOL_centrist_monarchism_1914_party
+					long_name = HOL_centrist_monarchism_1914_party_long
+				}
 				create_country_leader = {
 					name = "Koningin Wilhelmina van Oranje-Nassau "
 					desc = ""
 					picture = "gfx/leaders/HOL/Portrait_Wilhelmina_1914.dds"
+					expire = "1947.1.1"
+					ideology = cenmon
+					traits = {
+					}
+				}
+			}
+			BEL = {
+				set_popularities = {
+					socialist_monarchy = 17
+					democratic_monarchism = 29
+					conservative_monarchism = 54
+				}
+				create_country_leader = {
+					name = "Roi Albert I de Saxe-Cobourg et Gotha"
+					desc = ""
+					picture = "gfx/leaders/BEL/BEL_Albert.tga"
 					expire = "1947.1.1"
 					ideology = conservative_constitutionalism
 					traits = {
@@ -9548,14 +9602,15 @@
 						transfer_state = 4497
 						set_cosmetic_tag = FRA_1914
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = socialism_ideology
 						}
 						set_popularities = {
-							communism = 17
-							socialism_ideology = 36
-							centrist_republic = 11
+							vanguardism = 17
+							communism = 4
+							socialism_ideology = 32
 							liberal_republic = 13
-							democratic = 23
+							centrist_republic = 8
+							democratic = 26
 						}
 						set_party_name = {
 							ideology = communism
@@ -9595,6 +9650,15 @@
 							name = "Président Auguste Marie Joseph Jean Léon Jaurès"
 							desc = ""
 							picture = "gfx/leaders/FRA/Portrait_Jean_Jaures.dds"
+							expire = "1965.1.1"
+							ideology = totsoc
+							traits = {
+							}
+						}
+						create_country_leader = {
+							name = "Président Raymond Nicolas Landry Poincaré"
+							desc = ""
+							picture = "gfx/leaders/FRA/1914_FRA_Raymond_Poincare.tga"
 							expire = "1965.1.1"
 							ideology = demsoc
 							traits = {
