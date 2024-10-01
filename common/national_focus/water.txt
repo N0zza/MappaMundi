@@ -8158,6 +8158,8 @@
 				transfer_state = 17754
 				transfer_state = 17755
 				transfer_state = 17408
+				transfer_state = 19991
+				transfer_state = 20101
 			}
 			AH2 = {
 				transfer_state = 13882
@@ -8198,8 +8200,6 @@
 					OR = {
 						is_owned_by = TUR
 						is_owned_by = YEM
-						is_owned_by = QAT
-						is_owned_by = BHR
 						is_core_of = SYR
 						is_core_of = LEB
 						is_core_of = PAL
@@ -8825,13 +8825,23 @@
 			ASR = {
 				transfer_state = 5651
 				transfer_state = 5652
-		}
+				set_cosmetic_tag = OTTO_COLONY
+				create_country_leader = {
+					name = "Imām wa Sulṭān al-Sayyid Muḥammad II bin ʿAliyy al-Idrīsī al-Ḥasanī"
+					desc = ""
+					picture = "gfx/leaders/ASR_Muhammad.tga"
+					expire = "1965.1.1"
+					ideology = absolutism
+					traits = {
+					}
+				}
+			}
 			BUK = {
 				set_cosmetic_tag = RUS_GREEN
-		}
+			}
 			KHI = {
 				set_cosmetic_tag = RUS_GREEN
-		}
+			}
 			WTR = {
 				transfer_state = 9606
 				transfer_state = 9607
@@ -8841,16 +8851,16 @@
 				transfer_state = 12375
 				transfer_state = 12377
 				transfer_state = 12791
-		}
+			}
 			BEL = {
 				transfer_state = 1478
-		}
+			}
 			BLN = {
 				transfer_state = 13011
 				transfer_state = 13012
 				transfer_state = 13013
 				transfer_state = 13014
-		}
+			}
 			SRW = {
 				transfer_state = 13053
 				transfer_state = 13045
@@ -11774,7 +11784,13 @@
 						transfer_state = 9871
 						transfer_state = 12780
 						transfer_state = 12781
+						transfer_state = 20106
+						transfer_state = 20616
 						set_cosmetic_tag = OTTO
+						every_owned_state = {
+							do_ottoman_turkish_renames = yes
+							do_turkish_renames = yes
+						}
 						set_politics = {
 							ruling_party = authoritarian_monarchism
 						}
@@ -11847,6 +11863,12 @@
 							traits = {
 							}
 						}
+					}
+					QAT = {
+						drop_cosmetic_tag = yes
+					}
+					BHR = {
+						transfer_state = 19811
 					}
 					DDO = {
 						set_cosmetic_tag = DDO_1914
