@@ -767,16 +767,6 @@ do_all_renames = {
 		}
 		do_albanian_renames = yes
 	}
-	
-	### ISR ###
-	if = {
-		limit = {
-			ROOT = {
-				tag = ISR
-			}
-		}
-		do_hebrew_renames = yes
-	}
 
 	### CAT ###
 	if = {
@@ -1109,6 +1099,30 @@ do_all_renames = {
 			}
 			do_french_renames = yes
 		}
+	}
+	
+	### ISR ###
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = ISR
+					AND = {
+						tag = GZS
+						has_government = authoritarian_monarchism
+					}
+					AND = {
+						tag = WBK
+						OR = {
+							has_government = anocratic_republic
+							has_government = stratocratic
+							has_government = stratocratic_monarchism
+						}
+					}
+				}
+			}
+		}
+		do_hebrew_renames = yes
 	}
 		
 	### CEL ###
