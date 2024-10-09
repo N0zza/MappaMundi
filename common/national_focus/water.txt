@@ -16963,6 +16963,7 @@
 						transfer_state = 898
 						transfer_state = 9848
 						transfer_state = 3618
+						transfer_state = 20670
 						set_politics = {
 							ruling_party = democratic
 						}
@@ -18793,7 +18794,10 @@
 						limit = {
 							OR = {
 								is_core_of = PAL
-								state = 1208
+								AND = {
+									is_owned_by = SYR
+									is_claimed_by = ISR
+								}
 							}
 						}
 						transfer_state_to = ISR
@@ -18802,6 +18806,21 @@
 					add_victory_points = {
 						province = 1015
 						value = 5
+					}
+					17388 = {
+						set_demilitarized_zone = yes
+					}
+					set_victory_points = {
+						province = 7032
+						value = 0
+					}
+					set_victory_points = {
+						province = 7023
+						value = 1
+					}
+					set_victory_points = {
+						province = 8294
+						value = 1
 					}
 					ISR = {
 						set_politics = {
@@ -18823,6 +18842,22 @@
 							neutrality = 7
 							republican_fascism = 4
 						}
+						puppet = SLE
+					}
+					17388 = {
+						set_demilitarized_zone = yes
+					}
+					set_victory_points = {
+						province = 7032
+						value = 0
+					}
+					set_victory_points = {
+						province = 7023
+						value = 1
+					}
+					ISR = {
+						transfer_state = 20197
+						transfer_state = 20375
 					}
 					ISR = {
 						create_country_leader = {
@@ -18835,6 +18870,57 @@
 					}
 					LEB = {
 						set_cosmetic_tag = LEB_2024
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+						set_popularities = {
+							communism = 11
+							socialism_ideology = 2
+							centrist_republic = 4
+							democratic = 12
+							anocratic_republic = 63
+							neutrality = 1
+							republican_fascism = 7
+						}
+						set_party_name = {
+							ideology = anocratic_republic
+							name = LEB_anocratic_republic_1992_party
+							long_name = LEB_anocratic_republic_1992_party_long
+						}
+					}
+					LEB = {
+						create_country_leader = {
+							name = "Raʾīs Ilyās al-Hrāwī"
+							desc = ""
+							picture = "gfx/leaders/LEB/LEB_Hrawi.tga"
+							expire = "1965.06.01.01"
+							ideology = anocrep
+						}
+					}
+					SLE = {
+						transfer_state = 17401
+						transfer_state = 17402
+						transfer_state = 20192
+						transfer_state = 20368
+						add_state_core = 17401
+						add_state_core = 17402
+						add_state_core = 20192
+						add_state_core = 20368
+						set_politics = {
+							ruling_party = stratocratic
+						}
+						set_popularities = {
+							stratocratic = 100
+						}
+					}
+					SLE = {
+						create_country_leader = {
+							name = "Qāʾid al-Aʿlaỳ Anṭuwān Laḥad"
+							desc = ""
+							picture = "gfx/leaders/SLE/SLE_Lahad.tga"
+							expire = "1965.06.01.01"
+							ideology = militarism
+						}
 					}
 					AFG = {
 						set_cosmetic_tag = AFG_1992
@@ -19368,6 +19454,18 @@
 							expire = "1965.06.01.01"
 							ideology = despotism
 						}
+					}
+					SYR = {
+							transfer_state = 553
+							transfer_state = 13186
+							transfer_state = 17389
+							transfer_state = 17390
+							transfer_state = 17391
+							transfer_state = 17392
+							transfer_state = 17395
+							transfer_state = 20185
+							transfer_state = 20189
+							transfer_state = 20379
 					}
 					SYR = {
 						drop_cosmetic_tag = yes
