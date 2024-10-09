@@ -3401,7 +3401,10 @@ secondary_leader_enabled_effect = {
 				tag = PAL
 				OR = {
 					AND = {
-						has_government = neutrality
+						OR = {
+							has_government = anocratic_republic
+							has_government = neutrality
+						}
 						has_start_date > 2022.01.01
 					}
 				}
