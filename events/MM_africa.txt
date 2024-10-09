@@ -1,7 +1,7 @@
 
 add_namespace = mmafrica
 
-country_event = { 1914 Africa
+country_event = { #1914 Africa
 	id = mmafrica.1914
 	title = "Set Africa to 1914?"
 	desc = "Do it"
@@ -347,7 +347,7 @@ country_event = { 1914 Africa
 }
 
 
-country_event = { 2020 Africa
+country_event = { #2020 Africa
 	id = mmafrica.2020
 	title = "Set Africa to 2021?"
 	desc = "Do it"
@@ -579,9 +579,11 @@ country_event = { 2020 Africa
 				}
 			}
 		CMR = {
-			annex_country { target = SCM }
-			drop_cosmetic_tag = yes
+			annex_country = { 
+				target = SCM 
 			}
+			drop_cosmetic_tag = yes
+		}
 		MLI = {
 			release = MRT
 			release = VOL

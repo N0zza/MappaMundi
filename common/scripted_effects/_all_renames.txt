@@ -269,20 +269,18 @@ do_all_renames = {
 						}
 					}
 				}
-				if = {
-					limit = {
-						AND = {
-							has_government = vanguardism
-							has_start_date < 2049.01.01
-							has_start_date > 2022.01.01
-						}
-					}
-					do_pinyin_renames = yes
-				}
-				else = {
-					do_chinese_renames = yes
+			}
+		}
+		do_chinese_renames = yes
+		if = {
+			limit = {
+				AND = {
+					has_government = vanguardism
+					has_start_date < 2049.01.01
+					has_start_date > 2022.01.01
 				}
 			}
+			do_pinyin_renames = yes
 		}
 	}
 	
@@ -1001,7 +999,6 @@ do_all_renames = {
 							}
 						}
 					}
-					is_russian_warlord = yes
 				}
 			}
 		}

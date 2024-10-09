@@ -209,15 +209,15 @@ country_event = { #1914 Asia
 			every_state = {
 				limit = {
 					OR = {
-						is_core_of = BKH
-						is_claimed_by = BKH
+						is_core_of = BUK
+						is_claimed_by = BUK
 						}
 					NOT = {
 						is_core_of = KYR
 						is_core_of = KAZ
 						}
 					}
-				BKH = {
+				BUK = {
 					transfer_state = PREV
 						}
 					}
@@ -272,7 +272,7 @@ country_event = { #1914 Asia
 			transfer_state = 1479
 			transfer_state = 11061
 			annex_country = { target = YKT }
-			annex_country = { target = BML }
+			annex_country = { target = BYA }
 			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = monarchism
@@ -282,7 +282,7 @@ country_event = { #1914 Asia
 				limit = {
 					OR = {
 					is_owned_by = RUS
-					is_owned_by = BKH
+					is_owned_by = BUK
 					is_owned_by = KHI
 						}
 					NOT = {
@@ -321,7 +321,7 @@ country_event = { #1914 Asia
 			transfer_state = 5651
 			transfer_state = 5652
 			}
-		BKH = {
+		BUK = {
 			set_cosmetic_tag = RUS_GREEN
 			}
 		KHI = {
@@ -1771,7 +1771,7 @@ country_event = { #2020 Asia
 					}
 				}
                 remove_core_of = SAU			
-			}\
+			}
 			every_state = {
 				limit = {
 					is_owned_by = RUS

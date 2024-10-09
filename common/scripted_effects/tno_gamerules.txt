@@ -754,7 +754,7 @@ do_tno_normal_warlord_russia = {
 		}
 	}
 
-	ATB = {
+	every_state = {
 		limit = {
 			is_core_of = ATU
 			
@@ -779,9 +779,9 @@ do_tno_normal_warlord_russia = {
 		ATB = {
 			transfer_state = PREV
 		}
-		
+	}
+	ATB = {
 		set_cosmetic_tag = ATB_TNO
-		
 		set_politics = {
 			ruling_party = republican_fascism
 		}
@@ -1255,12 +1255,11 @@ do_tno_normal_warlord_russia = {
 		limit = {
 			is_core_of = VLG
 			is_owned_by = RUS
-		}
-		NOT = {
-			is_core_of = TIK
+			NOT = {
+				is_core_of = TIK
+			}
 		}
 		transfer_state_to = VLG
-		
 	}
 
 }
@@ -1445,9 +1444,9 @@ do_tno_einheitspakt_setup = {
 				is_owned_by = POL
 			}
 			is_core_of = SLO
-		}
-		NOT = {
-			is_claimed_by = HUN
+			NOT = {
+				is_claimed_by = HUN
+			}
 		}
 		SLO = {
 			transfer_state = PREV
@@ -1840,9 +1839,9 @@ do_tno_einheitspakt_setup = {
 	every_state = {
 		limit = {
 			is_core_of = SYR
-		}
-		NOT = {
-			is_core_of = WTC
+			NOT = {
+				is_core_of = WTC
+			}
 		}
 		transfer_state_to = WTC
 	}
@@ -2160,7 +2159,7 @@ do_tno_co_prosperity_setup = {
 		limit = {
 			OR = {
 				is_core_of = S14
-				is_core_of S43
+				is_core_of = S43
 			}
 		}
 		transfer_state_to = SIA
@@ -2206,9 +2205,9 @@ do_tno_co_prosperity_setup = {
 	every_state = {
 		limit = {
 			is_core_of = YUN
-		}
-		NOT = {
-			is_core_of = BRM
+			NOT = {
+				is_core_of = BRM
+			}
 		}
 		transfer_state_to = YUN
 	}
@@ -2366,7 +2365,7 @@ do_tno_co_prosperity_setup = {
 		transfer_state = 10538
 	}
 	every_state = {
-		limit {
+		limit = {
 			is_core_of = IDS
 		}
 		transfer_state_to = IDS
@@ -2401,9 +2400,9 @@ do_tno_co_prosperity_setup = {
 	every_state = {
 		limit = {
 			is_core_of = FMS
-		}
-		NOT = {
-			is_core_of = KED
+			NOT = {
+				is_core_of = KED
+			}
 		}
 		transfer_state_to = FMS
 	}
@@ -2540,9 +2539,9 @@ do_tno_co_prosperity_setup = {
 	every_state = {
 		limit = {
 			is_core_of = PMR
-		}
-		NOT = {
-			is_core_of = PAK
+			NOT = {
+				is_core_of = PAK
+			}
 		}
 		transfer_state = AFG
 	}
@@ -2724,9 +2723,9 @@ do_africa_tno_setup = {
 	every_state = {
 		limit = {
 			is_owned_by = FEA
-		}
-		NOT = {
-			is_core_of = SD0
+			NOT = {
+				is_core_of = SD0
+			}
 		}
 		transfer_state_to = CMR
 	}
@@ -2854,9 +2853,9 @@ do_africa_tno_setup = {
 		limit = {
 			is_core_of = SD0
 			is_core_of = CHA
-		}
-		NOT = {
-			is_core_of = LBA
+			NOT = {
+				is_core_of = LBA
+			}
 		}
 		transfer_state_to = SD0
 	}
@@ -2996,17 +2995,24 @@ do_africa_tno_setup = {
 		transfer_state = 9588
 	}
 	FR2 = {
-		set_politics = {ruling_party = neutrality}
-		annex_country = {target = IVO}
-		annex_country = {target = SNW}
+		set_politics = {
+			ruling_party = neutrality
+		}
+		annex_country = {
+			target = IVO
+		}
+		annex_country = {
+			target = SNW
+		}
 		set_cosmetic_tag = FRA_BLUE
-		set_capital = 867
+		set_capital = {
+			state = 867
+		}
 		transfer_state = 713
 		transfer_state = 2692
 		transfer_state = 7712
 		transfer_state = 7711
 		transfer_state = 2691
-		transfer_state = 
 	}
 	SIE = {
 		set_politics = {ruling_party = stratocratic}
@@ -3063,7 +3069,9 @@ do_tno_america_setup = {
 	HOL = {
 		annex_country = {target = SUR}
 		annex_country = {target = CRC}
-		set_capital = 309
+		set_capital = {
+			state = 309
+		}
 	}
 	CAY = {
 		annex_country = {target = INI}

@@ -97,7 +97,7 @@ on_actions = {
 						has_start_date < 1940.01.01
 					}
 					GER = {
-						do_1936_septemberprogramm = yes
+						do_septemberprogramm_1936 = yes
 					}
 				}
 			}
@@ -234,7 +234,7 @@ on_actions = {
 							has_start_date < 2049.01.01
 						}
 					}
-					immediate = { log = "2024 De Jure Borders" }
+					log = "2024 De Jure Borders"
 					every_state = {
 						limit = {
 							OR = {
@@ -519,7 +519,7 @@ on_actions = {
 							has_start_date < 1937.01.01
 						}
 					}
-					immediate = { log = "1936 De Jure Borders" }
+					log = "1936 De Jure Borders"
 					every_state = {
 						limit = {
 							OR = {
@@ -621,7 +621,7 @@ on_actions = {
 							has_start_date < 1951.01.01
 						}
 					}
-					immediate = { log = "1950 De Jure Borders" }
+					log = "1950 De Jure Borders"
 					every_state = {
 						limit = {
 							OR = {
@@ -1246,11 +1246,11 @@ on_actions = {
 									is_core_of = LAT
 								}
 							}
-							is_state = 10375
-							is_state = 10330
-							is_state = 8683
-							is_state = 8681
-							is_state = 8813
+							state = 10375
+							state = 10330
+							state = 8683
+							state = 8681
+							state = 8813
 						}
 					}
 					SOV = {
@@ -1421,37 +1421,37 @@ on_actions = {
 						option = KMT_CHINA
 					}
 				}
-					3172 = {
+				3172 = {
 					set_demilitarized_zone = no
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_core_of = CHI
+							}
+						NOT = {
+							is_core_of = TIB
+							is_core_of = JAP
+							is_core_of = SOV
+							is_core_of = BRM
+							}
 					}
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = CHI
-								}
-							NOT = {
-								is_core_of = TIB
-								is_core_of = JAP
-								is_core_of = SOV
-								is_core_of = BRM
-								}
-						}
-						CHI = {
-							transfer_state = PREV
-							add_state_core = PREV
-						}
+					CHI = {
+						transfer_state = PREV
+						add_state_core = PREV
 					}
-		CHI = {
-			transfer_state = 1007
-			}
-			every_state = {
-				limit = {
-					is_owned_by = CHI
+				}
+				CHI = {
+					transfer_state = 1007
+				}
+				every_state = {
+					limit = {
+						is_owned_by = CHI
 					}
-				add_state_core = PRC
-				add_state_core = CHI
-				remove_state_claim = CHI
-				remove_state_claim = PRC
+					add_state_core = PRC
+					add_state_core = CHI
+					remove_state_claim = CHI
+					remove_state_claim = PRC
 				}
 			}
 		}
@@ -2114,15 +2114,15 @@ on_actions = {
 			every_state = {
 				limit = {
 					OR = {
-						is_core_of = BKH
-						is_claimed_by = BKH
+						is_core_of = BUK
+						is_claimed_by = BUK
 						}
 					NOT = {
 						is_core_of = KYR
 						is_core_of = KAZ
 						}
 					}
-				BKH = {
+				BUK = {
 					transfer_state = PREV
 						}
 					}
@@ -2187,7 +2187,7 @@ on_actions = {
 				limit = {
 					OR = {
 					is_owned_by = RUS
-					is_owned_by = BKH
+					is_owned_by = BUK
 					is_owned_by = KHI
 						}
 					NOT = {
@@ -2226,7 +2226,7 @@ on_actions = {
 			transfer_state = 5651
 			transfer_state = 5652
 			}
-		BKH = {
+		BUK = {
 			set_cosmetic_tag = RUS_GREEN
 			}
 		KHI = {
@@ -4003,7 +4003,7 @@ on_actions = {
 											has_start_date > 1913.01.01
 										}
 										AND = {
-											has_global_flag = 1936_septemberprogramm
+											has_global_flag = septemberprogramm_1936
 										}
 									}
 								}
@@ -4496,14 +4496,14 @@ on_actions = {
 											has_start_date > 1913.01.01
 										}
 										AND = {
-											has_global_flag = 1936_septemberprogramm
+											has_global_flag = septemberprogramm_1936
 										}
 									}
 								}
 								set_cosmetic_tag = GER_1914
 								if = {
 									limit = {
-										has_global_flag = 1936_septemberprogramm
+										has_global_flag = septemberprogramm_1936
 									}
 									set_cosmetic_tag = GER_EMPIRE
 								}
@@ -6148,7 +6148,7 @@ on_actions = {
 													has_start_date > 1913.01.01
 												}
 												AND = {
-													has_global_flag = 1936_septemberprogramm
+													has_global_flag = septemberprogramm_1936
 												}
 											}
 										}
@@ -6206,7 +6206,7 @@ on_actions = {
 												has_start_date > 1913.01.01
 											}
 											AND = {
-												has_global_flag = 1936_septemberprogramm
+												has_global_flag = septemberprogramm_1936
 											}
 										}
 									}
@@ -6229,14 +6229,14 @@ on_actions = {
 											has_start_date > 1913.01.01
 										}
 										AND = {
-											has_global_flag = 1936_septemberprogramm
+											has_global_flag = septemberprogramm_1936
 										}
 									}
 								}
 								set_cosmetic_tag = HUN_1914
 								if = {
 									limit = {
-										has_global_flag = 1936_septemberprogramm
+										has_global_flag = septemberprogramm_1936
 									}
 									set_cosmetic_tag = HUN_AUSTRIA_HUNGARY
 								}
@@ -6457,7 +6457,7 @@ on_actions = {
 											has_start_date > 1913.01.01
 										}
 										AND = {
-											has_global_flag = 1936_septemberprogramm
+											has_global_flag = septemberprogramm_1936
 										}
 									}
 								}
@@ -6465,7 +6465,7 @@ on_actions = {
 							set_cosmetic_tag = LIV_1914
 							if = {
 								limit = {
-									has_global_flag = 1936_septemberprogramm
+									has_global_flag = septemberprogramm_1936
 								}
 								set_cosmetic_tag = LIV_1914_SCC
 							}
@@ -6543,7 +6543,7 @@ on_actions = {
 							drop_cosmetic_tag = yes
 							if = {
 								limit = {
-									has_global_flag = 1936_septemberprogramm
+									has_global_flag = septemberprogramm_1936
 								}
 								set_cosmetic_tag = BLR_1914_SCC
 							}
@@ -7623,7 +7623,7 @@ on_actions = {
 							}
 							else_if = {
 								limit = {
-									has_global_flag = 1936_septemberprogramm
+									has_global_flag = septemberprogramm_1936
 								}
 								set_cosmetic_tag = UKR_1914_SCC
 							}
