@@ -1013,7 +1013,7 @@ secondary_leader_enabled_effect = {
 					}
 					AND = {
 						has_government = anocratic_monarchism
-						has_start_date > 2022.01.01
+						has_start_date > 1990.01.01
 					}
 				}
 			}
@@ -1027,7 +1027,7 @@ secondary_leader_enabled_effect = {
 				OR = {
 					AND = {
 						has_government = communism
-						has_start_date > 2022.01.01
+						has_start_date > 1990.01.01
 					}
 				}
 			}
@@ -1053,6 +1053,11 @@ secondary_leader_enabled_effect = {
 			AND = {
 				tag = ALG
 				OR = {
+					AND = {
+						has_government = anocratic_republic
+						has_start_date > 1990.01.01
+						has_start_date < 2000.01.01
+					}
 					AND = {
 						has_government = neutrality
 						has_start_date > 2022.01.01
@@ -1093,8 +1098,11 @@ secondary_leader_enabled_effect = {
 					}
 					AND = {
 						has_government = neutrality
-						has_global_flag = non_hog_secondary_leaders
-						has_start_date > 2022.01.01
+						OR = {
+							has_global_flag = non_hog_secondary_leaders
+							has_start_date < 2000.01.01
+						}
+						has_start_date > 1990.01.01
 					}
 				}
 			}

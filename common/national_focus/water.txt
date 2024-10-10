@@ -18122,6 +18122,114 @@
 						set_politics = {
 							ruling_party = neutrality
 						}
+						set_popularities = {
+							neutrality = 100
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = TUN_neutrality_1992_party
+							long_name = TUN_neutrality_1992_party_long
+						}
+					}
+					TUN = {
+						create_country_leader = {
+							name = "Raʾīs Zīn al-ʿĀbdīn bin ʿAliyy"
+							desc = ""
+							picture = "gfx/leaders/TUN/TUN_Ben_Ali.tga"
+							expire = "1965.06.01.01"
+							ideology = despotism
+							traits = {
+							}
+						}
+					}
+					ALG = {
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+						set_cosmetic_tag = ALG_1992
+						set_popularities = {
+							socialism_ideology = 6
+							national_conservative_republic = 44
+							anocratic_republic = 46
+							neutrality = 4
+						}
+						set_party_name = {
+							ideology = anocratic_republic
+							name = ALG_neutrality_2024_party
+							long_name = ALG_neutrality_2024_party_long
+						}
+					}
+					ALG = {
+						create_country_leader = {
+							name = "Raʾīs Aš-Šāḏlī bin Ǧadīd"
+							desc = ""
+							picture = "gfx/leaders/ALG/ALG_Benjedid.tga"
+							expire = "1965.06.01.01"
+							ideology = anocrep
+							traits = {
+							}
+						}
+					}
+					MOR = {
+						set_politics = {
+							ruling_party = anocratic_monarchism
+						}
+						set_cosmetic_tag = MOR_2024
+						set_popularities = {
+							communism = 2
+							socialist_monarchy = 5
+							democratic_monarchism = 10
+							centrist_monarchism = 4
+							conservative_monarchism = 29
+							anocratic_monarchism = 50
+						}
+						set_party_name = {
+							ideology = anocratic_monarchism
+							name = MOR_anocratic_monarchism_1992_party
+							long_name = MOR_anocratic_monarchism_1992_party_long
+						}
+					}
+					MOR = {
+						create_country_leader = {
+							name = "Malik Ḥasan II bin al-Muḥammad V al-Alawī"
+							desc = ""
+							picture = "gfx/leaders/MOR/MOR_Hassan_II.tga"
+							expire = "1965.06.01.01"
+							ideology = anocmon
+							traits = {
+							}
+						}
+					}
+					WES = {
+						create_country_leader = {
+							name = "Raʾīs wal-Amīn al-ʿĀm li-Ǧabhaẗ al-Būlīsāryū Muḥammad ʿAbd ul-ʿAzīz bin H̱alīlī bin Muḥammad al-Bašīr ar-Raǧībi"
+							desc = ""
+							picture = "gfx/leaders/WES/WES_Abdelaziz.tga"
+							expire = "1965.06.01.01"
+							ideology = marxism
+							traits = {
+							}
+						}
+					}
+					MRT = {
+						set_politics = {
+							ruling_party = stratocratic
+						}
+						set_cosmetic_tag = MRT_1992
+						set_popularities = {
+							stratocratic = 100
+						}
+					}
+					WES = {
+						create_country_leader = {
+							name = "Raʾīs wa Wazīr al-Awwal Muʿāwiya walad Sayyidī Aḥmad al-Ṭāyaʿ"
+							desc = ""
+							picture = "gfx/leaders/MRT/MRT_Maaouya.tga"
+							expire = "1965.06.01.01"
+							ideology = militarism
+							traits = {
+							}
+						}
 					}
 					EGY = {
 						set_cosmetic_tag = EGY_2024
@@ -18353,18 +18461,6 @@
 							ruling_party = neutrality
 						}
 					}
-					ALG = {
-						set_cosmetic_tag = ALG_1992
-						set_politics = {
-							ruling_party = anocratic_republic
-						}
-					}
-					MOR = {
-						drop_cosmetic_tag = yes
-						set_politics = {
-							ruling_party = conservative_monarchism
-						}
-					}
 					LES = {
 						set_cosmetic_tag = LES_1992
 						set_politics = {
@@ -18506,12 +18602,6 @@
 						set_cosmetic_tag = GAM_1992
 						set_politics = {
 							ruling_party = neutrality
-						}
-					}
-					MRT = {
-						set_cosmetic_tag = MRT_1992
-						set_politics = {
-							ruling_party = anocratic_republic
 						}
 					}
 					every_state = {
@@ -28918,7 +29008,7 @@
 					}
 					MOR = {
 						create_country_leader = {
-							name = "Malik Muḥammad VI bin al-Ḥasan al-Ṯānī al-ʿAlawī"
+							name = "Malik Muḥammad VI bin al-Ḥasan II al-ʿAlawī"
 							desc = ""
 							picture = "gfx/leaders/MOR/MOR_Mohammed.tga"
 							expire = "1965.06.01.01"
