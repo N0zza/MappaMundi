@@ -7218,123 +7218,6 @@
 						}
 						do_german_renames = yes
 					}
-					
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = AUS
-								is_core_of = CZC
-								is_core_of = GAL
-								AND = {
-									is_core_of = DLM
-									NOT = {
-										state = 802
-									}
-								}
-								is_core_of = TYR
-								is_core_of = IST
-								is_core_of = SLV
-							}
-						}
-						AUS = {
-							transfer_state = PREV
-							add_state_core = PREV
-						}
-					}
-					
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = SLO
-								is_core_of = TRA
-								is_core_of = VJD
-								is_core_of = SVA
-								is_core_of = BRG
-								state = 804
-								state = 807
-								state = 5931
-								state = 18253
-							}
-						}
-						HUN = {
-							transfer_state = PREV
-							add_state_core = PREV
-						}
-					}
-					
-					every_state = {
-						limit = {
-							OR = {
-								is_core_of = BOS
-							}
-							NOT = {
-								is_owned_by = HUN
-								is_owned_by = AUS
-							}
-						}
-						BOS = {
-							transfer_state = PREV
-							add_state_core = PREV
-						}
-					}
-					
-					every_state = {
-						limit = {
-							OR = {
-								AND = {
-									is_core_of = CRO
-									is_owned_by = HUN
-									NOT = {
-										state = 818
-										state = 2209
-										state = 7365
-									}
-								}
-								state = 814
-								state = 7377
-								state = 7378
-								state = 7620
-							}
-						}
-						CRO = {
-							transfer_state = PREV
-							add_state_core = PREV
-						}
-					}
-					
-					every_state = {
-						limit = {
-							OR = {
-								AND = {
-									is_core_of = GAL
-									is_owned_by = AUS
-									NOT = {
-										is_core_of = BKV
-									}
-								}
-								state = 3326
-							}
-						}
-						GAL = {
-							transfer_state = PREV
-							add_state_core = PREV
-						}
-					}
-					every_state = {
-						limit = {
-							OR = {
-								AND = {
-									is_core_of = FIU
-									is_owned_by = CRO
-								}
-								state = 5937
-							}
-						}
-						HUN = {
-							transfer_state = PREV
-							add_state_core = PREV
-						}
-					}
 					every_state = {
 						limit = {
 							is_core_of = LIE
@@ -7408,10 +7291,7 @@
 							transfer_state = 7342
 							transfer_state = 7626
 							transfer_state = 7627
-							set_politics = {
-								ruling_party = conservative_monarchism
 						}
-					}
 						RUS = {
 							transfer_state = 10589
 							transfer_state = 2118
@@ -7497,21 +7377,6 @@
 							ruling_party = authoritarian_monarchism
 						}
 					}
-					TUR = {
-						transfer_state = 2202
-						transfer_state = 2203
-						transfer_state = 2204
-						transfer_state = 5911
-						transfer_state = 14440
-						transfer_state = 4209
-						transfer_state = 19842
-						set_capital = {
-							state = 341
-						}
-						set_politics = {
-							ruling_party = monarchism
-						}
-					}
 					PER = {
 						transfer_state = 12784
 						transfer_state = 19843
@@ -7529,18 +7394,6 @@
 					}
 					LIE = {
 						transfer_state = 11056
-					}
-					MLT = {
-						set_cosmetic_tag = MLT_ENG
-						set_politics = {
-								ruling_party = authoritarian_monarchism
-						}
-					}
-					CYP = {
-						set_cosmetic_tag = CYP_ENG
-						set_politics = {
-							ruling_party = authoritarian_monarchism
-						}
 					}
 					every_state = {
 						limit = {
@@ -7581,9 +7434,6 @@
 					transfer_state = PREV
 				}
 			}
-			ENG = {
-				set_cosmetic_tag = BRIT
-			}
 			SPR = {
 				set_politics = {
 					ruling_party = authoritarian_monarchism
@@ -7620,9 +7470,7 @@
 			}
 			every_country = {
 				limit = {
-					tag = RIF
-					tag = WES
-					tag = EQG
+					has_cosmetic_tag = SPR_YELLOW
 				}
 				set_cosmetic_tag = SPR_KINGDOM
 			}
@@ -7659,6 +7507,7 @@
 				}
 			}
 			BRA = {
+				drop_cosmetic_tag = yes
 				set_popularities = {
 					anocratic_republic = 100
 				}
@@ -7802,6 +7651,15 @@
 					}
 				}
 			}
+			PHI = {
+				set_cosmetic_tag = PHI_1914
+				set_popularities = {
+					neutrality = 100
+				}
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
 			AST = {
 				create_country_leader = {
 					name = "Governor-General Ronald Craufurd Munro Ferguson, 1st Viscount Novar"
@@ -7840,6 +7698,29 @@
 					name = "Amtierender Gouverneur Johann Karl Emil Eduard Haber"
 					desc = ""
 					picture = "gfx/leaders/To_be_added.dds"
+					expire = "1965.06.01.01"
+					ideology = stratmon
+					traits = {
+					}
+				}
+			}
+			SAM = {
+				set_cosmetic_tag = GREY_GER3
+				set_popularities = {
+					stratocratic_monarchism = 100
+				}
+				set_politics = {
+					ruling_party = stratocratic_monarchism
+				}
+				set_party_name = {
+					ideology = stratocratic_monarchism
+					name = SAM_stratocratic_monarchism_1914_party
+					long_name = SAM_stratocratic_monarchism_1914_party_long
+				}
+				create_country_leader = {
+					name = "Gouverneur Erich Bernhard Theodor Schultz-Ewerth"
+					desc = ""
+					picture = "gfx/leaders/SAM/Portrait_Erich_Schultz_Ewerth.dds"
 					expire = "1965.06.01.01"
 					ideology = stratmon
 					traits = {
@@ -8781,26 +8662,6 @@
 					add_state_core = PREV
 					}
 				}
-			every_state = {
-				limit = {
-					is_owned_by = HJZ
-					NOT = {
-					is_owned_by = TUR
-					}
-				}
-				SAU = {
-					transfer_state = PREV
-					}
-			}
-			SAU = {
-				transfer_state = 3273
-				transfer_state = 9094
-				transfer_state = 17406
-				transfer_state = 17407
-				set_politics = {
-					ruling_party = conservative_monarchism
-				}
-			}
 			GER = {
 				transfer_state = 1481
 				transfer_state = 11058
@@ -9345,7 +9206,7 @@
 								is_owned_by = NGR
 								is_owned_by = CMR
 								is_owned_by = CYR
-								is_owned_by = RCG
+								is_core_of = RCG
 							}
 						}
 						CAR = {
@@ -9454,9 +9315,6 @@
 							transfer_state = 9348
 							transfer_state = 1688
 							transfer_state = 2110
-						}
-						BRA = {
-							drop_cosmetic_tag = yes
 						}
 						BOL = {
 							transfer_state = 10595
@@ -9991,7 +9849,10 @@
 						every_state = {
 							limit = {
 								NOT = {
-									is_owned_by = GER
+									OR = {
+										is_owned_by = GER
+										is_core_of = AUS
+									}
 								}
 							}
 							GER = {
@@ -10269,6 +10130,28 @@
 						}
 					}
 					AUS = {
+						every_state = {
+							limit = {
+								OR = {
+									is_core_of = AUS
+									is_core_of = CZC
+									is_core_of = GAL
+									AND = {
+										is_core_of = DLM
+										NOT = {
+											state = 802
+										}
+									}
+									is_core_of = TYR
+									is_core_of = IST
+									is_core_of = SLV
+								}
+							}
+							AUS = {
+								transfer_state = PREV
+								add_state_core = PREV
+							}
+						}
 						set_cosmetic_tag = AUS_1914
 						add_victory_points = {
 							province = 13424
@@ -10406,6 +10289,27 @@
 						}
 					}
 					HUN = {
+						every_state = {
+							limit = {
+								OR = {
+									is_core_of = SLO
+									is_core_of = TRA
+									is_core_of = VJD
+									is_core_of = SVA
+									is_core_of = BRG
+									is_core_of = FIU
+									state = 804
+									state = 807
+									state = 5931
+									state = 18253
+									state = 20209
+								}
+							}
+							HUN = {
+								transfer_state = PREV
+								add_state_core = PREV
+							}
+						}
 						set_cosmetic_tag = HUN_1914
 						add_victory_points = {
 							province = 9660
@@ -10600,6 +10504,32 @@
 						}
 					}
 					CRO = {
+						every_state = {
+							limit = {
+								OR = {
+									AND = {
+										is_core_of = CRO
+										is_owned_by = HUN
+										NOT = {
+											is_core_of = FIU
+											state = 818
+											state = 2209
+											state = 7365
+										}
+									}
+									state = 814
+									state = 7376
+									state = 7377
+									state = 7378
+									state = 7620
+									state = 20143
+								}
+							}
+							CRO = {
+								transfer_state = PREV
+								add_state_core = PREV
+							}
+						}
 						set_politics = {
 							ruling_party = conservative_monarchism
 						}
@@ -10661,8 +10591,27 @@
 						}
 					}
 					BOS = {
-						transfer_state = 2289
-						transfer_state = 7343
+						every_state = {
+							limit = {
+								OR = {
+									AND = {
+										OR = {
+											is_core_of = BOS
+										}
+										NOT = {
+											is_owned_by = HUN
+											is_owned_by = AUS
+										}
+									}
+									state = 2289
+									state = 7343
+								}
+							}
+							BOS = {
+								transfer_state = PREV
+								add_state_core = PREV
+							}
+						}
 						set_cosmetic_tag = BOS_1914
 						set_politics = {
 							ruling_party = authoritarian_monarchism
@@ -10739,7 +10688,24 @@
 						}
 					}
 					GAL = {
-						set_cosmetic_tag = GAL_1914
+						every_state = {
+							limit = {
+								OR = {
+									AND = {
+										is_core_of = GAL
+										is_owned_by = AUS
+										NOT = {
+											is_core_of = BKV
+										}
+									}
+									state = 3326
+								}
+							}
+							GAL = {
+								transfer_state = PREV
+								add_state_core = PREV
+							}
+						}
 						set_capital = { 
 							state = 91
 							remember_old_capital = no
@@ -10748,6 +10714,7 @@
 							province = 11479
 							value = 5
 						}
+						set_cosmetic_tag = GAL_1914
 						set_politics = {
 							ruling_party = authoritarian_monarchism
 						}
@@ -11777,26 +11744,45 @@
 						}
 					}
 					TUR = {
-						transfer_state = 2333
-						transfer_state = 3356
-						transfer_state = 4383
-						transfer_state = 9395
-						transfer_state = 9871
-						transfer_state = 12780
-						transfer_state = 12781
-						transfer_state = 20106
-						transfer_state = 20616
-						set_cosmetic_tag = OTTO
-						every_owned_state = {
-							do_ottoman_renames = yes
-							do_turkish_renames = yes
+						every_state = {
+							limit = {
+								OR = {
+									state = 2202
+									state = 2203
+									state = 2204
+									state = 2333
+									state = 3356
+									state = 4209
+									state = 4383
+									state = 5911
+									state = 9395
+									state = 9871
+									state = 14440
+									state = 19842
+									state = 12780
+									state = 12781
+									state = 20106
+									state = 20616
+								}
+							}
+							TUR = {
+								transfer_state = PREV
+							}
 						}
-						set_politics = {
-							ruling_party = authoritarian_monarchism
+						set_capital = {
+							state = 341
 						}
 						add_victory_points = {
 							province = 9833
 							value = 30
+						}
+						every_owned_state = {
+							do_ottoman_renames = yes
+							do_turkish_renames = yes
+						}
+						set_cosmetic_tag = OTTO
+						set_politics = {
+							ruling_party = authoritarian_monarchism
 						}
 						set_popularities = {
 							communism = 2
@@ -11869,6 +11855,37 @@
 					}
 					BHR = {
 						transfer_state = 19811
+					}
+					SAU = {
+						every_state = {
+							limit = {
+								OR = {
+									AND = {
+										is_owned_by = HJZ
+										NOT = {
+											is_owned_by = TUR
+										}
+									}
+									state = 3273
+									state = 9094
+									state = 17406
+									state = 17407
+								}
+							}
+							SAU = {
+								transfer_state = PREV
+							}
+						}
+						set_cosmetic_tag = SAU_1914
+						create_country_leader = {
+							name = "Malik ʿAbd ul-ʿAzīz bin ʿAbd ar-Raḥman bin Fayṣal as-Saʿūd "
+							desc = ""
+							picture = "gfx/leaders/SAU/Portrait_Saudi_Arabia_Abdulazis_Ibn_Saud_1914.dds"
+							expire = "1965.1.1"
+							ideology = absolutism
+							traits = {
+							}
+						}
 					}
 					DDO = {
 						set_cosmetic_tag = DDO_1914
