@@ -3686,6 +3686,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = MAL
+				has_government = national_conservative_monarchism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Perdana Menteri Mahathir bin Mohamad"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MAL
 				has_government = democratic_monarchism
 				has_start_date > 2022.01.01
 			}
@@ -9310,11 +9321,12 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = MAL
-				has_government = democratic_monarchism
-				has_start_date > 2022.01.01
+				has_government = national_conservative_monarchism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
 			}
 		}
-		localization_key = "GFX_Anwar_Ibrahim"
+		localization_key = "GFX_Mahathir_Mohamad"
 	}
 	text = {
 		trigger = {

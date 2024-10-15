@@ -18360,7 +18360,7 @@
 							long_name = SAF_anocratic_republic_1992_party_long
 						}
 						set_popularities = {
-							democratic = 20
+							national_conservative_republic = 20
 							anocratic_republic = 57
 							neutrality = 23
 						}
@@ -18872,8 +18872,8 @@
 						transfer_state = 17513
 						set_cosmetic_tag = JOR_1992
 						set_popularities = {
-							anocratic_monarchism = 28
-							authoritarian_monarchism = 72
+							national_conservative_monarchism = 14
+							authoritarian_monarchism = 86
 						}
 					}
 					JOR = {
@@ -19053,13 +19053,14 @@
 							ruling_party = centrist_republic
 						}
 						set_popularities = {
-							vanguardism = 6
-							communism = 4
-							socialism_ideology = 27
-							liberal_republic = 6
-							centrist_republic = 38
-							democratic = 18
-							anocratic_republic = 1
+							vanguardism = 4
+							communism = 7
+							socialism_ideology = 4
+							liberal_republic = 11
+							centrist_republic = 43
+							democratic = 4
+							national_conservative_republic = 22
+							anocratic_republic = 5
 						}
 					}
 					IND = {
@@ -19069,6 +19070,29 @@
 							picture = "gfx/leaders/India/IND_Venkataraman.tga"
 							expire = "1965.06.01.01"
 							ideology = cenrep
+						}
+					}
+					PAK = {
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+						set_cosmetic_tag = PAK_1992
+						set_popularities = {
+							socialism_ideology = 24
+							liberal_republic = 7
+							centrist_republic = 15
+							democratic = 2
+							national_conservative_republic = 3
+							anocratic_republic = 49
+						}
+					}
+					PAK = {
+						create_country_leader = {
+							name = "S̤adr Ġulām Ish̤āq K͟hān"
+							desc = ""
+							picture = "gfx/leaders/PAK/PAK_GIK.tga"
+							expire = "1965.1.1"
+							ideology = anocrep
 						}
 					}
 					BRM = {
@@ -19083,12 +19107,12 @@
 						}
 						set_cosmetic_tag = BAN_1992
 						set_popularities = {
+							vanguardism = 2
 							communism = 2
-							socialism_ideology = 28
-							liberal_republic = 2
+							socialism_ideology = 27
 							centrist_republic = 51
-							democratic = 7
-							anocratic_republic = 10
+							democratic = 11
+							national_conservative_republic = 7
 						}
 					}
 					BAN = {
@@ -19447,6 +19471,28 @@
 							picture = "gfx/leaders/IDS/IDS_Suharto.tga"
 							expire = "1965.06.01.01"
 							ideology = despotism
+						}
+					}
+					MAL = {
+						set_politics = {
+							ruling_party = national_conservative_monarchism
+						}
+						set_popularities = {
+							socialist_monarchy = 11
+							democratic_monarchism = 8
+							centrist_monarchism = 20
+							conservative_monarchism = 13
+							national_conservative_monarchism = 40
+							anocratic_monarchism = 8
+						}
+					}
+					MAL = {
+						create_country_leader = {
+							name = "Yang di-Pertuan Agong Sultan Azlan Muhibbuddin Shah ibni Almarhum Sultan Yussuff Izzuddin Shah Ghafarullahu-lah"
+							desc = ""
+							picture = "gfx/leaders/MAL/MAL_Azlan_Shah.tga"
+							expire = "1965.06.01.01"
+							ideology = natconmon
 						}
 					}
 					AST = {
