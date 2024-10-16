@@ -16537,6 +16537,10 @@
 						}
 					}
 					WGR = {
+						set_capital = {
+							state = 64
+							remember_old_capital = no
+						}
 						set_cosmetic_tag = WGR_1992
 						set_politics = {
 							ruling_party = democratic
@@ -16928,9 +16932,11 @@
 							ruling_party = socialism_ideology
 						}
 						set_popularities = {
-							socialism_ideology = 85
-							liberal_republic = 10
-							democratic = 5
+							socialism_ideology = 68
+							liberal_republic = 6
+							centrist_republic = 4
+							democratic = 18
+							national_conservative_republic = 4
 						}
 						set_party_name = {
 							ideology = vanguardism
@@ -16948,21 +16954,21 @@
 							long_name = ROM_socialism_ideology_1992_party_long
 						}
 						create_country_leader = {
-							name = "Președintele Nicolae Ceaușescu"
+							name = "Președinte Nicolae Ceaușescu"
 							desc = ""
 							picture = "gfx/leaders/ROM/Portrait_Nicolae_Ceausescu.dds"
 							expire = "1965.06.01.01"
 							ideology = totsoc
 						}
 						create_country_leader = {
-							name = "Președintele Ion Iliescu"
+							name = "Președinte Ion Iliescu"
 							desc = ""
 							picture = "gfx/leaders/ROM/Portrait_Ion_Iliescu.dds"
 							expire = "1965.06.01.01"
 							ideology = marxism
 						}
 						create_country_leader = {
-							name = "Președintele Ion Iliescu"
+							name = "Președinte Ion Iliescu"
 							desc = ""
 							picture = "gfx/leaders/ROM/Portrait_Ion_Iliescu.dds"
 							expire = "1965.06.01.01"
@@ -16971,9 +16977,26 @@
 					}
 					MOL = {
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = anocratic_republic
 						}
-						drop_cosmetic_tag = yes
+						set_party_name = {
+							ideology = anocratic_republic
+							name = MOL_anocratic_republic_1992_party
+							long_name = MOL_anocratic_republic_1992_party_long
+						}
+						set_popularities = {
+							vanguardism = 47
+							anocratic_republic = 53
+						}
+					}
+					MOL = {
+						create_country_leader = {
+							name = "Președinte Mircea Snegur"
+							desc = ""
+							picture = "gfx/leaders/MOL/MOL_Snegur.tga"
+							expire = "1965.06.01.01"
+							ideology = anocrep
+						}
 					}
 					GAU = {
 						every_state = {
@@ -17003,11 +17026,11 @@
 							long_name = TUR_democratic_1992_party_long
 						}
 						set_popularities = {
+							communism = 2
 							socialism_ideology = 19
-							liberal_republic = 2
 							centrist_republic = 26
 							democratic = 39
-							anocratic_republic = 14
+							national_conservative_republic = 14
 						}
 					}
 					TUR = {
@@ -17151,19 +17174,20 @@
 					}
 					CRO = {
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = national_conservative_republic
 						}
 						set_popularities = {
-							vanguardism = 31
-							communism = 2
-							socialism_ideology = 2
-							liberal_republic = 2
+							vanguardism = 20
+							communism = 6
+							socialism_ideology = 1
+							liberal_republic = 3
 							centrist_republic = 4
-							democratic = 58
-							anocratic_republic = 1
+							democratic = 3
+							national_conservative_republic = 58
+							anocratic_republic = 5
 						}
 						set_party_name = {
-							ideology = democratic
+							ideology = national_conservative_republic
 							name = CRO_democratic_2024_party
 							long_name = CRO_democratic_2024_party_long
 						}
@@ -17172,7 +17196,7 @@
 							desc = ""
 							picture = "gfx/leaders/CRO/CRO_Tudjman.tga"
 							expire = "1965.06.01.01"
-							ideology = conservatism
+							ideology = natconrep
 						}
 					}
 					MAC = {
@@ -17212,7 +17236,7 @@
 						}
 						set_popularities = {
 							communism = 6
-							democratic = 11
+							national_conservative_republic = 11
 							anocratic_republic = 39
 							neutrality = 27
 							republican_fascism = 17
@@ -17292,14 +17316,12 @@
 							ruling_party = democratic
 						}
 						set_popularities = {
-							vanguardism = 23
-							communism = 2
+							vanguardism = 17
+							communism = 11
 							socialism_ideology = 3
-							liberal_republic = 6
-							centrist_republic = 2
-							democratic = 35
-							anocratic_republic = 18
-							neutrality = 11
+							democratic = 59
+							national_conservative_republic = 8
+							anocratic_republic = 2
 						}
 						set_party_name = {
 							ideology = democratic
@@ -19016,6 +19038,10 @@
 							ideology = anocrep
 						}
 					}
+					set_victory_points = {
+						province = 7234
+						value = 1
+					}
 					SLE = {
 						transfer_state = 17401
 						transfer_state = 17402
@@ -19732,6 +19758,34 @@
 						}
 						drop_cosmetic_tag = yes
 					}
+					every_state = { 
+						limit = { 
+							OR = {
+								is_owned_by = OMA
+								is_owned_by = YEM
+								is_owned_by = SAU
+								is_owned_by = UAE
+								is_owned_by = QAT
+								is_owned_by = BHR
+								is_owned_by = KUW
+								is_owned_by = IRQ
+								is_owned_by = JOR
+								is_owned_by = PAL
+								is_owned_by = SYR
+								is_owned_by = LEB
+								is_owned_by = SLE
+								is_owned_by = EGY
+								is_owned_by = SUD
+								is_owned_by = LBA
+								is_owned_by = TUN
+								is_owned_by = ALG
+								is_owned_by = MOR
+								is_owned_by = WES
+								is_owned_by = MRT
+							}
+						}
+						do_standard_arabic_renames = yes
+					}
 					### NORTH AMERICA 1992 ###
 					every_state = {
 						limit = {
@@ -19891,11 +19945,72 @@
 							ruling_party = democratic
 						}
 						set_popularities = {
-							communism = 2
+							vanguardism = 1
+							communism = 1
 							socialism_ideology = 19
-							liberal_republic = 12
-							centrist_republic = 33
-							democratic = 34
+							liberal_republic = 9
+							centrist_republic = 32
+							democratic = 38
+						}
+					}
+					BRA = {
+						create_country_leader = {
+							name = "Presidente Fernando Affonso Collor de Mello"
+							desc = ""
+							picture = "gfx/leaders/BRA/BRA_Mello.tga"
+							expire = "1965.06.01.01"
+							ideology = conservatism
+						}
+					}
+					CHL = {
+						set_party_name = {
+							ideology = anocratic_republic
+							name = CHL_anocratic_republic_1992_party
+							long_name = CHL_anocratic_republic_1992_party_long
+						}
+						set_popularities = {
+							communism = 1
+							liberal_republic = 13
+							democratic = 15
+							national_conservative_republic = 5
+							anocratic_republic = 66
+						}
+					}
+					CHL = {
+						create_country_leader = {
+							name = "Presidente Patricio Aylwin Azócar"
+							desc = ""
+							picture = "gfx/leaders/CHL/CHL_Aylwin.tga"
+							expire = "1965.06.01.01"
+							ideology = anocrep
+						}
+					}
+					ARG = {
+						set_politics = {
+							ruling_party = democratic
+						}
+						set_cosmetic_tag = ARG_1992
+						set_party_name = {
+							ideology = democratic
+							name = ARG_democratic_1992_party
+							long_name = ARG_democratic_1992_party_long
+						}
+						set_popularities = {
+							socialism_ideology = 1
+							liberal_republic = 37
+							centrist_republic = 3
+							democratic = 51
+							national_conservative_republic = 7
+							republican_fascism = 1
+						}
+					}
+					ARG = {
+						create_country_leader = {
+							name = "Presidente Carlos Saúl Menem Akil"
+							desc = ""
+							picture = "gfx/leaders/ARG/ARG_Menem.tga"
+							expire = "1965.06.01.01"
+							ideology = conservatism
 						}
 					}
 					### OTHER STUFF 1992 ###
