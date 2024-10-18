@@ -16640,13 +16640,13 @@
 					AUS = {
 						set_cosmetic_tag = AUS_1992
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = socialism_ideology
 						}
 						set_popularities = {
 							socialism_ideology = 43
 							democratic = 34
-							liberal_republic = 18
-							centrist_republic = 5
+							national_conservative_republic = 18
+							liberal_republic = 5
 						}
 						set_party_name = {
 							ideology = socialism_ideology
@@ -16659,19 +16659,19 @@
 							long_name = AUS_1992_liberal_republic_party_long
 						}
 						set_party_name = {
-							ideology = centrist_republic
-							name = AUS_1992_centrist_republic_party
-							long_name = AUS_1992_centrist_republic_party_long
-						}
-						set_party_name = {
 							ideology = centrist_monarchism
 							name = AUS_1992_centrist_monarchism_party
 							long_name = AUS_1992_centrist_monarchism_party_long
 						}
 						set_party_name = {
 							ideology = democratic
-							name = AUS_2024_democratic_party
-							long_name = AUS_2024_democratic_party_long
+							name = AUS_democratic_2024_party
+							long_name = AUS_democratic_2024_party_long
+						}
+						set_party_name = {
+							ideology = national_conservative_republic
+							name = AUS_1992_national_conservative_republic_party
+							long_name = AUS_1992_national_conservative_republic_long
 						}
 						set_party_name = {
 							ideology = conservative_monarchism
@@ -16704,7 +16704,7 @@
 							desc = ""
 							picture = "gfx/leaders/AUS/Portrait_Kurt_Waldheim.dds"
 							expire = "1965.06.01.01"
-							ideology = conservatism
+							ideology = demsoc
 						}
 						create_country_leader = {
 							name = "Kaiser Franz Joseph II von Habsburg-Lothringen "
@@ -17006,6 +17006,7 @@
 						set_politics = {
 							ruling_party = anocratic_republic
 						}
+						drop_cosmetic_tag = yes
 						set_party_name = {
 							ideology = anocratic_republic
 							name = MOL_anocratic_republic_1992_party
@@ -17229,27 +17230,28 @@
 					MAC = {
 						set_cosmetic_tag = MAC_1992
 						set_politics = {
-							ruling_party = democratic
+							ruling_party = national_conservative_republic
 						}
 						set_party_name = {
-							ideology = democratic
-							name = MAC_democratic_1992_party
-							long_name = MAC_democratic_1992_party_long
+							ideology = national_conservative_republic
+							name = MAC_national_conservative_republic_2024_party
+							long_name = MAC_national_conservative_republic_2024_party_long
 						}
 						set_popularities = {
-							vanguardism = 26
+							vanguardism = 2
 							communism = 4
-							socialism_ideology = 3
-							liberal_republic = 5
-							centrist_republic = 30
-							democratic = 32
+							socialism_ideology = 26
+							liberal_republic = 1
+							centrist_republic = 21
+							democratic = 14
+							national_conservative_republic = 32
 						}
 						create_country_leader = {
 							name = "Predsedatel Kiro Gligorov"
 							desc = ""
 							picture = "gfx/leaders/MAC/MAC_Gligorov.tga"
 							expire = "1965.06.01.01"
-							ideology = conservatism
+							ideology = natconrep
 						}
 					}
 					add_victory_points = {

@@ -993,6 +993,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = AUS
+				has_government = socialism_ideology
+				has_start_date > 1900.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Bundeskanzler Franz Vranitzsky"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
 				OR = {
 					has_government = national_conservative_republic
 					has_government = anocratic_republic
@@ -3930,7 +3941,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = MAC
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 1992.01.01
 				has_start_date < 2000.01.01
 			}
@@ -6055,6 +6066,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Leopold_Figl"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = AUS
+				has_government = socialism_ideology
+				has_start_date > 1900.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Franz_Vranitzsky"
 	}
 	text = {
 		trigger = {
@@ -9589,7 +9611,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = MAC
-				has_government = democratic
+				has_government = national_conservative_republic
 				has_start_date > 1992.01.01
 				has_start_date < 2000.01.01
 			}
