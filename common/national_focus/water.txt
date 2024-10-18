@@ -19263,6 +19263,97 @@
 							ideology = despotism
 						}
 					}
+					BRM = {
+						set_politics = {
+							ruling_party = stratocratic
+						}
+						set_cosmetic_tag = BRM_1992
+						set_party_name = {
+							ideology = stratocratic
+							name = BRM_stratocratic_2024_party
+							long_name = BRM_stratocratic_2024_party_long
+						}
+						set_popularities = {
+							stratocratic = 100
+						}
+					}
+					BRM = {
+						create_country_leader = {
+							name = "Navata Ukkaṭṭhanhaṅʻʹ Vanʻkrīʺkhyupʻ Co Moṅʻ"
+							desc = ""
+							picture = "gfx/leaders/BRM/BRM_Saw_Maung.tga"
+							expire = "1965.06.01.01"
+							ideology = militarism
+						}
+					}
+					SIA = {
+						set_cosmetic_tag = SIA_1992
+						set_party_name = {
+							ideology = stratocratic_monarchism
+							name = SIA_stratocratic_monarchism_1992_party
+							long_name = SIA_stratocratic_monarchism_1992_party_long
+						}
+					}
+					SIA = {
+						create_country_leader = {
+							name = "Phrabāt Somdet Phra Praminthǭn Mahā Phūmipl Ǭdunyadēt Mahitlāthibēt Rarāmāthipdī Čhakrī Nripdinthǭn Sayāmintharāthirāt Bǭnmanātbaphit"
+							desc = ""
+							picture = "gfx/leaders/SIA/SIA_Bhumibol_Adulyadej.tga"
+							expire = "1965.06.01.01"
+							ideology = stratmon
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = TKI
+								is_owned_by = ANN
+								is_owned_by = CCH
+								is_owned_by = IDC
+							}
+						}
+						transfer_state_to = NVI
+						do_vietnamese_renames = yes
+						do_northvietnamese_renames = yes
+					}
+					NVI = {
+						set_politics = {
+							ruling_party = vanguardism
+						}
+						set_popularities = {
+							vanguardism = 100
+						}
+					}
+					LAO = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = vanguardism
+						}
+						set_popularities = {
+							vanguardism = 82
+							neutrality = 18
+						}
+						every_owned_state = {
+							do_lao_renames = yes
+						}
+					}
+					CAM = {
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+						set_cosmetic_tag = CAM_1992
+						every_owned_state = {
+							do_khmer_renames = yes
+						}
+						set_party_name = {
+							ideology = anocratic_republic
+							name = CAM_authoritarian_monarchism_2024_party
+							long_name = CAM_authoritarian_monarchism_2024_party_long
+						}
+						set_popularities = {
+							anocratic_republic = 100
+						}
+					}
 					PRC = {
 						transfer_state = 1007
 						transfer_state = 1319
@@ -19539,13 +19630,23 @@
 							anocratic_monarchism = 8
 						}
 					}
-					MAL = {
+					SGP = {
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+						set_popularities = {
+							socialism_ideology = 1
+							liberal_republic = 4
+							anocratic_republic = 95 
+						}
+					}
+					SGP = {
 						create_country_leader = {
-							name = "Yang di-Pertuan Agong Sultan Azlan Muhibbuddin Shah ibni Almarhum Sultan Yussuff Izzuddin Shah Ghafarullahu-lah"
+							name = "President Wee Kim Wee"
 							desc = ""
-							picture = "gfx/leaders/MAL/MAL_Azlan_Shah.tga"
+							picture = "gfx/leaders/SGP/SGP_Wee.tga"
 							expire = "1965.06.01.01"
-							ideology = natconmon
+							ideology = anocrep
 						}
 					}
 					AST = {
@@ -24621,7 +24722,8 @@
 							ruling_party = vanguardism
 						}
 						set_popularities = {
-							vanguardism = 100
+							vanguardism = 96
+							neutrality = 4
 						}
 						every_owned_state = {
 							do_lao_renames = yes

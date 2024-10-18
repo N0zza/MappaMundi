@@ -3668,17 +3668,30 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SIA
+				has_government = stratocratic_monarchism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Nāyok Ratthamontrī `Ānan Panyānchun"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SIA
 				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
-		localization_key = "Nāyok Ratthamontrī Settha Thawisin"
+		localization_key = "Nāyok Ratthamontrī Sēnsathā Thawīsin"
 	}
 	text = {
 		trigger = {
 			AND = {
 				tag = SIA
 				has_government = stratocratic_monarchism
+				has_start_date > 1936.01.01
+				has_start_date < 1939.01.01
 			}
 		}
 		localization_key = "Nāyok Ratthamontrī Phrayā Ploplopyuhasēnā"
@@ -3713,6 +3726,17 @@ defined_text = {
 			}
 		}
 		localization_key = "Perdana Menteri Anwar bin Ibrahim"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SGP
+				has_government = anocratic_republic
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "Prime Minister Goh Chok Tong"
 	}
 	text = {
 		trigger = {
@@ -9313,6 +9337,17 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = SIA
+				has_government = stratocratic_monarchism
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Anand_Panyarachun"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SIA
 				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
@@ -9324,7 +9359,8 @@ defined_text = {
 			AND = {
 				tag = SIA
 				has_government = stratocratic_monarchism
-				has_start_date < 2022.01.01
+				has_start_date > 1936.01.01
+				has_start_date < 1939.01.01
 			}
 		}
 		localization_key = "GFX_Phraya_Phahon"
@@ -9349,6 +9385,17 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Mahathir_Mohamad"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = SGP
+				has_government = anocratic_republic
+				has_start_date > 1990.01.01
+				has_start_date < 2000.01.01
+			}
+		}
+		localization_key = "GFX_Goh_Chok_Tong"
 	}
 	text = {
 		trigger = {

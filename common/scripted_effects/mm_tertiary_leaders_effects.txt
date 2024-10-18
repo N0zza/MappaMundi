@@ -135,16 +135,6 @@ tertiary_leader_enabled_effect = {
 	else_if = {
 		limit = {
 			AND = {
-				tag = SIA
-				has_government = stratocratic_monarchism
-				has_start_date < 2022.01.01
-			}
-		}
-		set_country_flag = has_tertiary_leader
-	}
-	else_if = {
-		limit = {
-			AND = {
 				tag = BOS
 				has_government = anocratic_republic
 				has_start_date > 2022.01.01
@@ -300,7 +290,7 @@ tertiary_leader_enabled_effect = {
 				OR = {
 					AND = {
 						has_government = stratocratic_monarchism
-						has_start_date < 2022.01.01
+						has_start_date < 1939.01.01
 					}
 				}
 			}
