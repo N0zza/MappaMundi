@@ -4839,3 +4839,29 @@ country_event = {
 		}
 	}
 }
+country_event = { #Set all VPs to Zero
+    id = mm.VPzero
+    title = "Remove VPs"
+    desc = "This event allows you to set the vp of every state in the world to zero!"
+    fire_only_once = yes
+    is_triggered_only = yes    
+    
+    option = { #Accept
+        name = "Let's do this!" 
+        ai_chance = {
+            factor = 0
+            }
+                hidden_effect = {
+                    every_state = {
+                           set_victory_points  = 0
+                        }            
+                    }
+        }
+    option = { #Reject
+        name = "I've changed my mind!"
+        ai_chance = {
+            factor = 100
+            }
+
+        }        
+    }
