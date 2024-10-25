@@ -17415,6 +17415,7 @@
 						transfer_state = 15055
 						transfer_state = 15056
 						transfer_state = 17313
+						transfer_state = 19130
 						transfer_state = 19131
 						every_owned_state = {
 							do_russian_renames = yes
@@ -18556,6 +18557,7 @@
 						transfer_state = 1502
 						transfer_state = 6076
 						transfer_state = 6478
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = socialism_ideology
 						}
@@ -18566,8 +18568,12 @@
 						}
 					}
 					ZIM = {
+						drop_cosmetic_tag = yes
 						set_politics = {
 							ruling_party = neutrality
+						}
+						every_owned_state = {
+							do_postcolonial_african_renames = yes
 						}
 						set_popularities = {
 							communism = 1
@@ -18690,7 +18696,15 @@
 							neutrality = 100
 						}
 					}
+					add_victory_points = {
+						province = 3854
+						value = 25
+					}
 					UGA = {
+						set_capital = {
+							state = 548
+							remember_old_capital = no
+						}
 						set_politics = {
 							ruling_party = vanguardism
 						}
@@ -18799,6 +18813,10 @@
 						}
 					}
 					NGA = {
+						set_capital = {
+							state = 6714
+							remember_old_capital = no
+						}
 						set_cosmetic_tag = NGA_1992
 						set_politics = {
 							ruling_party = stratocratic
@@ -18900,6 +18918,9 @@
 						set_cosmetic_tag = VOL_1992
 						set_politics = {
 							ruling_party = neutrality
+						}
+						set_popularities = {
+							neutrality = 100
 						}
 					}
 					SIE = {
@@ -20465,6 +20486,229 @@
 							picture = "gfx/leaders/ARG/ARG_Menem.tga"
 							expire = "1965.06.01.01"
 							ideology = conservatism
+						}
+					}
+					URG = {
+						set_politics = {
+							ruling_party = democratic
+						}
+						set_cosmetic_tag = URG_2024
+						set_party_name = {
+							ideology = democratic
+							name = URG_democratic_2024_party
+							long_name = URG_democratic_2024_party_long
+						}
+						set_popularities = {
+							socialism_ideology = 21
+							liberal_republic = 9
+							centrist_republic = 30
+							democratic = 40
+						}
+					}
+					URG = {
+						create_country_leader = {
+							name = "Presidente Luis Alberto Lacalle de Herrera"
+							desc = ""
+							picture = "gfx/leaders/URG/URG_Luis_Lacalle.tga"
+							expire = "1965.06.01.01"
+							ideology = conservatism
+						}
+					}
+					PAR = {
+						set_politics = {
+							ruling_party = national_conservative_republic
+						}
+						set_party_name = {
+							ideology = national_conservative_republic
+							name = PAR_national_conservative_republic_2024_party
+							long_name = PAR_national_conservative_republic_2024_party_long
+						}
+						set_popularities = {
+							communism = 1
+							socialism_ideology = 7
+							liberal_republic = 29
+							national_conservative_republic = 63
+						}
+					}
+					PAR = {
+						create_country_leader = {
+							name = "Presidente Andrés Rodríguez Pedotti"
+							desc = ""
+							picture = "gfx/leaders/PAR/PAR_Rodriguez.tga"
+							expire = "1965.06.01.01"
+							ideology = natconrep
+						}
+					}
+					BOL = {
+						set_politics = {
+							ruling_party = centrist_republic
+						}
+						set_cosmetic_tag = BOL_1992
+						set_party_name = {
+							ideology = centrist_republic
+							name = BOL_centrist_republic_1992_party
+							long_name = BOL_centrist_republic_1992_party_long
+						}
+						set_popularities = {
+							communism = 8
+							socialism_ideology = 7
+							centrist_republic = 25
+							democratic = 31
+							national_conservative_republic = 29
+						}
+					}
+					BOL = {
+						create_country_leader = {
+							name = "Presidente Jaime Paz Zamora"
+							desc = ""
+							picture = "gfx/leaders/BOL/BOL_Paz.tga"
+							expire = "1965.06.01.01"
+							ideology = cenrep
+						}
+					}
+					PRU = {
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+						set_cosmetic_tag = PRU_2024
+						set_party_name = {
+							ideology = anocratic_republic
+							name = PRU_anocratic_republic_1992_party
+							long_name = PRU_anocratic_republic_1992_party_long
+						}
+						set_popularities = {
+							communism = 13
+							socialism_ideology = 29
+							centrist_republic = 6
+							democratic = 34
+							anocratic_republic = 18
+						}
+					}
+					PRU = {
+						create_country_leader = {
+							name = "Presidente Alberto Kenya Fujimori Inomoto"
+							desc = ""
+							picture = "gfx/leaders/PRU/PRU_Fujimori.tga"
+							expire = "1965.06.01.01"
+							ideology = anocrep
+						}
+					}
+					ECU = {
+						set_politics = {
+							ruling_party = socialism_ideology
+						}
+						set_cosmetic_tag = ECU_1992
+						set_party_name = {
+							ideology = socialism_ideology
+							name = ECU_socialism_ideology_1992_party
+							long_name = ECU_socialism_ideology_1992_party_long
+						}
+						set_popularities = {
+							vanguardism = 4
+							communism = 8
+							socialism_ideology = 43
+							liberal_republic = 11
+							centrist_republic = 11
+							democratic = 11
+							national_conservative_republic = 12
+						}
+					}
+					ECU = {
+						create_country_leader = {
+							name = "Presidente Rodrigo Borja Cevallos"
+							desc = ""
+							picture = "gfx/leaders/ECU/ECU_Borja.tga"
+							expire = "1965.06.01.01"
+							ideology = demsoc
+						}
+					}
+					COL = {
+						set_popularities = {
+							communism = 11
+							socialism_ideology = 51
+							liberal_republic = 2
+							centrist_republic = 2
+							democratic = 27
+							national_conservative_republic = 7
+						}
+					}
+					COL = {
+						create_country_leader = {
+							name = "Presidente César Augusto Gaviria Trujillo"
+							desc = ""
+							picture = "gfx/leaders/COL/COL_Gaviria.tga"
+							expire = "1965.06.01.01"
+							ideology = demsoc
+						}
+					}
+					VEN = {
+						set_politics = {
+							ruling_party = anocratic_republic
+						}
+						set_cosmetic_tag = VEN_1992
+						set_popularities = {
+							communism = 10
+							socialism_ideology = 2
+							liberal_republic = 1
+							centrist_republic = 1
+							democratic = 35
+							national_conservative_republic = 3
+							anocratic_republic = 48
+						}
+					}
+					VEN = {
+						create_country_leader = {
+							name = "Presidente Carlos Andrés Pérez Rodríguez"
+							desc = ""
+							picture = "gfx/leaders/VEN/VEN_Perez.tga"
+							expire = "1965.06.01.01"
+							ideology = anocrep
+						}
+					}
+					GYA = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = communism
+						}
+						set_popularities = {
+							vanguardism = 12
+							communism = 83
+							socialism_ideology = 2
+							democratic = 3
+						}
+						set_party_name = {
+							ideology = communism
+							name = GYA_communism_1992_party
+							long_name = GYA_communism_1992_party_long
+						}
+					}
+					GYA = {
+						create_country_leader = {
+							name = "President Hugh Desmond Hoyte"
+							desc = ""
+							picture = "gfx/leaders/GYA/GYA_Hoyte.tga"
+							expire = "1965.06.01.01"
+							ideology = marxism
+						}
+					}
+					SUR = {
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = liberal_republic
+						}
+						set_popularities = {
+							communism = 23
+							liberal_republic = 59
+							democratic = 18
+						}
+					}
+					GYA = {
+						create_country_leader = {
+							name = "President Ronald Runaldo Venetiaan"
+							desc = ""
+							picture = "gfx/leaders/SUR/SUR_Venetiaan.tga"
+							expire = "1965.06.01.01"
+							ideology = liberalism
 						}
 					}
 					### OTHER STUFF 1992 ###
@@ -30758,10 +31002,6 @@
 							expire = "1965.06.01.01"
 							ideology = marxism
 						}
-					}
-					set_province_name = {
-						id = 10929
-						name = Harare
 					}
 					ZIM = {
 						drop_cosmetic_tag = yes

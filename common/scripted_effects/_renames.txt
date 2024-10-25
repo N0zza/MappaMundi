@@ -34218,7 +34218,7 @@ do_standard_arabic_renames = {
 	
 	if = {
 		limit = {
-			state = 7623
+			state = 7653
 		}
 		set_province_name = {
 			id = 16324
@@ -40217,6 +40217,16 @@ do_sinhalese_renames = {
 }
 
 do_english_renames = {
+	
+	if = {
+		limit = {
+			state = 1593
+		}		
+		set_province_name = {
+			id = 10929
+			name = "Salisbury"
+		}
+	}
 
 	if = {
 		limit = {
@@ -90507,7 +90517,7 @@ do_french_renames = {
 	
 	if = {
 		limit = {
-			state = 7623
+			state = 7653
 		}
 		set_province_name = {
 			id = 16324
@@ -94105,6 +94115,15 @@ do_indonesian_renames = {
 	}
 }
 do_postcolonial_african_renames = {
+	if = {
+		limit = {
+			state = 1593
+		}		
+		set_province_name = {
+			id = 10929
+			name = "Harare"
+		}
+	}
 	if = {
 		limit = {
 			state = 10028
