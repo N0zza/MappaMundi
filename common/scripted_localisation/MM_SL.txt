@@ -175,7 +175,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TON
-				has_government = authoritarian_monarchism
+				has_government = monarchism
 				has_start_date < 1937.01.01
 				has_start_date > 1935.01.01
 			}
@@ -186,7 +186,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TON
-				has_government = centrist_monarchism
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -5461,7 +5461,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TON
-				has_government = authoritarian_monarchism
+				has_government = monarchism
 				has_start_date < 1937.01.01
 				has_start_date > 1935.01.01
 			}
@@ -5472,7 +5472,7 @@ defined_text = {
 		trigger = {
 			AND = {
 				tag = TON
-				has_government = centrist_monarchism
+				has_government = anocratic_monarchism
 				has_start_date > 2022.01.01
 			}
 		}
@@ -9407,6 +9407,16 @@ defined_text = {
 			}
 		}
 		localization_key = "GFX_Mahathir_Mohamad"
+	}
+	text = {
+		trigger = {
+			AND = {
+				tag = MAL
+				has_government = democratic_monarchism
+				has_start_date > 2022.01.01
+			}
+		}
+		localization_key = "GFX_Anwar_Ibrahim"
 	}
 	text = {
 		trigger = {
