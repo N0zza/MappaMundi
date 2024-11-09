@@ -41,106 +41,6 @@ bookmarks = {
 		"---"={
 			history = "OTHER_MM_BOOKMARK_DESC"
 		}
-		"CHI"={
-			minor = yes
-			history = "CHI_GATHERING_STORM_DESC"
-			ideology = neutrality
-		}
-		"AST"={
-			minor = yes
-			history = "AST_GATHERING_STORM_DESC"
-			ideology = conservative_monarchism
-		}
-		"CAN"={
-			minor = yes
-			history = "CAN_GATHERING_STORM_DESC"
-			ideology = democratic_monarchism
-		}
-		"NZL"={
-			minor = yes
-			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic_monarchism
-		}
-		"SAF"={
-			minor = yes
-			history = "SAF_GATHERING_STORM_DESC"
-			ideology = centrist_monarchism
-		}
-		"RAJ"={
-			minor = yes
-			history = "RAJ_GATHERING_STORM_DESC"
-			ideology = authoritarian_monarchism
-		}
-		"ITA"={
-			minor = yes
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
-		}
-		"MAN"={
-			minor = yes
-			history = "MAN_GATHERING_STORM_DESC"
-			ideology = stratocratic_monarchism
-		}
-		"POL"={
-			minor = yes
-			history = "POL_GATHERING_STORM_DESC"
-			ideology = neutrality
-		}
-		"YUG"={
-			minor = yes
-			history = "YUG_GATHERING_STORM_DESC"
-			ideology = authoritarian_monarchism
-		}
-		"GRE"={
-			minor = yes
-			history = "GRE_GATHERING_STORM_DESC"
-			ideology = conservative_monarchism
-		}
-		"MEX"={
-			minor = yes
-			history = "MEXICO_GATHERING_STORM_DESC"
-			ideology = socialism_ideology
-		}
-		"HOL"={
-			minor = yes
-			history = "NETHERLANDS_GATHERING_STORM_DESC"
-			ideology = conservative_monarchism
-		}
-		"HUN"={
-			minor = yes
-			history = "HUN_GATHERING_STORM_DESC"
-			ideology = authoritarian_monarchism
-		}
-		"ROM"={
-			minor = yes
-			history = "ROM_GATHERING_STORM_DESC"
-			ideology = authoritarian_monarchism
-		}
-		"BUL"={
-			minor = yes
-			history = "BUL_GATHERING_STORM_DESC"
-			ideology = authoritarian_monarchism
-		}
-		"CZE"={
-			minor = yes
-			history = "CZE_GATHERING_STORM_DESC"
-			ideology = centrist_republic
-		}
-		"SPR"={
-			minor = yes
-			history = "SPAIN_GATHERING_STORM_DESC"
-			ideology = democratic
-		}
-		"POR"={
-			minor = yes
-			history = "PORTUGAL_GATHERING_STORM_DESC"
-			ideology = neutrality
-		}
-		"TUR"={
-			minor = yes
-			history = "TUR_GATHERING_STORM_DESC"
-			ideology = neutrality
-		}
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
@@ -155,7 +55,9 @@ bookmarks = {
 			clr_global_flag = startdate_blank_select
 			clr_global_flag = startdate_1992_select
 			
-			WTR = { complete_national_focus = WTR_1950_start }
+			WTR = { 
+				complete_national_focus = WTR_1950_start
+			}
 		}
 	}
 }
