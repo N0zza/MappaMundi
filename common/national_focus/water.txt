@@ -25978,17 +25978,22 @@
 					}
 				}
 				BAN = {
-					set_politics = {
-						ruling_party = neutrality
-					}
 					set_cosmetic_tag = BAN_2024
 					every_owned_state = {
 						do_indian_renames = yes
+					}
+					set_politics = {
+						ruling_party = neutrality
 					}
 					set_popularities = {
 						communism = 1
 						anocratic_republic = 4
 						neutrality = 95
+					}
+					set_party_name = {
+						ideology = anocratic_republic
+						name = BAN_anocratic_republic_2024_party
+						long_name = BAN_anocratic_republic_2024_party_long
 					}
 					set_party_name = {
 						ideology = neutrality
