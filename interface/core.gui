@@ -82,15 +82,16 @@ guiTypes = {
 		maxHeight = 256
 	}
 
+	# Offset by +4 +4 because GUI has layout depending on it.
 	containerWindowType = {
 		name = "countryflag_entry"
-		position = { x=0 y=0}	
-		size = { width=45 height=31 }
+		position = { x=0 y=0 }
+		size = { width=47 height=32 } # Size of frame.
 		
 		buttonType = {
 			name = "flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 6 y = 6 }
+			position = { x= 7 y = 6 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -129,7 +130,8 @@ guiTypes = {
 			borderSize = {x = 12 y = 12}	
 			maxValue =1
 			minValue =0
-			stepSize =0.01
+			stepSize = 0.01
+			scroll_speed = 40
 			startValue = 0
 			horizontal = 0
 
@@ -194,17 +196,62 @@ guiTypes = {
 		guiButtonType = {
 			parent = "listboxSliderButton"
 			name = "upButton"
-			quadTextureSprite = "GFX_scroll_left"
+			quadTextureSprite = "GFX_scroll_right"
 			position = { x=0 y =0}	
 		}
 		
 		guiButtonType = {
 			parent = "listboxSliderButton"
 			name = "downButton"
-			quadTextureSprite = "GFX_scroll_right"
+			quadTextureSprite = "GFX_scroll_left"
 			position = { x=0 y =120}	
 		}
 	}
+	
+	scrollbarType = {
+			name = "right_cabinet_vertical_slider"
+			slider = "listboxSliderButton"
+			track= "listboxTrackButton"
+			leftbutton = "downButton"
+			rightbutton = "upButton"
+			size = {x =12 y =12 }
+			position = {x= -6 y =-6}
+			priority = 100
+			borderSize = {x = 12 y = 12}
+			maxValue =1
+			minValue =0
+			stepSize =0.01
+			startValue = 0
+			horizontal = 0
+
+			guiButtonType = {
+				name = "listboxSliderButton"
+				quadTextureSprite = "GFX_project_history_scroll_drager"
+				position = { x=-12 y =0}
+			}
+
+			guiButtonType = {
+				name = "listboxTrackButton"
+				quadTextureSprite = "GFX_project_history_cabinet_scrollbar"
+				position = { x=12 y =12}
+			}
+
+			guiButtonType = {
+				parent = "listboxSliderButton"
+				name = "upButton"
+				quadTextureSprite = "GFX_project_history_cabinet_scroll_arrow_up"
+				position = { x=0 y =0}
+			}
+			
+			guiButtonType = {
+				parent = "listboxSliderButton"
+				name = "downButton"
+				quadTextureSprite = "GFX_project_history_cabinet_scroll_arrow_down"
+				position = { x=0 y =120}
+			}
+	}
+
+	### Extended Scrollbar Types ###
 
 	extendedScrollbarType = {
 		name = "right_vertical_sliderno_bg"
@@ -237,29 +284,6 @@ guiTypes = {
 			name = "Increase"
 			quadTextureSprite = "GFX_scroll_down"
 			position = { x=-17 y = -19}	
-		}
-	}
-
-	extendedScrollbarType = {
-		name = "career_profile_vertical_slider"
-		position = { x = -5 y = 0 }
- 		size = { width = 13 height = 13 }
-		startValue = 0
-		orientation = upper_right
-		origo = upper_right
-		smooth_scrolling = 0.25
-		
-		slider = {
-			name = "Slider"	
-			quadTextureSprite = "GFX_profile_scroll_thumb"
-			position = { x = -3 y = 0 }
-		}
-
-		track = {
-			name = "Track"
-			quadTextureSprite = "GFX_profile_scroll_track"
-			position = { x = 3 y = 0 }
-			alwaystransparent = yes
 		}
 	}
 	
@@ -384,6 +408,28 @@ guiTypes = {
 		}
 	}
 
+	extendedScrollbarType = {
+		name = "career_profile_vertical_slider"
+		position = { x = -5 y = 0 }
+ 		size = { width = 13 height = 13 }
+		startValue = 0
+		orientation = upper_right
+		origo = upper_right
+		smooth_scrolling = 0.25
+		
+		slider = {
+			name = "Slider"	
+			quadTextureSprite = "GFX_profile_scroll_thumb"
+			position = { x = -3 y = 0 }
+		}
+
+		track = {
+			name = "Track"
+			quadTextureSprite = "GFX_profile_scroll_track"
+			position = { x = 3 y = 0 }
+			alwaystransparent = yes
+		}
+	}
 
 	scrollbarType = {
 			name = "standardtext_slider"	
@@ -485,7 +531,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "error_log_win"
-		position = { x=-150 y=-30}	
+		position = { x=-192 y=-30}	
 		Orientation = lower_right
 
 		buttonType = {
@@ -507,8 +553,7 @@ guiTypes = {
 		}
 		
 	}
-	
-	
+
 	containerWindowType = {
 		name = "slow_interface_win"
 		position = { x=-150 y=500}
@@ -527,8 +572,7 @@ guiTypes = {
 			format = left
 		}
 	}
-	
-	
+
 	containerWindowType = {
 		name = "dark_overlay"
 		position = { x = 0 y = 0 }
@@ -540,7 +584,6 @@ guiTypes = {
 			quadTextureSprite ="GFX_in_game_menu_dark_overlay"
 		}
 	}
-
 }
 
 default_clicksound = "click_default"
