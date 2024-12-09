@@ -17,9 +17,8 @@
 - don't expect every version to not be a buggy mess. as OCD-pleasing the mod may be, it's not bug-pleasing.
 ---------------
 **Credits:**
- - Faaz Noushad, Nozza, Jingo Spunk, egg138, Esotericist, Linus Tip Taps, Elizabeth Großbrandt, & al-Pioneer 
- 
- - Special thanks to some of those who have worked with us in the past, including: Gaffate, Bonkey Donk, schloky, RicardoPetro, Limfjorden, Marblistic, Zooptyx, scrylveon, ciel, birdirdirbirb, Der Hauptmann, Giannis, Exocamp, Volksmarine, MaiNai, snoekbaars, Sikyk, twotle, MihalRacovita, TrueSoviet, Holy Doggo, JoshyFlip, SamFan2, blue69982, Gindisi, Kels, and K0rhan.
+ - Faaz Noushad, Nozza, Jingo Spunk, egg138, Esotericist, Linus Tip Taps, Elizabeth Großbrandt, the_real_arma, meme_.06 & al-Pioneer 
+ - Special thanks to some of those who have worked with us in the past, including: Gaffate, Bonkey Donk, schloky, RicardoPetro, Limfjorden, Marblistic, Zooptyx, scrylveon, ciel, birdirdirbirb, Der Hauptmann, Giannis, Exocamp, Volksmarine, MaiNai, snoekbaars, Sikyk, twotle, MihalRacovita, TrueSoviet, Holy Doggo, JoshyFlip, SamFan2, blue69982, Gindisi, Kels, buildershedd and K0rhan.
  - Special thanks to gerrade for letting us build off of his mod, Beautiful States.
  - Special thanks to Cifotis and MrLukeNL for their work on the South Pacific.
  - Special thanks to ChaosRobie for his work on Antarctica.
