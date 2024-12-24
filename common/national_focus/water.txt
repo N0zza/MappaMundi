@@ -26367,40 +26367,21 @@
 						transfer_state = PREV
 					}
 				}		
-				every_state = {
-					limit = {
-						is_core_of = SR1
-					}
-					SR1 = {
-						transfer_state = PREV
-					}
-				}
-				SR1 = {
-					create_country_leader = {
-						name = "Qāʾid Muḥammad Farīd al-Qāsim"
-						desc = ""
-						picture = "gfx/leaders/SR1/SR1_Qassem.tga"
-						expire = "1965.06.01.01"
-						ideology = militarism
-					}
-				}
-				every_state = {
-					limit = {
-						is_core_of = RJV
-					}
-					RJV = {
-						transfer_state = PREV
-					}
-				}
 				RJV = {
+					every_state = {
+						limit = {
+							is_core_of = ROOT
+						}
+						ROOT = {
+							transfer_state = PREV
+						}
+					}
 					set_popularities = {
 						left_anarchism = 55
 						communism = 23
 						socialism_ideology = 2
 						liberal_republic = 20
 					}
-				}
-				RJV = {
 					create_country_leader = {
 						name = "Encûmena Rêvebir a Federaliyê"
 						desc = ""
@@ -26409,15 +26390,32 @@
 						ideology = ancom
 					}
 				}
-				every_state = {
-					limit = {
-						is_core_of = SR2
+				SR1 = {
+					every_state = {
+						limit = {
+							is_core_of = ROOT
+						}
+						ROOT = {
+							transfer_state = PREV
+						}
 					}
-					SR2 = {
-						transfer_state = PREV
+					create_country_leader = {
+						name = "Qāʾid Muḥammad Farīd al-Qāsim"
+						desc = ""
+						picture = "gfx/leaders/SR1/SR1_Qassem.tga"
+						expire = "1965.06.01.01"
+						ideology = militarism
 					}
 				}
 				SR2 = {
+					every_state = {
+						limit = {
+							is_core_of = ROOT
+						}
+						ROOT = {
+							transfer_state = PREV
+						}
+					}
 					create_country_leader = {
 						name = "Raʾīs al-Iʾitilāf al-Waṭanī as-Sūrī Hādī Muḥammad al-Baḥraẗ"
 						desc = ""
@@ -26433,15 +26431,15 @@
 						ideology = militarism
 					}
 				}
-				every_state = {
-					limit = {
-						is_core_of = SR3
-					}
-					SR3 = {
-						transfer_state = PREV
-					}
-				}
 				SR3 = {
+					every_state = {
+						limit = {
+							is_core_of = ROOT
+						}
+						ROOT = {
+							transfer_state = PREV
+						}
+					}
 					create_country_leader = {
 						name = "Raʾīs Maǧlis al-Šūri al-ʿĀm Muṣṭafaỳ al-Mūsaỳ"
 						desc = ""
