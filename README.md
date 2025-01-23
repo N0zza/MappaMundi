@@ -17,8 +17,8 @@
 - don't expect every version to not be a buggy mess. as OCD-pleasing the mod may be, it's not bug-pleasing.
 ---------------
 **Credits:**
- - Developers: Faaz Noushad, Linus Tip Taps, meme_.06, egg138, & the_real_arma
- - Special thanks to some of those who have worked with us in the past, including:  Nozza, Gaffate, Bonkey Donk, RicardoPetro, schloky, Limfjorden, Esotericist, minqoo, Marblistic, Elizabeth2683, Pioneer, Zooptyx, scrylveon, birdirdirbirb, Der Hauptmann, Giannis, Exocamp, Volksmarine, MaiNai, snoekbaars, Sikyk, twotle, MihalRacovita, TrueSoviet, Holy Doggo, JoshyFlip, SamFan2, blue69982, Gindisi, Kels, buildershedd and K0rhan.
+ - Developers: Faaz Noushad, Linus Tip Taps, & egg138
+ - Special thanks to some of those who have worked with us in the past, including:  Nozza, Gaffate, Bonkey Donk, RicardoPetro, schloky, Limfjorden, Esotericist, minqoo, Marblistic, meme_.06, the_real_arma, Elizabeth2683, Pioneer, Zooptyx, scrylveon, birdirdirbirb, Der Hauptmann, Giannis, Exocamp, Volksmarine, MaiNai, snoekbaars, Sikyk, twotle, MihalRacovita, TrueSoviet, Holy Doggo, JoshyFlip, SamFan2, blue69982, Gindisi, Kels, buildershedd and K0rhan.
  - Special thanks to Jingo Spunk for creating the Mappa Mundi GFX mod and other graphics fixes.
  - Special thanks to gerrade for letting us build off of his mod, Beautiful States.
  - Special thanks to Cifotis and MrLukeNL for their work on the South Pacific.
