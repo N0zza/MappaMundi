@@ -1,25 +1,21 @@
-﻿capital = 1
-
-set_popularities = {
-        monarchism = 100
-}
-
-set_politics = {
+﻿capital = 115
 	
-	ruling_party = monarchism
-	last_election = "1936.1.1.1"
+	set_popularities = {
+		monarchism 
+			 = 10 
+		democratic
+			 = 40
+		communism
+			 = 20
+                republican_fascism                
+                         = 30
+
+		}
+	set_politics = { 
+ ruling_party = democratic
+	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
-}
-
-create_country_leader = {
-	name = "Julian"
-	desc = ""
-	picture = "gfx/leaders/To_be_added.dds"
-	expire = ""
-	ideology = absolutism
-	traits = {
-	}
 }
 
 create_country_leader = {
@@ -73,7 +69,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Capo dei Capi Calogero \"Don Calò\" Vizzini"
+	name = "Capo dei Capi Calogero /"Don Calò/" Vizzini"
 	desc = ""
 	picture = "gfx/leaders/SIC/SIC_Vizzini_ancap.tga"
 	expire = "1965.1.1"
