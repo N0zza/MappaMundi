@@ -2517,17 +2517,15 @@ NAI = {
 	WANTED_CARRIER_PLANES_PER_CARRIER_CAPACITY_IN_PRODUCTION_FACTOR = 1,	-- Scales how many carrier planes the AI want per deck space of carriers in production.
 	CARRIER_CAPACITY_IN_PRODUCTION_MAX_DAYS_LEFT_TO_INCLUDE_FACTOR = 365,	-- Carriers in production that will take more days to complete than this value will be ignored when calculating the above.
 
-	START_TRAINING_EQUIPMENT_LEVEL = 0.95,               -- ai will not start to train if equipment drops below this level
-	STOP_TRAINING_EQUIPMENT_LEVEL = 0.90,                -- ai will not train if equipment drops below this level
+	START_TRAINING_SUPPLY_LEVEL = 0.95,               -- ai will not start to train if equipment drops below this level
+	STOP_TRAINING_SUPPLY_LEVEL = 0.90,                -- ai will not train if equipment drops below this level
+	START_TRAINING_EQUIPMENT_LEVEL = 0.95,
+	STOP_TRAINING_EQUIPMENT_LEVEL = 0.90,
+	STOP_TRAINING_FULLY_TRAINED_FACTOR = 1,
 	BUILD_REFINERY_LACK_OF_RESOURCE_MODIFIER = 0.003,	-- How much lack of resources are worth when evaluating what to build.
-
 	DIVISION_DESIGN_MAX_FAILED_DAYS = 60,					-- max days we keep track of since failure of a template design update
-
 	DIVISION_MATCH_ROLE_BOOST_FACTOR = 1.2,                 -- When finding closest matching existing template to a target template, boost the score by this much if the template also has the correct role
-
 	EQUIPMENT_DESIGN_MAX_FAILED_DAYS = 60,					-- max days we keep track of since failure of an equipment design update
-
-
 	UPGRADE_DIVISION_RELUCTANCE = 7,					-- How often to consider upgrading to new templates for units in the field
 	UPGRADE_PERCENTAGE_OF_FORCES = 0.03,				-- How big part of the army that should be considered for upgrading
 	REMOVE_OBSOLETE_TEMPLATE_DAYS = 180,                -- Remove obsolete and unused templates if they have been marked as obsolete for x days. Non-positive value means "never remove".
@@ -3252,6 +3250,7 @@ NAI = {
 	RAIDS_UNIT_SCORE_DISTANCE_KM_FACTOR = 0.1,             -- When AI selects which units to use for raids, multiply the km distance with this.
 	RAIDS_AVOID_SAME_TARGET_DURATION_DAYS = 180,           -- After a raid is finished/canceled, AI is less likely to raid the same target for this time.
 	RAIDS_AVOID_SAME_TARGET_FACTOR = 0.4,                  -- If AI has already raided (or tried to raid) a target, score of new raids against same target is factored by this
+	RAIDS_SCORE_DIFF_TO_CANCEL = 0.5,
 },
 
 NFocus = {
