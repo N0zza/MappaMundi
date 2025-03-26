@@ -1,0 +1,68 @@
+###################
+# Spanish Renames #	!!! THIS IS A TEST TO SEE IF RENAMES CAN BE SPLIT BETWEEN FILES FOR BETTER ORGANIZATION !!!
+###################
+
+# List of all Spanish-speaking Tags:
+# SPR (Spanish Republic)
+# 	SP2 (Nationalist Spain)
+# 	ADU (Andalusia)             | EXCEPTION: AbsMon (Arabic), ConMon (Arabic), AuthMon (Arabic), NatSoc (German)
+# 	MRC (Murcia)
+# 	BAL (Balearic Islands)
+# 	CST (Castile)               | TEMP: CAT (Catalonia), VAL (Valencia)
+# 	MDD (Madrid)
+# 	ARA (Aragon)
+# 	LEO (Leon)
+# 	CNB (Cantabria)
+# 	ATR (Asturias)
+# 	GLC (Spanish Galicia)
+# 	CNR (Canary Islands)
+# 	EXD (Extremadura)
+# MEX (Mexico)                      | Add all Mexican tags except Aztec ideologies
+# CUB (Cuba)
+# DOM (Dominican Republic)
+# GUA (Guatemala)
+# HON (Honduras)
+# ELS (El Salvador)
+# NIC (Nicaragua)
+# COS (Costa Rica)
+# PAN (Panama)
+# COL (Colombia)
+# VEN (Venezuela)
+# 	ZUL (Zulia)
+# ECU (Ecuador)
+# PRU (Peru)
+# BOL (Bolivia)
+# 	STC (Santa Cruz)
+# CHL (Chile)
+# ARG (Argentina)		    | Add all Argentine tags
+# 	LBC (La Boca)
+# PAR (Paraguay)
+# URG (Uruguay)
+# 	PVD (Parva Domus Magna Quies)
+#####################################
+do_all_renames
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = SPR
+					is_subject_of = SPR
+					# Add 'tag' and 'is_subject_of' parameters for ALL tags in the above reference list.
+					has_cosmetic_tag = WES_SPR
+					has_cosmetic_tag = RIF_SPR
+					has_cosmetic_tag = IFN_SPR
+					has_cosmetic_tag = EQG_SPR
+		 			has_cosmetic_tag = NAP_SPR
+					has_cosmetic_tag = RDO_SPR
+		  			has_cosmetic_tag = SEH_SPR
+		  			has_cosmetic_tag = SPR_YELLOW
+					has_cosmetic_tag = SPR_AUTH
+					has_cosmetic_tag = SPR_KINGDOM
+					has_cosmetic_tag = SPR_IBERIA
+					has_cosmetic_tag = SPR_SOCIALIST
+					has_cosmetic_tag = SPR_EMPIRE
+				}
+			}
+		}
+		do_spanish_renames = yes
+	}
