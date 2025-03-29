@@ -79,4 +79,38 @@ do_all_renames = {
 		}
 		do_spanish_renames = yes
 	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = FIN
+					is_subject_of = FIN
+					tag = OST
+				}
+			}
+		}
+		do_finnish_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = EST
+					is_subject_of = EST
+				}
+			}
+		}
+		do_estonian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = VRS
+					tag = STS
+				}
+			}
+		}
+		do_south_estonian_renames = yes
+	}
 }
