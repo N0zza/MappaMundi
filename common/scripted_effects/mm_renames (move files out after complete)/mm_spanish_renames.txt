@@ -1,0 +1,851 @@
+####################
+# VPs to be renamed:
+# Algeria
+#	Algiers > Argel
+#	Bejaïa > Bugía
+# 	Constantine > Constantina
+#	Mascara > Muaskar
+#	Oran > Orán
+#	Ouargla > Uargla
+#	Tlemcen > Tremecén
+# Andorra
+#	Andorra la Vella > Andorra la Vieja
+# Angola
+# 	Huambo > Nueva Lisboa
+# Australia
+#	Adelaide > Adelaida
+#	Sydney > Sídney
+# Austria
+#	Salzburg > Salzburgo
+#	Vienna > Viena
+# Azerbaijan
+#	Baku > Bakú
+#	Nakhchivan > Najicheván
+# Belgium
+#	Antwerp > Amberes
+#	Bruges > Brujas
+#	Brussels > Bruselas
+#	Ghent > Gante
+#	Liège > Lieja
+# Brazil
+#	Manaus > Manaos
+#	Uruguaiana > Uruguayana
+# Bulgaria
+#	Sofia > Sofía
+# China
+#	Macau > Macao
+#	Beijing > Pekín
+#	Guangzhou > Cantón
+#	Hohhot > Huhehot
+#	Hebei > Hopeh
+#	Nanjing > Nankín
+#	Sichuan > Sechuán
+# Cyprus
+#	Limassol > Limasol
+# Czech Republic
+#	Prague > Praga
+# 	Brno > Bruno
+#	Ostrava > Ostravia
+# Denmark
+#	Copenhagen > Copenhague
+#	Helsingør > Elsinor
+# Egypt
+#	Giza > Gísa
+#	Alexandria > Alejandría
+#	Cairo > El Cairo
+# Estonia
+#	Tallinn > Tallin
+# France
+# 	Bayonne > Bayona
+# 	Bordeaux > Burdeos
+# 	La Rochelle > La Rochela
+# 	Lille > Lila
+# 	Lyon > Léon de Francia
+# 	Marseille > Marsella
+# 	Nice > Niza
+# 	Rouen > Ruán
+# 	Toulon > Tolón
+# 	Toulouse > Tolosa
+# Georgia
+# 	Tbilisi > Tiflis
+# Germany
+#	Augsburg > Augsburgo
+# 	Aachen > Aquisgrán
+# 	Berlin > Berlín
+# 	Braunschweig > Brunswick
+# 	Bremen > Brema
+# 	Cologne > Colonia
+# 	Dresden > Dresde
+# 	Duisburg > Duisburgo
+# 	Frankfurt > Fráncfort
+# 	Hamburg > Hamburgo
+# 	Hanover > Hanóver
+# 	Koblenz > Coblenza
+# 	Konstanz > Constanza
+# 	Lübeck > Lubeca
+# 	Magdeburg > Magdeburgo
+# 	Mainz > Maguncia
+# 	Munich > Múnich
+# 	Nuremberg > Núremberg
+# 	Regensburg > Ratisbona
+# 	Trier > Tréveris
+# 	Ulm > Ulma
+# 	Würzburg > Wurzburgo
+# Greece
+# 	Alexandrupoli > Alejandrópolis
+# 	Athens > Atenas
+# 	Corfu > Corfú
+# 	Corinth > Corinto
+# 	Heraklion > Heraclión
+# 	Patras > Patrás
+# 	Thessaloniki > Salónica
+# Haiti
+# 	Port au Prince > Puerto Príncipe
+# India
+# 	Daman > Damán
+# 	Panaji > Panagim
+# 	Kolkata > Calcuta
+# Israel
+# 	Ashkelon > Ascalón
+# 	Beersheba > Beerseba
+# 	Jerusalem > Jerusalén
+# 	Nazareth > Nazaret
+# Italy
+# 	Bologna > Bolonia
+# 	Florence > Florencia
+# 	Genoa > Génova
+# 	Milan > Milán
+# 	Naples > Nápoles
+# 	Ravenna > Rávena
+# 	Taranto > Tarento
+# 	Turin > Turín
+# 	Venice > Venecia
+# Lebanon
+# 	Sidon > Sidón
+# 	Tripoli > Trípoli
+# 	Tyre > Tiro
+# Libya
+# 	Tripoli > Trípoli
+# Lithuania
+# 	Vilnius > Vilna
+# Morocco
+#	Tangier > Tangér
+#	Tetouan > Tetuán
+# 	Agadir > Santa Cruz del Cabo Aguer
+# 	Marrakesh > Marruecos
+# 	Meknes > Mequínez
+# 	Sidi Ifni > Santa Cruz de Mar Pequeña
+# 	Ouazzane > Uezán
+# Netherlands
+# 	Groningen > Groninga
+# 	Maastricht > Mastrique
+# 	Nijmegen > Nimega
+# 	Rotterdam > Róterdam
+# 	The Hague > La Haya
+# 	Utrecht > Utreque
+# New Caledonia
+# 	Nouméa > Numéa
+# Papua New Guinea
+# 	Port Moresby > Puerto Moresby
+# Poland
+#	Legnica > Lígniza
+# 	Kraków > Cracovia
+# 	Warsaw > Varsovia
+# 	Wrocław > Breslavia
+# Portugal
+# 	Porto > Oporto
+# 	Santarem > Santarén
+# Romania
+# 	Bucharest > Bucarest
+# 	Constanța > Constanza
+# Russia
+# 	Moscow > Moscú
+# 	Saint Petersburg > San Petersburgo
+# 	Yekaterinburg > Ekaterimburgo
+# Serbia
+# 	Belgrade > Belgrado
+# South Africa
+# 	Cape Town > Ciudad de El Cabo
+# Spain
+# 	A Coruña > La Coruña
+# 	Catalonia > Cataluña
+# 	Girona > Gerona
+# Sweden
+# 	Gothenburg > Gotemburgo
+# 	Stockholm > Estocolmo
+# Switzerland
+# 	Basel > Basilea
+# 	Bern > Berna
+# 	Fribourg > Friburgo
+# 	Geneva > Ginebra
+#	Lausanne > Lausana
+# 	Lucerne > Lucerna
+# 	Schaffhausen > Escafusa
+# 	Zürich > Zúrich
+# Syria
+# 	Aleppo > Alepo
+# 	Damascus > Damasco
+# Trinidad and Tobago
+#	Port of Spain > Puerto España
+# Tunisia
+# 	Bizerte > Bizerta
+# 	Kairouan > Cairuán
+# 	Sfax > Sifax
+#	Sousse > Susa
+# Turkey
+# 	Ankara > Angora
+# 	Antakya > Antioquía
+# 	Gallipoli > Galípoli
+# 	Istanbul > Estambul
+#	İzmir > Esmirna
+# 	Trabzon > Trebisonda
+# Ukraine
+# 	Chernihiv > Chernígov
+# 	Kharkiv > Járkov
+# 	Kherson > Jersón
+# 	Kryvyi Rih > Krivói Rog
+# 	Kyiv > Kiev
+# 	Luhansk > Lugansk
+# 	Lviv > Léopolis
+# 	Mykolaiv > Nicolaiev
+# 	Sevastopol > Sebastopol
+# 	Vinnytsia > Vínnitsa
+# 	Zaporizhzhia > Zaporiyia
+# 	Zhytomyr > Jitomir
+# United Kingdom
+# 	Edinburgh > Edimburgo
+# 	London > Londres
+# Uzbekistan
+# 	Andijan > Andijon
+# 	Bukhara > Bujará
+# 	Samarkand > Samarcanda
+# 	Tashkent > Taskent
+# Cameroon
+# 	Douala > Duala
+# Western Sahara
+# 	Laayoune > El Aaiún
+
+
+do_spanish_renames = {
+	if = {
+		limit = {
+			state = 463
+		}		
+		set_province_name = {
+			id = 13091
+			name = "Anclaje"
+		}
+	}
+	if = {
+		limit = {
+			state = 3336
+		}		
+		set_province_name = {
+			id = 2080
+			name = "Yaundé"
+		}
+	}
+	if = {
+		limit = {
+			state = 863
+		}		
+		set_province_name = {
+			id = 5034
+			name = "Nuakchot"
+		}
+	}
+	if = {
+		limit = {
+			state = 15076
+		}		
+		set_province_name = {
+			id = 2665
+			name = "Nuadibú"
+		}
+	}
+	if = {
+		limit = {
+			state = 1771
+		}
+		set_province_name = {
+			id = 743
+			name = "Bayona"
+		}
+	}
+	if = {
+		limit = {
+			state = 20811
+		}		
+		set_province_name = {
+			id = 5107
+			name = "Fortaleza"
+		}
+	}
+	if = {
+		limit = {
+			state = 498
+		}		
+		set_province_name = {
+			id = 5168
+			name = "Récif"
+		}
+	}
+	if = {
+		limit = {
+			state = 499
+		}		
+		set_province_name = {
+			id = 10946
+			name = "San Salvador"
+		}
+	}
+	if = {
+		limit = {
+			state = 505
+		}		
+		set_province_name = {
+			id = 8140
+			name = "Goiánia"
+		}
+	}
+	if = {
+		limit = {
+			state = 19817
+		}		
+		set_province_name = {
+			id = 8148
+			name = "Belle Horizonte"
+		}
+	}
+	if = {
+		limit = {
+			state = 500
+		}		
+		set_province_name = {
+			id = 10980
+			name = "Río de Enero"
+		}
+	}
+	if = {
+		limit = {
+			state = 19821
+		}		
+		set_province_name = {
+			id = 10513
+			name = "San Pablo"
+		}
+	}
+	if = {
+		limit = {
+			state = 1656
+		}		
+		set_province_name = {
+			id = 13506
+			name = "Curitiba"
+		}
+	}	
+	if = {
+		limit = {
+			state = 503
+		}		
+		set_province_name = {
+			id = 10405
+			name = "Florianópolis"
+		}
+	}	
+	if = {
+		limit = {
+			state = 502
+		}		
+		set_province_name = {
+			id = 13503
+			name = "Puerto Alegre"
+		}
+	}
+	if = {
+		limit = {
+			state = 705
+		}		
+		set_province_name = {
+			id = 13015
+			name = "Santo Tomé"
+		}
+	}
+	if = {
+		limit = {
+			state = 5008
+		}		
+		set_province_name = {
+			id = 7872
+			name = "Lusaca"
+		}
+	}
+	if = {
+		limit = {
+			state = 2259
+		}		
+		set_province_name = {
+			id = 12908
+			name = "Lilongüe"
+		}
+	}
+	if = {
+		limit = {
+			state = 1957
+		}		
+		set_province_name = {
+			id = 853
+			name = "Fenix"
+		}
+	}
+	if = {
+		limit = {
+			state = 15320
+		}		
+		set_province_name = {
+			id = 6845
+			name = "Filadelfia"
+		}
+	}
+	if = {
+		limit = {
+			state = 1433
+		}		
+		set_province_name = {
+			id = 3878
+			name = "Ciudad de Nueva York"
+		}
+	}
+	if = {
+		limit = {
+			state = 4395
+		}		
+		set_province_name = {
+			id = 7552
+			name = "Nueva Orleans"
+		}
+	}
+	if = {
+		limit = {
+			state = 378
+		}		
+		set_province_name = {
+			id = 9637
+			name = "Monterrey"
+		}
+	}
+	if = {
+		limit = {
+			state = 1200
+		}		
+		set_province_name = {
+			id = 7480
+			name = "Mauvila"
+		}
+	}
+	if = {
+		limit = {
+			state = 391
+		}		
+		set_province_name = {
+			id = 1866
+			name = "Mineápolis"
+		}
+	}
+	if = {
+		limit = {
+			state = 2052
+		}		
+		set_province_name = {
+			id = 9814
+			name = "Los Ángeles"
+		}
+	}
+	if = {
+		limit = {
+			state = 1941
+		}		
+		set_province_name = {
+			id = 11654
+			name = "Búfalo"
+		}
+	}
+	if = {
+		limit = {
+			state = 7371
+		}		
+		set_province_name = {
+			id = 9627
+			name = "Liubliana"
+		}
+	}
+	if = {
+		limit = {
+			state = 623
+		}		
+		set_province_name = {
+			id = 1415
+			name = "Dagupán"
+		}
+	}
+	if = {
+		limit = {
+			state = 15742
+		}		
+		set_province_name = {
+			id = 1221
+			name = "Batangasu"
+		}
+	}
+	if = {
+		limit = {
+			state = 3135
+		}		
+		set_province_name = {
+			id = 4288
+			name = "Calapán"
+		}
+	}
+	if = {
+		limit = {
+			state = 628
+		}		
+		set_province_name = {
+			id = 12118
+			name = "Cebú"
+		}
+	}
+	if = {
+		limit = {
+			state = 1495
+		}		
+		set_province_name = {
+			id = 8245
+			name = "Lorenzo Márquez"
+		}
+	}
+	if = {
+		limit = {
+			state = 1593
+		}		
+		set_province_name = {
+			id = 10929
+			name = "Salisburgo"
+		}
+	}
+	if = {
+		limit = {
+			state = 2320
+		}		
+		set_province_name = {
+			id = 13809
+			name = "Carlota Amalia"
+		}
+	}
+	if = {
+		limit = {
+			state = 690
+		}		
+		set_province_name = {
+			id = 13969
+			name = "Nasáu"
+		}
+	}
+	if = {
+		limit = {
+			state = 2040
+		}		
+		set_province_name = {
+			id = 177
+			name = "Fuerte de Francia"
+		}
+	}
+	if = {
+		limit = {
+			state = 310
+		}		
+		set_province_name = {
+			id = 12885
+			name = "Cayena"
+		}
+	}
+	if = {
+		limit = {
+			state = 6783
+		}		
+		set_province_name = {
+			id = 17216
+			name = "Villa Cisneros"
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 2358
+		}		
+		set_province_name = {
+			id = 12320
+			name = "Ereván"
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+	if = {
+		limit = {
+			state = 
+		}		
+		set_province_name = {
+			id = 
+			name = ""
+		}
+	}
+}

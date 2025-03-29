@@ -666,6 +666,17 @@ do_all_renames = {
 		}
 		do_estonian_renames = yes
 	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = VRS
+					tag = STS
+				}
+			}
+		}
+		do_south_estonian_renames = yes
+	}
 
 	### YUG ###
 	if = {
