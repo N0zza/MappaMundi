@@ -1,0 +1,3248 @@
+####################
+# VPs to be renamed:
+# Algeria
+#	Algiers > Argel
+#	Bejaïa > Bugía
+# 	Constantine > Constantina
+#	Mascara > Muaskar
+#	Oran > Orán
+#	Ouargla > Uargla
+#	Tlemcen > Tremecén
+# Andorra
+#	Andorra la Vella > Andorra la Vieja
+# Angola
+# 	Huambo > Nueva Lisboa
+# Australia
+#	Adelaide > Adelaida
+#	Sydney > Sídney
+# Austria
+#	Salzburg > Salzburgo
+#	Vienna > Viena
+# Azerbaijan
+#	Baku > Bakú
+#	Nakhchivan > Najicheván
+# Belgium
+#	Antwerp > Amberes
+#	Bruges > Brujas
+#	Brussels > Bruselas
+#	Ghent > Gante
+#	Liège > Lieja
+# Brazil
+#	Manaus > Manaos
+#	Uruguaiana > Uruguayana
+# Bulgaria
+#	Sofia > Sofía
+# China
+#	Macau > Macao
+#	Beijing > Pekín
+#	Guangzhou > Cantón
+#	Hohhot > Huhehot
+#	Hebei > Hopeh
+#	Nanjing > Nankín
+#	Sichuan > Sechuán
+# Cyprus
+#	Limassol > Limasol
+# Czech Republic
+#	Prague > Praga
+# 	Brno > Bruno
+#	Ostrava > Ostravia
+# Denmark
+#	Copenhagen > Copenhague
+#	Helsingør > Elsinor
+# Egypt
+#	Giza > Gísa
+#	Alexandria > Alejandría
+#	Cairo > El Cairo
+# Estonia
+#	Tallinn > Tallin
+# France
+# 	Bayonne > Bayona
+# 	Bordeaux > Burdeos
+# 	La Rochelle > La Rochela
+# 	Lille > Lila
+# 	Lyon > Léon de Francia
+# 	Marseille > Marsella
+# 	Nice > Niza
+# 	Rouen > Ruán
+# 	Toulon > Tolón
+# 	Toulouse > Tolosa
+# Georgia
+# 	Tbilisi > Tiflis
+# Germany
+#	Augsburg > Augsburgo
+# 	Aachen > Aquisgrán
+# 	Berlin > Berlín
+# 	Braunschweig > Brunswick
+# 	Bremen > Brema
+# 	Cologne > Colonia
+# 	Dresden > Dresde
+# 	Duisburg > Duisburgo
+# 	Frankfurt > Fráncfort
+# 	Hamburg > Hamburgo
+# 	Hanover > Hanóver
+# 	Koblenz > Coblenza
+# 	Konstanz > Constanza
+# 	Lübeck > Lubeca
+# 	Magdeburg > Magdeburgo
+# 	Mainz > Maguncia
+# 	Munich > Múnich
+# 	Nuremberg > Núremberg
+# 	Regensburg > Ratisbona
+# 	Trier > Tréveris
+# 	Ulm > Ulma
+# 	Würzburg > Wurzburgo
+# Greece
+# 	Alexandrupoli > Alejandrópolis
+# 	Athens > Atenas
+# 	Corfu > Corfú
+# 	Corinth > Corinto
+# 	Heraklion > Heraclión
+# 	Patras > Patrás
+# 	Thessaloniki > Salónica
+# Haiti
+# 	Port au Prince > Puerto Príncipe
+# India
+# 	Daman > Damán
+# 	Panaji > Panagim
+# 	Kolkata > Calcuta
+# Israel
+# 	Ashkelon > Ascalón
+# 	Beersheba > Beerseba
+# 	Jerusalem > Jerusalén
+# 	Nazareth > Nazaret
+# Italy
+# 	Bologna > Bolonia
+# 	Florence > Florencia
+# 	Genoa > Génova
+# 	Milan > Milán
+# 	Naples > Nápoles
+# 	Ravenna > Rávena
+# 	Taranto > Tarento
+# 	Turin > Turín
+# 	Venice > Venecia
+# Lebanon
+# 	Sidon > Sidón
+# 	Tripoli > Trípoli
+# 	Tyre > Tiro
+# Libya
+# 	Tripoli > Trípoli
+# Lithuania
+# 	Vilnius > Vilna
+# Morocco
+#	Tangier > Tangér
+#	Tetouan > Tetuán
+# 	Agadir > Santa Cruz del Cabo Aguer
+# 	Marrakesh > Marruecos
+# 	Meknes > Mequínez
+# 	Sidi Ifni > Santa Cruz de Mar Pequeña
+# 	Ouazzane > Uezán
+# Netherlands
+# 	Groningen > Groninga
+# 	Maastricht > Mastrique
+# 	Nijmegen > Nimega
+# 	Rotterdam > Róterdam
+# 	The Hague > La Haya
+# 	Utrecht > Utreque
+# New Caledonia
+# 	Nouméa > Numéa
+# Papua New Guinea
+# 	Port Moresby > Puerto Moresby
+# Poland
+#	Legnica > Lígniza
+# 	Kraków > Cracovia
+# 	Warsaw > Varsovia
+# 	Wrocław > Breslavia
+# Portugal
+# 	Porto > Oporto
+# 	Santarem > Santarén
+# Romania
+# 	Bucharest > Bucarest
+# 	Constanța > Constanza
+# Russia
+# 	Moscow > Moscú
+# 	Saint Petersburg > San Petersburgo
+# 	Yekaterinburg > Ekaterimburgo
+# Serbia
+# 	Belgrade > Belgrado
+# South Africa
+# 	Cape Town > Ciudad de El Cabo
+# Spain
+# 	A Coruña > La Coruña
+# 	Catalonia > Cataluña
+# 	Girona > Gerona
+# Sweden
+# 	Gothenburg > Gotemburgo
+# 	Stockholm > Estocolmo
+# Switzerland
+# 	Basel > Basilea
+# 	Bern > Berna
+# 	Fribourg > Friburgo
+# 	Geneva > Ginebra
+#	Lausanne > Lausana
+# 	Lucerne > Lucerna
+# 	Schaffhausen > Escafusa
+# 	Zürich > Zúrich
+# Syria
+# 	Aleppo > Alepo
+# 	Damascus > Damasco
+# Trinidad and Tobago
+#	Port of Spain > Puerto España
+# Tunisia
+# 	Bizerte > Bizerta
+# 	Kairouan > Cairuán
+# 	Sfax > Sifax
+#	Sousse > Susa
+# Turkey
+# 	Ankara > Angora
+# 	Antakya > Antioquía
+# 	Gallipoli > Galípoli
+# 	Istanbul > Estambul
+#	İzmir > Esmirna
+# 	Trabzon > Trebisonda
+# Ukraine
+# 	Chernihiv > Chernígov
+# 	Kharkiv > Járkov
+# 	Kherson > Jersón
+# 	Kryvyi Rih > Krivói Rog
+# 	Kyiv > Kiev
+# 	Luhansk > Lugansk
+# 	Lviv > Léopolis
+# 	Mykolaiv > Nicolaiev
+# 	Sevastopol > Sebastopol
+# 	Vinnytsia > Vínnitsa
+# 	Zaporizhzhia > Zaporiyia
+# 	Zhytomyr > Jitomir
+# United Kingdom
+# 	Edinburgh > Edimburgo
+# 	London > Londres
+# Uzbekistan
+# 	Andijan > Andijon
+# 	Bukhara > Bujará
+# 	Samarkand > Samarcanda
+# 	Tashkent > Taskent
+# Cameroon
+# 	Douala > Duala
+# Western Sahara
+# 	Laayoune > El Aaiún
+
+
+do_spanish_renames = {
+	#North America
+	#USA
+	#Alaska
+	if = {
+		limit = {
+			state = 2819
+		}		
+		set_province_name = {
+			id = 14229
+			name = "Siatca"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 463
+		}		
+		set_province_name = {
+			id = 13091
+			name = "Anclaje"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1030
+		}		
+		set_province_name = {
+			id = 13203
+			name = "Juneau"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3608
+		}		
+		set_province_name = {
+			id = 14550
+			name = "Duala"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3336
+		}		
+		set_province_name = {
+			id = 2080
+			name = "Yaundé"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 863
+		}		
+		set_province_name = {
+			id = 5034
+			name = "Nuakchot"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 15076
+		}		
+		set_province_name = {
+			id = 2665
+			name = "Nuadibú"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1844
+		}		
+		set_province_name = {
+			id = 10779
+			name = "Tifariti"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 1771
+		}
+		set_province_name = {
+			id = 743
+			name = "Bayona"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 177
+		}		
+		set_province_name = {
+			id = 9793
+			name = "Palma de Mallorca"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 1644
+		}		
+		set_province_name = {
+			id = 5107
+			name = "Fortaleza"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 498
+		}		
+		set_province_name = {
+			id = 5168
+			name = "Récif"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 499
+		}		
+		set_province_name = {
+			id = 10946
+			name = "San Salvador"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 505
+		}		
+		set_province_name = {
+			id = 8140
+			name = "Goiánia"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 19817
+		}		
+		set_province_name = {
+			id = 8148
+			name = "Belle Horizonte"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 500
+		}		
+		set_province_name = {
+			id = 10980
+			name = "Río de enero"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 501
+		}		
+		set_province_name = {
+			id = 10513
+			name = "San Pablo"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 1656
+		}		
+		set_province_name = {
+			id = 13506
+			name = "Curitiba"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 503
+		}		
+		set_province_name = {
+			id = 10405
+			name = "Florianópolis"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 502
+		}		
+		set_province_name = {
+			id = 13503
+			name = "Puerto Alegre"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 705
+		}		
+		set_province_name = {
+			id = 13015
+			name = "Santo Tomé"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5008
+		}		
+		set_province_name = {
+			id = 7872
+			name = "Lusaca"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 5007
+		}		
+		set_province_name = {
+			id = 12986
+			name = "Lilongüe"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1593
+		}		
+		set_province_name = {
+			id = 10929
+			name = "Salisburgo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1495
+		}		
+		set_province_name = {
+			id = 8245
+			name = "Lorenzo Márquez"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1610
+		}		
+		set_province_name = {
+			id = 13492
+			name = "Luanda"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 540
+		}		
+		set_province_name = {
+			id = 10966
+			name = "Nueva Lisboa"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1179
+		}		
+		set_province_name = {
+			id = 13345
+			name = "Damán"
+		}
+    }
+
+	if = {
+		limit = {
+			state = 1178
+		}		
+		set_province_name = {
+			id = 13346
+			name = "Dio"
+		}
+    }
+
+	if = {
+		limit = {
+			state = 321
+		}		
+		set_province_name = {
+			id = 1273
+			name = "Panagim"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 729
+		}		
+		set_province_name = {
+			id = 4189
+			name = "Macao"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 627
+		}		
+		set_province_name = {
+			id = 4241
+			name = "Daváo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 628
+		}		
+		set_province_name = {
+			id = 12118
+			name = "Cebú"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3135
+		}		
+		set_province_name = {
+			id = 4288
+			name = "Calapán"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 327
+		}		
+		set_province_name = {
+			id = 10265
+			name = "Manila"
+		}	
+		set_province_name = {
+			id = 1221
+			name = "Batangasu"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 623
+		}		
+		set_province_name = {
+			id = 1415
+			name = "Dagupán"
+		}	
+		set_province_name = {
+			id = 12213
+			name = "Aparri"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2320
+		}		
+		set_province_name = {
+			id = 13809
+			name = "Carlota Amalia"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 6765
+		}		
+		set_province_name = {
+			id = 16978
+			name = "El Aaiún"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 6783
+		}		
+		set_province_name = {
+			id = 17216
+			name = "Villa Cisneros"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 183
+		}		
+		set_province_name = {
+			id = 7193
+			name = "Nicosia"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 1775
+		}		
+		set_province_name = {
+			id = 13605
+			name = "Tangér"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 290
+		}		
+		set_province_name = {
+			id = 12087
+			name = "Tetuán"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2142
+		}		
+		set_province_name = {
+			id = 12042
+			name = "Fez"
+		}
+	}
+	if = {
+		limit = {
+			state = 2151
+		}
+		set_province_name = {
+			id = 924
+			name = "Santarém"
+		}
+		set_province_name = {
+			id = 799
+			name = "Leiria"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 181
+		}
+		set_province_name = {
+			id = 3969
+			name = "Castillo Blanco"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 112
+		}		
+		set_province_name = {
+			id = 11805
+			name = "Lisboa"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 460
+		}		
+		set_province_name = {
+			id = 12051
+			name = "Constantina"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 13631
+		}		
+		set_province_name = {
+			id = 7077
+			name = "Cairuán"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 3423
+		}		
+		set_province_name = {
+			id = 11921
+			name = "Sifax"
+		}	
+	}
+	
+	if = {
+		limit = {
+			state = 13635
+		}	
+		set_province_name = {
+			id = 7162
+			name = "Susa"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2916
+		}		
+		set_province_name = {
+			id = 858
+			name = "Toledo"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2909
+		}		
+		set_province_name = {
+			id = 832
+			name = "Albacete"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2907
+		}		
+		set_province_name = {
+			id = 9812
+			name = "Teruel"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2891
+		}		
+		set_province_name = {
+			id = 6817
+			name = "Castellón de la Plana"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2900
+		}		
+		set_province_name = {
+			id = 6927
+			name = "Gerona"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 11009
+		}		
+		set_province_name = {
+			id = 962
+			name = "Benidorm"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 310
+		}		
+		set_province_name = {
+			id = 12885
+			name = "Cayena"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 310
+		}		
+		set_province_name = {
+			id = 12885
+			name = "Cayena"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 309
+		}		
+		set_province_name = {
+			id = 10806
+			name = "Paramaribo"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 687
+		}		
+		set_province_name = {
+			id = 4982
+			name = "Pueblo de Jorge"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 695
+		}		
+		set_province_name = {
+			id = 153
+			name = "Ciudad Naranja"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2312
+		}		
+		set_province_name = {
+			id = 13806
+			name = "Pueblo de Guillermo"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2313
+		}		
+		set_province_name = {
+			id = 13817
+			name = "Coraldique"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 691
+		}		
+		set_province_name = {
+			id = 3284
+			name = "Puerto España"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2036
+		}		
+		set_province_name = {
+			id = 13012
+			name = "Scarburgo"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2037
+		}		
+		set_province_name = {
+			id = 11106
+			name = "San Jorge"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2038
+		}		
+		set_province_name = {
+			id = 379
+			name = "Ciudad del Rey"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 692
+		}		
+		set_province_name = {
+			id = 11350
+			name = "Pueblo de San Miguel"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2039
+		}		
+		set_province_name = {
+			id = 13009
+			name = "Castries"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2040
+		}		
+		set_province_name = {
+			id = 177
+			name = "Fuerte de Francia"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2042
+		}		
+		set_province_name = {
+			id = 7123
+			name = "Junco"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2041
+		}		
+		set_province_name = {
+			id = 9377
+			name = "Punto a Payaso"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 308
+		}		
+		set_province_name = {
+			id = 4450
+			name = "Plimmua"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2318
+		}		
+		set_province_name = {
+			id = 13808
+			name = "San Juan"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2315
+		}		
+		set_province_name = {
+			id = 13821
+			name = "Pueblo de Carlos"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2316
+		}		
+		set_province_name = {
+			id = 13816
+			name = "Tierra Baja"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2317
+		}		
+		set_province_name = {
+			id = 13804
+			name = "Codrington"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2395
+		}		
+		set_province_name = {
+			id = 13877
+			name = "Ciudad Naranja"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2393
+		}		
+		set_province_name = {
+			id = 13875
+			name = "Gustávia"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2394
+		}		
+		set_province_name = {
+			id = 13876
+			name = "El fondo"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2314
+		}		
+		set_province_name = {
+			id = 13811
+			name = "Felipeburgo"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 694
+		}		
+		set_province_name = {
+			id = 13084
+			name = "Marigot"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2392
+		}		
+		set_province_name = {
+			id = 13874
+			name = "Anguila"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 930
+		}		
+		set_province_name = {
+			id = 13279
+			name = "Pueblo de la Ruta"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2320
+		}		
+		set_province_name = {
+			id = 13809
+			name = "Carlota Amalia"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 686
+		}		
+		set_province_name = {
+			id = 1440
+			name = "San Juan"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 689
+		}		
+		set_province_name = {
+			id = 12304
+			name = "Ciudad del Rey"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2044
+		}		
+		set_province_name = {
+			id = 12477
+			name = "Pueblo de Jorge"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 315
+		}		
+		set_province_name = {
+			id = 13848
+			name = "La Habana"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 1029
+		}		
+		set_province_name = {
+			id = 7590
+			name = "Guantánamo"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 319
+		}		
+		set_province_name = {
+			id = 13826
+			name = "San Domingo"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 3786
+		}		
+		set_province_name = {
+			id = 13801
+			name = "Santiago de los Caballeros"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 318
+		}		
+		set_province_name = {
+			id = 4641
+			name = "Puerto Príncipe"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2043
+		}		
+		set_province_name = {
+			id = 13951
+			name = "Cockburn"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 696
+		}		
+		set_province_name = {
+			id = 13010
+			name = "Hamilton"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2709
+		}		
+		set_province_name = {
+			id = 13969
+			name = "Nasáu"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 10632
+		}		
+		set_province_name = {
+			id = 6866
+			name = "Cáceres"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 7735
+		}		
+		set_province_name = {
+			name = "Ronda"
+			id = 10094
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2812
+		}		
+		set_province_name = {
+			id = 14222
+			name = "Playe"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2805
+		}		
+		set_province_name = {
+			id = 14215
+			name = "Las Palmas de Gran Canaria"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 13517
+		}		
+		set_province_name = {
+			id = 4098
+			name = "Alicante"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 10630
+		}		
+		set_province_name = {
+			id = 3794
+			name = "Segovia"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 10629
+		}		
+		set_province_name = {
+			id = 3874
+			name = "Salamanca"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 10627
+		}		
+		set_province_name = {
+			id = 1176
+			name = "Granada"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3466
+		}		
+		set_province_name = {
+			id = 6418
+			name = "Pilsen"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 9
+		}		
+		set_province_name = {
+			id = 11542
+			name = "Praga"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 2680
+		}		
+		set_province_name = {
+			id = 14162
+			name = "Bruno"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 74
+		}		
+		set_province_name = {
+			id = 3583
+			name = "Ostravia"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 7371
+		}		
+		set_province_name = {
+			id = 9627
+			name = "Liubliana"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1232
+		}		
+		set_province_name = {
+			id = 3924
+			name = "Espalato"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 4816
+		}		
+		set_province_name = {
+			id = 13361
+			name = "Steyr"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1337
+		}		
+		set_province_name = {
+			id = 6444
+			name = "Wísbada"
+		}
+	}
+
+
+	if = {
+		limit = {
+			state = 3552
+		}		
+		set_province_name = {
+			id = 3384
+			name = "Insterburg"
+		}
+	}
+		
+
+	if = {
+		limit = {
+			state = 5773
+		}		
+		set_province_name = {
+			id = 15986
+			name = "Lótsa"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1791
+		}		
+		set_province_name = {
+			id = 13356
+			name = "Villach"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 2782
+		}		
+		set_province_name = {
+			id = 3673
+			name = "Klagenfurt"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 2342
+		}		
+		set_province_name = {
+			id = 3703
+			name = "Wels"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 42
+		}		
+		set_province_name = {
+			id = 13311
+			name = "Tréveris"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 5133
+		}		
+		set_province_name = {
+			id = 708
+			name = "Augsburgo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 772
+		}		
+		set_province_name = {
+			id = 9547
+			name = "Gísa"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 67
+		}		
+		set_province_name = {
+			id = 9511
+			name = "Opole"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3530
+		}		
+		set_province_name = {
+			id = 552
+			name = "Lígniza"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5075
+		}		
+		set_province_name = {
+			id = 3438
+			name = "Glogovia"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5076
+		}		
+		set_province_name = {
+			id = 444
+			name = "Grúnberg"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 4090
+		}		
+		set_province_name = {
+			id = 11288
+			name = "Cuenitsio"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5077
+		}		
+		set_province_name = {
+			id = 6236
+			name = "Landsberg en el Warthe"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3529
+		}		
+		set_province_name = {
+			id = 9361
+			name = "Cuesalino"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 4829
+		}		
+		set_province_name = {
+			id = 11415
+			name = "Cottbusio"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5080
+		}		
+		set_province_name = {
+			id = 9294
+			name = "Scheverin"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5975
+		}		
+		set_province_name = {
+			id = 16430
+			name = "Francofuerte del Óder"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 64
+		}		
+		set_province_name = {
+			id = 6521
+			name = "Berlín"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 65
+		}		
+		set_province_name = {
+			id = 514
+			name = "Dresde"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5116
+		}		
+		set_province_name = {
+			id = 6582
+			name = "Halle (Saale)"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 8353
+		}		
+		set_province_name = {
+			id = 18009
+			name = "Dússeldorf"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 8253
+		}		
+		set_province_name = {
+			id = 18008
+			name = "Gera"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3896
+		}		
+		set_province_name = {
+			id = 14642
+			name = "Jena"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 8271
+		}		
+		set_province_name = {
+			id = 18007
+			name = "Weimar"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 8291
+		}		
+		set_province_name = {
+			id = 18087
+			name = "Brunswick"
+		}
+    }
+
+	if = {
+		limit = {
+			state = 776
+		}		
+		set_province_name = {
+			id = 317
+			name = "Flensburgo"
+		}
+    }
+
+	if = {
+		limit = {
+			state = 58
+		}		
+		set_province_name = {
+			id = 6389
+			name = "Kiel"
+		}
+    }
+
+	if = {
+		limit = {
+			state = 1350
+		}		
+		set_province_name = {
+			id = 11305
+			name = "Lubeca"
+		}
+    }
+
+	if = {
+		limit = {
+			state = 59
+		}		
+		set_province_name = {
+			id = 6377
+			name = "Hanóver"
+		}
+    }
+
+	if = {
+		limit = {
+			state = 1341
+		}		
+		set_province_name = {
+			id = 6622
+			name = "Múnster"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 8286
+		}		
+		set_province_name = {
+			id = 18013
+			name = "Langensalza"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3920
+		}		
+		set_province_name = {
+			id = 405
+			name = "Bielefeld"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 57
+		}		
+		set_province_name = {
+			id = 495
+			name = "Tremonia"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1118
+		}		
+		set_province_name = {
+			id = 6594
+			name = "Wurzburgo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 53
+		}		
+		set_province_name = {
+			id = 3299
+			name = "Ratisbona"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1119
+		}		
+		set_province_name = {
+			id = 6540
+			name = "Ingolestadio"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5131
+		}		
+		set_province_name = {
+			id = 3690
+			name = "Ravensburgo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1338
+		}		
+		set_province_name = {
+			id = 9482
+			name = "Wuppertal"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 8203
+		}		
+		set_province_name = {
+			id = 17946
+			name = "Coblenza"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1340
+		}		
+		set_province_name = {
+			id = 9522
+			name = "Aquisgrán"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1396
+		}		
+		set_province_name = {
+			id = 6488
+			name = "Francofuerte del Meno"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 54
+		}		
+		set_province_name = {
+			id = 11544
+			name = "Nuremberga"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 2527
+		}		
+		set_province_name = {
+			id = 3561
+			name = "Erfurt"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 775
+		}		
+		set_province_name = {
+			id = 3522
+			name = "Magdeburgo"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 5070
+		}		
+		set_province_name = {
+			id = 3535
+			name = "Leipzig"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 774
+		}		
+		set_province_name = {
+			id = 3499
+			name = "Potsdam"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 61
+		}		
+		set_province_name = {
+			id = 321
+			name = "Rostock"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 776
+		}		
+		set_province_name = {
+			id = 317
+			name = "Flensburgo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1128
+		}		
+		set_province_name = {
+			id = 9347
+			name = "Hamburgo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1351
+		}		
+		set_province_name = {
+			id = 18106
+			name = "Brema"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1242
+		}		
+		set_province_name = {
+			id = 13280
+			name = "Heligoland"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1344
+		}		
+		set_province_name = {
+			id = 241
+			name = "Puerto de Guillermo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1222
+		}		
+		set_province_name = {
+			id = 6282
+			name = "Stettin"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1017
+		}		
+		set_province_name = {
+			id = 3485
+			name = "Glatz"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1455
+		}		
+		set_province_name = {
+			id = 9570
+			name = "Breslavia"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 85
+		}		
+		set_province_name = {
+			id = 362
+			name = "Gedán"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5
+		}		
+		set_province_name = {
+			id = 6332
+			name = "Königsberg"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1389
+		}		
+		set_province_name = {
+			id = 6375
+			name = "Allenstein"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3338
+		}		
+		set_province_name = {
+			id = 587
+			name = "Colonia"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 51
+		}		
+		set_province_name = {
+			id = 3547
+			name = "Bonn"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 770
+		}		
+		set_province_name = {
+			id = 11435
+			name = "Bitburgo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1416
+		}		
+		set_province_name = {
+			id = 11560
+			name = "Maguncia"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 769
+		}		
+		set_province_name = {
+			id = 11531
+			name = "Sarrebruck"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 50
+		}		
+		set_province_name = {
+			id = 11499
+			name = "Ulm"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5127
+		}		
+		set_province_name = {
+			id = 9517
+			name = "Stuttgart"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 52
+		}		
+		set_province_name = {
+			id = 692
+			name = "Múnich"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1385
+		}		
+		set_province_name = {
+			id = 13424
+			name = "Viena"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1110
+		}		
+		set_province_name = {
+			id = 732
+			name = "Linz"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 794
+		}		
+		set_province_name = {
+			id = 9648
+			name = "Graz"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 795
+		}		
+		set_province_name = {
+			id = 688
+			name = "Salzburgo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5171
+		}		
+		set_province_name = {
+			id = 673
+			name = "Innsbruck"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 784
+		}		
+		set_province_name = {
+			id = 9839
+			name = "Emmen"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 2476
+		}		
+		set_province_name = {
+			id = 9403
+			name = "Almelo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3500
+		}		
+		set_province_name = {
+			id = 6826
+			name = "Zwolle"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 13632
+		}		
+		set_province_name = {
+			id = 9335
+			name = "Groninga"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 2475
+		}		
+		set_province_name = {
+			id = 391
+			name = "Ámsterdam"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 786
+		}		
+		set_province_name = {
+			id = 9498
+			name = "Róterdam"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 35
+		}		
+		set_province_name = {
+			id = 6496
+			name = "Eindhoven"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 13632
+		}
+		set_province_name = {
+			id = 9335
+			name = "Groningue"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 785
+		}		
+		set_province_name = {
+			id = 11456
+			name = "Nimega"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 2474
+		}		
+		set_province_name = {
+			id = 3211
+			name = "La Haya"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 8
+		}		
+		set_province_name = {
+			id = 6583
+			name = "Luxemburgo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 2093
+		}		
+		set_province_name = {
+			id = 9574
+			name = "Genk"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 2097
+		}		
+		set_province_name = {
+			id = 13081
+			name = "Rey Carlos"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 2434
+		}		
+		set_province_name = {
+			id = 14669
+			name = "Verviers"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 2092
+		}		
+		set_province_name = {
+			id = 6598
+			name = "Amberes"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 2095
+		}		
+		set_province_name = {
+			id = 3576
+			name = "Gante"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 781
+		}		
+		set_province_name = {
+			id = 6560
+			name = "Brujos"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 6
+		}		
+		set_province_name = {
+			id = 516
+			name = "Bruselas"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 2453
+		}		
+		set_province_name = {
+			id = 3516
+			name = "Namur"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 2096
+		}		
+		set_province_name = {
+			id = 11519
+			name = "Lieja"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 780
+		}		
+		set_province_name = {
+			id = 11407
+			name = "Bastoña"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 151
+		}		
+		set_province_name = {
+			id = 663
+			name = "Zúrich"
+		}
+	}	
+	if = {
+		limit = {
+			state = 1123
+		}		
+		set_province_name = {
+			id = 9620
+			name = "Berna"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5523
+		}		
+		set_province_name = {
+			id = 15944
+			name = "San Mauricio"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 2334
+		}		
+		set_province_name = {
+			id = 13819
+			name = "Escafusa"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3632
+		}		
+		set_province_name = {
+			id = 11604
+			name = "Lucerna"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5509
+		}		
+		set_province_name = {
+			id = 15930
+			name = "Basilea"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 10591
+		}		
+		set_province_name = {
+			id = 20094
+			name = "Lausana"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 840
+		}		
+		set_province_name = {
+			id = 11590
+			name = "Montreux"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3628
+		}		
+		set_province_name = {
+			id = 6666
+			name = "Ginebra"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 10592
+		}		
+		set_province_name = {
+			id = 20095
+			name = "Lugano"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 834
+		}		
+		set_province_name = {
+			id = 9561
+			name = "Amiens"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 16
+		}		
+		set_province_name = {
+			id = 11506
+			name = "París"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5363
+		}		
+		set_province_name = {
+			id = 6449
+			name = "Cherburgo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5632
+		}		
+		set_province_name = {
+			id = 3552
+			name = "Brest"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 14
+		}		
+		set_province_name = {
+			id = 6536
+			name = "Lorient"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1486
+		}		
+		set_province_name = {
+			id = 11465
+			name = "Nantes"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5054
+		}		
+		set_province_name = {
+			id = 9495
+			name = "Rennes"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5049
+		}		
+		set_province_name = {
+			id = 9490
+			name = "Troyes"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 24
+		}		
+		set_province_name = {
+			id = 512
+			name = "Orleans"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1910
+		}		
+		set_province_name = {
+			id = 3671
+			name = "Turs"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1755
+		}		
+		set_province_name = {
+			id = 6657
+			name = "La Rochela"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 25
+		}		
+		set_province_name = {
+			id = 620
+			name = "Limoges"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 5045
+		}		
+		set_province_name = {
+			id = 3594
+			name = "Vichy"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1890
+		}		
+		set_province_name = {
+			id = 778
+			name = "Annecy"
+		}
+	}	
+	if = {
+		limit = {
+			state = 5129
+		}		
+		set_province_name = {
+			id = 678
+			name = "Casa del Molino"
+		}
+	}		
+	if = {
+		limit = {
+			state = 1762
+		}		
+		set_province_name = {
+			id = 9737
+			name = "Burdeos"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5359
+		}		
+		set_province_name = {
+			id = 9503
+			name = "Estrasburgo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 831
+		}		
+		set_province_name = {
+			id = 11516
+			name = "Nancí"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1747
+		}		
+		set_province_name = {
+			id = 11483
+			name = "Lila"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1744
+		}		
+		set_province_name = {
+			id = 575
+			name = "Dunquerque"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1746
+		}		
+		set_province_name = {
+			id = 11548
+			name = "Calés"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5577
+		}		
+		set_province_name = {
+			id = 9642
+			name = "Besanzón"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 836
+		}		
+		set_province_name = {
+			id = 6545
+			name = "Verdún"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5392
+		}		
+		set_province_name = {
+			id = 13011
+			name = "Reims"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 8422
+		}		
+		set_province_name = {
+			id = 11563
+			name = "Ruan"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5365
+		}		
+		set_province_name = {
+			id = 9434
+			name = "El Havre"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1757
+		}		
+		set_province_name = {
+			id = 3652
+			name = "Dijón"
+		}
+	}
+
+	if = {
+		limit = {
+			state =11903
+		}		
+		set_province_name = {
+			id = 6613
+			name = "León"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 5148
+		}		
+		set_province_name = {
+			id = 3768
+			name = "Grenoble"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 16709
+		}		
+		set_province_name = {
+			id = 9909
+			name = "Niza"
+		}
+	}	
+	if = {
+		limit = {
+			state = 21
+		}		
+		set_province_name = {
+			id = 11834
+			name = "Marsella"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 22
+		}		
+		set_province_name = {
+			id = 9898
+			name = "Montpeller"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 5149
+		}		
+		set_province_name = {
+			id = 911
+			name = "Tolón"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 31
+		}		
+		set_province_name = {
+			id = 6766
+			name = "Tolosa"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 4114
+		}		
+		set_province_name = {
+			id = 6606
+			name = "Bolonia"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1312
+		}		
+		set_province_name = {
+			id = 6973
+			name = "Especia"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 1157
+		}		
+		set_province_name = {
+			id = 13313
+			name = "Trieste"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 2265
+		}		
+		set_province_name = {
+			id = 13858
+			name = "Roviño"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 736
+		}		
+		set_province_name = {
+			id = 11735
+			name = "Pola"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 5605
+		}		
+		set_province_name = {
+			id = 6780
+			name = "Turín"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 159
+		}		
+		set_province_name = {
+			id = 3780
+			name = "Milán"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 1301
+		}		
+		set_province_name = {
+			id = 6788
+			name = "Génova"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 160
+		}		
+		set_province_name = {
+			id = 11584
+			name = "Venecia"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 4118
+		}		
+		set_province_name = {
+			id = 9907
+			name = "Florencia"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2384
+		}		
+		set_province_name = {
+			id = 13866
+			name = "Puertoherrero"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 2
+		}
+		set_province_name = {
+			id = 11846
+			name = "Ancio"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 1
+		}		
+		set_province_name = {
+			id = 3838
+			name = "Ajaccio"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 1207
+		}		
+		set_province_name = {
+			id = 13350
+			name = "Nápoles"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2377
+		}		
+		set_province_name = {
+			id = 13863
+			name = "Roma"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 847
+		}		
+		set_province_name = {
+			id = 11837
+			name = "Tarento"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3455
+		}		
+		set_province_name = {
+			id = 4159
+			name = "Mesina"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 115
+		}		
+		set_province_name = {
+			id = 10074
+			name = "Palermo"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3454
+		}		
+		set_province_name = {
+			id = 7059
+			name = "Marsala"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3457
+		}		
+		set_province_name = {
+			id = 4014
+			name = "Siracusa"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 4930
+		}		
+		set_province_name = {
+			id = 12098
+			name = "Crotona"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 4120
+		}		
+		set_province_name = {
+			id = 6980
+			name = "Vieste"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 116
+		}
+		set_province_name = {
+			id = 12003
+			name = "La Valeta"
+		}
+	}
+	
+	if = {
+		limit = {
+			state = 448
+		}		
+		set_province_name = {
+			id = 1149
+			name = "Trípoli"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3425
+		}		
+		set_province_name = {
+			id = 9994
+			name = "Bizerta"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 458
+		}		
+		set_province_name = {
+			id = 11969
+			name = "Túnez"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 13591
+		}		
+		set_province_name = {
+			id = 2265
+			name = "Argel"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 461
+		}		
+		set_province_name = {
+			id = 10070
+			name = "Rabat"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3451
+		}		
+		set_province_name = {
+			id = 6891
+			name = "Tierraneuva"
+		}
+	}
+
+	if = {
+		limit = {
+			state = 3448
+		}
+		set_province_name = {
+			id = 11773
+			name = "Cáller"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 906
+		}		
+		set_province_name = {
+			id = 9853
+			name = "Perpiñán"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 763
+		}		
+		set_province_name = {
+			id = 13213
+			name = "Andorra la Vieja"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 168
+		}		
+		set_province_name = {
+			id = 10024
+			name = "Murcia"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 171
+		}		
+		set_province_name = {
+			id = 758
+			name = "La Coruña"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 174
+		}		
+		set_province_name = {
+			id = 11707
+			name = "Oviedo"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 1774
+		}		
+		set_province_name = {
+			id = 740
+			name = "Bilbao"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 176
+		}		
+		set_province_name = {
+			id = 885
+			name = "Burgos"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2926
+		}		
+		set_province_name = {
+			id = 11825
+			name = "Valladolid"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 850
+		}		
+		set_province_name = {
+			id = 12100
+			name = "Melilla"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 10633
+		}		
+		set_province_name = {
+			id = 9817
+			name = "Oporto"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 849
+		}		
+		set_province_name = {
+			id = 9945
+			name = "Ceuta"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 1775
+	        }		
+		set_state_name = Tánger
+		}
+		
+	if = {
+		limit = {
+			state = 165
+		}		
+		set_province_name = {
+			id = 9764
+			name = "Barcelona"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 41
+		}		
+		set_province_name = {
+			id = 3938
+			name = "Madrid"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 1197
+		}		
+		set_province_name = {
+			id = 13348
+			name = "Olivenza"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 2882
+		}		
+		set_province_name = {
+			id = 7183
+			name = "Sevilla"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 169
+		}		
+		set_province_name = {
+			id = 1048
+			name = "Cádiz"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 118
+		}		
+		set_province_name = {
+			id = 4135
+			name = "Gibraltar"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 166
+		}		
+		set_province_name = {
+			id = 3816
+			name = "Zaragoza"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 167
+		}		
+		set_province_name = {
+			id = 6906
+			name = "Valencia"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 13516
+		}		
+		set_province_name = {
+			id = 875
+			name = "Córdoba"
+		}
+	}
+		
+	if = {
+		limit = {
+			state = 173
+		}		
+		set_province_name = {
+			id = 9979
+			name = "Málaga"
+		}
+	}
+}
