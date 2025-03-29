@@ -113,4 +113,1568 @@ do_all_renames = {
 		}
 		do_south_estonian_renames = yes
 	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = BKH 
+					tag = KOK 
+					tag = ZHE 
+					tag = KHI 
+					tag = ZHE 
+					tag = SYD 
+					tag = AMD 
+					tag = FER 
+					tag = SEM 
+					tag = TCP 
+					tag = ALS 
+					tag = MEV 
+					tag = TKS 
+				}
+			}
+		}
+		do_turkestan_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				AND = {
+					OR = {
+						tag = UZB
+						tag = TMS
+						tag = KAZ
+						tag = KYR
+						tag = TAJ
+						tag = KPK
+					}
+					has_government = vanguardism
+				}
+			}
+		}
+		do_sovietturkestan_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = KYR
+			}
+		}
+		do_kyrgyz_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = TAJ
+			}
+		}
+		do_tajik_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = TMS
+			}
+		}
+		do_turkmen_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = KPK
+			}
+		}
+		do_karakalpak_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = UZB
+			}
+		}
+		do_uzbek_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = KAZ
+			}
+		}
+		do_kazakh_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = AZR
+					tag = SAZ
+				}
+			}
+		}
+		do_azerbaijani_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = NVI 
+					tag = SVI 
+					tag = VIN
+				}
+			}
+		}
+		do_vietnamese_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = NVI
+			}
+		}
+		do_northvietnamese_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = KUR
+					tag = RJV
+					tag = IQK
+					tag = ARL
+					tag = MHB
+				}
+			}
+		}
+		do_kurdish_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = ARM
+			}	
+		}
+		do_armenian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = NGK
+			}
+		}
+		do_modern_armenian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = DPK
+			}
+		}
+		do_north_korean_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = ROK
+					tag = KOR
+				}
+			}
+		}
+		do_korean_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = SER
+					tag = CRO
+					tag = BOS
+					tag = MNT
+					AND = {
+						tag = ILY
+						NOT = {
+							has_government = socialist_monarchy
+							has_government = republican_fascism
+							has_government = national_socialism
+						}
+					}
+				}
+			}
+		}
+		do_serbocroat_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = JAP 
+					tag = PSC
+					tag = RGC 
+					tag = RFC
+					tag = SCA 
+					tag = NSX
+					AND = {
+						tag = CAL
+						has_government = fascism
+					}
+				  	is_subject_of = JAP
+				}
+			}
+		}
+		do_japanese_renames = yes
+	}
+	if = {
+		limit = {
+			if = {
+				limit = {
+					ROOT = {
+						capital_scope = {
+							is_core_of = CHI
+						}
+					}
+				}
+			}
+		}
+		do_chinese_renames = yes
+		if = {
+			limit = {
+				AND = {
+					has_government = vanguardism
+					has_start_date < 2049.01.01
+					has_start_date > 2022.01.01
+				}
+			}
+			do_pinyin_renames = yes
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = MON
+					tag = INM
+				}
+			}
+		}
+		do_mongolian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = SIK
+					tag = UYG
+				}
+			}
+		}
+		do_uyghur_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = TIB
+			}
+		}
+		do_tibetian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {	
+				tag = TIB
+			}
+			has_government = socialism_ideology
+		}
+		do_tibetian_pinyin_renames = yes
+	}
+	if = {							# CAN WE SHORTEN THIS?
+		limit = {
+			ROOT = {
+				OR = {
+					tag = WGR
+					tag = DDR
+					tag = AUS
+					tag = NZG
+					tag = PRE
+					tag = BAY
+					tag = GGM
+					tag = SGM
+					tag = BGM
+					tag = HGM
+					tag = WR2
+					tag = UA2
+					tag = VGR
+					tag = LIE
+					is_subject_of = GER
+					is_subject_of = WGR
+					is_subject_of = DDR
+					is_subject_of = AUS
+					is_subject_of = NZG
+					AND = {
+						tag = GER
+						NOT = {
+							OR = {
+								has_government = anocratic_monarchism
+								AND = {
+									has_government = theocratic
+									has_start_date < 1915.01.01
+									has_start_date > 1913.01.01
+								}
+							}
+						}
+					}
+					AND = {
+						tag = ALA
+						has_government = socialist_monarchy
+					}
+					AND = {
+						tag = LV2
+						NOT = {
+							AND = {
+								has_government = stratocratic_monarchism
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+							}
+						}
+					}
+					AND = {
+						tag = BL2
+						OR = {
+							has_government = stratocratic
+							has_government = republican_fascism
+							has_government = national_socialism
+							has_government = theocratic
+						}
+					}
+					AND = {
+						tag = CZ2
+						OR = {
+							has_government = democratic
+							has_government = neutrality
+							has_government = stratocratic
+							has_government = fascism
+							has_government = national_socialism
+							has_government = theocratic
+						}
+					}
+					AND = {
+						tag = DN2
+						OR = {
+							has_government = stratocratic
+							has_government = republican_fascism
+							has_government = national_socialism
+							has_government = theocratic
+						}
+					}
+					AND = {
+						tag = NR2
+						OR = {
+							has_government = stratocratic
+							has_government = fascism
+							has_government = national_socialism
+							has_government = theocratic
+						}
+					}
+					AND = {
+						tag = MC2
+						OR = {
+							has_government = anocratic_republic
+							has_government = stratocratic
+							has_government = republican_fascism
+							has_government = national_socialism
+							has_government = theocratic
+							has_government = right_anarchism
+						}
+					}
+					AND = {
+						tag = KC2
+						OR = {
+							has_government = anocratic_republic
+							has_government = neutrality
+							has_government = stratocratic
+							has_government = republican_fascism
+							has_government = fascism
+							has_government = national_socialism
+							has_government = theocratic
+							has_government = right_anarchism
+						}
+					}
+					AND = {
+						tag = CZ2
+						OR = {
+							has_government = national_socialism
+							has_government = republican_fascism
+							has_government = stratocratic
+						}
+					}
+					AND = {
+						tag = PL2
+						OR = {
+							has_government = republican_fascism
+							has_government = fascism
+							has_government = national_socialism
+						}
+					}
+					AND = {
+						tag = PL3
+						has_government = national_socialism
+					}
+					AND = {
+						tag = SSC
+						OR = {
+							has_government = national_socialism
+							has_government = republican_fascism
+							has_government = stratocratic
+						}
+					}
+					AND = {
+						tag = WLN
+						has_government = liberal_republic
+					}
+					AND = {
+						tag = GMA
+						OR = {
+							has_government = national_socialism
+							has_government = fascism
+							has_government = monarchism
+							has_government = stratocratic_monarchism
+							has_government = stratocratic
+							has_government = authoritarian_monarchism
+							has_government = centrist_monarchism
+							has_government = conservative_monarchism
+						}
+					}
+					AND = {
+						tag = MAF
+						NOT = {
+							has_government = communism
+							has_government = vanguardism
+						}
+					}
+					AND = {
+						OR = {
+							tag = KHE
+							tag = BGN
+						}
+						has_government = republican_fascism
+					}
+					AND = {
+						OR = {
+							tag = LAT
+							tag = EST
+							tag = UKR
+							tag = BLR
+							tag = TSC
+							tag = MSC
+							tag = RIG
+							tag = SUV
+							tag = LTG
+							tag = CZC
+							tag = CZE
+							tag = SLO
+							tag = BGN
+							tag = NND
+							tag = OCC
+						}
+						has_government = national_socialism
+					}
+					AND = {
+						has_cosmetic_tag = GREY_GER3
+						has_government = national_socialism
+					}
+				}
+			}										
+		}
+		do_german_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				AND = {
+					tag = OCC
+					NOT = {
+						has_government = national_socialism
+					}
+				}
+			}
+		}
+		do_occitanian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = NSA
+				}
+			}
+		do_lower_german_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = { 
+					tag = POL 
+					AND = {
+						tag = GAL 
+						NOT = {
+							has_government = centrist_monarchism
+						}
+					}
+					AND = {
+						tag = PL3
+						NOT = {
+							has_government  = national_socialism
+							NOT = {
+								has_cosmetic_tag = POL_2023
+							}
+						}
+					}
+					AND = {
+						tag = PL2
+						NOT = {
+							has_government  = national_socialism
+							has_government  = republican_fascism
+							has_government  = fascism
+							has_government  = stratocratic
+						}
+					}
+				}
+			}
+		}
+		do_polish_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				AND = {
+					OR = { 
+						tag = CZE 
+						tag = CZC 
+					}
+					NOT = {
+						has_government = national_socialism
+					}
+				}
+			}
+		}
+		do_czech_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				AND = {
+					tag = SLO
+					NOT = {
+						has_government = national_socialism
+					}
+				}
+			}
+		}
+		do_slovak_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = LIT
+			}
+		}
+		do_lithuanian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = SWI
+			}
+		}
+		do_swiss_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = LAT
+			}
+		}
+		do_latvian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = { 
+					tag = YUG
+					tag = SLV 
+					tag = KOS 
+					tag = MAC 
+				}
+			}
+		}
+		do_yugoslavian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = LUX
+			}
+		}
+		do_luxembourgish_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {	
+				OR = {
+					tag = CAP 
+					tag = HOL
+				}
+			}
+		}
+		do_dutch_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = BEL
+					AND = {
+						tag = BL2
+						NOT = {
+							has_government = stratocratic
+							has_government = republican_fascism
+							has_government = national_socialism
+							has_government = theocratic
+						}
+					}
+				}
+			}
+		}
+		do_belgian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = HUN
+			 }
+		}
+		do_hungarian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = BUL
+			}
+		}
+		do_bulgarian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = GRE
+			}
+		}
+		do_greek_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = ALB
+			}
+		}
+		do_albanian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = { 
+					tag = CAT 
+					tag = ADR 
+				}
+			}
+		}
+		do_catalonian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR =  { 
+					tag = ITA 
+					is_subject_of = ITA
+					has_cosmetic_tag = ITA_GREEN
+					tag = PIE
+					tag = PRM
+					tag = MDN
+					tag = LCC
+					tag = TUS
+					tag = NAP
+					AND = {
+						tag = ALB
+						has_government = fascism
+					}
+				}
+			}
+		}
+		do_italian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = POR 
+					tag = BRA
+				}
+			}
+		}
+		do_portuguese_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = VCT
+					has_cosmetic_tag = SPQR 
+					AND = {
+						OR = {
+							tag = GER
+							AND = {
+								tag = WGR
+								OR = {
+									has_start_date > 1991.01.01
+									OR = {
+										has_cosmetic_tag = WGR_2023
+										has_cosmetic_tag = WGR_HRE_1992
+									}
+								}
+							}
+						}
+						OR = {
+							AND = {
+								has_government = anocratic_monarchism
+							}
+							AND = {
+								tag = GER
+								has_government = theocratic
+								has_start_date < 1915.01.01
+								has_start_date > 1913.01.01
+							}
+						}
+					}
+				}
+			}
+		}
+		do_latin_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					AND = {
+						tag = UKR
+						NOT = {
+							has_government = vanguardism
+							has_government = national_socialism
+						}
+					}
+					AND = {
+						tag = UA2
+						NOT = {
+							OR = {
+								has_government = stratocratic
+								has_government = republican_fascism
+								has_government = national_socialism
+								has_government = theocratic
+								has_government = right_anarchism
+							}
+						}
+					}
+				}
+			}
+		}
+		do_ukrainian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = PHI
+			}
+		}
+		do_philippine_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = UKR
+				OR = {
+					has_government = communism
+					has_government = vanguardism
+				}
+			}
+		}
+		do_sovietukrainian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = JAP 
+					tag = PSC
+					tag = RGC 
+					tag = RFC
+					tag = SCA 
+					tag = NSX
+					AND = {
+						tag = MAN
+						has_start_date > 1937.01.01
+					}
+					AND = {
+						tag = CAL
+						has_government = fascism
+					}
+				  	is_subject_of = JAP
+				}
+			}
+		}
+		do_japanese_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = { 
+					tag = SOV 
+					tag = RUS 
+					tag = ADJ 
+					tag = ABK 
+					tag = SOS
+					AND = {
+						OR = {
+							tag = TSC
+							tag = UKR
+						}
+						has_government = vanguardism
+					}
+					AND = {
+						tag = MSC
+						NOT = {
+							has_government = national_socialism
+						}
+					}
+					AND = {
+						tag = MC2
+						NOT = {
+							OR = {
+								has_government = anocratic_republic
+								has_government = stratocratic
+								has_government = republican_fascism
+								has_government = national_socialism
+								has_government = theocratic
+								has_government = right_anarchism
+							}
+						}
+					}
+					AND = {
+						tag = KC2
+						NOT = {
+							OR = {
+								has_government = anocratic_republic
+								has_government = neutrality
+								has_government = authoritarian_monarchism
+								has_government = stratocratic
+								has_government = republican_fascism
+								has_government = fascism
+								has_government = national_socialism
+								has_government = theocratic
+								has_government = right_anarchism
+							}
+						}
+					}
+				}
+			}
+		}
+		do_russian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				AND = {
+					OR = {
+						tag = SOV 
+						tag = RUS 
+						tag = ADJ 
+						tag = ABK 
+						tag = TSC 
+						tag = SOS
+					}
+					OR = {
+						has_government = communism
+						has_government = vanguardism
+						has_government = socialism_ideology
+					}
+				}
+			}
+		}
+		do_soviet_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = IRQ
+					tag = SYR
+					tag = JOR
+					tag = PAL
+					tag = GZS
+					tag = KUW
+					tag = SAU
+					tag = BHR
+					tag = QAT
+					tag = UAE
+					tag = OMA
+					tag = YEM
+					tag = EGY
+					tag = SUD
+					tag = RSF
+					tag = LBA
+					tag = TUN
+					tag = ALG
+					tag = MOR
+					tag = WES
+					tag = HJZ
+					tag = MRT
+					tag = QAT
+					tag = HBL
+					tag = MRT
+					AND = {
+						tag = ADU
+						OR = {
+							has_government = authoritarian_monarchism
+							has_government = monarchism
+						}
+					}
+				}
+			}
+		}
+		do_standard_arabic_renames = yes
+		if = {
+			limit = {
+				ROOT = {
+					AND = {
+						has_government = authoritarian_monarchism
+						has_cosmetic_tag = UK_RED
+					}
+				}
+			}
+			do_arabic_renames = yes
+		}
+		if = {
+			limit = {
+				ROOT = {
+					OR = {
+						AND = {
+							has_cosmetic_tag = FRA_BLUE
+							NOT = {
+								tag = TUN
+							}
+						}
+					}
+				}
+			}
+			do_french_renames = yes
+		}
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = ISR
+					AND = {
+						tag = GZS
+						has_government = authoritarian_monarchism
+					}
+					AND = {
+						tag = WBK
+						OR = {
+							has_government = anocratic_republic
+							has_government = stratocratic
+							has_government = stratocratic_monarchism
+						}
+					}
+				}
+			}
+		}
+		do_hebrew_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = IRE
+					tag = SCO 
+					tag = WLS 
+					tag = CRN 
+					tag = BRI 
+					tag = MNX
+				}
+			}
+		}
+		do_celtic_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = ROM 
+					tag = MOL 
+				}
+			}
+		}
+		do_romanian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_cosmetic_tag = UK_RED
+					tag = ENG
+					tag = EGL
+					tag = BCM
+					AND = {
+						tag = RAJ
+						OR = {
+							has_government = authoritarian_monarchism
+							has_government = conservative_monarchism
+							has_government = stratocratic_monarchism
+							has_government = stratocratic
+							has_government = monarchism
+							has_government = right_anarchism
+						}
+					}
+					AND = {
+						tag = USA
+						OR = {
+							has_government = authoritarian_monarchism
+							has_government = democratic_monarchism
+							has_government = conservative_monarchism
+							has_government = stratocratic_monarchism
+							has_government = monarchism
+						}
+					}
+				}
+			}
+		}
+		do_english_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					AND = {
+						tag = USA
+						NOT = {
+							OR = {
+								has_government = authoritarian_monarchism
+								has_government = democratic_monarchism
+								has_government = conservative_monarchism
+								has_government = stratocratic_monarchism
+								has_government = monarchism
+								has_government = national_socialism
+							}
+						}
+					}
+					AND = {
+						tag = GMA
+						NOT = {
+							OR = {
+								has_government = national_socialism
+								has_government = fascism
+								has_government = monarchism
+								has_government = stratocratic_monarchism
+								has_government = stratocratic
+								has_government = authoritarian_monarchism
+								has_government = centrist_monarchism
+								has_government = conservative_monarchism
+							}
+						}
+					}
+					AND = {
+						tag = ALA
+						NOT = {
+							has_government = socialist_monarchy
+							has_cosmetic_tag = ALA_JAP
+						}
+					}
+				}
+			}
+		}
+		do_american_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					AND = {
+						tag = BLR
+						NOT = {
+							has_government = national_socialism
+						}
+					}
+					AND = {
+						tag = NOW
+						has_government = republican_fascism
+					}
+					AND = {
+						tag = WR2
+						has_government = neutrality
+					}
+				}
+			}
+		}
+		do_belarussian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = TUR
+					tag = RUM
+					AND = {
+						OR = {
+							tag = WTC
+							tag = ETC
+						}
+						has_government = stratocratic
+					}
+				}
+			}
+		}
+		do_turkish_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_cosmetic_tag = OTTO
+					AND = {
+						tag = TUR
+						OR = {
+							has_government = conservative_monarchism
+							has_government = authoritarian_monarchism
+							has_government = stratocratic_monarchism
+							has_government = monarchism
+							has_government = fascism
+						}
+					}
+				}
+			}
+		}
+		do_ottoman_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = PER
+			}
+		}
+		do_persian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = AFG
+			}
+		}
+		do_dari_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = ICE
+			}
+		}
+		do_icelandic_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = NOR
+			}
+		}
+		do_norwegian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = LUS
+			}
+		}
+		do_sorbian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = FAR
+			}
+		}
+		do_faroese_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = DEN
+					AND = {
+						tag = DN2
+						NOT = {
+							OR = {
+								has_government = stratocratic
+								has_government = republican_fascism
+								has_government = national_socialism
+								has_government = theocratic
+							}
+						}
+					}
+				}
+			}
+		}
+		do_danish_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = SWE
+			}
+		}
+		do_swedish_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = SIA
+			}
+		}
+		do_thai_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = CAM
+			}
+		}
+		do_khmer_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = LAO
+			}
+		}
+		do_lao_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = BRM
+			}
+		}
+		do_burmese_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = ETH
+			}
+		}
+		do_ethiopian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				has_cosmetic_tag = MRN_ESP
+			}
+		}
+		do_esperanto_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = LIV
+			}
+		}
+		do_livonian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_cosmetic_tag = LBA_ITA
+		          		has_cosmetic_tag = AZR_ITA
+		          		has_cosmetic_tag = ARM_ITA
+		          		has_cosmetic_tag = GEO_ITA
+			          	has_cosmetic_tag = ERI_ITA
+			          	has_cosmetic_tag = KRD_ITA
+			          	has_cosmetic_tag = SYR_ITA
+		        	  	has_cosmetic_tag = ADU_ITA
+		          		has_cosmetic_tag = POR_ITA
+			          	has_cosmetic_tag = SOM_ITA
+			          	has_cosmetic_tag = ETH_ITA
+			          	has_cosmetic_tag = EGY_ITA
+		        	  	has_cosmetic_tag = SUD_ITA
+		          		has_cosmetic_tag = ALG_ITA
+			          	has_cosmetic_tag = SYR_ITA
+			          	has_cosmetic_tag = PAL_ITA
+			          	has_cosmetic_tag = ALB_ITA
+		        	  	has_cosmetic_tag = CRO_ITA
+		          		has_cosmetic_tag = MNT_ITA
+			          	has_cosmetic_tag = SER_ITA
+			          	has_cosmetic_tag = GRE_ITA
+			          	has_cosmetic_tag = TUR_ITA
+				        has_cosmetic_tag = SAU_ITA
+			        	has_cosmetic_tag = IRQ_ITA
+				        has_cosmetic_tag = SER_ITA
+				        has_cosmetic_tag = BUL_ITA
+				        has_cosmetic_tag = YUG_ITA
+				        has_cosmetic_tag = FRA_ITA
+				        has_cosmetic_tag = SPR_ITA
+				        has_cosmetic_tag = MOR_ITA
+				        has_cosmetic_tag = ITA_GREEN
+				}
+			}
+		}
+		do_italian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+		            		has_cosmetic_tag = SIA_JAP
+		            		has_cosmetic_tag = PAC_JAP
+		            		has_cosmetic_tag = CHI_JAP
+		            		has_cosmetic_tag = SHX_JAP
+		            		has_cosmetic_tag = YUN_JAP
+		            		has_cosmetic_tag = GXC_JAP
+		            		has_cosmetic_tag = RAJ_JAP
+		            		has_cosmetic_tag = TML_JAP
+		            		has_cosmetic_tag = AST_JAP
+		            		has_cosmetic_tag = NZL_JAP
+		            		has_cosmetic_tag = FIJ_JAP
+		            		has_cosmetic_tag = SAM_JAP
+		            		has_cosmetic_tag = CAS_JAP
+		            		has_cosmetic_tag = ALA_JAP
+		            		has_cosmetic_tag = PRU_JAP
+		            		has_cosmetic_tag = CHL_JAP
+		            		has_cosmetic_tag = XSM_JAP
+		            		has_cosmetic_tag = SIK_JAP
+		            		has_cosmetic_tag = TIB_JAP
+		            		has_cosmetic_tag = PHI_JAP
+		            		has_cosmetic_tag = INS_JAP
+		            		has_cosmetic_tag = PNG_JAP
+		            		has_cosmetic_tag = ANN_JAP
+			        	has_cosmetic_tag = VIN_JAP
+			        	has_cosmetic_tag = INC_JAP
+			        	has_cosmetic_tag = LAO_JAP
+			        	has_cosmetic_tag = CAM_JAP
+			        	has_cosmetic_tag = BRM_JAP
+			        	has_cosmetic_tag = TWN_JAP
+			        	has_cosmetic_tag = KOR_JAP
+			        	has_cosmetic_tag = ALA_JAP
+			        	has_cosmetic_tag = CHI_PGROC
+			        	has_cosmetic_tag = CHI_RNGOC
+			        	has_cosmetic_tag = JAPAN_WHITE
+				}
+			}
+		}
+		do_japanese_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_cosmetic_tag = EGY_TUR
+			        	has_cosmetic_tag = ALG_TUR
+		            		has_cosmetic_tag = LBA_TUR
+		            		has_cosmetic_tag = TUN_TUR
+		            		has_cosmetic_tag = MOR_TUR
+		            		has_cosmetic_tag = VILYET
+				}
+			}
+		}
+		do_turkish_renames = yes
+		do_ottoman_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					has_cosmetic_tag = SAF_HOL
+			        	has_cosmetic_tag = SUR_HOL
+		            		has_cosmetic_tag = INS_DEI
+		           		has_cosmetic_tag = CRC_HOL
+				}
+			}
+		}
+		do_dutch_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = FRA
+					is_subject_of = FRA
+				}
+			}
+		}
+		do_french_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = IRE
+					tag = MUN
+					tag = LEI
+					tag = CNG
+					tag = NIR
+				}
+			}
+		}
+		do_irish_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = BSQ
+			}
+		}
+		do_basque_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = GEO
+					AND = {
+						tag = KC2
+						has_government = authoritarian_monarchism
+					}
+				}
+			}
+		}
+		do_georgian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = IDS
+			}
+		}
+		do_indonesian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = TTR
+			}
+		}
+		do_tatar_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = BSH
+				NOT = {
+					has_government = stratocratic
+				}
+			}
+		}
+		do_bashkir_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = UDM
+			}
+		}
+		do_udmurt_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = CVS
+			}
+		}
+		do_chuvash_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = MRD
+			}
+		}
+		do_mordvin_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = MRE
+			}
+		}
+		do_mari_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = KMI
+			}
+		}
+		do_komi_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = IND
+					tag = PAK
+					tag = BAN
+					tag = BHU
+				}
+			}
+		}
+		do_indian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = SRL
+				NOT = {
+					has_government = conservative_monarchism
+					has_government = anocratic_monarchism
+					has_government = authoritarian_monarchism
+					has_government = stratocratic_monarchism
+					has_government = fascism
+				}
+			}
+		}
+		do_sinhalese_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				AND = {
+					tag = AUK
+					has_government = stratocratic
+				}
+			}
+		}
+		do_yiddish_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = COG
+					tag = EQG
+					tag = BRD
+					tag = TZN
+					tag = SOM
+					tag = SML
+					tag = ERI
+					tag = MZB
+					tag = MAD
+				}
+			}
+		}
+		do_postcolonial_african_renames = yes
+	}
 }
