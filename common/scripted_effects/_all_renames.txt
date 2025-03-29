@@ -657,27 +657,6 @@ do_all_renames = {
 		do_latvian_renames = yes
 	}
 
-	### EST ###
-	if = {
-		limit = {
-			ROOT = {
-				tag = EST
-			}
-		}
-		do_estonian_renames = yes
-	}
-	if = {
-		limit = {
-			ROOT = {
-				OR = {
-					tag = VRS
-					tag = STS
-				}
-			}
-		}
-		do_south_estonian_renames = yes
-	}
-
 	### YUG ###
 	if = {
 		limit = {
@@ -790,18 +769,6 @@ do_all_renames = {
 		do_catalonian_renames = yes
 	}
 
-	### SPR ###
-	if = {
-		limit = {
-			ROOT = {
-				OR = {
-					tag = SPR
-					is_subject_of = SPR
-				}
-			}
-		}
-		do_spanish_renames = yes
-	}
 	### ITA ###
 		if = {
 			limit = {
@@ -1330,16 +1297,6 @@ do_all_renames = {
 			}
 		}
 		do_dari_renames = yes
-	}
-	
-	### FIN ###
-	if = {
-		limit = {
-			ROOT = {
-				tag = FIN
-			}
-		}
-		do_finnish_renames = yes
 	}
 	
 	### ICE ###
