@@ -26,14 +26,21 @@ do_all_renames = {
 					tag = COS
 					tag = PAN
 					tag = COL
+					is_subject_of = COL
 					tag = VEN
+					is_subject_of = VEN
 					tag = ZUL
 					tag = ECU
+					is_subject_of = ECU
 					tag = PRU
+					is_subject_of = PRU
 					tag = BOL
+					is_subject_of = BOL
 					tag = STC
 					tag = CHL
+					is_subject_of = CHL
 					tag = ARG
+					is_subject_of = ARG
 					tag = LBC
 					tag = JUJ
 					tag = STA
@@ -59,7 +66,9 @@ do_all_renames = {
 					tag = TRF
 					tag = PAT
 					tag = PAR
+					is_subject_of = PAR
 					tag = URG
+					is_subject_of = URG
 					tag = PVD
 					has_cosmetic_tag = WES_SPR
 					has_cosmetic_tag = RIF_SPR
@@ -95,6 +104,24 @@ do_all_renames = {
 		limit = {
 			ROOT = {
 				OR = {
+					tag = SWE
+					is_subject_of = SWE
+					tag = SCN
+					tag = GOL
+					tag = OLA
+					tag = GOT
+					tag = SVE
+					tag = NOL
+					tag = ALN
+				}
+			}
+		}
+		do_swedish_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
 					tag = EST
 					is_subject_of = EST
 				}
@@ -107,7 +134,9 @@ do_all_renames = {
 			ROOT = {
 				OR = {
 					tag = VRS
+					is_subject_of = VRS
 					tag = STS
+					is_subject_of = STS
 				}
 			}
 		}
@@ -1329,14 +1358,6 @@ do_all_renames = {
 			}
 		}
 		do_danish_renames = yes
-	}
-	if = {
-		limit = {
-			ROOT = {
-				tag = SWE
-			}
-		}
-		do_swedish_renames = yes
 	}
 	if = {
 		limit = {
