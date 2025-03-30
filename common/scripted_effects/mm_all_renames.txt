@@ -1,19 +1,147 @@
-do_country_renames = {
-	ROOT = {
-		every_owned_state = {
-			do_all_renames = yes
-		}
-	}
-}
-do_german_country_renames = {
-	ROOT = {
-		every_owned_state = {
-			do_german_renames = yes
-		}
-	}
-}
 do_all_renames = {
-	### TKS ###
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = SPR
+					is_subject_of = SPR
+					tag = SP2
+					tag = ADU
+					tag = MRC
+					tag = CST
+					tag = MDD
+					tag = LEO
+					tag = CNB
+					tag = AST
+					tag = CNR
+					tag = EXD
+					tag = MEX
+					is_subject_of = MEX
+					tag = CUB
+					tag = DOM
+					tag = GUA
+					tag = HON
+					tag = ELS
+					tag = NIC
+					tag = COS
+					tag = PAN
+					tag = COL
+					is_subject_of = COL
+					tag = VEN
+					is_subject_of = VEN
+					tag = ZUL
+					tag = ECU
+					is_subject_of = ECU
+					tag = PRU
+					is_subject_of = PRU
+					tag = BOL
+					is_subject_of = BOL
+					tag = STC
+					tag = CHL
+					is_subject_of = CHL
+					tag = ARG
+					is_subject_of = ARG
+					tag = LBC
+					tag = JUJ
+					tag = STA
+					tag = FOR
+					tag = CCO
+					tag = MIO
+					tag = CRR
+					tag = ENR
+					tag = STF
+					tag = BUA
+					tag = ACB
+					tag = CRD
+					tag = STO
+					tag = CTC
+					tag = RJA
+					tag = SLS
+					tag = SJN
+					tag = MDZ
+					tag = PMP
+					tag = RNG
+					tag = CBT
+					tag = NQN
+					tag = TRF
+					tag = PAT
+					tag = PAR
+					is_subject_of = PAR
+					tag = URG
+					is_subject_of = URG
+					tag = PVD
+					has_cosmetic_tag = WES_SPR
+					has_cosmetic_tag = RIF_SPR
+					has_cosmetic_tag = IFN_SPR
+					has_cosmetic_tag = EQG_SPR
+		 			has_cosmetic_tag = NAP_SPR
+					has_cosmetic_tag = RDO_SPR
+		  			has_cosmetic_tag = SEH_SPR
+		  			has_cosmetic_tag = SPR_YELLOW
+					has_cosmetic_tag = SPR_AUTH
+					has_cosmetic_tag = SPR_KINGDOM
+					has_cosmetic_tag = SPR_IBERIA
+					has_cosmetic_tag = SPR_SOCIALIST
+					has_cosmetic_tag = SPR_EMPIRE
+				}
+			}
+		}
+		do_spanish_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = FIN
+					is_subject_of = FIN
+					tag = OST
+				}
+			}
+		}
+		do_finnish_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = SWE
+					is_subject_of = SWE
+					tag = SCN
+					tag = GOL
+					tag = OLA
+					tag = GOT
+					tag = SVE
+					tag = NOL
+					tag = ALN
+				}
+			}
+		}
+		do_swedish_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = EST
+					is_subject_of = EST
+				}
+			}
+		}
+		do_estonian_renames = yes
+	}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = VRS
+					is_subject_of = VRS
+					tag = STS
+					is_subject_of = STS
+				}
+			}
+		}
+		do_south_estonian_renames = yes
+	}
 	if = {
 		limit = {
 			ROOT = {
@@ -36,8 +164,6 @@ do_all_renames = {
 		}
 		do_turkestan_renames = yes
 	}
-	
-	### SOV TKS ###
 	if = {
 		limit = {
 			ROOT = {
@@ -56,8 +182,6 @@ do_all_renames = {
 		}
 		do_sovietturkestan_renames = yes
 	}
-	
-	### KYR ###
 	if = {
 		limit = {
 			ROOT = {
@@ -66,8 +190,6 @@ do_all_renames = {
 		}
 		do_kyrgyz_renames = yes
 	}
-	
-	### TAJ ###
 	if = {
 		limit = {
 			ROOT = {
@@ -76,8 +198,6 @@ do_all_renames = {
 		}
 		do_tajik_renames = yes
 	}
-	
-	### TMS ###
 	if = {
 		limit = {
 			ROOT = {
@@ -86,8 +206,6 @@ do_all_renames = {
 		}
 		do_turkmen_renames = yes
 	}
-	
-	### KPK ###
 	if = {
 		limit = {
 			ROOT = {
@@ -96,8 +214,6 @@ do_all_renames = {
 		}
 		do_karakalpak_renames = yes
 	}
-	
-	### UZB ###
 	if = {
 		limit = {
 			ROOT = {
@@ -106,8 +222,6 @@ do_all_renames = {
 		}
 		do_uzbek_renames = yes
 	}
-	
-	### KAZ ###
 	if = {
 		limit = {
 			ROOT = {
@@ -116,8 +230,6 @@ do_all_renames = {
 		}
 		do_kazakh_renames = yes
 	}
-
-	### AZR ###
 	if = {
 		limit = {
 			ROOT = {
@@ -129,8 +241,6 @@ do_all_renames = {
 		}
 		do_azerbaijani_renames = yes
 	}
-
-	### VIN ###
 	if = {
 		limit = {
 			ROOT = {
@@ -143,8 +253,6 @@ do_all_renames = {
 		}
 		do_vietnamese_renames = yes
 	}
-
-	### NVI ###
 	if = {
 		limit = {
 			ROOT = {
@@ -153,8 +261,6 @@ do_all_renames = {
 		}
 		do_northvietnamese_renames = yes
 	}
-
-	### KUR ###
 	if = {
 		limit = {
 			ROOT = {
@@ -169,8 +275,6 @@ do_all_renames = {
 		}
 		do_kurdish_renames = yes
 	}
-
-	### ARM ###
 	if = {
 		limit = {
 			ROOT = {
@@ -179,8 +283,6 @@ do_all_renames = {
 		}
 		do_armenian_renames = yes
 	}
-	
-	### NGK ###
 	if = {
 		limit = {
 			ROOT = {
@@ -189,8 +291,6 @@ do_all_renames = {
 		}
 		do_modern_armenian_renames = yes
 	}
-
-	### DPK ###
 	if = {
 		limit = {
 			ROOT = {
@@ -199,8 +299,6 @@ do_all_renames = {
 		}
 		do_north_korean_renames = yes
 	}
-
-	### KOR ###
 	if = {
 		limit = {
 			ROOT = {
@@ -212,8 +310,6 @@ do_all_renames = {
 		}
 		do_korean_renames = yes
 	}
-
-	### SER ###
 	if = {
 		limit = {
 			ROOT = {
@@ -235,8 +331,6 @@ do_all_renames = {
 		}
 		do_serbocroat_renames = yes
 	}
-	
-	### JAP ###
 	if = {
 		limit = {
 			ROOT = {
@@ -257,8 +351,6 @@ do_all_renames = {
 		}
 		do_japanese_renames = yes
 	}
-
-	### PRC/CHI ###
 	if = {
 		limit = {
 			if = {
@@ -283,8 +375,6 @@ do_all_renames = {
 			do_pinyin_renames = yes
 		}
 	}
-	
-	### MON ###
 	if = {
 		limit = {
 			ROOT = {
@@ -296,8 +386,6 @@ do_all_renames = {
 		}
 		do_mongolian_renames = yes
 	}
-	
-	### UYG ###
 	if = {
 		limit = {
 			ROOT = {
@@ -309,8 +397,6 @@ do_all_renames = {
 		}
 		do_uyghur_renames = yes
 	}
-	
-	### TIB ###
 	if = {
 		limit = {
 			ROOT = {
@@ -319,8 +405,6 @@ do_all_renames = {
 		}
 		do_tibetian_renames = yes
 	}
-	
-	### TIB ###
 	if = {
 		limit = {
 			ROOT = {	
@@ -330,9 +414,7 @@ do_all_renames = {
 		}
 		do_tibetian_pinyin_renames = yes
 	}
-
-	### GER ###
-	if = {
+	if = {							# CAN WE SHORTEN THIS?
 		limit = {
 			ROOT = {
 				OR = {
@@ -532,8 +614,6 @@ do_all_renames = {
 		}
 		do_german_renames = yes
 	}
-
-	### OCC ###
 	if = {
 		limit = {
 			ROOT = {
@@ -547,8 +627,6 @@ do_all_renames = {
 		}
 		do_occitanian_renames = yes
 	}
-
-	### NSA ###
 	if = {
 		limit = {
 			ROOT = {
@@ -557,8 +635,6 @@ do_all_renames = {
 			}
 		do_lower_german_renames = yes
 	}
-
-	### POL ###
 	if = {
 		limit = {
 			ROOT = {
@@ -593,8 +669,6 @@ do_all_renames = {
 		}
 		do_polish_renames = yes
 	}
-
-	### CZE ###
 	if = {
 		limit = {
 			ROOT = {
@@ -611,8 +685,6 @@ do_all_renames = {
 		}
 		do_czech_renames = yes
 	}
-
-	### SLO ###
 	if = {
 		limit = {
 			ROOT = {
@@ -626,8 +698,6 @@ do_all_renames = {
 		}
 		do_slovak_renames = yes
 	}
-
-	### LIT ###
 	if = {
 		limit = {
 			ROOT = {
@@ -636,8 +706,6 @@ do_all_renames = {
 		}
 		do_lithuanian_renames = yes
 	}
-
-	### SWI ###
 	if = {
 		limit = {
 			ROOT = {
@@ -646,8 +714,6 @@ do_all_renames = {
 		}
 		do_swiss_renames = yes
 	}
-
-	### LAT ###
 	if = {
 		limit = {
 			ROOT = {
@@ -656,18 +722,6 @@ do_all_renames = {
 		}
 		do_latvian_renames = yes
 	}
-
-	### EST ###
-	if = {
-		limit = {
-			ROOT = {
-				tag = EST
-			}
-		}
-		do_estonian_renames = yes
-	}
-
-	### YUG ###
 	if = {
 		limit = {
 			ROOT = {
@@ -681,8 +735,6 @@ do_all_renames = {
 		}
 		do_yugoslavian_renames = yes
 	}
-
-	### LUX ###
 	if = {
 		limit = {
 			ROOT = {
@@ -691,8 +743,6 @@ do_all_renames = {
 		}
 		do_luxembourgish_renames = yes
 	}
-
-	### HOL ###
 	if = {
 		limit = {
 			ROOT = {	
@@ -704,8 +754,6 @@ do_all_renames = {
 		}
 		do_dutch_renames = yes
 	}
-
-	### BEL ###
 	if = {
 		limit = {
 			ROOT = {
@@ -725,8 +773,6 @@ do_all_renames = {
 		}
 		do_belgian_renames = yes
 	}
-
-	### HUN ###
 	if = {
 		limit = {
 			ROOT = {
@@ -735,8 +781,6 @@ do_all_renames = {
 		}
 		do_hungarian_renames = yes
 	}
-
-	### BUL ###
 	if = {
 		limit = {
 			ROOT = {
@@ -745,8 +789,6 @@ do_all_renames = {
 		}
 		do_bulgarian_renames = yes
 	}
-
-	### GRE ###
 	if = {
 		limit = {
 			ROOT = {
@@ -755,8 +797,6 @@ do_all_renames = {
 		}
 		do_greek_renames = yes
 	}
-	
-	### ALB ###
 	if = {
 		limit = {
 			ROOT = {
@@ -765,8 +805,6 @@ do_all_renames = {
 		}
 		do_albanian_renames = yes
 	}
-
-	### CAT ###
 	if = {
 		limit = {
 			ROOT = {
@@ -778,44 +816,28 @@ do_all_renames = {
 		}
 		do_catalonian_renames = yes
 	}
-
-	### SPR ###
 	if = {
 		limit = {
 			ROOT = {
-				OR = {
-					tag = SPR
-					is_subject_of = SPR
-				}
-			}
-		}
-		do_spanish_renames = yes
-	}
-	### ITA ###
-		if = {
-			limit = {
-				ROOT = {
-					OR =  { 
-						tag = ITA 
-						is_subject_of = ITA
-						has_cosmetic_tag = ITA_GREEN
-						tag = PIE
-						tag = PRM
-						tag = MDN
-						tag = LCC
-						tag = TUS
-						tag = NAP
-						AND = {
-							tag = ALB
-							has_government = fascism
-						}
+				OR =  { 
+					tag = ITA 
+					is_subject_of = ITA
+					has_cosmetic_tag = ITA_GREEN
+					tag = PIE
+					tag = PRM
+					tag = MDN
+					tag = LCC
+					tag = TUS
+					tag = NAP
+					AND = {
+						tag = ALB
+						has_government = fascism
 					}
 				}
 			}
-			do_italian_renames = yes
 		}
-
-	### POR ###
+		do_italian_renames = yes
+	}
 	if = {
 		limit = {
 			ROOT = {
@@ -827,8 +849,6 @@ do_all_renames = {
 		}
 		do_portuguese_renames = yes
 	}
-
-	### VCT ###
 	if = {
 		limit = {
 			ROOT = {
@@ -866,8 +886,6 @@ do_all_renames = {
 		}
 		do_latin_renames = yes
 	}
-	
-	### UKR ###
 	if = {
 		limit = {
 			ROOT = {
@@ -896,8 +914,6 @@ do_all_renames = {
 		}
 		do_ukrainian_renames = yes
 	}
-	
-	### PHI ###
 	if = {
 		limit = {
 			ROOT = {
@@ -906,8 +922,6 @@ do_all_renames = {
 		}
 		do_philippine_renames = yes
 	}
-	
-	### UKR ###
 	if = {
 		limit = {
 			ROOT = {
@@ -920,8 +934,6 @@ do_all_renames = {
 		}
 		do_sovietukrainian_renames = yes
 	}
-	
-	### JAP ###
 	if = {
 		limit = {
 			ROOT = {
@@ -946,8 +958,6 @@ do_all_renames = {
 		}
 		do_japanese_renames = yes
 	}
-
-	### RUS ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1004,8 +1014,6 @@ do_all_renames = {
 		}
 		do_russian_renames = yes
 	}
-
-	### SOV ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1028,8 +1036,6 @@ do_all_renames = {
 		}
 		do_soviet_renames = yes
 	}
-	
-	### SAU ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1097,8 +1103,6 @@ do_all_renames = {
 			do_french_renames = yes
 		}
 	}
-	
-	### ISR ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1121,25 +1125,21 @@ do_all_renames = {
 		}
 		do_hebrew_renames = yes
 	}
-		
-	### CEL ###
-		if = {
-			limit = {
-				ROOT = {
-					OR = {
-						tag = IRE
-						tag = SCO 
-						tag = WLS 
-						tag = CRN 
-						tag = BRI 
-						tag = MNX
-					}
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					tag = IRE
+					tag = SCO 
+					tag = WLS 
+					tag = CRN 
+					tag = BRI 
+					tag = MNX
 				}
 			}
-			do_celtic_renames = yes
 		}
-
-	### ROM ###
+		do_celtic_renames = yes
+	}
 	if = {
 		limit = {
 			ROOT = {
@@ -1151,8 +1151,6 @@ do_all_renames = {
 		}
 		do_romanian_renames = yes
 	}
-
-	### ENG ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1187,8 +1185,6 @@ do_all_renames = {
 		}
 		do_english_renames = yes
 	}
-	
-	### USA ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1233,8 +1229,6 @@ do_all_renames = {
 		}
 		do_american_renames = yes
 	}
-
-	### BLR ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1258,8 +1252,6 @@ do_all_renames = {
 		}
 		do_belarussian_renames = yes
 	}
-
-	### TUR ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1278,8 +1270,6 @@ do_all_renames = {
 		}
 		do_turkish_renames = yes
 	}
-
-	### OTTO ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1300,8 +1290,6 @@ do_all_renames = {
 		}
 		do_ottoman_renames = yes
 	}
-
-	### PER ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1310,8 +1298,6 @@ do_all_renames = {
 		}
 		do_persian_renames = yes
 	}
-
-	### AFG ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1320,18 +1306,6 @@ do_all_renames = {
 		}
 		do_dari_renames = yes
 	}
-	
-	### FIN ###
-	if = {
-		limit = {
-			ROOT = {
-				tag = FIN
-			}
-		}
-		do_finnish_renames = yes
-	}
-	
-	### ICE ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1340,8 +1314,6 @@ do_all_renames = {
 		}
 		do_icelandic_renames = yes
 	}
-	
-	### NOR ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1350,8 +1322,6 @@ do_all_renames = {
 		}
 		do_norwegian_renames = yes
 	}
-	
-	### LUS ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1360,8 +1330,6 @@ do_all_renames = {
 		}
 		do_sorbian_renames = yes
 	}
-	
-	### FAR ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1370,8 +1338,6 @@ do_all_renames = {
 		}
 		do_faroese_renames = yes
 	}
-	
-	### DEN ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1393,18 +1359,6 @@ do_all_renames = {
 		}
 		do_danish_renames = yes
 	}
-	
-	### SWE ###
-	if = {
-		limit = {
-			ROOT = {
-				tag = SWE
-			}
-		}
-		do_swedish_renames = yes
-	}
-	
-	### SIA ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1413,8 +1367,6 @@ do_all_renames = {
 		}
 		do_thai_renames = yes
 	}
-	
-	### CAM ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1422,9 +1374,7 @@ do_all_renames = {
 			}
 		}
 		do_khmer_renames = yes
-	}	
-	
-	### LAO ###
+	}
 	if = {
 		limit = {
 			ROOT = {
@@ -1432,9 +1382,7 @@ do_all_renames = {
 			}
 		}
 		do_lao_renames = yes
-	}	
-	
-	### BRM ###
+	}
 	if = {
 		limit = {
 			ROOT = {
@@ -1442,9 +1390,7 @@ do_all_renames = {
 			}
 		}
 		do_burmese_renames = yes
-	}	
-	
-	### ETH ###
+	}
 	if = {
 		limit = {
 			ROOT = {
@@ -1452,9 +1398,7 @@ do_all_renames = {
 			}
 		}
 		do_ethiopian_renames = yes
-	}				
-
-	### ESP ###
+	}
 	if = {
 		limit = {
 			ROOT = {
@@ -1463,8 +1407,6 @@ do_all_renames = {
 		}
 		do_esperanto_renames = yes
 	}
-
-	### LIV ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1473,152 +1415,118 @@ do_all_renames = {
 		}
 		do_livonian_renames = yes
 	}
-
-	### ITA ###
 	if = {
 		limit = {
 			ROOT = {
 				OR = {
 					has_cosmetic_tag = LBA_ITA
-		            has_cosmetic_tag = AZR_ITA
-		            has_cosmetic_tag = ARM_ITA
-		            has_cosmetic_tag = GEO_ITA
-		            has_cosmetic_tag = ERI_ITA
-		            has_cosmetic_tag = KRD_ITA
-		            has_cosmetic_tag = SYR_ITA
-		            has_cosmetic_tag = ADU_ITA
-		            has_cosmetic_tag = POR_ITA
-		            has_cosmetic_tag = SOM_ITA
-		            has_cosmetic_tag = ETH_ITA
-		            has_cosmetic_tag = EGY_ITA
-		            has_cosmetic_tag = SUD_ITA
-		            has_cosmetic_tag = ALG_ITA
-		            has_cosmetic_tag = SYR_ITA
-		            has_cosmetic_tag = PAL_ITA
-		            has_cosmetic_tag = ALB_ITA
-		            has_cosmetic_tag = CRO_ITA
-		            has_cosmetic_tag = MNT_ITA
-		            has_cosmetic_tag = SER_ITA
-		            has_cosmetic_tag = GRE_ITA
-		            has_cosmetic_tag = TUR_ITA
-			        has_cosmetic_tag = SAU_ITA
-			        has_cosmetic_tag = IRQ_ITA
-			        has_cosmetic_tag = SER_ITA
-			        has_cosmetic_tag = BUL_ITA
-			        has_cosmetic_tag = YUG_ITA
-			        has_cosmetic_tag = FRA_ITA
-			        has_cosmetic_tag = SPR_ITA
-			        has_cosmetic_tag = MOR_ITA
-			        has_cosmetic_tag = ITA_GREEN
+		          		has_cosmetic_tag = AZR_ITA
+		          		has_cosmetic_tag = ARM_ITA
+		          		has_cosmetic_tag = GEO_ITA
+			          	has_cosmetic_tag = ERI_ITA
+			          	has_cosmetic_tag = KRD_ITA
+			          	has_cosmetic_tag = SYR_ITA
+		        	  	has_cosmetic_tag = ADU_ITA
+		          		has_cosmetic_tag = POR_ITA
+			          	has_cosmetic_tag = SOM_ITA
+			          	has_cosmetic_tag = ETH_ITA
+			          	has_cosmetic_tag = EGY_ITA
+		        	  	has_cosmetic_tag = SUD_ITA
+		          		has_cosmetic_tag = ALG_ITA
+			          	has_cosmetic_tag = SYR_ITA
+			          	has_cosmetic_tag = PAL_ITA
+			          	has_cosmetic_tag = ALB_ITA
+		        	  	has_cosmetic_tag = CRO_ITA
+		          		has_cosmetic_tag = MNT_ITA
+			          	has_cosmetic_tag = SER_ITA
+			          	has_cosmetic_tag = GRE_ITA
+			          	has_cosmetic_tag = TUR_ITA
+				        has_cosmetic_tag = SAU_ITA
+			        	has_cosmetic_tag = IRQ_ITA
+				        has_cosmetic_tag = SER_ITA
+				        has_cosmetic_tag = BUL_ITA
+				        has_cosmetic_tag = YUG_ITA
+				        has_cosmetic_tag = FRA_ITA
+				        has_cosmetic_tag = SPR_ITA
+				        has_cosmetic_tag = MOR_ITA
+				        has_cosmetic_tag = ITA_GREEN
 				}
 			}
 		}
 		do_italian_renames = yes
 	}
-
-	### SPR ###
 	if = {
 		limit = {
 			ROOT = {
 				OR = {
-					has_cosmetic_tag = WES_SPR
-					has_cosmetic_tag = RIF_SPR
-					has_cosmetic_tag = IFN_SPR
-					has_cosmetic_tag = EQG_SPR
-		 			has_cosmetic_tag = NAP_SPR
-					has_cosmetic_tag = RDO_SPR
-		  			has_cosmetic_tag = SEH_SPR
-		  			has_cosmetic_tag = SPR_YELLOW
-					has_cosmetic_tag = SPR_AUTH
-					has_cosmetic_tag = SPR_KINGDOM
-					has_cosmetic_tag = SPR_IBERIA
-					has_cosmetic_tag = SPR_SOCIALIST
-					has_cosmetic_tag = SPR_EMPIRE
-				}
-			}
-		}
-		do_spanish_renames = yes
-	}
-
-	### JAP ###
-	if = {
-		limit = {
-			ROOT = {
-				OR = {
-		            has_cosmetic_tag = SIA_JAP
-		            has_cosmetic_tag = PAC_JAP
-		            has_cosmetic_tag = CHI_JAP
-		            has_cosmetic_tag = SHX_JAP
-		            has_cosmetic_tag = YUN_JAP
-		            has_cosmetic_tag = GXC_JAP
-		            has_cosmetic_tag = RAJ_JAP
-		            has_cosmetic_tag = TML_JAP
-		            has_cosmetic_tag = AST_JAP
-		            has_cosmetic_tag = NZL_JAP
-		            has_cosmetic_tag = FIJ_JAP
-		            has_cosmetic_tag = SAM_JAP
-		            has_cosmetic_tag = CAS_JAP
-		            has_cosmetic_tag = ALA_JAP
-		            has_cosmetic_tag = PRU_JAP
-		            has_cosmetic_tag = CHL_JAP
-		            has_cosmetic_tag = XSM_JAP
-		            has_cosmetic_tag = SIK_JAP
-		            has_cosmetic_tag = TIB_JAP
-		            has_cosmetic_tag = PHI_JAP
-		            has_cosmetic_tag = INS_JAP
-		            has_cosmetic_tag = PNG_JAP
-		            has_cosmetic_tag = ANN_JAP
-			        has_cosmetic_tag = VIN_JAP
-			        has_cosmetic_tag = INC_JAP
-			        has_cosmetic_tag = LAO_JAP
-			        has_cosmetic_tag = CAM_JAP
-			        has_cosmetic_tag = BRM_JAP
-			        has_cosmetic_tag = TWN_JAP
-			        has_cosmetic_tag = KOR_JAP
-			        has_cosmetic_tag = ALA_JAP
-			        has_cosmetic_tag = CHI_PGROC
-			        has_cosmetic_tag = CHI_RNGOC
-			        has_cosmetic_tag = JAPAN_WHITE
+		            		has_cosmetic_tag = SIA_JAP
+		            		has_cosmetic_tag = PAC_JAP
+		            		has_cosmetic_tag = CHI_JAP
+		            		has_cosmetic_tag = SHX_JAP
+		            		has_cosmetic_tag = YUN_JAP
+		            		has_cosmetic_tag = GXC_JAP
+		            		has_cosmetic_tag = RAJ_JAP
+		            		has_cosmetic_tag = TML_JAP
+		            		has_cosmetic_tag = AST_JAP
+		            		has_cosmetic_tag = NZL_JAP
+		            		has_cosmetic_tag = FIJ_JAP
+		            		has_cosmetic_tag = SAM_JAP
+		            		has_cosmetic_tag = CAS_JAP
+		            		has_cosmetic_tag = ALA_JAP
+		            		has_cosmetic_tag = PRU_JAP
+		            		has_cosmetic_tag = CHL_JAP
+		            		has_cosmetic_tag = XSM_JAP
+		            		has_cosmetic_tag = SIK_JAP
+		            		has_cosmetic_tag = TIB_JAP
+		            		has_cosmetic_tag = PHI_JAP
+		            		has_cosmetic_tag = INS_JAP
+		            		has_cosmetic_tag = PNG_JAP
+		            		has_cosmetic_tag = ANN_JAP
+			        	has_cosmetic_tag = VIN_JAP
+			        	has_cosmetic_tag = INC_JAP
+			        	has_cosmetic_tag = LAO_JAP
+			        	has_cosmetic_tag = CAM_JAP
+			        	has_cosmetic_tag = BRM_JAP
+			        	has_cosmetic_tag = TWN_JAP
+			        	has_cosmetic_tag = KOR_JAP
+			        	has_cosmetic_tag = ALA_JAP
+			        	has_cosmetic_tag = CHI_PGROC
+			        	has_cosmetic_tag = CHI_RNGOC
+			        	has_cosmetic_tag = JAPAN_WHITE
 				}
 			}
 		}
 		do_japanese_renames = yes
-	}	
-
-	### TUR ###
+	}
 	if = {
 		limit = {
 			ROOT = {
 				OR = {
 					has_cosmetic_tag = EGY_TUR
-			        has_cosmetic_tag = ALG_TUR
-		            has_cosmetic_tag = LBA_TUR
-		            has_cosmetic_tag = TUN_TUR
-		            has_cosmetic_tag = MOR_TUR
-		            has_cosmetic_tag = VILYET
+			        	has_cosmetic_tag = ALG_TUR
+		            		has_cosmetic_tag = LBA_TUR
+		            		has_cosmetic_tag = TUN_TUR
+		            		has_cosmetic_tag = MOR_TUR
+		            		has_cosmetic_tag = VILYET
 				}
 			}
 		}
 		do_turkish_renames = yes
 		do_ottoman_renames = yes
 	}
-
-	### HOL ###
 	if = {
 		limit = {
 			ROOT = {
 				OR = {
 					has_cosmetic_tag = SAF_HOL
-			        has_cosmetic_tag = SUR_HOL
-		            has_cosmetic_tag = INS_DEI
-		            has_cosmetic_tag = CRC_HOL
+			        	has_cosmetic_tag = SUR_HOL
+		            		has_cosmetic_tag = INS_DEI
+		           		has_cosmetic_tag = CRC_HOL
 				}
 			}
 		}
 		do_dutch_renames = yes
 	}
-
-	### FRA ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1630,8 +1538,6 @@ do_all_renames = {
 		}
 		do_french_renames = yes
 	}
-	
-	### IRE ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1645,9 +1551,7 @@ do_all_renames = {
 			}
 		}
 		do_irish_renames = yes
-	}											
-
-	### BSQ ###
+	}
 	if = {
 		limit = {
 			ROOT = {
@@ -1656,8 +1560,6 @@ do_all_renames = {
 		}
 		do_basque_renames = yes
 	}
-	
-	### GEO ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1672,7 +1574,6 @@ do_all_renames = {
 		}
 		do_georgian_renames = yes
 	}
-	### INDONESIA ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1681,7 +1582,6 @@ do_all_renames = {
 		}
 		do_indonesian_renames = yes
 	}
-	### Tatarstan ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1690,7 +1590,6 @@ do_all_renames = {
 		}
 		do_tatar_renames = yes
 	}
-	### Bashkortostan ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1702,7 +1601,6 @@ do_all_renames = {
 		}
 		do_bashkir_renames = yes
 	}
-	### Udmurtia ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1711,7 +1609,6 @@ do_all_renames = {
 		}
 		do_udmurt_renames = yes
 	}
-	### Chuvashia ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1720,7 +1617,6 @@ do_all_renames = {
 		}
 		do_chuvash_renames = yes
 	}
-	### Mordovia ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1729,7 +1625,6 @@ do_all_renames = {
 		}
 		do_mordvin_renames = yes
 	}
-	### Mari El ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1738,7 +1633,6 @@ do_all_renames = {
 		}
 		do_mari_renames = yes
 	}
-	### TNO reference Komi ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1747,7 +1641,6 @@ do_all_renames = {
 		}
 		do_komi_renames = yes
 	}
-	### India ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1761,7 +1654,6 @@ do_all_renames = {
 		}
 		do_indian_renames = yes
 	}
-	### Sri Lanka (Sinhalese) ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1777,7 +1669,6 @@ do_all_renames = {
 		}
 		do_sinhalese_renames = yes
 	}
-	### Yiddish ###
 	if = {
 		limit = {
 			ROOT = {
@@ -1789,7 +1680,6 @@ do_all_renames = {
 		}
 		do_yiddish_renames = yes
 	}
-	### Post-Colonial Africa ###
 	if = {
 		limit = {
 			ROOT = {
