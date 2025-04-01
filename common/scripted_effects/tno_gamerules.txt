@@ -1336,7 +1336,7 @@ do_tno_einheitspakt_setup = {
 				is_core_of = KEN
 			}
 			NOT = {
-				is_owned_by TZN
+				is_owned_by = TZN
 			}
 		}
 		transfer_state_to = ETH
@@ -2543,7 +2543,9 @@ do_tno_co_prosperity_setup = {
 				is_core_of = PAK
 			}
 		}
-		transfer_state = AFG
+		AFG = {
+			transfer_state = PREV
+		}
 	}
 	UZB = {
 		transfer_state = 405
