@@ -1,0 +1,154 @@
+guiTypes = {
+	containerWindowType = {
+		name = "edit_market_stockpile_window"
+		position = { x=-10000 y=-10000}
+		size = { width=545 height=416 }
+		moveable = yes
+		Orientation = CENTER
+		fade_time = 500
+		fade_type = linear
+
+		show_sound = pop_up
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_equipment_upgrade_designer_bg"
+		}
+
+		positionType = {
+			name = "price_levels_widget_position"
+			position = { x=-10000 y=-10000 }
+		}
+
+		instantTextboxType = {
+			name = "edit_window_header"
+			position = { x=-10000 y=-10000 }
+			font = "hoi_36header"
+			text = "EDIT_MARKET_STOCKPILE_HEADER"
+			maxWidth = 480
+			maxHeight = 36
+		}
+
+		iconType = {
+			name = "cic_icon"
+			spriteType = "GFX_civ_factory_output_icon"
+			position = { x=-10000 y=-10000 }
+		}
+
+		instantTextboxType = {
+			name = "cic_cost"
+			position = { x=-10000 y=-10000 }
+			font = "hoi_18mbs"
+			text = "XXXX"
+			maxWidth = 100
+			maxHeight = 30
+			format = left
+		}
+
+		positionType = {
+			name = "equipment_amount_input_widget_position"
+			position = { x=-10000 y=-10000 }
+		}
+
+		buttonType = {
+			name = "set_to_zero_button"
+			position = { x=-10000 y=-10000 }
+			quadTextureSprite = "GFX_delete_template_button"
+			buttonFont = "Main_14_black"
+			clicksound = click_close
+			pdx_tooltip = "EDIT_MARKET_SET_TO_ZERO_EQUIPMENT"
+		}
+
+		containerWindowType = {
+			name = "active_equipment_view"
+			position = { x=-10000 y=-10000 }
+			size = { width=100% height=200 }
+			clipping = no
+		}
+
+
+		containerWindowType = {
+			name = "equipment_info"
+			position = { x=-10000 y=-10000}
+			size = { width=100% height=100 }
+			verticalScrollbar = "right_vertical_slider"
+
+			gridBoxType = {
+				name = "equipment_info_grid"
+				position = { x=-10000 y=-10000 }
+				size = { width=100% height= 100% }
+				slotsize = { width = 258 height = 21 }
+				max_slots = { x = 2 y = 5 }
+				format = UPPER_LEFT
+			}
+		}
+
+		containerWindowType = {
+			name = "country_stockpile_info_container"
+			position = { x=-10000 y=-10000 }
+			size = { width=100 height= 30 }
+			Orientation = lower_left
+
+			iconType = {
+				name = "in_country_stock_icon"
+				position = { x=-10000 y=-10000 }
+				spriteType = "GFX_in_stock_icon"
+				#pdx_tooltip = ""
+			}	
+
+			instantTextboxType = {
+				name = "country_stockpile_status_amount"
+				position = { x=-10000 y=-10000 }
+				font = "hoi_16mbs"
+				text = "XX"
+				maxWidth = 100
+				maxHeight = 25
+				multiline = no
+				format = left
+			}
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x=-10000 y=-10000 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		instantTextboxType = {
+			name = "variant_name"
+			position = { x=-10000 y=-100003 }
+			font = "hoi_18mbs"
+			text = "Beautiful Variant Name"
+			maxWidth = 250
+			maxHeight = 32
+			fixedsize = yes
+			format = center
+			Orientation = "UPPER_LEFT"
+		}
+
+		buttonType = {
+			name = "confirm_button"
+			position = { x=-10000 y=-10000 }
+			quadTextureSprite ="GFX_button_123x34"
+			buttonText = "EDIT_MARKET_CONFIRM"
+			buttonFont = "hoi_18mbs"
+			Orientation = "LOWER_RIGHT"
+			clicksound = click_default
+		}
+
+
+		iconType = {
+			name = "equipment_archetype"
+			position = { x=-10000 y=-10000 }
+			quadTextureSprite = "GFX_equipment_item_large"
+			Orientation = "CENTER"
+			centerPosition = yes
+			frame = 1
+		}
+	}
+}
