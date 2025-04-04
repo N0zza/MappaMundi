@@ -4,7 +4,7 @@ NGame = {
 	START_DATE = "1815.1.1.12",
 	END_DATE = "2100.1.1.12",
 	MAP_SCALE_PIXEL_TO_KM = 7.114,					-- Yes, we did the math
-	SAVE_VERSION = 24,								-- 1.15.0 (unnamed)
+	SAVE_VERSION = 25,								-- 1.16.0 (Countenance)
 	CHECKSUM_SALT = "zwOdv5d9wm9uDSOT",				-- Data to modify generated checksum when game binaries have changed but not any content files.
 	LAG_DAYS_FOR_LOWER_SPEED = 10,					-- Days of client lag for decrease of gamespeed
 	LAG_DAYS_FOR_PAUSE = 25,						-- Days of client lag for pause of gamespeed.
@@ -24,6 +24,10 @@ NGame = {
 	HANDS_OFF_START_TAG = "HAI",					-- tag for player country for -hands_off runs. use an existing tag that is less likely to affect the game
 	ALERT_SFX_COOLDOWN_DAYS = 14,					-- After playing an alert sound, don't play the same sound for XXX days, even if it fires again.
 	MUSIC_PLAYER_RECENTLY_PLAYED_SIZE = 10,			-- The music player keeps track of recently played music to try and avoid playing the same songs too often. This determines the max number of songs in the recently played list.
+},
+
+NGeography = {
+	MEDITERRANEAN_SEA_REGIONS = { 29, 68, 69, 168, 169, 202 }, -- The sea regions that are considered as part of the Mediterranean sea
 },
 
 NDiplomacy = {
@@ -686,8 +690,8 @@ NPolitics = {
 	BASE_POLITICAL_POWER_INCREASE = 2,	-- Weekly increase of PP.
 	ARMY_LEADER_COST = 5,					-- command power cost for recruiting new leaders, 'this value' * number_of_existing_leaders_of_type
 	NAVY_LEADER_COST = 5,					-- command power cost for recruiting new leaders, 'this value' * number_of_existing_leaders_of_type
-	ARMY_LEADER_MAX_COST = 100,				-- max cost BEFORE modifiers
-	NAVY_LEADER_MAX_COST = 100,				-- max cost BEFORE modifiers
+	ARMY_LEADER_MAX_COST = 80,				-- max cost BEFORE modifiers
+	NAVY_LEADER_MAX_COST = 80,				-- max cost BEFORE modifiers
 	LEADER_TRAITS_XP_SHOW = 0.05,			-- Amount of XP a trait needs to be shown in tooltips of a leader.
 	REVOLTER_PARTY_POPULARITY = 0.4,		-- Revolter party loses 80% popularity when the civil war breaks out
 	MIN_OVERTHROWN_GOVERNMENT_SUPPORT_RATIO = 0.4, -- Min possible support for new government after puppeting the government
@@ -713,7 +717,7 @@ NBuildings = {
 	BASE_FACTORY_REPAIR_FACTOR = 2.0,	-- Factory speed modifier when repairing.
 	SUPPLY_PORT_LEVEL_THROUGHPUT = 3,   -- supply throughput per level of naval base
 	MAX_SHARED_SLOTS = 25,				-- Max slots shared by factories
-	OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 0.5, --Scale factor of extra shared slots when state owner change.
+	OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1, --Scale factor of extra shared slots when state owner change.
 	DESTRUCTION_COOLDOWN_IN_WAR = 30,	-- Number of days cooldown between removal of buildings in war times
 
 	INFRASTRUCTURE_RESOURCE_BONUS = 0.2, -- multiplicative resource bonus for each level of (non damaged) infrastructure
@@ -1359,7 +1363,7 @@ NAir = {
 	BASE_UNIT_WEIGHT_IN_TRANSPORT_PLANES = 45.0,
 
 	MANPOWER_LOSS_RATIO_PLANE_SHOT = 0.10,	-- The loss ratio of manpower for a shot plane.
-
+	
 	MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 		0.0, -- AIR_SUPERIORITY
 		0.0, -- CAS
@@ -1408,10 +1412,12 @@ NAir = {
 
 	MISSION_EFFICIENCY_MULT_AT_LACK_OF_FUEL = 0.25, 				-- multiplier for mission efficiency when a base lacks fuel
 
-	BOMBING_TARGETING_RANDOM_FACTOR = 0.25,							-- % of picking the wrong target
-	BOMBING_PROV_BUILD_PRIO_SCALE = 1.5,							-- Scale of the selected priority for provincial buildings
-	BOMBING_STATE_BUILD_PRIO_SCALE = 1.5,							-- Scale of the selected priority for state buildings
-	BOMBING_INFRA_PRIO_SCALE = 0.7,									-- Scale of the selected priority for infastryctyre
+	STRATEGIC_BOMBING_PROV_BUILD_PRIO_SCALE = 1.5,					-- Scale of the selected priority for provincial buildings
+	STRATEGIC_BOMBING_STATE_BUILD_PRIO_SCALE = 1.5,					-- Scale of the selected priority for state buildings
+	STRATEGIC_BOMBING_INFRA_PRIO_SCALE = 0.7,						-- Scale of the selected priority for infrastructure
+	STRATEGIC_BOMBING_RAILWAY_PRIORITY_SCALE = 0.2,					-- The scale of extra priority assigned to railway for strategic bombing
+	STRATEGIC_BOMBING_STATE_BUILDING_SCALE = 1.0,					-- The scale of state building priority for strategic bombing
+	
 	NAVAL_MINES_PLANTING_SPEED_MULT = 0.025,						-- Value used to overall balance of the speed of planting naval mines
 	NAVAL_MINES_SWEEPING_SPEED_MULT = 0.025,						-- Value used to overall balance of the speed of sweeping naval mines
 	NON_CORE_STRATEGIC_IMPACT = 0.5,                                -- multiplier for strategic impact of non-core bombing
@@ -1595,7 +1601,7 @@ NNavy = {
 	OUT_OF_FUEL_TORPEDO_FACTOR = -0.8,
 
 	UNDERWAY_REPLENISHMENT_RANGE_FACTOR = 0.4,			-- bonus factor applied to task force's range when underway replenishment is activated (e.g. 0.2 means +20%)
-	UNDERWAY_REPLENISHMENT_CONVOY_COST_PER_FUEL = 0.35,	-- Cost in convoys for underway replenishment multiplied by max daily fuel consumption (rounded up)
+	UNDERWAY_REPLENISHMENT_CONVOY_COST_PER_FUEL = 0.28,	-- Cost in convoys for underway replenishment multiplied by max daily fuel consumption (rounded up)
 
 	MISSION_SPREADS = {  -- mission spreads in the case a ship join combat, which is calculated for number of ships that will be in combat. 1 means no ship will be at start
 		0.0, -- HOLD
@@ -2517,8 +2523,12 @@ NAI = {
 	WANTED_CARRIER_PLANES_PER_CARRIER_CAPACITY_IN_PRODUCTION_FACTOR = 1,	-- Scales how many carrier planes the AI want per deck space of carriers in production.
 	CARRIER_CAPACITY_IN_PRODUCTION_MAX_DAYS_LEFT_TO_INCLUDE_FACTOR = 365,	-- Carriers in production that will take more days to complete than this value will be ignored when calculating the above.
 
-	START_TRAINING_EQUIPMENT_LEVEL = 0.95,               -- ai will not start to train if equipment drops below this level
-	STOP_TRAINING_EQUIPMENT_LEVEL = 0.90,                -- ai will not train if equipment drops below this level
+	START_TRAINING_EQUIPMENT_LEVEL = 0.40,               -- ai will not start to train if equipment drops below this level
+	STOP_TRAINING_EQUIPMENT_LEVEL = 0.30,                -- ai will not train if equipment drops below this level
+	START_TRAINING_SUPPLY_LEVEL = 0.40,                  -- ai will not start to train if supply ratio drops below this level
+	STOP_TRAINING_SUPPLY_LEVEL = 0.30,                   -- ai will not train if supply ratio drops below this level
+	STOP_TRAINING_FULLY_TRAINED_FACTOR = 0.95,           -- ai will not train if at least this ratio of divisions in the army are fully trained
+
 	BUILD_REFINERY_LACK_OF_RESOURCE_MODIFIER = 0.003,	-- How much lack of resources are worth when evaluating what to build.
 
 	DIVISION_DESIGN_MAX_FAILED_DAYS = 60,					-- max days we keep track of since failure of a template design update
@@ -2761,8 +2771,8 @@ NAI = {
 	ASSIGN_TANKS_TO_JUNGLE = -6.0,                              -- factor for assigning tank divisions to fronts with jungle (proportional to how much of that terrain type)
 	UNIT_ASSIGNMENT_TERRAIN_IMPORTANCE = 10.0,                  -- Terrain score for units are multiplied by this when the AI is deciding which front they should be assigned to
 
-	ASSIGN_TANKS_TO_WAR_FRONT = 6.0,                            -- Scoring factor for assigning tank divisions to active war fronts
-	ASSIGN_TANKS_TO_NON_WAR_FRONT = 0.4,                        -- Scoring factor for assigning tank divisions to non-war fronts
+	ASSIGN_TANKS_TO_WAR_FRONT = 6.0,                            -- Scoring factor for assigning divisions with 'role = armor' or 'front_role_override = offence' to active war fronts
+	ASSIGN_TANKS_TO_NON_WAR_FRONT = 0.4,                        -- Scoring factor for assigning divisions with 'role = armor' or 'front_role_override = offence' to non-war fronts
 
 	REASSIGN_TO_ANOTHER_FRONT_FACTOR = 0.5,                    -- Factor for reassigning to another front. 0.0 < X < 1.0 means reluctant, X > 1.0 means want to.
 	REASSIGN_TO_ANOTHER_FRONT_IF_IN_COMBAT_FACTOR = 0.2,       -- Factor for reassigning to another front if in combat. 0.0 < X < 1.0 means reluctant, X > 1.0 means want to.
@@ -3160,9 +3170,14 @@ NAI = {
 
 	COMMAND_POWER_BEFORE_SPEND_ON_TRAITS = 30.0,
 
-	PEACE_BID_FOLD_TURNS_AGAINST_OTHER_AI = 2,					--Resolve contests against other AIs after this many turns. Don't always contest forever, it yields the same results.
+	PEACE_BID_FOLD_TURNS_AGAINST_OTHER_AI = 2,                  -- Resolve contests against other AIs after this many turns. Don't always contest forever, it yields the same results.
+	-- When resolving contest against other AI, a tie breaker score is calculated and the loser folds.
+	PEACE_BID_CONTEST_TIE_BREAKER_CONFERENCE_SCORE = 1.0,       -- How much to weigh relative remaining peace conference score between the countries
+	PEACE_BID_CONTEST_TIE_BREAKER_INFLUENCE_DISTANCE = 1.0,     -- How much to weigh relative influence distance between the countries
+	PEACE_BID_CONTEST_TIE_BREAKER_COUNTRY_SCORE = 1.0,          -- How much to weigh relative country score between the countries
+	-- End of tie breaker score factors
 	PEACE_BID_FOLD_AGAINST_PLAYER_CHANCE = 0.5,                 -- Likelihood that AI will fold in a bidding contest against human player.
-	PEACE_BID_FOLD_AGAINST_LIBERATE_CONTEST = 1.0,				-- Likelihood that the AI will back down against a same-ideology country performing a contesting liberate bid ##Bordergore prevention therapy
+	PEACE_BID_FOLD_AGAINST_LIBERATE_CONTEST = 1.0,              -- Likelihood that the AI will back down against a same-ideology country performing a contesting liberate bid ##Bordergore prevention therapy
 	PEACE_AI_GROUP_PEACE_ACTIONS = true,                        -- Whether AI should group peace actions or greedily just select the most-desired peace actions
 	PEACE_AI_EVALUATE_FOR_SUBJECTS = true,                      -- Whether AI should include subjects when evaluating giving states to other winners (may affect performance on new conference turn)
 	PEACE_AI_EVALUATE_FOR_ALLIES = true,                        -- Whether AI should include allies when evaluating giving states to other winners (may affect performance on new conference turn)
@@ -3244,6 +3259,7 @@ NAI = {
 
 	RAIDS_ENABLE_AI = true,                                -- Whether AI should use the raid system
 	RAIDS_CREATE_FREQUENCY_DAYS = 7,                       -- How often will AI run its raid creation logic. Lowering this number may decrease performance.
+	RAIDS_SCORE_DIFF_TO_CANCEL = 0.3,                      -- If already-created low-scoring raids are blocking higher-scoring ones from being created due to command power, this allows the AI to cancel the lower-scoring raids. If `lowerScore < <value>*higherScore`, then the lower-scoring one may be cancelled. A value of 0.0 means it will never allow cancelling lower-scoring raids, while a value of 1.0 means it will always allow cancelling lower-scoring raids.
 	RAIDS_COMMAND_POWER_CAP_TO_CREATE = 60.0,              -- The AI will only try to create new raids if the command power cap is at least this.
 	RAIDS_MIN_SUCCESS_FOR_LAUNCH = 0.65,                   -- The AI will not launch a raid if the chance of success is lower than this.
 	RAIDS_CANCEL_AFTER_DAYS_LAUNCHABLE = 60,               -- If a raid has been launchable for more than <this> days but not been launched (e.g. due to bad success chance), the AI will cancel the raid.

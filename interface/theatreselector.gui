@@ -121,6 +121,13 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
+		iconType = {
+			name = "orders_group_no_order"
+			spriteType = "GFX_warning_icon_l"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+
 	}
 	
 	containerWindowType = {
@@ -200,21 +207,12 @@ guiTypes = {
 		name = "theater_group_item"
 		position = { x=430 y=10000 }
 		size = { width=300 height=80 }
-
-		#gridBoxType = {
-		#	name = "army_groups_detailed"
-		#	position = {x=2 y=75}
-		#	size = {width=100%% height=100%%}
-		#	slotsize = {width=1 height=34}
-		#	max_slots_horizontal = 1
-		#	format = "UPPER_LEFT"
-		#}
 		
 		iconType = {
 			name ="background"
 			quadTextureSprite = "GFX_theater_group_bg"	
 			position = { x = 0 y = 0 }
-			frame = 2	
+			frame = 2
 		}
 		
 		iconType = {
@@ -250,10 +248,17 @@ guiTypes = {
 			name = "name_box"
 			position = { x = 38 y = 13 }
 			font = "hoi_18mbs"
-			size = { x=170 y=32 }
+			size = { x=145 y=32 }
 			text = "NEW_THEATER_GROUP"
 		}
-
+		
+		iconType = {
+			name ="theater_supply_priority"
+			quadTextureSprite = "GFX_unitlist_priority_icon_strip"	
+			position = { x = 182 y = 9 }
+			frame = 2
+		}
+		
 		OverlappingElementsBoxType = {
 			name = "orders_group_box"
 			first_on_top = yes
@@ -500,7 +505,7 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "strategic_region_alert_entry"
 		position = { x=-20 y=10000 }
@@ -536,7 +541,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "strategic_region_item"
-		position = { x = 430 y = 8 }
+		position = { x = 430 y = 17 }
 		size = { width=300 height=50 }
 		
 		buttonType = {
@@ -588,14 +593,16 @@ guiTypes = {
 		size = { width=760 height=-240 }
 		Orientation = UPPER_RIGHT
 		verticalScrollbar = "right_vertical_sliderno_bg"
+		scroll_wheel_factor = 40
+		smooth_scrolling = yes
 		clipping = yes
-		
+
 		background = {
 			name = "Background"
 			quadTextureSprite ="GFX_tiled_window_transparent"
-			position = { x = 4000 y = 0 }
+			position = { x = 400 y = 0 }
 		}
-		
+
 		gridBoxType = {
 			name = "elements_list"
 			position = { x = 2 y = 3 }
@@ -605,7 +612,7 @@ guiTypes = {
 			format = "UPPER_LEFT"
 		}
 	}
-	
+
 	windowType = {
 		name = "theatre_selection_entry"
 		position = { x=0 y=0 }
@@ -859,6 +866,254 @@ guiTypes = {
 			text = 9999
 			alwaystransparent = yes
 		}
+	}
 
+
+###############################
+###########AirStuff############
+###############################
+
+	containerWindowType = {
+		name = "air_theatre_free_wings_item"
+		position = { x=430 y=15 }
+		size = { width=300 height=80 }
+
+		iconType = {
+			name ="unmoveable_background"
+			quadTextureSprite = "GFX_theater_group_bg"
+			position = { x = 0 y = 0 }
+			frame = 5
+		}
+
+		instantTextBoxType = {
+			name = "theater_name_box"
+			position = { x = 38 y = 13 }
+			font = "hoi_18mbs"
+			maxWidth = 170
+			maxHeight = 32
+			text = "UNASSIGNED_AIR_WINGS"
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "unmoveable_assign_button"
+			position = { x = 3 y= 38 }
+			spriteType = "GFX_assign_group_button"
+			frame = 4
+		}
+
+		OverlappingElementsBoxType = {
+			name = "air_groups_box"
+			first_on_top = yes
+			position = { x = 10 y = 43 }
+			size = { x = 260 y = 23 }
+			format = left
+			spacing = 8.0
+		}
+
+		buttonType = {
+			name = "priority_1"
+			position = { x=225 y=13 }
+			buttonFont = "hoi_16mbs"
+			quadTextureSprite = "GFX_deploy_priority"
+			frame = 1
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "priority_2"
+			position = { x=247 y=13 }
+			buttonFont = "hoi_16mbs"
+			quadTextureSprite = "GFX_deploy_priority"
+			frame = 1
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "priority_3"
+			position = { x=269 y=13 }
+			buttonFont = "hoi_16mbs"
+			quadTextureSprite = "GFX_deploy_priority"
+			frame = 1
+			clicksound = click_default
+		}
+	}
+
+	containerWindowType = {
+		name = "air_theatre_wing_item"
+		position = { x=0 y=0 }
+		size = { width=23 height=23 }
+
+		buttonType = {
+			name ="background"
+			quadTextureSprite = "GFX_wing_types_map"
+			position = { x = 0 y = 0 }
+		}
+
+		#iconType = {
+		#	name ="highlight"
+		#	quadTextureSprite = "GFX_theatre_army_shield_selected"
+		#	alwaystransparent = yes
+		#	position = { x = 0 y = 0 }
+		#}
+
+		instantTextBoxType = {
+			name = "air_wing_count_box"
+			position = { x = 6 y = 10 }
+			font = "hoi_18mbs"
+			maxWidth = 36
+			maxHeight = 23
+			fixedsize = yes
+			format = center
+			alwaystransparent = yes
+		}
+	}
+
+
+
+	containerWindowType = {
+		name = "air_theatre_item"
+		position = { x=430 y=15 }
+		size = { width=300 height=80 }
+
+		iconType = {
+			name ="background"
+			quadTextureSprite = "GFX_theater_group_bg"
+			position = { x = 0 y = 0 }
+			frame = 5
+		}
+
+		editBoxType = {
+			name = "theatre_name_box"
+			position = { x = 38 y = 13 }
+			font = "hoi_18mbs"
+			size = { x=170 y=32 }
+			text = "NEW_THEATER_GROUP"
+		}
+
+		buttonType = {
+			name = "priority_1"
+			position = { x=225 y=13 }
+			buttonFont = "hoi_16mbs"
+			quadTextureSprite = "GFX_deploy_priority"
+			frame = 1
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "priority_2"
+			position = { x=247 y=13 }
+			buttonFont = "hoi_16mbs"
+			quadTextureSprite = "GFX_deploy_priority"
+			frame = 1
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "priority_3"
+			position = { x=269 y=13 }
+			buttonFont = "hoi_16mbs"
+			quadTextureSprite = "GFX_deploy_priority"
+			frame = 1
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "assign_button"
+			position = { x = 3 y= 38 }
+			spriteType = "GFX_assign_group_button"
+			frame = 4
+		}
+
+		OverlappingElementsBoxType = {
+			name = "air_groups_box"
+			first_on_top = yes
+			position = { x = 10 y = 43 }
+			size = { x = 260 y = 23 }
+			format = left
+			spacing = 8.0
+		}
+
+		instantTextBoxType = {
+			name = "air_wing_count_box"
+			position = { x = 256 y = 46 }
+			font = "hoi_18mbs"
+			text = "999"
+			maxWidth = 40
+			maxHeight = 32
+			fixedsize = yes
+			format = right
+		}
+
+		iconType = {
+			name ="selected_theatre_frame"
+			quadTextureSprite = "GFX_selected_theatre_frame"
+			position = { x = 0 y = 2 }
+			alwaystransparent = yes
+		}
+
+		gridBoxType = {
+			name = "air_groups_row_box"
+			position = { x = 0 y = 80 }
+			Orientation = "UPPER_LEFT"
+			size = { width = 300 height = 260 }
+			max_slots_horizontal = 1
+			slotsize = { width=300 height=33 }
+		}
+	}
+
+
+	containerWindowType = {
+		name = "air_theatre_group_row_item"
+		position = { x=0 y=0 }
+		size = { width=23 height=33 }
+		clipping = no
+
+		buttonType = {
+			name = "army_group_box_middle_bg"
+			quadTextureSprite = "GFX_theatre_dropdown_middle"
+			position = { x = 0 y = -8 }
+		}
+
+		buttonType = {
+			name = "army_group_box_bottom_bg"
+			quadTextureSprite = "GFX_theatre_dropdown_bottom"
+			position = { x = 0 y = -8 }
+		}
+
+		OverlappingElementsBoxType = {
+			name = "air_box"
+			position = { x = 6 y = -6 }
+			size = { x = 270 y = 23 }
+			first_on_top = yes
+			format = left
+			spacing = 8.0
+		}
+	}
+
+	containerWindowType = {
+		name = "air_theatre_group_item"
+		position = { x=0 y=0 }
+		size = { width=23 height=23 }
+
+		buttonType = {
+			name ="background"
+			quadTextureSprite = "GFX_theatre_army_shield"
+			position = { x = 0 y = -2 }
+		}
+
+		iconType = {
+			name ="selected_group_frame"
+			quadTextureSprite = "GFX_theatre_army_shield_selected"
+			alwaystransparent = yes
+			position = { x = -1 y = -2 }
+		}
+
+		instantTextBoxType = {
+			name = "air_wing_count_box"
+			position = { x = 6 y = 10 }
+			font = "hoi_18mbs"
+			maxWidth = 36
+			maxHeight = 23
+			fixedsize = yes
+			format = center
+			alwaystransparent = yes
+		}
 	}
 }
