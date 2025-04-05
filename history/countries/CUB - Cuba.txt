@@ -1,20 +1,32 @@
 ﻿capital = 315
 
 set_popularities = {
-	democratic = 98
-	fascism = 0
-	communism = 2	
+	socialism_ideology = 10
+	national_conservative_republic = 25
+	anocratic_republic = 32
+	stratocratic = 33
 }
 
 set_politics = { 
-	ruling_party = democratic
+	ruling_party = national_conservative_republic
 	last_election = "1936.1.10"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 create_country_leader = {
-	name = "Presidente José Agripino Barnet"
+	name = "Presidente José Agripino Barnet y Vinageras"
+	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
+	picture = "gfx/leaders/CUB/Portrait_Jose_barnet.dds"
+	expire = "1965.1.1"
+	ideology = natconrep
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Presidente José Agripino Barnet y Vinageras"
 	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
 	picture = "gfx/leaders/CUB/Portrait_Jose_barnet.dds"
 	expire = "1965.1.1"
