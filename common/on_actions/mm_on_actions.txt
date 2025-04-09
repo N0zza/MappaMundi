@@ -3,8 +3,11 @@ on_actions = {
 		effect = {
 			set_global_flag = colour_changer_mark
 			set_global_flag = vp_renaming_toggler_enabled
-	
-			#Split Russia into TNO warlords
+		}
+	}
+	on_startup = {
+		#Split Russia into TNO warlords
+		effect = {
 			if = {
 				limit = {
 					has_game_rule = {
@@ -18,7 +21,10 @@ on_actions = {
 				}
 			}
 		}
-			#Split Russia and Moscovy into TNO warlords
+	}
+
+	on_startup = {
+		#Split Russia and Moscovy into TNO warlords
 		effect = {
 			if = {
 				limit = {
@@ -32,7 +38,10 @@ on_actions = {
 				}
 			}
 		}
-			#Set up the Einheitspakt.
+	}
+
+	on_startup = {
+		#Set up the Einheitspakt.
 		effect = {
 			if = {
 				limit = {
@@ -46,7 +55,9 @@ on_actions = {
 				}
 			}
 		}
-			#Set up the Collapsed Einheitspakt.
+	}
+	on_startup = {
+		#Set up the Collapsed Einheitspakt.
 		effect = {
 			if = {
 				limit = {
@@ -60,7 +71,9 @@ on_actions = {
 				}
 			}
 		}
-			#Set up the Septemberprogramm.
+	}
+	on_startup = {
+		#Set up the Septemberprogramm.
 		effect = {
 			if = {
 				limit = {
@@ -89,7 +102,9 @@ on_actions = {
 				}
 			}
 		}
-			#Set up the Co Prosperity Sphere.
+	}
+	on_startup = {
+		#Set up the Co Prosperity Sphere.
 		effect = {
 			if = {
 				limit = {
@@ -103,7 +118,9 @@ on_actions = {
 				}
 			}
 		}
-			#Set up TNO Africa.
+	}
+	on_startup = {
+		#Set up TNO Africa.
 		effect = {
 			if = {
 				limit = {
@@ -117,7 +134,9 @@ on_actions = {
 				}
 			}
 		}
-			#Set up KX Africa Collapse.
+	}
+	on_startup = {
+		#Set up KX Africa Collapse.
 		effect = {
 			if = {
 				limit = {
@@ -131,9 +150,9 @@ on_actions = {
 				}
 			}
 		}
-
-	 
-			#Set up KX Africa.
+	}
+	on_startup = {
+		#Set up KX Africa.
 		effect = {
 			if = {
 				limit = {
@@ -147,8 +166,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Set up TNO USA.
 		effect = {
 			if = {
@@ -163,8 +182,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Set up united Yemen.
 		effect = {
 			if = {
@@ -179,8 +198,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Set up Non HoG Secondary Leaders.
 		effect = {
 			if = {
@@ -193,9 +212,9 @@ on_actions = {
 				set_global_flag = non_hog_secondary_leaders
 			}
 		}
-
+	}
 	
-	 
+	on_startup = {
 		#Set up De Jure Borders.
 		effect = {
 			if = {
@@ -638,8 +657,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Set up Extended Claims.
 		effect = {
 			if = {
@@ -654,8 +673,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Check if state marking is disabled
 		effect = {
 			if = {
@@ -668,8 +687,8 @@ on_actions = {
 				set_global_flag = STATE_HIGHLIGHT_DISABLED
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Unite Indonesia As East Indies
 		effect = {
 			if = {
@@ -693,8 +712,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Unite Indonesia As Indonesia
 		effect = {
 			if = {
@@ -718,8 +737,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Raj Game Rule
 		effect = {
 			if = {
@@ -783,8 +802,8 @@ on_actions = {
 			}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Simplify Raj Game Rule
 		effect = {
 			if = {
@@ -1096,8 +1115,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Smash USSR Gamerule
 		effect = {
 			if = {
@@ -1199,8 +1218,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Unite USSR Game Rule
 		effect = {
 			if = {
@@ -1241,8 +1260,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Simplify China Gamerule
 		effect = {
 			if = {
@@ -1396,8 +1415,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Unite China Gamerule (KMT)
 		effect = {
 			if = {
@@ -1441,8 +1460,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Unite China Gamerule (KMT-MAX)
 		effect = {
 			if = {
@@ -1489,8 +1508,8 @@ on_actions = {
 			}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Unite China Gamerule (KMT In Taiwan)
 		effect = {
 			if = {
@@ -1541,8 +1560,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Unite China Gamerule (CCP)
 		effect = {
 			if = {
@@ -1590,8 +1609,8 @@ on_actions = {
 			}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Unite China Gamerule (CCP-MAX)
 		effect = {
 			if = {
@@ -1642,8 +1661,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#Unite China Gamerule (CCP In Taiwan)
 		effect = {
 			if = {
@@ -1694,8 +1713,8 @@ on_actions = {
 				}
 			}
 		}
-
-	 
+	}
+	on_startup = {
 		#The Great War Rule (1914)
 		effect = {
 			if = {
@@ -2761,9 +2780,9 @@ on_actions = {
 			}
 			}
 		}
-
-		# Secondary and Tertiary leaders visibility logic
-	 
+	}
+# Secondary and Tertiary leaders visibility logic
+	on_startup = {
 		effect = {
 			every_country = {
 				secondary_tertiary_leader_enabled_effect = yes
@@ -2776,7 +2795,9 @@ on_actions = {
 				secondary_tertiary_leader_enabled_effect = yes
 			}
 		}
-			# I will destroy Gaffate
+	}
+# I will destroy Gaffate
+	on_ruling_party_change = {
 		effect = {
 			if = {
 				limit = {
@@ -2854,6 +2875,9 @@ on_actions = {
 				}
 			}
 		}
+	}
+# I will destroy Gaffate
+	on_ruling_party_change = {
 		effect = {
 			if = {
 				limit = {
@@ -7871,6 +7895,9 @@ on_actions = {
 				}
 			}
 		}
+	}
+# I will destroy Gaffate
+	on_ruling_party_change = {
 		effect = {
 			if = {
 				limit = {
@@ -8898,6 +8925,8 @@ on_actions = {
 				}
 			}
 		}
+	}
+	on_ruling_party_change = {
 		effect = {
 			ROOT = {
 				if = {
@@ -10834,34 +10863,6 @@ on_actions = {
 					else = {
 						drop_cosmetic_tag = yes
 					}
-				}
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					tag = RUS
-					has_start_date > 2022.01.01
-					NOT = {
-						has_government = vanguardism
-					}
-				}
-				set_party_name = {
-					ideology = vanguardism
-					name = RUS_vanguardism_2024_party
-					long_name = RUS_vanguardism_2024_party_long
-				}
-			}
-			if = {
-				limit = {
-					tag = RUS
-					has_start_date > 2022.01.01
-					has_government = vanguardism
-				}
-				set_party_name = {
-					ideology = vanguardism
-					name = RUS_vanguardism_2024_2_party
-					long_name = RUS_vanguardism_2024_2_party_long
 				}
 			}
 		}
@@ -13609,6 +13610,36 @@ on_actions = {
 						}
 						set_cosmetic_tag = AUK_TNO
 					}
+				}
+			}
+		}
+	}
+	on_ruling_party_change = {
+		effect = {
+			if = {
+				limit = {
+					tag = RUS
+					has_start_date > 2022.01.01
+					NOT = {
+						has_government = vanguardism
+					}
+				}
+				set_party_name = {
+					ideology = vanguardism
+					name = RUS_vanguardism_2024_party
+					long_name = RUS_vanguardism_2024_party_long
+				}
+			}
+			if = {
+				limit = {
+					tag = RUS
+					has_start_date > 2022.01.01
+					has_government = vanguardism
+				}
+				set_party_name = {
+					ideology = vanguardism
+					name = RUS_vanguardism_2024_2_party
+					long_name = RUS_vanguardism_2024_2_party_long
 				}
 			}
 		}
