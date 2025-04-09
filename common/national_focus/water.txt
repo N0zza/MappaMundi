@@ -20948,14 +20948,14 @@
 				}
 				every_state = {
 					limit = {
-						OR = {
-							is_core_of = RUS
-							is_owned_by = RUS
-							is_owned_by = TAN
-						}
+					        OR = {
+					        	is_core_of = RUS
+					        	is_owned_by = RUS
+					        	is_owned_by = TAN
+  						}
 					}
+					transfer_state = RUS
 					RUS = {
-						transfer_state = PREV
 						add_state_core = PREV
 					}
 				}
@@ -24542,6 +24542,7 @@
 							is_core_of = KOR
 						}
 					}
+				}
 				PRC = {
 					transfer_state = PREV
 					transfer_state = 1270
@@ -24892,7 +24893,7 @@
 				}
 				set_province_name = {
 					id = 10616
-					name = Ānshùn
+					name = Anshun
 				}
 				HKG = {
 					set_cosmetic_tag = HKG_PRC
@@ -33883,4 +33884,3 @@
 			}
 		}
 	}
-}
