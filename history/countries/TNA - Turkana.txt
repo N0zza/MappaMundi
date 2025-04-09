@@ -1,27 +1,20 @@
 ﻿capital = 5255
 
 set_popularities = {
-        neutrality = 0
-        monarchism = 0
-        democratic = 10
-        liberal_republic = 0
-        communism = 0
-        vanguardism = 0
-        fascism = 0
-        anarchism_ideology = 80
-        socialism_ideology = 0
-        democratic_monarchism = 0
-        conservative_monarchism = 0
-        stratocratic = 0
-        authoritarian_monarchism = 0
-        republican_fascism = 0
-        national_socialism = 0
-        theocratic = 10
+	anarchism_ideology = 100
+}
 
+create_country_leader = {
+	name = "Tribal Leadership"
+	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
+	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
+	expire = "1965.1.1"
+	ideology = total_anarchist
+	traits = {
+	}
 }
 
 set_politics = {
-	
 	ruling_party = anarchism_ideology
 	last_election = "1936.1.1"
 	election_frequency = 48
@@ -61,16 +54,6 @@ create_country_leader = {
 	picture = "gfx/leaders/To_be_added.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Tribal Leadership"
-	desc = "POLITICS_TRIBAL_LEADERSHIP_DESC"
-	picture = "gfx/leaders/Anarchy/Tribal_Leadership.tga"
-	expire = "1965.1.1"
-	ideology = total_anarchist
 	traits = {
 	}
 }
