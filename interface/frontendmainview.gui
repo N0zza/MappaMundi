@@ -280,13 +280,14 @@ guiTypes = {
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
 		position = { x=0 y =0}
-		size = { width = 320 height = 435 }
+		size = { width = 320 height = 415 }
 		Orientation = CENTER
 		Origo = center		
+		clipping = no 
 
 		positionType = {
 			name = "subscription_size"
-			position = { x = 320 y = 450 }
+			position = { x = 320 y = 415 }
 		}
 				
 		background = {
@@ -323,9 +324,9 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="version_label"
-			position = { x = 35 y = 396 }
+			position = { x = 35 y = 411 }
 			textureFile = ""
-			font = "hoi_18b"
+			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
 			text = "ALPHA"	
 			format = centre
@@ -335,7 +336,7 @@ guiTypes = {
 
 		positionType = {
 			name = "version_label_subscription_position"
-			position = { x = 35 y = 524 }
+			position = { x = 35 y = 539 }
 		}
 		
 		
@@ -469,9 +470,9 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "social_view_interface_window"
-			position = { x = 250 y = 50 }
+			position = { x = 250 y = 0 }
 			size = { width = 60 height = 40 }
-			
+	
 			buttonType = {
 				name = "toggle_button"
 				quadTextureSprite = "GFX_sort_button_83x29" ## Orig: 60x29
@@ -513,7 +514,7 @@ guiTypes = {
 		}
         containerWindowType = {
             name = "first_row"
-			position = { x=48 y=-17 }
+			position = { x=48 y=-66 }
             ButtonType = {
                 name = "homepage_button"
                 position = { x=0 y=0 }
@@ -543,7 +544,7 @@ guiTypes = {
             ButtonType = {
                 name = "privacy_policy_button"
                 position = { x=108 y=0 }
-                quadTextureSprite ="privacy"
+                quadTextureSprite ="privacy"55
                 #clicksound = click_default
                 pdx_tooltip = "MENU_PRIVACY_POLICY"
                 scale = 0.9
@@ -551,7 +552,7 @@ guiTypes = {
         }
         containerWindowType = {
             name = "second_row"
-			position = { x=30 y=19 }
+			position = { x=30 y=-36 }
             ButtonType = {
                 name = "bluesky_button"
                 position = { x=0 y=0 }
