@@ -21,7 +21,7 @@ guiTypes = {
 			spriteType ="GFX_tiled_bg"
 		}
 		
-		containerWindowType = {	
+		containerWindowType = {
 			name = "country_info"
 			position = { x = 0 y = 55}	
 			size = { width = 530 height = 100%% }
@@ -737,21 +737,31 @@ guiTypes = {
 			
 			#------------------------- END INFO TAB ----------------------------
 
-			#iconType ={
-			#	name ="diplomacy_bottom"
-			#	spriteType = "GFX_main_screens_bottom"
-			#	position = { x = 3 y = -8 }
-			#	Orientation = "LOWER_LEFT"
-			#}	
+			iconType ={
+				name ="diplomacy_bottom"
+				spriteType = "GFX_main_screens_bottom"
+				position = { x = 10003 y = -8 }
+				Orientation = "LOWER_LEFT"
+			}	
 			
 			buttonType = {
 				name = "back_button"
-				position = { x = -5 y = 320 }
+				position = { x = -5 y = 30 }
 				clicksound = click_close
 				quadTextureSprite ="GFX_button_221x34"
 				buttonFont = "hoi_16mbs"
 				Orientation = "UPPER_RIGHT"
 				buttonText = "OPEN_COUNTRY_LIST"
+				clicksound = click_close
+			}
+
+			buttonType = {
+				name = "logistics_button"
+				position = { x = 10296 y = -48 }
+				quadTextureSprite ="GFX_button_221x34"
+				buttonFont = "hoi_16mbs"
+				Orientation = "LOWER_LEFT"
+				buttonText = "OPEN_COUNTRY_LOGISTICS"
 				clicksound = click_close
 			}
 		}

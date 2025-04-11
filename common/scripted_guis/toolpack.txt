@@ -33,7 +33,6 @@ scripted_gui = {
 				else = {
 					clr_global_flag = smt_enabled
 				}
-				bst_count_civf = yes
 			}
 			cpt_open_click = {
 				if = {
@@ -51,7 +50,6 @@ scripted_gui = {
 					}
 					set_global_flag = cpt_window_a
 				}
-				bst_count_civf = yes
 			}
 			tpt_open_click = {
 				if = {
@@ -168,7 +166,6 @@ scripted_gui = {
 		effects = {
 			tcw_cancel_button_click = {
 				clr_global_flag = tp_open_confirmation_window
-				tcw_clear_all_global_confirms = yes
 				every_country = { clr_country_flag = sst_ship_deletion_target }
 				every_country = { clr_country_flag = dsta_unit_deletion_target }
 				every_country = { clr_country_flag = dstb_unit_deletion_target }
@@ -178,7 +175,6 @@ scripted_gui = {
 					limit = { has_global_flag = tpt_confirm_faction_dismantling }
 					every_country = { dismantle_faction = yes }
 				}
-				tcw_clear_all_global_confirms = yes
 				clr_global_flag = tp_open_confirmation_window
 			}
 		}
