@@ -366,10 +366,12 @@ do_all_renames = {
 		do_chinese_renames = yes
 		if = {
 			limit = {
-				AND = {
-					has_government = vanguardism
-					has_start_date < 2049.01.01
-					has_start_date > 2022.01.01
+				ROOT = {
+					AND = {
+						has_government = vanguardism
+						has_start_date < 2049.01.01
+						has_start_date > 2022.01.01
+					}
 				}
 			}
 			do_pinyin_renames = yes
