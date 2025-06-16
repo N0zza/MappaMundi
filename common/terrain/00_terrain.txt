@@ -129,45 +129,104 @@ categories =  {
 		sound_type = desert
 	}
 }
-	
-
-
-##################################################################
-### Graphical terrain
-###		type	=	refers to the terrain defined above, "terrain category"'s 
-### 	color 	= 	index in bitmap color table (see terrain.bmp)
-###
 
 terrain = {
-	terrain_0					= { type = plains			color = { 	0	 } texture = 1 }
-	terrain_1					= { type = forest			color = { 	1	 } texture = 4 } 
-	desert_mountain				= { type = hills			color = { 	2	 } texture = 3 }
-	desert						= { type = desert			color = { 	3	 } texture = 9 }
-		
-	terrain_4					= { type = forest			color = { 	4	 } texture = 5 }
-	terrain_5					= { type = plains	 		color = { 	5	 } texture = 0 }
-	terrain_6					= { type = mountain			color = { 	6	 } texture = 11 }
-	terrain_7					= { type = desert			color = { 	7	 } texture = 12 }
-	desert_hills				= { type = desert			color = { 	8	 } texture = 14 }
-	terrain_9					= { type = marsh			color = { 	9	 } texture = 6 }
-	terrain_10					= { type = mountain   		color = { 	10	 } texture = 13 }
-			
-	desert						= { type = mountain			color = { 	11	 } texture = 11 }
-	desert						= { type = desert			color = { 	12	 } texture = 8 }
-		
-	forest_13					= { type = urban			color = { 	13	 } texture = 10 spawn_city = yes }
-	forest_14					= { type = lakes			color = { 	14	 } texture = 255 }
-	ocean_15					= { type = ocean			color = { 	15	 } texture = 9 } 
-		
-	snow_16						= { type = mountain			color = { 	16	 } texture = 11  perm_snow = yes }
-	plains_17					= { type = ice_sheet		color = { 	19	 } texture = 12  perm_snow = yes }
+	unknown_land								= { type = unknown				color = { 	0	 } texture = 16}
 	
-	hills_blend					= { type = hills			color = { 	17	 } texture = 2 }
-	mountain_variation_sand	 	= { type = mountain			color = { 	18	 } texture = 7 }
-	mountain_variation_grass 	= { type = mountain			color = { 	20	 } texture = 7 }
-	jungle_18					= { type = jungle			color = { 	21	 } texture = 4 }
-	jungle_blend_18				= { type = jungle			color = { 	22	 } texture = 5 }
+	abyssal_trench								= { type = water_deep_ocean		color = { 	1	 } texture = 9 }
+	abyss										= { type = water_deep_ocean		color = { 	2	 } texture = 9 } 
+	ocean_depths								= { type = water_deep_ocean		color = { 	3	 } texture = 9 }
+	ocean_basin									= { type = ocean				color = { 	4	 } texture = 9 }
+	continental_shelf							= { type = ocean				color = { 	5	 } texture = 9 }
+	coastal_waters								= { type = water_shallow_sea	color = { 	6	 } texture = 9 }
+
+	monsoon_subtropical_floodplains				= { type = plains				color = { 	7	 } texture = 1 }
+	monsoon_subtropical_flatlands				= { type = plains	 			color = { 	8	 } texture = 1 }
+	monsoon_subtropical_rolling_hills			= { type = hills				color = { 	9	 } texture = 2 }
+	monsoon_subtropical_foothills				= { type = hills				color = { 	10	 } texture = 6 }
+	monsoon_subtropical_mountains				= { type = mountain				color = { 	11	 } texture = 13 }
 	
-	jungle_blend_18				= { type = mountain			color = { 	27	 } texture = 7 }
-	desert_mountain_tops		= { type = mountain			color = { 	31	 } texture = 15 }
+	high_mountains								= { type = mountain				color = { 	12	 } texture = 11 }
+	
+	monsoon_subtropical_forest_floodplains		= { type = forest				color = { 	13	 } texture = 4 }
+	monsoon_subtropical_forest_flatlands		= { type = forest	 			color = { 	14	 } texture = 4 }
+	monsoon_subtropical_forest_rolling_hills	= { type = forest				color = { 	15	 } texture = 4 }
+	monsoon_subtropical_forest_foothills		= { type = forest				color = { 	16	 } texture = 4 }
+	monsoon_subtropical_forest_mountains		= { type = forest				color = { 	17	 } texture = 4 }
+	
+	arid_floodplains							= { type = desert				color = { 	18	 } texture = 9 }
+	arid_flatlands								= { type = desert	 			color = { 	19	 } texture = 12 }
+	arid_rolling_hills							= { type = desert				color = { 	20	 } texture = 12 }
+	arid_foothills								= { type = desert				color = { 	21	 } texture = 13 }
+	arid_mountains								= { type = desert				color = { 	22	 } texture = 3 }
+	
+	semi_arid_floodplains						= { type = plains				color = { 	23	 } texture = 9 }
+	semi_arid_flatlands							= { type = plains	 			color = { 	24	 } texture = 12 }
+	semi_arid_rolling_hills						= { type = hills				color = { 	25	 } texture = 12 }
+	semi_arid_foothills							= { type = hills				color = { 	26	 } texture = 13 }
+	semi_arid_mountains							= { type = mountain				color = { 	27	 } texture = 3 }
+	
+	tropical_monsoon_floodplains				= { type = plains				color = { 	28	 } texture = 1 }
+	tropical_monsoon_flatlands					= { type = plains	 			color = { 	29	 } texture = 1 }
+	tropical_monsoon_rolling_hills				= { type = hills				color = { 	30	 } texture = 2 }
+	
+	tropical_rainforest_floodplains				= { type = jungle				color = { 	31	 } texture = 4 }
+	tropical_rainforest_flatlands				= { type = jungle	 			color = { 	32	 } texture = 4 }
+	tropical_rainforest_rolling_hills			= { type = jungle				color = { 	33	 } texture = 4 }
+	tropical_rainforest_foothills				= { type = jungle				color = { 	34	 } texture = 4 }
+	tropical_rainforest_mountains				= { type = jungle				color = { 	35	 } texture = 4 }
+	
+	permafrost_floodplains						= { type = ice_sheet			color = { 	36	 } texture = 5 }
+	permafrost_flatlands						= { type = ice_sheet	 		color = { 	37	 } texture = 0 }
+	permafrost_rolling_hills					= { type = ice_sheet			color = { 	38	 } texture = 11 }
+	permafrost_foothills						= { type = ice_sheet			color = { 	39	 } texture = 12 }
+	permafrost_mountains						= { type = ice_sheet			color = { 	40	 } texture = 14 }
+	
+	tundra_floodplains							= { type = plains				color = { 	41	 } texture = 1 }
+	tundra_flatlands							= { type = plains	 			color = { 	42	 } texture = 1 }
+	tundra_rolling_hills						= { type = hills				color = { 	43	 } texture = 2 }
+	tundra_foothills							= { type = hills				color = { 	44	 } texture = 6 }
+	tundra_mountains							= { type = mountain				color = { 	45	 } texture = 13 }
+	
+	taiga_floodplains							= { type = forest				color = { 	46	 } texture = 5 }
+	taiga_flatlands								= { type = forest 				color = { 	47	 } texture = 5 }
+	taiga_rolling_hills							= { type = forest				color = { 	48	 } texture = 5 }
+	taiga_foothills								= { type = forest				color = { 	49	 } texture = 5 }
+	taiga_mountains								= { type = forest				color = { 	50	 } texture = 5 }
+	
+	continental_floodplains						= { type = plains				color = { 	51	 } texture = 1 }
+	continental_flatlands						= { type = plains	 			color = { 	52	 } texture = 1 }
+	continental_rolling_hills					= { type = hills				color = { 	53	 } texture = 2 }
+	continental_foothills						= { type = hills				color = { 	54	 } texture = 6 }
+	continental_mountains						= { type = mountain				color = { 	55	 } texture = 13 }
+	
+	continental_forest_floodplains				= { type = forest				color = { 	56	 } texture = 5 }
+	continental_forest_flatlands				= { type = forest	 			color = { 	57	 } texture = 5 }
+	continental_forest_rolling_hills			= { type = forest				color = { 	58	 } texture = 5 }
+	continental_forest_foothills				= { type = forest				color = { 	59	 } texture = 5 }
+	continental_forest_mountains				= { type = forest				color = { 	60	 } texture = 5 }
+	
+	temperate_floodplains						= { type = plains				color = { 	61	 } texture = 1 }
+	temperate_flatlands							= { type = plains	 			color = { 	62	 } texture = 1 }
+	temperate_rolling_hills						= { type = hills				color = { 	63	 } texture = 2 }
+	temperate_foothills							= { type = hills				color = { 	64	 } texture = 6 }
+	temperate_mountains							= { type = mountain				color = { 	65	 } texture = 13 }
+	
+	temperate_forest_floodplains				= { type = forest				color = { 	66	 } texture = 5 }
+	temperate_forest_flatlands					= { type = forest	 			color = { 	67	 } texture = 5 }
+	temperate_forest_rolling_hills				= { type = forest				color = { 	68	 } texture = 5 }
+	temperate_forest_foothills					= { type = forest				color = { 	69	 } texture = 5 }
+	temperate_forest_mountains					= { type = forest				color = { 	70	 } texture = 5 }
+	
+	mediterranean_floodplains					= { type = plains				color = { 	71	 } texture = 1 }
+	mediterranean_flatlands						= { type = plains	 			color = { 	72	 } texture = 1 }
+	mediterranean_rolling_hills					= { type = hills				color = { 	73	 } texture = 2 }
+	mediterranean_foothills						= { type = hills				color = { 	74	 } texture = 6 }
+	mediterranean_mountains						= { type = mountain				color = { 	75	 } texture = 13 }
+	
+	mediterranean_forest_floodplains			= { type = forest				color = { 	76	 } texture = 5 }
+	mediterranean_forest_flatlands				= { type = forest	 			color = { 	77	 } texture = 5 }
+	mediterranean_forest_rolling_hills			= { type = forest				color = { 	78	 } texture = 5 }
+	mediterranean_forest_foothills				= { type = forest				color = { 	79	 } texture = 5 }
+	mediterranean_forest_mountains				= { type = forest				color = { 	80	 } texture = 5 }
 }
