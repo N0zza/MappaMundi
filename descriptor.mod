@@ -1,4 +1,3 @@
-version="1.16.*"
 tags={
 	"Map"
 	"Historical"
@@ -62,5 +61,6 @@ replace_path="common/dynamic_modifiers"
 replace_path="common/resistance_compliance_modifiers"
 replace_path="common/resistance_activity"
 replace_path="localisation/"
+supported_version="1.17.*"
 path="mod/MappaMundi"
 remote_file_id="2529643625"
