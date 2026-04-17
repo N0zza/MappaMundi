@@ -130,7 +130,6 @@ static const float 	TREE_ROUGHNESS = 0.6f;
 
 //static const float  WATER_TILE					= 4.0f;
 static const float  WATER_TIME_SCALE			= 1.0f / 50.0f;
-static const float  WATER_HEIGHT = 15.5f;
 static const float  WATER_HEIGHT_RECP = 1.0f / WATER_HEIGHT;
 static const float  WATER_HEIGHT_RECP_SQUARED = WATER_HEIGHT_RECP * WATER_HEIGHT_RECP;
 
